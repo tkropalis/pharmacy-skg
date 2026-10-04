@@ -1,6 +1,6 @@
 # Email to ΦΣΘ (draft)
 
-Decision D20 brings this email forward (decision D2 planned it for after the beta). Fill in the bracketed parts, attach the one-page brief once the beta is live, and send from a personal address.
+On hold until the app is live; the owner decides when to send it (decisions D2, D20). Before sending, fill in the bracketed parts, attach the one-page brief and a link to the live app, and send from a personal address.
 
 **To:** ΦΣΘ secretariat (address from https://fsth.gr/ contact page)
 **Subject:** Δωρεάν εφαρμογή για ανοιχτά φαρμακεία Θεσσαλονίκης – αίτημα πρόσβασης στα δεδομένα εφημεριών
