@@ -8,8 +8,8 @@ import { USER_AGENT } from '../sources/http.ts';
 import { squash } from '../text.ts';
 
 const ENDPOINT = 'https://nominatim.openstreetmap.org/search';
-// The Thessaloniki regional unit, so that e.g. "Αμπελόκηποι" doesn't resolve to Athens.
-const VIEWBOX = '22.55,41.05,23.65,40.35';
+// The Thessaloniki regional unit (Βόλβη reaches past 23.9°E), so that e.g. "Αμπελόκηποι" doesn't resolve to Athens.
+const VIEWBOX = '22.55,41.05,24.0,40.35';
 
 export const GeocodeHitSchema = z.object({
   lat: z.number(),
@@ -49,6 +49,23 @@ export function cleanAddress(address: string): string {
     .replace(/^ΛΕΩΦ\.?\s*/i, 'ΛΕΩΦΟΡΟΣ ');
 }
 
+// In ΦΣΘ lists "Θεσσαλονίκη" is the municipality; neighbouring municipalities
+// are listed by their own names. OpenStreetMap tags their addresses with the
+// city "Θεσσαλονίκη" too, so a plain query finds e.g. Κομνηνών 17 in Καλαμαριά.
+const THESSALONIKI = 'Θεσσαλονίκη';
+const THESSALONIKI_MUNICIPALITY = 'Δήμος Θεσσαλονίκης';
+
+function queryLocality(locality: string): string {
+  return locality === THESSALONIKI ? THESSALONIKI_MUNICIPALITY : locality;
+}
+
+/** Rejects a result for Θεσσαλονίκη that lies in another municipality. */
+export function inLocality(hit: Pick<GeocodeHit, 'displayName'>, locality: string): boolean {
+  if (locality !== THESSALONIKI) return true;
+  const municipality = /Δήμος [^,]+/.exec(hit.displayName)?.[0];
+  return municipality === undefined || municipality === THESSALONIKI_MUNICIPALITY;
+}
+
 const EXACT_TYPES = new Set(['building', 'house', 'place', 'amenity', 'shop', 'healthcare']);
 const STREET_TYPES = new Set(['road', 'street', 'square']);
 
@@ -73,7 +90,15 @@ export class Geocoder {
     this.budget = budget;
   }
 
+  private readonly used = new Set<string>();
+
+  /** The cache entries this run looked up, so stale queries can be dropped. */
+  usedEntries(): GeocodeCache {
+    return Object.fromEntries(Object.entries(this.cache).filter(([query]) => this.used.has(query)));
+  }
+
   private async search(query: string, cachedOnly: boolean): Promise<GeocodeHit | null> {
+    this.used.add(query);
     const cached = this.cache[query];
     if (cached) return cached.hit;
     if (!this.online || cachedOnly) return null;
@@ -149,12 +174,13 @@ export class Geocoder {
     { cachedOnly = false } = {},
   ): Promise<(GeocodeHit & { query: string }) | null> {
     const street = cleanAddress(address);
-    const queries = [street && /\d/.test(street) ? `${street}, ${locality}` : null, locality];
+    const place = queryLocality(locality);
+    const queries = [street && /\d/.test(street) ? `${street}, ${place}` : null, place];
     for (const query of queries) {
       if (!query) continue;
       const hit = await this.search(query, cachedOnly);
-      if (hit) {
-        const precision = query === locality ? 'locality' : hit.precision;
+      if (hit && inLocality(hit, locality)) {
+        const precision = query === place ? 'locality' : hit.precision;
         return { ...hit, precision, query };
       }
     }

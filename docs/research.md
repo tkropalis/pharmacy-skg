@@ -263,6 +263,7 @@ Verified against the PDFs listed in section 1 (Format). The headings are quoted 
 - **Google Geocoding:** its terms forbid showing results on non-Google maps and limit caching to 30 days, so it is not usable. [verified]
 - **Nominatim:** at most 1 request per second, an identifying User-Agent, no bulk jobs. Storing results is allowed. [search]
 - **Others:** the Photon demo server is fair-use only [verified]; Geoapify allows storing results with attribution [search]; LocationIQ's free plan caches for at most 48 h. [search]
+- **Nominatim pitfall** [verified]: OpenStreetMap tags addresses in Καλαμαριά and other neighbouring municipalities with the city "Θεσσαλονίκη", so "Κομνηνών 17, Θεσσαλονίκη" (free-form or structured) resolves to Καλαμαριά, about 5 km from the real pharmacy. In ΦΣΘ lists "Θεσσαλονίκη" means the municipality, so the pipeline queries "…, Δήμος Θεσσαλονίκης" and rejects results in another Δήμος. Nominatim also rate-limits shared cloud IPs after about 100 requests; the pipeline caps itself at 150 per run.
 - **Strategy** [inferred]:
   - geocode each address once;
   - store the source and a confidence level with the result;

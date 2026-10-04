@@ -244,7 +244,7 @@ const overrides =
 
 const sortedDays = [...days.values()].sort((a, b) => a.date.localeCompare(b.date));
 const extendedLists = [...extendedFiles.values()];
-let registry: Awaited<ReturnType<typeof buildRegistry>>;
+let registry: Awaited<ReturnType<typeof buildRegistry>> | undefined;
 try {
   registry = await buildRegistry({
     days: sortedDays,
@@ -255,7 +255,9 @@ try {
   });
 } finally {
   // Keep geocoding results even if a later step fails, to spare Nominatim.
-  await writeIfChanged(paths.geocodeCache, toJson(sortKeys(geocoder.cache)));
+  // After a complete run, drop entries no longer used (e.g. old query forms).
+  const cache = registry === undefined ? geocoder.cache : geocoder.usedEntries();
+  await writeIfChanged(paths.geocodeCache, toJson(sortKeys(cache)));
 }
 log(`registry: ${registry.pharmacies.length} pharmacies (${geocoder.requests} Nominatim requests)`);
 {

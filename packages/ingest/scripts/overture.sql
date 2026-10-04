@@ -16,7 +16,7 @@ COPY (
          round(ST_Y(geometry), 6) AS lat, round(ST_X(geometry), 6) AS lon
   FROM read_parquet('s3://overturemaps-us-west-2/release/' || getvariable('release') || '/theme=places/type=place/*', hive_partitioning = 1)
   -- The Thessaloniki regional unit, with a margin.
-  WHERE bbox.xmin BETWEEN 22.55 AND 23.65 AND bbox.ymin BETWEEN 40.35 AND 41.05
+  WHERE bbox.xmin BETWEEN 22.55 AND 24.00 AND bbox.ymin BETWEEN 40.35 AND 41.05
     AND taxonomy.primary = 'pharmacy'
   ORDER BY id
 ) TO 'data/thessaloniki/inputs/overture-pharmacies.json' (FORMAT json, ARRAY true);
