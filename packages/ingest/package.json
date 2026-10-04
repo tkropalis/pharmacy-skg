@@ -7,7 +7,10 @@
     ".": "./src/index.ts"
   },
   "scripts": {
-    "typecheck": "tsc -p ."
+    "typecheck": "tsc -p .",
+    "update": "node src/cli/update.ts",
+    "schema": "node src/cli/schema.ts",
+    "rotation": "node src/cli/rotation.ts"
   },
   "dependencies": {
     "@pharmacy-skg/core": "workspace:*",

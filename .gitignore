@@ -8,3 +8,6 @@ coverage/
 !.env.example
 *.log
 .DS_Store
+
+# Internal analysis output (e.g. the reconstructed rotation, decision D11)
+.cache/

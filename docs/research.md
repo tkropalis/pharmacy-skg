@@ -22,7 +22,7 @@ Anything marked **verify** must be checked against the real source before code d
 - An older indexed URL takes a date as `yyyyMMddHHmmss`: `https://www.fsth.gr/root.viewpharmaciesonduty.el.aspx?date=20220630000000`. [search] The same path probably still works on `efimeries.fsth.gr`. [inferred] **verify**
 - No JSON, XHR or iCal endpoint was found, but the pages could not be inspected. **verify**
 - **Blocked to automated clients.** `fsth.gr`, `www.fsth.gr` and `efimeries.fsth.gr` sit behind Cloudflare, which answers every path (including `robots.txt`) with a 403 JS challenge (`cf-mitigated: challenge`). This happens from a cloud container with full network access, and will very likely happen from GitHub Actions runners too. So the endpoint questions above still cannot be answered, and a scheduled scraper cannot fetch from ΦΣΘ directly. [verified]
-- **Re-host:** thess.guide uploads the ΦΣΘ PDFs unchanged (same MigraDoc/PDFsharp producer). It does so a few days ahead, about 11 files per day, and they can be listed through the WordPress media API: `https://www.thess.guide/wp-json/wp/v2/media?search=Εφημερίες&per_page=100`. The archive goes back to 16 Jun 2026, with some gaps (e.g. 22 Aug–5 Sep). [verified]
+- **Re-host:** thess.guide uploads the ΦΣΘ PDFs unchanged (same MigraDoc/PDFsharp producer). It does so a few days ahead, about 11 files per day, and they can be listed through the WordPress media API: `https://www.thess.guide/wp-json/wp/v2/media?search=Εφημερίες&per_page=100`. The archive goes back to 16 Jun 2026, with some gaps (e.g. 22 Aug–5 Sep). Until mid-September it mostly holds only the metro PDF; all ten groups appear from about 16 Sep. [verified]
 
 ### Format
 
@@ -30,7 +30,8 @@ Checked against the PDFs for Sat 3, Sun 4, Mon 5 and Tue 6 Oct, Wed 15 Jul (summ
 
 - One text PDF per area group per day, generated with MigraDoc/PDFsharp. The metro PDF runs to about 3 pages; the others have 1.
 - **Ten area groups:** Πολεοδομικό Συγκρότημα Θεσσαλονίκης, Δήμος Λαγκαδά, Δήμος Χαλκηδόνας, Δήμος Ωραιοκάστρου, Δήμος Θέρμης, Δήμος Θερμαϊκού, Δήμος Βόλβης, Δήμος Δέλτα, Πανόραμα-Πεύκα, Ασβεστοχώρι/Εξοχή-Χορτιάτης-Φίλυρο. The group name is the first line.
-- Second line: "Εφημερεύοντα Φαρμακεία Σάββατο 03 Οκτ 2026" (weekday, day, Greek month abbreviation, year).
+- Second line: "Εφημερεύοντα Φαρμακεία Σάββατο 03 Οκτ 2026" (weekday, day, Greek month abbreviation, year). On long weekday names the year wraps onto a third line (e.g. Fridays in July).
+- The source has typos: e.g. a 9-digit phone (Βόλβης, 4 Oct 2026) and Latin look-alike letters inside Greek words ("M.AΛΕΞΑΝΔΡΟΥ").
 - **Sections:** each starts with a heading, and **most headings state their own hours**, e.g. "Διανυκτερεύοντα Φαρμακεία (από 21:00 έως 00:00)". Some headings have no hours (Θέρμης, Ασβεστοχώρι group). Some carry a sub-note on the next lines (see 2. Duty shifts).
 - The same section name means different hours in different groups. In the metro, "Διανυκτερεύοντα" is 21:00–00:00; in Θερμαϊκού it is 21:00–08:00 the next day. **Hours must be read from each heading, not from a table keyed by section name.**
 - Midnight is written both as "00:00" and as "24:00" (Λαγκαδά).
@@ -133,6 +134,7 @@ Verified against the PDFs listed in section 1 (Format). The headings are quoted 
 - **Duty lists as a registry:** the PDFs for 6 dates already list 457 distinct phone numbers, i.e. pharmacies. The thess.guide archive (≈100 days) should cover nearly all of them. [verified/inferred]
 - **ΕΟΠΥΥ** (https://www.eopyy.gov.gr/PharmacyList) lists only ΕΟΠΥΥ's own pharmacies. [search/inferred]
 - **data.gov.gr and opendata.thessaloniki.gr:** no pharmacy registry found. [search]
+- **Commercial directories** [verified 4 Oct 2026]: vrisko.gr's terms (§13) forbid automated extraction, and its content is protected by the database right; xo.gr (Χρυσός Οδηγός) answers automated clients with a Cloudflare challenge. Neither is used (decision D22). Looking up a single address by hand to write a manual override is fine.
 - **Google Places:** not usable. Its terms restrict storing the data and showing it on non-Google maps. [inferred]
 - **The duty lists themselves:** every pharmacy rotates through duty, so a few weeks of lists should list nearly all of them with address and phone. [inferred]
 

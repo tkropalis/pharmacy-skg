@@ -8,6 +8,8 @@ pnpm monorepo, TypeScript, lint/format/test tooling, CI, a placeholder page, and
 
 ## M1: Data pipeline
 
+Decisions D20–D22 adjust this milestone: duty PDFs come via thess.guide, hours come from each heading, and coordinates come from Overture and Nominatim.
+
 - **Fixtures:** capture real source files to test against:
   - ΦΣΘ PDFs for a weekday, a Saturday, a Sunday and a holiday, covering every area group;
   - the Region's (ΠΚΜ) extended-hours list.

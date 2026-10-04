@@ -133,6 +133,16 @@ describe('parseDutyList on real ΦΣΘ PDFs', () => {
     ]);
   });
 
+  it('reads a date line that wraps on a long weekday name', async () => {
+    const list = await parseFixture('2026-07-24_metro.pdf');
+    expect(list.date).toBe('2026-07-24');
+    expect(list.sections.map((section) => section.kind)).toEqual([
+      'day',
+      'overnight',
+      'after-midnight',
+    ]);
+  });
+
   it('assigns short names to the name column', async () => {
     const list = await parseFixture('2026-10-03_chalkidona.pdf');
     expect(list.sections[0]?.entries.at(-1)).toEqual({

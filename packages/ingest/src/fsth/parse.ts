@@ -213,14 +213,16 @@ function buildEntries(draft: SectionDraft, context: string): DutyEntry[] {
 export function parseDutyList(items: readonly TextItem[]): DutyList {
   const lines = toLines(items);
   const titles = lines.filter((line) => line.height >= TITLE_MIN_HEIGHT);
-  const [groupTitle, dateTitle, ...extra] = titles;
-  if (!groupTitle || !dateTitle || extra.length > 0) {
-    throw new Error(`Expected 2 title lines, found ${titles.length}`);
+  // The first title line names the group; the date line wraps on long
+  // weekday names ("…Παρασκευή 31 Ιουλ" / "2026").
+  const [groupTitle, ...dateTitles] = titles;
+  if (!groupTitle || dateTitles.length === 0 || dateTitles.length > 2) {
+    throw new Error(`Expected 2 or 3 title lines, found ${titles.length}`);
   }
   const groupName = groupTitle.text;
   const group = findAreaGroup(groupName);
   if (!group) throw new Error(`Unknown area group: "${groupName}"`);
-  const date = parseTitleDate(dateTitle.text);
+  const date = parseTitleDate(dateTitles.map((line) => line.text).join(' '));
   const context = `${group.id} ${date}`;
 
   const drafts: SectionDraft[] = [];
