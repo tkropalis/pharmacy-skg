@@ -171,8 +171,12 @@ async function locate(
   const override = input.overrides[draft.id]?.location;
   if (override) return { ...override, source: 'override', precision: 'exact' };
 
-  const hit = await input.geocoder.geocode(draft.address, draft.locality);
   const byPhone = input.overture.findByPhone(draft.phone);
+  // A phone match is enough; the geocode is only a cross-check then, so it
+  // uses cached results and spares Nominatim.
+  const hit = await input.geocoder.geocode(draft.address, draft.locality, {
+    cachedOnly: byPhone !== undefined,
+  });
   if (byPhone) {
     if (
       hit &&

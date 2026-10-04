@@ -258,6 +258,12 @@ try {
   await writeIfChanged(paths.geocodeCache, toJson(sortKeys(geocoder.cache)));
 }
 log(`registry: ${registry.pharmacies.length} pharmacies (${geocoder.requests} Nominatim requests)`);
+if (geocoder.stopped) {
+  registry.warnings.push({
+    code: 'geocoding-stopped',
+    message: `${geocoder.stopped}; uncached addresses were left unlocated this run`,
+  });
+}
 
 // --- Validate and write -------------------------------------------------------------
 

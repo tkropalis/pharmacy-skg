@@ -55,9 +55,11 @@ const STREET_TYPES = new Set(['road', 'street', 'square']);
 export class Geocoder {
   private lastRequest = 0;
   requests = 0;
+  /** Why online lookups stopped during this run, if they did. */
+  stopped: string | null = null;
 
   readonly cache: GeocodeCache;
-  private readonly online: boolean;
+  private online: boolean;
 
   /** With `online` false, only cached results are used. */
   constructor(cache: GeocodeCache, online: boolean) {
@@ -65,31 +67,14 @@ export class Geocoder {
     this.online = online;
   }
 
-  private async search(query: string): Promise<GeocodeHit | null> {
+  private async search(query: string, cachedOnly: boolean): Promise<GeocodeHit | null> {
     const cached = this.cache[query];
     if (cached) return cached.hit;
-    if (!this.online) return null;
+    if (!this.online || cachedOnly) return null;
+    const response = await this.request(query);
+    if (!response) return null;
 
-    const wait = this.lastRequest + 1100 - Date.now();
-    if (wait > 0) await new Promise((resolve) => setTimeout(resolve, wait));
-    this.lastRequest = Date.now();
-    this.requests++;
-
-    const params = new URLSearchParams({
-      q: query,
-      countrycodes: 'gr',
-      viewbox: VIEWBOX,
-      bounded: '1',
-      format: 'jsonv2',
-      limit: '1',
-      'accept-language': 'el',
-    });
-    const response = await fetch(`${ENDPOINT}?${params}`, {
-      headers: { 'User-Agent': USER_AGENT },
-      signal: AbortSignal.timeout(30_000),
-    });
-    if (!response.ok) throw new Error(`Nominatim HTTP ${response.status}`);
-    const [first] = ResultsSchema.parse(await response.json());
+    const [first] = ResultsSchema.parse(response.json);
     const type = first?.addresstype ?? first?.type ?? '';
     const hit: GeocodeHit | null = first
       ? {
@@ -107,16 +92,57 @@ export class Geocoder {
     return hit;
   }
 
-  /** Geocodes an address in a locality, falling back to the locality alone. */
+  /**
+   * One rate-limited request. If Nominatim refuses (429, 5xx or a network
+   * error) after one retry, stops online lookups for the rest of the run:
+   * uncached addresses stay unlocated, and validation decides whether that
+   * blocks publishing.
+   */
+  private async request(query: string): Promise<{ json: unknown } | null> {
+    const params = new URLSearchParams({
+      q: query,
+      countrycodes: 'gr',
+      viewbox: VIEWBOX,
+      bounded: '1',
+      format: 'jsonv2',
+      limit: '1',
+      'accept-language': 'el',
+    });
+    for (let attempt = 0; attempt < 2; attempt++) {
+      const wait = this.lastRequest + (attempt === 0 ? 1100 : 60_000) - Date.now();
+      if (wait > 0) await new Promise((resolve) => setTimeout(resolve, wait));
+      this.lastRequest = Date.now();
+      this.requests++;
+      try {
+        const response = await fetch(`${ENDPOINT}?${params}`, {
+          headers: { 'User-Agent': USER_AGENT },
+          signal: AbortSignal.timeout(30_000),
+        });
+        if (response.ok) return { json: await response.json() };
+        this.stopped = `Nominatim HTTP ${response.status}`;
+        if (response.status !== 429 && response.status < 500) break;
+      } catch (error) {
+        this.stopped = `Nominatim: ${String(error)}`;
+      }
+    }
+    this.online = false;
+    return null;
+  }
+
+  /**
+   * Geocodes an address in a locality, falling back to the locality alone.
+   * With `cachedOnly`, never goes online.
+   */
   async geocode(
     address: string,
     locality: string,
+    { cachedOnly = false } = {},
   ): Promise<(GeocodeHit & { query: string }) | null> {
     const street = cleanAddress(address);
     const queries = [street && /\d/.test(street) ? `${street}, ${locality}` : null, locality];
     for (const query of queries) {
       if (!query) continue;
-      const hit = await this.search(query);
+      const hit = await this.search(query, cachedOnly);
       if (hit) {
         const precision = query === locality ? 'locality' : hit.precision;
         return { ...hit, precision, query };

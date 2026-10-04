@@ -92,7 +92,8 @@ export function validate(data: DataSet): Report {
           if (!pharmacy)
             error('unknown-pharmacy', `${day.date}: ${entry.pharmacyId} is not in the registry`);
           else if (!pharmacy.location) {
-            error(
+            // Only current and future lists reach users.
+            (day.date >= data.today ? error : warn)(
               'no-location',
               `${day.date} ${group.id}: ${pharmacy.id} ${pharmacy.name}, ${pharmacy.address}`,
             );

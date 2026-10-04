@@ -122,6 +122,20 @@ describe('validate', () => {
     expect(report.errors.map((e) => e.code)).toContain('no-location');
   });
 
+  it('only warns about a missing location on a past day', () => {
+    const report = validate({
+      today: '2026-10-05',
+      days: [day('2026-10-01'), day('2026-10-05'), day('2026-10-06')],
+      pharmacies: pharmacies.map((p) => (p.id === ids[299] ? pharmacy(p.id, false) : p)),
+      extended: [],
+    });
+    // The outlying groups list ids[299] on every day: errors for today and tomorrow only.
+    const codes = (list: { code: string; message: string }[]) =>
+      list.filter((e) => e.code === 'no-location').map((e) => e.message.slice(0, 10));
+    expect(new Set(codes(report.errors))).toEqual(new Set(['2026-10-05', '2026-10-06']));
+    expect(new Set(codes(report.warnings))).toEqual(new Set(['2026-10-01']));
+  });
+
   it('warns when tomorrow has no list yet', () => {
     const report = validate({
       today: '2026-10-05',
