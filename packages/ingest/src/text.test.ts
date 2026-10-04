@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { cleanDisplay, joinLines, matchKey, normalizePhone } from './text.ts';
+import { cleanDisplay, joinLines, latinKey, matchKey, normalizePhone } from './text.ts';
 
 describe('joinLines', () => {
   it('joins wrapped lines, keeping hyphenated words together', () => {
@@ -37,5 +37,14 @@ describe('normalizePhone', () => {
     [null, null],
   ])('%s → %s', (raw, expected) => {
     expect(normalizePhone(raw)).toBe(expected);
+  });
+});
+
+describe('latinKey', () => {
+  it('makes Greek and Greeklish spellings comparable', () => {
+    expect(latinKey('ΚΟΜΝΗΝΩΝ 17')).toBe(latinKey('Komninon 17'));
+    expect(latinKey('ΕΛ. ΒΕΝΙΖΕΛΟΥ 14')).toBe(latinKey('El. Venizelou 14'));
+    expect(latinKey('ΣΚΡΑ 4')).toBe(latinKey('Skra 4'));
+    expect(latinKey('Τουρουντζή')).toBe(latinKey('TOUROUNTZI'));
   });
 });

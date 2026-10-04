@@ -258,6 +258,14 @@ try {
   await writeIfChanged(paths.geocodeCache, toJson(sortKeys(geocoder.cache)));
 }
 log(`registry: ${registry.pharmacies.length} pharmacies (${geocoder.requests} Nominatim requests)`);
+{
+  const counts = new Map<string, number>();
+  for (const { location } of registry.pharmacies) {
+    const key = location ? `${location.source}/${location.precision}` : 'unlocated';
+    counts.set(key, (counts.get(key) ?? 0) + 1);
+  }
+  log(`  locations: ${[...counts].map(([key, n]) => `${key} ${n}`).join(', ')}`);
+}
 if (geocoder.stopped) {
   registry.warnings.push({
     code: 'geocoding-stopped',

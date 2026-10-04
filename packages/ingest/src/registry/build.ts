@@ -147,14 +147,19 @@ export async function buildRegistry(
     }
   }
 
-  const pharmacies: Pharmacy[] = [];
-  for (const draft of [...drafts.values()].sort((a, b) => a.id.localeCompare(b.id))) {
-    pharmacies.push({
+  // Locate the pharmacies people are most likely to look for first (on duty
+  // most recently), so a limited geocoding budget goes to them.
+  const located = new Map<string, Location | null>();
+  for (const draft of [...drafts.values()].sort((a, b) => b.lastSeen.localeCompare(a.lastSeen))) {
+    located.set(draft.id, await locate(draft, input, warnings));
+  }
+  const pharmacies: Pharmacy[] = [...drafts.values()]
+    .sort((a, b) => a.id.localeCompare(b.id))
+    .map((draft) => ({
       ...draft,
       sources: [...draft.sources].sort(),
-      location: await locate(draft, input, warnings),
-    });
-  }
+      location: located.get(draft.id) ?? null,
+    }));
   return { pharmacies, warnings };
 }
 
@@ -171,9 +176,11 @@ async function locate(
   const override = input.overrides[draft.id]?.location;
   if (override) return { ...override, source: 'override', precision: 'exact' };
 
-  const byPhone = input.overture.findByPhone(draft.phone);
-  // A phone match is enough; the geocode is only a cross-check then, so it
-  // uses cached results and spares Nominatim.
+  // A phone match, or a name and street match, is enough. The geocode is then
+  // only a cross-check, so it uses cached results and spares Nominatim.
+  const byPhone =
+    input.overture.findByPhone(draft.phone) ??
+    input.overture.findByNameAndAddress(draft.name, draft.address);
   const hit = await input.geocoder.geocode(draft.address, draft.locality, {
     cachedOnly: byPhone !== undefined,
   });
@@ -185,7 +192,7 @@ async function locate(
     ) {
       warnings.push({
         code: 'location-disagreement',
-        message: `${draft.id} ${draft.name}: Overture (by phone) is ${Math.round(distanceMetres(hit, byPhone))} m from "${hit.query}"`,
+        message: `${draft.id} ${draft.name}: Overture is ${Math.round(distanceMetres(hit, byPhone))} m from "${hit.query}"`,
       });
     }
     return {

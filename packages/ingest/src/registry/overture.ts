@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { normalizePhone } from '../text.ts';
-import { shareNameToken } from './names.ts';
+import { sameStreetAddress, shareNameToken } from './names.ts';
 
 export const OverturePlaceSchema = z.object({
   id: z.string(),
@@ -42,6 +42,19 @@ export class OvertureIndex {
     const valid = normalizePhone(phone);
     if (!valid) return undefined;
     return [...(this.byPhone.get(valid) ?? [])].sort((a, b) => b.confidence - a.confidence)[0];
+  }
+
+  /** The most confident place that shares a name word and the street address. */
+  findByNameAndAddress(name: string, address: string): OverturePlace | undefined {
+    return this.places
+      .filter(
+        (place) =>
+          place.name &&
+          place.address &&
+          shareNameToken(name, place.name) &&
+          sameStreetAddress(address, place.address),
+      )
+      .sort((a, b) => b.confidence - a.confidence)[0];
   }
 
   /** The nearest place within `radius` metres whose name shares a word with `name`. */

@@ -61,16 +61,26 @@ export class Geocoder {
   readonly cache: GeocodeCache;
   private online: boolean;
 
-  /** With `online` false, only cached results are used. */
-  constructor(cache: GeocodeCache, online: boolean) {
+  private readonly budget: number;
+
+  /**
+   * With `online` false, only cached results are used. `budget` caps the
+   * requests per run; Nominatim's usage policy forbids bulk geocoding.
+   */
+  constructor(cache: GeocodeCache, online: boolean, budget = 150) {
     this.cache = cache;
     this.online = online;
+    this.budget = budget;
   }
 
   private async search(query: string, cachedOnly: boolean): Promise<GeocodeHit | null> {
     const cached = this.cache[query];
     if (cached) return cached.hit;
     if (!this.online || cachedOnly) return null;
+    if (this.requests >= this.budget) {
+      this.stopped ??= `geocoding budget of ${this.budget} requests reached`;
+      return null;
+    }
     const response = await this.request(query);
     if (!response) return null;
 

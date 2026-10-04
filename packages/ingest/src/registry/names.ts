@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { matchKey, normalizePhone } from '../text.ts';
+import { latinKey, matchKey, normalizePhone } from '../text.ts';
 
 // Legal forms and connecting words that say nothing about which pharmacy it is.
 const NOISE = new Set([
@@ -48,10 +48,14 @@ export function nameSimilarity(a: string, b: string): number {
   return common / (ta.size + tb.size - common);
 }
 
-/** Do two names share a distinctive word (e.g. a surname)? */
+const latinNameTokens = memo(
+  (name: string): ReadonlySet<string> => new Set([...nameTokens(name)].map(latinKey)),
+);
+
+/** Do two names share a distinctive word (e.g. a surname), in Greek or Greeklish? */
 export function shareNameToken(a: string, b: string): boolean {
-  const tb = nameTokens(b);
-  for (const token of nameTokens(a)) if (tb.has(token)) return true;
+  const tb = latinNameTokens(b);
+  for (const token of latinNameTokens(a)) if (tb.has(token)) return true;
   return false;
 }
 
@@ -61,10 +65,10 @@ export function shareNameToken(a: string, b: string): boolean {
  * a house number and a street word (4+ letters) in common.
  */
 const addressParts = memo((address: string) => {
-  const words = matchKey(address).split(' ');
+  const words = latinKey(address).split(' ');
   return {
     numbers: new Set(words.filter((word) => /^\d+$/.test(word))),
-    words: new Set(words.filter((word) => /^\p{L}{4,}$/u.test(word))),
+    words: new Set(words.filter((word) => /^[A-Z]{4,}$/.test(word))),
   };
 });
 

@@ -77,3 +77,53 @@ export function normalizePhone(raw: string | null | undefined): string | null {
   else if (digits.startsWith('30') && digits.length === 12) digits = digits.slice(2);
   return /^[26]\d{9}$/.test(digits) ? digits : null;
 }
+
+// Greek to Latin, close enough to compare Greek text with Greeklish
+// ("ΚΟΜΝΗΝΩΝ" and "Komninon"). The vowels that sound like "i" all become I.
+const GREEKLISH: readonly (readonly [RegExp, string])[] = [
+  [/ΟΥ/g, 'OU'],
+  [/ΜΠ/g, 'B'],
+  [/ΝΤ/g, 'D'],
+  [/ΓΚ/g, 'G'],
+  [/ΘΘ|Θ/g, 'TH'],
+  [/Χ/g, 'CH'],
+  [/Ψ/g, 'PS'],
+  [/Ξ/g, 'X'],
+  [/Φ/g, 'F'],
+];
+const GREEK_LETTERS: Readonly<Record<string, string>> = {
+  Α: 'A',
+  Β: 'V',
+  Γ: 'G',
+  Δ: 'D',
+  Ε: 'E',
+  Ζ: 'Z',
+  Η: 'I',
+  Ι: 'I',
+  Κ: 'K',
+  Λ: 'L',
+  Μ: 'M',
+  Ν: 'N',
+  Ο: 'O',
+  Π: 'P',
+  Ρ: 'R',
+  Σ: 'S',
+  Τ: 'T',
+  Υ: 'I',
+  Ω: 'O',
+};
+
+/**
+ * Like matchKey, but in Latin letters, so Greek and Greeklish spellings of the
+ * same street or surname compare equal more often. For matching only.
+ */
+export function latinKey(text: string): string {
+  let key = matchKey(text);
+  for (const [pattern, latin] of GREEKLISH) key = key.replace(pattern, latin);
+  key = key.replace(/[\u0370-\u03ff]/g, (c) => GREEK_LETTERS[c] ?? c);
+  // Normalise Latin spellings the same way: Y, H after a consonant, double letters.
+  return key
+    .replace(/Y/g, 'I')
+    .replace(/PH/g, 'F')
+    .replace(/([A-Z])\1/g, '$1');
+}
