@@ -21,27 +21,114 @@ export interface Warning {
 // "ΣΤΑΥΡΑΚΗΣ ΣΤΑΥΡΟΣ - ΛΩΤΙΔΗΣ ΙΣΑΑΚ ΟΕ" (Βουλγάρη 38) are different pharmacies.
 const NAME_ONLY_MATCH = 0.8;
 
+interface Candidate {
+  readonly id: string;
+  readonly score: number;
+  /** Same street address and a shared name word: the entry is this pharmacy, not just a namesake. */
+  readonly strong: boolean;
+}
+
+/** Every duty-list pharmacy an extended-hours entry could be, best first. */
+function candidates(
+  entry: Pick<ExtendedHoursEntry, 'name' | 'address' | 'area'>,
+  pharmacies: readonly (Pick<Pharmacy, 'id' | 'name' | 'address'> & { locality?: string })[],
+): Candidate[] {
+  const found: Candidate[] = [];
+  for (const pharmacy of pharmacies) {
+    const similarity = nameSimilarity(entry.name, pharmacy.name);
+    const strong =
+      sameStreetAddress(entry.address, pharmacy.address) &&
+      shareNameToken(entry.name, pharmacy.name);
+    const score = strong ? 1 + similarity : similarity >= NAME_ONLY_MATCH ? similarity : 0;
+    if (score === 0) continue;
+    // A tie-breaker only: the same locality is a little more convincing.
+    const sameLocality =
+      pharmacy.locality !== undefined && matchKey(pharmacy.locality) === matchKey(entry.area);
+    found.push({ id: pharmacy.id, score: score + (sameLocality ? 0.01 : 0), strong });
+  }
+  return found.sort((a, b) => b.score - a.score);
+}
+
 /**
  * Finds the duty-list pharmacy an extended-hours entry refers to. ΠΚΜ lists
  * have no phone numbers, so this goes by name and street address.
  */
 export function matchExtendedEntry(
-  entry: Pick<ExtendedHoursEntry, 'name' | 'address'>,
-  pharmacies: readonly Pick<Pharmacy, 'id' | 'name' | 'address'>[],
+  entry: Pick<ExtendedHoursEntry, 'name' | 'address'> & { area?: string },
+  pharmacies: readonly (Pick<Pharmacy, 'id' | 'name' | 'address'> & { locality?: string })[],
 ): string | null {
-  let best: { id: string; score: number } | undefined;
-  for (const pharmacy of pharmacies) {
-    const similarity = nameSimilarity(entry.name, pharmacy.name);
-    const sameStreet = sameStreetAddress(entry.address, pharmacy.address);
-    const score =
-      sameStreet && shareNameToken(entry.name, pharmacy.name)
-        ? 1 + similarity
-        : similarity >= NAME_ONLY_MATCH
-          ? similarity
-          : 0;
-    if (score > 0 && (!best || score > best.score)) best = { id: pharmacy.id, score };
+  return candidates({ area: '', ...entry }, pharmacies)[0]?.id ?? null;
+}
+
+/**
+ * Gives every entry of one ΠΚΜ list its own pharmacy id. A pharmacist with two shops
+ * has two rows with the same name; a name-only match would map both to one pharmacy,
+ * and the second row's hours would then replace the first's. So each pharmacy is
+ * claimed once, by the best match (street first, then the sheet order):
+ * - a later row that also matches the street of a claimed pharmacy is a duplicate
+ *   row: it is dropped (`ids[i]` is null);
+ * - a later row that only matches by name is a different shop: it takes its next
+ *   street match, or else a new id of its own.
+ * Every dropped or re-assigned row is reported.
+ */
+export function matchExtendedEntries(
+  entries: readonly Pick<ExtendedHoursEntry, 'name' | 'address' | 'postcode' | 'area'>[],
+  pharmacies: readonly (Pick<Pharmacy, 'id' | 'name' | 'address'> & { locality?: string })[],
+): { ids: (string | null)[]; warnings: Warning[] } {
+  const ranked = entries.map((entry) => candidates(entry, pharmacies));
+  const order = entries
+    .map((_, index) => index)
+    .sort((a, b) => (ranked[b]?.[0]?.score ?? 0) - (ranked[a]?.[0]?.score ?? 0) || a - b);
+  const ids: (string | null)[] = entries.map(() => null);
+  const claimedBy = new Map<string, number>();
+  const warnings: Warning[] = [];
+  const describe = (i: number) => {
+    const e = entries[i];
+    return `"${e?.name}", ${e?.address} ${e?.postcode} ${e?.area}`;
+  };
+
+  for (const i of order) {
+    const entry = entries[i];
+    const options = ranked[i] ?? [];
+    if (!entry) continue;
+    const best = options[0];
+    if (!best) {
+      ids[i] = claimNew(entry, i, claimedBy);
+      continue;
+    }
+    const free = options.find((c) => !claimedBy.has(c.id) && (c === best || c.strong));
+    if (free) {
+      ids[i] = free.id;
+      claimedBy.set(free.id, i);
+      continue;
+    }
+    const owner = claimedBy.get(best.id) ?? -1;
+    if (best.strong) {
+      warnings.push({
+        code: 'duplicate-extended',
+        message: `row left out, same pharmacy ${best.id} as ${describe(owner)}: ${describe(i)}`,
+      });
+    } else {
+      ids[i] = claimNew(entry, i, claimedBy);
+      warnings.push({
+        code: 'duplicate-extended',
+        message: `${describe(i)} shares a name with ${best.id} (${describe(owner)}) but not its address: kept as a separate pharmacy ${ids[i]}`,
+      });
+    }
   }
-  return best?.id ?? null;
+  return { ids, warnings };
+}
+
+/** An id for an entry with no pharmacy of its own yet; the address keeps two shops apart. */
+function claimNew(
+  entry: Pick<ExtendedHoursEntry, 'name' | 'address' | 'area'>,
+  index: number,
+  claimedBy: Map<string, number>,
+): string {
+  let id = pharmacyId(null, entry.name, entry.area);
+  if (claimedBy.has(id)) id = pharmacyId(null, entry.name, `${entry.area} ${entry.address}`);
+  claimedBy.set(id, index);
+  return id;
 }
 
 /**

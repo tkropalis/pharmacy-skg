@@ -28,12 +28,12 @@ Decisions D20–D22 adjust this milestone: duty PDFs come via thess.guide, hours
 
 **Done when** a week of scheduled runs matches the official ΦΣΘ lists.
 
-## M2: "Open now" logic
+## M2: "Open now" logic (in review)
 
-Pure TypeScript in `packages/core`.
+Pure TypeScript in `packages/core`, specified by decision D23.
 
 - **Covers:**
-  - regular hours and the summer schedule;
+  - regular hours (a data table; the summer schedule is not applied until one is verified);
   - extended hours;
   - every duty type, including after midnight;
   - national holidays, including those that move with Orthodox Easter, plus local holidays;
@@ -42,7 +42,15 @@ Pure TypeScript in `packages/core`.
   - is pharmacy X open at time T, and until when;
   - when does it next open;
   - which pharmacies are open now, sorted by distance.
-- **Tests:** table-driven, covering midnight crossings, the DST switch and holidays that fall on weekends.
+- **Tests:** table-driven, covering midnight crossings, the DST switch and holidays that fall on weekends, plus the real data under `data/thessaloniki`.
+
+**Done:**
+
+- Modules: `zoned.ts` (Intl-only time-zone maths), `holidays.ts`, `regular-hours.ts`, `open.ts` (`openIntervals`, `pharmacyStatus`, `openPharmacies`, `publishedDuties`, `coverage`, `distanceMetres`).
+- `packages/ingest/src/core-contract.test.ts` keeps the zod schemas assignable to the core types.
+- `openPharmacies` over the 1,028 pharmacies in `data/` takes about 10–20 ms.
+- Not done: the 1 May transfer rule, and any summer schedule.
+- **Before 1 Jul 2027:** verify and add the 2027 summer schedule (`regular-hours.ts`). The July 2026 duty lists show it (see [research.md](research.md), section 2).
 
 ## M3: The app
 

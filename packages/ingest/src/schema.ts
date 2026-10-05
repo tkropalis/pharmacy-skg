@@ -6,6 +6,7 @@
  */
 import { z } from 'zod';
 import { DUTY_KINDS } from './fsth/heading.ts';
+import { isProperRange } from './time.ts';
 
 export const SCHEMA_VERSION = 1;
 
@@ -15,6 +16,9 @@ const time = z.string().regex(/^([01]\d|2[0-3]):[0-5]\d$/, 'HH:MM');
 
 export const TimeWindowSchema = z
   .object({ from: time, to: time, toNextDay: z.boolean() })
+  .refine((w) => w.toNextDay || w.from < w.to, {
+    message: 'a window that does not end the next day must end after it starts',
+  })
   .describe('Local time (Europe/Athens). toNextDay: ends after midnight, including at 00:00.');
 
 export const ExtraHoursSchema = z.object({
@@ -93,7 +97,11 @@ export const PharmaciesSchema = z.object({
   pharmacies: z.array(PharmacySchema),
 });
 
-export const TimeRangeSchema = z.object({ from: time, to: time });
+export const TimeRangeSchema = z
+  .object({ from: time, to: time })
+  .refine((r) => isProperRange(r.from, r.to), {
+    message: 'a range must end after it starts, or end at 00:00 (midnight)',
+  });
 
 export const ScheduleSchema = z.discriminatedUnion('type', [
   z.object({

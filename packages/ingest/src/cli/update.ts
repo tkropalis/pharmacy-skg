@@ -17,12 +17,11 @@ import { readFirstSheet } from '../pkm/xlsx.ts';
 import {
   buildRegistry,
   dutyEntryId,
-  matchExtendedEntry,
+  matchExtendedEntries,
   type Override,
   type Warning,
 } from '../registry/build.ts';
 import { GeocodeCacheSchema, Geocoder } from '../registry/geocode.ts';
-import { pharmacyId } from '../registry/names.ts';
 import { OverturePlaceSchema, OvertureIndex } from '../registry/overture.ts';
 import {
   DutyDaySchema,
@@ -200,7 +199,8 @@ for (const [key, link] of announcements) {
   ) {
     continue;
   }
-  const { entries } = parseExtendedHours(readFirstSheet(await getBytes(link.fileUrl)));
+  const { entries, warnings } = parseExtendedHours(readFirstSheet(await getBytes(link.fileUrl)));
+  parseFailures.push(...warnings);
   extendedFiles.set(
     file,
     ExtendedHoursSchema.parse({
@@ -220,13 +220,14 @@ for (const [file, list] of extendedFiles) {
     extendedFiles.delete(file);
     continue;
   }
+  const matched = matchExtendedEntries(list.entries, dutyPharmacyList);
+  parseFailures.push(...matched.warnings.map((w) => ({ ...w, message: `${file}: ${w.message}` })));
   extendedFiles.set(file, {
     ...list,
-    entries: list.entries.map((entry) => ({
-      ...entry,
-      pharmacyId:
-        matchExtendedEntry(entry, dutyPharmacyList) ?? pharmacyId(null, entry.name, entry.area),
-    })),
+    entries: list.entries.flatMap((entry, i) => {
+      const pharmacyId = matched.ids[i];
+      return pharmacyId ? [{ ...entry, pharmacyId }] : [];
+    }),
   });
 }
 
