@@ -18,6 +18,8 @@ export interface QuietEnvironment {
   /** Calls `onInput` for every touch, key press, wheel turn and scroll. Returns a stop function. */
   watchInput(onInput: () => void): () => void;
   visible(): boolean;
+  /** Calls `onChange` whenever the page is shown or hidden. Returns a stop function. */
+  watchVisibility(onChange: () => void): () => void;
 }
 
 export interface QuietOptions {
@@ -59,12 +61,16 @@ export const browserEnvironment: QuietEnvironment = {
     };
   },
   visible: () => document.visibilityState === 'visible',
+  watchVisibility(onChange) {
+    document.addEventListener('visibilitychange', onChange);
+    return () => document.removeEventListener('visibilitychange', onChange);
+  },
 };
 
 /**
  * Runs `task` once the page has been quiet for `quietMs` while it is visible, or `maxWaitMs`
- * after the call at the latest (if the page is visible by then). Returns a function that
- * cancels it.
+ * after the call at the latest (if the page is visible by then). A page that is ready but hidden
+ * waits for the next visibility change instead of polling. Returns a function that cancels it.
  */
 export function whenPageQuiet(
   task: () => void,
@@ -84,6 +90,13 @@ export function whenPageQuiet(
     env.watchInput(() => {
       lastActivity = env.now();
     }),
+    // A hidden page is not polled: it is looked at again when it is shown.
+    env.watchVisibility(() => {
+      if (!stopped && env.visible()) {
+        env.clearTimeout(timer);
+        check();
+      }
+    }),
   ];
 
   const stop = () => {
@@ -102,11 +115,12 @@ export function whenPageQuiet(
       task();
       return;
     }
-    // Look again when it could be quiet (or overdue); a hidden page looks again in a second.
+    // Ready but hidden: nothing to schedule, the visibility watcher calls this again.
+    if (quiet || overdue) return;
+    // Look again when it could be quiet (or overdue).
     const untilQuiet = quietMs - (now - lastActivity);
     const untilOverdue = maxWaitMs - (now - asked);
-    const wait = quiet || overdue ? 1000 : Math.min(untilQuiet, untilOverdue);
-    timer = env.setTimeout(check, Math.max(wait, 50));
+    timer = env.setTimeout(check, Math.max(Math.min(untilQuiet, untilOverdue), 50));
   };
   timer = env.setTimeout(check, quietMs);
   return stop;

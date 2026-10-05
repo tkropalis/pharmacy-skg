@@ -9,6 +9,7 @@ function fakeEnvironment() {
   const timers = new Map<number, { at: number; task: () => void }>();
   let activity: ((endedAt: number) => void) | null = null;
   let input: (() => void) | null = null;
+  let visibility: (() => void) | null = null;
   const state = { visible: true, watching: 0 };
 
   const env: QuietEnvironment = {
@@ -32,6 +33,11 @@ function fakeEnvironment() {
       return () => state.watching--;
     },
     visible: () => state.visible,
+    watchVisibility(onChange) {
+      visibility = onChange;
+      state.watching++;
+      return () => state.watching--;
+    },
   };
 
   function advance(ms: number) {
@@ -54,6 +60,11 @@ function fakeEnvironment() {
     state,
     network: (endedAt = clock) => activity?.(endedAt),
     touch: () => input?.(),
+    show() {
+      state.visible = true;
+      visibility?.();
+    },
+    pendingTimers: () => timers.size,
   };
 }
 
@@ -128,8 +139,34 @@ describe('whenPageQuiet', () => {
     whenPageQuiet(task, OPTIONS, page.env);
     page.advance(60_000);
     expect(task).not.toHaveBeenCalled();
-    page.state.visible = true;
+    page.show();
+    expect(task).toHaveBeenCalledOnce();
+    expect(page.state.watching).toBe(0);
+  });
+
+  it('does not poll while the page is hidden: it waits for the visibility change', () => {
+    const page = fakeEnvironment();
+    const task = vi.fn();
+    page.state.visible = false;
+    whenPageQuiet(task, OPTIONS, page.env);
+    page.advance(OPTIONS.quietMs); // quiet now, but hidden
+    expect(page.pendingTimers()).toBe(0);
+    page.advance(10 * 60_000);
+    expect(task).not.toHaveBeenCalled();
+    expect(page.pendingTimers()).toBe(0);
+    page.show();
+    expect(task).toHaveBeenCalledOnce();
+  });
+
+  it('keeps waiting for quiet when it is shown while the page is still busy', () => {
+    const page = fakeEnvironment();
+    const task = vi.fn();
+    page.state.visible = false;
+    whenPageQuiet(task, OPTIONS, page.env);
     page.advance(1000);
+    page.show();
+    expect(task).not.toHaveBeenCalled();
+    page.advance(2000);
     expect(task).toHaveBeenCalledOnce();
   });
 
