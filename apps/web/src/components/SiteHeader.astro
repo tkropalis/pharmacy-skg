@@ -1,0 +1,91 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import { APP_NAME } from '../config.ts';
+import { localizedPath } from '../i18n/index.ts';
+import type { RouteKey } from '../i18n/index.ts';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+
+interface Props {
+  locale: Locale;
+  /** null on pages without a counterpart (404): the switcher then links to the home pages. */
+  route: RouteKey | null;
+  /** Explicit per-locale paths for generated pages that have no RouteKey. */
+  alternates?: Record<Locale, string> | undefined;
+}
+
+const { locale, route, alternates } = Astro.props;
+---
+
+<header class="site-header">
+  <div class="container inner">
+    <a class="brand" href={localizedPath(locale, 'home')}>
+      <svg class="logo" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <rect width="32" height="32" rx="6"></rect>
+        <path d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"></path>
+      </svg>
+      <span class="name">{APP_NAME[locale]}</span>
+    </a>
+    <LanguageSwitcher locale={locale} route={route ?? 'home'} alternates={alternates} />
+  </div>
+</header>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+  }
+
+  /* The title and the language switcher share one row, even on a phone. */
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding-block: 0.25rem;
+  }
+
+  .brand {
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+    min-height: 2.75rem;
+    color: var(--fg);
+    font-weight: 700;
+    font-size: 0.9375rem;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+
+  .logo {
+    flex: none;
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .logo rect {
+    fill: var(--accent);
+  }
+
+  .logo path {
+    fill: var(--on-accent);
+  }
+
+  @media (min-width: 40rem) {
+    .inner {
+      gap: 1rem;
+      padding-block: 0.75rem;
+    }
+
+    .brand {
+      gap: 0.625rem;
+      font-size: 1.0625rem;
+    }
+
+    .logo {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+</style>

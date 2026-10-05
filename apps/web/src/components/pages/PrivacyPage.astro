@@ -1,0 +1,40 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import { REPO_URL } from '../../config.ts';
+import { t } from '../../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const d = t(locale).privacy;
+---
+
+<div class="container prose">
+  <h1>{d.title}</h1>
+  <p class="lead">{d.summary}</p>
+
+  {d.sections.map((section) => (
+    <section>
+      <h2>{section.heading}</h2>
+      {section.paragraphs.map((p) => (
+        <p>{p}</p>
+      ))}
+    </section>
+  ))}
+
+  <p>
+    {d.contact}{' '}
+    <a href={`${REPO_URL}/issues`} rel="noopener">
+      GitHub
+    </a>
+  </p>
+</div>
+
+<style>
+  .lead {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+</style>

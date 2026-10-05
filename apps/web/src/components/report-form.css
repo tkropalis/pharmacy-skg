@@ -1,0 +1,60 @@
+.report-form {
+  display: grid;
+  gap: 1.25rem;
+  margin-block: 1.5rem;
+}
+
+.report-form .field {
+  display: grid;
+  gap: 0.375rem;
+}
+
+.report-form label {
+  font-weight: 600;
+}
+
+.report-form .hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.report-form input,
+.report-form select,
+.report-form textarea {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--muted);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--fg);
+  font: inherit;
+}
+
+.report-form textarea {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+.report-form .counter {
+  justify-self: end;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.report-form .actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/* The honeypot: out of sight and out of the tab order, but present in the DOM for bots. */
+.report-form .hp {
+  position: absolute;
+  inset-inline-start: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

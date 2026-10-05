@@ -1,6 +1,6 @@
 # Email to ΦΣΘ (draft)
 
-On hold until the app is live; the owner decides when to send it (decisions D2, D20). Before sending, fill in the bracketed parts, attach the one-page brief and a link to the live app, and send from a personal address.
+On hold until the app is live; the owner decides when to send it (decisions D2, D20). Before sending, fill in the bracketed parts, attach the one-page brief ([fsth-brief.md](fsth-brief.md)) and a link to the live app, and send from a personal address.
 
 **To:** ΦΣΘ secretariat (address from https://fsth.gr/ contact page)
 **Subject:** Δωρεάν εφαρμογή για ανοιχτά φαρμακεία Θεσσαλονίκης – αίτημα πρόσβασης στα δεδομένα εφημεριών

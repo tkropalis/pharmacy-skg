@@ -1,0 +1,105 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import EmergencyStrip from '../components/EmergencyStrip.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import StaleBanner from '../components/StaleBanner.astro';
+import { APP_NAME, THEME_COLORS } from '../config.ts';
+import { alternatePaths, t } from '../i18n/index.ts';
+import type { RouteKey } from '../i18n/index.ts';
+import '../styles/global.css';
+
+interface Props {
+  locale: Locale;
+  /** The page's route, for canonical and hreflang URLs. null for the 404 page. */
+  route: RouteKey | null;
+  title: string;
+  description: string;
+  /**
+   * Explicit path of this page in every locale, for generated pages with a parameter (pharmacy,
+   * duty date, area) that have no RouteKey. Sets canonical, hreflang and the language switcher.
+   */
+  alternates?: Record<Locale, string>;
+}
+
+const { locale, route, title, description, alternates: pageAlternates } = Astro.props;
+const d = t(locale);
+
+const site = Astro.site ?? new URL('https://pharmacy-skg.vercel.app');
+const absolute = (path: string) => new URL(path, site).href;
+const alternates = pageAlternates ?? (route === null ? null : alternatePaths(route));
+const canonical = alternates === null ? null : absolute(alternates[locale]);
+const fullTitle = route === 'home' ? `${APP_NAME[locale]}` : `${title} · ${APP_NAME[locale]}`;
+const ogLocales: Record<Locale, string> = { el: 'el_GR', en: 'en_US' };
+const analytics = import.meta.env.PROD && import.meta.env.PUBLIC_ANALYTICS === 'vercel';
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {(alternates === null || route === 'report') && <meta name="robots" content="noindex" />}
+
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content={THEME_COLORS.light} media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content={THEME_COLORS.dark} media="(prefers-color-scheme: dark)" />
+    <script is:inline src="/stale-check.js"></script>
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/icons/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    {canonical !== null && <link rel="canonical" href={canonical} />}
+    {alternates !== null &&
+      Object.entries(alternates).map(([code, path]) => (
+        <link rel="alternate" hreflang={code} href={absolute(path)} />
+      ))}
+    {alternates !== null && (
+      <link rel="alternate" hreflang="x-default" href={absolute(alternates.el)} />
+    )}
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={APP_NAME[locale]} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    {canonical !== null && <meta property="og:url" content={canonical} />}
+    <meta property="og:locale" content={ogLocales[locale]} />
+    {Object.entries(ogLocales)
+      .filter(([code]) => code !== locale)
+      .map(([, og]) => (
+        <meta property="og:locale:alternate" content={og} />
+      ))}
+    <meta property="og:image" content={absolute('/og-image.png')} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={APP_NAME[locale]} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={absolute('/og-image.png')} />
+
+    {analytics && <script is:inline defer src="/_vercel/insights/script.js" />}
+    <slot name="head" />
+  </head>
+  <body
+    data-update-available={d.update.available}
+    data-update-reload={d.update.reload}
+    data-update-dismiss={d.update.dismiss}
+  >
+    <a class="skip-link" href="#main">
+      {d.skipToContent}
+    </a>
+    <EmergencyStrip locale={locale} />
+    <SiteHeader locale={locale} route={route} alternates={pageAlternates} />
+    <StaleBanner locale={locale} />
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+    <SiteFooter locale={locale} />
+    <script>
+      import '../scripts/boot.ts';
+    </script>
+  </body>
+</html>

@@ -39,13 +39,13 @@ Agreed during the planning rounds on 4 Oct 2026. To change a decision, edit this
 
 These were chosen without a formal decision and apply until someone objects.
 
-- **Status labels:** a pharmacy from the ΦΣΘ duty list shows "On duty (ΦΣΘ list)". One that is open only by its regular hours shows "Open (regular hours)", because we can't know about individual closures. Status is never shown by colour alone.
+- **Status labels:** a pharmacy from the ΦΣΘ duty list shows "On duty (ΦΣΘ list)". One that is open only by its regular hours shows "Open (regular hours)", because we can't know about individual closures. One on the ΠΚΜ extended-hours list shows "Open (extended hours)" (Greek: "Ανοιχτό (διευρυμένο ωράριο)", ΠΚΜ's own term). An on-duty pharmacy whose list prints no hours says so and asks to call. The same words are used on the home screen, the legend and every page (`apps/web/src/i18n/status-labels.ts`). Status is never shown by colour alone.
 - **Stale data:** if the newest data is older than 36 hours, show a warning banner. Never hide the data silently.
 - **Privacy:** the user's location and medicine searches never leave the device. Distances are computed on the device.
 - **Look:** light/dark follows the system setting, with a pharmacy-green accent. Accessibility target: WCAG 2.2 AA.
 - **Legal:** a disclaimer ("call before you go; not medical advice"), a privacy page, and credits for every data source.
 - **Name:** "pharmacy-skg" is a working title. The public name and domain are chosen before launch.
-- **Map:** MapLibre GL JS with OpenFreeMap tiles and Greek labels.
+- **Map:** MapLibre GL JS with OpenFreeMap tiles and Greek labels. It starts once the page has settled after the list (about 1–2 s after the list), or at once when touched, so that starting it does not block the first reading and scrolling (apps/web/README.md, Lighthouse).
 - **Directions:** deep links into Google Maps, Apple Maps or Waze, plus a call link. No routing API.
 - **Geocoding:** once per address, with Nominatim. Results are stored with their source and a confidence level, and manual corrections live in the repo. Google geocoding is not used, because of its terms.
 - **Tooling:**

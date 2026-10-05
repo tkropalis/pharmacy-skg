@@ -1,0 +1,45 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import { t } from '../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const d = t(locale);
+---
+
+<!--
+  Always in the markup, hidden by CSS. public/stale-check.js (a blocking script in <head>)
+  sets html[data-stale] before the first paint when the data is older than 36 hours, so the
+  banner is evaluated on the client at runtime and never shifts the layout.
+-->
+<div class="stale-banner" role="status">
+  <div class="container">
+    <div class="callout">
+      <p>
+        <strong>{d.stale.title}</strong> {d.stale.body}
+        <span class="when">
+          {d.footer.lastUpdatedLabel} <time data-updated-at>—</time>
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .stale-banner {
+    display: none;
+    padding-block: 0.5rem;
+    background: var(--bg);
+  }
+
+  html[data-stale] .stale-banner {
+    display: block;
+  }
+
+  .stale-banner .when {
+    display: block;
+  }
+</style>

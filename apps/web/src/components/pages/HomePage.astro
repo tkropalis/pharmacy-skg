@@ -1,0 +1,85 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import { t } from '../../i18n/index.ts';
+import { dutyIndexPath } from '../../i18n/routes.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const d = t(locale).home;
+const app = t(locale).app;
+// The page carries nothing that depends on the date or on the data (a rebuild must not change
+// it, or every data update would create a new service worker version): the link goes to the
+// list of dates, and the interactive app that replaces this content works out today itself.
+const dutyHref = dutyIndexPath(locale);
+---
+
+<!--
+  #app holds the content that works without JavaScript (intro and a link to today's duty list).
+  scripts/home-app.tsx replaces it with the map and the list. It is mounted from a bundled
+  module script, not an Astro island, because islands emit inline scripts that the site's
+  Content-Security-Policy (vercel.json, script-src 'self') forbids.
+-->
+<div
+  id="app"
+  class="app-region"
+  role="region"
+  aria-label={app.regionLabel}
+  data-locale={locale}
+  data-title={d.title}
+  data-text={JSON.stringify(app)}
+>
+  <div class="container fallback">
+    <svg class="cross" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <rect width="32" height="32" rx="6"></rect>
+      <path d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"></path>
+    </svg>
+    <h1>{d.title}</h1>
+    <p>{d.intro}</p>
+    <p>
+      <a class="button" href={dutyHref}>
+        {d.dutyLink}
+      </a>
+    </p>
+    <noscript>
+      <p>{d.noScript}</p>
+    </noscript>
+    <p>
+      {d.fsthLead}{' '}
+      <a href="https://fsth.gr/" rel="noopener">
+        {d.fsthName}
+      </a>
+    </p>
+  </div>
+</div>
+
+<script>
+  import '../../scripts/home-app.tsx';
+</script>
+
+<style>
+  .app-region {
+    /* Keeps the page from jumping when the app replaces this content. */
+    min-height: calc(100dvh - 7rem);
+  }
+
+  .fallback {
+    padding-block: 2.5rem;
+  }
+
+  .cross {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .cross rect {
+    fill: var(--accent);
+  }
+
+  .cross path {
+    fill: var(--on-accent);
+  }
+</style>

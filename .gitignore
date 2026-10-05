@@ -11,3 +11,7 @@ coverage/
 
 # Internal analysis output (e.g. the reconstructed rotation, decision D11)
 .cache/
+
+# Playwright
+playwright-report/
+test-results/

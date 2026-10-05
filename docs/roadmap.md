@@ -52,7 +52,7 @@ Pure TypeScript in `packages/core`, specified by decision D23.
 - Not done: the 1 May transfer rule, and any summer schedule.
 - **Before 1 Jul 2027:** verify and add the 2027 summer schedule (`regular-hours.ts`). The July 2026 duty lists show it (see [research.md](research.md), section 2).
 
-## M3: The app
+## M3: The app (in review)
 
 - **Structure:**
   - Greek routes by default, English under `/en`;
@@ -71,8 +71,13 @@ Pure TypeScript in `packages/core`, specified by decision D23.
   - an emergency strip (166, 112, Poison Centre).
 - **Search engines:** pages per area and day, and per pharmacy, plus a sitemap.
 - **Quality:** Playwright smoke tests, plus Lighthouse and accessibility passes.
+  - Done: `apps/web/e2e` (Chromium, 390×844 phone and 1280×800 desktop, fixed clock, tile server stubbed) covers the home screen in both languages, the area picker, the pharmacy, duty-date and area pages (lang, canonical, hreflang), the report form (success, 503 fallback), offline reload with the map, touch targets and focus, and axe (WCAG 2.2 A/AA) on seven pages × two languages × two colour schemes. `pnpm e2e` builds with `PHARMACY_TODAY` and runs; CI has a separate `e2e` job.
+  - Done: Lighthouse on the built home, a pharmacy page and a duty page (mobile): 90 or more for accessibility, best practices and SEO; the home screen's performance is 93 to 100 after the map was made to wait for a settled page (see apps/web/README.md).
+  - Open for M4: test on real devices; a Vercel Firewall rate-limit rule for `/api/report`; a check that `POST /api/report/` reaches the function on Vercel.
 
 ## M4: Beta launch
+
+The owner's steps are in [beta-checklist.md](beta-checklist.md). The one-page brief for ΦΣΘ is in [outreach/fsth-brief.md](outreach/fsth-brief.md).
 
 - Test on real devices (iOS Safari, Android Chrome) and fix what's found.
 - **Owner:**

@@ -1,0 +1,57 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import { LOCALES } from '@pharmacy-skg/core';
+import { alternatePaths, t } from '../i18n/index.ts';
+import type { RouteKey } from '../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+  /** The page being shown; the switcher links to the same page in the other locale. */
+  route: RouteKey;
+  /** Explicit per-locale paths for generated pages (pharmacy, duty date, area). */
+  alternates?: Record<Locale, string> | undefined;
+}
+
+const { locale, route, alternates } = Astro.props;
+const paths = alternates ?? alternatePaths(route);
+const others = LOCALES.filter((l) => l !== locale);
+---
+
+<nav class="switcher" aria-label={t(locale).languageSwitcherLabel}>
+  <ul>
+    {others.map((other) => (
+      <li>
+        <a href={paths[other]} lang={other} hreflang={other}>
+          {t(other).localeName}
+        </a>
+      </li>
+    ))}
+  </ul>
+</nav>
+
+<style>
+  .switcher {
+    flex: none;
+  }
+
+  ul {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding-inline: 0.75rem;
+    white-space: nowrap;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    font-weight: 600;
+    text-decoration: none;
+  }
+</style>

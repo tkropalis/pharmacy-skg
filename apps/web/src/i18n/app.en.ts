@@ -1,0 +1,205 @@
+import type { Dictionary } from './index.ts';
+import { STATUS_LABELS } from './status-labels.ts';
+
+/** The home screen's texts in English; the keys must match app.el.ts. */
+export const appEn: Dictionary['app'] = {
+  regionLabel: 'Open pharmacies: map and list',
+  loading: 'Loading pharmacies…',
+  loadError: 'The pharmacy data did not load.',
+  loadErrorHint: 'Check your connection. If you opened the app before, some data may be missing.',
+  retry: 'Try again',
+  moreDatesFailed: 'Not all duty lists loaded. The results may be incomplete.',
+
+  tabs: {
+    label: 'View',
+    open: 'Open now',
+    openAt: 'Open',
+    favourites: 'Favourites',
+  },
+
+  sheet: {
+    label: 'Pharmacy list',
+    handleLabel: 'List size: {size}. Press to change.',
+    dragHint: 'Drag or press to change the size',
+    sizes: { small: 'small', medium: 'medium', large: 'large' },
+  },
+
+  summary: {
+    none: 'No pharmacy open',
+    one: '1 pharmacy open',
+    many: '{n} pharmacies open',
+    sortedByDistance: 'nearest first, from: {origin}',
+    sortedByName: 'A–Z; choose a location for distances',
+    withClosed: '+ {n} closed',
+  },
+
+  origin: {
+    heading: 'Where are you starting from?',
+    summary: 'Location, time and filters',
+    useLocation: 'Use my location',
+    locating: 'Finding your location…',
+    privacy: 'Your location stays on your device and is not sent anywhere.',
+    denied: 'Access to your location was not allowed. You can choose an area instead.',
+    unavailable: 'Your location could not be found. You can choose an area instead.',
+    unsupported: 'This device does not provide a location. You can choose an area instead.',
+    far: 'You are far from Thessaloniki; distances are measured from where you are.',
+    myLocation: 'My location',
+    areaName: '{name} area',
+    areaLabel: 'Or choose an area',
+    areaSearch: 'Search for an area',
+    areaHint: 'Type in Greek or Latin letters, e.g. Καλαμαριά or kalamaria.',
+    areaNone: 'No area matches.',
+    areaCount: '{n} areas',
+    areaOne: '1 area',
+    areaPharmacies: '{n} pharmacies',
+    clear: 'Clear location',
+    current: 'From: {origin}',
+    set: 'Location set: {origin}',
+    cleared: 'Location cleared',
+  },
+
+  time: {
+    heading: 'When?',
+    now: 'Now',
+    other: 'Another time',
+    date: 'Date',
+    clock: 'Time',
+    zoneNote: 'Thessaloniki time (Europe/Athens)',
+    deviceDiffers:
+      'Your device is set to a different time zone. All times here are Thessaloniki time (Europe/Athens).',
+    showing: 'Showing {when} (Thessaloniki time)',
+    dutyNotPublished:
+      'The duty list for this date has not been published yet. Only regular and extended hours are shown.',
+    extendedNotPublished:
+      'The ΠΚΜ extended-hours list does not cover this date. Some pharmacies may be missing.',
+    dutyNotPublishedToday:
+      'The duty list for today is not published or did not load. Only regular and extended hours are shown.',
+    changed: 'Time changed: {when}',
+    loadingDuties: 'Loading the duty list…',
+    groupsMissing:
+      'The duty list has not been published yet for: {groups}. Pharmacies in those areas show as open only by their regular or extended hours, even if they are on duty.',
+    groupsMissingOrigin:
+      'The duty list for your area ({group}) has not been published yet. Pharmacies there may be on duty without our knowing. Call before you go, or call 166 in an emergency.',
+    backToNow: 'Back to “Now”',
+  },
+
+  filters: {
+    showClosed: 'Also show closed pharmacies',
+    legend: 'What the markers mean',
+  },
+
+  list: {
+    label: 'Pharmacies',
+    showMore: 'Show more',
+    showing: 'Showing {shown} of {total}',
+    noneOpen:
+      'No pharmacy appears to be open at this time. Try another time, or call 166 in an emergency.',
+    updated: 'List updated: {summary}',
+  },
+
+  row: {
+    approximate: 'Approximate location (area, not the exact address)',
+    noLocation: 'Not shown on the map',
+    call: 'Call',
+    callLabel: 'Call {name}',
+    noPhone: 'No phone number',
+    directions: 'Directions',
+    directionsLabel: 'Directions to {name}',
+    directionsTo: 'Walking, with',
+    google: 'Google Maps',
+    apple: 'Apple Maps',
+    waze: 'Waze',
+    share: 'Share',
+    shareLabel: 'Share {name}',
+    copied: 'Link copied',
+    copyFailed: 'The link could not be copied',
+    favourite: 'Favourite',
+    favouriteLabel: 'Favourite: {name}',
+    favouriteAdded: '{name}: added to favourites',
+    favouriteRemoved: '{name}: removed from favourites',
+    report: 'Report a problem',
+    reportLabel: 'Report a problem with {name}',
+    showOnMap: 'Show on map',
+    selected: 'selected',
+    dutiesMissing: 'The duty list for this area has not been published yet',
+    favouriteSaved: 'Saved',
+    favouriteSavedLabel: 'Saved: {name}',
+    shareText: '{name}, {address}',
+  },
+
+  status: {
+    ...STATUS_LABELS.en,
+    closed: 'Closed',
+    opensAt: 'opens {when}',
+    opensUnknown: 'we do not know when it opens',
+    closesIn: 'closes in {duration} ({when})',
+    openUntil: 'open until {when}',
+    closingSoon: 'Closing soon',
+    today: 'today',
+    tomorrow: 'tomorrow',
+    hourOne: 'h',
+    hourMany: 'h',
+    minuteUnit: ' min',
+    kinds: {
+      day: 'all-day duty',
+      'saturday-extra': 'extra Saturday duty',
+      'on-duty': 'on duty',
+      overnight: 'overnight duty',
+      'after-midnight': 'after-midnight duty',
+    },
+    legend: {
+      duty: STATUS_LABELS.en.onDuty,
+      regular: STATUS_LABELS.en.openRegular,
+      extended: STATUS_LABELS.en.openExtended,
+      dutyUnknown: STATUS_LABELS.en.dutyUnknown,
+      closed: 'Closed',
+      approximate: 'Dashed outline: approximate location',
+    },
+  },
+
+  favourites: {
+    empty: 'You have no favourites yet.',
+    emptyHint: 'Press “Add to favourites” on a pharmacy to find it here quickly.',
+    deviceOnly: 'Favourites are saved on this device only.',
+    notStored: 'Favourites could not be saved; they last only until you close the page.',
+    gone: 'This pharmacy is no longer in the data.',
+    upcoming: 'Published duty dates',
+    noneUpcoming: 'No duty dates in the lists published through {date}.',
+    officialOnly: 'Only duties officially published by ΦΣΘ are shown. We do not make forecasts.',
+    hoursNotStated: 'hours not stated',
+    addToCalendar: 'Add to calendar',
+    addToCalendarLabel: 'Add the duty dates of {name} to your calendar',
+    calendarSaved: 'Calendar file saved',
+    showAllDuties: 'All {n} duties',
+    fewerDuties: 'Fewer',
+    loadingDuties: 'Loading published duty dates…',
+    remove: 'Remove',
+  },
+
+  ics: {
+    summary: 'On duty: {name}',
+    source: 'Source: ΦΣΘ (Pharmaceutical Association of Thessaloniki)',
+    callFirst: 'Call before you go.',
+    calendarName: 'Pharmacy duty dates',
+  },
+
+  source: {
+    updated: 'Updated',
+    sources: 'Source: ΦΣΘ via thess.guide, ΠΚΜ',
+    short: 'ΦΣΘ (via thess.guide)',
+    map: 'Map: OpenFreeMap © OpenMapTiles © OpenStreetMap contributors',
+    callFirst: 'Call before you go.',
+  },
+
+  map: {
+    label: 'Map of the pharmacies. It is optional: everything on it is also in the list.',
+    unavailable: 'The map is not available on this device. The list works as usual.',
+    loadFailed: 'The map did not load (you may be offline). The list works as usual.',
+    loading: 'Loading map…',
+    you: 'Your location',
+    cluster: '{n} pharmacies: press to zoom in',
+    zoomIn: 'Zoom in',
+    zoomOut: 'Zoom out',
+    attribution: 'Map',
+  },
+};

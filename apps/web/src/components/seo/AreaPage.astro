@@ -1,0 +1,109 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import { t } from '../../i18n/index.ts';
+import { loadSeoModel } from '../../lib/seo/site-data.ts';
+import { areaPageProps } from '../../lib/seo/views.ts';
+import SeoLayout from './SeoLayout.astro';
+
+interface Props {
+  locale: Locale;
+  slug: string;
+}
+
+const { locale, slug } = Astro.props;
+const model = await loadSeoModel();
+const page = areaPageProps(model, locale, slug);
+if (page === null) throw new Error(`No area with slug ${slug}`);
+
+const d = t(locale);
+const seo = d.seo.area;
+---
+
+<SeoLayout meta={page.meta}>
+  <nav class="seo-breadcrumb" aria-label={d.seo.breadcrumbLabel}>
+    <ol>
+      <li>
+        <a href={page.indexPath}>{seo.allAreas}</a>
+      </li>
+      <li aria-current="page">{page.label}</li>
+    </ol>
+  </nav>
+
+  <h1>{page.h1}</h1>
+  {page.groupName !== null && (
+    <p class="seo-meta">
+      {seo.groupLabel} {page.groupName}
+    </p>
+  )}
+
+  <section aria-labelledby="open-heading">
+    <h2 id="open-heading">{seo.openNowHeading}</h2>
+    <div class="seo-status" role="status" aria-live="polite" data-area-status>
+      <p>{seo.openNowNoScript}</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="duty-heading">
+    <h2 id="duty-heading">{seo.dutyHeading}</h2>
+    {page.dutyDays.length === 0 ? (
+      <p>{seo.dutyNone}</p>
+    ) : (
+      <ul class="seo-list">
+        {page.dutyDays.map((day) => (
+          <li data-duty-date={day.date} data-today-label={d.seo.todayBadge}>
+            <span class="name">
+              <a href={day.pagePath}>{day.dateLabel}</a>
+            </span>
+            {day.items.map((item) => (
+              <span class="sub">
+                {item.pharmacyPath !== null ? (
+                  <a href={item.pharmacyPath}>{item.pharmacyName}</a>
+                ) : (
+                  item.pharmacyName
+                )}
+                {' — '}
+                {item.heading}
+              </span>
+            ))}
+          </li>
+        ))}
+      </ul>
+    )}
+    <p class="seo-meta">
+      {d.seo.sourceFsth}. {d.seo.duty.onlyPublished}
+    </p>
+  </section>
+
+  <section aria-labelledby="list-heading">
+    <h2 id="list-heading">{seo.listHeading}</h2>
+    <ul class="seo-list">
+      {page.pharmacies.map((pharmacy) => (
+        <li data-pharmacy-id={pharmacy.id}>
+          <span class="name">
+            <a href={pharmacy.path}>{pharmacy.name}</a>
+          </span>
+          <span class="sub">{pharmacy.address}</span>
+          {pharmacy.phoneHref !== null && (
+            <span class="sub">
+              <a href={pharmacy.phoneHref}>{pharmacy.phone}</a>
+            </span>
+          )}
+          <span class="sub state" data-state></span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <p class="seo-meta">
+    <strong>{d.footer.lastUpdatedLabel}</strong>{' '}
+    <time data-updated-at datetime={page.updatedAt}>
+      {page.updatedAtText}
+    </time>
+    . {d.footer.disclaimer}
+  </p>
+</SeoLayout>
+
+<script>
+  import '../../scripts/seo/area-status.ts';
+  import '../../scripts/seo/today.ts';
+</script>
