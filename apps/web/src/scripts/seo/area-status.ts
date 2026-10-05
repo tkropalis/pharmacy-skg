@@ -44,7 +44,7 @@ async function show(root: HTMLElement): Promise<void> {
           ? text.short
           : dutiesPublished
             ? area.closedNow
-            : `${area.closedNow} ${labels.seo.status.unpublishedShort}`;
+            : `${area.closedNow}, ${labels.seo.status.unpublishedShort}`;
       }
     }
 

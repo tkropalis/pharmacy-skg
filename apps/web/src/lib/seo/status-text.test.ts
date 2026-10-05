@@ -47,10 +47,10 @@ describe('whenText / until across days', () => {
       reasons: [{ kind: 'regular' }],
     } as const;
     expect(describeStatus(status, true, now, 'en', t('en')).short).toBe(
-      'Open (regular hours) · until tomorrow at 08:00',
+      'Open until tomorrow at 08:00',
     );
     expect(describeStatus(status, true, now, 'el', t('el')).short).toBe(
-      'Ανοιχτό (κανονικό ωράριο) · μέχρι αύριο στις 08:00',
+      'Ανοιχτό μέχρι αύριο στις 08:00',
     );
   });
 });
@@ -70,11 +70,11 @@ describe('describeStatus', () => {
     });
     const result = describeStatus(status, true, now, 'el', t('el'));
     expect(result.tone).toBe('open');
-    expect(result.short).toBe('Εφημερεύει (λίστα ΦΣΘ) · μέχρι τις 23:00');
-    expect(result.text).toBe('Εφημερεύει (λίστα ΦΣΘ) · μέχρι τις 23:00. Καλέστε πριν πάτε.');
+    expect(result.short).toBe('Εφημερεύει μέχρι τις 23:00');
+    expect(result.text).toBe('Εφημερεύει μέχρι τις 23:00. Καλέστε πριν πάτε.');
   });
 
-  it('says regular hours, extended hours and closing soon', () => {
+  it('says open for regular and extended hours, and closing soon', () => {
     const base = {
       state: 'open',
       until: new Date('2026-10-05T11:00:00Z'),
@@ -83,10 +83,10 @@ describe('describeStatus', () => {
     } as const;
     expect(
       describeStatus({ ...base, reasons: [{ kind: 'regular' }] }, true, now, 'en', t('en')).short,
-    ).toBe('Open (regular hours) · until 14:00 (closing soon)');
+    ).toBe('Open until 14:00, closing soon');
     expect(
       describeStatus({ ...base, reasons: [{ kind: 'extended' }] }, true, now, 'en', t('en')).short,
-    ).toBe('Open (extended hours) · until 14:00 (closing soon)');
+    ).toBe('Open until 14:00, closing soon');
   });
 
   it('warns when the duty list is not published yet', () => {
@@ -99,7 +99,7 @@ describe('describeStatus', () => {
     const result = describeStatus(status, false, now, 'en', t('en'));
     expect(result.tone).toBe('closed');
     expect(result.text).toBe(
-      'Closed now. We do not know of an opening in the next 7 days. The duty list for this area and day has not been published yet, so the status may change. Call before you go.',
+      'Closed now. We do not know when it opens in the next 7 days. It has not been announced yet which pharmacies are on duty here that day, so this may change. Call before you go.',
     );
   });
 

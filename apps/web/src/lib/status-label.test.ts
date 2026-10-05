@@ -1,7 +1,7 @@
 import type { OpenReason, PharmacyStatus } from '@pharmacy-skg/core';
 import { describe, expect, it } from 'vitest';
 import { t } from '../i18n/index.ts';
-import { describeStatus, dayAndTime, dutyKindWords, formatDuration } from './status-label.ts';
+import { describeStatus, dayAndTime, formatDuration } from './status-label.ts';
 
 const el = t('el').app.status;
 const en = t('en').app.status;
@@ -16,11 +16,12 @@ function open(until: string, reasons: readonly OpenReason[], closingSoon = false
 }
 
 describe('formatDuration', () => {
-  it('writes hours and minutes in Greek', () => {
-    expect(formatDuration(80, el)).toBe('1 ώρα 20′');
+  it('writes hours and minutes in Greek words', () => {
+    expect(formatDuration(80, el)).toBe('1 ώρα 20 λεπτά');
     expect(formatDuration(120, el)).toBe('2 ώρες');
-    expect(formatDuration(125, el)).toBe('2 ώρες 5′');
-    expect(formatDuration(45, el)).toBe('45′');
+    expect(formatDuration(125, el)).toBe('2 ώρες 5 λεπτά');
+    expect(formatDuration(45, el)).toBe('45 λεπτά');
+    expect(formatDuration(1, el)).toBe('1 λεπτό');
   });
   it('writes hours and minutes in English', () => {
     expect(formatDuration(80, en)).toBe('1 h 20 min');
@@ -50,18 +51,8 @@ describe('dayAndTime', () => {
   });
 });
 
-describe('dutyKindWords', () => {
-  it('lists distinct duty kinds in words', () => {
-    expect(dutyKindWords([duty('overnight'), duty('overnight'), duty('day')], el)).toBe(
-      'διανυκτερεύον, διημερεύον',
-    );
-    expect(dutyKindWords([duty('after-midnight')], en)).toBe('after-midnight duty');
-    expect(dutyKindWords([{ kind: 'regular' }], el)).toBeNull();
-  });
-});
-
 describe('describeStatus', () => {
-  it('labels duty with the ΦΣΘ list, the kind and a countdown (Greek)', () => {
+  it('says on duty and until when, in one short sentence (Greek)', () => {
     const view = describeStatus({
       status: open('2026-10-05T19:00:00Z', [duty()]),
       at,
@@ -70,13 +61,11 @@ describe('describeStatus', () => {
       text: el,
     });
     expect(view.kind).toBe('duty');
-    expect(view.label).toBe('Εφημερεύει (λίστα ΦΣΘ)');
-    expect(view.dutyKinds).toBe('διανυκτερεύον');
-    expect(view.timing).toBe('κλείνει σε 1 ώρα 20′ (22:00)');
+    expect(view.label).toBe('Εφημερεύει έως 22:00');
     expect(view.closingSoon).toBe(false);
   });
 
-  it('labels regular and extended hours (English)', () => {
+  it('says just "Open" for regular and extended hours (English)', () => {
     const regular = describeStatus({
       status: open('2026-10-05T19:00:00Z', [{ kind: 'regular' }], false),
       at,
@@ -84,8 +73,7 @@ describe('describeStatus', () => {
       locale: 'en',
       text: en,
     });
-    expect(regular.label).toBe('Open (regular hours)');
-    expect(regular.timing).toBe('closes in 1 h 20 min (22:00)');
+    expect(regular.label).toBe('Open until 22:00');
     const extended = describeStatus({
       status: open('2026-10-05T18:00:00Z', [{ kind: 'extended' }]),
       at,
@@ -93,22 +81,27 @@ describe('describeStatus', () => {
       locale: 'en',
       text: en,
     });
-    expect(extended.label).toBe('Open (extended hours)');
+    expect(extended.label).toBe('Open until 21:00');
+    expect(extended.short.label).toBe('Open');
+    // The marker still tells them apart.
     expect(extended.kind).toBe('extended');
   });
 
-  it('puts the day in the closing time for an overnight duty', () => {
-    const view = describeStatus({
-      status: open('2026-10-06T05:00:00Z', [duty()]),
-      at,
-      live: true,
-      locale: 'en',
-      text: en,
-    });
-    expect(view.timing).toBe('closes in 11 h 20 min (tomorrow 08:00)');
+  it('says all night, with the day, for an all-night duty', () => {
+    const view = (locale: 'el' | 'en') =>
+      describeStatus({
+        status: open('2026-10-06T05:00:00Z', [duty('after-midnight')]),
+        at,
+        live: true,
+        locale,
+        text: locale === 'el' ? el : en,
+      });
+    expect(view('el').label).toBe('Εφημερεύει όλη τη νύχτα έως αύριο 08:00');
+    expect(view('en').label).toBe('On duty all night until tomorrow 08:00');
+    expect(view('el').short).toEqual({ label: 'Εφημερεύει', timing: 'έως αύριο 08:00' });
   });
 
-  it('flags closing soon and keeps the countdown in minutes', () => {
+  it('counts down only when closing soon', () => {
     const view = describeStatus({
       status: open('2026-10-05T18:00:00Z', [{ kind: 'regular' }], true),
       at: new Date('2026-10-05T17:35:00Z'),
@@ -117,28 +110,20 @@ describe('describeStatus', () => {
       text: el,
     });
     expect(view.closingSoon).toBe(true);
-    // The list's short form counts down only now.
-    expect(view.short).toEqual({ label: 'Ανοιχτό', timing: 'κλείνει σε 25′' });
-    expect(view.timing).toBe('κλείνει σε 25′ (21:00)');
+    expect(view.short).toEqual({ label: 'Ανοιχτό', timing: 'κλείνει σε 25 λεπτά' });
+    expect(view.label).toBe('Ανοιχτό, κλείνει σε 25 λεπτά, στις 21:00');
   });
 
-  it('says "open until" for a chosen time and for far-off closings', () => {
+  it('says "until" for a chosen time, even when closing soon', () => {
     const chosen = describeStatus({
-      status: open('2026-10-05T18:00:00Z', [{ kind: 'regular' }]),
+      status: open('2026-10-05T18:00:00Z', [{ kind: 'regular' }], true),
       at,
       live: false,
       locale: 'en',
       text: en,
     });
-    expect(chosen.timing).toBe('open until 21:00');
-    const far = describeStatus({
-      status: open('2026-10-06T20:00:00Z', [duty('day')]),
-      at,
-      live: true,
-      locale: 'en',
-      text: en,
-    });
-    expect(far.timing).toMatch(/^open until tomorrow 23:00$/);
+    expect(chosen.label).toBe('Open until 21:00');
+    expect(chosen.short.timing).toBe('until 21:00');
   });
 
   it('labels a duty without printed hours', () => {
@@ -149,10 +134,10 @@ describe('describeStatus', () => {
     };
     const view = describeStatus({ status, at, live: true, locale: 'el', text: el });
     expect(view.kind).toBe('duty-unknown');
-    expect(view.label).toBe('Εφημερεύει (λίστα ΦΣΘ) — δεν αναγράφεται ωράριο, καλέστε');
-    expect(view.dutyKinds).toBe('εφημερεύον');
+    expect(view.label).toBe('Εφημερεύει, καλέστε για το ωράριο');
+    expect(view.short).toEqual({ label: 'Εφημερεύει', timing: 'καλέστε για το ωράριο' });
     expect(describeStatus({ status, at, live: true, locale: 'en', text: en }).label).toBe(
-      'On duty (ΦΣΘ list) — hours not stated, call first',
+      'On duty, call for the hours',
     );
   });
 
@@ -172,18 +157,18 @@ describe('describeStatus', () => {
         text: locale === 'el' ? el : en,
       });
     expect(view('2026-10-06T05:00:00Z')).toMatchObject({
-      label: 'Κλειστό',
-      timing: 'ανοίγει αύριο 08:00',
+      label: 'Κλειστό, ανοίγει αύριο 08:00',
+      short: { label: 'Κλειστό', timing: 'ανοίγει αύριο 08:00' },
       kind: 'closed',
     });
-    expect(view('2026-10-05T18:00:00Z').timing).toBe('ανοίγει σήμερα 21:00');
-    expect(view('2026-10-07T05:00:00Z', 'en').timing).toBe('opens Wednesday 08:00');
-    expect(view(null).timing).toBe('δεν γνωρίζουμε πότε ανοίγει');
+    expect(view('2026-10-05T18:00:00Z').label).toBe('Κλειστό, ανοίγει σήμερα 21:00');
+    expect(view('2026-10-07T05:00:00Z', 'en').label).toBe('Closed, opens Wednesday 08:00');
+    expect(view(null).label).toBe('Κλειστό, δεν ξέρουμε πότε ανοίγει');
   });
 });
 
 describe('the short form, for the list', () => {
-  it('is a word or two and the closing time', () => {
+  it('is a word and the closing time', () => {
     const view = describeStatus({
       status: open('2026-10-05T11:30:00Z', [{ kind: 'regular' }]),
       at: new Date('2026-10-05T06:49:00Z'),
@@ -192,7 +177,6 @@ describe('the short form, for the list', () => {
       text: el,
     });
     expect(view.short).toEqual({ label: 'Ανοιχτό', timing: 'έως 14:30' });
-    // The full wording stays for the details.
-    expect(view.label).toBe('Ανοιχτό (κανονικό ωράριο)');
+    expect(view.label).toBe('Ανοιχτό έως 14:30');
   });
 });

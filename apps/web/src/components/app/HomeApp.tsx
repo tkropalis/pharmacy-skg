@@ -324,7 +324,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
           kind: 'geo',
           lat: position.coords.latitude,
           lon: position.coords.longitude,
-          label: text.origin.myLocation,
+          label: text.origin.here,
         });
         setOriginNonce((n) => n + 1);
         setControlsOpen(false);

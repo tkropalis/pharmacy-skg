@@ -1,5 +1,5 @@
 import { THESSALONIKI } from '@pharmacy-skg/core';
-import type { DutyKind, Locale, OpenReason, PharmacyStatus } from '@pharmacy-skg/core';
+import type { Locale, OpenReason, PharmacyStatus } from '@pharmacy-skg/core';
 import type { Dictionary } from '../i18n/index.ts';
 import { fill } from './format.ts';
 import { whenOf } from './when.ts';
@@ -10,23 +10,22 @@ export type StatusText = Dictionary['app']['status'];
 
 export interface StatusView {
   readonly kind: PinKind;
-  /** The status in words; the decisions' labels (D4, Defaults). Never colour alone. */
+  /**
+   * The status as one plain sentence, for the row details: "Ανοιχτό έως 21:00",
+   * "Εφημερεύει όλη τη νύχτα, έως αύριο 08:00". Never colour alone (decisions, Defaults).
+   */
   readonly label: string;
-  /** The duty kinds in words ("διανυκτερεύον"), when on duty. */
-  readonly dutyKinds: string | null;
-  /** Countdown, "open until" or "opens …", whichever applies. */
-  readonly timing: string | null;
   readonly closingSoon: boolean;
   /** For the list: a word or two ("Εφημερεύει", "Ανοιχτό") and the time ("έως 14:30"). */
   readonly short: { readonly label: string; readonly timing: string | null };
 }
 
-/** "1 ώρα 20′", "2 ώρες", "45′" / "1 h 20 min", "45 min". */
+/** "1 ώρα 20 λεπτά", "2 ώρες", "1 λεπτό" / "1 h 20 min", "45 min". */
 export function formatDuration(minutes: number, text: StatusText): string {
   const total = Math.max(1, Math.round(minutes));
   const hours = Math.floor(total / 60);
   const rest = total % 60;
-  const mins = `${rest}${text.minuteUnit}`;
+  const mins = `${rest} ${rest === 1 ? text.minuteOne : text.minuteMany}`;
   if (hours === 0) return mins;
   const hourWord = hours === 1 ? text.hourOne : text.hourMany;
   const head = `${hours} ${hourWord}`;
@@ -58,24 +57,18 @@ export function dayAndTime(
   }
 }
 
-/** Unique duty kinds, in words, from the reasons a pharmacy is open. */
-export function dutyKindWords(reasons: readonly OpenReason[], text: StatusText): string | null {
-  const kinds: DutyKind[] = [];
-  for (const reason of reasons) {
-    if ((reason.kind === 'duty' || reason.kind === 'duty-extra') && !kinds.includes(reason.duty)) {
-      kinds.push(reason.duty);
-    }
-  }
-  return kinds.length === 0 ? null : kinds.map((kind) => text.kinds[kind]).join(', ');
+/** On an all-night duty right now: the list says it runs past midnight to the morning. */
+function allNight(reasons: readonly OpenReason[]): boolean {
+  return reasons.some(
+    (reason) =>
+      (reason.kind === 'duty' || reason.kind === 'duty-extra') && reason.duty === 'after-midnight',
+  );
 }
-
-/** Beyond this the countdown is replaced by "open until …": 3 h 50 min is useful, 14 h is not. */
-const COUNTDOWN_MAX_MINUTES = 12 * 60;
 
 export function describeStatus(options: {
   readonly status: PharmacyStatus;
   readonly at: Date;
-  /** "now" shows a countdown; a chosen time shows "open until". */
+  /** "now" counts down the last minutes; a chosen time always shows "until". */
   readonly live: boolean;
   readonly locale: Locale;
   readonly text: StatusText;
@@ -87,35 +80,33 @@ export function describeStatus(options: {
 
   switch (status.state) {
     case 'open': {
-      const kinds = dutyKindWords(status.reasons, text);
-      const label =
+      const word =
         kind === 'duty' ? text.onDuty : kind === 'extended' ? text.openExtended : text.openRegular;
+      const label =
+        kind === 'duty' && allNight(status.reasons) ? fill(text.allNight, { label: word }) : word;
       const minutes = Math.ceil((status.until.getTime() - at.getTime()) / 60_000);
       const when = dayAndTime(status.until, at, locale, text, timeZone);
-      const timing =
-        live && minutes <= COUNTDOWN_MAX_MINUTES
-          ? fill(text.closesIn, { duration: formatDuration(minutes, text), when })
-          : fill(text.openUntil, { when });
-      // The list counts down only when it matters: in the last minutes.
-      const shortTiming =
-        live && status.closingSoon
-          ? fill(text.short.closesIn, { duration: formatDuration(minutes, text) })
-          : fill(text.short.until, { when });
+      // A countdown only when it matters: in the last minutes before closing.
+      const countdown = live && status.closingSoon;
+      const duration = formatDuration(minutes, text);
       return {
         kind,
-        label,
-        dutyKinds: kinds,
-        timing,
+        label: countdown
+          ? fill(text.closesIn, { label, duration, when })
+          : fill(text.openUntil, { label, when }),
         closingSoon: status.closingSoon,
-        short: { label: text.short[kind], timing: shortTiming },
+        short: {
+          label: text.short[kind],
+          timing: countdown
+            ? fill(text.short.closesIn, { duration })
+            : fill(text.short.until, { when }),
+        },
       };
     }
     case 'duty-hours-unknown':
       return {
         kind,
         label: text.dutyUnknown,
-        dutyKinds: text.kinds[status.duty.duty],
-        timing: null,
         closingSoon: false,
         short: { label: text.short[kind], timing: text.short.callFirst },
       };
@@ -128,9 +119,7 @@ export function describeStatus(options: {
             });
       return {
         kind,
-        label: text.closed,
-        dutyKinds: null,
-        timing,
+        label: `${text.closed}, ${timing}`,
         closingSoon: false,
         short: { label: text.short[kind], timing },
       };
