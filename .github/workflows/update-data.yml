@@ -1,0 +1,49 @@
+name: Update data
+
+# Fetches the official lists, validates them and commits data/ when it changed.
+# See packages/ingest/src/cli/update.ts.
+on:
+  schedule:
+    # Twice a day, Athens time. ΦΣΘ publishes duty lists a few days ahead.
+    - cron: '20 6,18 * * *'
+      timezone: Europe/Athens
+  workflow_dispatch:
+    inputs:
+      since:
+        description: Fetch duty PDFs uploaded on or after this date (YYYY-MM-DD)
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Fetch, validate and write
+        run: pnpm --filter @pharmacy-skg/ingest run update ${SINCE:+--since "$SINCE"}
+        env:
+          SINCE: ${{ inputs.since }}
+      - name: Commit if changed
+        run: |
+          if [ -z "$(git status --porcelain data/)" ]; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/
+          git commit -m "data: update $(TZ=Europe/Athens date +%Y-%m-%d)"
+          git push

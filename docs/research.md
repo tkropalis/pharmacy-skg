@@ -2,6 +2,8 @@
 
 Collected on 4 Oct 2026 while planning the project. At the time, the development container's network policy blocked Greek sites and OpenStreetMap, so many findings come from search results rather than from the sources themselves.
 
+Sections 1–3 were re-checked later on 4 Oct 2026 against downloaded files (the M1 fixtures). Those findings are tagged [verified] and say which file they come from.
+
 Confidence tags:
 
 - **[verified]** fetched, downloaded or measured directly (or read in a project's source code)
@@ -19,16 +21,24 @@ Anything marked **verify** must be checked against the real source before code d
 - Duty application on an older ASP.NET subdomain: https://efimeries.fsth.gr/root.el.aspx. You pick an area and a date, then print a PDF. [search]
 - An older indexed URL takes a date as `yyyyMMddHHmmss`: `https://www.fsth.gr/root.viewpharmaciesonduty.el.aspx?date=20220630000000`. [search] The same path probably still works on `efimeries.fsth.gr`. [inferred] **verify**
 - No JSON, XHR or iCal endpoint was found, but the pages could not be inspected. **verify**
+- **Blocked to automated clients.** `fsth.gr`, `www.fsth.gr` and `efimeries.fsth.gr` sit behind Cloudflare, which answers every path (including `robots.txt`) with a 403 JS challenge (`cf-mitigated: challenge`). This happens from a cloud container with full network access, and will very likely happen from GitHub Actions runners too. So the endpoint questions above still cannot be answered, and a scheduled scraper cannot fetch from ΦΣΘ directly. [verified]
+- **Re-host:** thess.guide uploads the ΦΣΘ PDFs unchanged (same MigraDoc/PDFsharp producer). It does so a few days ahead, about 11 files per day, and they can be listed through the WordPress media API: `https://www.thess.guide/wp-json/wp/v2/media?search=Εφημερίες&per_page=100`. The archive goes back to 16 Jun 2026, with some gaps (e.g. 22 Aug–5 Sep). Until mid-September it mostly holds only the metro PDF; all ten groups appear from about 16 Sep. [verified]
 
 ### Format
 
-- One text PDF per area group per day, published a few days ahead. [search]
-- Title pattern: "Πολεοδομικό Συγκρότημα Θεσσαλονίκης Εφημερεύοντα Φαρμακεία Δευτέρα 23 Φεβ 2026". [search]
-- Section headings: "Διημερεύοντα Φαρμακεία", "Διανυκτερεύοντα Φαρμακεία", "Μεταμεσονύκτια Φαρμακεία". [verified, from a parser's source code]
-- Fields: name, address and phone (10 digits starting with 2). No coordinates. Hours are implied by the section a pharmacy is listed under. [verified, same]
-- Dates use Greek month abbreviations ("φεβ", "μάρ", …). [verified, same]
-- Area groups seen: Πολεοδομικό Συγκρότημα, Δ. Λαγκαδά, Χαλκηδόνας, Ωραιοκάστρου, Θέρμης, Θερμαϊκού, Βόλβης, Δέλτα, Πανόραμα-Πεύκα, Ασβεστοχώρι/Εξοχή-Χορτιάτης-Φίλυρο. [search]
-- Other sites re-host the PDFs, e.g. `thess.guide/wp-content/uploads/2026/02/Εφημερίες_23-02-2026.pdf`. A possible fallback source. [search]
+Checked against the PDFs for Sat 3, Sun 4, Mon 5 and Tue 6 Oct, Wed 15 Jul (summer) and Sat 15 Aug 2026 (a holiday). [verified]
+
+- One text PDF per area group per day, generated with MigraDoc/PDFsharp. The metro PDF runs to about 3 pages; the others have 1.
+- **Ten area groups:** Πολεοδομικό Συγκρότημα Θεσσαλονίκης, Δήμος Λαγκαδά, Δήμος Χαλκηδόνας, Δήμος Ωραιοκάστρου, Δήμος Θέρμης, Δήμος Θερμαϊκού, Δήμος Βόλβης, Δήμος Δέλτα, Πανόραμα-Πεύκα, Ασβεστοχώρι/Εξοχή-Χορτιάτης-Φίλυρο. The group name is the first line.
+- Second line: "Εφημερεύοντα Φαρμακεία Σάββατο 03 Οκτ 2026" (weekday, day, Greek month abbreviation, year). On long weekday names the year wraps onto a third line (e.g. Fridays in July).
+- The source has typos: e.g. a 9-digit phone (Βόλβης, 4 Oct 2026) and Latin look-alike letters inside Greek words ("M.AΛΕΞΑΝΔΡΟΥ").
+- **Sections:** each starts with a heading, and **most headings state their own hours**, e.g. "Διανυκτερεύοντα Φαρμακεία (από 21:00 έως 00:00)". Some headings have no hours (Θέρμης, Ασβεστοχώρι group). Some carry a sub-note on the next lines (see 2. Duty shifts).
+- The same section name means different hours in different groups. In the metro, "Διανυκτερεύοντα" is 21:00–00:00; in Θερμαϊκού it is 21:00–08:00 the next day. **Hours must be read from each heading, not from a table keyed by section name.**
+- Midnight is written both as "00:00" and as "24:00" (Λαγκαδά).
+- Table columns: Περιοχή (locality), Όνομα, Διεύθυνση, Τηλέφωνο (10 digits starting with 2). Names and addresses often wrap onto 2–3 lines, with the other cells vertically centred. So a line-based text parser is not enough; rows have to be grouped by y-position.
+- The same pharmacy can appear in two sections on the same day (e.g. Θερμαϊκού day and night duty).
+- Every page ends with a note on the sort order (locality, postcode, name).
+- Row counts in the metro PDF: 49 weekend day duty + 59 extra Saturday-morning + 31 overnight + 7 after-midnight (Sat 3 Oct); 73 + 28 + 6 (Mon 5 Oct); 28 + 7 (Tue 6 Oct). Each outlying group lists 1–5 rows.
 
 ### Rotation
 
@@ -56,19 +66,49 @@ These are the rules the "open now" logic has to encode.
 ### Extended hours (διευρυμένο ωράριο)
 
 - Pharmacies declare extended hours to ΦΣΘ online (https://fsth.gr/f8b69323/). [search]
-- ΠΚΜ publishes the official list every two months, probably as PDF attachments. Current period, 1 Sep–31 Oct 2026: https://www.pkm.gov.gr/anakoinosi-pou-afora-to-dievrymeno-orario-farmakeion-tis-m-e-thessalonikis-apo-01-09-2026-eos-31-10-2026-symfona-me-tous-pinakes-pou-katartizei-o-f-s-th/ [search]
+- ΠΚΜ publishes the official list every two months. Current period, 1 Sep–31 Oct 2026: https://www.pkm.gov.gr/anakoinosi-pou-afora-to-dievrymeno-orario-farmakeion-tis-m-e-thessalonikis-apo-01-09-2026-eos-31-10-2026-symfona-me-tous-pinakes-pou-katartizei-o-f-s-th/ [search]
+- **Format** (file `2026_08_31_ΔΙΕΥΡΥΜΕΝΟ-ΩΡΑΡΙΟ-ΣΕΠΤ-ΟΚΤ2026.xlsx`, linked from that page) [verified]:
+  - an XLSX file, not a PDF. `www.pkm.gov.gr` returns 403 to clients without a browser-like User-Agent;
+  - 398 pharmacies, one sheet. Columns: Περίοδος, Φαρμακείο, Διεύθυνση, Τ.Κ., Δημοτική ενότητα, Πρόγραμμα;
+  - no phone numbers, so matching to duty-list pharmacies has to use name, address and postcode;
+  - Πρόγραμμα is multi-line text. 365 rows use weekdays ("Δευτέρα: 08:00 - 14:30 και 17:00 - 21:00") and 33 use dates ("Τρίτη 01/09/2026: 08:00 - 21:00");
+  - no Sunday hours. Saturday hours vary (e.g. 09:00–14:30, 08:00–20:00);
+  - some times look like typing slips (14:01, 14:31, 13:59). Keep them as published.
 
 ### Duty shifts
 
-Sources conflict here, so **verify everything below against real PDFs**.
+Verified against the PDFs listed in section 1 (Format). The headings are quoted as printed. [verified]
 
-- Weekends and holidays: cards 1–17 rotate, open 08:00–21:00 ("Διημερεύοντα"). [search]
-- A vrisko.gr note says on-duty pharmacies stay open until 22:00 from 16 Oct to 15 May and until 23:00 from 16 May to 15 Oct. [search]
-- Saturday mornings: cards Σ1–Σ4 open 08:30–14:30. [search]
-- Monday and Wednesday afternoons: cards 21–37 (one source says summer only). [search]
-- Overnight ("Διανυκτερεύοντα"): open until 00:00. [search]
-- After midnight ("Μεταμεσονύκτια"): 21:00–08:00, grouped by letter (Α/Β/Γ/Δ). [search] One snippet says 20:30–00:00 and until 08:30 instead. [search]
-- Midday: on Tue/Thu/Fri, pharmacies that are open until 00:00 also stay open 14:00–17:00. [search]
+**Metro area (Πολεοδομικό Συγκρότημα):**
+
+| Section heading                                                          | Hours                | Days seen                         |
+| ------------------------------------------------------------------------ | -------------------- | --------------------------------- |
+| Διημερεύοντα Φαρμακεία (Σάββατο, Κυριακή και αργίες από 08:00 έως 21:00) | 08:00–21:00          | Sat, Sun, holiday (15 Aug)        |
+| Διημερεύοντα Φαρμακεία (από 08:00 έως 21:00)                             | 08:00–21:00          | Mon, Wed (also in summer, 15 Jul) |
+| Επιπλέον Φαρμακεία Σαββάτου (από 08:30 έως 14:30)                        | 08:30–14:30          | Sat (not the 15 Aug holiday)      |
+| Διανυκτερεύοντα Φαρμακεία (από 21:00 έως 00:00)                          | 21:00–00:00          | every day                         |
+| Μεταμεσονύκτια Φαρμακεία (από 21:00 έως 08:00 το επόμενο πρωί)           | 21:00–08:00 next day | every day                         |
+
+- Tuesday has no day-duty section, because every pharmacy is open on Tue/Thu/Fri afternoons anyway.
+- Under the Διανυκτερεύοντα heading on Tue/Thu/Fri: "Τρίτη, Πέμπτη & Παρασκευή (εκτός αργιών), λειτουργούν και 14:00-17:00 (όχι τα Μεταμεσονύκτια)". So overnight pharmacies also cover the midday break on those days, except on holidays.
+- **Settled conflicts:**
+  - Day duty in the metro closes at **21:00**. The 22:00/23:00 closing times from vrisko.gr apply to some outlying groups, not to the metro.
+  - The PDF has two overnight tiers: Διανυκτερεύοντα ends at **00:00**, and Μεταμεσονύκτια ends at **08:00** the next morning. The 20:30/08:30 times appear in no file.
+- Card numbers (1–17, Σ1–Σ4, 21–37) and letter groups (Α/Β/Γ/Δ) are not printed in the PDFs.
+
+**Outlying groups** (all days seen):
+
+| Group                                     | Headings and hours                                                                                                              |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Λαγκαδά                                   | 08:00–23:00, and a second section 08:00–24:00                                                                                   |
+| Χαλκηδόνας, Πανόραμα-Πεύκα, Βόλβης, Δέλτα | 08:00–23:00                                                                                                                     |
+| Ωραιοκάστρου                              | 08:00–00:00                                                                                                                     |
+| Θερμαϊκού                                 | Διημερεύοντα 08:00–21:00; Εφημερεύοντα 08:00–00:00; Διανυκτερεύοντα 21:00–08:00 next day, with the Tue/Thu/Fri 14:00–17:00 note |
+| Θέρμης                                    | Εφημερεύοντα 08:00–23:00; Εφημερεύοντα **(no hours)**; Διανυκτερεύοντα **(no hours)**                                           |
+| Ασβεστοχώρι/Εξοχή-Χορτιάτης-Φίλυρο        | Εφημερεύοντα **(no hours)**                                                                                                     |
+
+- Whether these hours change with the season (the vrisko.gr 22:00/23:00 note) is not yet known: the earliest file is from 16 Jun. **verify** after 16 Oct.
+- What "no hours" means for Θέρμης and Ασβεστοχώρι is unknown. **verify** (ask ΦΣΘ).
 
 ### Holidays
 
@@ -83,10 +123,18 @@ Sources conflict here, so **verify everything below against real PDFs**.
   - 474 with confidence ≥ 0.77, and 435 with pharmacy-like names;
   - most have a phone and an address;
   - some are miscategorised (e.g. a bank).
-- **OpenStreetMap:** not checked, because the host was blocked. The Overpass query to run:
-  `[out:json];area["name"="Περιφερειακή Ενότητα Θεσσαλονίκης"]->.a;nwr[amenity=pharmacy](area.a);out tags center;`
+- **Overture, re-checked** [verified]: the 640 / 474 figures reproduce. In the 2026 schema the category lives in `taxonomy.primary` (`pharmacy`) and `basic_category` (`pharmacy_and_drug_store`); there is no `categories` column. 619 of the 640 have a phone.
+- **OpenStreetMap** (Overpass, same bbox, data as of 24 Jul 2026) [verified]:
+  - 764 objects tagged `amenity=pharmacy` (757 nodes, 7 ways);
+  - only 42% have a `name`, 8% a phone, 33% a house number and 3% `opening_hours`;
+  - `overpass-api.de` reset every connection from the cloud container; the `overpass.kumi.systems` mirror worked;
+  - the planned query by area name returned nothing; querying by bbox works.
+  - Licence: ODbL. A database derived from OSM must be shared under ODbL too. [inferred]
+- **Overlap:** 443 of the 640 Overture pharmacies have an OSM pharmacy within 100 m (373 within 50 m). [verified]
+- **Duty lists as a registry:** the PDFs for 6 dates already list 457 distinct phone numbers, i.e. pharmacies. The thess.guide archive (≈100 days) should cover nearly all of them. [verified/inferred]
 - **ΕΟΠΥΥ** (https://www.eopyy.gov.gr/PharmacyList) lists only ΕΟΠΥΥ's own pharmacies. [search/inferred]
 - **data.gov.gr and opendata.thessaloniki.gr:** no pharmacy registry found. [search]
+- **Commercial directories** [verified 4 Oct 2026]: vrisko.gr's terms (§13) forbid automated extraction, and its content is protected by the database right; xo.gr (Χρυσός Οδηγός) answers automated clients with a Cloudflare challenge. Neither is used (decision D22). Looking up a single address by hand to write a manual override is fine.
 - **Google Places:** not usable. Its terms restrict storing the data and showing it on non-Google maps. [inferred]
 - **The duty lists themselves:** every pharmacy rotates through duty, so a few weeks of lists should list nearly all of them with address and phone. [inferred]
 
@@ -215,6 +263,7 @@ Sources conflict here, so **verify everything below against real PDFs**.
 - **Google Geocoding:** its terms forbid showing results on non-Google maps and limit caching to 30 days, so it is not usable. [verified]
 - **Nominatim:** at most 1 request per second, an identifying User-Agent, no bulk jobs. Storing results is allowed. [search]
 - **Others:** the Photon demo server is fair-use only [verified]; Geoapify allows storing results with attribution [search]; LocationIQ's free plan caches for at most 48 h. [search]
+- **Nominatim pitfall** [verified]: OpenStreetMap tags addresses in Καλαμαριά and other neighbouring municipalities with the city "Θεσσαλονίκη", so "Κομνηνών 17, Θεσσαλονίκη" (free-form or structured) resolves to Καλαμαριά, about 5 km from the real pharmacy. In ΦΣΘ lists "Θεσσαλονίκη" means the municipality, so the pipeline queries "…, Δήμος Θεσσαλονίκης" and rejects results in another Δήμος. Nominatim also rate-limits shared cloud IPs after about 100 requests; the pipeline caps itself at 150 per run.
 - **Strategy** [inferred]:
   - geocode each address once;
   - store the source and a confidence level with the result;

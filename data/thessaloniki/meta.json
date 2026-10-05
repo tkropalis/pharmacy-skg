@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "city": "thessaloniki",
+  "updatedAt": "2026-10-04T23:04:48.920Z",
+  "duties": {
+    "from": "2026-06-04",
+    "to": "2026-10-08"
+  },
+  "extendedHours": [
+    {
+      "from": "2026-09-01",
+      "to": "2026-10-31",
+      "file": "extended-hours/2026-09-01_2026-10-31.json"
+    }
+  ],
+  "sources": [
+    {
+      "id": "fsth",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Θεσσαλονίκης",
+        "en": "Pharmaceutical Association of Thessaloniki"
+      },
+      "url": "https://fsth.gr/",
+      "note": "Duty lists, read from the copies re-hosted by thess.guide"
+    },
+    {
+      "id": "pkm",
+      "name": {
+        "el": "Περιφέρεια Κεντρικής Μακεδονίας",
+        "en": "Region of Central Macedonia"
+      },
+      "url": "https://www.pkm.gov.gr/",
+      "note": "Extended opening hours"
+    },
+    {
+      "id": "overture",
+      "name": {
+        "el": "Overture Maps Foundation",
+        "en": "Overture Maps Foundation"
+      },
+      "url": "https://overturemaps.org/",
+      "note": "Pharmacy locations, CDLA-Permissive-2.0"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL"
+    }
+  ]
+}
