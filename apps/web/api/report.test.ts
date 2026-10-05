@@ -158,6 +158,39 @@ describe('POST /api/report', () => {
     );
   });
 
+  it('removes bidi overrides and zero-width characters from the message and the pharmacy', async () => {
+    const hidden = [
+      '\u200b',
+      '\u200c',
+      '\u200d',
+      '\u200e',
+      '\u200f',
+      '\u202a',
+      '\u202b',
+      '\u202c',
+      '\u202d',
+      '\u202e',
+      '\u2066',
+      '\u2067',
+      '\u2068',
+      '\u2069',
+      '\ufeff',
+    ];
+    const mixed = (text: string) =>
+      hidden.join('') + text.split('').join(hidden[0]) + hidden.join('');
+    await POST(
+      post({
+        ...valid,
+        pharmacy: mixed('Φαρμακείο Μαρίας'),
+        message: `${mixed('κλειστό')}\n${hidden.join('')}δεύτερη γραμμή`,
+      }),
+    );
+    const body = String(sentIssue().payload['body']);
+    for (const char of hidden) expect(body).not.toContain(char);
+    expect(body).toContain('Φαρμακείο: Φαρμακείο Μαρίας');
+    expect(body).toContain('κλειστό\nδεύτερη γραμμή');
+  });
+
   it('puts the message in a fence longer than any backtick run in it', async () => {
     const message = 'before ``` # closes? ````` after\n```\n![x](http://evil.example/a.png)';
     await POST(post({ ...valid, message }));

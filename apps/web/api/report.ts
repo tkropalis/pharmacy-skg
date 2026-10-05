@@ -99,14 +99,21 @@ const CONTROL = /[\u0000-\u001f\u007f-\u009f\u2028\u2029]+/g;
 // eslint-disable-next-line no-control-regex
 const CONTROL_EXCEPT_NEWLINE = /[\u0000-\u0008\u000b-\u001f\u007f-\u009f\u2028\u2029]/g;
 
-/** One line: control characters and runs of whitespace become single spaces. */
+// Invisible characters that change how text reads or which way it runs: zero-width spaces and
+// joiners and the left-to-right and right-to-left marks (U+200B to U+200F), the bidirectional
+// embeddings and overrides (U+202A to U+202E) and isolates (U+2066 to U+2069), and the byte
+// order mark (U+FEFF). A report must read the same in the issue as it was typed.
+const INVISIBLE = /[\u200b-\u200f\u202a-\u202e\u2066-\u2069\ufeff]/g;
+
+/** One line: invisible characters go; control characters and runs of whitespace become one space. */
 function singleLine(value: string): string {
-  return value.replace(CONTROL, ' ').replace(/\s+/g, ' ').trim();
+  return value.replace(INVISIBLE, '').replace(CONTROL, ' ').replace(/\s+/g, ' ').trim();
 }
 
-/** Multi-line text: control characters other than newline and tab are removed. */
+/** Multi-line text: invisible characters, and control characters other than newline and tab, are removed. */
 function multiLine(value: string): string {
   return value
+    .replace(INVISIBLE, '')
     .replace(/\r\n?/g, '\n')
     .replace(CONTROL_EXCEPT_NEWLINE, '')
     .replace(/[ \t]+\n/g, '\n')
