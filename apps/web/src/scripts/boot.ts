@@ -3,6 +3,7 @@ import { loadMeta } from '../lib/data.ts';
 import { formatUpdatedAt, isStale } from '../lib/freshness.ts';
 import { prefetchOfflineData, registerServiceWorker } from '../lib/pwa.ts';
 import { DATA_UPDATED_KEY, writeItem } from '../lib/storage.ts';
+import { setupMedicineSearch } from './medicine-search.ts';
 import type { Locale } from '@pharmacy-skg/core';
 
 /**
@@ -35,5 +36,6 @@ document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'visible') void refreshFreshness();
 });
 
+setupMedicineSearch();
 registerServiceWorker();
 prefetchOfflineData();

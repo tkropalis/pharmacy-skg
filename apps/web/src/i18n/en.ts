@@ -1,4 +1,5 @@
 import { appEn } from './app.en.ts';
+import { searchEn } from './search.en.ts';
 import { STATUS_LABELS } from './status-labels.ts';
 import type { Dictionary } from './index.ts';
 
@@ -203,6 +204,7 @@ export const en: Dictionary = {
   },
 
   app: appEn,
+  search: searchEn,
 
   notFound: {
     title: 'Page not found',

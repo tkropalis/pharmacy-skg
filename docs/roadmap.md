@@ -93,7 +93,7 @@ The owner's steps are in [beta-checklist.md](beta-checklist.md). The one-page br
 - **Medicine lookup** (decision D24):
   - ✅ merge the ministry's price bulletins by barcode: `pnpm --filter @pharmacy-skg/ingest run medicines` writes `data/medicines/medicines.json` (9,816 packs on 5 Oct 2026, 770 of them non-prescription), run by the scheduled workflow;
   - ✅ flag ΕΟΦ shortages (the monthly limited-availability list);
-  - search on the device: in review;
+  - search on the device (in review): a "Φάρμακα" button in the header opens a full-screen search on every page; the code (about 18 KB before compression, plus React on pages without the map) and the index (209 KB brotli, 291 KB gzip) load only when it opens and work offline afterwards; Greek or Latin, with or without accents; maximum or indicative price, the ΕΟΦ shortage note, the source and date of each price, and "ask your pharmacist";
   - dropped: the co-payment estimate (no public file has the reference price) and export bans (posted as scanned images; would need OCR).
 - **Duty forecasts,** only if ΦΣΘ agrees (decision D11).
 

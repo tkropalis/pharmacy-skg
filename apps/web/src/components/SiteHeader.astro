@@ -1,8 +1,8 @@
 ---
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass, faPlus } from '@fortawesome/free-solid-svg-icons';
 import type { Locale } from '@pharmacy-skg/core';
 import { APP_HEADER_NAME, APP_NAME } from '../config.ts';
-import { localizedPath } from '../i18n/index.ts';
+import { localizedPath, t } from '../i18n/index.ts';
 import type { RouteKey } from '../i18n/index.ts';
 import { faSvg } from '../lib/fa.ts';
 import LanguageSwitcher from './LanguageSwitcher.astro';
@@ -16,6 +16,7 @@ interface Props {
 }
 
 const { locale, route, alternates } = Astro.props;
+const search = t(locale).search;
 ---
 
 <header class="site-header">
@@ -25,7 +26,26 @@ const { locale, route, alternates } = Astro.props;
       <span class="name short">{APP_HEADER_NAME[locale]}</span>
       <span class="name long">{APP_NAME[locale]}</span>
     </a>
-    <LanguageSwitcher locale={locale} route={route ?? 'home'} alternates={alternates} />
+    <div class="tools">
+      <button
+        type="button"
+        class="search"
+        data-medicine-search
+        aria-label={search.openLabel}
+        aria-haspopup="dialog"
+      >
+        <span set:html={faSvg(faMagnifyingGlass, { size: 16 })} />
+        <span>{search.open}</span>
+      </button>
+      <LanguageSwitcher locale={locale} route={route ?? 'home'} alternates={alternates} />
+    </div>
+    <noscript>
+      <style>
+        [data-medicine-search] {
+          display: none !important;
+        }
+      </style>
+    </noscript>
   </div>
 </header>
 
@@ -71,6 +91,41 @@ const { locale, route, alternates } = Astro.props;
 
   .long {
     display: none;
+  }
+
+  .tools {
+    display: flex;
+    flex: none;
+    align-items: center;
+    gap: 0.375rem;
+  }
+
+  /*
+   * The medicine search (scripts/medicine-search.ts). It needs JavaScript, so the noscript style
+   * hides it without; it is in the page from the start, so nothing moves when the script runs.
+   */
+  .search {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    min-height: 2.75rem;
+    padding: 0 0.875rem;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent-ink);
+    font: inherit;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .search:hover {
+    background: var(--surface);
+  }
+
+  .search[aria-busy='true'] {
+    cursor: progress;
   }
 
   .logo {

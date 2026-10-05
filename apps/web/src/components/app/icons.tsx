@@ -1,4 +1,5 @@
 import {
+  faArrowLeft,
   faCalendar,
   faChevronDown,
   faDiamondTurnRight,
@@ -7,11 +8,13 @@ import {
   faLocationArrow,
   faLocationCrosshairs,
   faLocationDot,
+  faMagnifyingGlass,
   faPhone,
   faPlus,
   faShareNodes,
   faSliders,
   faStar,
+  faTriangleExclamation,
   faXmark,
 } from '@fortawesome/free-solid-svg-icons';
 import { faClock, faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons';
@@ -39,6 +42,9 @@ const ICONS = {
   more: faEllipsis,
   clock: faClock,
   plus: faPlus,
+  search: faMagnifyingGlass,
+  back: faArrowLeft,
+  warning: faTriangleExclamation,
 } as const satisfies Record<string, IconDefinition>;
 
 export type IconName = keyof typeof ICONS;

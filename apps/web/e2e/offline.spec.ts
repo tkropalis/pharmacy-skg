@@ -61,6 +61,29 @@ test('after the first visit the home list and the map load offline', async ({
   await waitForRows(page);
 });
 
+test('the medicine search works offline once it has been opened', async ({ page, context }) => {
+  await page.goto('/plirofories/');
+  await page.evaluate(() => navigator.serviceWorker.ready);
+  await page.reload(); // now the worker controls the page
+  expect(await page.evaluate(() => navigator.serviceWorker.controller !== null)).toBe(true);
+
+  await page.getByRole('button', { name: /^Φάρμακα/ }).click();
+  const dialog = page.getByRole('dialog', { name: 'Αναζήτηση φαρμάκου' });
+  await expect(dialog.getByRole('status')).toHaveText(/δύο γράμματα/);
+  await expect
+    .poll(() =>
+      page.evaluate(async () => (await caches.match('/data/medicines/index.json')) !== undefined),
+    )
+    .toBe(true);
+  await page.keyboard.press('Escape');
+
+  await context.setOffline(true);
+  await page.reload();
+  await page.getByRole('button', { name: /^Φάρμακα/ }).click();
+  await dialog.getByLabel('Όνομα φαρμάκου ή δραστική ουσία').fill('ντεπον');
+  await expect(dialog.getByRole('status')).toHaveText(/^Βρέθηκαν \d+ φάρμακα$/);
+});
+
 test('a new service worker version never reloads a visible page: it offers a button', async ({
   page,
 }) => {

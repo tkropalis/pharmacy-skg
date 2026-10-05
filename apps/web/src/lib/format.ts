@@ -70,3 +70,20 @@ export function deviceZoneDiffers(at: Date, timeZone: string = TIME_ZONE): boole
     return false;
   }
 }
+
+/** "30 Σεπτεμβρίου 2026" / "30 September 2026" for an ISO date (calendar date, no zone). */
+export function longIsoDate(date: string, locale: Locale): string {
+  return new Intl.DateTimeFormat(intlLocale(locale), {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(new Date(`${date}T12:00:00Z`));
+}
+
+/** "8,19 €" / "€8.19". */
+export function formatPrice(euros: number, locale: Locale): string {
+  return new Intl.NumberFormat(intlLocale(locale), { style: 'currency', currency: 'EUR' }).format(
+    euros,
+  );
+}
