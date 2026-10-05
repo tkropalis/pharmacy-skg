@@ -5,7 +5,7 @@
 import type { DutyDay, ExtendedHours, Pharmacies } from '@pharmacy-skg/core';
 import pharmaciesJson from '../../../../../data/thessaloniki/pharmacies.json';
 import { DEFAULT_CITY_ID } from '../../config.ts';
-import { localIsoDate } from '../dates.ts';
+import { buildToday } from '../build-today.ts';
 import { buildMeta } from '../meta.ts';
 import { buildSeoModel, earliestDutyDate } from './model.ts';
 import type { SeoModel } from './model.ts';
@@ -22,8 +22,8 @@ const DUTY_NAME = /\/(\d{4}-\d{2}-\d{2})\.json$/;
 
 let model: Promise<SeoModel> | undefined;
 
-async function load(now: Date): Promise<SeoModel> {
-  const today = localIsoDate(now);
+async function load(): Promise<SeoModel> {
+  const today = buildToday();
   const earliest = earliestDutyDate(today);
 
   const duties = new Map<string, DutyDay>();
@@ -54,6 +54,6 @@ async function load(now: Date): Promise<SeoModel> {
 
 /** The page model for this build, read once and shared by every page. */
 export function loadSeoModel(): Promise<SeoModel> {
-  model ??= load(new Date());
+  model ??= load();
   return model;
 }

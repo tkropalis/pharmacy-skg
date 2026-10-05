@@ -2,7 +2,7 @@
 import type { Locale } from '@pharmacy-skg/core';
 import { t } from '../../i18n/index.ts';
 import { dutyPath } from '../../i18n/routes.ts';
-import { localIsoDate } from '../../lib/dates.ts';
+import { buildToday } from '../../lib/build-today.ts';
 
 interface Props {
   locale: Locale;
@@ -13,7 +13,7 @@ const d = t(locale).home;
 const app = t(locale).app;
 // Today in the city's time zone at build time. The page is rebuilt with every data update;
 // the interactive app that replaces this content works out the date itself.
-const dutyHref = dutyPath(locale, localIsoDate(new Date()));
+const dutyHref = dutyPath(locale, buildToday());
 ---
 
 <!--

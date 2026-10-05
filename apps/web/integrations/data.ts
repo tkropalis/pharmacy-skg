@@ -3,7 +3,7 @@ import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { AstroIntegration } from 'astro';
 import type { Meta } from '@pharmacy-skg/core';
-import { localIsoDate } from '../src/lib/dates.ts';
+import { buildToday } from '../src/lib/build-today.ts';
 import { isExtendedHoursPath, isPublishedPath, selectDutyFiles } from './data-files.ts';
 
 /** <repo>/data/, which lives outside apps/web (Vercel: "include files outside root"). */
@@ -43,7 +43,7 @@ export function dataIntegration(): AstroIntegration {
       },
 
       'astro:build:done': async ({ dir, logger }) => {
-        const today = localIsoDate(new Date());
+        const today = buildToday();
         for (const cityId of CITY_IDS) {
           const source = `${DATA_ROOT}${cityId}/`;
           const target = fileURLToPath(new URL(`data/${cityId}/`, dir));
