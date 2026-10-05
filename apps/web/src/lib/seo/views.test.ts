@@ -149,6 +149,15 @@ describe('dutyPageProps', () => {
     expect(en?.next?.path).toBe('/en/duty/2026-10-06/');
   });
 
+  it('names the area groups a day has no list for', () => {
+    // 1 Oct 2026 has the metro list only; 5 Oct has all ten.
+    expect(dutyPageProps(model, 'el', '2026-10-05')?.missingGroups).toEqual([]);
+    const metroOnly = dutyPageProps(model, 'el', '2026-10-01');
+    expect(metroOnly?.missingGroups).toContain('Δήμος Θέρμης');
+    expect(metroOnly?.missingGroups).toHaveLength(9);
+    expect(metroOnly?.missingGroups).not.toContain('Πολεοδομικό Συγκρότημα Θεσσαλονίκης');
+  });
+
   it('has no previous link on the first date and no next link on the last', () => {
     expect(dutyPageProps(model, 'el', model.publishedDates[0] ?? '')?.prev).toBeNull();
     expect(dutyPageProps(model, 'el', model.publishedDates.at(-1) ?? '')?.next).toBeNull();

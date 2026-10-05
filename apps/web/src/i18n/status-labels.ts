@@ -12,10 +12,12 @@ export const STATUS_LABELS = {
     onDuty: 'Εφημερεύει (λίστα ΦΣΘ)',
     openRegular: 'Ανοιχτό (κανονικό ωράριο)',
     openExtended: 'Ανοιχτό (διευρυμένο ωράριο)',
+    dutyUnknown: 'Εφημερεύει (λίστα ΦΣΘ) — δεν αναγράφεται ωράριο, καλέστε',
   },
   en: {
     onDuty: 'On duty (ΦΣΘ list)',
     openRegular: 'Open (regular hours)',
     openExtended: 'Open (extended hours)',
+    dutyUnknown: 'On duty (ΦΣΘ list) — hours not stated, call first',
   },
 } as const satisfies Record<Locale, Record<string, string>>;

@@ -6,10 +6,8 @@ type SeoStrings = Dictionary['seo'];
 
 const INTL_LOCALE: Record<Locale, string> = { el: 'el-GR', en: 'en-GB' };
 
-/** Replaces `{name}` placeholders. Unknown placeholders are left as they are. */
-export function fill(template: string, values: Readonly<Record<string, string | number>>): string {
-  return template.replace(/\{(\w+)\}/g, (match, key: string) => String(values[key] ?? match));
-}
+// `fill` (placeholder replacement) is shared with the home screen.
+export { fill } from '../format.ts';
 
 function utcDate(date: IsoDate): Date {
   const [y, m, d] = date.split('-').map(Number);

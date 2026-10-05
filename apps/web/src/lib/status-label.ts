@@ -1,7 +1,8 @@
-import { THESSALONIKI, addDays, zonedDate } from '@pharmacy-skg/core';
+import { THESSALONIKI } from '@pharmacy-skg/core';
 import type { DutyKind, Locale, OpenReason, PharmacyStatus } from '@pharmacy-skg/core';
 import type { Dictionary } from '../i18n/index.ts';
-import { fill, formatClock, shortDate, weekdayName } from './format.ts';
+import { fill } from './format.ts';
+import { whenOf } from './when.ts';
 import { pinKindOf } from './list.ts';
 import type { PinKind } from './list.ts';
 
@@ -42,16 +43,17 @@ export function dayAndTime(
   timeZone: string = THESSALONIKI.timeZone,
   sameDayShowsWord = false,
 ): string {
-  const clock = formatClock(target, timeZone);
-  const day = zonedDate(target, timeZone);
-  const today = zonedDate(at, timeZone);
-  if (day === today) return sameDayShowsWord ? `${text.today} ${clock}` : clock;
-  if (day === addDays(today, 1)) return `${text.tomorrow} ${clock}`;
-  const diff = Math.round(
-    (Date.parse(`${day}T00:00Z`) - Date.parse(`${today}T00:00Z`)) / 86_400_000,
-  );
-  if (diff >= 7) return `${shortDate(target, locale, timeZone)} ${clock}`;
-  return `${weekdayName(target, locale, timeZone)} ${clock}`;
+  const when = whenOf(target, at, locale, timeZone);
+  switch (when.kind) {
+    case 'today':
+      return sameDayShowsWord ? `${text.today} ${when.time}` : when.time;
+    case 'tomorrow':
+      return `${text.tomorrow} ${when.time}`;
+    case 'weekday':
+      return `${when.weekday} ${when.time}`;
+    case 'date':
+      return `${when.date} ${when.time}`;
+  }
 }
 
 /** Unique duty kinds, in words, from the reasons a pharmacy is open. */

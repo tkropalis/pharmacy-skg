@@ -2,6 +2,7 @@
 import type { Locale } from '@pharmacy-skg/core';
 import { t } from '../../i18n/index.ts';
 import { loadSeoModel } from '../../lib/seo/site-data.ts';
+import { fill } from '../../lib/seo/format.ts';
 import { dutyPageProps } from '../../lib/seo/views.ts';
 import SeoLayout from './SeoLayout.astro';
 
@@ -33,6 +34,12 @@ const seo = d.seo.duty;
     {page.h1}
   </h1>
   <p class="seo-meta">{seo.onlyPublished}</p>
+
+  {page.missingGroups.length > 0 && (
+    <p class="callout" role="note">
+      {fill(seo.missingGroups, { groups: page.missingGroups.join(', ') })}
+    </p>
+  )}
 
   <nav class="seo-pager" aria-label={seo.pagerLabel}>
     {page.prev !== null ? (

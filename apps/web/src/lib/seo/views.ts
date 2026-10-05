@@ -274,6 +274,8 @@ export interface DutyPageProps {
   readonly prev: DutyNeighbour | null;
   readonly next: DutyNeighbour | null;
   readonly groups: readonly DutyGroupView[];
+  /** Names of the area groups with no list in this day's file (each group has its own PDF). */
+  readonly missingGroups: readonly string[];
   readonly indexPath: string;
   readonly updatedAt: string;
   readonly updatedAtText: string;
@@ -282,6 +284,20 @@ export interface DutyPageProps {
 function neighbour(date: string | undefined, locale: Locale): DutyNeighbour | null {
   if (date === undefined) return null;
   return { date, label: formatLongDate(date, locale), path: dutyPath(locale, date) };
+}
+
+/**
+ * The groups that exist (seen in any loaded day, or on a pharmacy) but are not in this day's
+ * file, by name; a group never seen in a list falls back to its id.
+ */
+function missingGroupNames(model: SeoModel, present: readonly string[]): string[] {
+  const known = new Set<string>(model.groupNames.keys());
+  for (const pharmacy of model.pharmacies)
+    if (pharmacy.groupId !== null) known.add(pharmacy.groupId);
+  return [...known]
+    .filter((id) => !present.includes(id))
+    .map((id) => model.groupNames.get(id) ?? id)
+    .sort((a, b) => greek.compare(a, b));
 }
 
 export function dutyPageProps(model: SeoModel, locale: Locale, date: string): DutyPageProps | null {
@@ -331,6 +347,10 @@ export function dutyPageProps(model: SeoModel, locale: Locale, date: string): Du
     prev: neighbour(model.publishedDates[position - 1], locale),
     next: neighbour(model.publishedDates[position + 1], locale),
     groups,
+    missingGroups: missingGroupNames(
+      model,
+      day.groups.map((g) => g.id),
+    ),
     indexPath: dutyIndexPath(locale),
     updatedAt: model.updatedAt,
     updatedAtText: formatUpdatedAt(model.updatedAt, locale),

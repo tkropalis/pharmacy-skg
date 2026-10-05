@@ -19,7 +19,8 @@ async function show(root: HTMLElement): Promise<void> {
   root.textContent = labels.seo.pharmacy.statusLoading;
   try {
     const now = new Date();
-    const { status, dutiesPublished } = pharmacyStatus(await loadNowData(now), id, now);
+    const { data, failedDates } = await loadNowData(now);
+    const { status, dutiesPublished } = pharmacyStatus(data, id, now);
     const text = describeStatus(status, dutiesPublished, now, locale, labels);
     const headline = document.createElement('p');
     const strong = document.createElement('strong');
@@ -27,7 +28,8 @@ async function show(root: HTMLElement): Promise<void> {
     headline.append(strong);
     const detail = document.createElement('p');
     const computed = fill(labels.seo.status.computedAt, { time: timeInCity(now, locale) });
-    detail.textContent = `${text.detail} ${computed}`;
+    const failed = failedDates.length > 0 ? ` ${labels.seo.status.loadFailed}` : '';
+    detail.textContent = `${text.detail}${failed} ${computed}`;
     root.dataset['tone'] = text.tone;
     root.replaceChildren(headline, detail);
   } catch {

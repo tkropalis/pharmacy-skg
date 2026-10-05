@@ -31,6 +31,30 @@ describe('whenText', () => {
   });
 });
 
+describe('whenText / until across days', () => {
+  const en = t('en').seo.status;
+  it('names the day when a shift ends tomorrow or later, and the date after a week', () => {
+    expect(whenText(new Date('2026-10-14T05:00:00Z'), now, 'en', en)).toBe('Wed 14 Oct at 08:00');
+    expect(whenText(new Date('2026-10-11T05:00:00Z'), now, 'en', en)).toBe('Sunday at 08:00');
+  });
+
+  it('says "until tomorrow at 08:00" instead of a bare time', () => {
+    const status = {
+      state: 'open',
+      until: new Date('2026-10-06T05:00:00Z'), // 08:00 tomorrow
+      closingSoon: false,
+      runReasons: [],
+      reasons: [{ kind: 'regular' }],
+    } as const;
+    expect(describeStatus(status, true, now, 'en', t('en')).short).toBe(
+      'Open (regular hours) · until tomorrow at 08:00',
+    );
+    expect(describeStatus(status, true, now, 'el', t('el')).short).toBe(
+      'Ανοιχτό (κανονικό ωράριο) · μέχρι αύριο στις 08:00',
+    );
+  });
+});
+
 describe('describeStatus', () => {
   const open = (reasons: PharmacyStatus & { state: 'open' }): PharmacyStatus => reasons;
 
@@ -75,7 +99,7 @@ describe('describeStatus', () => {
     const result = describeStatus(status, false, now, 'en', t('en'));
     expect(result.tone).toBe('closed');
     expect(result.text).toBe(
-      'Closed now. We do not know of an opening in the next 7 days. The duty list for this day has not been published yet, so the status may change. Call before you go.',
+      'Closed now. We do not know of an opening in the next 7 days. The duty list for this area and day has not been published yet, so the status may change. Call before you go.',
     );
   });
 
@@ -99,7 +123,9 @@ describe('describeStatus', () => {
     };
     const result = describeStatus(status, true, now, 'el', t('el'));
     expect(result.tone).toBe('duty-unknown');
-    expect(result.short).toBe('Εφημερεύει (λίστα ΦΣΘ)');
-    expect(result.text).toContain('η λίστα δεν αναγράφει ώρες');
+    // The same words as the home screen's label.
+    expect(result.short).toBe(t('el').status.dutyUnknown);
+    expect(result.short).toBe(t('el').app.status.dutyUnknown);
+    expect(result.text).toContain('Καλέστε πριν πάτε');
   });
 });
