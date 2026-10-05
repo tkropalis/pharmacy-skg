@@ -9,7 +9,7 @@ const SIZES: readonly SheetSize[] = ['small', 'medium', 'large'];
 
 /** The collapsed sheet shows the handle and the tabs only. */
 const SMALL_PX = 120;
-const MEDIUM_FRACTION = 0.5;
+const MEDIUM_FRACTION = 0.56;
 const LARGE_FRACTION = 0.94;
 
 export function sheetHeights(containerHeight: number): Record<SheetSize, number> {

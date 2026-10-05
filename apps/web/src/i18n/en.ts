@@ -281,6 +281,8 @@ export const en: Dictionary = {
         'ΦΣΘ’s daily duty lists for the whole regional unit, by date. Only officially published lists are shown.',
       indexNone: 'No published lists at the moment.',
       indexCounts: '{groups} area groups, {pharmacies} pharmacies',
+      missingGroups:
+        'No duty list has been published for this day for: {groups}. Pharmacies in those areas may be on duty without our knowing. Call before you go.',
       pageTitle: 'On-duty pharmacies in Thessaloniki — {date}',
       pageDescription:
         'On-duty and overnight pharmacies in Thessaloniki for {date}, by area, with hours and phone numbers. Source: ΦΣΘ.',
@@ -334,18 +336,20 @@ export const en: Dictionary = {
     },
 
     status: {
-      openUntil: '{label} · until {time}',
+      openUntil: '{label} · until {when}',
+      untilToday: '{time}',
       closingSoon: 'closing soon',
-      dutyHoursUnknown:
-        'On duty today (ΦΣΘ list), but the list does not print hours. Call to confirm.',
       closed: 'Closed now.',
       opensAt: 'Opens {when}.',
       noNextOpen: 'We do not know of an opening in the next 7 days.',
       unpublished:
-        'The duty list for this day has not been published yet, so the status may change.',
+        'The duty list for this area and day has not been published yet, so the status may change.',
+      unpublishedShort: '(no duty list published for the area)',
+      loadFailed: 'Not all duty lists loaded, so the status may change.',
       whenToday: 'today at {time}',
       whenTomorrow: 'tomorrow at {time}',
       whenWeekday: '{weekday} at {time}',
+      whenDate: '{date} at {time}',
       callFirst: 'Call before you go.',
       computedAt: 'Worked out at {time} (Thessaloniki time).',
     },

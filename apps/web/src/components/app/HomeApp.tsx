@@ -6,7 +6,8 @@ import type { Dictionary } from '../../i18n/index.ts';
 import { addDays, dateRange } from '../../lib/dates.ts';
 import { upcomingDuties } from '../../lib/duties.ts';
 import { coverage, distanceMetres, publishedDuties } from '../../lib/engine.ts';
-import { formatUpdatedAt } from '../../lib/freshness.ts';
+import { formatUpdatedAt, formatUpdatedShort } from '../../lib/freshness.ts';
+import { groupList, groupNames, groupNear } from '../../lib/groups.ts';
 import { deviceZoneDiffers, fill, shortIsoDate } from '../../lib/format.ts';
 import { buildRows, rowFor } from '../../lib/list.ts';
 import type { Origin } from '../../lib/list.ts';
@@ -84,7 +85,10 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   const [originNonce, setOriginNonce] = useState(0);
   const [geo, setGeo] = useState<GeoState>('idle');
   const [showClosed, setShowClosed] = useState(false);
-  const [controlsOpen, setControlsOpen] = useState(true);
+  // On a phone the controls start closed, so the first pharmacy is on screen without scrolling.
+  const [controlsOpen, setControlsOpen] = useState(
+    () => window.matchMedia('(min-width: 900px)').matches,
+  );
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [mapFocus, setMapFocus] = useState<MapFocus | null>(null);
   const [sheetSize, setSheetSize] = useState<SheetSize>('medium');
@@ -170,6 +174,29 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   );
   const covered = useMemo(() => (data ? coverage(data, at) : null), [data, at]);
 
+  // The duty list that applies to the chosen moment is still being fetched: the list must not
+  // say "none open" or "not published" yet, and nothing is announced.
+  const dutyLoading =
+    covered !== null &&
+    meta?.duties != null &&
+    covered.dutyDate >= meta.duties.from &&
+    covered.dutyDate <= meta.duties.to &&
+    !(data?.duties.has(covered.dutyDate) ?? false) &&
+    !(ready?.failedDates.includes(covered.dutyDate) ?? false);
+
+  // Each area group has its own list and a day's file can lack some of them.
+  const names = useMemo(() => (data ? groupNames(data) : new Map<string, string>()), [data]);
+  const originGroup = useMemo(() => {
+    if (data === null || origin === null) return null;
+    if (origin.kind === 'area') {
+      return localities.find((l) => l.name === origin.label)?.groupId ?? null;
+    }
+    return groupNear(data.pharmacies, origin);
+  }, [data, origin, localities]);
+  const missingGroups =
+    covered !== null && covered.duties && !dutyLoading ? covered.groups.missing : [];
+  const originGroupMissing = originGroup !== null && missingGroups.includes(originGroup);
+
   useEffect(() => setVisible(PAGE_SIZE), [originPoint, timeMode, showClosed, tab]);
 
   const selectedIndex = selectedId
@@ -193,10 +220,10 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
 
   // Announce list changes politely, and only after something the person did (not each minute).
   useEffect(() => {
-    if (!pendingAnnouncement.current || state.status !== 'ready') return;
+    if (!pendingAnnouncement.current || state.status !== 'ready' || dutyLoading) return;
     pendingAnnouncement.current = false;
     setMessage(fill(text.list.updated, { summary }));
-  }, [summary, state.status, text]);
+  }, [summary, state.status, text, dutyLoading]);
 
   const announce = useCallback((value: string) => setMessage(value), []);
 
@@ -344,7 +371,17 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
           </button>
         ))}
       </div>
-      {ready && tab === 'open' && <p className="summary">{summary}</p>}
+      <p className="summary">
+        {ready && tab === 'open' ? (dutyLoading ? text.time.loadingDuties : summary) : ' '}
+      </p>
+      {meta && (
+        <p className="fresh">
+          {text.source.updated}{' '}
+          <time dateTime={meta.updatedAt}>{formatUpdatedShort(meta.updatedAt, now, locale)}</time>
+          {' · '}
+          {text.source.short}
+        </p>
+      )}
     </>
   );
 
@@ -353,7 +390,8 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
     return favourites.ids.map((id) => ({
       id,
       row: rowFor(data, id, at, originPoint),
-      duties: upcomingDuties(publishedDuties(data, id, today), now, TIME_ZONE),
+      // From yesterday: a duty that started yesterday evening may still be running.
+      duties: upcomingDuties(publishedDuties(data, id, addDays(today, -1)), now, TIME_ZONE),
     }));
   }, [data, favourites.ids, at, originPoint, today, now]);
 
@@ -466,11 +504,31 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                   </button>
                 </p>
               )}
-              {covered && !covered.duties && (
+              {dutyLoading && (
+                <p className="state" role="status">
+                  {text.time.loadingDuties}
+                </p>
+              )}
+              {!dutyLoading && covered && !covered.duties && (
                 <p className="callout" role="note">
                   {timeMode.kind === 'now'
                     ? text.time.dutyNotPublishedToday
                     : text.time.dutyNotPublished}
+                </p>
+              )}
+              {originGroupMissing && originGroup !== null && (
+                <p className="callout danger" role="alert">
+                  {fill(text.time.groupsMissingOrigin, { group: groupList([originGroup], names) })}
+                </p>
+              )}
+              {missingGroups.length > 0 && !(originGroupMissing && missingGroups.length === 1) && (
+                <p className="callout" role="note">
+                  {fill(text.time.groupsMissing, {
+                    groups: groupList(
+                      missingGroups.filter((id) => id !== originGroup || !originGroupMissing),
+                      names,
+                    ),
+                  })}
                 </p>
               )}
               {covered && !covered.extendedHours && (
@@ -484,7 +542,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                 </p>
               )}
 
-              {result.rows.length === 0 ? (
+              {dutyLoading ? null : result.rows.length === 0 ? (
                 <p className="state">{text.list.noneOpen}</p>
               ) : (
                 <>
@@ -557,6 +615,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                             pharmacy={row.pharmacy}
                             duties={duties}
                             loading={dutiesLoading}
+                            publishedThrough={meta?.duties?.to ?? null}
                             locale={locale}
                             text={text}
                             now={now}

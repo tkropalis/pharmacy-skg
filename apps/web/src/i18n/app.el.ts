@@ -34,7 +34,7 @@ export const appEl = {
     one: '1 ανοιχτό φαρμακείο',
     many: '{n} ανοιχτά φαρμακεία',
     sortedByDistance: 'κοντινότερα πρώτα, από: {origin}',
-    sortedByName: 'κατά αλφαβητική σειρά· διαλέξτε θέση για να δείτε αποστάσεις',
+    sortedByName: 'αλφαβητικά· διαλέξτε θέση για αποστάσεις',
     withClosed: '+ {n} κλειστά',
   },
 
@@ -81,6 +81,11 @@ export const appEl = {
       'Η λίστα εφημεριών για σήμερα δεν έχει δημοσιευτεί ή δεν φορτώθηκε. Εμφανίζονται μόνο τα κανονικά και τα διευρυμένα ωράρια.',
     changed: 'Η ώρα άλλαξε: {when}',
     backToNow: 'Επιστροφή στο «Τώρα»',
+    loadingDuties: 'Φόρτωση λίστας εφημεριών…',
+    groupsMissing:
+      'Δεν έχει δημοσιευτεί ακόμη η λίστα εφημεριών για: {groups}. Τα φαρμακεία αυτών των περιοχών φαίνονται ανοιχτά μόνο με το κανονικό ή το διευρυμένο ωράριό τους, ακόμη κι αν εφημερεύουν.',
+    groupsMissingOrigin:
+      'Δεν έχει δημοσιευτεί ακόμη η λίστα εφημεριών για την περιοχή σας ({group}). Φαρμακεία εκεί μπορεί να εφημερεύουν χωρίς να το γνωρίζουμε. Καλέστε πριν πάτε ή καλέστε το 166 σε έκτακτη ανάγκη.',
   },
 
   filters: {
@@ -121,12 +126,14 @@ export const appEl = {
     reportLabel: 'Αναφορά προβλήματος για το {name}',
     showOnMap: 'Εμφάνιση στον χάρτη',
     selected: 'επιλεγμένο',
+    dutiesMissing: 'Η λίστα εφημεριών για την περιοχή δεν έχει δημοσιευτεί ακόμη',
+    favouriteSaved: 'Αποθηκευμένο',
+    favouriteSavedLabel: 'Αποθηκευμένο: {name}',
     shareText: '{name}, {address}',
   },
 
   status: {
     ...STATUS_LABELS.el,
-    dutyUnknown: `${STATUS_LABELS.el.onDuty} — δεν αναγράφεται ωράριο, καλέστε`,
     closed: 'Κλειστό',
     opensAt: 'ανοίγει {when}',
     opensUnknown: 'δεν γνωρίζουμε πότε ανοίγει',
@@ -149,7 +156,7 @@ export const appEl = {
       duty: STATUS_LABELS.el.onDuty,
       regular: STATUS_LABELS.el.openRegular,
       extended: STATUS_LABELS.el.openExtended,
-      dutyUnknown: `${STATUS_LABELS.el.onDuty}, ωράριο άγνωστο`,
+      dutyUnknown: STATUS_LABELS.el.dutyUnknown,
       closed: 'Κλειστό',
       approximate: 'Διακεκομμένο περίγραμμα: θέση κατά προσέγγιση',
     },
@@ -163,7 +170,7 @@ export const appEl = {
       'Δεν μπορέσαμε να αποθηκεύσουμε τα αγαπημένα· θα ισχύουν μόνο μέχρι να κλείσετε τη σελίδα.',
     gone: 'Το φαρμακείο δεν υπάρχει πια στα δεδομένα.',
     upcoming: 'Δημοσιευμένες εφημερίες',
-    noneUpcoming: 'Δεν έχουν δημοσιευτεί ακόμη εφημερίες.',
+    noneUpcoming: 'Καμία εφημερία στις λίστες που έχουν δημοσιευτεί έως {date}.',
     officialOnly:
       'Εμφανίζονται μόνο εφημερίες που έχει δημοσιεύσει επίσημα ο ΦΣΘ. Δεν κάνουμε προβλέψεις.',
     hoursNotStated: 'ωράριο μη αναγραφόμενο',
@@ -184,8 +191,9 @@ export const appEl = {
   },
 
   source: {
-    updated: 'Ενημερώθηκε',
-    sources: 'Πηγή: ΦΣΘ via thess.guide, ΠΚΜ',
+    updated: 'Ενημέρωση',
+    sources: 'Πηγή: ΦΣΘ μέσω thess.guide, ΠΚΜ',
+    short: 'ΦΣΘ (μέσω thess.guide)',
     map: 'Χάρτης: OpenFreeMap © OpenMapTiles © OpenStreetMap',
     callFirst: 'Καλέστε πριν πάτε.',
   },

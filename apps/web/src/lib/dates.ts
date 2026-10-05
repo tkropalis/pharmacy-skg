@@ -1,5 +1,5 @@
 import type { IsoDate } from '@pharmacy-skg/core';
-import { THESSALONIKI } from '@pharmacy-skg/core';
+import { THESSALONIKI, addDays } from '@pharmacy-skg/core';
 
 const formatters = new Map<string, Intl.DateTimeFormat>();
 
@@ -24,21 +24,19 @@ export function localIsoDate(at: Date, timeZone: string = THESSALONIKI.timeZone)
   return `${pick('year')}-${pick('month')}-${pick('day')}`;
 }
 
-/** Calendar arithmetic on an ISO date. No time zone is involved. */
-export function addDays(date: IsoDate, days: number): IsoDate {
-  const [y, m, d] = date.split('-').map(Number);
-  if (y === undefined || m === undefined || d === undefined) {
-    throw new Error(`Not an ISO date: ${date}`);
-  }
-  return new Date(Date.UTC(y, m - 1, d + days)).toISOString().slice(0, 10);
-}
+// Calendar arithmetic on an ISO date is the core's (no time zone is involved).
+export { addDays };
 
 /** `count` consecutive dates starting at `start`. */
 export function dateRange(start: IsoDate, count: number): IsoDate[] {
   return Array.from({ length: count }, (_, i) => addDays(start, i));
 }
 
-/** Today and the next three days in the city's time zone: the window kept for offline use. */
+/**
+ * Yesterday, today and the next three days in the city's time zone: the window kept for offline
+ * use. Yesterday's list is needed because a duty runs from 08:00 to 08:00, so before 08:00 the
+ * list that applies is yesterday's.
+ */
 export function offlineDates(now: Date, timeZone: string = THESSALONIKI.timeZone): IsoDate[] {
-  return dateRange(localIsoDate(now, timeZone), 4);
+  return dateRange(addDays(localIsoDate(now, timeZone), -1), 5);
 }

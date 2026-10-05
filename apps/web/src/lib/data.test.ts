@@ -152,11 +152,12 @@ describe('loadMeta', () => {
 });
 
 describe('offlineUrls', () => {
-  it('lists the data files to warm up: meta, pharmacies, extended hours, four duty days', () => {
+  it('lists the data files to warm up: meta, pharmacies, extended hours, five duty days', () => {
     expect(offlineUrls(new Date('2026-10-04T23:30:00Z'), ['extended-hours/a_b.json'])).toEqual([
       `${base}/meta.json`,
       `${base}/pharmacies.json`,
       `${base}/extended-hours/a_b.json`,
+      `${base}/duties/2026-10-04.json`,
       `${base}/duties/2026-10-05.json`,
       `${base}/duties/2026-10-06.json`,
       `${base}/duties/2026-10-07.json`,

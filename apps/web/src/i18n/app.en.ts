@@ -29,7 +29,7 @@ export const appEn: Dictionary['app'] = {
     one: '1 pharmacy open',
     many: '{n} pharmacies open',
     sortedByDistance: 'nearest first, from: {origin}',
-    sortedByName: 'in alphabetical order; choose a location to see distances',
+    sortedByName: 'A–Z; choose a location for distances',
     withClosed: '+ {n} closed',
   },
 
@@ -75,6 +75,11 @@ export const appEn: Dictionary['app'] = {
     dutyNotPublishedToday:
       'The duty list for today is not published or did not load. Only regular and extended hours are shown.',
     changed: 'Time changed: {when}',
+    loadingDuties: 'Loading the duty list…',
+    groupsMissing:
+      'The duty list has not been published yet for: {groups}. Pharmacies in those areas show as open only by their regular or extended hours, even if they are on duty.',
+    groupsMissingOrigin:
+      'The duty list for your area ({group}) has not been published yet. Pharmacies there may be on duty without our knowing. Call before you go, or call 166 in an emergency.',
     backToNow: 'Back to “Now”',
   },
 
@@ -116,12 +121,14 @@ export const appEn: Dictionary['app'] = {
     reportLabel: 'Report a problem with {name}',
     showOnMap: 'Show on map',
     selected: 'selected',
+    dutiesMissing: 'The duty list for this area has not been published yet',
+    favouriteSaved: 'Saved',
+    favouriteSavedLabel: 'Saved: {name}',
     shareText: '{name}, {address}',
   },
 
   status: {
     ...STATUS_LABELS.en,
-    dutyUnknown: `${STATUS_LABELS.en.onDuty} — hours not stated, call first`,
     closed: 'Closed',
     opensAt: 'opens {when}',
     opensUnknown: 'we do not know when it opens',
@@ -144,7 +151,7 @@ export const appEn: Dictionary['app'] = {
       duty: STATUS_LABELS.en.onDuty,
       regular: STATUS_LABELS.en.openRegular,
       extended: STATUS_LABELS.en.openExtended,
-      dutyUnknown: `${STATUS_LABELS.en.onDuty}, hours unknown`,
+      dutyUnknown: STATUS_LABELS.en.dutyUnknown,
       closed: 'Closed',
       approximate: 'Dashed outline: approximate location',
     },
@@ -157,7 +164,7 @@ export const appEn: Dictionary['app'] = {
     notStored: 'Favourites could not be saved; they last only until you close the page.',
     gone: 'This pharmacy is no longer in the data.',
     upcoming: 'Published duty dates',
-    noneUpcoming: 'No duty dates have been published yet.',
+    noneUpcoming: 'No duty dates in the lists published through {date}.',
     officialOnly: 'Only duties officially published by ΦΣΘ are shown. We do not make forecasts.',
     hoursNotStated: 'hours not stated',
     addToCalendar: 'Add to calendar',
@@ -179,6 +186,7 @@ export const appEn: Dictionary['app'] = {
   source: {
     updated: 'Updated',
     sources: 'Source: ΦΣΘ via thess.guide, ΠΚΜ',
+    short: 'ΦΣΘ (via thess.guide)',
     map: 'Map: OpenFreeMap © OpenMapTiles © OpenStreetMap contributors',
     callFirst: 'Call before you go.',
   },

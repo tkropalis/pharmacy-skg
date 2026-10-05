@@ -91,8 +91,8 @@ function rowOf(
   at: Date,
   origin: Origin | null,
 ): NearbyPharmacy {
-  const { status } = pharmacyStatus(data, pharmacy.id, at);
-  return { pharmacy, status, distance: distanceTo(origin, pharmacy) };
+  const { status, dutiesPublished } = pharmacyStatus(data, pharmacy.id, at);
+  return { pharmacy, status, distance: distanceTo(origin, pharmacy), dutiesPublished };
 }
 
 /**
@@ -105,9 +105,9 @@ export function rowFor(
   at: Date,
   origin: Origin | null,
 ): Row | null {
-  const { found, status } = pharmacyStatus(data, pharmacyId, at);
+  const { found, status, dutiesPublished } = pharmacyStatus(data, pharmacyId, at);
   if (!found) return null;
   const pharmacy = data.pharmacies.find((p) => p.id === pharmacyId);
   if (pharmacy === undefined) return null;
-  return toRow({ pharmacy, status, distance: distanceTo(origin, pharmacy) });
+  return toRow({ pharmacy, status, distance: distanceTo(origin, pharmacy), dutiesPublished });
 }

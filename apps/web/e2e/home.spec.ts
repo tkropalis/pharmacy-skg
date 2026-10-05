@@ -1,6 +1,6 @@
 import { LOCALES } from '@pharmacy-skg/core';
 import { t } from '../src/i18n/index.ts';
-import { expect, test, waitForMap, waitForRows } from './support.ts';
+import { expect, openControls, test, waitForMap, waitForRows } from './support.ts';
 
 const HOME = { el: '/', en: '/en/' } as const;
 
@@ -26,6 +26,7 @@ for (const locale of LOCALES) {
     test('lists the open pharmacies nearest first, each with a status label', async ({ page }) => {
       await page.goto(HOME[locale]);
       await waitForRows(page);
+      await openControls(page);
 
       await page.getByRole('button', { name: text.app.origin.useLocation }).click();
       await expect(page.getByText(text.app.origin.privacy).first()).toBeAttached();
@@ -57,6 +58,7 @@ for (const locale of LOCALES) {
     test('finds Καλαμαριά by typing "kalamaria" in the area picker', async ({ page }) => {
       await page.goto(HOME[locale]);
       await waitForRows(page);
+      await openControls(page);
 
       await page.getByRole('button', { name: text.app.origin.areaLabel }).click();
       await page.getByLabel(text.app.origin.areaSearch).fill('kalamaria');

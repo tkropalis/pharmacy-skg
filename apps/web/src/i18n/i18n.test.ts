@@ -42,11 +42,13 @@ describe('dictionaries', () => {
       onDuty: 'Εφημερεύει (λίστα ΦΣΘ)',
       openRegular: 'Ανοιχτό (κανονικό ωράριο)',
       openExtended: 'Ανοιχτό (διευρυμένο ωράριο)',
+      dutyUnknown: 'Εφημερεύει (λίστα ΦΣΘ) — δεν αναγράφεται ωράριο, καλέστε',
     });
     expect(t('en').status).toEqual({
       onDuty: 'On duty (ΦΣΘ list)',
       openRegular: 'Open (regular hours)',
       openExtended: 'Open (extended hours)',
+      dutyUnknown: 'On duty (ΦΣΘ list) — hours not stated, call first',
     });
   });
 });
@@ -61,7 +63,8 @@ describe('status labels', () => {
       expect(app.status.legend.duty).toBe(status.onDuty);
       expect(app.status.legend.regular).toBe(status.openRegular);
       expect(app.status.legend.extended).toBe(status.openExtended);
-      expect(app.status.dutyUnknown.startsWith(status.onDuty)).toBe(true);
+      expect(app.status.dutyUnknown).toBe(status.dutyUnknown);
+      expect(app.status.legend.dutyUnknown).toBe(status.dutyUnknown);
     }
   });
 });

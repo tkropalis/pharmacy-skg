@@ -1,4 +1,5 @@
 import type { Pharmacy } from '@pharmacy-skg/core';
+import { dominantGroup } from './groups.ts';
 
 /** A named area people can choose as the starting point: the middle of its located pharmacies. */
 export interface Locality {
@@ -6,6 +7,8 @@ export interface Locality {
   readonly lat: number;
   readonly lon: number;
   readonly count: number;
+  /** The duty-list group most of its pharmacies belong to, or null. */
+  readonly groupId: string | null;
 }
 
 const greek = new Intl.Collator('el');
@@ -16,12 +19,17 @@ const greek = new Intl.Collator('el');
  * locality's middle already). Localities with no located pharmacy are left out.
  */
 export function buildLocalities(pharmacies: readonly Pharmacy[]): Locality[] {
-  const groups = new Map<string, { precise: Pharmacy[]; rough: Pharmacy[]; count: number }>();
+  const groups = new Map<
+    string,
+    { precise: Pharmacy[]; rough: Pharmacy[]; all: Pharmacy[]; count: number }
+  >();
   for (const pharmacy of pharmacies) {
     if (pharmacy.locality === '') continue;
     let group = groups.get(pharmacy.locality);
-    if (!group) groups.set(pharmacy.locality, (group = { precise: [], rough: [], count: 0 }));
+    if (!group)
+      groups.set(pharmacy.locality, (group = { precise: [], rough: [], all: [], count: 0 }));
     group.count += 1;
+    group.all.push(pharmacy);
     if (pharmacy.location === null) continue;
     (pharmacy.location.precision === 'locality' ? group.rough : group.precise).push(pharmacy);
   }
@@ -35,7 +43,13 @@ export function buildLocalities(pharmacies: readonly Pharmacy[]): Locality[] {
       lon += location?.lon ?? 0;
     }
     if (located.length === 0) continue;
-    out.push({ name, lat: lat / located.length, lon: lon / located.length, count: group.count });
+    out.push({
+      name,
+      lat: lat / located.length,
+      lon: lon / located.length,
+      count: group.count,
+      groupId: dominantGroup(group.all),
+    });
   }
   return out.sort((a, b) => greek.compare(a.name, b.name));
 }

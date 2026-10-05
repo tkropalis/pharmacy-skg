@@ -3,7 +3,7 @@ import type { Locale, Pharmacy, PublishedDuty } from '@pharmacy-skg/core';
 import { THESSALONIKI } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
 import { describeDuty } from '../../lib/duties.ts';
-import { fill } from '../../lib/format.ts';
+import { fill, shortIsoDate } from '../../lib/format.ts';
 import { buildIcs, downloadTextFile, dutyEvents } from '../../lib/ics.ts';
 import { Icon } from './icons.tsx';
 
@@ -14,6 +14,8 @@ interface UpcomingDutiesProps {
   /** Officially published duties from today on, as loaded; never a forecast (D11). */
   readonly duties: readonly PublishedDuty[];
   readonly loading: boolean;
+  /** The last date the published lists reach (meta.json), for the empty message. */
+  readonly publishedThrough: string | null;
   readonly locale: Locale;
   readonly text: Dictionary['app'];
   readonly now: Date;
@@ -25,6 +27,7 @@ export function UpcomingDuties({
   pharmacy,
   duties,
   loading,
+  publishedThrough,
   locale,
   text,
   now,
@@ -45,10 +48,14 @@ export function UpcomingDuties({
 
   return (
     <div className="duties">
-      <h4 className="duties-title">{text.favourites.upcoming}</h4>
+      <h3 className="duties-title">{text.favourites.upcoming}</h3>
       {duties.length === 0 ? (
         <p className="hint">
-          {loading ? text.favourites.loadingDuties : text.favourites.noneUpcoming}
+          {loading
+            ? text.favourites.loadingDuties
+            : fill(text.favourites.noneUpcoming, {
+                date: publishedThrough === null ? '—' : shortIsoDate(publishedThrough, locale),
+              })}
         </p>
       ) : (
         <>

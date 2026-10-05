@@ -83,3 +83,10 @@ export async function waitForRows(page: Page): Promise<Locator> {
 export async function waitForMap(page: Page): Promise<void> {
   await expect(page.locator('.map[data-status="ready"]')).toBeAttached({ timeout: 20_000 });
 }
+
+/** Opens the "location, time and filters" panel, which starts closed on a phone. */
+export async function openControls(page: Page): Promise<void> {
+  const panel = page.locator('details.panel');
+  if ((await panel.getAttribute('open')) === null) await panel.locator('> summary').click();
+  await expect(panel).toHaveAttribute('open', '');
+}

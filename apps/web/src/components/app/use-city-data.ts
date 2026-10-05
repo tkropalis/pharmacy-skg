@@ -13,6 +13,8 @@ export type CityState =
       readonly meta: Meta;
       /** Duty dates that could not be fetched (not merely unpublished). */
       readonly failedDates: readonly IsoDate[];
+      /** Duty dates being fetched right now (asked for after the first load). */
+      readonly pendingDates: readonly IsoDate[];
     };
 
 /** Yesterday to three days ahead, in the city's time zone: what the first load asks for. */
@@ -55,6 +57,7 @@ export function useCityData(): CityDataApi {
           data: bundle.data,
           meta: bundle.meta,
           failedDates: bundle.failedDates,
+          pendingDates: [],
         });
       })
       .catch(() => {
@@ -90,24 +93,38 @@ export function useCityData(): CityDataApi {
     if (missing.length === 0) return;
     for (const d of missing) requested.current.add(d);
     const run = generation.current;
+    const settle = (
+      previous: CityState,
+      duties: ReadonlyMap<IsoDate, DutyDay>,
+      failedDates: readonly IsoDate[],
+    ): CityState => {
+      if (previous.status !== 'ready') return previous;
+      const merged = new Map<IsoDate, DutyDay>(previous.data.duties);
+      for (const [date, day] of duties) merged.set(date, day);
+      return {
+        ...previous,
+        // A new object: the engine caches its indexes per CityData.
+        data: { ...previous.data, duties: merged },
+        // A date that was retried and loaded is no longer failed.
+        failedDates: [...previous.failedDates.filter((d) => !missing.includes(d)), ...failedDates],
+        pendingDates: previous.pendingDates.filter((d) => !missing.includes(d)),
+      };
+    };
+    setState((previous) =>
+      previous.status === 'ready'
+        ? { ...previous, pendingDates: [...new Set([...previous.pendingDates, ...missing])] }
+        : previous,
+    );
     loadDutyDays(DEFAULT_CITY_ID, missing, meta, { onlyPublishedDates: true })
       .then(({ duties, failedDates }) => {
         if (run !== generation.current) return;
         for (const d of failedDates) requested.current.delete(d);
-        setState((previous) => {
-          if (previous.status !== 'ready') return previous;
-          const merged = new Map<IsoDate, DutyDay>(previous.data.duties);
-          for (const [date, day] of duties) merged.set(date, day);
-          return {
-            ...previous,
-            // A new object: the engine caches its indexes per CityData.
-            data: { ...previous.data, duties: merged },
-            failedDates: [...new Set([...previous.failedDates, ...failedDates])],
-          };
-        });
+        setState((previous) => settle(previous, duties, failedDates));
       })
       .catch(() => {
+        if (run !== generation.current) return;
         for (const d of missing) requested.current.delete(d);
+        setState((previous) => settle(previous, new Map(), missing));
       });
   }, []);
 

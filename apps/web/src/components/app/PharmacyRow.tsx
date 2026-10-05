@@ -107,6 +107,11 @@ function PharmacyRowView({
         <strong>{view.label}</strong>
         {view.dutyKinds !== null && <span>{` · ${view.dutyKinds}`}</span>}
       </p>
+      {!row.dutiesPublished && (
+        <p className="row-warning" role="note">
+          {text.row.dutiesMissing}
+        </p>
+      )}
       {(view.timing !== null || view.closingSoon) && (
         <p className="row-timing" data-closing-soon={view.closingSoon ? 'true' : undefined}>
           {view.closingSoon && <span className="badge">{text.status.closingSoon}</span>}
@@ -160,13 +165,16 @@ function PharmacyRowView({
         </button>
         <button
           type="button"
-          className="action"
-          aria-pressed={favourite}
-          aria-label={fill(text.row.favouriteLabel, { name: pharmacy.name })}
+          className="action fav"
+          data-saved={favourite ? 'true' : undefined}
+          // The state is in the name (not aria-pressed), and the name contains the visible text.
+          aria-label={fill(favourite ? text.row.favouriteSavedLabel : text.row.favouriteLabel, {
+            name: pharmacy.name,
+          })}
           onClick={() => onToggleFavourite(pharmacy.id, pharmacy.name)}
         >
-          <Icon name="star" />
-          {text.row.favourite}
+          <Icon name={favourite ? 'star' : 'starOutline'} />
+          {favourite ? text.row.favouriteSaved : text.row.favourite}
         </button>
       </div>
 
