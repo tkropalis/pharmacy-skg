@@ -1,6 +1,5 @@
 ---
 import type { Locale } from '@pharmacy-skg/core';
-import { REPO_URL } from '../config.ts';
 import { localizedPath, t } from '../i18n/index.ts';
 import { areaIndexPath, dutyIndexPath } from '../i18n/routes.ts';
 
@@ -14,12 +13,11 @@ const seo = t(locale).seo;
 const about = localizedPath(locale, 'about');
 
 const links = [
-  { href: dutyIndexPath(locale), label: seo.footerDuty },
-  { href: areaIndexPath(locale), label: seo.footerArea },
   { href: about, label: d.aboutShort },
   { href: localizedPath(locale, 'privacy'), label: d.privacy },
   { href: localizedPath(locale, 'report'), label: d.report },
-  { href: REPO_URL, label: d.sourceCode, external: true },
+  { href: dutyIndexPath(locale), label: seo.footerDuty },
+  { href: areaIndexPath(locale), label: seo.footerArea },
 ];
 ---
 
@@ -34,9 +32,7 @@ const links = [
       <ul class="links">
         {links.map((link) => (
           <li>
-            <a href={link.href} rel={link.external ? 'noopener' : undefined}>
-              {link.label}
-            </a>
+            <a href={link.href}>{link.label}</a>
           </li>
         ))}
       </ul>
@@ -67,7 +63,7 @@ const links = [
   .links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0 1.25rem;
+    gap: 0 1rem;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -77,6 +73,13 @@ const links = [
     display: inline-flex;
     align-items: center;
     min-height: 2.75rem;
+    font-size: 0.8125rem;
+  }
+
+  @media (min-width: 40rem) {
+    .links a {
+      font-size: 0.875rem;
+    }
   }
 
   .small {

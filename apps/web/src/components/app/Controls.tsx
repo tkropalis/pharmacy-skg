@@ -20,6 +20,8 @@ export interface OriginView {
 
 interface OriginControlsProps {
   readonly text: Text;
+  /** 'panel' is the full section of the options panel, 'card' the compact body of the nearby card. */
+  readonly variant?: 'panel' | 'card';
   readonly origin: OriginView | null;
   readonly geo: GeoState;
   readonly far: boolean;
@@ -31,8 +33,17 @@ interface OriginControlsProps {
   readonly onClear: () => void;
 }
 
+/** iPhone, iPod and iPad (which presents itself as a Mac with a touch screen). */
+function isIos(): boolean {
+  const agent = navigator.userAgent;
+  return (
+    /iPad|iPhone|iPod/.test(agent) || (agent.includes('Macintosh') && navigator.maxTouchPoints > 1)
+  );
+}
+
 export function OriginControls({
   text,
+  variant = 'panel',
   origin,
   geo,
   far,
@@ -48,106 +59,133 @@ export function OriginControls({
   const [pickerOpen, setPickerOpen] = useState(false);
   const [query, setQuery] = useState('');
   const matches = useMemo(() => searchLocalities(localities, query, 8), [localities, query]);
+  const card = variant === 'card';
   const geoMessage =
     geo === 'denied'
-      ? text.origin.denied
+      ? card
+        ? text.origin.deniedShort
+        : text.origin.denied
       : geo === 'unavailable'
         ? text.origin.unavailable
         : geo === 'unsupported'
           ? text.origin.unsupported
           : null;
 
+  const buttons = (
+    <div className="control-row">
+      <button
+        type="button"
+        className="action primary"
+        disabled={geo === 'locating'}
+        onClick={onUseLocation}
+      >
+        <Icon name="locate" />
+        {geo === 'locating' ? text.origin.locating : text.origin.useLocation}
+      </button>
+      <button
+        type="button"
+        className="action"
+        aria-expanded={pickerOpen}
+        aria-controls={`${inputId}-picker`}
+        onClick={() => {
+          if (!pickerOpen) onNeedRoom();
+          setPickerOpen((open) => !open);
+        }}
+      >
+        {card ? text.nearby.area : text.origin.areaLabel}
+        <span className={`chev${pickerOpen ? ' up' : ''}`} aria-hidden="true">
+          <Icon name="chevron" />
+        </span>
+      </button>
+    </div>
+  );
+
+  const messages = (
+    <>
+      {geoMessage !== null && (
+        <p className="notice" role="status">
+          {geoMessage}
+          {geo === 'denied' && (
+            <> {isIos() ? text.origin.deniedHelpIos : text.origin.deniedHelpOther}</>
+          )}
+        </p>
+      )}
+      {far && <p className="notice">{text.origin.far}</p>}
+    </>
+  );
+
+  const picker = pickerOpen && (
+    <div id={`${inputId}-picker`} className="picker">
+      <label htmlFor={inputId} className="field-label">
+        {text.origin.areaSearch}
+      </label>
+      <input
+        id={inputId}
+        className="field"
+        type="search"
+        value={query}
+        autoComplete="off"
+        autoCapitalize="off"
+        spellCheck={false}
+        aria-describedby={`${hintId} ${listId}-count`}
+        onChange={(event) => setQuery(event.target.value)}
+      />
+      <p id={hintId} className="hint">
+        {text.origin.areaHint}
+      </p>
+      <p id={`${listId}-count`} className="sr-only" role="status">
+        {matches.length === 0
+          ? text.origin.areaNone
+          : matches.length === 1
+            ? text.origin.areaOne
+            : fill(text.origin.areaCount, { n: matches.length })}
+      </p>
+      {matches.length === 0 ? (
+        <p className="hint">{text.origin.areaNone}</p>
+      ) : (
+        <ul id={listId} className="picker-list">
+          {matches.map((locality) => (
+            <li key={locality.name}>
+              <button
+                type="button"
+                className="picker-item"
+                onClick={() => {
+                  onPickArea(locality);
+                  setPickerOpen(false);
+                  setQuery('');
+                }}
+              >
+                <span>{locality.name}</span>
+                <span className="muted">
+                  {fill(text.origin.areaPharmacies, { n: locality.count })}
+                </span>
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+
+  if (card) {
+    return (
+      <div className="nearby-body">
+        {buttons}
+        {messages}
+        {picker}
+      </div>
+    );
+  }
+
   return (
     <section className="control" aria-labelledby={`${inputId}-h`}>
       <h2 id={`${inputId}-h`} className="control-title">
         {text.origin.heading}
       </h2>
-      <div className="control-row">
-        <button
-          type="button"
-          className="action primary"
-          disabled={geo === 'locating'}
-          onClick={onUseLocation}
-        >
-          <Icon name="locate" />
-          {geo === 'locating' ? text.origin.locating : text.origin.useLocation}
-        </button>
-        <button
-          type="button"
-          className="action"
-          aria-expanded={pickerOpen}
-          aria-controls={`${inputId}-picker`}
-          onClick={() => {
-            if (!pickerOpen) onNeedRoom();
-            setPickerOpen((open) => !open);
-          }}
-        >
-          {text.origin.areaLabel}
-          <span className={`chev${pickerOpen ? ' up' : ''}`} aria-hidden="true">
-            <Icon name="chevron" />
-          </span>
-        </button>
-      </div>
+      {buttons}
       <p className="hint">{text.origin.privacy}</p>
-      {geoMessage !== null && (
-        <p className="notice" role="status">
-          {geoMessage}
-        </p>
-      )}
-      {far && <p className="notice">{text.origin.far}</p>}
-
-      {pickerOpen && (
-        <div id={`${inputId}-picker`} className="picker">
-          <label htmlFor={inputId} className="field-label">
-            {text.origin.areaSearch}
-          </label>
-          <input
-            id={inputId}
-            className="field"
-            type="search"
-            value={query}
-            autoComplete="off"
-            autoCapitalize="off"
-            spellCheck={false}
-            aria-describedby={`${hintId} ${listId}-count`}
-            onChange={(event) => setQuery(event.target.value)}
-          />
-          <p id={hintId} className="hint">
-            {text.origin.areaHint}
-          </p>
-          <p id={`${listId}-count`} className="sr-only" role="status">
-            {matches.length === 0
-              ? text.origin.areaNone
-              : matches.length === 1
-                ? text.origin.areaOne
-                : fill(text.origin.areaCount, { n: matches.length })}
-          </p>
-          {matches.length === 0 ? (
-            <p className="hint">{text.origin.areaNone}</p>
-          ) : (
-            <ul id={listId} className="picker-list">
-              {matches.map((locality) => (
-                <li key={locality.name}>
-                  <button
-                    type="button"
-                    className="picker-item"
-                    onClick={() => {
-                      onPickArea(locality);
-                      setPickerOpen(false);
-                      setQuery('');
-                    }}
-                  >
-                    <span>{locality.name}</span>
-                    <span className="muted">
-                      {fill(text.origin.areaPharmacies, { n: locality.count })}
-                    </span>
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      )}
+      {messages}
+      {picker}
 
       {origin !== null && (
         <p className="current-origin">
@@ -159,6 +197,118 @@ export function OriginControls({
         </p>
       )}
     </section>
+  );
+}
+
+// --- The header chip and the nearby card ----------------------------------------------
+
+interface OriginChipProps {
+  readonly text: Text;
+  /** "My location", "Area Kalamaria" or "Finding your location…". */
+  readonly label: string;
+  /** The chosen time, when it is not "now". */
+  readonly when: string | null;
+  readonly locating: boolean;
+  readonly open: boolean;
+  readonly onToggle: () => void;
+}
+
+/**
+ * Always in the sheet header while there is a position (or one is being found): it shows where
+ * the distances are measured from, and one tap opens the options (re-locate, pick an area,
+ * time and filters). The options panel is the element with id CONTROLS_ID.
+ */
+export function OriginChip({ text, label, when, locating, open, onToggle }: OriginChipProps) {
+  return (
+    <button
+      type="button"
+      className="origin-chip controls-toggle"
+      aria-expanded={open}
+      aria-controls={CONTROLS_ID}
+      onClick={onToggle}
+    >
+      <Icon name={locating ? 'locate' : 'map'} />
+      <span className="chip-label">{label}</span>
+      {when !== null && <span className="chip-when">{when}</span>}
+      <span className="sr-only">: {text.origin.summary}</span>
+      <span className={`chev${open ? ' up' : ''}`} aria-hidden="true">
+        <Icon name="chevron" />
+      </span>
+    </button>
+  );
+}
+
+/** The id of the options panel (location, time and filters) that the toggles control. */
+export const CONTROLS_ID = 'controls';
+
+interface NearbyCardProps extends Omit<OriginControlsProps, 'variant' | 'origin'> {
+  readonly open: boolean;
+  readonly onToggleControls: () => void;
+}
+
+/**
+ * Shown at the top of the list while there is no position (denied, failed, not supported, or
+ * the person cleared it): the way to get distances is the first thing on the screen, not behind
+ * a collapsed panel. The small button at its corner opens the same options as the header chip.
+ */
+export function NearbyCard({ text, open, onToggleControls, ...rest }: NearbyCardProps) {
+  const id = useId();
+  return (
+    <section className="nearby" aria-labelledby={id}>
+      <h2 id={id} className="nearby-title">
+        {text.nearby.title}
+      </h2>
+      <button
+        type="button"
+        className="nearby-options controls-toggle"
+        aria-expanded={open}
+        aria-controls={CONTROLS_ID}
+        aria-label={text.origin.summary}
+        onClick={onToggleControls}
+      >
+        <Icon name="sliders" />
+      </button>
+      <OriginControls text={text} variant="card" origin={null} {...rest} />
+    </section>
+  );
+}
+
+// --- The list filter -----------------------------------------------------------------
+
+interface ListFilterChipsProps {
+  readonly text: Text;
+  readonly active: 'all' | 'duty';
+  readonly allCount: number;
+  readonly dutyCount: number;
+  readonly onChange: (filter: 'all' | 'duty') => void;
+}
+
+/** "All open (N)" and "On duty (M)": by day, so people can see only the duty pharmacies. */
+export function ListFilterChips({
+  text,
+  active,
+  allCount,
+  dutyCount,
+  onChange,
+}: ListFilterChipsProps) {
+  const chips = [
+    { id: 'all', label: fill(text.list.filterAll, { n: allCount }) },
+    { id: 'duty', label: fill(text.list.filterDuty, { n: dutyCount }) },
+  ] as const;
+  return (
+    <div className="filter-chips" role="group" aria-label={text.list.filterLabel}>
+      {chips.map((chip) => (
+        <button
+          key={chip.id}
+          type="button"
+          className="chip"
+          aria-pressed={active === chip.id}
+          onClick={() => onChange(chip.id)}
+        >
+          {chip.label}
+        </button>
+      ))}
+    </div>
   );
 }
 

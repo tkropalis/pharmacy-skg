@@ -4,6 +4,7 @@
  */
 import {
   AttributionControl,
+  LngLatBounds,
   Map as MapLibreMap,
   NavigationControl,
   getVersion,
@@ -51,6 +52,9 @@ export interface MapController {
 // The worker module is published beside the app by integrations/maplibre-worker.ts.
 setWorkerUrl(`/_astro/maplibre-${getVersion()}/maplibre-gl-worker.mjs`);
 
+/** The view after a new position shows this many of the nearest open pharmacies. */
+const NEAREST_SHOWN = 4;
+const NEAREST_MAX_ZOOM = 16;
 const EMPTY: PinCollection = { type: 'FeatureCollection', features: [] };
 const STYLE_TIMEOUT_MS = 20_000;
 
@@ -240,12 +244,34 @@ export async function createMapController(
             } as never),
       );
       if (origin !== null && fly) {
-        map.easeTo({
-          center: [origin.lon, origin.lat],
-          zoom: Math.max(map.getZoom(), 14),
-          padding: { top: 0, left: 0, right: 0, bottom: occludedBottom },
-          ...motion,
-        });
+        // A view that shows the position and the nearest few open pharmacies (the rows are
+        // already sorted by distance from it), above the sheet.
+        const bounds = new LngLatBounds([origin.lon, origin.lat], [origin.lon, origin.lat]);
+        let found = 0;
+        for (const feature of collection.features) {
+          if (found === NEAREST_SHOWN) break;
+          if (feature.properties.kind === 'closed') continue;
+          bounds.extend(feature.geometry.coordinates);
+          found += 1;
+        }
+        if (found === 0) {
+          map.easeTo({
+            center: [origin.lon, origin.lat],
+            zoom: Math.max(map.getZoom(), 14),
+            padding: { top: 0, left: 0, right: 0, bottom: occludedBottom },
+            ...motion,
+          });
+        } else {
+          // The map's own padding is what the sheet covers; it is added to the fit's padding.
+          if (Math.abs((map.getPadding().bottom ?? 0) - occludedBottom) > 2) {
+            map.setPadding({ top: 0, left: 0, right: 0, bottom: occludedBottom });
+          }
+          map.fitBounds(bounds, {
+            padding: { top: 72, left: 48, right: 48, bottom: 24 },
+            maxZoom: NEAREST_MAX_ZOOM,
+            ...motion,
+          });
+        }
       }
     },
     setSelected(id) {

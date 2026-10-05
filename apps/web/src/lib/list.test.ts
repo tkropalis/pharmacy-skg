@@ -4,7 +4,7 @@ import { THESSALONIKI } from '@pharmacy-skg/core';
 import type { CityData, DutyDay, ExtendedHours, Pharmacies } from '@pharmacy-skg/core';
 import { describe, expect, it } from 'vitest';
 import { distanceMetres, coverage } from './engine.ts';
-import { buildRows, pinKindOf, rowFor } from './list.ts';
+import { applyListFilter, buildRows, isDutyKind, pinKindOf, rowFor } from './list.ts';
 import { pinCollection } from './map-data.ts';
 
 const DATA_DIR = resolve(import.meta.dirname, '../../../../data/thessaloniki');
@@ -136,5 +136,40 @@ describe('coverage', () => {
     };
     expect(coverage(data, next(1)).duties).toBe(true); // 04:00 Athens: the last list still rules
     expect(coverage(data, next(8)).duties).toBe(false); // 11:00 Athens: no list for the new day
+  });
+});
+
+describe('applyListFilter (real data)', () => {
+  // Monday 08:01 in Athens: every pharmacy is open by its regular hours.
+  const morning = new Date('2026-10-05T05:01:00Z');
+
+  it('shows only the duty pharmacies when asked, by day', () => {
+    const all = buildRows(data, morning, null, false);
+    const everything = applyListFilter(all, 'all');
+    expect(everything.chips).toBe(true);
+    expect(everything.rows).toBe(all.rows);
+    expect(everything.active).toBe('all');
+    expect(everything.dutyCount).toBeGreaterThan(0);
+    expect(everything.dutyCount).toBeLessThan(everything.openCount);
+
+    const duty = applyListFilter(all, 'duty');
+    expect(duty.active).toBe('duty');
+    expect(duty.rows.length).toBe(duty.dutyCount);
+    expect(duty.openCount).toBe(duty.dutyCount);
+    expect(duty.rows.every((row) => isDutyKind(row.kind))).toBe(true);
+  });
+
+  it('leaves out the closed pharmacies under the duty filter', () => {
+    const withClosed = buildRows(data, morning, null, true);
+    const duty = applyListFilter(withClosed, 'duty');
+    expect(duty.rows.every((row) => row.kind !== 'closed')).toBe(true);
+  });
+
+  it('hides the chips and ignores the filter when only duty pharmacies are open (night)', () => {
+    const result = buildRows(data, night, null, false);
+    const filtered = applyListFilter(result, 'duty');
+    expect(filtered.chips).toBe(false);
+    expect(filtered.active).toBe('all');
+    expect(filtered.rows).toBe(result.rows);
   });
 });

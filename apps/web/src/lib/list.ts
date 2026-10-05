@@ -116,3 +116,33 @@ export function rowFor(
   if (pharmacy === undefined) return null;
   return toRow({ pharmacy, status, distance: distanceTo(origin, pharmacy), dutiesPublished });
 }
+
+export type ListFilter = 'all' | 'duty';
+
+export interface FilteredRows {
+  /** The rows to list and to put on the map. */
+  readonly rows: readonly Row[];
+  /** How many of them are open (the closed ones, shown on request, are not counted). */
+  readonly openCount: number;
+  /** How many of the open pharmacies are on duty (with or without printed hours). */
+  readonly dutyCount: number;
+  /** The "all / on duty" chips are only worth showing when something other than duty is open. */
+  readonly chips: boolean;
+  /** The filter that is really applied: always 'all' while the chips are hidden. */
+  readonly active: ListFilter;
+}
+
+/**
+ * The "all open / on duty" filter of the list. By day over a thousand pharmacies are open by
+ * their regular hours; the filter lets people see only those on duty. At night every open
+ * pharmacy is on duty, the chips are hidden and the remembered choice is not applied.
+ */
+export function applyListFilter(result: RowsResult, filter: ListFilter): FilteredRows {
+  const dutyCount = result.rows.filter((row) => isDutyKind(row.kind)).length;
+  const chips = result.openCount > dutyCount;
+  if (!chips || filter === 'all') {
+    return { rows: result.rows, openCount: result.openCount, dutyCount, chips, active: 'all' };
+  }
+  const rows = result.rows.filter((row) => isDutyKind(row.kind));
+  return { rows, openCount: dutyCount, dutyCount, chips, active: 'duty' };
+}

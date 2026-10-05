@@ -28,9 +28,18 @@ export const appEn: Dictionary['app'] = {
     none: 'No pharmacy open',
     one: '1 pharmacy open',
     many: '{n} pharmacies open',
+    dutyNone: 'No pharmacy on duty',
+    dutyOne: '1 pharmacy on duty',
+    dutyMany: '{n} pharmacies on duty',
     sortedByDistance: 'nearest first, from: {origin}',
-    sortedByName: 'A–Z; choose a location for distances',
+    sortedByDistanceShort: 'nearest first',
+    sortedByName: 'A–Z',
     withClosed: '+ {n} closed',
+  },
+
+  nearby: {
+    title: 'See the nearest ones',
+    area: 'Area',
   },
 
   origin: {
@@ -40,8 +49,11 @@ export const appEn: Dictionary['app'] = {
     locating: 'Finding your location…',
     privacy: 'Your location stays on your device and is not sent anywhere.',
     denied: 'Access to your location was not allowed. You can choose an area instead.',
+    deniedShort: 'Location is not allowed.',
     unavailable: 'Your location could not be found. You can choose an area instead.',
     unsupported: 'This device does not provide a location. You can choose an area instead.',
+    deniedHelpIos: 'To allow it: Settings › Safari › Location (or the aA menu › Website Settings).',
+    deniedHelpOther: 'To allow it, turn on location for this site in your browser’s site settings.',
     far: 'You are far from Thessaloniki; distances are measured from where you are.',
     myLocation: 'My location',
     areaName: '{name} area',
@@ -90,6 +102,10 @@ export const appEn: Dictionary['app'] = {
 
   list: {
     label: 'Pharmacies',
+    filterLabel: 'List filter',
+    filterAll: 'All open ({n})',
+    filterDuty: 'On duty ({n})',
+    noDuty: 'No pharmacy is on duty right now. See all the open ones.',
     showMore: 'Show more',
     showing: 'Showing {shown} of {total}',
     noneOpen:

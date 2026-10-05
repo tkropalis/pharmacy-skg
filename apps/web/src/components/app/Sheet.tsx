@@ -9,11 +9,11 @@ const SIZES: readonly SheetSize[] = ['small', 'medium', 'large'];
 
 /** The collapsed sheet shows the handle, the tabs and the count. */
 const SMALL_PX = 120;
-const MEDIUM_FRACTION = 0.56;
+const MEDIUM_FRACTION = 0.6;
 /** On a short screen the default sheet still shows the summary and the first pharmacy. */
-const MEDIUM_MIN_PX = 380;
+const MEDIUM_MIN_PX = 400;
 /** The map keeps at least this much of the screen above the default sheet. */
-const MEDIUM_MAP_PX = 160;
+const MEDIUM_MAP_PX = 150;
 const LARGE_FRACTION = 0.94;
 
 /**

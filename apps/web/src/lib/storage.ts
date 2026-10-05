@@ -41,3 +41,10 @@ export function writeItem(
 export const AREA_KEY = 'pharmacy-skg:area';
 /** When the data was last updated, as meta.json said on the last visit (public/stale-check.js reads it). */
 export const DATA_UPDATED_KEY = 'pharmacy-skg:data-updated';
+/**
+ * 'off' when the person turned the automatic location request off (by clearing the position).
+ * Only this flag is kept, never a position (docs/decisions.md, Defaults, Privacy).
+ */
+export const LOCATION_KEY = 'pharmacy-skg:location';
+/** 'duty' when the list shows only the pharmacies on duty by day. */
+export const FILTER_KEY = 'pharmacy-skg:filter';

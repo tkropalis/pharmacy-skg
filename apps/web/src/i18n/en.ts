@@ -38,7 +38,6 @@ export const en: Dictionary = {
     aboutShort: 'About',
     privacy: 'Privacy',
     report: 'Report a problem',
-    sourceCode: 'Source code on GitHub',
     creditsLine: 'Data: ΦΣΘ (via thess.guide), ΠΚΜ, Overture, OpenStreetMap · Map: OpenFreeMap',
     creditsMore: 'Sources and licences',
   },
@@ -118,7 +117,7 @@ export const en: Dictionary = {
       {
         heading: 'Location',
         paragraphs: [
-          'If you allow access to your location, it is used only on your device to work out distances. It is not sent to any server and it is not stored. You can pick an area by hand instead.',
+          'When you open the app it asks for your location to show the nearest pharmacies; your browser asks you first. If you allow it, it is used only on your device to work out distances, and it is refreshed while the page is open and visible. It is not sent to any server and it is not stored. If you refuse, you can pick an area by hand.',
         ],
       },
       {
@@ -130,7 +129,7 @@ export const en: Dictionary = {
       {
         heading: 'Favourites and settings',
         paragraphs: [
-          'Favourite pharmacies are saved in your browser’s local storage (localStorage), and only there. They are deleted when you clear the site data.',
+          'Favourite pharmacies are saved in your browser’s local storage (localStorage), and only there. They are deleted when you clear the site data. Your choices live there too: the area you picked, whether you turned off the location request, and the list filter. Coordinates are never stored.',
         ],
       },
       {
