@@ -17,7 +17,7 @@ const paths = alternates ?? alternatePaths(route);
 const others = LOCALES.filter((l) => l !== locale);
 ---
 
-<nav aria-label={t(locale).languageSwitcherLabel}>
+<nav class="switcher" aria-label={t(locale).languageSwitcherLabel}>
   <ul>
     {others.map((other) => (
       <li>
@@ -30,6 +30,10 @@ const others = LOCALES.filter((l) => l !== locale);
 </nav>
 
 <style>
+  .switcher {
+    flex: none;
+  }
+
   ul {
     display: flex;
     gap: 0.5rem;
@@ -43,6 +47,7 @@ const others = LOCALES.filter((l) => l !== locale);
     align-items: center;
     min-height: 2.75rem;
     padding-inline: 0.75rem;
+    white-space: nowrap;
     border: 1px solid var(--border);
     border-radius: var(--radius);
     background: var(--surface);

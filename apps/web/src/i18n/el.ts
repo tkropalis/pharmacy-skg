@@ -17,6 +17,7 @@ export const el = {
 
   emergency: {
     label: 'Έκτακτη ανάγκη',
+    labelShort: 'SOS',
     ambulance: 'ΕΚΑΒ',
     europe: 'Ευρωπαϊκός αριθμός',
     poison: 'Κέντρο Δηλητηριάσεων',

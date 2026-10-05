@@ -35,30 +35,33 @@ const { locale, route, alternates } = Astro.props;
     background: var(--surface);
   }
 
+  /* The title and the language switcher share one row, even on a phone. */
   .inner {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 0.5rem 1rem;
-    padding-block: 0.5rem;
+    gap: 0.5rem;
+    padding-block: 0.25rem;
   }
 
   .brand {
     display: inline-flex;
+    flex: 1 1 auto;
     align-items: center;
-    gap: 0.625rem;
+    gap: 0.5rem;
+    min-width: 0;
     min-height: 2.75rem;
     color: var(--fg);
     font-weight: 700;
+    font-size: 1rem;
     line-height: 1.2;
     text-decoration: none;
   }
 
   .logo {
     flex: none;
-    width: 2rem;
-    height: 2rem;
+    width: 1.75rem;
+    height: 1.75rem;
   }
 
   .logo rect {
@@ -67,5 +70,22 @@ const { locale, route, alternates } = Astro.props;
 
   .logo path {
     fill: var(--on-accent);
+  }
+
+  @media (min-width: 40rem) {
+    .inner {
+      gap: 1rem;
+      padding-block: 0.5rem;
+    }
+
+    .brand {
+      gap: 0.625rem;
+      font-size: 1.0625rem;
+    }
+
+    .logo {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 </style>

@@ -11,6 +11,7 @@ export const en: Dictionary = {
 
   emergency: {
     label: 'Emergency',
+    labelShort: 'SOS',
     ambulance: 'Ambulance (EKAB)',
     europe: 'European emergency number',
     poison: 'Poison Centre',
