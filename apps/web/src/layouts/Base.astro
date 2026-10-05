@@ -74,8 +74,13 @@ const analytics = import.meta.env.PROD && import.meta.env.PUBLIC_ANALYTICS === '
       .map(([, og]) => (
         <meta property="og:locale:alternate" content={og} />
       ))}
-    <meta property="og:image" content={absolute('/icons/icon-512.png')} />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={absolute('/og-image.png')} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={APP_NAME[locale]} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={absolute('/og-image.png')} />
 
     {analytics && <script is:inline defer src="/_vercel/insights/script.js" />}
     <slot name="head" />
