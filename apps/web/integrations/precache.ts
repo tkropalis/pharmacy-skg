@@ -39,7 +39,8 @@ const LAZY_MAP = [/^_astro\/map-controller\.[^/]+\.js$/, /^_astro\/maplibre-[^/]
 
 /**
  * Files that must never be precached: the worker itself, the data (network-first), crawler
- * files that no page needs (the sitemap alone is 1 MB), and the lazy map.
+ * files that no page needs (the sitemap alone is 1 MB), the link-preview image (only crawlers
+ * fetch it, no page of the app shows it), and the lazy map.
  */
 const EXCLUDED = [
   /^sw\.js$/,
@@ -47,6 +48,7 @@ const EXCLUDED = [
   /^404\.html$/,
   /^sitemap\.xml$/,
   /^robots\.txt$/,
+  /^og-image\.png$/,
   /\.map$/,
   ...LAZY_MAP,
   ...DUTY_INDEXES,

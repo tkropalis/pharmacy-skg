@@ -39,7 +39,7 @@ describe('precacheEntries', () => {
     expect(kept).toEqual(['_astro/x.js', 'en/index.html', 'index.html']);
   });
 
-  it('leaves out the lazily loaded map and the crawler files', () => {
+  it('leaves out the lazily loaded map, the crawler files and the link-preview image', () => {
     const kept = precacheEntries([
       file('_astro/map-controller.DJ4TtmSf.js'),
       file('_astro/maplibre-gl.O84Bxg0a.css'),
@@ -47,10 +47,16 @@ describe('precacheEntries', () => {
       file('_astro/maplibre-6.12.0/maplibre-gl-shared.mjs'),
       file('sitemap.xml'),
       file('robots.txt'),
+      file('og-image.png'),
+      file('icons/icon-192.png'),
       file('_astro/HomePage.dME8wzR7.css'),
       file('_astro/client.DAYQUbZp.js'),
     ]).map((f) => f.path);
-    expect(kept).toEqual(['_astro/client.DAYQUbZp.js', '_astro/HomePage.dME8wzR7.css']);
+    expect(kept).toEqual([
+      '_astro/client.DAYQUbZp.js',
+      '_astro/HomePage.dME8wzR7.css',
+      'icons/icon-192.png',
+    ]);
   });
 
   it('leaves out the generated pharmacy, duty-date and area pages, and the date index', () => {
@@ -208,5 +214,92 @@ describe('the worker on install', () => {
   it('downloads everything on a first install', async () => {
     const result = await install([file('index.html', 'h1'), file('_astro/a.js', 'x')], {});
     expect(result.fetched.sort()).toEqual(['/', '/_astro/a.js']);
+  });
+});
+
+describe('the worker trims the data cache', () => {
+  const template = readFileSync(new URL('../sw/sw.js', import.meta.url), 'utf8');
+  const ORIGIN = 'https://example.test';
+  const data = (path: string) => `${ORIGIN}/data/thessaloniki/${path}`;
+
+  /** Runs the worker against an in-memory data cache; `activate` runs its activate handler. */
+  function load(cached: string[]) {
+    const deleted: string[] = [];
+    const listeners: Record<string, (event: unknown) => void> = {};
+    const sandbox: Record<string, unknown> = {
+      self: {
+        addEventListener: (type: string, listener: (event: unknown) => void) => {
+          listeners[type] = listener;
+        },
+        clients: { claim: () => Promise.resolve() },
+        location: { origin: ORIGIN },
+      },
+      caches: {
+        keys: () => Promise.resolve(['data-v1']),
+        open: () =>
+          Promise.resolve({
+            keys: () => Promise.resolve(cached.map((url) => ({ url }))),
+            delete: (url: string, options: { ignoreVary?: boolean }) => {
+              expect(options).toEqual({ ignoreVary: true });
+              deleted.push(url);
+              return Promise.resolve(true);
+            },
+          }),
+        delete: () => Promise.resolve(true),
+      },
+      Request: class {},
+      Response,
+      URL,
+      Set,
+      Map,
+    };
+    runInNewContext(renderServiceWorker(template, 'v', []), sandbox);
+    const stale = sandbox['staleDutyUrls'] as (urls: string[], now: Date) => string[];
+    async function activate(): Promise<void> {
+      let done: Promise<unknown> = Promise.resolve();
+      listeners['activate']?.({ waitUntil: (promise: Promise<unknown>) => (done = promise) });
+      await done;
+    }
+    return { stale, activate, deleted };
+  }
+
+  const files = [
+    data('meta.json'),
+    data('pharmacies.json'),
+    data('extended-hours/2025.json'),
+    data('duties/2026-09-20.json'),
+    data('duties/2026-09-21.json'),
+    data('duties/2026-10-05.json'),
+    data('duties/2026-10-09.json'),
+    `${ORIGIN}/data/other-city/duties/2026-01-01.json`,
+  ];
+
+  it('drops duty lists dated more than 14 days before today, in the city’s time zone', () => {
+    const { stale } = load([]);
+    // 5 Oct 2026, 12:00 in Athens: the cut-off is 21 Sep (the 21st is the last day kept).
+    expect(stale(files, new Date('2026-10-05T09:00:00Z'))).toEqual([
+      data('duties/2026-09-20.json'),
+      `${ORIGIN}/data/other-city/duties/2026-01-01.json`,
+    ]);
+    // 22:30 UTC on the 4th is already the 5th in Athens (UTC+3): same cut-off.
+    expect(stale(files, new Date('2026-10-04T21:30:00Z'))).toHaveLength(2);
+    // 21:30 UTC on the 5th is 00:30 on the 6th in Athens: one more day falls out.
+    expect(stale(files, new Date('2026-10-05T21:30:00Z'))).toContain(
+      data('duties/2026-09-21.json'),
+    );
+  });
+
+  it('never touches meta, pharmacies or the extended-hours files', () => {
+    const { stale } = load([]);
+    const far = new Date('2030-01-01T00:00:00Z');
+    expect(stale(files, far).filter((url) => !url.includes('/duties/'))).toEqual([]);
+  });
+
+  it('trims when a new version activates', async () => {
+    const { activate, deleted } = load(files);
+    await activate();
+    // Whatever the date today, meta and the like are never among the deleted.
+    expect(deleted.every((url) => url.includes('/duties/'))).toBe(true);
+    expect(deleted).toContain(data('duties/2026-09-20.json'));
   });
 });

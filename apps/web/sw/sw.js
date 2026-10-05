@@ -12,7 +12,8 @@
  *   - the map (MapLibre chunk, worker files, stylesheet) is not precached, because it is about
  *     0.45 MB gzipped and most visits never open it: any other hashed /_astro/ file is cached
  *     cache-first the first time it is used, so the map works offline once it has been seen;
- *   - /data/**: network-first, falling back to the last copy (for offline use);
+ *   - /data/**: network-first, falling back to the last copy (for offline use); duty lists
+ *     older than DUTY_KEEP_DAYS before today (Athens) are dropped from that cache;
  *   - tiles.openfreemap.org: cache-first, capped at TILE_LIMIT entries;
  *   - everything else (the report API, analytics): untouched.
  *
@@ -35,6 +36,11 @@ const TILE_HOST = 'tiles.openfreemap.org';
 const TILE_LIMIT = 500;
 const NAVIGATION_TIMEOUT_MS = 4000;
 const DATA_TIMEOUT_MS = 6000;
+// Duty lists this many days before today are no longer kept (meta, pharmacies and the
+// extended-hours files are).
+const DUTY_KEEP_DAYS = 14;
+const DUTY_FILE = /^\/data\/[^/]+\/duties\/(\d{4}-\d{2}-\d{2})\.json$/;
+const TRIM_EVERY_MS = 60 * 60_000;
 
 const PRECACHED = new Set(PRECACHE_URLS);
 
@@ -62,6 +68,43 @@ async function unchangedFiles() {
   return found;
 }
 
+/** Today's calendar date in the city's time zone, as YYYY-MM-DD. */
+function athensDate(now) {
+  // en-CA formats dates as YYYY-MM-DD.
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Europe/Athens',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(now);
+}
+
+/** Of these cached URLs, the duty lists dated more than DUTY_KEEP_DAYS before today. */
+function staleDutyUrls(urls, now) {
+  const today = Date.parse(`${athensDate(now)}T00:00:00Z`);
+  const cutoff = new Date(today - DUTY_KEEP_DAYS * 86_400_000).toISOString().slice(0, 10);
+  return urls.filter((url) => {
+    const match = DUTY_FILE.exec(new URL(url).pathname);
+    return match !== null && match[1] < cutoff;
+  });
+}
+
+async function trimDutyFiles() {
+  const cache = await caches.open(DATA_CACHE);
+  const urls = (await cache.keys()).map((request) => request.url);
+  for (const url of staleDutyUrls(urls, new Date())) await cache.delete(url, { ignoreVary: true });
+}
+
+let lastTrim = 0;
+
+/** After a data fetch, at most once per TRIM_EVERY_MS: a worker that lives for weeks keeps up. */
+function trimSoon(event) {
+  const now = Date.now();
+  if (now - lastTrim < TRIM_EVERY_MS) return;
+  lastTrim = now;
+  event.waitUntil(trimDutyFiles().catch(() => {}));
+}
+
 self.addEventListener('install', (event) => {
   event.waitUntil(
     (async () => {
@@ -86,6 +129,7 @@ self.addEventListener('activate', (event) => {
           (name.startsWith('assets-') && name !== ASSET_CACHE);
         if (stale) await caches.delete(name);
       }
+      await trimDutyFiles().catch(() => {});
       await self.clients.claim();
     })(),
   );
@@ -99,6 +143,7 @@ self.addEventListener('fetch', (event) => {
   if (url.origin === self.location.origin) {
     if (url.pathname.startsWith('/data/')) {
       event.respondWith(networkFirst(event, DATA_CACHE, DATA_TIMEOUT_MS));
+      trimSoon(event);
     } else if (request.mode === 'navigate') {
       event.respondWith(navigate(event, url));
     } else if (PRECACHED.has(url.pathname)) {
