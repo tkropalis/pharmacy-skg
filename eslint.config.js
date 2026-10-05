@@ -6,7 +6,13 @@ import jsxA11yX from 'eslint-plugin-jsx-a11y-x';
 import tseslint from 'typescript-eslint';
 
 export default defineConfig(
-  globalIgnores(['**/dist/', '**/.astro/', 'coverage/']),
+  globalIgnores([
+    '**/dist/',
+    '**/.astro/',
+    'coverage/',
+    '**/playwright-report/',
+    '**/test-results/',
+  ]),
   js.configs.recommended,
   tseslint.configs.strict,
   astro.configs.recommended,
