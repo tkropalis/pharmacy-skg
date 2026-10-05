@@ -103,11 +103,11 @@
       "firstSeen": "2026-06-27",
       "lastSeen": "2026-09-21",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.636625,
+        "lon": 22.953892,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΚΑΣΣΑΝΔΡΟΥ 149, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -168,11 +168,11 @@
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-09-19",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.637555,
+        "lon": 22.951663,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΚΑΣΣΑΝΔΡΟΥ 98, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -360,11 +360,11 @@
       "firstSeen": "2026-07-04",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.613369,
-        "lon": 22.960555,
-        "source": "overture",
+        "lat": 40.636922,
+        "lon": 22.9529,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "6377162f-36af-48c3-a5c6-464e21e0c399"
+        "ref": "ΚΑΣΣΑΝΔΡΟΥ 114, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -595,11 +595,11 @@
       "firstSeen": "2026-07-06",
       "lastSeen": "2026-09-30",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.632824,
+        "lon": 22.965384,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΗΡΑΚΛΕΙΑΣ 9, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -679,11 +679,11 @@
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-10-02",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.639626,
+        "lon": 22.951465,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΟΛΥΜΠΙΑΔΟΣ 84, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -744,11 +744,11 @@
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-10-01",
       "location": {
-        "lat": 40.619724,
-        "lon": 22.954272,
-        "source": "overture",
+        "lat": 40.63625,
+        "lon": 22.940956,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "dd2c2728-5ab4-4ac7-ba49-e2486f7dd117"
+        "ref": "ΒΕΝΙΖΕΛΟΥ 23, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -960,11 +960,11 @@
       "firstSeen": "2026-07-03",
       "lastSeen": "2026-10-01",
       "location": {
-        "lat": 40.621525,
-        "lon": 22.968798,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "dfd4b67d-dd21-4e84-af94-1f6ee20decce"
+        "lat": 40.626152,
+        "lon": 22.959955,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΕΓΝΑΤΙΑΣ 108, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -1218,11 +1218,11 @@
       "firstSeen": "2026-06-05",
       "lastSeen": "2026-10-03",
       "location": {
-        "lat": 40.631166,
-        "lon": 22.952118,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "be8e2fa3-5c5c-40a9-98a8-6fa3eeefc78c"
+        "lat": 40.638166,
+        "lon": 22.942943,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΒΕΝΙΖΕΛΟΥ 68, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -1410,11 +1410,11 @@
       "firstSeen": "2026-07-22",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.611726,
-        "lon": 22.97472,
-        "source": "overture",
+        "lat": 40.633964,
+        "lon": 22.945392,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "cfed3dc4-2ab6-4324-942f-308795fd5fcd"
+        "ref": "ΕΡΜΟΥ 73, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -1432,11 +1432,11 @@
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-09-20",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.632066,
+        "lon": 22.951069,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΕΓΝΑΤΙΑ 142, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -1453,11 +1453,11 @@
       "firstSeen": "2026-07-22",
       "lastSeen": "2026-09-27",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.628694,
+        "lon": 22.949172,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΤΣΙΜΙΣΚΗ 120, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -1582,11 +1582,11 @@
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-09-20",
       "location": {
-        "lat": 40.609802,
-        "lon": 22.95361,
-        "source": "overture",
+        "lat": 40.630471,
+        "lon": 22.964196,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "13ea36d4-f60d-4258-b1b7-0b4d0f81f264"
+        "ref": "Βιζύης Βύζαντος 5, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -1712,11 +1712,11 @@
       "firstSeen": "2026-07-22",
       "lastSeen": "2026-09-27",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.641302,
+        "lon": 22.944173,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΚΑΣΣΑΝΔΡΟΥ 30, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -1819,11 +1819,11 @@
       "firstSeen": "2026-06-25",
       "lastSeen": "2026-09-23",
       "location": {
-        "lat": 40.619724,
-        "lon": 22.954272,
-        "source": "overture",
+        "lat": 40.634318,
+        "lon": 22.944358,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "dd2c2728-5ab4-4ac7-ba49-e2486f7dd117"
+        "ref": "ΕΡΜΟΥ 61, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -1862,11 +1862,11 @@
       "firstSeen": "2026-07-03",
       "lastSeen": "2026-10-01",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.641359,
+        "lon": 22.94225,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΑΓΙΟΥ ΔΗΜΗΤΡΙΟΥ 45, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -1948,11 +1948,11 @@
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-10-02",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.632029,
+        "lon": 22.950902,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "street",
+        "ref": "Π.Π.ΓΕΡΜΑΝΟΥ 6, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -2033,11 +2033,11 @@
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-09-26",
       "location": {
-        "lat": 40.611346,
-        "lon": 22.986471,
-        "source": "overture",
+        "lat": 40.634556,
+        "lon": 22.946355,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "5694ea00-2bd9-4652-baff-8aed025d049a"
+        "ref": "ΕΓΝΑΤΙΑ 102, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -2054,11 +2054,11 @@
       "firstSeen": "2026-06-24",
       "lastSeen": "2026-09-23",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.630269,
+        "lon": 22.947925,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΠΑΥΛΟΥ ΜΕΛΑ 22, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -2096,11 +2096,11 @@
       "firstSeen": "2026-06-27",
       "lastSeen": "2026-09-21",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.630505,
+        "lon": 22.952947,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΕΘΝΙΚΗΣ ΑΜΥΝΗΣ 44, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -2227,11 +2227,11 @@
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.612262,
-        "lon": 22.97402,
-        "source": "overture",
+        "lat": 40.63563,
+        "lon": 22.947034,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "3e4be9c9-e1df-4b92-b088-bbacc64ad99d"
+        "ref": "ΠΛΑΤΩΝΟΣ 13, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -2357,11 +2357,11 @@
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-09-23",
       "location": {
-        "lat": 40.609092,
-        "lon": 22.971465,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "818d8cd5-eff0-4595-a2ff-9b19467fc04e"
+        "lat": 40.630282,
+        "lon": 22.954981,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΕΓΝΑΤΙΑΣ 116, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -2378,11 +2378,11 @@
       "firstSeen": "2026-09-28",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.635822,
+        "lon": 22.939237,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "street",
+        "ref": "ΙΩΝΟΣ ΔΡΑΓΟΥΜΗ 42, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -2721,11 +2721,11 @@
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-09-29",
       "location": {
-        "lat": 40.603957,
-        "lon": 22.966515,
-        "source": "overture",
+        "lat": 40.599467,
+        "lon": 22.972834,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "b4c8afd4-eb69-48a7-b9e3-9a79f88f835a"
+        "ref": "ΓΙΑΝΝΗ ΑΓΓΕΛΟΥ 16, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -2807,11 +2807,11 @@
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-10-01",
       "location": {
-        "lat": 40.619724,
-        "lon": 22.954272,
-        "source": "overture",
+        "lat": 40.599769,
+        "lon": 22.959929,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "dd2c2728-5ab4-4ac7-ba49-e2486f7dd117"
+        "ref": "ΔΕΛΦΩΝ 149, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -3019,11 +3019,11 @@
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-10-02",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.607257,
+        "lon": 22.966843,
         "source": "nominatim",
         "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "ref": "Α.ΠΑΠΑΝΑΣΤΑΣΙΟΥ 110, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -3382,11 +3382,11 @@
       "firstSeen": "2026-06-25",
       "lastSeen": "2026-09-27",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.596033,
+        "lon": 22.962133,
         "source": "nominatim",
         "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "ref": "ΒΟΥΛΓΑΡΗ 38, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -3830,11 +3830,11 @@
       "firstSeen": "2026-06-27",
       "lastSeen": "2026-09-25",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.598971,
+        "lon": 22.96343,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΡΗΓΑ ΦΕΡΑΙΟΥ 39Α, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -3873,11 +3873,11 @@
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-10-02",
       "location": {
-        "lat": 40.610256,
-        "lon": 22.989236,
-        "source": "overture",
+        "lat": 40.603599,
+        "lon": 22.96381,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "86f947f6-ed69-4c3d-af3a-5fd7a6668b0b"
+        "ref": "ΚΩΝ.ΚΑΡΑΜΑΝΛΗ 128, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -5051,11 +5051,11 @@
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-09-21",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.598646,
+        "lon": 22.957428,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΚΡΗΤΗΣ 56, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -5905,11 +5905,11 @@
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-09-20",
       "location": {
-        "lat": 40.619724,
-        "lon": 22.954272,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "dd2c2728-5ab4-4ac7-ba49-e2486f7dd117"
+        "lat": 40.593607,
+        "lon": 22.959315,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΚΗΦΙΣΙΑΣ 20, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -7015,11 +7015,11 @@
       "firstSeen": "2026-06-30",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.584719,
-        "lon": 22.953095,
+        "lat": 40.571584,
+        "lon": 22.954535,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Καλαμαριά"
+        "precision": "exact",
+        "ref": "ΠΟΣΕΙΔΩΝΟΣ 4, Καλαμαριά"
       }
     },
     {
@@ -7079,11 +7079,11 @@
       "firstSeen": "2026-06-29",
       "lastSeen": "2026-09-27",
       "location": {
-        "lat": 40.584719,
-        "lon": 22.953095,
+        "lat": 40.589759,
+        "lon": 22.960661,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Καλαμαριά"
+        "precision": "exact",
+        "ref": "ΑΙΓΑΙΟΥ 19, Καλαμαριά"
       }
     },
     {
@@ -7231,11 +7231,11 @@
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-09-23",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.64394,
+        "lon": 22.928359,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "street",
+        "ref": "ΑΝΑΓΕΝΝΗΣΕΩΣ 36-38, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -7401,11 +7401,11 @@
       "firstSeen": "2026-06-12",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.61842,
-        "lon": 22.95468,
-        "source": "overture",
+        "lat": 40.641774,
+        "lon": 22.940085,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "9eadb3e3-4c1f-451f-9ec9-0d2f8591be2f"
+        "ref": "ΠΑΠΑΖΩΛΗ 10, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -7550,11 +7550,11 @@
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.641415,
+        "lon": 22.933906,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΜΟΝΑΣΤΗΡΙΟΥ 6, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -7571,11 +7571,11 @@
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-03",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.64302,
+        "lon": 22.93882,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΑΓΙΟΥ ΔΗΜΗΤΡΙΟΥ 17, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -7592,11 +7592,11 @@
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-03",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.642769,
+        "lon": 22.934569,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "street",
+        "ref": "ΟΔΥΣΣΕΩΣ 1, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -7636,11 +7636,11 @@
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-09-20",
       "location": {
-        "lat": 40.654603,
-        "lon": 22.942027,
+        "lat": 40.65347,
+        "lon": 22.937896,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Νεάπολη"
+        "precision": "exact",
+        "ref": "ΑΓΙΟΥ ΓΕΩΡΓΙΟΥ 30, Νεάπολη"
       }
     },
     {
@@ -7702,11 +7702,11 @@
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-03",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.624846,
+        "lon": 22.961014,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "street",
+        "ref": "ΕΓΝΑΤΙΑΣ 12, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -7744,11 +7744,11 @@
       "firstSeen": "2026-06-29",
       "lastSeen": "2026-09-23",
       "location": {
-        "lat": 40.62093,
-        "lon": 22.954034,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "b30bb1e8-c60e-4277-aa71-ad3a3dd1292c"
+        "lat": 40.637473,
+        "lon": 22.939609,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΣΥΓΓΡΟΥ 30, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -7765,11 +7765,11 @@
       "firstSeen": "2026-06-27",
       "lastSeen": "2026-09-26",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.642071,
+        "lon": 22.935695,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "street",
+        "ref": "ΤΕΡΤΣΕΤΗ 3, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -7873,11 +7873,11 @@
       "firstSeen": "2026-06-29",
       "lastSeen": "2026-09-23",
       "location": {
-        "lat": 40.622571,
-        "lon": 22.971847,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "0a2cab70-2566-4a0b-a20c-5ff08ba2571e"
+        "lat": 40.646216,
+        "lon": 22.936149,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΑΠΟΛΛΩΝΙΑΔΟΣ 41, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -8107,11 +8107,11 @@
       "firstSeen": "2026-09-16",
       "lastSeen": "2026-10-03",
       "location": {
-        "lat": 40.607322,
-        "lon": 22.979835,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "584c68e3-63ea-479f-850f-315eefb6b9cb"
+        "lat": 40.636886,
+        "lon": 22.935516,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΠΟΛΥΤΕΧΝΕΙΟΥ 27-29, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -8214,7 +8214,13 @@
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-09-27",
-      "location": null
+      "location": {
+        "lat": 40.641809,
+        "lon": 22.854819,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "7d4b6988-52c4-4b39-b359-c8a0b5bec9fd"
+      }
     },
     {
       "id": "2310582153",
@@ -8359,11 +8365,11 @@
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-09-27",
       "location": {
-        "lat": 40.671992,
-        "lon": 22.930205,
-        "source": "overture",
+        "lat": 40.673806,
+        "lon": 22.92758,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "503169b9-ce23-4db8-8861-f72fa70bd516"
+        "ref": "ΦΙΛΩΤΑ 15, Σταυρούπολη"
       }
     },
     {
@@ -8423,11 +8429,11 @@
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.67138,
-        "lon": 22.931969,
+        "lat": 40.672405,
+        "lon": 22.929366,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Σταυρούπολη"
+        "precision": "exact",
+        "ref": "ΟΛΥΜΠΟΥ 11, Σταυρούπολη"
       }
     },
     {
@@ -8465,11 +8471,11 @@
       "firstSeen": "2026-06-14",
       "lastSeen": "2026-09-23",
       "location": {
-        "lat": 40.671266,
-        "lon": 22.916199,
+        "lat": 40.672961,
+        "lon": 22.923589,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Εύοσμος"
+        "precision": "street",
+        "ref": "ΙΘΑΚΗΣ 25, Εύοσμος"
       }
     },
     {
@@ -8572,11 +8578,11 @@
       "firstSeen": "2026-06-24",
       "lastSeen": "2026-09-27",
       "location": {
-        "lat": 40.651055,
-        "lon": 22.944111,
-        "source": "overture",
+        "lat": 40.654343,
+        "lon": 22.954451,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "8b7fa347-fc18-4926-8f0a-6ace65962579"
+        "ref": "ΚΟΝΤΟΣΟΓΛΟΥ 4, Συκιές"
       }
     },
     {
@@ -8766,11 +8772,11 @@
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-09-24",
       "location": {
-        "lat": 40.649673,
-        "lon": 22.953539,
+        "lat": 40.654543,
+        "lon": 22.955109,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Συκιές"
+        "precision": "exact",
+        "ref": "Α.ΠΑΠΑΝΔΡΕΟΥ 156, Συκιές"
       }
     },
     {
@@ -8850,11 +8856,11 @@
       "firstSeen": "2026-06-29",
       "lastSeen": "2026-09-23",
       "location": {
-        "lat": 40.654603,
-        "lon": 22.942027,
+        "lat": 40.650144,
+        "lon": 22.945583,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Νεάπολη"
+        "precision": "street",
+        "ref": "ΡΗΓΑ ΦΕΡΑΙΟΥ 43, Νεάπολη"
       }
     },
     {
@@ -9210,11 +9216,11 @@
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-09-20",
       "location": {
-        "lat": 40.662172,
-        "lon": 22.946707,
-        "source": "overture",
+        "lat": 40.636036,
+        "lon": 22.961699,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "bab14bc6-47ed-46ec-ad51-129ca478e662"
+        "ref": "ΚΥΠΡΟΥ 13, Συκιές"
       }
     },
     {
@@ -9379,11 +9385,11 @@
       "firstSeen": "2026-06-12",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.649673,
-        "lon": 22.953539,
+        "lat": 40.645022,
+        "lon": 22.949255,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Συκιές"
+        "precision": "exact",
+        "ref": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 28, Συκιές"
       }
     },
     {
@@ -9442,11 +9448,11 @@
       "firstSeen": "2026-06-27",
       "lastSeen": "2026-09-30",
       "location": {
-        "lat": 40.651119,
-        "lon": 22.944853,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "378c2a4f-916c-4651-a7eb-b03e232cd8c1"
+        "lat": 40.64978,
+        "lon": 22.95899,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΕΠΤΑΠΥΡΓΙΟΥ 67, Συκιές"
       }
     },
     {
@@ -9527,11 +9533,11 @@
       "firstSeen": "2026-06-27",
       "lastSeen": "2026-09-21",
       "location": {
-        "lat": 40.6607,
-        "lon": 22.908719,
-        "source": "overture",
+        "lat": 40.67315,
+        "lon": 22.932576,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "d59c4089-2978-4ffa-853e-0bb1be74f5f2"
+        "ref": "ΘΕΡΜΟΠΥΛΩΝ 6, Σταυρούπολη"
       }
     },
     {
@@ -9889,11 +9895,11 @@
       "firstSeen": "2026-06-24",
       "lastSeen": "2026-09-22",
       "location": {
-        "lat": 40.663872,
-        "lon": 22.947214,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "afa57d0e-bf23-415a-9133-501a841b920a"
+        "lat": 40.669389,
+        "lon": 22.927243,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΚΑΡΑΒΑΓΓΕΛΗ 11 ΗΛΙΟΥΠΟΛΗ, Σταυρούπολη"
       }
     },
     {
@@ -9910,11 +9916,11 @@
       "firstSeen": "2026-06-29",
       "lastSeen": "2026-09-27",
       "location": {
-        "lat": 40.664861,
-        "lon": 22.95009,
+        "lat": 40.661391,
+        "lon": 22.948724,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Πολίχνη"
+        "precision": "street",
+        "ref": "ΑΓ. ΠΑΝΤΕΛΕΗΜΟΝΟΣ 9, Πολίχνη"
       }
     },
     {
@@ -10101,11 +10107,11 @@
       "firstSeen": "2026-06-23",
       "lastSeen": "2026-09-21",
       "location": {
-        "lat": 40.6697,
-        "lon": 22.92376,
-        "source": "overture",
+        "lat": 40.674158,
+        "lon": 22.930241,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "f7fa145c-ac57-46e6-bfe9-ba5d5e69d950"
+        "ref": "ΛΥΣΙΣΤΡΑΤΗΣ 6, Σταυρούπολη"
       }
     },
     {
@@ -10337,11 +10343,11 @@
       "firstSeen": "2026-06-29",
       "lastSeen": "2026-09-23",
       "location": {
-        "lat": 40.67138,
-        "lon": 22.931969,
+        "lat": 40.669731,
+        "lon": 22.93168,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Σταυρούπολη"
+        "precision": "exact",
+        "ref": "ΜΠΟΥΜΠΟΥΛΙΝΑΣ 23, Σταυρούπολη"
       }
     },
     {
@@ -10442,11 +10448,11 @@
       "firstSeen": "2026-06-27",
       "lastSeen": "2026-09-27",
       "location": {
-        "lat": 40.687656,
-        "lon": 22.952593,
+        "lat": 40.69154,
+        "lon": 22.945902,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Ευκαρπία"
+        "precision": "street",
+        "ref": "ΧΡΥΣΟΣΤΟΜΟΥ ΣΜΥΡΝΗΣ 29, Ευκαρπία"
       }
     },
     {
@@ -10915,11 +10921,11 @@
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.652179,
-        "lon": 22.938359,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "76225e07-e2e7-487e-a5f3-2897bbb227ed"
+        "lat": 40.684411,
+        "lon": 22.932244,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΑΡΗ ΒΕΛΟΥΧΙΩΤΗ 17, Σταυρούπολη"
       }
     },
     {
@@ -10959,11 +10965,11 @@
       "firstSeen": "2026-06-24",
       "lastSeen": "2026-09-26",
       "location": {
-        "lat": 40.67138,
-        "lon": 22.931969,
+        "lat": 40.677106,
+        "lon": 22.93334,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Σταυρούπολη"
+        "precision": "street",
+        "ref": "ΠΑΛΑΙΟΛΟΓΟΥ 85 ΝΙΚΟΠΟΛΗ, Σταυρούπολη"
       }
     },
     {
@@ -11428,11 +11434,11 @@
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-09-27",
       "location": {
-        "lat": 40.671266,
-        "lon": 22.916199,
+        "lat": 40.674922,
+        "lon": 22.905976,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Εύοσμος"
+        "precision": "exact",
+        "ref": "ΜΑΙΑΝΔΡΟΥ 87, Εύοσμος"
       }
     },
     {
@@ -11707,11 +11713,11 @@
       "firstSeen": "2026-07-22",
       "lastSeen": "2026-09-27",
       "location": {
-        "lat": 40.654547,
-        "lon": 22.923514,
+        "lat": 40.650578,
+        "lon": 22.932121,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Αμπελόκηποι"
+        "precision": "street",
+        "ref": "28 ΟΚΤΩΒΡΙΟΥ 4, Αμπελόκηποι"
       }
     },
     {
@@ -11728,11 +11734,11 @@
       "firstSeen": "2026-06-27",
       "lastSeen": "2026-09-21",
       "location": {
-        "lat": 40.666243,
-        "lon": 22.927548,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "a1f434a6-97d9-4bce-9028-3fde21aa2bd7"
+        "lat": 40.656504,
+        "lon": 22.931799,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΑΚΡΙΤΩΝ 27, Αμπελόκηποι"
       }
     },
     {
@@ -11793,11 +11799,11 @@
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-09-27",
       "location": {
-        "lat": 40.65338,
-        "lon": 22.923494,
+        "lat": 40.659904,
+        "lon": 22.931264,
         "source": "overture",
         "precision": "exact",
-        "ref": "382c92bb-67fe-4d92-9346-bdfc649d99bb"
+        "ref": "6c6102c6-4a37-41bb-b894-aceef32bda33"
       }
     },
     {
@@ -11880,11 +11886,11 @@
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-09-22",
       "location": {
-        "lat": 40.654547,
-        "lon": 22.923514,
+        "lat": 40.655192,
+        "lon": 22.927534,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Αμπελόκηποι"
+        "precision": "street",
+        "ref": "ΠΑΤΡ.ΙΩΑΚΕΙΜ 1, Αμπελόκηποι"
       }
     },
     {
@@ -12328,11 +12334,11 @@
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-09-20",
       "location": {
-        "lat": 40.654683,
-        "lon": 22.925285,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "ef277591-5f64-4248-aa01-39e9e1aecd7c"
+        "lat": 40.650069,
+        "lon": 22.928992,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΚΑΛΛΙΘΕΑΣ 27, Αμπελόκηποι"
       }
     },
     {
@@ -12456,11 +12462,11 @@
       "firstSeen": "2026-07-04",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.6607,
-        "lon": 22.908719,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "d59c4089-2978-4ffa-853e-0bb1be74f5f2"
+        "lat": 40.650487,
+        "lon": 22.929007,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΦΙΛΙΠΠΟΥΠΟΛΕΩΣ 2, Αμπελόκηποι"
       }
     },
     {
@@ -12974,11 +12980,11 @@
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.671266,
-        "lon": 22.916199,
+        "lat": 40.671635,
+        "lon": 22.905081,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Εύοσμος"
+        "precision": "exact",
+        "ref": "ΜΑΙΑΝΔΡΟΥ 53, Εύοσμος"
       }
     },
     {
@@ -12996,11 +13002,11 @@
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-09-27",
       "location": {
-        "lat": 40.6697,
-        "lon": 22.92376,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "f7fa145c-ac57-46e6-bfe9-ba5d5e69d950"
+        "lat": 40.669016,
+        "lon": 22.894502,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 54, Ελευθέριο-Κορδελιό"
       }
     },
     {
@@ -13017,11 +13023,11 @@
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-09-21",
       "location": {
-        "lat": 40.675051,
-        "lon": 22.920209,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "31dec45e-3b73-443f-bfa3-a11961362799"
+        "lat": 40.669155,
+        "lon": 22.91798,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΗΣ 7-9, Εύοσμος"
       }
     },
     {
@@ -13232,11 +13238,11 @@
       "firstSeen": "2026-07-04",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.671572,
-        "lon": 22.923809,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "ec32944e-65d4-416a-8e54-5c087b4817b4"
+        "lat": 40.670225,
+        "lon": 22.89436,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 23, Ελευθέριο-Κορδελιό"
       }
     },
     {
@@ -13340,11 +13346,11 @@
       "firstSeen": "2026-06-27",
       "lastSeen": "2026-09-25",
       "location": {
-        "lat": 40.671266,
-        "lon": 22.916199,
+        "lat": 40.670681,
+        "lon": 22.903299,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Εύοσμος"
+        "precision": "street",
+        "ref": "ΜΕΓΑΛΟΥ ΑΛΕΞΑΝΔΡΟΥ 119, Εύοσμος"
       }
     },
     {
@@ -13382,11 +13388,11 @@
       "firstSeen": "2026-06-29",
       "lastSeen": "2026-09-23",
       "location": {
-        "lat": 40.671266,
-        "lon": 22.916199,
+        "lat": 40.672483,
+        "lon": 22.916362,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Εύοσμος"
+        "precision": "exact",
+        "ref": "25ΗΣ ΜΑΡΤΙΟΥ 86, Εύοσμος"
       }
     },
     {
@@ -14206,11 +14212,11 @@
       "firstSeen": "2026-06-21",
       "lastSeen": "2026-09-21",
       "location": {
-        "lat": 40.610524,
-        "lon": 22.967757,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "73b1fbe4-46c7-45b3-98da-39b63b8d3231"
+        "lat": 40.590319,
+        "lon": 22.959066,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΒΑΣ. ΟΛΓΑΣ 101, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -14699,11 +14705,11 @@
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-10-02",
       "location": {
-        "lat": 40.60922,
-        "lon": 22.963202,
-        "source": "overture",
+        "lat": 40.613043,
+        "lon": 22.953975,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "c0f8618d-1a91-4078-8f21-46c1ead947c9"
+        "ref": "ΒΑΣ. ΟΛΓΑΣ 38, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -15017,11 +15023,11 @@
       "firstSeen": "2026-07-04",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.595929,
+        "lon": 22.958098,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "street",
+        "ref": "ΔΕΛΦΩΝ 50, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -15038,11 +15044,11 @@
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-03",
       "location": {
-        "lat": 40.610256,
-        "lon": 22.989236,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "86f947f6-ed69-4c3d-af3a-5fd7a6668b0b"
+        "lat": 40.617015,
+        "lon": 22.95906,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 58, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -15464,11 +15470,11 @@
       "firstSeen": "2026-07-01",
       "lastSeen": "2026-09-29",
       "location": {
-        "lat": 40.611726,
-        "lon": 22.97472,
+        "lat": 40.605902,
+        "lon": 22.957867,
         "source": "overture",
         "precision": "exact",
-        "ref": "cfed3dc4-2ab6-4324-942f-308795fd5fcd"
+        "ref": "a189adc8-92f1-443a-8a03-2ac146818158"
       }
     },
     {
@@ -15527,11 +15533,11 @@
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-03",
       "location": {
-        "lat": 40.61842,
-        "lon": 22.95468,
-        "source": "overture",
+        "lat": 40.603824,
+        "lon": 22.954507,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "9eadb3e3-4c1f-451f-9ec9-0d2f8591be2f"
+        "ref": "ΑΛΕΞΑΝΔΡΕΙΑΣ 38, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -15612,11 +15618,11 @@
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-03",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.609321,
+        "lon": 22.96285,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "street",
+        "ref": "ΜΗΤΡΟΠΟΥΛΟΥ 9, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -15696,11 +15702,11 @@
       "firstSeen": "2026-06-27",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.611346,
-        "lon": 22.986471,
-        "source": "overture",
+        "lat": 40.618645,
+        "lon": 22.955083,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "5694ea00-2bd9-4652-baff-8aed025d049a"
+        "ref": "ΑΕΤΟΡΑΧΗΣ 3, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -15846,11 +15852,11 @@
       "firstSeen": "2026-06-27",
       "lastSeen": "2026-09-30",
       "location": {
-        "lat": 40.6067,
-        "lon": 22.96747,
-        "source": "overture",
+        "lat": 40.601404,
+        "lon": 22.958907,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "0ac90269-4826-4236-918f-265f1035d4e9"
+        "ref": "ΣΟΛΩΝΟΣ 77, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -15953,11 +15959,11 @@
       "firstSeen": "2026-06-29",
       "lastSeen": "2026-09-23",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.64113,
+        "lon": 22.94934,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΜΑΚΕΔΟΝΙΑΣ 59, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -15975,11 +15981,11 @@
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.632942,
-        "lon": 22.963185,
-        "source": "overture",
+        "lat": 40.600685,
+        "lon": 22.955929,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "3cceeac4-01b8-4de3-871d-3f9820760348"
+        "ref": "ΑΛΕΞΑΝΔΡΕΙΑΣ 75, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -16319,11 +16325,11 @@
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-10-02",
       "location": {
-        "lat": 40.61797,
-        "lon": 22.959733,
-        "source": "overture",
+        "lat": 40.606658,
+        "lon": 22.957616,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "55c5583d-9802-4598-976e-7cc1b5314651"
+        "ref": "ΔΕΛΦΩΝ 114, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -16490,11 +16496,11 @@
       "firstSeen": "2026-06-23",
       "lastSeen": "2026-09-21",
       "location": {
-        "lat": 40.619934,
-        "lon": 22.969411,
-        "source": "overture",
+        "lat": 40.608706,
+        "lon": 22.967121,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "0fbf8f49-877e-4cff-8770-3f06ed58944d"
+        "ref": "ΜΑΡΚΟΥ ΜΠΟΤΣΑΡΗ 97, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -16853,11 +16859,11 @@
       "firstSeen": "2026-06-21",
       "lastSeen": "2026-09-20",
       "location": {
-        "lat": 40.61842,
-        "lon": 22.95468,
-        "source": "overture",
+        "lat": 40.614669,
+        "lon": 22.967037,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "9eadb3e3-4c1f-451f-9ec9-0d2f8591be2f"
+        "ref": "ΠΑΠΑΦΗ 91Α, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -16875,11 +16881,11 @@
       "firstSeen": "2026-06-12",
       "lastSeen": "2026-09-27",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.605023,
+        "lon": 22.973955,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "street",
+        "ref": "ΑΝΑΤΟΛΙΚΗΣ ΘΡΑΚΗΣ 76, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -17004,11 +17010,11 @@
       "firstSeen": "2026-06-23",
       "lastSeen": "2026-09-27",
       "location": {
-        "lat": 40.609092,
-        "lon": 22.971465,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "818d8cd5-eff0-4595-a2ff-9b19467fc04e"
+        "lat": 40.616383,
+        "lon": 22.976069,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΤΥΡΟΛΟΗΣ 21, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -17217,11 +17223,11 @@
       "firstSeen": "2026-06-11",
       "lastSeen": "2026-09-21",
       "location": {
-        "lat": 40.622571,
-        "lon": 22.971847,
+        "lat": 40.60974,
+        "lon": 22.97293,
         "source": "overture",
         "precision": "exact",
-        "ref": "0a2cab70-2566-4a0b-a20c-5ff08ba2571e"
+        "ref": "d29446c8-ef32-4c40-acc6-d0b6b8fd1deb"
       }
     },
     {
@@ -17390,11 +17396,11 @@
       "firstSeen": "2026-06-23",
       "lastSeen": "2026-09-23",
       "location": {
-        "lat": 40.612262,
-        "lon": 22.97402,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "3e4be9c9-e1df-4b92-b088-bbacc64ad99d"
+        "lat": 40.613752,
+        "lon": 22.964745,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΘΕΑΓΕΝΟΥΣ ΧΑΡΙΣΗ 97, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -17517,7 +17523,13 @@
       ],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-09-21",
-      "location": null
+      "location": {
+        "lat": 40.623654,
+        "lon": 22.970765,
+        "source": "nominatim",
+        "precision": "exact",
+        "ref": "ΜΑΚΡΥΓΙΑΝΝΗ 4, Τριανδρία"
+      }
     },
     {
       "id": "2310925569",
@@ -17618,11 +17630,11 @@
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-09-23",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.617163,
+        "lon": 22.97655,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "street",
+        "ref": "ΕΜΠΕΔΟΚΛΕΟΥΣ 75, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -17725,11 +17737,11 @@
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-03",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.615176,
+        "lon": 22.967658,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "street",
+        "ref": "ΟΣΤΡΟΒΟΥ 24, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -17768,11 +17780,11 @@
       "firstSeen": "2026-06-24",
       "lastSeen": "2026-09-26",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.607571,
+        "lon": 22.970239,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΠΑΠΑΦΗ 184, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -17833,7 +17845,13 @@
       ],
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-09-23",
-      "location": null
+      "location": {
+        "lat": 40.623614,
+        "lon": 22.97159,
+        "source": "nominatim",
+        "precision": "exact",
+        "ref": "ΤΡΙΚΟΥΠΗ 33, Τριανδρία"
+      }
     },
     {
       "id": "2310930039",
@@ -18234,11 +18252,11 @@
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-09-30",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.612489,
+        "lon": 22.96555,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "exact",
+        "ref": "ΚΛΕΑΝΘΟΥΣ 26, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -18298,11 +18316,11 @@
       "firstSeen": "2026-06-05",
       "lastSeen": "2026-10-03",
       "location": {
-        "lat": 40.611346,
-        "lon": 22.986471,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "5694ea00-2bd9-4652-baff-8aed025d049a"
+        "lat": 40.607889,
+        "lon": 22.976078,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΑΜΦΙΠΟΛΕΩΣ 11, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -18527,11 +18545,11 @@
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-09-28",
       "location": {
-        "lat": 40.619454,
-        "lon": 22.967631,
+        "lat": 40.61601,
+        "lon": 22.968869,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Δήμος Θεσσαλονίκης"
+        "precision": "street",
+        "ref": "ΑΝΩ ΤΖΟΥΜΑΓΙΑΣ 55, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -18571,11 +18589,11 @@
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-09-26",
       "location": {
-        "lat": 40.611346,
-        "lon": 22.986471,
-        "source": "overture",
+        "lat": 40.608281,
+        "lon": 22.970321,
+        "source": "nominatim",
         "precision": "exact",
-        "ref": "5694ea00-2bd9-4652-baff-8aed025d049a"
+        "ref": "ΠΑΠΑΦΗ 195, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -18829,11 +18847,11 @@
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-09-20",
       "location": {
-        "lat": 40.601246,
-        "lon": 22.986682,
+        "lat": 40.601846,
+        "lon": 22.995918,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Πυλαία"
+        "precision": "street",
+        "ref": "ΧΑΡΙΛΑΟΥ ΤΡΙΚΟΥΠΗ 22, Πυλαία"
       }
     },
     {
@@ -18850,11 +18868,11 @@
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-09-29",
       "location": {
-        "lat": 40.619213,
-        "lon": 22.958227,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "da5de488-f8d6-48b1-8776-0d7bbeb0a717"
+        "lat": 40.594012,
+        "lon": 22.956186,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΒΑΣ. ΟΛΓΑΣ 132, Δήμος Θεσσαλονίκης"
       }
     },
     {
@@ -19000,11 +19018,11 @@
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-09-22",
       "location": {
-        "lat": 40.584719,
-        "lon": 22.953095,
+        "lat": 40.575239,
+        "lon": 22.970476,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Καλαμαριά"
+        "precision": "street",
+        "ref": "ΕΘΝ.ΑΝΤΙΣΤΑΣΕΩΣ 40-46, Καλαμαριά"
       }
     },
     {
@@ -19128,11 +19146,11 @@
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-09-29",
       "location": {
-        "lat": 40.671266,
-        "lon": 22.916199,
+        "lat": 40.676399,
+        "lon": 22.917946,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Εύοσμος"
+        "precision": "street",
+        "ref": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΗΣ 80, Εύοσμος"
       }
     },
     {
@@ -19416,11 +19434,11 @@
       "firstSeen": "2026-06-26",
       "lastSeen": "2026-09-24",
       "location": {
-        "lat": 40.668768,
-        "lon": 22.894578,
+        "lat": 40.669016,
+        "lon": 22.894502,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Ελευθέριο-Κορδελιό"
+        "precision": "street",
+        "ref": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 36, Ελευθέριο-Κορδελιό"
       }
     },
     {
