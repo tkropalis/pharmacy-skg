@@ -10,6 +10,13 @@ export const REPORT_TYPES = [
 ] as const;
 export type ReportType = (typeof REPORT_TYPES)[number];
 
+/**
+ * Where the form posts. vercel.json has `trailingSlash: true`, which redirects paths without a
+ * slash; the slash form is the canonical one there, and a rewrite hands it to the function
+ * (a POST must not depend on a redirect). The function answers on both forms.
+ */
+export const REPORT_ENDPOINT = '/api/report/';
+
 export const MESSAGE_MAX = 1000;
 export const PHARMACY_MAX = 120;
 

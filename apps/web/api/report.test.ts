@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { POST } from './report.ts';
+import { POST, fenced, resetRateLimit } from './report.ts';
 import { el } from '../src/i18n/el.ts';
 import { REPORT_TYPES } from '../src/lib/report.ts';
 
@@ -28,6 +28,7 @@ describe('POST /api/report', () => {
   const fetchMock = vi.fn<typeof fetch>();
 
   beforeEach(() => {
+    resetRateLimit();
     fetchMock.mockReset();
     fetchMock.mockImplementation(() => Promise.resolve(githubOk()));
     vi.stubGlobal('fetch', fetchMock);
@@ -68,7 +69,7 @@ describe('POST /api/report', () => {
     expect((init.headers as Record<string, string>)['Authorization']).toBe('Bearer test-token');
     expect(payload['labels']).toEqual(['report']);
     expect(payload['title']).toBe('Αναφορά: Λάθος ωράριο — 2310123456');
-    expect(String(payload['body'])).toContain('> Ήταν κλειστό στις 18:00');
+    expect(String(payload['body'])).toContain('```\nΉταν κλειστό στις 18:00');
   });
 
   it('uses GITHUB_REPO when set', async () => {
@@ -113,6 +114,7 @@ describe('POST /api/report', () => {
       { ...valid, message: 'x'.repeat(1001) },
       { ...valid, pharmacy: 5 },
     ]) {
+      resetRateLimit(); // this test sends more than the limit allows
       expect((await POST(post(bad))).status).toBe(400);
     }
     expect(fetchMock).not.toHaveBeenCalled();
@@ -147,17 +149,89 @@ describe('POST /api/report', () => {
     const { payload } = sentIssue();
     const title = String(payload['title']);
     const body = String(payload['body']);
-    expect(title).toBe('Αναφορά: Λάθος ωράριο — Φαρμακείο Μαρίας');
+    // The typed name is not a registry id: it goes into the code block, not the title.
+    expect(title).toBe('Αναφορά: Λάθος ωράριο — χωρίς φαρμακείο');
     // eslint-disable-next-line no-control-regex
     expect(body).not.toMatch(/[\u0000-\u0009\u000b-\u001f]/);
-    expect(body).toContain('> γραμμή 1\n> γραμμή 2\n> \n> γραμμή 3');
+    expect(body).toContain(
+      '```\nΦαρμακείο: Φαρμακείο Μαρίας\n\nγραμμή 1\nγραμμή 2\n\nγραμμή 3\n```',
+    );
   });
 
-  it('defuses @mentions so a public report cannot ping anyone', async () => {
-    await POST(post({ ...valid, pharmacy: '@octocat', message: 'cc @org/team please' }));
+  it('puts the message in a fence longer than any backtick run in it', async () => {
+    const message = 'before ``` # closes? ````` after\n```\n![x](http://evil.example/a.png)';
+    await POST(post({ ...valid, message }));
+    const body = String(sentIssue().payload['body']);
+    const fence = '``````'; // six: one more than the longest run (five)
+    expect(body).toContain(`${fence}\n${message}\n${fence}`);
+    expect(fenced('a')).toBe('```\na\n```');
+    expect(fenced('a ```` b')).toBe('`````\na ```` b\n`````');
+  });
+
+  it('keeps links, HTML, mentions and issue references of the message out of the plain text', async () => {
+    await POST(
+      post({
+        ...valid,
+        pharmacy: '<img src=x onerror=1> @octocat owner/repo#1',
+        message: '[click](http://evil.example) <b>x</b> @org/team other/repo#2',
+      }),
+    );
     const { payload } = sentIssue();
-    expect(String(payload['title'])).not.toMatch(/@[A-Za-z]/);
-    expect(String(payload['body'])).not.toMatch(/@[A-Za-z]/);
+    const body = String(payload['body']);
+    const outside = body.replace(/(`{3,})\n[\s\S]*?\n\1/, '');
+    expect(String(payload['title'])).not.toMatch(/[<>@#[\]]/);
+    for (const text of ['evil.example', '<b>', '@org', '@octocat', 'other/repo#2', '<img']) {
+      expect(outside).not.toContain(text);
+      expect(String(payload['title'])).not.toContain(text);
+    }
+    expect(body).toContain('[click](http://evil.example)');
+  });
+
+  it('accepts only a registry or generated id as the pharmacy', async () => {
+    await POST(post({ ...valid, pharmacy: 'x-0123456789' }));
+    expect(String(sentIssue().payload['title'])).toBe('Αναφορά: Λάθος ωράριο — x-0123456789');
+    fetchMock.mockClear();
+    await POST(post({ ...valid, pharmacy: '2310123456 evil' }));
+    expect(String(sentIssue().payload['title'])).toContain('χωρίς φαρμακείο');
+  });
+
+  it('compares the content type exactly', async () => {
+    const ok = [
+      'application/json',
+      'application/json; charset=utf-8',
+      'Application/JSON;charset=UTF-8',
+    ];
+    for (const type of ok) {
+      expect(
+        (await POST(post(valid, { 'Content-Type': type, 'X-Forwarded-For': type }))).status,
+      ).toBe(201);
+    }
+    for (const type of [
+      'text/plain; application/json',
+      'application/jsonp',
+      'application/json5',
+      'x/application/json',
+      'application/json; boundary=x',
+      '',
+    ]) {
+      expect((await POST(post(valid, { 'Content-Type': type }))).status, type).toBe(415);
+    }
+  });
+
+  it('limits a client to 5 reports in 10 minutes, per first forwarded address', async () => {
+    const from = (ip: string) => post(valid, { 'X-Forwarded-For': `${ip}, 10.0.0.1` });
+    for (let i = 0; i < 5; i++) expect((await POST(from('203.0.113.7'))).status).toBe(201);
+    const limited = await POST(from('203.0.113.7'));
+    expect(limited.status).toBe(429);
+    expect(await limited.json()).toEqual({ ok: false, error: 'rate-limited' });
+    expect(fetchMock).toHaveBeenCalledTimes(5);
+    // Another client is not affected.
+    expect((await POST(from('203.0.113.8'))).status).toBe(201);
+    // After the window the first client may send again.
+    vi.useFakeTimers();
+    vi.setSystemTime(Date.now() + 10 * 60_000 + 1000);
+    expect((await POST(from('203.0.113.7'))).status).toBe(201);
+    vi.useRealTimers();
   });
 
   it('answers 502 when GitHub fails or is unreachable, without logging the report', async () => {

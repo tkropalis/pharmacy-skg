@@ -5,6 +5,7 @@ import type { Dictionary } from '../i18n/index.ts';
 import {
   MESSAGE_MAX,
   PHARMACY_MAX,
+  REPORT_ENDPOINT,
   REPORT_TYPES,
   fallbackIssueUrl,
   isReportType,
@@ -51,7 +52,7 @@ export default function ReportForm({ labels, locale }: Props) {
     }
     setState({ kind: 'sending' });
     try {
-      const response = await fetch('/api/report', {
+      const response = await fetch(REPORT_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ pharmacy, type, message, website, locale }),

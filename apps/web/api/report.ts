@@ -19,6 +19,48 @@ const MESSAGE_MIN = 3;
 const PHARMACY_MAX = 120;
 const TITLE_MAX = 200;
 const GITHUB_TIMEOUT_MS = 8000;
+/** A pharmacy id as the registry prints it, or a generated one (x- and ten hex digits). */
+const PHARMACY_ID = /^(\d{10}|x-[0-9a-f]{10})$/;
+/** Only `application/json`, optionally with a charset: nothing else is a JSON request. */
+const JSON_CONTENT_TYPE = /^application\/json\s*(;\s*charset=["']?[\w-]+["']?\s*)?$/i;
+
+// Best-effort limit per client: a Map in this function instance's memory. Instances come and go
+// and do not share it, so it only slows down a careless loop. The real limit is a Vercel
+// Firewall rate-limit rule for /api/report (apps/web/README.md).
+const RATE_LIMIT = 5;
+const RATE_WINDOW_MS = 10 * 60_000;
+const RATE_MAX_CLIENTS = 2000;
+const recent = new Map<string, number[]>();
+
+/** Forgets everything the limiter knows (tests). */
+export function resetRateLimit(): void {
+  recent.clear();
+}
+
+/** The first address of X-Forwarded-For (Vercel sets it), or 'unknown'. */
+function clientOf(request: Request): string {
+  const forwarded = request.headers.get('x-forwarded-for') ?? '';
+  return forwarded.split(',')[0]?.trim().slice(0, 64) || 'unknown';
+}
+
+/** Counts a request; false when the client is over the limit. */
+function allowed(client: string, now: number): boolean {
+  const times = (recent.get(client) ?? []).filter((time) => now - time < RATE_WINDOW_MS);
+  if (times.length >= RATE_LIMIT) {
+    recent.set(client, times);
+    return false;
+  }
+  times.push(now);
+  recent.delete(client);
+  recent.set(client, times);
+  // Bounded memory: drop the oldest clients first.
+  while (recent.size > RATE_MAX_CLIENTS) {
+    const oldest = recent.keys().next();
+    if (oldest.done) break;
+    recent.delete(oldest.value);
+  }
+  return true;
+}
 
 /** Issue titles are in Greek: that is the language of the people who triage them. */
 const TYPE_LABELS = {
@@ -72,20 +114,29 @@ function multiLine(value: string): string {
     .trim();
 }
 
-/** A zero-width space after "@" so a public report cannot ping people or teams. */
-function defuseMentions(value: string): string {
-  return value.replace(/@/g, '@​');
+/**
+ * Text between fences that no line of it can close: the fence is one backtick longer than the
+ * longest run of backticks inside. In a code block GitHub shows the text as it is, with no
+ * links, images, HTML, @mentions or owner/repo#1 references.
+ */
+export function fenced(text: string): string {
+  const longest = Math.max(0, ...(text.match(/`+/g) ?? []).map((run) => run.length));
+  const fence = '`'.repeat(Math.max(3, longest + 1));
+  return `${fence}\n${text}\n${fence}`;
 }
 
 export async function POST(request: Request): Promise<Response> {
-  const contentType = request.headers.get('content-type') ?? '';
-  if (!contentType.toLowerCase().includes('application/json')) {
+  if (!JSON_CONTENT_TYPE.test((request.headers.get('content-type') ?? '').trim())) {
     return json({ ok: false, error: 'unsupported-media-type' }, 415);
   }
   // Browsers state where a request comes from; refuse other sites' forms and scripts.
   const site = request.headers.get('sec-fetch-site');
   if (site !== null && site !== 'same-origin' && site !== 'none') {
     return json({ ok: false, error: 'forbidden' }, 403);
+  }
+
+  if (!allowed(clientOf(request), Date.now())) {
+    return json({ ok: false, error: 'rate-limited' }, 429);
   }
 
   const raw = await request.text();
@@ -113,7 +164,10 @@ export async function POST(request: Request): Promise<Response> {
   const parsed = reportSchema.safeParse(payload);
   if (!parsed.success) return json({ ok: false, error: 'invalid' }, 400);
 
-  const pharmacy = singleLine(parsed.data.pharmacy ?? '').slice(0, PHARMACY_MAX);
+  const typed = singleLine(parsed.data.pharmacy ?? '').slice(0, PHARMACY_MAX);
+  // Only a registry id goes into the title and the plain text; anything else the person typed
+  // goes into the code block with the message.
+  const pharmacyId = PHARMACY_ID.test(typed) ? typed : '';
   const message = multiLine(parsed.data.message);
   if (message.length < MESSAGE_MIN) return json({ ok: false, error: 'invalid' }, 400);
 
@@ -123,20 +177,16 @@ export async function POST(request: Request): Promise<Response> {
   if (!/^[\w.-]+\/[\w.-]+$/.test(repo)) return json({ ok: false, error: 'unavailable' }, 503);
 
   const typeLabel = TYPE_LABELS[parsed.data.type];
-  const title = defuseMentions(`Αναφορά: ${typeLabel} — ${pharmacy || 'χωρίς φαρμακείο'}`).slice(
-    0,
-    TITLE_MAX,
-  );
-  const quoted = defuseMentions(message)
-    .split('\n')
-    .map((line) => `> ${line}`)
-    .join('\n');
+  const title = `Αναφορά: ${typeLabel} — ${pharmacyId || 'χωρίς φαρμακείο'}`.slice(0, TITLE_MAX);
+  const freeText = [typed !== '' && pharmacyId === '' ? `Φαρμακείο: ${typed}` : '', message]
+    .filter((part) => part !== '')
+    .join('\n\n');
   const body = [
     `**Τύπος:** ${typeLabel}`,
-    `**Φαρμακείο:** ${pharmacy ? defuseMentions(pharmacy) : '—'}`,
+    `**Φαρμακείο:** ${pharmacyId || '—'}`,
     `**Γλώσσα:** ${parsed.data.locale ?? '—'}`,
     '',
-    quoted,
+    fenced(freeText),
     '',
     '---',
     '_Στάλθηκε από τη φόρμα αναφοράς της εφαρμογής._',

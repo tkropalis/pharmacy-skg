@@ -19,7 +19,7 @@ for (const locale of LOCALES) {
 
     test('shows success when the report is accepted', async ({ page }) => {
       let body: unknown = null;
-      await page.route('**/api/report', async (route) => {
+      await page.route('**/api/report/', async (route) => {
         body = route.request().postDataJSON();
         await route.fulfill({
           status: 200,
@@ -40,7 +40,7 @@ for (const locale of LOCALES) {
     });
 
     test('offers the GitHub fallback when the service is unavailable (503)', async ({ page }) => {
-      await page.route('**/api/report', (route) =>
+      await page.route('**/api/report/', (route) =>
         route.fulfill({ status: 503, json: { error: 'unavailable' } }),
       );
       await page.goto(path);
@@ -58,7 +58,7 @@ for (const locale of LOCALES) {
 
     test('asks for a message instead of sending an empty report', async ({ page }) => {
       let called = false;
-      await page.route('**/api/report', (route) => {
+      await page.route('**/api/report/', (route) => {
         called = true;
         return route.fulfill({ status: 200, json: {} });
       });
