@@ -6,6 +6,7 @@ import StaleBanner from '../components/StaleBanner.astro';
 import { APP_NAME, THEME_COLORS } from '../config.ts';
 import { alternatePaths, t } from '../i18n/index.ts';
 import type { RouteKey } from '../i18n/index.ts';
+import '../styles/fonts.css';
 import '../styles/global.css';
 
 interface Props {
@@ -47,9 +48,8 @@ const analytics = import.meta.env.PROD && import.meta.env.PUBLIC_ANALYTICS === '
     <meta name="description" content={description} />
     {(alternates === null || route === 'report') && <meta name="robots" content="noindex" />}
 
-    <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content={THEME_COLORS.light} media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content={THEME_COLORS.dark} media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light only" />
+    <meta name="theme-color" content={THEME_COLORS.light} />
     <script is:inline src="/stale-check.js"></script>
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />

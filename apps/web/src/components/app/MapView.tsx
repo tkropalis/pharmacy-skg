@@ -62,7 +62,6 @@ export function MapView(props: MapViewProps) {
   const latest = useRef(props);
   latest.current = props;
   const [status, setStatus] = useState<MapStatus>('idle');
-  const dark = useMediaQuery('(prefers-color-scheme: dark)');
   const reducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)');
   const reducedRef = useRef(reducedMotion);
   reducedRef.current = reducedMotion;
@@ -89,7 +88,7 @@ export function MapView(props: MapViewProps) {
         await yieldToMain();
         if (cancelled) return;
         // The style and the library load side by side.
-        const style = loadMapStyle(dark, locale);
+        const style = loadMapStyle(locale);
         style.catch(() => {});
         // After a deploy this page's chunk may be gone from the cache and the server: the map
         // note says so and the reload notice offers the new version. The list is unaffected.
@@ -100,7 +99,6 @@ export function MapView(props: MapViewProps) {
         const created = await createMapController(container, {
           locale,
           text,
-          dark,
           style,
           center: THESSALONIKI.center,
           zoom: 12,
@@ -128,7 +126,7 @@ export function MapView(props: MapViewProps) {
       controller.current?.destroy();
       controller.current = null;
     };
-  }, [enabled, locale, text, dark, sideBySide]);
+  }, [enabled, locale, text, sideBySide]);
 
   useEffect(() => {
     if (status === 'ready') controller.current?.setRows(props.rows);

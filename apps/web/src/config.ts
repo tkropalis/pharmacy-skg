@@ -29,9 +29,8 @@ export const REPO_URL = `https://github.com/${REPO}`;
 
 /** Theme colours; keep in sync with the tokens in styles/global.css. */
 export const THEME_COLORS = {
-  light: '#f7faf8',
-  dark: '#0d1512',
-  accent: '#0b7a43',
+  light: '#ffffff',
+  accent: '#0a7d45',
 } as const;
 
 /** Data older than this triggers the stale-data banner (docs/decisions.md, Defaults). */

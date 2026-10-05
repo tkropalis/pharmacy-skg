@@ -28,7 +28,7 @@ On an iPhone (Safari) and an Android phone (Chrome):
 - [ ] The home screen loads. "Use my location" asks for permission and sorts the list by distance.
 - [ ] Call, Directions (Google, Apple, Waze) and Share work.
 - [ ] Add to Home Screen. Open the installed app in airplane mode: the list still shows.
-- [ ] Switch the phone to dark mode; check the map and text are readable.
+- [ ] Switch the phone to dark mode: the app should stay light (one theme on every device).
 - [ ] Report anything odd through the app's own report form, so it lands as an issue.
 
 ## 4. Data trust (automated, then a spot check by you)

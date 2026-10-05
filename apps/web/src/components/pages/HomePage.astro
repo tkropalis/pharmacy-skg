@@ -1,5 +1,7 @@
 ---
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import type { Locale } from '@pharmacy-skg/core';
+import { faSvg } from '../../lib/fa.ts';
 import { t } from '../../i18n/index.ts';
 import { dutyIndexPath } from '../../i18n/routes.ts';
 
@@ -32,10 +34,7 @@ const dutyHref = dutyIndexPath(locale);
   data-text={JSON.stringify(app)}
 >
   <div class="container fallback">
-    <svg class="cross" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-      <rect width="32" height="32" rx="6"></rect>
-      <path d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"></path>
-    </svg>
+    <span class="cross" set:html={faSvg(faPlus, { size: 28 })} />
     <h1>{d.title}</h1>
     <p>{d.intro}</p>
     <p>
@@ -72,16 +71,14 @@ const dutyHref = dutyIndexPath(locale);
   }
 
   .cross {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 3rem;
     height: 3rem;
     margin-bottom: 1.25rem;
-  }
-
-  .cross rect {
-    fill: var(--accent);
-  }
-
-  .cross path {
-    fill: var(--on-accent);
+    border-radius: 0.875rem;
+    background: var(--accent);
+    color: var(--on-accent);
   }
 </style>

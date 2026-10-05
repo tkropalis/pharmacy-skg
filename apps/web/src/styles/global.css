@@ -1,23 +1,32 @@
 :root {
-  color-scheme: light dark;
+  /* One theme, light, on every device (docs/decisions.md, Look). */
+  color-scheme: light;
 
-  --bg: #f7faf8;
+  --bg: #f4f7f5;
   --surface: #ffffff;
-  --fg: #10231a;
-  --muted: #4a5d54;
-  --accent: #0b7a43;
+  --soft: #eef3f0;
+  --fg: #1c2622;
+  --muted: #5d6b64;
+  --accent: #0a7d45;
+  --accent-ink: #0b6b3a;
+  --accent-soft: #e3f3ea;
   --on-accent: #ffffff;
-  --border: #d6e2db;
-  --focus: #0a58ca;
-  --warn-bg: #fff3cd;
-  --warn-fg: #4a3200;
-  --warn-border: #b7791f;
+  --border: #e3e9e5;
+  --border-strong: #7b8e85;
+  --focus: #1d5fd6;
+  --warn-bg: #fdf3e1;
+  --warn-fg: #5a3700;
+  --warn-border: #c98a1b;
   --danger-bg: #fdecea;
   --danger-fg: #6b1510;
   --danger-border: #b42318;
 
+  --font: 'Commissioner', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --space: 1rem;
-  --radius: 0.5rem;
+  --radius: 0.75rem;
+  --radius-lg: 1.25rem;
+  --shadow: 0 1px 2px rgb(20 40 30 / 0.06), 0 4px 14px rgb(20 40 30 / 0.08);
+  --shadow-lg: 0 2px 6px rgb(20 40 30 / 0.08), 0 12px 32px rgb(20 40 30 / 0.12);
   --content: 44rem;
 
   /* Notches, status bars and the home indicator (needs viewport-fit=cover, see Base.astro). */
@@ -25,25 +34,6 @@
   --safe-r: env(safe-area-inset-right, 0px);
   --safe-b: env(safe-area-inset-bottom, 0px);
   --safe-l: env(safe-area-inset-left, 0px);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0d1512;
-    --surface: #131f1a;
-    --fg: #e6efe9;
-    --muted: #a7bbb1;
-    --accent: #3ccf7f;
-    --on-accent: #0d1512;
-    --border: #2a3b33;
-    --focus: #8ab4ff;
-    --warn-bg: #3a2c05;
-    --warn-fg: #ffe9a8;
-    --warn-border: #d9a441;
-    --danger-bg: #3b1512;
-    --danger-fg: #ffd9d4;
-    --danger-border: #f08379;
-  }
 }
 
 *,
@@ -65,14 +55,12 @@ body {
   flex-direction: column;
   background: var(--bg);
   color: var(--fg);
-  font:
-    1.0625rem/1.6 system-ui,
-    -apple-system,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font: 1.0625rem/1.6 var(--font);
+  /* A little flare: softer, friendlier terminals (Commissioner's FLAR axis). */
+  font-variation-settings: 'FLAR' 60;
+  /* Commissioner's space is narrow for Greek at small sizes. */
+  word-spacing: 0.06em;
+  -webkit-font-smoothing: antialiased;
   overflow-wrap: break-word;
 }
 
@@ -186,7 +174,7 @@ a {
   min-height: 2.75rem;
   padding: 0.5rem 1.25rem;
   border: 2px solid var(--accent);
-  border-radius: var(--radius);
+  border-radius: 999px;
   background: var(--accent);
   color: var(--on-accent);
   font: inherit;

@@ -1,7 +1,7 @@
 import type { Locale } from '@pharmacy-skg/core';
 
-export const STYLE_LIGHT = 'https://tiles.openfreemap.org/styles/liberty';
-export const STYLE_DARK = 'https://tiles.openfreemap.org/styles/dark';
+/** OpenFreeMap's Positron: a quiet, pale base, so the pharmacy markers are what stands out. */
+export const STYLE_URL = 'https://tiles.openfreemap.org/styles/positron';
 
 type Expression = unknown[];
 
@@ -52,16 +52,15 @@ export function localizeStyle<T extends StyleLike>(style: T, locale: Locale): T 
 const STYLE_TIMEOUT_MS = 20_000;
 
 /**
- * Fetches the base style for the colour scheme and gives it the locale's place names. The map
+ * Fetches the base style and gives it the locale's place names. The map
  * chunk is large, so the page starts this at the same time as that import and hands the result
  * over (the style would otherwise be asked for only after the library has loaded).
  */
 export async function loadMapStyle(
-  dark: boolean,
   locale: Locale,
   timeoutMs: number = STYLE_TIMEOUT_MS,
 ): Promise<Record<string, unknown>> {
-  const response = await fetch(dark ? STYLE_DARK : STYLE_LIGHT, {
+  const response = await fetch(STYLE_URL, {
     signal: AbortSignal.timeout(timeoutMs),
   });
   if (!response.ok) throw new Error(`Style request failed: HTTP ${response.status}`);

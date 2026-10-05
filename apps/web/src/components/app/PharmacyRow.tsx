@@ -107,7 +107,7 @@ function PharmacyRowView({
         <span
           className="row-pin"
           aria-hidden="true"
-          dangerouslySetInnerHTML={{ __html: pinSvg(view.kind, { approximate, size: 20 }) }}
+          dangerouslySetInnerHTML={{ __html: pinSvg(view.kind, { approximate, size: 24 }) }}
         />
         <div className="row-text">
           <h2 className="row-name">
