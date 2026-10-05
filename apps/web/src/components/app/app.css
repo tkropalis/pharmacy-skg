@@ -202,7 +202,8 @@ html.has-update-toast .sheet {
 
 .sheet-header {
   flex: none;
-  padding-inline: 1rem;
+  /* Phones in landscape: keep text and buttons clear of the notch (viewport-fit=cover). */
+  padding-inline: max(1rem, var(--safe-l)) max(1rem, var(--safe-r));
 }
 
 .sheet-body {
@@ -210,7 +211,7 @@ html.has-update-toast .sheet {
   min-height: 0;
   overflow-y: auto;
   overscroll-behavior: contain;
-  padding: 0.5rem 1rem 1.5rem;
+  padding: 0.5rem max(1rem, var(--safe-r)) 1.5rem max(1rem, var(--safe-l));
 }
 
 @media (min-width: 900px) {
@@ -859,4 +860,15 @@ html.has-update-toast .sheet {
 .footer-note {
   margin: 0 0 0.25rem;
   font-size: 0.8125rem;
+}
+
+/* The map's own controls stay clear of the notch too. */
+.hs .map .maplibregl-ctrl-top-left,
+.hs .map .maplibregl-ctrl-bottom-left {
+  margin-left: var(--safe-l);
+}
+
+.hs .map .maplibregl-ctrl-top-right,
+.hs .map .maplibregl-ctrl-bottom-right {
+  margin-right: var(--safe-r);
 }

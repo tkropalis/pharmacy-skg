@@ -333,9 +333,9 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
       (error) => {
         const denied = error.code === error.PERMISSION_DENIED;
         setGeo(denied ? 'denied' : 'unavailable');
-        // Without the Permissions API there is no other way to know the answer next time, so
-        // an automatic request that was refused is not repeated on every visit.
-        if (auto && denied && permissionUnknown.current) writeItem(LOCATION_KEY, 'off');
+        // A refused automatic request is not repeated on every visit: Safari's "Ask" setting and
+        // a dismissed Chrome prompt both report "prompt" again next time. The card offers a retry.
+        if (auto && denied) writeItem(LOCATION_KEY, 'off');
       },
       FIRST_FIX_OPTIONS,
     );
@@ -370,14 +370,12 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
 
   // Ask for the position by itself once the data is ready (the browser asks the person first),
   // unless they chose an area, turned the request off, or the browser has it blocked.
-  const permissionUnknown = useRef(false);
   const autoLocated = useRef(false);
   const dataReady = ready !== null;
   useEffect(() => {
     if (!dataReady || autoLocated.current) return;
     autoLocated.current = true;
     void geolocationPermission().then((permission) => {
-      permissionUnknown.current = permission === 'unknown';
       const decision = autoLocateDecision({
         dismissed: readItem(LOCATION_KEY) === 'off',
         // Read when the permission has come back: the saved area may have been restored since.
