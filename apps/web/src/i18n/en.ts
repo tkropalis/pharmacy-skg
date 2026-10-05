@@ -25,6 +25,7 @@ export const en: Dictionary = {
 
   footer: {
     lastUpdatedLabel: 'Updated',
+    offline: 'Offline',
     navLabel: 'Information',
     disclaimer: 'Call before you go.',
     aboutShort: 'About',
@@ -59,6 +60,12 @@ export const en: Dictionary = {
         ],
       },
     ],
+    install: {
+      heading: 'Install',
+      body: 'Add the app to your Home Screen. It also opens offline, with the data from the last update.',
+      ios: 'On iPhone and iPad: in Safari, tap Share, then “Add to Home Screen”.',
+      button: 'Install',
+    },
     creditsHeading: 'Sources',
     credits: {
       fsth: 'Duty lists: Pharmaceutical Association of Thessaloniki, via',
@@ -95,6 +102,12 @@ export const en: Dictionary = {
         heading: 'Favourites and settings',
         paragraphs: [
           'They stay only in your browser and are deleted when you clear the site’s data.',
+        ],
+      },
+      {
+        heading: 'Offline',
+        paragraphs: [
+          'The app keeps the pages, data and map pieces it needs to open offline on your device. Once it is installed, your browser may refresh the data in the background.',
         ],
       },
       {

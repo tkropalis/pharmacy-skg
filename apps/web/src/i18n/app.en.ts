@@ -77,6 +77,8 @@ export const appEn: Dictionary['app'] = {
     dutyNotPublished: 'The duty lists for that day are not announced yet.',
     extendedNotPublished: 'Some pharmacies may be missing that day.',
     dutyNotPublishedToday: 'Today’s duty lists were not found. Call before you go.',
+    dutyOffline: 'The duty lists for that day are not on this device. Check your connection.',
+    dutyOfflineToday: 'Today’s duty lists are not on this device. Check your connection.',
     loadingDuties: 'Loading duty lists…',
     groupsMissing: 'Duty lists not announced yet for: {groups}.',
     groupsMissingOrigin: 'Duty list not announced yet for your area, {group}. Call before you go.',
@@ -188,6 +190,7 @@ export const appEn: Dictionary['app'] = {
 
   source: {
     tiny: 'Updated',
+    offline: 'Offline',
   },
 
   footer: {
@@ -197,6 +200,7 @@ export const appEn: Dictionary['app'] = {
     about: 'About',
     privacy: 'Privacy',
     report: 'Report a mistake',
+    install: 'Install',
     disclaimer: 'Call before you go.',
   },
 

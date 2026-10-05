@@ -4,7 +4,8 @@ import type { Locale } from '@pharmacy-skg/core';
 import SiteFooter from '../components/SiteFooter.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import StaleBanner from '../components/StaleBanner.astro';
-import { APP_NAME, THEME_COLORS } from '../config.ts';
+import { APP_NAME, APP_SHORT_NAME, THEME_COLORS } from '../config.ts';
+import { manifestPath } from '../lib/manifest.ts';
 import { alternatePaths, t } from '../i18n/index.ts';
 import type { RouteKey } from '../i18n/index.ts';
 import '../styles/fonts.css';
@@ -56,7 +57,10 @@ const analytics = import.meta.env.PROD && process.env.VERCEL === '1';
     <!-- Before the first paint, so it already has the night look's colours (theme.js). -->
     <script is:inline src="/theme.js"></script>
     <script is:inline src="/stale-check.js"></script>
-    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="manifest" href={manifestPath(locale)} />
+    <!-- The name under the icon on an iPhone's Home Screen (otherwise the long page title). -->
+    <meta name="apple-mobile-web-app-title" content={APP_SHORT_NAME[locale]} />
+    <meta name="mobile-web-app-capable" content="yes" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/icons/icon-192.png" type="image/png" sizes="192x192" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

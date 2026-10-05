@@ -1,37 +1,40 @@
-import { DEFAULT_CITY_ID } from '../config.ts';
-import { cityDataUrl, dutyPath, loadMeta } from './data.ts';
-import { offlineDates } from './dates.ts';
+import { isOnline, onConnectionChange } from './connection.ts';
+import { localIsoDate } from './dates.ts';
 import { ensureUpdateRegion, offerReload } from './update-toast.ts';
 
-function inRange(date: string, range: { readonly from: string; readonly to: string }): boolean {
-  return date >= range.from && date <= range.to;
-}
-
-/**
- * URLs worth warming up for offline use: meta, pharmacies, the extended-hours files meta lists
- * and the duty lists for today and the next three days.
- */
-export function offlineUrls(
-  now: Date,
-  extendedHoursFiles: readonly string[] = [],
-  cityId: string = DEFAULT_CITY_ID,
-  /** The range meta.json lists (null: none published); left out, every day is requested. */
-  published?: { readonly from: string; readonly to: string } | null,
-): string[] {
-  return [
-    cityDataUrl(cityId, 'meta.json'),
-    cityDataUrl(cityId, 'pharmacies.json'),
-    ...extendedHoursFiles.map((file) => cityDataUrl(cityId, file)),
-    ...offlineDates(now)
-      // Days meta.json does not list are not requested: a 404 is logged as an error.
-      .filter((date) => published === undefined || (published !== null && inRange(date, published)))
-      .map((date) => cityDataUrl(cityId, dutyPath(date))),
-  ];
-}
+/** The worker's periodic sync tag (PERIODIC_SYNC_TAG in sw/sw.js). */
+export const PERIODIC_SYNC_TAG = 'refresh-data';
+/** How often an installed app may refresh its offline data in the background, at most. */
+const PERIODIC_SYNC_MS = 12 * 60 * 60_000;
+/** The app back in the foreground warms the data again after this long (or on a new day). */
+const WARM_AGAIN_MS = 60 * 60_000;
 
 /** A form with unsent input must not be thrown away by a reload. */
 function hasUnsentInput(): boolean {
   return document.querySelector('form[data-dirty="true"]') !== null;
+}
+
+interface PeriodicSyncManager {
+  register(tag: string, options: { minInterval: number }): Promise<void>;
+}
+
+/**
+ * Asks for a periodic background sync, so an installed app keeps the next days' duty lists even
+ * when it is not opened (sw/sw.js). Only Chromium has it, and only grants it to installed apps
+ * people use; elsewhere this does nothing.
+ */
+async function registerPeriodicSync(registration: ServiceWorkerRegistration): Promise<void> {
+  const periodicSync = (registration as { periodicSync?: PeriodicSyncManager }).periodicSync;
+  if (periodicSync === undefined) return;
+  try {
+    const status = await navigator.permissions.query({
+      name: 'periodic-background-sync' as PermissionName,
+    });
+    if (status.state !== 'granted') return;
+    await periodicSync.register(PERIODIC_SYNC_TAG, { minInterval: PERIODIC_SYNC_MS });
+  } catch {
+    // Not supported or refused: the data is warmed whenever the app is opened.
+  }
 }
 
 /**
@@ -61,60 +64,62 @@ export function registerServiceWorker(): void {
 
   navigator.serviceWorker
     .register('/sw.js', { scope: '/' })
-    .then((registration) => {
+    .then((registration: ServiceWorkerRegistration | undefined) => {
+      // Some browsers and test harnesses that block workers resolve without a registration.
+      if (registration === undefined) return;
       // Phones keep tabs open for days: look for a new version whenever the app comes back.
       document.addEventListener('visibilitychange', () => {
         if (document.visibilityState === 'visible') void registration.update().catch(() => {});
       });
+      void registerPeriodicSync(registration);
     })
     .catch(() => {
       // No service worker (private mode, blocked): the app still works online.
     });
 }
 
+/** Whether to warm the data again: never warmed, a new day in the city, or an hour later. */
+export function shouldWarmAgain(last: number | null, now: number): boolean {
+  if (last === null) return true;
+  return (
+    now - last >= WARM_AGAIN_MS || localIsoDate(new Date(last)) !== localIsoDate(new Date(now))
+  );
+}
+
 /**
- * After load, while online, fetch today's data and the next three days' duty lists so they
- * are in the service worker's cache. Only days meta.json says are published are requested.
+ * Keeps the data for offline use in the service worker's cache: today's data and the duty lists
+ * from yesterday to three days ahead, as far as they are published. The worker fetches them
+ * itself (sw/sw.js, warmUp) when asked: after load, when the app comes back to the foreground
+ * (at most hourly, or on a new day) and when the connection returns. Not with Data Saver on.
  */
-export function prefetchOfflineData(now: Date = new Date()): void {
+export function keepOfflineDataWarm(): void {
   if (!import.meta.env.PROD || !('serviceWorker' in navigator)) return;
   const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
   if (connection?.saveData === true) return;
 
-  const run = async (): Promise<void> => {
-    if (!navigator.onLine) return;
-    await navigator.serviceWorker.ready;
-    // Wait (briefly) until the worker controls this page, so the requests below are cached.
-    if (navigator.serviceWorker.controller === null) {
-      await new Promise<void>((resolve) => {
-        const done = () => resolve();
-        navigator.serviceWorker.addEventListener('controllerchange', done, { once: true });
-        setTimeout(done, 3000);
-      });
-    }
-    let extendedHoursFiles: string[] = [];
-    let published: { from: string; to: string } | null | undefined;
-    try {
-      const meta = await loadMeta(DEFAULT_CITY_ID);
-      extendedHoursFiles = meta.extendedHours.map((entry) => entry.file);
-      published = meta.duties;
-    } catch {
-      // Offline again: the fixed URLs below still get a try.
-    }
-    for (const url of offlineUrls(now, extendedHoursFiles, DEFAULT_CITY_ID, published)) {
-      try {
-        await fetch(url);
-      } catch {
-        // Offline again or the file is missing: nothing to do.
-      }
-    }
+  let last: number | null = null;
+  const warm = (force: boolean) => {
+    const now = Date.now();
+    if (!isOnline() || (!force && !shouldWarmAgain(last, now))) return;
+    last = now;
+    void navigator.serviceWorker.ready
+      // The page's clock decides which days are "today" and "the next three".
+      .then((registration) => registration.active?.postMessage({ type: 'warm-up', now }))
+      .catch(() => {});
   };
 
-  const schedule = (callback: () => void): void => {
-    if ('requestIdleCallback' in window) window.requestIdleCallback(callback, { timeout: 5000 });
-    else setTimeout(callback, 2000);
+  const start = () => {
+    const run = () => warm(false);
+    if ('requestIdleCallback' in window) window.requestIdleCallback(run, { timeout: 5000 });
+    else setTimeout(run, 2000);
   };
-  const start = () => schedule(() => void run());
   if (document.readyState === 'complete') start();
   else window.addEventListener('load', start, { once: true });
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') warm(false);
+  });
+  onConnectionChange((online) => {
+    if (online) warm(true);
+  });
 }

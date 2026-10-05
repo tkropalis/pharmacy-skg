@@ -31,12 +31,3 @@ export { addDays };
 export function dateRange(start: IsoDate, count: number): IsoDate[] {
   return Array.from({ length: count }, (_, i) => addDays(start, i));
 }
-
-/**
- * Yesterday, today and the next three days in the city's time zone: the window kept for offline
- * use. Yesterday's list is needed because a duty runs from 08:00 to 08:00, so before 08:00 the
- * list that applies is yesterday's.
- */
-export function offlineDates(now: Date, timeZone: string = THESSALONIKI.timeZone): IsoDate[] {
-  return dateRange(addDays(localIsoDate(now, timeZone), -1), 5);
-}

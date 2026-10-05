@@ -75,6 +75,17 @@ Pure TypeScript in `packages/core`, specified by decision D23.
   - Done: Lighthouse on the built home, a pharmacy page and a duty page (mobile): 90 or more for accessibility, best practices and SEO; the home screen's performance is 93 to 100 after the map was made to wait for a settled page (see apps/web/README.md).
   - Open for M4: test on real devices; a Vercel Firewall rate-limit rule for `/api/report`; a check that `POST /api/report/` reaches the function on Vercel.
 
+## Offline and install (in review)
+
+Decision D25; details in `apps/web/README.md` ("Service worker", "Offline").
+
+- **Offline data:** the service worker warms the data itself (meta, pharmacies, extended hours, the published duty lists from yesterday to three days ahead), when the app opens, returns to the foreground or reconnects; in an installed Chromium app also on a periodic background sync.
+- **Pages:** the last 60 pages visited outside the shell open offline; others fall back to the home page.
+- **Offline state:** "Εκτός σύνδεσης" next to the data's age (sheet and footers); a missing day says it is not on the device; the data refreshes when the connection returns.
+- **Install:** a manifest per locale (one app); "Install" button in the sheet footer and on the about page where the browser supports it; iPhone instructions on the about page; `apple-mobile-web-app-title`.
+- **Tests:** worker unit tests (`integrations/sw.test.ts`); e2e for the offline marker and reconnect, pages seen before, the missing-day message, periodic sync and the install buttons. The offline e2e now cuts off the worker's own requests too.
+- **Not done:** background sync on iOS (Safari has none); push notifications (D10).
+
 ## M4: Beta launch
 
 The owner's steps are in [beta-checklist.md](beta-checklist.md). The one-page brief for ΦΣΘ is in [outreach/fsth-brief.md](outreach/fsth-brief.md).

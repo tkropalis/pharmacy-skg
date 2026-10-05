@@ -1,7 +1,9 @@
 import { DEFAULT_CITY_ID } from '../config.ts';
 import { loadMeta } from '../lib/data.ts';
+import { markConnection, onConnectionChange } from '../lib/connection.ts';
 import { formatUpdatedAt, isStale } from '../lib/freshness.ts';
-import { prefetchOfflineData, registerServiceWorker } from '../lib/pwa.ts';
+import { setupInstall } from '../lib/install.ts';
+import { keepOfflineDataWarm, registerServiceWorker } from '../lib/pwa.ts';
 import { DATA_UPDATED_KEY, writeItem } from '../lib/storage.ts';
 import { setupMedicineSearch } from './medicine-search.ts';
 import type { Locale } from '@pharmacy-skg/core';
@@ -31,11 +33,16 @@ async function refreshFreshness(): Promise<void> {
   }
 }
 
+markConnection();
+setupInstall();
 void refreshFreshness();
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'visible') void refreshFreshness();
 });
+onConnectionChange((online) => {
+  if (online) void refreshFreshness();
+});
 
 setupMedicineSearch();
 registerServiceWorker();
-prefetchOfflineData();
+keepOfflineDataWarm();

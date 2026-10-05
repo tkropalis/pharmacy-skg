@@ -1,6 +1,7 @@
 import { startTransition, useCallback, useEffect, useRef, useState } from 'react';
 import type { CityData, DutyDay, IsoDate, Meta } from '@pharmacy-skg/core';
 import { DEFAULT_CITY_ID } from '../../config.ts';
+import { onConnectionChange } from '../../lib/connection.ts';
 import { addDays, dateRange, localIsoDate } from '../../lib/dates.ts';
 import { loadCityBundle, loadDutyDays } from '../../lib/data.ts';
 import type { CityBundle } from '../../lib/data.ts';
@@ -84,10 +85,13 @@ export interface CityDataApi {
 
 /**
  * Loads the city's data once, retries on request, refreshes it when the app returns to the
- * foreground, and loads more duty days on demand (a later time picked, the favourites tab).
+ * foreground or the connection returns, and loads more duty days on demand (a later time
+ * picked, the favourites tab).
  */
 export function useCityData(): CityDataApi {
   const [state, setState] = useState<CityState>({ status: 'loading' });
+  const stateRef = useRef(state);
+  stateRef.current = state;
   const requested = useRef(new Set<IsoDate>());
   const loadedAt = useRef(0);
   const generation = useRef(0);
@@ -147,7 +151,16 @@ export function useCityData(): CityDataApi {
       }
     };
     document.addEventListener('visibilitychange', onVisible);
-    return () => document.removeEventListener('visibilitychange', onVisible);
+    // Back online: what was shown came from the device (or did not load at all). An error is
+    // retried in full; otherwise the list is refreshed behind what is on screen, which also
+    // asks again for the days that failed.
+    const stopWatching = onConnectionChange((online) => {
+      if (online) load(stateRef.current.status === 'ready');
+    });
+    return () => {
+      document.removeEventListener('visibilitychange', onVisible);
+      stopWatching();
+    };
   }, [load]);
 
   const metaRef = useRef<Meta | null>(null);

@@ -51,6 +51,18 @@ const allCredits = [
     </section>
   ))}
 
+  <section id="install">
+    <h2>{d.install.heading}</h2>
+    <p>{d.install.body}</p>
+    <!-- Shown only where the browser can install the app itself (src/lib/install.ts). -->
+    <p data-install-app>
+      <button type="button" class="button">
+        {d.install.button}
+      </button>
+    </p>
+    <p>{d.install.ios}</p>
+  </section>
+
   <section>
     <h2>{d.emergencyHeading}</h2>
     <p>

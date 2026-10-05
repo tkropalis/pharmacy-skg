@@ -1,8 +1,26 @@
+import type { BrowserContext, Page } from '@playwright/test';
+import { appEl } from '../src/i18n/app.el.ts';
+import { el } from '../src/i18n/el.ts';
 import { searchEl } from '../src/i18n/search.el.ts';
+import { pharmacyPath } from '../src/i18n/routes.ts';
+import { PHARMACY_ID } from './constants.ts';
 import { expect, test, waitForMap, waitForRows } from './support.ts';
 
 // The one place the service worker is on. The tests above run without it.
 test.use({ serviceWorkers: 'allow' });
+
+/**
+ * Takes the browser off the network. context.setOffline() alone does not reach the service
+ * worker's own requests, so they would still get answers from the preview server; aborting every
+ * request to it that is not answered by the worker cuts those off too (the stubbed tile server
+ * is another host, e2e/support.ts).
+ */
+async function setOffline(context: BrowserContext, offline: boolean, baseURL = ''): Promise<void> {
+  const everything = `${new URL(baseURL).origin}/**`;
+  await context.setOffline(offline);
+  if (offline) await context.route(everything, (route) => route.abort('internetdisconnected'));
+  else await context.unroute(everything);
+}
 
 test('after the first visit the home list and the map load offline', async ({
   page,
@@ -47,7 +65,7 @@ test('after the first visit the home list and the map load offline', async ({
     )
     .toBe(true);
 
-  await context.setOffline(true);
+  await setOffline(context, true, baseURL);
   await page.reload();
   await expect(page.locator('html')).toHaveAttribute('lang', 'el');
   const rows = await waitForRows(page);
@@ -62,7 +80,11 @@ test('after the first visit the home list and the map load offline', async ({
   await waitForRows(page);
 });
 
-test('the medicine search works offline once it has been opened', async ({ page, context }) => {
+test('the medicine search works offline once it has been opened', async ({
+  page,
+  context,
+  baseURL,
+}) => {
   await page.goto('/plirofories/');
   await page.evaluate(() => navigator.serviceWorker.ready);
   await page.reload(); // now the worker controls the page
@@ -78,7 +100,7 @@ test('the medicine search works offline once it has been opened', async ({ page,
     .toBe(true);
   await page.keyboard.press('Escape');
 
-  await context.setOffline(true);
+  await setOffline(context, true, baseURL);
   await page.reload();
   await page.getByRole('button', { name: /^Φάρμακα/ }).click();
   await dialog.getByLabel(searchEl.inputLabel).fill('ντεπον');
@@ -145,4 +167,143 @@ test('a new service worker version never reloads a visible page: it offers a but
       }
     })
     .toBeUndefined();
+});
+
+/** Waits until the service worker controls the page (a reload after the first visit). */
+async function controlled(page: Page): Promise<void> {
+  await page.evaluate(() => navigator.serviceWorker.ready);
+  await page.reload();
+  expect(await page.evaluate(() => navigator.serviceWorker.controller !== null)).toBe(true);
+}
+
+/** Whether the data cache holds this file. */
+function cached(page: Page, path: string): Promise<boolean> {
+  return page.evaluate(async (url) => (await caches.match(url)) !== undefined, path);
+}
+
+test('offline, the data’s age says so; back online, the list is refreshed', async ({
+  page,
+  context,
+  baseURL,
+}) => {
+  await page.goto('/');
+  await controlled(page);
+  await waitForRows(page);
+  await expect
+    .poll(() => cached(page, '/data/thessaloniki/duties/2026-10-05.json'), { timeout: 20_000 })
+    .toBe(true);
+
+  const fresh = page.locator('.fresh');
+  await expect(fresh).toContainText(appEl.source.tiny);
+  await expect(fresh).not.toContainText(appEl.source.offline);
+  await setOffline(context, true, baseURL);
+  await expect(fresh).toContainText(`· ${appEl.source.offline}`);
+  await expect(page.locator('html')).toHaveAttribute('data-offline', '');
+  // The list stays as it was.
+  expect(await (await waitForRows(page)).count()).toBeGreaterThan(3);
+
+  const refreshed = page.waitForRequest((request) =>
+    request.url().endsWith('/data/thessaloniki/meta.json'),
+  );
+  await setOffline(context, false, baseURL);
+  await refreshed;
+  await expect(fresh).not.toContainText(appEl.source.offline);
+  await expect(page.locator('html')).not.toHaveAttribute('data-offline');
+
+  // A page with the site footer says it there.
+  await page.goto('/plirofories/');
+  await setOffline(context, true, baseURL);
+  const footer = page.locator('.site-footer');
+  await expect(footer.getByText(el.footer.offline)).toBeVisible();
+  await setOffline(context, false, baseURL);
+  await expect(footer.getByText(el.footer.offline)).toBeHidden();
+});
+
+test('a pharmacy page seen before opens offline; one never seen opens the home screen', async ({
+  page,
+  context,
+  baseURL,
+}) => {
+  await page.goto(pharmacyPath('el', PHARMACY_ID));
+  await controlled(page); // this load went through the worker, which kept the page
+  const title = await page.locator('h1').textContent();
+  expect(title?.trim()).toBeTruthy();
+
+  await setOffline(context, true, baseURL);
+  await page.reload();
+  await expect(page.locator('h1')).toHaveText(title ?? '');
+  // Its status still comes from the data on the device.
+  await expect(page.locator('[data-pharmacy-status]')).toContainText(/Εφημερεύει|Κλειστό τώρα/);
+
+  // The home screen, whatever data the warm-up had time to keep (not waited for here).
+  await page.goto(pharmacyPath('el', '0000000000'));
+  await expect(page.locator('.sheet')).toBeVisible();
+  await expect(page.locator('html')).toHaveAttribute('lang', 'el');
+});
+
+test('an installed app refreshes its offline data on a periodic background sync', async ({
+  page,
+  baseURL,
+}) => {
+  await page.goto('/');
+  await controlled(page);
+  await waitForRows(page);
+  // Let the warm-up the page asks for finish, then start from an empty data cache.
+  await expect
+    .poll(() => cached(page, '/data/thessaloniki/duties/2026-10-05.json'), { timeout: 20_000 })
+    .toBe(true);
+  await page.evaluate(() => caches.delete('data-v1'));
+  expect(await cached(page, '/data/thessaloniki/pharmacies.json')).toBe(false);
+
+  const cdp = await page.context().newCDPSession(page);
+  const origin = new URL(baseURL ?? '').origin;
+  const registrationId = new Promise<string>((resolve) => {
+    cdp.on('ServiceWorker.workerRegistrationUpdated', ({ registrations }) => {
+      const found = registrations.find((r) => r.scopeURL.startsWith(origin) && !r.isDeleted);
+      if (found) resolve(found.registrationId);
+    });
+  });
+  await cdp.send('ServiceWorker.enable');
+  const id = await registrationId;
+  const sync = () =>
+    cdp.send('ServiceWorker.dispatchPeriodicSyncEvent', {
+      origin,
+      registrationId: id,
+      tag: 'refresh-data',
+    });
+  // A sync that arrives while the page's own warm-up is still finishing joins that run, which
+  // writes into the cache deleted above; the browser would simply sync again later, so does this.
+  // The worker's own clock is not the test's fixed one, so only the files every day needs.
+  await expect
+    .poll(
+      async () => {
+        if (await cached(page, '/data/thessaloniki/pharmacies.json')) return true;
+        await sync();
+        return false;
+      },
+      { timeout: 20_000, intervals: [500, 1000, 2000] },
+    )
+    .toBe(true);
+  expect(await cached(page, '/data/thessaloniki/meta.json')).toBe(true);
+});
+
+test.describe('days past the data on the device', () => {
+  // A week after the last published list: the device has nothing for today.
+  test.use({ now: '2026-10-12T22:30:00+03:00' });
+
+  test('offline, the list says today’s duty lists are not on the device', async ({
+    page,
+    context,
+    baseURL,
+  }) => {
+    await page.goto('/');
+    await controlled(page);
+    // No rows: at 22:30 only duty pharmacies are open, and there is no list for the day.
+    const sheet = page.locator('.sheet');
+    await expect(sheet.getByText(appEl.time.dutyNotPublishedToday)).toBeVisible();
+
+    await setOffline(context, true, baseURL);
+    await expect(sheet.getByText(appEl.time.dutyOfflineToday)).toBeVisible();
+    await expect(sheet.getByText(appEl.time.dutyNotPublishedToday)).toHaveCount(0);
+  });
 });

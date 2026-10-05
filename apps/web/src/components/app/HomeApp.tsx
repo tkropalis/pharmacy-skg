@@ -48,6 +48,7 @@ import { isDutyLoading, useCityData } from './use-city-data.ts';
 import { useFavourites } from './use-favourites.ts';
 import { useMapStart } from './use-map-start.ts';
 import { useMediaQuery, useNow } from './use-now.ts';
+import { useOnline } from './use-online.ts';
 import { useNightLook } from './use-theme.ts';
 import './app.css';
 
@@ -154,6 +155,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   const scrollTo = useRef<string | null>(null);
 
   const ready = state.status === 'ready' ? state : null;
+  const online = useOnline();
   const mapStart = useMapStart(ready !== null);
   const wakeMap = mapStart.wake;
   const data = ready?.data ?? null;
@@ -616,6 +618,12 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
               </time>
             </a>
           )}
+          {!online && (
+            <span className="offline-note">
+              {meta && ' · '}
+              {text.source.offline}
+            </span>
+          )}
         </p>
       </div>
       {ready && tab === 'open' && (showOriginChip || showChips) && (
@@ -885,9 +893,13 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
               )}
               {!dutyLoading && covered && !covered.duties && (
                 <p className="callout" role="note">
-                  {timeMode.kind === 'now'
-                    ? text.time.dutyNotPublishedToday
-                    : text.time.dutyNotPublished}
+                  {online
+                    ? timeMode.kind === 'now'
+                      ? text.time.dutyNotPublishedToday
+                      : text.time.dutyNotPublished
+                    : timeMode.kind === 'now'
+                      ? text.time.dutyOfflineToday
+                      : text.time.dutyOffline}
                 </p>
               )}
               {originGroupMissing && originGroup !== null && (
@@ -1026,6 +1038,12 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                   </li>
                   <li>
                     <a href={localizedPath(locale, 'report')}>{text.footer.report}</a>
+                  </li>
+                  {/* Shown only where the browser can install the app (src/lib/install.ts). */}
+                  <li data-install-app>
+                    <button type="button" className="link-button">
+                      {text.footer.install}
+                    </button>
                   </li>
                 </ul>
               </nav>

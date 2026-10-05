@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { addDays, dateRange, localIsoDate, offlineDates } from './dates.ts';
+import { addDays, dateRange, localIsoDate } from './dates.ts';
 
 describe('localIsoDate', () => {
   it('uses the city time zone, not UTC', () => {
@@ -29,18 +29,8 @@ describe('addDays', () => {
   });
 });
 
-describe('dateRange / offlineDates', () => {
+describe('dateRange', () => {
   it('lists consecutive dates', () => {
     expect(dateRange('2026-10-30', 3)).toEqual(['2026-10-30', '2026-10-31', '2026-11-01']);
-  });
-
-  it('is yesterday, today and three days ahead, by the Athens date', () => {
-    expect(offlineDates(new Date('2026-10-04T23:30:00Z'))).toEqual([
-      '2026-10-04',
-      '2026-10-05',
-      '2026-10-06',
-      '2026-10-07',
-      '2026-10-08',
-    ]);
   });
 });

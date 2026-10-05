@@ -83,6 +83,8 @@ export const appEl = {
     dutyNotPublished: 'Οι εφημερίες αυτής της μέρας δεν έχουν ανακοινωθεί ακόμη.',
     extendedNotPublished: 'Μπορεί να λείπουν κάποια φαρμακεία αυτή τη μέρα.',
     dutyNotPublishedToday: 'Δεν βρέθηκαν οι σημερινές εφημερίες. Καλέστε πριν πάτε.',
+    dutyOffline: 'Οι εφημερίες αυτής της μέρας δεν είναι στη συσκευή. Ελέγξτε τη σύνδεση.',
+    dutyOfflineToday: 'Οι σημερινές εφημερίες δεν είναι στη συσκευή. Ελέγξτε τη σύνδεση.',
     backToNow: 'Πίσω στο τώρα',
     loadingDuties: 'Φόρτωση εφημεριών…',
     groupsMissing: 'Δεν έχουν ανακοινωθεί ακόμη οι εφημερίες για: {groups}.',
@@ -202,6 +204,7 @@ export const appEl = {
 
   source: {
     tiny: 'Ενημερώθηκε',
+    offline: 'Εκτός σύνδεσης',
   },
 
   footer: {
@@ -211,6 +214,7 @@ export const appEl = {
     about: 'Σχετικά',
     privacy: 'Απόρρητο',
     report: 'Αναφορά λάθους',
+    install: 'Εγκατάσταση',
     disclaimer: 'Καλέστε πριν πάτε.',
   },
 
