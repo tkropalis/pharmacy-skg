@@ -37,6 +37,8 @@ interface MapViewProps {
   readonly focus: MapFocus | null;
   readonly occludedBottom: number;
   readonly sideBySide: boolean;
+  /** The map is covered by the sheet: keep its controls out of the tab order. */
+  readonly covered: boolean;
   readonly onSelect: (id: string | null) => void;
   readonly onStatus: (status: MapStatus) => void;
 }
@@ -130,7 +132,7 @@ export function MapView(props: MapViewProps) {
   }, [status, focus]);
 
   return (
-    <div className="map-area">
+    <div className="map-area" inert={props.covered}>
       <div
         ref={containerRef}
         className="map"

@@ -57,5 +57,7 @@ test('the home list with the filters open and a row menu open has no violations'
     .getByRole('button', { name: /Οδηγίες/ })
     .click();
   const results = await new AxeBuilder({ page }).withTags(WCAG_AA).analyze();
-  expect(results.violations.map((v) => v.id)).toEqual([]);
+  expect(results.violations.map((v) => [v.id, v.nodes.map((n) => n.html.slice(0, 160))])).toEqual(
+    [],
+  );
 });

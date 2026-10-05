@@ -656,6 +656,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
         focus={mapFocus}
         occludedBottom={occluded}
         sideBySide={wide}
+        covered={!wide && sheetSize === 'large'}
         onSelect={onMapSelect}
         onStatus={setMapStatus}
       />

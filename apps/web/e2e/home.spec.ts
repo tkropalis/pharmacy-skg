@@ -140,7 +140,11 @@ test('a focused element is never hidden behind the sticky emergency strip (WCAG 
     const state = await page.evaluate(() => {
       const element = document.activeElement;
       const bar = document.querySelector('.emergency');
-      if (element === null || bar === null || element.closest('.emergency') !== null) return null;
+      if (element === null || element === document.body || bar === null) return null;
+      // The skip link is drawn above the strip; the strip's own links are the strip.
+      if (element.closest('.emergency') !== null || element.classList.contains('skip-link')) {
+        return null;
+      }
       return {
         label: `${element.tagName} ${element.textContent?.slice(0, 20) ?? ''}`,
         top: element.getBoundingClientRect().top,
