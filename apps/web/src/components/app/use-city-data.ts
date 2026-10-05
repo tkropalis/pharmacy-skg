@@ -1,8 +1,9 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { startTransition, useCallback, useEffect, useRef, useState } from 'react';
 import type { CityData, DutyDay, IsoDate, Meta } from '@pharmacy-skg/core';
 import { DEFAULT_CITY_ID } from '../../config.ts';
 import { addDays, dateRange, localIsoDate } from '../../lib/dates.ts';
 import { loadCityBundle, loadDutyDays } from '../../lib/data.ts';
+import type { CityBundle } from '../../lib/data.ts';
 
 export type CityState =
   | { readonly status: 'loading' }
@@ -21,6 +22,30 @@ export type CityState =
 export function initialDates(now: Date): IsoDate[] {
   const today = localIsoDate(now);
   return dateRange(addDays(today, -1), 5);
+}
+
+let early: Promise<CityBundle> | null = null;
+
+/**
+ * Starts the first load. The entry script calls this before React is mounted, so the requests
+ * leave while React is still being parsed and rendered; the hook picks the result up. A failure
+ * is reported the same way as any other (the hook shows the error and offers a retry).
+ */
+export function prefetchCityData(now: Date = new Date()): void {
+  if (early !== null) return;
+  early = loadCityBundle(DEFAULT_CITY_ID, initialDates(now), { onlyPublishedDates: true });
+  // The hook awaits it; this keeps an unhandled-rejection report away if it never does.
+  early.catch(() => {});
+}
+
+function takeEarlyLoad(dates: readonly IsoDate[]): Promise<CityBundle> | null {
+  const promise = early;
+  early = null;
+  if (promise === null) return null;
+  // Only for the dates it was started with (a retry, or dates asked for later, load afresh).
+  const initial = initialDates(new Date());
+  const same = dates.length === initial.length && dates.every((d, i) => d === initial[i]);
+  return same ? promise : null;
 }
 
 /** Refresh the data when the app comes back to the foreground after this long. */
@@ -47,18 +72,23 @@ export function useCityData(): CityDataApi {
     const run = ++generation.current;
     if (!silent) setState({ status: 'loading' });
     const dates = [...new Set([...initialDates(new Date()), ...requested.current])];
-    loadCityBundle(DEFAULT_CITY_ID, dates, { onlyPublishedDates: true })
+    const bundlePromise = takeEarlyLoad(dates);
+    (bundlePromise ?? loadCityBundle(DEFAULT_CITY_ID, dates, { onlyPublishedDates: true }))
       .then((bundle) => {
         if (run !== generation.current) return;
         requested.current = new Set(dates.filter((d) => !bundle.failedDates.includes(d)));
         loadedAt.current = Date.now();
-        setState({
-          status: 'ready',
-          data: bundle.data,
-          meta: bundle.meta,
-          failedDates: bundle.failedDates,
-          pendingDates: [],
-        });
+        // A transition: React renders the list in slices of a few milliseconds, so a long
+        // list does not freeze the page in one task.
+        startTransition(() =>
+          setState({
+            status: 'ready',
+            data: bundle.data,
+            meta: bundle.meta,
+            failedDates: bundle.failedDates,
+            pendingDates: [],
+          }),
+        );
       })
       .catch(() => {
         if (run !== generation.current) return;

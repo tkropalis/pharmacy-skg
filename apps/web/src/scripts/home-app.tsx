@@ -1,6 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import type { Locale } from '@pharmacy-skg/core';
 import HomeApp from '../components/app/HomeApp.tsx';
+import { prefetchCityData } from '../components/app/use-city-data.ts';
 import type { Dictionary } from '../i18n/index.ts';
 
 /**
@@ -10,6 +11,8 @@ import type { Dictionary } from '../i18n/index.ts';
  */
 const root = document.getElementById('app');
 if (root !== null) {
+  // The requests leave now, not after React has rendered once and run its effects.
+  prefetchCityData();
   const locale: Locale = root.dataset.locale === 'en' ? 'en' : 'el';
   const text = JSON.parse(root.dataset.text ?? '{}') as Dictionary['app'];
   createRoot(root).render(<HomeApp locale={locale} text={text} title={root.dataset.title ?? ''} />);

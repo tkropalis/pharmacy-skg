@@ -6,6 +6,8 @@ import HomePage from '../components/pages/HomePage.astro';
 import PrivacyPage from '../components/pages/PrivacyPage.astro';
 import ReportPage from '../components/pages/ReportPage.astro';
 import Base from '../layouts/Base.astro';
+import { DEFAULT_CITY_ID } from '../config.ts';
+import { cityDataUrl } from '../lib/data.ts';
 import { allPathParams, t } from '../i18n/index.ts';
 import type { RouteKey } from '../i18n/index.ts';
 
@@ -33,6 +35,18 @@ const meta = {
 ---
 
 <Base locale={locale} route={route} title={meta.title} description={meta.description}>
+  {route === 'home' &&
+    ['meta.json', 'pharmacies.json'].map((file) => (
+      // The home screen needs these two first. They start with the page, not when its script
+      // has run (the script, then these, then the rest: a chain of round trips).
+      <link
+        slot="head"
+        rel="preload"
+        as="fetch"
+        href={cityDataUrl(DEFAULT_CITY_ID, file)}
+        crossorigin="anonymous"
+      />
+    ))}
   {route === 'home' && <HomePage locale={locale} />}
   {route === 'about' && <AboutPage locale={locale} />}
   {route === 'privacy' && <PrivacyPage locale={locale} />}
