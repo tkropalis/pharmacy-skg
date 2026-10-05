@@ -17,7 +17,7 @@ import type {
   TimeRange,
   TimeWindow,
 } from './data.ts';
-import { isHoliday } from './holidays.ts';
+import { DEFAULT_GROUP_ID, isHoliday } from './holidays.ts';
 import { regularRanges } from './regular-hours.ts';
 import { addDays, isoWeekday, localToInstant, zonedDate, zonedParts } from './zoned.ts';
 
@@ -93,7 +93,9 @@ export interface StatusDetails {
   /**
    * False when a date the answer depends on has no published duty list yet, so the
    * answer may change once it is: every date from the duty day containing `at`
-   * (yesterday before 08:00) through today and the day of `nextOpen`.
+   * (yesterday before 08:00) through today and the day of `nextOpen`. A date counts as
+   * published only when its file contains the pharmacy's area group (`groupId`, or the
+   * default group when null), since each group has its own list (decision D23).
    */
   readonly dutiesPublished: boolean;
 }
@@ -103,6 +105,11 @@ export interface NearbyPharmacy {
   readonly status: PharmacyStatus;
   /** Metres from the origin; null without an origin or a location. */
   readonly distance: number | null;
+  /**
+   * Same meaning as `StatusDetails.dutiesPublished`, per pharmacy: false when a date the
+   * answer depends on has no duty list for this pharmacy's area group yet.
+   */
+  readonly dutiesPublished: boolean;
 }
 
 export interface PublishedDuty {
@@ -140,6 +147,8 @@ interface Index {
   readonly duties: ReadonlyMap<string, ReadonlyMap<IsoDate, readonly DutyListing[]>>;
   /** Pharmacy → extended-hours entries, newest period first. */
   readonly extended: ReadonlyMap<string, readonly ExtendedListing[]>;
+  /** Memo for `publishedGroups`. */
+  readonly groupsByDate: Map<IsoDate, ReadonlySet<string>>;
 }
 
 const indexes = new WeakMap<CityData, Index>();
@@ -184,7 +193,7 @@ function indexOf(data: CityData): Index {
     }
   }
 
-  const index: Index = { pharmacies, duties, extended };
+  const index: Index = { pharmacies, duties, extended, groupsByDate: new Map() };
   indexes.set(data, index);
   return index;
 }
@@ -514,16 +523,46 @@ function dutyDayOf(data: CityData, at: Date): { today: IsoDate; dutyDate: IsoDat
   };
 }
 
-/** Is every duty list the answer depends on published? */
-function published(data: CityData, at: Date, status: PharmacyStatus): boolean {
+function groupsOn(index: Index, data: CityData, date: IsoDate): ReadonlySet<string> {
+  let found = index.groupsByDate.get(date);
+  if (!found) {
+    found = new Set((data.duties.get(date)?.groups ?? []).map((group) => group.id));
+    index.groupsByDate.set(date, found);
+  }
+  return found;
+}
+
+/**
+ * The ids of the area groups whose duty list is published for `date`. Empty when the
+ * date has no file; a file can hold only some groups (each group has its own PDF).
+ */
+export function publishedGroups(data: CityData, date: IsoDate): ReadonlySet<string> {
+  return groupsOn(indexOf(data), data, date);
+}
+
+/**
+ * Is every duty list the answer depends on published for the pharmacy's group?
+ * A null `groupId` means the default group; an unknown pharmacy (`undefined`) needs
+ * only the date's file.
+ */
+function published(
+  data: CityData,
+  index: Index,
+  groupId: string | null | undefined,
+  at: Date,
+  status: PharmacyStatus,
+): boolean {
   const { today, dutyDate } = dutyDayOf(data, at);
   const nextOpen = status.state === 'open' ? null : status.nextOpen;
   const last =
     nextOpen && zonedDate(nextOpen, data.city.timeZone) > today
       ? zonedDate(nextOpen, data.city.timeZone)
       : today;
+  const group = groupId === undefined ? undefined : (groupId ?? DEFAULT_GROUP_ID);
   for (let date = dutyDate; date <= last; date = addDays(date, 1)) {
-    if (!data.duties.has(date)) return false;
+    if (group === undefined ? !data.duties.has(date) : !groupsOn(index, data, date).has(group)) {
+      return false;
+    }
   }
   return true;
 }
@@ -534,12 +573,20 @@ export function pharmacyStatus(data: CityData, pharmacyId: string, at: Date): St
   const status: PharmacyStatus = pharmacy
     ? computeStatus(data, index, pharmacy, at, true).status
     : { state: 'closed', nextOpen: null, nextReasons: [], nextRunReasons: [] };
-  return { found: pharmacy !== undefined, status, dutiesPublished: published(data, at, status) };
+  return {
+    found: pharmacy !== undefined,
+    status,
+    dutiesPublished: published(data, index, pharmacy?.groupId, at, status),
+  };
 }
 
 /** What published data exists around `at`, for warning that a list is missing. */
 export interface Coverage {
-  /** The duty list for the duty day containing `at` (yesterday's before 08:00) is published. */
+  /**
+   * The duty list for the duty day containing `at` (yesterday's before 08:00) is published.
+   * With `options.groupId`, true only if that group's list is in the day's file (null is
+   * the default group); without it, true if the day has a file at all.
+   */
   readonly duties: boolean;
   /** That duty day's date. */
   readonly dutyDate: IsoDate;
@@ -548,19 +595,46 @@ export interface Coverage {
   readonly dutiesTo: IsoDate | null;
   /** Some extended-hours list covers today's local date. */
   readonly extendedHours: boolean;
+  /**
+   * Area groups for the duty day `dutyDate`, sorted. `published` are the groups in that day's
+   * file; `missing` are the known groups that are not (all of them when the file is missing).
+   * Known groups are those seen in any loaded duty day plus the non-null `groupId`s of
+   * `data.pharmacies`.
+   */
+  readonly groups: {
+    readonly published: string[];
+    readonly missing: string[];
+  };
 }
 
-export function coverage(data: CityData, at: Date): Coverage {
+export function coverage(
+  data: CityData,
+  at: Date,
+  options?: { readonly groupId?: string | null },
+): Coverage {
+  const index = indexOf(data);
   const { today, dutyDate } = dutyDayOf(data, at);
   const dates = [...data.duties.keys()].sort();
+  const present = groupsOn(index, data, dutyDate);
+
+  const known = new Set<string>();
+  for (const day of data.duties.values()) for (const group of day.groups) known.add(group.id);
+  for (const { groupId } of data.pharmacies) if (groupId !== null) known.add(groupId);
+
+  const groupId = options?.groupId;
   return {
-    duties: data.duties.has(dutyDate),
+    duties:
+      groupId === undefined ? data.duties.has(dutyDate) : present.has(groupId ?? DEFAULT_GROUP_ID),
     dutyDate,
     dutiesFrom: dates[0] ?? null,
     dutiesTo: dates.at(-1) ?? null,
     extendedHours: data.extendedHours.some(
       (list) => list.period.from <= today && today <= list.period.to,
     ),
+    groups: {
+      published: [...present].sort(),
+      missing: [...known].filter((id) => !present.has(id)).sort(),
+    },
   };
 }
 
@@ -582,6 +656,25 @@ export function distanceMetres(
 
 const greek = new Intl.Collator('el');
 
+/** `published` memoised per (group, last date): most pharmacies share a few such pairs. */
+function memoPublished(
+  memo: Map<string, boolean>,
+  data: CityData,
+  index: Index,
+  pharmacy: Pharmacy,
+  at: Date,
+  status: PharmacyStatus,
+): boolean {
+  const nextOpen = status.state === 'open' ? null : status.nextOpen;
+  const key = `${pharmacy.groupId ?? DEFAULT_GROUP_ID}|${nextOpen ? zonedDate(nextOpen, data.city.timeZone) : ''}`;
+  let found = memo.get(key);
+  if (found === undefined) {
+    found = published(data, index, pharmacy.groupId, at, status);
+    memo.set(key, found);
+  }
+  return found;
+}
+
 /**
  * Pharmacies that are open, or on duty with no hours stated, at `at`. Nearest
  * first with an origin (pharmacies without a location last), otherwise by
@@ -595,13 +688,16 @@ export function openPharmacies(
   const index = indexOf(data);
   const origin = options?.origin;
   const result: NearbyPharmacy[] = [];
+  // Per (group, day of nextOpen) memo of `dutiesPublished`.
+  const publishedMemo = new Map<string, boolean>();
   for (const pharmacy of data.pharmacies) {
     const { status, complete } = computeStatus(data, index, pharmacy, at, false);
     if (status.state === 'closed') continue;
     // A duty-hours-unknown pharmacy reaches here without a look-ahead when it is not open.
     const finished = complete ? status : computeStatus(data, index, pharmacy, at, true).status;
     const distance = origin && pharmacy.location ? distanceMetres(origin, pharmacy.location) : null;
-    result.push({ pharmacy, status: finished, distance });
+    const dutiesPublished = memoPublished(publishedMemo, data, index, pharmacy, at, finished);
+    result.push({ pharmacy, status: finished, distance, dutiesPublished });
   }
   return result.sort((a, b) => {
     if (origin && a.distance !== b.distance) {

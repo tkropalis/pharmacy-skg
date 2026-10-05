@@ -8,7 +8,7 @@ import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { THESSALONIKI } from './city.ts';
 import type { DutyDay, ExtendedHours, Pharmacies } from './data.ts';
-import { openPharmacies, pharmacyStatus } from './open.ts';
+import { coverage, openPharmacies, pharmacyStatus } from './open.ts';
 import type { CityData } from './open.ts';
 
 const DATA_DIR = resolve(import.meta.dirname, '../../../data/thessaloniki');
@@ -263,6 +263,32 @@ describe.skipIf(!hasData || !hasDuties('2026-07-13', '2026-07-14', '2026-10-06')
       expect(id).not.toBe('');
       const { status } = pharmacyStatus(data, id, new Date('2026-07-14T15:00:00Z'));
       expect(status.state === 'open' && status.reasons.map((r) => r.kind)).toContain('duty');
+    });
+  },
+);
+
+describe.skipIf(!hasData || !hasDuties('2026-09-26', '2026-10-05'))(
+  'real data, per-group duty coverage',
+  () => {
+    it('reports missing groups on a metro-only day', () => {
+      const result = coverage(data, new Date('2026-09-26T09:00:00Z'));
+      expect(result.dutyDate).toBe('2026-09-26');
+      expect(result.groups.published).toEqual(['metro']);
+      expect(result.groups.missing).toContain('lagkadas');
+    });
+
+    it('flags a lagkadas pharmacy but not a metro one on that day', () => {
+      const when = new Date('2026-09-26T19:30:00Z');
+      const lagkadas = data.pharmacies.find((p) => p.groupId === 'lagkadas');
+      const metro = data.pharmacies.find((p) => p.groupId === 'metro');
+      expect(pharmacyStatus(data, lagkadas?.id ?? '', when).dutiesPublished).toBe(false);
+      expect(pharmacyStatus(data, metro?.id ?? '', when).dutiesPublished).toBe(true);
+    });
+
+    it('reports no missing groups on a fully published day', () => {
+      const result = coverage(data, new Date('2026-10-05T09:00:00Z'));
+      expect(result.groups.missing).toEqual([]);
+      expect(result.groups.published.length).toBeGreaterThan(1);
     });
   },
 );
