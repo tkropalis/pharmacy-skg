@@ -9,6 +9,8 @@ import { mkdir, readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 import { APP_NAME } from '../src/config.ts';
+import { el } from '../src/i18n/el.ts';
+import { en } from '../src/i18n/en.ts';
 
 const publicDir = fileURLToPath(new URL('../public/', import.meta.url));
 const favicon = await readFile(`${publicDir}favicon.svg`);
@@ -67,7 +69,7 @@ function openGraphImage(): Buffer {
       text(250, 70, 700, '#ffffff', greekA) +
       text(335, 70, 700, '#ffffff', greekB) +
       text(425, 40, 400, '#a7bbb1', APP_NAME.en) +
-      text(500, 27, 400, '#3ccf7f', 'Δωρεάν και χωρίς διαφημίσεις · Free and ad-free') +
+      text(500, 27, 400, '#3ccf7f', `${el.tagline} · ${en.tagline}`) +
       `</svg>`,
   );
 }

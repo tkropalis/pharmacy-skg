@@ -68,7 +68,7 @@ describe('POST /api/report', () => {
     expect(init.method).toBe('POST');
     expect((init.headers as Record<string, string>)['Authorization']).toBe('Bearer test-token');
     expect(payload['labels']).toEqual(['report']);
-    expect(payload['title']).toBe('Αναφορά: Λάθος ωράριο — 2310123456');
+    expect(payload['title']).toBe('Αναφορά: Λάθος ωράριο, 2310123456');
     expect(String(payload['body'])).toContain('```\nΉταν κλειστό στις 18:00');
   });
 
@@ -123,7 +123,7 @@ describe('POST /api/report', () => {
   it('accepts exactly 1000 characters and an empty pharmacy', async () => {
     const response = await POST(post({ ...valid, pharmacy: '', message: 'x'.repeat(1000) }));
     expect(response.status).toBe(201);
-    expect(sentIssue().payload['title']).toBe('Αναφορά: Λάθος ωράριο — χωρίς φαρμακείο');
+    expect(sentIssue().payload['title']).toBe('Αναφορά: Λάθος ωράριο, χωρίς φαρμακείο');
   });
 
   it('rejects invalid JSON, a wrong content type and an oversized body', async () => {
@@ -150,7 +150,7 @@ describe('POST /api/report', () => {
     const title = String(payload['title']);
     const body = String(payload['body']);
     // The typed name is not a registry id: it goes into the code block, not the title.
-    expect(title).toBe('Αναφορά: Λάθος ωράριο — χωρίς φαρμακείο');
+    expect(title).toBe('Αναφορά: Λάθος ωράριο, χωρίς φαρμακείο');
     // eslint-disable-next-line no-control-regex
     expect(body).not.toMatch(/[\u0000-\u0009\u000b-\u001f]/);
     expect(body).toContain(
@@ -222,7 +222,7 @@ describe('POST /api/report', () => {
 
   it('accepts only a registry or generated id as the pharmacy', async () => {
     await POST(post({ ...valid, pharmacy: 'x-0123456789' }));
-    expect(String(sentIssue().payload['title'])).toBe('Αναφορά: Λάθος ωράριο — x-0123456789');
+    expect(String(sentIssue().payload['title'])).toBe('Αναφορά: Λάθος ωράριο, x-0123456789');
     fetchMock.mockClear();
     await POST(post({ ...valid, pharmacy: '2310123456 evil' }));
     expect(String(sentIssue().payload['title'])).toContain('χωρίς φαρμακείο');

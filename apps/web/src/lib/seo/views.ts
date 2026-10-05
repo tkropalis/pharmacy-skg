@@ -2,7 +2,7 @@
  * View models for the search-engine pages. Pure functions from the loaded data to the strings
  * and links a page prints, so the .astro files only lay them out and the logic is testable.
  */
-import { LOCALES } from '@pharmacy-skg/core';
+import { LOCALES, holidaysOn, isoWeekday } from '@pharmacy-skg/core';
 import type { DutyKind, Locale, Pharmacy } from '@pharmacy-skg/core';
 import { t } from '../../i18n/index.ts';
 import {
@@ -24,6 +24,8 @@ import {
   windowText,
 } from './format.ts';
 import type { RegularHoursView } from './format.ts';
+import { formatPhone } from '../format.ts';
+import { groupDisplayName } from '../groups.ts';
 import { jsonLdScript, pharmacyJsonLd, telHref } from './jsonld.ts';
 import { RECENT_DUTY_DAYS } from './model.ts';
 import type { AreaInfo, DutyListing, SeoModel } from './model.ts';
@@ -70,25 +72,37 @@ function groupLabel(name: string, locale: Locale): string {
   return locale === 'el' ? name : `${romanize(name)} (${name})`;
 }
 
+/** The kind of duty in plain words, the same as on the home screen (i18n/status-labels.ts). */
 function dutyKindLabel(kind: DutyKind, locale: Locale): string {
-  return t(locale).seo.duty.kinds[kind];
+  return t(locale).app.status.kinds[kind];
+}
+
+/**
+ * The printed notes of a duty section, unless they were read into its extra hours (every note
+ * seen so far is "Τρίτη, Πέμπτη & Παρασκευή … 14:00-17:00"): the page shows those once.
+ */
+function sectionNotes(section: { extraHours: readonly unknown[]; notes: readonly string[] }) {
+  return section.extraHours.length > 0 ? [] : section.notes;
 }
 
 const greek = new Intl.Collator('el');
 
 // --- Pharmacy page --------------------------------------------------------------------------
 
+/**
+ * One duty on a pharmacy's page, on one line, in the home screen's favourites format:
+ * "Τρί 6 Οκτ · Νυχτερινή εφημερία · 21:00–00:00 · Επίσης: 14:00–17:00".
+ */
 export interface PharmacyDutyView {
   readonly date: string;
+  /** "Τρί 6 Οκτ" */
   readonly dateLabel: string;
   /** The duty-date page, when that date has one. */
   readonly pagePath: string | null;
-  readonly groupName: string;
-  readonly heading: string;
   readonly kindLabel: string;
   readonly hoursText: string;
+  /** The section's extra hours that apply on this date ("14:00–17:00"). */
   readonly extraHours: readonly string[];
-  readonly notes: readonly string[];
 }
 
 export interface ExtendedHoursView {
@@ -104,11 +118,11 @@ export interface PharmacyPageProps {
   readonly address: string;
   readonly locality: string;
   readonly postcode: string | null;
-  readonly phone: string | null;
+  /** "Κλήση 2310 023026", or null when there is no phone number. */
+  readonly callText: string | null;
   readonly phoneHref: string | null;
   readonly localityLabel: string;
   readonly areaPagePath: string | null;
-  readonly groupName: string | null;
   readonly directionsUrl: string;
   readonly regularHours: RegularHoursView;
   readonly regularClosedText: string | null;
@@ -116,8 +130,6 @@ export interface PharmacyPageProps {
   readonly upcomingDuties: readonly PharmacyDutyView[];
   readonly recentDuties: readonly PharmacyDutyView[];
   readonly reportPath: string;
-  readonly homePath: string;
-  readonly dutyIndexPath: string;
   readonly updatedAt: string;
   readonly updatedAtText: string;
   readonly jsonLd: string;
@@ -136,16 +148,18 @@ export function directionsUrl(pharmacy: Pharmacy): string {
 function dutyView(model: SeoModel, locale: Locale, listing: DutyListing): PharmacyDutyView {
   const seo = t(locale).seo;
   const { date, group, section } = listing;
+  const holiday = holidaysOn(model.cityId, date, group.id).length > 0;
   return {
     date,
-    dateLabel: formatLongDate(date, locale),
+    dateLabel: formatShortDate(date, locale),
     pagePath: model.publishedDates.includes(date) ? dutyPath(locale, date) : null,
-    groupName: group.name,
-    heading: section.heading,
     kindLabel: dutyKindLabel(section.kind, locale),
     hoursText: windowText(section.hours, seo),
-    extraHours: section.extraHours.map((extra) => extraHoursText(extra, seo)),
-    notes: section.notes,
+    extraHours: section.extraHours
+      .filter(
+        (extra) => extra.weekdays.includes(isoWeekday(date)) && !(extra.exceptHolidays && holiday),
+      )
+      .map((extra) => `${extra.from}–${extra.to}`),
   };
 }
 
@@ -183,8 +197,6 @@ export function pharmacyPageProps(
 
   const regularHours = regularHoursView(model.cityId, model.today, seo);
   const area = model.areaByLocality.get(pharmacy.locality);
-  const groupName =
-    pharmacy.groupId === null ? null : (model.groupNames.get(pharmacy.groupId) ?? null);
   const url = new URL(path(locale), siteOrigin).href;
 
   return {
@@ -206,11 +218,13 @@ export function pharmacyPageProps(
     address: pharmacy.address,
     locality: pharmacy.locality,
     postcode: pharmacy.postcode,
-    phone: pharmacy.phone,
+    callText:
+      pharmacy.phone === null
+        ? null
+        : fill(seo.pharmacy.call, { phone: formatPhone(pharmacy.phone) }),
     phoneHref: telHref(pharmacy.phone),
     localityLabel: areaLabel(pharmacy.locality, locale),
     areaPagePath: area === undefined ? null : areaPath(locale, area.slug),
-    groupName: groupName === null ? null : groupLabel(groupName, locale),
     directionsUrl: directionsUrl(pharmacy),
     regularHours,
     regularClosedText:
@@ -221,8 +235,6 @@ export function pharmacyPageProps(
     upcomingDuties: upcoming.map((l) => dutyView(model, locale, l)),
     recentDuties: recent.map((l) => dutyView(model, locale, l)),
     reportPath: `${localizedPath(locale, 'report')}?pharmacy=${encodeURIComponent(id)}`,
-    homePath: localizedPath(locale, 'home'),
-    dutyIndexPath: dutyIndexPath(locale),
     updatedAt: model.updatedAt,
     updatedAtText: formatUpdatedAt(model.updatedAt, locale),
     jsonLd: jsonLdScript(pharmacyJsonLd(pharmacy, url)),
@@ -236,6 +248,7 @@ export interface DutyEntryView {
   readonly name: string;
   readonly address: string;
   readonly locality: string;
+  /** "2310 023026" */
   readonly phone: string;
   readonly phoneHref: string | null;
   /** The pharmacy's page, or null when the registry does not know the id. */
@@ -243,7 +256,6 @@ export interface DutyEntryView {
 }
 
 export interface DutySectionView {
-  readonly heading: string;
   readonly kindLabel: string;
   readonly hoursText: string;
   readonly extraHours: readonly string[];
@@ -254,9 +266,8 @@ export interface DutySectionView {
 export interface DutyGroupView {
   readonly id: string;
   readonly name: string;
+  /** The published PDF. */
   readonly sourceUrl: string;
-  readonly uploadedAt: string;
-  readonly uploadedAtText: string;
   readonly sections: readonly DutySectionView[];
 }
 
@@ -308,34 +319,28 @@ export function dutyPageProps(model: SeoModel, locale: Locale, date: string): Du
   const dateLabel = formatLongDate(date, locale);
   const title = fill(seo.duty.pageTitle, { date: dateLabel });
 
-  const groups = day.groups.map((group): DutyGroupView => {
-    const uploadedAt = group.source.uploadedAt;
-    return {
-      id: group.id,
-      name: group.name,
-      sourceUrl: group.source.url,
-      uploadedAt,
-      uploadedAtText: formatUpdatedAt(uploadedAt, locale),
-      sections: group.sections.map((section): DutySectionView => ({
-        heading: section.heading,
-        kindLabel: dutyKindLabel(section.kind, locale),
-        hoursText: windowText(section.hours, seo),
-        extraHours: section.extraHours.map((extra) => extraHoursText(extra, seo)),
-        notes: section.notes,
-        entries: section.entries.map((entry): DutyEntryView => ({
-          pharmacyId: entry.pharmacyId,
-          name: entry.name,
-          address: entry.address,
-          locality: entry.locality,
-          phone: entry.phone,
-          phoneHref: telHref(entry.phone),
-          pagePath: model.pharmacyById.has(entry.pharmacyId)
-            ? pharmacyPath(locale, entry.pharmacyId)
-            : null,
-        })),
+  const groups = day.groups.map((group): DutyGroupView => ({
+    id: group.id,
+    name: groupDisplayName(group.id, group.name),
+    sourceUrl: group.source.url,
+    sections: group.sections.map((section): DutySectionView => ({
+      kindLabel: dutyKindLabel(section.kind, locale),
+      hoursText: windowText(section.hours, seo),
+      extraHours: section.extraHours.map((extra) => extraHoursText(extra, seo)),
+      notes: sectionNotes(section),
+      entries: section.entries.map((entry): DutyEntryView => ({
+        pharmacyId: entry.pharmacyId,
+        name: entry.name,
+        address: entry.address,
+        locality: entry.locality,
+        phone: formatPhone(entry.phone),
+        phoneHref: telHref(entry.phone),
+        pagePath: model.pharmacyById.has(entry.pharmacyId)
+          ? pharmacyPath(locale, entry.pharmacyId)
+          : null,
       })),
-    };
-  });
+    })),
+  }));
 
   return {
     meta: meta(locale, title, fill(seo.duty.pageDescription, { date: dateLabel }), (l) =>
@@ -402,6 +407,7 @@ export interface AreaPharmacyView {
   readonly id: string;
   readonly name: string;
   readonly address: string;
+  /** "2310 023026" */
   readonly phone: string | null;
   readonly phoneHref: string | null;
   readonly path: string;
@@ -414,7 +420,7 @@ export interface AreaDutyDayView {
   readonly items: readonly {
     readonly pharmacyName: string;
     readonly pharmacyPath: string | null;
-    readonly heading: string;
+    readonly kindLabel: string;
   }[];
 }
 
@@ -424,7 +430,6 @@ export interface AreaPageProps {
   readonly locality: string;
   readonly label: string;
   readonly h1: string;
-  readonly groupName: string | null;
   readonly pharmacies: readonly AreaPharmacyView[];
   readonly dutyDays: readonly AreaDutyDayView[];
   readonly indexPath: string;
@@ -456,7 +461,7 @@ export function areaPageProps(model: SeoModel, locale: Locale, slug: string): Ar
           items.push({
             pharmacyName: entry.name,
             pharmacyPath: registry === undefined ? null : pharmacyPath(locale, entry.pharmacyId),
-            heading: section.heading,
+            kindLabel: dutyKindLabel(section.kind, locale),
           });
         }
       }
@@ -471,7 +476,6 @@ export function areaPageProps(model: SeoModel, locale: Locale, slug: string): Ar
     }
   }
 
-  const groupName = area.groupId === null ? null : (model.groupNames.get(area.groupId) ?? null);
   return {
     meta: meta(
       locale,
@@ -483,12 +487,11 @@ export function areaPageProps(model: SeoModel, locale: Locale, slug: string): Ar
     locality: area.locality,
     label,
     h1: fill(seoArea.h1, { area: areaLabelBoth(area.locality, locale) }),
-    groupName: groupName === null ? null : groupLabel(groupName, locale),
     pharmacies: area.pharmacies.map((p) => ({
       id: p.id,
       name: p.name,
       address: p.address,
-      phone: p.phone,
+      phone: p.phone === null ? null : formatPhone(p.phone),
       phoneHref: telHref(p.phone),
       path: pharmacyPath(locale, p.id),
     })),

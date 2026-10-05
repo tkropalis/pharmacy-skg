@@ -2,7 +2,7 @@ import { THESSALONIKI } from '@pharmacy-skg/core';
 import type { Locale, OpenReason, PharmacyStatus } from '@pharmacy-skg/core';
 import type { Dictionary } from '../i18n/index.ts';
 import { fill } from './format.ts';
-import { whenOf } from './when.ts';
+import { isMidnightAfter, whenOf } from './when.ts';
 import { pinKindOf } from './list.ts';
 import type { PinKind } from './list.ts';
 
@@ -85,7 +85,10 @@ export function describeStatus(options: {
       const label =
         kind === 'duty' && allNight(status.reasons) ? fill(text.allNight, { label: word }) : word;
       const minutes = Math.ceil((status.until.getTime() - at.getTime()) / 60_000);
-      const when = dayAndTime(status.until, at, locale, text, timeZone);
+      // "έως τα μεσάνυχτα" rather than "έως αύριο 00:00".
+      const when = isMidnightAfter(status.until, at, timeZone)
+        ? text.midnight
+        : dayAndTime(status.until, at, locale, text, timeZone);
       // A countdown only when it matters: in the last minutes before closing.
       const countdown = live && status.closingSoon;
       const duration = formatDuration(minutes, text);

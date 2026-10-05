@@ -19,7 +19,7 @@ const d = t(locale);
 const seo = d.seo.area;
 ---
 
-<SeoLayout meta={page.meta}>
+<SeoLayout meta={page.meta} updated={{ at: page.updatedAt, text: page.updatedAtText }}>
   <nav class="seo-breadcrumb" aria-label={d.seo.breadcrumbLabel}>
     <ol>
       <li>
@@ -30,14 +30,10 @@ const seo = d.seo.area;
   </nav>
 
   <h1>{page.h1}</h1>
-  {page.groupName !== null && (
-    <p class="seo-meta">
-      {seo.groupLabel} {page.groupName}
-    </p>
-  )}
 
   <section aria-labelledby="open-heading">
     <h2 id="open-heading">{seo.openNowHeading}</h2>
+    <!-- Worked out in the browser (scripts/seo/area-status.ts): the open pharmacies by name. -->
     <div class="seo-status" role="status" aria-live="polite" data-area-status>
       <p>{seo.openNowNoScript}</p>
     </div>
@@ -61,17 +57,14 @@ const seo = d.seo.area;
                 ) : (
                   item.pharmacyName
                 )}
-                {' — '}
-                {item.heading}
+                {' · '}
+                {item.kindLabel}
               </span>
             ))}
           </li>
         ))}
       </ul>
     )}
-    <p class="seo-meta">
-      {d.seo.sourceFsth}. {d.seo.duty.onlyPublished}
-    </p>
   </section>
 
   <section aria-labelledby="list-heading">
@@ -93,14 +86,6 @@ const seo = d.seo.area;
       ))}
     </ul>
   </section>
-
-  <p class="seo-meta">
-    <strong>{d.footer.lastUpdatedLabel}</strong>{' '}
-    <time data-updated-at datetime={page.updatedAt}>
-      {page.updatedAtText}
-    </time>
-    . {d.footer.disclaimer}
-  </p>
 </SeoLayout>
 
 <script>

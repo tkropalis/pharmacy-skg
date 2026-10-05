@@ -111,7 +111,34 @@ describe('describeStatus', () => {
     });
     expect(view.closingSoon).toBe(true);
     expect(view.short).toEqual({ label: 'Ανοιχτό', timing: 'κλείνει σε 25 λεπτά' });
-    expect(view.label).toBe('Ανοιχτό, κλείνει σε 25 λεπτά, στις 21:00');
+    expect(view.label).toBe('Ανοιχτό έως 21:00, κλείνει σε 25 λεπτά');
+  });
+
+  it('says "until midnight" rather than "tomorrow 00:00"', () => {
+    const view = (locale: 'el' | 'en', live = true) =>
+      describeStatus({
+        status: open('2026-10-05T21:00:00Z', [duty()]), // 00:00 on the 6th in Athens
+        at,
+        live,
+        locale,
+        text: locale === 'el' ? el : en,
+      });
+    expect(view('el').label).toBe('Εφημερεύει έως τα μεσάνυχτα');
+    expect(view('el').short).toEqual({ label: 'Εφημερεύει', timing: 'έως τα μεσάνυχτα' });
+    expect(view('en').label).toBe('On duty until midnight');
+    expect(view('en', false).short.timing).toBe('until midnight');
+  });
+
+  it('counts down to midnight in the same words', () => {
+    const view = describeStatus({
+      status: open('2026-10-05T21:00:00Z', [duty()], true),
+      at: new Date('2026-10-05T20:40:00Z'), // 23:40 local
+      live: true,
+      locale: 'el',
+      text: el,
+    });
+    expect(view.label).toBe('Εφημερεύει έως τα μεσάνυχτα, κλείνει σε 20 λεπτά');
+    expect(view.short.timing).toBe('κλείνει σε 20 λεπτά');
   });
 
   it('says "until" for a chosen time, even when closing soon', () => {

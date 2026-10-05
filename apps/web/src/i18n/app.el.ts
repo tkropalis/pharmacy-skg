@@ -1,16 +1,20 @@
-import { STATUS_LABELS } from './status-labels.ts';
+import { DUTY_KIND_LABELS, STATUS_LABELS } from './status-labels.ts';
 
 /**
  * The home screen's texts (map, list, favourites), in Greek. Placeholders are written {name}
  * and filled by `fill()` in lib/format.ts. Plain strings, arrays and objects only, because
- * the whole section is passed to the page as JSON.
+ * the whole section is passed to the page as JSON. The copy rules are in el.ts.
  */
 export const appEl = {
   regionLabel: 'Ανοιχτά φαρμακεία: χάρτης και λίστα',
   loading: 'Φόρτωση φαρμακείων…',
   loadError: 'Δεν φόρτωσαν τα φαρμακεία.',
-  loadErrorHint: 'Ελέγξτε ότι έχετε ίντερνετ και δοκιμάστε ξανά.',
+  loadErrorHint: 'Ελέγξτε τη σύνδεση.',
   retry: 'Δοκιμάστε ξανά',
+  /** Every close (×) button on the home screen. */
+  close: 'Κλείσιμο',
+  /** Announced when a pharmacy is tapped on the map. */
+  chosen: 'Επιλέχθηκε: {name}',
   moreDatesFailed: 'Δεν φόρτωσαν όλες οι εφημερίες. Μπορεί να λείπουν φαρμακεία.',
 
   tabs: {
@@ -23,53 +27,51 @@ export const appEl = {
   sheet: {
     label: 'Λίστα φαρμακείων',
     handleLabel: 'Μέγεθος λίστας: {size}. Πατήστε για αλλαγή.',
-    dragHint: 'Σύρετε ή πατήστε για αλλαγή μεγέθους',
     sizes: { small: 'μικρό', medium: 'μεσαίο', large: 'μεγάλο' },
   },
 
+  /** The status line under the tabs, joined with " · ": "12 ανοιχτά · 3 κλειστά". */
   summary: {
-    none: 'Κανένα ανοιχτό φαρμακείο',
-    one: '1 ανοιχτό φαρμακείο',
-    many: '{n} ανοιχτά φαρμακεία',
-    dutyNone: 'Κανένα εφημερεύον φαρμακείο',
-    dutyOne: '1 εφημερεύον φαρμακείο',
-    dutyMany: '{n} εφημερεύοντα φαρμακεία',
+    none: 'Κανένα ανοιχτό',
+    one: '1 ανοιχτό',
+    many: '{n} ανοιχτά',
+    dutyNone: 'Κανένα δεν εφημερεύει',
+    dutyOne: '1 εφημερεύει',
+    dutyMany: '{n} εφημερεύουν',
     sortedByDistance: 'πρώτα τα πιο κοντινά, αποστάσεις από: {origin}',
-    sortedByDistanceShort: 'πρώτα τα πιο κοντινά',
     sortedByName: 'αλφαβητικά',
-    withClosed: 'και {n} κλειστά',
+    withClosed: '{n} κλειστά',
   },
 
   nearby: {
-    title: 'Βρείτε τα πιο κοντινά σας',
+    title: 'Κοντά σας',
     area: 'Περιοχή',
   },
 
   origin: {
     heading: 'Πού βρίσκεστε;',
-    summary: 'Αλλαγή περιοχής ή ώρας',
-    useLocation: 'Η θέση μου',
-    locating: 'Αναζήτηση της θέσης σας…',
-    deniedShort: 'Δεν δώσατε άδεια για τη θέση σας.',
-    unavailable: 'Δεν βρέθηκε η θέση σας. Διαλέξτε περιοχή.',
-    unsupported: 'Το κινητό σας δεν δίνει τη θέση του. Διαλέξτε περιοχή.',
-    deniedHelpIos: 'Για να δώσετε άδεια: Ρυθμίσεις › Safari › Τοποθεσία.',
-    deniedHelpOther: 'Επιτρέψτε την τοποθεσία στις ρυθμίσεις του κινητού.',
+    summary: 'Επιλογές',
+    useLocation: 'Η τοποθεσία μου',
+    locating: 'Εντοπισμός…',
+    deniedShort: 'Η τοποθεσία δεν επιτρέπεται.',
+    unavailable: 'Δεν βρέθηκε η τοποθεσία σας. Διαλέξτε περιοχή.',
+    unsupported: 'Δεν βρέθηκε η τοποθεσία σας. Διαλέξτε περιοχή.',
+    deniedHelpIos: 'Ρυθμίσεις › Εφαρμογές › Safari › Τοποθεσία.',
+    deniedHelpOther: 'Επιτρέψτε την τοποθεσία στις ρυθμίσεις.',
     far: 'Είστε μακριά από τη Θεσσαλονίκη.',
     myLocation: 'Κοντά μου',
-    here: 'Η θέση σας',
+    here: 'Η τοποθεσία σας',
     areaName: 'Κοντά σε: {name}',
     areaLabel: 'Περιοχή',
     areaSearch: 'Γράψτε την περιοχή',
     areaHint: 'π.χ. Καλαμαριά',
-    areaNone: 'Καμία περιοχή δεν ταιριάζει.',
+    areaNone: 'Δεν βρέθηκε περιοχή.',
     areaCount: '{n} περιοχές',
     areaOne: '1 περιοχή',
     areaPharmacies: '{n} φαρμακεία',
     clear: 'Αφαίρεση',
     current: 'Αποστάσεις από: {origin}',
-    set: 'Οι αποστάσεις μετρούν από: {origin}',
-    cleared: 'Η θέση αφαιρέθηκε',
+    cleared: 'Η τοποθεσία αφαιρέθηκε',
   },
 
   time: {
@@ -78,12 +80,11 @@ export const appEl = {
     other: 'Άλλη μέρα ή ώρα',
     date: 'Μέρα',
     clock: 'Ώρα',
-    deviceDiffers: 'Οι ώρες εδώ είναι ώρες Ελλάδας.',
+    deviceDiffers: 'Ώρα Ελλάδας.',
     showing: 'Ανοιχτά: {when}',
     dutyNotPublished: 'Οι εφημερίες αυτής της μέρας δεν έχουν ανακοινωθεί ακόμη.',
     extendedNotPublished: 'Μπορεί να λείπουν κάποια φαρμακεία αυτή τη μέρα.',
     dutyNotPublishedToday: 'Δεν βρέθηκαν οι σημερινές εφημερίες. Καλέστε πριν πάτε.',
-    changed: 'Η ώρα άλλαξε: {when}',
     backToNow: 'Πίσω στο τώρα',
     loadingDuties: 'Φόρτωση εφημεριών…',
     groupsMissing: 'Δεν έχουν ανακοινωθεί ακόμη οι εφημερίες για: {groups}.',
@@ -92,7 +93,7 @@ export const appEl = {
   },
 
   filters: {
-    showClosed: 'Να φαίνονται και τα κλειστά',
+    showClosed: 'Εμφάνιση κλειστών',
     legend: 'Τι σημαίνουν τα σύμβολα',
   },
 
@@ -102,34 +103,37 @@ export const appEl = {
     filterAll: 'Όλα',
     filterDuty: 'Εφημερεύοντα',
     noDuty: 'Κανένα δεν εφημερεύει αυτή την ώρα.',
-    showMore: 'Εμφάνιση περισσότερων',
+    showMore: 'Περισσότερα',
     noneOpen: 'Κανένα ανοιχτό φαρμακείο αυτή την ώρα. Σε έκτακτη ανάγκη: 166.',
     updated: 'Η λίστα ενημερώθηκε: {summary}',
   },
 
+  /**
+   * A pharmacy in the list. Accessible names read "Label: {name}": the names are surnames in the
+   * nominative, which an article ("στο", "του") would not agree with.
+   */
   row: {
-    approximate: 'Η θέση στον χάρτη είναι κατά προσέγγιση.',
+    approximate: 'Θέση κατά προσέγγιση.',
     noLocation: 'Δεν φαίνεται στον χάρτη.',
     call: 'Κλήση',
-    callLabel: 'Κλήση στο {name}',
+    callLabel: 'Κλήση: {name}',
     noPhone: 'Χωρίς τηλέφωνο.',
     directions: 'Οδηγίες',
-    directionsLabel: 'Οδηγίες προς {name}',
+    directionsLabel: 'Οδηγίες: {name}',
     google: 'Google Maps',
     apple: 'Apple Maps',
     waze: 'Waze',
-    share: 'Αποστολή',
-    shareLabel: 'Αποστολή του {name}',
+    share: 'Κοινοποίηση',
+    shareLabel: 'Κοινοποίηση: {name}',
     copied: 'Ο σύνδεσμος αντιγράφηκε',
     copyFailed: 'Ο σύνδεσμος δεν αντιγράφηκε',
     favourite: 'Αγαπημένο',
     favouriteLabel: 'Αγαπημένο: {name}',
     favouriteAdded: '{name}: προστέθηκε στα αγαπημένα',
     favouriteRemoved: '{name}: αφαιρέθηκε από τα αγαπημένα',
-    page: 'Περισσότερα',
+    /** The link to the pharmacy's own page, where its hours and duty days are. */
+    page: 'Ωράριο',
     defaultLocality: 'Θεσσαλονίκη',
-    showOnMap: 'Εμφάνιση στον χάρτη',
-    selected: 'επιλεγμένο',
     dutiesMissing: 'Δεν ξέρουμε ακόμη αν εφημερεύει',
     favouriteSaved: 'Στα αγαπημένα',
     favouriteSavedLabel: 'Στα αγαπημένα: {name}',
@@ -141,10 +145,9 @@ export const appEl = {
     closed: 'Κλειστό',
     opensAt: 'ανοίγει {when}',
     opensUnknown: 'δεν ξέρουμε πότε ανοίγει',
-    closesIn: '{label}, κλείνει σε {duration}, στις {when}',
+    closesIn: '{label} έως {when}, κλείνει σε {duration}',
     openUntil: '{label} έως {when}',
     allNight: '{label} όλη τη νύχτα',
-    closingSoon: 'Κλείνει σύντομα',
     today: 'σήμερα',
     tomorrow: 'αύριο',
     hourOne: 'ώρα',
@@ -161,40 +164,37 @@ export const appEl = {
       closesIn: 'κλείνει σε {duration}',
       callFirst: 'καλέστε για το ωράριο',
     },
-    kinds: {
-      day: 'εφημερία ημέρας',
-      'saturday-extra': 'εφημερία Σαββάτου',
-      'on-duty': 'εφημερία',
-      overnight: 'βραδινή εφημερία',
-      'after-midnight': 'εφημερία όλη τη νύχτα',
-    },
+    /** The kinds of duty, shared with the search-engine pages. */
+    kinds: { ...DUTY_KIND_LABELS.el },
     legend: {
       duty: 'Εφημερεύει',
       regular: 'Ανοιχτό, συνηθισμένο ωράριο',
       extended: 'Ανοιχτό, περισσότερες ώρες από τα άλλα',
       dutyUnknown: 'Εφημερεύει, καλέστε για το ωράριο',
       closed: 'Κλειστό',
-      approximate: 'Με διακεκομμένη γραμμή: η θέση δεν είναι ακριβής',
+      approximate: 'Διακεκομμένη γραμμή: θέση κατά προσέγγιση',
     },
   },
 
   favourites: {
     empty: 'Κανένα αγαπημένο ακόμη.',
     emptyHint: 'Ανοίξτε ένα φαρμακείο και πατήστε «Αγαπημένο».',
-    notStored: 'Τα αγαπημένα δεν αποθηκεύονται σε αυτό το πρόγραμμα περιήγησης.',
+    notStored: 'Τα αγαπημένα δεν θα αποθηκευτούν.',
     gone: 'Αυτό το φαρμακείο δεν υπάρχει πια.',
     upcoming: 'Επόμενες εφημερίες',
     noneUpcoming: 'Δεν έχει ανακοινωθεί εφημερία έως {date}.',
-    hoursNotStated: 'χωρίς γνωστό ωράριο',
+    noneAnnounced: 'Δεν έχει ανακοινωθεί εφημερία.',
+    hoursNotStated: 'καλέστε για το ωράριο',
     addToCalendar: 'Προσθήκη στο ημερολόγιο',
-    addToCalendarLabel: 'Προσθήκη των εφημεριών του {name} στο ημερολόγιο',
-    calendarSaved: 'Οι εφημερίες αποθηκεύτηκαν για το ημερολόγιο',
+    addToCalendarLabel: 'Προσθήκη στο ημερολόγιο: {name}',
+    calendarSaved: 'Το αρχείο ημερολογίου κατέβηκε.',
     showAllDuties: 'Όλες οι {n} εφημερίες',
     fewerDuties: 'Λιγότερες',
     loadingDuties: 'Φόρτωση εφημεριών…',
     remove: 'Αφαίρεση',
   },
 
+  /** Calendar files (lib/ics.ts): the event text, not shown on screen. */
   ics: {
     summary: 'Εφημερία: {name}',
     source: 'Πηγή: Φαρμακευτικός Σύλλογος Θεσσαλονίκης',
@@ -203,14 +203,12 @@ export const appEl = {
   },
 
   source: {
-    updated: 'Ενημερώθηκε',
-    short: 'Φαρμακευτικός Σύλλογος Θεσσαλονίκης',
     tiny: 'Ενημερώθηκε',
   },
 
   footer: {
     emergency: 'Έκτακτη ανάγκη:',
-    poison: 'Δηλητηριάσεις',
+    poison: 'Κέντρο Δηλητηριάσεων',
     label: 'Πληροφορίες',
     about: 'Σχετικά',
     privacy: 'Απόρρητο',
@@ -219,14 +217,13 @@ export const appEl = {
   },
 
   map: {
-    label: 'Χάρτης με τα φαρμακεία. Ό,τι δείχνει υπάρχει και στη λίστα.',
-    unavailable: 'Ο χάρτης δεν ανοίγει σε αυτό το κινητό.',
+    label: 'Χάρτης φαρμακείων. Όλα υπάρχουν και στη λίστα.',
+    unavailable: 'Ο χάρτης δεν ανοίγει σε αυτή τη συσκευή.',
     loadFailed: 'Ο χάρτης δεν φόρτωσε.',
     loading: 'Φόρτωση χάρτη…',
-    you: 'Η θέση σας',
+    you: 'Η τοποθεσία σας',
     cluster: '{n} φαρμακεία: πατήστε για να τα δείτε',
     zoomIn: 'Μεγέθυνση',
     zoomOut: 'Σμίκρυνση',
-    attribution: 'Χάρτης',
   },
 };

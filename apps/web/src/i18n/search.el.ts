@@ -3,7 +3,7 @@
  * these strings and not the whole dictionary. search.en.ts must have the same keys.
  */
 export const searchEl = {
-  /** The header button (visible text) and its accessible name, which starts with it. */
+  /** The header button (visible text) and its accessible name, which starts with it (WCAG 2.5.3). */
   open: 'Φάρμακα',
   openLabel: 'Φάρμακα: αναζήτηση',
   /** The dialog's name (not shown). */
@@ -38,7 +38,7 @@ export const searchEl = {
 
   /** Credits on the about page, after its own list. */
   credits: {
-    moh: 'Τιμές φαρμάκων: Υπουργείο Υγείας, δελτία τιμών.',
+    moh: 'Τιμές φαρμάκων: Υπουργείο Υγείας.',
     eof: 'Φάρμακα που δύσκολα βρίσκονται: Εθνικός Οργανισμός Φαρμάκων.',
   },
 

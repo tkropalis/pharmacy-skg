@@ -21,7 +21,7 @@ const d = t(locale);
       <p>
         <strong>{d.stale.title}</strong> {d.stale.body}
         <span class="when">
-          {d.footer.lastUpdatedLabel} <time data-updated-at>—</time>
+          {d.footer.lastUpdatedLabel} <time data-updated-at></time>
         </span>
       </p>
     </div>
@@ -41,5 +41,10 @@ const d = t(locale);
 
   .stale-banner .when {
     display: block;
+  }
+
+  /* The date is filled in by scripts/boot.ts; until then no label. */
+  .stale-banner .when:has(time:empty) {
+    display: none;
   }
 </style>

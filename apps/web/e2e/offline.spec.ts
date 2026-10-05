@@ -106,7 +106,7 @@ test('a new service worker version never reloads a visible page: it offers a but
   const toast = region.locator('.update-toast');
   await expect(toast).toBeVisible();
   await expect(toast.getByRole('button', { name: 'Ανανέωση' })).toBeVisible();
-  await expect(toast.getByRole('button', { name: 'Κλείσιμο ειδοποίησης' })).toBeVisible();
+  await expect(toast.getByRole('button', { name: 'Κλείσιμο', exact: true })).toBeVisible();
   // The sheet stands above the notice instead of under it.
   const sheet = await page.locator('.sheet').boundingBox();
   const toastBox = await toast.boundingBox();
@@ -123,7 +123,7 @@ test('a new service worker version never reloads a visible page: it offers a but
   }
 
   // Dismissed, it goes and the room it took is given back.
-  await toast.getByRole('button', { name: 'Κλείσιμο ειδοποίησης' }).click();
+  await toast.getByRole('button', { name: 'Κλείσιμο', exact: true }).click();
   await expect(toast).toHaveCount(0);
   await expect(page.locator('html')).not.toHaveClass(/has-update-toast/);
 

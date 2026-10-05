@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { t } from '../../i18n/index.ts';
 import { realModel } from './test-data.ts';
 import {
   areaIndexProps,
@@ -60,8 +61,11 @@ describe('pharmacyPageProps', () => {
     expect(en?.meta.path).toBe(`/en/pharmacy/${id}/`);
     expect(el?.meta.alternates).toEqual({ el: `/farmakeio/${id}/`, en: `/en/pharmacy/${id}/` });
     expect(en?.meta.alternates).toEqual(el?.meta.alternates);
-    expect(el?.meta.title).toContain('Φαρμακείο');
-    expect(en?.meta.title).toContain('Pharmacy in');
+    expect(el?.meta.title).toMatch(/^Φαρμακείο .+, /);
+    expect(en?.meta.title).toMatch(/^Pharmacy .+, /);
+    // One call button, its number spaced after the area code.
+    expect(el?.callText).toMatch(/^Κλήση 23\d{2,3} \d+$/);
+    expect(en?.callText).toMatch(/^Call 23\d{2,3} \d+$/);
   });
 
   it('is null for an unknown id', () => {
@@ -73,7 +77,7 @@ describe('pharmacyPageProps', () => {
     expect(page?.regularHours.text).toBe(
       'Συνηθισμένο ωράριο: Δευ/Τετ 08:00–14:30 · Τρί/Πέμ/Παρ 08:00–14:00, 17:00–21:00',
     );
-    expect(page?.regularClosedText).toBe('Κλειστά: Σάβ/Κυρ και αργίες.');
+    expect(page?.regularClosedText).toBe('Κλειστό: Σάβ/Κυρ και αργίες.');
     expect(page?.reportPath).toBe(`/anafora/?pharmacy=${id}`);
     expect(pharmacyPageProps(model, 'en', id, ORIGIN)?.reportPath).toBe(
       `/en/report/?pharmacy=${id}`,
@@ -84,7 +88,7 @@ describe('pharmacyPageProps', () => {
     const page = pharmacyPageProps(model, 'el', id, ORIGIN);
     expect(page?.extendedHours.length).toBeGreaterThan(0);
     const [first] = page?.extendedHours ?? [];
-    expect(first?.periodText).toBe('Ισχύει από 1 Σεπτεμβρίου 2026 έως 31 Οκτωβρίου 2026');
+    expect(first?.periodText).toBe('Από 1 Σεπτεμβρίου 2026 έως 31 Οκτωβρίου 2026');
     expect(first?.announcementUrl).toMatch(/^https:\/\/www\.pkm\.gov\.gr\//);
     expect(first?.scheduleText.length).toBeGreaterThan(0);
   });
@@ -100,6 +104,16 @@ describe('pharmacyPageProps', () => {
     const dates = recent.map((d) => d.date);
     expect(dates).toEqual([...dates].sort().reverse());
     expect(page?.upcomingDuties.length).toBeGreaterThan(0);
+  });
+
+  it('words each duty in plain words on one line, with only the extra hours of that date', () => {
+    const page = pharmacyPageProps(model, 'el', id, ORIGIN);
+    const kinds = Object.values(t('el').app.status.kinds);
+    for (const duty of [...(page?.upcomingDuties ?? []), ...(page?.recentDuties ?? [])]) {
+      expect(kinds).toContain(duty.kindLabel);
+      expect(duty.dateLabel).toMatch(/^\S{3} \d{1,2} \S+$/);
+      for (const extra of duty.extraHours) expect(extra).toMatch(/^\d\d:\d\d–\d\d:\d\d$/);
+    }
   });
 
   it('links a duty to its date page only when that page exists', () => {
@@ -138,8 +152,8 @@ describe('dutyPageProps', () => {
   it('has the dated title, both locales and previous/next links', () => {
     const el = dutyPageProps(model, 'el', '2026-10-05');
     const en = dutyPageProps(model, 'en', '2026-10-05');
-    expect(el?.meta.title).toBe('Εφημερεύοντα φαρμακεία Θεσσαλονίκη — Δευτέρα 5 Οκτωβρίου 2026');
-    expect(en?.meta.title).toBe('On-duty pharmacies in Thessaloniki — Monday 5 October 2026');
+    expect(el?.meta.title).toBe('Εφημερεύοντα φαρμακεία, Δευτέρα 5 Οκτωβρίου 2026');
+    expect(en?.meta.title).toBe('Pharmacies on duty, Monday 5 October 2026');
     expect(el?.meta.alternates).toEqual({
       el: '/efimeries/2026-10-05/',
       en: '/en/duty/2026-10-05/',
@@ -155,7 +169,7 @@ describe('dutyPageProps', () => {
     const metroOnly = dutyPageProps(model, 'el', '2026-10-01');
     expect(metroOnly?.missingGroups).toContain('Δήμος Θέρμης');
     expect(metroOnly?.missingGroups).toHaveLength(9);
-    expect(metroOnly?.missingGroups).not.toContain('Πολεοδομικό Συγκρότημα Θεσσαλονίκης');
+    expect(metroOnly?.missingGroups).not.toContain('Θεσσαλονίκη');
   });
 
   it('has no previous link on the first date and no next link on the last', () => {
@@ -170,7 +184,9 @@ describe('dutyPageProps', () => {
     for (const [index, group] of (page?.groups ?? []).entries()) {
       const source = day?.groups[index];
       expect(group.sourceUrl).toBe(source?.source.url);
-      expect(group.sections.map((s) => s.heading)).toEqual(source?.sections.map((s) => s.heading));
+      expect(group.sections.map((s) => s.kindLabel)).toEqual(
+        source?.sections.map((s) => t('el').app.status.kinds[s.kind]),
+      );
       expect(group.sections.flatMap((s) => s.entries).length).toBe(
         source?.sections.reduce((n, s) => n + s.entries.length, 0),
       );

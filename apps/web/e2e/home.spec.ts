@@ -43,7 +43,7 @@ for (const locale of LOCALES) {
         const [value = '', unit = ''] = shown.split(/\s+/);
         const number = Number(value.replace(',', '.'));
         expect(Number.isNaN(number), shown).toBe(false);
-        distances.push(unit === 'km' ? number * 1000 : number);
+        distances.push(unit === 'km' || unit === 'χλμ' ? number * 1000 : number);
       }
       // Distances are rounded for display, so equal neighbours are fine.
       expect(distances).toEqual([...distances].sort((a, b) => a - b));

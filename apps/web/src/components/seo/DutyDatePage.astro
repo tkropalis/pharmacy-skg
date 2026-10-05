@@ -22,7 +22,11 @@ const d = t(locale);
 const seo = d.seo.duty;
 ---
 
-<SeoLayout meta={page.meta}>
+<!--
+  One day's published lists, one per area group: a plain heading with a hairline above it, then
+  each kind of duty with its hours on one line and its pharmacies.
+-->
+<SeoLayout meta={page.meta} updated={{ at: page.updatedAt, text: page.updatedAtText }}>
   <nav class="seo-breadcrumb" aria-label={d.seo.breadcrumbLabel}>
     <ol>
       <li>
@@ -35,7 +39,6 @@ const seo = d.seo.duty;
   <h1 data-duty-date={page.date} data-today-label={d.seo.todayBadge}>
     {page.h1}
   </h1>
-  <p class="seo-meta">{seo.onlyPublished}</p>
 
   {page.missingGroups.length > 0 && (
     <p class="callout" role="note">
@@ -74,17 +77,15 @@ const seo = d.seo.duty;
         <a href={group.sourceUrl} rel="noopener">
           {seo.sourcePdf}
         </a>
-        {' · '}
-        {seo.uploadedAt} <time datetime={group.uploadedAt}>{group.uploadedAtText}</time>
       </p>
       {group.sections.map((section) => (
         <div class="seo-section">
-          <h3>{section.heading}</h3>
+          <h3>{section.kindLabel}</h3>
           <p class="seo-meta">
-            {section.kindLabel}. {seo.hoursLabel} {section.hoursText}
+            {seo.hoursLabel} {section.hoursText}
             {section.extraHours.map((extra) => (
               <>
-                <br />
+                {' · '}
                 {seo.extraHoursLabel} {extra}
               </>
             ))}
@@ -113,14 +114,6 @@ const seo = d.seo.duty;
       ))}
     </section>
   ))}
-
-  <p class="seo-meta">
-    <strong>{d.footer.lastUpdatedLabel}</strong>{' '}
-    <time data-updated-at datetime={page.updatedAt}>
-      {page.updatedAtText}
-    </time>
-    . {d.footer.disclaimer}
-  </p>
 </SeoLayout>
 
 <script>

@@ -51,14 +51,16 @@ describe('duty hours wording', () => {
   it('prints the heading hours, or says there are none', () => {
     expect(windowText({ from: '08:00', to: '23:00', toNextDay: false }, el)).toBe('08:00–23:00');
     expect(windowText({ from: '20:00', to: '08:00', toNextDay: true }, en)).toBe(
-      '20:00–08:00 (until the next day)',
+      '20:00–08:00 next day',
     );
+    // Midnight needs no "next day".
+    expect(windowText({ from: '21:00', to: '00:00', toNextDay: true }, el)).toBe('21:00–00:00');
     expect(windowText(null, el)).toBe(el.duty.hoursNotStated);
   });
 
   it('prints extra hours with their weekdays', () => {
     const extra = { weekdays: [5, 2, 4], from: '14:00', to: '17:00', exceptHolidays: true };
-    expect(extraHoursText(extra, el)).toBe('Τρί/Πέμ/Παρ 14:00–17:00 (εκτός αργιών)');
+    expect(extraHoursText(extra, el)).toBe('Τρί/Πέμ/Παρ 14:00–17:00, εκτός αργιών');
     expect(extraHoursText({ ...extra, exceptHolidays: false }, en)).toBe('Tue/Thu/Fri 14:00–17:00');
   });
 });

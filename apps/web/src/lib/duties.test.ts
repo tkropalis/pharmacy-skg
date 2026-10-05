@@ -33,10 +33,10 @@ describe('upcomingDuties', () => {
 describe('describeDuty', () => {
   it('names the date, the kind and the hours', () => {
     expect(describeDuty(duty('2026-10-07', night), 'el', t('el').app)).toBe(
-      'Τετ 7 Οκτ · βραδινή εφημερία · 22:00–08:00',
+      'Τετ 7 Οκτ · Νυχτερινή εφημερία · 22:00–08:00',
     );
     expect(describeDuty(duty('2026-10-07', null, 'day'), 'en', t('en').app)).toBe(
-      'Wed 7 Oct · day duty · hours not known',
+      'Wed 7 Oct · Day duty · call for the hours',
     );
   });
 });

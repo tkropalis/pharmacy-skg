@@ -2,7 +2,7 @@ import type { Locale, OpenReason, PharmacyStatus } from '@pharmacy-skg/core';
 import { THESSALONIKI } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
 import { fill } from './format.ts';
-import { whenOf } from '../when.ts';
+import { isMidnightAfter, whenOf } from '../when.ts';
 
 /** The dictionary parts the status text needs (a whole Dictionary fits). */
 export interface StatusDictionary {
@@ -16,7 +16,7 @@ export type StatusTone = 'open' | 'duty-unknown' | 'closed';
 
 export interface StatusText {
   readonly tone: StatusTone;
-  /** The headline, also the label for a list row: "Εφημερεύει μέχρι τις 23:00". */
+  /** The headline, also the label for a list row: "Εφημερεύει έως 23:00". */
   readonly short: string;
   /** What follows the headline: notes, the next opening and the "call before you go" line. */
   readonly detail: string;
@@ -58,7 +58,7 @@ export function whenText(
   }
 }
 
-/** "τις 23:00" the same day; otherwise the day is named: "αύριο στις 08:00". */
+/** "23:00" the same day; otherwise the day is named: "αύριο στις 08:00". */
 export function untilText(
   until: Date,
   now: Date,
@@ -104,7 +104,10 @@ export function describeStatus(
   if (status.state === 'open') {
     const label = fill(s.openUntil, {
       label: openLabel(status.reasons, d),
-      when: untilText(status.until, now, locale, s, timeZone),
+      // "έως τα μεσάνυχτα" rather than "έως αύριο στις 00:00".
+      when: isMidnightAfter(status.until, now, timeZone)
+        ? d.status.midnight
+        : untilText(status.until, now, locale, s, timeZone),
     });
     return make('open', status.closingSoon ? `${label}, ${s.closingSoon}` : label, tail);
   }

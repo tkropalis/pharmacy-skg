@@ -1,6 +1,7 @@
 ---
 import type { Locale } from '@pharmacy-skg/core';
 import Base from '../../layouts/Base.astro';
+import { t } from '../../i18n/index.ts';
 import type { PageMeta } from '../../lib/seo/views.ts';
 import '../../styles/seo.css';
 
@@ -8,10 +9,16 @@ interface Props {
   meta: PageMeta;
   /** Serialised JSON-LD (lib/seo/jsonld.ts jsonLdScript), or none. */
   jsonLd?: string | undefined;
+  /**
+   * When the data was updated, for visitors without JavaScript: the site footer shows it, but
+   * only once its script has read it.
+   */
+  updated?: { readonly at: string; readonly text: string } | undefined;
 }
 
-const { meta, jsonLd } = Astro.props;
+const { meta, jsonLd, updated } = Astro.props;
 const locale: Locale = meta.locale;
+const d = t(locale);
 ---
 
 <Base
@@ -26,5 +33,12 @@ const locale: Locale = meta.locale;
   )}
   <div class="container seo-page">
     <slot />
+    {updated !== undefined && (
+      <noscript>
+        <p class="seo-meta">
+          {d.footer.lastUpdatedLabel} <time datetime={updated.at}>{updated.text}</time>
+        </p>
+      </noscript>
+    )}
   </div>
 </Base>

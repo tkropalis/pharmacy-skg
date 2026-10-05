@@ -12,10 +12,11 @@ interface Props {
 const { locale } = Astro.props;
 const model = await loadSeoModel();
 const page = areaIndexProps(model, locale);
+
 const d = t(locale);
 ---
 
-<SeoLayout meta={page.meta}>
+<SeoLayout meta={page.meta} updated={{ at: page.updatedAt, text: page.updatedAtText }}>
   <h1>{page.meta.title}</h1>
   <p>{d.seo.area.indexIntro}</p>
 
@@ -32,12 +33,4 @@ const d = t(locale);
       </ul>
     </section>
   ))}
-
-  <p class="seo-meta">
-    <strong>{d.footer.lastUpdatedLabel}</strong>{' '}
-    <time data-updated-at datetime={page.updatedAt}>
-      {page.updatedAtText}
-    </time>
-    . {d.footer.disclaimer}
-  </p>
 </SeoLayout>

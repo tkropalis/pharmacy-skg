@@ -21,23 +21,29 @@ const d = t(locale);
 const seo = d.seo.pharmacy;
 ---
 
-<SeoLayout meta={page.meta} jsonLd={page.jsonLd}>
-  <p class="seo-kicker">{seo.kicker}</p>
+<!--
+  The name, then whether it is open now, then how to reach it, its hours and its duty days.
+  The sources are on the about page and the data's age is in the footer.
+-->
+<SeoLayout
+  meta={page.meta}
+  jsonLd={page.jsonLd}
+  updated={{ at: page.updatedAt, text: page.updatedAtText }}
+>
   <h1>{page.name}</h1>
 
   <section aria-labelledby="status-heading">
-    <h2 id="status-heading">{seo.statusHeading}</h2>
+    <h2 id="status-heading" class="sr-only">
+      {seo.statusHeading}
+    </h2>
+    <!-- Worked out in the browser (scripts/seo/pharmacy-status.ts); empty without JavaScript. -->
     <div
       class="seo-status"
       role="status"
       aria-live="polite"
       data-pharmacy-status
       data-pharmacy-id={page.id}
-    >
-      <p>
-        {seo.statusFallback} <a href={page.homePath}>{seo.statusFallbackLink}</a>
-      </p>
-    </div>
+    ></div>
   </section>
 
   <section aria-labelledby="contact-heading">
@@ -48,14 +54,6 @@ const seo = d.seo.pharmacy;
         {page.address}, {page.localityLabel}
         {page.postcode !== null && <> {page.postcode}</>}
       </dd>
-      <dt>{seo.phoneLabel}</dt>
-      <dd>
-        {page.phone !== null && page.phoneHref !== null ? (
-          <a href={page.phoneHref}>{page.phone}</a>
-        ) : (
-          seo.noPhone
-        )}
-      </dd>
       <dt>{seo.areaLabel}</dt>
       <dd>
         {page.areaPagePath !== null ? (
@@ -64,18 +62,12 @@ const seo = d.seo.pharmacy;
           page.localityLabel
         )}
       </dd>
-      {page.groupName !== null && (
-        <>
-          <dt>{seo.groupLabel}</dt>
-          <dd>{page.groupName}</dd>
-        </>
-      )}
     </dl>
     <ul class="seo-actions">
-      {page.phoneHref !== null && (
+      {page.callText !== null && page.phoneHref !== null && (
         <li>
           <a class="button" href={page.phoneHref}>
-            {page.phone}
+            {page.callText}
           </a>
         </li>
       )}
@@ -85,6 +77,7 @@ const seo = d.seo.pharmacy;
         </a>
       </li>
     </ul>
+    {page.callText === null && <p class="seo-meta">{seo.noPhone}</p>}
   </section>
 
   <section aria-labelledby="hours-heading">
@@ -98,8 +91,6 @@ const seo = d.seo.pharmacy;
       ))}
     </ul>
     {page.regularClosedText !== null && <p class="seo-meta">{page.regularClosedText}</p>}
-    <p class="seo-meta">{seo.regularNote}</p>
-
     {page.extendedHours.length > 0 && (
       <>
         <h3>{seo.extendedHeading}</h3>
@@ -122,16 +113,12 @@ const seo = d.seo.pharmacy;
             </p>
           </>
         ))}
-        <p class="seo-meta">{seo.extendedNote}</p>
       </>
     )}
   </section>
 
   <section aria-labelledby="duty-heading">
     <h2 id="duty-heading">{seo.dutyHeading}</h2>
-    <p class="seo-meta">
-      {seo.dutyIntro} <a href={page.dutyIndexPath}>{d.seo.footerDuty}</a>
-    </p>
     {page.upcomingDuties.length > 0 && (
       <>
         <h3>{seo.dutyUpcoming}</h3>
@@ -147,20 +134,9 @@ const seo = d.seo.pharmacy;
     {page.upcomingDuties.length === 0 && page.recentDuties.length === 0 && <p>{seo.dutyNone}</p>}
   </section>
 
-  <section aria-labelledby="source-heading">
-    <h2 id="source-heading">{seo.sourcesHeading}</h2>
-    <p class="seo-meta">{seo.sourcesBody}</p>
-    <p class="seo-meta">
-      <strong>{d.footer.lastUpdatedLabel}</strong>{' '}
-      <time data-updated-at datetime={page.updatedAt}>
-        {page.updatedAtText}
-      </time>
-      . {d.footer.disclaimer}
-    </p>
-    <p>
-      <a href={page.reportPath}>{seo.reportLink}</a>
-    </p>
-  </section>
+  <p>
+    <a href={page.reportPath}>{seo.reportLink}</a>
+  </p>
 </SeoLayout>
 
 <script>

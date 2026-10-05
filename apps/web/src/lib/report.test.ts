@@ -38,7 +38,7 @@ describe('fallbackIssueUrl', () => {
       ),
     );
     expect(url.origin + url.pathname).toBe('https://github.com/tkropalis/pharmacy-skg/issues/new');
-    expect(url.searchParams.get('title')).toBe('Αναφορά: Λάθος τηλέφωνο — 2310733843');
+    expect(url.searchParams.get('title')).toBe('Αναφορά: Λάθος τηλέφωνο, 2310733843');
     expect(url.searchParams.get('body')).toContain('Το τηλέφωνο δεν απαντά');
     expect(url.searchParams.get('labels')).toBe('report');
   });
@@ -52,7 +52,7 @@ describe('fallbackIssueUrl', () => {
         'χωρίς φαρμακείο',
       ),
     );
-    expect(url.searchParams.get('title')).toBe('Αναφορά: Άλλο — χωρίς φαρμακείο');
+    expect(url.searchParams.get('title')).toBe('Αναφορά: Άλλο, χωρίς φαρμακείο');
     expect((url.searchParams.get('body') ?? '').length).toBeLessThan(1100);
   });
 });

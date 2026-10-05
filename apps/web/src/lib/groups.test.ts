@@ -23,17 +23,27 @@ describe('groupNames / groupList', () => {
         '2026-10-05',
         day('2026-10-05', [
           ['metro', 'Παλιό όνομα'],
+          ['thermi', 'Δήμος Θέρμης (παλιό όνομα)'],
+        ]),
+      ],
+      [
+        '2026-10-06',
+        day('2026-10-06', [
+          ['metro', 'Πολεοδομικό Συγκρότημα'],
           ['thermi', 'Δήμος Θέρμης'],
         ]),
       ],
-      ['2026-10-06', day('2026-10-06', [['metro', 'Πολεοδομικό Συγκρότημα']])],
     ]),
   } as unknown as CityData;
 
   it('names the groups from the loaded days, the newest day first', () => {
     const names = groupNames(data);
-    expect(names.get('metro')).toBe('Πολεοδομικό Συγκρότημα');
+    expect(names.get('thermi')).toBe('Δήμος Θέρμης');
     expect(groupList(['thermi', 'volvi'], names)).toBe('Δήμος Θέρμης, volvi');
+  });
+
+  it('calls the metro group by the city, not by its administrative name', () => {
+    expect(groupNames(data).get('metro')).toBe('Θεσσαλονίκη');
   });
 });
 

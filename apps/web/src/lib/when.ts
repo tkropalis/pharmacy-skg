@@ -30,3 +30,18 @@ export function whenOf(
   if (diff >= 7) return { kind: 'date', date: shortDate(target, locale, timeZone), time };
   return { kind: 'weekday', weekday: weekdayName(target, locale, timeZone), time };
 }
+
+/**
+ * True when `target` is the midnight that ends the day of `at` (00:00 the next day): an end time
+ * there reads "έως τα μεσάνυχτα" / "until midnight", not "έως αύριο 00:00".
+ */
+export function isMidnightAfter(
+  target: Date,
+  at: Date,
+  timeZone: string = THESSALONIKI.timeZone,
+): boolean {
+  return (
+    formatClock(target, timeZone) === '00:00' &&
+    zonedDate(target, timeZone) === addDays(zonedDate(at, timeZone), 1)
+  );
+}

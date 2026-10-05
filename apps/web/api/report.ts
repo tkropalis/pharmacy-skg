@@ -65,7 +65,7 @@ function allowed(client: string, now: number): boolean {
 /** Issue titles are in Greek: that is the language of the people who triage them. */
 const TYPE_LABELS = {
   'wrong-hours': 'Λάθος ωράριο',
-  'closed-but-listed-open': 'Κλειστό ενώ εμφανιζόταν ανοιχτό',
+  'closed-but-listed-open': 'Κλειστό, ενώ έδειχνε ανοιχτό',
   'wrong-location': 'Λάθος θέση',
   'wrong-phone': 'Λάθος τηλέφωνο',
   other: 'Άλλο',
@@ -184,14 +184,14 @@ export async function POST(request: Request): Promise<Response> {
   if (!/^[\w.-]+\/[\w.-]+$/.test(repo)) return json({ ok: false, error: 'unavailable' }, 503);
 
   const typeLabel = TYPE_LABELS[parsed.data.type];
-  const title = `Αναφορά: ${typeLabel} — ${pharmacyId || 'χωρίς φαρμακείο'}`.slice(0, TITLE_MAX);
+  const title = `Αναφορά: ${typeLabel}, ${pharmacyId || 'χωρίς φαρμακείο'}`.slice(0, TITLE_MAX);
   const freeText = [typed !== '' && pharmacyId === '' ? `Φαρμακείο: ${typed}` : '', message]
     .filter((part) => part !== '')
     .join('\n\n');
   const body = [
     `**Τύπος:** ${typeLabel}`,
-    `**Φαρμακείο:** ${pharmacyId || '—'}`,
-    `**Γλώσσα:** ${parsed.data.locale ?? '—'}`,
+    `**Φαρμακείο:** ${pharmacyId || 'κανένα'}`,
+    `**Γλώσσα:** ${parsed.data.locale ?? 'άγνωστη'}`,
     '',
     fenced(freeText),
     '',

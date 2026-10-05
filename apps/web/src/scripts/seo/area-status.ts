@@ -6,9 +6,10 @@ import { describeStatus, timeInCity } from '../../lib/seo/status-text.ts';
 import { loadNowData } from './now-data.ts';
 
 /**
- * "Open now" on an area page: marks each listed pharmacy open (with the reason and the closing
- * time) or closed, worked out in the browser at load time. Without JavaScript the list is
- * plain and the static duty dates above it still tell the official part.
+ * "Open now" on an area page, worked out in the browser at load time: the open pharmacies by
+ * name, each with its status ("Εφημερεύει έως 23:00"), then "3 από 109" and when it was checked.
+ * Each pharmacy in the full list below is also marked open or closed. Without JavaScript the
+ * list is plain and the static duty dates above it still tell the official part.
  */
 
 async function show(root: HTMLElement): Promise<void> {
@@ -23,7 +24,7 @@ async function show(root: HTMLElement): Promise<void> {
     // The duty day (08:00 to 08:00), not the calendar date: before 08:00 it is yesterday's.
     const dutyDay = coverage(data, now);
 
-    let openCount = 0;
+    const open: HTMLLIElement[] = [];
     let allPublished = dutyDay.duties && failedDates.length === 0;
     for (const row of rows) {
       const { status, dutiesPublished } = pharmacyStatus(
@@ -34,31 +35,64 @@ async function show(root: HTMLElement): Promise<void> {
       const isOpen = status.state !== 'closed';
       const state = row.querySelector<HTMLElement>('[data-state]');
       row.dataset['open'] = isOpen ? 'true' : 'false';
-      if (isOpen) openCount += 1;
       if (!dutiesPublished) allPublished = false;
       // One describer for every status: an on-duty pharmacy without printed hours says so
       // (and to call), and a closed one says when the list for its area is missing.
+      const text = describeStatus(status, dutiesPublished, now, locale, labels);
       if (state !== null) {
-        const text = describeStatus(status, dutiesPublished, now, locale, labels);
         state.textContent = isOpen
           ? text.short
           : dutiesPublished
             ? area.closedNow
             : `${area.closedNow}, ${labels.seo.status.unpublishedShort}`;
       }
+      if (isOpen) open.push(openItem(row, text.short));
     }
 
-    const summary = fill(area.openNowSummary, { open: openCount, total: rows.length });
+    const children: HTMLElement[] = [];
+    if (open.length > 0) {
+      const list = document.createElement('ul');
+      list.className = 'seo-list';
+      list.append(...open);
+      children.push(list);
+    }
+    const summary =
+      open.length === 0
+        ? area.openNowNone
+        : fill(area.openNowSummary, { open: open.length, total: rows.length });
     const computed = fill(labels.seo.status.computedAt, { time: timeInCity(now, locale) });
     const note = allPublished ? '' : ` ${labels.seo.status.unpublished}`;
     const failed = failedDates.length > 0 ? ` ${labels.seo.status.loadFailed}` : '';
     const paragraph = document.createElement('p');
+    paragraph.className = 'seo-meta';
     paragraph.textContent = `${summary} ${computed}${note}${failed}`;
-    root.dataset['tone'] = openCount > 0 ? 'open' : 'closed';
-    root.replaceChildren(paragraph);
+    children.push(paragraph);
+    root.dataset['tone'] = open.length > 0 ? 'open' : 'closed';
+    root.replaceChildren(...children);
   } catch {
     root.textContent = area.openNowError;
   }
+}
+
+/** An open pharmacy: its name, linked like in the full list, and its status. */
+function openItem(row: HTMLElement, status: string): HTMLLIElement {
+  const item = document.createElement('li');
+  const name = document.createElement('span');
+  name.className = 'name';
+  const link = row.querySelector<HTMLAnchorElement>('.name a');
+  if (link !== null) {
+    const copy = document.createElement('a');
+    copy.href = link.href;
+    copy.textContent = link.textContent;
+    name.append(copy);
+  } else {
+    name.textContent = row.querySelector('.name')?.textContent ?? '';
+  }
+  const sub = document.createElement('span');
+  sub.className = 'sub';
+  sub.textContent = status;
+  item.append(name, sub);
+  return item;
 }
 
 const root = document.querySelector<HTMLElement>('[data-area-status]');

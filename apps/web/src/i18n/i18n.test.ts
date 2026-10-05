@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 import { en } from './en.ts';
 import { el } from './el.ts';
 import { alternatePaths, allPathParams, localizedPath, ROUTES, t } from './index.ts';
+import { DUTY_KIND_LABELS } from './status-labels.ts';
 
 /** Every path to a string in a dictionary, with array lengths included. */
 function shape(value: unknown, path = ''): string[] {
@@ -43,13 +44,29 @@ describe('dictionaries', () => {
       openRegular: 'Ανοιχτό',
       openExtended: 'Ανοιχτό',
       dutyUnknown: 'Εφημερεύει, καλέστε για το ωράριο',
+      midnight: 'τα μεσάνυχτα',
     });
     expect(t('en').status).toEqual({
       onDuty: 'On duty',
       openRegular: 'Open',
       openExtended: 'Open',
       dutyUnknown: 'On duty, call for the hours',
+      midnight: 'midnight',
     });
+  });
+
+  it('name the kinds of duty once, for the home screen and the pages', () => {
+    for (const locale of LOCALES) {
+      expect(t(locale).app.status.kinds).toEqual(DUTY_KIND_LABELS[locale]);
+    }
+    // The all-night lists start at 21:00: never "after midnight".
+    expect(t('el').app.status.kinds['after-midnight']).toBe('Εφημερία όλη τη νύχτα');
+  });
+
+  it('use no em dashes and no exclamation marks (docs/decisions.md, Defaults: plain words)', () => {
+    for (const locale of LOCALES) {
+      expect(strings(t(locale)).filter((s) => /[—!]/.test(s))).toEqual([]);
+    }
   });
 
   it('never show the abbreviations ΦΣΘ, ΠΚΜ, ΕΟΦ, ΦΠΑ or ΜΗΣΥΦΑ (the owner, 5 Oct 2026)', () => {

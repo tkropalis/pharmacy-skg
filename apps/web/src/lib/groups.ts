@@ -8,11 +8,25 @@ import { distanceMetres } from '@pharmacy-skg/core';
  * falls back to its id.
  */
 
+/**
+ * Plain names for groups whose printed name is an administrative term (docs/decisions.md,
+ * Defaults: plain words): the metro list is printed for the "Πολεοδομικό Συγκρότημα
+ * Θεσσαλονίκης". Other groups keep their printed names ("Δήμος Θέρμης").
+ */
+const DISPLAY_NAMES: Readonly<Record<string, string>> = { metro: 'Θεσσαλονίκη' };
+
+/** The name a group is shown by: its plain name, or the name its list prints. */
+export function groupDisplayName(id: string, printed: string): string {
+  return DISPLAY_NAMES[id] ?? printed;
+}
+
 /** Group id to its name, from every loaded duty day (the newest day wins). */
 export function groupNames(data: CityData): Map<string, string> {
   const names = new Map<string, string>();
   for (const date of [...data.duties.keys()].sort()) {
-    for (const group of data.duties.get(date)?.groups ?? []) names.set(group.id, group.name);
+    for (const group of data.duties.get(date)?.groups ?? []) {
+      names.set(group.id, groupDisplayName(group.id, group.name));
+    }
   }
   return names;
 }

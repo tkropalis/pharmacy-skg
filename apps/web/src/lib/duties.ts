@@ -23,7 +23,7 @@ export function upcomingDuties(
   return duties.filter((duty) => dutyEnd(duty, timeZone).getTime() > now.getTime());
 }
 
-/** "Wed 7 Oct · overnight duty · 22:00–08:00" */
+/** "Τετ 7 Οκτ · Νυχτερινή εφημερία · 21:00–00:00": the date, the kind and the printed hours. */
 export function describeDuty(duty: PublishedDuty, locale: Locale, text: Dictionary['app']): string {
   const parts = [shortIsoDate(duty.date, locale), text.status.kinds[duty.duty]];
   parts.push(

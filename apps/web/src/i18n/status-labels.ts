@@ -1,4 +1,4 @@
-import type { Locale } from '@pharmacy-skg/core';
+import type { DutyKind, Locale } from '@pharmacy-skg/core';
 
 /**
  * The status labels, defined once. The home screen (app.*.ts), the pharmacy, duty-date and
@@ -7,6 +7,8 @@ import type { Locale } from '@pharmacy-skg/core';
  * no "extended hours". A pharmacy on extended hours reads "Open" like one on regular hours;
  * the map marker's shape and the legend tell them apart. Status is never shown by colour
  * alone: the label is always text.
+ *
+ * `midnight` replaces "tomorrow 00:00" as an end time: "έως τα μεσάνυχτα", "until midnight".
  */
 export const STATUS_LABELS = {
   el: {
@@ -14,11 +16,37 @@ export const STATUS_LABELS = {
     openRegular: 'Ανοιχτό',
     openExtended: 'Ανοιχτό',
     dutyUnknown: 'Εφημερεύει, καλέστε για το ωράριο',
+    midnight: 'τα μεσάνυχτα',
   },
   en: {
     onDuty: 'On duty',
     openRegular: 'Open',
     openExtended: 'Open',
     dutyUnknown: 'On duty, call for the hours',
+    midnight: 'midnight',
   },
 } as const satisfies Record<Locale, Record<string, string>>;
+
+/**
+ * The kinds of duty a published list has, in plain words, defined once for the home screen's
+ * favourites and the duty-date, pharmacy and area pages (docs/decisions.md, Defaults: plain
+ * words). The printed headings ("Διανυκτερεύοντα", "Μεταμεσονύκτια") stay in the PDFs. The
+ * hours always follow the label, so "Νυχτερινή" covers both 21:00–00:00 (the city) and
+ * 21:00–08:00 (some outlying groups); the all-night lists start at 21:00, not after midnight.
+ */
+export const DUTY_KIND_LABELS = {
+  el: {
+    day: 'Εφημερία ημέρας',
+    'saturday-extra': 'Εφημερία Σαββάτου',
+    'on-duty': 'Εφημερία',
+    overnight: 'Νυχτερινή εφημερία',
+    'after-midnight': 'Εφημερία όλη τη νύχτα',
+  },
+  en: {
+    day: 'Day duty',
+    'saturday-extra': 'Saturday duty',
+    'on-duty': 'On duty',
+    overnight: 'Night duty',
+    'after-midnight': 'All-night duty',
+  },
+} as const satisfies Record<Locale, Record<DutyKind, string>>;

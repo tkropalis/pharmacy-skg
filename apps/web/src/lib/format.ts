@@ -40,12 +40,34 @@ export function shortIsoDate(date: string, locale: Locale): string {
   return shortDate(new Date(`${date}T12:00:00Z`), locale, 'UTC');
 }
 
-/** 350 → "350 m", 1234 → "1.2 km" / "1,2 km": locale-formatted, the same unit in both languages. */
+/** Metres and kilometres as each language writes them on signs and in maps apps. */
+const DISTANCE_UNITS: Record<Locale, { readonly m: string; readonly km: string }> = {
+  el: { m: 'μ', km: 'χλμ' },
+  en: { m: 'm', km: 'km' },
+};
+
+/** 350 → "350 m" / "350 μ", 1234 → "1.2 km" / "1,2 χλμ": locale-formatted. */
 export function formatDistance(metres: number, locale: Locale): string {
   const number = (value: number, digits: number) =>
     new Intl.NumberFormat(intlLocale(locale), { maximumFractionDigits: digits }).format(value);
-  if (metres < 1000) return `${number(Math.max(10, Math.round(metres / 10) * 10), 0)} m`;
-  return `${number(metres / 1000, metres < 10_000 ? 1 : 0)} km`;
+  const unit = DISTANCE_UNITS[locale];
+  if (metres < 1000) return `${number(Math.max(10, Math.round(metres / 10) * 10), 0)} ${unit.m}`;
+  return `${number(metres / 1000, metres < 10_000 ? 1 : 0)} ${unit.km}`;
+}
+
+/**
+ * A Greek phone number with a space after the area code, as it is printed in Greece:
+ * "2310 023026" (Thessaloniki), "23920 12345" (the outlying towns), "694 123 4567" (mobiles).
+ * Anything else is returned as given.
+ */
+export function formatPhone(phone: string): string {
+  const digits = phone.replace(/\D/g, '');
+  if (digits.length !== 10) return phone;
+  if (digits.startsWith('231')) return `${digits.slice(0, 4)} ${digits.slice(4)}`;
+  if (digits.startsWith('2')) return `${digits.slice(0, 5)} ${digits.slice(5)}`;
+  if (digits.startsWith('69'))
+    return `${digits.slice(0, 3)} ${digits.slice(3, 6)} ${digits.slice(6)}`;
+  return phone;
 }
 
 /**
