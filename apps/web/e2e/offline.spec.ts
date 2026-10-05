@@ -25,20 +25,26 @@ test('after the first visit the home list and the map load offline', async ({
           const duties = await caches.match('/data/thessaloniki/duties/2026-10-05.json');
           return {
             precache: names.some((n) => n.startsWith('precache-')),
-            assets: names.some((n) => n.startsWith('assets-')),
             data: data !== undefined,
             duties: duties !== undefined,
           };
         }),
       { timeout: 20_000 },
     )
-    .toEqual({ precache: true, assets: true, data: true, duties: true });
+    .toEqual({ precache: true, data: true, duties: true });
 
   // The page must be controlled for the reload to be served by the worker.
   await page.reload();
   await waitForRows(page);
   await waitForMap(page);
   expect(await page.evaluate(() => navigator.serviceWorker.controller !== null)).toBe(true);
+  // The first visit may have loaded the map before the worker took over; this one went through
+  // it, so the map chunk is in the cache that is filled on first use.
+  await expect
+    .poll(() =>
+      page.evaluate(async () => (await caches.keys()).some((name) => name.startsWith('assets-'))),
+    )
+    .toBe(true);
 
   await context.setOffline(true);
   await page.reload();
