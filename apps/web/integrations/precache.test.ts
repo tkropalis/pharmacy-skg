@@ -247,7 +247,6 @@ describe('the worker trims the data cache', () => {
           }),
         delete: () => Promise.resolve(true),
       },
-      Request: class {},
       Response,
       URL,
       Set,
