@@ -14,6 +14,8 @@ export type SearchText = typeof searchEl;
 const PAGE_SIZE = 30;
 /** The history entry that lets the phone's Back button close the search. It has no URL. */
 const HISTORY_KEY = 'medicineSearch';
+/** The closing fade (search.css, .ms.closing). */
+const CLOSE_MS = 140;
 
 type LoadState =
   | { readonly status: 'loading' }
@@ -41,6 +43,7 @@ export function MedicineSearch({ locale, text, onClosed }: Props) {
   const [query, setQuery] = useState('');
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [selected, setSelected] = useState<IndexedMedicine | null>(null);
+  const [closing, setClosing] = useState(false);
   const lastSelected = useRef<string | null>(null);
   const deferredQuery = useDeferredValue(query);
 
@@ -90,6 +93,18 @@ export function MedicineSearch({ locale, text, onClosed }: Props) {
     onClosed();
   }
 
+  /** Close with a short fade (search.css, .ms.closing); at once with reduced motion. */
+  function requestClose() {
+    const dialog = dialogRef.current;
+    if (!dialog || closing) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      dialog.close();
+      return;
+    }
+    setClosing(true);
+    setTimeout(() => dialog.close(), CLOSE_MS);
+  }
+
   const count = result.results.length;
   // Nothing is said before the person types; the field's placeholder is the only prompt.
   const status =
@@ -112,7 +127,17 @@ export function MedicineSearch({ locale, text, onClosed }: Props) {
   const shown = result.results.slice(0, visible);
 
   return (
-    <dialog ref={dialogRef} className="ms" aria-labelledby="ms-title" onClose={onClose}>
+    <dialog
+      ref={dialogRef}
+      className={closing ? 'ms closing' : 'ms'}
+      aria-labelledby="ms-title"
+      onClose={onClose}
+      onCancel={(event) => {
+        // Escape fades out like the Close button.
+        event.preventDefault();
+        requestClose();
+      }}
+    >
       <h2 id="ms-title" className="sr-only">
         {text.title}
       </h2>
@@ -144,12 +169,7 @@ export function MedicineSearch({ locale, text, onClosed }: Props) {
             />
           </form>
         )}
-        <button
-          type="button"
-          className="ms-close"
-          aria-label={text.close}
-          onClick={() => dialogRef.current?.close()}
-        >
+        <button type="button" className="ms-close" aria-label={text.close} onClick={requestClose}>
           <Icon name="close" size={20} />
         </button>
       </div>
@@ -164,7 +184,8 @@ export function MedicineSearch({ locale, text, onClosed }: Props) {
             headingRef={detailsHeadingRef}
           />
         ) : (
-          <>
+          // Back from the details: the results come back in from the side they left.
+          <div className={lastSelected.current ? 'ms-list back' : 'ms-list'}>
             <p className="ms-status" role="status">
               {status}
             </p>
@@ -208,7 +229,7 @@ export function MedicineSearch({ locale, text, onClosed }: Props) {
                 {text.showMore}
               </button>
             )}
-          </>
+          </div>
         )}
       </div>
     </dialog>

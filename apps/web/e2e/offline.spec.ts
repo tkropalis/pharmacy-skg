@@ -107,10 +107,14 @@ test('a new service worker version never reloads a visible page: it offers a but
   await expect(toast).toBeVisible();
   await expect(toast.getByRole('button', { name: 'Ανανέωση' })).toBeVisible();
   await expect(toast.getByRole('button', { name: 'Κλείσιμο', exact: true })).toBeVisible();
-  // The sheet stands above the notice instead of under it.
-  const sheet = await page.locator('.sheet').boundingBox();
+  // The sheet rises (smoothly) to stand above the notice instead of under it.
   const toastBox = await toast.boundingBox();
-  expect((sheet?.y ?? 0) + (sheet?.height ?? 0)).toBeLessThanOrEqual((toastBox?.y ?? 0) + 1);
+  await expect
+    .poll(async () => {
+      const sheet = await page.locator('.sheet').boundingBox();
+      return (sheet?.y ?? 0) + (sheet?.height ?? 0);
+    })
+    .toBeLessThanOrEqual((toastBox?.y ?? 0) + 1);
   // Still the same page, and still usable.
   await page.waitForTimeout(500);
   expect(await page.evaluate(() => (window as unknown as { marker?: string }).marker)).toBe(

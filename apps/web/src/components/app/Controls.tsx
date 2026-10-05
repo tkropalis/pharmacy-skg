@@ -1,12 +1,13 @@
-import { useId, useMemo, useState } from 'react';
+import { useId, useState } from 'react';
 import type { ReactNode } from 'react';
 import type { Dictionary } from '../../i18n/index.ts';
 import { fill } from '../../lib/format.ts';
-import { searchLocalities } from '../../lib/places.ts';
 import type { Locality } from '../../lib/places.ts';
 import { PIN_KINDS } from '../../lib/list.ts';
 import { pinSvg } from '../../lib/pins.ts';
+import { AreaPicker } from './AreaPicker.tsx';
 import { Icon } from './icons.tsx';
+import { Segmented } from './Segmented.tsx';
 
 type Text = Dictionary['app'];
 
@@ -27,8 +28,6 @@ interface OriginControlsProps {
   readonly geo: GeoState;
   readonly far: boolean;
   readonly localities: readonly Locality[];
-  /** The area search needs room (and the on-screen keyboard): ask for a bigger sheet. */
-  readonly onNeedRoom: () => void;
   readonly onUseLocation: () => void;
   readonly onPickArea: (locality: Locality) => void;
   readonly onClear: () => void;
@@ -51,52 +50,38 @@ export function OriginControls({
   geo,
   far,
   localities,
-  onNeedRoom,
   onUseLocation,
   onPickArea,
   onClear,
   extra,
 }: OriginControlsProps) {
-  const inputId = useId();
-  const listId = useId();
+  const headingId = useId();
   const [pickerOpen, setPickerOpen] = useState(false);
-  const [query, setQuery] = useState('');
-  const matches = useMemo(() => searchLocalities(localities, query, 8), [localities, query]);
   const card = variant === 'card';
+  const locating = geo === 'locating';
   const geoMessage =
     geo === 'denied'
       ? text.origin.deniedShort
-      : geo === 'unavailable'
+      : geo === 'unavailable' || geo === 'unsupported'
         ? text.origin.unavailable
-        : geo === 'unsupported'
-          ? text.origin.unsupported
-          : null;
+        : null;
 
   const buttons = (
     <div className="control-row">
-      <button
-        type="button"
-        className="action primary"
-        disabled={geo === 'locating'}
-        onClick={onUseLocation}
-      >
-        <Icon name="locate" />
-        {geo === 'locating' ? text.origin.locating : text.origin.useLocation}
+      <button type="button" className="action primary" disabled={locating} onClick={onUseLocation}>
+        <span className={locating ? 'spin' : undefined}>
+          <Icon name="locate" />
+        </span>
+        {locating ? text.origin.locating : text.origin.useLocation}
       </button>
       <button
         type="button"
         className="action"
-        aria-expanded={pickerOpen}
-        aria-controls={`${inputId}-picker`}
-        onClick={() => {
-          if (!pickerOpen) onNeedRoom();
-          setPickerOpen((open) => !open);
-        }}
+        aria-haspopup="dialog"
+        onClick={() => setPickerOpen(true)}
       >
-        {card ? text.nearby.area : text.origin.areaLabel}
-        <span className={`chev${pickerOpen ? ' up' : ''}`} aria-hidden="true">
-          <Icon name="chevron" />
-        </span>
+        <Icon name="map" />
+        {text.origin.areaLabel}
       </button>
       {extra}
     </div>
@@ -117,54 +102,12 @@ export function OriginControls({
   );
 
   const picker = pickerOpen && (
-    <div id={`${inputId}-picker`} className="picker">
-      <label htmlFor={inputId} className="field-label">
-        {text.origin.areaSearch}
-      </label>
-      <input
-        id={inputId}
-        className="field"
-        type="search"
-        value={query}
-        placeholder={text.origin.areaHint}
-        autoComplete="off"
-        autoCapitalize="off"
-        spellCheck={false}
-        aria-describedby={`${listId}-count`}
-        onChange={(event) => setQuery(event.target.value)}
-      />
-      <p id={`${listId}-count`} className="sr-only" role="status">
-        {matches.length === 0
-          ? text.origin.areaNone
-          : matches.length === 1
-            ? text.origin.areaOne
-            : fill(text.origin.areaCount, { n: matches.length })}
-      </p>
-      {matches.length === 0 ? (
-        <p className="hint">{text.origin.areaNone}</p>
-      ) : (
-        <ul id={listId} className="picker-list">
-          {matches.map((locality) => (
-            <li key={locality.name}>
-              <button
-                type="button"
-                className="picker-item"
-                onClick={() => {
-                  onPickArea(locality);
-                  setPickerOpen(false);
-                  setQuery('');
-                }}
-              >
-                <span>{locality.name}</span>
-                <span className="muted">
-                  {fill(text.origin.areaPharmacies, { n: locality.count })}
-                </span>
-              </button>
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
+    <AreaPicker
+      text={text}
+      localities={localities}
+      onPick={onPickArea}
+      onClose={() => setPickerOpen(false)}
+    />
   );
 
   if (card) {
@@ -178,8 +121,8 @@ export function OriginControls({
   }
 
   return (
-    <section className="control" aria-labelledby={`${inputId}-h`}>
-      <h2 id={`${inputId}-h`} className="control-title">
+    <section className="control" aria-labelledby={headingId}>
+      <h2 id={headingId} className="control-title">
         {text.origin.heading}
       </h2>
       {buttons}
@@ -291,7 +234,7 @@ interface ListFilterChipsProps {
 
 /**
  * "All" and "On duty": by day, so people can see only the duty pharmacies. The count is in the
- * summary line, for the chosen one; each chip carries its own in data-count (tests).
+ * summary line, for the chosen one; each option carries its own in data-count (tests).
  */
 export function ListFilterChips({
   text,
@@ -300,25 +243,19 @@ export function ListFilterChips({
   dutyCount,
   onChange,
 }: ListFilterChipsProps) {
-  const chips = [
-    { id: 'all', label: text.list.filterAll, count: allCount },
-    { id: 'duty', label: text.list.filterDuty, count: dutyCount },
-  ] as const;
   return (
-    <div className="filter-chips" role="group" aria-label={text.list.filterLabel}>
-      {chips.map((chip) => (
-        <button
-          key={chip.id}
-          type="button"
-          className="chip"
-          aria-pressed={active === chip.id}
-          data-count={chip.count}
-          onClick={() => onChange(chip.id)}
-        >
-          {chip.label}
-        </button>
-      ))}
-    </div>
+    <Segmented
+      mode="toggle"
+      compact
+      buttonClass="chip"
+      label={text.list.filterLabel}
+      value={active}
+      options={[
+        { id: 'all', label: text.list.filterAll, count: allCount },
+        { id: 'duty', label: text.list.filterDuty, count: dutyCount },
+      ]}
+      onChange={onChange}
+    />
   );
 }
 
@@ -359,18 +296,19 @@ export function TimeControls({
       <h2 id={`${id}-h`} className="control-title">
         {text.time.heading}
       </h2>
-      <div className="segmented" role="group" aria-labelledby={`${id}-h`}>
-        <button type="button" aria-pressed={!custom} onClick={onNow}>
-          {text.time.now}
-        </button>
-        <button
-          type="button"
-          aria-pressed={custom}
-          onClick={() => !custom && onCustom(currentDate, currentTime)}
-        >
-          {text.time.other}
-        </button>
-      </div>
+      <Segmented
+        mode="toggle"
+        labelledBy={`${id}-h`}
+        value={custom ? 'custom' : 'now'}
+        options={[
+          { id: 'now', label: text.time.now },
+          { id: 'custom', label: text.time.other },
+        ]}
+        onChange={(choice) => {
+          if (choice === 'now') onNow();
+          else if (!custom) onCustom(currentDate, currentTime);
+        }}
+      />
       {mode.kind === 'custom' && (
         <div className="control-row time-fields">
           <div>
@@ -430,7 +368,7 @@ export function Filters({ text, showClosed, onShowClosed }: FiltersProps) {
     closed: text.status.legend.closed,
   };
   return (
-    <section className="control" aria-label={text.filters.legend}>
+    <section className="control">
       <label className="check" htmlFor={`${id}-closed`}>
         <input
           id={`${id}-closed`}
@@ -441,7 +379,12 @@ export function Filters({ text, showClosed, onShowClosed }: FiltersProps) {
         <span>{text.filters.showClosed}</span>
       </label>
       <details className="legend">
-        <summary>{text.filters.legend}</summary>
+        <summary>
+          {text.filters.legend}
+          <span className="chev" aria-hidden="true">
+            <Icon name="chevron" />
+          </span>
+        </summary>
         <ul>
           {PIN_KINDS.map((kind) => (
             <li key={kind}>

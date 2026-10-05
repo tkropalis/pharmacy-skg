@@ -85,6 +85,47 @@ export function pinSvg(
   );
 }
 
+/** The drop of the chosen pharmacy's marker (viewBox 0 0 40 52): a round head over a point. */
+const DROP = 'M20 3a16 16 0 0 1 16 16c0 9.2-8.6 16-16 29C12.6 35 4 28.2 4 19A16 16 0 0 1 20 3z';
+
+/** What the head of the chosen marker shows: the small markers' symbols, larger. */
+function headMark(kind: PinKind, ink: string): string {
+  switch (kind) {
+    case 'regular':
+      return `<circle cx="20" cy="19" r="5.5" fill="${ink}"/>`;
+    case 'extended':
+      return `<path d="M20 12.5l6.5 6.5-6.5 6.5-6.5-6.5z" fill="${ink}"/>`;
+    default: {
+      const icon = GLYPHS[kind];
+      if (icon === null) return '';
+      // glyph() centres in a 32-unit box; the head's centre is at (20, 19).
+      return `<g transform="translate(4 3)">${glyph(icon, ink, kind === 'duty' ? 15 : 13, kind === 'duty' ? 60 : 36)}</g>`;
+    }
+  }
+}
+
+/**
+ * The chosen pharmacy's marker (the map draws it as an element over the map, map-controller.ts):
+ * the same colour and symbol as its small marker, as a drop with a white edge, so it stands
+ * clear of the pins around it. An approximate location keeps the hollow, dashed look.
+ */
+export function selectedPinSvg(kind: PinKind, approximate = false): string {
+  const color = PIN_COLORS[kind];
+  const hollow = approximate || kind === 'duty-unknown';
+  const fill = hollow ? '#ffffff' : color;
+  const ink = hollow ? color : '#ffffff';
+  const edge = hollow
+    ? `stroke="${color}" stroke-width="2.6"${approximate ? ' stroke-dasharray="3.4 2.8"' : ''}`
+    : 'stroke="none"';
+  return (
+    '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="52" viewBox="0 0 40 52" aria-hidden="true">' +
+    `<path d="${DROP}" fill="#ffffff" stroke="#ffffff" stroke-width="5" stroke-linejoin="round"/>` +
+    `<path d="${DROP}" fill="${fill}" ${edge} stroke-linejoin="round"/>` +
+    headMark(kind, ink) +
+    '</svg>'
+  );
+}
+
 /** The map image name of a marker. */
 export function pinImageName(kind: PinKind, approximate: boolean): string {
   return `pin-${kind}${approximate ? '-approx' : ''}`;

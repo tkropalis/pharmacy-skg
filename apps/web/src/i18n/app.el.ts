@@ -45,7 +45,6 @@ export const appEl = {
 
   nearby: {
     title: 'Κοντά σας',
-    area: 'Περιοχή',
   },
 
   origin: {
@@ -55,9 +54,8 @@ export const appEl = {
     locating: 'Εντοπισμός…',
     deniedShort: 'Η τοποθεσία δεν επιτρέπεται.',
     unavailable: 'Δεν βρέθηκε η τοποθεσία σας. Διαλέξτε περιοχή.',
-    unsupported: 'Δεν βρέθηκε η τοποθεσία σας. Διαλέξτε περιοχή.',
     deniedHelpIos: 'Ρυθμίσεις › Εφαρμογές › Safari › Τοποθεσία.',
-    deniedHelpOther: 'Επιτρέψτε την τοποθεσία στις ρυθμίσεις.',
+    deniedHelpOther: 'Αλλάξτε το στις ρυθμίσεις.',
     far: 'Είστε μακριά από τη Θεσσαλονίκη.',
     myLocation: 'Κοντά μου',
     here: 'Η τοποθεσία σας',

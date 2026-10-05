@@ -51,8 +51,10 @@ const analytics = import.meta.env.PROD && process.env.VERCEL === '1';
     <meta name="description" content={description} />
     {(alternates === null || route === 'report') && <meta name="robots" content="noindex" />}
 
-    <meta name="color-scheme" content="light only" />
+    <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content={THEME_COLORS.light} />
+    <!-- Before the first paint, so it already has the night look's colours (theme.js). -->
+    <script is:inline src="/theme.js"></script>
     <script is:inline src="/stale-check.js"></script>
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />

@@ -1,5 +1,8 @@
 :root {
-  /* One theme, light, on every device (docs/decisions.md, Look). */
+  /*
+   * Light by day; the night look after sunset in Thessaloniki or when the device asks for dark
+   * (public/theme.js sets data-theme before the first paint; docs/decisions.md, Look).
+   */
   color-scheme: light;
 
   --bg: #f4f7f5;
@@ -29,6 +32,13 @@
   --shadow-lg: 0 2px 6px rgb(20 40 30 / 0.08), 0 12px 32px rgb(20 40 30 / 0.12);
   --content: 44rem;
 
+  /* Motion: one curve that slows into place, and three durations. */
+  --ease-out: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-1: 120ms;
+  --dur-2: 200ms;
+  --dur-3: 280ms;
+
   /* Notches, status bars and the home indicator (needs viewport-fit=cover, see Base.astro). */
   --safe-t: env(safe-area-inset-top, 0px);
   --safe-r: env(safe-area-inset-right, 0px);
@@ -36,10 +46,74 @@
   --safe-l: env(safe-area-inset-left, 0px);
 }
 
+/* The night look: the same roles on a deep green-black, with lighter ink. */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg: #0e1512;
+  --surface: #151d19;
+  --soft: #1f2a25;
+  --fg: #e4ece7;
+  --muted: #a0b2a9;
+  --accent: #43c584;
+  --accent-ink: #8ddfb3;
+  --accent-soft: #183628;
+  --on-accent: #04140c;
+  --border: #26322c;
+  --border-strong: #64786e;
+  --focus: #86adff;
+  --warn-bg: #33270f;
+  --warn-fg: #f4d79c;
+  --warn-border: #a97f2c;
+  --danger-bg: #3a1714;
+  --danger-fg: #ffbab2;
+  --danger-border: #e0605a;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 4px 14px rgb(0 0 0 / 0.35);
+  --shadow-lg: 0 2px 6px rgb(0 0 0 / 0.4), 0 12px 32px rgb(0 0 0 / 0.45);
+}
+
+/* Without JavaScript (theme.js never ran): the device's own preference. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+
+    --bg: #0e1512;
+    --surface: #151d19;
+    --soft: #1f2a25;
+    --fg: #e4ece7;
+    --muted: #a0b2a9;
+    --accent: #43c584;
+    --accent-ink: #8ddfb3;
+    --accent-soft: #183628;
+    --on-accent: #04140c;
+    --border: #26322c;
+    --border-strong: #64786e;
+    --focus: #86adff;
+    --warn-bg: #33270f;
+    --warn-fg: #f4d79c;
+    --warn-border: #a97f2c;
+    --danger-bg: #3a1714;
+    --danger-fg: #ffbab2;
+    --danger-border: #e0605a;
+  }
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+/*
+ * iPhones and iPads: the text follows the size set in Settings › Display › Text Size (every size
+ * here is in rem). Touch screens only: on a Mac the same keyword means a small 13px.
+ */
+@supports (font: -apple-system-body) {
+  @media (pointer: coarse) {
+    html {
+      font: -apple-system-body;
+    }
+  }
 }
 
 html {
@@ -214,6 +288,7 @@ a {
 }
 
 .update-toast {
+  animation: toast-in var(--dur-3) var(--ease-out-expo) both;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -282,6 +357,13 @@ html.has-update-toast body.app {
 
 .callout a {
   color: inherit;
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

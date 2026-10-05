@@ -33,6 +33,8 @@ export const REPO_URL = `https://github.com/${REPO}`;
 /** Theme colours; keep in sync with the tokens in styles/global.css. */
 export const THEME_COLORS = {
   light: '#ffffff',
+  /** The night look's surface (global.css, scripts/theme.js). */
+  dark: '#151d19',
   accent: '#0a7d45',
 } as const;
 

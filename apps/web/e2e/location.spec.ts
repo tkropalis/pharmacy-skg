@@ -123,7 +123,7 @@ test.describe('when the location is not given', () => {
     await expect(page.locator('.origin-chip')).toHaveCount(0);
 
     // The picker is inline in the card: no panel to dig through.
-    await card.getByRole('button', { name: text.nearby.area, exact: true }).click();
+    await card.getByRole('button', { name: text.origin.areaLabel, exact: true }).click();
     await page.getByLabel(text.origin.areaSearch).fill('kalamaria');
     await page.locator('.picker-item', { hasText: 'Καλαμαριά' }).click();
     await expect(page.locator('.nearby')).toHaveCount(0);
@@ -139,7 +139,7 @@ test.describe('when the location is not given', () => {
     await waitForRows(page);
     await page
       .locator('.nearby')
-      .getByRole('button', { name: text.nearby.area, exact: true })
+      .getByRole('button', { name: text.origin.areaLabel, exact: true })
       .click();
     await page.getByLabel(text.origin.areaSearch).fill('kalamaria');
     await page.locator('.picker-item', { hasText: 'Καλαμαριά' }).click();

@@ -53,9 +53,9 @@ test.describe('a day whose file has only some area groups', () => {
     // Without an origin: the missing groups are listed.
     await expect(page.getByRole('note').filter({ hasText: 'Δήμος Θέρμης' })).toBeVisible();
 
-    await openControls(page);
+    // With no origin, the row at the top of the list is the place control.
     await page
-      .locator('#controls')
+      .locator('.nearby')
       .getByRole('button', { name: text.origin.areaLabel, exact: true })
       .click();
     await page.getByLabel(text.origin.areaSearch).fill('thermi');

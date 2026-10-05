@@ -2,6 +2,8 @@ import type { Locale } from '@pharmacy-skg/core';
 
 /** OpenFreeMap's Positron: a quiet, pale base, so the pharmacy markers are what stands out. */
 export const STYLE_URL = 'https://tiles.openfreemap.org/styles/positron';
+/** Its dark counterpart, for the night look (docs/decisions.md, Look). */
+export const DARK_STYLE_URL = 'https://tiles.openfreemap.org/styles/dark';
 
 type Expression = unknown[];
 
@@ -58,9 +60,10 @@ const STYLE_TIMEOUT_MS = 20_000;
  */
 export async function loadMapStyle(
   locale: Locale,
+  dark = false,
   timeoutMs: number = STYLE_TIMEOUT_MS,
 ): Promise<Record<string, unknown>> {
-  const response = await fetch(STYLE_URL, {
+  const response = await fetch(dark ? DARK_STYLE_URL : STYLE_URL, {
     signal: AbortSignal.timeout(timeoutMs),
   });
   if (!response.ok) throw new Error(`Style request failed: HTTP ${response.status}`);

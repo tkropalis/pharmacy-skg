@@ -51,15 +51,22 @@ test("the home list with the filters open and a row's details open has no violat
   await page.goto('/');
   const rows = await waitForRows(page);
   await openControls(page);
-  await page
-    .locator('#controls')
-    .getByRole('button', { name: /^Περιοχή/ })
-    .click();
-  // A row's details: directions apps, favourite, share and the pharmacy's page.
+  // A row's details: favourite, share, the pharmacy's page and the other maps apps.
   await rows.first().locator('.row-toggle').click();
   await expect(rows.first().locator('.row-details')).toBeVisible();
   const results = await new AxeBuilder({ page }).withTags(WCAG_AA).analyze();
   expect(results.violations.map((v) => [v.id, v.nodes.map((n) => n.html.slice(0, 160))])).toEqual(
+    [],
+  );
+
+  // The area picker is a dialog of its own.
+  await page
+    .locator('#controls')
+    .getByRole('button', { name: /^Περιοχή/ })
+    .click();
+  await expect(page.locator('dialog.ap')).toBeVisible();
+  const dialog = await new AxeBuilder({ page }).include('dialog.ap').withTags(WCAG_AA).analyze();
+  expect(dialog.violations.map((v) => [v.id, v.nodes.map((n) => n.html.slice(0, 160))])).toEqual(
     [],
   );
 });

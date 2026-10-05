@@ -3,7 +3,6 @@ import {
   faCalendar,
   faChevronDown,
   faDiamondTurnRight,
-  faEllipsis,
   faLocationCrosshairs,
   faLocationDot,
   faMagnifyingGlass,
@@ -14,7 +13,7 @@ import {
   faTriangleExclamation,
   faXmark,
 } from '@fortawesome/free-solid-svg-icons';
-import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons';
+import { faClock, faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons';
 import type { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 /**
@@ -34,7 +33,7 @@ const ICONS = {
   sliders: faSliders,
   chevron: faChevronDown,
   close: faXmark,
-  more: faEllipsis,
+  clock: faClock,
   search: faMagnifyingGlass,
   back: faArrowLeft,
   warning: faTriangleExclamation,

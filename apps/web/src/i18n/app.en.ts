@@ -39,7 +39,6 @@ export const appEn: Dictionary['app'] = {
 
   nearby: {
     title: 'Near you',
-    area: 'Area',
   },
 
   origin: {
@@ -49,9 +48,8 @@ export const appEn: Dictionary['app'] = {
     locating: 'Locating…',
     deniedShort: 'Location not allowed.',
     unavailable: 'Your location could not be found. Choose an area.',
-    unsupported: 'Your location could not be found. Choose an area.',
     deniedHelpIos: 'Settings › Apps › Safari › Location.',
-    deniedHelpOther: 'Allow location in settings.',
+    deniedHelpOther: 'Change it in settings.',
     far: 'You are far from Thessaloniki.',
     myLocation: 'Near me',
     here: 'Your location',
