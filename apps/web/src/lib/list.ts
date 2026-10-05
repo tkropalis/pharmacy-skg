@@ -81,6 +81,10 @@ export function buildRows(
   return { rows: [...open, ...closed], openCount: open.length };
 }
 
+function distanceTo(origin: Origin | null, pharmacy: Pharmacy): number | null {
+  return origin && pharmacy.location ? distanceMetres(origin, pharmacy.location) : null;
+}
+
 function rowOf(
   data: CityData,
   pharmacy: Pharmacy,
@@ -88,17 +92,22 @@ function rowOf(
   origin: Origin | null,
 ): NearbyPharmacy {
   const { status } = pharmacyStatus(data, pharmacy.id, at);
-  const distance = origin && pharmacy.location ? distanceMetres(origin, pharmacy.location) : null;
-  return { pharmacy, status, distance };
+  return { pharmacy, status, distance: distanceTo(origin, pharmacy) };
 }
 
-/** One pharmacy's row (favourites), or null when the id is not in the data any more. */
+/**
+ * One pharmacy's row (favourites), or null when the id is not in the data any more. The core
+ * engine decides that (`found`), so the screen and the engine cannot disagree about it.
+ */
 export function rowFor(
   data: CityData,
   pharmacyId: string,
   at: Date,
   origin: Origin | null,
 ): Row | null {
+  const { found, status } = pharmacyStatus(data, pharmacyId, at);
+  if (!found) return null;
   const pharmacy = data.pharmacies.find((p) => p.id === pharmacyId);
-  return pharmacy ? toRow(rowOf(data, pharmacy, at, origin)) : null;
+  if (pharmacy === undefined) return null;
+  return toRow({ pharmacy, status, distance: distanceTo(origin, pharmacy) });
 }
