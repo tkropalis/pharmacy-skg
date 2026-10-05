@@ -1,0 +1,56 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import { t } from '../../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const d = t(locale).home;
+---
+
+<!-- The map island (MapLibre, bottom sheet) mounts into #app in a later change. -->
+<div class="container">
+  <div id="app" class="app-region" role="region" aria-label={d.appRegionLabel}>
+    <svg class="cross" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <rect width="32" height="32" rx="6"></rect>
+      <path d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"></path>
+    </svg>
+    <h1>{d.title}</h1>
+    <p>
+      {d.intro} <strong>{d.comingSoon}</strong>
+    </p>
+    <p>
+      {d.untilThen}{' '}
+      <a href="https://fsth.gr/" rel="noopener">
+        {d.fsthName}
+      </a>
+      .
+    </p>
+    <noscript>
+      <p>{d.noScript}</p>
+    </noscript>
+  </div>
+</div>
+
+<style>
+  .app-region {
+    min-height: 50dvh;
+    padding-block: 2.5rem;
+  }
+
+  .cross {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .cross rect {
+    fill: var(--accent);
+  }
+
+  .cross path {
+    fill: var(--on-accent);
+  }
+</style>

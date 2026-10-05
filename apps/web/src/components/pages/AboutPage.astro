@@ -1,0 +1,124 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import { REPO_URL } from '../../config.ts';
+import { localizedPath, t } from '../../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const d = t(locale).about;
+const status = t(locale).status;
+const [what, hours, labels] = d.sections;
+
+const creditLinks: Record<keyof typeof d.credits, string> = {
+  fsth: 'https://www.thess.guide/',
+  pkm: 'https://www.pkm.gov.gr/',
+  overture: 'https://overturemaps.org/',
+  osm: 'https://www.openstreetmap.org/copyright',
+  openFreeMap: 'https://openfreemap.org/',
+};
+---
+
+<div class="container prose">
+  <h1>{d.title}</h1>
+
+  <div class="callout" role="note">
+    <p>
+      <strong>{d.disclaimerTitle}.</strong> {d.disclaimerBody}
+    </p>
+  </div>
+
+  {what && (
+    <section>
+      <h2>{what.heading}</h2>
+      {what.paragraphs.map((p) => (
+        <p>{p}</p>
+      ))}
+    </section>
+  )}
+
+  {hours && (
+    <section>
+      <h2>{hours.heading}</h2>
+      {hours.paragraphs.map((p) => (
+        <p>{p}</p>
+      ))}
+    </section>
+  )}
+
+  {labels && (
+    <section>
+      <h2>{labels.heading}</h2>
+      {labels.paragraphs.map((p) => (
+        <p>{p}</p>
+      ))}
+      <dl class="statuses">
+        <dt>
+          <span class="status-label">{status.onDuty}</span>
+        </dt>
+        <dd>{d.statusList.onDutyMeaning}</dd>
+        <dt>
+          <span class="status-label">{status.openRegular}</span>
+        </dt>
+        <dd>{d.statusList.openRegularMeaning}</dd>
+      </dl>
+    </section>
+  )}
+
+  <section>
+    <h2>{d.emergencyHeading}</h2>
+    <p>{d.emergencyBody}</p>
+  </section>
+
+  <section>
+    <h2>{d.creditsHeading}</h2>
+    <p>{d.creditsIntro}</p>
+    <ul>
+      {(Object.keys(d.credits) as (keyof typeof d.credits)[]).map((id) => (
+        <li>
+          {d.credits[id]}{' '}
+          <a href={creditLinks[id]} rel="noopener">
+            {new URL(creditLinks[id]).hostname.replace(/^www\./, '')}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section>
+    <h2>{d.sourceHeading}</h2>
+    <p>
+      {d.sourceBody}{' '}
+      <a href={REPO_URL} rel="noopener">
+        GitHub
+      </a>
+    </p>
+    <p>
+      <a href={localizedPath(locale, 'report')}>{d.reportCta}</a>
+    </p>
+  </section>
+</div>
+
+<style>
+  .statuses {
+    margin: 0 0 var(--space);
+  }
+
+  .statuses dt {
+    margin-top: 0.75rem;
+  }
+
+  .statuses dd {
+    margin: 0.25rem 0 0;
+  }
+
+  .status-label {
+    display: inline-block;
+    padding: 0.125rem 0.625rem;
+    border: 2px solid var(--accent);
+    border-radius: 999px;
+    font-weight: 700;
+  }
+</style>

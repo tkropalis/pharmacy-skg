@@ -1,0 +1,43 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import { REPO_URL } from '../../config.ts';
+import { t } from '../../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const d = t(locale).report;
+---
+
+<div class="container prose">
+  <h1>{d.title}</h1>
+  <p>{d.intro}</p>
+
+  <div class="callout danger" role="note">
+    <p>
+      <strong>{d.warningTitle}.</strong> {d.warningBody}
+    </p>
+  </div>
+
+  <!--
+    Mounted by scripts/report-form.tsx from a bundled module script rather than an Astro
+    island, because islands emit inline scripts that the site's Content-Security-Policy
+    (vercel.json, script-src 'self') forbids.
+  -->
+  <div id="report-form" data-locale={locale} data-labels={JSON.stringify(d.form)}></div>
+
+  <noscript>
+    <p>
+      {d.form.noScript}{' '}
+      <a href={`${REPO_URL}/issues/new`} rel="noopener">
+        GitHub
+      </a>
+    </p>
+  </noscript>
+</div>
+
+<script>
+  import '../../scripts/report-form.tsx';
+</script>
