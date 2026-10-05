@@ -5,58 +5,40 @@ type Strings<T> = { [K in keyof T]: T[K] extends string ? string : Strings<T[K]>
 /** The medicine search in English: the same keys as search.el.ts. */
 export const searchEn: Strings<typeof searchEl> = {
   open: 'Medicines',
-  openLabel: 'Medicines: find prices and shortages',
+  openLabel: 'Medicines: search',
   title: 'Find a medicine',
   close: 'Close',
-  inputLabel: 'Medicine name or active substance',
-  placeholder: 'e.g. Depon or paracetamol',
-  privacy: 'The search happens only on your phone or computer. Nothing is sent anywhere.',
-  loading: 'Loading the list of medicines…',
-  loadError: 'The list of medicines did not load.',
-  loadErrorHint: 'Check your connection and try again.',
+  inputLabel: 'Medicine name',
+  placeholder: 'Medicine name, e.g. Depon',
+  loading: 'Loading…',
+  loadError: 'Did not load. Check your connection.',
   retry: 'Try again',
-  hint: 'Type at least two letters of the name.',
-  none: 'No medicine found with that name. Try fewer letters.',
-  one: '1 medicine found',
-  many: '{n} medicines found',
-  showing: 'Showing {shown} of {total}',
+  hint: 'Type at least two letters.',
+  none: 'No medicine found.',
+  one: '1 medicine',
+  many: '{n} medicines',
   showMore: 'Show more',
-  resultsLabel: 'Search results',
+  resultsLabel: 'Results',
   maxPrice: 'Maximum price',
   indicativePrice: 'Indicative price',
   shortage: 'Hard to find',
 
   details: {
-    back: 'Back to the results',
+    back: 'Back',
     substance: 'Active substance',
     company: 'Company',
-    barcode: 'Code on the pack',
-    description: 'As written in the price list',
-    maxPriceNote:
-      'This is the maximum price set by the Ministry of Health, VAT included. It is the same at every pharmacy.',
-    prescriptionNote:
-      'With a prescription, what you pay depends on your insurance. Your pharmacist will tell you.',
-    indicativeNote:
-      'No prescription needed. The price is indicative: each pharmacy may charge a different price.',
-    notReimbursed: 'According to the price list, insurance does not pay for it.',
-    shortageFromTo:
-      'The National Organisation for Medicines lists it as hard to find, from {from} until about {to}.',
-    shortageFrom: 'The National Organisation for Medicines lists it as hard to find, from {from}.',
-    shortageAdvice: 'Ask your pharmacist whether they have it or what else could work.',
-    stock: 'We do not know which pharmacies have it. Call the pharmacy before you go.',
-    priceSource: 'Price source: Ministry of Health, price list of {date}',
-    shortageSource: 'Source: National Organisation for Medicines, list of {date}',
+    maxPriceNote: 'The same at every pharmacy.',
+    indicativeNote: 'May differ from pharmacy to pharmacy.',
+    notReimbursed: 'Not covered by insurance.',
+    shortageUntil: 'Until about {to}.',
+    shortageAdvice: 'Ask your pharmacist for an alternative.',
   },
 
   /** Credits on the about page, after its own list. */
   credits: {
-    moh: 'Medicine prices in the medicine search: Ministry of Health, price lists.',
+    moh: 'Medicine prices: Ministry of Health, price lists.',
     eof: 'Medicines that are hard to find: National Organisation for Medicines.',
   },
-
-  ask: 'Ask your pharmacist. This is information, not medical advice.',
-  sources:
-    'Prices: Ministry of Health price lists. Shortages: National Organisation for Medicines, list of {date}. The list was updated on {updated}.',
 
   forms: {
     'F.C.TAB': 'Coated tablets',
@@ -80,6 +62,7 @@ export const searchEn: Strings<typeof searchEl> = {
     'ORAL.SOL': 'Oral solution',
     'ORAL.SUSP': 'Oral suspension',
     'EFF.GRAN': 'Effervescent granules',
+    'GRA.SACHET': 'Granules in sachets',
     'INJ.SOL': 'Solution for injection',
     'INJ.SUSP': 'Suspension for injection',
     'INJ.SO.PFS': 'Injection in a ready-to-use syringe',

@@ -30,7 +30,8 @@ pnpm test           # Vitest (colocated *.test.ts)
 - **Vercel:** don't use the Vercel connector or MCP. The owner manages the Vercel project.
 - **Public repo:** never commit secrets or personal data.
 - **Duty dates:** publish only officially published dates. A reconstructed rotation stays internal (decision D11).
-- **Neutrality:** no ads, rankings, promotions or medical claims. Always show the data source and how fresh the data is.
+- **Neutrality:** no ads, rankings, promotions or medical claims. Always show how fresh the data is; credit every source on the about page.
+- **Minimal UI:** keep on-screen copy as short as possible (the owner, 5 Oct 2026): no explanations of sources, privacy or how the app works outside the about and privacy pages.
 - **Privacy:** the user's location and medicine searches never leave the device.
 - **Workflow:** every milestone lands as a pull request (decision D18).
 

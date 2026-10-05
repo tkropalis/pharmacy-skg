@@ -1,7 +1,7 @@
 import { memo, useId, useState } from 'react';
 import type { ReactNode } from 'react';
 import type { Locale } from '@pharmacy-skg/core';
-import { localizedPath, pharmacyPath } from '../../i18n/routes.ts';
+import { pharmacyPath } from '../../i18n/routes.ts';
 import type { Dictionary } from '../../i18n/index.ts';
 import {
   DIRECTIONS_APPS,
@@ -177,12 +177,10 @@ function PharmacyRowView({
 
       {open && (
         <div className="row-details" id={detailsId}>
-          <p className="row-full">{view.label}</p>
           {pharmacy.phone === null && <p className="row-note">{text.row.noPhone}</p>}
           {approximate && <p className="row-note">{text.row.approximate}</p>}
           {pharmacy.location === null && <p className="row-note">{text.row.noLocation}</p>}
           <p className="row-menu">
-            <span className="row-menu-label">{text.row.directionsTo}</span>
             {DIRECTIONS_APPS.map((app) => (
               <a
                 key={app}
@@ -224,14 +222,6 @@ function PharmacyRowView({
             </button>
             <a className="detail-link" href={pharmacyPath(locale, pharmacy.id)}>
               {text.row.page}
-            </a>
-            <a
-              className="detail-link"
-              href={`${localizedPath(locale, 'report')}?pharmacy=${encodeURIComponent(pharmacy.id)}`}
-              aria-label={fill(text.row.reportLabel, { name: pharmacy.name })}
-            >
-              <Icon name="flag" size={16} />
-              {text.row.report}
             </a>
           </p>
         </div>

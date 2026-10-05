@@ -22,7 +22,12 @@ async function openSearch(page: Page, label: RegExp = /^Φάρμακα/) {
   await page.getByRole('button', { name: label }).click();
   const dialog = page.getByRole('dialog', { name: searchEl.title });
   await expect(dialog).toBeVisible();
-  await expect(dialog.getByRole('status')).toHaveText(searchEl.hint);
+  // Nothing is said before the person types: the field's placeholder is the only prompt.
+  await expect(dialog.getByRole('status')).toHaveText('');
+  await expect(dialog.getByLabel(searchEl.inputLabel)).toHaveAttribute(
+    'placeholder',
+    searchEl.placeholder,
+  );
   return dialog;
 }
 
@@ -43,22 +48,21 @@ test('finds a medicine typed in Greek, shows its price and details, and closes',
   const input = dialog.getByLabel(searchEl.inputLabel);
   await expect(input).toBeFocused();
   await input.fill('ντεπον');
-  await expect(dialog.getByRole('status')).toHaveText(/^Βρέθηκαν \d+ φάρμακα$/);
+  await expect(dialog.getByRole('status')).toHaveText(/^\d+ φάρμακα$/);
+  // One character is not enough yet.
+  await input.fill('ν');
+  await expect(dialog.getByRole('status')).toHaveText(searchEl.hint);
+  await input.fill('ντεπον');
   const results = dialog.getByRole('list', { name: searchEl.resultsLabel }).getByRole('button');
   await expect(results.first()).toContainText('DEPON');
-  // Non-prescription: the price is labelled as only indicative.
   await expect(results.first()).toContainText(/\d+,\d\d\s€/);
-  await expect(results.first()).toContainText(searchEl.indicativePrice);
 
+  // Non-prescription: the details label the price as only indicative. No sources or notes.
   await results.first().click();
   await expect(dialog.getByRole('heading', { level: 3 })).toBeFocused();
+  await expect(dialog).toContainText(searchEl.indicativePrice);
   await expect(dialog).toContainText(searchEl.details.indicativeNote);
-  await expect(dialog).toContainText(searchEl.details.stock);
-  await expect(dialog).toContainText(searchEl.ask);
-  await expect(dialog.getByRole('link', { name: /Πηγή τιμής: Υπουργείο Υγείας/ })).toHaveAttribute(
-    'href',
-    /^https:\/\/www\.moh\.gov\.gr\//,
-  );
+  await expect(dialog.getByRole('link')).toHaveCount(0);
   await dialog.getByRole('button', { name: searchEl.details.back }).click();
   await expect(results.first()).toBeFocused();
 
@@ -89,13 +93,11 @@ test('labels a prescription price as the maximum and flags an ΕΟΦ shortage', 
   await dialog.getByLabel(searchEl.inputLabel).fill(short.barcode);
   const row = dialog.getByRole('list', { name: searchEl.resultsLabel }).getByRole('button');
   await expect(row).toHaveCount(1);
-  await expect(row).toContainText(searchEl.maxPrice);
   await expect(row).toContainText(searchEl.shortage);
   await row.click();
+  await expect(dialog).toContainText(searchEl.maxPrice);
   await expect(dialog).toContainText(searchEl.details.maxPriceNote);
-  await expect(dialog.getByRole('note')).toContainText(
-    /Εθνικός Οργανισμός Φαρμάκων.*από \d+ \S+ 20\d\d έως περίπου/,
-  );
+  await expect(dialog.getByRole('note')).toContainText(/Έως περίπου \d+ \S+ 20\d\d\./);
   expect(await axeViolations(page)).toEqual([]);
 });
 
@@ -104,8 +106,7 @@ test('works in English from any page, and the Back button closes it', async ({ p
   await page.getByRole('button', { name: /^Medicines/ }).click();
   const dialog = page.getByRole('dialog', { name: searchEn.title });
   await dialog.getByLabel(searchEn.inputLabel).fill('paracetamol');
-  await expect(dialog.getByRole('status')).toHaveText(/^\d+ medicines found$/);
-  await expect(dialog.getByText(searchEn.privacy)).toBeVisible();
+  await expect(dialog.getByRole('status')).toHaveText(/^\d+ medicines$/);
   await page.goBack();
   await expect(dialog).toBeHidden();
   expect(new URL(page.url()).pathname).toBe(localizedPath('en', 'privacy'));
@@ -127,10 +128,10 @@ test('the search, its results and details have no WCAG 2.2 A/AA violations', asy
   await waitForRows(page);
   await page.getByRole('button', { name: /^Medicines/ }).click();
   const dialog = page.getByRole('dialog', { name: searchEn.title });
-  await expect(dialog.getByRole('status')).toHaveText(searchEn.hint);
+  await expect(dialog.getByLabel(searchEn.inputLabel)).toBeFocused();
   expect(await axeViolations(page)).toEqual([]);
   await dialog.getByLabel(searchEn.inputLabel).fill('depon');
-  await expect(dialog.getByRole('status')).toHaveText(/medicines found/);
+  await expect(dialog.getByRole('status')).toHaveText(/^\d+ medicines$/);
   expect(await axeViolations(page)).toEqual([]);
   await dialog
     .getByRole('list', { name: searchEn.resultsLabel })

@@ -21,7 +21,7 @@
   --danger-fg: #6b1510;
   --danger-border: #b42318;
 
-  --font: 'Commissioner', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --space: 1rem;
   --radius: 0.75rem;
   --radius-lg: 1.25rem;
@@ -55,11 +55,8 @@ body {
   flex-direction: column;
   background: var(--bg);
   color: var(--fg);
-  font: 1.0625rem/1.6 var(--font);
-  /* A little flare: softer, friendlier terminals (Commissioner's FLAR axis). */
-  font-variation-settings: 'FLAR' 60;
-  /* Commissioner's space is narrow for Greek at small sizes. */
-  word-spacing: 0.06em;
+  font: 1rem/1.55 var(--font);
+  font-weight: 450;
   -webkit-font-smoothing: antialiased;
   overflow-wrap: break-word;
 }

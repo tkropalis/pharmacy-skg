@@ -3,7 +3,6 @@ import type { RefObject } from 'react';
 import type { IndexedMedicine, Locale } from '@pharmacy-skg/core';
 import type { searchEl } from '../../i18n/search.el.ts';
 import { fill, formatPrice, longIsoDate } from '../../lib/format.ts';
-import { formatUpdatedAt } from '../../lib/freshness.ts';
 import { loadMedicines } from '../../lib/medicine-index.ts';
 import type { LoadedMedicines } from '../../lib/medicine-index.ts';
 import { prepareSearch, searchMedicines, splitName } from '../../lib/medicine-search.ts';
@@ -92,13 +91,18 @@ export function MedicineSearch({ locale, text, onClosed }: Props) {
   }
 
   const count = result.results.length;
+  // Nothing is said before the person types; the field's placeholder is the only prompt.
   const status =
     load.status === 'loading'
-      ? text.loading
+      ? deferredQuery.trim() === ''
+        ? ''
+        : text.loading
       : load.status === 'error'
         ? ''
         : result.tooShort
-          ? text.hint
+          ? deferredQuery.trim() === ''
+            ? ''
+            : text.hint
           : count === 0
             ? text.none
             : count === 1
@@ -109,73 +113,67 @@ export function MedicineSearch({ locale, text, onClosed }: Props) {
 
   return (
     <dialog ref={dialogRef} className="ms" aria-labelledby="ms-title" onClose={onClose}>
+      <h2 id="ms-title" className="sr-only">
+        {text.title}
+      </h2>
       <div className="ms-bar">
-        <h2 id="ms-title" className="ms-title">
-          {text.title}
-        </h2>
+        {selected ? (
+          <button type="button" className="ms-back" onClick={() => setSelected(null)}>
+            <Icon name="back" />
+            {text.details.back}
+          </button>
+        ) : (
+          <form role="search" className="ms-field" onSubmit={(event) => event.preventDefault()}>
+            <Icon name="search" size={18} />
+            <label htmlFor="ms-query" className="sr-only">
+              {text.inputLabel}
+            </label>
+            <input
+              ref={inputRef}
+              id="ms-query"
+              type="search"
+              inputMode="search"
+              enterKeyHint="search"
+              autoComplete="off"
+              autoCorrect="off"
+              autoCapitalize="off"
+              spellCheck={false}
+              placeholder={text.placeholder}
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+            />
+          </form>
+        )}
         <button
           type="button"
-          className="ms-button ms-close"
+          className="ms-close"
+          aria-label={text.close}
           onClick={() => dialogRef.current?.close()}
         >
           <Icon name="close" size={20} />
-          {text.close}
         </button>
       </div>
 
       <div className="ms-body" ref={bodyRef}>
         {selected ? (
-          <>
-            <button type="button" className="ms-button ms-back" onClick={() => setSelected(null)}>
-              <Icon name="back" />
-              {text.details.back}
-            </button>
-            <Details
-              medicine={selected}
-              data={data}
-              forms={forms}
-              locale={locale}
-              text={text}
-              headingRef={detailsHeadingRef}
-            />
-          </>
+          <Details
+            medicine={selected}
+            forms={forms}
+            locale={locale}
+            text={text}
+            headingRef={detailsHeadingRef}
+          />
         ) : (
           <>
-            <form role="search" className="ms-form" onSubmit={(event) => event.preventDefault()}>
-              <label htmlFor="ms-query" className="ms-label">
-                {text.inputLabel}
-              </label>
-              <div className="ms-field">
-                <Icon name="search" size={20} />
-                <input
-                  ref={inputRef}
-                  id="ms-query"
-                  type="search"
-                  inputMode="search"
-                  enterKeyHint="search"
-                  autoComplete="off"
-                  autoCorrect="off"
-                  autoCapitalize="off"
-                  spellCheck={false}
-                  placeholder={text.placeholder}
-                  value={query}
-                  onChange={(event) => setQuery(event.target.value)}
-                />
-              </div>
-              <p className="ms-privacy">{text.privacy}</p>
-            </form>
-
             <p className="ms-status" role="status">
               {status}
             </p>
             {load.status === 'error' && (
-              <div className="callout danger" role="alert">
-                <p>
-                  <strong>{text.loadError}</strong> {text.loadErrorHint}
-                </p>
+              <div className="ms-error" role="alert">
+                <p>{text.loadError}</p>
                 <button
                   type="button"
-                  className="ms-button primary"
+                  className="ms-button"
                   onClick={() => setAttempt((n) => n + 1)}
                 >
                   {text.retry}
@@ -202,31 +200,16 @@ export function MedicineSearch({ locale, text, onClosed }: Props) {
               </ol>
             )}
             {shown.length < count && (
-              <p className="ms-more">
-                <span>{fill(text.showing, { shown: shown.length, total: count })}</span>
-                <button
-                  type="button"
-                  className="ms-button"
-                  onClick={() => setVisible((n) => n + PAGE_SIZE)}
-                >
-                  {text.showMore}
-                </button>
-              </p>
+              <button
+                type="button"
+                className="ms-button ms-more"
+                onClick={() => setVisible((n) => n + PAGE_SIZE)}
+              >
+                {text.showMore}
+              </button>
             )}
           </>
         )}
-
-        <footer className="ms-footer">
-          <p className="ms-ask">{text.ask}</p>
-          {data && (
-            <p className="ms-sources">
-              {fill(text.sources, {
-                date: data.shortageList ? longIsoDate(data.shortageList.date, locale) : '—',
-                updated: formatUpdatedAt(data.updatedAt, locale),
-              })}
-            </p>
-          )}
-        </footer>
       </div>
     </dialog>
   );
@@ -236,9 +219,15 @@ function priceLabel(medicine: IndexedMedicine, text: SearchText): string {
   return medicine.otc ? text.indicativePrice : text.maxPrice;
 }
 
-function formLabel(form: string | null, text: SearchText): string | null {
-  if (form === null) return null;
-  return (text.forms as Readonly<Record<string, string>>)[form] ?? null;
+/** The form in plain words when known, else as printed; then strength and pack size. */
+function packLine(name: string, forms: ReadonlySet<string>, text: SearchText) {
+  const { brand, form, rest } = splitName(name, forms);
+  const plainForm =
+    form === null ? null : ((text.forms as Readonly<Record<string, string>>)[form] ?? form);
+  return {
+    brand,
+    line: [plainForm, rest].filter((part) => part !== null && part !== '').join(' · '),
+  };
 }
 
 interface RowProps {
@@ -250,41 +239,34 @@ interface RowProps {
 }
 
 function Row({ medicine, forms, locale, text, onSelect }: RowProps) {
-  const { brand, form } = splitName(medicine.name, forms);
-  const plainForm = formLabel(form, text);
+  const { brand, line } = packLine(medicine.name, forms, text);
   return (
     <button type="button" id={`ms-${medicine.barcode}`} className="ms-row" onClick={onSelect}>
       <span className="ms-row-main">
         <span className="ms-brand">{brand}</span>
-        {plainForm && <span className="ms-plain-form">{plainForm}</span>}
-        <span className="ms-desc">{medicine.name}</span>
+        {line !== '' && <span className="ms-desc">{line}</span>}
         {medicine.shortage && (
           <span className="ms-badge">
-            <Icon name="warning" size={16} />
+            <Icon name="warning" size={14} />
             {text.shortage}
           </span>
         )}
       </span>
-      <span className="ms-row-price">
-        <span className="ms-price">{formatPrice(medicine.price, locale)}</span>
-        <span className="ms-price-label">{priceLabel(medicine, text)}</span>
-      </span>
+      <span className="ms-price">{formatPrice(medicine.price, locale)}</span>
     </button>
   );
 }
 
 interface DetailsProps {
   readonly medicine: IndexedMedicine;
-  readonly data: LoadedMedicines | null;
   readonly forms: ReadonlySet<string>;
   readonly locale: Locale;
   readonly text: SearchText;
   readonly headingRef: RefObject<HTMLHeadingElement | null>;
 }
 
-function Details({ medicine, data, forms, locale, text, headingRef }: DetailsProps) {
-  const { brand, form } = splitName(medicine.name, forms);
-  const plainForm = formLabel(form, text);
+function Details({ medicine, forms, locale, text, headingRef }: DetailsProps) {
+  const { brand, line } = packLine(medicine.name, forms, text);
   const d = text.details;
   const shortage = medicine.shortage;
   return (
@@ -292,76 +274,46 @@ function Details({ medicine, data, forms, locale, text, headingRef }: DetailsPro
       <h3 id="ms-details-title" className="ms-details-title" tabIndex={-1} ref={headingRef}>
         {brand}
       </h3>
-      {plainForm && <p className="ms-plain-form">{plainForm}</p>}
+      {line !== '' && <p className="ms-desc">{line}</p>}
 
-      <div className="ms-price-box">
-        <p className="ms-price-big">
-          <span className="ms-price-label">{priceLabel(medicine, text)}</span>{' '}
-          <span className="ms-price">{formatPrice(medicine.price, locale)}</span>
-        </p>
-        <p>{medicine.otc ? d.indicativeNote : d.maxPriceNote}</p>
-        {!medicine.otc && <p>{d.prescriptionNote}</p>}
-        {medicine.notReimbursed && <p>{d.notReimbursed}</p>}
-      </div>
+      <p className="ms-price-big">
+        <span className="ms-price">{formatPrice(medicine.price, locale)}</span>
+        <span className="ms-price-label">{priceLabel(medicine, text)}</span>
+      </p>
+      <p className="ms-note">
+        {medicine.otc ? d.indicativeNote : d.maxPriceNote}
+        {medicine.notReimbursed && <> {d.notReimbursed}</>}
+      </p>
 
       {shortage && (
-        <div className="callout" role="note">
-          <p className="ms-callout-title">
-            <Icon name="warning" />
-            <strong>{text.shortage}</strong>
+        <div className="ms-shortage" role="note">
+          <Icon name="warning" />
+          <p>
+            <strong>{text.shortage}.</strong>
+            {shortage.to && (
+              <> {fill(d.shortageUntil, { to: longIsoDate(shortage.to, locale) })}</>
+            )}{' '}
+            {d.shortageAdvice}
           </p>
-          {shortage.from && (
-            <p>
-              {shortage.to
-                ? fill(d.shortageFromTo, {
-                    from: longIsoDate(shortage.from, locale),
-                    to: longIsoDate(shortage.to, locale),
-                  })
-                : fill(d.shortageFrom, { from: longIsoDate(shortage.from, locale) })}
-            </p>
-          )}
-          <p>{d.shortageAdvice}</p>
         </div>
       )}
-      <p className="ms-stock">{d.stock}</p>
 
-      <dl className="ms-facts">
-        {medicine.substance && (
-          <div>
-            <dt>{d.substance}</dt>
-            <dd>{medicine.substance}</dd>
-          </div>
-        )}
-        {medicine.company && (
-          <div>
-            <dt>{d.company}</dt>
-            <dd>{medicine.company}</dd>
-          </div>
-        )}
-        <div>
-          <dt>{d.barcode}</dt>
-          <dd>{medicine.barcode}</dd>
-        </div>
-        <div>
-          <dt>{d.description}</dt>
-          <dd>{medicine.name}</dd>
-        </div>
-      </dl>
-
-      <ul className="ms-source-links">
-        <li>
-          <a href={medicine.bulletin.articleUrl} target="_blank" rel="noopener noreferrer">
-            {fill(d.priceSource, { date: longIsoDate(medicine.bulletin.date, locale) })}
-          </a>
-        </li>
-        {shortage && data?.shortageList && (
-          <li>
-            <a href={data.shortageList.postUrl} target="_blank" rel="noopener noreferrer">
-              {fill(d.shortageSource, { date: longIsoDate(data.shortageList.date, locale) })}
-            </a>
-          </li>
-        )}
-      </ul>
+      {(medicine.substance || medicine.company) && (
+        <dl className="ms-facts">
+          {medicine.substance && (
+            <div>
+              <dt>{d.substance}</dt>
+              <dd>{medicine.substance}</dd>
+            </div>
+          )}
+          {medicine.company && (
+            <div>
+              <dt>{d.company}</dt>
+              <dd>{medicine.company}</dd>
+            </div>
+          )}
+        </dl>
+      )}
     </article>
   );
 }

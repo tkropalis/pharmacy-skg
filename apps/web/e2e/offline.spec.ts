@@ -1,3 +1,4 @@
+import { searchEl } from '../src/i18n/search.el.ts';
 import { expect, test, waitForMap, waitForRows } from './support.ts';
 
 // The one place the service worker is on. The tests above run without it.
@@ -68,8 +69,8 @@ test('the medicine search works offline once it has been opened', async ({ page,
   expect(await page.evaluate(() => navigator.serviceWorker.controller !== null)).toBe(true);
 
   await page.getByRole('button', { name: /^Φάρμακα/ }).click();
-  const dialog = page.getByRole('dialog', { name: 'Αναζήτηση φαρμάκου' });
-  await expect(dialog.getByRole('status')).toHaveText(/δύο γράμματα/);
+  const dialog = page.getByRole('dialog', { name: searchEl.title });
+  await expect(dialog.getByLabel(searchEl.inputLabel)).toBeFocused();
   await expect
     .poll(() =>
       page.evaluate(async () => (await caches.match('/data/medicines/index.json')) !== undefined),
@@ -80,8 +81,8 @@ test('the medicine search works offline once it has been opened', async ({ page,
   await context.setOffline(true);
   await page.reload();
   await page.getByRole('button', { name: /^Φάρμακα/ }).click();
-  await dialog.getByLabel('Όνομα φαρμάκου ή δραστική ουσία').fill('ντεπον');
-  await expect(dialog.getByRole('status')).toHaveText(/^Βρέθηκαν \d+ φάρμακα$/);
+  await dialog.getByLabel(searchEl.inputLabel).fill('ντεπον');
+  await expect(dialog.getByRole('status')).toHaveText(/^\d+ φάρμακα$/);
 });
 
 test('a new service worker version never reloads a visible page: it offers a button', async ({

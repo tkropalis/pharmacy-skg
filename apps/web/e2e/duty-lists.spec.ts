@@ -54,7 +54,10 @@ test.describe('a day whose file has only some area groups', () => {
     await expect(page.getByRole('note').filter({ hasText: 'Δήμος Θέρμης' })).toBeVisible();
 
     await openControls(page);
-    await page.getByRole('button', { name: text.origin.areaLabel }).click();
+    await page
+      .locator('#controls')
+      .getByRole('button', { name: text.origin.areaLabel, exact: true })
+      .click();
     await page.getByLabel(text.origin.areaSearch).fill('thermi');
     await page.locator('.picker-item').first().click();
 

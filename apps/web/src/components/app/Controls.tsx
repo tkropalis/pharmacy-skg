@@ -1,4 +1,5 @@
 import { useId, useMemo, useState } from 'react';
+import type { ReactNode } from 'react';
 import type { Dictionary } from '../../i18n/index.ts';
 import { fill } from '../../lib/format.ts';
 import { searchLocalities } from '../../lib/places.ts';
@@ -31,6 +32,8 @@ interface OriginControlsProps {
   readonly onUseLocation: () => void;
   readonly onPickArea: (locality: Locality) => void;
   readonly onClear: () => void;
+  /** The card puts the options toggle at the end of its button row. */
+  readonly extra?: ReactNode;
 }
 
 /** iPhone, iPod and iPad (which presents itself as a Mac with a touch screen). */
@@ -52,9 +55,9 @@ export function OriginControls({
   onUseLocation,
   onPickArea,
   onClear,
+  extra,
 }: OriginControlsProps) {
   const inputId = useId();
-  const hintId = useId();
   const listId = useId();
   const [pickerOpen, setPickerOpen] = useState(false);
   const [query, setQuery] = useState('');
@@ -97,6 +100,7 @@ export function OriginControls({
           <Icon name="chevron" />
         </span>
       </button>
+      {extra}
     </div>
   );
 
@@ -124,15 +128,13 @@ export function OriginControls({
         className="field"
         type="search"
         value={query}
+        placeholder={text.origin.areaHint}
         autoComplete="off"
         autoCapitalize="off"
         spellCheck={false}
-        aria-describedby={`${hintId} ${listId}-count`}
+        aria-describedby={`${listId}-count`}
         onChange={(event) => setQuery(event.target.value)}
       />
-      <p id={hintId} className="hint">
-        {text.origin.areaHint}
-      </p>
       <p id={`${listId}-count`} className="sr-only" role="status">
         {matches.length === 0
           ? text.origin.areaNone
@@ -183,7 +185,6 @@ export function OriginControls({
         {text.origin.heading}
       </h2>
       {buttons}
-      <p className="hint">{text.origin.privacy}</p>
       {messages}
       {picker}
 
@@ -241,7 +242,7 @@ export function OriginChip({ text, label, when, locating, open, onToggle }: Orig
 /** The id of the options panel (location, time and filters) that the toggles control. */
 export const CONTROLS_ID = 'controls';
 
-interface NearbyCardProps extends Omit<OriginControlsProps, 'variant' | 'origin'> {
+interface NearbyCardProps extends Omit<OriginControlsProps, 'variant' | 'origin' | 'extra'> {
   readonly open: boolean;
   readonly onToggleControls: () => void;
 }
@@ -255,20 +256,27 @@ export function NearbyCard({ text, open, onToggleControls, ...rest }: NearbyCard
   const id = useId();
   return (
     <section className="nearby" aria-labelledby={id}>
-      <h2 id={id} className="nearby-title">
+      <h2 id={id} className="sr-only">
         {text.nearby.title}
       </h2>
-      <button
-        type="button"
-        className="nearby-options controls-toggle"
-        aria-expanded={open}
-        aria-controls={CONTROLS_ID}
-        aria-label={text.origin.summary}
-        onClick={onToggleControls}
-      >
-        <Icon name="sliders" />
-      </button>
-      <OriginControls text={text} variant="card" origin={null} {...rest} />
+      <OriginControls
+        text={text}
+        variant="card"
+        origin={null}
+        {...rest}
+        extra={
+          <button
+            type="button"
+            className="nearby-options controls-toggle"
+            aria-expanded={open}
+            aria-controls={CONTROLS_ID}
+            aria-label={text.origin.summary}
+            onClick={onToggleControls}
+          >
+            <Icon name="sliders" />
+          </button>
+        }
+      />
     </section>
   );
 }
@@ -401,7 +409,6 @@ export function TimeControls({
           </div>
         </div>
       )}
-      <p className="hint">{custom || deviceDiffers ? text.time.zoneNote : ''}</p>
       {deviceDiffers && <p className="notice">{text.time.deviceDiffers}</p>}
     </section>
   );
