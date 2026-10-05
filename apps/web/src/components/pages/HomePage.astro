@@ -1,6 +1,8 @@
 ---
 import type { Locale } from '@pharmacy-skg/core';
 import { t } from '../../i18n/index.ts';
+import { dutyPath } from '../../i18n/routes.ts';
+import { localIsoDate } from '../../lib/dates.ts';
 
 interface Props {
   locale: Locale;
@@ -8,35 +10,62 @@ interface Props {
 
 const { locale } = Astro.props;
 const d = t(locale).home;
+const app = t(locale).app;
+// Today in the city's time zone at build time. The page is rebuilt with every data update;
+// the interactive app that replaces this content works out the date itself.
+const dutyHref = dutyPath(locale, localIsoDate(new Date()));
 ---
 
-<!-- The map island (MapLibre, bottom sheet) mounts into #app in a later change. -->
-<div class="container">
-  <div id="app" class="app-region" role="region" aria-label={d.appRegionLabel}>
+<!--
+  #app holds the content that works without JavaScript (intro and a link to today's duty list).
+  scripts/home-app.tsx replaces it with the map and the list. It is mounted from a bundled
+  module script, not an Astro island, because islands emit inline scripts that the site's
+  Content-Security-Policy (vercel.json, script-src 'self') forbids.
+-->
+<div
+  id="app"
+  class="app-region"
+  role="region"
+  aria-label={app.regionLabel}
+  data-locale={locale}
+  data-title={d.title}
+  data-text={JSON.stringify(app)}
+>
+  <div class="container fallback">
     <svg class="cross" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
       <rect width="32" height="32" rx="6"></rect>
       <path d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"></path>
     </svg>
     <h1>{d.title}</h1>
+    <p>{d.intro}</p>
     <p>
-      {d.intro} <strong>{d.comingSoon}</strong>
-    </p>
-    <p>
-      {d.untilThen}{' '}
-      <a href="https://fsth.gr/" rel="noopener">
-        {d.fsthName}
+      <a class="button" href={dutyHref}>
+        {d.dutyLink}
       </a>
-      .
     </p>
     <noscript>
       <p>{d.noScript}</p>
     </noscript>
+    <p>
+      {d.fsthLead}{' '}
+      <a href="https://fsth.gr/" rel="noopener">
+        {d.fsthName}
+      </a>
+    </p>
   </div>
 </div>
 
+<script>
+  import '../../scripts/home-app.tsx';
+</script>
+
 <style>
   .app-region {
-    min-height: 50dvh;
+    /* Keeps the page from jumping when the app replaces this content. */
+    min-height: calc(100dvh - 7rem);
+  }
+
+  .fallback {
     padding-block: 2.5rem;
   }
 

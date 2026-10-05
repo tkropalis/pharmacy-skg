@@ -44,11 +44,7 @@ export function buildLocalities(pharmacies: readonly Pharmacy[]): Locality[] {
 
 /** Lower case without accents or diacritics; final sigma is plain sigma. */
 export function stripAccents(text: string): string {
-  return text
-    .normalize('NFD')
-    .replace(/\p{M}/gu, '')
-    .toLowerCase()
-    .replaceAll('ς', 'σ');
+  return text.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().replaceAll('ς', 'σ');
 }
 
 const GREEK_TO_LATIN: Readonly<Record<string, string>> = {

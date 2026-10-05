@@ -47,7 +47,9 @@ export function dayAndTime(
   const today = zonedDate(at, timeZone);
   if (day === today) return sameDayShowsWord ? `${text.today} ${clock}` : clock;
   if (day === addDays(today, 1)) return `${text.tomorrow} ${clock}`;
-  const diff = Math.round((Date.parse(`${day}T00:00Z`) - Date.parse(`${today}T00:00Z`)) / 86_400_000);
+  const diff = Math.round(
+    (Date.parse(`${day}T00:00Z`) - Date.parse(`${today}T00:00Z`)) / 86_400_000,
+  );
   if (diff >= 7) return `${shortDate(target, locale, timeZone)} ${clock}`;
   return `${weekdayName(target, locale, timeZone)} ${clock}`;
 }

@@ -53,11 +53,11 @@ export const en: Dictionary = {
       'Which pharmacies are open right now in Thessaloniki: on duty, overnight and regular hours, on a map. Free and ad-free.',
     intro:
       'A map of the pharmacies that are open right now near you: on duty, overnight and regular hours.',
-    comingSoon: 'Coming soon.',
-    untilThen: 'Until then, see the on-duty list from the',
+    noScript:
+      'The map and the list of open pharmacies need JavaScript. Without it you can see the duty lists for the day:',
+    dutyLink: 'Pharmacies on duty today',
+    fsthLead: 'Official source:',
     fsthName: 'Pharmaceutical Association of Thessaloniki',
-    appRegionLabel: 'Pharmacy map',
-    noScript: 'The map needs JavaScript.',
   },
 
   about: {

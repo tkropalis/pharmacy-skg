@@ -9,7 +9,9 @@ import {
 } from './favourites.ts';
 import type { KeyValueStorage } from './storage.ts';
 
-function memory(initial: Record<string, string> = {}): KeyValueStorage & { data: Map<string, string> } {
+function memory(
+  initial: Record<string, string> = {},
+): KeyValueStorage & { data: Map<string, string> } {
   const data = new Map(Object.entries(initial));
   return {
     data,

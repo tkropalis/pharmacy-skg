@@ -34,6 +34,7 @@ export const appEn: Dictionary['app'] = {
 
   origin: {
     heading: 'Where are you starting from?',
+    summary: 'Location, time and filters',
     useLocation: 'Use my location',
     locating: 'Finding your location…',
     privacy: 'Your location stays on your device and is not sent anywhere.',
@@ -106,15 +107,14 @@ export const appEn: Dictionary['app'] = {
     shareLabel: 'Share {name}',
     copied: 'Link copied',
     copyFailed: 'The link could not be copied',
-    favouriteAdd: 'Add to favourites',
-    favouriteRemove: 'Remove from favourites',
+    favourite: 'Favourite',
+    favouriteLabel: 'Favourite: {name}',
     favouriteAdded: '{name}: added to favourites',
     favouriteRemoved: '{name}: removed from favourites',
     report: 'Report a problem',
     reportLabel: 'Report a problem with {name}',
     showOnMap: 'Show on map',
     selected: 'selected',
-    away: '{distance} away',
     shareText: '{name}, {address}',
   },
 

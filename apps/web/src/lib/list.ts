@@ -81,10 +81,14 @@ export function buildRows(
   return { rows: [...open, ...closed], openCount: open.length };
 }
 
-function rowOf(data: CityData, pharmacy: Pharmacy, at: Date, origin: Origin | null): NearbyPharmacy {
+function rowOf(
+  data: CityData,
+  pharmacy: Pharmacy,
+  at: Date,
+  origin: Origin | null,
+): NearbyPharmacy {
   const { status } = pharmacyStatus(data, pharmacy.id, at);
-  const distance =
-    origin && pharmacy.location ? distanceMetres(origin, pharmacy.location) : null;
+  const distance = origin && pharmacy.location ? distanceMetres(origin, pharmacy.location) : null;
   return { pharmacy, status, distance };
 }
 

@@ -8,7 +8,8 @@ import { buildRows, pinKindOf, rowFor } from './list.ts';
 import { pinCollection } from './map-data.ts';
 
 const DATA_DIR = resolve(import.meta.dirname, '../../../../data/thessaloniki');
-const readJson = <T>(path: string): T => JSON.parse(readFileSync(resolve(DATA_DIR, path), 'utf8')) as T;
+const readJson = <T>(path: string): T =>
+  JSON.parse(readFileSync(resolve(DATA_DIR, path), 'utf8')) as T;
 
 function load(): CityData {
   const duties = new Map<string, DutyDay>();

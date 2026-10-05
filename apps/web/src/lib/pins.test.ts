@@ -17,7 +17,9 @@ describe('pinSvg', () => {
     }
   });
   it('is well-formed SVG with the requested size', () => {
-    expect(pinSvg('duty', { size: 24 })).toMatch(/^<svg [^>]*width="24" height="24"[^>]*>.*<\/svg>$/);
+    expect(pinSvg('duty', { size: 24 })).toMatch(
+      /^<svg [^>]*width="24" height="24"[^>]*>.*<\/svg>$/,
+    );
   });
 });
 

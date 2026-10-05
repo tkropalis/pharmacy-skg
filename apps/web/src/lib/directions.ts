@@ -5,8 +5,7 @@ export const DIRECTIONS_APPS: readonly DirectionsApp[] = ['google', 'apple', 'wa
 
 /** Where to send people: exact coordinates, or the printed address when the pin is not exact. */
 export type DirectionsTarget =
-  | { readonly lat: number; readonly lon: number }
-  | { readonly query: string };
+  { readonly lat: number; readonly lon: number } | { readonly query: string };
 
 /**
  * Coordinates are used for exact and street-level locations. A locality-level location is only

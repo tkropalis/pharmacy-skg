@@ -1,4 +1,5 @@
 import { THESSALONIKI } from '@pharmacy-skg/core';
+import type { Meta } from '@pharmacy-skg/core';
 import { describe, expect, it, vi } from 'vitest';
 import { cityDataUrl, loadCityBundle, loadCityData, loadDutyDays, loadMeta } from './data.ts';
 import { offlineUrls } from './pwa.ts';
@@ -117,8 +118,13 @@ describe('onlyPublishedDates', () => {
       ['2026-10-04', '2026-10-05', '2026-10-07', '2026-10-08'],
       { fetch: f, onlyPublishedDates: true },
     );
-    const asked = f.mock.calls.map(([input]) => String(input)).filter((u) => u.includes('/duties/'));
-    expect(asked.sort()).toEqual([`${base}/duties/2026-10-05.json`, `${base}/duties/2026-10-07.json`]);
+    const asked = f.mock.calls
+      .map(([input]) => String(input))
+      .filter((u) => u.includes('/duties/'));
+    expect(asked.sort()).toEqual([
+      `${base}/duties/2026-10-05.json`,
+      `${base}/duties/2026-10-07.json`,
+    ]);
     expect([...bundle.data.duties.keys()]).toEqual(['2026-10-05']);
     expect(bundle.failedDates).toEqual([]);
   });
@@ -128,7 +134,7 @@ describe('onlyPublishedDates', () => {
     const { duties, failedDates } = await loadDutyDays(
       'thessaloniki',
       ['2026-10-05', '2026-10-06', '2026-10-09'],
-      meta,
+      meta as Meta,
       { fetch: f, onlyPublishedDates: true },
     );
     expect([...duties.keys()].sort()).toEqual(['2026-10-05', '2026-10-06']);

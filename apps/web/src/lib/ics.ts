@@ -45,7 +45,7 @@ const dateValue = (date: string): string => date.replaceAll('-', '');
 export function escapeText(text: string): string {
   return text
     .replaceAll('\\', '\\\\')
-    .replaceAll(';', '\;')
+    .replaceAll(';', '\\;')
     .replaceAll(',', '\\,')
     .replace(/\r\n|\r|\n/g, '\\n');
 }
@@ -131,7 +131,11 @@ export function dutyEvents(
         : {
             kind: 'instants',
             start: localToInstant(duty.date, hours.from, timeZone),
-            end: localToInstant(hours.toNextDay ? addDays(duty.date, 1) : duty.date, hours.to, timeZone),
+            end: localToInstant(
+              hours.toNextDay ? addDays(duty.date, 1) : duty.date,
+              hours.to,
+              timeZone,
+            ),
           };
     const description = [
       duty.heading,

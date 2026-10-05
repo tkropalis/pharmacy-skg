@@ -26,7 +26,7 @@ const now = new Date('2026-10-05T10:00:00Z');
 
 describe('escapeText', () => {
   it('escapes backslash, semicolon, comma and newlines', () => {
-    expect(escapeText('a,b;c\\d\ne\r\nf')).toBe('a\\,b\;c\\\\d\\ne\\nf');
+    expect(escapeText('a,b;c\\d\ne\r\nf')).toBe('a\\,b\\;c\\\\d\\ne\\nf');
   });
 });
 
@@ -106,10 +106,7 @@ describe('dutyEvents', () => {
 describe('buildIcs', () => {
   const events = dutyEvents(
     pharmacy,
-    [
-      duty('2026-10-24', { from: '22:00', to: '08:00', toNextDay: true }),
-      duty('2026-10-27', null),
-    ],
+    [duty('2026-10-24', { from: '22:00', to: '08:00', toNextDay: true }), duty('2026-10-27', null)],
     texts,
     'Europe/Athens',
   );
