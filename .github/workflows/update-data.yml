@@ -1,7 +1,8 @@
 name: Update data
 
 # Fetches the official lists, validates them and commits data/ when it changed.
-# See packages/ingest/src/cli/update.ts.
+# See packages/ingest/src/cli/update.ts (duty lists, extended hours, pharmacies) and
+# packages/ingest/src/cli/medicines.ts (medicine prices and shortages).
 on:
   schedule:
     # Twice a day, Athens time. ΦΣΘ publishes duty lists a few days ahead.
@@ -36,6 +37,12 @@ jobs:
         run: pnpm --filter @pharmacy-skg/ingest run update ${SINCE:+--since "$SINCE"}
         env:
           SINCE: ${{ inputs.since }}
+      # A failure here must not hold back the duty lists: they are still committed, and the run
+      # is marked failed at the end.
+      - name: Medicine prices and shortages
+        id: medicines
+        continue-on-error: true
+        run: pnpm --filter @pharmacy-skg/ingest run medicines
       - name: Commit if changed
         run: |
           if [ -z "$(git status --porcelain data/)" ]; then
@@ -47,3 +54,8 @@ jobs:
           git add data/
           git commit -m "data: update $(TZ=Europe/Athens date +%Y-%m-%d)"
           git push
+      - name: Report a failed medicines update
+        if: steps.medicines.outcome == 'failure'
+        run: |
+          echo "::error::The medicines update failed; see its step. Any other data was still committed."
+          exit 1
