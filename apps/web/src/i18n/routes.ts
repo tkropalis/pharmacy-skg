@@ -43,3 +43,27 @@ export function allPathParams(): { path: string | undefined; locale: Locale; rou
     }),
   );
 }
+
+/**
+ * Generated pages with a parameter. The parameter is the same in every locale, so the
+ * equivalent page in another locale is always the same function call.
+ */
+export const PARAM_ROUTES = {
+  /** One pharmacy, by registry id: '/farmakeio/2310200022/', '/en/pharmacy/2310200022/'. */
+  pharmacy: { el: 'farmakeio', en: 'pharmacy' },
+  /** Published duty lists for one date: '/efimeries/2026-10-05/', '/en/duty/2026-10-05/'. */
+  duty: { el: 'efimeries', en: 'duty' },
+  /** One area (ΦΣΘ group or locality slug): '/perioxi/kalamaria/', '/en/area/kalamaria/'. */
+  area: { el: 'perioxi', en: 'area' },
+} as const satisfies Record<string, Record<Locale, string>>;
+
+export type ParamRouteKey = keyof typeof PARAM_ROUTES;
+
+export function paramPath(locale: Locale, route: ParamRouteKey, param: string): string {
+  return `${localePrefix(locale)}/${PARAM_ROUTES[route][locale]}/${encodeURIComponent(param)}/`;
+}
+
+export const pharmacyPath = (locale: Locale, id: string): string =>
+  paramPath(locale, 'pharmacy', id);
+export const dutyPath = (locale: Locale, date: string): string => paramPath(locale, 'duty', date);
+export const areaPath = (locale: Locale, slug: string): string => paramPath(locale, 'area', slug);
