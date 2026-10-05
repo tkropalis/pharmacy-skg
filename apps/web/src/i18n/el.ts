@@ -100,6 +100,8 @@ export const el = {
       overture: 'Θέσεις φαρμακείων: Overture Maps Foundation, με άδεια CDLA-Permissive-2.0.',
       osm: 'Γεωκωδικοποίηση διευθύνσεων με το Nominatim και χάρτης: © συντελεστές OpenStreetMap, με άδεια ODbL.',
       openFreeMap: 'Πλακίδια χάρτη: OpenFreeMap, με δεδομένα OpenMapTiles και OpenStreetMap.',
+      fontAwesome: 'Εικονίδια: Font Awesome Free, με άδεια CC BY 4.0.',
+      commissioner: 'Γραμματοσειρά: Commissioner του Κώστα Μπαρτσόκα, με άδεια SIL OFL 1.1.',
     },
     sourceHeading: 'Ανοιχτός κώδικας',
     sourceBody: 'Ο κώδικας και τα δεδομένα είναι ανοιχτά (άδεια MIT) στο GitHub.',

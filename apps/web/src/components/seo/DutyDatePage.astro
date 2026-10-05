@@ -1,5 +1,7 @@
 ---
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import type { Locale } from '@pharmacy-skg/core';
+import { faSvg } from '../../lib/fa.ts';
 import { t } from '../../i18n/index.ts';
 import { loadSeoModel } from '../../lib/seo/site-data.ts';
 import { fill } from '../../lib/seo/format.ts';
@@ -44,7 +46,7 @@ const seo = d.seo.duty;
   <nav class="seo-pager" aria-label={seo.pagerLabel}>
     {page.prev !== null ? (
       <a href={page.prev.path} rel="prev">
-        ← {seo.prev}: {page.prev.label}
+        <Fragment set:html={faSvg(faArrowLeft, { size: 14 })} /> {seo.prev}: {page.prev.label}
       </a>
     ) : (
       <span></span>
@@ -52,7 +54,7 @@ const seo = d.seo.duty;
     <a href={page.indexPath}>{seo.allDates}</a>
     {page.next !== null && (
       <a href={page.next.path} rel="next">
-        {seo.next}: {page.next.label} →
+        {seo.next}: {page.next.label} <Fragment set:html={faSvg(faArrowRight, { size: 14 })} />
       </a>
     )}
   </nav>

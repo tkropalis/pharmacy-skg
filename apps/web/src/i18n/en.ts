@@ -90,6 +90,8 @@ export const en: Dictionary = {
       overture: 'Pharmacy locations: Overture Maps Foundation, licensed CDLA-Permissive-2.0.',
       osm: 'Address geocoding with Nominatim and the map: © OpenStreetMap contributors, licensed ODbL.',
       openFreeMap: 'Map tiles: OpenFreeMap, with OpenMapTiles and OpenStreetMap data.',
+      fontAwesome: 'Icons: Font Awesome Free, under CC BY 4.0.',
+      commissioner: 'Typeface: Commissioner by Kostas Bartsokas, under SIL OFL 1.1.',
     },
     sourceHeading: 'Open source',
     sourceBody: 'The code and the data are open (MIT licence) on GitHub.',

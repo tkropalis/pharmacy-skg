@@ -1,3 +1,6 @@
+import { faMinus, faPlus, faQuestion } from '@fortawesome/free-solid-svg-icons';
+import type { IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { faPath } from './fa.ts';
 import type { PinKind } from './list.ts';
 
 /**
@@ -31,13 +34,30 @@ const SHAPES: Readonly<Record<PinKind, string>> = {
   closed: 'M16 8.5a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15z',
 };
 
-const GLYPHS: Readonly<Record<PinKind, string>> = {
-  duty: 'M14 8h4v6h6v4h-6v6h-4v-6H8v-4h6z',
-  regular: '',
-  extended: '',
-  'duty-unknown': '',
-  closed: 'M12.5 16h7',
+/** Font Awesome glyphs inside the larger markers; the small dot and diamond have none. */
+const GLYPHS: Readonly<Record<PinKind, IconDefinition | null>> = {
+  duty: faPlus,
+  regular: null,
+  extended: null,
+  'duty-unknown': faQuestion,
+  closed: faMinus,
 };
+
+/**
+ * The glyph centred in the 32-unit marker, its box `height` units tall. A stroke in the same ink
+ * (`weight`, in the icon's own units) thickens it: Font Awesome's lines are drawn for text
+ * sizes and would be hairlines on a 30 px marker.
+ */
+function glyph(icon: IconDefinition, ink: string, height: number, weight: number): string {
+  const { width: w, height: h, d } = faPath(icon);
+  const k = height / h;
+  const x = (16 - (w * k) / 2).toFixed(2);
+  const y = (16 - height / 2).toFixed(2);
+  return (
+    `<path transform="translate(${x} ${y}) scale(${k.toFixed(4)})" d="${d}" fill="${ink}" ` +
+    `stroke="${ink}" stroke-width="${weight}" stroke-linejoin="round"/>`
+  );
+}
 
 /** The SVG markup of a pin (viewBox 0 0 32 32). `size` is the CSS pixel size. */
 export function pinSvg(
@@ -51,21 +71,16 @@ export function pinSvg(
   const ink = hollow ? color : '#ffffff';
   const dash = approximate ? ' stroke-dasharray="3.2 2.6"' : '';
   const shape = SHAPES[kind];
-  const glyph =
-    kind === 'duty-unknown'
-      ? `<text x="16" y="22.5" text-anchor="middle" font-family="system-ui,sans-serif" font-size="19" font-weight="700" fill="${ink}">?</text>`
-      : kind === 'closed'
-        ? `<path d="${GLYPHS[kind]}" fill="none" stroke="${ink}" stroke-width="2.6" stroke-linecap="round"/>`
-        : GLYPHS[kind] === ''
-          ? ''
-          : `<path d="${GLYPHS[kind]}" fill="${ink}"/>`;
+  const icon = GLYPHS[kind];
+  const mark =
+    icon === null ? '' : glyph(icon, ink, kind === 'duty' ? 22 : 18, kind === 'duty' ? 72 : 40);
   const ring = hollow ? 2.6 : 0;
   return (
     `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 32 32">` +
     // A white halo under everything keeps the marker readable on light and dark maps.
     `<path d="${shape}" fill="#ffffff" stroke="#ffffff" stroke-width="${hollow ? 6 : 4.5}" stroke-linejoin="round"/>` +
     `<path d="${shape}" fill="${fill}" stroke="${color}" stroke-width="${ring}"${dash} stroke-linejoin="round"/>` +
-    glyph +
+    mark +
     '</svg>'
   );
 }

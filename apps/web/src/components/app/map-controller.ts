@@ -14,8 +14,11 @@ import type { AddLayerObject, GeoJSONSource } from 'maplibre-gl';
 // The stylesheet is added when the map starts. A plain CSS import here would make the build
 // link it into the page head, where it would block the first paint of the list.
 import maplibreCss from 'maplibre-gl/dist/maplibre-gl.css?url';
+import { faCircleInfo, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
+import type { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import type { Locale } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
+import { faDataUrl } from '../../lib/fa.ts';
 import { yieldToMain } from '../../lib/idle.ts';
 import { PIN_KINDS } from '../../lib/list.ts';
 import type { Origin, Row } from '../../lib/list.ts';
@@ -27,7 +30,6 @@ import { PIN_SIZE, pinImageName, pinSvg } from '../../lib/pins.ts';
 export interface MapControllerOptions {
   readonly locale: Locale;
   readonly text: Dictionary['app']['map'];
-  readonly dark: boolean;
   /** The localized base style, already on its way (see loadMapStyle). */
   readonly style: Promise<Record<string, unknown>>;
   readonly center: readonly [number, number];
@@ -101,7 +103,7 @@ export async function createMapController(
   container: HTMLElement,
   options: MapControllerOptions,
 ): Promise<MapController> {
-  const { text, dark } = options;
+  const { text } = options;
   const [style] = await Promise.all([options.style, loadStylesheet(maplibreCss)]);
   // The steps below are long on a phone. Each ends the task, so the page can paint and answer
   // a touch in between.
@@ -157,6 +159,18 @@ export async function createMapController(
     throw failure;
   }
 
+  // The controls' icons are Font Awesome too (MapLibre draws its own as backgrounds).
+  const icons: readonly (readonly [string, IconDefinition])[] = [
+    ['.maplibregl-ctrl-zoom-in .maplibregl-ctrl-icon', faPlus],
+    ['.maplibregl-ctrl-zoom-out .maplibregl-ctrl-icon', faMinus],
+    ['.maplibregl-ctrl-attrib-button', faCircleInfo],
+  ];
+  for (const [selector, icon] of icons) {
+    for (const element of container.querySelectorAll<HTMLElement>(selector)) {
+      element.style.backgroundImage = faDataUrl(icon, '#1c2622');
+    }
+  }
+
   // The compact credit starts open; it is one tap away, and the map keeps its space.
   container.querySelector('.maplibregl-ctrl-attrib')?.classList.remove('maplibregl-compact-show');
   container.querySelector('.maplibregl-ctrl-attrib details')?.removeAttribute('open');
@@ -177,7 +191,8 @@ export async function createMapController(
       ...SOURCE_OPTIONS[key as keyof typeof SOURCES],
     } as never);
   }
-  for (const spec of pinLayers({ dark })) map.addLayer(layer(spec));
+  // The app has one, light, theme (docs/decisions.md, Look).
+  for (const spec of pinLayers({ dark: false })) map.addLayer(layer(spec));
 
   let collection: PinCollection = EMPTY;
   const motion = options.reducedMotion ? { animate: false } : { duration: 500 };

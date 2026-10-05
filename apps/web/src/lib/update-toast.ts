@@ -7,6 +7,8 @@
  * room it takes at the bottom of the screen, so the sheet and the page end above it instead of
  * under it (see global.css and app.css).
  */
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faSvg } from './fa.ts';
 
 const REGION_CLASS = 'update-region';
 const TOAST_CLASS = 'update-toast';
@@ -92,7 +94,7 @@ export function offerReload(): void {
   dismiss.type = 'button';
   dismiss.className = 'update-dismiss';
   dismiss.setAttribute('aria-label', updateDismiss);
-  dismiss.textContent = '×';
+  dismiss.innerHTML = faSvg(faXmark, { size: 18 });
   dismiss.addEventListener('click', dismissUpdateToast);
 
   toast.append(message, reload, dismiss);
