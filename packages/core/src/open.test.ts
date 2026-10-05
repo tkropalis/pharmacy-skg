@@ -19,6 +19,7 @@ import {
   openPharmacies,
   pharmacyStatus,
   publishedDuties,
+  publishedGroups,
 } from './open.ts';
 import type { CityData, OpenInterval, PharmacyStatus } from './open.ts';
 import { localToInstant, zonedParts } from './zoned.ts';
@@ -1043,6 +1044,7 @@ describe('coverage', () => {
       dutiesFrom: '2026-10-04',
       dutiesTo: '2026-10-08',
       extendedHours: true,
+      groups: { published: ['metro'], missing: [] },
     });
   });
 
@@ -1065,6 +1067,103 @@ describe('coverage', () => {
       dutiesTo: null,
       extendedHours: false,
     });
+  });
+});
+
+describe('per-group duty publication', () => {
+  // Monday has only the metro list; Tuesday has metro and lagkadas.
+  const data = city(
+    [
+      pharmacy('m'),
+      pharmacy('l', { groupId: 'lagkadas' }),
+      pharmacy('d', { groupId: null }),
+      pharmacy('t', { groupId: 'thermi' }),
+    ],
+    [
+      day(MONDAY, { metro: [section('overnight', win('21:00', '00:00'), ['m'])] }),
+      day(TUESDAY, { metro: [], lagkadas: [] }),
+    ],
+  );
+
+  it.each([
+    ['metro pharmacy', 'm', true],
+    ['lagkadas pharmacy', 'l', false],
+    ['null group falls back to the default group (metro)', 'd', true],
+    ['group that never has a list', 't', false],
+  ])('pharmacyStatus on a metro-only day: %s', (_name, id, expected) => {
+    expect(pharmacyStatus(data, id, at(MONDAY, '10:00')).dutiesPublished).toBe(expected);
+  });
+
+  it('openPharmacies reports it per pharmacy', () => {
+    // Monday 22:00: only the metro overnight pharmacy is open; others are closed and omitted.
+    const result = openPharmacies(data, at(MONDAY, '22:00'));
+    expect(result.map((p) => [p.pharmacy.id, p.dutiesPublished])).toEqual([['m', true]]);
+    // Monday 10:00: everyone is open by regular hours.
+    const morning = openPharmacies(data, at(MONDAY, '10:00'));
+    expect(Object.fromEntries(morning.map((p) => [p.pharmacy.id, p.dutiesPublished]))).toEqual({
+      m: true,
+      l: false,
+      d: true,
+      t: false,
+    });
+  });
+
+  it('openPharmacies agrees with pharmacyStatus', () => {
+    const when = at(MONDAY, '10:00');
+    for (const p of openPharmacies(data, when)) {
+      expect(p.dutiesPublished).toBe(pharmacyStatus(data, p.pharmacy.id, when).dutiesPublished);
+    }
+  });
+
+  it('needs the group on every date the answer depends on', () => {
+    const both = city(
+      [pharmacy('m'), pharmacy('l', { groupId: 'lagkadas' })],
+      [day(MONDAY, { metro: [], lagkadas: [] }), day(TUESDAY, { metro: [] })],
+    );
+    // Monday 15:00: closed, next open Tuesday 08:00.
+    expect(pharmacyStatus(both, 'm', at(MONDAY, '15:00')).dutiesPublished).toBe(true);
+    expect(pharmacyStatus(both, 'l', at(MONDAY, '15:00')).dutiesPublished).toBe(false);
+  });
+
+  it('an unknown pharmacy only needs the date to have a file', () => {
+    expect(pharmacyStatus(data, 'nobody', at(MONDAY, '10:00')).dutiesPublished).toBe(true);
+    expect(pharmacyStatus(data, 'nobody', at('2026-10-20', '10:00')).dutiesPublished).toBe(false);
+  });
+
+  it("publishedGroups lists the groups in a date's file", () => {
+    expect([...publishedGroups(data, MONDAY)]).toEqual(['metro']);
+    expect([...publishedGroups(data, TUESDAY)].sort()).toEqual(['lagkadas', 'metro']);
+    expect(publishedGroups(data, '2026-10-20').size).toBe(0);
+  });
+
+  it.each([
+    ['metro-only day', MONDAY, undefined, false, ['metro'], ['lagkadas', 'thermi']],
+    ['metro-only day, metro', MONDAY, 'metro', true, ['metro'], ['lagkadas', 'thermi']],
+    ['metro-only day, lagkadas', MONDAY, 'lagkadas', false, ['metro'], ['lagkadas', 'thermi']],
+    ['metro-only day, null group', MONDAY, null, true, ['metro'], ['lagkadas', 'thermi']],
+    ['two groups, lagkadas', TUESDAY, 'lagkadas', true, ['lagkadas', 'metro'], ['thermi']],
+    ['no file', '2026-10-20', 'metro', false, [], ['lagkadas', 'metro', 'thermi']],
+  ])('coverage: %s', (_name, date, groupId, duties, published, missing) => {
+    const options = groupId === undefined ? undefined : { groupId };
+    const result = coverage(data, at(date, '10:00'), options);
+    expect(result.groups).toEqual({ published, missing });
+    // Without a groupId, `duties` keeps its meaning: the day has a file.
+    expect(result.duties).toBe(groupId === undefined ? data.duties.has(date) : duties);
+  });
+
+  it('reports no missing groups on a fully published day', () => {
+    const full = city(
+      [pharmacy('m'), pharmacy('l', { groupId: 'lagkadas' })],
+      [day(MONDAY, { metro: [], lagkadas: [] })],
+    );
+    expect(coverage(full, at(MONDAY, '10:00')).groups).toEqual({
+      published: ['lagkadas', 'metro'],
+      missing: [],
+    });
+  });
+
+  it('looks at yesterday before 08:00', () => {
+    expect(coverage(data, at(TUESDAY, '03:00')).groups.missing).toEqual(['lagkadas', 'thermi']);
   });
 });
 
