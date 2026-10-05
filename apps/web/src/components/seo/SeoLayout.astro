@@ -1,0 +1,30 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import Base from '../../layouts/Base.astro';
+import type { PageMeta } from '../../lib/seo/views.ts';
+import '../../styles/seo.css';
+
+interface Props {
+  meta: PageMeta;
+  /** Serialised JSON-LD (lib/seo/jsonld.ts jsonLdScript), or none. */
+  jsonLd?: string | undefined;
+}
+
+const { meta, jsonLd } = Astro.props;
+const locale: Locale = meta.locale;
+---
+
+<Base
+  locale={locale}
+  route={null}
+  title={meta.title}
+  description={meta.description}
+  alternates={meta.alternates}
+>
+  {jsonLd !== undefined && (
+    <script slot="head" type="application/ld+json" is:inline set:html={jsonLd} />
+  )}
+  <div class="container seo-page">
+    <slot />
+  </div>
+</Base>

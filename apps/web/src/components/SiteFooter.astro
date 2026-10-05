@@ -4,6 +4,7 @@ import { REPO_URL } from '../config.ts';
 import { formatUpdatedAt } from '../lib/freshness.ts';
 import { buildMeta } from '../lib/meta.ts';
 import { localizedPath, t } from '../i18n/index.ts';
+import { areaIndexPath, dutyIndexPath } from '../i18n/routes.ts';
 
 interface Props {
   locale: Locale;
@@ -11,6 +12,7 @@ interface Props {
 
 const { locale } = Astro.props;
 const d = t(locale).footer;
+const seo = t(locale).seo;
 type SourceId = keyof typeof d.sourceNotes;
 
 function creditName(source: (typeof buildMeta.sources)[number]): string {
@@ -49,6 +51,12 @@ const mapCredits = [
 
     <nav aria-label={d.navLabel}>
       <ul class="links">
+        <li>
+          <a href={dutyIndexPath(locale)}>{seo.footerDuty}</a>
+        </li>
+        <li>
+          <a href={areaIndexPath(locale)}>{seo.footerArea}</a>
+        </li>
         <li>
           <a href={localizedPath(locale, 'about')}>{d.about}</a>
         </li>

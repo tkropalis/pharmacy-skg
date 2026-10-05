@@ -1,0 +1,97 @@
+import { describe, expect, it } from 'vitest';
+import type { PharmacyStatus } from '@pharmacy-skg/core';
+import { t } from '../../i18n/index.ts';
+import { describeStatus, timeInCity, whenText } from './status-text.ts';
+
+// 2026-10-05 12:00 in Athens (UTC+3 in October).
+const now = new Date('2026-10-05T09:00:00Z');
+
+describe('timeInCity', () => {
+  it('uses the city time zone whatever the device', () => {
+    expect(timeInCity(new Date('2026-10-05T21:30:00Z'), 'el')).toBe('00:30');
+    expect(timeInCity(new Date('2026-01-05T21:30:00Z'), 'en')).toBe('23:30');
+  });
+});
+
+describe('whenText', () => {
+  const s = t('el').seo.status;
+  it('says today, tomorrow or the weekday', () => {
+    expect(whenText(new Date('2026-10-05T14:00:00Z'), now, 'el', s)).toBe('σήμερα στις 17:00');
+    expect(whenText(new Date('2026-10-06T05:00:00Z'), now, 'el', s)).toBe('αύριο στις 08:00');
+    expect(whenText(new Date('2026-10-08T05:00:00Z'), now, 'en', t('en').seo.status)).toBe(
+      'Thursday at 08:00',
+    );
+  });
+
+  it('compares dates in the city, not in UTC', () => {
+    // 22:30 UTC on the 5th is 01:30 on the 6th in Athens.
+    expect(whenText(new Date('2026-10-05T22:30:00Z'), now, 'en', t('en').seo.status)).toBe(
+      'tomorrow at 01:30',
+    );
+  });
+});
+
+describe('describeStatus', () => {
+  const open = (reasons: PharmacyStatus & { state: 'open' }): PharmacyStatus => reasons;
+
+  it('names the duty listing, the closing time and asks to call', () => {
+    const status = open({
+      state: 'open',
+      until: new Date('2026-10-05T20:00:00Z'),
+      closingSoon: false,
+      reasons: [
+        { kind: 'duty', duty: 'on-duty', date: '2026-10-05', groupId: 'metro', heading: 'x' },
+      ],
+    });
+    const result = describeStatus(status, true, now, 'el', t('el'));
+    expect(result.tone).toBe('open');
+    expect(result.short).toBe('Εφημερεύει (λίστα ΦΣΘ) · μέχρι τις 23:00');
+    expect(result.text).toBe('Εφημερεύει (λίστα ΦΣΘ) · μέχρι τις 23:00. Καλέστε πριν πάτε.');
+  });
+
+  it('says regular hours, extended hours and closing soon', () => {
+    const base = {
+      state: 'open',
+      until: new Date('2026-10-05T11:00:00Z'),
+      closingSoon: true,
+    } as const;
+    expect(
+      describeStatus({ ...base, reasons: [{ kind: 'regular' }] }, true, now, 'en', t('en')).short,
+    ).toBe('Open (regular hours) · until 14:00 (closing soon)');
+    expect(
+      describeStatus({ ...base, reasons: [{ kind: 'extended' }] }, true, now, 'en', t('en')).short,
+    ).toBe('Open (ΠΚΜ extended hours) · until 14:00 (closing soon)');
+  });
+
+  it('warns when the duty list is not published yet', () => {
+    const status: PharmacyStatus = { state: 'closed', nextOpen: null, nextReasons: [] };
+    const result = describeStatus(status, false, now, 'en', t('en'));
+    expect(result.tone).toBe('closed');
+    expect(result.text).toBe(
+      'Closed now. We do not know of an opening in the next 7 days. The duty list for this day has not been published yet, so the status may change. Call before you go.',
+    );
+  });
+
+  it('says when a closed pharmacy opens next', () => {
+    const status: PharmacyStatus = {
+      state: 'closed',
+      nextOpen: new Date('2026-10-05T14:00:00Z'),
+      nextReasons: [{ kind: 'regular' }],
+    };
+    expect(describeStatus(status, true, now, 'el', t('el')).text).toBe(
+      'Κλειστό τώρα. Ανοίγει σήμερα στις 17:00. Καλέστε πριν πάτε.',
+    );
+  });
+
+  it('says on duty without hours', () => {
+    const status: PharmacyStatus = {
+      state: 'duty-hours-unknown',
+      duty: { date: '2026-10-05', duty: 'on-duty', groupId: 'thermi', heading: 'x' },
+      nextOpen: null,
+    };
+    const result = describeStatus(status, true, now, 'el', t('el'));
+    expect(result.tone).toBe('duty-unknown');
+    expect(result.short).toBe('Εφημερεύει (λίστα ΦΣΘ)');
+    expect(result.text).toContain('η λίστα δεν αναγράφει ώρες');
+  });
+});

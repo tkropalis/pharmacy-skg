@@ -1,0 +1,43 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import { t } from '../../i18n/index.ts';
+import { loadSeoModel } from '../../lib/seo/site-data.ts';
+import { areaIndexProps } from '../../lib/seo/views.ts';
+import SeoLayout from './SeoLayout.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const model = await loadSeoModel();
+const page = areaIndexProps(model, locale);
+const d = t(locale);
+---
+
+<SeoLayout meta={page.meta}>
+  <h1>{page.meta.title}</h1>
+  <p>{d.seo.area.indexIntro}</p>
+
+  {page.groups.map((group) => (
+    <section aria-labelledby={`group-${group.id ?? 'other'}`}>
+      <h2 id={`group-${group.id ?? 'other'}`}>{group.name}</h2>
+      <ul class="seo-columns">
+        {group.areas.map((area) => (
+          <li>
+            <a href={area.path}>{area.label}</a>
+            <span class="seo-meta"> ({area.count})</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+  <p class="seo-meta">
+    <strong>{d.footer.lastUpdatedLabel}</strong>{' '}
+    <time data-updated-at datetime={page.updatedAt}>
+      {page.updatedAtText}
+    </time>
+    . {d.footer.disclaimer}
+  </p>
+</SeoLayout>

@@ -9,9 +9,11 @@ interface Props {
   locale: Locale;
   /** null on pages without a counterpart (404): the switcher then links to the home pages. */
   route: RouteKey | null;
+  /** Explicit per-locale paths for generated pages that have no RouteKey. */
+  alternates?: Record<Locale, string> | undefined;
 }
 
-const { locale, route } = Astro.props;
+const { locale, route, alternates } = Astro.props;
 ---
 
 <header class="site-header">
@@ -23,7 +25,7 @@ const { locale, route } = Astro.props;
       </svg>
       <span class="name">{APP_NAME[locale]}</span>
     </a>
-    <LanguageSwitcher locale={locale} route={route ?? 'home'} />
+    <LanguageSwitcher locale={locale} route={route ?? 'home'} alternates={alternates} />
   </div>
 </header>
 

@@ -8,10 +8,12 @@ interface Props {
   locale: Locale;
   /** The page being shown; the switcher links to the same page in the other locale. */
   route: RouteKey;
+  /** Explicit per-locale paths for generated pages (pharmacy, duty date, area). */
+  alternates?: Record<Locale, string> | undefined;
 }
 
-const { locale, route } = Astro.props;
-const paths = alternatePaths(route);
+const { locale, route, alternates } = Astro.props;
+const paths = alternates ?? alternatePaths(route);
 const others = LOCALES.filter((l) => l !== locale);
 ---
 

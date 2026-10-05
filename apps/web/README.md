@@ -23,6 +23,14 @@ src/i18n/                  typed dictionaries (el.ts defines the shape, en.ts mu
 src/layouts/Base.astro     head tags, hreflang, emergency strip, header, stale banner, footer
 src/pages/[...path].astro  every page of every locale, from i18n/routes.ts
 src/lib/data.ts            loadCityData(cityId, dates): fetches the published JSON for the client
+src/lib/seo/              view models for the search-engine pages (pure, tested): translit.ts (ELOT 743 slugs),
+                           model.ts, views.ts, format.ts, status-text.ts, jsonld.ts, sitemap.ts;
+                           site-data.ts is the only file that reads data/ at build time
+src/components/seo/       pharmacy, duty-date and area pages (thin; the logic is in lib/seo)
+src/pages/<slug>/         one folder per parameterised route and locale (farmakeio, efimeries, perioxi,
+                           en/pharmacy, en/duty, en/area), named after PARAM_ROUTES in i18n/routes.ts
+src/pages/sitemap.xml.ts, robots.txt.ts   sitemap with hreflang alternates, and robots
+src/scripts/seo/          status now, open-now and today highlight, computed in the browser
 src/lib/pwa.ts            service worker registration and offline prefetch
 src/scripts/boot.ts        runs on every page: freshness, service worker, prefetch
 src/scripts/home-app.tsx   mounts the home screen into #app (replaces the no-JavaScript fallback)
@@ -34,6 +42,15 @@ integrations/maplibre-worker.ts   publishes MapLibre's worker files under /_astr
 ```
 
 To rename the app, edit `APP_NAME` and `APP_SHORT_NAME` in `src/config.ts`.
+
+## Search-engine pages
+
+The build generates a page per pharmacy (about 1,030 per locale), per published duty date and per locality, plus index pages for dates and areas. They are static, so anything that depends on the clock is computed in the browser: the pharmacy's status, which pharmacies of an area are open, and which date is today. The static part shows only officially published duty dates (decision D11).
+
+- **Duty-date pages** exist for the dates whose duty file is published into `dist/data` (today minus 7 days onward, `integrations/data-files.ts`), at most 45 (`MAX_DUTY_PAGES` in `lib/seo/model.ts`). Pharmacy pages also list the last 14 days from `data/`, linking to a date page only where one exists.
+- **Area slugs** come from the locality name by ELOT 743 transliteration (`lib/seo/translit.ts`). They depend only on the name, so they are stable across builds.
+- **Service worker:** these pages are not precached (`integrations/precache.ts`), only the index pages are. They are fetched when visited.
+- **Sitemap:** `/sitemap.xml` lists both locales with `xhtml:link` alternates. The report form and the 404 page are left out.
 
 ## Deploying
 

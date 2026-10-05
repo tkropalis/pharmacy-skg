@@ -1,4 +1,6 @@
 import { createHash } from 'node:crypto';
+import { localePrefix, PARAM_ROUTES } from '../src/i18n/routes.ts';
+import { LOCALES } from '@pharmacy-skg/core';
 
 export interface PrecacheFile {
   /** Path relative to the build output, with forward slashes: 'en/about/index.html'. */
@@ -7,8 +9,19 @@ export interface PrecacheFile {
   readonly hash: string;
 }
 
+/**
+ * The generated pages with a parameter (one per pharmacy, duty date and area, thousands in
+ * all): they are fetched when visited and never precached. Their index pages stay in the shell.
+ */
+const PARAM_PAGES = Object.values(PARAM_ROUTES).flatMap((route) =>
+  LOCALES.map((locale) => {
+    const directory = `${localePrefix(locale)}/${route[locale]}`.replace(/^\//, '');
+    return new RegExp(`^${directory}/[^/]+/index\\.html$`);
+  }),
+);
+
 /** Files that must never be precached: the worker itself and the data (network-first). */
-const EXCLUDED = [/^sw\.js$/, /^data\//, /^404\.html$/, /\.map$/];
+const EXCLUDED = [/^sw\.js$/, /^data\//, /^404\.html$/, /\.map$/, ...PARAM_PAGES];
 
 /** The URL a built file is served at: 'en/about/index.html' becomes '/en/about/'. */
 export function urlForFile(path: string): string {

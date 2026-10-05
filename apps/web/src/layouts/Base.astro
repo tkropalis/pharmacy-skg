@@ -5,7 +5,7 @@ import SiteFooter from '../components/SiteFooter.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import StaleBanner from '../components/StaleBanner.astro';
 import { APP_NAME, THEME_COLORS } from '../config.ts';
-import { alternatePaths, localizedPath, t } from '../i18n/index.ts';
+import { alternatePaths, t } from '../i18n/index.ts';
 import type { RouteKey } from '../i18n/index.ts';
 import { buildMeta } from '../lib/meta.ts';
 import '../styles/global.css';
@@ -16,15 +16,20 @@ interface Props {
   route: RouteKey | null;
   title: string;
   description: string;
+  /**
+   * Explicit path of this page in every locale, for generated pages with a parameter (pharmacy,
+   * duty date, area) that have no RouteKey. Sets canonical, hreflang and the language switcher.
+   */
+  alternates?: Record<Locale, string>;
 }
 
-const { locale, route, title, description } = Astro.props;
+const { locale, route, title, description, alternates: pageAlternates } = Astro.props;
 const d = t(locale);
 
 const site = Astro.site ?? new URL('https://pharmacy-skg.vercel.app');
 const absolute = (path: string) => new URL(path, site).href;
-const alternates = route === null ? null : alternatePaths(route);
-const canonical = route === null ? null : absolute(localizedPath(locale, route));
+const alternates = pageAlternates ?? (route === null ? null : alternatePaths(route));
+const canonical = alternates === null ? null : absolute(alternates[locale]);
 const fullTitle = route === 'home' ? `${APP_NAME[locale]}` : `${title} · ${APP_NAME[locale]}`;
 const ogLocales: Record<Locale, string> = { el: 'el_GR', en: 'en_US' };
 const analytics = import.meta.env.PROD && import.meta.env.PUBLIC_ANALYTICS === 'vercel';
@@ -37,7 +42,7 @@ const analytics = import.meta.env.PROD && import.meta.env.PUBLIC_ANALYTICS === '
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    {route === null && <meta name="robots" content="noindex" />}
+    {alternates === null && <meta name="robots" content="noindex" />}
 
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content={THEME_COLORS.light} media="(prefers-color-scheme: light)" />
@@ -73,13 +78,14 @@ const analytics = import.meta.env.PROD && import.meta.env.PUBLIC_ANALYTICS === '
     <meta name="twitter:card" content="summary" />
 
     {analytics && <script is:inline defer src="/_vercel/insights/script.js" />}
+    <slot name="head" />
   </head>
   <body>
     <a class="skip-link" href="#main">
       {d.skipToContent}
     </a>
     <EmergencyStrip locale={locale} />
-    <SiteHeader locale={locale} route={route} />
+    <SiteHeader locale={locale} route={route} alternates={pageAlternates} />
     <StaleBanner locale={locale} />
     <main id="main" tabindex="-1">
       <slot />

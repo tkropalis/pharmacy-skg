@@ -1,0 +1,13 @@
+---
+import PharmacyPage from '../../components/seo/PharmacyPage.astro';
+import { loadSeoModel } from '../../lib/seo/site-data.ts';
+
+export async function getStaticPaths() {
+  const model = await loadSeoModel();
+  return model.pharmacies.map((pharmacy) => ({ params: { id: pharmacy.id } }));
+}
+
+const { id } = Astro.params;
+---
+
+<PharmacyPage locale="el" id={id ?? ''} />
