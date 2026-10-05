@@ -126,6 +126,18 @@ export function validate(data: DataSet): Report {
     if (list.entries.length < MIN_EXTENDED_ENTRIES) {
       error('count', `extended hours ${list.period.from}: ${list.entries.length} entries`);
     }
+    const seen = new Set<string>();
+    const repeated = new Set<string>();
+    for (const entry of list.entries) {
+      if (seen.has(entry.pharmacyId)) repeated.add(entry.pharmacyId);
+      seen.add(entry.pharmacyId);
+    }
+    if (repeated.size > 0) {
+      warn(
+        'duplicate-extended',
+        `extended hours ${list.period.from}: several rows for ${[...repeated].join(', ')}`,
+      );
+    }
     const unmatched = list.entries.filter((entry) => byId.get(entry.pharmacyId)?.groupId === null);
     if (unmatched.length > list.entries.length * 0.3) {
       warn(
