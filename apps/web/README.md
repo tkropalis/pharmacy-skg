@@ -57,10 +57,16 @@ To rename the app, edit `APP_NAME` and `APP_SHORT_NAME` in `src/config.ts`.
 
 ## Lighthouse
 
-Run on the built site served with compression and the cache headers of `vercel.json` (`astro preview` sends neither; "Use text compression" would otherwise fail). Mobile preset, Chromium 141, simulated Slow 4G and 4× CPU slowdown. Measured on this branch (a slow, shared container, so performance varies by ±10 between runs): see the pull request for the latest scores.
+Run on the built site served with compression and the cache headers of `vercel.json` (`astro preview` sends neither, so "use text compression" would fail), mobile preset, with a local stand-in for `tiles.openfreemap.org`. Last measured on this branch, in a slow shared container (performance varies by about ±10 between runs):
 
-- **Home screen:** the list is rendered by React after the data has loaded, so the largest paint is the summary line, and total blocking time is the weak point (React render of the list plus the first parse of the data). The map is loaded after the list, from its own chunk, and is not part of the first paint.
-- **"Errors logged to the console"** fails in a sandbox with no route to `tiles.openfreemap.org`; with the network it does not.
+| Page                     | Performance | Accessibility | Best practices | SEO |
+| ------------------------ | ----------- | ------------- | -------------- | --- |
+| Duty date                | 100         | 100           | 100            | 100 |
+| Pharmacy                 | 97          | 100           | 100            | 100 |
+| Home screen (list + map) | 50 to 70    | 100           | 100            | 100 |
+
+- **Home screen:** the list is drawn by React after the data has loaded, and the map starts after the list. Total blocking time (about 3 s in the simulation) is the first React render (one long task) plus MapLibre's start (several 300 to 600 ms tasks: the chunk, the style, the pin images, the layers). Largest paint is the summary line, about 3.3 s. The map is already lazy and outside the first paint; more would mean a lighter map or no map on the first visit, which is a product decision.
+- **Best practices** is 96 when the browser cannot reach the tile server ("errors logged to the console"); the run above resolves it to a local stub.
 
 ## Search-engine pages
 
