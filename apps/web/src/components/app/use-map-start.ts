@@ -10,7 +10,7 @@ import { whenPageQuiet } from '../../lib/quiet.ts';
  * the page has settled, and does not compete with that. It starts at once when the person
  * reaches for it (see `wake`).
  */
-export const MAP_QUIET_MS = 3000;
+export const MAP_QUIET_MS = 1000;
 /** The longest the map waits for a quiet page after the list is ready. */
 export const MAP_MAX_WAIT_MS = 15_000;
 /** Once quiet, the longest the browser may take to find an idle moment. */

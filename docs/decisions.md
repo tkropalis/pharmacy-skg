@@ -45,7 +45,7 @@ These were chosen without a formal decision and apply until someone objects.
 - **Look:** light/dark follows the system setting, with a pharmacy-green accent. Accessibility target: WCAG 2.2 AA.
 - **Legal:** a disclaimer ("call before you go; not medical advice"), a privacy page, and credits for every data source.
 - **Name:** "pharmacy-skg" is a working title. The public name and domain are chosen before launch.
-- **Map:** MapLibre GL JS with OpenFreeMap tiles and Greek labels. It starts once the page has settled after the list (about 4 s on a normal load), or at once when touched, so that starting it does not block the first reading and scrolling (apps/web/README.md, Lighthouse).
+- **Map:** MapLibre GL JS with OpenFreeMap tiles and Greek labels. It starts once the page has settled after the list (about 1–2 s after the list), or at once when touched, so that starting it does not block the first reading and scrolling (apps/web/README.md, Lighthouse).
 - **Directions:** deep links into Google Maps, Apple Maps or Waze, plus a call link. No routing API.
 - **Geocoding:** once per address, with Nominatim. Results are stored with their source and a confidence level, and manual corrections live in the repo. Google geocoding is not used, because of its terms.
 - **Tooling:**
