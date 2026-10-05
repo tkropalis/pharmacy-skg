@@ -283,7 +283,7 @@ interface ListFilterChipsProps {
   readonly onChange: (filter: 'all' | 'duty') => void;
 }
 
-/** "All open (N)" and "On duty (M)": by day, so people can see only the duty pharmacies. */
+/** "All (N)" and "On duty (M)": by day, so people can see only the duty pharmacies. */
 export function ListFilterChips({
   text,
   active,

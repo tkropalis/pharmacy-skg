@@ -103,7 +103,7 @@ export const appEn: Dictionary['app'] = {
   list: {
     label: 'Pharmacies',
     filterLabel: 'List filter',
-    filterAll: 'All open ({n})',
+    filterAll: 'All ({n})',
     filterDuty: 'On duty ({n})',
     noDuty: 'No pharmacy is on duty right now. See all the open ones.',
     showMore: 'Show more',
@@ -135,6 +135,8 @@ export const appEn: Dictionary['app'] = {
     favouriteRemoved: '{name}: removed from favourites',
     report: 'Report a problem',
     reportLabel: 'Report a problem with {name}',
+    more: 'More',
+    moreLabel: 'More for {name}',
     showOnMap: 'Show on map',
     selected: 'selected',
     dutiesMissing: 'The duty list for this area has not been published yet',

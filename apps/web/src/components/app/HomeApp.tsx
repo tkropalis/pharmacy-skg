@@ -466,6 +466,8 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
     }
   }
 
+  const showOriginChip = origin !== null || geo === 'locating';
+  const showChips = !dutyLoading && result.chips;
   const header = (
     <>
       <div className="tabs" role="tablist" aria-label={text.tabs.label}>
@@ -508,21 +510,34 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
           </>
         )}
       </p>
-      {ready && tab === 'open' && (origin !== null || geo === 'locating') && (
-        <OriginChip
-          text={text}
-          label={
-            origin === null
-              ? text.origin.locating
-              : origin.kind === 'geo'
-                ? text.origin.myLocation
-                : fill(text.origin.areaName, { name: origin.label })
-          }
-          when={showWhen}
-          locating={origin === null}
-          open={controlsOpen}
-          onToggle={toggleControls}
-        />
+      {ready && tab === 'open' && (showOriginChip || showChips) && (
+        <div className="sheet-toolbar">
+          {showOriginChip && (
+            <OriginChip
+              text={text}
+              label={
+                origin === null
+                  ? text.origin.locating
+                  : origin.kind === 'geo'
+                    ? text.origin.myLocation
+                    : fill(text.origin.areaName, { name: origin.label })
+              }
+              when={showWhen}
+              locating={origin === null}
+              open={controlsOpen}
+              onToggle={toggleControls}
+            />
+          )}
+          {showChips && (
+            <ListFilterChips
+              text={text}
+              active={result.active}
+              allCount={built.openCount}
+              dutyCount={result.dutyCount}
+              onChange={changeFilter}
+            />
+          )}
+        </div>
       )}
     </>
   );
@@ -688,16 +703,6 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                 <p className="callout" role="note">
                   {text.moreDatesFailed}
                 </p>
-              )}
-
-              {!dutyLoading && result.chips && (
-                <ListFilterChips
-                  text={text}
-                  active={result.active}
-                  allCount={built.openCount}
-                  dutyCount={result.dutyCount}
-                  onChange={changeFilter}
-                />
               )}
 
               {dutyLoading ? null : result.rows.length === 0 ? (

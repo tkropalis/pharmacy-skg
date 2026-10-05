@@ -110,7 +110,7 @@ export const appEl = {
   list: {
     label: 'Φαρμακεία',
     filterLabel: 'Φίλτρο λίστας',
-    filterAll: 'Όλα τα ανοιχτά ({n})',
+    filterAll: 'Όλα ({n})',
     filterDuty: 'Εφημερεύοντα ({n})',
     noDuty: 'Κανένα εφημερεύον φαρμακείο αυτή την ώρα. Δείτε όλα τα ανοιχτά.',
     showMore: 'Εμφάνιση περισσότερων',
@@ -142,6 +142,8 @@ export const appEl = {
     favouriteRemoved: '{name}: αφαιρέθηκε από τα αγαπημένα',
     report: 'Αναφορά προβλήματος',
     reportLabel: 'Αναφορά προβλήματος για το {name}',
+    more: 'Περισσότερα',
+    moreLabel: 'Περισσότερα για το {name}',
     showOnMap: 'Εμφάνιση στον χάρτη',
     selected: 'επιλεγμένο',
     dutiesMissing: 'Η λίστα εφημεριών για την περιοχή δεν έχει δημοσιευτεί ακόμη',
