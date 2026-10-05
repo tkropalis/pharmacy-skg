@@ -4,6 +4,8 @@
  * assignable to these types.
  */
 
+import type { City } from './city.ts';
+
 /** An ISO date, YYYY-MM-DD, in the city's time zone. */
 export type IsoDate = string;
 /** A local wall-clock time, HH:MM (00:00–23:59). */
@@ -148,4 +150,13 @@ export interface Meta {
     readonly file: string;
   }[];
   readonly sources: readonly SourceCredit[];
+}
+
+/** Everything the open-now engine needs for one city, loaded by the app. */
+export interface CityData {
+  readonly city: City;
+  readonly pharmacies: readonly Pharmacy[];
+  /** Published duty lists, by date. Missing dates are unpublished, not "no duty". */
+  readonly duties: ReadonlyMap<IsoDate, DutyDay>;
+  readonly extendedHours: readonly ExtendedHours[];
 }

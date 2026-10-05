@@ -8477,7 +8477,7 @@
       "name": "ΣΤΡΟΥΜΠΙΝΗ ΑΛΕΞΑΝΔΡΑ & ΣΙΑ ΟΕ",
       "address": "ΩΡΑΙΟΚΑΣΤΡΟΥ 143",
       "locality": "Σταυρούπολη",
-      "postcode": "57014",
+      "postcode": "56430",
       "phone": "2310606083",
       "groupId": "metro",
       "sources": [
@@ -20061,7 +20061,7 @@
       "name": "ΒΑΣΙΛΕΙΟΥ ΝΙΚΟΛΑΟΣ & ΣΙΑ ΕΕ",
       "address": "ΑΓ. ΝΙΚΟΛΑΟΥ 31",
       "locality": "Νέα Μηχανιώνα",
-      "postcode": "57200",
+      "postcode": "57004",
       "phone": "2392031130",
       "groupId": "thermaikos",
       "sources": [
@@ -21242,11 +21242,12 @@
       "name": "ΣΤΡΟΥΜΠΙΝΗ ΑΛΕΞΑΝΔΡΑ",
       "address": "Ν. ΜΑΔΥΤΟΣ",
       "locality": "Νέα Μάδυτος",
-      "postcode": null,
+      "postcode": "57014",
       "phone": "2397041406",
       "groupId": "volvi",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-10-07",
@@ -21379,6 +21380,27 @@
       "location": null
     },
     {
+      "id": "x-05107b6da3",
+      "name": "ΝΙΚΟΠΟΥΛΟΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "ΠΥΛΑΙΑΣ 27 - ΑΝ. ΡΩΜΥΛΙΑΣ",
+      "locality": "Θεσσαλονίκη",
+      "postcode": "54454",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-09-01",
+      "lastSeen": "2026-09-01",
+      "location": {
+        "lat": 40.604451,
+        "lon": 22.963774,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "2fe4179c-1701-47d1-abb2-64fa9be054b5"
+      }
+    },
+    {
       "id": "x-0967cbb590",
       "name": "Σ.Φ. ΝΤΟΤΣΗΣ ΓΕΩΡΓΙΟΣ - ΝΤΟΤΣΗΣ ΙΩΑΝΝΗΣ ΟΕ",
       "address": "ΚΟΙΝΟΤΗΣ ΚΑΒΑΛΛΑΡΙΟΥ",
@@ -21449,6 +21471,27 @@
       "firstSeen": "2026-09-01",
       "lastSeen": "2026-09-01",
       "location": null
+    },
+    {
+      "id": "x-29211a0dc8",
+      "name": "ΓΚΑΤΖΟΥΛΗ ΑΓΟΡΙΤΣΑ & ΣΙΑ Ο.Ε.",
+      "address": "ΜΙΑΟΥΛΗ & ΜΙΧΑΛΑΚΟΠΟΥΛΟΥ 1",
+      "locality": "Καλαμαριά",
+      "postcode": "55132",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-09-01",
+      "lastSeen": "2026-09-01",
+      "location": {
+        "lat": 40.584719,
+        "lon": 22.953095,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Καλαμαριά"
+      }
     },
     {
       "id": "x-37a0f7b83b",
@@ -21620,6 +21663,27 @@
       "location": null
     },
     {
+      "id": "x-abf9bfc767",
+      "name": "ΣΤΑΥΡΟΠΟΥΛΟΣ ΝΙΚΗΦΟΡΟΣ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 148",
+      "locality": "Σταυρούπολη",
+      "postcode": "56430",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-09-01",
+      "lastSeen": "2026-09-01",
+      "location": {
+        "lat": 40.67138,
+        "lon": 22.931969,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Σταυρούπολη"
+      }
+    },
+    {
       "id": "x-b31465ff60",
       "name": "ΝΤΑΓΚΑΣ ΙΩΑΝΝΗΣ",
       "address": "ΚΩΝ.ΚΑΡΑΜΑΝΛΗ 21 (ΑΥΣΤΡΑΛΙΑΣ)",
@@ -21696,6 +21760,21 @@
         "precision": "locality",
         "ref": "Ωραιόκαστρο"
       }
+    },
+    {
+      "id": "x-e0d8819bcb",
+      "name": "ΒΑΣΙΛΕΙΟΥ ΝΙΚΟΛΑΟΣ",
+      "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 1",
+      "locality": "Κολχικό",
+      "postcode": "57200",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-09-01",
+      "lastSeen": "2026-09-01",
+      "location": null
     },
     {
       "id": "x-ef4b0b4ca9",

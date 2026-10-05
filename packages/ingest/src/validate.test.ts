@@ -145,4 +145,31 @@ describe('validate', () => {
     });
     expect(report.warnings.map((e) => e.code)).toContain('coverage');
   });
+  it('warns when one pharmacy has several rows in an extended-hours list', () => {
+    const entries = ids.slice(0, 120).map((id) => ({
+      pharmacyId: id,
+      name: 'X',
+      address: 'Y',
+      postcode: '54622',
+      area: 'Z',
+      schedule: { type: 'weekly' as const, days: { '1': [{ from: '08:00', to: '14:30' }] } },
+      scheduleText: '',
+    }));
+    const list = {
+      schemaVersion: 1 as const,
+      period: { from: '2026-09-01', to: '2026-10-31' },
+      title: 'x',
+      announcementUrl: 'https://example.org/x',
+      source: { url: 'https://example.org/x.xlsx', uploadedAt: '2026-09-01T00:00:00Z' },
+      entries: [...entries, { ...entries[0], name: 'again' }],
+    };
+    const report = validate({
+      today: '2026-10-05',
+      days: [day('2026-10-05'), day('2026-10-06')],
+      pharmacies,
+      extended: [list as never],
+    });
+    const warning = report.warnings.find((w) => w.code === 'duplicate-extended');
+    expect(warning?.message).toContain(ids[0]);
+  });
 });

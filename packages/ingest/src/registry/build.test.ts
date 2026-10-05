@@ -4,7 +4,7 @@ import { parseDutyList } from '../fsth/parse.ts';
 import { extractTextItems } from '../pdf.ts';
 import { parseExtendedHours } from '../pkm/parse.ts';
 import { readFirstSheet } from '../pkm/xlsx.ts';
-import { dutyEntryId, matchExtendedEntry } from './build.ts';
+import { dutyEntryId, matchExtendedEntries, matchExtendedEntry } from './build.ts';
 
 const FIXTURES = new URL('../../fixtures/', import.meta.url);
 
@@ -46,6 +46,89 @@ describe('matchExtendedEntry against the real fixtures', () => {
     // With a week of duty lists, a good share of the 398 entries already match.
     const matched = entries.filter((entry) => matchExtendedEntry(entry, pharmacies) !== null);
     expect(matched.length).toBeGreaterThan(100);
+  });
+});
+
+describe('matchExtendedEntries', () => {
+  const pharmacies = [
+    {
+      id: '2310606083',
+      name: 'ΣΤΡΟΥΜΠΙΝΗ ΑΛΕΞΑΝΔΡΑ & ΣΙΑ ΟΕ',
+      address: 'ΩΡΑΙΟΚΑΣΤΡΟΥ 143',
+      locality: 'Σταυρούπολη',
+    },
+    {
+      id: '2310111111',
+      name: 'ΑΛΛΗ ΦΑΡΜΑΚΟΠΟΙΟΣ ΕΕ',
+      address: 'ΤΣΙΜΙΣΚΗ 5',
+      locality: 'Θεσσαλονίκη',
+    },
+  ];
+  const row = (name: string, address: string, postcode: string, area: string) => ({
+    name,
+    address,
+    postcode,
+    area,
+  });
+  const shopOnMadytos = row('ΣΤΡΟΥΜΠΙΝΗ ΑΛΕΞΑΝΔΡΑ', 'Ν. ΜΑΔΥΤΟΣ', '57014', 'Νέα Μάδυτος');
+  const shopOnStavroupoli = row(
+    'ΣΤΡΟΥΜΠΙΝΗ ΑΛΕΞΑΝΔΡΑ & ΣΙΑ ΟΕ',
+    'ΩΡΑΙΟΚΑΣΤΡΟΥ 143',
+    '56430',
+    'Σταυρούπολη',
+  );
+
+  it('keeps the street match when a namesake shop comes first, and gives the namesake its own id', () => {
+    const { ids, warnings } = matchExtendedEntries([shopOnMadytos, shopOnStavroupoli], pharmacies);
+    expect(ids[1]).toBe('2310606083');
+    expect(ids[0]).toMatch(/^x-[0-9a-f]{10}$/);
+    expect(warnings).toHaveLength(1);
+    expect(warnings[0]?.code).toBe('duplicate-extended');
+    expect(warnings[0]?.message).toContain('Ν. ΜΑΔΥΤΟΣ');
+  });
+
+  it('is independent of the row order', () => {
+    const forward = matchExtendedEntries([shopOnMadytos, shopOnStavroupoli], pharmacies);
+    const backward = matchExtendedEntries([shopOnStavroupoli, shopOnMadytos], pharmacies);
+    expect(backward.ids[0]).toBe('2310606083');
+    expect(backward.ids[1]).toBe(forward.ids[0]);
+  });
+
+  it('drops a second row for the same shop and says so', () => {
+    const { ids, warnings } = matchExtendedEntries(
+      [shopOnStavroupoli, { ...shopOnStavroupoli, postcode: '99999' }],
+      pharmacies,
+    );
+    expect(ids).toEqual(['2310606083', null]);
+    expect(warnings).toHaveLength(1);
+    expect(warnings[0]?.message).toContain('99999');
+  });
+
+  it('gives two unmatched namesakes different ids', () => {
+    const a = row('ΝΙΚΟΠΟΥΛΟΣ ΑΛΕΞΑΝΔΡΟΣ', 'ΕΠΙΔΑΥΡΟΥ 35', '54454', 'Θεσσαλονίκη');
+    const b = row('ΝΙΚΟΠΟΥΛΟΣ ΑΛΕΞΑΝΔΡΟΣ', 'ΠΥΛΑΙΑΣ 27', '54454', 'Θεσσαλονίκη');
+    const { ids } = matchExtendedEntries([a, b], []);
+    expect(ids[0]).not.toBe(ids[1]);
+    expect(ids.every((id) => id?.startsWith('x-'))).toBe(true);
+  });
+
+  it('matches like matchExtendedEntry when nothing collides', () => {
+    const { ids, warnings } = matchExtendedEntries(
+      [row('ΑΛΛΗ ΦΑΡΜΑΚΟΠΟΙΟΣ', 'ΤΣΙΜΙΣΚΗ 5', '54623', 'Θεσσαλονίκη')],
+      pharmacies,
+    );
+    expect(ids).toEqual(['2310111111']);
+    expect(warnings).toEqual([]);
+  });
+
+  it('gives every row of the real ΠΚΜ file a different id, whatever it matches', async () => {
+    const { entries } = parseExtendedHours(
+      readFirstSheet(new Uint8Array(await readFile(new URL('pkm/2026-09_2026-10.xlsx', FIXTURES)))),
+    );
+    const { ids } = matchExtendedEntries(entries, await dutyPharmacies());
+    const kept = ids.filter((id): id is string => id !== null);
+    expect(new Set(kept).size).toBe(kept.length);
+    expect(kept.length).toBeGreaterThan(entries.length - 5);
   });
 });
 

@@ -6,9 +6,8 @@
  * `CityData` objects are treated as immutable: derived indexes are cached per
  * object, so load new data into a new object.
  */
-import type { City } from './city.ts';
 import type {
-  DutyDay,
+  CityData,
   DutyKind,
   DutySection,
   ExtendedHours,
@@ -22,14 +21,7 @@ import { isHoliday } from './holidays.ts';
 import { regularRanges } from './regular-hours.ts';
 import { addDays, isoWeekday, localToInstant, zonedDate, zonedParts } from './zoned.ts';
 
-/** Everything the engine needs for one city, loaded by the app. */
-export interface CityData {
-  readonly city: City;
-  readonly pharmacies: readonly Pharmacy[];
-  /** Published duty lists, by date. Missing dates are unpublished, not "no duty". */
-  readonly duties: ReadonlyMap<IsoDate, DutyDay>;
-  readonly extendedHours: readonly ExtendedHours[];
-}
+export type { CityData } from './data.ts';
 
 /** Why a pharmacy is open during an interval. */
 export type OpenReason =
@@ -71,7 +63,10 @@ export type PharmacyStatus =
       readonly state: 'open';
       /** End of the merged open interval containing `at` (adjacent intervals merge). */
       readonly until: Date;
+      /** Why it is open at `at`: the reasons of the openings that contain `at`. */
       readonly reasons: readonly OpenReason[];
+      /** The reasons of the whole merged run up to `until`, including later ones. */
+      readonly runReasons: readonly OpenReason[];
       /** True if `until` is within 30 minutes of `at`. */
       readonly closingSoon: boolean;
     }
@@ -85,14 +80,20 @@ export type PharmacyStatus =
       readonly state: 'closed';
       /** Next known opening within the horizon (7 days), or null. */
       readonly nextOpen: Date | null;
+      /** Why it opens at `nextOpen`: the reasons of the openings that start then. */
       readonly nextReasons: readonly OpenReason[];
+      /** The reasons of the whole merged run that starts at `nextOpen`. */
+      readonly nextRunReasons: readonly OpenReason[];
     };
 
 export interface StatusDetails {
+  /** False for a pharmacy id that is not in `CityData.pharmacies`; `status` is then `closed`. */
+  readonly found: boolean;
   readonly status: PharmacyStatus;
   /**
-   * False when a date the answer depends on (today, or the day of `nextOpen`)
-   * has no published duty list yet, so the answer may change once it is.
+   * False when a date the answer depends on has no published duty list yet, so the
+   * answer may change once it is: every date from the duty day containing `at`
+   * (yesterday before 08:00) through today and the day of `nextOpen`.
    */
   readonly dutiesPublished: boolean;
 }
@@ -166,12 +167,17 @@ function indexOf(data: CityData): Index {
     }
   }
 
+  // One entry per pharmacy per period: if a list repeats a pharmacy, the first row wins,
+  // and its days never fall through to a later row.
   const extended = new Map<string, ExtendedListing[]>();
   const periods = [...data.extendedHours].sort((a, b) =>
     b.period.from.localeCompare(a.period.from),
   );
   for (const { period, entries } of periods) {
+    const seen = new Set<string>();
     for (const entry of entries) {
+      if (seen.has(entry.pharmacyId)) continue;
+      seen.add(entry.pharmacyId);
       const list = extended.get(entry.pharmacyId) ?? [];
       list.push({ period, entry });
       extended.set(entry.pharmacyId, list);
@@ -199,15 +205,32 @@ function instant(date: IsoDate, time: string, timeZone: string): number {
   return found;
 }
 
-/** A same-day range, or one that ends the next day when it ends at or before its start. */
+/**
+ * The absolute span of a range of local times on `date`, or null if it is not a
+ * proper range. Only `to` = 00:00 (midnight at the end of the day) runs into the next
+ * day; `from` = `to` is empty and a reversed range (21:00–08:30) is a data error. Bad
+ * ranges are dropped, never guessed.
+ */
 function rangeSpan(
   date: IsoDate,
   range: TimeRange,
   timeZone: string,
-): readonly [start: number, end: number] {
-  const start = instant(date, range.from, timeZone);
-  const endDate = range.to <= range.from ? addDays(date, 1) : date;
-  return [start, instant(endDate, range.to, timeZone)];
+): readonly [start: number, end: number] | null {
+  const { from, to } = range;
+  if (to === '00:00' && from !== '00:00') {
+    return [instant(date, from, timeZone), instant(addDays(date, 1), to, timeZone)];
+  }
+  if (from < to) return [instant(date, from, timeZone), instant(date, to, timeZone)];
+  return null;
+}
+
+function spansOf(date: IsoDate, ranges: readonly TimeRange[], timeZone: string) {
+  const spans: (readonly [number, number])[] = [];
+  for (const range of ranges) {
+    const span = rangeSpan(date, range, timeZone);
+    if (span) spans.push(span);
+  }
+  return spans;
 }
 
 /** `zonedDate` for an instant in ms, memoised: one query asks about the same few instants. */
@@ -232,7 +255,7 @@ function regularOn(cityId: string, date: IsoDate, timeZone: string) {
   let found = regularSpans.get(key);
   if (!found) {
     if (regularSpans.size > 5000) regularSpans.clear();
-    found = regularRanges(cityId, date).map((range) => rangeSpan(date, range, timeZone));
+    found = spansOf(date, regularRanges(cityId, date), timeZone);
     regularSpans.set(key, found);
   }
   return found;
@@ -278,8 +301,7 @@ function rawForDate(data: CityData, index: Index, pharmacy: Pharmacy, date: IsoD
 
   const extended = extendedRanges(index, pharmacy.id, date, holiday);
   if (extended) {
-    for (const range of extended) {
-      const [start, end] = rangeSpan(date, range, timeZone);
+    for (const [start, end] of spansOf(date, extended, timeZone)) {
       out.push({ start, end, reason: EXTENDED });
     }
   } else if (!holiday) {
@@ -302,7 +324,9 @@ function rawForDate(data: CityData, index: Index, pharmacy: Pharmacy, date: IsoD
     for (const extra of section.extraHours) {
       if (!extra.weekdays.includes(isoWeekday(date))) continue;
       if (extra.exceptHolidays && isHoliday(data, date, groupId)) continue;
-      const [start, end] = rangeSpan(date, extra, timeZone);
+      const span = rangeSpan(date, extra, timeZone);
+      if (!span) continue;
+      const [start, end] = span;
       out.push({ start, end, reason: { kind: 'duty-extra', duty: section.kind, date, groupId } });
     }
   }
@@ -320,38 +344,44 @@ function reasonKey(reason: OpenReason): string {
   }
 }
 
+/** A merged run of open time, clipped to the query window, with the raw openings it is made of. */
+interface Run {
+  readonly start: number;
+  readonly end: number;
+  readonly parts: readonly Raw[];
+}
+
 /** Sorts, drops empty spans, merges overlapping or touching ones, and clips to [from, to). */
-function mergeAndClip(raw: Raw[], from: number, to: number): OpenInterval[] {
+function mergeRuns(raw: Raw[], from: number, to: number): Run[] {
   raw.sort((a, b) => a.start - b.start || a.end - b.end);
-  const merged: { start: number; end: number; reasons: Map<string, OpenReason> }[] = [];
-  for (const { start, end, reason } of raw) {
-    if (end <= start) continue;
+  const merged: { start: number; end: number; parts: Raw[] }[] = [];
+  for (const part of raw) {
+    if (part.end <= part.start) continue;
     const last = merged.at(-1);
-    if (last && start <= last.end) {
-      last.end = Math.max(last.end, end);
-      last.reasons.set(reasonKey(reason), reason);
+    if (last && part.start <= last.end) {
+      last.end = Math.max(last.end, part.end);
+      last.parts.push(part);
     } else {
-      merged.push({ start, end, reasons: new Map([[reasonKey(reason), reason]]) });
+      merged.push({ start: part.start, end: part.end, parts: [part] });
     }
   }
-  const out: OpenInterval[] = [];
+  const out: Run[] = [];
   for (const m of merged) {
     const start = Math.max(m.start, from);
     const end = Math.min(m.end, to);
-    if (end > start) {
-      out.push({ start: new Date(start), end: new Date(end), reasons: [...m.reasons.values()] });
-    }
+    if (end > start) out.push({ start, end, parts: m.parts });
   }
   return out;
 }
 
-function intervalsFor(
-  data: CityData,
-  index: Index,
-  pharmacy: Pharmacy,
-  from: Date,
-  to: Date,
-): OpenInterval[] {
+/** The distinct reasons of some openings, in order of first appearance. */
+function reasonsOf(parts: Iterable<Raw>): OpenReason[] {
+  const unique = new Map<string, OpenReason>();
+  for (const { reason } of parts) unique.set(reasonKey(reason), reason);
+  return [...unique.values()];
+}
+
+function runsFor(data: CityData, index: Index, pharmacy: Pharmacy, from: Date, to: Date): Run[] {
   if (!(to.getTime() > from.getTime())) return [];
   const timeZone = data.city.timeZone;
   // Start a day early: a duty window listed on the previous date can run past midnight.
@@ -361,7 +391,7 @@ function intervalsFor(
   for (let date = first; date <= last; date = addDays(date, 1)) {
     rawForDate(data, index, pharmacy, date, raw);
   }
-  return mergeAndClip(raw, from.getTime(), to.getTime());
+  return mergeRuns(raw, from.getTime(), to.getTime());
 }
 
 // --- Public API --------------------------------------------------------------
@@ -375,7 +405,12 @@ export function openIntervals(
 ): OpenInterval[] {
   const index = indexOf(data);
   const pharmacy = index.pharmacies.get(pharmacyId);
-  return pharmacy ? intervalsFor(data, index, pharmacy, from, to) : [];
+  if (!pharmacy) return [];
+  return runsFor(data, index, pharmacy, from, to).map((run) => ({
+    start: new Date(run.start),
+    end: new Date(run.end),
+    reasons: reasonsOf(run.parts),
+  }));
 }
 
 interface Computed {
@@ -388,20 +423,15 @@ interface Computed {
 const WINDOWS_DAYS = [1, 3, HORIZON_DAYS];
 
 /**
- * The first merged interval ending at or after `at`, looking ahead in growing
- * windows until that interval is not cut off by the window's end.
+ * The first merged run ending after `at`, looking ahead in growing windows until
+ * that run is not cut off by the window's end.
  */
-function firstInterval(
-  data: CityData,
-  index: Index,
-  pharmacy: Pharmacy,
-  at: Date,
-): OpenInterval | undefined {
-  let first: OpenInterval | undefined;
+function firstRun(data: CityData, index: Index, pharmacy: Pharmacy, at: Date): Run | undefined {
+  let first: Run | undefined;
   for (const days of WINDOWS_DAYS) {
     const end = at.getTime() + days * DAY_MS;
-    first = intervalsFor(data, index, pharmacy, at, new Date(end))[0];
-    if (first && first.end.getTime() < end) break;
+    first = runsFor(data, index, pharmacy, at, new Date(end))[0];
+    if (first && first.end < end) break;
   }
   return first;
 }
@@ -425,18 +455,19 @@ function computeStatus(
   const t = at.getTime();
 
   // Cheap test first: is the pharmacy open at this very instant?
-  const openNow = intervalsFor(data, index, pharmacy, at, new Date(t + 1)).length > 0;
+  const openNow = runsFor(data, index, pharmacy, at, new Date(t + 1)).length > 0;
   const needsLookAhead = openNow || lookAheadWhenClosed;
-  const next = needsLookAhead ? firstInterval(data, index, pharmacy, at) : undefined;
+  const next = needsLookAhead ? firstRun(data, index, pharmacy, at) : undefined;
 
   if (openNow && next) {
     return {
       complete: true,
       status: {
         state: 'open',
-        until: next.end,
-        reasons: next.reasons,
-        closingSoon: next.end.getTime() - t <= CLOSING_SOON_MS,
+        until: new Date(next.end),
+        reasons: reasonsOf(next.parts.filter((p) => p.start <= t && t < p.end)),
+        runReasons: reasonsOf(next.parts),
+        closingSoon: next.end - t <= CLOSING_SOON_MS,
       },
     };
   }
@@ -444,8 +475,7 @@ function computeStatus(
   // Listed as on duty for the duty day containing `at` (08:00 to 08:00), but with no hours.
   const listings = index.duties.get(pharmacy.id);
   if (listings) {
-    const now = partsOf(at, data.city.timeZone);
-    const dutyDate = now.minutes < DUTY_DAY_START_MINUTES ? addDays(now.date, -1) : now.date;
+    const { dutyDate } = dutyDayOf(data, at);
     const unknown = listings.get(dutyDate)?.find((listing) => listing.section.hours === null);
     if (unknown) {
       return {
@@ -458,7 +488,7 @@ function computeStatus(
             groupId: unknown.groupId,
             heading: unknown.section.heading,
           },
-          nextOpen: next ? next.start : null,
+          nextOpen: next ? new Date(next.start) : null,
         },
       };
     }
@@ -468,20 +498,34 @@ function computeStatus(
     complete: needsLookAhead,
     status: {
       state: 'closed',
-      nextOpen: next ? next.start : null,
-      nextReasons: next ? next.reasons : [],
+      nextOpen: next ? new Date(next.start) : null,
+      nextReasons: next ? reasonsOf(next.parts.filter((p) => p.start === next.start)) : [],
+      nextRunReasons: next ? reasonsOf(next.parts) : [],
     },
   };
 }
 
+/** The date of the duty day (08:00 to 08:00) that contains `at`. */
+function dutyDayOf(data: CityData, at: Date): { today: IsoDate; dutyDate: IsoDate } {
+  const now = partsOf(at, data.city.timeZone);
+  return {
+    today: now.date,
+    dutyDate: now.minutes < DUTY_DAY_START_MINUTES ? addDays(now.date, -1) : now.date,
+  };
+}
+
+/** Is every duty list the answer depends on published? */
 function published(data: CityData, at: Date, status: PharmacyStatus): boolean {
-  const timeZone = data.city.timeZone;
-  const now = zonedParts(at, timeZone);
-  if (!data.duties.has(now.date)) return false;
-  // Before 08:00 the answer still depends on yesterday's list (after-midnight shifts).
-  if (now.minutes < DUTY_DAY_START_MINUTES && !data.duties.has(addDays(now.date, -1))) return false;
+  const { today, dutyDate } = dutyDayOf(data, at);
   const nextOpen = status.state === 'open' ? null : status.nextOpen;
-  return !nextOpen || data.duties.has(zonedDate(nextOpen, timeZone));
+  const last =
+    nextOpen && zonedDate(nextOpen, data.city.timeZone) > today
+      ? zonedDate(nextOpen, data.city.timeZone)
+      : today;
+  for (let date = dutyDate; date <= last; date = addDays(date, 1)) {
+    if (!data.duties.has(date)) return false;
+  }
+  return true;
 }
 
 export function pharmacyStatus(data: CityData, pharmacyId: string, at: Date): StatusDetails {
@@ -489,8 +533,35 @@ export function pharmacyStatus(data: CityData, pharmacyId: string, at: Date): St
   const pharmacy = index.pharmacies.get(pharmacyId);
   const status: PharmacyStatus = pharmacy
     ? computeStatus(data, index, pharmacy, at, true).status
-    : { state: 'closed', nextOpen: null, nextReasons: [] };
-  return { status, dutiesPublished: published(data, at, status) };
+    : { state: 'closed', nextOpen: null, nextReasons: [], nextRunReasons: [] };
+  return { found: pharmacy !== undefined, status, dutiesPublished: published(data, at, status) };
+}
+
+/** What published data exists around `at`, for warning that a list is missing. */
+export interface Coverage {
+  /** The duty list for the duty day containing `at` (yesterday's before 08:00) is published. */
+  readonly duties: boolean;
+  /** That duty day's date. */
+  readonly dutyDate: IsoDate;
+  /** The first and last published duty dates, or null when there are none. */
+  readonly dutiesFrom: IsoDate | null;
+  readonly dutiesTo: IsoDate | null;
+  /** Some extended-hours list covers today's local date. */
+  readonly extendedHours: boolean;
+}
+
+export function coverage(data: CityData, at: Date): Coverage {
+  const { today, dutyDate } = dutyDayOf(data, at);
+  const dates = [...data.duties.keys()].sort();
+  return {
+    duties: data.duties.has(dutyDate),
+    dutyDate,
+    dutiesFrom: dates[0] ?? null,
+    dutiesTo: dates.at(-1) ?? null,
+    extendedHours: data.extendedHours.some(
+      (list) => list.period.from <= today && today <= list.period.to,
+    ),
+  };
 }
 
 const EARTH_RADIUS_METRES = 6_371_008.8;

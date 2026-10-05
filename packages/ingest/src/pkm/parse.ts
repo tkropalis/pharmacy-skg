@@ -1,5 +1,6 @@
 import { normalizeTime } from '../fsth/heading.ts';
 import { cleanDisplay, squash } from '../text.ts';
+import { isProperRange } from '../time.ts';
 import type { Sheet } from './xlsx.ts';
 
 export interface TimeRange {
@@ -45,12 +46,19 @@ const HEADERS = {
   schedule: 'Πρόγραμμα',
 } as const;
 
+/** A row whose hours are readable but not sensible (empty or reversed ranges). */
+export class InvalidHoursError extends Error {}
+
 function parseRanges(text: string, context: string): TimeRange[] {
   const ranges: TimeRange[] = [];
   const rest = text.replace(
     /(\d{1,2}:\d{2})\s*-\s*(\d{1,2}:\d{2})/g,
     (_, from: string, to: string) => {
-      ranges.push({ from: normalizeTime(from), to: normalizeTime(to) });
+      const range = { from: normalizeTime(from), to: normalizeTime(to) };
+      if (!isProperRange(range.from, range.to)) {
+        throw new InvalidHoursError(`${context}: "${from} - ${to}" does not end after it starts`);
+      }
+      ranges.push(range);
       return ' ';
     },
   );
@@ -92,6 +100,8 @@ export function parseSchedule(cell: string, context = 'schedule'): Schedule {
 export function parseExtendedHours(sheet: Sheet): {
   periodLabel: string;
   entries: ExtendedHoursEntry[];
+  /** Rows left out because their hours make no sense. Unreadable text still throws. */
+  warnings: { code: string; message: string }[];
 } {
   const headerIndex = sheet.findIndex((row) => row.some((cell) => squash(cell) === HEADERS.name));
   if (headerIndex < 0) throw new Error('No header row with "Φαρμακείο"');
@@ -112,18 +122,31 @@ export function parseExtendedHours(sheet: Sheet): {
 
   const periods = new Set<string>();
   const entries: ExtendedHoursEntry[] = [];
+  const warnings: { code: string; message: string }[] = [];
   for (const [offset, row] of sheet.slice(headerIndex + 1).entries()) {
     if (row.every((cell) => squash(cell) === '')) continue;
     const cell = (index: number) => row[index] ?? '';
     const name = cleanDisplay(cell(columns.name));
     const context = `row ${headerIndex + offset + 2} (${name})`;
     periods.add(squash(cell(columns.period)));
+    let schedule: Schedule;
+    try {
+      schedule = parseSchedule(cell(columns.schedule), context);
+    } catch (error) {
+      if (!(error instanceof InvalidHoursError)) throw error;
+      // Never guess what was meant: the row stays out, so the pharmacy keeps its regular hours.
+      warnings.push({
+        code: 'invalid-hours',
+        message: `${error.message}; row left out: "${cell(columns.schedule).trim().replace(/\n/g, ' / ')}"`,
+      });
+      continue;
+    }
     entries.push({
       name,
       address: cleanDisplay(cell(columns.address)),
       postcode: squash(cell(columns.postcode)),
       area: squash(cell(columns.area)),
-      schedule: parseSchedule(cell(columns.schedule), context),
+      schedule,
       scheduleText: cell(columns.schedule).trim(),
     });
   }
@@ -131,5 +154,5 @@ export function parseExtendedHours(sheet: Sheet): {
   if (periodLabel === undefined || others.length > 0) {
     throw new Error(`Expected one period, found ${[...periods].join(', ')}`);
   }
-  return { periodLabel, entries };
+  return { periodLabel, entries, warnings };
 }

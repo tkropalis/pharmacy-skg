@@ -33,7 +33,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - name: Fetch, validate and write
-        run: pnpm --filter @pharmacy-skg/ingest update ${SINCE:+--since "$SINCE"}
+        run: pnpm --filter @pharmacy-skg/ingest run update ${SINCE:+--since "$SINCE"}
         env:
           SINCE: ${{ inputs.since }}
       - name: Commit if changed
