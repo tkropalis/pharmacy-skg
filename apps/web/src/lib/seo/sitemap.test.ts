@@ -66,7 +66,7 @@ describe('renderSitemap', () => {
 describe('renderRobots', () => {
   it('points to the sitemap with the full site address', () => {
     expect(renderRobots('https://example.test')).toBe(
-      'User-agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: https://example.test/sitemap.xml\n',
+      'User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /data/\n\nSitemap: https://example.test/sitemap.xml\n',
     );
   });
 });

@@ -9,9 +9,9 @@ describe('directionsUrl', () => {
       'https://www.google.com/maps/dir/?api=1&destination=40.632612%2C22.940912&travelmode=walking',
     );
   });
-  it('builds the iOS 18.4+ Apple Maps URL and the legacy one', () => {
+  it('builds the Apple Maps URL that works on every iOS', () => {
     expect(directionsUrl('apple', exact)).toBe(
-      'https://maps.apple.com/directions?destination=40.632612%2C22.940912&mode=walking',
+      'https://maps.apple.com/?daddr=40.632612%2C22.940912&dirflg=w',
     );
     expect(appleLegacyUrl(exact)).toBe(
       'https://maps.apple.com/?daddr=40.632612%2C22.940912&dirflg=w',

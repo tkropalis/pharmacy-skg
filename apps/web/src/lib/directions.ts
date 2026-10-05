@@ -32,8 +32,8 @@ export function directionsUrl(app: DirectionsApp, target: DirectionsTarget): str
     case 'google':
       return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(place)}&travelmode=walking`;
     case 'apple':
-      // The /directions form needs iOS 18.4 or later; see appleLegacyUrl for older systems.
-      return `https://maps.apple.com/directions?destination=${encodeURIComponent(place)}&mode=walking`;
+      // The legacy form works on every iOS and macOS. The newer /directions form needs iOS 18.4.
+      return appleLegacyUrl(target);
     case 'waze':
       return 'query' in target
         ? `https://waze.com/ul?q=${encodeURIComponent(target.query)}&navigate=yes`
@@ -41,7 +41,7 @@ export function directionsUrl(app: DirectionsApp, target: DirectionsTarget): str
   }
 }
 
-/** Apple Maps before iOS 18.4. */
+/** Apple Maps' long-standing directions URL (walking). */
 export function appleLegacyUrl(target: DirectionsTarget): string {
   const place = 'query' in target ? target.query : coords(target);
   return `https://maps.apple.com/?daddr=${encodeURIComponent(place)}&dirflg=w`;

@@ -107,11 +107,15 @@ test.describe('touch targets and focus', () => {
         const outline = style.outlineStyle !== 'none' && parseFloat(style.outlineWidth) >= 2;
         const shadow = style.boxShadow !== 'none';
         const rect = element.getBoundingClientRect();
+        // The skip link is drawn above the strip on purpose (z-index); the strip's own links are it.
+        const skipLink =
+          element.classList.contains('skip-link') || element.closest('.emergency') !== null;
         return {
           label: `${element.tagName} ${element.className} ${element.textContent?.slice(0, 20) ?? ''}`,
           visible: outline || shadow,
           // Not hidden behind the sticky emergency strip.
           obscured:
+            !skipLink &&
             rect.top <
               (document.querySelector('.emergency')?.getBoundingClientRect().bottom ?? 0) &&
             rect.bottom > 0,
@@ -120,7 +124,37 @@ test.describe('touch targets and focus', () => {
       if (info === null) continue;
       seen.add(info.label);
       expect(info.visible, `focus ring on ${info.label}`).toBe(true);
+      expect(info.obscured, `${info.label} is behind the emergency strip`).toBe(false);
     }
     expect(seen.size).toBeGreaterThan(10);
   });
+});
+
+test('a focused element is never hidden behind the sticky emergency strip (WCAG 2.4.11)', async ({
+  page,
+}) => {
+  await page.goto('/plirofories/');
+  const strip = page.locator('.emergency');
+  for (let i = 0; i < 40; i++) {
+    await page.keyboard.press('Tab');
+    const state = await page.evaluate(() => {
+      const element = document.activeElement;
+      const bar = document.querySelector('.emergency');
+      if (element === null || bar === null || element.closest('.emergency') !== null) return null;
+      return {
+        label: `${element.tagName} ${element.textContent?.slice(0, 20) ?? ''}`,
+        top: element.getBoundingClientRect().top,
+        stripBottom: bar.getBoundingClientRect().bottom,
+      };
+    });
+    if (state !== null) {
+      expect(state.top, state.label).toBeGreaterThanOrEqual(state.stripBottom - 0.5);
+    }
+  }
+  // The measured height is published for scroll-padding.
+  const published = await page.evaluate(() =>
+    document.documentElement.style.getPropertyValue('--emergency-height'),
+  );
+  const box = await strip.boundingBox();
+  expect(parseFloat(published)).toBeCloseTo(box?.height ?? 0, 0);
 });

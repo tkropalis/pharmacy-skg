@@ -39,7 +39,7 @@ Agreed during the planning rounds on 4 Oct 2026. To change a decision, edit this
 
 These were chosen without a formal decision and apply until someone objects.
 
-- **Status labels:** a pharmacy from the ΦΣΘ duty list shows "On duty (ΦΣΘ list)". One that is open only by its regular hours shows "Open (regular hours)", because we can't know about individual closures. Status is never shown by colour alone.
+- **Status labels:** a pharmacy from the ΦΣΘ duty list shows "On duty (ΦΣΘ list)". One that is open only by its regular hours shows "Open (regular hours)", because we can't know about individual closures. One on the ΠΚΜ extended-hours list shows "Open (extended hours)" (Greek: "Ανοιχτό (διευρυμένο ωράριο)", ΠΚΜ's own term). An on-duty pharmacy whose list prints no hours says so and asks to call. The same words are used on the home screen, the legend and every page (`apps/web/src/i18n/status-labels.ts`). Status is never shown by colour alone.
 - **Stale data:** if the newest data is older than 36 hours, show a warning banner. Never hide the data silently.
 - **Privacy:** the user's location and medicine searches never leave the device. Distances are computed on the device.
 - **Look:** light/dark follows the system setting, with a pharmacy-green accent. Accessibility target: WCAG 2.2 AA.

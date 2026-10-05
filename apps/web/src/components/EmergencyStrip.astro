@@ -54,11 +54,14 @@ const numbers = [
     line-height: 1.2;
   }
 
+  /* One line normally. With large text it wraps, and the measured height (src/scripts/boot.ts)
+     keeps the room reserved for the sticky strip right. */
   .inner {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0 0.25rem;
-    min-height: var(--emergency-height);
+    min-height: 2.75rem;
     padding-inline: 0.75rem;
   }
 
@@ -81,7 +84,7 @@ const numbers = [
     align-items: center;
     gap: 0.25rem;
     min-width: 2.75rem;
-    min-height: var(--emergency-height);
+    min-height: 2.75rem;
     padding-inline: 0.375rem;
     color: inherit;
     text-decoration: underline;

@@ -8,13 +8,25 @@ export function useNow(intervalMs = 60_000): Date {
   const [now, setNow] = useState(() => new Date());
   useEffect(() => {
     const tick = () => setNow(new Date());
-    const timer = setInterval(tick, intervalMs);
+    // Ticks fall on the minute, so a countdown changes when the clock does, not up to a minute
+    // late.
+    let timer: ReturnType<typeof setTimeout>;
+    const schedule = () => {
+      timer = setTimeout(
+        () => {
+          tick();
+          schedule();
+        },
+        intervalMs - (Date.now() % intervalMs) + 50,
+      );
+    };
+    schedule();
     const onVisible = () => {
       if (document.visibilityState === 'visible') tick();
     };
     document.addEventListener('visibilitychange', onVisible);
     return () => {
-      clearInterval(timer);
+      clearTimeout(timer);
       document.removeEventListener('visibilitychange', onVisible);
     };
   }, [intervalMs]);

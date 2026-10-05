@@ -6,7 +6,8 @@ The web app: Astro 7 (static output) with React 19 for interactive parts, instal
 pnpm --filter @pharmacy-skg/web dev       # dev server; /data/** is served from <repo>/data
 pnpm --filter @pharmacy-skg/web build     # static site in dist/
 pnpm --filter @pharmacy-skg/web preview   # serve dist/
-pnpm --filter @pharmacy-skg/web icons     # re-render the PNG icons from public/favicon.svg
+pnpm --filter @pharmacy-skg/web icons     # re-render the PNG icons and the Open Graph image from public/favicon.svg
+pnpm e2e                                  # build with a fixed date, then run the browser tests
 ```
 
 ## Layout
@@ -17,7 +18,8 @@ integrations/data.ts       publishes <repo>/data/<city>/ under /data/<city>/ (bu
 integrations/service-worker.ts   writes dist/sw.js from sw/sw.js with the precache list + version
 sw/sw.js                   the hand-written service worker (template)
 public/                    favicon, PNG icons, stale-check.js (blocking head script)
-scripts/generate-icons.ts  icon generator (sharp)
+scripts/generate-icons.ts  icon and Open Graph image generator (sharp); the PNGs are committed
+playwright.config.ts, e2e/ browser tests (see "Browser tests")
 src/config.ts              app name (one constant), theme colours, emergency numbers
 src/i18n/                  typed dictionaries (el.ts defines the shape, en.ts must match), routes, t()
 src/layouts/Base.astro     head tags, hreflang, emergency strip, header, stale banner, footer
@@ -42,6 +44,23 @@ integrations/maplibre-worker.ts   publishes MapLibre's worker files under /_astr
 ```
 
 To rename the app, edit `APP_NAME` and `APP_SHORT_NAME` in `src/config.ts`.
+
+## Browser tests
+
+`pnpm e2e` (from the repository root) builds the site with `PHARMACY_TODAY=2026-10-05` and a fixed `PUBLIC_SITE_URL` (`e2e/run.ts`), serves it with `astro preview` and runs Playwright in Chromium twice: a 390×844 phone and a 1280×800 desktop. Set `E2E_SKIP_BUILD=1` to reuse `dist/`, and pass Playwright arguments after it (`pnpm e2e -g offline`).
+
+- **Browser:** CI installs one (`pnpm --filter @pharmacy-skg/web exec playwright install --with-deps chromium`). Locally use any Chromium by setting `PW_CHROMIUM_PATH=/path/to/chromium`; do not install browsers just for this. The Playwright version is pinned to match.
+- **Fixed time:** the build's idea of today is `PHARMACY_TODAY` (`src/lib/build-today.ts`, read by the data integration and the search-engine page builders; unset it is the Athens date), and every test fixes the browser clock with `page.clock` (default Monday 2026-10-05 22:30 Athens, when only duty pharmacies are open). Use dates that exist in `data/thessaloniki/duties` (2026-09-28 to 2026-10-08 in the test build); 2026-10-01 has the metro list only, which the group-coverage tests use.
+- **No network:** every request to `tiles.openfreemap.org` is answered by `e2e/support.ts` (a style with one empty vector source, empty tiles and glyphs). Service workers are blocked except in `offline.spec.ts`, where `PW_EXPERIMENTAL_SERVICE_WORKER_NETWORK_EVENTS=1` (set in `playwright.config.ts`) lets the stubs also catch the worker's own requests.
+- **Accessibility:** `a11y.spec.ts` runs axe with the WCAG 2.0, 2.1 and 2.2 level A and AA rules on the home, pharmacy, duty-date, area, about, privacy and report pages, in both languages and both colour schemes. `home.spec.ts` checks 44×44 px map controls and visible, unobscured keyboard focus.
+- **Not covered:** the Content-Security-Policy and the response headers of `vercel.json` (preview does not apply them), and real devices (M4).
+
+## Lighthouse
+
+Run on the built site served with compression and the cache headers of `vercel.json` (`astro preview` sends neither; "Use text compression" would otherwise fail). Mobile preset, Chromium 141, simulated Slow 4G and 4× CPU slowdown. Measured on this branch (a slow, shared container, so performance varies by ±10 between runs): see the pull request for the latest scores.
+
+- **Home screen:** the list is rendered by React after the data has loaded, so the largest paint is the summary line, and total blocking time is the weak point (React render of the list plus the first parse of the data). The map is loaded after the list, from its own chunk, and is not part of the first paint.
+- **"Errors logged to the console"** fails in a sandbox with no route to `tiles.openfreemap.org`; with the network it does not.
 
 ## Search-engine pages
 
@@ -84,8 +103,17 @@ Map tiles, style, glyphs and sprites come from `https://tiles.openfreemap.org`, 
 
 `sw/sw.js` is copied to `dist/sw.js` by `integrations/service-worker.ts` in the `astro:build:done` hook. The hook lists every built file except the data, the worker itself and `404.html`, hashes their contents, and uses the combined hash as the build version. A rebuild with identical output has the same version, so nothing updates; any changed file gives a new version, a new `precache-<version>` cache, and removal of the old one on activation. The worker takes over at once (`skipWaiting` and `clients.claim`), and the page reloads once when control changes (`src/lib/pwa.ts`), unless a form has unsent input.
 
-The map chunk and the worker files are in the precache list like every other built file, so the map also works offline once the worker has installed (about 1.4 MB uncompressed, 0.4 MB gzipped).
+The map chunk, its worker files and its stylesheet are **not** precached (about 0.45 MB gzipped that most visits never use). The worker caches any other content-hashed `/_astro/` file cache-first the first time it is used, so the map works offline once it has been seen (cache `assets-<version>`, dropped with the version). The precache is the app shell only: 35 files, about 0.5 MB (0.17 MB gzipped), down from 47 files, 3.1 MB (0.6 MB gzipped). The sitemap, robots.txt and the duty index (it lists dates, so it changes every day) are left out too.
 
-Strategies: pages network-first with a 4 s timeout then the precached copy; `/data/**` network-first (cache fallback, 404s not cached); `tiles.openfreemap.org` cache-first, capped at 500 entries; everything else, including `/api/`, goes to the network untouched. After load, while online, the page fetches meta, pharmacies, the extended-hours files and the duty lists for today and the next three days (Europe/Athens) so they are in the cache.
+**Updates.** Nothing that depends on the data or on the date is in the shell pages: the age of the data is read from `meta.json` at runtime (and remembered in `localStorage` for the first paint of the stale banner, `public/stale-check.js`), and the no-JavaScript link on the home page goes to the list of dates. A data update therefore does not change the worker. When a new version does ship, the worker downloads only the files whose content hash changed (it keeps the others from the previous cache), takes over at once, and a page that is on screen shows a "reload" button instead of reloading by itself; a hidden page reloads on its own unless a form has unsent input.
+
+Strategies: pages network-first with a 4 s timeout then the precached copy; `/data/**` network-first (cache fallback, 404s not cached); `tiles.openfreemap.org` cache-first, capped at 500 entries; everything else, including `/api/`, goes to the network untouched. After load, while online, the page fetches meta, pharmacies, the extended-hours files and the duty lists for yesterday (the overnight list), today and the next three days (Europe/Athens), only for the days `meta.json` says are published, so they are in the cache.
 
 The worker is not registered in `astro dev`; use `build` and `preview` to try it.
+
+## Problem reports (`api/report.ts`)
+
+- The message, and any pharmacy text that is not a registry id (`^(\d{10}|x-[0-9a-f]{10})$`), go into a fenced code block whose fence is longer than any run of backticks in the text, so a public issue cannot get links, images, HTML, @mentions or `owner/repo#1` references. Only a valid id reaches the title.
+- The content type must be `application/json`, optionally with a charset. Other sites are refused with `Sec-Fetch-Site`.
+- **Rate limit.** The function keeps a best-effort limit in memory: 5 reports per 10 minutes for each first `X-Forwarded-For` address, answered with 429. Each function instance has its own counter, so this only slows down a careless loop. **The owner should add a Vercel Firewall rate-limit rule for `/api/report`** (Project, Firewall, Custom Rules, "Rate Limit").
+- **Trailing slash.** `vercel.json` has `trailingSlash: true`, which can redirect `/api/report` to `/api/report/`. The form therefore posts to `/api/report/` (`REPORT_ENDPOINT` in `src/lib/report.ts`) and `vercel.json` rewrites that to the function. Check on the first deploy that a test report arrives (step 5 above); if Vercel serves the function only at the slash-less path, delete the rewrite and set `REPORT_ENDPOINT` to `/api/report`.

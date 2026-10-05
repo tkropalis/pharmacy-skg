@@ -77,20 +77,21 @@ describe('dutyEvents', () => {
       'Europe/Athens',
     );
     expect(saturday?.when).toEqual({
-      kind: 'instants',
       start: new Date('2026-10-24T19:00:00Z'), // 22:00 EEST
       end: new Date('2026-10-25T06:00:00Z'), // 08:00 EET, an hour later in UTC than +3 would give
     });
     expect(sunday?.when).toEqual({
-      kind: 'instants',
       start: new Date('2026-10-25T20:00:00Z'), // 22:00 EET
       end: new Date('2026-10-26T06:00:00Z'),
     });
   });
 
-  it('makes an all-day event when no hours are printed', () => {
+  it('makes a 08:00 to 08:00 event when no hours are printed (D23)', () => {
     const [event] = dutyEvents(pharmacy, [duty('2026-10-05', null)], texts, 'Europe/Athens');
-    expect(event?.when).toEqual({ kind: 'day', date: '2026-10-05' });
+    expect(event?.when).toEqual({
+      start: new Date('2026-10-05T05:00:00Z'), // 08:00 EEST
+      end: new Date('2026-10-06T05:00:00Z'),
+    });
   });
 
   it('builds the summary, location, description and a stable UID', () => {
@@ -121,8 +122,9 @@ describe('buildIcs', () => {
     expect(text).toContain('DTSTAMP:20261005T100000Z');
     expect(text).toContain('DTSTART:20261024T190000Z');
     expect(text).toContain('DTEND:20261025T060000Z');
-    expect(text).toContain('DTSTART;VALUE=DATE:20261027');
-    expect(text).toContain('DTEND;VALUE=DATE:20261028');
+    // No printed hours: 08:00 to 08:00 (06:00 UTC after the clocks change on 25 Oct).
+    expect(text).toContain('DTSTART:20261027T060000Z');
+    expect(text).toContain('DTEND:20261028T060000Z');
     expect(text.match(/BEGIN:VEVENT/g)).toHaveLength(2);
     expect(text.trimEnd().endsWith('END:VCALENDAR')).toBe(true);
   });

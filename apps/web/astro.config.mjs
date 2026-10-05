@@ -4,9 +4,15 @@ import { dataIntegration } from './integrations/data.ts';
 import { maplibreWorkerIntegration } from './integrations/maplibre-worker.ts';
 import { serviceWorkerIntegration } from './integrations/service-worker.ts';
 
-// The public domain is not chosen yet (docs/decisions.md, Defaults). Set PUBLIC_SITE_URL
-// in the Vercel project once it is.
-const site = process.env.PUBLIC_SITE_URL || 'https://pharmacy-skg.vercel.app';
+// The public domain is not chosen yet (docs/decisions.md, Defaults). Set PUBLIC_SITE_URL in the
+// Vercel project once it is. A production build on Vercel without it uses the project's own
+// production domain (Vercel sets VERCEL_PROJECT_PRODUCTION_URL, without a scheme); anything else
+// uses the placeholder, so canonical links of preview builds never claim the real domain.
+const productionHost =
+  process.env.VERCEL_ENV === 'production' ? process.env.VERCEL_PROJECT_PRODUCTION_URL : undefined;
+const site =
+  process.env.PUBLIC_SITE_URL ||
+  (productionHost ? `https://${productionHost}` : 'https://pharmacy-skg.vercel.app');
 
 export default defineConfig({
   site,

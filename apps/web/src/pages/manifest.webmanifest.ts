@@ -14,7 +14,6 @@ export const GET: APIRoute = () => {
     start_url: '/',
     scope: '/',
     display: 'standalone',
-    orientation: 'portrait-primary',
     theme_color: THEME_COLORS.accent,
     background_color: THEME_COLORS.light,
     categories: ['health', 'medical', 'utilities'],

@@ -89,6 +89,7 @@ export function renderRobots(origin: string): string {
     'User-agent: *',
     'Allow: /',
     'Disallow: /api/',
+    'Disallow: /data/',
     '',
     `Sitemap: ${new URL('/sitemap.xml', origin).href}`,
     '',

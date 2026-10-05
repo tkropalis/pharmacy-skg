@@ -15,9 +15,10 @@ export interface IcsTexts {
   readonly calendarName: string;
 }
 
-export type IcsWhen =
-  | { readonly kind: 'instants'; readonly start: Date; readonly end: Date }
-  | { readonly kind: 'day'; readonly date: string };
+export interface IcsWhen {
+  readonly start: Date;
+  readonly end: Date;
+}
 
 export interface IcsEvent {
   readonly uid: string;
@@ -39,7 +40,6 @@ export function utcStamp(at: Date): string {
 }
 
 /** "20261024" for a YYYY-MM-DD date. */
-const dateValue = (date: string): string => date.replaceAll('-', '');
 
 /** TEXT values: backslash, semicolon, comma and newlines are escaped (RFC 5545, 3.3.11). */
 export function escapeText(text: string): string {
@@ -77,13 +77,6 @@ export function foldLine(line: string): string {
 }
 
 function whenLines(when: IcsWhen): string[] {
-  if (when.kind === 'day') {
-    // All-day: DTEND is exclusive, so it is the next day.
-    return [
-      `DTSTART;VALUE=DATE:${dateValue(when.date)}`,
-      `DTEND;VALUE=DATE:${dateValue(addDays(when.date, 1))}`,
-    ];
-  }
   return [`DTSTART:${utcStamp(when.start)}`, `DTEND:${utcStamp(when.end)}`];
 }
 
@@ -115,7 +108,8 @@ export function buildIcs(events: readonly IcsEvent[], now: Date, calendarName: s
 
 /**
  * One event per published duty section: the section's printed hours converted from the city's
- * zone to UTC, or an all-day event when the heading prints none.
+ * zone to UTC. When the heading prints none, the duty day: 08:00 to 08:00 the next morning
+ * (decision D23).
  */
 export function dutyEvents(
   pharmacy: Pick<Pharmacy, 'id' | 'name' | 'address' | 'locality' | 'phone'>,
@@ -127,9 +121,11 @@ export function dutyEvents(
     const { hours } = duty;
     const when: IcsWhen =
       hours === null
-        ? { kind: 'day', date: duty.date }
+        ? {
+            start: localToInstant(duty.date, '08:00', timeZone),
+            end: localToInstant(addDays(duty.date, 1), '08:00', timeZone),
+          }
         : {
-            kind: 'instants',
             start: localToInstant(duty.date, hours.from, timeZone),
             end: localToInstant(
               hours.toNextDay ? addDays(duty.date, 1) : duty.date,
