@@ -5,6 +5,7 @@ const text = t('el').app;
 
 const PHONES = [
   { width: 390, height: 844 },
+  { width: 390, height: 664 },
   { width: 360, height: 740 },
   { width: 320, height: 640 },
 ] as const;
@@ -19,15 +20,32 @@ test.describe('the first pharmacy is on screen without scrolling', () => {
       const status = rows.first().locator('.row-status');
       await expect(name).toBeInViewport();
       await expect(status).toBeInViewport();
-      // The controls are folded away on a phone and open with one tap.
-      await expect(page.locator('details.panel')).not.toHaveAttribute('open', '');
+      // The options are folded away and open with one tap.
+      await expect(page.locator('#controls')).toHaveCount(0);
+    });
+  }
+});
+
+test.describe('the first pharmacy is on screen without a position, too', () => {
+  // By day, with no position: the nearby card and the "all / on duty" chips come first.
+  test.use({ autoLocate: false, now: '2026-10-05T08:01:00+03:00' });
+
+  for (const size of PHONES.filter((phone) => phone.width === 390)) {
+    test(`at ${size.width}x${size.height}`, async ({ page }) => {
+      await page.setViewportSize(size);
+      await page.goto('/');
+      const rows = await waitForRows(page);
+      await expect(page.locator('.summary')).toBeInViewport();
+      await expect(page.locator('.nearby')).toBeInViewport();
+      await expect(rows.first().locator('.row-name')).toBeInViewport();
+      await expect(rows.first().locator('.row-status')).toBeInViewport();
     });
   }
 });
 
 test.describe('a day whose file has only some area groups', () => {
   // 1 Oct 2026 has the metro list only.
-  test.use({ now: '2026-10-01T22:30:00+03:00' });
+  test.use({ now: '2026-10-01T22:30:00+03:00', autoLocate: false });
 
   test('warns, naming the groups, and prominently for the origin’s group', async ({ page }) => {
     await page.goto('/');
@@ -55,6 +73,9 @@ test.describe('a day whose file has only some area groups', () => {
 });
 
 test.describe('duty lists that are still loading', () => {
+  // The announcement of a position that arrives is not what this is about.
+  test.use({ autoLocate: false });
+
   test('show a loading state, not "none open" or "not published", and announce once loaded', async ({
     page,
   }) => {
