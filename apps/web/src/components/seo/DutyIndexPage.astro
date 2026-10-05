@@ -1,0 +1,51 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import { t } from '../../i18n/index.ts';
+import { loadSeoModel } from '../../lib/seo/site-data.ts';
+import { dutyIndexProps } from '../../lib/seo/views.ts';
+import SeoLayout from './SeoLayout.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const model = await loadSeoModel();
+const page = dutyIndexProps(model, locale);
+const d = t(locale);
+const seo = d.seo.duty;
+---
+
+<SeoLayout meta={page.meta}>
+  <h1>{page.meta.title}</h1>
+  <p>{seo.indexIntro}</p>
+
+  {page.items.length === 0 ? (
+    <p>{seo.indexNone}</p>
+  ) : (
+    <ul class="seo-list">
+      {page.items.map((item) => (
+        <li data-duty-date={item.date} data-today-label={d.seo.todayBadge}>
+          <span class="name">
+            <a href={item.path}>{item.label}</a>
+          </span>
+          <span class="sub">{item.counts}</span>
+        </li>
+      ))}
+    </ul>
+  )}
+
+  <p class="seo-meta">
+    {seo.sourceLine}. {seo.onlyPublished}
+  </p>
+  <p class="seo-meta">
+    <strong>{d.footer.lastUpdatedLabel}</strong>{' '}
+    <time data-updated-at datetime={page.updatedAt}>
+      {page.updatedAtText}
+    </time>
+  </p>
+</SeoLayout>
+
+<script>
+  import '../../scripts/seo/today.ts';
+</script>

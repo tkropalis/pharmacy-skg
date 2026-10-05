@@ -1,0 +1,111 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import { t } from '../../i18n/index.ts';
+import { loadSeoModel } from '../../lib/seo/site-data.ts';
+import { dutyPageProps } from '../../lib/seo/views.ts';
+import SeoLayout from './SeoLayout.astro';
+
+interface Props {
+  locale: Locale;
+  date: string;
+}
+
+const { locale, date } = Astro.props;
+const model = await loadSeoModel();
+const page = dutyPageProps(model, locale, date);
+if (page === null) throw new Error(`No published duty list for ${date}`);
+
+const d = t(locale);
+const seo = d.seo.duty;
+---
+
+<SeoLayout meta={page.meta}>
+  <nav class="seo-breadcrumb" aria-label={d.seo.breadcrumbLabel}>
+    <ol>
+      <li>
+        <a href={page.indexPath}>{d.seo.footerDuty}</a>
+      </li>
+      <li aria-current="page">{page.dateLabel}</li>
+    </ol>
+  </nav>
+
+  <h1 data-duty-date={page.date} data-today-label={d.seo.todayBadge}>
+    {page.h1}
+  </h1>
+  <p class="seo-meta">{seo.onlyPublished}</p>
+
+  <nav class="seo-pager" aria-label={seo.pagerLabel}>
+    {page.prev !== null ? (
+      <a href={page.prev.path} rel="prev">
+        ← {seo.prev}: {page.prev.label}
+      </a>
+    ) : (
+      <span></span>
+    )}
+    <a href={page.indexPath}>{seo.allDates}</a>
+    {page.next !== null && (
+      <a href={page.next.path} rel="next">
+        {seo.next}: {page.next.label} →
+      </a>
+    )}
+  </nav>
+
+  {page.groups.map((group) => (
+    <section class="seo-group" aria-labelledby={`group-${group.id}`}>
+      <h2 id={`group-${group.id}`}>{group.name}</h2>
+      <p class="seo-meta">
+        {seo.sourceLine}.{' '}
+        <a href={group.sourceUrl} rel="noopener">
+          {seo.sourcePdf}
+        </a>
+        . {seo.uploadedAt} <time datetime={group.uploadedAt}>{group.uploadedAtText}</time>
+      </p>
+      {group.sections.map((section) => (
+        <div class="seo-section">
+          <h3>{section.heading}</h3>
+          <p class="seo-meta">
+            {section.kindLabel}. {seo.hoursLabel} {section.hoursText}
+            {section.extraHours.map((extra) => (
+              <>
+                <br />
+                {seo.extraHoursLabel} {extra}
+              </>
+            ))}
+          </p>
+          {section.notes.map((note) => (
+            <p class="seo-meta">{note}</p>
+          ))}
+          <ul class="seo-list">
+            {section.entries.map((entry) => (
+              <li>
+                <span class="name">
+                  {entry.pagePath !== null ? <a href={entry.pagePath}>{entry.name}</a> : entry.name}
+                </span>
+                <span class="sub">
+                  {entry.address}, {entry.locality}
+                </span>
+                {entry.phoneHref !== null && (
+                  <span class="sub">
+                    <a href={entry.phoneHref}>{entry.phone}</a>
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+  ))}
+
+  <p class="seo-meta">
+    <strong>{d.footer.lastUpdatedLabel}</strong>{' '}
+    <time data-updated-at datetime={page.updatedAt}>
+      {page.updatedAtText}
+    </time>
+    . {d.footer.disclaimer}
+  </p>
+</SeoLayout>
+
+<script>
+  import '../../scripts/seo/today.ts';
+</script>

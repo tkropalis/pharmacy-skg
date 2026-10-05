@@ -1,0 +1,42 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import { t } from '../../i18n/index.ts';
+import type { PharmacyDutyView } from '../../lib/seo/views.ts';
+
+interface Props {
+  locale: Locale;
+  items: readonly PharmacyDutyView[];
+}
+
+const { locale, items } = Astro.props;
+const seo = t(locale).seo;
+---
+
+<ul class="seo-list">
+  {items.map((item) => (
+    <li>
+      <span class="name">
+        <time datetime={item.date}>{item.dateLabel}</time>
+      </span>
+      <span class="sub">
+        {item.groupName}: {item.heading} ({item.kindLabel})
+      </span>
+      <span class="sub">
+        {seo.pharmacy.dutyHoursLabel} {item.hoursText}
+      </span>
+      {item.extraHours.map((extra) => (
+        <span class="sub">
+          {seo.duty.extraHoursLabel} {extra}
+        </span>
+      ))}
+      {item.notes.map((note) => (
+        <span class="sub">{note}</span>
+      ))}
+      {item.pagePath !== null && (
+        <span class="sub">
+          <a href={item.pagePath}>{seo.pharmacy.dutyDayPage}</a>
+        </span>
+      )}
+    </li>
+  ))}
+</ul>
