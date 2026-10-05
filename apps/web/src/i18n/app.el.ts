@@ -1,3 +1,5 @@
+import { STATUS_LABELS } from './status-labels.ts';
+
 /**
  * The home screen's texts (map, list, favourites), in Greek. Placeholders are written {name}
  * and filled by `fill()` in lib/format.ts. Plain strings, arrays and objects only, because
@@ -123,10 +125,8 @@ export const appEl = {
   },
 
   status: {
-    onDuty: 'Εφημερεύει (λίστα ΦΣΘ)',
-    openRegular: 'Ανοιχτό (κανονικό ωράριο)',
-    openExtended: 'Ανοιχτό (διευρυμένο ωράριο)',
-    dutyUnknown: 'Εφημερεύει — δεν αναγράφεται ωράριο, καλέστε',
+    ...STATUS_LABELS.el,
+    dutyUnknown: `${STATUS_LABELS.el.onDuty} — δεν αναγράφεται ωράριο, καλέστε`,
     closed: 'Κλειστό',
     opensAt: 'ανοίγει {when}',
     opensUnknown: 'δεν γνωρίζουμε πότε ανοίγει',
@@ -146,10 +146,10 @@ export const appEl = {
       'after-midnight': 'μεταμεσονύκτιο',
     },
     legend: {
-      duty: 'Εφημερεύει (λίστα ΦΣΘ)',
-      regular: 'Ανοιχτό (κανονικό ωράριο)',
-      extended: 'Ανοιχτό (διευρυμένο ωράριο)',
-      dutyUnknown: 'Εφημερεύει, ωράριο άγνωστο',
+      duty: STATUS_LABELS.el.onDuty,
+      regular: STATUS_LABELS.el.openRegular,
+      extended: STATUS_LABELS.el.openExtended,
+      dutyUnknown: `${STATUS_LABELS.el.onDuty}, ωράριο άγνωστο`,
       closed: 'Κλειστό',
       approximate: 'Διακεκομμένο περίγραμμα: θέση κατά προσέγγιση',
     },

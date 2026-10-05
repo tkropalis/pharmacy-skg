@@ -62,7 +62,7 @@ describe('describeStatus', () => {
     ).toBe('Open (regular hours) · until 14:00 (closing soon)');
     expect(
       describeStatus({ ...base, reasons: [{ kind: 'extended' }] }, true, now, 'en', t('en')).short,
-    ).toBe('Open (ΠΚΜ extended hours) · until 14:00 (closing soon)');
+    ).toBe('Open (extended hours) · until 14:00 (closing soon)');
   });
 
   it('warns when the duty list is not published yet', () => {

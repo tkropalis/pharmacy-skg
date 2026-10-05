@@ -57,7 +57,7 @@ export function whenText(
 /** The label of why a pharmacy is open: a duty listing wins over extended, then regular hours. */
 export function openLabel(reasons: readonly OpenReason[], d: StatusDictionary): string {
   if (reasons.some((r) => r.kind === 'duty' || r.kind === 'duty-extra')) return d.status.onDuty;
-  if (reasons.some((r) => r.kind === 'extended')) return d.seo.status.openExtended;
+  if (reasons.some((r) => r.kind === 'extended')) return d.status.openExtended;
   return d.status.openRegular;
 }
 

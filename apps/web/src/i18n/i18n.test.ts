@@ -41,11 +41,28 @@ describe('dictionaries', () => {
     expect(t('el').status).toEqual({
       onDuty: 'Εφημερεύει (λίστα ΦΣΘ)',
       openRegular: 'Ανοιχτό (κανονικό ωράριο)',
+      openExtended: 'Ανοιχτό (διευρυμένο ωράριο)',
     });
     expect(t('en').status).toEqual({
       onDuty: 'On duty (ΦΣΘ list)',
       openRegular: 'Open (regular hours)',
+      openExtended: 'Open (extended hours)',
     });
+  });
+});
+
+describe('status labels', () => {
+  it('are the same on the home screen, the pages and the legend', () => {
+    for (const locale of LOCALES) {
+      const { status, app } = t(locale);
+      expect(app.status.onDuty).toBe(status.onDuty);
+      expect(app.status.openRegular).toBe(status.openRegular);
+      expect(app.status.openExtended).toBe(status.openExtended);
+      expect(app.status.legend.duty).toBe(status.onDuty);
+      expect(app.status.legend.regular).toBe(status.openRegular);
+      expect(app.status.legend.extended).toBe(status.openExtended);
+      expect(app.status.dutyUnknown.startsWith(status.onDuty)).toBe(true);
+    }
   });
 });
 

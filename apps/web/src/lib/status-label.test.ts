@@ -147,10 +147,10 @@ describe('describeStatus', () => {
     };
     const view = describeStatus({ status, at, live: true, locale: 'el', text: el });
     expect(view.kind).toBe('duty-unknown');
-    expect(view.label).toBe('Εφημερεύει — δεν αναγράφεται ωράριο, καλέστε');
+    expect(view.label).toBe('Εφημερεύει (λίστα ΦΣΘ) — δεν αναγράφεται ωράριο, καλέστε');
     expect(view.dutyKinds).toBe('εφημερεύον');
     expect(describeStatus({ status, at, live: true, locale: 'en', text: en }).label).toBe(
-      'On duty — hours not stated, call first',
+      'On duty (ΦΣΘ list) — hours not stated, call first',
     );
   });
 

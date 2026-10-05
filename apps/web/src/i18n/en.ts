@@ -1,4 +1,5 @@
 import { appEn } from './app.en.ts';
+import { STATUS_LABELS } from './status-labels.ts';
 import type { Dictionary } from './index.ts';
 
 export const en: Dictionary = {
@@ -20,10 +21,7 @@ export const en: Dictionary = {
     body: 'It has not been updated for more than 36 hours. Call the pharmacy before you go.',
   },
 
-  status: {
-    onDuty: 'On duty (ΦΣΘ list)',
-    openRegular: 'Open (regular hours)',
-  },
+  status: { ...STATUS_LABELS.en },
 
   footer: {
     lastUpdatedLabel: 'Last updated:',
@@ -91,7 +89,9 @@ export const en: Dictionary = {
       onDutyMeaning:
         'The pharmacy is in the official ΦΣΘ duty list for the time you are looking at, with the hours that the list prints.',
       openRegularMeaning:
-        'The pharmacy is open only according to its regular or extended hours. We cannot know about individual closures, so check by phone.',
+        'The pharmacy is open only according to its regular hours. We cannot know about individual closures, so check by phone.',
+      openExtendedMeaning:
+        'The pharmacy has extended hours in the ΠΚΜ list for the date you are looking at. We cannot know about individual closures, so check by phone.',
     },
     creditsHeading: 'Sources and licences',
     creditsIntro: 'This app builds on the work of others. Thank you:',
@@ -334,7 +334,6 @@ export const en: Dictionary = {
     },
 
     status: {
-      openExtended: 'Open (ΠΚΜ extended hours)',
       openUntil: '{label} · until {time}',
       closingSoon: 'closing soon',
       dutyHoursUnknown:

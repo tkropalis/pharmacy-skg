@@ -1,4 +1,5 @@
 import type { Dictionary } from './index.ts';
+import { STATUS_LABELS } from './status-labels.ts';
 
 /** The home screen's texts in English; the keys must match app.el.ts. */
 export const appEn: Dictionary['app'] = {
@@ -119,10 +120,8 @@ export const appEn: Dictionary['app'] = {
   },
 
   status: {
-    onDuty: 'On duty (ΦΣΘ list)',
-    openRegular: 'Open (regular hours)',
-    openExtended: 'Open (extended hours)',
-    dutyUnknown: 'On duty — hours not stated, call first',
+    ...STATUS_LABELS.en,
+    dutyUnknown: `${STATUS_LABELS.en.onDuty} — hours not stated, call first`,
     closed: 'Closed',
     opensAt: 'opens {when}',
     opensUnknown: 'we do not know when it opens',
@@ -142,10 +141,10 @@ export const appEn: Dictionary['app'] = {
       'after-midnight': 'after-midnight duty',
     },
     legend: {
-      duty: 'On duty (ΦΣΘ list)',
-      regular: 'Open (regular hours)',
-      extended: 'Open (extended hours)',
-      dutyUnknown: 'On duty, hours unknown',
+      duty: STATUS_LABELS.en.onDuty,
+      regular: STATUS_LABELS.en.openRegular,
+      extended: STATUS_LABELS.en.openExtended,
+      dutyUnknown: `${STATUS_LABELS.en.onDuty}, hours unknown`,
       closed: 'Closed',
       approximate: 'Dashed outline: approximate location',
     },
