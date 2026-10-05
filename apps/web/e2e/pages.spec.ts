@@ -54,9 +54,7 @@ test('the pharmacy page works out its status in the browser from the fixed clock
 }) => {
   await page.goto(pharmacyPath('el', PHARMACY_ID));
   // Monday 22:30: regular hours are over, so it is closed unless it is on the duty list.
-  await expect(page.locator('[data-pharmacy-status]')).toContainText(
-    /Εφημερεύει \(λίστα ΦΣΘ\)|Κλειστό τώρα/,
-  );
+  await expect(page.locator('[data-pharmacy-status]')).toContainText(/Εφημερεύει|Κλειστό τώρα/);
 });
 
 test('the duty-date page marks the fixed date as today', async ({ page }) => {

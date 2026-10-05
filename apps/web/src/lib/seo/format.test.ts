@@ -14,7 +14,7 @@ describe('regularHoursView', () => {
   it('words the Greek hours with weekdays that share hours grouped', () => {
     const view = regularHoursView('thessaloniki', '2026-10-05', t('el').seo);
     expect(view.text).toBe(
-      'Κανονικό ωράριο: Δευ/Τετ 08:00–14:30 · Τρί/Πέμ/Παρ 08:00–14:00, 17:00–21:00',
+      'Συνηθισμένο ωράριο: Δευ/Τετ 08:00–14:30 · Τρί/Πέμ/Παρ 08:00–14:00, 17:00–21:00',
     );
     expect(view.closedDays).toBe('Σάβ/Κυρ');
     expect(view.groups).toEqual([
@@ -26,7 +26,7 @@ describe('regularHoursView', () => {
   it('words the English hours the same way', () => {
     const view = regularHoursView('thessaloniki', '2026-10-05', t('en').seo);
     expect(view.text).toBe(
-      'Regular hours: Mon/Wed 08:00–14:30 · Tue/Thu/Fri 08:00–14:00, 17:00–21:00',
+      'Usual hours: Mon/Wed 08:00–14:30 · Tue/Thu/Fri 08:00–14:00, 17:00–21:00',
     );
     expect(view.closedDays).toBe('Sat/Sun');
   });
@@ -53,7 +53,7 @@ describe('duty hours wording', () => {
     expect(windowText({ from: '20:00', to: '08:00', toNextDay: true }, en)).toBe(
       '20:00–08:00 (until the next day)',
     );
-    expect(windowText(null, el)).toBe('η λίστα δεν αναγράφει ώρες');
+    expect(windowText(null, el)).toBe('η λίστα δεν γράφει ώρες, καλέστε');
   });
 
   it('prints extra hours with their weekdays', () => {
