@@ -47,7 +47,6 @@ export const appEn: Dictionary['app'] = {
     summary: 'Change area or time',
     useLocation: 'My location',
     locating: 'Finding your location…',
-    denied: 'You did not allow your location. Choose an area.',
     deniedShort: 'You did not allow your location.',
     unavailable: 'Your location could not be found. Choose an area.',
     unsupported: 'Your phone does not give its location. Choose an area.',

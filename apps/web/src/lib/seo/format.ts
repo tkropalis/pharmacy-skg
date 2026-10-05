@@ -119,5 +119,5 @@ export function regularHoursView(
     .map(({ times, days }) => ({ days: weekdaysText(days, seo), times }));
   const closedDays = weekdaysText(closed, seo);
   const line = groups.map((g) => `${g.days} ${g.times}`).join(' · ');
-  return { groups, closedDays, text: `${seo.pharmacy.regularLabel} ${line}` };
+  return { groups, closedDays, text: `${seo.pharmacy.regularLabel}: ${line}` };
 }

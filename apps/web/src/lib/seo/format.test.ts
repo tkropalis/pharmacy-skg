@@ -53,7 +53,7 @@ describe('duty hours wording', () => {
     expect(windowText({ from: '20:00', to: '08:00', toNextDay: true }, en)).toBe(
       '20:00–08:00 (until the next day)',
     );
-    expect(windowText(null, el)).toBe('η λίστα δεν γράφει ώρες, καλέστε');
+    expect(windowText(null, el)).toBe(el.duty.hoursNotStated);
   });
 
   it('prints extra hours with their weekdays', () => {

@@ -163,7 +163,8 @@ export default function ReportForm({ labels, locale }: Props) {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <p className="hint" id={`${id}-message-hint`}>
+        {/* Read out with the field; on screen the counter below says the same. */}
+        <p className="sr-only" id={`${id}-message-hint`}>
           {labels.messageHint}
         </p>
         <span className="counter" aria-hidden="true">

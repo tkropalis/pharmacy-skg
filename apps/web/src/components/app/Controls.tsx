@@ -65,9 +65,7 @@ export function OriginControls({
   const card = variant === 'card';
   const geoMessage =
     geo === 'denied'
-      ? card
-        ? text.origin.deniedShort
-        : text.origin.denied
+      ? text.origin.deniedShort
       : geo === 'unavailable'
         ? text.origin.unavailable
         : geo === 'unsupported'

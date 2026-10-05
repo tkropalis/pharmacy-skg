@@ -151,13 +151,6 @@ export async function createMapController(
     new AttributionControl({ compact: !options.sideBySide }),
     options.sideBySide ? 'bottom-right' : 'top-left',
   );
-  await yieldToMain();
-
-  const failure = await loaded;
-  if (failure !== null) {
-    map.remove();
-    throw failure;
-  }
 
   // The controls' icons are Font Awesome too (MapLibre draws its own as backgrounds).
   const icons: readonly (readonly [string, IconDefinition])[] = [
@@ -171,9 +164,38 @@ export async function createMapController(
     }
   }
 
-  // The compact credit starts open; it is one tap away, and the map keeps its space.
-  container.querySelector('.maplibregl-ctrl-attrib')?.classList.remove('maplibregl-compact-show');
-  container.querySelector('.maplibregl-ctrl-attrib details')?.removeAttribute('open');
+  // The compact credit starts open; it is one tap away, and the map keeps its space. MapLibre
+  // opens it (the credit is itself a <details>) when the first source data arrives, while the
+  // loading note is still showing beside it, so until the style has loaded it is closed again
+  // whenever MapLibre opens it, unless the person opened it.
+  const credit = container.querySelector<HTMLElement>('.maplibregl-ctrl-attrib');
+  let creditOpenedByPerson = false;
+  const closeCredit = () => {
+    if (creditOpenedByPerson || !credit) return;
+    credit.classList.remove('maplibregl-compact-show');
+    credit.removeAttribute('open');
+  };
+  credit?.querySelector('summary')?.addEventListener(
+    'click',
+    () => {
+      creditOpenedByPerson = true;
+    },
+    { once: true },
+  );
+  const creditWatch = new MutationObserver(() => {
+    if (credit?.classList.contains('maplibregl-compact-show')) closeCredit();
+  });
+  if (credit) creditWatch.observe(credit, { attributes: true, attributeFilter: ['class', 'open'] });
+  closeCredit();
+  await yieldToMain();
+
+  const failure = await loaded;
+  creditWatch.disconnect();
+  if (failure !== null) {
+    map.remove();
+    throw failure;
+  }
+  closeCredit();
 
   const canvas = map.getCanvas();
   canvas.setAttribute('aria-label', text.label);

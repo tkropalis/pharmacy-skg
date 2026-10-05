@@ -49,14 +49,15 @@
   min-height: 8rem;
   margin: 0 0 var(--space);
   padding: 0.75rem var(--space);
-  border: 2px solid var(--border);
-  border-inline-start: 6px solid var(--muted);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--surface);
 }
 
+/* Open: the tone is the accent's own tint, never a stripe. */
 .seo-status[data-tone='open'] {
-  border-color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  background: var(--accent-soft);
 }
 
 .seo-status[data-tone='duty-unknown'] {
@@ -74,6 +75,17 @@
   grid-template-columns: max-content 1fr;
   gap: 0.375rem 1rem;
   margin: 0 0 var(--space);
+}
+
+.seo-hours {
+  margin: 0 0 0.5rem;
+  padding: 0;
+  list-style: none;
+  font-variant-numeric: tabular-nums;
+}
+
+.seo-hours li {
+  padding-block: 0.125rem;
 }
 
 .seo-facts dt {
@@ -135,18 +147,30 @@
   margin-top: 0.25rem;
 }
 
+/* Previous and next day: two halves of one row, the dates only (the words are for screen readers). */
 .seo-pager {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
   margin: 0 0 var(--space);
 }
 
 .seo-pager a {
   display: inline-flex;
   align-items: center;
+  gap: 0.375rem;
   min-height: 2.75rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.seo-pager a:hover span {
+  text-decoration: underline;
+}
+
+.seo-pager .next {
+  justify-content: flex-end;
+  text-align: end;
 }
 
 .seo-badge {
