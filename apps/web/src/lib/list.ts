@@ -12,6 +12,11 @@ export const PIN_KINDS: readonly PinKind[] = [
   'closed',
 ];
 
+/** On duty, or on duty with no hours printed: what people look for at night. */
+export function isDutyKind(kind: PinKind): boolean {
+  return kind === 'duty' || kind === 'duty-unknown';
+}
+
 /** Duty beats extended hours beats regular hours when several apply at once. */
 export function pinKindOf(status: PharmacyStatus): PinKind {
   switch (status.state) {

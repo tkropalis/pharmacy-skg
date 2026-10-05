@@ -1,9 +1,10 @@
-import type { Row } from './list.ts';
+import { isDutyKind } from './list.ts';
+import type { PinKind, Row } from './list.ts';
 import { PIN_SORT_KEY, pinImageName } from './pins.ts';
 
 export interface PinProperties {
   id: string;
-  kind: string;
+  kind: PinKind;
   approximate: boolean;
   image: string;
   sort: number;
@@ -47,4 +48,27 @@ export function pinCollection(rows: readonly Row[]): PinCollection {
     });
   });
   return { type: 'FeatureCollection', features };
+}
+
+export interface SplitPins {
+  /** On duty (hours stated or not): drawn one by one, never clustered. */
+  readonly duty: PinFeature[];
+  /** Regular and extended hours: the only ones that are clustered. */
+  readonly clustered: PinFeature[];
+  /** Closed ones (shown on request): drawn one by one from a close zoom. */
+  readonly closed: PinFeature[];
+}
+
+/** Sorts the pins into the three map sources (see map-layers.ts). */
+export function splitPins(collection: PinCollection): SplitPins {
+  const duty: PinFeature[] = [];
+  const clustered: PinFeature[] = [];
+  const closed: PinFeature[] = [];
+  for (const feature of collection.features) {
+    const kind = feature.properties.kind;
+    if (kind === 'closed') closed.push(feature);
+    else if (isDutyKind(kind)) duty.push(feature);
+    else clustered.push(feature);
+  }
+  return { duty, clustered, closed };
 }
