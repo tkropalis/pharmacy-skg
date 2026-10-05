@@ -33,7 +33,8 @@
   z-index: 1;
 }
 
-.map {
+/* More specific than MapLibre's own `.maplibregl-map { position: relative }`, which is loaded later. */
+.hs .map {
   position: absolute;
   inset: 0;
   background: var(--soft);

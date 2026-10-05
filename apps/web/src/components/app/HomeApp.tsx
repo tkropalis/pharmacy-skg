@@ -420,7 +420,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                   <span>
                     {origin
                       ? fill(text.origin.current, { origin: origin.label })
-                      : text.origin.heading}
+                      : text.origin.summary}
                   </span>
                   <span className="muted">
                     {timeMode.kind === 'custom' && showWhen !== null ? showWhen : text.time.now}
