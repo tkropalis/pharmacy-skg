@@ -136,3 +136,34 @@ test.describe('a duty date without a published list (a gap, answered 404)', () =
     await expect(panel.getByText(text.list.noneOpen)).toHaveCount(0);
   });
 });
+
+test.describe('a picked date whose list failed to load', () => {
+  // 7 Oct is outside the dates the first load asks for (yesterday to three days ahead).
+  test.use({ now: '2026-10-01T10:00:00+03:00' });
+
+  test('is asked for again after a background refresh, never left "loading"', async ({ page }) => {
+    let fail = true;
+    await page.route('**/data/thessaloniki/duties/2026-10-07.json', (route) =>
+      fail ? route.abort('internetdisconnected') : route.fallback(),
+    );
+    await page.goto('/');
+    await waitForRows(page);
+    await openControls(page);
+    await page.getByRole('button', { name: text.time.other }).click();
+    await page.getByLabel(text.time.date).fill('2026-10-07');
+    await page.getByLabel(text.time.clock).fill('10:00');
+
+    const panel = page.locator('#panel');
+    await expect(panel.getByText(text.moreDatesFailed)).toBeVisible();
+    await expect(page.locator('ol.rows > li.row').first()).toBeVisible();
+
+    // Back online and back to the app more than 15 minutes later: a silent refresh.
+    fail = false;
+    await page.clock.fastForward('16:00');
+    await page.evaluate(() => document.dispatchEvent(new Event('visibilitychange')));
+
+    await expect(panel.getByText(text.moreDatesFailed)).toHaveCount(0);
+    await expect(page.locator('ol.rows > li.row').first()).toBeVisible();
+    await expect(panel.getByText(text.time.loadingDuties)).toHaveCount(0);
+  });
+});
