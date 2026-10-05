@@ -14,9 +14,33 @@ export type CityState =
       readonly meta: Meta;
       /** Duty dates that could not be fetched (not merely unpublished). */
       readonly failedDates: readonly IsoDate[];
-      /** Duty dates being fetched right now (asked for after the first load). */
+      /**
+       * Duty dates being fetched right now (asked for after the first load). A date leaves this
+       * list once it has settled: loaded, unpublished (404) or failed.
+       */
       readonly pendingDates: readonly IsoDate[];
+      /**
+       * Duty dates whose request has finished, however it ended: loaded, unpublished (404, so
+       * simply absent from `data.duties`) or failed. A date that has not been asked for yet is
+       * in neither list.
+       */
+      readonly settledDates: readonly IsoDate[];
     };
+
+/**
+ * Whether the duty list for `date` is still on its way: being fetched now, or inside the
+ * published range and not asked for yet (the request leaves right after the render that
+ * chose the date). A date that settled without a file is an unpublished gap, not "loading".
+ */
+export function isDutyLoading(
+  state: Extract<CityState, { readonly status: 'ready' }>,
+  date: IsoDate,
+): boolean {
+  if (state.pendingDates.includes(date)) return true;
+  const range = state.meta.duties;
+  if (range === null || date < range.from || date > range.to) return false;
+  return !state.settledDates.includes(date);
+}
 
 /** Yesterday to three days ahead, in the city's time zone: what the first load asks for. */
 export function initialDates(now: Date): IsoDate[] {
@@ -87,15 +111,28 @@ export function useCityData(): CityDataApi {
             meta: bundle.meta,
             failedDates: bundle.failedDates,
             pendingDates: [],
+            settledDates: dates,
           }),
         );
       })
       .catch(() => {
         if (run !== generation.current) return;
         // A silent refresh that fails keeps what is on screen.
-        setState((previous) =>
-          silent && previous.status === 'ready' ? previous : { status: 'error' },
-        );
+        setState((previous) => {
+          if (!silent || previous.status !== 'ready') return { status: 'error' };
+          if (previous.pendingDates.length === 0) return previous;
+          // Duty days asked for meanwhile were dropped with the superseded request. Count them
+          // as failed (which offers a retry) so they never stay "loading", and forget them so
+          // they are asked for again.
+          const lost = previous.pendingDates;
+          for (const d of lost) requested.current.delete(d);
+          return {
+            ...previous,
+            failedDates: [...new Set([...previous.failedDates, ...lost])],
+            pendingDates: [],
+            settledDates: [...new Set([...previous.settledDates, ...lost])],
+          };
+        });
       });
   }, []);
 
@@ -138,6 +175,7 @@ export function useCityData(): CityDataApi {
         // A date that was retried and loaded is no longer failed.
         failedDates: [...previous.failedDates.filter((d) => !missing.includes(d)), ...failedDates],
         pendingDates: previous.pendingDates.filter((d) => !missing.includes(d)),
+        settledDates: [...new Set([...previous.settledDates, ...missing])],
       };
     };
     setState((previous) =>

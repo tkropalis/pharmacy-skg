@@ -22,7 +22,7 @@ import { PharmacyRow } from './PharmacyRow.tsx';
 import { Sheet } from './Sheet.tsx';
 import type { SheetSize } from './Sheet.tsx';
 import { UpcomingDuties } from './UpcomingDuties.tsx';
-import { useCityData } from './use-city-data.ts';
+import { isDutyLoading, useCityData } from './use-city-data.ts';
 import { useFavourites } from './use-favourites.ts';
 import { useMapStart } from './use-map-start.ts';
 import { useMediaQuery, useNow } from './use-now.ts';
@@ -177,15 +177,11 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   );
   const covered = useMemo(() => (data ? coverage(data, at) : null), [data, at]);
 
-  // The duty list that applies to the chosen moment is still being fetched: the list must not
-  // say "none open" or "not published" yet, and nothing is announced.
-  const dutyLoading =
-    covered !== null &&
-    meta?.duties != null &&
-    covered.dutyDate >= meta.duties.from &&
-    covered.dutyDate <= meta.duties.to &&
-    !(data?.duties.has(covered.dutyDate) ?? false) &&
-    !(ready?.failedDates.includes(covered.dutyDate) ?? false);
+  // The duty list that applies to the chosen moment is being fetched right now: the list must
+  // not say "none open" or "not published" yet, and nothing is announced. A date that has
+  // settled (loaded, unpublished or failed) is not pending, so a gap in the published dates
+  // shows the "not published" note and the regular rows at once.
+  const dutyLoading = covered !== null && ready !== null && isDutyLoading(ready, covered.dutyDate);
 
   // Each area group has its own list and a day's file can lack some of them.
   const names = useMemo(() => (data ? groupNames(data) : new Map<string, string>()), [data]);

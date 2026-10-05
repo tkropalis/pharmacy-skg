@@ -100,3 +100,39 @@ test.describe('duty lists that are still loading', () => {
     await expect(page.locator('[role="status"][data-map]')).not.toHaveText('');
   });
 });
+
+test.describe('a duty date without a published list (a gap, answered 404)', () => {
+  // Monday 10:00: every regular pharmacy is open, and the duty day is Monday's.
+  test.use({ now: '2026-10-05T10:00:00+03:00' });
+
+  test('shows the rows and the "not published" note, never a loading state', async ({ page }) => {
+    await page.route('**/data/thessaloniki/duties/2026-10-05.json', (route) =>
+      route.fulfill({ status: 404, contentType: 'text/plain', body: 'Not found' }),
+    );
+    await page.goto('/');
+    await waitForRows(page);
+    const panel = page.locator('#panel');
+    await expect(panel.getByText(text.time.dutyNotPublishedToday)).toBeVisible();
+    await expect(panel.getByText(text.time.loadingDuties)).toHaveCount(0);
+    await expect(panel.getByText(text.list.noneOpen)).toHaveCount(0);
+    await expect(page.locator('[role="status"][data-map]')).not.toHaveText(text.time.loadingDuties);
+  });
+
+  test('the same for a time picked on a gap date', async ({ page }) => {
+    await page.route('**/data/thessaloniki/duties/2026-10-07.json', (route) =>
+      route.fulfill({ status: 404, contentType: 'text/plain', body: 'Not found' }),
+    );
+    await page.goto('/');
+    await waitForRows(page);
+    await openControls(page);
+    await page.getByRole('button', { name: text.time.other }).click();
+    await page.getByLabel(text.time.date).fill('2026-10-07');
+    await page.getByLabel(text.time.clock).fill('10:00');
+
+    const panel = page.locator('#panel');
+    await expect(panel.getByText(text.time.dutyNotPublished)).toBeVisible();
+    await expect(panel.getByText(text.time.loadingDuties)).toHaveCount(0);
+    await expect(page.locator('ol.rows > li.row').first()).toBeVisible();
+    await expect(panel.getByText(text.list.noneOpen)).toHaveCount(0);
+  });
+});
