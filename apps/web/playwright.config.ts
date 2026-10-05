@@ -1,6 +1,6 @@
 import { defineConfig } from '@playwright/test';
 
-const PORT = 4321;
+const PORT = Number(process.env.E2E_PORT ?? 4321);
 
 // Lets context.route() see requests the service worker makes itself (the map style and tiles in
 // the offline test), so those are stubbed too instead of reaching the network.

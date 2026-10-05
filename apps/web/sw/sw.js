@@ -134,7 +134,9 @@ async function networkFirst(event, cacheName, ms, cacheKey = event.request) {
   try {
     return await Promise.race([network, limit.promise]);
   } catch {
-    const cached = await cache.match(cacheKey);
+    // ignoreVary: the same URL is requested with and without an Origin header (a preload with
+    // `crossorigin` sends one, fetch() from the page does not), and hosts answer `Vary: Origin`.
+    const cached = await cache.match(cacheKey, { ignoreVary: true });
     // No copy: wait for the network (this rejects if it failed, which is a normal offline error).
     return cached ?? network;
   } finally {
@@ -155,20 +157,20 @@ async function navigate(event, url) {
     // page of the locale, which holds the app.
     const home = url.pathname.startsWith('/en/') ? '/en/' : '/';
     const cache = await caches.open(PRECACHE);
-    return (await cache.match(home)) ?? Response.error();
+    return (await cache.match(home, { ignoreVary: true })) ?? Response.error();
   }
 }
 
 async function fromPrecache(request) {
   const cache = await caches.open(PRECACHE);
-  const cached = await cache.match(new URL(request.url).pathname);
+  const cached = await cache.match(new URL(request.url).pathname, { ignoreVary: true });
   return cached ?? fetch(request);
 }
 
 async function cacheFirst(event, cacheName) {
   const { request } = event;
   const cache = await caches.open(cacheName);
-  const cached = await cache.match(request);
+  const cached = await cache.match(request, { ignoreVary: true });
   if (cached) return cached;
   const response = await fetch(request);
   if (response.ok) event.waitUntil(cache.put(request, response.clone()));
@@ -178,7 +180,7 @@ async function cacheFirst(event, cacheName) {
 async function tiles(event, url) {
   const { request } = event;
   const cache = await caches.open(TILE_CACHE);
-  const cached = await cache.match(request);
+  const cached = await cache.match(request, { ignoreVary: true });
   const isStyle = url.pathname.startsWith('/styles/');
   const refresh = () =>
     fetch(request).then((response) => {
