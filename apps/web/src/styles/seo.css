@@ -45,6 +45,8 @@
 }
 
 .seo-status {
+  /* The status is worked out in the browser; the room is kept so the page does not jump. */
+  min-height: 8rem;
   margin: 0 0 var(--space);
   padding: 0.75rem var(--space);
   border: 2px solid var(--border);

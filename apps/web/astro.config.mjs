@@ -24,8 +24,15 @@ export default defineConfig({
     locales: ['el', 'en'],
     routing: { prefixDefaultLocale: false },
   },
+  build: {
+    // The stylesheets are small: inlined, they no longer block the first paint. (The CSP allows
+    // inline styles, not inline scripts.)
+    inlineStylesheets: 'always',
+  },
   vite: {
     build: {
+      // Source maps are public like the code (open source); Lighthouse expects them for big files.
+      sourcemap: true,
       // Never inline scripts: the Content-Security-Policy (vercel.json) allows only 'self'.
       assetsInlineLimit: 0,
       // The MapLibre chunk is about 1 MB on purpose: it is loaded lazily, after the list.

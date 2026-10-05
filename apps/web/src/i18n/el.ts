@@ -13,7 +13,6 @@ export const el = {
   languageSwitcherLabel: 'Γλώσσα',
   skipToContent: 'Μετάβαση στο περιεχόμενο',
   tagline: 'Δωρεάν και χωρίς διαφημίσεις',
-  homeLinkLabel: 'Αρχική σελίδα',
 
   emergency: {
     label: 'Έκτακτη ανάγκη',

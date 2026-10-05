@@ -59,9 +59,9 @@ export function OriginControls({
 
   return (
     <section className="control" aria-labelledby={`${inputId}-h`}>
-      <h3 id={`${inputId}-h`} className="control-title">
+      <h2 id={`${inputId}-h`} className="control-title">
         {text.origin.heading}
-      </h3>
+      </h2>
       <div className="control-row">
         <button
           type="button"
@@ -196,9 +196,9 @@ export function TimeControls({
   const custom = mode.kind === 'custom';
   return (
     <section className="control" aria-labelledby={`${id}-h`}>
-      <h3 id={`${id}-h`} className="control-title">
+      <h2 id={`${id}-h`} className="control-title">
         {text.time.heading}
-      </h3>
+      </h2>
       <div className="segmented" role="group" aria-labelledby={`${id}-h`}>
         <button type="button" aria-pressed={!custom} onClick={onNow}>
           {text.time.now}

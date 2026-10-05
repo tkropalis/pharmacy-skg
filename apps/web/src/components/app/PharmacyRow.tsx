@@ -95,9 +95,9 @@ function PharmacyRowView({
           aria-hidden="true"
           dangerouslySetInnerHTML={{ __html: pinSvg(view.kind, { approximate, size: 28 }) }}
         />
-        <h3 className="row-name">
+        <h2 className="row-name">
           <a href={pharmacyPath(locale, pharmacy.id)}>{pharmacy.name}</a>
-        </h3>
+        </h2>
         {row.distance !== null && (
           <span className="row-distance">{formatDistance(row.distance, locale)}</span>
         )}

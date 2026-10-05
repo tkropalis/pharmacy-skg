@@ -7,7 +7,6 @@ export const en: Dictionary = {
   languageSwitcherLabel: 'Language',
   skipToContent: 'Skip to content',
   tagline: 'Free and ad-free',
-  homeLinkLabel: 'Home',
 
   emergency: {
     label: 'Emergency',
