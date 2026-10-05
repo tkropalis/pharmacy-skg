@@ -39,6 +39,7 @@ describe('describeStatus', () => {
       state: 'open',
       until: new Date('2026-10-05T20:00:00Z'),
       closingSoon: false,
+      runReasons: [],
       reasons: [
         { kind: 'duty', duty: 'on-duty', date: '2026-10-05', groupId: 'metro', heading: 'x' },
       ],
@@ -54,6 +55,7 @@ describe('describeStatus', () => {
       state: 'open',
       until: new Date('2026-10-05T11:00:00Z'),
       closingSoon: true,
+      runReasons: [],
     } as const;
     expect(
       describeStatus({ ...base, reasons: [{ kind: 'regular' }] }, true, now, 'en', t('en')).short,
@@ -64,7 +66,12 @@ describe('describeStatus', () => {
   });
 
   it('warns when the duty list is not published yet', () => {
-    const status: PharmacyStatus = { state: 'closed', nextOpen: null, nextReasons: [] };
+    const status: PharmacyStatus = {
+      state: 'closed',
+      nextOpen: null,
+      nextReasons: [],
+      nextRunReasons: [],
+    };
     const result = describeStatus(status, false, now, 'en', t('en'));
     expect(result.tone).toBe('closed');
     expect(result.text).toBe(
@@ -77,6 +84,7 @@ describe('describeStatus', () => {
       state: 'closed',
       nextOpen: new Date('2026-10-05T14:00:00Z'),
       nextReasons: [{ kind: 'regular' }],
+      nextRunReasons: [{ kind: 'regular' }],
     };
     expect(describeStatus(status, true, now, 'el', t('el')).text).toBe(
       'Κλειστό τώρα. Ανοίγει σήμερα στις 17:00. Καλέστε πριν πάτε.',
