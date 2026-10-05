@@ -67,3 +67,9 @@ export const pharmacyPath = (locale: Locale, id: string): string =>
   paramPath(locale, 'pharmacy', id);
 export const dutyPath = (locale: Locale, date: string): string => paramPath(locale, 'duty', date);
 export const areaPath = (locale: Locale, slug: string): string => paramPath(locale, 'area', slug);
+
+/** The index pages of the duty and area routes: '/efimeries/', '/en/area/'. */
+export const dutyIndexPath = (locale: Locale): string =>
+  `${localePrefix(locale)}/${PARAM_ROUTES.duty[locale]}/`;
+export const areaIndexPath = (locale: Locale): string =>
+  `${localePrefix(locale)}/${PARAM_ROUTES.area[locale]}/`;

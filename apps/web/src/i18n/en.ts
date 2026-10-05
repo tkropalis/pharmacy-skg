@@ -215,4 +215,137 @@ export const en: Dictionary = {
     body: 'The address you asked for does not exist.',
     homeLink: 'Back to the home page',
   },
+
+  // Search-engine pages (milestone M3): pharmacy, duty-date and area pages. {name} style
+  // placeholders are filled in by lib/seo/format.ts `fill`.
+  seo: {
+    weekdaysShort: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+    footerDuty: 'Duty lists by date',
+    footerArea: 'Pharmacies by area',
+    todayBadge: 'Today',
+    sourceFsth: 'Source: ΦΣΘ, via thess.guide',
+    sourcePkm: 'Source: ΠΚΜ',
+    dataNote:
+      'This page was built from the data shown below. See the home page for the current status.',
+    breadcrumbLabel: 'Breadcrumb',
+
+    pharmacy: {
+      title: '{name} — Pharmacy in {locality}',
+      description:
+        'Pharmacy {name}, {address}, {locality}. Phone, regular hours, extended hours and officially published duty dates.',
+      kicker: 'Pharmacy',
+      statusHeading: 'Status now',
+      statusLoading: 'Working out the current status…',
+      statusFallback: 'The current status is worked out on your device with JavaScript.',
+      statusFallbackLink: 'See the current status on the home page',
+      statusError: 'The data could not be loaded. Try again later or call the pharmacy.',
+      contactHeading: 'Details',
+      addressLabel: 'Address',
+      postcodeLabel: 'Postcode',
+      phoneLabel: 'Phone',
+      noPhone: 'No phone number is known.',
+      areaLabel: 'Area',
+      groupLabel: 'ΦΣΘ duty group',
+      directions: 'Directions in Google Maps',
+      hoursHeading: 'Opening hours',
+      regularLabel: 'Regular hours:',
+      regularClosed: 'Closed: {days} and public holidays.',
+      regularNote:
+        'Regular hours apply when there is no duty or extended-hours entry. We cannot know about individual closures, so call before you go.',
+      extendedHeading: 'Extended hours (ΠΚΜ)',
+      extendedPeriod: 'In force from {from} to {to}',
+      extendedAnnouncement: 'ΠΚΜ announcement',
+      extendedNote: 'Replaces the regular hours on the days it lists.',
+      dutyHeading: 'Official duty dates',
+      dutyIntro:
+        'Only duty dates officially published by ΦΣΘ. We do not forecast future duty dates.',
+      dutyUpcoming: 'Today and upcoming',
+      dutyRecent: 'Last 14 days',
+      dutyNone: 'No published duty date for this pharmacy in the lists we have.',
+      dutyHoursLabel: 'Hours:',
+      dutyDayPage: 'Full list for the day',
+      reportLink: 'Report a problem with this pharmacy',
+      sourcesHeading: 'Sources',
+      sourcesBody:
+        'Duty dates: ΦΣΘ, via thess.guide. Extended hours: Region of Central Macedonia (ΠΚΜ). Regular hours: ΠΚΜ decision. Location: Overture Maps and Nominatim (OpenStreetMap).',
+    },
+
+    duty: {
+      indexTitle: 'On-duty pharmacies in Thessaloniki by date',
+      indexDescription:
+        'The official on-duty and overnight pharmacy lists for Thessaloniki by date, as published by ΦΣΘ.',
+      indexIntro:
+        'ΦΣΘ’s daily duty lists for the whole regional unit, by date. Only officially published lists are shown.',
+      indexNone: 'No published lists at the moment.',
+      indexCounts: '{groups} area groups, {pharmacies} pharmacies',
+      pageTitle: 'On-duty pharmacies in Thessaloniki — {date}',
+      pageDescription:
+        'On-duty and overnight pharmacies in Thessaloniki for {date}, by area, with hours and phone numbers. Source: ΦΣΘ.',
+      prev: 'Previous day',
+      next: 'Next day',
+      allDates: 'All dates',
+      pagerLabel: 'Other days',
+      sourceLine: 'Source: ΦΣΘ, via thess.guide',
+      sourcePdf: 'List as PDF',
+      uploadedAt: 'Uploaded:',
+      hoursLabel: 'Hours:',
+      hoursNotStated: 'the list does not print hours',
+      nextDay: 'until the next day',
+      extraHoursLabel: 'Extra hours:',
+      exceptHolidays: 'except public holidays',
+      noPharmacyPage: 'There is no page for this pharmacy.',
+      kinds: {
+        day: 'Day duty',
+        'saturday-extra': 'Saturday extra',
+        'on-duty': 'On duty',
+        overnight: 'Overnight',
+        'after-midnight': 'After midnight',
+      },
+      onlyPublished: 'Only officially published duty dates are shown. Call before you go.',
+    },
+
+    area: {
+      indexTitle: 'Pharmacies in Thessaloniki by area',
+      indexDescription:
+        'The pharmacies of the Thessaloniki regional unit by area and ΦΣΘ duty group, with their opening hours and official duty dates.',
+      indexIntro:
+        'Pick an area to see its pharmacies, which ones are open today and the official duty dates. Areas are grouped as in ΦΣΘ’s lists.',
+      otherGroup: 'Other areas',
+      countOne: '1 pharmacy',
+      countMany: '{count} pharmacies',
+      pageTitle: 'Pharmacies in {area} — hours and duty dates',
+      pageDescription:
+        'The {count} pharmacies in {area}: address, phone, which ones are open today and the official duty dates.',
+      h1: 'Pharmacies in {area}',
+      groupLabel: 'ΦΣΘ duty group:',
+      openNowHeading: 'Open now',
+      openNowLoading: 'Working it out…',
+      openNowSummary: 'Open now: {open} of {total}.',
+      openNowError: 'The data could not be loaded. See the home page or call before you go.',
+      openNowNoScript: 'The “open now” indicator needs JavaScript.',
+      closedNow: 'Closed now',
+      listHeading: 'All pharmacies in the area',
+      dutyHeading: 'Official duty dates in the area',
+      dutyNone: 'No published duty dates for this area from today onward.',
+      allAreas: 'All areas',
+    },
+
+    status: {
+      openExtended: 'Open (ΠΚΜ extended hours)',
+      openUntil: '{label} · until {time}',
+      closingSoon: 'closing soon',
+      dutyHoursUnknown:
+        'On duty today (ΦΣΘ list), but the list does not print hours. Call to confirm.',
+      closed: 'Closed now.',
+      opensAt: 'Opens {when}.',
+      noNextOpen: 'We do not know of an opening in the next 7 days.',
+      unpublished:
+        'The duty list for this day has not been published yet, so the status may change.',
+      whenToday: 'today at {time}',
+      whenTomorrow: 'tomorrow at {time}',
+      whenWeekday: '{weekday} at {time}',
+      callFirst: 'Call before you go.',
+      computedAt: 'Worked out at {time} (Thessaloniki time).',
+    },
+  },
 };
