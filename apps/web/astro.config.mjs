@@ -28,6 +28,8 @@ export default defineConfig({
     build: {
       // Never inline scripts: the Content-Security-Policy (vercel.json) allows only 'self'.
       assetsInlineLimit: 0,
+      // The MapLibre chunk is about 1 MB on purpose: it is loaded lazily, after the list.
+      chunkSizeWarningLimit: 1200,
     },
   },
 });

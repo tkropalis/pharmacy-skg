@@ -10,7 +10,9 @@ import {
   setWorkerUrl,
 } from 'maplibre-gl';
 import type { AddLayerObject, GeoJSONSource } from 'maplibre-gl';
-import 'maplibre-gl/dist/maplibre-gl.css';
+// The stylesheet is added when the map starts. A plain CSS import here would make the build
+// link it into the page head, where it would block the first paint of the list.
+import maplibreCss from 'maplibre-gl/dist/maplibre-gl.css?url';
 import type { Locale } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
 import { PIN_KINDS } from '../../lib/list.ts';
@@ -58,6 +60,19 @@ function layer(spec: Record<string, unknown>): AddLayerObject {
   return spec as unknown as AddLayerObject;
 }
 
+function loadStylesheet(href: string): Promise<void> {
+  if (document.querySelector(`link[href="${href}"]`)) return Promise.resolve();
+  return new Promise((resolve) => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = href;
+    // A failed stylesheet should not stop the map: it would only look unstyled.
+    link.onload = () => resolve();
+    link.onerror = () => resolve();
+    document.head.append(link);
+  });
+}
+
 async function loadImage(svg: string): Promise<HTMLImageElement> {
   const image = new Image();
   image.src = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
@@ -91,7 +106,10 @@ export async function createMapController(
   options: MapControllerOptions,
 ): Promise<MapController> {
   const { locale, text, dark } = options;
-  const style = await fetchStyle(dark ? STYLE_DARK : STYLE_LIGHT, locale);
+  const [style] = await Promise.all([
+    fetchStyle(dark ? STYLE_DARK : STYLE_LIGHT, locale),
+    loadStylesheet(maplibreCss),
+  ]);
 
   const map = new MapLibreMap({
     container,

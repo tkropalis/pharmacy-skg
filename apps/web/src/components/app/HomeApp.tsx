@@ -5,7 +5,7 @@ import { THESSALONIKI, localToInstant, zonedDate, zonedParts } from '@pharmacy-s
 import type { Dictionary } from '../../i18n/index.ts';
 import { addDays, dateRange } from '../../lib/dates.ts';
 import { upcomingDuties } from '../../lib/duties.ts';
-import { coverageAt, distanceMetres, publishedDuties } from '../../lib/engine.ts';
+import { coverage, distanceMetres, publishedDuties } from '../../lib/engine.ts';
 import { formatUpdatedAt } from '../../lib/freshness.ts';
 import { deviceZoneDiffers, fill, shortIsoDate } from '../../lib/format.ts';
 import { buildRows, rowFor } from '../../lib/list.ts';
@@ -168,7 +168,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
     () => (data ? buildRows(data, at, originPoint, showClosed) : { rows: [], openCount: 0 }),
     [data, at, originPoint, showClosed],
   );
-  const coverage = useMemo(() => (data ? coverageAt(data, at) : null), [data, at]);
+  const covered = useMemo(() => (data ? coverage(data, at) : null), [data, at]);
 
   useEffect(() => setVisible(PAGE_SIZE), [originPoint, timeMode, showClosed, tab]);
 
@@ -466,14 +466,14 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                   </button>
                 </p>
               )}
-              {coverage && !coverage.duties && (
+              {covered && !covered.duties && (
                 <p className="callout" role="note">
                   {timeMode.kind === 'now'
                     ? text.time.dutyNotPublishedToday
                     : text.time.dutyNotPublished}
                 </p>
               )}
-              {coverage && !coverage.extendedHours && (
+              {covered && !covered.extendedHours && (
                 <p className="callout" role="note">
                   {text.time.extendedNotPublished}
                 </p>

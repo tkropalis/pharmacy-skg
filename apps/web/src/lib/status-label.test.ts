@@ -12,7 +12,7 @@ const duty = (kind: 'overnight' | 'day' | 'after-midnight' = 'overnight') =>
   ({ kind: 'duty', duty: kind, date: '2026-10-05', groupId: 'metro', heading: 'H' }) as const;
 
 function open(until: string, reasons: readonly OpenReason[], closingSoon = false): PharmacyStatus {
-  return { state: 'open', until: new Date(until), reasons, closingSoon };
+  return { state: 'open', until: new Date(until), reasons, runReasons: reasons, closingSoon };
 }
 
 describe('formatDuration', () => {
@@ -159,6 +159,7 @@ describe('describeStatus', () => {
       state: 'closed',
       nextOpen: nextOpen === null ? null : new Date(nextOpen),
       nextReasons: [],
+      nextRunReasons: [],
     });
     const view = (nextOpen: string | null, locale: 'el' | 'en' = 'el') =>
       describeStatus({

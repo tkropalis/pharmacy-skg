@@ -3,7 +3,7 @@ import { resolve } from 'node:path';
 import { THESSALONIKI } from '@pharmacy-skg/core';
 import type { CityData, DutyDay, ExtendedHours, Pharmacies } from '@pharmacy-skg/core';
 import { describe, expect, it } from 'vitest';
-import { distanceMetres, coverageAt } from './engine.ts';
+import { distanceMetres, coverage } from './engine.ts';
 import { buildRows, pinKindOf, rowFor } from './list.ts';
 import { pinCollection } from './map-data.ts';
 
@@ -87,7 +87,7 @@ describe('rowFor', () => {
 
 describe('pinKindOf', () => {
   it('lets duty win over extended and regular', () => {
-    const base = { state: 'open', until: new Date(), closingSoon: false } as const;
+    const base = { state: 'open', until: new Date(), closingSoon: false, runReasons: [] } as const;
     expect(pinKindOf({ ...base, reasons: [{ kind: 'regular' }] })).toBe('regular');
     expect(pinKindOf({ ...base, reasons: [{ kind: 'extended' }] })).toBe('extended');
     expect(
@@ -120,17 +120,21 @@ describe('pinCollection', () => {
   });
 });
 
-describe('coverageAt', () => {
+describe('coverage', () => {
   it('reports published duty lists and extended hours', () => {
-    expect(coverageAt(data, night)).toEqual({ duties: true, extendedHours: true });
-    expect(coverageAt(data, new Date('2026-12-01T10:00:00Z')).duties).toBe(false);
-    expect(coverageAt(data, new Date('2026-12-01T10:00:00Z')).extendedHours).toBe(false);
+    expect(coverage(data, night)).toMatchObject({ duties: true, extendedHours: true });
+    expect(coverage(data, new Date('2026-12-01T10:00:00Z')).duties).toBe(false);
+    expect(coverage(data, new Date('2026-12-01T10:00:00Z')).extendedHours).toBe(false);
   });
-  it('needs yesterday’s list before 08:00', () => {
+  it('uses yesterday’s list before 08:00 and today’s afterwards', () => {
     const lastDay = [...data.duties.keys()].sort().at(-1) ?? '';
-    const nextMorning = new Date(`${lastDay}T00:00:00Z`);
-    nextMorning.setUTCDate(nextMorning.getUTCDate() + 1);
-    nextMorning.setUTCHours(1); // 04:00 Athens on the day after the last list: no list for it
-    expect(coverageAt(data, nextMorning).duties).toBe(false);
+    const next = (hourUtc: number) => {
+      const at = new Date(`${lastDay}T00:00:00Z`);
+      at.setUTCDate(at.getUTCDate() + 1);
+      at.setUTCHours(hourUtc);
+      return at;
+    };
+    expect(coverage(data, next(1)).duties).toBe(true); // 04:00 Athens: the last list still rules
+    expect(coverage(data, next(8)).duties).toBe(false); // 11:00 Athens: no list for the new day
   });
 });

@@ -25,6 +25,12 @@ src/pages/[...path].astro  every page of every locale, from i18n/routes.ts
 src/lib/data.ts            loadCityData(cityId, dates): fetches the published JSON for the client
 src/lib/pwa.ts            service worker registration and offline prefetch
 src/scripts/boot.ts        runs on every page: freshness, service worker, prefetch
+src/scripts/home-app.tsx   mounts the home screen into #app (replaces the no-JavaScript fallback)
+src/components/app/        the home screen: HomeApp (state), Sheet, Controls, PharmacyRow,
+                           UpcomingDuties, MapView (thin) and map-controller (MapLibre, lazy)
+src/lib/                   pure, tested logic: status-label, list, directions, ics, places,
+                           favourites, map-style, map-data, pins, duties, format
+integrations/maplibre-worker.ts   publishes MapLibre's worker files under /_astro/maplibre-<version>/
 ```
 
 To rename the app, edit `APP_NAME` and `APP_SHORT_NAME` in `src/config.ts`.
@@ -53,11 +59,15 @@ The site rebuilds on every push, so a data commit from the scheduled workflow re
 
 `vercel.json` sets a Content-Security-Policy with `script-src 'self'`: no inline scripts. Astro islands (`client:*`) emit an inline bootstrap script and would be blocked, so interactive parts are mounted from a bundled module script instead (see `src/scripts/report-form.tsx`: `createRoot(...)` into a placeholder `div`). Use the same pattern for the map, or switch to Astro's `security.csp` (hashes) and relax `script-src` in step.
 
+The home screen (`src/scripts/home-app.tsx`) follows that pattern. MapLibre is loaded by a dynamic import from `components/app/map-controller.ts` only after the list has rendered, so the first load stays small. MapLibre 6 starts its tile workers from `maplibre-gl-worker.mjs`, which imports `maplibre-gl-shared.mjs`; a bundler cannot see that, so `integrations/maplibre-worker.ts` copies both into `dist/_astro/maplibre-<version>/` (and serves them in `astro dev`) and the app calls `setWorkerUrl`. The worker runs from a `blob:` module, which is why `worker-src` allows `'self' blob:`. Hosts must serve `.mjs` as `text/javascript` (Vercel does).
+
 Map tiles, style, glyphs and sprites come from `https://tiles.openfreemap.org`, allowed for `connect-src`, `img-src` and `font-src`. The Vercel Insights script is served from `/_vercel/insights/`, which `'self'` covers.
 
 ## Service worker
 
 `sw/sw.js` is copied to `dist/sw.js` by `integrations/service-worker.ts` in the `astro:build:done` hook. The hook lists every built file except the data, the worker itself and `404.html`, hashes their contents, and uses the combined hash as the build version. A rebuild with identical output has the same version, so nothing updates; any changed file gives a new version, a new `precache-<version>` cache, and removal of the old one on activation. The worker takes over at once (`skipWaiting` and `clients.claim`), and the page reloads once when control changes (`src/lib/pwa.ts`), unless a form has unsent input.
+
+The map chunk and the worker files are in the precache list like every other built file, so the map also works offline once the worker has installed (about 1.4 MB uncompressed, 0.4 MB gzipped).
 
 Strategies: pages network-first with a 4 s timeout then the precached copy; `/data/**` network-first (cache fallback, 404s not cached); `tiles.openfreemap.org` cache-first, capped at 500 entries; everything else, including `/api/`, goes to the network untouched. After load, while online, the page fetches meta, pharmacies, the extended-hours files and the duty lists for today and the next three days (Europe/Athens) so they are in the cache.
 
