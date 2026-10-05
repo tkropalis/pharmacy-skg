@@ -77,6 +77,8 @@ Pure TypeScript in `packages/core`, specified by decision D23.
 
 ## M4: Beta launch
 
+The owner's steps are in [beta-checklist.md](beta-checklist.md). The one-page brief for ΦΣΘ is in [outreach/fsth-brief.md](outreach/fsth-brief.md).
+
 - Test on real devices (iOS Safari, Android Chrome) and fix what's found.
 - **Owner:**
   - create the Vercel project;
