@@ -22,9 +22,9 @@ const links = [
 ---
 
 <!--
-  Compact: a row of links, one freshness line, one credits line (every source is named, the
-  About page holds the full list with the licences) and the disclaimer. The home screen has
-  no page footer; its sheet carries a shorter one (components/app/HomeApp.tsx).
+  Compact: a row of links and one line with the data's age and the disclaimer. The sources
+  are on the About page. The home screen has no page footer; its sheet carries its own
+  (components/app/HomeApp.tsx).
 -->
 <footer class="site-footer">
   <div class="container">
@@ -38,15 +38,9 @@ const links = [
       </ul>
     </nav>
 
-    <p class="small">
-      <strong>{d.lastUpdatedLabel}</strong> <time data-updated-at>—</time>
-    </p>
     <p class="small muted">
-      {d.creditsLine}
-      {' · '}
-      <a href={`${about}#credits`}>{d.creditsMore}</a>
+      {d.lastUpdatedLabel} <time data-updated-at>—</time> · {d.disclaimer}
     </p>
-    <p class="small muted disclaimer">{d.disclaimer}</p>
   </div>
 </footer>
 
@@ -85,9 +79,5 @@ const links = [
   .small {
     margin: 0 0 0.25rem;
     line-height: 1.45;
-  }
-
-  .small a {
-    white-space: nowrap;
   }
 </style>

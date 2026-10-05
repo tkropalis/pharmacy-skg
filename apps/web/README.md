@@ -106,14 +106,13 @@ The owner creates and manages the Vercel project (decision D14).
 2. **Framework preset:** Astro (also set in `vercel.json`). Leave the build and install commands at their defaults; Vercel runs `pnpm install` at the workspace root and `astro build`.
 3. **Environment variables** (Production and Preview):
 
-   | Variable           | Value                                                                                                                                                                                           |
-   | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | `GITHUB_TOKEN`     | A **fine-grained** personal access token for this repository only, with **Issues: read and write** and nothing else. Without it `/api/report` answers 503 and the form links to GitHub instead. |
-   | `PUBLIC_SITE_URL`  | The public origin, e.g. `https://example.gr` (no trailing slash). Used for canonical, hreflang and Open Graph URLs. Defaults to the placeholder `https://pharmacy-skg.vercel.app`.              |
-   | `PUBLIC_ANALYTICS` | `vercel` to add the Vercel Web Analytics script (cookieless, decision D16). Leave unset to ship none.                                                                                           |
-   | `GITHUB_REPO`      | Optional, `owner/name` the reports go to. Defaults to `tkropalis/pharmacy-skg`.                                                                                                                 |
+   | Variable          | Value                                                                                                                                                                                           |
+   | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | `GITHUB_TOKEN`    | A **fine-grained** personal access token for this repository only, with **Issues: read and write** and nothing else. Without it `/api/report` answers 503 and the form links to GitHub instead. |
+   | `PUBLIC_SITE_URL` | The public origin, e.g. `https://example.gr` (no trailing slash). Used for canonical, hreflang and Open Graph URLs. Defaults to the placeholder `https://pharmacy-skg.vercel.app`.              |
+   | `GITHUB_REPO`     | Optional, `owner/name` the reports go to. Defaults to `tkropalis/pharmacy-skg`.                                                                                                                 |
 
-4. **Web Analytics:** enable it under the project's Analytics tab. The script is only added to pages when `PUBLIC_ANALYTICS=vercel`.
+4. **Web Analytics:** enable it under the project's Analytics tab. `@vercel/analytics` is added to every page in builds made on Vercel (`VERCEL=1`), never locally, in CI or in the e2e build.
 5. After the first deploy, send a test report from `/anafora/` and check that an issue labelled `report` appears.
 
 The site rebuilds on every push, so a data commit from the scheduled workflow republishes `/data/**`. Data is served with `Cache-Control: no-cache`, so browsers revalidate it.

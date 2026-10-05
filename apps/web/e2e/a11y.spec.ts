@@ -51,8 +51,11 @@ test("the home list with the filters open and a row's details open has no violat
   await page.goto('/');
   const rows = await waitForRows(page);
   await openControls(page);
-  await page.getByRole('button', { name: /Ή διαλέξτε περιοχή/ }).click();
-  // A row's details: directions apps, favourite, share, page, report.
+  await page
+    .locator('#controls')
+    .getByRole('button', { name: /^Περιοχή/ })
+    .click();
+  // A row's details: directions apps, favourite, share and the pharmacy's page.
   await rows.first().locator('.row-toggle').click();
   await expect(rows.first().locator('.row-details')).toBeVisible();
   const results = await new AxeBuilder({ page }).withTags(WCAG_AA).analyze();

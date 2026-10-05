@@ -760,44 +760,16 @@ html.has-update-toast .sheet {
   color: var(--on-accent);
 }
 
-/* --- The "see the nearest" card (no position yet) --------------------------------- */
+/* --- The "see the nearest" row (no position yet) ----------------------------------- */
 
+/* One row at the top of the list: locate (the main action), pick an area, more options. */
 .nearby {
-  position: relative;
-  margin: 0.75rem 0 0.25rem;
-  padding: 0 0.75rem 0.75rem;
-  border: 1px solid var(--border-strong);
-  border-radius: 0.75rem;
-  background: var(--soft);
-}
-
-.nearby-title {
-  display: flex;
-  align-items: center;
-  min-height: 40px;
-  margin: 0 2.75rem 0 0;
-  font-size: 0.9375rem;
-}
-
-/* A 44px target in the corner of the card, level with the title. */
-.nearby-options {
-  position: absolute;
-  inset-block-start: 0;
-  inset-inline-end: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  color: var(--muted);
-  cursor: pointer;
+  margin: 0.25rem 0 0.5rem;
 }
 
 .nearby-body .control-row {
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: center;
   gap: 0.375rem;
 }
 
@@ -805,9 +777,32 @@ html.has-update-toast .sheet {
   flex: 1 1 auto;
 }
 
+.nearby-options {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-inline-end: -0.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.nearby-options:hover {
+  background: var(--soft);
+}
+
 .nearby-body .notice {
   margin: 0.5rem 0 0;
-  padding: 0.25rem 0.5rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--warn-text);
   font-size: 0.8125rem;
   line-height: 1.35;
 }
@@ -1015,11 +1010,6 @@ html.has-update-toast .sheet {
   padding-inline-start: calc(2.5rem + 0.75rem);
 }
 
-.row-full {
-  font-size: 0.9375rem;
-  font-weight: 600;
-}
-
 .row-note {
   font-size: 0.8125rem;
   font-style: italic;
@@ -1057,11 +1047,6 @@ html.has-update-toast .sheet {
 
 .detail-link.fav[data-saved='true'] .icon {
   color: var(--star);
-}
-
-.row-menu-label {
-  font-size: 0.8125rem;
-  color: var(--muted);
 }
 
 .more {

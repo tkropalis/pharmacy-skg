@@ -1,4 +1,5 @@
 ---
+import Analytics from '@vercel/analytics/astro';
 import type { Locale } from '@pharmacy-skg/core';
 import SiteFooter from '../components/SiteFooter.astro';
 import SiteHeader from '../components/SiteHeader.astro';
@@ -36,7 +37,9 @@ const alternates = pageAlternates ?? (route === null ? null : alternatePaths(rou
 const canonical = alternates === null ? null : absolute(alternates[locale]);
 const fullTitle = route === 'home' ? `${APP_NAME[locale]}` : `${title} · ${APP_NAME[locale]}`;
 const ogLocales: Record<Locale, string> = { el: 'el_GR', en: 'en_US' };
-const analytics = import.meta.env.PROD && import.meta.env.PUBLIC_ANALYTICS === 'vercel';
+// Vercel Web Analytics (cookieless, decision D16), only in builds made on Vercel: elsewhere
+// (local, CI, e2e) /_vercel/insights does not exist.
+const analytics = import.meta.env.PROD && process.env.VERCEL === '1';
 ---
 
 <!doctype html>
@@ -84,7 +87,7 @@ const analytics = import.meta.env.PROD && import.meta.env.PUBLIC_ANALYTICS === '
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content={absolute('/og-image.png')} />
 
-    {analytics && <script is:inline defer src="/_vercel/insights/script.js" />}
+    {analytics && <Analytics />}
     <slot name="head" />
   </head>
   <body

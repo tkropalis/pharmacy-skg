@@ -65,7 +65,7 @@ for (const locale of LOCALES) {
       await waitForRows(page);
       await openControls(page);
 
-      await page.getByRole('button', { name: text.app.origin.areaLabel }).click();
+      await page.getByRole('button', { name: text.app.origin.areaLabel, exact: true }).click();
       await page.getByLabel(text.app.origin.areaSearch).fill('kalamaria');
       const option = page.locator('.picker-item', { hasText: 'Καλαμαριά' });
       await expect(option).toHaveCount(1);

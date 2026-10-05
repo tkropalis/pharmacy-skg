@@ -1,6 +1,6 @@
 ---
 import type { Locale } from '@pharmacy-skg/core';
-import { REPO_URL } from '../../config.ts';
+import { CONTACT_EMAIL } from '../../config.ts';
 import { t } from '../../i18n/index.ts';
 
 interface Props {
@@ -25,16 +25,12 @@ const d = t(locale).privacy;
   ))}
 
   <p>
-    {d.contact}{' '}
-    <a href={`${REPO_URL}/issues`} rel="noopener">
-      GitHub
-    </a>
+    {d.contact} <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
   </p>
 </div>
 
 <style>
   .lead {
-    font-size: 1.125rem;
     font-weight: 600;
   }
 </style>

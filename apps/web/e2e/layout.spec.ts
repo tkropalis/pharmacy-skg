@@ -52,7 +52,9 @@ test.describe('the home screen is an app viewport', () => {
     expect(map?.y ?? 0).toBeCloseTo((header?.y ?? 0) + (header?.height ?? 0), 0);
   });
 
-  test('the sheet ends with a compact footer: links and the disclaimer', async ({ page }) => {
+  test('the sheet ends with a compact footer: links, the emergency numbers and one line', async ({
+    page,
+  }) => {
     await page.setViewportSize({ width: 390, height: 664 });
     await page.goto('/');
     await waitForRows(page);
@@ -61,15 +63,14 @@ test.describe('the home screen is an app viewport', () => {
     await expect(footer).toBeInViewport();
     const text = t('el').app.footer;
     const links = footer.locator('.footer-links a');
-    await expect(links).toHaveText([text.about, text.privacy, text.report, text.sources]);
+    await expect(links).toHaveText([text.about, text.privacy, text.report]);
     await expect(links.nth(0)).toHaveAttribute('href', localizedPath('el', 'about'));
-    await expect(links.nth(3)).toHaveAttribute('href', `${localizedPath('el', 'about')}#credits`);
     await expect(footer).toContainText(text.disclaimer);
     // The emergency numbers live here now, one tel: link each.
     await expect(footer.locator('a[href^="tel:"]')).toHaveCount(3);
     // One row of links on a phone.
     const first = await links.nth(0).boundingBox();
-    const last = await links.nth(3).boundingBox();
+    const last = await links.nth(2).boundingBox();
     expect(Math.abs((first?.y ?? 0) - (last?.y ?? 100))).toBeLessThan(2);
     // The last line stays inside the screen, above the bottom edge.
     const box = await footer.boundingBox();
@@ -99,7 +100,7 @@ test.describe('the language switch', () => {
 
 test.describe('the page footer of the other pages is compact', () => {
   for (const locale of LOCALES) {
-    test(`about page (${locale}): links, freshness, one credits line and the disclaimer`, async ({
+    test(`about page (${locale}): links, then freshness and the disclaimer on one line`, async ({
       page,
     }) => {
       await page.goto(localizedPath(locale, 'about'));
@@ -108,12 +109,8 @@ test.describe('the page footer of the other pages is compact', () => {
       const d = t(locale).footer;
       await expect(footer.locator('nav a')).toHaveCount(5);
       await expect(footer).toContainText(d.lastUpdatedLabel);
-      await expect(footer).toContainText(d.creditsLine);
-      await expect(footer.getByRole('link', { name: d.creditsMore })).toHaveAttribute(
-        'href',
-        `${localizedPath(locale, 'about')}#credits`,
-      );
       await expect(footer).toContainText(d.disclaimer);
+      await expect(footer.locator('p')).toHaveCount(1);
       // The full credits and licences are on the About page itself.
       await expect(page.locator('#credits')).toContainText('CDLA-Permissive-2.0');
       await expect(page.locator('#credits')).toContainText('ODbL');

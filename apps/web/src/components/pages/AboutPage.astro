@@ -1,6 +1,6 @@
 ---
 import type { Locale } from '@pharmacy-skg/core';
-import { REPO_URL } from '../../config.ts';
+import { CONTACT_EMAIL, REPO_URL } from '../../config.ts';
 import { localizedPath, t } from '../../i18n/index.ts';
 
 interface Props {
@@ -9,9 +9,7 @@ interface Props {
 
 const { locale } = Astro.props;
 const d = t(locale).about;
-const status = t(locale).status;
 const searchCredits = t(locale).search.credits;
-const [what, hours, labels] = d.sections;
 
 const creditLinks: Record<keyof typeof d.credits, string> = {
   fsth: 'https://www.thess.guide/',
@@ -20,7 +18,7 @@ const creditLinks: Record<keyof typeof d.credits, string> = {
   osm: 'https://www.openstreetmap.org/copyright',
   openFreeMap: 'https://openfreemap.org/',
   fontAwesome: 'https://fontawesome.com/license/free',
-  commissioner: 'https://github.com/kosbarts/Commissioner',
+  manrope: 'https://github.com/sharanda/manrope',
 };
 
 const searchCreditLinks: Record<keyof typeof searchCredits, string> = {
@@ -41,51 +39,16 @@ const allCredits = [
 
 <div class="container prose">
   <h1>{d.title}</h1>
+  <p class="lead">{d.disclaimer}</p>
 
-  <div class="callout" role="note">
-    <p>
-      <strong>{d.disclaimerTitle}.</strong> {d.disclaimerBody}
-    </p>
-  </div>
-
-  {what && (
+  {d.sections.map((section) => (
     <section>
-      <h2>{what.heading}</h2>
-      {what.paragraphs.map((p) => (
+      <h2>{section.heading}</h2>
+      {section.paragraphs.map((p) => (
         <p>{p}</p>
       ))}
     </section>
-  )}
-
-  {hours && (
-    <section>
-      <h2>{hours.heading}</h2>
-      {hours.paragraphs.map((p) => (
-        <p>{p}</p>
-      ))}
-    </section>
-  )}
-
-  {labels && (
-    <section>
-      <h2>{labels.heading}</h2>
-      {labels.paragraphs.map((p) => (
-        <p>{p}</p>
-      ))}
-      <dl class="statuses">
-        <dt>
-          <span class="status-label">{status.onDuty}</span>
-        </dt>
-        <dd>{d.statusList.onDutyMeaning}</dd>
-        <dt>
-          <span class="status-label">{status.openRegular}</span>
-        </dt>
-        <dd>{d.statusList.openRegularMeaning}</dd>
-      </dl>
-      {/* Extended hours read "Open" too (decisions, Defaults: status labels), so no third term. */}
-      <p>{d.statusList.openExtendedMeaning}</p>
-    </section>
-  )}
+  ))}
 
   <section>
     <h2>{d.emergencyHeading}</h2>
@@ -94,8 +57,7 @@ const allCredits = [
 
   <section id="credits">
     <h2>{d.creditsHeading}</h2>
-    <p>{d.creditsIntro}</p>
-    <ul>
+    <ul class="credits">
       {allCredits.map(({ text, url }) => (
         <li>
           {text}{' '}
@@ -107,38 +69,30 @@ const allCredits = [
     </ul>
   </section>
 
-  <section>
-    <h2>{d.sourceHeading}</h2>
-    <p>
-      {d.sourceBody}{' '}
-      <a href={REPO_URL} rel="noopener">
-        GitHub
-      </a>
-    </p>
-    <p>
-      <a href={localizedPath(locale, 'report')}>{d.reportCta}</a>
-    </p>
-  </section>
+  <p>
+    {d.contact} <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+  </p>
+
+  <p class="muted">
+    {d.sourceBody}{' '}
+    <a href={REPO_URL} rel="noopener">
+      GitHub
+    </a>
+    . <a href={localizedPath(locale, 'report')}>{d.reportCta}</a>
+  </p>
 </div>
 
 <style>
-  .statuses {
-    margin: 0 0 var(--space);
+  .lead {
+    font-weight: 600;
   }
 
-  .statuses dt {
-    margin-top: 0.75rem;
+  .credits {
+    padding-inline-start: 1.25rem;
+    font-size: 0.9375rem;
   }
 
-  .statuses dd {
-    margin: 0.25rem 0 0;
-  }
-
-  .status-label {
-    display: inline-block;
-    padding: 0.125rem 0.625rem;
-    border: 2px solid var(--accent);
-    border-radius: 999px;
-    font-weight: 700;
+  .credits li + li {
+    margin-top: 0.25rem;
   }
 </style>

@@ -24,6 +24,9 @@ export const APP_HEADER_NAME: Readonly<Record<Locale, string>> = {
 /** The city the app currently serves (decision D5: data and URLs carry a city key). */
 export const DEFAULT_CITY_ID = 'thessaloniki';
 
+/** The owner's public contact address (about and privacy pages). */
+export const CONTACT_EMAIL = 'kropalis.th@protonmail.com';
+
 export const REPO = 'tkropalis/pharmacy-skg';
 export const REPO_URL = `https://github.com/${REPO}`;
 

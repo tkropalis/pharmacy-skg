@@ -725,9 +725,6 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                   </ol>
                   {shownCount < result.rows.length && (
                     <p className="more">
-                      <span className="muted">
-                        {fill(text.list.showing, { shown: shownCount, total: result.rows.length })}
-                      </span>
                       <button
                         type="button"
                         className="action"
@@ -808,9 +805,6 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                   <li>
                     <a href={localizedPath(locale, 'report')}>{text.footer.report}</a>
                   </li>
-                  <li>
-                    <a href={`${localizedPath(locale, 'about')}#credits`}>{text.footer.sources}</a>
-                  </li>
                 </ul>
               </nav>
               <p className="footer-note">
@@ -822,9 +816,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                 {text.footer.poison}{' '}
                 <a href={telUrl(EMERGENCY_NUMBERS.poison)}>{EMERGENCY_NUMBERS.poison}</a>
               </p>
-              <p className="footer-note">
-                {text.footer.disclaimer} {text.footer.sourceLine} {text.favourites.deviceOnly}
-              </p>
+              <p className="footer-note">{text.footer.disclaimer}</p>
             </footer>
           )}
         </div>

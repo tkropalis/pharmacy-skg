@@ -24,16 +24,13 @@ export const en: Dictionary = {
   status: { ...STATUS_LABELS.en },
 
   footer: {
-    lastUpdatedLabel: 'Last updated:',
+    lastUpdatedLabel: 'Updated',
     navLabel: 'Information',
-    disclaimer: 'Call before you go. Not medical advice.',
+    disclaimer: 'Call before you go.',
     about: 'About and disclaimer',
     aboutShort: 'About',
     privacy: 'Privacy',
     report: 'Report a mistake',
-    creditsLine:
-      'Duty pharmacies come from the Pharmaceutical Association of Thessaloniki and opening hours from the Region of Central Macedonia. Map: OpenStreetMap and OpenFreeMap.',
-    creditsMore: 'All sources',
   },
 
   home: {
@@ -50,118 +47,77 @@ export const en: Dictionary = {
   },
 
   about: {
-    title: 'About and disclaimer',
-    description:
-      'What the app is, where the opening hours come from, what “On duty” and “Open” mean and which sources it uses.',
-    disclaimerTitle: 'Call before you go',
-    disclaimerBody:
-      'Opening hours come from official lists and can change or contain mistakes. An individual pharmacy may be closed without us knowing. Call before you go. This app does not give medical advice.',
+    title: 'About',
+    description: 'What the app is, where the opening hours come from and which sources it uses.',
+    disclaimer:
+      'Call before you go: opening hours can change or contain mistakes. This app does not give medical advice.',
     sections: [
       {
-        heading: 'What this app is',
+        heading: 'What it is',
         paragraphs: [
-          'It shows which pharmacies in the Thessaloniki regional unit are open now or later: those on duty, those open overnight and those open on their own hours.',
-          'It is free and ad-free, and it never ranks or promotes pharmacies. It is independent and has no official connection with the Pharmaceutical Association of Thessaloniki or the Region of Central Macedonia.',
+          'It shows which pharmacies in the Thessaloniki regional unit are open. It is free, ad-free and independent: it has no connection with the Pharmaceutical Association of Thessaloniki or the Region of Central Macedonia.',
         ],
       },
       {
-        heading: 'Where the opening hours come from',
+        heading: 'Opening hours',
         paragraphs: [
-          'Only from official lists: the duty lists of the Pharmaceutical Association of Thessaloniki, as re-published by thess.guide, and the Region of Central Macedonia’s list of pharmacies that stay open longer (extended hours). Every other pharmacy follows the usual hours: Monday and Wednesday 08:00–14:30, Tuesday, Thursday and Friday 08:00–14:00 and 17:00–21:00, closed on weekends and holidays.',
-          'We show only duty dates that have been officially published. We make no forecasts of future duties. No summer schedule is applied until one has been verified for the year.',
-        ],
-      },
-      {
-        heading: 'What the words mean',
-        paragraphs: [
-          'Every pharmacy has a word next to it, not just a colour. On the map, each case also has its own shape.',
+          'Duty pharmacies are only those officially announced. Every other pharmacy has the usual hours: Monday and Wednesday 08:00–14:30, Tuesday, Thursday and Friday 08:00–14:00 and 17:00–21:00.',
         ],
       },
     ],
-    statusList: {
-      onDutyMeaning:
-        'The pharmacy is in the official duty list of the Pharmaceutical Association of Thessaloniki for the time you are looking at, with the hours that the list gives.',
-      openRegularMeaning:
-        'The pharmacy is open on its own hours: the usual pharmacy hours or, for those that stay open longer, the hours announced by the Region of Central Macedonia. On the map, the first have a dot and the second a diamond.',
-      openExtendedMeaning:
-        'A pharmacy may close on some day without our knowing, so call before you go.',
-    },
-    creditsHeading: 'Sources and licences',
-    creditsIntro: 'This app builds on the work of others. Thank you:',
+    creditsHeading: 'Sources',
     credits: {
-      fsth: 'Duty lists: Pharmaceutical Association of Thessaloniki, via thess.guide, with the content unchanged.',
-      pkm: 'Pharmacies open longer and the usual hours: Region of Central Macedonia.',
-      overture: 'Pharmacy locations: Overture Maps Foundation, licensed CDLA-Permissive-2.0.',
-      osm: 'Address geocoding with Nominatim and the map: © OpenStreetMap contributors, licensed ODbL.',
-      openFreeMap: 'Map tiles: OpenFreeMap, with OpenMapTiles and OpenStreetMap data.',
-      fontAwesome: 'Icons: Font Awesome Free, under CC BY 4.0.',
-      commissioner: 'Typeface: Commissioner by Kostas Bartsokas, under SIL OFL 1.1.',
+      fsth: 'Duty lists: Pharmaceutical Association of Thessaloniki, via thess.guide.',
+      pkm: 'Opening hours: Region of Central Macedonia.',
+      overture: 'Pharmacy locations: Overture Maps Foundation, CDLA-Permissive-2.0.',
+      osm: 'Map and addresses: © OpenStreetMap contributors, ODbL.',
+      openFreeMap: 'Map tiles: OpenFreeMap.',
+      fontAwesome: 'Icons: Font Awesome Free, CC BY 4.0.',
+      manrope: 'Typeface: Manrope, SIL OFL 1.1.',
     },
-    sourceHeading: 'Open source',
-    sourceBody: 'The code and the data are open (MIT licence) on GitHub.',
+    contact: 'Contact:',
+    sourceBody: 'Open source (MIT) on',
     reportCta: 'Found a mistake? Tell us.',
     emergencyHeading: 'Emergency',
-    emergencyBody:
-      'In an emergency call 166 (ambulance, EKAB) or 112 straight away. For poisoning call the Poison Centre, 210 7793777.',
+    emergencyBody: '166 (ambulance) or 112. Poison Centre: 210 7793777.',
   },
 
   privacy: {
     title: 'Privacy',
-    description:
-      'Your location and searches stay on your device. No cookies, no accounts, only anonymous aggregate statistics.',
+    description: 'Your location and searches stay on your device. No cookies and no accounts.',
     summary:
       'Your location and searches never leave your device. There are no accounts and no cookies.',
     sections: [
       {
         heading: 'Location',
         paragraphs: [
-          'When you open the app it asks for your location to show the nearest pharmacies; your browser asks you first. If you allow it, it is used only on your device to work out distances, and it is refreshed while the page is open and visible. It is not sent to any server and it is not stored. If you refuse, you can pick an area by hand.',
-        ],
-      },
-      {
-        heading: 'Searches',
-        paragraphs: [
-          'Whatever you search for, such as a medicine or a pharmacy, is handled on your device.',
+          'It is used only on your device, to work out distances. It is not sent anywhere and not stored.',
         ],
       },
       {
         heading: 'Favourites and settings',
         paragraphs: [
-          'Favourite pharmacies are saved in your browser’s local storage (localStorage), and only there. They are deleted when you clear the site data. Your choices live there too: the area you picked, whether you turned off the location request, and the list filter. Coordinates are never stored.',
+          'They stay only in your browser and are deleted when you clear the site’s data.',
         ],
       },
       {
-        heading: 'Offline use',
+        heading: 'Statistics',
         paragraphs: [
-          'To work without a connection, your device keeps temporary copies of the app, of the next few days’ duty lists and of the map tiles you have viewed.',
+          'We count visits with Vercel Web Analytics: anonymous, no cookies, no profiles.',
         ],
       },
       {
-        heading: 'Usage statistics',
+        heading: 'Map and hosting',
         paragraphs: [
-          'When enabled, we count page views with anonymous, aggregate statistics that use no cookies and do not follow you across other sites. There are no user profiles and we do not sell data.',
-        ],
-      },
-      {
-        heading: 'Map',
-        paragraphs: [
-          'The map loads tiles from the OpenFreeMap service. Like any website, it sees your IP address and the area of the map being shown, but not your exact location.',
+          'The map loads from OpenFreeMap and the site is hosted on Vercel. Like any website, they see your IP address.',
         ],
       },
       {
         heading: 'Problem reports',
-        paragraphs: [
-          'Reports sent from the form become public issues on GitHub, which anyone can read. Do not include personal information. If you do by mistake, write to us and we will remove it.',
-        ],
-      },
-      {
-        heading: 'Hosting',
-        paragraphs: [
-          'The site is hosted on Vercel, which, like any hosting provider, keeps standard request logs for security and operation.',
-        ],
+        paragraphs: ['They become public issues on GitHub. Do not include personal information.'],
       },
     ],
-    contact: 'Questions? Open an issue on GitHub.',
+    contact: 'Questions?',
   },
 
   report: {
@@ -276,7 +232,7 @@ export const en: Dictionary = {
       indexIntro:
         'Which pharmacies are on duty each day across the regional unit. You only see what the Pharmaceutical Association of Thessaloniki has announced.',
       indexNone: 'No published lists at the moment.',
-      indexCounts: '{groups} area groups, {pharmacies} pharmacies',
+      indexCounts: '{pharmacies} pharmacies',
       missingGroups:
         'For this day it has not been announced which pharmacies are on duty in: {groups}. One there may be on duty without our knowing. Call before you go.',
       pageTitle: 'On-duty pharmacies in Thessaloniki — {date}',

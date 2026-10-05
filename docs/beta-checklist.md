@@ -17,7 +17,7 @@ Target: a public beta before 26 Oct 2026, if the data is trustworthy (decision D
 - [ ] Environment variables:
   - `GITHUB_TOKEN`: a fine-grained token for this repository only, with Issues read/write. It powers problem reports; without it the form falls back to a GitHub link.
   - `PUBLIC_SITE_URL`: the final origin, e.g. `https://example.gr`. It feeds canonical links and the sitemap.
-  - `PUBLIC_ANALYTICS=vercel`, and turn on Web Analytics (cookieless, D16).
+  - Turn on Web Analytics in the project's Analytics tab (cookieless, D16). The app already ships `@vercel/analytics`; no variable is needed.
 - [ ] Choose the public name and domain. The name lives in one place, `apps/web/src/config.ts` (`APP_NAME`, `APP_SHORT_NAME`), so tell Claude and it will rename the app.
 - [ ] After the first deploy, send a test report from `/anafora/` and check that an issue labelled `report` appears. Then close it.
 
