@@ -4,14 +4,10 @@ import { expect, test, waitForMap, waitForRows } from './support.ts';
 const text = t('el').app;
 const DAY = '2026-10-05T08:01:00+03:00';
 
-function count(label: string): number {
-  return Number(label.match(/\((\d+)\)/)?.[1]);
-}
-
 test.describe('by day, when more than the duty pharmacies are open', () => {
   test.use({ now: DAY, autoLocate: false });
 
-  test('"All open" and "On duty" chips: duty only on request, and remembered', async ({ page }) => {
+  test('"All" and "On duty" chips: duty only on request, and remembered', async ({ page }) => {
     await page.goto('/');
     await waitForRows(page);
     const chips = page.getByRole('group', { name: text.list.filterLabel });
@@ -21,8 +17,8 @@ test.describe('by day, when more than the duty pharmacies are open', () => {
     // The default is everything.
     await expect(all).toHaveAttribute('aria-pressed', 'true');
     await expect(duty).toHaveAttribute('aria-pressed', 'false');
-    const allCount = count(await all.innerText());
-    const dutyCount = count(await duty.innerText());
+    const allCount = Number(await all.getAttribute('data-count'));
+    const dutyCount = Number(await duty.getAttribute('data-count'));
     expect(allCount).toBeGreaterThan(1000);
     expect(dutyCount).toBeGreaterThan(0);
     expect(dutyCount).toBeLessThan(allCount);
@@ -35,7 +31,7 @@ test.describe('by day, when more than the duty pharmacies are open', () => {
     expect(await rows.count()).toBeGreaterThan(0);
     for (const row of await rows.all()) {
       const status = (await row.locator('.row-status strong').innerText()).trim();
-      expect(status.startsWith('Εφημερεύει'), status).toBe(true);
+      expect(status, status).toBe(text.status.short.duty);
     }
     // The choice is kept on the device, as a flag.
     expect(await page.evaluate(() => localStorage.getItem('pharmacy-skg:filter'))).toBe('duty');

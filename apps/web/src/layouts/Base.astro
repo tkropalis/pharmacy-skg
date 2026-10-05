@@ -1,6 +1,5 @@
 ---
 import type { Locale } from '@pharmacy-skg/core';
-import EmergencyStrip from '../components/EmergencyStrip.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import StaleBanner from '../components/StaleBanner.astro';
@@ -97,7 +96,6 @@ const analytics = import.meta.env.PROD && import.meta.env.PUBLIC_ANALYTICS === '
     <a class="skip-link" href="#main">
       {d.skipToContent}
     </a>
-    <EmergencyStrip locale={locale} />
     <SiteHeader locale={locale} route={route} alternates={pageAlternates} />
     <StaleBanner locale={locale} />
     <main id="main" tabindex="-1">

@@ -17,6 +17,8 @@ export interface StatusView {
   /** Countdown, "open until" or "opens …", whichever applies. */
   readonly timing: string | null;
   readonly closingSoon: boolean;
+  /** For the list: a word or two ("Εφημερεύει", "Ανοιχτό") and the time ("έως 14:30"). */
+  readonly short: { readonly label: string; readonly timing: string | null };
 }
 
 /** "1 ώρα 20′", "2 ώρες", "45′" / "1 h 20 min", "45 min". */
@@ -94,7 +96,19 @@ export function describeStatus(options: {
         live && minutes <= COUNTDOWN_MAX_MINUTES
           ? fill(text.closesIn, { duration: formatDuration(minutes, text), when })
           : fill(text.openUntil, { when });
-      return { kind, label, dutyKinds: kinds, timing, closingSoon: status.closingSoon };
+      // The list counts down only when it matters: in the last minutes.
+      const shortTiming =
+        live && status.closingSoon
+          ? fill(text.short.closesIn, { duration: formatDuration(minutes, text) })
+          : fill(text.short.until, { when });
+      return {
+        kind,
+        label,
+        dutyKinds: kinds,
+        timing,
+        closingSoon: status.closingSoon,
+        short: { label: text.short[kind], timing: shortTiming },
+      };
     }
     case 'duty-hours-unknown':
       return {
@@ -103,19 +117,23 @@ export function describeStatus(options: {
         dutyKinds: text.kinds[status.duty.duty],
         timing: null,
         closingSoon: false,
+        short: { label: text.short[kind], timing: text.short.callFirst },
       };
-    case 'closed':
+    case 'closed': {
+      const timing =
+        status.nextOpen === null
+          ? text.opensUnknown
+          : fill(text.opensAt, {
+              when: dayAndTime(status.nextOpen, at, locale, text, timeZone, true),
+            });
       return {
         kind,
         label: text.closed,
         dutyKinds: null,
-        timing:
-          status.nextOpen === null
-            ? text.opensUnknown
-            : fill(text.opensAt, {
-                when: dayAndTime(status.nextOpen, at, locale, text, timeZone, true),
-              }),
+        timing,
         closingSoon: false,
+        short: { label: text.short[kind], timing },
       };
+    }
   }
 }

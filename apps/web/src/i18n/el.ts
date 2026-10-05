@@ -16,14 +16,6 @@ export const el = {
   skipToContent: 'Μετάβαση στο περιεχόμενο',
   tagline: 'Δωρεάν και χωρίς διαφημίσεις',
 
-  emergency: {
-    label: 'Έκτακτη ανάγκη',
-    labelShort: 'SOS',
-    ambulance: 'ΕΚΑΒ',
-    europe: 'Ευρωπαϊκός αριθμός',
-    poison: 'Κέντρο Δηλητηριάσεων',
-  },
-
   update: {
     available: 'Νέα έκδοση της εφαρμογής.',
     reload: 'Ανανέωση',

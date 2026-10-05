@@ -283,7 +283,10 @@ interface ListFilterChipsProps {
   readonly onChange: (filter: 'all' | 'duty') => void;
 }
 
-/** "All (N)" and "On duty (M)": by day, so people can see only the duty pharmacies. */
+/**
+ * "All" and "On duty": by day, so people can see only the duty pharmacies. The count is in the
+ * summary line, for the chosen one; each chip carries its own in data-count (tests).
+ */
 export function ListFilterChips({
   text,
   active,
@@ -292,8 +295,8 @@ export function ListFilterChips({
   onChange,
 }: ListFilterChipsProps) {
   const chips = [
-    { id: 'all', label: fill(text.list.filterAll, { n: allCount }) },
-    { id: 'duty', label: fill(text.list.filterDuty, { n: dutyCount }) },
+    { id: 'all', label: text.list.filterAll, count: allCount },
+    { id: 'duty', label: text.list.filterDuty, count: dutyCount },
   ] as const;
   return (
     <div className="filter-chips" role="group" aria-label={text.list.filterLabel}>
@@ -303,6 +306,7 @@ export function ListFilterChips({
           type="button"
           className="chip"
           aria-pressed={active === chip.id}
+          data-count={chip.count}
           onClick={() => onChange(chip.id)}
         >
           {chip.label}

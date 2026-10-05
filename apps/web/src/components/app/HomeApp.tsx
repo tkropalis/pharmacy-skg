@@ -3,7 +3,9 @@ import type { KeyboardEvent } from 'react';
 import type { Locale } from '@pharmacy-skg/core';
 import { THESSALONIKI, localToInstant, zonedDate, zonedParts } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
+import { EMERGENCY_NUMBERS } from '../../config.ts';
 import { addDays, dateRange } from '../../lib/dates.ts';
+import { telUrl } from '../../lib/directions.ts';
 import { upcomingDuties } from '../../lib/duties.ts';
 import { coverage, distanceMetres, publishedDuties } from '../../lib/engine.ts';
 import { formatUpdatedShort } from '../../lib/freshness.ts';
@@ -239,11 +241,8 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
     const withClosed = closed > 0 ? fill(text.summary.withClosed, { n: closed }) : null;
     const join = (parts: (string | null)[]) =>
       parts.filter((part): part is string => part !== null).join(' · ');
-    const sort = origin
-      ? text.summary.sortedByDistanceShort
-      : geo === 'locating'
-        ? text.origin.locating
-        : text.summary.sortedByName;
+    // On screen only the count: the origin chip already says where the distances are from.
+    const sort = origin === null && geo === 'locating' ? text.origin.locating : null;
     const sortFull = origin
       ? fill(text.summary.sortedByDistance, { origin: origin.label })
       : text.summary.sortedByName;
@@ -497,19 +496,21 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
           </button>
         ))}
       </div>
-      <p className="summary">
-        {ready && tab === 'open' ? (dutyLoading ? text.time.loadingDuties : summary) : ' '}
-      </p>
-      <p className="fresh">
-        {meta && (
-          <>
-            {text.source.updated}{' '}
-            <time dateTime={meta.updatedAt}>{formatUpdatedShort(meta.updatedAt, now, locale)}</time>
-            {' · '}
-            {text.source.short}
-          </>
-        )}
-      </p>
+      <div className="status-line">
+        <p className="summary">
+          {ready && tab === 'open' ? (dutyLoading ? text.time.loadingDuties : summary) : ' '}
+        </p>
+        <p className="fresh">
+          {meta && (
+            <a href={`${localizedPath(locale, 'about')}#credits`}>
+              {text.source.tiny}{' '}
+              <time dateTime={meta.updatedAt}>
+                {formatUpdatedShort(meta.updatedAt, now, locale)}
+              </time>
+            </a>
+          )}
+        </p>
+      </div>
       {ready && tab === 'open' && (showOriginChip || showChips) && (
         <div className="sheet-toolbar">
           {showOriginChip && (
@@ -743,7 +744,6 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
 
           {ready && tab === 'favourites' && (
             <>
-              <p className="hint">{text.favourites.deviceOnly}</p>
               {!favourites.persisted && <p className="callout">{text.favourites.notStored}</p>}
               {favouriteRows.length === 0 ? (
                 <div className="state">
@@ -754,7 +754,6 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                 </div>
               ) : (
                 <>
-                  <p className="hint">{text.favourites.officialOnly}</p>
                   <ol className="rows" aria-label={text.tabs.favourites}>
                     {favouriteRows.map(({ id, row, duties }) =>
                       row === null ? (
@@ -814,7 +813,18 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                   </li>
                 </ul>
               </nav>
-              <p className="footer-note">{text.footer.disclaimer}</p>
+              <p className="footer-note">
+                {text.footer.emergency}{' '}
+                <a href={telUrl(EMERGENCY_NUMBERS.ambulance)}>{EMERGENCY_NUMBERS.ambulance}</a>
+                {' · '}
+                <a href={telUrl(EMERGENCY_NUMBERS.europe)}>{EMERGENCY_NUMBERS.europe}</a>
+                {' · '}
+                {text.footer.poison}{' '}
+                <a href={telUrl(EMERGENCY_NUMBERS.poison)}>{EMERGENCY_NUMBERS.poison}</a>
+              </p>
+              <p className="footer-note">
+                {text.footer.disclaimer} {text.footer.sourceLine} {text.favourites.deviceOnly}
+              </p>
             </footer>
           )}
         </div>

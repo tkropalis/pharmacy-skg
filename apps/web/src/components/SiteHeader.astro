@@ -31,7 +31,9 @@ const { locale, route, alternates } = Astro.props;
 </header>
 
 <style>
+  /* The top of the page: it reaches under a status bar or notch (viewport-fit=cover). */
   .site-header {
+    padding-top: var(--safe-t);
     border-bottom: 1px solid var(--border);
     background: var(--surface);
   }

@@ -3,7 +3,13 @@ import type { ReactNode } from 'react';
 import type { Locale } from '@pharmacy-skg/core';
 import { localizedPath, pharmacyPath } from '../../i18n/routes.ts';
 import type { Dictionary } from '../../i18n/index.ts';
-import { DIRECTIONS_APPS, directionsTarget, directionsUrl, telUrl } from '../../lib/directions.ts';
+import {
+  DIRECTIONS_APPS,
+  defaultDirectionsApp,
+  directionsTarget,
+  directionsUrl,
+  telUrl,
+} from '../../lib/directions.ts';
 import { fill, formatDistance } from '../../lib/format.ts';
 import type { Row } from '../../lib/list.ts';
 import { pinSvg } from '../../lib/pins.ts';
@@ -75,131 +81,116 @@ function PharmacyRowView({
   children,
 }: PharmacyRowProps) {
   const { pharmacy } = row;
-  const menuId = useId();
-  const moreId = useId();
-  const [menu, setMenu] = useState<'directions' | 'more' | null>(null);
+  const detailsId = useId();
+  const [open, setOpen] = useState(false);
   const view = describeStatus({ status: row.status, at, live, locale, text: text.status });
   const approximate = pharmacy.location?.precision === 'locality';
   const target = directionsTarget(pharmacy);
-  const toggle = (which: 'directions' | 'more') =>
-    setMenu((open) => (open === which ? null : which));
+  // The city is the default; other places keep their name.
+  const place = [
+    pharmacy.address,
+    pharmacy.locality === text.row.defaultLocality ? '' : pharmacy.locality,
+  ]
+    .filter((part) => part !== '')
+    .join(', ');
 
   return (
     <li
       id={`row-${pharmacy.id}`}
       className="row"
       data-kind={view.kind}
+      data-open={open ? 'true' : undefined}
       data-selected={selected ? 'true' : undefined}
       aria-current={selected ? 'true' : undefined}
     >
-      <div className="row-head">
+      <div className="row-main">
         <span
           className="row-pin"
           aria-hidden="true"
-          dangerouslySetInnerHTML={{ __html: pinSvg(view.kind, { approximate, size: 22 }) }}
+          dangerouslySetInnerHTML={{ __html: pinSvg(view.kind, { approximate, size: 20 }) }}
         />
-        <h2 className="row-name">
-          <a href={pharmacyPath(locale, pharmacy.id)}>{pharmacy.name}</a>
-        </h2>
-        {row.distance !== null && (
-          <span className="row-distance">{formatDistance(row.distance, locale)}</span>
-        )}
-      </div>
-
-      <div className="row-body">
-        <p className="row-status">
-          <strong>{view.label}</strong>
-          {view.dutyKinds !== null && <span>{` · ${view.dutyKinds}`}</span>}
-        </p>
-        {!row.dutiesPublished && (
-          <p className="row-warning" role="note">
-            {text.row.dutiesMissing}
+        <div className="row-text">
+          <h2 className="row-name">
+            {/* The whole row opens the details (the button stretches over it, app.css). */}
+            <button
+              type="button"
+              className="row-toggle"
+              aria-expanded={open}
+              aria-controls={detailsId}
+              onClick={() => {
+                setOpen((value) => !value);
+                if (!open && pharmacy.location !== null) onSelect(pharmacy.id);
+              }}
+            >
+              {pharmacy.name}
+            </button>
+          </h2>
+          <p className="row-status">
+            <strong>{view.short.label}</strong>
+            {view.short.timing !== null && (
+              <span
+                className="row-timing"
+                data-closing-soon={view.closingSoon ? 'true' : undefined}
+              >
+                {' · '}
+                {view.short.timing}
+              </span>
+            )}
           </p>
-        )}
-        {(view.timing !== null || view.closingSoon) && (
-          <p className="row-timing" data-closing-soon={view.closingSoon ? 'true' : undefined}>
-            {view.closingSoon && <span className="badge">{text.status.closingSoon}</span>}
-            {view.closingSoon && view.timing !== null ? ' ' : ''}
-            {view.timing !== null && <span>{view.timing}</span>}
+          <p className="row-address">
+            {row.distance !== null && (
+              <span className="row-distance">{formatDistance(row.distance, locale)}</span>
+            )}
+            {row.distance !== null && place !== '' && ' · '}
+            {place}
           </p>
-        )}
-
-        <p className="row-address">
-          {[pharmacy.address, pharmacy.locality].filter((s) => s !== '').join(', ')}
-          {approximate && <span className="row-note">{text.row.approximate}</span>}
-          {pharmacy.location === null && <span className="row-note">{text.row.noLocation}</span>}
-        </p>
-
-        <div className="row-actions">
-          {pharmacy.phone !== null ? (
+          {!row.dutiesPublished && (
+            <p className="row-warning" role="note">
+              {text.row.dutiesMissing}
+            </p>
+          )}
+        </div>
+        <div className="row-quick">
+          {pharmacy.phone !== null && (
             <a
-              className="action primary"
+              className="round call"
               href={telUrl(pharmacy.phone)}
               aria-label={fill(text.row.callLabel, { name: pharmacy.name })}
             >
-              <Icon name="phone" size={18} />
-              {text.row.call}
+              <Icon name="phone" />
             </a>
-          ) : (
-            <span className="action disabled">{text.row.noPhone}</span>
           )}
-          <button
-            type="button"
-            className="action"
-            aria-expanded={menu === 'directions'}
-            aria-controls={menuId}
-            aria-label={fill(text.row.directionsLabel, { name: pharmacy.name })}
-            onClick={() => toggle('directions')}
-          >
-            <Icon name="directions" size={18} />
-            {text.row.directions}
-          </button>
-          <span className="row-tools">
-            {pharmacy.location !== null && (
-              <button
-                type="button"
-                className="action icon-only"
-                aria-label={text.row.showOnMap}
-                title={text.row.showOnMap}
-                onClick={() => onSelect(pharmacy.id)}
-              >
-                <Icon name="map" />
-              </button>
+          <a
+            className="round"
+            href={directionsUrl(
+              defaultDirectionsApp(navigator.userAgent, navigator.maxTouchPoints),
+              target,
             )}
-            <button
-              type="button"
-              className="action icon-only fav"
-              data-saved={favourite ? 'true' : undefined}
-              // The state is in the name (not aria-pressed).
-              aria-label={fill(favourite ? text.row.favouriteSavedLabel : text.row.favouriteLabel, {
-                name: pharmacy.name,
-              })}
-              title={favourite ? text.row.favouriteSaved : text.row.favourite}
-              onClick={() => onToggleFavourite(pharmacy.id, pharmacy.name)}
-            >
-              <Icon name={favourite ? 'star' : 'starOutline'} />
-            </button>
-            <button
-              type="button"
-              className="action icon-only"
-              aria-expanded={menu === 'more'}
-              aria-controls={moreId}
-              aria-label={fill(text.row.moreLabel, { name: pharmacy.name })}
-              title={text.row.more}
-              onClick={() => toggle('more')}
-            >
-              <Icon name="more" />
-            </button>
-          </span>
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={fill(text.row.directionsLabel, { name: pharmacy.name })}
+          >
+            <Icon name="directions" />
+          </a>
         </div>
+      </div>
 
-        {menu === 'directions' && (
-          <p className="row-menu" id={menuId}>
+      {open && (
+        <div className="row-details" id={detailsId}>
+          <p className="row-full">
+            {view.label}
+            {view.dutyKinds !== null && ` · ${view.dutyKinds}`}
+            {view.timing !== null && ` · ${view.timing}`}
+          </p>
+          {pharmacy.phone === null && <p className="row-note">{text.row.noPhone}</p>}
+          {approximate && <p className="row-note">{text.row.approximate}</p>}
+          {pharmacy.location === null && <p className="row-note">{text.row.noLocation}</p>}
+          <p className="row-menu">
             <span className="row-menu-label">{text.row.directionsTo}</span>
             {DIRECTIONS_APPS.map((app) => (
               <a
                 key={app}
-                className="action small"
+                className="detail-link"
                 href={directionsUrl(app, target)}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -208,12 +199,23 @@ function PharmacyRowView({
               </a>
             ))}
           </p>
-        )}
-        {menu === 'more' && (
-          <p className="row-menu" id={moreId}>
+          <p className="row-menu">
             <button
               type="button"
-              className="action small"
+              className="detail-link fav"
+              data-saved={favourite ? 'true' : undefined}
+              // The state is in the name (not aria-pressed), and the name contains the visible text.
+              aria-label={fill(favourite ? text.row.favouriteSavedLabel : text.row.favouriteLabel, {
+                name: pharmacy.name,
+              })}
+              onClick={() => onToggleFavourite(pharmacy.id, pharmacy.name)}
+            >
+              <Icon name={favourite ? 'star' : 'starOutline'} size={16} />
+              {favourite ? text.row.favouriteSaved : text.row.favourite}
+            </button>
+            <button
+              type="button"
+              className="detail-link"
               aria-label={fill(text.row.shareLabel, { name: pharmacy.name })}
               onClick={() => {
                 void share(locale, text, pharmacy.name, pharmacy.address, pharmacy.id).then(
@@ -221,22 +223,25 @@ function PharmacyRowView({
                 );
               }}
             >
-              <Icon name="share" size={18} />
+              <Icon name="share" size={16} />
               {text.row.share}
             </button>
+            <a className="detail-link" href={pharmacyPath(locale, pharmacy.id)}>
+              {text.row.page}
+            </a>
             <a
-              className="action small"
+              className="detail-link"
               href={`${localizedPath(locale, 'report')}?pharmacy=${encodeURIComponent(pharmacy.id)}`}
               aria-label={fill(text.row.reportLabel, { name: pharmacy.name })}
             >
-              <Icon name="flag" size={18} />
+              <Icon name="flag" size={16} />
               {text.row.report}
             </a>
           </p>
-        )}
+        </div>
+      )}
 
-        {children}
-      </div>
+      {children}
     </li>
   );
 }

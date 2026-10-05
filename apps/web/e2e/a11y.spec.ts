@@ -45,17 +45,16 @@ for (const scheme of ['light', 'dark'] as const) {
   }
 }
 
-test('the home list with the filters open and a row menu open has no violations', async ({
+test("the home list with the filters open and a row's details open has no violations", async ({
   page,
 }) => {
   await page.goto('/');
   const rows = await waitForRows(page);
   await openControls(page);
   await page.getByRole('button', { name: /Ή διαλέξτε περιοχή/ }).click();
-  await rows
-    .first()
-    .getByRole('button', { name: /Οδηγίες/ })
-    .click();
+  // A row's details: directions apps, favourite, share, page, report.
+  await rows.first().locator('.row-toggle').click();
+  await expect(rows.first().locator('.row-details')).toBeVisible();
   const results = await new AxeBuilder({ page }).withTags(WCAG_AA).analyze();
   expect(results.violations.map((v) => [v.id, v.nodes.map((n) => n.html.slice(0, 160))])).toEqual(
     [],

@@ -32,32 +32,24 @@ test.describe('the home screen is an app viewport', () => {
 
       // No page footer: the sheet carries a compact one.
       await expect(page.locator('footer.site-footer')).toHaveCount(0);
-      // The emergency numbers are in view at all times.
-      for (const link of await page.locator('.emergency a[href^="tel:"]').all()) {
-        await expect(link).toBeInViewport();
-      }
       // The sheet reaches the bottom edge of the screen (no page below it).
       const sheet = await page.locator('.sheet').boundingBox();
       expect((sheet?.y ?? 0) + (sheet?.height ?? 0)).toBeCloseTo(size.height, 0);
     });
   }
 
-  test('the strip and the header together are at most 100 px high', async ({ page }) => {
+  test('the header is the only bar above the map: one row, no emergency strip', async ({
+    page,
+  }) => {
     await page.setViewportSize({ width: 390, height: 664 });
     await page.goto('/');
     await waitForRows(page);
-    const strip = await page.locator('.emergency').boundingBox();
+    await expect(page.locator('.emergency')).toHaveCount(0);
     const header = await page.locator('.site-header').boundingBox();
-    expect((strip?.height ?? 0) + (header?.height ?? 0)).toBeLessThanOrEqual(100);
-    // The header is one row.
+    expect(header?.y ?? 1).toBe(0);
     expect(header?.height ?? 0).toBeLessThanOrEqual(48);
-    // Every number is a tel: link with a tap area at least 44 px high.
-    const links = page.locator('.emergency a[href^="tel:"]');
-    expect(await links.count()).toBe(3);
-    for (const link of await links.all()) {
-      const box = await link.boundingBox();
-      expect(box?.height ?? 0).toBeGreaterThanOrEqual(43.5);
-    }
+    const map = await page.locator('.map-area').boundingBox();
+    expect(map?.y ?? 0).toBeCloseTo((header?.y ?? 0) + (header?.height ?? 0), 0);
   });
 
   test('the sheet ends with a compact footer: links and the disclaimer', async ({ page }) => {
@@ -68,11 +60,13 @@ test.describe('the home screen is an app viewport', () => {
     await footer.scrollIntoViewIfNeeded();
     await expect(footer).toBeInViewport();
     const text = t('el').app.footer;
-    const links = footer.locator('a');
+    const links = footer.locator('.footer-links a');
     await expect(links).toHaveText([text.about, text.privacy, text.report, text.sources]);
     await expect(links.nth(0)).toHaveAttribute('href', localizedPath('el', 'about'));
     await expect(links.nth(3)).toHaveAttribute('href', `${localizedPath('el', 'about')}#credits`);
     await expect(footer).toContainText(text.disclaimer);
+    // The emergency numbers live here now, one tel: link each.
+    await expect(footer.locator('a[href^="tel:"]')).toHaveCount(3);
     // One row of links on a phone.
     const first = await links.nth(0).boundingBox();
     const last = await links.nth(3).boundingBox();
@@ -142,12 +136,8 @@ test.describe('the map', () => {
     await page.goto('/');
     await waitForRows(page);
     await waitForMap(page);
-    const dutyCount = Number(
-      (await page.locator('.chip').nth(1).innerText()).match(/\((\d+)\)/)?.[1],
-    );
-    const allCount = Number(
-      (await page.locator('.chip').nth(0).innerText()).match(/\((\d+)\)/)?.[1],
-    );
+    const dutyCount = Number(await page.locator('.chip').nth(1).getAttribute('data-count'));
+    const allCount = Number(await page.locator('.chip').nth(0).getAttribute('data-count'));
     expect(dutyCount).toBeGreaterThan(0);
     const map = page.locator('.map');
     // Every pharmacy on duty is its own pin; the clustered group holds the regular and extended ones.
