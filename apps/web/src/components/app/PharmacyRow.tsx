@@ -132,7 +132,7 @@ function PharmacyRowView({
                 className="row-timing"
                 data-closing-soon={view.closingSoon ? 'true' : undefined}
               >
-                {' · '}
+                {' '}
                 {view.short.timing}
               </span>
             )}
@@ -193,10 +193,10 @@ function PharmacyRowView({
               </a>
             ))}
           </p>
-          <p className="row-menu">
+          <div className="row-actions">
             <button
               type="button"
-              className="detail-link fav"
+              className="row-action fav"
               data-saved={favourite ? 'true' : undefined}
               // The state is in the name (not aria-pressed), and the name contains the visible text.
               aria-label={fill(favourite ? text.row.favouriteSavedLabel : text.row.favouriteLabel, {
@@ -204,12 +204,16 @@ function PharmacyRowView({
               })}
               onClick={() => onToggleFavourite(pharmacy.id, pharmacy.name)}
             >
-              <Icon name={favourite ? 'star' : 'starOutline'} size={16} />
-              {favourite ? text.row.favouriteSaved : text.row.favourite}
+              <span className="row-action-icon">
+                <Icon name={favourite ? 'star' : 'starOutline'} size={16} />
+              </span>
+              <span className="row-action-label">
+                {favourite ? text.row.favouriteSaved : text.row.favourite}
+              </span>
             </button>
             <button
               type="button"
-              className="detail-link"
+              className="row-action"
               aria-label={fill(text.row.shareLabel, { name: pharmacy.name })}
               onClick={() => {
                 void share(locale, text, pharmacy.name, pharmacy.address, pharmacy.id).then(
@@ -217,13 +221,18 @@ function PharmacyRowView({
                 );
               }}
             >
-              <Icon name="share" size={16} />
-              {text.row.share}
+              <span className="row-action-icon">
+                <Icon name="share" size={16} />
+              </span>
+              <span className="row-action-label">{text.row.share}</span>
             </button>
-            <a className="detail-link" href={pharmacyPath(locale, pharmacy.id)}>
-              {text.row.page}
+            <a className="row-action" href={pharmacyPath(locale, pharmacy.id)}>
+              <span className="row-action-icon">
+                <Icon name="more" size={16} />
+              </span>
+              <span className="row-action-label">{text.row.page}</span>
             </a>
-          </p>
+          </div>
         </div>
       )}
 

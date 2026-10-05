@@ -89,17 +89,14 @@ const seo = d.seo.pharmacy;
 
   <section aria-labelledby="hours-heading">
     <h2 id="hours-heading">{seo.hoursHeading}</h2>
-    <p>
-      <strong>{seo.regularLabel}</strong>{' '}
-      {page.regularHours.groups.map((group, index) => (
-        <>
-          {index > 0 && ' · '}
-          <span>
-            {group.days} {group.times}
-          </span>
-        </>
+    <h3>{seo.regularLabel}</h3>
+    <ul class="seo-hours">
+      {page.regularHours.groups.map((group) => (
+        <li>
+          {group.days} {group.times}
+        </li>
       ))}
-    </p>
+    </ul>
     {page.regularClosedText !== null && <p class="seo-meta">{page.regularClosedText}</p>}
     <p class="seo-meta">{seo.regularNote}</p>
 
@@ -107,17 +104,23 @@ const seo = d.seo.pharmacy;
       <>
         <h3>{seo.extendedHeading}</h3>
         {page.extendedHours.map((entry) => (
-          <p>
-            {entry.scheduleText}
-            <br />
-            <span class="seo-meta">
+          <>
+            {/* As published: one line per day. */}
+            <ul class="seo-hours">
+              {entry.scheduleText
+                .split('\n')
+                .filter((line) => line.trim() !== '')
+                .map((line) => (
+                  <li>{line.trim()}</li>
+                ))}
+            </ul>
+            <p class="seo-meta">
               {entry.periodText}.{' '}
               <a href={entry.announcementUrl} rel="noopener">
                 {seo.extendedAnnouncement}
               </a>
-              . {d.seo.sourcePkm}.
-            </span>
-          </p>
+            </p>
+          </>
         ))}
         <p class="seo-meta">{seo.extendedNote}</p>
       </>
@@ -142,7 +145,6 @@ const seo = d.seo.pharmacy;
       </>
     )}
     {page.upcomingDuties.length === 0 && page.recentDuties.length === 0 && <p>{seo.dutyNone}</p>}
-    <p class="seo-meta">{d.seo.sourceFsth}</p>
   </section>
 
   <section aria-labelledby="source-heading">

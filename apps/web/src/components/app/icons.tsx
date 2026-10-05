@@ -4,20 +4,17 @@ import {
   faChevronDown,
   faDiamondTurnRight,
   faEllipsis,
-  faFlag,
-  faLocationArrow,
   faLocationCrosshairs,
   faLocationDot,
   faMagnifyingGlass,
   faPhone,
-  faPlus,
   faShareNodes,
   faSliders,
   faStar,
   faTriangleExclamation,
   faXmark,
 } from '@fortawesome/free-solid-svg-icons';
-import { faClock, faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons';
+import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons';
 import type { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 /**
@@ -32,16 +29,12 @@ const ICONS = {
   star: faStar,
   starOutline: faStarRegular,
   map: faLocationDot,
-  flag: faFlag,
   calendar: faCalendar,
   locate: faLocationCrosshairs,
-  myLocation: faLocationArrow,
   sliders: faSliders,
   chevron: faChevronDown,
   close: faXmark,
   more: faEllipsis,
-  clock: faClock,
-  plus: faPlus,
   search: faMagnifyingGlass,
   back: faArrowLeft,
   warning: faTriangleExclamation,

@@ -34,6 +34,7 @@ import {
   TimeControls,
 } from './Controls.tsx';
 import type { GeoState, TimeMode } from './Controls.tsx';
+import { Icon } from './icons.tsx';
 import { MapView } from './MapView.tsx';
 import type { MapFocus, MapStatus } from './MapView.tsx';
 import { PharmacyRow } from './PharmacyRow.tsx';
@@ -579,6 +580,9 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
     onMessage: announce,
   } as const;
 
+  // No position yet: the list starts with the locate / area row (NearbyCard).
+  const showNearby = origin === null && geo !== 'locating';
+
   return (
     <div className="hs" ref={rootRef} data-wide={wide ? 'true' : 'false'}>
       <h1 className="sr-only">{title}</h1>
@@ -611,7 +615,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
 
           {ready && tab === 'open' && (
             <>
-              {origin === null && geo !== 'locating' && (
+              {showNearby && (
                 <NearbyCard
                   text={text}
                   geo={geo}
@@ -627,17 +631,20 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
               )}
               {controlsOpen && (
                 <div id={CONTROLS_ID} className="panel">
-                  <OriginControls
-                    text={text}
-                    origin={origin}
-                    geo={geo}
-                    far={far}
-                    localities={localities}
-                    onNeedRoom={() => !wide && setSheetSize('large')}
-                    onUseLocation={() => locate(false)}
-                    onPickArea={setAreaOrigin}
-                    onClear={clearOrigin}
-                  />
+                  {/* While the nearby row shows, it is the location control: no second one. */}
+                  {!showNearby && (
+                    <OriginControls
+                      text={text}
+                      origin={origin}
+                      geo={geo}
+                      far={far}
+                      localities={localities}
+                      onNeedRoom={() => !wide && setSheetSize('large')}
+                      onUseLocation={() => locate(false)}
+                      onPickArea={setAreaOrigin}
+                      onClear={clearOrigin}
+                    />
+                  )}
                   <TimeControls
                     text={text}
                     mode={timeMode}
@@ -743,11 +750,17 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
             <>
               {!favourites.persisted && <p className="callout">{text.favourites.notStored}</p>}
               {favouriteRows.length === 0 ? (
-                <div className="state">
-                  <p>
-                    <strong>{text.favourites.empty}</strong>
-                  </p>
-                  <p>{text.favourites.emptyHint}</p>
+                <div className="state empty">
+                  {/* The same star as the button the hint names. */}
+                  <span className="row-action-icon" aria-hidden="true">
+                    <Icon name="starOutline" size={16} />
+                  </span>
+                  <div>
+                    <p>
+                      <strong>{text.favourites.empty}</strong>
+                    </p>
+                    <p className="muted">{text.favourites.emptyHint}</p>
+                  </div>
                 </div>
               ) : (
                 <>

@@ -43,18 +43,26 @@ const seo = d.seo.duty;
     </p>
   )}
 
+  {/* The list of all dates is the breadcrumb's first link. */}
   <nav class="seo-pager" aria-label={seo.pagerLabel}>
     {page.prev !== null ? (
       <a href={page.prev.path} rel="prev">
-        <Fragment set:html={faSvg(faArrowLeft, { size: 14 })} /> {seo.prev}: {page.prev.label}
+        <Fragment set:html={faSvg(faArrowLeft, { size: 14 })} />
+        <span>
+          <span class="sr-only">{seo.prev}: </span>
+          {page.prev.label}
+        </span>
       </a>
     ) : (
       <span></span>
     )}
-    <a href={page.indexPath}>{seo.allDates}</a>
     {page.next !== null && (
-      <a href={page.next.path} rel="next">
-        {seo.next}: {page.next.label} <Fragment set:html={faSvg(faArrowRight, { size: 14 })} />
+      <a href={page.next.path} rel="next" class="next">
+        <span>
+          <span class="sr-only">{seo.next}: </span>
+          {page.next.label}
+        </span>
+        <Fragment set:html={faSvg(faArrowRight, { size: 14 })} />
       </a>
     )}
   </nav>
@@ -63,11 +71,11 @@ const seo = d.seo.duty;
     <section class="seo-group" aria-labelledby={`group-${group.id}`}>
       <h2 id={`group-${group.id}`}>{group.name}</h2>
       <p class="seo-meta">
-        {seo.sourceLine}.{' '}
         <a href={group.sourceUrl} rel="noopener">
           {seo.sourcePdf}
         </a>
-        . {seo.uploadedAt} <time datetime={group.uploadedAt}>{group.uploadedAtText}</time>
+        {' · '}
+        {seo.uploadedAt} <time datetime={group.uploadedAt}>{group.uploadedAtText}</time>
       </p>
       {group.sections.map((section) => (
         <div class="seo-section">

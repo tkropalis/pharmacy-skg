@@ -65,9 +65,11 @@
   font-size: 0.875rem;
 }
 
+/* "Loading the map…": centred, between the credit button and the zoom buttons. */
 .map-note.subtle {
-  inset-inline: auto;
-  inset-inline-start: 1rem;
+  inset-inline: 0;
+  width: fit-content;
+  margin-inline: auto;
   border-color: var(--border);
   color: var(--muted);
 }
@@ -393,10 +395,6 @@ html.has-update-toast .sheet {
   font-size: 0.8125rem;
 }
 
-.action.fav[data-saved='true'] {
-  color: var(--star);
-}
-
 /* --- Buttons and fields ----------------------------------------------------- */
 
 .action {
@@ -485,14 +483,14 @@ html.has-update-toast .sheet {
   cursor: pointer;
 }
 
-.field-label {
+.hs .field-label {
   display: block;
   margin-bottom: 0.125rem;
   font-size: 0.875rem;
   font-weight: 600;
 }
 
-.field {
+.hs .field {
   width: 100%;
   min-height: 44px;
   padding: 0.25rem 0.625rem;
@@ -502,7 +500,7 @@ html.has-update-toast .sheet {
   color: var(--fg);
 }
 
-.hint {
+.hs .hint {
   margin: 0.25rem 0 0.5rem;
   font-size: 0.875rem;
   color: var(--muted);
@@ -512,7 +510,7 @@ html.has-update-toast .sheet {
   color: var(--muted);
 }
 
-.notice {
+.hs .notice {
   margin: 0.25rem 0 0.5rem;
   padding: 0.5rem 0.75rem;
   border: 1px solid var(--warn-border);
@@ -522,7 +520,7 @@ html.has-update-toast .sheet {
   font-size: 0.875rem;
 }
 
-.notice.strong {
+.hs .notice.strong {
   font-weight: 600;
 }
 
@@ -533,6 +531,30 @@ html.has-update-toast .sheet {
 
 .state {
   padding: 1rem 0;
+}
+
+.state.empty {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: var(--fg);
+}
+
+.state.empty p {
+  margin: 0;
+}
+
+.state.empty .row-action-label {
+  display: block;
+  /* Here, not on .row-action: `.hs button { font: inherit }` would win over it for buttons. */
+  font-size: 0.8125rem;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.row-action-icon {
+  flex: none;
+  color: var(--accent-ink);
 }
 
 /* --- Controls ----------------------------------------------------------------- */
@@ -652,9 +674,32 @@ html.has-update-toast .sheet {
 .legend summary {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
   min-height: 44px;
   cursor: pointer;
   font-size: 0.9375rem;
+  list-style: none;
+}
+
+.legend summary::-webkit-details-marker {
+  display: none;
+}
+
+/* flex hides the browser's marker: a chevron like the area button's says it opens. */
+.legend summary::after {
+  content: '';
+  width: 0.4375rem;
+  height: 0.4375rem;
+  margin-top: -0.25rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.legend[open] summary::after {
+  margin-top: 0.25rem;
+  transform: rotate(-135deg);
 }
 
 .legend ul {
@@ -911,17 +956,29 @@ html.has-update-toast .sheet {
 
 .row-status,
 .row-address {
-  overflow: hidden;
   /* A touch larger than secondary text: the status and the time decide the choice. */
   font-size: 0.875rem;
   line-height: 1.35;
-  text-overflow: ellipsis;
+}
+
+/* The pill and the time: the time moves to its own line rather than being cut off. */
+.row-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.125rem 0.375rem;
+  margin-top: 0.25rem !important;
+  color: var(--muted);
+}
+
+.row-timing {
   white-space: nowrap;
 }
 
-.row-status {
-  margin-top: 0.25rem !important;
-  color: var(--muted);
+.row-address {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* The status as a soft pill in its colour (always with its words). */
@@ -1045,7 +1102,55 @@ html.has-update-toast .sheet {
   text-decoration: underline;
 }
 
-.detail-link.fav[data-saved='true'] .icon {
+/* Favourite, share and the pharmacy's page: three equal targets, an icon above each label,
+   across the whole row (under the pin too), so the labels fit on one line. */
+.row-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25rem;
+  margin: 0.5rem 0 0 calc(-1 * (2.5rem + 0.75rem));
+}
+
+.row-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  min-height: 44px;
+  padding: 0.25rem 0.125rem;
+  border: 0;
+  border-radius: 0.75rem;
+  background: none;
+  color: var(--accent-ink);
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.row-action-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  transition: background-color 0.15s ease;
+}
+
+.row-action:hover .row-action-icon {
+  background: color-mix(in srgb, var(--accent-soft), var(--accent) 12%);
+}
+
+.row-action:active .row-action-icon {
+  transform: scale(0.94);
+}
+
+.row-action.fav[data-saved='true'] .row-action-icon {
   color: var(--star);
 }
 
