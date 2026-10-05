@@ -1,32 +1,9 @@
-/**
- * The kinds of duty section ΦΣΘ prints. The kind only names the section; the
- * hours always come from the heading, because the same kind means different
- * hours in different area groups (see docs/research.md, section 2).
- */
-export const DUTY_KINDS = [
-  'day',
-  'saturday-extra',
-  'on-duty',
-  'overnight',
-  'after-midnight',
-] as const;
-export type DutyKind = (typeof DUTY_KINDS)[number];
+import type { DutyKind, ExtraHours, TimeWindow } from '@pharmacy-skg/core';
 
-/** A span of local time. `toNextDay` is true when it ends after midnight (including at exactly 00:00). */
-export interface TimeWindow {
-  readonly from: string;
-  readonly to: string;
-  readonly toNextDay: boolean;
-}
-
-/** Extra hours stated in a section note, e.g. Tue/Thu/Fri 14:00–17:00 except on holidays. */
-export interface ExtraHours {
-  /** ISO weekdays: 1 = Monday … 7 = Sunday. */
-  readonly weekdays: readonly number[];
-  readonly from: string;
-  readonly to: string;
-  readonly exceptHolidays: boolean;
-}
+// The data types live in @pharmacy-skg/core, which the app reads them from. They are
+// re-exported here because the parser and the schemas are written against these names.
+export { DUTY_KINDS } from '@pharmacy-skg/core';
+export type { DutyKind, ExtraHours, TimeWindow };
 
 // Checked in order: "Εφημερεύοντα" is the generic word, so it comes last.
 const KIND_WORDS: readonly (readonly [RegExp, DutyKind])[] = [
