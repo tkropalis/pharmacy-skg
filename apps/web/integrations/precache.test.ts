@@ -33,6 +33,29 @@ describe('precacheEntries', () => {
     expect(kept).toEqual(['_astro/x.js', 'en/index.html', 'index.html']);
   });
 
+  it('leaves out the generated pharmacy, duty-date and area pages but keeps their indexes', () => {
+    const kept = precacheEntries([
+      file('farmakeio/2310023026/index.html'),
+      file('en/pharmacy/2310023026/index.html'),
+      file('efimeries/2026-10-05/index.html'),
+      file('en/duty/2026-10-05/index.html'),
+      file('perioxi/kalamaria/index.html'),
+      file('en/area/kalamaria/index.html'),
+      file('efimeries/index.html'),
+      file('en/duty/index.html'),
+      file('perioxi/index.html'),
+      file('en/area/index.html'),
+      file('plirofories/index.html'),
+    ]).map((f) => f.path);
+    expect(kept).toEqual([
+      'efimeries/index.html',
+      'en/area/index.html',
+      'en/duty/index.html',
+      'perioxi/index.html',
+      'plirofories/index.html',
+    ]);
+  });
+
   it('covers both locales when both are built', () => {
     const urls = precacheEntries([file('index.html'), file('en/index.html')]).map((f) =>
       urlForFile(f.path),
