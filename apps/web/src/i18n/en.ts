@@ -19,6 +19,7 @@ export const en: Dictionary = {
   update: {
     available: 'A new version of the app is ready.',
     reload: 'Reload',
+    dismiss: 'Dismiss notice',
   },
 
   stale: {

@@ -128,6 +128,11 @@
   height: 120px;
 }
 
+/* The "new version" notice (global.css) sits at the bottom of the screen: the sheet stands above it. */
+html.has-update-toast .sheet {
+  bottom: var(--update-toast-space, 5rem);
+}
+
 .sheet[data-size='medium'] {
   height: 56%;
 }

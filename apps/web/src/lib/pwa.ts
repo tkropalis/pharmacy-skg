@@ -1,6 +1,7 @@
 import { DEFAULT_CITY_ID } from '../config.ts';
 import { cityDataUrl, dutyPath, loadMeta } from './data.ts';
 import { offlineDates } from './dates.ts';
+import { ensureUpdateRegion, offerReload } from './update-toast.ts';
 
 function inRange(date: string, range: { readonly from: string; readonly to: string }): boolean {
   return date >= range.from && date <= range.to;
@@ -34,34 +35,13 @@ function hasUnsentInput(): boolean {
 }
 
 /**
- * A small notice with a reload button: a new version is ready. The page is never reloaded
- * under someone who is looking at it (they may be reading a phone number or about to call); the
- * texts come from the page (data attributes on <body>, set in the layout).
- */
-function offerReload(): void {
-  if (document.querySelector('.update-toast') !== null) return;
-  const { updateAvailable, updateReload } = document.body.dataset;
-  if (!updateAvailable || !updateReload) return;
-  const toast = document.createElement('div');
-  toast.className = 'update-toast';
-  toast.setAttribute('role', 'status');
-  const message = document.createElement('span');
-  message.textContent = updateAvailable;
-  const button = document.createElement('button');
-  button.type = 'button';
-  button.className = 'button';
-  button.textContent = updateReload;
-  button.addEventListener('click', () => window.location.reload());
-  toast.append(message, button);
-  document.body.append(toast);
-}
-
-/**
  * Registers the service worker (production builds only). When a new version takes over, a
  * visible page offers a reload button and keeps running; a hidden page reloads by itself (nobody
  * sees it), unless a form has unsent input. Either way the next navigation gets the new version.
  */
 export function registerServiceWorker(): void {
+  // Before anything can need it, so the notice is announced when it appears.
+  ensureUpdateRegion();
   if (!import.meta.env.PROD || !('serviceWorker' in navigator)) return;
 
   const hadController = navigator.serviceWorker.controller !== null;

@@ -25,6 +25,7 @@ export const el = {
   update: {
     available: 'Νέα έκδοση της εφαρμογής.',
     reload: 'Ανανέωση',
+    dismiss: 'Κλείσιμο ειδοποίησης',
   },
 
   stale: {

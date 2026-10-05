@@ -71,20 +71,37 @@ test('a new service worker version never reloads a visible page: it offers a but
   await waitForRows(page);
   expect(await page.evaluate(() => navigator.serviceWorker.controller !== null)).toBe(true);
 
+  // The live region is in the page, empty, before the notice: that is what gets it announced.
+  const region = page.locator('.update-region[role="status"]');
+  await expect(region).toBeAttached();
+  await expect(region).toHaveText('');
   await page.evaluate(() => {
     (window as unknown as { marker: string }).marker = 'same page';
     navigator.serviceWorker.dispatchEvent(new Event('controllerchange'));
   });
-  const toast = page.locator('.update-toast');
+  const toast = region.locator('.update-toast');
   await expect(toast).toBeVisible();
-  await expect(toast.getByRole('button')).toHaveText('Ανανέωση');
+  await expect(toast.getByRole('button', { name: 'Ανανέωση' })).toBeVisible();
+  await expect(toast.getByRole('button', { name: 'Κλείσιμο ειδοποίησης' })).toBeVisible();
+  // The sheet stands above the notice instead of under it.
+  const sheet = await page.locator('.sheet').boundingBox();
+  const toastBox = await toast.boundingBox();
+  expect((sheet?.y ?? 0) + (sheet?.height ?? 0)).toBeLessThanOrEqual((toastBox?.y ?? 0) + 1);
   // Still the same page, and still usable.
   await page.waitForTimeout(500);
   expect(await page.evaluate(() => (window as unknown as { marker?: string }).marker)).toBe(
     'same page',
   );
-  const box = await toast.getByRole('button').boundingBox();
-  expect(box?.height ?? 0).toBeGreaterThanOrEqual(43.5);
+  for (const button of await toast.getByRole('button').all()) {
+    const box = await button.boundingBox();
+    expect(box?.height ?? 0).toBeGreaterThanOrEqual(43.5);
+    expect(box?.width ?? 0).toBeGreaterThanOrEqual(43.5);
+  }
+
+  // Dismissed, it goes and the room it took is given back.
+  await toast.getByRole('button', { name: 'Κλείσιμο ειδοποίησης' }).click();
+  await expect(toast).toHaveCount(0);
+  await expect(page.locator('html')).not.toHaveClass(/has-update-toast/);
 
   // Hidden, it reloads by itself.
   await page.evaluate(() => {
