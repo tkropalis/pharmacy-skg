@@ -370,7 +370,7 @@ html.has-update-toast .sheet {
   flex: none;
   min-height: 1.4em;
   margin: 0;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   line-height: 1.4;
   color: var(--muted);
 }
@@ -917,7 +917,8 @@ html.has-update-toast .sheet {
 .row-status,
 .row-address {
   overflow: hidden;
-  font-size: 0.8125rem;
+  /* A touch larger than secondary text: the status and the time decide the choice. */
+  font-size: 0.875rem;
   line-height: 1.35;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -935,7 +936,7 @@ html.has-update-toast .sheet {
   border-radius: 999px;
   background: var(--kind-bg, var(--soft));
   color: var(--kind, var(--fg));
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 650;
   line-height: 1.5;
 }
@@ -1015,8 +1016,8 @@ html.has-update-toast .sheet {
 }
 
 .row-full {
-  font-size: 0.8125rem;
-  color: var(--muted);
+  font-size: 0.9375rem;
+  font-weight: 600;
 }
 
 .row-note {

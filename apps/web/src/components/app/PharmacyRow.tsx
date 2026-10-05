@@ -177,11 +177,7 @@ function PharmacyRowView({
 
       {open && (
         <div className="row-details" id={detailsId}>
-          <p className="row-full">
-            {view.label}
-            {view.dutyKinds !== null && ` · ${view.dutyKinds}`}
-            {view.timing !== null && ` · ${view.timing}`}
-          </p>
+          <p className="row-full">{view.label}</p>
           {pharmacy.phone === null && <p className="row-note">{text.row.noPhone}</p>}
           {approximate && <p className="row-note">{text.row.approximate}</p>}
           {pharmacy.location === null && <p className="row-note">{text.row.noLocation}</p>}

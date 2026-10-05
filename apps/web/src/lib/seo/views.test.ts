@@ -71,7 +71,7 @@ describe('pharmacyPageProps', () => {
   it('words the regular hours and links the report form with the id', () => {
     const page = pharmacyPageProps(model, 'el', id, ORIGIN);
     expect(page?.regularHours.text).toBe(
-      'Κανονικό ωράριο: Δευ/Τετ 08:00–14:30 · Τρί/Πέμ/Παρ 08:00–14:00, 17:00–21:00',
+      'Συνηθισμένο ωράριο: Δευ/Τετ 08:00–14:30 · Τρί/Πέμ/Παρ 08:00–14:00, 17:00–21:00',
     );
     expect(page?.regularClosedText).toBe('Κλειστά: Σάβ/Κυρ και αργίες.');
     expect(page?.reportPath).toBe(`/anafora/?pharmacy=${id}`);
