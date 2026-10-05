@@ -374,14 +374,16 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
       <p className="summary">
         {ready && tab === 'open' ? (dutyLoading ? text.time.loadingDuties : summary) : ' '}
       </p>
-      {meta && (
-        <p className="fresh">
-          {text.source.updated}{' '}
-          <time dateTime={meta.updatedAt}>{formatUpdatedShort(meta.updatedAt, now, locale)}</time>
-          {' · '}
-          {text.source.short}
-        </p>
-      )}
+      <p className="fresh">
+        {meta && (
+          <>
+            {text.source.updated}{' '}
+            <time dateTime={meta.updatedAt}>{formatUpdatedShort(meta.updatedAt, now, locale)}</time>
+            {' · '}
+            {text.source.short}
+          </>
+        )}
+      </p>
     </>
   );
 
@@ -630,18 +632,21 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
             </>
           )}
 
-          <footer className="source">
-            {meta && (
-              <p>
-                {text.source.updated}{' '}
-                <time dateTime={meta.updatedAt}>{formatUpdatedAt(meta.updatedAt, locale)}</time>
-                {' · '}
-                {text.source.sources}
-              </p>
-            )}
-            <p>{text.source.map}</p>
-            <p>{text.source.callFirst}</p>
-          </footer>
+          {/* Not while loading: it would sit under the short loading note and then be pushed away. */}
+          {state.status !== 'loading' && (
+            <footer className="source">
+              {meta && (
+                <p>
+                  {text.source.updated}{' '}
+                  <time dateTime={meta.updatedAt}>{formatUpdatedAt(meta.updatedAt, locale)}</time>
+                  {' · '}
+                  {text.source.sources}
+                </p>
+              )}
+              <p>{text.source.map}</p>
+              <p>{text.source.callFirst}</p>
+            </footer>
+          )}
         </div>
       </Sheet>
 
