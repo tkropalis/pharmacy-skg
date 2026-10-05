@@ -58,7 +58,7 @@ These are the rules the "open now" logic has to encode.
 ### Regular hours
 
 - Since 23 Mar 2021: Mon/Wed 08:00–14:30; Tue/Thu/Fri 08:00–14:00 and 17:00–21:00. [verified] Two reports of 23 Mar 2021 (iefimerida.gr, parallaximag.gr) give the same wording: "Δευτέρα και Τετάρτη από τις 08:00 έως τις 14:30 και Τρίτη, Πέμπτη και Παρασκευή από τις 08:00 έως τις 14:00 και από τις 17:00 έως και τις 21:00". The ΠΚΜ decision itself was not fetched. Encoded as a data table in `packages/core/src/regular-hours.ts`.
-- Summer 2026: continuous 08:00–16:00 from 13 Jul to 21 Aug. [search] **verify** Not applied (decision D23): the engine uses the regular hours all year until a summer schedule is verified. The duty lists of 15 Jul and later show no change to the duty hours.
+- Summer 2026: continuous 08:00–16:00 from 13 Jul to 21 Aug. [search] **verify** The duty lists corroborate the dates, not the hours: the metro list has a Διημερεύοντα section on every Tue, Thu and Fri from 14 Jul to 21 Aug 2026 (15 days in the archive) and on no other Tue, Thu or Fri. That points to a summer schedule with no afternoon opening, so that pharmacies need a day-duty rota on those days. [verified] Not applied (decision D23): the engine uses the regular hours all year until the summer hours are verified, so it shows non-duty pharmacies open on summer Tue/Thu/Fri evenings. A test pinned to the July 2026 data documents this.
 - Saturdays and Sundays: no regular hours; only duty and extended-hours pharmacies are open. [inferred] Applied (decision D23).
 - Hours follow decisions of the Region of Central Macedonia (ΠΚΜ), based on ΦΣΘ proposals. [search]
 - Duty exemptions: Law 1963/1991 art. 9, amended by art. 71 of Law 5243/2025 (https://fsth.gr/nomothesia-apallages-kai-dieyrymeno/). [search]
@@ -89,7 +89,7 @@ Verified against the PDFs listed in section 1 (Format). The headings are quoted 
 | Διανυκτερεύοντα Φαρμακεία (από 21:00 έως 00:00)                          | 21:00–00:00          | every day                         |
 | Μεταμεσονύκτια Φαρμακεία (από 21:00 έως 08:00 το επόμενο πρωί)           | 21:00–08:00 next day | every day                         |
 
-- Tuesday has no day-duty section, because every pharmacy is open on Tue/Thu/Fri afternoons anyway.
+- Tuesday, Thursday and Friday have no day-duty section outside summer, because every pharmacy is open on those afternoons anyway. From 14 Jul to 21 Aug 2026 they do have one (see the summer bullet in Regular hours). [verified]
 - Under the Διανυκτερεύοντα heading on Tue/Thu/Fri: "Τρίτη, Πέμπτη & Παρασκευή (εκτός αργιών), λειτουργούν και 14:00-17:00 (όχι τα Μεταμεσονύκτια)". So overnight pharmacies also cover the midday break on those days, except on holidays.
 - **Settled conflicts:**
   - Day duty in the metro closes at **21:00**. The 22:00/23:00 closing times from vrisko.gr apply to some outlying groups, not to the metro.
