@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto';
+import { DEFAULT_CITY_ID } from '../src/config.ts';
 import { localePrefix, PARAM_ROUTES } from '../src/i18n/routes.ts';
 import { LOCALES } from '@pharmacy-skg/core';
 
@@ -90,21 +91,21 @@ export function renderServiceWorker(
   version: string,
   urls: readonly string[],
   hashes: Readonly<Record<string, string>> = {},
+  cityId: string = DEFAULT_CITY_ID,
 ): string {
-  const versionPlaceholder = "'__BUILD_VERSION__'";
-  const urlsPlaceholder = "['__PRECACHE_URLS__']";
-  const hashesPlaceholder = "'__PRECACHE_HASHES__'";
-  if (
-    !template.includes(versionPlaceholder) ||
-    !template.includes(urlsPlaceholder) ||
-    !template.includes(hashesPlaceholder)
-  ) {
-    throw new Error(
-      'sw/sw.js is missing its __BUILD_VERSION__, __PRECACHE_URLS__ or __PRECACHE_HASHES__ placeholder',
-    );
+  const values: Record<string, unknown> = {
+    "'__BUILD_VERSION__'": version,
+    "['__PRECACHE_URLS__']": urls,
+    "'__PRECACHE_HASHES__'": hashes,
+    "'__CITY_ID__'": cityId,
+  };
+  const missing = Object.keys(values).filter((placeholder) => !template.includes(placeholder));
+  if (missing.length > 0) {
+    throw new Error(`sw/sw.js is missing its ${missing.join(', ')} placeholder`);
   }
-  return template
-    .replace(versionPlaceholder, JSON.stringify(version))
-    .replace(urlsPlaceholder, JSON.stringify(urls))
-    .replace(hashesPlaceholder, JSON.stringify(hashes));
+  return Object.entries(values).reduce(
+    // A function, so a `$` in a value is never read as a replacement pattern.
+    (code, [placeholder, value]) => code.replace(placeholder, () => JSON.stringify(value)),
+    template,
+  );
 }

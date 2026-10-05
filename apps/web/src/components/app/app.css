@@ -1670,6 +1670,12 @@ html.has-update-toast .sheet {
   font-size: 0.875rem;
 }
 
+.footer-links .link-button {
+  padding: 0;
+  font-size: 0.875rem;
+  font-weight: inherit;
+}
+
 .footer-note {
   margin: 0.25rem 0;
   font-size: 0.875rem;

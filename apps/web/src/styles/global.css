@@ -230,6 +230,20 @@ a {
   border: 0;
 }
 
+/* Install buttons: only where the browser can install the app itself (src/lib/install.ts). */
+html:not([data-installable]) [data-install-app] {
+  display: none !important;
+}
+
+/* "Offline", next to the data's age: html[data-offline] is set by src/lib/connection.ts. */
+html:not([data-offline]) .offline-note {
+  display: none;
+}
+
+.offline-note {
+  font-weight: 600;
+}
+
 .skip-link {
   position: absolute;
   inset-inline-start: 0.5rem;

@@ -27,7 +27,8 @@ On an iPhone (Safari) and an Android phone (Chrome):
 
 - [ ] The home screen loads. "Use my location" asks for permission and sorts the list by distance.
 - [ ] Call, Directions (Google, Apple, Waze) and Share work.
-- [ ] Add to Home Screen. Open the installed app in airplane mode: the list still shows.
+- [ ] Install: on Android, the "Εγκατάσταση" button in the list's footer (or on the about page); on the iPhone, Share → "Προσθήκη στην οθόνη Αφετηρίας". The icon reads "Φαρμακεία".
+- [ ] Open the installed app in airplane mode: the list still shows, with "Εκτός σύνδεσης" next to the data's age. A pharmacy page you opened before also opens. Turn airplane mode off: the note goes away by itself.
 - [ ] Switch the phone to dark mode: the app should stay light (one theme on every device).
 - [ ] Report anything odd through the app's own report form, so it lands as an issue.
 

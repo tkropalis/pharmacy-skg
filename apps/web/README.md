@@ -33,9 +33,11 @@ src/pages/<slug>/         one folder per parameterised route and locale (farmake
                            en/pharmacy, en/duty, en/area), named after PARAM_ROUTES in i18n/routes.ts
 src/pages/sitemap.xml.ts, robots.txt.ts   sitemap with hreflang alternates, and robots
 src/scripts/seo/          status now, open-now and today highlight, computed in the browser
-src/lib/pwa.ts            service worker registration and offline prefetch
+src/lib/pwa.ts            service worker registration, periodic sync, asking the worker to warm the offline data
+src/lib/connection.ts      online/offline state (html[data-offline]); install.ts the Install buttons; manifest.ts
+                           the per-locale web app manifests (pages/manifest.webmanifest.ts, pages/en/...)
 src/lib/idle.ts, quiet.ts  yield to the browser, run when idle, run when the page has settled
-src/scripts/boot.ts        runs on every page: freshness, service worker, prefetch
+src/scripts/boot.ts        runs on every page: freshness, connection state, install, service worker, warm-up
 src/scripts/home-app.tsx   mounts the home screen into #app (replaces the no-JavaScript fallback)
 src/components/app/        the home screen: HomeApp (state), Sheet, Controls, PharmacyRow,
                            UpcomingDuties, MapView (thin) and map-controller (MapLibre, lazy)
@@ -62,6 +64,7 @@ To rename the app, edit `APP_NAME`, `APP_SHORT_NAME` and `APP_HEADER_NAME` (the 
 - **The map:** it starts by itself only once the page has settled (seconds after the list), so a test that needs it calls `waitForMap` (`e2e/support.ts`), which reaches for the map as a person would. `home.spec.ts` covers the three ways it starts.
 - **Position and the filter:** the browser context grants geolocation, so the app locates itself when it opens, as a returning visitor's does. Tests that need a visitor with no position use `test.use({ autoLocate: false })` (it stores the "turned off" flag before the page loads); `location.spec.ts` covers allowed, blocked, a remembered area and the off flag, `list-filter.spec.ts` the "All / On duty" chips, `layout.spec.ts` the app viewport (the document does not scroll at 390×664, no page footer, no emergency strip and a one-row header, the compact footers, the language switch and that duty pins are never clustered; the map publishes its pin counts as `data-duty-pins` and `data-clustered-pins` on `.map`).
 - **Medicine search:** `medicine-search.spec.ts` covers Greek and Latin queries, prices labelled as maximum or indicative, a shortage from the current ΕΟΦ list, details and Back, Escape and the browser's Back button, that no request carries the query and the address never changes, 44 px targets and axe on the empty search, the results and the details. `offline.spec.ts` checks it works offline once opened.
+- **Offline and install:** `offline.spec.ts` also covers the offline marker and the refresh when the connection returns, a pharmacy page seen before opening offline, the missing-day message, and a periodic background sync (dispatched through the DevTools protocol); `install.spec.ts` the Install buttons and the per-locale manifests.
 - **Accessibility:** `a11y.spec.ts` runs axe with the WCAG 2.0, 2.1 and 2.2 level A and AA rules on the home, pharmacy, duty-date, area, about, privacy and report pages, in both languages and both colour schemes. `home.spec.ts` checks 44×44 px map controls and visible, unobscured keyboard focus.
 - **Not covered:** the Content-Security-Policy and the response headers of `vercel.json` (preview does not apply them), and real devices (M4).
 
@@ -129,13 +132,29 @@ Map tiles, style, glyphs and sprites come from `https://tiles.openfreemap.org`, 
 
 `sw/sw.js` is copied to `dist/sw.js` by `integrations/service-worker.ts` in the `astro:build:done` hook. The hook lists every built file except the data, the worker itself and `404.html`, hashes their contents, and uses the combined hash as the build version. A rebuild with identical output has the same version, so nothing updates; any changed file gives a new version, a new `precache-<version>` cache, and removal of the old one on activation. The worker takes over at once (`skipWaiting` and `clients.claim`), and the page reloads once when control changes (`src/lib/pwa.ts`), unless a form has unsent input.
 
-The map chunk, its worker files and its stylesheet are **not** precached (about 0.45 MB gzipped that most visits never use). The worker caches any other content-hashed `/_astro/` file cache-first the first time it is used, so the map works offline once it has been seen (cache `assets-<version>`, dropped with the version). The precache is the app shell only: 35 files, about 0.5 MB (0.17 MB gzipped), down from 47 files, 3.1 MB (0.6 MB gzipped). The sitemap, robots.txt and the duty index (it lists dates, so it changes every day) are left out too.
+The map chunk, its worker files and its stylesheet are **not** precached (about 0.45 MB gzipped that most visits never use). The worker caches any other content-hashed `/_astro/` file cache-first the first time it is used, so the map works offline once it has been seen (cache `assets-<version>`, dropped with the version). The precache is the app shell only: 44 files, about 0.9 MB (0.3 MB gzipped) on 5 Oct 2026, down from 47 files, 3.1 MB (0.6 MB gzipped) before the map was left out. The sitemap, robots.txt and the duty index (it lists dates, so it changes every day) are left out too.
 
 **Updates.** Nothing that depends on the data or on the date is in the shell pages: the age of the data is read from `meta.json` at runtime (and remembered in `localStorage` for the first paint of the stale banner, `public/stale-check.js`), and the no-JavaScript link on the home page goes to the list of dates. A data update therefore does not change the worker. When a new version does ship, the worker downloads only the files whose content hash changed (it keeps the others from the previous cache), takes over at once, and a page that is on screen shows a "reload" button instead of reloading by itself; a hidden page reloads on its own unless a form has unsent input.
 
-Strategies: pages network-first with a 4 s timeout then the precached copy; `/data/**` network-first (cache fallback, 404s not cached); `tiles.openfreemap.org` cache-first, capped at 500 entries; everything else, including `/api/`, goes to the network untouched. After load, while online, the page fetches meta, pharmacies, the extended-hours files and the duty lists for yesterday (the overnight list), today and the next three days (Europe/Athens), only for the days `meta.json` says are published, so they are in the cache.
+Strategies:
 
-The worker is not registered in `astro dev`; use `build` and `preview` to try it.
+- **Shell pages:** network-first with a 4 s timeout, then the precached copy.
+- **Other pages** (pharmacy, duty date, area): network-first; the last 60 visited are kept (`pages-<version>`, dropped with the version because they load its hashed assets), so a page seen before opens offline. Offline, a page never seen gets the home page of its locale.
+- **`/data/**`:** network-first (cache fallback, 404s and errors never cached over a good copy).
+- **`tiles.openfreemap.org`:** cache-first, capped at 500 entries.
+- **Everything else,** including `/api/`, goes to the network untouched.
+
+## Offline
+
+**Warm-up.** The worker keeps meta, pharmacies, the extended-hours files and the duty lists for yesterday (the overnight list), today and the next three days (Europe/Athens) in its data cache, only for the days `meta.json` says are published (`warmUp` and `offlineDataUrls` in `sw/sw.js`, unit-tested in `integrations/sw.test.ts`). The worker fetches them itself when a page asks (`keepOfflineDataWarm` in `src/lib/pwa.ts`, which passes the page's clock): after load, when the app comes back to the foreground (at most hourly, or on a new day in Athens) and when the connection returns. Not with Data Saver on.
+
+**Periodic background sync.** In an installed app in Chromium, the page registers a periodic sync (`refresh-data`, at most every 12 hours, if the browser grants it), and the worker runs the same warm-up, so the next days are on the device even if the app was not opened. Safari and Firefox have no periodic sync: there the data is as fresh as the last visit.
+
+**Offline state.** `src/lib/connection.ts` publishes `navigator.onLine` as `html[data-offline]`: the sheet's freshness line and the site footer add "Εκτός σύνδεσης" / "Offline" next to the data's age. A day whose duty list is not on the device says so ("Οι σημερινές εφημερίες δεν είναι στη συσκευή. Ελέγξτε τη σύνδεση.") instead of "not found". When the connection returns, the home screen refreshes its data behind what is on screen (or retries in full after an error) and the pages refresh the data's age.
+
+**Install.** Each locale has its own manifest (`/manifest.webmanifest`, `/en/manifest.webmanifest`) with the same `id`, so it is one app that opens on the home screen of the language it was installed from. Where the browser can install the app itself (Chromium's `beforeinstallprompt`), an "Εγκατάσταση" / "Install" button appears in the sheet's footer and on the about page (`src/lib/install.ts`, hidden by CSS until then); the about page also says how to add it on an iPhone. `apple-mobile-web-app-title` gives the short name under the icon on iOS.
+
+The worker is not registered in `astro dev`; use `build` and `preview` to try it. In the browser tests, `context.setOffline()` does not reach the worker's own requests, so `offline.spec.ts` also aborts every request to the preview server that the worker does not answer.
 
 ## Problem reports (`api/report.ts`)
 
