@@ -20,6 +20,16 @@ export function cityPaths(city: string) {
   };
 }
 
+/** Paths of the medicine data, which is national, not per city. */
+export function medicinesPaths() {
+  const root = join(REPO_ROOT, 'data', 'medicines');
+  return {
+    root,
+    medicines: join(root, 'medicines.json'),
+    articleFiles: join(root, 'inputs', 'moh-article-files.json'),
+  };
+}
+
 export async function readJson<T extends z.ZodType>(
   path: string,
   schema: T,

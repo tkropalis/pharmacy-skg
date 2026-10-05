@@ -2,7 +2,7 @@
 
 Collected on 4 Oct 2026 while planning the project. At the time, the development container's network policy blocked Greek sites and OpenStreetMap, so many findings come from search results rather than from the sources themselves.
 
-Sections 1–3 were re-checked later on 4 Oct 2026 against downloaded files (the M1 fixtures). Those findings are tagged [verified] and say which file they come from.
+Sections 1–3 were re-checked later on 4 Oct 2026 against downloaded files (the M1 fixtures). Those findings are tagged [verified] and say which file they come from. Section 4 was re-checked on 5 Oct 2026 against the ministry's and ΕΟΦ's files (the v1.1 fixtures in `packages/ingest/fixtures/moh` and `eof`).
 
 Confidence tags:
 
@@ -146,16 +146,18 @@ Verified against the PDFs listed in section 1 (Format). The headings are quoted 
 ### Official price bulletin (Δελτίο Τιμών Φαρμάκων)
 
 - **Where:**
-  - Prescription medicines: https://www.moh.gov.gr/articles/times-farmakwn/deltia-timwn/
-  - Non-prescription medicines (ΜΗΣΥΦΑ): https://www.moh.gov.gr/articles/times-farmakwn/deltia-timwn-mhsyfa/ [search]
-- **No single current file.** The current list has to be assembled from several bulletins [search]:
-  - **Base:** the yearly re-pricing of December 2025 (decision Δ3(α) 58275/29-12-2025, page 13924). It was amended on page 14046 and applied in pharmacies from 23 Feb 2026.
-  - **New generics:** monthly, 2–3 months behind.
-  - **New medicines:** quarterly.
-  - **Price cuts:** occasional extra bulletins.
-- **Columns** [search]: barcode, name, form, strength, pack, ATC, active substance, licence holder, and ex-factory, wholesale, hospital and retail prices.
-  - The barcode is a national ΕΟΦ code, not an EAN. [inferred]
-- **Size:** about 7,500–8,000 rows. [inferred]
+  - Prescription medicines: https://www.moh.gov.gr/articles/times-farmakwn/deltia-timwn/ [verified]
+  - Non-prescription medicines (ΜΗΣΥΦΑ): https://www.moh.gov.gr/articles/times-farmakwn/deltia-timwn-mhsyfa/ [verified]
+  - One article per ministerial decision, listed 20 per page with its date. Each article attaches the decision (PDF) and its price tables, as .xlsx and as PDF, downloaded with `?fdl=<id>`. There is no API; the pages are plain HTML. The server sometimes resets connections, so requests are retried. [verified]
+- **No single current file.** The current list is assembled from several bulletins [verified, 5 Oct 2026]:
+  - **Base:** the yearly revision of December 2025 (decision Δ3(α) 58275/29-12-2025, article 13924), republished whole by its amendment (article 14046, 20 Feb 2026, 8,507 packs). An amendment quotes the revision's title, so the newest article whose title has "Δελτίο αναθεωρημένων τιμών" is the base.
+  - **Later bulletins:** 32 more tables in 25 articles up to 30 Sep 2026: new generics (monthly, published 2–5 months late, e.g. September 2025's on 5 Mar 2026), new medicines (quarterly), re-pricing of reference medicines, voluntary price cuts, price changes of non-reimbursed medicines, medical cannabis products. Article ids grow with publication, so applying them by id, keyed by barcode, gives the prices in force.
+  - **Gaps:** withdrawals are not in these bulletins, so a withdrawn pack stays listed until the next revision. A few articles have only PDFs (e.g. ΜΗΣΥΦΑ article 13833, Nov 2025); their changes are not applied.
+- **Columns** [verified]: Κωδικός (ministry code), Barcode, the product (name, form, strength and pack in one cell, e.g. "DORALIN F.C.TAB 40MG/TAB ΒΤx30 (BLIST 3x10)"), ATC, Μη αποζημιούμενο ("N" when not reimbursed), ex-factory, wholesale and retail prices (with VAT), active substances, licence holder, VAT rate (6% or 13%). The ΜΗΣΥΦΑ tables have an "Ενδεικτική Λιανική Τιμή" (indicative retail price) instead.
+  - Headers, their order and casing differ between tables ("Barcode"/"BARCODE"; "ΟΝΟΝΑΣΙΑ ΚΑΚ", a typo for the licence holder), and some tables lack the ATC or reimbursement column, so columns are matched by header.
+  - The barcode is a 13-digit national ΕΟΦ code starting 2800–2809, not an EAN.
+  - Quirks: a few new packs are priced 0 (not yet priced) and one cell holds two prices; such rows are skipped with a warning.
+- **Size** [verified, 5 Oct 2026]: 9,046 prescription packs and 770 ΜΗΣΥΦΑ packs (the 2025 catalogue revision, article 13661 of 10 Sep 2025, plus four bulletins of new products published after it). The two lists share no barcode.
 - **Reuse:** the bulletins are public ministerial decisions, so they should be reusable under the open-data law ν.4727/2020. [inferred] Ministry contact: farmaka@moh.gov.gr. [search]
 
 ### Is the price the same everywhere?
@@ -169,7 +171,7 @@ Verified against the PDFs listed in section 1 (Format). The headings are quoted 
 
 - A 0, 10 or 25% co-payment, depending on the diagnosis and insurance, plus the full gap between the retail price and the reference (insurance) price. [search]
 - The positive (reimbursement) list has about 6,900 products: https://www.moh.gov.gr/articles/times-farmakwn/epitroph-aksiologhshs-kai-apozhmiwshs-farmakwn/ [search]
-- The app can show the retail price plus an estimate like "≈ €X at 25/10/0%". The exact amount needs the prescription. [inferred]
+- **No estimate is possible from public files** [verified, 5 Oct 2026]: the price bulletins have no reference price and no co-payment rate (only the "not reimbursed" flag). The reimbursement list published for consultation (article 14817, "LISTA_INPUT SEPTEMBER 2026.xlsx", about 6,000 packs) has no reference price and no barcode either, only a short product code. So the app shows the retail price and, when the bulletin says so, that the medicine is not reimbursed; it makes no co-payment estimate (decision D24).
 
 ### Medicine database
 
@@ -178,8 +180,8 @@ Verified against the PDFs listed in section 1 (Format). The headings are quoted 
 
 ### Shortages
 
-- **ΕΟΦ monthly "limited availability" list:** a PDF with barcode, ATC and active substance. The latest seen is dated 31 Aug 2026. [search]
-- **ΕΟΦ parallel-export bans:** 3-month bans, renewed each time (e.g. 105 products, 27 May–27 Aug 2026). [search]
+- **ΕΟΦ monthly "limited availability" list** [verified]: a text PDF linked from a post in https://www.eof.gr/category/farmaka/eparkeia-farmaka/, also found through the WordPress API (`/wp-json/wp/v2/posts?search=ΠΕΡΙΟΡΙΣΜΕΝΗΣ ΔΙΑΘΕΣΙΜΟΤΗΤΑΣ`). Columns: barcode, description, ATC, substances, how it is dispensed, licence holder, start date, expected end date, reason, alternatives. The list of 30 Sep 2026 (posted 2 Oct) has 289 packs on 10 pages, the last page a separate section of emergency imports through Ι.Φ.Ε.Τ. with its own column positions; 263 of the 289 have a price in the bulletins (the others are hospital-only or imports). One title has no year ("31 ΜΑΪΟΥ"), so the post's date stands in.
+- **ΕΟΦ parallel-export bans** [verified]: 3-month bans, renewed each time (e.g. 105 products, 27 May–27 Aug 2026 [search]). The latest post (27 Aug 2026) links a 9-page scanned PDF with no text layer, so it cannot be read without OCR. Not used (decision D24).
 - **ΗΣΠΑΔΙΦ:** the ministry and ΗΔΙΚΑ have tracked stock down to pharmacy level since 22 Jan 2024. The data is not public. A citizen app was announced in May 2025, with no sign of launch. [search]
 
 ### Per-pharmacy stock
@@ -206,10 +208,11 @@ Verified against the PDFs listed in section 1 (Format). The headings are quoted 
 
 ### Feasibility
 
-- **Prescription price lookup:** feasible.
-- **Non-prescription prices:** partial (indicative only).
+- **Prescription price lookup:** feasible; built in v1.1.
+- **Non-prescription prices:** partial (indicative only); built in v1.1, labelled as indicative.
+- **Co-payment estimate:** not feasible from public files (no reference price).
 - **Per-pharmacy stock:** not feasible without partnerships.
-- **Shortage warnings:** feasible, updated monthly.
+- **Shortage warnings:** feasible, updated monthly; built in v1.1. Export bans: not without OCR.
 
 ## 5. Competitors
 

@@ -90,11 +90,11 @@ The owner's steps are in [beta-checklist.md](beta-checklist.md). The one-page br
 
 ## v1.1
 
-- **Medicine lookup:**
-  - merge the ministry's price bulletins by barcode;
-  - estimate the patient's co-payment;
-  - flag ΕΟΦ shortages and export bans;
-  - run the search on the device.
+- **Medicine lookup** (decision D24):
+  - ✅ merge the ministry's price bulletins by barcode: `pnpm --filter @pharmacy-skg/ingest run medicines` writes `data/medicines/medicines.json` (9,816 packs on 5 Oct 2026, 770 of them non-prescription), run by the scheduled workflow;
+  - ✅ flag ΕΟΦ shortages (the monthly limited-availability list);
+  - search on the device: in review;
+  - dropped: the co-payment estimate (no public file has the reference price) and export bans (posted as scanned images; would need OCR).
 - **Duty forecasts,** only if ΦΣΘ agrees (decision D11).
 
 ## Later

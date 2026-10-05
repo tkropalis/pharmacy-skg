@@ -148,6 +148,70 @@ export const MetaSchema = z.object({
   sources: z.array(SourceCreditSchema),
 });
 
+const barcode = z.string().regex(/^\d{13}$/, '13-digit ΕΟΦ barcode');
+
+export const PriceBulletinSchema = z.object({
+  id: z
+    .string()
+    .regex(/^\d+\/\d+$/)
+    .describe('<article id>/<file id> on moh.gov.gr'),
+  kind: z
+    .enum(['prescription', 'otc'])
+    .describe('otc: non-prescription (ΜΗΣΥΦΑ), indicative prices'),
+  title: z.string().min(1).describe("The announcement's title, as published"),
+  date: isoDate.describe("The announcement's date"),
+  articleUrl: z.url(),
+  fileName: z.string().min(1),
+  fileUrl: z.url(),
+});
+
+export const ShortageSchema = z.object({
+  from: isoDate.nullable(),
+  to: isoDate.nullable().describe('Expected end, as printed; null when blank'),
+  reason: z.string().describe('As printed'),
+});
+
+export const MedicinePriceSchema = z.object({
+  barcode,
+  name: z.string().min(1).describe('Name, form, strength and pack, as printed'),
+  atc: z.string(),
+  substance: z.string().describe('Active substances, comma-separated'),
+  company: z.string().describe('Marketing authorisation holder'),
+  price: z
+    .number()
+    .positive()
+    .multipleOf(0.01)
+    .describe('Retail price in euros with VAT: a maximum, or indicative when otc'),
+  otc: z.boolean(),
+  notReimbursed: z.boolean().describe('Flagged "Μη αποζημιούμενο" in the bulletin'),
+  bulletin: z.string().describe('The PriceBulletin id that set the price'),
+  shortage: ShortageSchema.nullable().describe('On the latest ΕΟΦ limited-availability list'),
+});
+
+/** data/medicines/medicines.json — official prices and ΕΟΦ shortages, for the whole country. */
+export const MedicinesSchema = z
+  .object({
+    schemaVersion: z.literal(SCHEMA_VERSION),
+    updatedAt: isoDateTime.describe('When the prices or shortages last changed'),
+    bulletins: z.array(PriceBulletinSchema).min(1).describe('Applied oldest first'),
+    shortageList: z
+      .object({
+        title: z.string(),
+        date: isoDate.describe('The date the list is as of'),
+        postUrl: z.url(),
+        fileUrl: z.url(),
+      })
+      .nullable(),
+    medicines: z.array(MedicinePriceSchema),
+  })
+  .refine(
+    (file) => {
+      const ids = new Set(file.bulletins.map((b) => b.id));
+      return file.medicines.every((m) => ids.has(m.bulletin));
+    },
+    { message: 'every medicine must name a listed bulletin' },
+  );
+
 export type DutyDay = z.infer<typeof DutyDaySchema>;
 export type DutyGroup = z.infer<typeof DutyGroupSchema>;
 export type DutyEntryRecord = z.infer<typeof DutyEntrySchema>;
@@ -155,10 +219,12 @@ export type Pharmacy = z.infer<typeof PharmacySchema>;
 export type Location = z.infer<typeof LocationSchema>;
 export type ExtendedHours = z.infer<typeof ExtendedHoursSchema>;
 export type Meta = z.infer<typeof MetaSchema>;
+export type Medicines = z.infer<typeof MedicinesSchema>;
 
 export const SCHEMAS = {
   'duty-day': DutyDaySchema,
   pharmacies: PharmaciesSchema,
   'extended-hours': ExtendedHoursSchema,
   meta: MetaSchema,
+  medicines: MedicinesSchema,
 } as const;

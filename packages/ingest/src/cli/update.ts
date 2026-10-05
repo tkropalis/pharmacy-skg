@@ -13,7 +13,7 @@ import { THESSALONIKI } from '@pharmacy-skg/core';
 import { parseDutyList, type DutyList } from '../fsth/parse.ts';
 import { extractTextItems } from '../pdf.ts';
 import { parseExtendedHours } from '../pkm/parse.ts';
-import { readFirstSheet } from '../pkm/xlsx.ts';
+import { readFirstSheet } from '../xlsx.ts';
 import {
   buildRegistry,
   dutyEntryId,

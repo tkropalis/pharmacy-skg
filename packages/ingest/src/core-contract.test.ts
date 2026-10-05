@@ -8,7 +8,13 @@ import { DUTY_KINDS as CORE_DUTY_KINDS } from '@pharmacy-skg/core';
 import { describe, expect, expectTypeOf, it } from 'vitest';
 import type { z } from 'zod';
 import { DUTY_KINDS } from './fsth/heading.ts';
-import type { DutyDaySchema, ExtendedHoursSchema, MetaSchema, PharmaciesSchema } from './schema.ts';
+import type {
+  DutyDaySchema,
+  ExtendedHoursSchema,
+  MedicinesSchema,
+  MetaSchema,
+  PharmaciesSchema,
+} from './schema.ts';
 
 describe('core data types', () => {
   it('accept what the schemas produce', () => {
@@ -16,6 +22,7 @@ describe('core data types', () => {
     expectTypeOf<z.infer<typeof PharmaciesSchema>>().toExtend<core.Pharmacies>();
     expectTypeOf<z.infer<typeof ExtendedHoursSchema>>().toExtend<core.ExtendedHours>();
     expectTypeOf<z.infer<typeof MetaSchema>>().toExtend<core.Meta>();
+    expectTypeOf<z.infer<typeof MedicinesSchema>>().toExtend<core.MedicinesFile>();
   });
 
   it('share one list of duty kinds', () => {
