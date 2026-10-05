@@ -43,6 +43,7 @@ import { Segmented } from './Segmented.tsx';
 import { SelectionCard } from './SelectionCard.tsx';
 import { Sheet } from './Sheet.tsx';
 import type { SheetApi, SheetSize } from './Sheet.tsx';
+import { ThemeChoice } from './ThemeChoice.tsx';
 import { UpcomingDuties } from './UpcomingDuties.tsx';
 import { isDutyLoading, useCityData } from './use-city-data.ts';
 import { useFavourites } from './use-favourites.ts';
@@ -1045,6 +1046,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                 </a>
               </p>
               <p className="footer-note">{text.footer.disclaimer}</p>
+              <ThemeChoice text={text.footer.theme} />
             </footer>
           )}
         </div>

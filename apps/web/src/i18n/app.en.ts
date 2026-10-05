@@ -198,6 +198,8 @@ export const appEn: Dictionary['app'] = {
     privacy: 'Privacy',
     report: 'Report a mistake',
     disclaimer: 'Call before you go.',
+    /** Light or dark (public/theme.js); light unless chosen. */
+    theme: { label: 'Appearance', light: 'Light', dark: 'Dark', auto: 'Auto' },
   },
 
   map: {
