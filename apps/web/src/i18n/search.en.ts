@@ -24,7 +24,7 @@ export const searchEn: Strings<typeof searchEl> = {
   resultsLabel: 'Search results',
   maxPrice: 'Maximum price',
   indicativePrice: 'Indicative price',
-  shortage: 'Limited availability',
+  shortage: 'Hard to find',
 
   details: {
     back: 'Back to the results',
@@ -40,19 +40,18 @@ export const searchEn: Strings<typeof searchEl> = {
       'No prescription needed. The price is indicative: each pharmacy may charge a different price.',
     notReimbursed: 'According to the price list, insurance does not pay for it.',
     shortageFromTo:
-      'The National Organisation for Medicines (ΕΟΦ) lists it as hard to find, from {from} until about {to}.',
-    shortageFrom:
-      'The National Organisation for Medicines (ΕΟΦ) lists it as hard to find, from {from}.',
+      'The National Organisation for Medicines lists it as hard to find, from {from} until about {to}.',
+    shortageFrom: 'The National Organisation for Medicines lists it as hard to find, from {from}.',
     shortageAdvice: 'Ask your pharmacist whether they have it or what else could work.',
     stock: 'We do not know which pharmacies have it. Call the pharmacy before you go.',
     priceSource: 'Price source: Ministry of Health, price list of {date}',
-    shortageSource: 'Source: ΕΟΦ, list of {date}',
+    shortageSource: 'Source: National Organisation for Medicines, list of {date}',
   },
 
   /** Credits on the about page, after its own list. */
   credits: {
-    moh: 'Medicine prices: Ministry of Health, price lists (medicine search).',
-    eof: 'Medicines with limited availability: National Organisation for Medicines (ΕΟΦ).',
+    moh: 'Medicine prices in the medicine search: Ministry of Health, price lists.',
+    eof: 'Medicines that are hard to find: National Organisation for Medicines.',
   },
 
   ask: 'Ask your pharmacist. This is information, not medical advice.',
