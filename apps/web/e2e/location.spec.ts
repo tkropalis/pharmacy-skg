@@ -47,7 +47,7 @@ test.describe('with the location allowed (a returning visitor)', () => {
     await spyOnGeolocation(page);
     await page.goto('/');
     await waitForRows(page);
-    await expect(page.locator('.summary')).toContainText(text.summary.sortedByDistanceShort);
+    await expect(page.locator('ol.rows > li.row .row-distance').first()).toBeVisible();
     await expect(page.locator('.origin-chip')).toContainText(text.origin.myLocation);
     // No nearby card: there is a position.
     await expect(page.locator('.nearby')).toHaveCount(0);
@@ -68,7 +68,7 @@ test.describe('with the location allowed (a returning visitor)', () => {
     // Alphabetical until the fix arrives, with no card in the way.
     await expect(page.locator('.nearby')).toHaveCount(0);
     expect(await page.locator('ol.rows > li.row').count()).toBeGreaterThan(3);
-    await expect(page.locator('.summary')).toContainText(text.summary.sortedByDistanceShort, {
+    await expect(page.locator('.origin-chip')).toContainText(text.origin.myLocation, {
       timeout: 10_000,
     });
   });
@@ -79,7 +79,7 @@ test.describe('with the location allowed (a returning visitor)', () => {
   }) => {
     await page.goto('/');
     await waitForRows(page);
-    await expect(page.locator('.summary')).toContainText(text.summary.sortedByDistanceShort);
+    await expect(page.locator('ol.rows > li.row .row-distance').first()).toBeVisible();
     const firstDistance = () => page.locator('ol.rows > li.row .row-distance').first().innerText();
     const firstName = () => page.locator('ol.rows > li.row .row-name').first().innerText();
     const before = { distance: await firstDistance(), name: await firstName() };
@@ -118,8 +118,8 @@ test.describe('when the location is not given', () => {
     const cardBox = await card.boundingBox();
     const rowBox = await page.locator('ol.rows > li.row').first().boundingBox();
     expect(cardBox?.y ?? 0).toBeLessThan(rowBox?.y ?? 0);
-    // Sorted by name until an area is chosen.
-    await expect(page.locator('.summary')).toContainText(text.summary.sortedByName);
+    // Sorted by name until an area is chosen: no distances yet.
+    await expect(page.locator('ol.rows > li.row .row-distance')).toHaveCount(0);
     await expect(page.locator('.origin-chip')).toHaveCount(0);
 
     // The picker is inline in the card: no panel to dig through.
@@ -128,7 +128,7 @@ test.describe('when the location is not given', () => {
     await page.locator('.picker-item', { hasText: 'Καλαμαριά' }).click();
     await expect(page.locator('.nearby')).toHaveCount(0);
     await expect(page.locator('.origin-chip')).toContainText('Καλαμαριά');
-    await expect(page.locator('.summary')).toContainText(text.summary.sortedByDistanceShort);
+    await expect(page.locator('ol.rows > li.row .row-distance').first()).toBeVisible();
   });
 
   test('the origin chip switches to another area in two taps, and clearing it is remembered', async ({

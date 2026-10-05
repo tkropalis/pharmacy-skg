@@ -15,13 +15,10 @@
   --danger-bg: #fdecea;
   --danger-fg: #6b1510;
   --danger-border: #b42318;
-  --emergency-bg: #8a1a12;
-  --emergency-fg: #ffffff;
 
   --space: 1rem;
   --radius: 0.5rem;
   --content: 44rem;
-  --emergency-height: 2.75rem;
 
   /* Notches, status bars and the home indicator (needs viewport-fit=cover, see Base.astro). */
   --safe-t: env(safe-area-inset-top, 0px);
@@ -46,8 +43,6 @@
     --danger-bg: #3b1512;
     --danger-fg: #ffd9d4;
     --danger-border: #f08379;
-    --emergency-bg: #7a1710;
-    --emergency-fg: #ffffff;
   }
 }
 
@@ -60,7 +55,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  scroll-padding-top: calc(var(--emergency-height) + 0.5rem);
+  scroll-padding-top: 0.5rem;
 }
 
 body {

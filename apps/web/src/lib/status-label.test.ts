@@ -117,6 +117,8 @@ describe('describeStatus', () => {
       text: el,
     });
     expect(view.closingSoon).toBe(true);
+    // The list's short form counts down only now.
+    expect(view.short).toEqual({ label: 'Ανοιχτό', timing: 'κλείνει σε 25′' });
     expect(view.timing).toBe('κλείνει σε 25′ (21:00)');
   });
 
@@ -177,5 +179,20 @@ describe('describeStatus', () => {
     expect(view('2026-10-05T18:00:00Z').timing).toBe('ανοίγει σήμερα 21:00');
     expect(view('2026-10-07T05:00:00Z', 'en').timing).toBe('opens Wednesday 08:00');
     expect(view(null).timing).toBe('δεν γνωρίζουμε πότε ανοίγει');
+  });
+});
+
+describe('the short form, for the list', () => {
+  it('is a word or two and the closing time', () => {
+    const view = describeStatus({
+      status: open('2026-10-05T11:30:00Z', [{ kind: 'regular' }]),
+      at: new Date('2026-10-05T06:49:00Z'),
+      live: true,
+      locale: 'el',
+      text: el,
+    });
+    expect(view.short).toEqual({ label: 'Ανοιχτό', timing: 'έως 14:30' });
+    // The full wording stays for the details.
+    expect(view.label).toBe('Ανοιχτό (κανονικό ωράριο)');
   });
 });

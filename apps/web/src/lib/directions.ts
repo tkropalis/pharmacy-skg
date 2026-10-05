@@ -52,3 +52,15 @@ export function telUrl(phone: string): string {
   const digits = phone.replace(/[^\d+]/g, '');
   return `tel:${digits}`;
 }
+
+/**
+ * The app the row's one-tap directions button opens: Apple Maps on Apple devices (the maps app
+ * that is always there), Google Maps elsewhere. The other apps stay one tap further, in the
+ * row's details.
+ */
+export function defaultDirectionsApp(userAgent: string, maxTouchPoints = 0): DirectionsApp {
+  if (/iPhone|iPad|iPod/.test(userAgent)) return 'apple';
+  // iPadOS reports itself as a Mac; a Mac with touch is an iPad.
+  if (/Macintosh/.test(userAgent) && maxTouchPoints > 1) return 'apple';
+  return 'google';
+}

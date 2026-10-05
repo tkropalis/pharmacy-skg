@@ -30,24 +30,6 @@ async function refreshFreshness(): Promise<void> {
   }
 }
 
-/**
- * The emergency strip is sticky, so whatever scrolls or gets focus must stay clear of it
- * (WCAG 2.4.11). Its real height, which grows with large text, goes into --emergency-height,
- * which html's scroll-padding-top reads.
- */
-function trackEmergencyStrip(): void {
-  const strip = document.querySelector<HTMLElement>('.emergency');
-  if (strip === null || !('ResizeObserver' in window)) return;
-  const publish = () =>
-    document.documentElement.style.setProperty(
-      '--emergency-height',
-      `${strip.getBoundingClientRect().height}px`,
-    );
-  new ResizeObserver(publish).observe(strip);
-  publish();
-}
-
-trackEmergencyStrip();
 void refreshFreshness();
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'visible') void refreshFreshness();

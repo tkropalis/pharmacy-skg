@@ -8,7 +8,7 @@ export type SheetSize = 'small' | 'medium' | 'large';
 const SIZES: readonly SheetSize[] = ['small', 'medium', 'large'];
 
 /** The collapsed sheet shows the handle, the tabs and the count. */
-const SMALL_PX = 120;
+const SMALL_PX = 112;
 const MEDIUM_FRACTION = 0.6;
 /** On a short screen the default sheet still shows the summary and the first pharmacy. */
 const MEDIUM_MIN_PX = 400;

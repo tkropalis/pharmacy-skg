@@ -9,14 +9,6 @@ export const en: Dictionary = {
   skipToContent: 'Skip to content',
   tagline: 'Free and ad-free',
 
-  emergency: {
-    label: 'Emergency',
-    labelShort: 'SOS',
-    ambulance: 'Ambulance (EKAB)',
-    europe: 'European emergency number',
-    poison: 'Poison Centre',
-  },
-
   update: {
     available: 'A new version of the app is ready.',
     reload: 'Reload',

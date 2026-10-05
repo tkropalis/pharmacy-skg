@@ -7,22 +7,39 @@
 
 /* Fills what the strip and the header leave: the page itself never scrolls (global.css). */
 .hs {
-  --border-strong: #5f7469;
+  --border-strong: #7b8e85;
   --soft: #eef4f0;
+  --selected-bg: #e8effc;
+  --star: #a8660b;
+  /* Status colours, as text: at least 4.5:1 on the surface. The pins use the same hues. */
+  --kind-duty: #0a6b3b;
+  --kind-regular: #3f5f7f;
+  --kind-extended: #6a3aa8;
+  --kind-unknown: #8f4200;
+  --warn-text: #8f4200;
   position: relative;
+  /* Its own stacking context: the map's WebGL layer can never be drawn over the sheet. */
+  isolation: isolate;
   flex: 1 1 0;
   min-height: 0;
   overflow: hidden;
   background: var(--bg);
   color: var(--fg);
-  font-size: 1rem;
-  line-height: 1.45;
+  font-size: 0.9375rem;
+  line-height: 1.4;
 }
 
 @media (prefers-color-scheme: dark) {
   .hs {
-    --border-strong: #8aa398;
+    --border-strong: #5f7a6d;
     --soft: #1a2922;
+    --selected-bg: #172537;
+    --star: #f0c04a;
+    --kind-duty: #5fdc98;
+    --kind-regular: #a9c1d9;
+    --kind-extended: #c4a4f5;
+    --kind-unknown: #ffb26b;
+    --warn-text: #ffb26b;
   }
 }
 
@@ -71,6 +88,38 @@
   height: 44px;
 }
 
+/* The zoom buttons and the credit toggle take the app's surface, not MapLibre's white boxes. */
+.hs .map .maplibregl-ctrl-group {
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: var(--surface);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.22);
+}
+
+.hs .map .maplibregl-ctrl-group button + button {
+  border-top-color: var(--border);
+}
+
+.hs .map .maplibregl-ctrl-group button:hover {
+  background-color: var(--soft);
+}
+
+@media (prefers-color-scheme: dark) {
+  .hs .map .maplibregl-ctrl-group .maplibregl-ctrl-icon,
+  .hs .map .maplibregl-ctrl-attrib-button {
+    filter: invert(1);
+  }
+
+  .hs .map .maplibregl-ctrl-attrib.maplibregl-compact {
+    background: var(--surface);
+    color: var(--fg);
+  }
+
+  .hs .map .maplibregl-ctrl-attrib a {
+    color: var(--fg);
+  }
+}
+
 .map .maplibregl-ctrl-attrib {
   font-size: 0.75rem;
 }
@@ -85,7 +134,12 @@
   border-radius: 22px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 24px;
+  background-size: 18px;
+  opacity: 0.75;
+}
+
+.hs .map .maplibregl-ctrl-attrib.maplibregl-compact {
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.22);
 }
 
 .hs .map .maplibregl-ctrl-attrib.maplibregl-compact {
@@ -123,18 +177,31 @@
   z-index: 5;
   display: flex;
   flex-direction: column;
-  height: calc(120px + var(--safe-b));
+  height: calc(var(--sheet-small) + var(--safe-b));
   /* The room under the content is for the home indicator and the browser's floating toolbar. */
   padding-bottom: var(--safe-b);
   overflow: hidden;
   background: var(--surface);
   border-radius: 1rem 1rem 0 0;
-  box-shadow: 0 -2px 14px rgb(0 0 0 / 0.25);
-  transition: height 0.25s ease;
+  box-shadow: 0 -2px 16px rgb(0 0 0 / 0.22);
+  /*
+   * A compositing layer of its own. Without it iOS Safari can draw the map's canvas over the
+   * sheet's background and header while the scrolling list stays on top (owner's screenshot,
+   * 5 Oct 2026): the list then floats over the map with nothing behind it.
+   */
+  transform: translateZ(0);
+  /* Height, not transform: the list's scroll area must end at the sheet's visible edge. The
+     snap is short and happens only on a tap or a release. */
+  transition: height 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.sheet {
+  /* Sheet.tsx SMALL_PX: the handle, the tabs and the summary. */
+  --sheet-small: 112px;
 }
 
 .sheet[data-size='small'] {
-  height: calc(120px + var(--safe-b));
+  height: calc(var(--sheet-small) + var(--safe-b));
 }
 
 /* The "new version" notice (global.css) sits at the bottom of the screen, above the safe area:
@@ -172,7 +239,7 @@ html.has-update-toast .sheet {
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 44px;
+  min-height: 28px;
   padding: 0;
   border: 0;
   border-radius: 1rem 1rem 0 0;
@@ -183,16 +250,17 @@ html.has-update-toast .sheet {
 }
 
 .sheet-grip {
-  width: 2.5rem;
-  height: 0.3125rem;
+  width: 2.25rem;
+  height: 0.25rem;
   border-radius: 0.25rem;
   background: var(--border-strong);
 }
 
 .sheet-chevron {
   position: absolute;
-  inset-inline-end: 0.5rem;
+  inset-inline-end: 0.75rem;
   display: flex;
+  color: var(--muted);
   transform: rotate(180deg);
 }
 
@@ -202,6 +270,7 @@ html.has-update-toast .sheet {
 
 .sheet-header {
   flex: none;
+  background: var(--surface);
   /* Phones in landscape: keep text and buttons clear of the notch (viewport-fit=cover). */
   padding-inline: max(1rem, var(--safe-l)) max(1rem, var(--safe-r));
 }
@@ -211,7 +280,9 @@ html.has-update-toast .sheet {
   min-height: 0;
   overflow-y: auto;
   overscroll-behavior: contain;
-  padding: 0.5rem max(1rem, var(--safe-r)) 1.5rem max(1rem, var(--safe-l));
+  padding: 0 max(1rem, var(--safe-r)) 1.5rem max(1rem, var(--safe-l));
+  background: var(--surface);
+  border-top: 1px solid var(--border);
 }
 
 @media (min-width: 900px) {
@@ -252,18 +323,22 @@ html.has-update-toast .sheet {
 .tabs {
   display: flex;
   gap: 0.25rem;
-  border-bottom: 2px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .tabs [role='tab'] {
   flex: 1;
-  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
   padding: 0.25rem 0.5rem;
   border: 0;
-  border-bottom: 4px solid transparent;
-  margin-bottom: -2px;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
   background: transparent;
   color: var(--muted);
+  font-size: 0.9375rem;
   font-weight: 600;
   cursor: pointer;
 }
@@ -281,41 +356,59 @@ html.has-update-toast .sheet {
   border-radius: 1rem;
   background: var(--soft);
   border: 1px solid var(--border-strong);
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   line-height: 1.4;
+}
+
+.status-line {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 0.5rem 0;
 }
 
 .summary {
   /* One line is kept free, so the sheet does not jump when the answer arrives. */
   min-height: 1.4em;
-  margin: 0.375rem 0 0;
-  font-size: 0.875rem;
+  margin: 0;
+  font-size: 0.8125rem;
+  font-weight: 600;
   line-height: 1.4;
-  color: var(--muted);
+  color: var(--fg);
 }
 
 /* The age and the source of the data stay in view next to the answer. */
 .fresh {
   /* One line is kept free, so the sheet does not jump when meta.json arrives. */
+  flex: none;
   min-height: 1.4em;
-  margin: 0 0 0.25rem;
-  font-size: 0.8125rem;
+  margin: 0;
+  font-size: 0.75rem;
   line-height: 1.4;
   color: var(--muted);
+}
+
+.fresh a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.fresh a:hover {
+  text-decoration: underline;
 }
 
 .row-warning {
   margin: 0.25rem 0 0;
   padding: 0.25rem 0.5rem;
-  border-inline-start: 4px solid var(--warn-border);
+  border-radius: 0.375rem;
   background: var(--warn-bg);
   color: var(--warn-fg);
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
 }
 
 .action.fav[data-saved='true'] {
-  border-color: var(--accent);
-  background: var(--soft);
+  color: var(--star);
 }
 
 /* --- Buttons and fields ----------------------------------------------------- */
@@ -325,18 +418,29 @@ html.has-update-toast .sheet {
   align-items: center;
   justify-content: center;
   gap: 0.375rem;
-  min-width: 44px;
-  min-height: 44px;
+  min-width: 40px;
+  min-height: 40px;
   padding: 0.25rem 0.75rem;
-  border: 2px solid var(--border-strong);
-  border-radius: var(--radius);
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
   background: var(--surface);
   color: var(--fg);
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.2;
   text-decoration: none;
   cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.action:hover {
+  background: var(--soft);
+}
+
+.action:active {
+  transform: scale(0.97);
 }
 
 .action.primary {
@@ -345,8 +449,15 @@ html.has-update-toast .sheet {
   color: var(--on-accent);
 }
 
+.action.primary:hover {
+  background: var(--accent);
+  filter: brightness(1.06);
+}
+
 .action.small {
-  padding-inline: 0.625rem;
+  min-height: 36px;
+  padding-inline: 0.75rem;
+  font-size: 0.8125rem;
 }
 
 .action:disabled {
@@ -418,10 +529,11 @@ html.has-update-toast .sheet {
 .notice {
   margin: 0.25rem 0 0.5rem;
   padding: 0.5rem 0.75rem;
-  border-inline-start: 4px solid var(--warn-border);
+  border: 1px solid var(--warn-border);
+  border-radius: 0.5rem;
   background: var(--warn-bg);
   color: var(--warn-fg);
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
 }
 
 .notice.strong {
@@ -573,31 +685,65 @@ html.has-update-toast .sheet {
   font-size: 0.9375rem;
 }
 
-/* --- The origin chip, the nearby card and the list filter ----------------------- */
+/* --- The toolbar: origin chip and list filter ------------------------------------ */
 
-/* Where the distances are measured from: always in the sheet header, one tap to change. */
-.origin-chip {
+/* One row under the summary: where distances are measured from, then the filter. It scrolls
+   sideways rather than wrapping when the text is large. */
+.sheet-toolbar {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  width: 100%;
-  min-height: 44px;
-  margin: 0.125rem 0 0.25rem;
-  padding: 0.25rem 0.75rem;
-  border: 2px solid var(--border-strong);
+  gap: 0.375rem;
+  margin: 0 calc(-1 * max(1rem, var(--safe-l))) 0 calc(-1 * max(1rem, var(--safe-r)));
+  padding: 0 max(1rem, var(--safe-r)) 0.625rem max(1rem, var(--safe-l));
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.sheet-toolbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Where the distances are measured from: one tap to change. */
+.origin-chip,
+.chip {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3125rem;
+  min-height: 36px;
+  padding: 0.125rem 0.625rem;
+  border: 1px solid var(--border-strong);
   border-radius: 999px;
-  background: var(--soft);
+  background: var(--surface);
   color: var(--fg);
+  font-size: 0.8125rem;
   font-weight: 600;
-  text-align: start;
+  line-height: 1.2;
+  white-space: nowrap;
   cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.origin-chip {
+  min-width: 0;
+  max-width: 12rem;
+  padding-inline: 0.5rem 0.375rem;
+  background: var(--soft);
+  border-color: var(--border);
+}
+
+.origin-chip .icon {
+  width: 16px;
+  height: 16px;
+  color: var(--accent);
 }
 
 .origin-chip .chip-label {
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .origin-chip .chip-when {
@@ -610,16 +756,34 @@ html.has-update-toast .sheet {
   content: '· ';
 }
 
-.origin-chip .chev {
-  margin-inline-start: auto;
+.origin-chip .chev .icon {
+  color: var(--muted);
 }
+
+.filter-chips {
+  display: flex;
+  gap: 0.375rem;
+}
+
+.chip:hover {
+  background: var(--soft);
+}
+
+/* The chosen chip is filled; the others are outlines. */
+.chip[aria-pressed='true'] {
+  border-color: var(--fg);
+  background: var(--fg);
+  color: var(--surface);
+}
+
+/* --- The "see the nearest" card (no position yet) --------------------------------- */
 
 .nearby {
   position: relative;
-  margin: 0.5rem 0;
+  margin: 0.75rem 0 0.25rem;
   padding: 0 0.75rem 0.75rem;
-  border: 2px solid var(--accent);
-  border-radius: var(--radius);
+  border: 1px solid var(--border-strong);
+  border-radius: 0.75rem;
   background: var(--soft);
 }
 
@@ -628,7 +792,7 @@ html.has-update-toast .sheet {
   align-items: center;
   min-height: 40px;
   margin: 0 2.75rem 0 0;
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
 }
 
 /* A 44px target in the corner of the card, level with the title. */
@@ -644,18 +808,13 @@ html.has-update-toast .sheet {
   padding: 0;
   border: 0;
   background: transparent;
-  color: var(--fg);
+  color: var(--muted);
   cursor: pointer;
 }
 
 .nearby-body .control-row {
   flex-wrap: wrap;
   gap: 0.375rem;
-}
-
-.nearby-body .action {
-  padding-inline: 0.5rem;
-  font-size: 0.875rem;
 }
 
 .nearby-body .action.primary {
@@ -669,143 +828,236 @@ html.has-update-toast .sheet {
   line-height: 1.35;
 }
 
-.filter-chips {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.375rem;
-  margin: 0.25rem 0 0.5rem;
-}
-
-.chip {
-  min-height: 44px;
-  padding: 0.125rem 0.5rem;
-  line-height: 1.2;
-  text-align: center;
-  border: 2px solid var(--border-strong);
-  border-radius: 999px;
-  background: var(--surface);
-  color: var(--fg);
-  font-size: 0.8125rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-/* The chosen chip is filled and bold; the others are outlines. */
-.chip[aria-pressed='true'] {
-  border-color: var(--accent);
-  background: var(--accent);
-  color: var(--on-accent);
-  font-weight: 700;
-}
-
 /* --- Rows --------------------------------------------------------------------- */
 
+/*
+ * A plain list, as in a maps app: rows divided by hairlines, no boxes. A row is the name, one
+ * status line and one address line, with Call and Directions at its end. Everything else is
+ * one tap away: the name button stretches over the row and opens the details.
+ */
 .rows {
-  margin: 0.5rem 0;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .row {
-  margin: 0 0 0.75rem;
-  padding: 0.75rem;
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius);
-  background: var(--surface);
+  padding: 0.625rem 0;
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: 0.5rem;
 }
 
+.row:last-child {
+  border-bottom: 0;
+}
+
+/* The pharmacy chosen on the map: a tinted band, edge to edge. */
 .row[data-selected='true'] {
-  border-color: var(--focus);
-  box-shadow: 0 0 0 3px var(--focus);
+  margin-inline: calc(-1 * max(1rem, var(--safe-l))) calc(-1 * max(1rem, var(--safe-r)));
+  padding-inline: max(1rem, var(--safe-l)) max(1rem, var(--safe-r));
+  background: var(--selected-bg);
 }
 
 .row p {
-  margin: 0.125rem 0;
+  margin: 0;
 }
 
-.row-head {
+.row-main {
+  position: relative;
   display: flex;
-  align-items: flex-start;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 0.625rem;
 }
 
 .row-pin {
   flex: none;
   display: flex;
+  align-self: flex-start;
   margin-top: 0.125rem;
 }
 
-.row-name {
+.row-text {
   flex: 1;
+  min-width: 0;
+}
+
+.row-name {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.875rem;
+  font-weight: 650;
   line-height: 1.3;
+  letter-spacing: 0.01em;
 }
 
-.row-name a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
+.row-toggle {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0;
+  border: 0;
+  background: none;
   color: var(--fg);
+  font: inherit;
+  letter-spacing: inherit;
+  text-align: start;
+  cursor: pointer;
 }
 
-.row-distance {
-  flex: none;
-  font-weight: 700;
+/* The tap area is the whole row; Call and Directions sit above it. */
+.row-toggle::after {
+  content: '';
+  position: absolute;
+  inset: -0.625rem 0;
+}
+
+.row-toggle:focus-visible {
+  outline: none;
+}
+
+.row-toggle:focus-visible::after {
+  outline: 3px solid var(--focus);
+  outline-offset: -2px;
+  border-radius: 0.5rem;
+}
+
+.row-status,
+.row-address {
+  overflow: hidden;
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .row-status {
-  margin-top: 0.375rem;
+  margin-top: 0.125rem !important;
+  color: var(--muted);
+}
+
+.row-status strong {
+  font-weight: 600;
+  color: var(--kind, var(--fg));
+}
+
+.row[data-kind='duty'] {
+  --kind: var(--kind-duty);
+}
+
+.row[data-kind='regular'] {
+  --kind: var(--kind-regular);
+}
+
+.row[data-kind='extended'] {
+  --kind: var(--kind-extended);
+}
+
+.row[data-kind='duty-unknown'] {
+  --kind: var(--kind-unknown);
 }
 
 .row-timing[data-closing-soon='true'] {
-  font-weight: 700;
-}
-
-.badge {
-  display: inline-block;
-  padding: 0 0.5rem;
-  border: 2px solid var(--warn-border);
-  border-radius: 0.25rem;
-  background: var(--warn-bg);
-  color: var(--warn-fg);
-  font-weight: 700;
+  color: var(--warn-text);
+  font-weight: 600;
 }
 
 .row-address {
   color: var(--muted);
-  font-size: 0.9375rem;
+}
+
+.row-distance {
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: var(--fg);
+}
+
+.row-quick {
+  position: relative;
+  z-index: 1;
+  flex: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.round {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--soft);
+  color: var(--fg);
+  text-decoration: none;
+  transition: filter 0.15s ease;
+}
+
+.round.call {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.round:hover {
+  filter: brightness(1.08);
+}
+
+.round:active {
+  transform: scale(0.95);
+}
+
+.row-details {
+  margin: 0.5rem 0 0.125rem;
+  padding-inline-start: calc(20px + 0.625rem);
+}
+
+.row-full {
+  font-size: 0.8125rem;
+  color: var(--muted);
 }
 
 .row-note {
-  display: block;
+  font-size: 0.8125rem;
   font-style: italic;
-}
-
-.row-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  color: var(--muted);
 }
 
 .row-menu {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem;
-  margin-top: 0.5rem !important;
-  padding: 0.5rem;
-  border-radius: var(--radius);
-  background: var(--soft);
+  gap: 0 1rem;
+  margin-top: 0.25rem !important;
 }
 
-.row-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0 0.5rem;
-  margin-top: 0.25rem !important;
+/* Plain links in the details: no more boxes. */
+.detail-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-height: 36px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.detail-link:hover {
+  text-decoration: underline;
+}
+
+.detail-link.fav[data-saved='true'] .icon {
+  color: var(--star);
+}
+
+.row-menu-label {
+  font-size: 0.8125rem;
+  color: var(--muted);
 }
 
 .more {
@@ -813,6 +1065,7 @@ html.has-update-toast .sheet {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem 1rem;
+  padding-top: 0.5rem;
 }
 
 .duties {

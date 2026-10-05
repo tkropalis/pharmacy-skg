@@ -1,5 +1,11 @@
 import { describe, expect, it } from 'vitest';
-import { appleLegacyUrl, directionsTarget, directionsUrl, telUrl } from './directions.ts';
+import {
+  appleLegacyUrl,
+  defaultDirectionsApp,
+  directionsTarget,
+  directionsUrl,
+  telUrl,
+} from './directions.ts';
 
 const exact = { lat: 40.632612, lon: 22.940912 };
 
@@ -53,5 +59,20 @@ describe('telUrl', () => {
   it('keeps digits and a leading plus', () => {
     expect(telUrl('2310 023 026')).toBe('tel:2310023026');
     expect(telUrl('+30 2310-023026')).toBe('tel:+302310023026');
+  });
+});
+
+describe('defaultDirectionsApp', () => {
+  it('opens Apple Maps on iPhone and iPad, Google Maps elsewhere', () => {
+    expect(defaultDirectionsApp('Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X)')).toBe(
+      'apple',
+    );
+    expect(defaultDirectionsApp('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)', 5)).toBe(
+      'apple',
+    );
+    expect(defaultDirectionsApp('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)', 0)).toBe(
+      'google',
+    );
+    expect(defaultDirectionsApp('Mozilla/5.0 (Linux; Android 15; Pixel 9)')).toBe('google');
   });
 });

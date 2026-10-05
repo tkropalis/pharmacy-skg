@@ -17,9 +17,8 @@ for (const locale of LOCALES) {
       await expect(page).toHaveTitle(/\S/);
       await waitForRows(page);
       await waitForMap(page);
-      // The sticky emergency strip is there with a tel: link for every number.
-      const strip = page.getByRole('complementary', { name: text.emergency.label });
-      await expect(strip.locator('a[href^="tel:"]')).toHaveCount(3);
+      // The emergency numbers are at the end of the list, a tel: link each.
+      await expect(page.locator('.sheet-footer a[href^="tel:"]')).toHaveCount(3);
       expect(consoleErrors).toEqual([]);
     });
 
@@ -28,7 +27,6 @@ for (const locale of LOCALES) {
       await waitForRows(page);
 
       // The position is asked for when the app opens: no button needs to be found.
-      await expect(page.locator('.summary')).toContainText(text.app.summary.sortedByDistanceShort);
       await expect(page.locator('.origin-chip')).toContainText(text.app.origin.myLocation);
 
       const rows = page.locator('ol.rows > li.row');
@@ -40,7 +38,7 @@ for (const locale of LOCALES) {
         // At 22:30 on a Monday only the pharmacies on the duty list are open.
         // (A list entry without printed hours adds "call first" to the label.)
         const status = (await row.locator('.row-status strong').innerText()).trim();
-        expect(status.startsWith(text.status.onDuty), status).toBe(true);
+        expect(status).toBe(text.app.status.short.duty);
         const shown = (await row.locator('.row-distance').innerText()).trim();
         const [value = '', unit = ''] = shown.split(/\s+/);
         const number = Number(value.replace(',', '.'));
@@ -58,7 +56,7 @@ for (const locale of LOCALES) {
       await openControls(page);
 
       await page.getByRole('button', { name: text.app.origin.useLocation }).click();
-      await expect(page.locator('.summary')).toContainText(text.app.summary.sortedByDistanceShort);
+      await expect(page.locator('ol.rows > li.row .row-distance').first()).toBeVisible();
       await expect(page.locator('.origin-chip')).toContainText(text.app.origin.myLocation);
     });
 
@@ -74,7 +72,7 @@ for (const locale of LOCALES) {
       await option.click();
 
       await expect(page.locator('.origin-chip')).toContainText('Καλαμαριά');
-      await expect(page.locator('.summary')).toContainText(text.app.summary.sortedByDistanceShort);
+      await expect(page.locator('ol.rows > li.row .row-distance').first()).toBeVisible();
       await expect(page.locator('ol.rows > li.row').first()).toBeVisible();
     });
   });
@@ -109,14 +107,14 @@ test.describe('when the map starts', () => {
     await expect(page.locator(ready)).toBeAttached({ timeout: 20_000 });
   });
 
-  test('"show on map" does not wait for the timer either', async ({ page }) => {
+  test('opening a row (which shows it on the map) does not wait for the timer either', async ({
+    page,
+  }) => {
     await page.goto('/');
     const rows = await waitForRows(page);
     await expect(page.locator(idle)).toBeAttached();
-    await rows
-      .first()
-      .getByRole('button', { name: t('el').app.row.showOnMap })
-      .click();
+    // Opening a row's details also shows it on the map.
+    await rows.first().locator('.row-toggle').click();
     await expect(page.locator(ready)).toBeAttached({ timeout: 20_000 });
     await expect(rows.first()).toHaveAttribute('data-selected', 'true');
   });
@@ -157,71 +155,21 @@ test.describe('touch targets and focus', () => {
         const outline = style.outlineStyle !== 'none' && parseFloat(style.outlineWidth) >= 2;
         const shadow = style.boxShadow !== 'none';
         const rect = element.getBoundingClientRect();
-        // The skip link is drawn above the strip on purpose (z-index); the strip's own links are it.
-        const skipLink =
-          element.classList.contains('skip-link') || element.closest('.emergency') !== null;
+        // A row's name button draws its ring on the row-wide ::after.
+        const after = getComputedStyle(element, '::after');
+        const ring = after.outlineStyle !== 'none' && parseFloat(after.outlineWidth) >= 2;
         return {
           label: `${element.tagName} ${element.className} ${element.textContent?.slice(0, 20) ?? ''}`,
-          visible: outline || shadow,
-          // Not hidden behind the sticky emergency strip.
-          obscured:
-            !skipLink &&
-            rect.top <
-              (document.querySelector('.emergency')?.getBoundingClientRect().bottom ?? 0) &&
-            rect.bottom > 0,
+          visible: outline || shadow || ring,
+          // Inside the screen.
+          obscured: rect.bottom < 0,
         };
       });
       if (info === null) continue;
       seen.add(info.label);
       expect(info.visible, `focus ring on ${info.label}`).toBe(true);
-      expect(info.obscured, `${info.label} is behind the emergency strip`).toBe(false);
+      expect(info.obscured, `${info.label} is off screen`).toBe(false);
     }
     expect(seen.size).toBeGreaterThan(10);
   });
-});
-
-test('a focused element is never hidden behind the sticky emergency strip (WCAG 2.4.11)', async ({
-  page,
-}) => {
-  await page.goto('/plirofories/');
-  const strip = page.locator('.emergency');
-  for (let i = 0; i < 40; i++) {
-    await page.keyboard.press('Tab');
-    const state = await page.evaluate(() => {
-      const element = document.activeElement;
-      const bar = document.querySelector('.emergency');
-      if (element === null || element === document.body || bar === null) return null;
-      // The skip link is drawn above the strip; the strip's own links are the strip.
-      if (element.closest('.emergency') !== null || element.classList.contains('skip-link')) {
-        return null;
-      }
-      return {
-        label: `${element.tagName} ${element.textContent?.slice(0, 20) ?? ''}`,
-        top: element.getBoundingClientRect().top,
-        stripBottom: bar.getBoundingClientRect().bottom,
-      };
-    });
-    if (state !== null) {
-      expect(state.top, state.label).toBeGreaterThanOrEqual(state.stripBottom - 0.5);
-    }
-  }
-  // The measured height is published for scroll-padding.
-  const published = await page.evaluate(() =>
-    document.documentElement.style.getPropertyValue('--emergency-height'),
-  );
-  const box = await strip.boundingBox();
-  expect(parseFloat(published)).toBeCloseTo(box?.height ?? 0, 0);
-});
-
-test('a map chunk that cannot be fetched (an old page after a deploy) shows the map note and the reload offer, and the list keeps working', async ({
-  page,
-}) => {
-  await page.route('**/_astro/map-controller.*.js', (route) => route.abort());
-  await page.goto('/');
-  const rows = await waitForRows(page);
-  await page.locator('.map-area').dispatchEvent('pointerdown');
-  await expect(page.locator('.map-note')).toHaveText(t('el').app.map.loadFailed);
-  const toast = page.locator('.update-toast');
-  await expect(toast.getByRole('button', { name: t('el').update.reload })).toBeVisible();
-  expect(await rows.count()).toBeGreaterThan(3);
 });

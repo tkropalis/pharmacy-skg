@@ -1,4 +1,4 @@
-/** Small inline icons (decorative: every button has a text label too). */
+/** Small inline icons (decorative: every button has a text label or an accessible name). */
 const PATHS = {
   phone:
     'M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z',
@@ -18,19 +18,20 @@ const PATHS = {
   sliders:
     'M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z',
   chevron: 'M7.4 8.6L12 13.2l4.6-4.6L18 10l-6 6-6-6z',
+  more: 'M6 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm6 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm6 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z',
   close:
     'M18.3 5.7L12 12l6.3 6.3-1.4 1.4L10.6 13.4 4.3 19.7 2.9 18.3 9.2 12 2.9 5.7 4.3 4.3l6.3 6.3 6.3-6.3z',
 } as const;
 
 export type IconName = keyof typeof PATHS;
 
-export function Icon({ name }: { readonly name: IconName }) {
+export function Icon({ name, size = 20 }: { readonly name: IconName; readonly size?: number }) {
   return (
     <svg
       className="icon"
       viewBox="0 0 24 24"
-      width="20"
-      height="20"
+      width={size}
+      height={size}
       aria-hidden="true"
       focusable="false"
     >
