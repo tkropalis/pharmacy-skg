@@ -10,6 +10,8 @@ import { STATUS_LABELS } from './status-labels.ts';
 
 export const el = {
   localeName: 'Ελληνικά',
+  /** The two-letter label of the language switch on a phone (its accessible name is localeName). */
+  localeCode: 'ΕΛ',
   languageSwitcherLabel: 'Γλώσσα',
   skipToContent: 'Μετάβαση στο περιεχόμενο',
   tagline: 'Δωρεάν και χωρίς διαφημίσεις',
@@ -37,24 +39,16 @@ export const el = {
 
   footer: {
     lastUpdatedLabel: 'Τελευταία ενημέρωση:',
-    sourcesHeading: 'Πηγές δεδομένων',
-    mapHeading: 'Χάρτης',
     navLabel: 'Πληροφορίες',
     disclaimer: 'Καλέστε πριν πάτε. Δεν αποτελεί ιατρική συμβουλή.',
     about: 'Σχετικά και αποποίηση ευθύνης',
+    aboutShort: 'Σχετικά',
     privacy: 'Απόρρητο',
     report: 'Αναφορά προβλήματος',
     sourceCode: 'Κώδικας στο GitHub',
-    sourceNotes: {
-      fsth: 'Λίστες εφημεριών (ΦΣΘ, μέσω thess.guide)',
-      pkm: 'Διευρυμένο ωράριο λειτουργίας',
-      overture: 'Θέσεις φαρμακείων (CDLA-Permissive-2.0)',
-      osm: 'Γεωκωδικοποίηση μέσω Nominatim (ODbL)',
-    },
-    thessGuideNote: 'αντίγραφα των λιστών ΦΣΘ',
-    openFreeMapNote: 'πλακίδια χάρτη',
-    openMapTilesNote: 'σχήμα δεδομένων χάρτη',
-    openStreetMapNote: 'δεδομένα χάρτη, © συντελεστές OpenStreetMap (ODbL)',
+    creditsLine:
+      'Δεδομένα: ΦΣΘ (μέσω thess.guide), ΠΚΜ, Overture, OpenStreetMap · Χάρτης: OpenFreeMap',
+    creditsMore: 'Πηγές και άδειες χρήσης',
   },
 
   home: {

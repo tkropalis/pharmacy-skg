@@ -185,10 +185,16 @@ export const appEn: Dictionary['app'] = {
 
   source: {
     updated: 'Updated',
-    sources: 'Source: ΦΣΘ via thess.guide, ΠΚΜ',
     short: 'ΦΣΘ (via thess.guide)',
-    map: 'Map: OpenFreeMap © OpenMapTiles © OpenStreetMap contributors',
-    callFirst: 'Call before you go.',
+  },
+
+  footer: {
+    label: 'Information',
+    about: 'About',
+    privacy: 'Privacy',
+    report: 'Report a problem',
+    sources: 'Sources',
+    disclaimer: 'Call before you go. Not medical advice.',
   },
 
   map: {

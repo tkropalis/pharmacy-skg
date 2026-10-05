@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { KeyboardEvent } from 'react';
 import type { Locale } from '@pharmacy-skg/core';
 import { THESSALONIKI, localToInstant, zonedDate, zonedParts } from '@pharmacy-skg/core';
@@ -6,11 +6,12 @@ import type { Dictionary } from '../../i18n/index.ts';
 import { addDays, dateRange } from '../../lib/dates.ts';
 import { upcomingDuties } from '../../lib/duties.ts';
 import { coverage, distanceMetres, publishedDuties } from '../../lib/engine.ts';
-import { formatUpdatedAt, formatUpdatedShort } from '../../lib/freshness.ts';
+import { formatUpdatedShort } from '../../lib/freshness.ts';
 import { groupList, groupNames, groupNear } from '../../lib/groups.ts';
 import { deviceZoneDiffers, fill, shortIsoDate } from '../../lib/format.ts';
 import { buildRows, rowFor } from '../../lib/list.ts';
 import type { Origin } from '../../lib/list.ts';
+import { localizedPath } from '../../i18n/routes.ts';
 import { buildLocalities } from '../../lib/places.ts';
 import type { Locality } from '../../lib/places.ts';
 import { AREA_KEY, readItem, writeItem } from '../../lib/storage.ts';
@@ -112,27 +113,6 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   const at = live ? now : (customAt ?? now);
   const today = zonedDate(now, TIME_ZONE);
   const atDate = zonedDate(at, TIME_ZONE);
-
-  // The screen fills what is left of the first viewport below the header.
-  useLayoutEffect(() => {
-    const element = rootRef.current;
-    if (element === null) return;
-    let lastWidth = 0;
-    let lastHeight = 0;
-    const fit = () => {
-      const width = window.innerWidth;
-      const height = window.innerHeight;
-      // Browser bars sliding in and out change the height a little; ignore that.
-      if (width === lastWidth && Math.abs(height - lastHeight) < 150) return;
-      lastWidth = width;
-      lastHeight = height;
-      const top = element.getBoundingClientRect().top + window.scrollY;
-      element.style.setProperty('--hs-h', `${Math.max(480, Math.round(height - top))}px`);
-    };
-    fit();
-    window.addEventListener('resize', fit);
-    return () => window.removeEventListener('resize', fit);
-  }, []);
 
   // --- Data for the chosen moment -------------------------------------------------
 
@@ -643,17 +623,24 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
 
           {/* Not while loading: it would sit under the short loading note and then be pushed away. */}
           {state.status !== 'loading' && (
-            <footer className="source">
-              {meta && (
-                <p>
-                  {text.source.updated}{' '}
-                  <time dateTime={meta.updatedAt}>{formatUpdatedAt(meta.updatedAt, locale)}</time>
-                  {' · '}
-                  {text.source.sources}
-                </p>
-              )}
-              <p>{text.source.map}</p>
-              <p>{text.source.callFirst}</p>
+            <footer className="sheet-footer">
+              <nav aria-label={text.footer.label}>
+                <ul className="footer-links">
+                  <li>
+                    <a href={localizedPath(locale, 'about')}>{text.footer.about}</a>
+                  </li>
+                  <li>
+                    <a href={localizedPath(locale, 'privacy')}>{text.footer.privacy}</a>
+                  </li>
+                  <li>
+                    <a href={localizedPath(locale, 'report')}>{text.footer.report}</a>
+                  </li>
+                  <li>
+                    <a href={`${localizedPath(locale, 'about')}#credits`}>{text.footer.sources}</a>
+                  </li>
+                </ul>
+              </nav>
+              <p className="footer-note">{text.footer.disclaimer}</p>
             </footer>
           )}
         </div>

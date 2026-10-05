@@ -60,9 +60,11 @@ const dutyHref = dutyIndexPath(locale);
 </script>
 
 <style>
+  /* The page is an app viewport (global.css): the region fills what the bars leave. */
   .app-region {
-    /* Keeps the page from jumping when the app replaces this content. */
-    min-height: calc(100dvh - 7rem);
+    flex: 1 1 0;
+    min-height: 0;
+    overflow: auto;
   }
 
   .fallback {

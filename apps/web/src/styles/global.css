@@ -22,6 +22,12 @@
   --radius: 0.5rem;
   --content: 44rem;
   --emergency-height: 2.75rem;
+
+  /* Notches, status bars and the home indicator (needs viewport-fit=cover, see Base.astro). */
+  --safe-t: env(safe-area-inset-top, 0px);
+  --safe-r: env(safe-area-inset-right, 0px);
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-l: env(safe-area-inset-left, 0px);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -79,6 +85,30 @@ main {
   flex: 1 0 auto;
 }
 
+/*
+ * The home screen is an app viewport: exactly the visible screen (dvh follows the browser's
+ * toolbars, vh is the fallback), a page that does not scroll, and one scrolling list inside the
+ * sheet. Everything else (strip, header, banner) keeps its height and the map takes the rest.
+ */
+html.app,
+body.app {
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+body.app {
+  min-height: 0;
+}
+
+body.app main {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  min-height: 0;
+}
+
 h1,
 h2,
 h3 {
@@ -119,7 +149,7 @@ a {
   width: 100%;
   max-width: var(--content);
   margin-inline: auto;
-  padding-inline: var(--space);
+  padding-inline: max(var(--space), var(--safe-l)) max(var(--space), var(--safe-r));
 }
 
 .prose {
@@ -188,7 +218,7 @@ a {
 .update-region {
   position: fixed;
   inset-inline: 0.75rem;
-  bottom: 0.75rem;
+  bottom: calc(0.75rem + var(--safe-b));
   z-index: 60;
   max-width: 28rem;
   margin-inline: auto;
@@ -237,6 +267,11 @@ a {
 
 html.has-update-toast body {
   padding-bottom: var(--update-toast-space, 5rem);
+}
+
+/* The home screen does not scroll; its sheet lifts itself (app.css). */
+html.has-update-toast body.app {
+  padding-bottom: 0;
 }
 
 .callout {

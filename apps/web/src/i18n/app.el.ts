@@ -192,10 +192,16 @@ export const appEl = {
 
   source: {
     updated: 'Ενημέρωση',
-    sources: 'Πηγή: ΦΣΘ μέσω thess.guide, ΠΚΜ',
     short: 'ΦΣΘ (μέσω thess.guide)',
-    map: 'Χάρτης: OpenFreeMap © OpenMapTiles © OpenStreetMap',
-    callFirst: 'Καλέστε πριν πάτε.',
+  },
+
+  footer: {
+    label: 'Πληροφορίες',
+    about: 'Σχετικά',
+    privacy: 'Απόρρητο',
+    report: 'Αναφορά προβλήματος',
+    sources: 'Πηγές',
+    disclaimer: 'Καλέστε πριν πάτε. Δεν αποτελεί ιατρική συμβουλή.',
   },
 
   map: {

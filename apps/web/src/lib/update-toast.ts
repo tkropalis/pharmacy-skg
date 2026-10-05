@@ -41,9 +41,12 @@ function clearSpace(): void {
 function reserveSpace(toast: HTMLElement): void {
   const root = document.documentElement;
   const publish = () => {
-    // The notice's height plus the gap it sits above the screen's edge.
+    // The notice's height plus the gap it sits above the screen's edge (and the home indicator).
     const { height } = toast.getBoundingClientRect();
-    root.style.setProperty(SPACE_PROPERTY, `calc(${Math.ceil(height)}px + 1.5rem)`);
+    root.style.setProperty(
+      SPACE_PROPERTY,
+      `calc(${Math.ceil(height)}px + 1.5rem + env(safe-area-inset-bottom, 0px))`,
+    );
   };
   root.classList.add(ACTIVE_CLASS);
   publish();

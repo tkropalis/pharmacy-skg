@@ -4,6 +4,7 @@ import type { Dictionary } from './index.ts';
 
 export const en: Dictionary = {
   localeName: 'English',
+  localeCode: 'EN',
   languageSwitcherLabel: 'Language',
   skipToContent: 'Skip to content',
   tagline: 'Free and ad-free',
@@ -31,24 +32,15 @@ export const en: Dictionary = {
 
   footer: {
     lastUpdatedLabel: 'Last updated:',
-    sourcesHeading: 'Data sources',
-    mapHeading: 'Map',
     navLabel: 'Information',
     disclaimer: 'Call before you go. Not medical advice.',
     about: 'About and disclaimer',
+    aboutShort: 'About',
     privacy: 'Privacy',
     report: 'Report a problem',
     sourceCode: 'Source code on GitHub',
-    sourceNotes: {
-      fsth: 'Duty lists (ΦΣΘ, via thess.guide)',
-      pkm: 'Extended opening hours',
-      overture: 'Pharmacy locations (CDLA-Permissive-2.0)',
-      osm: 'Geocoding via Nominatim (ODbL)',
-    },
-    thessGuideNote: 'copies of the ΦΣΘ lists',
-    openFreeMapNote: 'map tiles',
-    openMapTilesNote: 'map data schema',
-    openStreetMapNote: 'map data, © OpenStreetMap contributors (ODbL)',
+    creditsLine: 'Data: ΦΣΘ (via thess.guide), ΠΚΜ, Overture, OpenStreetMap · Map: OpenFreeMap',
+    creditsMore: 'Sources and licences',
   },
 
   home: {

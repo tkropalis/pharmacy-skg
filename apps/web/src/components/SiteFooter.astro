@@ -1,7 +1,6 @@
 ---
 import type { Locale } from '@pharmacy-skg/core';
 import { REPO_URL } from '../config.ts';
-import { buildMeta } from '../lib/meta.ts';
 import { localizedPath, t } from '../i18n/index.ts';
 import { areaIndexPath, dutyIndexPath } from '../i18n/routes.ts';
 
@@ -12,126 +11,66 @@ interface Props {
 const { locale } = Astro.props;
 const d = t(locale).footer;
 const seo = t(locale).seo;
-type SourceId = keyof typeof d.sourceNotes;
+const about = localizedPath(locale, 'about');
 
-function creditName(source: (typeof buildMeta.sources)[number]): string {
-  return source.name[locale] ?? source.name.en ?? source.name.el ?? source.id;
-}
-
-function creditNote(source: (typeof buildMeta.sources)[number]): string | undefined {
-  return d.sourceNotes[source.id as SourceId] ?? source.note;
-}
-
-// Credits that are not in meta.json: the re-hosting site and the map stack.
-const extraCredits = [
-  { name: 'thess.guide', note: d.thessGuideNote, url: 'https://www.thess.guide/' },
-];
-const mapCredits = [
-  { name: 'OpenFreeMap', note: d.openFreeMapNote, url: 'https://openfreemap.org/' },
-  { name: 'OpenMapTiles', note: d.openMapTilesNote, url: 'https://openmaptiles.org/' },
-  {
-    name: 'OpenStreetMap',
-    note: d.openStreetMapNote,
-    url: 'https://www.openstreetmap.org/copyright',
-  },
+const links = [
+  { href: dutyIndexPath(locale), label: seo.footerDuty },
+  { href: areaIndexPath(locale), label: seo.footerArea },
+  { href: about, label: d.aboutShort },
+  { href: localizedPath(locale, 'privacy'), label: d.privacy },
+  { href: localizedPath(locale, 'report'), label: d.report },
+  { href: REPO_URL, label: d.sourceCode, external: true },
 ];
 ---
 
+<!--
+  Compact: a row of links, one freshness line, one credits line (every source is named, the
+  About page holds the full list with the licences) and the disclaimer. The home screen has
+  no page footer; its sheet carries a shorter one (components/app/HomeApp.tsx).
+-->
 <footer class="site-footer">
   <div class="container">
-    <p class="freshness">
-      <strong>{d.lastUpdatedLabel}</strong> <time data-updated-at>—</time>
-    </p>
-
-    <p class="disclaimer">{d.disclaimer}</p>
-
     <nav aria-label={d.navLabel}>
       <ul class="links">
-        <li>
-          <a href={dutyIndexPath(locale)}>{seo.footerDuty}</a>
-        </li>
-        <li>
-          <a href={areaIndexPath(locale)}>{seo.footerArea}</a>
-        </li>
-        <li>
-          <a href={localizedPath(locale, 'about')}>{d.about}</a>
-        </li>
-        <li>
-          <a href={localizedPath(locale, 'privacy')}>{d.privacy}</a>
-        </li>
-        <li>
-          <a href={localizedPath(locale, 'report')}>{d.report}</a>
-        </li>
-        <li>
-          <a href={REPO_URL} rel="noopener">
-            {d.sourceCode}
-          </a>
-        </li>
+        {links.map((link) => (
+          <li>
+            <a href={link.href} rel={link.external ? 'noopener' : undefined}>
+              {link.label}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
 
-    <div class="credits">
-      <h2>{d.sourcesHeading}</h2>
-      <ul>
-        {buildMeta.sources.map((source) => (
-          <li>
-            <a href={source.url} rel="noopener">
-              {creditName(source)}
-            </a>
-            {creditNote(source) !== undefined && <span class="muted"> — {creditNote(source)}</span>}
-          </li>
-        ))}
-        {extraCredits.map((credit) => (
-          <li>
-            <a href={credit.url} rel="noopener">
-              {credit.name}
-            </a>
-            <span class="muted"> — {credit.note}</span>
-          </li>
-        ))}
-      </ul>
-      <h2>{d.mapHeading}</h2>
-      <ul>
-        {mapCredits.map((credit) => (
-          <li>
-            <a href={credit.url} rel="noopener">
-              {credit.name}
-            </a>
-            <span class="muted"> — {credit.note}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-
-    <p class="muted tagline">{t(locale).tagline}</p>
+    <p class="small">
+      <strong>{d.lastUpdatedLabel}</strong> <time data-updated-at>—</time>
+    </p>
+    <p class="small muted">
+      {d.creditsLine}
+      {' · '}
+      <a href={`${about}#credits`}>{d.creditsMore}</a>
+    </p>
+    <p class="small muted disclaimer">{d.disclaimer}</p>
   </div>
 </footer>
 
 <style>
   .site-footer {
     flex: none;
-    margin-top: 2rem;
-    padding-block: 1.5rem 2rem;
+    margin-top: 1.5rem;
+    padding-block: 0.25rem calc(1rem + var(--safe-b));
     border-top: 1px solid var(--border);
     background: var(--surface);
-    font-size: 0.9375rem;
-  }
-
-  .freshness {
-    margin-bottom: 0.25rem;
-  }
-
-  .links,
-  .credits ul {
-    margin: 0 0 var(--space);
-    padding: 0;
-    list-style: none;
+    font-size: 0.875rem;
   }
 
   .links {
     display: flex;
     flex-wrap: wrap;
     gap: 0 1.25rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
   .links a {
@@ -140,16 +79,12 @@ const mapCredits = [
     min-height: 2.75rem;
   }
 
-  .credits li {
-    padding-block: 0.125rem;
+  .small {
+    margin: 0 0 0.25rem;
+    line-height: 1.45;
   }
 
-  .credits h2 {
-    margin: 1rem 0 0.25rem;
-    font-size: 1rem;
-  }
-
-  .tagline {
-    margin: 0;
+  .small a {
+    white-space: nowrap;
   }
 </style>
