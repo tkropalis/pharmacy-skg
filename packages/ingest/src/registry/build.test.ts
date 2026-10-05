@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 import { parseDutyList } from '../fsth/parse.ts';
 import { extractTextItems } from '../pdf.ts';
 import { parseExtendedHours } from '../pkm/parse.ts';
-import { readFirstSheet } from '../pkm/xlsx.ts';
+import { readFirstSheet } from '../xlsx.ts';
 import { dutyEntryId, matchExtendedEntries, matchExtendedEntry } from './build.ts';
 
 const FIXTURES = new URL('../../fixtures/', import.meta.url);

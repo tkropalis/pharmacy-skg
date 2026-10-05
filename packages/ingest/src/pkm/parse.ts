@@ -1,7 +1,7 @@
 import { normalizeTime } from '../fsth/heading.ts';
 import { cleanDisplay, squash } from '../text.ts';
 import { isProperRange } from '../time.ts';
-import type { Sheet } from './xlsx.ts';
+import type { Sheet } from '../xlsx.ts';
 
 export interface TimeRange {
   readonly from: string;

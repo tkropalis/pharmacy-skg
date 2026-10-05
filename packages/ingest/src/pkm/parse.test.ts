@@ -1,7 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { describe, expect, it } from 'vitest';
 import { InvalidHoursError, parseExtendedHours, parseSchedule } from './parse.ts';
-import { readFirstSheet } from './xlsx.ts';
+import { readFirstSheet } from '../xlsx.ts';
 
 const FIXTURE = new URL('../../fixtures/pkm/2026-09_2026-10.xlsx', import.meta.url);
 

@@ -10,7 +10,8 @@
     "typecheck": "tsc -p .",
     "update": "node src/cli/update.ts",
     "schema": "node src/cli/schema.ts",
-    "rotation": "node src/cli/rotation.ts"
+    "rotation": "node src/cli/rotation.ts",
+    "medicines": "node src/cli/medicines.ts"
   },
   "dependencies": {
     "@pharmacy-skg/core": "workspace:*",
