@@ -1,3 +1,4 @@
+import { appEn } from './app.en.ts';
 import type { Dictionary } from './index.ts';
 
 export const en: Dictionary = {
@@ -209,6 +210,8 @@ export const en: Dictionary = {
       noScript: 'The form needs JavaScript. You can open an issue on GitHub directly:',
     },
   },
+
+  app: appEn,
 
   notFound: {
     title: 'Page not found',

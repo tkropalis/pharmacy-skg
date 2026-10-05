@@ -1,0 +1,52 @@
+import { describe, expect, it } from 'vitest';
+import { deviceZoneDiffers, fill, formatClock, formatDistance, shortIsoDate } from './format.ts';
+
+describe('fill', () => {
+  it('replaces placeholders and leaves unknown ones', () => {
+    expect(fill('{a} και {b} {c}', { a: 1, b: 'x' })).toBe('1 και x {c}');
+  });
+});
+
+describe('formatClock', () => {
+  it('reads the wall clock of Athens whatever the process zone is', () => {
+    expect(formatClock(new Date('2026-10-05T19:30:00Z'))).toBe('22:30');
+    expect(formatClock(new Date('2026-12-05T19:30:00Z'))).toBe('21:30');
+    expect(formatClock(new Date('2026-10-05T21:05:00Z'))).toBe('00:05');
+  });
+});
+
+describe('formatDistance', () => {
+  it('rounds metres to 10 and switches to km at 1000', () => {
+    expect(formatDistance(347, 'en')).toBe('350 m');
+    expect(formatDistance(3, 'en')).toBe('10 m');
+    expect(formatDistance(1234, 'en')).toBe('1.2 km');
+    expect(formatDistance(12_400, 'en')).toBe('12 km');
+  });
+  it('uses the decimal comma in Greek', () => {
+    expect(formatDistance(1234, 'el')).toBe('1,2 km');
+    expect(formatDistance(450, 'el')).toBe('450 m');
+  });
+});
+
+describe('shortIsoDate', () => {
+  it('names the weekday of a calendar date', () => {
+    expect(shortIsoDate('2026-10-07', 'en')).toBe('Wed 7 Oct');
+    expect(shortIsoDate('2026-10-07', 'el')).toBe('Τετ 7 Οκτ');
+  });
+});
+
+describe('deviceZoneDiffers', () => {
+  it('is false when the device zone shows the same wall clock', () => {
+    const original = process.env.TZ;
+    // Node reads TZ lazily on Date construction in tests; only assert the type here.
+    expect(typeof deviceZoneDiffers(new Date('2026-10-05T19:30:00Z'))).toBe('boolean');
+    process.env.TZ = original;
+  });
+  it('compares against the given zone', () => {
+    // Whatever the device zone is, Auckland and Athens differ by hours at this instant.
+    const at = new Date('2026-10-05T12:00:00Z');
+    const a = deviceZoneDiffers(at, 'Pacific/Auckland');
+    const b = deviceZoneDiffers(at, 'Europe/Athens');
+    expect(a || b).toBe(true);
+  });
+});

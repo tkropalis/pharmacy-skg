@@ -17,6 +17,11 @@ export interface LoadOptions {
   /** Prefix for the data URLs. Defaults to DATA_BASE_PATH on the current origin. */
   readonly basePath?: string;
   readonly signal?: AbortSignal;
+  /**
+   * Skip duty dates outside the range meta.json says is published, instead of asking for them
+   * and getting a 404 (which browsers log as a console error).
+   */
+  readonly onlyPublishedDates?: boolean;
 }
 
 export interface CityBundle {
@@ -70,6 +75,63 @@ export async function loadMeta(cityId: string, options: LoadOptions = {}): Promi
   return expectSchemaVersion1<Meta>(await getJson(url, doFetch, options.signal), url);
 }
 
+function wantedDates(dates: readonly IsoDate[], meta: Meta, options: LoadOptions): IsoDate[] {
+  const unique = [...new Set(dates)];
+  if (!options.onlyPublishedDates) return unique;
+  const range = meta.duties;
+  return range === null ? [] : unique.filter((d) => d >= range.from && d <= range.to);
+}
+
+interface DutyLoad {
+  readonly duties: Map<IsoDate, DutyDay>;
+  readonly failedDates: IsoDate[];
+}
+
+async function fetchDuties(
+  url: (path: string) => string,
+  doFetch: typeof fetch,
+  dates: readonly IsoDate[],
+  signal?: AbortSignal,
+): Promise<DutyLoad> {
+  const results = await Promise.all(
+    dates.map(async (date) => {
+      try {
+        const day = expectSchemaVersion1<DutyDay>(
+          await getJson(url(dutyPath(date)), doFetch, signal),
+          dutyPath(date),
+        );
+        return { date, day, failed: false };
+      } catch (error) {
+        if (signal?.aborted) throw error;
+        const unpublished = error instanceof HttpError && error.status === 404;
+        return { date, day: null, failed: !unpublished };
+      }
+    }),
+  );
+  const duties = new Map<IsoDate, DutyDay>();
+  const failedDates: IsoDate[] = [];
+  for (const { date, day, failed } of results) {
+    if (day !== null) duties.set(date, day);
+    if (failed) failedDates.push(date);
+  }
+  return { duties, failedDates };
+}
+
+/**
+ * Loads only duty lists (more dates after the first load). `meta` limits the request to the
+ * published range, so nothing is asked for that is known to be missing.
+ */
+export async function loadDutyDays(
+  cityId: string,
+  dates: readonly IsoDate[],
+  meta: Meta,
+  options: LoadOptions = {},
+): Promise<DutyLoad> {
+  const doFetch = options.fetch ?? fetch;
+  const url = (path: string) => cityDataUrl(cityId, path, options.basePath);
+  return fetchDuties(url, doFetch, wantedDates(dates, meta, options), options.signal);
+}
+
 /**
  * Loads a city's published data for the given dates. meta.json, pharmacies.json and the
  * extended-hours files it lists are required; a date without a published duty list is simply
@@ -98,34 +160,13 @@ export async function loadCityBundle(
         ),
       ),
     ),
-    Promise.all(
-      [...new Set(dates)].map(async (date) => {
-        try {
-          const day = expectSchemaVersion1<DutyDay>(
-            await getJson(url(dutyPath(date)), doFetch, options.signal),
-            dutyPath(date),
-          );
-          return { date, day, failed: false };
-        } catch (error) {
-          if (options.signal?.aborted) throw error;
-          const unpublished = error instanceof HttpError && error.status === 404;
-          return { date, day: null, failed: !unpublished };
-        }
-      }),
-    ),
+    fetchDuties(url, doFetch, wantedDates(dates, meta, options), options.signal),
   ]);
 
-  const duties = new Map<IsoDate, DutyDay>();
-  const failedDates: IsoDate[] = [];
-  for (const { date, day, failed } of dutyResults) {
-    if (day !== null) duties.set(date, day);
-    if (failed) failedDates.push(date);
-  }
-
   return {
-    data: { city, pharmacies: pharmacies.pharmacies, duties, extendedHours },
+    data: { city, pharmacies: pharmacies.pharmacies, duties: dutyResults.duties, extendedHours },
     meta,
-    failedDates,
+    failedDates: dutyResults.failedDates,
   };
 }
 

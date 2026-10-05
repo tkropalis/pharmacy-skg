@@ -1,0 +1,57 @@
+import { describe, expect, it } from 'vitest';
+import { appleLegacyUrl, directionsTarget, directionsUrl, telUrl } from './directions.ts';
+
+const exact = { lat: 40.632612, lon: 22.940912 };
+
+describe('directionsUrl', () => {
+  it('builds Google walking directions', () => {
+    expect(directionsUrl('google', exact)).toBe(
+      'https://www.google.com/maps/dir/?api=1&destination=40.632612%2C22.940912&travelmode=walking',
+    );
+  });
+  it('builds the iOS 18.4+ Apple Maps URL and the legacy one', () => {
+    expect(directionsUrl('apple', exact)).toBe(
+      'https://maps.apple.com/directions?destination=40.632612%2C22.940912&mode=walking',
+    );
+    expect(appleLegacyUrl(exact)).toBe(
+      'https://maps.apple.com/?daddr=40.632612%2C22.940912&dirflg=w',
+    );
+  });
+  it('builds a Waze link', () => {
+    expect(directionsUrl('waze', exact)).toBe(
+      'https://waze.com/ul?ll=40.632612%2C22.940912&navigate=yes',
+    );
+  });
+  it('searches by address text when there are no coordinates', () => {
+    const target = { query: 'ΠΑΥΛΟΥ ΜΕΛΑ 22, Πυλαία' };
+    expect(directionsUrl('google', target)).toContain('destination=%CE%A0');
+    expect(directionsUrl('waze', target)).toMatch(/^https:\/\/waze\.com\/ul\?q=.+&navigate=yes$/);
+    expect(appleLegacyUrl(target)).toContain('daddr=');
+  });
+});
+
+describe('directionsTarget', () => {
+  const base = { address: 'ΠΑΥΛΟΥ ΜΕΛΑ 22', locality: 'Πυλαία' };
+  it('uses coordinates for exact and street locations', () => {
+    for (const precision of ['exact', 'street'] as const) {
+      const location = { lat: 1, lon: 2, source: 'override', precision } as const;
+      expect(directionsTarget({ ...base, location })).toEqual({ lat: 1, lon: 2 });
+    }
+  });
+  it('uses the address for a locality-level or missing location', () => {
+    const location = { lat: 1, lon: 2, source: 'nominatim', precision: 'locality' } as const;
+    expect(directionsTarget({ ...base, location })).toEqual({
+      query: 'ΠΑΥΛΟΥ ΜΕΛΑ 22, Πυλαία',
+    });
+    expect(directionsTarget({ ...base, location: null })).toEqual({
+      query: 'ΠΑΥΛΟΥ ΜΕΛΑ 22, Πυλαία',
+    });
+  });
+});
+
+describe('telUrl', () => {
+  it('keeps digits and a leading plus', () => {
+    expect(telUrl('2310 023 026')).toBe('tel:2310023026');
+    expect(telUrl('+30 2310-023026')).toBe('tel:+302310023026');
+  });
+});

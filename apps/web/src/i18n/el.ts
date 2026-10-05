@@ -5,6 +5,8 @@
  * The dictionary holds plain strings, arrays and objects only (no functions), so any section
  * can be passed to a React island as props, which Astro serialises.
  */
+import { appEl } from './app.el.ts';
+
 export const el = {
   localeName: 'Ελληνικά',
   languageSwitcherLabel: 'Γλώσσα',
@@ -215,6 +217,8 @@ export const el = {
         'Η φόρμα χρειάζεται JavaScript. Μπορείτε να ανοίξετε ένα θέμα απευθείας στο GitHub:',
     },
   },
+
+  app: appEl,
 
   notFound: {
     title: 'Η σελίδα δεν βρέθηκε',
