@@ -1,6 +1,6 @@
 # apps/web
 
-The web app: Astro 7 (static output) with React 19 for interactive parts, installed as a PWA. Greek is the default locale (unprefixed); English lives under `/en/`.
+The web app: Astro 7 (static output) with React 19 for interactive parts, installed as a PWA. Greek is the default locale (unprefixed); English lives under `/en/`. Before changing the UI, read [docs/PRODUCT.md](../../docs/PRODUCT.md) and [docs/DESIGN.md](../../docs/DESIGN.md).
 
 ```sh
 pnpm --filter @pharmacy-skg/web dev       # dev server; /data/** is served from <repo>/data
@@ -17,7 +17,8 @@ api/report.ts              Vercel serverless function: problem report -> GitHub 
 integrations/data.ts       publishes <repo>/data/<city>/ under /data/<city>/ (build and dev)
 integrations/service-worker.ts   writes dist/sw.js from sw/sw.js with the precache list + version
 sw/sw.js                   the hand-written service worker (template)
-public/                    favicon, PNG icons, stale-check.js (blocking head script)
+public/                    favicon, PNG icons, stale-check.js and theme.js (blocking head scripts: the
+                           stale banner, and light / dark / auto before the first paint)
 scripts/generate-icons.ts  icon and Open Graph image generator (sharp); the PNGs are committed
 playwright.config.ts, e2e/ browser tests (see "Browser tests")
 src/config.ts              app name (one constant), theme colours, emergency numbers
@@ -38,10 +39,13 @@ src/lib/idle.ts, quiet.ts  yield to the browser, run when idle, run when the pag
 src/scripts/boot.ts        runs on every page: freshness, service worker, prefetch
 src/scripts/home-app.tsx   mounts the home screen into #app (replaces the no-JavaScript fallback)
 src/components/app/        the home screen: HomeApp (state), Sheet, Controls, PharmacyRow,
-                           UpcomingDuties, MapView (thin) and map-controller (MapLibre, lazy)
+                           Segmented (every either/or control), SelectionCard (the chosen pharmacy,
+                           phone), AreaPicker (full-screen dialog), ThemeChoice, UpcomingDuties,
+                           MapView (thin) and map-controller (MapLibre, lazy; the chosen marker)
 src/lib/                   pure, tested logic: status-label, list, directions, ics, places,
                            favourites, map-style, map-data, map-layers (sources and layers: duty pins are never
-                           clustered), pins, duties, format, geolocation (when to ask for the position)
+                           clustered), pins, duties, format, geolocation (when to ask for the position),
+                           names (display names without the legal form), sun (sunset, for "auto")
 integrations/maplibre-worker.ts   publishes MapLibre's worker files under /_astro/maplibre-<version>/
 src/scripts/medicine-search.ts  the header's "Medicines" button: loads the search on the first press
 src/components/search/    the medicine search dialog (D24), lazy: MedicineSearch, mount, search.css
