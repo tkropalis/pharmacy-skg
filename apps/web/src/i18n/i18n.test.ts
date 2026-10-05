@@ -39,17 +39,23 @@ describe('dictionaries', () => {
 
   it('use the status labels from the decisions', () => {
     expect(t('el').status).toEqual({
-      onDuty: 'Εφημερεύει (λίστα ΦΣΘ)',
-      openRegular: 'Ανοιχτό (κανονικό ωράριο)',
-      openExtended: 'Ανοιχτό (διευρυμένο ωράριο)',
-      dutyUnknown: 'Εφημερεύει (λίστα ΦΣΘ) — δεν αναγράφεται ωράριο, καλέστε',
+      onDuty: 'Εφημερεύει',
+      openRegular: 'Ανοιχτό',
+      openExtended: 'Ανοιχτό',
+      dutyUnknown: 'Εφημερεύει, καλέστε για το ωράριο',
     });
     expect(t('en').status).toEqual({
-      onDuty: 'On duty (ΦΣΘ list)',
-      openRegular: 'Open (regular hours)',
-      openExtended: 'Open (extended hours)',
-      dutyUnknown: 'On duty (ΦΣΘ list) — hours not stated, call first',
+      onDuty: 'On duty',
+      openRegular: 'Open',
+      openExtended: 'Open',
+      dutyUnknown: 'On duty, call for the hours',
     });
+  });
+
+  it('never show the abbreviations ΦΣΘ or ΠΚΜ (the owner, 5 Oct 2026)', () => {
+    for (const locale of LOCALES) {
+      expect(strings(t(locale)).filter((s) => /ΦΣΘ|ΠΚΜ/.test(s))).toEqual([]);
+    }
   });
 });
 
@@ -60,10 +66,16 @@ describe('status labels', () => {
       expect(app.status.onDuty).toBe(status.onDuty);
       expect(app.status.openRegular).toBe(status.openRegular);
       expect(app.status.openExtended).toBe(status.openExtended);
-      expect(app.status.legend.duty).toBe(status.onDuty);
-      expect(app.status.legend.regular).toBe(status.openRegular);
-      expect(app.status.legend.extended).toBe(status.openExtended);
       expect(app.status.dutyUnknown).toBe(status.dutyUnknown);
+      // The list's short words match the labels.
+      expect(app.status.short.duty).toBe(status.onDuty);
+      expect(app.status.short.regular).toBe(status.openRegular);
+      expect(app.status.short.extended).toBe(status.openExtended);
+      // The legend starts from the same words; it adds plain words where shapes differ.
+      expect(app.status.legend.duty).toBe(status.onDuty);
+      expect(app.status.legend.regular.startsWith(status.openRegular)).toBe(true);
+      expect(app.status.legend.extended.startsWith(status.openExtended)).toBe(true);
+      expect(app.status.legend.regular).not.toBe(app.status.legend.extended);
       expect(app.status.legend.dutyUnknown).toBe(status.dutyUnknown);
     }
   });

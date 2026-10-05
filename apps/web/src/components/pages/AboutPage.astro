@@ -81,11 +81,9 @@ const allCredits = [
           <span class="status-label">{status.openRegular}</span>
         </dt>
         <dd>{d.statusList.openRegularMeaning}</dd>
-        <dt>
-          <span class="status-label">{status.openExtended}</span>
-        </dt>
-        <dd>{d.statusList.openExtendedMeaning}</dd>
       </dl>
+      {/* Extended hours read "Open" too (decisions, Defaults: status labels), so no third term. */}
+      <p>{d.statusList.openExtendedMeaning}</p>
     </section>
   )}
 

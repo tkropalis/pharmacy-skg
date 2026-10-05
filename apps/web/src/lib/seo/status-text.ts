@@ -16,7 +16,7 @@ export type StatusTone = 'open' | 'duty-unknown' | 'closed';
 
 export interface StatusText {
   readonly tone: StatusTone;
-  /** The headline, also the label for a list row: "Εφημερεύει (λίστα ΦΣΘ) · μέχρι τις 23:00". */
+  /** The headline, also the label for a list row: "Εφημερεύει μέχρι τις 23:00". */
   readonly short: string;
   /** What follows the headline: notes, the next opening and the "call before you go" line. */
   readonly detail: string;
@@ -106,7 +106,7 @@ export function describeStatus(
       label: openLabel(status.reasons, d),
       when: untilText(status.until, now, locale, s, timeZone),
     });
-    return make('open', status.closingSoon ? `${label} (${s.closingSoon})` : label, tail);
+    return make('open', status.closingSoon ? `${label}, ${s.closingSoon}` : label, tail);
   }
 
   if (status.state === 'duty-hours-unknown') {
