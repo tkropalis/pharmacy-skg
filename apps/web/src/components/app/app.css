@@ -69,6 +69,39 @@
   font-size: 0.75rem;
 }
 
+/*
+ * The attribution is a 44px toggle on a phone (collapsed) and a 44px-tall row of links beside
+ * the map. MapLibre's own sizes are 24px.
+ */
+.hs .map .maplibregl-ctrl-attrib-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+}
+
+.hs .map .maplibregl-ctrl-attrib.maplibregl-compact {
+  min-height: 40px;
+  padding: 2px 44px 2px 0;
+  border-radius: 22px;
+}
+
+.hs .map .maplibregl-ctrl-attrib.maplibregl-compact-show {
+  padding: 2px 8px 2px 44px;
+}
+
+.hs .map .maplibregl-ctrl-attrib-inner {
+  line-height: 44px;
+}
+
+.hs .map .maplibregl-ctrl-attrib-inner a {
+  display: inline-block;
+  min-height: 44px;
+  padding-inline: 0.25rem;
+}
+
 .map canvas:focus-visible,
 .map .maplibregl-canvas-container:focus-visible {
   outline: 3px solid var(--focus);

@@ -11,5 +11,6 @@ import { addDays, localIsoDate } from '../../lib/dates.ts';
 export function loadNowData(now: Date): Promise<CityData> {
   const today = localIsoDate(now);
   const dates = Array.from({ length: 9 }, (_, i) => addDays(today, i - 1));
-  return loadCityData(DEFAULT_CITY_ID, dates);
+  // Unpublished days are not requested: a 404 would show up as an error in the browser console.
+  return loadCityData(DEFAULT_CITY_ID, dates, { onlyPublishedDates: true });
 }

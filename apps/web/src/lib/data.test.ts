@@ -163,4 +163,17 @@ describe('offlineUrls', () => {
       `${base}/duties/2026-10-08.json`,
     ]);
   });
+
+  it('asks only for the duty days that meta.json lists', () => {
+    const at = new Date('2026-10-04T23:30:00Z');
+    expect(offlineUrls(at, [], 'thessaloniki', meta.duties).slice(2)).toEqual([
+      `${base}/duties/2026-10-05.json`,
+      `${base}/duties/2026-10-06.json`,
+      `${base}/duties/2026-10-07.json`,
+    ]);
+    expect(offlineUrls(at, [], 'thessaloniki', null)).toEqual([
+      `${base}/meta.json`,
+      `${base}/pharmacies.json`,
+    ]);
+  });
 });
