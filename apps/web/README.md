@@ -43,6 +43,11 @@ src/lib/                   pure, tested logic: status-label, list, directions, i
                            favourites, map-style, map-data, map-layers (sources and layers: duty pins are never
                            clustered), pins, duties, format, geolocation (when to ask for the position)
 integrations/maplibre-worker.ts   publishes MapLibre's worker files under /_astro/maplibre-<version>/
+src/scripts/medicine-search.ts  the header's "Medicines" button: loads the search on the first press
+src/components/search/    the medicine search dialog (D24), lazy: MedicineSearch, mount, search.css
+src/lib/medicine-search.ts, medicine-index.ts   matching on the device (Greek and Latin sound keys)
+                           and loading /data/medicines/index.json (built by integrations/data.ts)
+src/i18n/search.*.ts       the search's strings, kept apart so its chunk does not carry the dictionaries
 ```
 
 To rename the app, edit `APP_NAME`, `APP_SHORT_NAME` and `APP_HEADER_NAME` (the short name in the phone header bar) in `src/config.ts`.
@@ -56,6 +61,7 @@ To rename the app, edit `APP_NAME`, `APP_SHORT_NAME` and `APP_HEADER_NAME` (the 
 - **No network:** every request to `tiles.openfreemap.org` is answered by `e2e/support.ts` (a style with one empty vector source, empty tiles and glyphs). Service workers are blocked except in `offline.spec.ts`, where `PW_EXPERIMENTAL_SERVICE_WORKER_NETWORK_EVENTS=1` (set in `playwright.config.ts`) lets the stubs also catch the worker's own requests.
 - **The map:** it starts by itself only once the page has settled (seconds after the list), so a test that needs it calls `waitForMap` (`e2e/support.ts`), which reaches for the map as a person would. `home.spec.ts` covers the three ways it starts.
 - **Position and the filter:** the browser context grants geolocation, so the app locates itself when it opens, as a returning visitor's does. Tests that need a visitor with no position use `test.use({ autoLocate: false })` (it stores the "turned off" flag before the page loads); `location.spec.ts` covers allowed, blocked, a remembered area and the off flag, `list-filter.spec.ts` the "All / On duty" chips, `layout.spec.ts` the app viewport (the document does not scroll at 390×664, no page footer, no emergency strip and a one-row header, the compact footers, the language switch and that duty pins are never clustered; the map publishes its pin counts as `data-duty-pins` and `data-clustered-pins` on `.map`).
+- **Medicine search:** `medicine-search.spec.ts` covers Greek and Latin queries, prices labelled as maximum or indicative, a shortage from the current ΕΟΦ list, details and Back, Escape and the browser's Back button, that no request carries the query and the address never changes, 44 px targets and axe on the empty search, the results and the details. `offline.spec.ts` checks it works offline once opened.
 - **Accessibility:** `a11y.spec.ts` runs axe with the WCAG 2.0, 2.1 and 2.2 level A and AA rules on the home, pharmacy, duty-date, area, about, privacy and report pages, in both languages and both colour schemes. `home.spec.ts` checks 44×44 px map controls and visible, unobscured keyboard focus.
 - **Not covered:** the Content-Security-Policy and the response headers of `vercel.json` (preview does not apply them), and real devices (M4).
 

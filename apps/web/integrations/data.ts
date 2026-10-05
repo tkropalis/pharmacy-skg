@@ -1,8 +1,9 @@
-import { cp, mkdir, readdir, readFile } from 'node:fs/promises';
+import { cp, mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { AstroIntegration } from 'astro';
-import type { Meta } from '@pharmacy-skg/core';
+import { encodeMedicineIndex } from '@pharmacy-skg/core';
+import type { MedicinesFile, Meta } from '@pharmacy-skg/core';
 import { buildToday } from '../src/lib/build-today.ts';
 import { isExtendedHoursPath, isPublishedPath, selectDutyFiles } from './data-files.ts';
 
@@ -10,6 +11,17 @@ import { isExtendedHoursPath, isPublishedPath, selectDutyFiles } from './data-fi
 const DATA_ROOT = fileURLToPath(new URL('../../../data/', import.meta.url));
 
 const CITY_IDS = ['thessaloniki'];
+
+/** Where the app reads the medicine index (lib/medicine-index.ts). */
+export const MEDICINE_INDEX_PATH = 'medicines/index.json';
+
+/** The compact medicine index, built from data/medicines/medicines.json (decision D24). */
+async function medicineIndex(): Promise<string> {
+  const file = JSON.parse(
+    await readFile(`${DATA_ROOT}medicines/medicines.json`, 'utf8'),
+  ) as MedicinesFile;
+  return JSON.stringify(encodeMedicineIndex(file));
+}
 
 /**
  * Publishes data/<city>/ under /data/<city>/: in the build output, and through a small
@@ -22,6 +34,17 @@ export function dataIntegration(): AstroIntegration {
       'astro:server:setup': ({ server }) => {
         server.middlewares.use('/data', (req, res, next) => {
           const path = decodeURIComponent((req.url ?? '').split('?')[0] ?? '').replace(/^\//, '');
+          if (path === MEDICINE_INDEX_PATH) {
+            medicineIndex().then(
+              (body) => {
+                res.setHeader('Content-Type', 'application/json');
+                res.setHeader('Cache-Control', 'no-cache');
+                res.end(body);
+              },
+              (error: unknown) => next(error),
+            );
+            return;
+          }
           const [cityId, ...rest] = path.split('/');
           const relative = rest.join('/');
           if (!cityId || !CITY_IDS.includes(cityId) || !isPublishedPath(relative)) {
@@ -64,6 +87,11 @@ export function dataIntegration(): AstroIntegration {
           }
           logger.info(`${cityId}: published ${files.length} data files`);
         }
+        const index = await medicineIndex();
+        const indexPath = fileURLToPath(new URL(`data/${MEDICINE_INDEX_PATH}`, dir));
+        await mkdir(dirname(indexPath), { recursive: true });
+        await writeFile(indexPath, index);
+        logger.info(`medicines: published the index (${Math.round(index.length / 1024)} KB)`);
       },
     },
   };

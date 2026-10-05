@@ -10,6 +10,7 @@ interface Props {
 const { locale } = Astro.props;
 const d = t(locale).about;
 const status = t(locale).status;
+const searchCredits = t(locale).search.credits;
 const [what, hours, labels] = d.sections;
 
 const creditLinks: Record<keyof typeof d.credits, string> = {
@@ -21,6 +22,21 @@ const creditLinks: Record<keyof typeof d.credits, string> = {
   fontAwesome: 'https://fontawesome.com/license/free',
   commissioner: 'https://github.com/kosbarts/Commissioner',
 };
+
+const searchCreditLinks: Record<keyof typeof searchCredits, string> = {
+  moh: 'https://www.moh.gov.gr/articles/times-farmakwn/deltia-timwn',
+  eof: 'https://www.eof.gr/category/farmaka/eparkeia-farmaka/',
+};
+const allCredits = [
+  ...(Object.keys(d.credits) as (keyof typeof d.credits)[]).map((id) => ({
+    text: d.credits[id],
+    url: creditLinks[id],
+  })),
+  ...(Object.keys(searchCredits) as (keyof typeof searchCredits)[]).map((id) => ({
+    text: searchCredits[id],
+    url: searchCreditLinks[id],
+  })),
+];
 ---
 
 <div class="container prose">
@@ -80,11 +96,11 @@ const creditLinks: Record<keyof typeof d.credits, string> = {
     <h2>{d.creditsHeading}</h2>
     <p>{d.creditsIntro}</p>
     <ul>
-      {(Object.keys(d.credits) as (keyof typeof d.credits)[]).map((id) => (
+      {allCredits.map(({ text, url }) => (
         <li>
-          {d.credits[id]}{' '}
-          <a href={creditLinks[id]} rel="noopener">
-            {new URL(creditLinks[id]).hostname.replace(/^www\./, '')}
+          {text}{' '}
+          <a href={url} rel="noopener">
+            {new URL(url).hostname.replace(/^www\./, '')}
           </a>
         </li>
       ))}

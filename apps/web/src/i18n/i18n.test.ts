@@ -52,9 +52,9 @@ describe('dictionaries', () => {
     });
   });
 
-  it('never show the abbreviations ΦΣΘ or ΠΚΜ (the owner, 5 Oct 2026)', () => {
+  it('never show the abbreviations ΦΣΘ, ΠΚΜ, ΕΟΦ, ΦΠΑ or ΜΗΣΥΦΑ (the owner, 5 Oct 2026)', () => {
     for (const locale of LOCALES) {
-      expect(strings(t(locale)).filter((s) => /ΦΣΘ|ΠΚΜ/.test(s))).toEqual([]);
+      expect(strings(t(locale)).filter((s) => /ΦΣΘ|ΠΚΜ|ΕΟΦ|ΦΠΑ|ΜΗ\.?ΣΥ\.?ΦΑ/.test(s))).toEqual([]);
     }
   });
 });

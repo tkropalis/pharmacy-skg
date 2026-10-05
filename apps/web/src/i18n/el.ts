@@ -6,6 +6,7 @@
  * can be passed to a React island as props, which Astro serialises.
  */
 import { appEl } from './app.el.ts';
+import { searchEl } from './search.el.ts';
 import { STATUS_LABELS } from './status-labels.ts';
 
 export const el = {
@@ -212,6 +213,7 @@ export const el = {
   },
 
   app: appEl,
+  search: searchEl,
 
   notFound: {
     title: 'Η σελίδα δεν βρέθηκε',

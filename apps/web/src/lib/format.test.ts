@@ -1,5 +1,13 @@
 import { describe, expect, it } from 'vitest';
-import { deviceZoneDiffers, fill, formatClock, formatDistance, shortIsoDate } from './format.ts';
+import {
+  deviceZoneDiffers,
+  fill,
+  formatClock,
+  formatDistance,
+  formatPrice,
+  longIsoDate,
+  shortIsoDate,
+} from './format.ts';
 
 describe('fill', () => {
   it('replaces placeholders and leaves unknown ones', () => {
@@ -48,5 +56,14 @@ describe('deviceZoneDiffers', () => {
     const a = deviceZoneDiffers(at, 'Pacific/Auckland');
     const b = deviceZoneDiffers(at, 'Europe/Athens');
     expect(a || b).toBe(true);
+  });
+});
+
+describe('medicine formats', () => {
+  it('writes dates in full and prices in euros', () => {
+    expect(longIsoDate('2026-09-30', 'el')).toBe('30 Σεπτεμβρίου 2026');
+    expect(longIsoDate('2026-09-30', 'en')).toBe('30 September 2026');
+    expect(formatPrice(8.19, 'el')).toBe('8,19\u00a0€');
+    expect(formatPrice(1234.5, 'en')).toBe('€1,234.50');
   });
 });
