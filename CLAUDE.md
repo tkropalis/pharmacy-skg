@@ -43,6 +43,6 @@ pnpm test           # Vitest (colocated *.test.ts)
   - `overpass-api.de` drops connections from cloud containers; the `overpass.kumi.systems` mirror works.
   - later: `www.moh.gov.gr`, `www.eof.gr`
 - **Proxy:** in a cloud session, run Node scripts that fetch with `NODE_USE_ENV_PROXY=1` so `fetch` uses the HTTPS proxy. CI doesn't need it.
-- **Data pipeline:** `pnpm --filter @pharmacy-skg/ingest update` fetches, validates and writes `data/`. Add `--since YYYY-MM-DD` to backfill. Never hand-edit generated files in `data/`; manual fixes go in `data/<city>/overrides.json`.
+- **Data pipeline:** `pnpm --filter @pharmacy-skg/ingest run update` (with `run`: plain `pnpm update` is pnpm's own command) fetches, validates and writes `data/`. Add `--since YYYY-MM-DD` to backfill. Never hand-edit generated files in `data/`; manual fixes go in `data/<city>/overrides.json`.
 - **Build scripts:** pnpm 10 blocks dependency build scripts. The allowed ones are listed under `onlyBuiltDependencies` in `pnpm-workspace.yaml`.
 - **`astro check` prompting to install `@astrojs/check`:** it is already installed, so a transitive dependency is missing from `node_modules`. Reinstall from scratch: delete every `node_modules` and run `pnpm install`.
