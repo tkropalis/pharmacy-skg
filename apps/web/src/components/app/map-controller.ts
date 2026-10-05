@@ -15,17 +15,19 @@ import type { AddLayerObject, GeoJSONSource } from 'maplibre-gl';
 import maplibreCss from 'maplibre-gl/dist/maplibre-gl.css?url';
 import type { Locale } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
+import { yieldToMain } from '../../lib/idle.ts';
 import { PIN_KINDS } from '../../lib/list.ts';
 import type { Origin, Row } from '../../lib/list.ts';
 import { pinCollection } from '../../lib/map-data.ts';
 import type { PinCollection } from '../../lib/map-data.ts';
-import { STYLE_DARK, STYLE_LIGHT, localizeStyle } from '../../lib/map-style.ts';
 import { PIN_SIZE, pinImageName, pinSvg } from '../../lib/pins.ts';
 
 export interface MapControllerOptions {
   readonly locale: Locale;
   readonly text: Dictionary['app']['map'];
   readonly dark: boolean;
+  /** The localized base style, already on its way (see loadMapStyle). */
+  readonly style: Promise<Record<string, unknown>>;
   readonly center: readonly [number, number];
   readonly zoom: number;
   /** Pixels at the bottom covered by the sheet, so the first view is centred above it. */
@@ -95,21 +97,15 @@ async function addPinImages(map: MapLibreMap): Promise<void> {
   await Promise.all(jobs);
 }
 
-async function fetchStyle(url: string, locale: Locale): Promise<Record<string, unknown>> {
-  const response = await fetch(url, { signal: AbortSignal.timeout(STYLE_TIMEOUT_MS) });
-  if (!response.ok) throw new Error(`Style request failed: HTTP ${response.status}`);
-  return localizeStyle((await response.json()) as { layers?: never[] }, locale);
-}
-
 export async function createMapController(
   container: HTMLElement,
   options: MapControllerOptions,
 ): Promise<MapController> {
-  const { locale, text, dark } = options;
-  const [style] = await Promise.all([
-    fetchStyle(dark ? STYLE_DARK : STYLE_LIGHT, locale),
-    loadStylesheet(maplibreCss),
-  ]);
+  const { text, dark } = options;
+  const [style] = await Promise.all([options.style, loadStylesheet(maplibreCss)]);
+  // The steps below are long on a phone. Each ends the task, so the page can paint and answer
+  // a touch in between.
+  await yieldToMain();
 
   const map = new MapLibreMap({
     container,
@@ -130,6 +126,22 @@ export async function createMapController(
   map.touchZoomRotate.disableRotation();
   map.setPadding({ top: 0, left: 0, right: 0, bottom: options.occludedBottom });
 
+  // Listening starts now, before the pause below, so 'load' cannot be missed. The promise only
+  // resolves (with the error, if any): nobody is awaiting it yet when it may fail.
+  const loaded = new Promise<unknown>((resolve) => {
+    const timer = setTimeout(() => resolve(new Error('Map style did not load')), STYLE_TIMEOUT_MS);
+    map.once('load', () => {
+      clearTimeout(timer);
+      resolve(null);
+    });
+    map.once('error', (event) => {
+      if (!map.loaded() && !map.isStyleLoaded()) {
+        clearTimeout(timer);
+        resolve(event.error);
+      }
+    });
+  });
+
   // Controls: zoom buttons, and the attribution OpenFreeMap's licence asks for. On a phone
   // the bottom edge is under the sheet, so the (collapsed) credit sits at the top.
   map.addControl(new NavigationControl({ showCompass: false }), 'top-right');
@@ -137,23 +149,13 @@ export async function createMapController(
     new AttributionControl({ compact: !options.sideBySide }),
     options.sideBySide ? 'bottom-right' : 'top-left',
   );
+  await yieldToMain();
 
-  await new Promise<void>((resolve, reject) => {
-    const timer = setTimeout(() => reject(new Error('Map style did not load')), STYLE_TIMEOUT_MS);
-    map.once('load', () => {
-      clearTimeout(timer);
-      resolve();
-    });
-    map.once('error', (event) => {
-      if (!map.loaded() && !map.isStyleLoaded()) {
-        clearTimeout(timer);
-        reject(event.error);
-      }
-    });
-  }).catch((error: unknown) => {
+  const failure = await loaded;
+  if (failure !== null) {
     map.remove();
-    throw error;
-  });
+    throw failure;
+  }
 
   // The compact credit starts open; it is one tap away, and the map keeps its space.
   container.querySelector('.maplibregl-ctrl-attrib')?.classList.remove('maplibregl-compact-show');
@@ -164,6 +166,7 @@ export async function createMapController(
   canvas.setAttribute('aria-roledescription', 'map');
 
   await addPinImages(map);
+  await yieldToMain();
 
   map.addSource(SOURCE, {
     type: 'geojson',

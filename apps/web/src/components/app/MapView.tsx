@@ -4,6 +4,8 @@ import { THESSALONIKI } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
 import type { Origin, Row } from '../../lib/list.ts';
 import type { MapController } from './map-controller.ts';
+import { yieldToMain } from '../../lib/idle.ts';
+import { loadMapStyle } from '../../lib/map-style.ts';
 import { useMediaQuery } from './use-now.ts';
 
 type MapStatus = 'idle' | 'loading' | 'ready' | 'unavailable' | 'failed';
@@ -27,8 +29,12 @@ export interface MapFocus {
 interface MapViewProps {
   readonly locale: Locale;
   readonly text: Dictionary['app']['map'];
-  /** Start loading the map (after the list has rendered). */
+  /** Start loading the map (after the list has rendered, see use-map-start.ts). */
   readonly enabled: boolean;
+  /** The list is ready and the map is on its way: say so instead of leaving the area blank. */
+  readonly waiting: boolean;
+  /** The person reached for the map (touch, pointer, keyboard): start it now if it has not. */
+  readonly onWake: () => void;
   readonly rows: readonly Row[];
   readonly origin: Origin | null;
   /** A new origin to fly to (the nonce changes when the person picked it). */
@@ -48,7 +54,7 @@ interface MapViewProps {
  * missing or the style cannot be fetched the area shows a note and the list carries on.
  */
 export function MapView(props: MapViewProps) {
-  const { locale, text, enabled, sideBySide } = props;
+  const { locale, text, enabled, waiting, onWake, sideBySide } = props;
   const containerRef = useRef<HTMLDivElement>(null);
   const controller = useRef<MapController | null>(null);
   const latest = useRef(props);
@@ -66,19 +72,29 @@ export function MapView(props: MapViewProps) {
   useEffect(() => {
     const container = containerRef.current;
     if (!enabled || container === null) return;
-    if (!webglAvailable()) {
-      setStatus('unavailable');
-      return;
-    }
     let cancelled = false;
     setStatus('loading');
     void (async () => {
       try {
+        // Each step is its own task, so the page can paint and answer input in between. Creating
+        // the first WebGL context alone can take a hundred milliseconds on a phone.
+        await yieldToMain();
+        if (cancelled) return;
+        if (!webglAvailable()) {
+          setStatus('unavailable');
+          return;
+        }
+        await yieldToMain();
+        if (cancelled) return;
+        // The style and the library load side by side.
+        const style = loadMapStyle(dark, locale);
+        style.catch(() => {});
         const { createMapController } = await import('./map-controller.ts');
         const created = await createMapController(container, {
           locale,
           text,
           dark,
+          style,
           center: THESSALONIKI.center,
           zoom: 12,
           occludedBottom: latest.current.occludedBottom,
@@ -132,7 +148,16 @@ export function MapView(props: MapViewProps) {
   }, [status, focus]);
 
   return (
-    <div className="map-area" inert={props.covered}>
+    <div
+      className="map-area"
+      inert={props.covered}
+      // Anything that shows the person wants the map starts it without waiting for the timer.
+      onPointerDown={enabled ? undefined : onWake}
+      onPointerMove={enabled ? undefined : onWake}
+      onWheel={enabled ? undefined : onWake}
+      onFocus={enabled ? undefined : onWake}
+      onKeyDown={enabled ? undefined : onWake}
+    >
       <div
         ref={containerRef}
         className="map"
@@ -144,7 +169,9 @@ export function MapView(props: MapViewProps) {
           {status === 'unavailable' ? text.unavailable : text.loadFailed}
         </p>
       )}
-      {status === 'loading' && <p className="map-note subtle">{text.loading}</p>}
+      {(status === 'loading' || (status === 'idle' && waiting)) && (
+        <p className="map-note subtle">{text.loading}</p>
+      )}
     </div>
   );
 }

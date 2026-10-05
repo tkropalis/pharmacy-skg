@@ -34,6 +34,7 @@ src/pages/<slug>/         one folder per parameterised route and locale (farmake
 src/pages/sitemap.xml.ts, robots.txt.ts   sitemap with hreflang alternates, and robots
 src/scripts/seo/          status now, open-now and today highlight, computed in the browser
 src/lib/pwa.ts            service worker registration and offline prefetch
+src/lib/idle.ts, quiet.ts  yield to the browser, run when idle, run when the page has settled
 src/scripts/boot.ts        runs on every page: freshness, service worker, prefetch
 src/scripts/home-app.tsx   mounts the home screen into #app (replaces the no-JavaScript fallback)
 src/components/app/        the home screen: HomeApp (state), Sheet, Controls, PharmacyRow,
@@ -52,6 +53,7 @@ To rename the app, edit `APP_NAME` and `APP_SHORT_NAME` in `src/config.ts`.
 - **Browser:** CI installs one (`pnpm --filter @pharmacy-skg/web exec playwright install --with-deps chromium`). Locally use any Chromium by setting `PW_CHROMIUM_PATH=/path/to/chromium`; do not install browsers just for this. The Playwright version is pinned to match.
 - **Fixed time:** the build's idea of today is `PHARMACY_TODAY` (`src/lib/build-today.ts`, read by the data integration and the search-engine page builders; unset it is the Athens date), and every test fixes the browser clock with `page.clock` (default Monday 2026-10-05 22:30 Athens, when only duty pharmacies are open). Use dates that exist in `data/thessaloniki/duties` (2026-09-28 to 2026-10-08 in the test build); 2026-10-01 has the metro list only, which the group-coverage tests use.
 - **No network:** every request to `tiles.openfreemap.org` is answered by `e2e/support.ts` (a style with one empty vector source, empty tiles and glyphs). Service workers are blocked except in `offline.spec.ts`, where `PW_EXPERIMENTAL_SERVICE_WORKER_NETWORK_EVENTS=1` (set in `playwright.config.ts`) lets the stubs also catch the worker's own requests.
+- **The map:** it starts by itself only once the page has settled (seconds after the list), so a test that needs it calls `waitForMap` (`e2e/support.ts`), which reaches for the map as a person would. `home.spec.ts` covers the three ways it starts.
 - **Accessibility:** `a11y.spec.ts` runs axe with the WCAG 2.0, 2.1 and 2.2 level A and AA rules on the home, pharmacy, duty-date, area, about, privacy and report pages, in both languages and both colour schemes. `home.spec.ts` checks 44×44 px map controls and visible, unobscured keyboard focus.
 - **Not covered:** the Content-Security-Policy and the response headers of `vercel.json` (preview does not apply them), and real devices (M4).
 
@@ -63,9 +65,20 @@ Run on the built site served with compression and the cache headers of `vercel.j
 | ------------------------ | ----------- | ------------- | -------------- | --- |
 | Duty date                | 100         | 100           | 100            | 100 |
 | Pharmacy                 | 97          | 100           | 100            | 100 |
-| Home screen (list + map) | 50 to 70    | 100           | 100            | 100 |
+| Home screen (list + map) | 93 to 100   | 100           | 100            | 100 |
 
-- **Home screen:** the list is drawn by React after the data has loaded, and the map starts after the list. Total blocking time (about 3 s in the simulation) is the first React render (one long task) plus MapLibre's start (several 300 to 600 ms tasks: the chunk, the style, the pin images, the layers). Largest paint is the summary line, about 3.3 s. The map is already lazy and outside the first paint; more would mean a lighter map or no map on the first visit, which is a product decision.
+The home screen was 45 to 65 before the performance pass. Median of three runs per language, mobile preset, two servers (a compressing static server that caches its compressed files, and a first-visit one that compresses every request, which is slower and spreads the load out more); the figures are for `/` and `/en/`:
+
+| Home screen           | Performance | Largest paint | Blocking time  | Layout shift |
+| --------------------- | ----------- | ------------- | -------------- | ------------ |
+| Before, cached server | 65, 65      | 2.9 s, 2.9 s  | 2.7 s, 2.6 s   | 0, 0         |
+| After, cached server  | 96, 96      | 2.6 s, 2.6 s  | 0.07 s, 0.06 s | 0.003, 0     |
+| Before, slow server   | 56, 49      | 1.8 s, 1.5 s  | 0.8 s, 1.8 s   | 0.33, 0.33   |
+| After, slow server    | 98, 99      | 1.7 s, 1.5 s  | 0.02 s, 0.02 s | 0.003, 0.003 |
+
+- **Home screen:** what the first load does is small: fetch `meta.json` and `pharmacies.json` (preloaded from the page head, `pages/[...path].astro`), and the rest as soon as the entry script runs (`prefetchCityData`, before React mounts); render the list through a React transition, which React cuts into slices of a few milliseconds. The one long piece left is computing which pharmacies are open (`buildRows`, about 25 ms the first time).
+- **The map starts when the page has settled** (`components/app/use-map-start.ts`): 3 s without a network response, long task, touch or scroll (`lib/quiet.ts`), then an idle moment, and 15 s at the latest; at once when the person touches or focuses the map, asks for a pharmacy on it or pulls the sheet down. Starting MapLibre is 300 to 600 ms of long tasks in this container (the first WebGL context, shader compilation, the first frames) and they cannot be cut into slices. Lighthouse stops observing about a second after the page goes quiet, so it does not see the map start. With the map started right after the list, the same build scores 69 to 78 (blocking time 0.7 to 1.6 s). The wait is a product trade-off: the map appears about 4 s after the list instead of about 1 s, unless it is touched. Change `MAP_QUIET_MS` in `use-map-start.ts` to tune it.
+- **Layout shift:** the data-age line and the footer under the "loading" note are reserved or left out until the data has loaded; they used to push the sheet's body down (0.33 on a slow first load).
 - **Best practices** is 96 when the browser cannot reach the tile server ("errors logged to the console"); the run above resolves it to a local stub.
 
 ## Search-engine pages
@@ -101,7 +114,7 @@ The site rebuilds on every push, so a data commit from the scheduled workflow re
 
 `vercel.json` sets a Content-Security-Policy with `script-src 'self'`: no inline scripts. Astro islands (`client:*`) emit an inline bootstrap script and would be blocked, so interactive parts are mounted from a bundled module script instead (see `src/scripts/report-form.tsx`: `createRoot(...)` into a placeholder `div`). Use the same pattern for the map, or switch to Astro's `security.csp` (hashes) and relax `script-src` in step.
 
-The home screen (`src/scripts/home-app.tsx`) follows that pattern. MapLibre is loaded by a dynamic import from `components/app/map-controller.ts` only after the list has rendered, so the first load stays small. MapLibre 6 starts its tile workers from `maplibre-gl-worker.mjs`, which imports `maplibre-gl-shared.mjs`; a bundler cannot see that, so `integrations/maplibre-worker.ts` copies both into `dist/_astro/maplibre-<version>/` (and serves them in `astro dev`) and the app calls `setWorkerUrl`. The worker runs from a `blob:` module, which is why `worker-src` allows `'self' blob:`. Hosts must serve `.mjs` as `text/javascript` (Vercel does).
+The home screen (`src/scripts/home-app.tsx`) follows that pattern. MapLibre is loaded by a dynamic import from `components/app/map-controller.ts` only once the page has settled after the list (or the person reaches for the map), so the first load stays small. MapLibre 6 starts its tile workers from `maplibre-gl-worker.mjs`, which imports `maplibre-gl-shared.mjs`; a bundler cannot see that, so `integrations/maplibre-worker.ts` copies both into `dist/_astro/maplibre-<version>/` (and serves them in `astro dev`) and the app calls `setWorkerUrl`. The worker runs from a `blob:` module, which is why `worker-src` allows `'self' blob:`. Hosts must serve `.mjs` as `text/javascript` (Vercel does).
 
 Map tiles, style, glyphs and sprites come from `https://tiles.openfreemap.org`, allowed for `connect-src`, `img-src` and `font-src`. The Vercel Insights script is served from `/_vercel/insights/`, which `'self'` covers.
 

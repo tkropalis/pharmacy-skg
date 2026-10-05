@@ -48,3 +48,22 @@ export function localizeStyle<T extends StyleLike>(style: T, locale: Locale): T 
     }),
   };
 }
+
+const STYLE_TIMEOUT_MS = 20_000;
+
+/**
+ * Fetches the base style for the colour scheme and gives it the locale's place names. The map
+ * chunk is large, so the page starts this at the same time as that import and hands the result
+ * over (the style would otherwise be asked for only after the library has loaded).
+ */
+export async function loadMapStyle(
+  dark: boolean,
+  locale: Locale,
+  timeoutMs: number = STYLE_TIMEOUT_MS,
+): Promise<Record<string, unknown>> {
+  const response = await fetch(dark ? STYLE_DARK : STYLE_LIGHT, {
+    signal: AbortSignal.timeout(timeoutMs),
+  });
+  if (!response.ok) throw new Error(`Style request failed: HTTP ${response.status}`);
+  return localizeStyle((await response.json()) as { layers?: never[] }, locale);
+}

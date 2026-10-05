@@ -79,8 +79,12 @@ export async function waitForRows(page: Page): Promise<Locator> {
   return rows;
 }
 
-/** Waits until MapLibre is running. */
+/**
+ * Waits until MapLibre is running. The map starts by itself a few seconds after the list; here
+ * it is started as a person would, by reaching for it.
+ */
 export async function waitForMap(page: Page): Promise<void> {
+  await page.locator('.map-area').dispatchEvent('pointerdown');
   await expect(page.locator('.map[data-status="ready"]')).toBeAttached({ timeout: 20_000 });
 }
 

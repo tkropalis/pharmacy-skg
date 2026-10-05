@@ -24,6 +24,7 @@ import type { SheetSize } from './Sheet.tsx';
 import { UpcomingDuties } from './UpcomingDuties.tsx';
 import { useCityData } from './use-city-data.ts';
 import { useFavourites } from './use-favourites.ts';
+import { useMapStart } from './use-map-start.ts';
 import { useMediaQuery, useNow } from './use-now.ts';
 import './app.css';
 
@@ -101,6 +102,8 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   const scrollTo = useRef<string | null>(null);
 
   const ready = state.status === 'ready' ? state : null;
+  const mapStart = useMapStart(ready !== null);
+  const wakeMap = mapStart.wake;
   const data = ready?.data ?? null;
   const meta = ready?.meta ?? null;
 
@@ -234,8 +237,10 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
       setSelectedId(id);
       setMapFocus((previous) => ({ id, nonce: (previous?.nonce ?? 0) + 1 }));
       if (!wide && sheetSize === 'large') setSheetSize('medium');
+      // Asking for a pharmacy on the map must not wait for the map's timer.
+      wakeMap();
     },
-    [wide, sheetSize],
+    [wide, sheetSize, wakeMap],
   );
 
   const onMapSelect = useCallback(
@@ -430,7 +435,11 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
       <Sheet
         text={text}
         size={sheetSize}
-        onSizeChange={setSheetSize}
+        onSizeChange={(size) => {
+          setSheetSize(size);
+          // Pulling the sheet down is looking for the map.
+          if (size === 'small') wakeMap();
+        }}
         sidePanel={wide}
         header={header}
         scrollKey={tab}
@@ -653,7 +662,9 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
       <MapView
         locale={locale}
         text={text.map}
-        enabled={ready !== null}
+        enabled={mapStart.started}
+        waiting={ready !== null}
+        onWake={wakeMap}
         rows={result.rows}
         origin={originPoint}
         originNonce={originNonce}

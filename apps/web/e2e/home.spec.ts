@@ -72,6 +72,48 @@ for (const locale of LOCALES) {
   });
 }
 
+test.describe('when the map starts', () => {
+  const idle = '.map[data-status="idle"]';
+  const ready = '.map[data-status="ready"]';
+
+  test('the list comes first and the map starts by itself a few seconds later', async ({
+    page,
+  }) => {
+    await page.goto('/');
+    await waitForRows(page);
+    await expect(page.locator(idle)).toBeAttached();
+    // The area says the map is on its way instead of staying blank.
+    await expect(page.locator('.map-note')).toHaveText(t('el').app.map.loading);
+    // Pass the start delay (use-map-start.ts) and the wait for an idle moment.
+    await page.clock.fastForward(10_000);
+    await expect(page.locator(ready)).toBeAttached({ timeout: 20_000 });
+    await expect(page.locator('.map-note')).toHaveCount(0);
+  });
+
+  test('reaching for the map starts it at once', async ({ page }) => {
+    await page.goto('/');
+    await waitForRows(page);
+    await expect(page.locator(idle)).toBeAttached();
+    const box = await page.locator('.map-area').boundingBox();
+    if (box === null) throw new Error('no map area');
+    // The top of the map: on a phone the sheet covers the lower part.
+    await page.mouse.move(box.x + box.width / 2, box.y + 120);
+    await expect(page.locator(ready)).toBeAttached({ timeout: 20_000 });
+  });
+
+  test('"show on map" does not wait for the timer either', async ({ page }) => {
+    await page.goto('/');
+    const rows = await waitForRows(page);
+    await expect(page.locator(idle)).toBeAttached();
+    await rows
+      .first()
+      .getByRole('button', { name: t('el').app.row.showOnMap })
+      .click();
+    await expect(page.locator(ready)).toBeAttached({ timeout: 20_000 });
+    await expect(rows.first()).toHaveAttribute('data-selected', 'true');
+  });
+});
+
 test.describe('touch targets and focus', () => {
   test('the map controls are at least 44 by 44 px', async ({ page }) => {
     await page.goto('/');
