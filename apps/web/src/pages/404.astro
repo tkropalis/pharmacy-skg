@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import { localizedPath, t } from '../i18n/index.ts';
 
 // Vercel serves one 404 for every address, so this page is bilingual: Greek first, then English.
+// The title says it all; `body` is only the meta description.
 const el = t('el').notFound;
 const en = t('en').notFound;
 ---
@@ -10,7 +11,6 @@ const en = t('en').notFound;
 <Base locale="el" route={null} title={el.title} description={el.body}>
   <div class="container prose">
     <h1>{el.title}</h1>
-    <p>{el.body}</p>
     <p>
       <a class="button" href={localizedPath('el', 'home')}>
         {el.homeLink}
@@ -19,7 +19,6 @@ const en = t('en').notFound;
 
     <div lang="en">
       <h2>{en.title}</h2>
-      <p>{en.body}</p>
       <p>
         <a href={localizedPath('en', 'home')}>{en.homeLink}</a>
       </p>

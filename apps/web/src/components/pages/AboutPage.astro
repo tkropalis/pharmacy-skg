@@ -1,6 +1,7 @@
 ---
 import type { Locale } from '@pharmacy-skg/core';
-import { CONTACT_EMAIL, REPO_URL } from '../../config.ts';
+import { CONTACT_EMAIL, EMERGENCY_NUMBERS, REPO_URL } from '../../config.ts';
+import { telUrl } from '../../lib/directions.ts';
 import { localizedPath, t } from '../../i18n/index.ts';
 
 interface Props {
@@ -52,7 +53,12 @@ const allCredits = [
 
   <section>
     <h2>{d.emergencyHeading}</h2>
-    <p>{d.emergencyBody}</p>
+    <p>
+      {d.emergencyAmbulance}{' '}
+      <a href={telUrl(EMERGENCY_NUMBERS.ambulance)}>{EMERGENCY_NUMBERS.ambulance}</a>{' '}
+      {d.emergencyOr} <a href={telUrl(EMERGENCY_NUMBERS.europe)}>{EMERGENCY_NUMBERS.europe}</a>.{' '}
+      {d.emergencyPoison} <a href={telUrl(EMERGENCY_NUMBERS.poison)}>{EMERGENCY_NUMBERS.poison}</a>.
+    </p>
   </section>
 
   <section id="credits">

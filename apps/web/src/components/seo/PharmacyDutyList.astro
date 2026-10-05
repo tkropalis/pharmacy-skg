@@ -12,31 +12,30 @@ const { locale, items } = Astro.props;
 const seo = t(locale).seo;
 ---
 
+<!--
+  One line per duty, as in the home screen's favourites: the date (a link to that day's lists),
+  the kind and the hours. "Τρί 6 Οκτ · Νυχτερινή εφημερία · 21:00–00:00 · Επίσης: 14:00–17:00".
+-->
 <ul class="seo-list">
   {items.map((item) => (
     <li>
-      <span class="name">
+      {item.pagePath !== null ? (
+        <a href={item.pagePath}>
+          <time datetime={item.date}>{item.dateLabel}</time>
+        </a>
+      ) : (
         <time datetime={item.date}>{item.dateLabel}</time>
-      </span>
-      <span class="sub">
-        {item.groupName}: {item.heading} ({item.kindLabel})
-      </span>
-      <span class="sub">
-        {seo.pharmacy.dutyHoursLabel} {item.hoursText}
-      </span>
-      {item.extraHours.map((extra) => (
-        <span class="sub">
-          {seo.duty.extraHoursLabel} {extra}
-        </span>
-      ))}
-      {item.notes.map((note) => (
-        <span class="sub">{note}</span>
-      ))}
-      {item.pagePath !== null && (
-        <span class="sub">
-          <a href={item.pagePath}>{seo.pharmacy.dutyDayPage}</a>
-        </span>
       )}
+      {' · '}
+      {item.kindLabel}
+      {' · '}
+      {item.hoursText}
+      {item.extraHours.map((extra) => (
+        <>
+          {' · '}
+          {seo.duty.extraHoursLabel} {extra}
+        </>
+      ))}
     </li>
   ))}
 </ul>

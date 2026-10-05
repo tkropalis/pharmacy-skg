@@ -1,5 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { SOURCES, SOURCE_OPTIONS, clusterColors, pinLayers } from './map-layers.ts';
+import {
+  DIMMED_LAYERS,
+  PIN_LAYER_IDS,
+  SOURCES,
+  SOURCE_OPTIONS,
+  clusterColors,
+  pinLayers,
+} from './map-layers.ts';
 
 function luminance(hex: string): number {
   const channel = (offset: number) => {
@@ -17,7 +24,7 @@ function contrast(a: string, b: string): number {
 describe('map sources', () => {
   it('cluster only the regular and extended-hours pharmacies', () => {
     expect(SOURCE_OPTIONS.clustered['cluster']).toBe(true);
-    for (const key of ['duty', 'closed', 'selected', 'origin'] as const) {
+    for (const key of ['duty', 'closed', 'origin'] as const) {
       expect(SOURCE_OPTIONS[key]['cluster'], key).toBeUndefined();
     }
   });
@@ -31,17 +38,45 @@ describe.each([false, true])('map layers (dark: %s)', (dark) => {
     expect(new Set(ids).size).toBe(ids.length);
   });
 
-  it('draw the duty pins from the unclustered source, above everything but the selection', () => {
+  it('draw the duty pins from the unclustered source, above everything else', () => {
     const duty = layers.find((layer) => layer.id === 'duty-pins');
     expect(duty?.['source']).toBe(SOURCES.duty);
     expect(duty?.['filter']).toBeUndefined();
-    const dutyIndex = ids.indexOf('duty-pins');
-    const selected = ids.indexOf('selected-ring');
-    expect(selected).toBeGreaterThan(dutyIndex);
-    expect(ids.indexOf('selected-pin')).toBeGreaterThan(dutyIndex);
-    // Every other layer is below the duty pins, except their names and the selection.
-    const above = ids.slice(dutyIndex + 1);
-    expect(above).toEqual(['duty-names', 'selected-ring', 'selected-pin']);
+    // Every other layer is below the duty pins, except their names. The chosen pharmacy is an
+    // element over the map, not a layer.
+    const above = ids.slice(ids.indexOf('duty-pins') + 1);
+    expect(above).toEqual(['duty-names']);
+  });
+
+  it('draw a position as a dot and a chosen area as a named ring', () => {
+    const origin = layers.filter((layer) => layer['source'] === SOURCES.origin);
+    const byKind = (kind: string) =>
+      origin
+        .filter(
+          (layer) =>
+            JSON.stringify(layer['filter']) === JSON.stringify(['==', ['get', 'kind'], kind]),
+        )
+        .map((layer) => layer.id);
+    expect(byKind('geo')).toEqual(['origin-halo', 'origin-dot']);
+    expect(byKind('area')).toEqual(['origin-area', 'origin-area-name']);
+  });
+
+  it('dim only layers that exist, through a property of their own type', () => {
+    for (const [id, property] of DIMMED_LAYERS) {
+      const layer = layers.find((l) => l.id === id);
+      expect(layer, id).toBeDefined();
+      expect(
+        property.startsWith(
+          layer?.type === 'circle'
+            ? 'circle-'
+            : layer?.['layout'] && (layer['layout'] as Record<string, unknown>)['icon-image']
+              ? 'icon-'
+              : 'text-',
+        ),
+        id,
+      ).toBe(true);
+    }
+    for (const id of PIN_LAYER_IDS) expect(DIMMED_LAYERS.map(([l]) => l)).toContain(id);
   });
 
   it('use the clustered source only for clusters, the other pins and their names', () => {

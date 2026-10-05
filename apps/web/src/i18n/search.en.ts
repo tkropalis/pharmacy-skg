@@ -6,7 +6,7 @@ type Strings<T> = { [K in keyof T]: T[K] extends string ? string : Strings<T[K]>
 export const searchEn: Strings<typeof searchEl> = {
   open: 'Medicines',
   openLabel: 'Medicines: search',
-  title: 'Find a medicine',
+  title: 'Medicine search',
   close: 'Close',
   inputLabel: 'Medicine name',
   placeholder: 'Medicine name, e.g. Depon',
@@ -28,7 +28,7 @@ export const searchEn: Strings<typeof searchEl> = {
     substance: 'Active substance',
     company: 'Company',
     maxPriceNote: 'The same at every pharmacy.',
-    indicativeNote: 'May differ from pharmacy to pharmacy.',
+    indicativeNote: 'May vary by pharmacy.',
     notReimbursed: 'Not covered by insurance.',
     shortageUntil: 'Until about {to}.',
     shortageAdvice: 'Ask your pharmacist for an alternative.',
@@ -36,8 +36,8 @@ export const searchEn: Strings<typeof searchEl> = {
 
   /** Credits on the about page, after its own list. */
   credits: {
-    moh: 'Medicine prices: Ministry of Health, price lists.',
-    eof: 'Medicines that are hard to find: National Organisation for Medicines.',
+    moh: 'Medicine prices: Ministry of Health.',
+    eof: 'Medicines that are hard to find: National Organization for Medicines.',
   },
 
   forms: {

@@ -39,7 +39,11 @@ const links = [
     </nav>
 
     <p class="small muted">
-      {d.lastUpdatedLabel} <time data-updated-at>—</time> · {d.disclaimer}
+      <span class="updated">
+        {d.lastUpdatedLabel} <time data-updated-at></time>
+        {' · '}
+      </span>
+      {d.disclaimer}
     </p>
   </div>
 </footer>
@@ -79,5 +83,10 @@ const links = [
   .small {
     margin: 0 0 0.25rem;
     line-height: 1.45;
+  }
+
+  /* The date is filled in by scripts/boot.ts; until then (or without JavaScript) no label. */
+  .updated:has(time:empty) {
+    display: none;
   }
 </style>

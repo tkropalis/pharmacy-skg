@@ -6,9 +6,9 @@ import { describeStatus, timeInCity } from '../../lib/seo/status-text.ts';
 import { loadNowData } from './now-data.ts';
 
 /**
- * "Status now" on a pharmacy page. The page is static and can be old, so the status is worked
- * out here from the data files, with the clock and the city's time zone. Without JavaScript the
- * element keeps its static fallback text.
+ * The status on a pharmacy page, right under its name. The page is static and can be old, so the
+ * status is worked out here from the data files, with the clock and the city's time zone.
+ * Without JavaScript the element stays empty, and hidden (seo.css).
  */
 
 async function show(root: HTMLElement): Promise<void> {

@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import type { Locale } from '@pharmacy-skg/core';
 import { THESSALONIKI } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
-import type { Origin, Row } from '../../lib/list.ts';
-import type { MapController } from './map-controller.ts';
+import type { Row } from '../../lib/list.ts';
+import type { MapController, OriginMark, Selection } from './map-controller.ts';
 import { yieldToMain } from '../../lib/idle.ts';
 import { importOrOfferReload } from '../../lib/import-or-reload.ts';
 import { loadMapStyle } from '../../lib/map-style.ts';
@@ -26,6 +26,16 @@ export interface MapFocus {
   readonly id: string;
   /** Changes on every request, so asking for the same pharmacy twice recentres twice. */
   readonly nonce: number;
+  /**
+   * The height the sheet will cover once it has moved, when the request also moves the sheet
+   * (the sheet reports its height only as it goes).
+   */
+  readonly occluded?: number;
+}
+
+/** The chosen pharmacy; `ripple` when it was chosen on the map itself. */
+export interface MapSelection extends Selection {
+  readonly ripple: boolean;
 }
 
 interface MapViewProps {
@@ -38,16 +48,20 @@ interface MapViewProps {
   /** The person reached for the map (touch, pointer, keyboard): start it now if it has not. */
   readonly onWake: () => void;
   readonly rows: readonly Row[];
-  readonly origin: Origin | null;
+  readonly origin: OriginMark | null;
   /** A new origin to fly to (the nonce changes when the person picked it). */
   readonly originNonce: number;
-  readonly selectedId: string | null;
+  readonly selection: MapSelection | null;
   readonly focus: MapFocus | null;
   readonly occludedBottom: number;
   readonly sideBySide: boolean;
+  /** The night look: the dark base map. */
+  readonly dark: boolean;
   /** The map is covered by the sheet: keep its controls out of the tab order. */
   readonly covered: boolean;
   readonly onSelect: (id: string | null) => void;
+  /** The person moved the map themselves. */
+  readonly onReach: () => void;
   readonly onStatus: (status: MapStatus) => void;
 }
 
@@ -56,7 +70,7 @@ interface MapViewProps {
  * missing or the style cannot be fetched the area shows a note and the list carries on.
  */
 export function MapView(props: MapViewProps) {
-  const { locale, text, enabled, waiting, onWake, sideBySide } = props;
+  const { locale, text, enabled, waiting, onWake, sideBySide, dark } = props;
   const containerRef = useRef<HTMLDivElement>(null);
   const controller = useRef<MapController | null>(null);
   const latest = useRef(props);
@@ -88,7 +102,7 @@ export function MapView(props: MapViewProps) {
         await yieldToMain();
         if (cancelled) return;
         // The style and the library load side by side.
-        const style = loadMapStyle(locale);
+        const style = loadMapStyle(locale, dark);
         style.catch(() => {});
         // After a deploy this page's chunk may be gone from the cache and the server: the map
         // note says so and the reload notice offers the new version. The list is unaffected.
@@ -105,7 +119,9 @@ export function MapView(props: MapViewProps) {
           occludedBottom: latest.current.occludedBottom,
           reducedMotion: reducedRef.current,
           sideBySide,
+          dark,
           onSelect: (id) => latest.current.onSelect(id),
+          onReach: () => latest.current.onReach(),
         });
         if (cancelled) {
           created.destroy();
@@ -115,7 +131,7 @@ export function MapView(props: MapViewProps) {
         const now = latest.current;
         created.setRows(now.rows);
         created.setOrigin(now.origin, false, now.occludedBottom);
-        created.setSelected(now.selectedId);
+        created.setSelected(now.selection);
         setStatus('ready');
       } catch {
         if (!cancelled) setStatus('failed');
@@ -126,15 +142,16 @@ export function MapView(props: MapViewProps) {
       controller.current?.destroy();
       controller.current = null;
     };
-  }, [enabled, locale, text, sideBySide]);
+  }, [enabled, locale, text, sideBySide, dark]);
 
   useEffect(() => {
     if (status === 'ready') controller.current?.setRows(props.rows);
   }, [status, props.rows]);
 
+  const { selection } = props;
   useEffect(() => {
-    if (status === 'ready') controller.current?.setSelected(props.selectedId);
-  }, [status, props.selectedId, props.rows]);
+    if (status === 'ready') controller.current?.setSelected(selection, selection?.ripple ?? false);
+  }, [status, selection]);
 
   const { origin, originNonce } = props;
   const lastNonce = useRef(0);
@@ -148,7 +165,8 @@ export function MapView(props: MapViewProps) {
   const { focus } = props;
   useEffect(() => {
     if (status === 'ready' && focus !== null) {
-      controller.current?.focusPharmacy(focus.id, latest.current.occludedBottom);
+      const now = latest.current;
+      controller.current?.focusPharmacy(focus.id, focus.occluded ?? now.occludedBottom, now.origin);
     }
   }, [status, focus]);
 

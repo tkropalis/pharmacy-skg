@@ -57,8 +57,18 @@ export interface RowsResult {
 }
 
 /**
- * The open pharmacies, nearest first with an origin (otherwise by name), followed, when asked
- * for, by the closed ones in the same order.
+ * A pharmacy that closes within 30 minutes goes after the ones that stay open, each group in its
+ * own order: at 13:50 the nearest pharmacy still open at 14:05 comes first, not one that closes
+ * at 14:00.
+ */
+export function rankClosingSoonLast<T extends NearbyPharmacy>(rows: readonly T[]): T[] {
+  const soon = (row: T) => row.status.state === 'open' && row.status.closingSoon;
+  return [...rows.filter((row) => !soon(row)), ...rows.filter(soon)];
+}
+
+/**
+ * The open pharmacies, nearest first with an origin (otherwise by name) and those about to close
+ * last, followed, when asked for, by the closed ones in the same order.
  */
 export function buildRows(
   data: CityData,
@@ -66,7 +76,9 @@ export function buildRows(
   origin: Origin | null,
   includeClosed: boolean,
 ): RowsResult {
-  const open = openPharmacies(data, at, origin ? { origin } : undefined).map(toRow);
+  const open = rankClosingSoonLast(
+    openPharmacies(data, at, origin ? { origin } : undefined).map(toRow),
+  );
   if (!includeClosed) return { rows: open, openCount: open.length };
 
   const openIds = new Set(open.map((row) => row.pharmacy.id));

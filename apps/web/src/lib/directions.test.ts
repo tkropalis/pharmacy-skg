@@ -3,6 +3,7 @@ import {
   appleLegacyUrl,
   defaultDirectionsApp,
   directionsTarget,
+  preferredDirectionsApp,
   directionsUrl,
   telUrl,
 } from './directions.ts';
@@ -10,18 +11,16 @@ import {
 const exact = { lat: 40.632612, lon: 22.940912 };
 
 describe('directionsUrl', () => {
-  it('builds Google walking directions', () => {
+  it('builds Google directions without a travel mode (the app keeps the last one)', () => {
     expect(directionsUrl('google', exact)).toBe(
-      'https://www.google.com/maps/dir/?api=1&destination=40.632612%2C22.940912&travelmode=walking',
+      'https://www.google.com/maps/dir/?api=1&destination=40.632612%2C22.940912',
     );
   });
   it('builds the Apple Maps URL that works on every iOS', () => {
     expect(directionsUrl('apple', exact)).toBe(
-      'https://maps.apple.com/?daddr=40.632612%2C22.940912&dirflg=w',
+      'https://maps.apple.com/?daddr=40.632612%2C22.940912',
     );
-    expect(appleLegacyUrl(exact)).toBe(
-      'https://maps.apple.com/?daddr=40.632612%2C22.940912&dirflg=w',
-    );
+    expect(appleLegacyUrl(exact)).toBe('https://maps.apple.com/?daddr=40.632612%2C22.940912');
   });
   it('builds a Waze link', () => {
     expect(directionsUrl('waze', exact)).toBe(
@@ -74,5 +73,17 @@ describe('defaultDirectionsApp', () => {
       'google',
     );
     expect(defaultDirectionsApp('Mozilla/5.0 (Linux; Android 15; Pixel 9)')).toBe('google');
+  });
+});
+
+describe('preferredDirectionsApp', () => {
+  const iphone = 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X)';
+  it('uses the app the person chose last', () => {
+    expect(preferredDirectionsApp('waze', iphone)).toBe('waze');
+    expect(preferredDirectionsApp('google', iphone)).toBe('google');
+  });
+  it('falls back to the device default for nothing or anything unknown', () => {
+    expect(preferredDirectionsApp(null, iphone)).toBe('apple');
+    expect(preferredDirectionsApp('bing', 'Mozilla/5.0 (Linux; Android 15)')).toBe('google');
   });
 });

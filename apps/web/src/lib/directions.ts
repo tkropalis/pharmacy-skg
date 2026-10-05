@@ -25,12 +25,15 @@ export function directionsTarget(
 
 const coords = (t: { lat: number; lon: number }) => `${t.lat.toFixed(6)},${t.lon.toFixed(6)}`;
 
-/** Walking directions where the app supports a mode; Waze has none. */
+/**
+ * Directions with no travel mode: the maps app uses the one the person last chose (at night
+ * most people drive; by day many walk).
+ */
 export function directionsUrl(app: DirectionsApp, target: DirectionsTarget): string {
   const place = 'query' in target ? target.query : coords(target);
   switch (app) {
     case 'google':
-      return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(place)}&travelmode=walking`;
+      return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(place)}`;
     case 'apple':
       // The legacy form works on every iOS and macOS. The newer /directions form needs iOS 18.4.
       return appleLegacyUrl(target);
@@ -41,10 +44,10 @@ export function directionsUrl(app: DirectionsApp, target: DirectionsTarget): str
   }
 }
 
-/** Apple Maps' long-standing directions URL (walking). */
+/** Apple Maps' long-standing directions URL. */
 export function appleLegacyUrl(target: DirectionsTarget): string {
   const place = 'query' in target ? target.query : coords(target);
-  return `https://maps.apple.com/?daddr=${encodeURIComponent(place)}&dirflg=w`;
+  return `https://maps.apple.com/?daddr=${encodeURIComponent(place)}`;
 }
 
 /** The tel: link for a Greek landline or mobile number as printed. */
@@ -54,10 +57,22 @@ export function telUrl(phone: string): string {
 }
 
 /**
- * The app the row's one-tap directions button opens: Apple Maps on Apple devices (the maps app
- * that is always there), Google Maps elsewhere. The other apps stay one tap further, in the
- * row's details.
+ * The app the one-tap directions button opens: the app the person last chose in a row's
+ * details (remembered on the device, lib/storage.ts MAPS_KEY), otherwise Apple Maps on Apple
+ * devices (the maps app that is always there) and Google Maps elsewhere.
  */
+export function preferredDirectionsApp(
+  remembered: string | null,
+  userAgent: string,
+  maxTouchPoints = 0,
+): DirectionsApp {
+  return (
+    DIRECTIONS_APPS.find((app) => app === remembered) ??
+    defaultDirectionsApp(userAgent, maxTouchPoints)
+  );
+}
+
+/** Apple Maps on Apple devices, Google Maps elsewhere. */
 export function defaultDirectionsApp(userAgent: string, maxTouchPoints = 0): DirectionsApp {
   if (/iPhone|iPad|iPod/.test(userAgent)) return 'apple';
   // iPadOS reports itself as a Mac; a Mac with touch is an iPad.

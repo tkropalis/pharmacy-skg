@@ -63,17 +63,20 @@ export function weekdaysText(weekdays: readonly number[], seo: SeoStrings): stri
     .join('/');
 }
 
-/** The hours printed in a duty heading, or a note that none are printed. */
+/**
+ * The hours printed in a duty heading ("21:00–08:00 την επομένη"), or "call for the hours" when
+ * none are printed. An end at 00:00 is midnight and needs no "next day".
+ */
 export function windowText(hours: TimeWindow | null, seo: SeoStrings): string {
   if (hours === null) return seo.duty.hoursNotStated;
   const base = `${hours.from}–${hours.to}`;
-  return hours.toNextDay ? `${base} (${seo.duty.nextDay})` : base;
+  return hours.toNextDay && hours.to !== '00:00' ? `${base} ${seo.duty.nextDay}` : base;
 }
 
-/** "Τρί/Πέμ/Παρ 14:00–17:00 (εκτός αργιών)" */
+/** "Τρί/Πέμ/Παρ 14:00–17:00, εκτός αργιών" */
 export function extraHoursText(extra: ExtraHours, seo: SeoStrings): string {
   const base = `${weekdaysText(extra.weekdays, seo)} ${extra.from}–${extra.to}`;
-  return extra.exceptHolidays ? `${base} (${seo.duty.exceptHolidays})` : base;
+  return extra.exceptHolidays ? `${base}, ${seo.duty.exceptHolidays}` : base;
 }
 
 export interface RegularHoursGroup {
@@ -87,7 +90,7 @@ export interface RegularHoursView {
   readonly groups: readonly RegularHoursGroup[];
   /** Days without regular hours, e.g. "Σαβ/Κυρ"; '' if the week has none. */
   readonly closedDays: string;
-  /** The label and the groups on one line: "Κανονικό ωράριο: Δευ/Τετ 08:00–14:30 · ...". */
+  /** The label and the groups on one line: "Συνηθισμένο ωράριο: Δευ/Τετ 08:00–14:30 · …". */
   readonly text: string;
 }
 

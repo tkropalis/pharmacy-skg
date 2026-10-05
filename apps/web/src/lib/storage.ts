@@ -48,3 +48,5 @@ export const DATA_UPDATED_KEY = 'pharmacy-skg:data-updated';
 export const LOCATION_KEY = 'pharmacy-skg:location';
 /** 'duty' when the list shows only the pharmacies on duty by day. */
 export const FILTER_KEY = 'pharmacy-skg:filter';
+/** The maps app last chosen for directions ('google', 'apple' or 'waze'). */
+export const MAPS_KEY = 'pharmacy-skg:maps';

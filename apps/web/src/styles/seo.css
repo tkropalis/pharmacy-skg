@@ -17,13 +17,6 @@
   font-size: 1.0625rem;
 }
 
-.seo-kicker {
-  margin: 0 0 0.25rem;
-  color: var(--muted);
-  font-size: 0.9375rem;
-  font-weight: 600;
-}
-
 .seo-breadcrumb {
   margin: 0 0 1rem;
   font-size: 0.9375rem;
@@ -45,8 +38,7 @@
 }
 
 .seo-status {
-  /* The status is worked out in the browser; the room is kept so the page does not jump. */
-  min-height: 8rem;
+  /* Worked out in the browser; without JavaScript the pharmacy page's box stays empty. */
   margin: 0 0 var(--space);
   padding: 0.75rem var(--space);
   border: 1px solid var(--border);
@@ -66,8 +58,21 @@
   color: var(--warn-fg);
 }
 
+.seo-status:empty {
+  display: none;
+}
+
 .seo-status > :last-child {
   margin-bottom: 0;
+}
+
+/* The area page's open pharmacies, listed inside the status box. */
+.seo-status .seo-list {
+  margin-bottom: 0.5rem;
+}
+
+.seo-status .seo-list > li:first-child {
+  border-top: 0;
 }
 
 .seo-facts {
@@ -135,16 +140,23 @@
   color: var(--accent);
 }
 
+/* A duty-date page's area groups: a plain heading under a hairline, no boxes. */
+.seo-group {
+  margin-top: 2rem;
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.seo-group > h2 {
+  margin-top: 0.75rem;
+}
+
 .seo-section {
   margin: 0 0 1rem;
-  padding: 0.5rem var(--space) 0.25rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface);
 }
 
 .seo-section h3 {
-  margin-top: 0.25rem;
+  margin-top: 1rem;
 }
 
 /* Previous and next day: two halves of one row, the dates only (the words are for screen readers). */

@@ -4,7 +4,14 @@ import { THESSALONIKI } from '@pharmacy-skg/core';
 import type { CityData, DutyDay, ExtendedHours, Pharmacies } from '@pharmacy-skg/core';
 import { describe, expect, it } from 'vitest';
 import { distanceMetres, coverage } from './engine.ts';
-import { applyListFilter, buildRows, isDutyKind, pinKindOf, rowFor } from './list.ts';
+import {
+  applyListFilter,
+  buildRows,
+  isDutyKind,
+  pinKindOf,
+  rankClosingSoonLast,
+  rowFor,
+} from './list.ts';
 import { pinCollection } from './map-data.ts';
 
 const DATA_DIR = resolve(import.meta.dirname, '../../../../data/thessaloniki');
@@ -43,7 +50,10 @@ describe('buildRows (real data, Monday 22:30)', () => {
   });
 
   it('is sorted by distance from the origin, unlocated pharmacies last', () => {
-    const distances = rows.map((r) => r.distance);
+    // Those about to close come last (see below); the order is checked among the others.
+    const distances = rows
+      .filter((r) => !(r.status.state === 'open' && r.status.closingSoon))
+      .map((r) => r.distance);
     const located = distances.filter((d): d is number => d !== null);
     expect(located).toEqual([...located].sort((a, b) => a - b));
     expect(distances.lastIndexOf(null)).toBeGreaterThanOrEqual(distances.indexOf(null));
@@ -55,9 +65,43 @@ describe('buildRows (real data, Monday 22:30)', () => {
   });
 
   it('sorts by name without an origin', () => {
-    const byName = buildRows(data, night, null, false).rows.map((r) => r.pharmacy.name);
+    const byName = buildRows(data, night, null, false)
+      .rows.filter((r) => !(r.status.state === 'open' && r.status.closingSoon))
+      .map((r) => r.pharmacy.name);
     expect(byName).toEqual([...byName].sort(new Intl.Collator('el').compare));
     expect(buildRows(data, night, null, false).rows.every((r) => r.distance === null)).toBe(true);
+  });
+});
+
+describe('pharmacies about to close', () => {
+  // Monday 22:40 in Athens: some evening duties end at 23:00.
+  const late = new Date('2026-10-05T19:40:00Z');
+  const soon = (row: { status: { state: string; closingSoon?: boolean } }) =>
+    row.status.state === 'open' && row.status.closingSoon === true;
+
+  it('come after the ones that stay open, each group nearest first', () => {
+    const { rows } = buildRows(data, late, aristotelous, false);
+    const firstSoon = rows.findIndex(soon);
+    expect(firstSoon).toBeGreaterThan(0);
+    expect(rows.slice(firstSoon).every(soon)).toBe(true);
+    for (const group of [rows.slice(0, firstSoon), rows.slice(firstSoon)]) {
+      const located = group.map((r) => r.distance).filter((d): d is number => d !== null);
+      expect(located).toEqual([...located].sort((a, b) => a - b));
+    }
+  });
+
+  it('keep the order of each group', () => {
+    const row = (id: string, closingSoon: boolean) =>
+      ({ id, status: { state: 'open', closingSoon } }) as unknown as Parameters<
+        typeof rankClosingSoonLast
+      >[0][number];
+    const ranked = rankClosingSoonLast([
+      row('a', true),
+      row('b', false),
+      row('c', true),
+      row('d', false),
+    ]);
+    expect(ranked.map((r) => (r as unknown as { id: string }).id)).toEqual(['b', 'd', 'a', 'c']);
   });
 });
 

@@ -53,9 +53,11 @@ export function UpcomingDuties({
         <p className="hint">
           {loading
             ? text.favourites.loadingDuties
-            : fill(text.favourites.noneUpcoming, {
-                date: publishedThrough === null ? '—' : shortIsoDate(publishedThrough, locale),
-              })}
+            : publishedThrough === null
+              ? text.favourites.noneAnnounced
+              : fill(text.favourites.noneUpcoming, {
+                  date: shortIsoDate(publishedThrough, locale),
+                })}
         </p>
       ) : (
         <>

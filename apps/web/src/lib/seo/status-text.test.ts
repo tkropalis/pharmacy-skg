@@ -50,13 +50,29 @@ describe('whenText / until across days', () => {
       'Open until tomorrow at 08:00',
     );
     expect(describeStatus(status, true, now, 'el', t('el')).short).toBe(
-      'Ανοιχτό μέχρι αύριο στις 08:00',
+      'Ανοιχτό έως αύριο στις 08:00',
     );
   });
 });
 
 describe('describeStatus', () => {
   const open = (reasons: PharmacyStatus & { state: 'open' }): PharmacyStatus => reasons;
+
+  it('says "until midnight" rather than "tomorrow at 00:00"', () => {
+    const status = open({
+      state: 'open',
+      until: new Date('2026-10-05T21:00:00Z'), // 00:00 on the 6th in Athens
+      closingSoon: false,
+      runReasons: [],
+      reasons: [
+        { kind: 'duty', duty: 'overnight', date: '2026-10-05', groupId: 'metro', heading: 'x' },
+      ],
+    });
+    expect(describeStatus(status, true, now, 'el', t('el')).short).toBe(
+      'Εφημερεύει έως τα μεσάνυχτα',
+    );
+    expect(describeStatus(status, true, now, 'en', t('en')).short).toBe('On duty until midnight');
+  });
 
   it('names the duty listing, the closing time and asks to call', () => {
     const status = open({
@@ -70,8 +86,8 @@ describe('describeStatus', () => {
     });
     const result = describeStatus(status, true, now, 'el', t('el'));
     expect(result.tone).toBe('open');
-    expect(result.short).toBe('Εφημερεύει μέχρι τις 23:00');
-    expect(result.text).toBe('Εφημερεύει μέχρι τις 23:00. Καλέστε πριν πάτε.');
+    expect(result.short).toBe('Εφημερεύει έως 23:00');
+    expect(result.text).toBe('Εφημερεύει έως 23:00. Καλέστε πριν πάτε.');
   });
 
   it('says open for regular and extended hours, and closing soon', () => {
@@ -99,7 +115,7 @@ describe('describeStatus', () => {
     const result = describeStatus(status, false, now, 'en', t('en'));
     expect(result.tone).toBe('closed');
     expect(result.text).toBe(
-      'Closed now. We do not know when it opens in the next 7 days. It has not been announced yet which pharmacies are on duty here that day, so this may change. Call before you go.',
+      'Closed now. Opening time unknown for the next 7 days. The day’s duty lists are not announced yet. Call before you go.',
     );
   });
 

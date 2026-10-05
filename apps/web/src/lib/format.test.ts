@@ -4,6 +4,7 @@ import {
   fill,
   formatClock,
   formatDistance,
+  formatPhone,
   formatPrice,
   longIsoDate,
   shortIsoDate,
@@ -30,9 +31,22 @@ describe('formatDistance', () => {
     expect(formatDistance(1234, 'en')).toBe('1.2 km');
     expect(formatDistance(12_400, 'en')).toBe('12 km');
   });
-  it('uses the decimal comma in Greek', () => {
-    expect(formatDistance(1234, 'el')).toBe('1,2 km');
-    expect(formatDistance(450, 'el')).toBe('450 m');
+  it('uses the decimal comma and the Greek units in Greek', () => {
+    expect(formatDistance(1234, 'el')).toBe('1,2 χλμ');
+    expect(formatDistance(450, 'el')).toBe('450 μ');
+  });
+});
+
+describe('formatPhone', () => {
+  it('puts a space after the area code', () => {
+    expect(formatPhone('2310023026')).toBe('2310 023026');
+    expect(formatPhone('2311112375')).toBe('2311 112375');
+    expect(formatPhone('2392012345')).toBe('23920 12345');
+  });
+  it('groups a mobile number and leaves anything else alone', () => {
+    expect(formatPhone('6941234567')).toBe('694 123 4567');
+    expect(formatPhone('+30 2310 023026')).toBe('+30 2310 023026');
+    expect(formatPhone('166')).toBe('166');
   });
 });
 

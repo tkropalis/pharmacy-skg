@@ -11,14 +11,14 @@ export const en: Dictionary = {
   tagline: 'Free and ad-free',
 
   update: {
-    available: 'A new version of the app is ready.',
+    available: 'A new version is ready.',
     reload: 'Reload',
-    dismiss: 'Dismiss notice',
+    dismiss: 'Close',
   },
 
   stale: {
     title: 'This information may be out of date.',
-    body: 'It has not been updated for more than a day and a half. Call the pharmacy before you go.',
+    body: 'Call before you go.',
   },
 
   status: { ...STATUS_LABELS.en },
@@ -27,7 +27,6 @@ export const en: Dictionary = {
     lastUpdatedLabel: 'Updated',
     navLabel: 'Information',
     disclaimer: 'Call before you go.',
-    about: 'About and disclaimer',
     aboutShort: 'About',
     privacy: 'Privacy',
     report: 'Report a mistake',
@@ -36,38 +35,33 @@ export const en: Dictionary = {
   home: {
     title: 'Open pharmacies in Thessaloniki',
     description:
-      'Which pharmacies are open right now in Thessaloniki: on duty, overnight and on their usual hours, on a map. Free and ad-free.',
-    intro:
-      'A map of the pharmacies that are open right now near you: on duty, overnight and on their usual hours.',
-    noScript:
-      'The map and the list of open pharmacies need JavaScript. Without it you can see the official duty lists by day:',
-    dutyLink: 'Pharmacies on duty, by day',
-    fsthLead: 'Official source:',
-    fsthName: 'Pharmaceutical Association of Thessaloniki',
+      'Open, on-duty and overnight pharmacies in Thessaloniki right now, on a map. Free, no ads.',
+    noScript: 'The map needs JavaScript.',
+    dutyLink: 'Duty lists by day',
   },
 
   about: {
     title: 'About',
-    description: 'What the app is, where the opening hours come from and which sources it uses.',
+    description: 'What the app is and where its data comes from.',
     disclaimer:
-      'Call before you go: opening hours can change or contain mistakes. This app does not give medical advice.',
+      'Call before you go. Opening hours can be wrong. This app does not give medical advice.',
     sections: [
       {
         heading: 'What it is',
         paragraphs: [
-          'It shows which pharmacies in the Thessaloniki regional unit are open. It is free, ad-free and independent: it has no connection with the Pharmaceutical Association of Thessaloniki or the Region of Central Macedonia.',
+          'It shows which pharmacies in the Thessaloniki area are open. It is free, with no ads. It is not connected to the Pharmaceutical Association of Thessaloniki or the Region of Central Macedonia.',
         ],
       },
       {
         heading: 'Opening hours',
         paragraphs: [
-          'Duty pharmacies are only those officially announced. Every other pharmacy has the usual hours: Monday and Wednesday 08:00–14:30, Tuesday, Thursday and Friday 08:00–14:00 and 17:00–21:00.',
+          'We show only officially announced duty days. Other pharmacies have the usual hours: Monday and Wednesday 08:00–14:30, Tuesday, Thursday and Friday 08:00–14:00 and 17:00–21:00. Some have longer hours, announced by the Region.',
         ],
       },
     ],
     creditsHeading: 'Sources',
     credits: {
-      fsth: 'Duty lists: Pharmaceutical Association of Thessaloniki, via thess.guide.',
+      fsth: 'Duty lists: Pharmaceutical Association of Thessaloniki, via',
       pkm: 'Opening hours: Region of Central Macedonia.',
       overture: 'Pharmacy locations: Overture Maps Foundation, CDLA-Permissive-2.0.',
       osm: 'Map and addresses: © OpenStreetMap contributors, ODbL.',
@@ -79,14 +73,17 @@ export const en: Dictionary = {
     sourceBody: 'Open source (MIT) on',
     reportCta: 'Found a mistake? Tell us.',
     emergencyHeading: 'Emergency',
-    emergencyBody: '166 (ambulance) or 112. Poison Centre: 210 7793777.',
+    emergencyAmbulance: 'Ambulance',
+    emergencyOr: 'or',
+    emergencyPoison: 'Poison Centre',
   },
 
   privacy: {
     title: 'Privacy',
-    description: 'Your location and searches stay on your device. No cookies and no accounts.',
+    description:
+      'Your location and searches never leave your device. There are no accounts or cookies.',
     summary:
-      'Your location and searches never leave your device. There are no accounts and no cookies.',
+      'Your location and searches never leave your device. There are no accounts or cookies.',
     sections: [
       {
         heading: 'Location',
@@ -102,19 +99,17 @@ export const en: Dictionary = {
       },
       {
         heading: 'Statistics',
-        paragraphs: [
-          'We count visits with Vercel Web Analytics: anonymous, no cookies, no profiles.',
-        ],
+        paragraphs: ['We count visits anonymously and without cookies, with Vercel Web Analytics.'],
       },
       {
         heading: 'Map and hosting',
         paragraphs: [
-          'The map loads from OpenFreeMap and the site is hosted on Vercel. Like any website, they see your IP address.',
+          'The map loads from OpenFreeMap and the site is hosted on Vercel. As with any website, they see your IP address.',
         ],
       },
       {
-        heading: 'Problem reports',
-        paragraphs: ['They become public issues on GitHub. Do not include personal information.'],
+        heading: 'Mistake reports',
+        paragraphs: ['They are published on GitHub. Do not include personal information.'],
       },
     ],
     contact: 'Questions?',
@@ -122,9 +117,7 @@ export const en: Dictionary = {
 
   report: {
     title: 'Report a mistake',
-    description:
-      'Wrong hours, a pharmacy you found closed, a wrong location or phone? Tell us so we can fix it.',
-    intro: 'Wrong hours, location or phone number? Tell us so we can fix it.',
+    description: 'Wrong hours, location or phone number? Tell us so we can fix it.',
     warningTitle: 'Do not include personal information',
     warningBody: 'Reports are published on GitHub for anyone to read.',
     form: {
@@ -132,8 +125,8 @@ export const en: Dictionary = {
       pharmacyHint: 'Optional.',
       typeLabel: 'What is wrong?',
       typeOptions: {
-        'wrong-hours': 'Wrong opening hours',
-        'closed-but-listed-open': 'It was closed but listed as open',
+        'wrong-hours': 'Wrong hours',
+        'closed-but-listed-open': 'Closed, but shown as open',
         'wrong-location': 'Wrong location on the map',
         'wrong-phone': 'Wrong phone number',
         other: 'Something else',
@@ -144,19 +137,19 @@ export const en: Dictionary = {
       honeypotLabel: 'Leave this field empty',
       submit: 'Send',
       sending: 'Sending…',
-      successTitle: 'Thank you!',
-      successBody: 'Your report was sent and will be reviewed.',
+      successTitle: 'Thank you.',
+      successBody: 'Your report was sent.',
       viewIssue: 'View the report on GitHub',
-      sendAnother: 'Send another report',
+      sendAnother: 'New report',
       errorTitle: 'The report was not sent.',
       errorValidation: 'Check the fields and try again.',
-      errorUnavailable: 'The reporting service is not available right now.',
-      errorNetwork: 'You are offline or the server is not responding.',
-      fallbackBody: 'You can send it straight to GitHub instead (an account is needed):',
-      fallbackLink: 'Open GitHub with the report filled in',
+      errorUnavailable: 'Try again later.',
+      errorNetwork: 'Check your connection.',
+      fallbackBody: 'Or send it on GitHub, if you have an account:',
+      fallbackLink: 'Open on GitHub',
       issueTitlePrefix: 'Report',
       issueNoPharmacy: 'no pharmacy',
-      noScript: 'The form needs JavaScript. You can open an issue on GitHub directly:',
+      noScript: 'The form needs JavaScript. Send your report on',
     },
   },
 
@@ -166,118 +159,87 @@ export const en: Dictionary = {
   notFound: {
     title: 'Page not found',
     body: 'The address you asked for does not exist.',
-    homeLink: 'Back to the home page',
+    homeLink: 'Home page',
   },
 
   // Search-engine pages (milestone M3): pharmacy, duty-date and area pages. {name} style
   // placeholders are filled in by lib/seo/format.ts `fill`.
   seo: {
     weekdaysShort: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-    footerDuty: 'Duty lists by date',
+    footerDuty: 'Duty lists by day',
     footerArea: 'Pharmacies by area',
     todayBadge: 'Today',
-    sourceFsth: 'Source: Pharmaceutical Association of Thessaloniki',
-    dataNote:
-      'This page was built from the data shown below. See the home page for the current status.',
     breadcrumbLabel: 'Breadcrumb',
 
     pharmacy: {
-      title: '{name} — Pharmacy in {locality}',
+      title: 'Pharmacy {name}, {locality}',
       description:
         'Pharmacy {name}, {address}, {locality}. Phone, opening hours and official duty days.',
-      kicker: 'Pharmacy',
-      statusHeading: 'Status now',
+      statusHeading: 'Right now',
       statusLoading: 'Checking if it is open…',
-      statusFallback: 'To see if it is open now, JavaScript is needed.',
-      statusFallbackLink: 'See if it is open on the home page',
-      statusError: 'The information did not load. Try again later or call the pharmacy.',
+      statusError: 'Did not load. Call the pharmacy.',
       contactHeading: 'Details',
       addressLabel: 'Address',
-      postcodeLabel: 'Postcode',
-      phoneLabel: 'Phone',
-      noPhone: 'No phone number is known.',
+      call: 'Call {phone}',
+      noPhone: 'No phone number.',
       areaLabel: 'Area',
-      groupLabel: 'Duty group',
       directions: 'Directions in Google Maps',
       hoursHeading: 'Opening hours',
       regularLabel: 'Usual hours',
       regularClosed: 'Closed: {days} and public holidays.',
-      regularNote: 'When it is not on duty and has no longer hours.',
       extendedHeading: 'Longer hours',
-      extendedPeriod: 'In force from {from} to {to}',
-      extendedAnnouncement: 'Announcement by the Region of Central Macedonia',
-      extendedNote: 'On the days it lists, it replaces the usual hours.',
-      dutyHeading: 'Official duty dates',
-      dutyIntro: 'Only those officially announced.',
-      dutyUpcoming: 'Today and upcoming',
+      extendedPeriod: 'From {from} to {to}',
+      extendedAnnouncement: 'Announcement',
+      dutyHeading: 'Duty days',
+      dutyUpcoming: 'Upcoming',
       dutyRecent: 'Last 14 days',
-      dutyNone: 'No published duty date for this pharmacy in the lists we have.',
-      dutyHoursLabel: 'Hours:',
-      dutyDayPage: 'Full list for the day',
-      reportLink: 'Report a mistake about this pharmacy',
-      sourcesHeading: 'Sources',
-      sourcesBody:
-        'Duty days: Pharmaceutical Association of Thessaloniki. Opening hours: Region of Central Macedonia. Location on the map: Overture Maps and OpenStreetMap.',
+      dutyNone: 'No duty announced.',
+      reportLink: 'Report a mistake',
     },
 
     duty: {
-      indexTitle: 'On-duty pharmacies in Thessaloniki by date',
+      indexTitle: 'Pharmacies on duty by day',
       indexDescription:
-        'The official on-duty and overnight pharmacy lists for Thessaloniki by date, as announced by the Pharmaceutical Association of Thessaloniki.',
-      indexIntro:
-        'Which pharmacies are on duty each day across the regional unit. You only see what the Pharmaceutical Association of Thessaloniki has announced.',
-      indexNone: 'No published lists at the moment.',
+        'The official lists of on-duty and overnight pharmacies in Thessaloniki, day by day, as announced by the Pharmaceutical Association of Thessaloniki.',
+      indexIntro: 'Choose a day.',
+      indexNone: 'No lists yet.',
       indexCounts: '{pharmacies} pharmacies',
-      missingGroups:
-        'For this day it has not been announced which pharmacies are on duty in: {groups}. One there may be on duty without our knowing. Call before you go.',
-      pageTitle: 'On-duty pharmacies in Thessaloniki — {date}',
+      missingGroups: 'Duty lists not announced yet for: {groups}. Call before you go.',
+      pageTitle: 'Pharmacies on duty, {date}',
       pageDescription:
         'On-duty and overnight pharmacies in Thessaloniki for {date}, by area, with hours and phone numbers. Source: Pharmaceutical Association of Thessaloniki.',
       prev: 'Previous day',
       next: 'Next day',
       pagerLabel: 'Other days',
-      sourceLine: 'Source: Pharmaceutical Association of Thessaloniki',
       sourcePdf: 'List as PDF',
-      uploadedAt: 'Uploaded:',
       hoursLabel: 'Hours:',
-      hoursNotStated: 'not stated, call before you go',
-      nextDay: 'until the next day',
-      extraHoursLabel: 'Extra hours:',
-      exceptHolidays: 'except public holidays',
-      noPharmacyPage: 'There is no page for this pharmacy.',
-      kinds: {
-        day: 'Day duty',
-        'saturday-extra': 'Saturday extra',
-        'on-duty': 'On duty',
-        overnight: 'Overnight',
-        'after-midnight': 'After midnight',
-      },
-      onlyPublished: 'Only officially published duty dates are shown. Call before you go.',
+      hoursNotStated: 'call for the hours',
+      nextDay: 'next day',
+      extraHoursLabel: 'Also:',
+      exceptHolidays: 'not on public holidays',
     },
 
     area: {
-      indexTitle: 'Pharmacies in Thessaloniki by area',
+      indexTitle: 'Pharmacies by area',
       indexDescription:
-        'The pharmacies of the Thessaloniki regional unit by area, with their opening hours and official duty days.',
-      indexIntro:
-        'Choose an area to see its pharmacies, which ones are open today and when they are on duty. Areas are grouped as in the duty lists.',
+        'The pharmacies of the Thessaloniki area, by area, with their opening hours and official duty days.',
+      indexIntro: 'Choose an area.',
       otherGroup: 'Other areas',
       countOne: '1 pharmacy',
       countMany: '{count} pharmacies',
-      pageTitle: 'Pharmacies in {area} — hours and duty dates',
+      pageTitle: 'Pharmacies in {area}, hours and duty days',
       pageDescription:
-        'The {count} pharmacies in {area}: address, phone, which ones are open today and the official duty dates.',
+        'The {count} pharmacies in {area}: address, phone, which ones are open today and the official duty days.',
       h1: 'Pharmacies in {area}',
-      groupLabel: 'Duty group:',
       openNowHeading: 'Open now',
-      openNowLoading: 'Checking…',
-      openNowSummary: 'Open now: {open} of {total}.',
-      openNowError: 'The information did not load. See the home page or call before you go.',
-      openNowNoScript: 'To see which ones are open now, JavaScript is needed.',
+      openNowSummary: '{open} of {total}.',
+      openNowNone: 'None open.',
+      openNowError: 'Did not load. Call before you go.',
+      openNowNoScript: 'Needs JavaScript.',
       closedNow: 'Closed now',
-      listHeading: 'All pharmacies in the area',
-      dutyHeading: 'Official duty dates in the area',
-      dutyNone: 'No published duty dates for this area from today onward.',
+      listHeading: 'All pharmacies',
+      dutyHeading: 'Duty days',
+      dutyNone: 'No duty days announced.',
       allAreas: 'All areas',
     },
 
@@ -287,10 +249,9 @@ export const en: Dictionary = {
       closingSoon: 'closing soon',
       closed: 'Closed now.',
       opensAt: 'Opens {when}.',
-      noNextOpen: 'We do not know when it opens in the next 7 days.',
-      unpublished:
-        'It has not been announced yet which pharmacies are on duty here that day, so this may change.',
-      unpublishedShort: 'not known yet if it is on duty',
+      noNextOpen: 'Opening time unknown for the next 7 days.',
+      unpublished: 'The day’s duty lists are not announced yet.',
+      unpublishedShort: 'duty not announced yet',
       loadFailed: 'Not all duty days loaded, so this may change.',
       whenToday: 'today at {time}',
       whenTomorrow: 'tomorrow at {time}',

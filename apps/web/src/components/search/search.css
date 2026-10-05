@@ -24,7 +24,12 @@
 .ms[open] {
   display: flex;
   flex-direction: column;
-  animation: ms-in 180ms cubic-bezier(0.22, 1, 0.36, 1);
+  animation: ms-in var(--dur-2) var(--ease-out) both;
+}
+
+/* Close and Escape fade it out (MedicineSearch.tsx, requestClose). */
+.ms.closing {
+  animation: ms-out 140ms var(--ease-out) both;
 }
 
 @keyframes ms-in {
@@ -32,6 +37,32 @@
     opacity: 0;
     transform: translateY(0.5rem);
   }
+}
+
+@keyframes ms-out {
+  to {
+    opacity: 0;
+    transform: translateY(0.375rem);
+  }
+}
+
+/* A medicine's details come in from the end; Back brings the results in from the start. */
+@keyframes ms-from-end {
+  from {
+    opacity: 0;
+    transform: translateX(1rem);
+  }
+}
+
+@keyframes ms-from-start {
+  from {
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+}
+
+.ms-list.back {
+  animation: ms-from-start var(--dur-2) var(--ease-out) both;
 }
 
 .ms::backdrop {
@@ -111,8 +142,8 @@
   align-items: center;
   justify-content: center;
   gap: 0.375rem;
-  min-width: 2.75rem;
-  min-height: 2.75rem;
+  min-width: 2.875rem;
+  min-height: 2.875rem;
   padding: 0;
   border: 0;
   border-radius: 999px;
@@ -262,6 +293,7 @@
 
 .ms-details {
   padding-top: 1rem;
+  animation: ms-from-end var(--dur-3) var(--ease-out-expo) both;
 }
 
 .ms-details-title {

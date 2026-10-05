@@ -55,7 +55,7 @@ export function fallbackIssueUrl(
   noPharmacyLabel: string,
 ): string {
   const pharmacy = singleLine(draft.pharmacy) || noPharmacyLabel;
-  const title = `${titlePrefix}: ${typeLabel} — ${pharmacy}`;
+  const title = `${titlePrefix}: ${typeLabel}, ${pharmacy}`;
   const body = [
     `**${typeLabel}**`,
     `${pharmacy}`,

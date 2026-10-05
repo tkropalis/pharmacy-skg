@@ -7,7 +7,9 @@
 
 /* Fills what the header leaves: the page itself never scrolls (global.css). */
 .hs {
-  --selected-bg: #eef4ff;
+  /* The chosen pharmacy: the brand's tint, on the row and around the map's marker. */
+  --selected-bg: var(--accent-soft);
+  --selected-edge: color-mix(in srgb, var(--accent) 45%, transparent);
   --star: #b45309;
   /* Status colours: ink on its own tint, at least 4.5:1 (the pins use the same hues). */
   --kind-duty: #0b6b3a;
@@ -18,6 +20,8 @@
   --kind-extended-bg: #f0e9fa;
   --kind-unknown: #8a4100;
   --kind-unknown-bg: #fcefdf;
+  --kind-closed: #4e5961;
+  --kind-closed-bg: #eceff1;
   --warn-text: #8a4100;
   position: relative;
   /* Its own stacking context: the map's WebGL layer can never be drawn over the sheet. */
@@ -31,9 +35,51 @@
   line-height: 1.4;
 }
 
+/* The night look (global.css): the same roles, lighter ink on deeper tints. */
+:root[data-theme='dark'] .hs {
+  --star: #f5b54a;
+  --kind-duty: #8fe0b5;
+  --kind-duty-bg: #173a29;
+  --kind-regular: #b3cbe6;
+  --kind-regular-bg: #1d2b3a;
+  --kind-extended: #d4bdf5;
+  --kind-extended-bg: #2c2242;
+  --kind-unknown: #f3bf86;
+  --kind-unknown-bg: #3a2812;
+  --kind-closed: #b7c2c8;
+  --kind-closed-bg: #262e33;
+  --warn-text: #f3bf86;
+}
+
 .hs button,
 .hs input {
   font: inherit;
+}
+
+/* Each status's ink and tint, wherever a pharmacy is shown: row, card, marker. */
+.hs [data-kind='duty'] {
+  --kind: var(--kind-duty);
+  --kind-bg: var(--kind-duty-bg);
+}
+
+.hs [data-kind='regular'] {
+  --kind: var(--kind-regular);
+  --kind-bg: var(--kind-regular-bg);
+}
+
+.hs [data-kind='extended'] {
+  --kind: var(--kind-extended);
+  --kind-bg: var(--kind-extended-bg);
+}
+
+.hs [data-kind='duty-unknown'] {
+  --kind: var(--kind-unknown);
+  --kind-bg: var(--kind-unknown-bg);
+}
+
+.hs [data-kind='closed'] {
+  --kind: var(--kind-closed);
+  --kind-bg: var(--kind-closed-bg);
 }
 
 /* --- Map -------------------------------------------------------------------- */
@@ -51,6 +97,16 @@
   background: var(--soft);
 }
 
+/* The map fades in once it is drawn, instead of popping over the empty area. */
+.hs .map .maplibregl-canvas {
+  opacity: 0;
+  transition: opacity var(--dur-3) var(--ease-out);
+}
+
+.hs .map[data-status='ready'] .maplibregl-canvas {
+  opacity: 1;
+}
+
 .map-note {
   position: absolute;
   inset-inline: 1rem;
@@ -65,13 +121,13 @@
   font-size: 0.875rem;
 }
 
-/* "Loading the map…": centred, between the credit button and the zoom buttons. */
+/* "Loading the map…": centred, and only when it takes a moment (a quick map never shows it). */
 .map-note.subtle {
   inset-inline: 0;
   width: fit-content;
   margin-inline: auto;
-  border-color: var(--border);
   color: var(--muted);
+  animation: fade-in var(--dur-2) var(--ease-out) 700ms both;
 }
 
 .map .maplibregl-ctrl-group button {
@@ -102,7 +158,10 @@
   background-size: 14px;
 }
 
-.map .maplibregl-ctrl-attrib {
+/* The credit takes the app's colours, by day and at night (MapLibre's are white and black). */
+.hs .map .maplibregl-ctrl-attrib {
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  color: var(--fg);
   font-size: 0.75rem;
 }
 
@@ -122,13 +181,11 @@
 }
 
 .hs .map .maplibregl-ctrl-attrib.maplibregl-compact {
-  box-shadow: 0 1px 4px rgb(0 0 0 / 0.22);
-}
-
-.hs .map .maplibregl-ctrl-attrib.maplibregl-compact {
   min-height: 40px;
   padding: 2px 44px 2px 0;
   border-radius: 22px;
+  background: var(--surface);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.22);
 }
 
 .hs .map .maplibregl-ctrl-attrib.maplibregl-compact-show {
@@ -143,6 +200,7 @@
   display: inline-block;
   min-height: 44px;
   padding-inline: 0.25rem;
+  color: inherit;
 }
 
 .map canvas:focus-visible,
@@ -151,9 +209,164 @@
   outline-offset: -3px;
 }
 
+/* --- The chosen pharmacy on the map (map-controller.ts) ------------------------------ */
+
+/*
+ * A drop in the pharmacy's colour that lands on its spot, a small shadow on the ground under
+ * its point, and a flag above with the short name and how long it stays open. The other pins
+ * step back while it is chosen (map-controller.ts, dim).
+ */
+.sel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* The element's bottom is the point (anchor 'bottom'). */
+  padding-bottom: 0;
+  cursor: default;
+}
+
+.sel-flag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: min(14rem, 64vw);
+  margin-bottom: 0.25rem;
+  padding: 0.3125rem 0.75rem 0.375rem;
+  border-radius: 0.75rem;
+  background: var(--surface);
+  color: var(--fg);
+  box-shadow:
+    0 1px 2px rgb(10 30 20 / 0.12),
+    0 6px 16px rgb(10 30 20 / 0.18);
+  font-family: var(--font);
+  line-height: 1.25;
+  text-align: center;
+  animation: sel-flag var(--dur-2) var(--ease-out) 80ms both;
+}
+
+/* The name first, whole if it fits; how long it stays open under it. */
+.sel-name {
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sel-when {
+  color: var(--kind, var(--muted));
+  font-size: 0.75rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.sel-pin {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 40px;
+  height: 52px;
+  transform-origin: 50% 100%;
+  filter: drop-shadow(0 4px 6px rgb(10 30 20 / 0.28));
+  animation: sel-drop var(--dur-3) var(--ease-out-expo) both;
+}
+
+.sel-pin svg {
+  display: block;
+}
+
+/* Where the point meets the map. */
+.sel-ground {
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 18px;
+  height: 7px;
+  margin-left: -9px;
+  border-radius: 50%;
+  background: rgb(10 30 20 / 0.32);
+  filter: blur(1.5px);
+  animation: sel-ground var(--dur-3) var(--ease-out-expo) both;
+}
+
+/* Chosen on the map itself: one soft ring goes out from the spot. */
+.sel-ripple {
+  display: none;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  width: 36px;
+  height: 36px;
+  margin-left: -18px;
+  border: 2px solid var(--kind, var(--accent));
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sel[data-ripple='true'] .sel-ripple {
+  display: block;
+  animation: sel-ripple 650ms var(--ease-out) 120ms both;
+}
+
+/* The same pharmacy with new words (a minute passed): no entrance again. */
+.sel.settled .sel-pin,
+.sel.settled .sel-flag,
+.sel.settled .sel-ground {
+  animation: none;
+}
+
+.sel.leaving {
+  animation: sel-leave 140ms var(--ease-out) both;
+}
+
+@keyframes sel-drop {
+  from {
+    opacity: 0;
+    transform: translateY(-14px) scale(0.6);
+  }
+}
+
+@keyframes sel-flag {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
+@keyframes sel-ground {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+}
+
+@keyframes sel-ripple {
+  from {
+    opacity: 0.7;
+    transform: scale(0.4);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(2.2);
+  }
+}
+
+@keyframes sel-leave {
+  to {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+}
+
 /* --- Sheet ------------------------------------------------------------------ */
 
 .sheet {
+  /* Sheet.tsx sets it to the measured handle and header; this is until then. */
+  --sheet-small: 112px;
   position: absolute;
   inset-inline: 0;
   bottom: 0;
@@ -174,13 +387,10 @@
    */
   transform: translateZ(0);
   /* Height, not transform: the list's scroll area must end at the sheet's visible edge. The
-     snap is short and happens only on a tap or a release. */
-  transition: height 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.sheet {
-  /* Sheet.tsx SMALL_PX: the handle, the tabs and the summary. */
-  --sheet-small: 116px;
+     snap is short and happens only on a tap or a release; it slows into place. */
+  transition:
+    height var(--dur-3) var(--ease-out-expo),
+    bottom var(--dur-3) var(--ease-out);
 }
 
 .sheet[data-size='small'] {
@@ -194,9 +404,9 @@ html.has-update-toast .sheet {
   padding-bottom: 0;
 }
 
-/* Sheet.tsx sheetHeights() has the same numbers. */
+/* Sheet.tsx sheetHeights() has the same numbers: the list comes first on a phone. */
 .sheet[data-size='medium'] {
-  height: max(60%, calc(400px + var(--safe-b)));
+  height: max(70%, calc(400px + var(--safe-b)));
 }
 
 .sheet[data-size='medium']:not([data-dragging]) {
@@ -222,7 +432,7 @@ html.has-update-toast .sheet {
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 28px;
+  min-height: 32px;
   padding: 0;
   border: 0;
   border-radius: 1rem 1rem 0 0;
@@ -233,10 +443,17 @@ html.has-update-toast .sheet {
 }
 
 .sheet-grip {
-  width: 2.25rem;
-  height: 0.25rem;
+  width: 2.5rem;
+  height: 0.3125rem;
   border-radius: 0.25rem;
-  background: #cfd8d3;
+  background: var(--border-strong);
+  opacity: 0.45;
+  transition: opacity var(--dur-1) var(--ease-out);
+}
+
+.sheet-handle:hover .sheet-grip,
+.sheet[data-dragging] .sheet-grip {
+  opacity: 0.8;
 }
 
 .sheet-chevron {
@@ -245,9 +462,10 @@ html.has-update-toast .sheet {
   display: flex;
   color: var(--muted);
   transform: rotate(180deg);
+  transition: transform var(--dur-3) var(--ease-out);
 }
 
-.sheet-chevron.down {
+.sheet-chevron[data-down='true'] {
   transform: none;
 }
 
@@ -300,53 +518,103 @@ html.has-update-toast .sheet {
   }
 }
 
-/* --- Tabs and summary ------------------------------------------------------- */
+/* --- The segmented control (Segmented.tsx) ---------------------------------------- */
 
-/* A segmented control: a soft track, the chosen tab a white thumb. */
-.tabs {
-  display: flex;
-  gap: 0.25rem;
+/* A soft track; the chosen option is a white thumb that slides to it. */
+.seg {
+  position: relative;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
   padding: 0.25rem;
   border-radius: 999px;
   background: var(--soft);
 }
 
-.tabs [role='tab'] {
-  flex: 1;
+.seg-thumb {
+  position: absolute;
+  top: 0.25rem;
+  bottom: 0.25rem;
+  left: 0.25rem;
+  width: calc((100% - 0.5rem) / var(--seg-count, 2));
+  border-radius: 999px;
+  background: var(--surface);
+  box-shadow:
+    0 1px 2px rgb(20 40 30 / 0.12),
+    0 2px 6px rgb(20 40 30 / 0.08);
+  transform: translateX(calc(100% * var(--seg-index, 0)));
+  transition: transform var(--dur-3) var(--ease-out-expo);
+}
+
+.seg > button {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 36px;
-  padding: 0.25rem 0.5rem;
+  gap: 0.375rem;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0.25rem 0.75rem;
   border: 0;
   border-radius: 999px;
   background: transparent;
   color: var(--muted);
-  font-size: 0.875rem;
-  font-weight: 600;
+  font-size: 0.9375rem;
+  font-weight: 650;
+  line-height: 1.2;
+  white-space: nowrap;
   cursor: pointer;
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: color var(--dur-2) var(--ease-out);
 }
 
-.tabs [role='tab'][aria-selected='true'] {
-  background: var(--surface);
+.seg > button[aria-selected='true'],
+.seg > button[aria-pressed='true'] {
   color: var(--fg);
-  box-shadow: 0 1px 3px rgb(20 40 30 / 0.14);
 }
 
+.seg > button:active {
+  transform: scale(0.97);
+}
+
+.seg.compact {
+  padding: 0.1875rem;
+}
+
+.seg.compact .seg-thumb {
+  top: 0.1875rem;
+  bottom: 0.1875rem;
+  left: 0.1875rem;
+  width: calc((100% - 0.375rem) / var(--seg-count, 2));
+}
+
+.seg.compact > button {
+  min-height: 38px;
+  padding-inline: 0.875rem;
+  font-size: 0.875rem;
+}
+
+/* The compact track is 44px; its buttons take all of it to a tap. */
+.seg.compact > button::after {
+  content: '';
+  position: absolute;
+  inset: -0.1875rem 0;
+}
+
+/* The favourites count, which pops when it changes (it is keyed on the number). */
 .count {
   display: inline-block;
-  min-width: 1.5rem;
-  margin-inline-start: 0.375rem;
+  min-width: 1.375rem;
   padding: 0 0.375rem;
   border-radius: 1rem;
-  background: var(--surface);
+  background: var(--accent);
+  color: var(--on-accent);
   font-size: 0.75rem;
-  line-height: 1.4;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.45;
+  animation: pop var(--dur-2) var(--ease-out) both;
 }
+
+/* --- Summary ------------------------------------------------------------------ */
 
 .status-line {
   display: flex;
@@ -360,10 +628,12 @@ html.has-update-toast .sheet {
   /* One line is kept free, so the sheet does not jump when the answer arrives. */
   min-height: 1.4em;
   margin: 0;
-  font-size: 0.8125rem;
-  font-weight: 600;
+  font-size: 0.875rem;
+  font-weight: 650;
   line-height: 1.4;
   color: var(--fg);
+  /* Keyed on the text: a new count fades in. */
+  animation: fade-in var(--dur-2) var(--ease-out) both;
 }
 
 /* The age and the source of the data stay in view next to the answer. */
@@ -402,21 +672,22 @@ html.has-update-toast .sheet {
   align-items: center;
   justify-content: center;
   gap: 0.375rem;
-  min-width: 40px;
-  min-height: 40px;
-  padding: 0.25rem 0.75rem;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.25rem 0.875rem;
   border: 1px solid var(--border-strong);
   border-radius: 999px;
   background: var(--surface);
   color: var(--fg);
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 600;
   line-height: 1.2;
   text-decoration: none;
   cursor: pointer;
   transition:
-    background-color 0.15s ease,
-    border-color 0.15s ease;
+    background-color var(--dur-1) var(--ease-out),
+    border-color var(--dur-1) var(--ease-out),
+    transform var(--dur-1) var(--ease-out);
 }
 
 .action:hover {
@@ -438,21 +709,9 @@ html.has-update-toast .sheet {
   filter: brightness(1.06);
 }
 
-.action.small {
-  min-height: 36px;
-  padding-inline: 0.75rem;
-  font-size: 0.8125rem;
-}
-
 .action:disabled {
-  opacity: 0.7;
+  opacity: 0.75;
   cursor: progress;
-}
-
-.action.disabled {
-  border-style: dashed;
-  color: var(--muted);
-  cursor: default;
 }
 
 .icon {
@@ -461,10 +720,17 @@ html.has-update-toast .sheet {
 
 .chev {
   display: inline-flex;
+  transition: transform var(--dur-3) var(--ease-out);
 }
 
 .chev.up {
   transform: rotate(180deg);
+}
+
+/* The locate icon turns while the position is being found. */
+.spin {
+  display: inline-flex;
+  animation: spin 1s linear infinite;
 }
 
 .link-button {
@@ -518,6 +784,7 @@ html.has-update-toast .sheet {
   background: var(--warn-bg);
   color: var(--warn-fg);
   font-size: 0.875rem;
+  animation: rise var(--dur-2) var(--ease-out) both;
 }
 
 .hs .notice.strong {
@@ -544,26 +811,23 @@ html.has-update-toast .sheet {
   margin: 0;
 }
 
-.state.empty .row-action-label {
-  display: block;
-  /* Here, not on .row-action: `.hs button { font: inherit }` would win over it for buttons. */
-  font-size: 0.8125rem;
-  line-height: 1.25;
-  text-wrap: balance;
-}
-
-.row-action-icon {
+.empty-star {
+  display: flex;
   flex: none;
-  color: var(--accent-ink);
+  margin-top: 0.0625rem;
+  color: var(--star);
 }
 
 /* --- Controls ----------------------------------------------------------------- */
 
+/* The options open under the chip they came from. */
 .panel {
   margin: 0.5rem 0;
-  border: 1px solid var(--border-strong);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--bg);
+  transform-origin: top;
+  animation: rise var(--dur-2) var(--ease-out) both;
 }
 
 .panel > .control:first-child {
@@ -571,12 +835,12 @@ html.has-update-toast .sheet {
 }
 
 .control {
-  padding: 0.5rem 0.75rem 0.25rem;
+  padding: 0.625rem 0.75rem 0.375rem;
   border-top: 1px solid var(--border);
 }
 
 .control-title {
-  margin: 0 0 0.375rem;
+  margin: 0 0 0.5rem;
   font-size: 1rem;
 }
 
@@ -586,12 +850,12 @@ html.has-update-toast .sheet {
   gap: 0.5rem;
 }
 
-.time-fields > div {
-  flex: 1 1 8rem;
+.time-fields {
+  margin-top: 0.5rem;
 }
 
-.picker {
-  margin-top: 0.5rem;
+.time-fields > div {
+  flex: 1 1 8rem;
 }
 
 .picker-list {
@@ -603,16 +867,22 @@ html.has-update-toast .sheet {
 .picker-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 0.5rem;
   width: 100%;
-  min-height: 44px;
-  padding: 0.375rem 0.5rem;
+  min-height: 52px;
+  padding: 0.375rem 0.25rem;
   border: 0;
   border-bottom: 1px solid var(--border);
   background: transparent;
   color: var(--fg);
+  font-size: 1rem;
   text-align: start;
   cursor: pointer;
+}
+
+.picker-item:hover {
+  background: var(--soft);
 }
 
 .current-origin {
@@ -623,38 +893,6 @@ html.has-update-toast .sheet {
   gap: 0 0.5rem;
   margin: 0.25rem 0;
   font-weight: 600;
-}
-
-.segmented {
-  display: flex;
-}
-
-.segmented button {
-  flex: 1;
-  min-height: 44px;
-  padding: 0.25rem 0.75rem;
-  border: 2px solid var(--border-strong);
-  background: var(--surface);
-  color: var(--fg);
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.segmented button:first-child {
-  border-start-start-radius: var(--radius);
-  border-end-start-radius: var(--radius);
-}
-
-.segmented button:last-child {
-  border-start-end-radius: var(--radius);
-  border-end-end-radius: var(--radius);
-  border-inline-start-width: 0;
-}
-
-.segmented button[aria-pressed='true'] {
-  border-color: var(--accent);
-  background: var(--accent);
-  color: var(--on-accent);
 }
 
 .check {
@@ -685,27 +923,22 @@ html.has-update-toast .sheet {
   display: none;
 }
 
-/* flex hides the browser's marker: a chevron like the area button's says it opens. */
-.legend summary::after {
-  content: '';
-  width: 0.4375rem;
-  height: 0.4375rem;
-  margin-top: -0.25rem;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  transform: rotate(45deg);
-  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+.legend summary .chev {
+  color: var(--muted);
 }
 
-.legend[open] summary::after {
-  margin-top: 0.25rem;
-  transform: rotate(-135deg);
+.legend[open] summary .chev {
+  transform: rotate(180deg);
 }
 
 .legend ul {
   margin: 0 0 0.5rem;
   padding: 0;
   list-style: none;
+}
+
+.legend[open] ul {
+  animation: rise var(--dur-2) var(--ease-out) both;
 }
 
 .legend li {
@@ -719,50 +952,60 @@ html.has-update-toast .sheet {
 /* --- The toolbar: origin chip and list filter ------------------------------------ */
 
 /* One row under the summary: where distances are measured from, then the filter. It scrolls
-   sideways rather than wrapping when the text is large. */
+   sideways rather than wrapping when the text is large; the cut edge fades. */
 .sheet-toolbar {
   display: flex;
   align-items: center;
-  gap: 0.375rem;
+  gap: 0.5rem;
   margin: 0 calc(-1 * max(1rem, var(--safe-l))) 0 calc(-1 * max(1rem, var(--safe-r)));
   padding: 0 max(1rem, var(--safe-r)) 0.625rem max(1rem, var(--safe-l));
   overflow-x: auto;
   scrollbar-width: none;
+  mask-image: linear-gradient(
+    to right,
+    #000 calc(100% - max(1rem, var(--safe-r)) - 1.25rem),
+    transparent
+  );
 }
 
 .sheet-toolbar::-webkit-scrollbar {
   display: none;
 }
 
+.sheet-toolbar .seg {
+  flex: none;
+}
+
 /* Where the distances are measured from: one tap to change. */
-.origin-chip,
-.chip {
+.origin-chip {
   flex: none;
   display: inline-flex;
   align-items: center;
   gap: 0.3125rem;
-  min-height: 36px;
-  padding: 0.125rem 0.875rem;
+  min-width: 0;
+  max-width: 16rem;
+  min-height: 44px;
+  padding: 0.125rem 0.625rem 0.125rem 0.75rem;
   border: 0;
   border-radius: 999px;
-  background: var(--soft);
-  color: var(--fg);
-  font-size: 0.8125rem;
-  font-weight: 600;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  font-size: 0.875rem;
+  font-weight: 650;
   line-height: 1.2;
   white-space: nowrap;
   cursor: pointer;
   transition:
-    background-color 0.15s ease,
-    border-color 0.15s ease;
+    background-color var(--dur-1) var(--ease-out),
+    transform var(--dur-1) var(--ease-out);
 }
 
-.origin-chip {
-  min-width: 0;
-  max-width: 12rem;
-  padding-inline: 0.625rem 0.5rem;
-  background: var(--accent-soft);
-  color: var(--accent-ink);
+.origin-chip:hover {
+  background: color-mix(in srgb, var(--accent-soft), var(--accent) 10%);
+}
+
+.origin-chip:active {
+  transform: scale(0.97);
 }
 
 .origin-chip .icon {
@@ -790,21 +1033,6 @@ html.has-update-toast .sheet {
   height: 11px;
 }
 
-.filter-chips {
-  display: flex;
-  gap: 0.375rem;
-}
-
-.chip:hover {
-  background: #e3ebe6;
-}
-
-/* The chosen chip is filled with the accent; the others are soft. */
-.chip[aria-pressed='true'] {
-  background: var(--accent);
-  color: var(--on-accent);
-}
-
 /* --- The "see the nearest" row (no position yet) ----------------------------------- */
 
 /* One row at the top of the list: locate (the main action), pick an area, more options. */
@@ -815,7 +1043,7 @@ html.has-update-toast .sheet {
 .nearby-body .control-row {
   flex-wrap: nowrap;
   align-items: center;
-  gap: 0.375rem;
+  gap: 0.5rem;
 }
 
 .nearby-body .action.primary {
@@ -848,16 +1076,135 @@ html.has-update-toast .sheet {
   border: 0;
   background: none;
   color: var(--warn-text);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   line-height: 1.35;
+}
+
+/* --- Choosing an area (AreaPicker.tsx): the field at the top, the areas under it ---------- */
+
+.ap {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: var(--surface);
+  color: var(--fg);
+  font-family: var(--font);
+}
+
+.ap[open] {
+  display: flex;
+  flex-direction: column;
+  animation: rise var(--dur-2) var(--ease-out) both;
+}
+
+.ap::backdrop {
+  background: rgb(10 25 18 / 0.4);
+}
+
+@media (min-width: 48rem) {
+  .ap {
+    inset: 8vh 0 auto;
+    width: min(28rem, 100% - 2rem);
+    height: 70vh;
+    margin-inline: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+.ap-bar {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 0.25rem;
+  padding: calc(0.5rem + var(--safe-t)) calc(0.375rem + var(--safe-r)) 0.5rem
+    calc(1rem + var(--safe-l));
+  border-bottom: 1px solid var(--border);
+}
+
+.ap-field {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  padding-inline: 0.75rem;
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--muted);
+}
+
+.ap-field:focus-within {
+  outline: 2px solid var(--accent);
+}
+
+.ap-field input {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 2.75rem;
+  border: 0;
+  background: transparent;
+  color: var(--fg);
+  /* 16px or more, so iOS does not zoom into the field. */
+  font-size: 1.0625rem;
+}
+
+.ap-field input::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+.ap-field input:focus {
+  outline: none;
+}
+
+.ap-field input::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+.ap-close {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--fg);
+  cursor: pointer;
+}
+
+.ap-close:hover {
+  background: var(--soft);
+}
+
+.ap-body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0.25rem calc(1rem + var(--safe-r)) calc(1rem + var(--safe-b)) calc(1rem + var(--safe-l));
+}
+
+.ap-none {
+  margin: 1rem 0;
+  color: var(--muted);
 }
 
 /* --- Rows --------------------------------------------------------------------- */
 
 /*
- * A plain list, as in a maps app: rows divided by hairlines, no boxes. A row is the name, one
- * status line and one address line, with Call and Directions at its end. Everything else is
- * one tap away: the name button stretches over the row and opens the details.
+ * A plain list, as in a maps app: rows divided by hairlines, no boxes. A row is the name (up to
+ * two lines), one status line and one address line, with Call and Directions at its end. The
+ * name button stretches over the row and opens the details.
  */
 .rows {
   margin: 0;
@@ -866,22 +1213,32 @@ html.has-update-toast .sheet {
 }
 
 .row {
-  padding: 0.75rem 0;
+  padding: 0.875rem 0;
   border-bottom: 1px solid var(--border);
   scroll-margin-top: 0.5rem;
+  transition:
+    background-color var(--dur-2) var(--ease-out),
+    box-shadow var(--dur-2) var(--ease-out);
 }
 
 .row:last-child {
   border-bottom: 0;
 }
 
-/* The pharmacy chosen on the map: a soft highlight. */
+/* The chosen pharmacy: the brand's tint and a fine edge, as around its marker. */
 .row[data-selected='true'] {
   margin-inline: -0.5rem;
   padding-inline: 0.5rem;
   border-color: transparent;
   border-radius: 1rem;
   background: var(--selected-bg);
+  box-shadow: inset 0 0 0 1.5px var(--selected-edge);
+}
+
+/* On the tint, the directions button keeps its shape. */
+.row[data-selected='true'] .round:not(.call),
+.row.lead .round:not(.call) {
+  background: var(--surface);
 }
 
 .row p {
@@ -895,19 +1252,6 @@ html.has-update-toast .sheet {
   gap: 0.75rem;
 }
 
-/* The map's marker on a tile of its own tint: the list and the map read the same way. */
-.row-pin {
-  flex: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: flex-start;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 0.75rem;
-  background: var(--kind-bg, var(--soft));
-}
-
 .row-text {
   flex: 1;
   min-width: 0;
@@ -915,18 +1259,16 @@ html.has-update-toast .sheet {
 
 .row-name {
   margin: 0;
-  font-size: 0.875rem;
-  font-weight: 650;
-  line-height: 1.35;
-  letter-spacing: 0.01em;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.005em;
 }
 
 .row-toggle {
-  display: block;
+  display: -webkit-box;
   width: 100%;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   padding: 0;
   border: 0;
   background: none;
@@ -934,7 +1276,12 @@ html.has-update-toast .sheet {
   font: inherit;
   letter-spacing: inherit;
   text-align: start;
+  overflow-wrap: anywhere;
   cursor: pointer;
+  /* Two lines: the part that tells two pharmacies apart is often at the end. */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
 }
 
 /* The tap area is the whole row; Call and Directions sit above it. */
@@ -956,7 +1303,6 @@ html.has-update-toast .sheet {
 
 .row-status,
 .row-address {
-  /* A touch larger than secondary text: the status and the time decide the choice. */
   font-size: 0.875rem;
   line-height: 1.35;
 }
@@ -967,7 +1313,7 @@ html.has-update-toast .sheet {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.125rem 0.375rem;
-  margin-top: 0.25rem !important;
+  margin-top: 0.3125rem !important;
   color: var(--muted);
 }
 
@@ -975,55 +1321,39 @@ html.has-update-toast .sheet {
   white-space: nowrap;
 }
 
-.row-address {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-/* The status as a soft pill in its colour (always with its words). */
+/* The status as a soft label in its colour, led by the map's marker (never colour alone). */
 .row-status strong {
-  display: inline-block;
-  padding: 0.0625rem 0.5rem;
-  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.0625rem 0.5rem 0.0625rem 0.25rem;
+  border-radius: 0.375rem;
   background: var(--kind-bg, var(--soft));
   color: var(--kind, var(--fg));
   font-size: 0.8125rem;
-  font-weight: 650;
+  font-weight: 700;
   line-height: 1.5;
 }
 
-.row[data-kind='duty'] {
-  --kind: var(--kind-duty);
-  --kind-bg: var(--kind-duty-bg);
-}
-
-.row[data-kind='regular'] {
-  --kind: var(--kind-regular);
-  --kind-bg: var(--kind-regular-bg);
-}
-
-.row[data-kind='extended'] {
-  --kind: var(--kind-extended);
-  --kind-bg: var(--kind-extended-bg);
-}
-
-.row[data-kind='duty-unknown'] {
-  --kind: var(--kind-unknown);
-  --kind-bg: var(--kind-unknown-bg);
+.row-mark {
+  display: inline-flex;
 }
 
 .row-timing[data-closing-soon='true'] {
   color: var(--warn-text);
-  font-weight: 600;
+  font-weight: 650;
 }
 
 .row-address {
+  margin-top: 0.1875rem !important;
+  overflow: hidden;
   color: var(--muted);
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .row-distance {
-  font-weight: 500;
+  font-weight: 600;
   font-variant-numeric: tabular-nums;
   color: var(--fg);
 }
@@ -1033,20 +1363,22 @@ html.has-update-toast .sheet {
   z-index: 1;
   flex: none;
   display: flex;
-  gap: 0.5rem;
+  gap: 0.625rem;
 }
 
 .round {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   background: var(--accent-soft);
   color: var(--accent-ink);
   text-decoration: none;
-  transition: filter 0.15s ease;
+  transition:
+    filter var(--dur-1) var(--ease-out),
+    transform var(--dur-1) var(--ease-out);
 }
 
 .round.call {
@@ -1059,12 +1391,95 @@ html.has-update-toast .sheet {
 }
 
 .round:active {
-  transform: scale(0.95);
+  transform: scale(0.94);
 }
 
+/* The nearest pharmacy open now: the answer, set apart on its status's tint. */
+.row.lead {
+  margin: 0.25rem -0.5rem 0.25rem;
+  padding: 0.875rem 0.75rem 0.75rem;
+  border-bottom: 0;
+  border-radius: 1rem;
+  background: var(--kind-bg, var(--soft));
+}
+
+.row.lead .row-name {
+  font-size: 1.0625rem;
+}
+
+.row.lead .row-status strong {
+  background: var(--surface);
+}
+
+.row.lead[data-selected='true'] {
+  box-shadow: inset 0 0 0 1.5px var(--selected-edge);
+}
+
+/* Call and Directions as words: on the answer and on the chosen pharmacy's card. */
+.lead-actions {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.big-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  padding: 0.25rem 1rem;
+  border: 1.5px solid var(--accent);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--accent-ink);
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    filter var(--dur-1) var(--ease-out),
+    transform var(--dur-1) var(--ease-out);
+}
+
+.big-action.primary {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.big-action:hover {
+  filter: brightness(1.06);
+}
+
+.big-action:active {
+  transform: scale(0.97);
+}
+
+/* The details open and close smoothly (always in the page, inert while closed). */
 .row-details {
-  margin: 0.5rem 0 0.125rem;
-  padding-inline-start: calc(2.5rem + 0.75rem);
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows var(--dur-3) var(--ease-out-expo),
+    opacity var(--dur-2) var(--ease-out);
+}
+
+.row-details[data-open='true'] {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.row-details-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.row-details-inner > :first-child {
+  margin-top: 0.625rem;
 }
 
 .row-note {
@@ -1073,85 +1488,74 @@ html.has-update-toast .sheet {
   color: var(--muted);
 }
 
-.row-menu {
+/* Favourite, share and the hours: words with a small icon, in a row. */
+.row-actions {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 0 1rem;
-  margin-top: 0.25rem !important;
-}
-
-/* Plain links in the details: no more boxes. */
-.detail-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  min-height: 36px;
-  padding: 0;
-  border: 0;
-  background: none;
-  color: var(--accent);
-  font: inherit;
-  font-size: 0.8125rem;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.detail-link:hover {
-  text-decoration: underline;
-}
-
-/* Favourite, share and the pharmacy's page: three equal targets, an icon above each label,
-   across the whole row (under the pin too), so the labels fit on one line. */
-.row-actions {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.25rem;
-  margin: 0.5rem 0 0 calc(-1 * (2.5rem + 0.75rem));
+  gap: 0.25rem 0.375rem;
+  margin: 0.375rem -0.5rem 0;
 }
 
 .row-action {
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.4375rem;
   min-height: 44px;
-  padding: 0.25rem 0.125rem;
+  padding: 0 0.75rem 0 0.5rem;
   border: 0;
-  border-radius: 0.75rem;
+  border-radius: 999px;
   background: none;
-  color: var(--accent-ink);
-  font: inherit;
-  font-size: 0.8125rem;
-  font-weight: 600;
+  color: var(--fg);
+  font-size: 0.875rem;
+  font-weight: 650;
   line-height: 1.2;
-  text-align: center;
   text-decoration: none;
   cursor: pointer;
+  transition:
+    background-color var(--dur-1) var(--ease-out),
+    transform var(--dur-1) var(--ease-out);
+}
+
+.row-action:hover {
+  background: var(--soft);
+}
+
+.row-action:active {
+  transform: scale(0.97);
 }
 
 .row-action-icon {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.25rem;
-  height: 2.25rem;
-  border-radius: 50%;
-  background: var(--accent-soft);
-  transition: background-color 0.15s ease;
-}
-
-.row-action:hover .row-action-icon {
-  background: color-mix(in srgb, var(--accent-soft), var(--accent) 12%);
-}
-
-.row-action:active .row-action-icon {
-  transform: scale(0.94);
+  color: var(--accent-ink);
 }
 
 .row-action.fav[data-saved='true'] .row-action-icon {
   color: var(--star);
+  animation: pop var(--dur-3) var(--ease-out) both;
+}
+
+/* Another maps app, quietly. */
+.row-apps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 0.875rem;
+  margin-top: 0.125rem !important;
+  color: var(--muted);
+}
+
+.detail-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--accent);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.detail-link:hover {
+  text-decoration: underline;
 }
 
 .more {
@@ -1179,9 +1583,71 @@ html.has-update-toast .sheet {
   font-size: 0.9375rem;
 }
 
-/* The compact footer at the end of the list: one row of links and the disclaimer. */
+/* --- The chosen pharmacy's card (SelectionCard.tsx), in the lowered sheet --------------- */
+
+.peek {
+  padding: 0.125rem 0 0.875rem;
+  animation: rise var(--dur-3) var(--ease-out-expo) both;
+}
+
+.peek-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.peek-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.peek-name {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.005em;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.peek-name:focus {
+  outline: none;
+}
+
+.peek .row-status {
+  margin-top: 0.375rem;
+}
+
+.peek-close {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin: -0.5rem -0.625rem 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.peek-close:hover {
+  background: var(--soft);
+  color: var(--fg);
+}
+
+/* --- Footer --------------------------------------------------------------------- */
+
+/* The compact footer at the end of the list: links, the emergency numbers, the disclaimer. */
 .sheet-footer {
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
   padding-top: 0.25rem;
   border-top: 1px solid var(--border);
   font-size: 0.875rem;
@@ -1201,12 +1667,142 @@ html.has-update-toast .sheet {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
 }
 
 .footer-note {
-  margin: 0 0 0.25rem;
-  font-size: 0.8125rem;
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+}
+
+/* The emergency numbers: real buttons, not small links at the end of a long list. */
+.sos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.sos a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  min-height: 44px;
+  padding: 0 0.875rem;
+  border-radius: 999px;
+  background: var(--danger-bg);
+  color: var(--danger-fg);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  text-decoration: none;
+}
+
+.sos a:hover {
+  filter: brightness(0.97);
+}
+
+/* --- A short note people can see ("link copied"), above the sheet ----------------------- */
+
+.toast {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  z-index: 6;
+  max-width: calc(100% - 2rem);
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background: var(--fg);
+  color: var(--surface);
+  box-shadow: var(--shadow);
+  font-size: 0.875rem;
+  font-weight: 600;
+  pointer-events: none;
+  transform: translateX(-50%);
+  animation: toast 2200ms var(--ease-out) both;
+}
+
+@media (min-width: 900px) {
+  .toast {
+    left: calc(26rem + (100% - 26rem) / 2);
+  }
+}
+
+/* --- Motion --------------------------------------------------------------------- */
+
+/* A tab's panel comes in from the side of its tab. */
+#panel[data-tab='open'] {
+  animation: from-left var(--dur-2) var(--ease-out) both;
+}
+
+#panel[data-tab='favourites'] {
+  animation: from-right var(--dur-2) var(--ease-out) both;
+}
+
+@keyframes from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+}
+
+@keyframes from-right {
+  from {
+    opacity: 0;
+    transform: translateX(8px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.7);
+  }
+
+  60% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes toast {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 8px);
+  }
+
+  10%,
+  85% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 0);
+  }
 }
 
 /* The map's own controls stay clear of the notch too. */

@@ -1,5 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import type { KeyboardEvent } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import type { Locale } from '@pharmacy-skg/core';
 import { THESSALONIKI, localToInstant, zonedDate, zonedParts } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
@@ -12,7 +11,7 @@ import { formatUpdatedShort } from '../../lib/freshness.ts';
 import { groupList, groupNames, groupNear } from '../../lib/groups.ts';
 import { deviceZoneDiffers, fill, shortIsoDate } from '../../lib/format.ts';
 import { applyListFilter, buildRows, rowFor } from '../../lib/list.ts';
-import type { ListFilter, Origin } from '../../lib/list.ts';
+import type { ListFilter, Origin, Row } from '../../lib/list.ts';
 import {
   FIRST_FIX_OPTIONS,
   WATCH_MOVE_METRES,
@@ -21,8 +20,10 @@ import {
   geolocationPermission,
 } from '../../lib/geolocation.ts';
 import { localizedPath } from '../../i18n/routes.ts';
+import { displayName } from '../../lib/names.ts';
 import { buildLocalities } from '../../lib/places.ts';
 import type { Locality } from '../../lib/places.ts';
+import { describeStatus } from '../../lib/status-label.ts';
 import { AREA_KEY, FILTER_KEY, LOCATION_KEY, readItem, writeItem } from '../../lib/storage.ts';
 import {
   CONTROLS_ID,
@@ -36,15 +37,18 @@ import {
 import type { GeoState, TimeMode } from './Controls.tsx';
 import { Icon } from './icons.tsx';
 import { MapView } from './MapView.tsx';
-import type { MapFocus, MapStatus } from './MapView.tsx';
+import type { MapFocus, MapSelection, MapStatus } from './MapView.tsx';
 import { PharmacyRow } from './PharmacyRow.tsx';
+import { Segmented } from './Segmented.tsx';
+import { SelectionCard } from './SelectionCard.tsx';
 import { Sheet } from './Sheet.tsx';
-import type { SheetSize } from './Sheet.tsx';
+import type { SheetApi, SheetSize } from './Sheet.tsx';
 import { UpcomingDuties } from './UpcomingDuties.tsx';
 import { isDutyLoading, useCityData } from './use-city-data.ts';
 import { useFavourites } from './use-favourites.ts';
 import { useMapStart } from './use-map-start.ts';
 import { useMediaQuery, useNow } from './use-now.ts';
+import { useNightLook } from './use-theme.ts';
 import './app.css';
 
 const PAGE_SIZE = 30;
@@ -54,6 +58,10 @@ const FAR_METRES = 40_000;
 /** How many days beyond the last published duty list the time picker allows. */
 const PICKER_DAYS_AHEAD = 7;
 const FAVOURITE_DATES_MAX = 60;
+/** How long a visible note ("link copied") stays. */
+const TOAST_MS = 2200;
+/** How many rows move to their new places when the list changes (the rest are off screen). */
+const FLIP_ROWS = 12;
 
 type Tab = 'open' | 'favourites';
 
@@ -112,6 +120,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   const favourites = useFavourites();
   const wide = useMediaQuery('(min-width: 900px)');
   const reducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)');
+  const dark = useNightLook();
 
   const [tab, setTab] = useState<Tab>('open');
   const [timeMode, setTimeMode] = useState<TimeMode>({ kind: 'now' });
@@ -124,8 +133,17 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   const [dutyFilter, setDutyFilter] = useState<ListFilter>(() =>
     readItem(FILTER_KEY) === 'duty' ? 'duty' : 'all',
   );
+  // The chosen pharmacy (its marker on the map) and the open row; on a phone, a choice made on
+  // the map lowers the sheet to a card (`peek`) and the size before it is restored after.
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [selectedOnMap, setSelectedOnMap] = useState(false);
+  const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [peek, setPeek] = useState(false);
+  const sizeBeforePeek = useRef<SheetSize>('medium');
+  const peekFocus = useRef<string | null>(null);
   const [mapFocus, setMapFocus] = useState<MapFocus | null>(null);
+  const [toast, setToast] = useState<{ readonly text: string; readonly key: number } | null>(null);
+  const sheetApi = useRef<SheetApi | null>(null);
   const [sheetSize, setSheetSize] = useState<SheetSize>('medium');
   const [sheetHeight, setSheetHeight] = useState(0);
   const [visible, setVisible] = useState(PAGE_SIZE);
@@ -261,27 +279,56 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
 
   // --- Actions ----------------------------------------------------------------------
 
-  const selectOnMap = useCallback(
-    (id: string) => {
-      setSelectedId(id);
-      setMapFocus((previous) => ({ id, nonce: (previous?.nonce ?? 0) + 1 }));
-      if (!wide && sheetSize === 'large') setSheetSize('medium');
+  /** Moves the map to a pharmacy; `size` is the size the sheet is going to, if it moves. */
+  const focusOn = useCallback(
+    (id: string, size: SheetSize | null) => {
+      const occluded = wide ? 0 : size === null ? undefined : sheetApi.current?.heightFor(size);
+      setMapFocus((previous) => ({ id, nonce: (previous?.nonce ?? 0) + 1, occluded }));
       // Asking for a pharmacy on the map must not wait for the map's timer.
       wakeMap();
     },
-    [wide, sheetSize, wakeMap],
+    [wide, wakeMap],
   );
 
+  const clearSelection = useCallback(() => {
+    setSelectedId(null);
+    setExpandedId(null);
+    if (peek) {
+      setPeek(false);
+      setSheetSize(sizeBeforePeek.current);
+    }
+  }, [peek]);
+
+  /** A tap on a pin: the row opens and, on a phone, the sheet lowers to the chosen one's card. */
   const onMapSelect = useCallback(
     (id: string | null) => {
+      if (id === null) {
+        clearSelection();
+        return;
+      }
       setSelectedId(id);
-      if (id === null) return;
+      setSelectedOnMap(true);
       setTab('open');
-      scrollTo.current = id;
-      if (!wide && sheetSize === 'small') setSheetSize('medium');
+      setExpandedId(id);
+      if (wide) {
+        scrollTo.current = id;
+        return;
+      }
+      if (!peek) sizeBeforePeek.current = sheetSize === 'small' ? 'medium' : sheetSize;
+      setPeek(true);
+      setSheetSize('small');
+      // The camera waits for the card, whose height it needs (see the layout effect below).
+      peekFocus.current = id;
     },
-    [wide, sheetSize],
+    [wide, peek, sheetSize, clearSelection],
   );
+
+  useLayoutEffect(() => {
+    const id = peekFocus.current;
+    if (id === null || !peek) return;
+    peekFocus.current = null;
+    focusOn(id, 'small');
+  }, [peek, selectedId, focusOn]);
 
   // Bring a row chosen on the map into view in the list.
   useEffect(() => {
@@ -293,6 +340,63 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
       row.scrollIntoView({ block: 'nearest', behavior: reducedMotion ? 'auto' : 'smooth' });
     }
   });
+
+  /** A tap on a row: it opens (and its pharmacy is shown on the map) or closes. */
+  function toggleRow(id: string, row: Row | null) {
+    if (expandedId === id) {
+      setExpandedId(null);
+      if (selectedId === id) setSelectedId(null);
+      return;
+    }
+    setExpandedId(id);
+    if (row?.pharmacy.location == null) {
+      setSelectedId(null);
+      return;
+    }
+    setSelectedId(id);
+    setSelectedOnMap(false);
+    let size: SheetSize | null = null;
+    if (!wide && sheetSize === 'large') {
+      size = 'medium';
+      setSheetSize(size);
+    }
+    focusOn(id, size);
+  }
+
+  function changeTab(next: Tab) {
+    setTab(next);
+    setSelectedId(null);
+    setExpandedId(null);
+    setPeek(false);
+    if (!wide && sheetSize === 'small') setSheetSize('medium');
+  }
+
+  function changeSheetSize(size: SheetSize) {
+    setSheetSize(size);
+    // Pulling the sheet down is looking for the map.
+    if (size === 'small') wakeMap();
+    // Pulling the card up opens the list at the chosen pharmacy's row.
+    if (peek && size !== 'small') {
+      setPeek(false);
+      scrollTo.current = selectedId;
+    }
+  }
+
+  /** The person moved the map: the sheet gets out of the way (not the chosen pharmacy's card). */
+  const onReach = useCallback(() => {
+    if (!wide && !peek) setSheetSize((size) => (size === 'small' ? size : 'small'));
+  }, [wide, peek]);
+
+  const notify = useCallback((value: string) => {
+    setMessage(value);
+    setToast({ text: value, key: Date.now() });
+  }, []);
+
+  useEffect(() => {
+    if (toast === null) return;
+    const timer = setTimeout(() => setToast(null), TOAST_MS);
+    return () => clearTimeout(timer);
+  }, [toast]);
 
   function setAreaOrigin(locality: Locality) {
     pendingAnnouncement.current = true;
@@ -457,48 +561,50 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
       ? `${shortIsoDate(timeMode.date, locale)} ${timeMode.time}`
       : null;
 
-  function onTabKeyDown(event: KeyboardEvent<HTMLButtonElement>) {
-    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
-      event.preventDefault();
-      const next: Tab = tab === 'open' ? 'favourites' : 'open';
-      setTab(next);
-      document.getElementById(`tab-${next}`)?.focus();
-    }
-  }
+  // Escape lets the chosen pharmacy go (a dialog's own Escape closes the dialog only).
+  const chosen = selectedId !== null;
+  useEffect(() => {
+    if (!chosen) return;
+    const onKeyDown = (event: globalThis.KeyboardEvent) => {
+      if (event.key !== 'Escape' || event.defaultPrevented) return;
+      if (event.target instanceof Element && event.target.closest('dialog')) return;
+      clearSelection();
+    };
+    document.addEventListener('keydown', onKeyDown);
+    return () => document.removeEventListener('keydown', onKeyDown);
+  }, [chosen, clearSelection]);
 
   const showOriginChip = origin !== null || geo === 'locating';
   const showChips = !dutyLoading && result.chips;
   const header = (
     <>
-      <div className="tabs" role="tablist" aria-label={text.tabs.label}>
-        {(['open', 'favourites'] as const).map((id) => (
-          <button
-            key={id}
-            id={`tab-${id}`}
-            type="button"
-            role="tab"
-            aria-selected={tab === id}
-            aria-controls="panel"
-            tabIndex={tab === id ? 0 : -1}
-            onKeyDown={onTabKeyDown}
-            onClick={() => {
-              setTab(id);
-              if (!wide && sheetSize === 'small') setSheetSize('medium');
-            }}
-          >
-            {id === 'open'
-              ? live && timeMode.kind === 'now'
-                ? text.tabs.open
-                : text.tabs.openAt
-              : text.tabs.favourites}
-            {id === 'favourites' && favourites.ids.length > 0 && (
-              <span className="count">{favourites.ids.length}</span>
-            )}
-          </button>
-        ))}
-      </div>
+      <Segmented
+        mode="tabs"
+        label={text.tabs.label}
+        value={tab}
+        onChange={changeTab}
+        options={[
+          {
+            id: 'open',
+            label: live && timeMode.kind === 'now' ? text.tabs.open : text.tabs.openAt,
+          },
+          {
+            id: 'favourites',
+            label: (
+              <>
+                {text.tabs.favourites}
+                {favourites.ids.length > 0 && (
+                  <span className="count" key={favourites.ids.length}>
+                    {favourites.ids.length}
+                  </span>
+                )}
+              </>
+            ),
+          },
+        ]}
+      />
       <div className="status-line">
-        <p className="summary">
+        <p className="summary" key={tab === 'open' ? summary : tab}>
           {ready && tab === 'open' ? (dutyLoading ? text.time.loadingDuties : summary) : ' '}
         </p>
         <p className="fresh">
@@ -570,37 +676,143 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
     meta?.duties && data && meta.duties.to >= today && !data.duties.has(meta.duties.to),
   );
 
+  const rowLive = live && timeMode.kind === 'now';
   const rowProps = {
     at,
-    live: live && timeMode.kind === 'now',
+    live: rowLive,
     locale,
     text,
-    onSelect: selectOnMap,
     onToggleFavourite: toggleFavourite,
-    onMessage: announce,
+    onMessage: notify,
   } as const;
+
+  // The chosen pharmacy, from the list on the map (a favourite that is closed is not on it).
+  const selectedRow = useMemo(
+    () =>
+      selectedId === null
+        ? null
+        : (result.rows.find((row) => row.pharmacy.id === selectedId) ?? null),
+    [selectedId, result.rows],
+  );
+  const mapSelection: MapSelection | null = useMemo(() => {
+    if (selectedRow === null) return null;
+    const view = describeStatus({
+      status: selectedRow.status,
+      at,
+      live: rowLive,
+      locale,
+      text: text.status,
+    });
+    return {
+      id: selectedRow.pharmacy.id,
+      name: displayName(selectedRow.pharmacy.name),
+      when: view.short.timing,
+      ripple: selectedOnMap,
+    };
+  }, [selectedRow, at, rowLive, locale, text, selectedOnMap]);
+
+  // Say which pharmacy was chosen on the map (the marker is a picture).
+  useEffect(() => {
+    if (selectedOnMap && selectedRow !== null) {
+      setMessage(fill(text.chosen, { name: displayName(selectedRow.pharmacy.name) }));
+    }
+    // Only when the choice changes, not each minute.
+  }, [selectedOnMap, selectedRow?.pharmacy.id]);
+
+  // A choice that left the list (a filter, another time) lets the card go.
+  useEffect(() => {
+    if (peek && selectedRow === null) clearSelection();
+  }, [peek, selectedRow, clearSelection]);
+
+  // The nearest pharmacy open now is the answer: it leads, with labelled Call and Directions.
+  const leadId =
+    tab === 'open' && origin !== null && rowLive && !dutyLoading
+      ? (result.rows.find((row) => row.status.state !== 'closed')?.pharmacy.id ?? null)
+      : null;
+
+  // When the list changes because of something the person did (the filter, the place, the
+  // time), the rows that stay slide to their new places and the new ones fade in (FLIP), so the
+  // change can be followed. The first rows only; never on the minute's refresh.
+  const listRef = useRef<HTMLOListElement>(null);
+  const rowTops = useRef(new Map<string, number>());
+  const flipKey = [
+    tab,
+    result.active,
+    originNonce,
+    showClosed,
+    timeMode.kind === 'custom' ? `${timeMode.date} ${timeMode.time}` : 'now',
+  ].join('|');
+  const lastFlip = useRef(flipKey);
+  useLayoutEffect(() => {
+    const list = listRef.current;
+    const items = list ? ([...list.children].slice(0, FLIP_ROWS) as HTMLElement[]) : [];
+    const before = rowTops.current;
+    const changed = lastFlip.current !== flipKey;
+    const sameTab = lastFlip.current.split('|')[0] === tab;
+    lastFlip.current = flipKey;
+    rowTops.current = new Map(items.map((item) => [item.id, item.offsetTop]));
+    if (!changed || !sameTab || reducedMotion || typeof Element.prototype.animate !== 'function') {
+      return;
+    }
+    for (const item of items) {
+      const top = before.get(item.id);
+      if (top === undefined) {
+        item.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 200, easing: 'ease-out' });
+      } else if (top !== item.offsetTop) {
+        item.animate(
+          [{ transform: `translateY(${top - item.offsetTop}px)` }, { transform: 'none' }],
+          { duration: 280, easing: 'cubic-bezier(0.25, 1, 0.5, 1)' },
+        );
+      }
+    }
+  });
 
   // No position yet: the list starts with the locate / area row (NearbyCard).
   const showNearby = origin === null && geo !== 'locating';
+  const showCard = peek && !wide && sheetSize === 'small' && selectedRow !== null;
+
+  const timeNotice = timeMode.kind === 'custom' && showWhen !== null && (
+    <p className="notice strong">
+      {fill(text.time.showing, { when: showWhen })}{' '}
+      <button type="button" className="link-button" onClick={setNow}>
+        {text.time.backToNow}
+      </button>
+    </p>
+  );
 
   return (
-    <div className="hs" ref={rootRef} data-wide={wide ? 'true' : 'false'}>
+    <div
+      className="hs"
+      ref={rootRef}
+      data-wide={wide ? 'true' : 'false'}
+      data-selecting={selectedId !== null ? 'true' : undefined}
+    >
       <h1 className="sr-only">{title}</h1>
 
       <Sheet
         text={text}
         size={sheetSize}
-        onSizeChange={(size) => {
-          setSheetSize(size);
-          // Pulling the sheet down is looking for the map.
-          if (size === 'small') wakeMap();
-        }}
+        onSizeChange={changeSheetSize}
         sidePanel={wide}
-        header={header}
+        header={
+          showCard && selectedRow !== null ? (
+            <SelectionCard
+              row={selectedRow}
+              at={at}
+              live={rowLive}
+              locale={locale}
+              text={text}
+              onClose={clearSelection}
+            />
+          ) : (
+            header
+          )
+        }
         scrollKey={tab}
         onHeight={setSheetHeight}
+        api={sheetApi}
       >
-        <div id="panel" role="tabpanel" aria-labelledby={`tab-${tab}`}>
+        <div id="panel" role="tabpanel" aria-labelledby={`tab-${tab}`} data-tab={tab} key={tab}>
           {state.status === 'loading' && <p className="state">{text.loading}</p>}
           {state.status === 'error' && (
             <div className="callout danger" role="alert">
@@ -623,7 +835,6 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                   localities={localities}
                   open={controlsOpen}
                   onToggleControls={toggleControls}
-                  onNeedRoom={() => !wide && setSheetSize('large')}
                   onUseLocation={() => locate(false)}
                   onPickArea={setAreaOrigin}
                   onClear={clearOrigin}
@@ -639,7 +850,6 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                       geo={geo}
                       far={far}
                       localities={localities}
-                      onNeedRoom={() => !wide && setSheetSize('large')}
                       onUseLocation={() => locate(false)}
                       onPickArea={setAreaOrigin}
                       onClear={clearOrigin}
@@ -667,14 +877,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                 </div>
               )}
 
-              {timeMode.kind === 'custom' && showWhen !== null && (
-                <p className="notice strong">
-                  {fill(text.time.showing, { when: showWhen })}{' '}
-                  <button type="button" className="link-button" onClick={setNow}>
-                    {text.time.backToNow}
-                  </button>
-                </p>
-              )}
+              {timeNotice}
               {dutyLoading && (
                 <p className="state" role="status">
                   {text.time.loadingDuties}
@@ -719,13 +922,17 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                 </p>
               ) : (
                 <>
-                  <ol className="rows" aria-label={text.list.label}>
+                  <h2 className="sr-only">{text.list.label}</h2>
+                  <ol className="rows" aria-label={text.list.label} ref={listRef}>
                     {shownRows.map((row) => (
                       <PharmacyRow
                         key={row.pharmacy.id}
                         row={row}
+                        lead={row.pharmacy.id === leadId}
                         selected={row.pharmacy.id === selectedId}
+                        expanded={row.pharmacy.id === expandedId}
                         favourite={favourites.ids.includes(row.pharmacy.id)}
+                        onToggle={(id) => toggleRow(id, row)}
                         {...rowProps}
                       />
                     ))}
@@ -749,11 +956,13 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
           {ready && tab === 'favourites' && (
             <>
               {!favourites.persisted && <p className="callout">{text.favourites.notStored}</p>}
+              {/* A chosen time applies here too: say so, as on the other tab. */}
+              {timeNotice}
               {favouriteRows.length === 0 ? (
                 <div className="state empty">
                   {/* The same star as the button the hint names. */}
-                  <span className="row-action-icon" aria-hidden="true">
-                    <Icon name="starOutline" size={16} />
+                  <span className="empty-star" aria-hidden="true">
+                    <Icon name="starOutline" size={18} />
                   </span>
                   <div>
                     <p>
@@ -763,43 +972,43 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                   </div>
                 </div>
               ) : (
-                <>
-                  <ol className="rows" aria-label={text.tabs.favourites}>
-                    {favouriteRows.map(({ id, row, duties }) =>
-                      row === null ? (
-                        <li key={id} className="row">
-                          <p>{text.favourites.gone}</p>
-                          <button
-                            type="button"
-                            className="action"
-                            onClick={() => toggleFavourite(id, id)}
-                          >
-                            {text.favourites.remove}
-                          </button>
-                        </li>
-                      ) : (
-                        <PharmacyRow
-                          key={id}
-                          row={row}
-                          selected={id === selectedId}
-                          favourite
-                          {...rowProps}
+                <ol className="rows" aria-label={text.tabs.favourites}>
+                  {favouriteRows.map(({ id, row, duties }) =>
+                    row === null ? (
+                      <li key={id} className="row">
+                        <p>{text.favourites.gone}</p>
+                        <button
+                          type="button"
+                          className="action"
+                          onClick={() => toggleFavourite(id, id)}
                         >
-                          <UpcomingDuties
-                            pharmacy={row.pharmacy}
-                            duties={duties}
-                            loading={dutiesLoading}
-                            publishedThrough={meta?.duties?.to ?? null}
-                            locale={locale}
-                            text={text}
-                            now={now}
-                            onMessage={announce}
-                          />
-                        </PharmacyRow>
-                      ),
-                    )}
-                  </ol>
-                </>
+                          {text.favourites.remove}
+                        </button>
+                      </li>
+                    ) : (
+                      <PharmacyRow
+                        key={id}
+                        row={row}
+                        selected={id === selectedId}
+                        expanded={id === expandedId}
+                        favourite
+                        onToggle={(rowId) => toggleRow(rowId, row)}
+                        {...rowProps}
+                      >
+                        <UpcomingDuties
+                          pharmacy={row.pharmacy}
+                          duties={duties}
+                          loading={dutiesLoading}
+                          publishedThrough={meta?.duties?.to ?? null}
+                          locale={locale}
+                          text={text}
+                          now={now}
+                          onMessage={announce}
+                        />
+                      </PharmacyRow>
+                    ),
+                  )}
+                </ol>
               )}
             </>
           )}
@@ -820,14 +1029,20 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                   </li>
                 </ul>
               </nav>
-              <p className="footer-note">
-                {text.footer.emergency}{' '}
-                <a href={telUrl(EMERGENCY_NUMBERS.ambulance)}>{EMERGENCY_NUMBERS.ambulance}</a>
-                {' · '}
-                <a href={telUrl(EMERGENCY_NUMBERS.europe)}>{EMERGENCY_NUMBERS.europe}</a>
-                {' · '}
-                {text.footer.poison}{' '}
-                <a href={telUrl(EMERGENCY_NUMBERS.poison)}>{EMERGENCY_NUMBERS.poison}</a>
+              <p className="footer-note">{text.footer.emergency}</p>
+              <p className="sos">
+                <a href={telUrl(EMERGENCY_NUMBERS.ambulance)}>
+                  <Icon name="phone" size={14} />
+                  {EMERGENCY_NUMBERS.ambulance}
+                </a>
+                <a href={telUrl(EMERGENCY_NUMBERS.europe)}>
+                  <Icon name="phone" size={14} />
+                  {EMERGENCY_NUMBERS.europe}
+                </a>
+                <a href={telUrl(EMERGENCY_NUMBERS.poison)}>
+                  <Icon name="phone" size={14} />
+                  {text.footer.poison} {EMERGENCY_NUMBERS.poison}
+                </a>
               </p>
               <p className="footer-note">{text.footer.disclaimer}</p>
             </footer>
@@ -842,16 +1057,30 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
         waiting={ready !== null}
         onWake={wakeMap}
         rows={result.rows}
-        origin={originPoint}
+        origin={origin}
         originNonce={originNonce}
-        selectedId={selectedId}
+        selection={mapSelection}
         focus={mapFocus}
         occludedBottom={occluded}
         sideBySide={wide}
+        dark={dark}
         covered={!wide && sheetSize === 'large'}
         onSelect={onMapSelect}
+        onReach={onReach}
         onStatus={setMapStatus}
       />
+
+      {toast !== null && (
+        // Seen, not read out: the live region below says it.
+        <p
+          className="toast"
+          key={toast.key}
+          aria-hidden="true"
+          style={{ bottom: wide ? undefined : `calc(${occluded}px + 0.75rem)` }}
+        >
+          {toast.text}
+        </p>
+      )}
 
       <div className="sr-only" role="status" aria-live="polite" data-map={mapStatus}>
         {message}

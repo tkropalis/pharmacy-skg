@@ -5,7 +5,8 @@
  *
  *  - Pharmacies on duty (and those whose list prints no hours) are what people look for at
  *    night. They sit in their own source, which is never clustered, and their layer is drawn
- *    above everything but the selection.
+ *    above everything else. The chosen pharmacy is not a layer: it is an element over the map
+ *    (map-controller.ts), and it is taken out of these sources while it is chosen.
  *  - Only regular and extended-hours pharmacies are clustered, and the clusters are small and
  *    quiet (muted fill, small count), so they do not dominate the map.
  */
@@ -17,7 +18,7 @@ export const SOURCES = {
   duty: 'duty',
   /** Closed ones, shown on request. */
   closed: 'closed',
-  selected: 'selected',
+  /** Where distances are measured from: the device's position or a chosen area. */
   origin: 'origin',
 } as const;
 
@@ -30,7 +31,6 @@ export const SOURCE_OPTIONS: Readonly<Record<keyof typeof SOURCES, Record<string
   clustered: { cluster: true, clusterRadius: CLUSTER_RADIUS, clusterMaxZoom: CLUSTER_MAX_ZOOM },
   duty: {},
   closed: {},
-  selected: {},
   origin: {},
 };
 
@@ -62,6 +62,7 @@ export function pinLayers(options: { readonly dark: boolean }): readonly LayerSp
   const colors = clusterColors(dark);
   const ink = dark ? '#ffffff' : '#10231a';
   const paper = dark ? '#10231a' : '#ffffff';
+  const area = dark ? { fill: '#3fbf7f', text: '#b6ecd0' } : { fill: '#0a7d45', text: '#0b5c33' };
   const names = {
     layout: {
       'text-field': ['get', 'name'],
@@ -142,15 +143,24 @@ export function pinLayers(options: { readonly dark: boolean }): readonly LayerSp
       ...names,
     },
     {
+      // The device's position: a blue dot in a soft halo, as in every maps app.
       id: 'origin-halo',
       type: 'circle',
       source: SOURCES.origin,
-      paint: { 'circle-radius': 18, 'circle-color': '#1d4ed8', 'circle-opacity': 0.16 },
+      filter: ['==', ['get', 'kind'], 'geo'],
+      paint: {
+        'circle-radius': 18,
+        'circle-color': '#1d4ed8',
+        'circle-opacity': 0.16,
+        'circle-radius-transition': { duration: 900, delay: 0 },
+        'circle-opacity-transition': { duration: 900, delay: 0 },
+      },
     },
     {
       id: 'origin-dot',
       type: 'circle',
       source: SOURCES.origin,
+      filter: ['==', ['get', 'kind'], 'geo'],
       paint: {
         'circle-radius': 7,
         'circle-color': '#1d4ed8',
@@ -159,7 +169,36 @@ export function pinLayers(options: { readonly dark: boolean }): readonly LayerSp
       },
     },
     {
-      // Above the clusters, the other pins and the position dot; only the selection is higher.
+      // A chosen area is not where the person is: a ring with the area's name, not the dot.
+      id: 'origin-area',
+      type: 'circle',
+      source: SOURCES.origin,
+      filter: ['==', ['get', 'kind'], 'area'],
+      paint: {
+        'circle-radius': 22,
+        'circle-color': area.fill,
+        'circle-opacity': 0.14,
+        'circle-stroke-width': 2,
+        'circle-stroke-color': area.fill,
+      },
+    },
+    {
+      id: 'origin-area-name',
+      type: 'symbol',
+      source: SOURCES.origin,
+      filter: ['==', ['get', 'kind'], 'area'],
+      layout: {
+        'text-field': ['get', 'name'],
+        'text-font': BOLD,
+        'text-size': 12,
+        'text-offset': [0, 2.1],
+        'text-anchor': 'top',
+        'text-allow-overlap': true,
+      },
+      paint: { 'text-color': area.text, 'text-halo-color': paper, 'text-halo-width': 2 },
+    },
+    {
+      // Above the clusters, the other pins and the origin.
       id: 'duty-pins',
       type: 'symbol',
       source: SOURCES.duty,
@@ -179,31 +218,24 @@ export function pinLayers(options: { readonly dark: boolean }): readonly LayerSp
       ...names,
       layout: { ...names.layout, 'text-font': BOLD, 'text-offset': [0, 1.3] },
     },
-    {
-      id: 'selected-ring',
-      type: 'circle',
-      source: SOURCES.selected,
-      paint: {
-        'circle-radius': 22,
-        'circle-color': '#ffffff',
-        'circle-opacity': 0.35,
-        'circle-stroke-width': 2.5,
-        'circle-stroke-color': ink,
-      },
-    },
-    {
-      id: 'selected-pin',
-      type: 'symbol',
-      source: SOURCES.selected,
-      layout: {
-        'icon-image': ['get', 'image'],
-        'icon-size': 1.3,
-        'icon-allow-overlap': true,
-        'icon-ignore-placement': true,
-      },
-    },
   ];
 }
 
 /** Layers a click or tap on a pharmacy can hit (the pins, not the clusters). */
-export const PIN_LAYER_IDS = ['duty-pins', 'pins', 'closed-pins', 'selected-pin'] as const;
+export const PIN_LAYER_IDS = ['duty-pins', 'pins', 'closed-pins'] as const;
+
+/**
+ * Layers that step back while a pharmacy is chosen, with the opacity property that does it:
+ * the chosen one is then the only thing at full strength.
+ */
+export const DIMMED_LAYERS: readonly (readonly [string, string])[] = [
+  ['closed-pins', 'icon-opacity'],
+  ['clusters', 'circle-opacity'],
+  ['cluster-count', 'text-opacity'],
+  ['pins', 'icon-opacity'],
+  ['pin-names', 'text-opacity'],
+  ['duty-pins', 'icon-opacity'],
+  ['duty-names', 'text-opacity'],
+];
+/** Their opacity while a pharmacy is chosen. */
+export const DIMMED_OPACITY = 0.45;
