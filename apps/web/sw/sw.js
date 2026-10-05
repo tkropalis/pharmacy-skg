@@ -9,6 +9,9 @@
  *   - app shell: precached; pages are network-first with a short timeout, falling back to the
  *     precached copy, so online users always see the latest page and offline users see the
  *     shell; hashed assets and icons come from the precache;
+ *   - the map (MapLibre chunk, worker files, stylesheet) is not precached, because it is about
+ *     0.45 MB gzipped and most visits never open it: any other hashed /_astro/ file is cached
+ *     cache-first the first time it is used, so the map works offline once it has been seen;
  *   - /data/**: network-first, falling back to the last copy (for offline use);
  *   - tiles.openfreemap.org: cache-first, capped at TILE_LIMIT entries;
  *   - everything else (the report API, analytics): untouched.
@@ -20,6 +23,8 @@ const BUILD_VERSION = '__BUILD_VERSION__';
 const PRECACHE_URLS = ['__PRECACHE_URLS__'];
 
 const PRECACHE = `precache-${BUILD_VERSION}`;
+// Hashed assets fetched on first use (the map). Tied to the build, so old ones do not pile up.
+const ASSET_CACHE = `assets-${BUILD_VERSION}`;
 const DATA_CACHE = 'data-v1';
 const TILE_CACHE = 'tiles-v1';
 const TILE_HOST = 'tiles.openfreemap.org';
@@ -44,7 +49,10 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     (async () => {
       for (const name of await caches.keys()) {
-        if (name.startsWith('precache-') && name !== PRECACHE) await caches.delete(name);
+        const stale =
+          (name.startsWith('precache-') && name !== PRECACHE) ||
+          (name.startsWith('assets-') && name !== ASSET_CACHE);
+        if (stale) await caches.delete(name);
       }
       await self.clients.claim();
     })(),
@@ -63,6 +71,9 @@ self.addEventListener('fetch', (event) => {
       event.respondWith(navigate(event, url));
     } else if (PRECACHED.has(url.pathname)) {
       event.respondWith(fromPrecache(request));
+    } else if (url.pathname.startsWith('/_astro/')) {
+      // Content-hashed (or versioned) and so immutable: the first copy is the right one.
+      event.respondWith(cacheFirst(event, ASSET_CACHE));
     }
     return;
   }
@@ -120,6 +131,16 @@ async function fromPrecache(request) {
   const cache = await caches.open(PRECACHE);
   const cached = await cache.match(new URL(request.url).pathname);
   return cached ?? fetch(request);
+}
+
+async function cacheFirst(event, cacheName) {
+  const { request } = event;
+  const cache = await caches.open(cacheName);
+  const cached = await cache.match(request);
+  if (cached) return cached;
+  const response = await fetch(request);
+  if (response.ok) event.waitUntil(cache.put(request, response.clone()));
+  return response;
 }
 
 async function tiles(event, url) {

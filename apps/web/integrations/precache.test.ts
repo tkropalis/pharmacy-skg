@@ -33,6 +33,20 @@ describe('precacheEntries', () => {
     expect(kept).toEqual(['_astro/x.js', 'en/index.html', 'index.html']);
   });
 
+  it('leaves out the lazily loaded map and the crawler files', () => {
+    const kept = precacheEntries([
+      file('_astro/map-controller.DJ4TtmSf.js'),
+      file('_astro/maplibre-gl.O84Bxg0a.css'),
+      file('_astro/maplibre-6.12.0/maplibre-gl-worker.mjs'),
+      file('_astro/maplibre-6.12.0/maplibre-gl-shared.mjs'),
+      file('sitemap.xml'),
+      file('robots.txt'),
+      file('_astro/HomePage.dME8wzR7.css'),
+      file('_astro/client.DAYQUbZp.js'),
+    ]).map((f) => f.path);
+    expect(kept).toEqual(['_astro/client.DAYQUbZp.js', '_astro/HomePage.dME8wzR7.css']);
+  });
+
   it('leaves out the generated pharmacy, duty-date and area pages but keeps their indexes', () => {
     const kept = precacheEntries([
       file('farmakeio/2310023026/index.html'),

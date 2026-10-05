@@ -20,8 +20,27 @@ const PARAM_PAGES = Object.values(PARAM_ROUTES).flatMap((route) =>
   }),
 );
 
-/** Files that must never be precached: the worker itself and the data (network-first). */
-const EXCLUDED = [/^sw\.js$/, /^data\//, /^404\.html$/, /\.map$/, ...PARAM_PAGES];
+/**
+ * The map: the MapLibre chunk, its worker files and its stylesheet (about 0.45 MB gzipped).
+ * Most visits never open the map, so the service worker caches these cache-first on first use
+ * instead (sw/sw.js, anything under /_astro/ that is not precached).
+ */
+const LAZY_MAP = [/^_astro\/map-controller\.[^/]+\.js$/, /^_astro\/maplibre-[^/]+(\/|\.css$)/];
+
+/**
+ * Files that must never be precached: the worker itself, the data (network-first), crawler
+ * files that no page needs (the sitemap alone is 1 MB), and the lazy map.
+ */
+const EXCLUDED = [
+  /^sw\.js$/,
+  /^data\//,
+  /^404\.html$/,
+  /^sitemap\.xml$/,
+  /^robots\.txt$/,
+  /\.map$/,
+  ...LAZY_MAP,
+  ...PARAM_PAGES,
+];
 
 /** The URL a built file is served at: 'en/about/index.html' becomes '/en/about/'. */
 export function urlForFile(path: string): string {
