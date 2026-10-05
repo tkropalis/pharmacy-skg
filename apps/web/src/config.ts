@@ -15,6 +15,12 @@ export const APP_SHORT_NAME: Readonly<Record<Locale, string>> = {
   en: 'Pharmacies',
 };
 
+/** The name in the header bar on a phone, where the full name does not fit on one row. */
+export const APP_HEADER_NAME: Readonly<Record<Locale, string>> = {
+  el: 'Ανοιχτά Φαρμακεία',
+  en: 'Open Pharmacies',
+};
+
 /** The city the app currently serves (decision D5: data and URLs carry a city key). */
 export const DEFAULT_CITY_ID = 'thessaloniki';
 

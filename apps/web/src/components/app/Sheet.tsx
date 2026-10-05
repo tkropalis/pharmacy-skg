@@ -7,16 +7,33 @@ import { Icon } from './icons.tsx';
 export type SheetSize = 'small' | 'medium' | 'large';
 const SIZES: readonly SheetSize[] = ['small', 'medium', 'large'];
 
-/** The collapsed sheet shows the handle and the tabs only. */
+/** The collapsed sheet shows the handle, the tabs and the count. */
 const SMALL_PX = 120;
-const MEDIUM_FRACTION = 0.56;
+const MEDIUM_FRACTION = 0.6;
+/** On a short screen the default sheet still shows the summary and the first pharmacy. */
+const MEDIUM_MIN_PX = 400;
+/** The map keeps at least this much of the screen above the default sheet. */
+const MEDIUM_MAP_PX = 150;
 const LARGE_FRACTION = 0.94;
 
-export function sheetHeights(containerHeight: number): Record<SheetSize, number> {
+/**
+ * The three snap heights for a map area of this height. `inset` is the room the sheet leaves
+ * under its content for the home indicator and the browser's floating toolbar
+ * (env(safe-area-inset-bottom)); app.css has the same numbers.
+ */
+export function sheetHeights(containerHeight: number, inset = 0): Record<SheetSize, number> {
+  const small = SMALL_PX + inset;
+  const medium = Math.max(
+    small + 20,
+    Math.min(
+      Math.max(Math.round(containerHeight * MEDIUM_FRACTION), MEDIUM_MIN_PX + inset),
+      containerHeight - MEDIUM_MAP_PX,
+    ),
+  );
   return {
-    small: SMALL_PX,
-    medium: Math.max(SMALL_PX + 80, Math.round(containerHeight * MEDIUM_FRACTION)),
-    large: Math.max(SMALL_PX + 160, Math.round(containerHeight * LARGE_FRACTION)),
+    small,
+    medium,
+    large: Math.max(medium + 20, Math.round(containerHeight * LARGE_FRACTION)),
   };
 }
 
@@ -69,7 +86,9 @@ export function Sheet({
 
   const measure = useCallback((): Record<SheetSize, number> => {
     const container = ref.current?.parentElement?.clientHeight ?? 600;
-    return sheetHeights(container);
+    // The sheet's bottom padding is env(safe-area-inset-bottom) (zero when there is none).
+    const inset = ref.current ? parseFloat(getComputedStyle(ref.current).paddingBottom) || 0 : 0;
+    return sheetHeights(container, inset);
   }, []);
 
   // Report the settled height whenever the size or the layout changes.

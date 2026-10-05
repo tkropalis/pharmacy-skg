@@ -4,6 +4,7 @@
  */
 import {
   AttributionControl,
+  LngLatBounds,
   Map as MapLibreMap,
   NavigationControl,
   getVersion,
@@ -18,7 +19,8 @@ import type { Dictionary } from '../../i18n/index.ts';
 import { yieldToMain } from '../../lib/idle.ts';
 import { PIN_KINDS } from '../../lib/list.ts';
 import type { Origin, Row } from '../../lib/list.ts';
-import { pinCollection } from '../../lib/map-data.ts';
+import { PIN_LAYER_IDS, SOURCES, SOURCE_OPTIONS, pinLayers } from '../../lib/map-layers.ts';
+import { pinCollection, splitPins } from '../../lib/map-data.ts';
 import type { PinCollection } from '../../lib/map-data.ts';
 import { PIN_SIZE, pinImageName, pinSvg } from '../../lib/pins.ts';
 
@@ -50,12 +52,10 @@ export interface MapController {
 // The worker module is published beside the app by integrations/maplibre-worker.ts.
 setWorkerUrl(`/_astro/maplibre-${getVersion()}/maplibre-gl-worker.mjs`);
 
-const SOURCE = 'pharmacies';
-const CLOSED_SOURCE = 'closed';
-const SELECTED_SOURCE = 'selected';
-const ORIGIN_SOURCE = 'origin';
+/** The view after a new position shows this many of the nearest open pharmacies. */
+const NEAREST_SHOWN = 4;
+const NEAREST_MAX_ZOOM = 16;
 const EMPTY: PinCollection = { type: 'FeatureCollection', features: [] };
-const FONT = ['Noto Sans Bold'];
 const STYLE_TIMEOUT_MS = 20_000;
 
 function layer(spec: Record<string, unknown>): AddLayerObject {
@@ -168,182 +168,45 @@ export async function createMapController(
   await addPinImages(map);
   await yieldToMain();
 
-  map.addSource(SOURCE, {
-    type: 'geojson',
-    data: EMPTY as never,
-    cluster: true,
-    clusterRadius: 38,
-    clusterMaxZoom: 12,
-  });
-  // Closed pharmacies (shown on request) are kept apart from the open ones, so a cluster never
-  // hides an open pharmacy, and they only appear once the map is zoomed in.
-  map.addSource(CLOSED_SOURCE, { type: 'geojson', data: EMPTY as never });
-  map.addSource(SELECTED_SOURCE, { type: 'geojson', data: EMPTY as never });
-  map.addSource(ORIGIN_SOURCE, { type: 'geojson', data: EMPTY as never });
-
-  const halo = dark ? '#ffffff' : '#10231a';
-  map.addLayer(
-    layer({
-      id: 'origin-halo',
-      type: 'circle',
-      source: ORIGIN_SOURCE,
-      paint: { 'circle-radius': 20, 'circle-color': '#1d4ed8', 'circle-opacity': 0.18 },
-    }),
-  );
-  map.addLayer(
-    layer({
-      id: 'origin-dot',
-      type: 'circle',
-      source: ORIGIN_SOURCE,
-      paint: {
-        'circle-radius': 8,
-        'circle-color': '#1d4ed8',
-        'circle-stroke-width': 3,
-        'circle-stroke-color': '#ffffff',
-      },
-    }),
-  );
-  map.addLayer(
-    layer({
-      id: 'closed-pins',
-      type: 'symbol',
-      source: CLOSED_SOURCE,
-      minzoom: 13,
-      layout: {
-        'icon-image': ['get', 'image'],
-        'icon-allow-overlap': true,
-        'icon-ignore-placement': true,
-      },
-    }),
-  );
-  map.addLayer(
-    layer({
-      id: 'clusters',
-      type: 'circle',
-      source: SOURCE,
-      filter: ['has', 'point_count'],
-      paint: {
-        'circle-color': '#26323c',
-        'circle-radius': ['step', ['get', 'point_count'], 16, 10, 20, 50, 25],
-        'circle-stroke-width': 3,
-        'circle-stroke-color': '#ffffff',
-      },
-    }),
-  );
-  map.addLayer(
-    layer({
-      id: 'cluster-count',
-      type: 'symbol',
-      source: SOURCE,
-      filter: ['has', 'point_count'],
-      layout: {
-        'text-field': ['get', 'point_count_abbreviated'],
-        'text-font': FONT,
-        'text-size': 13,
-        'text-allow-overlap': true,
-      },
-      paint: { 'text-color': '#ffffff' },
-    }),
-  );
-  map.addLayer(
-    layer({
-      id: 'pins',
-      type: 'symbol',
-      source: SOURCE,
-      filter: ['!', ['has', 'point_count']],
-      layout: {
-        'icon-image': ['get', 'image'],
-        'icon-allow-overlap': true,
-        'icon-ignore-placement': true,
-        'symbol-sort-key': ['get', 'sort'],
-      },
-    }),
-  );
-  map.addLayer(
-    layer({
-      id: 'pin-names',
-      type: 'symbol',
-      source: SOURCE,
-      minzoom: 15.5,
-      filter: ['!', ['has', 'point_count']],
-      layout: {
-        'text-field': ['get', 'name'],
-        'text-font': ['Noto Sans Regular'],
-        'text-size': 11,
-        'text-offset': [0, 1.3],
-        'text-anchor': 'top',
-        'text-max-width': 9,
-        'text-optional': true,
-      },
-      paint: {
-        'text-color': dark ? '#ffffff' : '#10231a',
-        'text-halo-color': dark ? '#10231a' : '#ffffff',
-        'text-halo-width': 1.5,
-      },
-    }),
-  );
-  map.addLayer(
-    layer({
-      id: 'selected-ring',
-      type: 'circle',
-      source: SELECTED_SOURCE,
-      paint: {
-        'circle-radius': 24,
-        'circle-color': '#ffffff',
-        'circle-opacity': 0.55,
-        'circle-stroke-width': 3,
-        'circle-stroke-color': halo,
-      },
-    }),
-  );
-  map.addLayer(
-    layer({
-      id: 'selected-pin',
-      type: 'symbol',
-      source: SELECTED_SOURCE,
-      layout: {
-        'icon-image': ['get', 'image'],
-        'icon-size': 1.3,
-        'icon-allow-overlap': true,
-        'icon-ignore-placement': true,
-      },
-    }),
-  );
+  // Sources and layers are described in lib/map-layers.ts (and tested there): the duty pins have
+  // their own source that is never clustered, and their layer is drawn above everything else.
+  for (const [key, id] of Object.entries(SOURCES)) {
+    map.addSource(id, {
+      type: 'geojson',
+      data: EMPTY as never,
+      ...SOURCE_OPTIONS[key as keyof typeof SOURCES],
+    } as never);
+  }
+  for (const spec of pinLayers({ dark })) map.addLayer(layer(spec));
 
   let collection: PinCollection = EMPTY;
   const motion = options.reducedMotion ? { animate: false } : { duration: 500 };
 
-  const pinSource = () => map.getSource(SOURCE) as GeoJSONSource | undefined;
+  const source = (id: string) => map.getSource(id) as GeoJSONSource | undefined;
 
-  map.on('click', 'pins', (event) => {
-    const id = event.features?.[0]?.properties?.['id'];
-    if (typeof id === 'string') options.onSelect(id);
-  });
-  map.on('click', 'closed-pins', (event) => {
-    const id = event.features?.[0]?.properties?.['id'];
-    if (typeof id === 'string') options.onSelect(id);
-  });
-  map.on('click', 'selected-pin', (event) => {
-    const id = event.features?.[0]?.properties?.['id'];
-    if (typeof id === 'string') options.onSelect(id);
-  });
+  for (const id of PIN_LAYER_IDS) {
+    map.on('click', id, (event) => {
+      const pharmacyId = event.features?.[0]?.properties?.['id'];
+      if (typeof pharmacyId === 'string') options.onSelect(pharmacyId);
+    });
+  }
   map.on('click', 'clusters', (event) => {
     const feature = event.features?.[0];
     const clusterId = feature?.properties?.['cluster_id'];
     if (feature?.geometry.type !== 'Point' || typeof clusterId !== 'number') return;
     const [lon, lat] = feature.geometry.coordinates;
     if (lon === undefined || lat === undefined) return;
-    void pinSource()
+    void source(SOURCES.clustered)
       ?.getClusterExpansionZoom(clusterId)
       .then((zoom) => map.easeTo({ center: [lon, lat], zoom: zoom + 0.5, ...motion }));
   });
   map.on('click', (event) => {
     const hit = map.queryRenderedFeatures(event.point, {
-      layers: ['pins', 'closed-pins', 'clusters', 'selected-pin'],
+      layers: [...PIN_LAYER_IDS, 'clusters'],
     });
     if (hit.length === 0) options.onSelect(null);
   });
-  for (const id of ['pins', 'closed-pins', 'clusters', 'selected-pin']) {
+  for (const id of [...PIN_LAYER_IDS, 'clusters']) {
     map.on('mouseenter', id, () => (map.getCanvas().style.cursor = 'pointer'));
     map.on('mouseleave', id, () => (map.getCanvas().style.cursor = ''));
   }
@@ -354,17 +217,19 @@ export async function createMapController(
   return {
     setRows(rows) {
       collection = pinCollection(rows);
-      const closed = collection.features.filter((f) => f.properties.kind === 'closed');
-      const open = collection.features.filter((f) => f.properties.kind !== 'closed');
-      pinSource()?.setData({ type: 'FeatureCollection', features: open } as never);
-      (map.getSource(CLOSED_SOURCE) as GeoJSONSource | undefined)?.setData({
-        type: 'FeatureCollection',
-        features: closed,
-      } as never);
+      const { duty, clustered, closed } = splitPins(collection);
+      const set = (id: string, features: unknown[]) =>
+        source(id)?.setData({ type: 'FeatureCollection', features } as never);
+      set(SOURCES.clustered, clustered);
+      set(SOURCES.duty, duty);
+      set(SOURCES.closed, closed);
+      // What is on the map, for the browser tests (the canvas cannot be read).
+      container.dataset['dutyPins'] = String(duty.length);
+      container.dataset['clusteredPins'] = String(clustered.length);
+      container.dataset['closedPins'] = String(closed.length);
     },
     setOrigin(origin, fly, occludedBottom) {
-      const source = map.getSource(ORIGIN_SOURCE) as GeoJSONSource | undefined;
-      source?.setData(
+      source(SOURCES.origin)?.setData(
         origin === null
           ? (EMPTY as never)
           : ({
@@ -379,19 +244,40 @@ export async function createMapController(
             } as never),
       );
       if (origin !== null && fly) {
-        map.easeTo({
-          center: [origin.lon, origin.lat],
-          zoom: Math.max(map.getZoom(), 14),
-          padding: { top: 0, left: 0, right: 0, bottom: occludedBottom },
-          ...motion,
-        });
+        // A view that shows the position and the nearest few open pharmacies (the rows are
+        // already sorted by distance from it), above the sheet.
+        const bounds = new LngLatBounds([origin.lon, origin.lat], [origin.lon, origin.lat]);
+        let found = 0;
+        for (const feature of collection.features) {
+          if (found === NEAREST_SHOWN) break;
+          if (feature.properties.kind === 'closed') continue;
+          bounds.extend(feature.geometry.coordinates);
+          found += 1;
+        }
+        if (found === 0) {
+          map.easeTo({
+            center: [origin.lon, origin.lat],
+            zoom: Math.max(map.getZoom(), 14),
+            padding: { top: 0, left: 0, right: 0, bottom: occludedBottom },
+            ...motion,
+          });
+        } else {
+          // The map's own padding is what the sheet covers; it is added to the fit's padding.
+          if (Math.abs((map.getPadding().bottom ?? 0) - occludedBottom) > 2) {
+            map.setPadding({ top: 0, left: 0, right: 0, bottom: occludedBottom });
+          }
+          map.fitBounds(bounds, {
+            padding: { top: 72, left: 48, right: 48, bottom: 24 },
+            maxZoom: NEAREST_MAX_ZOOM,
+            ...motion,
+          });
+        }
       }
     },
     setSelected(id) {
-      const source = map.getSource(SELECTED_SOURCE) as GeoJSONSource | undefined;
       const feature =
         id === null ? undefined : collection.features.find((f) => f.properties.id === id);
-      source?.setData(
+      source(SOURCES.selected)?.setData(
         feature ? ({ type: 'FeatureCollection', features: [feature] } as never) : (EMPTY as never),
       );
     },

@@ -34,7 +34,13 @@ const meta = {
 }[route];
 ---
 
-<Base locale={locale} route={route} title={meta.title} description={meta.description}>
+<Base
+  locale={locale}
+  route={route}
+  title={meta.title}
+  description={meta.description}
+  app={route === 'home'}
+>
   {route === 'home' &&
     ['meta.json', 'pharmacies.json'].map((file) => (
       // The home screen needs these two first. They start with the page, not when its script

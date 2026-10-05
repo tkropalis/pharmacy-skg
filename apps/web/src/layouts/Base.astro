@@ -20,9 +20,14 @@ interface Props {
    * duty date, area) that have no RouteKey. Sets canonical, hreflang and the language switcher.
    */
   alternates?: Record<Locale, string>;
+  /**
+   * The home screen is an app viewport: it fills exactly the visible screen, the page itself
+   * does not scroll and there is no page footer (the sheet carries a compact one).
+   */
+  app?: boolean;
 }
 
-const { locale, route, title, description, alternates: pageAlternates } = Astro.props;
+const { locale, route, title, description, alternates: pageAlternates, app = false } = Astro.props;
 const d = t(locale);
 
 const site = Astro.site ?? new URL('https://pharmacy-skg.vercel.app');
@@ -35,10 +40,10 @@ const analytics = import.meta.env.PROD && import.meta.env.PUBLIC_ANALYTICS === '
 ---
 
 <!doctype html>
-<html lang={locale}>
+<html lang={locale} class={app ? 'app' : undefined}>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     {(alternates === null || route === 'report') && <meta name="robots" content="noindex" />}
@@ -84,6 +89,7 @@ const analytics = import.meta.env.PROD && import.meta.env.PUBLIC_ANALYTICS === '
     <slot name="head" />
   </head>
   <body
+    class={app ? 'app' : undefined}
     data-update-available={d.update.available}
     data-update-reload={d.update.reload}
     data-update-dismiss={d.update.dismiss}
@@ -97,7 +103,7 @@ const analytics = import.meta.env.PROD && import.meta.env.PUBLIC_ANALYTICS === '
     <main id="main" tabindex="-1">
       <slot />
     </main>
-    <SiteFooter locale={locale} />
+    {!app && <SiteFooter locale={locale} />}
     <script>
       import '../scripts/boot.ts';
     </script>

@@ -1,11 +1,17 @@
 /* The home screen: map, bottom sheet (side panel from 900px), rows and controls. */
 
+.app-region {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fills what the strip and the header leave: the page itself never scrolls (global.css). */
 .hs {
   --border-strong: #5f7469;
   --soft: #eef4f0;
   position: relative;
-  height: var(--hs-h, calc(100dvh - 7rem));
-  min-height: 30rem;
+  flex: 1 1 0;
+  min-height: 0;
   overflow: hidden;
   background: var(--bg);
   color: var(--fg);
@@ -117,7 +123,10 @@
   z-index: 5;
   display: flex;
   flex-direction: column;
-  height: 7.5rem;
+  height: calc(120px + var(--safe-b));
+  /* The room under the content is for the home indicator and the browser's floating toolbar. */
+  padding-bottom: var(--safe-b);
+  overflow: hidden;
   background: var(--surface);
   border-radius: 1rem 1rem 0 0;
   box-shadow: 0 -2px 14px rgb(0 0 0 / 0.25);
@@ -125,16 +134,23 @@
 }
 
 .sheet[data-size='small'] {
-  height: 120px;
+  height: calc(120px + var(--safe-b));
 }
 
-/* The "new version" notice (global.css) sits at the bottom of the screen: the sheet stands above it. */
+/* The "new version" notice (global.css) sits at the bottom of the screen, above the safe area:
+   the sheet stands above it. */
 html.has-update-toast .sheet {
   bottom: var(--update-toast-space, 5rem);
+  padding-bottom: 0;
 }
 
+/* Sheet.tsx sheetHeights() has the same numbers. */
 .sheet[data-size='medium'] {
-  height: 56%;
+  height: max(60%, calc(400px + var(--safe-b)));
+}
+
+.sheet[data-size='medium']:not([data-dragging]) {
+  max-height: calc(100% - 150px);
 }
 
 .sheet[data-size='large'] {
@@ -186,7 +202,8 @@ html.has-update-toast .sheet {
 
 .sheet-header {
   flex: none;
-  padding-inline: 1rem;
+  /* Phones in landscape: keep text and buttons clear of the notch (viewport-fit=cover). */
+  padding-inline: max(1rem, var(--safe-l)) max(1rem, var(--safe-r));
 }
 
 .sheet-body {
@@ -194,7 +211,7 @@ html.has-update-toast .sheet {
   min-height: 0;
   overflow-y: auto;
   overscroll-behavior: contain;
-  padding: 0.5rem 1rem 1.5rem;
+  padding: 0.5rem max(1rem, var(--safe-r)) 1.5rem max(1rem, var(--safe-l));
 }
 
 @media (min-width: 900px) {
@@ -202,6 +219,7 @@ html.has-update-toast .sheet {
     inset: 0 auto 0 0;
     width: 26rem;
     height: auto;
+    max-height: none;
     border-radius: 0;
     box-shadow: 2px 0 10px rgb(0 0 0 / 0.18);
     border-inline-end: 1px solid var(--border);
@@ -210,8 +228,10 @@ html.has-update-toast .sheet {
 
   .sheet[data-size='small'],
   .sheet[data-size='medium'],
-  .sheet[data-size='large'] {
+  .sheet[data-size='large'],
+  .sheet[data-size='medium']:not([data-dragging]) {
     height: auto;
+    max-height: none;
   }
 
   .sheet[data-size='small']:not([data-dragging]) .sheet-body {
@@ -266,9 +286,9 @@ html.has-update-toast .sheet {
 }
 
 .summary {
-  /* Two lines are kept free, so the sheet does not jump when the answer arrives. */
-  min-height: 2.8em;
-  margin: 0.375rem 0 0.125rem;
+  /* One line is kept free, so the sheet does not jump when the answer arrives. */
+  min-height: 1.4em;
+  margin: 0.375rem 0 0;
   font-size: 0.875rem;
   line-height: 1.4;
   color: var(--muted);
@@ -278,7 +298,7 @@ html.has-update-toast .sheet {
 .fresh {
   /* One line is kept free, so the sheet does not jump when meta.json arrives. */
   min-height: 1.4em;
-  margin: 0 0 0.375rem;
+  margin: 0 0 0.25rem;
   font-size: 0.8125rem;
   line-height: 1.4;
   color: var(--muted);
@@ -426,16 +446,8 @@ html.has-update-toast .sheet {
   background: var(--bg);
 }
 
-.panel > summary {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.25rem 0.75rem;
-  min-height: 44px;
-  padding: 0.25rem 0.75rem;
-  font-weight: 600;
-  cursor: pointer;
+.panel > .control:first-child {
+  border-top: 0;
 }
 
 .control {
@@ -559,6 +571,131 @@ html.has-update-toast .sheet {
   gap: 0.625rem;
   min-height: 2rem;
   font-size: 0.9375rem;
+}
+
+/* --- The origin chip, the nearby card and the list filter ----------------------- */
+
+/* Where the distances are measured from: always in the sheet header, one tap to change. */
+.origin-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 44px;
+  margin: 0.125rem 0 0.25rem;
+  padding: 0.25rem 0.75rem;
+  border: 2px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--fg);
+  font-weight: 600;
+  text-align: start;
+  cursor: pointer;
+}
+
+.origin-chip .chip-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.origin-chip .chip-when {
+  flex: none;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.origin-chip .chip-when::before {
+  content: '· ';
+}
+
+.origin-chip .chev {
+  margin-inline-start: auto;
+}
+
+.nearby {
+  position: relative;
+  margin: 0.5rem 0;
+  padding: 0 0.75rem 0.75rem;
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--soft);
+}
+
+.nearby-title {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  margin: 0 2.75rem 0 0;
+  font-size: 1.0625rem;
+}
+
+/* A 44px target in the corner of the card, level with the title. */
+.nearby-options {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--fg);
+  cursor: pointer;
+}
+
+.nearby-body .control-row {
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+
+.nearby-body .action {
+  padding-inline: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.nearby-body .action.primary {
+  flex: 1 1 auto;
+}
+
+.nearby-body .notice {
+  margin: 0.5rem 0 0;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8125rem;
+  line-height: 1.35;
+}
+
+.filter-chips {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.375rem;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.chip {
+  min-height: 44px;
+  padding: 0.125rem 0.5rem;
+  line-height: 1.2;
+  text-align: center;
+  border: 2px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--fg);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* The chosen chip is filled and bold; the others are outlines. */
+.chip[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 700;
 }
 
 /* --- Rows --------------------------------------------------------------------- */
@@ -695,14 +832,43 @@ html.has-update-toast .sheet {
   font-size: 0.9375rem;
 }
 
-.source {
-  margin-top: 1rem;
-  padding-top: 0.75rem;
+/* The compact footer at the end of the list: one row of links and the disclaimer. */
+.sheet-footer {
+  margin-top: 0.5rem;
+  padding-top: 0.25rem;
   border-top: 1px solid var(--border);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   color: var(--muted);
 }
 
-.source p {
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.875rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 0.8125rem;
+}
+
+.footer-note {
   margin: 0 0 0.25rem;
+  font-size: 0.8125rem;
+}
+
+/* The map's own controls stay clear of the notch too. */
+.hs .map .maplibregl-ctrl-top-left,
+.hs .map .maplibregl-ctrl-bottom-left {
+  margin-left: var(--safe-l);
+}
+
+.hs .map .maplibregl-ctrl-top-right,
+.hs .map .maplibregl-ctrl-bottom-right {
+  margin-right: var(--safe-r);
 }

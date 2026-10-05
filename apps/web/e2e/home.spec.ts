@@ -26,13 +26,10 @@ for (const locale of LOCALES) {
     test('lists the open pharmacies nearest first, each with a status label', async ({ page }) => {
       await page.goto(HOME[locale]);
       await waitForRows(page);
-      await openControls(page);
 
-      await page.getByRole('button', { name: text.app.origin.useLocation }).click();
-      await expect(page.getByText(text.app.origin.privacy).first()).toBeAttached();
-      await expect(page.locator('.summary')).toContainText(
-        text.app.summary.sortedByDistance.replace('{origin}', text.app.origin.myLocation),
-      );
+      // The position is asked for when the app opens: no button needs to be found.
+      await expect(page.locator('.summary')).toContainText(text.app.summary.sortedByDistanceShort);
+      await expect(page.locator('.origin-chip')).toContainText(text.app.origin.myLocation);
 
       const rows = page.locator('ol.rows > li.row');
       const count = await rows.count();
@@ -55,6 +52,16 @@ for (const locale of LOCALES) {
       expect(distances[0]).toBeLessThan(3000);
     });
 
+    test('the button in the options asks for the position again', async ({ page }) => {
+      await page.goto(HOME[locale]);
+      await waitForRows(page);
+      await openControls(page);
+
+      await page.getByRole('button', { name: text.app.origin.useLocation }).click();
+      await expect(page.locator('.summary')).toContainText(text.app.summary.sortedByDistanceShort);
+      await expect(page.locator('.origin-chip')).toContainText(text.app.origin.myLocation);
+    });
+
     test('finds Καλαμαριά by typing "kalamaria" in the area picker', async ({ page }) => {
       await page.goto(HOME[locale]);
       await waitForRows(page);
@@ -66,7 +73,8 @@ for (const locale of LOCALES) {
       await expect(option).toHaveCount(1);
       await option.click();
 
-      await expect(page.locator('.summary')).toContainText('Καλαμαριά');
+      await expect(page.locator('.origin-chip')).toContainText('Καλαμαριά');
+      await expect(page.locator('.summary')).toContainText(text.app.summary.sortedByDistanceShort);
       await expect(page.locator('ol.rows > li.row').first()).toBeVisible();
     });
   });

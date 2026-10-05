@@ -49,12 +49,18 @@ async function stubTiles(route: Route): Promise<void> {
 interface Fixtures {
   /** The instant the page's clock starts at (it keeps running from there). */
   now: string;
+  /**
+   * Whether the app may ask for the position when it opens (the default, as for a first-time
+   * visitor). `false` is a visitor who turned that off: no position, an alphabetical list.
+   */
+  autoLocate: boolean;
   /** Messages of console errors and uncaught exceptions seen so far. */
   consoleErrors: string[];
 }
 
 export const test = base.extend<Fixtures>({
   now: [NOW, { option: true }],
+  autoLocate: [true, { option: true }],
 
   consoleErrors: async ({ page }, use) => {
     const errors: string[] = [];
@@ -65,8 +71,12 @@ export const test = base.extend<Fixtures>({
     await use(errors);
   },
 
-  page: async ({ page, context, now }, use) => {
+  page: async ({ page, context, now, autoLocate }, use) => {
     await context.route('https://tiles.openfreemap.org/**', stubTiles);
+    // The flag the app keeps when the person has turned the automatic location request off.
+    if (!autoLocate) {
+      await page.addInitScript(() => localStorage.setItem('pharmacy-skg:location', 'off'));
+    }
     await page.clock.install({ time: new Date(now) });
     await use(page);
   },
@@ -88,9 +98,13 @@ export async function waitForMap(page: Page): Promise<void> {
   await expect(page.locator('.map[data-status="ready"]')).toBeAttached({ timeout: 20_000 });
 }
 
-/** Opens the "location, time and filters" panel, which starts closed on a phone. */
+/**
+ * Opens the "location, time and filters" panel, which starts closed. Its toggle is the origin
+ * chip in the sheet header, or the small button of the nearby card while there is no position.
+ */
 export async function openControls(page: Page): Promise<void> {
-  const panel = page.locator('details.panel');
-  if ((await panel.getAttribute('open')) === null) await panel.locator('> summary').click();
-  await expect(panel).toHaveAttribute('open', '');
+  const panel = page.locator('#controls');
+  if (!(await panel.isVisible()))
+    await page.locator('button.controls-toggle:visible').first().click();
+  await expect(panel).toBeVisible();
 }

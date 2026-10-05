@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { KeyboardEvent } from 'react';
 import type { Locale } from '@pharmacy-skg/core';
 import { THESSALONIKI, localToInstant, zonedDate, zonedParts } from '@pharmacy-skg/core';
@@ -6,15 +6,31 @@ import type { Dictionary } from '../../i18n/index.ts';
 import { addDays, dateRange } from '../../lib/dates.ts';
 import { upcomingDuties } from '../../lib/duties.ts';
 import { coverage, distanceMetres, publishedDuties } from '../../lib/engine.ts';
-import { formatUpdatedAt, formatUpdatedShort } from '../../lib/freshness.ts';
+import { formatUpdatedShort } from '../../lib/freshness.ts';
 import { groupList, groupNames, groupNear } from '../../lib/groups.ts';
 import { deviceZoneDiffers, fill, shortIsoDate } from '../../lib/format.ts';
-import { buildRows, rowFor } from '../../lib/list.ts';
-import type { Origin } from '../../lib/list.ts';
+import { applyListFilter, buildRows, rowFor } from '../../lib/list.ts';
+import type { ListFilter, Origin } from '../../lib/list.ts';
+import {
+  FIRST_FIX_OPTIONS,
+  WATCH_MOVE_METRES,
+  WATCH_OPTIONS,
+  autoLocateDecision,
+  geolocationPermission,
+} from '../../lib/geolocation.ts';
+import { localizedPath } from '../../i18n/routes.ts';
 import { buildLocalities } from '../../lib/places.ts';
 import type { Locality } from '../../lib/places.ts';
-import { AREA_KEY, readItem, writeItem } from '../../lib/storage.ts';
-import { Filters, OriginControls, TimeControls } from './Controls.tsx';
+import { AREA_KEY, FILTER_KEY, LOCATION_KEY, readItem, writeItem } from '../../lib/storage.ts';
+import {
+  CONTROLS_ID,
+  Filters,
+  ListFilterChips,
+  NearbyCard,
+  OriginChip,
+  OriginControls,
+  TimeControls,
+} from './Controls.tsx';
 import type { GeoState, TimeMode } from './Controls.tsx';
 import { MapView } from './MapView.tsx';
 import type { MapFocus, MapStatus } from './MapView.tsx';
@@ -55,6 +71,20 @@ function clock(parts: { minutes: number }): string {
   return `${h}:${m}`;
 }
 
+/**
+ * The state before the data is ready: "finding your location" when the position will be asked
+ * for by itself (so the nearby card does not flash up first), "unsupported" without geolocation.
+ */
+function initialGeo(): GeoState {
+  if (!('geolocation' in navigator)) return 'unsupported';
+  const decision = autoLocateDecision({
+    dismissed: readItem(LOCATION_KEY) === 'off',
+    areaChosen: readItem(AREA_KEY) !== null,
+    permission: 'unknown',
+  });
+  return decision === 'locate' ? 'locating' : 'idle';
+}
+
 function isIsoDate(value: string): boolean {
   return /^\d{4}-\d{2}-\d{2}$/.test(value);
 }
@@ -84,11 +114,12 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   const [timeMode, setTimeMode] = useState<TimeMode>({ kind: 'now' });
   const [origin, setOrigin] = useState<OriginState | null>(null);
   const [originNonce, setOriginNonce] = useState(0);
-  const [geo, setGeo] = useState<GeoState>('idle');
+  const [geo, setGeo] = useState<GeoState>(initialGeo);
   const [showClosed, setShowClosed] = useState(false);
-  // On a phone the controls start closed, so the first pharmacy is on screen without scrolling.
-  const [controlsOpen, setControlsOpen] = useState(
-    () => window.matchMedia('(min-width: 900px)').matches,
+  // The options (location, time, filters) start closed, so the first pharmacy is on screen.
+  const [controlsOpen, setControlsOpen] = useState(false);
+  const [dutyFilter, setDutyFilter] = useState<ListFilter>(() =>
+    readItem(FILTER_KEY) === 'duty' ? 'duty' : 'all',
   );
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [mapFocus, setMapFocus] = useState<MapFocus | null>(null);
@@ -112,27 +143,6 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   const at = live ? now : (customAt ?? now);
   const today = zonedDate(now, TIME_ZONE);
   const atDate = zonedDate(at, TIME_ZONE);
-
-  // The screen fills what is left of the first viewport below the header.
-  useLayoutEffect(() => {
-    const element = rootRef.current;
-    if (element === null) return;
-    let lastWidth = 0;
-    let lastHeight = 0;
-    const fit = () => {
-      const width = window.innerWidth;
-      const height = window.innerHeight;
-      // Browser bars sliding in and out change the height a little; ignore that.
-      if (width === lastWidth && Math.abs(height - lastHeight) < 150) return;
-      lastWidth = width;
-      lastHeight = height;
-      const top = element.getBoundingClientRect().top + window.scrollY;
-      element.style.setProperty('--hs-h', `${Math.max(480, Math.round(height - top))}px`);
-    };
-    fit();
-    window.addEventListener('resize', fit);
-    return () => window.removeEventListener('resize', fit);
-  }, []);
 
   // --- Data for the chosen moment -------------------------------------------------
 
@@ -175,10 +185,11 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
 
   // --- The list ---------------------------------------------------------------------
 
-  const result = useMemo(
+  const built = useMemo(
     () => (data ? buildRows(data, at, originPoint, showClosed) : { rows: [], openCount: 0 }),
     [data, at, originPoint, showClosed],
   );
+  const result = useMemo(() => applyListFilter(built, dutyFilter), [built, dutyFilter]);
   const covered = useMemo(() => (data ? coverage(data, at) : null), [data, at]);
 
   // The duty list that applies to the chosen moment is being fetched right now: the list must
@@ -200,7 +211,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
     covered !== null && covered.duties && !dutyLoading ? covered.groups.missing : [];
   const originGroupMissing = originGroup !== null && missingGroups.includes(originGroup);
 
-  useEffect(() => setVisible(PAGE_SIZE), [originPoint, timeMode, showClosed, tab]);
+  useEffect(() => setVisible(PAGE_SIZE), [originPoint, timeMode, showClosed, tab, result.active]);
 
   const selectedIndex = selectedId
     ? result.rows.findIndex((row) => row.pharmacy.id === selectedId)
@@ -208,25 +219,43 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   const shownCount = Math.max(visible, selectedIndex + 1);
   const shownRows = result.rows.slice(0, shownCount);
 
-  const summary = useMemo(() => {
+  // The count and how the list is sorted. `announcement` also says where from, which the
+  // header chip shows on screen.
+  const [summary, announcement] = useMemo(() => {
     const n = result.openCount;
-    const count =
-      n === 0 ? text.summary.none : n === 1 ? text.summary.one : fill(text.summary.many, { n });
+    const duty = result.active === 'duty';
+    const count = duty
+      ? n === 0
+        ? text.summary.dutyNone
+        : n === 1
+          ? text.summary.dutyOne
+          : fill(text.summary.dutyMany, { n })
+      : n === 0
+        ? text.summary.none
+        : n === 1
+          ? text.summary.one
+          : fill(text.summary.many, { n });
     const closed = result.rows.length - n;
+    const withClosed = closed > 0 ? fill(text.summary.withClosed, { n: closed }) : null;
+    const join = (parts: (string | null)[]) =>
+      parts.filter((part): part is string => part !== null).join(' · ');
     const sort = origin
+      ? text.summary.sortedByDistanceShort
+      : geo === 'locating'
+        ? text.origin.locating
+        : text.summary.sortedByName;
+    const sortFull = origin
       ? fill(text.summary.sortedByDistance, { origin: origin.label })
       : text.summary.sortedByName;
-    return [count, closed > 0 ? fill(text.summary.withClosed, { n: closed }) : null, sort]
-      .filter((part): part is string => part !== null)
-      .join(' · ');
-  }, [result, origin, text]);
+    return [join([count, withClosed, sort]), join([count, withClosed, sortFull])] as const;
+  }, [result, origin, geo, text]);
 
   // Announce list changes politely, and only after something the person did (not each minute).
   useEffect(() => {
     if (!pendingAnnouncement.current || state.status !== 'ready' || dutyLoading) return;
     pendingAnnouncement.current = false;
-    setMessage(fill(text.list.updated, { summary }));
-  }, [summary, state.status, text, dutyLoading]);
+    setMessage(fill(text.list.updated, { summary: announcement }));
+  }, [announcement, state.status, text, dutyLoading]);
 
   const announce = useCallback((value: string) => setMessage(value), []);
 
@@ -274,16 +303,23 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
     setControlsOpen(false);
   }
 
-  function useMyLocation() {
+  /**
+   * Asks the device for its position (the browser's own prompt appears on the first request).
+   * `auto` is the request made when the app opens. The position stays in memory: only the flags
+   * of the person's choices are stored, never coordinates.
+   */
+  function locate(auto: boolean) {
     if (!('geolocation' in navigator)) {
       setGeo('unsupported');
       return;
     }
     setGeo('locating');
-    // Only on this tap. The position stays in memory: it is never stored or sent anywhere.
     navigator.geolocation.getCurrentPosition(
       (position) => {
         pendingAnnouncement.current = true;
+        // Asking for the position again is a choice for it: the opt-out and the area go.
+        writeItem(LOCATION_KEY, null);
+        writeItem(AREA_KEY, null);
         setGeo('idle');
         setOrigin({
           kind: 'geo',
@@ -294,18 +330,101 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
         setOriginNonce((n) => n + 1);
         setControlsOpen(false);
       },
-      (error) => setGeo(error.code === error.PERMISSION_DENIED ? 'denied' : 'unavailable'),
-      { enableHighAccuracy: false, timeout: 10_000, maximumAge: 60_000 },
+      (error) => {
+        const denied = error.code === error.PERMISSION_DENIED;
+        setGeo(denied ? 'denied' : 'unavailable');
+        // A refused automatic request is not repeated on every visit: Safari's "Ask" setting and
+        // a dismissed Chrome prompt both report "prompt" again next time. The card offers a retry.
+        if (auto && denied) writeItem(LOCATION_KEY, 'off');
+      },
+      FIRST_FIX_OPTIONS,
     );
   }
 
   function clearOrigin() {
     pendingAnnouncement.current = true;
     writeItem(AREA_KEY, null);
+    // Clearing the position is also saying "not now": it is not asked for again by itself.
+    writeItem(LOCATION_KEY, 'off');
     setOrigin(null);
     setGeo('idle');
     announce(text.origin.cleared);
   }
+
+  function changeFilter(filter: ListFilter) {
+    pendingAnnouncement.current = true;
+    writeItem(FILTER_KEY, filter === 'duty' ? 'duty' : null);
+    setDutyFilter(filter);
+  }
+
+  function toggleControls() {
+    setControlsOpen((open) => !open);
+  }
+
+  // The options are at the top of the list: show them even when the list was scrolled.
+  useEffect(() => {
+    if (controlsOpen) {
+      document.getElementById(CONTROLS_ID)?.scrollIntoView({ block: 'nearest' });
+    }
+  }, [controlsOpen]);
+
+  // Ask for the position by itself once the data is ready (the browser asks the person first),
+  // unless they chose an area, turned the request off, or the browser has it blocked.
+  const autoLocated = useRef(false);
+  const dataReady = ready !== null;
+  useEffect(() => {
+    if (!dataReady || autoLocated.current) return;
+    autoLocated.current = true;
+    void geolocationPermission().then((permission) => {
+      const decision = autoLocateDecision({
+        dismissed: readItem(LOCATION_KEY) === 'off',
+        // Read when the permission has come back: the saved area may have been restored since.
+        areaChosen: readItem(AREA_KEY) !== null,
+        permission,
+      });
+      if (decision === 'locate') locate(true);
+      else if (decision === 'denied') setGeo('denied');
+      else setGeo((current) => (current === 'locating' ? 'idle' : current));
+    });
+    // `locate` only reads state through setters and refs; the effect runs once.
+  }, [dataReady]);
+
+  // Follow the device while the page is visible, so the distances stay right as people walk.
+  // The list is only re-sorted after a move of more than WATCH_MOVE_METRES.
+  const following = origin?.kind === 'geo';
+  useEffect(() => {
+    if (!following || !('geolocation' in navigator)) return;
+    let watchId: number | null = null;
+    const start = () => {
+      if (watchId !== null || document.visibilityState !== 'visible') return;
+      watchId = navigator.geolocation.watchPosition(
+        (position) => {
+          const next = { lat: position.coords.latitude, lon: position.coords.longitude };
+          setOrigin((previous) =>
+            previous?.kind !== 'geo' || distanceMetres(previous, next) <= WATCH_MOVE_METRES
+              ? previous
+              : { ...previous, ...next },
+          );
+        },
+        // A failed update keeps the last position; a position taken away stops following.
+        (error) => {
+          if (error.code === error.PERMISSION_DENIED) stop();
+        },
+        WATCH_OPTIONS,
+      );
+    };
+    const stop = () => {
+      if (watchId !== null) navigator.geolocation.clearWatch(watchId);
+      watchId = null;
+    };
+    const onVisibility = () => (document.visibilityState === 'visible' ? start() : stop());
+    document.addEventListener('visibilitychange', onVisibility);
+    start();
+    return () => {
+      document.removeEventListener('visibilitychange', onVisibility);
+      stop();
+    };
+  }, [following]);
 
   function setNow() {
     pendingAnnouncement.current = true;
@@ -389,6 +508,22 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
           </>
         )}
       </p>
+      {ready && tab === 'open' && (origin !== null || geo === 'locating') && (
+        <OriginChip
+          text={text}
+          label={
+            origin === null
+              ? text.origin.locating
+              : origin.kind === 'geo'
+                ? text.origin.myLocation
+                : fill(text.origin.areaName, { name: origin.label })
+          }
+          when={showWhen}
+          locating={origin === null}
+          open={controlsOpen}
+          onToggle={toggleControls}
+        />
+      )}
     </>
   );
 
@@ -460,52 +595,54 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
 
           {ready && tab === 'open' && (
             <>
-              <details
-                className="panel"
-                open={controlsOpen}
-                onToggle={(event) => setControlsOpen(event.currentTarget.open)}
-              >
-                <summary>
-                  <span>
-                    {origin
-                      ? fill(text.origin.current, { origin: origin.label })
-                      : text.origin.summary}
-                  </span>
-                  <span className="muted">
-                    {timeMode.kind === 'custom' && showWhen !== null ? showWhen : text.time.now}
-                  </span>
-                </summary>
-                <OriginControls
+              {origin === null && geo !== 'locating' && (
+                <NearbyCard
                   text={text}
-                  origin={origin}
                   geo={geo}
                   far={far}
                   localities={localities}
+                  open={controlsOpen}
+                  onToggleControls={toggleControls}
                   onNeedRoom={() => !wide && setSheetSize('large')}
-                  onUseLocation={useMyLocation}
+                  onUseLocation={() => locate(false)}
                   onPickArea={setAreaOrigin}
                   onClear={clearOrigin}
                 />
-                <TimeControls
-                  text={text}
-                  mode={timeMode}
-                  minDate={minDate}
-                  maxDate={maxDate}
-                  deviceDiffers={differs}
-                  onNow={setNow}
-                  onCustom={setCustom}
-                  currentDate={today}
-                  currentTime={clock(nowParts)}
-                />
-                <Filters
-                  text={text}
-                  showClosed={showClosed}
-                  onShowClosed={(value) => {
-                    pendingAnnouncement.current = true;
-                    setShowClosed(value);
-                  }}
-                />
-              </details>
+              )}
+              {controlsOpen && (
+                <div id={CONTROLS_ID} className="panel">
+                  <OriginControls
+                    text={text}
+                    origin={origin}
+                    geo={geo}
+                    far={far}
+                    localities={localities}
+                    onNeedRoom={() => !wide && setSheetSize('large')}
+                    onUseLocation={() => locate(false)}
+                    onPickArea={setAreaOrigin}
+                    onClear={clearOrigin}
+                  />
+                  <TimeControls
+                    text={text}
+                    mode={timeMode}
+                    minDate={minDate}
+                    maxDate={maxDate}
+                    deviceDiffers={differs}
+                    onNow={setNow}
+                    onCustom={setCustom}
+                    currentDate={today}
+                    currentTime={clock(nowParts)}
+                  />
+                  <Filters
+                    text={text}
+                    showClosed={showClosed}
+                    onShowClosed={(value) => {
+                      pendingAnnouncement.current = true;
+                      setShowClosed(value);
+                    }}
+                  />
+                </div>
+              )}
 
               {timeMode.kind === 'custom' && showWhen !== null && (
                 <p className="notice strong">
@@ -553,8 +690,20 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                 </p>
               )}
 
+              {!dutyLoading && result.chips && (
+                <ListFilterChips
+                  text={text}
+                  active={result.active}
+                  allCount={built.openCount}
+                  dutyCount={result.dutyCount}
+                  onChange={changeFilter}
+                />
+              )}
+
               {dutyLoading ? null : result.rows.length === 0 ? (
-                <p className="state">{text.list.noneOpen}</p>
+                <p className="state">
+                  {result.active === 'duty' ? text.list.noDuty : text.list.noneOpen}
+                </p>
               ) : (
                 <>
                   <ol className="rows" aria-label={text.list.label}>
@@ -643,17 +792,24 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
 
           {/* Not while loading: it would sit under the short loading note and then be pushed away. */}
           {state.status !== 'loading' && (
-            <footer className="source">
-              {meta && (
-                <p>
-                  {text.source.updated}{' '}
-                  <time dateTime={meta.updatedAt}>{formatUpdatedAt(meta.updatedAt, locale)}</time>
-                  {' · '}
-                  {text.source.sources}
-                </p>
-              )}
-              <p>{text.source.map}</p>
-              <p>{text.source.callFirst}</p>
+            <footer className="sheet-footer">
+              <nav aria-label={text.footer.label}>
+                <ul className="footer-links">
+                  <li>
+                    <a href={localizedPath(locale, 'about')}>{text.footer.about}</a>
+                  </li>
+                  <li>
+                    <a href={localizedPath(locale, 'privacy')}>{text.footer.privacy}</a>
+                  </li>
+                  <li>
+                    <a href={localizedPath(locale, 'report')}>{text.footer.report}</a>
+                  </li>
+                  <li>
+                    <a href={`${localizedPath(locale, 'about')}#credits`}>{text.footer.sources}</a>
+                  </li>
+                </ul>
+              </nav>
+              <p className="footer-note">{text.footer.disclaimer}</p>
             </footer>
           )}
         </div>

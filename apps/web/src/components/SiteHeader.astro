@@ -1,6 +1,6 @@
 ---
 import type { Locale } from '@pharmacy-skg/core';
-import { APP_NAME } from '../config.ts';
+import { APP_HEADER_NAME, APP_NAME } from '../config.ts';
 import { localizedPath } from '../i18n/index.ts';
 import type { RouteKey } from '../i18n/index.ts';
 import LanguageSwitcher from './LanguageSwitcher.astro';
@@ -23,7 +23,8 @@ const { locale, route, alternates } = Astro.props;
         <rect width="32" height="32" rx="6"></rect>
         <path d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"></path>
       </svg>
-      <span class="name">{APP_NAME[locale]}</span>
+      <span class="name short">{APP_HEADER_NAME[locale]}</span>
+      <span class="name long">{APP_NAME[locale]}</span>
     </a>
     <LanguageSwitcher locale={locale} route={route ?? 'home'} alternates={alternates} />
   </div>
@@ -35,13 +36,12 @@ const { locale, route, alternates } = Astro.props;
     background: var(--surface);
   }
 
-  /* The title and the language switcher share one row, even on a phone. */
+  /* One 44px row on a phone: the logo, the short name and the language switch. */
   .inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 0.5rem;
-    padding-block: 0.25rem;
   }
 
   .brand {
@@ -53,9 +53,20 @@ const { locale, route, alternates } = Astro.props;
     min-height: 2.75rem;
     color: var(--fg);
     font-weight: 700;
-    font-size: 0.9375rem;
+    font-size: 1rem;
     line-height: 1.2;
     text-decoration: none;
+  }
+
+  .name {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .long {
+    display: none;
   }
 
   .logo {
@@ -75,7 +86,15 @@ const { locale, route, alternates } = Astro.props;
   @media (min-width: 40rem) {
     .inner {
       gap: 1rem;
-      padding-block: 0.75rem;
+      padding-block: 0.375rem;
+    }
+
+    .short {
+      display: none;
+    }
+
+    .long {
+      display: inline;
     }
 
     .brand {

@@ -21,14 +21,22 @@ const others = LOCALES.filter((l) => l !== locale);
   <ul>
     {others.map((other) => (
       <li>
-        <a href={paths[other]} lang={other} hreflang={other}>
-          {t(other).localeName}
+        <a href={paths[other]} lang={other} hreflang={other} aria-label={t(other).localeName}>
+          <span class="pill" aria-hidden="true">
+            <span class="code">{t(other).localeCode}</span>
+            <span class="full">{t(other).localeName}</span>
+          </span>
         </a>
       </li>
     ))}
   </ul>
 </nav>
 
+<!--
+  A phone shows a two-letter code ("EN", "ΕΛ"); the link's accessible name is the language's
+  own name, which contains the visible text (WCAG 2.5.3). The link keeps a 44x44 px target
+  while the visible pill is slimmer, so the header bar stays low.
+-->
 <style>
   .switcher {
     flex: none;
@@ -45,13 +53,51 @@ const others = LOCALES.filter((l) => l !== locale);
   a {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    min-width: 2.75rem;
     min-height: 2.75rem;
-    padding-inline: 0.75rem;
+    color: var(--fg);
+    text-decoration: none;
+  }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.5rem;
+    min-height: 2rem;
+    padding-inline: 0.5rem;
     white-space: nowrap;
-    border: 1px solid var(--border);
+    border: 1px solid var(--border-strong, var(--border));
     border-radius: var(--radius);
     background: var(--surface);
-    font-weight: 600;
-    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 0.02em;
+  }
+
+  .full {
+    display: none;
+  }
+
+  a:hover .pill {
+    border-color: var(--accent);
+  }
+
+  @media (min-width: 40rem) {
+    .code {
+      display: none;
+    }
+
+    .full {
+      display: inline;
+    }
+
+    .pill {
+      min-height: 2.5rem;
+      padding-inline: 0.75rem;
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
   }
 </style>
