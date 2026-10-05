@@ -21,6 +21,16 @@ const PARAM_PAGES = Object.values(PARAM_ROUTES).flatMap((route) =>
 );
 
 /**
+ * The index of duty dates lists the published dates, so it changes every day and with every
+ * data update; precaching it would make a new service worker version out of each of them. It
+ * is fetched when visited.
+ */
+const DUTY_INDEXES = LOCALES.map((locale) => {
+  const directory = `${localePrefix(locale)}/${PARAM_ROUTES.duty[locale]}`.replace(/^\//, '');
+  return new RegExp(`^${directory}/index\\.html$`);
+});
+
+/**
  * The map: the MapLibre chunk, its worker files and its stylesheet (about 0.45 MB gzipped).
  * Most visits never open the map, so the service worker caches these cache-first on first use
  * instead (sw/sw.js, anything under /_astro/ that is not precached).
@@ -39,6 +49,7 @@ const EXCLUDED = [
   /^robots\.txt$/,
   /\.map$/,
   ...LAZY_MAP,
+  ...DUTY_INDEXES,
   ...PARAM_PAGES,
 ];
 
@@ -66,18 +77,32 @@ export function buildVersion(entries: readonly PrecacheFile[]): string {
   return createHash('sha256').update(lines.join('')).digest('hex').slice(0, 12);
 }
 
+/** URL to content hash, so a new worker can keep the files that did not change. */
+export function hashesByUrl(entries: readonly PrecacheFile[]): Record<string, string> {
+  return Object.fromEntries(entries.map((entry) => [urlForFile(entry.path), entry.hash]));
+}
+
 /** Fills the placeholders in sw/sw.js. Throws if the template no longer has them. */
 export function renderServiceWorker(
   template: string,
   version: string,
   urls: readonly string[],
+  hashes: Readonly<Record<string, string>> = {},
 ): string {
   const versionPlaceholder = "'__BUILD_VERSION__'";
   const urlsPlaceholder = "['__PRECACHE_URLS__']";
-  if (!template.includes(versionPlaceholder) || !template.includes(urlsPlaceholder)) {
-    throw new Error('sw/sw.js is missing its __BUILD_VERSION__ or __PRECACHE_URLS__ placeholder');
+  const hashesPlaceholder = "'__PRECACHE_HASHES__'";
+  if (
+    !template.includes(versionPlaceholder) ||
+    !template.includes(urlsPlaceholder) ||
+    !template.includes(hashesPlaceholder)
+  ) {
+    throw new Error(
+      'sw/sw.js is missing its __BUILD_VERSION__, __PRECACHE_URLS__ or __PRECACHE_HASHES__ placeholder',
+    );
   }
   return template
     .replace(versionPlaceholder, JSON.stringify(version))
-    .replace(urlsPlaceholder, JSON.stringify(urls));
+    .replace(urlsPlaceholder, JSON.stringify(urls))
+    .replace(hashesPlaceholder, JSON.stringify(hashes));
 }

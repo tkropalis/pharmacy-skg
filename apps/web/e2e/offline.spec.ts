@@ -54,3 +54,44 @@ test('after the first visit the home list and the map load offline', async ({
   await expect(page.locator('html')).toHaveAttribute('lang', 'en');
   await waitForRows(page);
 });
+
+test('a new service worker version never reloads a visible page: it offers a button', async ({
+  page,
+}) => {
+  await page.goto('/');
+  await waitForRows(page);
+  await page.evaluate(() => navigator.serviceWorker.ready);
+  await page.reload(); // now the worker controls the page
+  await waitForRows(page);
+  expect(await page.evaluate(() => navigator.serviceWorker.controller !== null)).toBe(true);
+
+  await page.evaluate(() => {
+    (window as unknown as { marker: string }).marker = 'same page';
+    navigator.serviceWorker.dispatchEvent(new Event('controllerchange'));
+  });
+  const toast = page.locator('.update-toast');
+  await expect(toast).toBeVisible();
+  await expect(toast.getByRole('button')).toHaveText('Ανανέωση');
+  // Still the same page, and still usable.
+  await page.waitForTimeout(500);
+  expect(await page.evaluate(() => (window as unknown as { marker?: string }).marker)).toBe(
+    'same page',
+  );
+  const box = await toast.getByRole('button').boundingBox();
+  expect(box?.height ?? 0).toBeGreaterThanOrEqual(43.5);
+
+  // Hidden, it reloads by itself.
+  await page.evaluate(() => {
+    Object.defineProperty(document, 'visibilityState', { value: 'hidden', configurable: true });
+    document.dispatchEvent(new Event('visibilitychange'));
+  });
+  await expect
+    .poll(async () => {
+      try {
+        return await page.evaluate(() => (window as unknown as { marker?: string }).marker);
+      } catch {
+        return 'navigating'; // the context goes away while the page reloads
+      }
+    })
+    .toBeUndefined();
+});

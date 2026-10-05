@@ -39,3 +39,5 @@ export function writeItem(
 }
 
 export const AREA_KEY = 'pharmacy-skg:area';
+/** When the data was last updated, as meta.json said on the last visit (public/stale-check.js reads it). */
+export const DATA_UPDATED_KEY = 'pharmacy-skg:data-updated';

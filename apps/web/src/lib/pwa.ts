@@ -28,23 +28,56 @@ export function offlineUrls(
   ];
 }
 
+/** A form with unsent input must not be thrown away by a reload. */
+function hasUnsentInput(): boolean {
+  return document.querySelector('form[data-dirty="true"]') !== null;
+}
+
 /**
- * Registers the service worker (production builds only). When a new version takes over, the
- * page reloads once so it never keeps running an old build against new caches. A reload is
- * skipped while the user has unsent input in a form (`data-dirty`); the next navigation then
- * gets the new version anyway.
+ * A small notice with a reload button: a new version is ready. The page is never reloaded
+ * under someone who is looking at it (they may be reading a phone number or about to call); the
+ * texts come from the page (data attributes on <body>, set in the layout).
+ */
+function offerReload(): void {
+  if (document.querySelector('.update-toast') !== null) return;
+  const { updateAvailable, updateReload } = document.body.dataset;
+  if (!updateAvailable || !updateReload) return;
+  const toast = document.createElement('div');
+  toast.className = 'update-toast';
+  toast.setAttribute('role', 'status');
+  const message = document.createElement('span');
+  message.textContent = updateAvailable;
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'button';
+  button.textContent = updateReload;
+  button.addEventListener('click', () => window.location.reload());
+  toast.append(message, button);
+  document.body.append(toast);
+}
+
+/**
+ * Registers the service worker (production builds only). When a new version takes over, a
+ * visible page offers a reload button and keeps running; a hidden page reloads by itself (nobody
+ * sees it), unless a form has unsent input. Either way the next navigation gets the new version.
  */
 export function registerServiceWorker(): void {
   if (!import.meta.env.PROD || !('serviceWorker' in navigator)) return;
 
   const hadController = navigator.serviceWorker.controller !== null;
-  let reloading = false;
+  let updateReady = false;
+  const reloadIfHidden = () => {
+    if (updateReady && document.visibilityState === 'hidden' && !hasUnsentInput()) {
+      window.location.reload();
+    }
+  };
   navigator.serviceWorker.addEventListener('controllerchange', () => {
-    if (!hadController || reloading) return;
-    if (document.querySelector('form[data-dirty="true"]') !== null) return;
-    reloading = true;
-    window.location.reload();
+    if (!hadController || updateReady) return;
+    updateReady = true;
+    if (document.visibilityState === 'hidden') reloadIfHidden();
+    else offerReload();
   });
+  document.addEventListener('visibilitychange', reloadIfHidden);
 
   navigator.serviceWorker
     .register('/sw.js', { scope: '/' })

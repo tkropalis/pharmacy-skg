@@ -16,6 +16,11 @@ export const en: Dictionary = {
     poison: 'Poison Centre',
   },
 
+  update: {
+    available: 'A new version of the app is ready.',
+    reload: 'Reload',
+  },
+
   stale: {
     title: 'This data may be out of date.',
     body: 'It has not been updated for more than 36 hours. Call the pharmacy before you go.',
@@ -52,8 +57,8 @@ export const en: Dictionary = {
     intro:
       'A map of the pharmacies that are open right now near you: on duty, overnight and regular hours.',
     noScript:
-      'The map and the list of open pharmacies need JavaScript. Without it you can see the duty lists for the day:',
-    dutyLink: 'Pharmacies on duty today',
+      'The map and the list of open pharmacies need JavaScript. Without it you can see the official duty lists by day:',
+    dutyLink: 'Pharmacies on duty, by day',
     fsthLead: 'Official source:',
     fsthName: 'Pharmaceutical Association of Thessaloniki',
   },

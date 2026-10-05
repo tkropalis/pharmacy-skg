@@ -1,7 +1,5 @@
 ---
 import type { Locale } from '@pharmacy-skg/core';
-import { buildMeta } from '../lib/meta.ts';
-import { formatUpdatedAt } from '../lib/freshness.ts';
 import { t } from '../i18n/index.ts';
 
 interface Props {
@@ -23,10 +21,7 @@ const d = t(locale);
       <p>
         <strong>{d.stale.title}</strong> {d.stale.body}
         <span class="when">
-          {d.footer.lastUpdatedLabel}{' '}
-          <time data-updated-at datetime={buildMeta.updatedAt}>
-            {formatUpdatedAt(buildMeta.updatedAt, locale)}
-          </time>
+          {d.footer.lastUpdatedLabel} <time data-updated-at>—</time>
         </span>
       </p>
     </div>

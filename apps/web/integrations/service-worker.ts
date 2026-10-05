@@ -2,7 +2,13 @@ import { createHash } from 'node:crypto';
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import type { AstroIntegration } from 'astro';
-import { buildVersion, precacheEntries, renderServiceWorker, urlForFile } from './precache.ts';
+import {
+  buildVersion,
+  hashesByUrl,
+  precacheEntries,
+  renderServiceWorker,
+  urlForFile,
+} from './precache.ts';
 import type { PrecacheFile } from './precache.ts';
 
 async function listFiles(root: string, prefix = ''): Promise<PrecacheFile[]> {
@@ -35,7 +41,10 @@ export function serviceWorkerIntegration(): AstroIntegration {
         const version = buildVersion(entries);
         const template = await readFile(new URL('../sw/sw.js', import.meta.url), 'utf8');
         const urls = entries.map((entry) => urlForFile(entry.path));
-        await writeFile(`${root}sw.js`, renderServiceWorker(template, version, urls));
+        await writeFile(
+          `${root}sw.js`,
+          renderServiceWorker(template, version, urls, hashesByUrl(entries)),
+        );
         logger.info(`service worker ${version}: precaching ${urls.length} files`);
       },
     },

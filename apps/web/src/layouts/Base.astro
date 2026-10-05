@@ -7,7 +7,6 @@ import StaleBanner from '../components/StaleBanner.astro';
 import { APP_NAME, THEME_COLORS } from '../config.ts';
 import { alternatePaths, t } from '../i18n/index.ts';
 import type { RouteKey } from '../i18n/index.ts';
-import { buildMeta } from '../lib/meta.ts';
 import '../styles/global.css';
 
 interface Props {
@@ -42,12 +41,11 @@ const analytics = import.meta.env.PROD && import.meta.env.PUBLIC_ANALYTICS === '
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    {alternates === null && <meta name="robots" content="noindex" />}
+    {(alternates === null || route === 'report') && <meta name="robots" content="noindex" />}
 
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content={THEME_COLORS.light} media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content={THEME_COLORS.dark} media="(prefers-color-scheme: dark)" />
-    <meta name="pharmacy-data-updated" content={buildMeta.updatedAt} />
     <script is:inline src="/stale-check.js"></script>
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -85,7 +83,7 @@ const analytics = import.meta.env.PROD && import.meta.env.PUBLIC_ANALYTICS === '
     {analytics && <script is:inline defer src="/_vercel/insights/script.js" />}
     <slot name="head" />
   </head>
-  <body>
+  <body data-update-available={d.update.available} data-update-reload={d.update.reload}>
     <a class="skip-link" href="#main">
       {d.skipToContent}
     </a>

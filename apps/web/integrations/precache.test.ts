@@ -1,7 +1,13 @@
 import { readFileSync } from 'node:fs';
-import { Script } from 'node:vm';
+import { Script, runInNewContext } from 'node:vm';
 import { describe, expect, it } from 'vitest';
-import { buildVersion, precacheEntries, renderServiceWorker, urlForFile } from './precache.ts';
+import {
+  buildVersion,
+  hashesByUrl,
+  precacheEntries,
+  renderServiceWorker,
+  urlForFile,
+} from './precache.ts';
 
 const file = (path: string, hash = 'h') => ({ path, hash });
 
@@ -47,7 +53,7 @@ describe('precacheEntries', () => {
     expect(kept).toEqual(['_astro/client.DAYQUbZp.js', '_astro/HomePage.dME8wzR7.css']);
   });
 
-  it('leaves out the generated pharmacy, duty-date and area pages but keeps their indexes', () => {
+  it('leaves out the generated pharmacy, duty-date and area pages, and the date index', () => {
     const kept = precacheEntries([
       file('farmakeio/2310023026/index.html'),
       file('en/pharmacy/2310023026/index.html'),
@@ -61,13 +67,8 @@ describe('precacheEntries', () => {
       file('en/area/index.html'),
       file('plirofories/index.html'),
     ]).map((f) => f.path);
-    expect(kept).toEqual([
-      'efimeries/index.html',
-      'en/area/index.html',
-      'en/duty/index.html',
-      'perioxi/index.html',
-      'plirofories/index.html',
-    ]);
+    // The area indexes stay; the duty index lists dates, so it would change with every day.
+    expect(kept).toEqual(['en/area/index.html', 'perioxi/index.html', 'plirofories/index.html']);
   });
 
   it('covers both locales when both are built', () => {
@@ -106,10 +107,106 @@ describe('renderServiceWorker', () => {
     expect(output).toContain('const PRECACHE_URLS = ["/","/en/","/_astro/x.js"];');
     expect(output).not.toContain('__BUILD_VERSION__');
     expect(output).not.toContain('__PRECACHE_URLS__');
+    expect(output).not.toContain('__PRECACHE_HASHES__');
     expect(() => new Script(output)).not.toThrow();
   });
 
   it('refuses a template without its placeholders', () => {
     expect(() => renderServiceWorker('const x = 1;', 'v', [])).toThrow(/placeholder/);
+  });
+});
+
+describe('hashesByUrl', () => {
+  it('maps each served URL to its content hash', () => {
+    expect(hashesByUrl([file('index.html', 'a'), file('_astro/x.js', 'b')])).toEqual({
+      '/': 'a',
+      '/_astro/x.js': 'b',
+    });
+  });
+});
+
+describe('the worker on install', () => {
+  const template = readFileSync(new URL('../sw/sw.js', import.meta.url), 'utf8');
+
+  /** Runs the rendered worker against in-memory caches and returns what it fetched. */
+  async function install(
+    entries: { path: string; hash: string }[],
+    existing: Record<string, { hashes: Record<string, string>; files: string[] }>,
+  ): Promise<{ fetched: string[]; copied: string[]; caches: Map<string, Map<string, unknown>> }> {
+    const store = new Map<string, Map<string, unknown>>();
+    for (const [name, { hashes, files }] of Object.entries(existing)) {
+      const entriesMap = new Map<string, unknown>(files.map((url) => [url, `old:${url}`]));
+      entriesMap.set('/__precache-manifest__', new Response(JSON.stringify(hashes)));
+      store.set(name, entriesMap);
+    }
+    const fetched: string[] = [];
+    const makeCache = (map: Map<string, unknown>) => ({
+      match: (key: string) => Promise.resolve(map.get(String(key))),
+      put: (key: string, value: unknown) => Promise.resolve(void map.set(String(key), value)),
+      addAll: (requests: { url: string }[]) => {
+        for (const request of requests) {
+          fetched.push(request.url);
+          map.set(request.url, `new:${request.url}`);
+        }
+        return Promise.resolve();
+      },
+    });
+    const listeners: Record<string, (event: unknown) => void> = {};
+    const urls = entries.map((entry) => urlForFile(entry.path));
+    const code = renderServiceWorker(template, 'v2', urls, hashesByUrl(entries));
+    runInNewContext(code, {
+      self: {
+        addEventListener: (type: string, listener: (event: unknown) => void) => {
+          listeners[type] = listener;
+        },
+        skipWaiting: () => Promise.resolve(),
+        location: { origin: 'https://example.test' },
+      },
+      caches: {
+        keys: () => Promise.resolve([...store.keys()]),
+        open: (name: string) => {
+          if (!store.has(name)) store.set(name, new Map());
+          return Promise.resolve(makeCache(store.get(name) ?? new Map()));
+        },
+      },
+      Request: class {
+        url: string;
+        constructor(url: string) {
+          this.url = url;
+        }
+      },
+      Response,
+      URL,
+      Set,
+      Map,
+    });
+    let done: Promise<unknown> = Promise.resolve();
+    listeners['install']?.({ waitUntil: (promise: Promise<unknown>) => (done = promise) });
+    await done;
+    const copied = [...(store.get('precache-v2')?.entries() ?? [])]
+      .filter(([, value]) => typeof value === 'string' && value.startsWith('old:'))
+      .map(([url]) => url);
+    return { fetched, copied, caches: store };
+  }
+
+  it('downloads only the files whose content changed, and keeps the rest', async () => {
+    const result = await install(
+      [file('index.html', 'h1'), file('_astro/a.js', 'same'), file('_astro/b.js', 'new')],
+      {
+        'precache-v1': {
+          hashes: { '/': 'h1', '/_astro/a.js': 'same', '/_astro/b.js': 'old' },
+          files: ['/', '/_astro/a.js', '/_astro/b.js'],
+        },
+      },
+    );
+    // The page is always fetched (it may be newer than its hash), the changed asset too.
+    expect(result.fetched.sort()).toEqual(['/', '/_astro/b.js']);
+    expect(result.copied).toEqual(['/_astro/a.js']);
+    expect(result.caches.get('precache-v2')?.has('/__precache-manifest__')).toBe(true);
+  });
+
+  it('downloads everything on a first install', async () => {
+    const result = await install([file('index.html', 'h1'), file('_astro/a.js', 'x')], {});
+    expect(result.fetched.sort()).toEqual(['/', '/_astro/a.js']);
   });
 });

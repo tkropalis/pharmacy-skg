@@ -51,8 +51,8 @@ describe('public/stale-check.js', () => {
     runInNewContext(script, {
       Date: fakeDate,
       isNaN,
+      localStorage: { getItem: () => content },
       document: {
-        querySelector: () => (content === null ? null : { getAttribute: () => content }),
         documentElement: {
           setAttribute: (name: string) => {
             if (name === 'data-stale') flagged = true;
@@ -64,7 +64,7 @@ describe('public/stale-check.js', () => {
   }
 
   it('flags exactly the cases isStale flags', () => {
-    const cases: [string | null, Date][] = [
+    const cases: [string, Date][] = [
       [updatedAt, hours(1)],
       [updatedAt, hours(36)],
       [updatedAt, new Date(hours(36).getTime() + 1000)],
@@ -72,10 +72,13 @@ describe('public/stale-check.js', () => {
       [updatedAt, hours(-3)],
       ['garbage', hours(1)],
       ['', hours(1)],
-      [null, hours(1)],
     ];
     for (const [content, now] of cases) {
       expect(runs(content, now), `${content} at ${now.toISOString()}`).toBe(isStale(content, now));
     }
+  });
+
+  it('waits for the runtime check when nothing is remembered yet (a first visit)', () => {
+    expect(runs(null, hours(500))).toBe(false);
   });
 });

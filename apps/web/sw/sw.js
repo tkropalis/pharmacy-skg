@@ -16,11 +16,15 @@
  *   - tiles.openfreemap.org: cache-first, capped at TILE_LIMIT entries;
  *   - everything else (the report API, analytics): untouched.
  *
- * A new version installs, takes over immediately (skipWaiting + clients.claim) and deletes
- * the old precache; the page reloads once when control changes (src/lib/pwa.ts).
+ * A new version installs, downloading only the files whose content changed, takes over
+ * immediately (skipWaiting + clients.claim) and deletes the old precache. A page that is on
+ * screen is not reloaded under the person: it offers a reload button, and reloads by itself
+ * only when it is hidden (src/lib/pwa.ts).
  */
 const BUILD_VERSION = '__BUILD_VERSION__';
 const PRECACHE_URLS = ['__PRECACHE_URLS__'];
+// URL to content hash. A new version keeps the files of the previous one whose hash is the same.
+const PRECACHE_HASHES = '__PRECACHE_HASHES__';
 
 const PRECACHE = `precache-${BUILD_VERSION}`;
 // Hashed assets fetched on first use (the map). Tied to the build, so old ones do not pile up.
@@ -34,12 +38,40 @@ const DATA_TIMEOUT_MS = 6000;
 
 const PRECACHED = new Set(PRECACHE_URLS);
 
+const MANIFEST_KEY = '/__precache-manifest__';
+
+/**
+ * Copies of files that an earlier version precached and that have not changed (same content
+ * hash). Pages are not reused: they are refreshed network-first and may be newer than their
+ * hash says.
+ */
+async function unchangedFiles() {
+  const found = new Map();
+  for (const name of await caches.keys()) {
+    if (!name.startsWith('precache-') || name === PRECACHE) continue;
+    const old = await caches.open(name);
+    const manifest = await old.match(MANIFEST_KEY);
+    if (!manifest) continue;
+    const hashes = await manifest.json().catch(() => ({}));
+    for (const url of PRECACHE_URLS) {
+      if (found.has(url) || url.endsWith('/') || hashes[url] !== PRECACHE_HASHES[url]) continue;
+      const copy = await old.match(url);
+      if (copy) found.set(url, copy);
+    }
+  }
+  return found;
+}
+
 self.addEventListener('install', (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(PRECACHE);
+      const kept = await unchangedFiles();
+      for (const [url, copy] of kept) await cache.put(url, copy);
       // `reload` skips the HTTP cache, so a new version never precaches stale files.
-      await cache.addAll(PRECACHE_URLS.map((url) => new Request(url, { cache: 'reload' })));
+      const missing = PRECACHE_URLS.filter((url) => !kept.has(url));
+      await cache.addAll(missing.map((url) => new Request(url, { cache: 'reload' })));
+      await cache.put(MANIFEST_KEY, new Response(JSON.stringify(PRECACHE_HASHES)));
       await self.skipWaiting();
     })(),
   );

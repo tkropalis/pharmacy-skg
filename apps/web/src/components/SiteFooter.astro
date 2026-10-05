@@ -1,7 +1,6 @@
 ---
 import type { Locale } from '@pharmacy-skg/core';
 import { REPO_URL } from '../config.ts';
-import { formatUpdatedAt } from '../lib/freshness.ts';
 import { buildMeta } from '../lib/meta.ts';
 import { localizedPath, t } from '../i18n/index.ts';
 import { areaIndexPath, dutyIndexPath } from '../i18n/routes.ts';
@@ -41,10 +40,7 @@ const mapCredits = [
 <footer class="site-footer">
   <div class="container">
     <p class="freshness">
-      <strong>{d.lastUpdatedLabel}</strong>{' '}
-      <time data-updated-at datetime={buildMeta.updatedAt}>
-        {formatUpdatedAt(buildMeta.updatedAt, locale)}
-      </time>
+      <strong>{d.lastUpdatedLabel}</strong> <time data-updated-at>—</time>
     </p>
 
     <p class="disclaimer">{d.disclaimer}</p>
@@ -139,8 +135,9 @@ const mapCredits = [
   }
 
   .links a {
-    display: inline-block;
-    padding-block: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
   }
 
   .credits li {

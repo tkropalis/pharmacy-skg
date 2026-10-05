@@ -1,8 +1,7 @@
 ---
 import type { Locale } from '@pharmacy-skg/core';
 import { t } from '../../i18n/index.ts';
-import { dutyPath } from '../../i18n/routes.ts';
-import { buildToday } from '../../lib/build-today.ts';
+import { dutyIndexPath } from '../../i18n/routes.ts';
 
 interface Props {
   locale: Locale;
@@ -11,9 +10,10 @@ interface Props {
 const { locale } = Astro.props;
 const d = t(locale).home;
 const app = t(locale).app;
-// Today in the city's time zone at build time. The page is rebuilt with every data update;
-// the interactive app that replaces this content works out the date itself.
-const dutyHref = dutyPath(locale, buildToday());
+// The page carries nothing that depends on the date or on the data (a rebuild must not change
+// it, or every data update would create a new service worker version): the link goes to the
+// list of dates, and the interactive app that replaces this content works out today itself.
+const dutyHref = dutyIndexPath(locale);
 ---
 
 <!--
