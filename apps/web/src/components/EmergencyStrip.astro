@@ -1,0 +1,79 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import { EMERGENCY_NUMBERS } from '../config.ts';
+import { t } from '../i18n/index.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const d = t(locale).emergency;
+
+// 166 and 112 are Greek national numbers; the Poison Centre is a regular landline.
+const numbers = [
+  { name: d.ambulance, display: EMERGENCY_NUMBERS.ambulance, hiddenName: false },
+  { name: d.europe, display: EMERGENCY_NUMBERS.europe, hiddenName: true },
+  { name: d.poison, display: EMERGENCY_NUMBERS.poison, hiddenName: false },
+];
+---
+
+<aside class="emergency" aria-label={d.label}>
+  <div class="container inner">
+    <strong class="label">{d.label}:</strong>
+    <ul>
+      {numbers.map((n) => (
+        <li>
+          <a href={`tel:${n.display.replace(/\s/g, '')}`}>
+            <span class:list={[{ 'sr-only': n.hiddenName }]}>{n.name}</span>{' '}
+            <strong>{n.display}</strong>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</aside>
+
+<style>
+  .emergency {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--emergency-bg);
+    color: var(--emergency-fg);
+    font-size: 0.9375rem;
+    line-height: 1.3;
+  }
+
+  .inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.125rem 0.75rem;
+    padding-block: 0.25rem;
+  }
+
+  /* The items flow into the strip's own row, after the label, so a narrow screen needs fewer lines. */
+  ul {
+    display: contents;
+    list-style: none;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    min-height: 2.25rem;
+    padding-inline: 0.5rem;
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  a strong {
+    white-space: nowrap;
+  }
+
+  a:focus-visible {
+    outline-color: #ffffff;
+  }
+</style>
