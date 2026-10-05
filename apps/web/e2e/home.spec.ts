@@ -204,3 +204,16 @@ test('a focused element is never hidden behind the sticky emergency strip (WCAG 
   const box = await strip.boundingBox();
   expect(parseFloat(published)).toBeCloseTo(box?.height ?? 0, 0);
 });
+
+test('a map chunk that cannot be fetched (an old page after a deploy) shows the map note and the reload offer, and the list keeps working', async ({
+  page,
+}) => {
+  await page.route('**/_astro/map-controller.*.js', (route) => route.abort());
+  await page.goto('/');
+  const rows = await waitForRows(page);
+  await page.locator('.map-area').dispatchEvent('pointerdown');
+  await expect(page.locator('.map-note')).toHaveText(t('el').app.map.loadFailed);
+  const toast = page.locator('.update-toast');
+  await expect(toast.getByRole('button', { name: t('el').update.reload })).toBeVisible();
+  expect(await rows.count()).toBeGreaterThan(3);
+});

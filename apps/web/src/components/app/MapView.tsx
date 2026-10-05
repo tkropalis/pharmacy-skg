@@ -5,7 +5,9 @@ import type { Dictionary } from '../../i18n/index.ts';
 import type { Origin, Row } from '../../lib/list.ts';
 import type { MapController } from './map-controller.ts';
 import { yieldToMain } from '../../lib/idle.ts';
+import { importOrOfferReload } from '../../lib/import-or-reload.ts';
 import { loadMapStyle } from '../../lib/map-style.ts';
+import { offerReload } from '../../lib/update-toast.ts';
 import { useMediaQuery } from './use-now.ts';
 
 type MapStatus = 'idle' | 'loading' | 'ready' | 'unavailable' | 'failed';
@@ -89,7 +91,12 @@ export function MapView(props: MapViewProps) {
         // The style and the library load side by side.
         const style = loadMapStyle(dark, locale);
         style.catch(() => {});
-        const { createMapController } = await import('./map-controller.ts');
+        // After a deploy this page's chunk may be gone from the cache and the server: the map
+        // note says so and the reload notice offers the new version. The list is unaffected.
+        const { createMapController } = await importOrOfferReload(
+          () => import('./map-controller.ts'),
+          offerReload,
+        );
         const created = await createMapController(container, {
           locale,
           text,
