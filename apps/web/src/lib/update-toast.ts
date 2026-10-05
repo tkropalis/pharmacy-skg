@@ -55,8 +55,12 @@ function reserveSpace(toast: HTMLElement): void {
 
 /** Takes the notice away (and the room it reserved). */
 export function dismissUpdateToast(): void {
-  document.querySelector(`.${TOAST_CLASS}`)?.remove();
+  const toast = document.querySelector(`.${TOAST_CLASS}`);
+  // Keyboard and screen-reader users would otherwise be dropped on <body>.
+  const hadFocus = toast?.contains(document.activeElement) ?? false;
+  toast?.remove();
   clearSpace();
+  if (hadFocus) document.querySelector<HTMLElement>('#main')?.focus({ preventScroll: true });
 }
 
 /**

@@ -136,10 +136,14 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
 
   // --- Data for the chosen moment -------------------------------------------------
 
-  const isReady = ready !== null;
+  // Keyed on meta, which changes only on a full (re)load: a silent refresh replaces the settled
+  // dates, so the chosen dates must be asked for again or a date that had failed stays
+  // "loading". Not keyed on `data`, which changes as each date settles and would retry a
+  // failed date in a loop while offline.
+  const readyMeta = ready?.meta ?? null;
   useEffect(() => {
-    if (isReady) ensureDates(dateRange(addDays(atDate, -1), 5));
-  }, [isReady, atDate, ensureDates]);
+    if (readyMeta !== null) ensureDates(dateRange(addDays(atDate, -1), 5));
+  }, [readyMeta, atDate, ensureDates]);
 
   const lastPublished = meta?.duties?.to ?? today;
   const maxDate = addDays(lastPublished < today ? today : lastPublished, PICKER_DAYS_AHEAD);
