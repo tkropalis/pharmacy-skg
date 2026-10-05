@@ -1,6 +1,8 @@
 import { defineConfig } from '@playwright/test';
 
-const PORT = Number(process.env.E2E_PORT ?? 4321);
+// Not Astro's default (4321, where a developer's own dev or preview server usually is): the
+// tests must never run against some other server that happens to be on the port.
+const PORT = Number(process.env.E2E_PORT ?? 4329);
 
 // Lets context.route() see requests the service worker makes itself (the map style and tiles in
 // the offline test), so those are stubbed too instead of reaching the network.
@@ -45,10 +47,16 @@ export default defineConfig({
     },
     { name: 'desktop', use: { viewport: { width: 1280, height: 800 } } },
   ],
+  globalSetup: './e2e/global-setup.ts',
   webServer: {
-    command: `pnpm exec astro preview --host 127.0.0.1 --port ${PORT}`,
+    // --ignore-lock: Astro 7 keeps one preview server per project and, when it finds an agent or
+    // a lock, starts it in the background and exits. Here Playwright owns the process (it starts
+    // it and stops it) and the port is its own, so the lock is not wanted.
+    command: `pnpm exec astro preview --host 127.0.0.1 --port ${PORT} --ignore-lock`,
     url: `http://127.0.0.1:${PORT}/`,
-    reuseExistingServer: !process.env['CI'],
+    // Never reuse what is already listening: it could be a stale or an unrelated server. If the
+    // port is taken Playwright stops with an error that says so; pick another with E2E_PORT.
+    reuseExistingServer: false,
     timeout: 60_000,
   },
 });
