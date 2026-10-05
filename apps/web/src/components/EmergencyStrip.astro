@@ -134,6 +134,14 @@ const numbers = [
     a {
       padding-inline: 0.5rem;
     }
+  }
+
+  /* The names make the label and the three links one line only on a wide screen; the strip
+     is wider than the text column there so they fit (and stay one line, not two). */
+  @media (min-width: 54rem) {
+    .inner {
+      max-width: 64rem;
+    }
 
     .name {
       display: inline;
