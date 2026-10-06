@@ -23,24 +23,35 @@ export interface SitemapEntry {
   readonly lastmod?: string | undefined;
 }
 
-/** Every indexable page, one entry per page (not per locale). The 404 page is never listed. */
-export function sitemapEntries(model: SeoModel): SitemapEntry[] {
-  const lastmod = model.updatedAt.slice(0, 10);
+/**
+ * Every indexable page of every city, one entry per page (not per locale). The 404 page is never
+ * listed. A data page's lastmod is its city's last data change; the index pages take the latest.
+ */
+export function sitemapEntries(models: readonly SeoModel[]): SitemapEntry[] {
+  const latest = models
+    .map((model) => model.updatedAt.slice(0, 10))
+    .reduce((a, b) => (a > b ? a : b), '');
   const entries: SitemapEntry[] = [];
   for (const route of ROUTE_KEYS) {
     if (EXCLUDED_ROUTES.includes(route)) continue;
     entries.push({ alternates: alternatePaths(route) });
   }
-  entries.push({ alternates: alternatesFor(dutyIndexPath), lastmod });
-  entries.push({ alternates: alternatesFor(areaIndexPath), lastmod });
-  for (const date of model.publishedDates) {
-    entries.push({ alternates: alternatesFor((l) => dutyPath(l, date)), lastmod });
-  }
-  for (const area of model.areas) {
-    entries.push({ alternates: alternatesFor((l) => areaPath(l, area.slug)), lastmod });
-  }
-  for (const pharmacy of model.pharmacies) {
-    entries.push({ alternates: alternatesFor((l) => pharmacyPath(l, pharmacy.id)), lastmod });
+  entries.push({ alternates: alternatesFor(dutyIndexPath), lastmod: latest });
+  entries.push({ alternates: alternatesFor(areaIndexPath), lastmod: latest });
+  for (const model of models) {
+    const lastmod = model.updatedAt.slice(0, 10);
+    for (const date of model.publishedDates) {
+      entries.push({ alternates: alternatesFor((l) => dutyPath(l, model.cityId, date)), lastmod });
+    }
+    for (const area of model.areas) {
+      entries.push({
+        alternates: alternatesFor((l) => areaPath(l, model.cityId, area.slug)),
+        lastmod,
+      });
+    }
+    for (const pharmacy of model.pharmacies) {
+      entries.push({ alternates: alternatesFor((l) => pharmacyPath(l, pharmacy.id)), lastmod });
+    }
   }
   return entries;
 }

@@ -9,6 +9,8 @@ export interface Locality {
   readonly count: number;
   /** The duty-list group most of its pharmacies belong to, or null. */
   readonly groupId: string | null;
+  /** Set for another covered city offered in the area picker: choosing it switches to it. */
+  readonly cityId?: string;
 }
 
 const greek = new Intl.Collator('el');

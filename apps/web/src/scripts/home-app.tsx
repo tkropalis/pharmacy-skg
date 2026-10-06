@@ -18,6 +18,6 @@ if (root !== null) {
   const locale: Locale = root.dataset.locale === 'en' ? 'en' : 'el';
   const text = JSON.parse(root.dataset.text ?? '{}') as Dictionary['app'];
   createRoot(root).render(
-    <HomeApp city={city} locale={locale} text={text} title={root.dataset.title ?? ''} />,
+    <HomeApp initialCity={city} locale={locale} text={text} title={root.dataset.title ?? ''} />,
   );
 }

@@ -10,9 +10,9 @@ describe('generated page files', () => {
 
   it.each([
     ['pharmacy', '[id].astro'],
-    ['duty', '[date].astro'],
+    ['duty', '[city]/[date].astro'],
     ['duty', 'index.astro'],
-    ['area', '[slug].astro'],
+    ['area', '[city]/[slug].astro'],
     ['area', 'index.astro'],
   ] as const)('%s has %s in every locale', (route, name) => {
     for (const locale of LOCALES) {

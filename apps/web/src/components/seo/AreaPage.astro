@@ -7,11 +7,12 @@ import SeoLayout from './SeoLayout.astro';
 
 interface Props {
   locale: Locale;
+  cityId: string;
   slug: string;
 }
 
-const { locale, slug } = Astro.props;
-const model = await loadSeoModel();
+const { locale, cityId, slug } = Astro.props;
+const model = await loadSeoModel(cityId);
 const page = areaPageProps(model, locale, slug);
 if (page === null) throw new Error(`No area with slug ${slug}`);
 

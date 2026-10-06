@@ -131,6 +131,31 @@ describe('describeStatus', () => {
     );
   });
 
+  it('where the regular hours are not known, says "not on duty", never "closed"', () => {
+    const later: PharmacyStatus = {
+      state: 'closed',
+      nextOpen: new Date('2026-10-05T14:00:00Z'),
+      nextReasons: [
+        { kind: 'duty', duty: 'day', date: '2026-10-05', groupId: 'larisa', heading: 'x' },
+      ],
+      nextRunReasons: [],
+    };
+    const none: PharmacyStatus = {
+      state: 'closed',
+      nextOpen: null,
+      nextReasons: [],
+      nextRunReasons: [],
+    };
+    const zone = 'Europe/Athens';
+    expect(describeStatus(later, true, now, 'el', t('el'), zone, true).text).toBe(
+      'Δεν εφημερεύει τώρα. Εφημερεύει σήμερα στις 17:00. Καλέστε πριν πάτε.',
+    );
+    expect(describeStatus(none, true, now, 'en', t('en'), zone, true).text).toBe(
+      'Not on duty now. Call before you go.',
+    );
+    expect(describeStatus(none, true, now, 'el', t('el'), zone, true).tone).toBe('closed');
+  });
+
   it('says on duty without hours', () => {
     const status: PharmacyStatus = {
       state: 'duty-hours-unknown',

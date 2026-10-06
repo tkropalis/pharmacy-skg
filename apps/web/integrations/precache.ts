@@ -11,13 +11,14 @@ export interface PrecacheFile {
 }
 
 /**
- * The generated pages with a parameter (one per pharmacy, duty date and area, thousands in
- * all): they are fetched when visited and never precached. Their index pages stay in the shell.
+ * The generated pages with parameters (one per pharmacy, and per city's duty date and area,
+ * thousands in all): they are fetched when visited and never precached. Their index pages stay in the shell.
  */
 const PARAM_PAGES = Object.values(PARAM_ROUTES).flatMap((route) =>
   LOCALES.map((locale) => {
     const directory = `${localePrefix(locale)}/${route[locale]}`.replace(/^\//, '');
-    return new RegExp(`^${directory}/[^/]+/index\\.html$`);
+    // One segment or more: duty dates and areas sit under their city ('efimeries/larisa/…').
+    return new RegExp(`^${directory}/(?:[^/]+/)+index\\.html$`);
   }),
 );
 

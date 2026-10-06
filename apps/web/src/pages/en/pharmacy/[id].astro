@@ -1,13 +1,19 @@
 ---
 import PharmacyPage from '../../../components/seo/PharmacyPage.astro';
-import { loadSeoModel } from '../../../lib/seo/site-data.ts';
+import { loadSeoModels } from '../../../lib/seo/site-data.ts';
 
 export async function getStaticPaths() {
-  const model = await loadSeoModel();
-  return model.pharmacies.map((pharmacy) => ({ params: { id: pharmacy.id } }));
+  const models = await loadSeoModels();
+  return models.flatMap((model) =>
+    model.pharmacies.map((pharmacy) => ({
+      params: { id: pharmacy.id },
+      props: { cityId: model.cityId },
+    })),
+  );
 }
 
 const { id } = Astro.params;
+const { cityId } = Astro.props;
 ---
 
-<PharmacyPage locale="en" id={id ?? ''} />
+<PharmacyPage locale="en" cityId={cityId} id={id ?? ''} />

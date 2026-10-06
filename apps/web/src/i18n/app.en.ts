@@ -36,6 +36,7 @@ export const appEn: Dictionary['app'] = {
     sortedByName: 'in alphabetical order',
     withClosed: '{n} closed',
     withClosedOne: '1 closed',
+    dutyOnly: 'Only pharmacies on duty are shown here.',
   },
 
   nearby: {
@@ -51,7 +52,7 @@ export const appEn: Dictionary['app'] = {
     unavailable: 'Your location could not be found. Choose an area.',
     deniedHelpIos: 'Settings › Apps › Safari › Location.',
     deniedHelpOther: 'Change it in settings.',
-    far: 'You are far from Thessaloniki.',
+    uncovered: 'Your area is not covered yet.',
     myLocation: 'Near me',
     here: 'Your location',
     lastLocation: 'Last location',
@@ -124,7 +125,6 @@ export const appEn: Dictionary['app'] = {
     favouriteAdded: '{name}: added to favourites',
     favouriteRemoved: '{name}: removed from favourites',
     page: 'Hours',
-    defaultLocality: 'Θεσσαλονίκη',
     dutiesMissing: 'Duty not announced yet',
     favouriteSaved: 'In favourites',
     favouriteSavedLabel: 'In favourites: {name}',
@@ -170,6 +170,8 @@ export const appEn: Dictionary['app'] = {
     emptyHint: 'Open a pharmacy and press “Favourite”.',
     notStored: 'Favourites will not be saved.',
     gone: 'This pharmacy no longer exists.',
+    elsewhereOne: '{city}: 1 favourite',
+    elsewhereMany: '{city}: {n} favourites',
     upcoming: 'Next duty days',
     noneUpcoming: 'No duty announced until {date}.',
     noneAnnounced: 'No duty announced yet.',
@@ -185,7 +187,7 @@ export const appEn: Dictionary['app'] = {
 
   ics: {
     summary: 'On duty: {name}',
-    source: 'Source: Pharmaceutical Association of Thessaloniki',
+    source: 'Source: {source}',
     callFirst: 'Call before you go.',
     calendarName: 'Pharmacy duty days',
   },

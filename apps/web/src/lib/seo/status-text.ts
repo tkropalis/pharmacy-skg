@@ -82,6 +82,8 @@ export function openLabel(reasons: readonly OpenReason[], d: StatusDictionary): 
 /**
  * The status in words. `dutiesPublished` false adds the note that the answer may change once
  * the day's list is out. Statuses are never conveyed by colour alone: the text always says it.
+ * `dutyOnly`: the city's regular hours are not known (decision D26), so a pharmacy that is not
+ * on duty is "not on duty", never "closed", and what comes next is its next duty.
  */
 export function describeStatus(
   status: PharmacyStatus,
@@ -90,6 +92,7 @@ export function describeStatus(
   locale: Locale,
   d: StatusDictionary,
   timeZone = GREECE_TIME_ZONE,
+  dutyOnly = false,
 ): StatusText {
   const s = d.seo.status;
   const tail = [dutiesPublished ? '' : s.unpublished, s.callFirst].filter(Boolean).join(' ');
@@ -117,6 +120,13 @@ export function describeStatus(
     return make('duty-unknown', d.status.dutyUnknown, tail);
   }
 
+  if (dutyOnly) {
+    const next =
+      status.nextOpen === null
+        ? ''
+        : `${fill(s.dutyAt, { when: whenText(status.nextOpen, now, locale, s, timeZone) })} `;
+    return make('closed', s.notOnDuty, `${next}${tail}`);
+  }
   const next =
     status.nextOpen === null
       ? s.noNextOpen

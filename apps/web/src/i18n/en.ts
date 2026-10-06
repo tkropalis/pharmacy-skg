@@ -34,9 +34,8 @@ export const en: Dictionary = {
   },
 
   home: {
-    title: 'Open pharmacies in Thessaloniki',
-    description:
-      'Open, on-duty and overnight pharmacies in Thessaloniki right now, on a map. Free, no ads.',
+    title: 'Open pharmacies near you',
+    description: 'Open, on-duty and overnight pharmacies right now, on a map. Free, no ads.',
     noScript: 'The map needs JavaScript.',
     dutyLink: 'Duty lists by day',
   },
@@ -50,13 +49,14 @@ export const en: Dictionary = {
       {
         heading: 'What it is',
         paragraphs: [
-          'It shows which pharmacies in the Thessaloniki area are open. It is free, with no ads. It is not connected to the Pharmaceutical Association of Thessaloniki or the Region of Central Macedonia.',
+          'It shows which pharmacies are open. Areas: {cities}. It is free, with no ads. It is not connected to any pharmaceutical association or Region.',
         ],
       },
       {
         heading: 'Opening hours',
         paragraphs: [
-          'We show only officially announced duty days. Other pharmacies have the usual hours: Monday and Wednesday 08:00–14:30, Tuesday, Thursday and Friday 08:00–14:00 and 17:00–21:00. Some have longer hours, announced by the Region.',
+          'We show only officially announced duty days. In Thessaloniki other pharmacies have the usual hours: Monday and Wednesday 08:00–14:30, Tuesday, Thursday and Friday 08:00–14:00 and 17:00–21:00. Some have longer hours, announced by the Region.',
+          'Where we do not know the usual hours, as in Larissa, we show only the pharmacies on duty.',
         ],
       },
     ],
@@ -68,8 +68,9 @@ export const en: Dictionary = {
     },
     creditsHeading: 'Sources',
     credits: {
-      fsth: 'Duty lists: Pharmaceutical Association of Thessaloniki, via',
-      pkm: 'Opening hours: Region of Central Macedonia.',
+      fsth: 'Duty lists in Thessaloniki: Pharmaceutical Association of Thessaloniki, via',
+      fsl: 'Duty lists in Larissa: Pharmaceutical Association of Larissa, via',
+      pkm: 'Opening hours in Thessaloniki: Region of Central Macedonia.',
       overture: 'Pharmacy locations: Overture Maps Foundation, CDLA-Permissive-2.0.',
       osm: 'Map and addresses: © OpenStreetMap contributors, ODbL.',
       openFreeMap: 'Map tiles: OpenFreeMap.',
@@ -200,6 +201,7 @@ export const en: Dictionary = {
       hoursHeading: 'Opening hours',
       regularLabel: 'Usual hours',
       regularClosed: 'Closed: {days} and public holidays.',
+      regularUnknown: 'Call for the hours.',
       extendedHeading: 'Longer hours',
       extendedPeriod: 'From {from} to {to}',
       extendedAnnouncement: 'Announcement',
@@ -213,18 +215,18 @@ export const en: Dictionary = {
     duty: {
       indexTitle: 'Pharmacies on duty by day',
       indexDescription:
-        'The official lists of on-duty and overnight pharmacies in Thessaloniki, day by day, as announced by the Pharmaceutical Association of Thessaloniki.',
+        'The official lists of on-duty and overnight pharmacies, day by day, as announced by the pharmaceutical associations.',
       indexIntro: 'Choose a day.',
       indexNone: 'No lists yet.',
       indexCounts: '{pharmacies} pharmacies',
       missingGroups: 'Duty lists not announced yet for: {groups}. Call before you go.',
-      pageTitle: 'Pharmacies on duty, {date}',
+      pageTitle: 'Pharmacies on duty, {city}, {date}',
       pageDescription:
-        'On-duty and overnight pharmacies in Thessaloniki for {date}, by area, with hours and phone numbers. Source: Pharmaceutical Association of Thessaloniki.',
+        'On-duty and overnight pharmacies, {city}, {date}, by area, with hours and phone numbers. Source: {source}.',
       prev: 'Previous day',
       next: 'Next day',
       pagerLabel: 'Other days',
-      sourcePdf: 'List as PDF',
+      sourceLink: 'Official list',
       hoursLabel: 'Hours:',
       hoursNotStated: 'call for the hours',
       nextDay: 'next day',
@@ -234,8 +236,7 @@ export const en: Dictionary = {
 
     area: {
       indexTitle: 'Pharmacies by area',
-      indexDescription:
-        'The pharmacies of the Thessaloniki area, by area, with their opening hours and official duty days.',
+      indexDescription: 'Pharmacies by area, with their opening hours and official duty days.',
       indexIntro: 'Choose an area.',
       otherGroup: 'Other areas',
       countOne: '1 pharmacy',
@@ -252,6 +253,9 @@ export const en: Dictionary = {
       openNowError: 'Did not load. Call before you go.',
       openNowNoScript: 'Needs JavaScript.',
       closedNow: 'Closed now',
+      notOnDutyNow: 'Not on duty now',
+      dutyNowSummary: '{open} of {total} on duty.',
+      dutyNowNone: 'None on duty now.',
       listHeading: 'All pharmacies',
       dutyHeading: 'Duty days',
       dutyNone: 'No duty days announced.',
@@ -264,6 +268,8 @@ export const en: Dictionary = {
       closingSoon: 'closing soon',
       closed: 'Closed now.',
       opensAt: 'Opens {when}.',
+      notOnDuty: 'Not on duty now.',
+      dutyAt: 'On duty {when}.',
       noNextOpen: 'Opening time unknown for the next 7 days.',
       unpublished: 'The day’s duty lists are not announced yet.',
       unpublishedShort: 'duty not announced yet',

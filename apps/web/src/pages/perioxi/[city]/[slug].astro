@@ -1,13 +1,15 @@
 ---
-import AreaPage from '../../components/seo/AreaPage.astro';
-import { loadSeoModel } from '../../lib/seo/site-data.ts';
+import AreaPage from '../../../components/seo/AreaPage.astro';
+import { loadSeoModels } from '../../../lib/seo/site-data.ts';
 
 export async function getStaticPaths() {
-  const model = await loadSeoModel();
-  return model.areas.map((area) => ({ params: { slug: area.slug } }));
+  const models = await loadSeoModels();
+  return models.flatMap((model) =>
+    model.areas.map((area) => ({ params: { city: model.cityId, slug: area.slug } })),
+  );
 }
 
-const { slug } = Astro.params;
+const { city, slug } = Astro.params;
 ---
 
-<AreaPage locale="el" slug={slug ?? ''} />
+<AreaPage locale="el" cityId={city ?? ''} slug={slug ?? ''} />

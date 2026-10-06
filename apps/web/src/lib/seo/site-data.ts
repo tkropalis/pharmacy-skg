@@ -3,7 +3,7 @@
  * The files are loaded lazily, so a build reads only the city and the dates it needs.
  */
 import type { DutyDay, ExtendedHours, Pharmacies } from '@pharmacy-skg/core';
-import { DEFAULT_CITY_ID } from '../../config.ts';
+import { CITIES } from '@pharmacy-skg/core';
 import { buildToday } from '../build-today.ts';
 import { buildMetaFor } from '../meta.ts';
 import { buildSeoModel, earliestDutyDate } from './model.ts';
@@ -55,6 +55,7 @@ async function load(cityId: string): Promise<SeoModel> {
     cityId,
     today,
     updatedAt: meta.updatedAt,
+    dutySource: meta.sources[0]?.name ?? {},
     pharmacies: (await loadPharmacies()).pharmacies,
     duties,
     extendedHours,
@@ -62,11 +63,16 @@ async function load(cityId: string): Promise<SeoModel> {
 }
 
 /** A city's page model for this build, read once and shared by every page. */
-export function loadSeoModel(cityId: string = DEFAULT_CITY_ID): Promise<SeoModel> {
+export function loadSeoModel(cityId: string): Promise<SeoModel> {
   let model = models.get(cityId);
   if (model === undefined) {
     model = load(cityId);
     models.set(cityId, model);
   }
   return model;
+}
+
+/** Every shown city's page model, in the order of CITIES. */
+export function loadSeoModels(): Promise<SeoModel[]> {
+  return Promise.all(CITIES.map((city) => loadSeoModel(city.id)));
 }

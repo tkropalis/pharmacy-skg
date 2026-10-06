@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import type { Locale } from '@pharmacy-skg/core';
+import { cityAt } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
 import type { Row } from '../../lib/list.ts';
 import type { MapController, OriginMark, Selection } from './map-controller.ts';
@@ -116,6 +117,7 @@ export function MapView(props: MapViewProps) {
           text,
           style,
           center: latest.current.center,
+          // CITY_ZOOM in map-controller.ts, which is loaded only with the map.
           zoom: 12,
           occludedBottom: latest.current.occludedBottom,
           reducedMotion: reducedRef.current,
@@ -162,6 +164,19 @@ export function MapView(props: MapViewProps) {
     lastNonce.current = originNonce;
     controller.current?.setOrigin(origin, fly, latest.current.occludedBottom);
   }, [status, origin, originNonce]);
+
+  // Another city: show it, unless the origin is in it (the origin's own move shows it then).
+  const { center } = props;
+  const shownCenter = useRef(center);
+  useEffect(() => {
+    if (status !== 'ready' || shownCenter.current === center) return;
+    shownCenter.current = center;
+    const now = latest.current;
+    const city = cityAt({ lat: center[1], lon: center[0] });
+    if (now.origin === null || cityAt(now.origin) !== city) {
+      controller.current?.showCity(center, now.occludedBottom);
+    }
+  }, [status, center]);
 
   const { focus } = props;
   useEffect(() => {
