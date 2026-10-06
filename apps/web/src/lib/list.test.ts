@@ -148,11 +148,19 @@ describe('pinKindOf', () => {
 
 describe('pinCollection', () => {
   it('leaves out pharmacies without a location and marks approximate ones', () => {
-    const { rows } = buildRows(data, night, null, true);
+    const built = buildRows(data, night, null, true).rows;
+    // The real data may have every pharmacy located (it has since 6 Oct 2026), so one without a
+    // location is added here.
+    const [first] = built;
+    if (first === undefined) throw new Error('no rows');
+    const rows = [
+      ...built,
+      { ...first, pharmacy: { ...first.pharmacy, id: 'x-unlocated', location: null } },
+    ];
     const collection = pinCollection(rows);
     const located = rows.filter((r) => r.pharmacy.location !== null);
     expect(collection.features).toHaveLength(located.length);
-    expect(collection.features.length).toBeLessThan(rows.length);
+    expect(collection.features.length).toBe(rows.length - 1);
     const approx = collection.features.filter((f) => f.properties.approximate);
     expect(approx.length).toBe(
       located.filter((r) => r.pharmacy.location?.precision === 'locality').length,
