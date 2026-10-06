@@ -38,8 +38,8 @@ export const THESSALONIKI: City = {
 };
 
 /**
- * The Larissa regional unit, on ITeQ's platform. Its data is collected; the app shows it once it
- * can switch between cities (decision D26), so it is not in CITIES yet.
+ * The Larissa regional unit, on ITeQ's platform. It has no regular-hours decision, so the app
+ * shows only its pharmacies on duty (decision D26).
  */
 export const LARISA: City = {
   id: 'larisa',
@@ -51,8 +51,8 @@ export const LARISA: City = {
   defaultGroupId: 'larisa',
 };
 
-/** The cities the app shows. */
-export const CITIES: readonly City[] = [THESSALONIKI];
+/** The cities the app shows; the first is the default. */
+export const CITIES: readonly City[] = [THESSALONIKI, LARISA];
 
 export function cityById(id: string): City | undefined {
   return CITIES.find((city) => city.id === id);
