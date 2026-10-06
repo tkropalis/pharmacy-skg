@@ -112,6 +112,9 @@ export const appEl = {
     noDuty: 'Κανένα δεν εφημερεύει αυτή την ώρα.',
     showMore: 'Περισσότερα',
     noneOpen: 'Κανένα ανοιχτό φαρμακείο αυτή την ώρα. Σε έκτακτη ανάγκη: 166.',
+    /** When nothing is open: the pharmacies that open first (on duty next, in a city with duties only). */
+    openNext: 'Ανοίγουν πρώτα',
+    dutyNext: 'Εφημερεύουν μετά',
     updated: 'Η λίστα ενημερώθηκε: {summary}',
   },
 
@@ -151,6 +154,8 @@ export const appEl = {
     closed: 'Κλειστό',
     opensAt: 'ανοίγει {when}',
     opensUnknown: 'δεν ξέρουμε πότε ανοίγει',
+    nextDuty: 'επόμενη εφημερία {when}',
+    dutyNotAnnounced: 'δεν έχει ανακοινωθεί εφημερία',
     closesIn: '{label} έως {when}, κλείνει σε {duration}',
     openUntil: '{label} έως {when}',
     allNight: '{label} όλη τη νύχτα',
@@ -180,6 +185,18 @@ export const appEl = {
     },
   },
 
+  /** "Found it closed" on a pharmacy shown as open (ClosedReport.tsx). */
+  closedReport: {
+    button: 'Το βρήκα κλειστό',
+    buttonLabel: 'Το βρήκα κλειστό: {name}',
+    confirm: 'Να σταλεί αναφορά;',
+    send: 'Αποστολή',
+    cancel: 'Άκυρο',
+    sent: 'Ευχαριστούμε. Θα το ελέγξουμε.',
+    failed: 'Δεν στάλθηκε.',
+    checkConnection: 'Ελέγξτε τη σύνδεση.',
+    form: 'Αναφορά λάθους',
+  },
   favourites: {
     empty: 'Κανένα αγαπημένο ακόμη.',
     /** The pharmacies the person opens most (counted on the device only). */

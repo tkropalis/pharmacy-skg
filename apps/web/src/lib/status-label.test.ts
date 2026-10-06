@@ -193,6 +193,31 @@ describe('describeStatus', () => {
     expect(view('2026-10-07T05:00:00Z', 'en').label).toBe('Closed, opens Wednesday 08:00');
     expect(view(null).label).toBe('Κλειστό, δεν ξέρουμε πότε ανοίγει');
   });
+
+  it('says "not on duty" and the next duty where regular hours are unknown', () => {
+    const closed = (nextOpen: string | null): PharmacyStatus => ({
+      state: 'closed',
+      nextOpen: nextOpen === null ? null : new Date(nextOpen),
+      nextReasons: [],
+      nextRunReasons: [],
+    });
+    const view = (nextOpen: string | null, locale: 'el' | 'en' = 'el') =>
+      describeStatus({
+        status: closed(nextOpen),
+        at,
+        live: true,
+        locale,
+        text: locale === 'el' ? el : en,
+        dutyOnly: true,
+      });
+    expect(view('2026-10-06T05:00:00Z')).toMatchObject({
+      label: 'Δεν εφημερεύει, επόμενη εφημερία αύριο 08:00',
+      short: { label: 'Δεν εφημερεύει', timing: 'επόμενη εφημερία αύριο 08:00' },
+      kind: 'closed',
+    });
+    expect(view('2026-10-07T05:00:00Z', 'en').label).toBe('Not on duty, next duty Wednesday 08:00');
+    expect(view(null).label).toBe('Δεν εφημερεύει, δεν έχει ανακοινωθεί εφημερία');
+  });
 });
 
 describe('the short form, for the list', () => {

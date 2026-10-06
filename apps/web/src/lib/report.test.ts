@@ -1,5 +1,13 @@
 import { describe, expect, it } from 'vitest';
-import { fallbackIssueUrl, isReportType, pharmacyFromSearch, singleLine } from './report.ts';
+import {
+  closedReportMessage,
+  fallbackIssueUrl,
+  isReportType,
+  pharmacyFromSearch,
+  reportFormSearch,
+  singleLine,
+  typeFromSearch,
+} from './report.ts';
 
 describe('pharmacyFromSearch', () => {
   it('reads ?pharmacy=', () => {
@@ -54,5 +62,30 @@ describe('fallbackIssueUrl', () => {
     );
     expect(url.searchParams.get('title')).toBe('Αναφορά: Άλλο, χωρίς φαρμακείο');
     expect((url.searchParams.get('body') ?? '').length).toBeLessThan(1100);
+  });
+});
+
+describe('typeFromSearch', () => {
+  it('reads a known ?type= and ignores anything else', () => {
+    expect(typeFromSearch('?pharmacy=1&type=closed-but-listed-open')).toBe(
+      'closed-but-listed-open',
+    );
+    expect(typeFromSearch('?type=nonsense')).toBeNull();
+    expect(typeFromSearch('')).toBeNull();
+  });
+
+  it('round-trips with reportFormSearch', () => {
+    const search = reportFormSearch('x-ab12cd34ef', 'closed-but-listed-open');
+    expect(pharmacyFromSearch(search)).toBe('x-ab12cd34ef');
+    expect(typeFromSearch(search)).toBe('closed-but-listed-open');
+  });
+});
+
+describe('closedReportMessage', () => {
+  it('says when, in Athens time, and what the app showed', () => {
+    // 02:15 in Athens (UTC+3) on 7 Oct 2026.
+    expect(closedReportMessage(new Date('2026-10-06T23:15:00Z'), 'Εφημερεύει έως 08:00')).toBe(
+      'Βρέθηκε κλειστό: 7/10/2026, 02:15. Η εφαρμογή έδειχνε: Εφημερεύει έως 08:00.',
+    );
   });
 });

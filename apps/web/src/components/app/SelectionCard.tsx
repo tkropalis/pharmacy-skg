@@ -16,6 +16,8 @@ interface SelectionCardProps {
   readonly live: boolean;
   readonly locale: Locale;
   readonly text: Dictionary['app'];
+  /** The city's regular hours are not known: "not on duty" instead of "closed" (D26). */
+  readonly dutyOnly?: boolean;
   readonly onClose: () => void;
 }
 
@@ -24,10 +26,25 @@ interface SelectionCardProps {
  * big buttons, Call and Directions, right under the map. Pulling the sheet up opens the list at
  * its row; the cross, a tap on the map or Escape lets it go.
  */
-export function SelectionCard({ row, at, live, locale, text, onClose }: SelectionCardProps) {
+export function SelectionCard({
+  row,
+  at,
+  live,
+  locale,
+  text,
+  dutyOnly = false,
+  onClose,
+}: SelectionCardProps) {
   const { pharmacy } = row;
   const name = displayName(pharmacy.name);
-  const view = describeStatus({ status: row.status, at, live, locale, text: text.status });
+  const view = describeStatus({
+    status: row.status,
+    at,
+    live,
+    locale,
+    text: text.status,
+    dutyOnly,
+  });
   const approximate = pharmacy.location?.precision === 'locality';
   const titleRef = useRef<HTMLHeadingElement>(null);
 

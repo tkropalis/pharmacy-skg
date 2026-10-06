@@ -374,7 +374,7 @@ export function Filters({ text, canShowClosed, showClosed, onShowClosed }: Filte
     duty: text.status.legend.duty,
     open: text.status.legend.open,
     'duty-unknown': text.status.legend.dutyUnknown,
-    closed: text.status.legend.closed,
+    closed: canShowClosed ? text.status.legend.closed : text.status.notOnDuty,
   };
   return (
     <section className="control">

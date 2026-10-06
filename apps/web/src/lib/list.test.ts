@@ -8,6 +8,7 @@ import {
   applyListFilter,
   buildRows,
   isDutyKind,
+  nextToOpen,
   pinKindOf,
   rankClosingSoonLast,
   rowFor,
@@ -223,5 +224,29 @@ describe('applyListFilter (real data)', () => {
     expect(filtered.chips).toBe(false);
     expect(filtered.active).toBe('all');
     expect(filtered.rows).toBe(result.rows);
+  });
+});
+
+describe('nextToOpen (real data)', () => {
+  // Monday 03:00 in Athens: regular hours open at 08:00.
+  const early = new Date('2026-10-05T00:00:00Z');
+  const rows = nextToOpen(data, early, aristotelous, 5);
+
+  it('lists closed pharmacies that open later, soonest first, then nearest', () => {
+    expect(rows).toHaveLength(5);
+    const opens = rows.map((row) => (row.status.state === 'closed' ? row.status.nextOpen : null));
+    expect(opens.every((date) => date !== null && date > early)).toBe(true);
+    const times = opens.map((date) => date?.getTime() ?? 0);
+    expect(times).toEqual([...times].sort((a, b) => a - b));
+    for (let i = 1; i < rows.length; i++) {
+      const [a, b] = [rows[i - 1], rows[i]];
+      if (a && b && times[i - 1] === times[i] && a.distance !== null && b.distance !== null) {
+        expect(a.distance).toBeLessThanOrEqual(b.distance);
+      }
+    }
+  });
+
+  it('never lists a pharmacy that is open', () => {
+    expect(rows.every((row) => row.kind === 'closed')).toBe(true);
   });
 });

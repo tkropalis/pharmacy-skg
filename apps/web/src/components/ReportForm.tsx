@@ -5,11 +5,12 @@ import type { Dictionary } from '../i18n/index.ts';
 import {
   MESSAGE_MAX,
   PHARMACY_MAX,
-  REPORT_ENDPOINT,
   REPORT_TYPES,
   fallbackIssueUrl,
   isReportType,
   pharmacyFromSearch,
+  sendReport,
+  typeFromSearch,
 } from '../lib/report.ts';
 import type { ReportType } from '../lib/report.ts';
 import './report-form.css';
@@ -35,10 +36,13 @@ export default function ReportForm({ labels, locale }: Props) {
   const [website, setWebsite] = useState(''); // honeypot: people leave it empty
   const [state, setState] = useState<State>({ kind: 'idle' });
 
-  // `?pharmacy=<id>` prefills the field. Read after hydration so server and client HTML match.
+  // `?pharmacy=<id>&type=<type>` prefill the form. Read after hydration so server and client
+  // HTML match.
   useEffect(() => {
     const fromUrl = pharmacyFromSearch(window.location.search);
     if (fromUrl !== '') setPharmacy(fromUrl);
+    const typeFromUrl = typeFromSearch(window.location.search);
+    if (typeFromUrl !== null) setType(typeFromUrl);
   }, []);
 
   const dirty = message !== '' || (pharmacy !== '' && state.kind !== 'sent');
@@ -51,27 +55,18 @@ export default function ReportForm({ labels, locale }: Props) {
       return;
     }
     setState({ kind: 'sending' });
-    try {
-      const response = await fetch(REPORT_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ pharmacy, type, message, website, locale }),
-      });
-      if (response.ok) {
-        const body: unknown = await response.json().catch(() => null);
-        const issueUrl =
-          typeof body === 'object' && body !== null && 'issueUrl' in body
-            ? String((body as { issueUrl: unknown }).issueUrl)
-            : null;
-        setState({ kind: 'sent', issueUrl });
+    const result = await sendReport({ pharmacy, type, message, website }, locale);
+    switch (result.kind) {
+      case 'sent':
+        setState({ kind: 'sent', issueUrl: result.issueUrl });
         setMessage('');
-      } else if (response.status === 400 || response.status === 413) {
+        return;
+      case 'invalid':
         setState({ kind: 'error', failure: 'validation' });
-      } else {
-        setState({ kind: 'error', failure: 'unavailable' });
-      }
-    } catch {
-      setState({ kind: 'error', failure: 'network' });
+        return;
+      case 'unavailable':
+      case 'network':
+        setState({ kind: 'error', failure: result.kind });
     }
   }
 

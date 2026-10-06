@@ -18,7 +18,7 @@ import { coverage, distanceMetres, publishedDuties } from '../../lib/engine.ts';
 import { formatUpdatedShort } from '../../lib/freshness.ts';
 import { groupList, groupNames, groupNear } from '../../lib/groups.ts';
 import { deviceZoneDiffers, fill, shortIsoDate } from '../../lib/format.ts';
-import { applyListFilter, buildRows, rowFor } from '../../lib/list.ts';
+import { applyListFilter, buildRows, nextToOpen, rowFor } from '../../lib/list.ts';
 import type { ListFilter, Origin, Row } from '../../lib/list.ts';
 import {
   FIRST_FIX_OPTIONS,
@@ -72,6 +72,8 @@ import { useNightLook } from './use-theme.ts';
 import './app.css';
 
 const PAGE_SIZE = 30;
+/** How many of the pharmacies that open next are listed when none is open. */
+const NEXT_COUNT = 5;
 const TIME_ZONE = GREECE_TIME_ZONE;
 const greek = new Intl.Collator('el');
 /** How many days beyond the last published duty list the time picker allows. */
@@ -330,6 +332,22 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
     }
     return groupNear(data.pharmacies, origin);
   }, [data, origin, localities]);
+  // Nothing open at the chosen moment: the nearest pharmacies that open first take the list's
+  // place, on the map too, so the list never just ends. Only with a position or an area: without
+  // one, most open at the same hour and any five would be arbitrary.
+  const nextRows = useMemo(
+    () =>
+      data !== null &&
+      originPoint !== null &&
+      !dutyLoading &&
+      result.rows.length === 0 &&
+      result.active === 'all'
+        ? nextToOpen(data, at, originPoint, NEXT_COUNT)
+        : [],
+    [data, dutyLoading, result, at, originPoint],
+  );
+  const listRows = result.rows.length > 0 ? result.rows : nextRows;
+
   const missingGroups =
     covered !== null && covered.duties && !dutyLoading ? covered.groups.missing : [];
   const originGroupMissing = originGroup !== null && missingGroups.includes(originGroup);
@@ -841,6 +859,7 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
     locale,
     text,
     cityName: city.name.el,
+    dutyOnly,
     onToggleFavourite: toggleFavourite,
     onMessage: notify,
   } as const;
@@ -848,10 +867,8 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
   // The chosen pharmacy, from the list on the map (a favourite that is closed is not on it).
   const selectedRow = useMemo(
     () =>
-      selectedId === null
-        ? null
-        : (result.rows.find((row) => row.pharmacy.id === selectedId) ?? null),
-    [selectedId, result.rows],
+      selectedId === null ? null : (listRows.find((row) => row.pharmacy.id === selectedId) ?? null),
+    [selectedId, listRows],
   );
   const mapSelection: MapSelection | null = useMemo(() => {
     if (selectedRow === null) return null;
@@ -861,6 +878,7 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
       live: rowLive,
       locale,
       text: text.status,
+      dutyOnly,
     });
     return {
       id: selectedRow.pharmacy.id,
@@ -868,7 +886,7 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
       when: view.short.timing,
       ripple: selectedOnMap,
     };
-  }, [selectedRow, at, rowLive, locale, text, selectedOnMap]);
+  }, [selectedRow, at, rowLive, locale, text, selectedOnMap, dutyOnly]);
 
   // Say which pharmacy was chosen on the map (the marker is a picture).
   useEffect(() => {
@@ -961,6 +979,7 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
               live={rowLive}
               locale={locale}
               text={text}
+              dutyOnly={dutyOnly}
               onClose={clearSelection}
             />
           ) : (
@@ -1086,9 +1105,31 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
               )}
 
               {dutyLoading ? null : result.rows.length === 0 ? (
-                <p className="state">
-                  {result.active === 'duty' ? text.list.noDuty : text.list.noneOpen}
-                </p>
+                <>
+                  <p className="state">
+                    {result.active === 'duty' ? text.list.noDuty : text.list.noneOpen}
+                  </p>
+                  {nextRows.length > 0 && (
+                    <section className="next" aria-labelledby="next-heading">
+                      <h2 id="next-heading" className="rows-heading">
+                        {dutyOnly ? text.list.dutyNext : text.list.openNext}
+                      </h2>
+                      <ol className="rows" aria-labelledby="next-heading">
+                        {nextRows.map((row) => (
+                          <PharmacyRow
+                            key={row.pharmacy.id}
+                            row={row}
+                            selected={row.pharmacy.id === selectedId}
+                            expanded={row.pharmacy.id === expandedId}
+                            favourite={favourites.ids.includes(row.pharmacy.id)}
+                            onToggle={(id) => toggleRow(id, row)}
+                            {...rowProps}
+                          />
+                        ))}
+                      </ol>
+                    </section>
+                  )}
+                </>
               ) : (
                 <>
                   <h2 className="sr-only">{text.list.label}</h2>
@@ -1282,7 +1323,7 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
         enabled={mapStart.started}
         waiting={ready !== null}
         onWake={wakeMap}
-        rows={result.rows}
+        rows={listRows}
         origin={origin}
         originNonce={originNonce}
         selection={mapSelection}
