@@ -1,4 +1,4 @@
-import { pharmacyStatus } from '@pharmacy-skg/core';
+import { GREECE_TIME_ZONE, hasRegularHours, pharmacyStatus } from '@pharmacy-skg/core';
 import type { Locale } from '@pharmacy-skg/core';
 import { DEFAULT_CITY_ID } from '../../config.ts';
 import { t } from '../../i18n/index.ts';
@@ -23,7 +23,15 @@ async function show(root: HTMLElement): Promise<void> {
     const now = new Date();
     const { data, failedDates } = await loadNowData(root.dataset['city'] ?? DEFAULT_CITY_ID, now);
     const { status, dutiesPublished } = pharmacyStatus(data, id, now);
-    const text = describeStatus(status, dutiesPublished, now, locale, labels);
+    const text = describeStatus(
+      status,
+      dutiesPublished,
+      now,
+      locale,
+      labels,
+      GREECE_TIME_ZONE,
+      !hasRegularHours(data.city.id),
+    );
     const headline = document.createElement('p');
     const strong = document.createElement('strong');
     strong.textContent = text.short;

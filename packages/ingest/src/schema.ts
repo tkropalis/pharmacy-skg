@@ -67,7 +67,9 @@ export const DutyDaySchema = z.object({
 export const LocationSchema = z.object({
   lat: z.number().min(-90).max(90),
   lon: z.number().min(-180).max(180),
-  source: z.enum(['override', 'overture', 'nominatim']),
+  source: z
+    .enum(['override', 'list', 'overture', 'nominatim'])
+    .describe('list: the coordinates the duty list itself gives (ITeQ)'),
   precision: z
     .enum(['exact', 'street', 'locality'])
     .describe('exact: the building or the pharmacy itself; street/locality: approximate'),
@@ -84,9 +86,12 @@ export const PharmacySchema = z.object({
     .string()
     .regex(/^\d{10}$/)
     .nullable(),
-  groupId: z.string().nullable().describe('ΦΣΘ area group; null if never seen in a duty list'),
+  groupId: z.string().nullable().describe('Duty group; null if never seen in a duty list'),
   location: LocationSchema.nullable(),
-  sources: z.array(z.enum(['fsth', 'pkm'])).min(1),
+  sources: z
+    .array(z.string().regex(/^[a-z0-9-]+$/))
+    .min(1)
+    .describe("Ids of the lists it was found in, from meta.json's sources"),
   firstSeen: isoDate,
   lastSeen: isoDate,
 });

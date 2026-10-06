@@ -12,11 +12,11 @@ web
 
 ## Users
 
-Everyone in the Thessaloniki regional unit who needs a pharmacy now: a parent at 2 a.m. with a sick child, an older person who has never heard of the pharmacists' association, a visitor who does not read Greek. They are usually on a phone, often in a hurry, sometimes in a dark room, often with large text turned on. The job is to find the nearest pharmacy that is open (or on duty) at this moment, then call it or get directions. A smaller group plans ahead: which pharmacy is on duty on Saturday, which favourite is open tomorrow.
+Everyone in the areas the app covers (the Thessaloniki and Larissa regional units so far, all of Greece in time) who needs a pharmacy now: a parent at 2 a.m. with a sick child, an older person who has never heard of the pharmacists' association, a visitor who does not read Greek. They are usually on a phone, often in a hurry, sometimes in a dark room, often with large text turned on. The job is to find the nearest pharmacy that is open (or on duty) at this moment, then call it or get directions. A smaller group plans ahead: which pharmacy is on duty on Saturday, which favourite is open tomorrow.
 
 ## Product Purpose
 
-A free, ad-free web app (a PWA) that answers "which pharmacy is open now, near me?" from official sources: the duty lists of the Pharmaceutical Association of Thessaloniki and the extended-hours schedules of the Region of Central Macedonia, plus a medicine price and shortage search. Success is the answer on screen within seconds, with a working Call button, and data that is never shown as fresher or more certain than it is.
+A free, ad-free web app (a PWA) that answers "which pharmacy is open now, near me?" from official sources: the duty lists of each area's pharmaceutical association and, where a Region publishes them, the regular and extended hours, plus a medicine price and shortage search. Where an area's regular hours are not known, it shows only the pharmacies on duty and says so. Success is the answer on screen within seconds, with a working Call button, and data that is never shown as fresher or more certain than it is.
 
 ## Positioning
 

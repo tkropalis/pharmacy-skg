@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "groups": [
+    {
+      "id": "agia",
+      "name": "Αγιά",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-06T13:41:24.095Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2494022636",
+              "name": "ΤΣΟΤΣΑ Η. ΜΑΡΙΑ",
+              "address": "ΑΓΙΟΚΑΜΠΟΥ 50",
+              "locality": "Αγιά",
+              "phone": "2494022636"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ampelonas",
+      "name": "Αμπελώνας",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-06T13:41:24.095Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2492031741",
+              "name": "ΑΛΜΠΑΝΗ Θ. ΑΣΠΑΣΙΑ",
+              "address": "ΓΡ. ΛΑΜΠΡΑΚΗ 38",
+              "locality": "Αμπελώνας",
+              "phone": "2492031741"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elassona",
+      "name": "Ελασσόνα",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-06T13:41:24.095Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2493022430",
+              "name": "ΚΟΡΟΜΗΛΑ Δ. ΚΕΡΑΣΙΑ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 13",
+              "locality": "Ελασσόνα",
+              "phone": "2493022430"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "falani",
+      "name": "Φαλάνη",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-06T13:41:24.095Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410942053",
+              "name": "ΠΑΝΙΔΟΥ ΑΝΑΣΤΑΣΙΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+              "address": "ΑΜΠΕΛΩΝΟΣ 28",
+              "locality": "Φαλάνη",
+              "phone": "2410942053"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "farsala",
+      "name": "Φάρσαλα",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-06T13:41:24.095Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2491022225",
+              "name": "ΜΠΑΣΑΓΙΑΝΝΗ ΑΓΓΕΛΙΚΗ",
+              "address": "ΠΑΤΡΟΚΛΟΥ 11-13",
+              "locality": "Φάρσαλα",
+              "phone": "2491022225"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "giannouli",
+      "name": "Γιάννουλη",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-06T13:41:24.095Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410591994",
+              "name": "ΤΖΗΚΟΥΛΑ Δ.ΑΣΠΑΣΙΑ",
+              "address": "ΚΟΖΑΝΗΣ 18",
+              "locality": "Γιάννουλη",
+              "phone": "2410591994"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "larisa",
+      "name": "Λάρισα",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-06T13:41:24.095Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410621965",
+              "name": "ΚΑΤΣΙΑΦΥΛΛΟΥΔΗ ΙΩΑΝΝΑ",
+              "address": "ΠΑΠΑΝΑΣΤΑΣΙΟΥ & ΗΠΕΙΡΟΥ 52 (Έναντι Αγ. Νικολάου)",
+              "locality": "Λάρισα",
+              "phone": "2410621965"
+            },
+            {
+              "pharmacyId": "2410617160",
+              "name": "ΚΟΝΤΟΓΙΑΝΝΗΣ ΙΩΑΝ. ΝΙΚΟΛΑΟΣ",
+              "address": "ΦΑΡΣΑΛΩΝ 104 (Έναντι Εργατικών Κατοικιών)",
+              "locality": "Λάρισα",
+              "phone": "2410617160"
+            },
+            {
+              "pharmacyId": "2410233228",
+              "name": "ΚΥΡΓΙΑΝΝΗ ΔΕΣΠΟΙΝΑ Ο.Ε.",
+              "address": "23ης ΟΚΤΩΒΡΙΟΥ 44 (Έναντι Αγ. Κων/νου)",
+              "locality": "Λάρισα",
+              "phone": "2410233228"
+            },
+            {
+              "pharmacyId": "2410553929",
+              "name": "ΜΕΤΑΞΙΩΤΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 236 & ΑΥΞΕΝΤΙΟΥ",
+              "locality": "Λάρισα",
+              "phone": "2410553929"
+            },
+            {
+              "pharmacyId": "2410622266",
+              "name": "ΜΗΤΣΟΓΙΑΝΝΗ Κ. ΔΗΜΗΤΡΑ",
+              "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 45Α & ΑΝΘΙΜΟΥ ΓΑΖΗ ΓΩΝΙΑ (Απέναντι από τα ΚΤΕΛ Τρικάλων)",
+              "locality": "Λάρισα",
+              "phone": "2410622266"
+            },
+            {
+              "pharmacyId": "2410287263",
+              "name": "Σ.Φ. ΕΥΣΤΑΘΙΟΥ Χ.- ΕΥΣΤΑΘΙΟΥ Ε. Ο.Ε.",
+              "address": "ΠΑΠΑΚΥΡΙΑΖΗ 3 (Έναντι Στρατιωτικού Πρατηρίου)",
+              "locality": "Λάρισα",
+              "phone": "2410287263"
+            },
+            {
+              "pharmacyId": "2410539325",
+              "name": "ΣΗΛΥΒΡΙΔΗΣ Μ. ΧΑΡΙΛΑΟΣ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 28",
+              "locality": "Λάρισα",
+              "phone": "2410539325"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "23:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410252531",
+              "name": "Σ.Φ. ΤΡΑΧΑΛΙΟΥ ΚΑΛΛΙΟΠΗ & ΑΓΓΕΛΑΚΟΠΟΥΛΟΥ ΙΩΑΝΝΑ Ο.Ε.",
+              "address": "ΝΕΟΦΥΤΟΥ 9 & ΠΑΛΑΜΑ (Πάροδος Παναγούλη, όπισθεν ψαράδικων Κύπρου)",
+              "locality": "Λάρισα",
+              "phone": "2410252531"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nikaia",
+      "name": "Νίκαια",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-06T13:41:24.095Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410921760",
+              "name": "Σ.Φ. ΝΙΚΟΛΟΥΛΗΣ Α. - ΝΙΚΟΛΟΥΛΗ Μ. Ο.Ε.",
+              "address": "ΦΑΡΣΑΛΩΝ 131",
+              "locality": "Νίκαια",
+              "phone": "2410921760"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tyrnavos",
+      "name": "Τύρναβος",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-06T13:41:24.095Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2492025355",
+              "name": "ΘΕΟΔΟΣΙΟΥ Β. ΓΕΩΡΓΙΟΣ",
+              "address": "ΚΩΣΤΑ ΛΟΥΛΕ 15",
+              "locality": "Τύρναβος",
+              "phone": "2492025355"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

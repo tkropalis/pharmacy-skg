@@ -117,7 +117,10 @@ Decision D26; the research is in [research-greece.md](research-greece.md).
    - One pipeline per city (`packages/ingest/src/cities/`); the update command runs every city, and validation and geocoding take each city's rules.
    - The app loads the home city's data, by the remembered position (`lib/home-city.ts`), in the home screen, the search-engine pages' live status, the freshness check and the service worker's warm-up; build-time data for any city.
    - Phone numbers formatted for every Greek area code; the night look follows the sun where the person is.
-2. **ITeQ adapter**, piloted on Larissa: one parser for `<area>.efhmeries.gr` and `fsa-efimeries.gr`, coordinates from the lists; the app switches city with the position or the area picker, and area URLs get a city segment.
+2. **ITeQ adapter**, piloted on Larissa.
+   - Pipeline (in review): one parser for `<area>.efhmeries.gr` (`packages/ingest/src/iteq/`, `cities/iteq.ts`); Larissa's nine sectors are duty groups; coordinates from each pharmacy's details page (`inputs/listed-locations.json`); `data/larisa/` is collected but not shown yet. The name on screen loses "Θεσσαλονίκης".
+   - App (in review): Larissa in `CITIES`; the app switches city with the position, the area picker or a favourite, and remembers it; only pharmacies on duty where a city has no regular hours, with one line saying so; pages, duty-date and area URLs per city; the about page credits each association.
+   - Later: `fsa-efimeries.gr` (Attica), which has its own page format.
 3. **The map and the engine at national scale:** data split per city with a national index and a national file of each day's duty pharmacies; status computed only for the cities loaded, and only when a status changes; incremental map updates (`updateData`, `promoteId`, feature-state); Greece's bounds and a lower minimum zoom; pages with external CSS and a sitemap per city.
 4. **Every ITeQ area**, on duty only, until each area's regular hours are added from its Region's decision.
 5. **The rest:** Diavgeia's yearly duty tables, per-site parsers (Patra, Serres, Kilkis), extended-hours lists.

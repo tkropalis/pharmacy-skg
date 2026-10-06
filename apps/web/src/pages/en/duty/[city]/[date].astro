@@ -1,0 +1,15 @@
+---
+import DutyDatePage from '../../../../components/seo/DutyDatePage.astro';
+import { loadSeoModels } from '../../../../lib/seo/site-data.ts';
+
+export async function getStaticPaths() {
+  const models = await loadSeoModels();
+  return models.flatMap((model) =>
+    model.publishedDates.map((date) => ({ params: { city: model.cityId, date } })),
+  );
+}
+
+const { city, date } = Astro.params;
+---
+
+<DutyDatePage locale="en" cityId={city ?? ''} date={date ?? ''} />

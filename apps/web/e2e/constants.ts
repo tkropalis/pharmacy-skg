@@ -12,7 +12,8 @@ export const NOW = '2026-10-05T22:30:00+03:00';
 /** Aristotelous Square, the device position in the tests. */
 export const POSITION = { latitude: 40.6326, longitude: 22.9409 };
 
-/** A pharmacy, a duty date and an area that exist in data/thessaloniki. */
+/** A city, and a pharmacy, a duty date and an area that exist in its data (data/thessaloniki). */
+export const CITY_ID = 'thessaloniki';
 export const PHARMACY_ID = '2310023026';
 export const DUTY_DATE = '2026-10-05';
 export const AREA_SLUG = 'kalamaria';

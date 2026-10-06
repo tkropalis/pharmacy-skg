@@ -1,6 +1,14 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import type { City, Locale } from '@pharmacy-skg/core';
-import { GREECE_TIME_ZONE, localToInstant, zonedDate, zonedParts } from '@pharmacy-skg/core';
+import {
+  CITIES,
+  GREECE_TIME_ZONE,
+  cityAt,
+  hasRegularHours,
+  localToInstant,
+  zonedDate,
+  zonedParts,
+} from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
 import { EMERGENCY_NUMBERS } from '../../config.ts';
 import { addDays, dateRange } from '../../lib/dates.ts';
@@ -22,6 +30,7 @@ import {
 import { localizedPath } from '../../i18n/routes.ts';
 import { displayName } from '../../lib/names.ts';
 import { buildLocalities } from '../../lib/places.ts';
+import { rememberCity } from '../../lib/home-city.ts';
 import type { Locality } from '../../lib/places.ts';
 import { describeStatus } from '../../lib/status-label.ts';
 import { AREA_KEY, FILTER_KEY, LOCATION_KEY, readItem, writeItem } from '../../lib/storage.ts';
@@ -64,8 +73,7 @@ import './app.css';
 
 const PAGE_SIZE = 30;
 const TIME_ZONE = GREECE_TIME_ZONE;
-/// Further than this from the city centre, tell the person the distances are long.
-const FAR_METRES = 40_000;
+const greek = new Intl.Collator('el');
 /** How many days beyond the last published duty list the time picker allows. */
 const PICKER_DAYS_AHEAD = 7;
 const FAVOURITE_DATES_MAX = 60;
@@ -83,8 +91,8 @@ interface OriginState extends Origin {
 }
 
 interface HomeAppProps {
-  /** The covered area whose pharmacies are shown (lib/home-city.ts). */
-  readonly city: City;
+  /** The covered city shown first (lib/home-city.ts); the person's position or choice can change it. */
+  readonly initialCity: City;
   readonly locale: Locale;
   readonly text: Dictionary['app'];
   readonly title: string;
@@ -149,8 +157,11 @@ function chosenInstant(mode: TimeMode): Date | null {
   }
 }
 
-export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
+export default function HomeApp({ initialCity, locale, text, title }: HomeAppProps) {
+  const [city, setCity] = useState(initialCity);
   const { state, retry, ensureDates } = useCityData(city.id);
+  // Where the city's regular hours are not known, only pharmacies on duty are shown (D26).
+  const dutyOnly = !hasRegularHours(city.id);
   const now = useNow();
   const favourites = useFavourites();
   const wide = useMediaQuery('(min-width: 900px)');
@@ -227,7 +238,45 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
     () => (data ? buildLocalities(data.pharmacies) : []),
     [data],
   );
+  // The area picker also offers the other covered cities; choosing one switches to it.
+  const pickable: readonly Locality[] = useMemo(() => {
+    const names = new Set(localities.map((l) => l.name));
+    const others = CITIES.filter((c) => c.id !== city.id && !names.has(c.name.el)).map(
+      (c): Locality => ({
+        name: c.name.el,
+        lat: c.center[1],
+        lon: c.center[0],
+        count: 0,
+        groupId: null,
+        cityId: c.id,
+      }),
+    );
+    return [...localities, ...others].sort((a, b) => greek.compare(a.name, b.name));
+  }, [localities, city.id]);
   const restoredArea = useRef(false);
+
+  /** Shows another covered city, and opens on it next time. */
+  const switchCity = useCallback(
+    (next: City) => {
+      if (next.id === city.id) return;
+      rememberCity(next.id);
+      setCity(next);
+    },
+    [city.id],
+  );
+
+  // A new city: nothing chosen in the old one stays chosen, and the saved area is looked up
+  // again in the new city's areas once they load.
+  const shownCity = useRef(city.id);
+  useEffect(() => {
+    if (shownCity.current === city.id) return;
+    shownCity.current = city.id;
+    setSelectedId(null);
+    setExpandedId(null);
+    setPeek(false);
+    setShowClosed(false);
+    restoredArea.current = false;
+  }, [city.id]);
   useEffect(() => {
     if (restoredArea.current || localities.length === 0) return;
     restoredArea.current = true;
@@ -245,11 +294,23 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
     [origin],
   );
 
+  // A new position in another covered city: show that one. Only when the position changes, so
+  // a city chosen afterwards (a favourite elsewhere) is not taken back.
+  const followedOrigin = useRef<OriginState | null>(null);
+  useEffect(() => {
+    if (origin === followedOrigin.current) return;
+    followedOrigin.current = origin;
+    if (origin?.kind !== 'geo' && origin?.kind !== 'last') return;
+    const here = cityAt(origin);
+    if (here !== undefined) switchCity(here);
+  }, [origin, switchCity]);
+
   // --- The list ---------------------------------------------------------------------
 
   const built = useMemo(
-    () => (data ? buildRows(data, at, originPoint, showClosed) : { rows: [], openCount: 0 }),
-    [data, at, originPoint, showClosed],
+    () =>
+      data ? buildRows(data, at, originPoint, showClosed && !dutyOnly) : { rows: [], openCount: 0 },
+    [data, at, originPoint, showClosed, dutyOnly],
   );
   const result = useMemo(() => applyListFilter(built, dutyFilter), [built, dutyFilter]);
   const covered = useMemo(() => (data ? coverage(data, at) : null), [data, at]);
@@ -285,7 +346,8 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
   // header chip shows on screen.
   const [summary, announcement] = useMemo(() => {
     const n = result.openCount;
-    const count = countText(text, n, result.active === 'duty');
+    // In a city whose regular hours are unknown, every pharmacy shown is on duty: say so.
+    const count = countText(text, n, result.active === 'duty' || dutyOnly);
     const closed = result.rows.length - n;
     const withClosed =
       closed === 0
@@ -301,7 +363,7 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
       ? fill(text.summary.sortedByDistance, { origin: origin.label })
       : text.summary.sortedByName;
     return [join([count, withClosed, sort]), join([count, withClosed, sortFull])] as const;
-  }, [result, origin, geo, text]);
+  }, [result, origin, geo, text, dutyOnly]);
 
   // Announce list changes politely, and only after something the person did (not each minute).
   useEffect(() => {
@@ -444,6 +506,9 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
     setOrigin({ kind: 'area', lat: locality.lat, lon: locality.lon, label: locality.name });
     setOriginNonce((n) => n + 1);
     setControlsOpen(false);
+    // Another covered city: its data loads, and its area of the same name becomes the origin.
+    const other = CITIES.find((c) => c.id === locality.cityId);
+    if (other !== undefined) switchCity(other);
   }
 
   /**
@@ -588,7 +653,7 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
   }
 
   function toggleFavourite(id: string, name: string) {
-    const added = favourites.toggle(id);
+    const added = favourites.toggle(id, city.id);
     announce(fill(added ? text.row.favouriteAdded : text.row.favouriteRemoved, { name }));
   }
 
@@ -598,9 +663,9 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
 
   const nowParts = zonedParts(now, TIME_ZONE);
   const differs = deviceZoneDiffers(at);
-  const far =
-    (origin?.kind === 'geo' || origin?.kind === 'last') &&
-    distanceMetres(origin, { lat: city.center[1], lon: city.center[0] }) > FAR_METRES;
+  // The person's position is in no covered city: say so (the list is the city shown).
+  const uncovered =
+    (origin?.kind === 'geo' || origin?.kind === 'last') && cityAt(origin) === undefined;
 
   const showWhen =
     timeMode.kind === 'custom' && customAt !== null
@@ -712,13 +777,25 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
 
   const favouriteRows = useMemo(() => {
     if (!data) return [];
-    return favourites.ids.map((id) => ({
-      id,
-      row: rowFor(data, id, at, originPoint),
-      // From yesterday: a duty that started yesterday evening may still be running.
-      duties: upcomingDuties(publishedDuties(data, id, addDays(today, -1)), now, TIME_ZONE),
-    }));
-  }, [data, favourites.ids, at, originPoint, today, now]);
+    return favourites.favourites
+      .filter((favourite) => favourite.cityId === city.id)
+      .map(({ id }) => ({
+        id,
+        row: rowFor(data, id, at, originPoint),
+        // From yesterday: a duty that started yesterday evening may still be running.
+        duties: upcomingDuties(publishedDuties(data, id, addDays(today, -1)), now, TIME_ZONE),
+      }));
+  }, [data, favourites.favourites, city.id, at, originPoint, today, now]);
+  // Favourites saved in other cities: one button per city, which switches to it.
+  const favouritesElsewhere = useMemo(
+    () =>
+      CITIES.filter((c) => c.id !== city.id)
+        .map((c) => ({ city: c, n: favourites.favourites.filter((f) => f.cityId === c.id).length }))
+        .filter(({ n }) => n > 0),
+    [favourites.favourites, city.id],
+  );
+  // Credited in calendar files: the association that publishes the city's duty lists.
+  const dutySource = meta?.sources[0]?.name[locale] ?? meta?.sources[0]?.name.el ?? '';
 
   // Favourites show every officially published duty date, so load the whole published range.
   useEffect(() => {
@@ -763,6 +840,7 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
     live: rowLive,
     locale,
     text,
+    cityName: city.name.el,
     onToggleFavourite: toggleFavourite,
     onMessage: notify,
   } as const;
@@ -912,8 +990,8 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
                 <NearbyCard
                   text={text}
                   geo={geo}
-                  far={far}
-                  localities={localities}
+                  uncovered={uncovered}
+                  localities={pickable}
                   open={controlsOpen}
                   onToggleControls={toggleControls}
                   onUseLocation={() => locate(false)}
@@ -929,8 +1007,8 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
                       text={text}
                       origin={origin}
                       geo={geo}
-                      far={far}
-                      localities={localities}
+                      uncovered={uncovered}
+                      localities={pickable}
                       onUseLocation={() => locate(false)}
                       onPickArea={setAreaOrigin}
                       onClear={clearOrigin}
@@ -949,6 +1027,7 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
                   />
                   <Filters
                     text={text}
+                    canShowClosed={!dutyOnly}
                     showClosed={showClosed}
                     onShowClosed={(value) => {
                       pendingAnnouncement.current = true;
@@ -959,6 +1038,11 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
               )}
 
               {timeNotice}
+              {dutyOnly && (
+                <p className="callout" role="note">
+                  {text.summary.dutyOnly}
+                </p>
+              )}
               {dutyLoading && (
                 <p className="state" role="status">
                   {text.time.loadingDuties}
@@ -990,7 +1074,7 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
                   })}
                 </p>
               )}
-              {covered && !covered.extendedHours && (
+              {covered && !covered.extendedHours && !dutyOnly && (
                 <p className="callout" role="note">
                   {text.time.extendedNotPublished}
                 </p>
@@ -1043,7 +1127,7 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
               {!favourites.persisted && <p className="callout">{text.favourites.notStored}</p>}
               {/* A chosen time applies here too: say so, as on the other tab. */}
               {timeNotice}
-              {favouriteRows.length === 0 ? (
+              {favouriteRows.length === 0 && favouritesElsewhere.length === 0 ? (
                 <div className="state empty">
                   {/* The same star as the button the hint names. */}
                   <span className="empty-star" aria-hidden="true">
@@ -1056,7 +1140,7 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
                     <p className="muted">{text.favourites.emptyHint}</p>
                   </div>
                 </div>
-              ) : (
+              ) : favouriteRows.length === 0 ? null : (
                 <ol className="rows" aria-label={text.tabs.favourites}>
                   {favouriteRows.map(({ id, row, duties }) =>
                     row === null ? (
@@ -1085,6 +1169,7 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
                           duties={duties}
                           loading={dutiesLoading}
                           publishedThrough={meta?.duties?.to ?? null}
+                          sourceName={dutySource}
                           locale={locale}
                           text={text}
                           now={now}
@@ -1094,6 +1179,34 @@ export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
                     ),
                   )}
                 </ol>
+              )}
+              {favouritesElsewhere.length > 0 && (
+                <ul className="elsewhere">
+                  {favouritesElsewhere.map(({ city: other, n }) => (
+                    <li key={other.id}>
+                      <button
+                        type="button"
+                        className="action"
+                        onClick={() => {
+                          // An area chosen in this city means nothing in the other one.
+                          if (origin?.kind === 'area') {
+                            writeItem(AREA_KEY, null);
+                            setOrigin(null);
+                          }
+                          switchCity(other);
+                        }}
+                      >
+                        {fill(
+                          n === 1 ? text.favourites.elsewhereOne : text.favourites.elsewhereMany,
+                          {
+                            city: other.name[locale],
+                            n,
+                          },
+                        )}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
               )}
               {frequentRows.length > 0 && (
                 <section className="frequent" aria-labelledby="frequent-heading">

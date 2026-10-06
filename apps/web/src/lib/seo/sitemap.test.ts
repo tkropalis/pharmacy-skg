@@ -5,17 +5,21 @@ import { renderRobots, renderSitemap, sitemapEntries } from './sitemap.ts';
 import { directionsUrl } from './views.ts';
 
 const model = realModel('2026-10-05');
+const larisa = realModel('2026-10-07', 'larisa');
+const models = [model, larisa];
 
 describe('sitemapEntries', () => {
-  const entries = sitemapEntries(model);
+  const entries = sitemapEntries(models);
   const paths = entries.flatMap((e) => Object.values(e.alternates));
 
-  it('has every page once per locale and no duplicates', () => {
+  it('has every page of every city once per locale and no duplicates', () => {
     expect(new Set(paths).size).toBe(paths.length);
-    // Home, about and privacy (not report), the two index pages, then the generated pages.
-    const expected =
-      3 + 2 + model.publishedDates.length + model.areas.length + model.pharmacies.length;
-    expect(entries).toHaveLength(expected);
+    // Home, about and privacy (not report), the two index pages, then each city's pages.
+    const generated = models.reduce(
+      (n, m) => n + m.publishedDates.length + m.areas.length + m.pharmacies.length,
+      0,
+    );
+    expect(entries).toHaveLength(3 + 2 + generated);
   });
 
   it('leaves out the report form and the 404 page', () => {
@@ -28,13 +32,19 @@ describe('sitemapEntries', () => {
       expect(paths).toContain(path);
     }
     expect(paths).toContain('/en/pharmacy/2310023026/');
-    expect(paths).toContain('/efimeries/2026-10-05/');
-    expect(paths).toContain('/perioxi/kalamaria/');
+    expect(paths).toContain('/efimeries/thessaloniki/2026-10-05/');
+    expect(paths).toContain('/perioxi/thessaloniki/kalamaria/');
+  });
+
+  it("puts each city's dates and areas under the city", () => {
+    expect(paths).toContain('/efimeries/larisa/2026-10-07/');
+    expect(paths).toContain('/en/area/larisa/tyrnavos/');
+    expect(paths).toContain('/farmakeio/2410672566/');
   });
 });
 
 describe('renderSitemap', () => {
-  const xml = renderSitemap(sitemapEntries(model), 'https://example.test');
+  const xml = renderSitemap(sitemapEntries(models), 'https://example.test');
 
   it('lists each locale as a url with hreflang alternates for both and x-default', () => {
     expect(xml).toContain('<loc>https://example.test/farmakeio/2310023026/</loc>');
@@ -49,7 +59,7 @@ describe('renderSitemap', () => {
       '<xhtml:link rel="alternate" hreflang="x-default" href="https://example.test/farmakeio/2310023026/"/>',
     );
     expect(xml.startsWith('<?xml version="1.0" encoding="UTF-8"?>')).toBe(true);
-    expect((xml.match(/<url>/g) ?? []).length).toBe(sitemapEntries(model).length * 2);
+    expect((xml.match(/<url>/g) ?? []).length).toBe(sitemapEntries(models).length * 2);
   });
 
   it('stays within the sitemap limit of 50,000 URLs', () => {

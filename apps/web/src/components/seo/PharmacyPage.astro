@@ -8,11 +8,12 @@ import SeoLayout from './SeoLayout.astro';
 
 interface Props {
   locale: Locale;
+  cityId: string;
   id: string;
 }
 
-const { locale, id } = Astro.props;
-const model = await loadSeoModel();
+const { locale, cityId, id } = Astro.props;
+const model = await loadSeoModel(cityId);
 const origin = (Astro.site ?? new URL('https://pharmacy-skg.vercel.app')).origin;
 const page = pharmacyPageProps(model, locale, id, origin);
 if (page === null) throw new Error(`No pharmacy with id ${id}`);
@@ -84,13 +85,17 @@ const seo = d.seo.pharmacy;
   <section aria-labelledby="hours-heading">
     <h2 id="hours-heading">{seo.hoursHeading}</h2>
     <h3>{seo.regularLabel}</h3>
-    <ul class="seo-hours">
-      {page.regularHours.groups.map((group) => (
-        <li>
-          {group.days} {group.times}
-        </li>
-      ))}
-    </ul>
+    {page.regularHours === null ? (
+      <p>{seo.regularUnknown}</p>
+    ) : (
+      <ul class="seo-hours">
+        {page.regularHours.groups.map((group) => (
+          <li>
+            {group.days} {group.times}
+          </li>
+        ))}
+      </ul>
+    )}
     {page.regularClosedText !== null && <p class="seo-meta">{page.regularClosedText}</p>}
     {page.extendedHours.length > 0 && (
       <>

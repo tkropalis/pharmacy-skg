@@ -4,7 +4,11 @@ import { parseDutyList } from '../fsth/parse.ts';
 import { extractTextItems } from '../pdf.ts';
 import { parseExtendedHours } from '../pkm/parse.ts';
 import { readFirstSheet } from '../xlsx.ts';
-import { dutyEntryId, matchExtendedEntries, matchExtendedEntry } from './build.ts';
+import { LARISA } from '@pharmacy-skg/core';
+import type { DutyDay } from '../schema.ts';
+import { buildRegistry, dutyEntryId, matchExtendedEntries, matchExtendedEntry } from './build.ts';
+import { Geocoder } from './geocode.ts';
+import { OvertureIndex } from './overture.ts';
 
 const FIXTURES = new URL('../../fixtures/', import.meta.url);
 
@@ -160,5 +164,72 @@ describe('dutyEntryId', () => {
     expect(dutyEntryId({ name: 'ΝΕΟ ΦΑΡΜΑΚΕΙΟ', locality: 'Σίνδος', phone: '123' }, known)).toMatch(
       /^x-/,
     );
+  });
+});
+
+describe('buildRegistry with coordinates from the lists', () => {
+  const entry = (phone: string, name: string) => ({
+    pharmacyId: phone,
+    name,
+    address: 'ΑΝΘΙΜΟΥ ΓΑΖΗ 41',
+    locality: 'Λάρισα',
+    phone,
+  });
+  const day: DutyDay = {
+    schemaVersion: 1,
+    date: '2026-10-06',
+    groups: [
+      {
+        id: 'larisa',
+        name: 'Λάρισα',
+        source: { url: 'https://larisa.efhmeries.gr/', uploadedAt: '2026-10-06T13:30:00.000Z' },
+        sections: [
+          {
+            kind: 'day',
+            heading: 'ΑΠΟ 08:00 ΕΩΣ 23:00',
+            hours: { from: '08:00', to: '23:00', toNextDay: false },
+            extraHours: [],
+            notes: [],
+            entries: [entry('2410672566', 'ΔΑΣΤΑΜΑΝΗΣ'), entry('2410536972', 'ΓΕΩΡΓΟΥΛΟΠΟΥΛΟΥ')],
+          },
+        ],
+      },
+    ],
+  };
+  const listed = new Map([
+    [
+      '2410672566',
+      { lat: 39.6335, lon: 22.4133, ref: 'https://larisa.efhmeries.gr/Home/Details/23023' },
+    ],
+    [
+      '2410536972',
+      { lat: 39.64, lon: 22.42, ref: 'https://larisa.efhmeries.gr/Home/Details/23022' },
+    ],
+  ]);
+
+  it("places a pharmacy where its list says, after a manual fix, and records the city's source ids", async () => {
+    const { pharmacies } = await buildRegistry({
+      days: [day],
+      extended: [],
+      overrides: { '2410536972': { location: { lat: 39.65, lon: 22.43 } } },
+      listed,
+      overture: new OvertureIndex([]),
+      geocoder: new Geocoder({}, false, LARISA.bounds),
+      sourceIds: { duty: 'fsl', extended: null },
+    });
+    expect(pharmacies.map((p) => [p.id, p.location, p.sources])).toEqual([
+      ['2410536972', { lat: 39.65, lon: 22.43, source: 'override', precision: 'exact' }, ['fsl']],
+      [
+        '2410672566',
+        {
+          lat: 39.6335,
+          lon: 22.4133,
+          ref: 'https://larisa.efhmeries.gr/Home/Details/23023',
+          source: 'list',
+          precision: 'exact',
+        },
+        ['fsl'],
+      ],
+    ]);
   });
 });

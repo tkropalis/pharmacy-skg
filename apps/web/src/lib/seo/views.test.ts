@@ -11,6 +11,7 @@ import {
 import { MAX_DUTY_PAGES, publishedDutyDates } from './model.ts';
 
 const model = realModel('2026-10-05');
+const larisa = realModel('2026-10-07', 'larisa');
 const ORIGIN = 'https://example.test';
 
 /** A pharmacy that is on today's duty list and has ΠΚΜ extended hours. */
@@ -74,7 +75,7 @@ describe('pharmacyPageProps', () => {
 
   it('words the regular hours and links the report form with the id', () => {
     const page = pharmacyPageProps(model, 'el', id, ORIGIN);
-    expect(page?.regularHours.text).toBe(
+    expect(page?.regularHours?.text).toBe(
       'Συνηθισμένο ωράριο: Δευ/Τετ 08:00–14:30 · Τρί/Πέμ/Παρ 08:00–14:00, 17:00–21:00',
     );
     expect(page?.regularClosedText).toBe('Κλειστό: Σάβ/Κυρ και αργίες.');
@@ -120,7 +121,9 @@ describe('pharmacyPageProps', () => {
     const page = pharmacyPageProps(model, 'en', id, ORIGIN);
     for (const duty of [...(page?.upcomingDuties ?? []), ...(page?.recentDuties ?? [])]) {
       expect(duty.pagePath !== null).toBe(model.publishedDates.includes(duty.date));
-      if (duty.pagePath !== null) expect(duty.pagePath).toBe(`/en/duty/${duty.date}/`);
+      if (duty.pagePath !== null) {
+        expect(duty.pagePath).toBe(`/en/duty/thessaloniki/${duty.date}/`);
+      }
     }
   });
 
@@ -152,15 +155,16 @@ describe('dutyPageProps', () => {
   it('has the dated title, both locales and previous/next links', () => {
     const el = dutyPageProps(model, 'el', '2026-10-05');
     const en = dutyPageProps(model, 'en', '2026-10-05');
-    expect(el?.meta.title).toBe('Εφημερεύοντα φαρμακεία, Δευτέρα 5 Οκτωβρίου 2026');
-    expect(en?.meta.title).toBe('Pharmacies on duty, Monday 5 October 2026');
+    expect(el?.meta.title).toBe('Εφημερεύοντα φαρμακεία, Θεσσαλονίκη, Δευτέρα 5 Οκτωβρίου 2026');
+    expect(en?.meta.title).toBe('Pharmacies on duty, Thessaloniki, Monday 5 October 2026');
+    expect(el?.meta.description).toContain('Πηγή: Φαρμακευτικός Σύλλογος Θεσσαλονίκης.');
     expect(el?.meta.alternates).toEqual({
-      el: '/efimeries/2026-10-05/',
-      en: '/en/duty/2026-10-05/',
+      el: '/efimeries/thessaloniki/2026-10-05/',
+      en: '/en/duty/thessaloniki/2026-10-05/',
     });
-    expect(el?.prev?.path).toBe('/efimeries/2026-10-04/');
-    expect(el?.next?.path).toBe('/efimeries/2026-10-06/');
-    expect(en?.next?.path).toBe('/en/duty/2026-10-06/');
+    expect(el?.prev?.path).toBe('/efimeries/thessaloniki/2026-10-04/');
+    expect(el?.next?.path).toBe('/efimeries/thessaloniki/2026-10-06/');
+    expect(en?.next?.path).toBe('/en/duty/thessaloniki/2026-10-06/');
   });
 
   it('names the area groups a day has no list for', () => {
@@ -197,13 +201,19 @@ describe('dutyPageProps', () => {
 });
 
 describe('dutyIndexProps', () => {
-  it('lists every published date, in order, in both locales', () => {
-    const el = dutyIndexProps(model, 'el');
-    const en = dutyIndexProps(model, 'en');
-    expect(el.items.map((i) => i.date)).toEqual(model.publishedDates);
+  it("lists every city's published dates, in order, in both locales", () => {
+    const el = dutyIndexProps([model, larisa], 'el');
+    const en = dutyIndexProps([model, larisa], 'en');
+    expect(el.cities.map((c) => [c.id, c.name])).toEqual([
+      ['thessaloniki', 'Θεσσαλονίκη'],
+      ['larisa', 'Λάρισα'],
+    ]);
+    expect(el.cities[0]?.items.map((i) => i.date)).toEqual(model.publishedDates);
+    expect(el.cities[1]?.items.map((i) => i.date)).toEqual(larisa.publishedDates);
     expect(el.meta.path).toBe('/efimeries/');
     expect(en.meta.path).toBe('/en/duty/');
-    expect(en.items[0]?.path).toBe(`/en/duty/${model.publishedDates[0]}/`);
+    expect(en.cities[1]?.name).toBe('Larissa');
+    expect(en.cities[0]?.items[0]?.path).toBe(`/en/duty/thessaloniki/${model.publishedDates[0]}/`);
   });
 });
 
@@ -236,8 +246,8 @@ describe('areaPageProps', () => {
     expect(el?.h1).toBe('Φαρμακεία: Νέα Μηχανιώνα');
     expect(en?.h1).toBe('Pharmacies in Nea Michaniona (Νέα Μηχανιώνα)');
     expect(en?.meta.alternates).toEqual({
-      el: '/perioxi/nea-michaniona/',
-      en: '/en/area/nea-michaniona/',
+      el: '/perioxi/thessaloniki/nea-michaniona/',
+      en: '/en/area/thessaloniki/nea-michaniona/',
     });
   });
 
@@ -246,20 +256,50 @@ describe('areaPageProps', () => {
     expect(page?.dutyDays.length).toBeGreaterThan(0);
     for (const day of page?.dutyDays ?? []) {
       expect(day.date >= '2026-10-05').toBe(true);
-      expect(day.pagePath).toBe(`/efimeries/${day.date}/`);
+      expect(day.pagePath).toBe(`/efimeries/thessaloniki/${day.date}/`);
       expect(day.items.length).toBeGreaterThan(0);
     }
   });
 });
 
 describe('areaIndexProps', () => {
-  it('lists every area exactly once, grouped by ΦΣΘ group', () => {
-    const page = areaIndexProps(model, 'el');
-    const slugs = page.groups.flatMap((g) => g.areas.map((a) => a.slug));
+  it("lists every city's areas exactly once, grouped by duty group", () => {
+    const page = areaIndexProps([model, larisa], 'el');
+    const [thessaloniki, larissa] = page.cities;
+    const slugs = thessaloniki?.groups.flatMap((g) => g.areas.map((a) => a.slug)) ?? [];
     expect(slugs.sort()).toEqual(model.areas.map((a) => a.slug).sort());
-    const metro = page.groups.find((g) => g.id === 'metro');
+    const metro = thessaloniki?.groups.find((g) => g.id === 'metro');
     expect(metro?.areas.map((a) => a.slug)).toContain('thessaloniki');
+    expect(thessaloniki?.flat).toBe(false);
+    expect(metro?.areas.find((a) => a.slug === 'kalamaria')?.path).toBe(
+      '/perioxi/thessaloniki/kalamaria/',
+    );
+    // Larissa's sectors are towns: one list, no group headings.
+    expect(larissa?.flat).toBe(true);
+    expect(larissa?.groups.flatMap((g) => g.areas.map((a) => a.slug)).sort()).toEqual(
+      larisa.areas.map((a) => a.slug).sort(),
+    );
     expect(page.meta.path).toBe('/perioxi/');
-    expect(areaIndexProps(model, 'en').meta.path).toBe('/en/area/');
+    expect(areaIndexProps([model], 'en').meta.path).toBe('/en/area/');
+  });
+});
+
+describe('a city without regular hours (Larissa)', () => {
+  const id = '2410672566';
+
+  it('says to call for the hours instead of printing regular hours', () => {
+    const page = pharmacyPageProps(larisa, 'el', id, ORIGIN);
+    expect(page?.regularHours).toBeNull();
+    expect(page?.regularClosedText).toBeNull();
+    expect(page?.areaPagePath).toBe('/perioxi/larisa/larisa/');
+  });
+
+  it("names the city and its association on its duty pages, under the city's path", () => {
+    const date = larisa.publishedDates[0] ?? '';
+    const page = dutyPageProps(larisa, 'el', date);
+    expect(page?.meta.title).toMatch(/^Εφημερεύοντα φαρμακεία, Λάρισα, /);
+    expect(page?.meta.description).toContain('Πηγή: Φαρμακευτικός Σύλλογος Λάρισας.');
+    expect(page?.meta.path).toBe(`/efimeries/larisa/${date}/`);
+    expect(page?.groups.map((g) => g.name)).toContain('Τύρναβος');
   });
 });

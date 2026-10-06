@@ -1,7 +1,7 @@
 ---
 import type { Locale } from '@pharmacy-skg/core';
 import { t } from '../../i18n/index.ts';
-import { loadSeoModel } from '../../lib/seo/site-data.ts';
+import { loadSeoModels } from '../../lib/seo/site-data.ts';
 import { areaIndexProps } from '../../lib/seo/views.ts';
 import SeoLayout from './SeoLayout.astro';
 
@@ -10,8 +10,7 @@ interface Props {
 }
 
 const { locale } = Astro.props;
-const model = await loadSeoModel();
-const page = areaIndexProps(model, locale);
+const page = areaIndexProps(await loadSeoModels(), locale);
 
 const d = t(locale);
 ---
@@ -20,17 +19,36 @@ const d = t(locale);
   <h1>{page.meta.title}</h1>
   <p>{d.seo.area.indexIntro}</p>
 
-  {page.groups.map((group) => (
-    <section aria-labelledby={`group-${group.id ?? 'other'}`}>
-      <h2 id={`group-${group.id ?? 'other'}`}>{group.name}</h2>
-      <ul class="seo-columns">
-        {group.areas.map((area) => (
-          <li>
-            <a href={area.path}>{area.label}</a>
-            <span class="seo-meta"> ({area.count})</span>
-          </li>
-        ))}
-      </ul>
+  {page.cities.map((city) => (
+    <section aria-labelledby={`city-${city.id}`}>
+      <h2 id={`city-${city.id}`}>{city.name}</h2>
+      {city.flat ? (
+        // Every group is a single area (Larissa's sectors are towns): one list, no headings.
+        <ul class="seo-columns">
+          {city.groups
+            .flatMap((group) => group.areas)
+            .map((area) => (
+              <li>
+                <a href={area.path}>{area.label}</a>
+                <span class="seo-meta"> ({area.count})</span>
+              </li>
+            ))}
+        </ul>
+      ) : (
+        city.groups.map((group) => (
+          <section aria-labelledby={`group-${city.id}-${group.id ?? 'other'}`}>
+            <h3 id={`group-${city.id}-${group.id ?? 'other'}`}>{group.name}</h3>
+            <ul class="seo-columns">
+              {group.areas.map((area) => (
+                <li>
+                  <a href={area.path}>{area.label}</a>
+                  <span class="seo-meta"> ({area.count})</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      )}
     </section>
   ))}
 </SeoLayout>

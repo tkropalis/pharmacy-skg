@@ -45,28 +45,32 @@ export function allPathParams(): { path: string | undefined; locale: Locale; rou
 }
 
 /**
- * Generated pages with a parameter. The parameter is the same in every locale, so the
- * equivalent page in another locale is always the same function call.
+ * Generated pages with parameters. The parameters are the same in every locale, so the
+ * equivalent page in another locale is always the same function call. Duty dates and areas
+ * belong to a city (decision D26); pharmacy ids are unique across cities.
  */
 export const PARAM_ROUTES = {
   /** One pharmacy, by registry id: '/farmakeio/2310200022/', '/en/pharmacy/2310200022/'. */
   pharmacy: { el: 'farmakeio', en: 'pharmacy' },
-  /** Published duty lists for one date: '/efimeries/2026-10-05/', '/en/duty/2026-10-05/'. */
+  /** A city's duty lists for one date: '/efimeries/thessaloniki/2026-10-05/'. */
   duty: { el: 'efimeries', en: 'duty' },
-  /** One area (ΦΣΘ group or locality slug): '/perioxi/kalamaria/', '/en/area/kalamaria/'. */
+  /** One locality of a city: '/perioxi/thessaloniki/kalamaria/', '/en/area/larisa/tyrnavos/'. */
   area: { el: 'perioxi', en: 'area' },
 } as const satisfies Record<string, Record<Locale, string>>;
 
 export type ParamRouteKey = keyof typeof PARAM_ROUTES;
 
-export function paramPath(locale: Locale, route: ParamRouteKey, param: string): string {
-  return `${localePrefix(locale)}/${PARAM_ROUTES[route][locale]}/${encodeURIComponent(param)}/`;
+export function paramPath(locale: Locale, route: ParamRouteKey, ...params: string[]): string {
+  const rest = params.map((param) => `${encodeURIComponent(param)}/`).join('');
+  return `${localePrefix(locale)}/${PARAM_ROUTES[route][locale]}/${rest}`;
 }
 
 export const pharmacyPath = (locale: Locale, id: string): string =>
   paramPath(locale, 'pharmacy', id);
-export const dutyPath = (locale: Locale, date: string): string => paramPath(locale, 'duty', date);
-export const areaPath = (locale: Locale, slug: string): string => paramPath(locale, 'area', slug);
+export const dutyPath = (locale: Locale, cityId: string, date: string): string =>
+  paramPath(locale, 'duty', cityId, date);
+export const areaPath = (locale: Locale, cityId: string, slug: string): string =>
+  paramPath(locale, 'area', cityId, slug);
 
 /** The index pages of the duty and area routes: '/efimeries/', '/en/area/'. */
 export const dutyIndexPath = (locale: Locale): string =>

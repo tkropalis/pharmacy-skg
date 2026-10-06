@@ -1,0 +1,15 @@
+---
+import AreaPage from '../../../../components/seo/AreaPage.astro';
+import { loadSeoModels } from '../../../../lib/seo/site-data.ts';
+
+export async function getStaticPaths() {
+  const models = await loadSeoModels();
+  return models.flatMap((model) =>
+    model.areas.map((area) => ({ params: { city: model.cityId, slug: area.slug } })),
+  );
+}
+
+const { city, slug } = Astro.params;
+---
+
+<AreaPage locale="en" cityId={city ?? ''} slug={slug ?? ''} />

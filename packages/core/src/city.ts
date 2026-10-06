@@ -37,7 +37,22 @@ export const THESSALONIKI: City = {
   defaultGroupId: 'metro',
 };
 
-export const CITIES: readonly City[] = [THESSALONIKI];
+/**
+ * The Larissa regional unit, on ITeQ's platform. It has no regular-hours decision, so the app
+ * shows only its pharmacies on duty (decision D26).
+ */
+export const LARISA: City = {
+  id: 'larisa',
+  name: { el: 'Λάρισα', en: 'Larissa' },
+  timeZone: GREECE_TIME_ZONE,
+  center: [22.4191, 39.639], // Κεντρική Πλατεία
+  // The regional unit: Ελασσόνα's villages to the north-west, Αγιά's coast to the east.
+  bounds: [21.7, 39.1, 23.0, 40.2],
+  defaultGroupId: 'larisa',
+};
+
+/** The cities the app shows; the first is the default. */
+export const CITIES: readonly City[] = [THESSALONIKI, LARISA];
 
 export function cityById(id: string): City | undefined {
   return CITIES.find((city) => city.id === id);

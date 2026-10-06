@@ -63,9 +63,11 @@ describe('precacheEntries', () => {
     const kept = precacheEntries([
       file('farmakeio/2310023026/index.html'),
       file('en/pharmacy/2310023026/index.html'),
-      file('efimeries/2026-10-05/index.html'),
+      file('efimeries/thessaloniki/2026-10-05/index.html'),
+      file('en/duty/larisa/2026-10-07/index.html'),
       file('en/duty/2026-10-05/index.html'),
-      file('perioxi/kalamaria/index.html'),
+      file('perioxi/thessaloniki/kalamaria/index.html'),
+      file('en/area/larisa/tyrnavos/index.html'),
       file('en/area/kalamaria/index.html'),
       file('efimeries/index.html'),
       file('en/duty/index.html'),
@@ -114,7 +116,7 @@ describe('renderServiceWorker', () => {
     expect(output).not.toContain('__BUILD_VERSION__');
     expect(output).not.toContain('__PRECACHE_URLS__');
     expect(output).not.toContain('__PRECACHE_HASHES__');
-    expect(output).toContain('const CITY_IDS = ["thessaloniki"];');
+    expect(output).toContain('const CITY_IDS = ["thessaloniki","larisa"];');
     expect(() => new Script(output)).not.toThrow();
   });
 

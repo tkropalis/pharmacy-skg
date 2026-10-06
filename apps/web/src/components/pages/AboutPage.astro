@@ -1,8 +1,10 @@
 ---
 import type { Locale } from '@pharmacy-skg/core';
+import { CITIES } from '@pharmacy-skg/core';
 import { CONTACT_EMAIL, EMERGENCY_NUMBERS, REPO_URL } from '../../config.ts';
 import { telUrl } from '../../lib/directions.ts';
 import { localizedPath, t } from '../../i18n/index.ts';
+import { fill } from '../../lib/format.ts';
 
 interface Props {
   locale: Locale;
@@ -14,6 +16,7 @@ const searchCredits = t(locale).search.credits;
 
 const creditLinks: Record<keyof typeof d.credits, string> = {
   fsth: 'https://www.thess.guide/',
+  fsl: 'https://larisa.efhmeries.gr/',
   pkm: 'https://www.pkm.gov.gr/',
   overture: 'https://overturemaps.org/',
   osm: 'https://www.openstreetmap.org/copyright',
@@ -46,7 +49,7 @@ const allCredits = [
     <section>
       <h2>{section.heading}</h2>
       {section.paragraphs.map((p) => (
-        <p>{p}</p>
+        <p>{fill(p, { cities: CITIES.map((city) => city.name[locale]).join(', ') })}</p>
       ))}
     </section>
   ))}

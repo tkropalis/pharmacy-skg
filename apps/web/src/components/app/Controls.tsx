@@ -26,7 +26,8 @@ interface OriginControlsProps {
   readonly variant?: 'panel' | 'card';
   readonly origin: OriginView | null;
   readonly geo: GeoState;
-  readonly far: boolean;
+  /** The position is in no covered city. */
+  readonly uncovered: boolean;
   readonly localities: readonly Locality[];
   readonly onUseLocation: () => void;
   readonly onPickArea: (locality: Locality) => void;
@@ -48,7 +49,7 @@ export function OriginControls({
   variant = 'panel',
   origin,
   geo,
-  far,
+  uncovered,
   localities,
   onUseLocation,
   onPickArea,
@@ -97,7 +98,7 @@ export function OriginControls({
           )}
         </p>
       )}
-      {far && <p className="notice">{text.origin.far}</p>}
+      {uncovered && <p className="notice">{text.origin.uncovered}</p>}
     </>
   );
 
@@ -361,11 +362,13 @@ export function TimeControls({
 
 interface FiltersProps {
   readonly text: Text;
+  /** False where the city's regular hours are not known: nothing is known to be closed. */
+  readonly canShowClosed: boolean;
   readonly showClosed: boolean;
   readonly onShowClosed: (value: boolean) => void;
 }
 
-export function Filters({ text, showClosed, onShowClosed }: FiltersProps) {
+export function Filters({ text, canShowClosed, showClosed, onShowClosed }: FiltersProps) {
   const id = useId();
   const legendLabels: Record<(typeof PIN_KINDS)[number], string> = {
     duty: text.status.legend.duty,
@@ -375,15 +378,17 @@ export function Filters({ text, showClosed, onShowClosed }: FiltersProps) {
   };
   return (
     <section className="control">
-      <label className="check" htmlFor={`${id}-closed`}>
-        <input
-          id={`${id}-closed`}
-          type="checkbox"
-          checked={showClosed}
-          onChange={(event) => onShowClosed(event.target.checked)}
-        />
-        <span>{text.filters.showClosed}</span>
-      </label>
+      {canShowClosed && (
+        <label className="check" htmlFor={`${id}-closed`}>
+          <input
+            id={`${id}-closed`}
+            type="checkbox"
+            checked={showClosed}
+            onChange={(event) => onShowClosed(event.target.checked)}
+          />
+          <span>{text.filters.showClosed}</span>
+        </label>
+      )}
       <details className="legend">
         <summary>
           {text.filters.legend}

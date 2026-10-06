@@ -10,11 +10,12 @@ import SeoLayout from './SeoLayout.astro';
 
 interface Props {
   locale: Locale;
+  cityId: string;
   date: string;
 }
 
-const { locale, date } = Astro.props;
-const model = await loadSeoModel();
+const { locale, cityId, date } = Astro.props;
+const model = await loadSeoModel(cityId);
 const page = dutyPageProps(model, locale, date);
 if (page === null) throw new Error(`No published duty list for ${date}`);
 
@@ -75,7 +76,7 @@ const seo = d.seo.duty;
       <h2 id={`group-${group.id}`}>{group.name}</h2>
       <p class="seo-meta">
         <a href={group.sourceUrl} rel="noopener">
-          {seo.sourcePdf}
+          {seo.sourceLink}
         </a>
       </p>
       {group.sections.map((section) => (

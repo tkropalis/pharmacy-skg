@@ -42,6 +42,8 @@ export const appEl = {
     sortedByName: 'αλφαβητικά',
     withClosed: '{n} κλειστά',
     withClosedOne: '1 κλειστό',
+    /** Where a city's regular hours are not known (decision D26). */
+    dutyOnly: 'Εδώ φαίνονται μόνο τα φαρμακεία που εφημερεύουν.',
   },
 
   nearby: {
@@ -57,7 +59,7 @@ export const appEl = {
     unavailable: 'Δεν βρέθηκε η τοποθεσία σας. Διαλέξτε περιοχή.',
     deniedHelpIos: 'Ρυθμίσεις › Εφαρμογές › Safari › Τοποθεσία.',
     deniedHelpOther: 'Αλλάξτε το στις ρυθμίσεις.',
-    far: 'Είστε μακριά από τη Θεσσαλονίκη.',
+    uncovered: 'Η περιοχή σας δεν καλύπτεται ακόμα.',
     myLocation: 'Κοντά μου',
     here: 'Η τοποθεσία σας',
     /** The position remembered from an earlier visit (the chip, and "distances from"). */
@@ -138,7 +140,6 @@ export const appEl = {
     favouriteRemoved: '{name}: αφαιρέθηκε από τα αγαπημένα',
     /** The link to the pharmacy's own page, where its hours and duty days are. */
     page: 'Ωράριο',
-    defaultLocality: 'Θεσσαλονίκη',
     dutiesMissing: 'Δεν ξέρουμε ακόμη αν εφημερεύει',
     favouriteSaved: 'Στα αγαπημένα',
     favouriteSavedLabel: 'Στα αγαπημένα: {name}',
@@ -186,6 +187,9 @@ export const appEl = {
     emptyHint: 'Ανοίξτε ένα φαρμακείο και πατήστε «Αγαπημένο».',
     notStored: 'Τα αγαπημένα δεν θα αποθηκευτούν.',
     gone: 'Αυτό το φαρμακείο δεν υπάρχει πια.',
+    /** A button that switches to another city's favourites: "Λάρισα: 2 αγαπημένα". */
+    elsewhereOne: '{city}: 1 αγαπημένο',
+    elsewhereMany: '{city}: {n} αγαπημένα',
     upcoming: 'Επόμενες εφημερίες',
     noneUpcoming: 'Δεν έχει ανακοινωθεί εφημερία έως {date}.',
     noneAnnounced: 'Δεν έχει ανακοινωθεί εφημερία.',
@@ -202,7 +206,7 @@ export const appEl = {
   /** Calendar files (lib/ics.ts): the event text, not shown on screen. */
   ics: {
     summary: 'Εφημερία: {name}',
-    source: 'Πηγή: Φαρμακευτικός Σύλλογος Θεσσαλονίκης',
+    source: 'Πηγή: {source}',
     callFirst: 'Καλέστε πριν πάτε.',
     calendarName: 'Εφημερίες φαρμακείων',
   },

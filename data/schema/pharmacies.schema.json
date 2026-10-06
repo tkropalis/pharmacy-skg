@@ -43,7 +43,7 @@
             ]
           },
           "groupId": {
-            "description": "ΦΣΘ area group; null if never seen in a duty list",
+            "description": "Duty group; null if never seen in a duty list",
             "type": [
               "string",
               "null"
@@ -68,9 +68,11 @@
                     "type": "string",
                     "enum": [
                       "override",
+                      "list",
                       "overture",
                       "nominatim"
-                    ]
+                    ],
+                    "description": "list: the coordinates the duty list itself gives (ITeQ)"
                   },
                   "precision": {
                     "type": "string",
@@ -104,11 +106,9 @@
             "type": "array",
             "items": {
               "type": "string",
-              "enum": [
-                "fsth",
-                "pkm"
-              ]
-            }
+              "pattern": "^[a-z0-9-]+$"
+            },
+            "description": "Ids of the lists it was found in, from meta.json's sources"
           },
           "firstSeen": {
             "type": "string",
