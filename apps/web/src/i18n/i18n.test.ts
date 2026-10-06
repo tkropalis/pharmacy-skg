@@ -44,6 +44,7 @@ describe('dictionaries', () => {
       openRegular: 'Ανοιχτό',
       openExtended: 'Ανοιχτό',
       dutyUnknown: 'Εφημερεύει, καλέστε για το ωράριο',
+      notOnDuty: 'Δεν εφημερεύει',
       midnight: 'τα μεσάνυχτα',
     });
     expect(t('en').status).toEqual({
@@ -51,6 +52,7 @@ describe('dictionaries', () => {
       openRegular: 'Open',
       openExtended: 'Open',
       dutyUnknown: 'On duty, call for the hours',
+      notOnDuty: 'Not on duty',
       midnight: 'midnight',
     });
   });

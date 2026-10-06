@@ -21,12 +21,23 @@ function memory(
   };
 }
 
+const th = (id: string) => ({ id, cityId: 'thessaloniki' });
+
 describe('parseFavourites', () => {
-  it('reads an array of ids', () => {
-    expect(parseFavourites('["1","2"]')).toEqual(['1', '2']);
+  it('reads "city/id" entries', () => {
+    expect(parseFavourites('["thessaloniki/1","larisa/2410672566"]')).toEqual([
+      th('1'),
+      { id: '2410672566', cityId: 'larisa' },
+    ]);
+  });
+  it('reads a bare id, saved before there were other cities, as the default city', () => {
+    expect(parseFavourites('["1","2"]')).toEqual([th('1'), th('2')]);
   });
   it('drops duplicates, non-strings and empty ids', () => {
-    expect(parseFavourites('["1",1,null,"","1","2"]')).toEqual(['1', '2']);
+    expect(parseFavourites('["1",1,null,"","thessaloniki/1","2","/3","larisa/"]')).toEqual([
+      th('1'),
+      th('2'),
+    ]);
   });
   it('treats garbage and non-arrays as empty', () => {
     expect(parseFavourites('{oops')).toEqual([]);
@@ -42,9 +53,10 @@ describe('parseFavourites', () => {
 describe('storage', () => {
   it('round-trips through storage under the documented key', () => {
     const storage = memory();
-    expect(saveFavourites(['a', 'b'], storage)).toBe(true);
-    expect(storage.data.get(FAVOURITES_KEY)).toBe('["a","b"]');
-    expect(loadFavourites(storage)).toEqual(['a', 'b']);
+    const list = [th('a'), { id: 'b', cityId: 'larisa' }];
+    expect(saveFavourites(list, storage)).toBe(true);
+    expect(storage.data.get(FAVOURITES_KEY)).toBe('["thessaloniki/a","larisa/b"]');
+    expect(loadFavourites(storage)).toEqual(list);
   });
   it('survives storage that throws', () => {
     const broken: KeyValueStorage = {
@@ -59,17 +71,17 @@ describe('storage', () => {
       },
     };
     expect(loadFavourites(broken)).toEqual([]);
-    expect(saveFavourites(['a'], broken)).toBe(false);
+    expect(saveFavourites([th('a')], broken)).toBe(false);
   });
   it('reports no storage at all', () => {
     expect(loadFavourites(null)).toEqual([]);
-    expect(saveFavourites(['a'], null)).toBe(false);
+    expect(saveFavourites([th('a')], null)).toBe(false);
   });
 });
 
 describe('toggleFavourite', () => {
-  it('adds and removes', () => {
-    expect(toggleFavourite(['a'], 'b')).toEqual(['a', 'b']);
-    expect(toggleFavourite(['a', 'b'], 'a')).toEqual(['b']);
+  it('adds and removes, by id', () => {
+    expect(toggleFavourite([th('a')], th('b'))).toEqual([th('a'), th('b')]);
+    expect(toggleFavourite([th('a'), th('b')], th('a'))).toEqual([th('b')]);
   });
 });

@@ -36,6 +36,8 @@ export interface PharmacyRowProps {
    * under it rather than two circles beside it.
    */
   readonly lead?: boolean;
+  /** The city shown: its own name is left out of addresses ("Λάρισα", "Θεσσαλονίκη"). */
+  readonly cityName: string;
   readonly onToggle: (id: string) => void;
   readonly onToggleFavourite: (id: string, name: string) => void;
   readonly onMessage: (message: string) => void;
@@ -91,6 +93,7 @@ function PharmacyRowView({
   expanded,
   favourite,
   lead = false,
+  cityName,
   onToggle,
   onToggleFavourite,
   onMessage,
@@ -103,10 +106,7 @@ function PharmacyRowView({
   const target = directionsTarget(pharmacy);
   const name = displayName(pharmacy.name);
   // The city is the default; other places keep their name.
-  const place = [
-    pharmacy.address,
-    pharmacy.locality === text.row.defaultLocality ? '' : pharmacy.locality,
-  ]
+  const place = [pharmacy.address, pharmacy.locality === cityName ? '' : pharmacy.locality]
     .filter((part) => part !== '')
     .join(', ');
   const call = pharmacy.phone === null ? null : telUrl(pharmacy.phone);

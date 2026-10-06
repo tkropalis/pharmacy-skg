@@ -32,7 +32,8 @@ src/lib/seo/              view models for the search-engine pages (pure, tested)
                            site-data.ts is the only file that reads data/ at build time
 src/components/seo/       pharmacy, duty-date and area pages (thin; the logic is in lib/seo)
 src/pages/<slug>/         one folder per parameterised route and locale (farmakeio, efimeries, perioxi,
-                           en/pharmacy, en/duty, en/area), named after PARAM_ROUTES in i18n/routes.ts
+                           en/pharmacy, en/duty, en/area), named after PARAM_ROUTES in i18n/routes.ts;
+                           duty dates and areas sit under their city: efimeries/[city]/[date].astro
 src/pages/sitemap.xml.ts, robots.txt.ts   sitemap with hreflang alternates, and robots
 src/scripts/seo/          status now, open-now and today highlight, computed in the browser
 src/lib/pwa.ts            service worker registration, periodic sync, asking the worker to warm the offline data
@@ -99,10 +100,11 @@ The home screen was 45 to 65 before the performance pass. The table below was me
 
 ## Search-engine pages
 
-The build generates a page per pharmacy (about 1,030 per locale), per published duty date and per locality, plus index pages for dates and areas. They are static, so anything that depends on the clock is computed in the browser: the pharmacy's status, which pharmacies of an area are open, and which date is today. The static part shows only officially published duty dates (decision D11).
+The build generates, for every city in `CITIES` (`site-data.ts`, one model per city), a page per pharmacy (`/farmakeio/<id>/`; about 1,130 per locale with Larissa), per published duty date (`/efimeries/<city>/<date>/`) and per locality (`/perioxi/<city>/<slug>/`), plus index pages for dates and areas with a section per city. They are static, so anything that depends on the clock is computed in the browser: the pharmacy's status, which pharmacies of an area are open, and which date is today. The static part shows only officially published duty dates (decision D11).
 
 - **Duty-date pages** exist for the dates whose duty file is published into `dist/data` (today minus 7 days onward, `integrations/data-files.ts`), at most 45 (`MAX_DUTY_PAGES` in `lib/seo/model.ts`). Pharmacy pages also list the last 14 days from `data/`, linking to a date page only where one exists.
-- **Area slugs** come from the locality name by ELOT 743 transliteration (`lib/seo/translit.ts`). They depend only on the name, so they are stable across builds.
+- **Area slugs** come from the locality name by ELOT 743 transliteration (`lib/seo/translit.ts`). They depend only on the name, so they are stable across builds; the city segment keeps the same name in two cities apart.
+- **A city without regular hours** (Larissa): the pharmacy page says to call for the hours, and the live status says "Δεν εφημερεύει" rather than "Κλειστό" (`describeStatus`, `dutyOnly`).
 - **Service worker:** these pages are not precached (`integrations/precache.ts`), only the index pages are. They are fetched when visited.
 - **Sitemap:** `/sitemap.xml` lists both locales with `xhtml:link` alternates. The report form and the 404 page are left out.
 

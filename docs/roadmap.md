@@ -119,7 +119,7 @@ Decision D26; the research is in [research-greece.md](research-greece.md).
    - Phone numbers formatted for every Greek area code; the night look follows the sun where the person is.
 2. **ITeQ adapter**, piloted on Larissa.
    - Pipeline (in review): one parser for `<area>.efhmeries.gr` (`packages/ingest/src/iteq/`, `cities/iteq.ts`); Larissa's nine sectors are duty groups; coordinates from each pharmacy's details page (`inputs/listed-locations.json`); `data/larisa/` is collected but not shown yet. The name on screen loses "Θεσσαλονίκης".
-   - App: Larissa in `CITIES`; the app switches city with the position or the area picker; only pharmacies on duty where a city has no regular hours; pages and area URLs per city.
+   - App (in review): Larissa in `CITIES`; the app switches city with the position, the area picker or a favourite, and remembers it; only pharmacies on duty where a city has no regular hours, with one line saying so; pages, duty-date and area URLs per city; the about page credits each association.
    - Later: `fsa-efimeries.gr` (Attica), which has its own page format.
 3. **The map and the engine at national scale:** data split per city with a national index and a national file of each day's duty pharmacies; status computed only for the cities loaded, and only when a status changes; incremental map updates (`updateData`, `promoteId`, feature-state); Greece's bounds and a lower minimum zoom; pages with external CSS and a sitemap per city.
 4. **Every ITeQ area**, on duty only, until each area's regular hours are added from its Region's decision.

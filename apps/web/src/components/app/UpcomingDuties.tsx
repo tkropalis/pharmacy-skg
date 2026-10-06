@@ -16,6 +16,8 @@ interface UpcomingDutiesProps {
   readonly loading: boolean;
   /** The last date the published lists reach (meta.json), for the empty message. */
   readonly publishedThrough: string | null;
+  /** The association that publishes the lists, credited in the calendar file. */
+  readonly sourceName: string;
   readonly locale: Locale;
   readonly text: Dictionary['app'];
   readonly now: Date;
@@ -28,6 +30,7 @@ export function UpcomingDuties({
   duties,
   loading,
   publishedThrough,
+  sourceName,
   locale,
   text,
   now,
@@ -37,7 +40,8 @@ export function UpcomingDuties({
   const shown = all ? duties : duties.slice(0, INITIAL);
 
   function exportCalendar() {
-    const events = dutyEvents(pharmacy, duties, text.ics, GREECE_TIME_ZONE);
+    const texts = { ...text.ics, source: fill(text.ics.source, { source: sourceName }) };
+    const events = dutyEvents(pharmacy, duties, texts, GREECE_TIME_ZONE);
     downloadTextFile(
       `pharmacy-${pharmacy.id}-duties.ics`,
       buildIcs(events, now, text.ics.calendarName),

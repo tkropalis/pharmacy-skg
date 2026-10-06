@@ -23,6 +23,8 @@ export interface SeoInput {
   readonly today: IsoDate;
   /** meta.json `updatedAt`. */
   readonly updatedAt: string;
+  /** The association that publishes the duty lists (meta.json's first source), by locale. */
+  readonly dutySource: Readonly<Partial<Record<'el' | 'en', string>>>;
   readonly pharmacies: readonly Pharmacy[];
   /** Every loaded duty file; at least `today - RECENT_DUTY_DAYS` onward. */
   readonly duties: ReadonlyMap<IsoDate, DutyDay>;
@@ -41,7 +43,7 @@ export interface AreaInfo {
   readonly slug: string;
   /** The locality as the data spells it (Greek). */
   readonly locality: string;
-  /** The ΦΣΘ group most of the locality's pharmacies belong to, or null. */
+  /** The duty group most of the locality's pharmacies belong to, or null. */
   readonly groupId: string | null;
   /** Sorted by name. */
   readonly pharmacies: readonly Pharmacy[];
@@ -51,6 +53,7 @@ export interface SeoModel {
   readonly cityId: string;
   readonly today: IsoDate;
   readonly updatedAt: string;
+  readonly dutySource: Readonly<Partial<Record<'el' | 'en', string>>>;
   /** Sorted by id. */
   readonly pharmacies: readonly Pharmacy[];
   readonly pharmacyById: ReadonlyMap<string, Pharmacy>;
@@ -130,6 +133,7 @@ export function buildSeoModel(input: SeoInput): SeoModel {
     cityId: input.cityId,
     today: input.today,
     updatedAt: input.updatedAt,
+    dutySource: input.dutySource,
     pharmacies,
     pharmacyById,
     groupNames,

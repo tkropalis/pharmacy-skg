@@ -39,6 +39,8 @@ export function writeItem(
 }
 
 export const AREA_KEY = 'pharmacy-skg:area';
+/** The city last shown (its id), so the next visit opens there (lib/home-city.ts). */
+export const CITY_KEY = 'pharmacy-skg:city';
 /** When the data was last updated, as meta.json said on the last visit (public/stale-check.js reads it). */
 export const DATA_UPDATED_KEY = 'pharmacy-skg:data-updated';
 /**

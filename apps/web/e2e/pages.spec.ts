@@ -1,13 +1,13 @@
 import { LOCALES } from '@pharmacy-skg/core';
 import type { Locale } from '@pharmacy-skg/core';
 import { areaPath, dutyPath, pharmacyPath } from '../src/i18n/routes.ts';
-import { AREA_SLUG, DUTY_DATE, PHARMACY_ID, SITE_URL } from './constants.ts';
+import { CITY_ID, AREA_SLUG, DUTY_DATE, PHARMACY_ID, SITE_URL } from './constants.ts';
 import { expect, test } from './support.ts';
 
 const PAGES = {
   pharmacy: (locale: Locale) => pharmacyPath(locale, PHARMACY_ID),
-  duty: (locale: Locale) => dutyPath(locale, DUTY_DATE),
-  area: (locale: Locale) => areaPath(locale, AREA_SLUG),
+  duty: (locale: Locale) => dutyPath(locale, CITY_ID, DUTY_DATE),
+  area: (locale: Locale) => areaPath(locale, CITY_ID, AREA_SLUG),
 };
 
 for (const [name, pathFor] of Object.entries(PAGES)) {
@@ -58,6 +58,6 @@ test('the pharmacy page works out its status in the browser from the fixed clock
 });
 
 test('the duty-date page marks the fixed date as today', async ({ page }) => {
-  await page.goto(dutyPath('en', DUTY_DATE));
+  await page.goto(dutyPath('en', CITY_ID, DUTY_DATE));
   await expect(page.locator('h1')).toContainText(/today/i);
 });

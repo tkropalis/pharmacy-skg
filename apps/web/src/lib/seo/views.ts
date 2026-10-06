@@ -2,7 +2,7 @@
  * View models for the search-engine pages. Pure functions from the loaded data to the strings
  * and links a page prints, so the .astro files only lay them out and the logic is testable.
  */
-import { LOCALES, holidaysOn, isoWeekday } from '@pharmacy-skg/core';
+import { LOCALES, cityById, hasRegularHours, holidaysOn, isoWeekday } from '@pharmacy-skg/core';
 import type { DutyKind, Locale, Pharmacy } from '@pharmacy-skg/core';
 import { t } from '../../i18n/index.ts';
 import {
@@ -87,6 +87,16 @@ function sectionNotes(section: { extraHours: readonly unknown[]; notes: readonly
 
 const greek = new Intl.Collator('el');
 
+/** The city's name in the locale ("Λάρισα", "Larissa"). */
+function cityName(cityId: string, locale: Locale): string {
+  return cityById(cityId)?.name[locale] ?? cityId;
+}
+
+/** The latest update of several cities' data. */
+function latest(models: readonly SeoModel[]): string {
+  return models.map((model) => model.updatedAt).reduce((a, b) => (a > b ? a : b), '');
+}
+
 // --- Pharmacy page --------------------------------------------------------------------------
 
 /**
@@ -124,7 +134,8 @@ export interface PharmacyPageProps {
   readonly localityLabel: string;
   readonly areaPagePath: string | null;
   readonly directionsUrl: string;
-  readonly regularHours: RegularHoursView;
+  /** Null where the city's regular hours are not known (decision D26): call for the hours. */
+  readonly regularHours: RegularHoursView | null;
   readonly regularClosedText: string | null;
   readonly extendedHours: readonly ExtendedHoursView[];
   readonly upcomingDuties: readonly PharmacyDutyView[];
@@ -152,7 +163,7 @@ function dutyView(model: SeoModel, locale: Locale, listing: DutyListing): Pharma
   return {
     date,
     dateLabel: formatShortDate(date, locale),
-    pagePath: model.publishedDates.includes(date) ? dutyPath(locale, date) : null,
+    pagePath: model.publishedDates.includes(date) ? dutyPath(locale, model.cityId, date) : null,
     kindLabel: dutyKindLabel(section.kind, locale),
     hoursText: windowText(section.hours, seo),
     extraHours: section.extraHours
@@ -195,7 +206,9 @@ export function pharmacyPageProps(
     });
   }
 
-  const regularHours = regularHoursView(model.cityId, model.today, seo);
+  const regularHours = hasRegularHours(model.cityId)
+    ? regularHoursView(model.cityId, model.today, seo)
+    : null;
   const area = model.areaByLocality.get(pharmacy.locality);
   const url = new URL(path(locale), siteOrigin).href;
 
@@ -224,11 +237,11 @@ export function pharmacyPageProps(
         : fill(seo.pharmacy.call, { phone: formatPhone(pharmacy.phone) }),
     phoneHref: telHref(pharmacy.phone),
     localityLabel: areaLabel(pharmacy.locality, locale),
-    areaPagePath: area === undefined ? null : areaPath(locale, area.slug),
+    areaPagePath: area === undefined ? null : areaPath(locale, model.cityId, area.slug),
     directionsUrl: directionsUrl(pharmacy),
     regularHours,
     regularClosedText:
-      regularHours.closedDays === ''
+      regularHours === null || regularHours.closedDays === ''
         ? null
         : fill(seo.pharmacy.regularClosed, { days: regularHours.closedDays }),
     extendedHours,
@@ -279,6 +292,7 @@ export interface DutyNeighbour {
 
 export interface DutyPageProps {
   readonly meta: PageMeta;
+  readonly cityId: string;
   readonly date: string;
   readonly dateLabel: string;
   readonly h1: string;
@@ -292,9 +306,9 @@ export interface DutyPageProps {
   readonly updatedAtText: string;
 }
 
-function neighbour(date: string | undefined, locale: Locale): DutyNeighbour | null {
+function neighbour(cityId: string, date: string | undefined, locale: Locale): DutyNeighbour | null {
   if (date === undefined) return null;
-  return { date, label: formatLongDate(date, locale), path: dutyPath(locale, date) };
+  return { date, label: formatLongDate(date, locale), path: dutyPath(locale, cityId, date) };
 }
 
 /**
@@ -317,7 +331,8 @@ export function dutyPageProps(model: SeoModel, locale: Locale, date: string): Du
   if (day === undefined || position < 0) return null;
   const seo = t(locale).seo;
   const dateLabel = formatLongDate(date, locale);
-  const title = fill(seo.duty.pageTitle, { date: dateLabel });
+  const city = cityName(model.cityId, locale);
+  const title = fill(seo.duty.pageTitle, { city, date: dateLabel });
 
   const groups = day.groups.map((group): DutyGroupView => ({
     id: group.id,
@@ -343,14 +358,22 @@ export function dutyPageProps(model: SeoModel, locale: Locale, date: string): Du
   }));
 
   return {
-    meta: meta(locale, title, fill(seo.duty.pageDescription, { date: dateLabel }), (l) =>
-      dutyPath(l, date),
+    meta: meta(
+      locale,
+      title,
+      fill(seo.duty.pageDescription, {
+        city,
+        date: dateLabel,
+        source: model.dutySource[locale] ?? model.dutySource.el ?? '',
+      }),
+      (l) => dutyPath(l, model.cityId, date),
     ),
+    cityId: model.cityId,
     date,
     dateLabel,
     h1: title,
-    prev: neighbour(model.publishedDates[position - 1], locale),
-    next: neighbour(model.publishedDates[position + 1], locale),
+    prev: neighbour(model.cityId, model.publishedDates[position - 1], locale),
+    next: neighbour(model.cityId, model.publishedDates[position + 1], locale),
     groups,
     missingGroups: missingGroupNames(
       model,
@@ -370,16 +393,23 @@ export interface DutyIndexItem {
   readonly counts: string;
 }
 
+export interface DutyIndexCity {
+  readonly id: string;
+  readonly name: string;
+  readonly items: readonly DutyIndexItem[];
+}
+
 export interface DutyIndexProps {
   readonly meta: PageMeta;
-  readonly items: readonly DutyIndexItem[];
+  /** One section per city, in the order of CITIES. */
+  readonly cities: readonly DutyIndexCity[];
   readonly updatedAt: string;
   readonly updatedAtText: string;
 }
 
-export function dutyIndexProps(model: SeoModel, locale: Locale): DutyIndexProps {
+function dutyIndexItems(model: SeoModel, locale: Locale): DutyIndexItem[] {
   const seo = t(locale).seo;
-  const items = model.publishedDates.map((date): DutyIndexItem => {
+  return model.publishedDates.map((date): DutyIndexItem => {
     const day = model.duties.get(date);
     const ids = new Set<string>();
     for (const group of day?.groups ?? []) {
@@ -389,15 +419,24 @@ export function dutyIndexProps(model: SeoModel, locale: Locale): DutyIndexProps 
       date,
       label: formatLongDate(date, locale),
       shortLabel: formatShortDate(date, locale),
-      path: dutyPath(locale, date),
+      path: dutyPath(locale, model.cityId, date),
       counts: fill(seo.duty.indexCounts, { groups: day?.groups.length ?? 0, pharmacies: ids.size }),
     };
   });
+}
+
+export function dutyIndexProps(models: readonly SeoModel[], locale: Locale): DutyIndexProps {
+  const seo = t(locale).seo;
+  const updatedAt = latest(models);
   return {
     meta: meta(locale, seo.duty.indexTitle, seo.duty.indexDescription, dutyIndexPath),
-    items,
-    updatedAt: model.updatedAt,
-    updatedAtText: formatUpdatedAt(model.updatedAt, locale),
+    cities: models.map((model) => ({
+      id: model.cityId,
+      name: cityName(model.cityId, locale),
+      items: dutyIndexItems(model, locale),
+    })),
+    updatedAt,
+    updatedAtText: formatUpdatedAt(updatedAt, locale),
   };
 }
 
@@ -470,7 +509,7 @@ export function areaPageProps(model: SeoModel, locale: Locale, slug: string): Ar
       dutyDays.push({
         date,
         dateLabel: formatLongDate(date, locale),
-        pagePath: dutyPath(locale, date),
+        pagePath: dutyPath(locale, model.cityId, date),
         items,
       });
     }
@@ -483,7 +522,7 @@ export function areaPageProps(model: SeoModel, locale: Locale, slug: string): Ar
       area.pharmacies.length === 1
         ? fill(seoArea.pageDescriptionOne, { area: label })
         : fill(seoArea.pageDescription, { area: label, count: area.pharmacies.length }),
-      (l) => areaPath(l, slug),
+      (l) => areaPath(l, model.cityId, slug),
     ),
     slug,
     locality: area.locality,
@@ -516,15 +555,24 @@ export interface AreaIndexGroup {
   }[];
 }
 
+export interface AreaIndexCity {
+  readonly id: string;
+  readonly name: string;
+  /** Areas by duty group; `flat` when every group is a single area (no group headings). */
+  readonly groups: readonly AreaIndexGroup[];
+  readonly flat: boolean;
+}
+
 export interface AreaIndexProps {
   readonly meta: PageMeta;
-  readonly groups: readonly AreaIndexGroup[];
+  /** One section per city, in the order of CITIES. */
+  readonly cities: readonly AreaIndexCity[];
   readonly updatedAt: string;
   readonly updatedAtText: string;
 }
 
-/** Areas grouped by the ΦΣΘ group they mostly belong to; groups and areas in alphabetical order. */
-export function areaIndexProps(model: SeoModel, locale: Locale): AreaIndexProps {
+/** A city's areas grouped by the duty group they mostly belong to, in alphabetical order. */
+function areaIndexGroups(model: SeoModel, locale: Locale): AreaIndexGroup[] {
   const seo = t(locale).seo;
   const byGroup = new Map<string | null, AreaInfo[]>();
   for (const area of model.areas) {
@@ -536,7 +584,7 @@ export function areaIndexProps(model: SeoModel, locale: Locale): AreaIndexProps 
     if (a === null || b === null) return a === b ? 0 : a === null ? 1 : -1;
     return greek.compare(model.groupNames.get(a) ?? a, model.groupNames.get(b) ?? b);
   });
-  const groups = ordered.map(([id, areas]): AreaIndexGroup => {
+  return ordered.map(([id, areas]): AreaIndexGroup => {
     const name =
       id === null ? seo.area.otherGroup : groupLabel(model.groupNames.get(id) ?? id, locale);
     const sorted = [...areas].sort((a, b) =>
@@ -550,16 +598,29 @@ export function areaIndexProps(model: SeoModel, locale: Locale): AreaIndexProps 
       areas: sorted.map((area) => ({
         slug: area.slug,
         label: areaLabel(area.locality, locale),
-        path: areaPath(locale, area.slug),
+        path: areaPath(locale, model.cityId, area.slug),
         count: area.pharmacies.length,
         countText: countText(area.pharmacies.length, locale),
       })),
     };
   });
+}
+
+export function areaIndexProps(models: readonly SeoModel[], locale: Locale): AreaIndexProps {
+  const seo = t(locale).seo;
+  const updatedAt = latest(models);
   return {
     meta: meta(locale, seo.area.indexTitle, seo.area.indexDescription, areaIndexPath),
-    groups,
-    updatedAt: model.updatedAt,
-    updatedAtText: formatUpdatedAt(model.updatedAt, locale),
+    cities: models.map((model) => {
+      const groups = areaIndexGroups(model, locale);
+      return {
+        id: model.cityId,
+        name: cityName(model.cityId, locale),
+        groups,
+        flat: groups.every((group) => group.areas.length <= 1),
+      };
+    }),
+    updatedAt,
+    updatedAtText: formatUpdatedAt(updatedAt, locale),
   };
 }

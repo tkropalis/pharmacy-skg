@@ -853,6 +853,16 @@ html.has-update-toast .sheet {
   list-style: none;
 }
 
+/* Favourites saved in other cities: one button per city, which switches to it. */
+.hs .elsewhere {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+  padding: 0;
+  list-style: none;
+}
+
 .picker-item {
   display: flex;
   justify-content: space-between;

@@ -2,7 +2,7 @@ import AxeBuilder from '@axe-core/playwright';
 import { LOCALES } from '@pharmacy-skg/core';
 import type { Locale } from '@pharmacy-skg/core';
 import { areaPath, dutyPath, localizedPath, pharmacyPath } from '../src/i18n/routes.ts';
-import { AREA_SLUG, DUTY_DATE, PHARMACY_ID } from './constants.ts';
+import { CITY_ID, AREA_SLUG, DUTY_DATE, PHARMACY_ID } from './constants.ts';
 import {
   expect,
   openControls,
@@ -18,8 +18,8 @@ const WCAG_AA = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 const PAGES: Record<string, (locale: Locale) => string> = {
   home: (locale) => localizedPath(locale, 'home'),
   pharmacy: (locale) => pharmacyPath(locale, PHARMACY_ID),
-  duty: (locale) => dutyPath(locale, DUTY_DATE),
-  area: (locale) => areaPath(locale, AREA_SLUG),
+  duty: (locale) => dutyPath(locale, CITY_ID, DUTY_DATE),
+  area: (locale) => areaPath(locale, CITY_ID, AREA_SLUG),
   about: (locale) => localizedPath(locale, 'about'),
   privacy: (locale) => localizedPath(locale, 'privacy'),
   report: (locale) => localizedPath(locale, 'report'),

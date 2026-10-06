@@ -83,6 +83,8 @@ export interface MapController {
    * when it is close, and does not move at all when the pharmacy is already in view.
    */
   focusPharmacy(id: string, occludedBottom: number, origin: Origin | null): void;
+  /** Shows a city: its centre, above the sheet, at the zoom the map starts with. */
+  showCity(center: readonly [number, number], occludedBottom: number): void;
   resize(): void;
   destroy(): void;
 }
@@ -90,6 +92,8 @@ export interface MapController {
 // The worker module is published beside the app by integrations/maplibre-worker.ts.
 setWorkerUrl(`/_astro/maplibre-${getVersion()}/maplibre-gl-worker.mjs`);
 
+/** The zoom a city is shown at (the map starts at it too, MapView.tsx). */
+export const CITY_ZOOM = 12;
 /** The view after a new position shows this many of the nearest open pharmacies. */
 const NEAREST_SHOWN = 4;
 const NEAREST_MAX_ZOOM = 16;
@@ -434,6 +438,15 @@ export async function createMapController(
       draw();
       placeMarker(false);
     },
+    showCity(center, occludedBottom) {
+      map.easeTo({
+        center: [center[0], center[1]],
+        zoom: CITY_ZOOM,
+        padding: { top: 0, left: 0, right: 0, bottom: occludedBottom },
+        ...motion,
+      });
+    },
+
     setOrigin(origin, fly, occludedBottom) {
       source(SOURCES.origin)?.setData(
         origin === null

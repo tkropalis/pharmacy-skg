@@ -44,6 +44,15 @@ export const REGULAR_HOURS: Readonly<Record<string, readonly RegularHoursPeriod[
   thessaloniki: THESSALONIKI_REGULAR,
 };
 
+/**
+ * Whether the city's regular hours are known (from its Region's published decision). Without
+ * them only pharmacies on duty are known to be open; the others are not "closed", their hours are
+ * unknown (decision D26).
+ */
+export function hasRegularHours(cityId: string): boolean {
+  return (REGULAR_HOURS[cityId]?.length ?? 0) > 0;
+}
+
 /** The regular ranges on a date (ignoring holidays), or none outside every period. */
 export function regularRanges(cityId: string, date: IsoDate): readonly TimeRange[] {
   const period = (REGULAR_HOURS[cityId] ?? []).find(

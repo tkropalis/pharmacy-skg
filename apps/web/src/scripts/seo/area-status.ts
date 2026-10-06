@@ -1,4 +1,4 @@
-import { coverage, pharmacyStatus } from '@pharmacy-skg/core';
+import { GREECE_TIME_ZONE, coverage, hasRegularHours, pharmacyStatus } from '@pharmacy-skg/core';
 import type { Locale } from '@pharmacy-skg/core';
 import { DEFAULT_CITY_ID } from '../../config.ts';
 import { t } from '../../i18n/index.ts';
@@ -24,6 +24,8 @@ async function show(root: HTMLElement): Promise<void> {
     const { data, failedDates } = await loadNowData(root.dataset['city'] ?? DEFAULT_CITY_ID, now);
     // The duty day (08:00 to 08:00), not the calendar date: before 08:00 it is yesterday's.
     const dutyDay = coverage(data, now);
+    // Without the city's regular hours, a pharmacy not on duty is "not on duty", not closed.
+    const dutyOnly = !hasRegularHours(data.city.id);
 
     const open: HTMLLIElement[] = [];
     let allPublished = dutyDay.duties && failedDates.length === 0;
@@ -39,13 +41,22 @@ async function show(root: HTMLElement): Promise<void> {
       if (!dutiesPublished) allPublished = false;
       // One describer for every status: an on-duty pharmacy without printed hours says so
       // (and to call), and a closed one says when the list for its area is missing.
-      const text = describeStatus(status, dutiesPublished, now, locale, labels);
+      const text = describeStatus(
+        status,
+        dutiesPublished,
+        now,
+        locale,
+        labels,
+        GREECE_TIME_ZONE,
+        dutyOnly,
+      );
       if (state !== null) {
+        const closed = dutyOnly ? area.notOnDutyNow : area.closedNow;
         state.textContent = isOpen
           ? text.short
           : dutiesPublished
-            ? area.closedNow
-            : `${area.closedNow}, ${labels.seo.status.unpublishedShort}`;
+            ? closed
+            : `${closed}, ${labels.seo.status.unpublishedShort}`;
       }
       if (isOpen) open.push(openItem(row, text.short));
     }
@@ -59,8 +70,13 @@ async function show(root: HTMLElement): Promise<void> {
     }
     const summary =
       open.length === 0
-        ? area.openNowNone
-        : fill(area.openNowSummary, { open: open.length, total: rows.length });
+        ? dutyOnly
+          ? area.dutyNowNone
+          : area.openNowNone
+        : fill(dutyOnly ? area.dutyNowSummary : area.openNowSummary, {
+            open: open.length,
+            total: rows.length,
+          });
     const computed = fill(labels.seo.status.computedAt, { time: timeInCity(now, locale) });
     const note = allPublished ? '' : ` ${labels.seo.status.unpublished}`;
     const failed = failedDates.length > 0 ? ` ${labels.seo.status.loadFailed}` : '';
