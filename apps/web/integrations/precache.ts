@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto';
 import { DEFAULT_CITY_ID } from '../src/config.ts';
 import { localePrefix, PARAM_ROUTES } from '../src/i18n/routes.ts';
-import { LOCALES } from '@pharmacy-skg/core';
+import { CITIES, LOCALES } from '@pharmacy-skg/core';
 
 export interface PrecacheFile {
   /** Path relative to the build output, with forward slashes: 'en/about/index.html'. */
@@ -91,13 +91,16 @@ export function renderServiceWorker(
   version: string,
   urls: readonly string[],
   hashes: Readonly<Record<string, string>> = {},
-  cityId: string = DEFAULT_CITY_ID,
+  cityIds: readonly string[] = [
+    DEFAULT_CITY_ID,
+    ...CITIES.map((city) => city.id).filter((id) => id !== DEFAULT_CITY_ID),
+  ],
 ): string {
   const values: Record<string, unknown> = {
     "'__BUILD_VERSION__'": version,
     "['__PRECACHE_URLS__']": urls,
     "'__PRECACHE_HASHES__'": hashes,
-    "'__CITY_ID__'": cityId,
+    "['__CITY_IDS__']": cityIds,
   };
   const missing = Object.keys(values).filter((placeholder) => !template.includes(placeholder));
   if (missing.length > 0) {

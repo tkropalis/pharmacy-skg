@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import type { Locale } from '@pharmacy-skg/core';
-import { THESSALONIKI, localToInstant, zonedDate, zonedParts } from '@pharmacy-skg/core';
+import type { City, Locale } from '@pharmacy-skg/core';
+import { GREECE_TIME_ZONE, localToInstant, zonedDate, zonedParts } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
 import { EMERGENCY_NUMBERS } from '../../config.ts';
 import { addDays, dateRange } from '../../lib/dates.ts';
@@ -63,7 +63,7 @@ import { useNightLook } from './use-theme.ts';
 import './app.css';
 
 const PAGE_SIZE = 30;
-const TIME_ZONE = THESSALONIKI.timeZone;
+const TIME_ZONE = GREECE_TIME_ZONE;
 /// Further than this from the city centre, tell the person the distances are long.
 const FAR_METRES = 40_000;
 /** How many days beyond the last published duty list the time picker allows. */
@@ -83,6 +83,8 @@ interface OriginState extends Origin {
 }
 
 interface HomeAppProps {
+  /** The covered area whose pharmacies are shown (lib/home-city.ts). */
+  readonly city: City;
   readonly locale: Locale;
   readonly text: Dictionary['app'];
   readonly title: string;
@@ -147,8 +149,8 @@ function chosenInstant(mode: TimeMode): Date | null {
   }
 }
 
-export default function HomeApp({ locale, text, title }: HomeAppProps) {
-  const { state, retry, ensureDates } = useCityData();
+export default function HomeApp({ city, locale, text, title }: HomeAppProps) {
+  const { state, retry, ensureDates } = useCityData(city.id);
   const now = useNow();
   const favourites = useFavourites();
   const wide = useMediaQuery('(min-width: 900px)');
@@ -598,8 +600,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   const differs = deviceZoneDiffers(at);
   const far =
     (origin?.kind === 'geo' || origin?.kind === 'last') &&
-    distanceMetres(origin, { lat: THESSALONIKI.center[1], lon: THESSALONIKI.center[0] }) >
-      FAR_METRES;
+    distanceMetres(origin, { lat: city.center[1], lon: city.center[0] }) > FAR_METRES;
 
   const showWhen =
     timeMode.kind === 'custom' && customAt !== null
@@ -1164,6 +1165,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
       <MapView
         locale={locale}
         text={text.map}
+        center={city.center}
         enabled={mapStart.started}
         waiting={ready !== null}
         onWake={wakeMap}

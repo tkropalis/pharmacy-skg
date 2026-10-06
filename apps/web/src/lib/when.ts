@@ -1,4 +1,4 @@
-import { THESSALONIKI, addDays, zonedDate } from '@pharmacy-skg/core';
+import { GREECE_TIME_ZONE, addDays, zonedDate } from '@pharmacy-skg/core';
 import type { Locale } from '@pharmacy-skg/core';
 import { formatClock, shortDate, weekdayName } from './format.ts';
 
@@ -17,7 +17,7 @@ export function whenOf(
   target: Date,
   at: Date,
   locale: Locale,
-  timeZone: string = THESSALONIKI.timeZone,
+  timeZone: string = GREECE_TIME_ZONE,
 ): When {
   const time = formatClock(target, timeZone);
   const day = zonedDate(target, timeZone);
@@ -38,7 +38,7 @@ export function whenOf(
 export function isMidnightAfter(
   target: Date,
   at: Date,
-  timeZone: string = THESSALONIKI.timeZone,
+  timeZone: string = GREECE_TIME_ZONE,
 ): boolean {
   return (
     formatClock(target, timeZone) === '00:00' &&

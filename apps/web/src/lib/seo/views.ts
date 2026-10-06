@@ -321,7 +321,7 @@ export function dutyPageProps(model: SeoModel, locale: Locale, date: string): Du
 
   const groups = day.groups.map((group): DutyGroupView => ({
     id: group.id,
-    name: groupDisplayName(group.id, group.name),
+    name: groupDisplayName(model.cityId, group.id, group.name),
     sourceUrl: group.source.url,
     sections: group.sections.map((section): DutySectionView => ({
       kindLabel: dutyKindLabel(section.kind, locale),

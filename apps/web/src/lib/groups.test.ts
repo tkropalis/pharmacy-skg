@@ -1,4 +1,5 @@
 import type { CityData, Pharmacy } from '@pharmacy-skg/core';
+import { THESSALONIKI } from '@pharmacy-skg/core';
 import { describe, expect, it } from 'vitest';
 import { dominantGroup, groupList, groupNames, groupNear } from './groups.ts';
 
@@ -18,6 +19,7 @@ const day = (date: string, groups: [string, string][]) => ({
 
 describe('groupNames / groupList', () => {
   const data = {
+    city: THESSALONIKI,
     duties: new Map([
       [
         '2026-10-05',

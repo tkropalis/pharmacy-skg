@@ -1,15 +1,18 @@
 /*
  * Light or dark. Runs synchronously in <head> (layouts/Base.astro), like stale-check.js, so the
  * first paint already has the right colours (the CSP allows no inline script). Light unless the
- * person chose otherwise in the footer: "dark", or "auto" (dark after sunset in Thessaloniki or
- * when the device asks for dark). The choice is remembered on the device. It sets
+ * person chose otherwise in the footer: "dark", or "auto" (dark after sunset where the person is
+ * or when the device asks for dark). The choice is remembered on the device. It sets
  * <html data-theme> ("light" or "dark") and data-theme-choice ("light", "dark" or "auto"),
  * checks again every minute and when the page comes back, and offers
  * window.pharmacyTheme.set(choice) to the footer's buttons. The sun's height is lib/sun.ts
- * (sun.test.ts keeps the two in step); the place is the city centre.
+ * (sun.test.ts keeps the two in step); the place is the position remembered on the device
+ * (lib/memory.ts), or the centre of Thessaloniki.
  */
 (function () {
   var KEY = 'pharmacy-skg:theme';
+  var POSITION_KEY = 'pharmacy-skg:last-position';
+  var CENTRE = { lat: 40.6401, lon: 22.9444 };
   var RAD = Math.PI / 180;
   var root = document.documentElement;
   var media = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
@@ -33,6 +36,30 @@
     );
   }
 
+  /** Where the sun is measured: the remembered position, or the centre. */
+  function place() {
+    try {
+      var value = JSON.parse(localStorage.getItem(POSITION_KEY) || 'null');
+      if (
+        value &&
+        typeof value.lat === 'number' &&
+        typeof value.lon === 'number' &&
+        Math.abs(value.lat) <= 90 &&
+        Math.abs(value.lon) <= 180
+      ) {
+        return value;
+      }
+    } catch {
+      // Nothing usable remembered.
+    }
+    return CENTRE;
+  }
+
+  function sunIsDown() {
+    var here = place();
+    return sunElevation(Date.now(), here.lat, here.lon) < -0.833;
+  }
+
   /** Where the choice is kept when the browser keeps nothing (private window, blocked data). */
   var unsaved = 'light';
 
@@ -50,9 +77,7 @@
   function apply() {
     var chosen = choice();
     var dark =
-      chosen === 'dark' ||
-      (chosen === 'auto' &&
-        (Boolean(media && media.matches) || sunElevation(Date.now(), 40.6401, 22.9444) < -0.833));
+      chosen === 'dark' || (chosen === 'auto' && (Boolean(media && media.matches) || sunIsDown()));
     var theme = dark ? 'dark' : 'light';
     if (root.getAttribute('data-theme') !== theme) root.setAttribute('data-theme', theme);
     if (root.getAttribute('data-theme-choice') !== chosen) {

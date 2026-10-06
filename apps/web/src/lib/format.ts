@@ -1,7 +1,7 @@
 import type { Locale } from '@pharmacy-skg/core';
-import { THESSALONIKI, zonedParts } from '@pharmacy-skg/core';
+import { GREECE_TIME_ZONE, zonedParts } from '@pharmacy-skg/core';
 
-const TIME_ZONE = THESSALONIKI.timeZone;
+const TIME_ZONE = GREECE_TIME_ZONE;
 
 /** Replaces `{name}` placeholders in a dictionary string. Unknown names are left as written. */
 export function fill(template: string, values: Readonly<Record<string, string | number>>): string {
@@ -57,13 +57,15 @@ export function formatDistance(metres: number, locale: Locale): string {
 
 /**
  * A Greek phone number with a space after the area code, as it is printed in Greece:
- * "2310 023026" (Thessaloniki), "23920 12345" (the outlying towns), "694 123 4567" (mobiles).
- * Anything else is returned as given.
+ * "210 1234567" (Attica), "2310 023026" (the large cities, whose code is 2X1: Thessaloniki,
+ * Larissa, Kavala, Patra, Tripoli, Heraklion), "23920 12345" (everywhere else) and
+ * "694 123 4567" (mobiles). Anything else is returned as given.
  */
 export function formatPhone(phone: string): string {
   const digits = phone.replace(/\D/g, '');
   if (digits.length !== 10) return phone;
-  if (digits.startsWith('231')) return `${digits.slice(0, 4)} ${digits.slice(4)}`;
+  if (digits.startsWith('21')) return `${digits.slice(0, 3)} ${digits.slice(3)}`;
+  if (/^2[2-8]1/.test(digits)) return `${digits.slice(0, 4)} ${digits.slice(4)}`;
   if (digits.startsWith('2')) return `${digits.slice(0, 5)} ${digits.slice(5)}`;
   if (digits.startsWith('69'))
     return `${digits.slice(0, 3)} ${digits.slice(3, 6)} ${digits.slice(6)}`;

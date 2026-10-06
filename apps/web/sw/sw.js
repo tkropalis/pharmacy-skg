@@ -5,7 +5,9 @@
  *     its own precache, and an unchanged build does not trigger an update;
  *   - PRECACHE_URLS: the app shell (all pages of both locales, assets, icons, manifests);
  *   - PRECACHE_HASHES: each precached URL's content hash;
- *   - CITY_ID: the city whose data is kept for offline use (DEFAULT_CITY_ID in src/config.ts).
+ *   - CITY_IDS: the cities with data, the default first (DEFAULT_CITY_ID in src/config.ts).
+ *     The data kept for offline use is the home city's, which the page names when it asks for a
+ *     warm-up (src/lib/home-city.ts); until a page has named one, it is the default.
  *
  * Strategies:
  *   - app shell: precached; pages are network-first with a short timeout, falling back to the
@@ -38,7 +40,7 @@ const BUILD_VERSION = '__BUILD_VERSION__';
 const PRECACHE_URLS = ['__PRECACHE_URLS__'];
 // URL to content hash. A new version keeps the files of the previous one whose hash is the same.
 const PRECACHE_HASHES = '__PRECACHE_HASHES__';
-const CITY_ID = '__CITY_ID__';
+const CITY_IDS = ['__CITY_IDS__'];
 
 const PRECACHE = `precache-${BUILD_VERSION}`;
 // Hashed assets fetched on first use (the map). Tied to the build, so old ones do not pile up.
@@ -64,6 +66,10 @@ const WARM_DAYS_AHEAD = 3;
 const PERIODIC_SYNC_TAG = 'refresh-data';
 
 const PRECACHED = new Set(PRECACHE_URLS);
+
+// The city whose data is kept warm. Held in memory only: a worker started for a periodic sync
+// warms the default city until a page names the home city again.
+let homeCity = CITY_IDS[0];
 
 const MANIFEST_KEY = '/__precache-manifest__';
 
@@ -131,7 +137,7 @@ function addDays(date, days) {
  * extended-hours file it lists and the duty lists from yesterday to WARM_DAYS_AHEAD days ahead
  * (Athens) that it says are published (asking for any other would only get a 404).
  */
-function offlineDataUrls(meta, now, city = CITY_ID) {
+function offlineDataUrls(meta, now, city = homeCity) {
   const base = `/data/${city}/`;
   const urls = [`${base}meta.json`, `${base}pharmacies.json`];
   for (const entry of meta?.extendedHours ?? []) {
@@ -151,8 +157,8 @@ function offlineDataUrls(meta, now, city = CITY_ID) {
 let warming = null;
 
 /**
- * Fetches the offline data into the data cache. meta.json comes first (it says what is
- * published); offline, nothing is fetched and the cache keeps what it has. One run at a time.
+ * Fetches the home city's offline data into the data cache. meta.json comes first (it says what
+ * is published); offline, nothing is fetched and the cache keeps what it has. One run at a time.
  */
 function warmUp(now) {
   if (warming !== null) return warming;
@@ -164,11 +170,12 @@ function warmUp(now) {
       if (response.ok) await replaceInCache(cache, url, response.clone());
       return response;
     };
-    const metaUrl = `/data/${CITY_ID}/meta.json`;
+    const city = homeCity;
+    const metaUrl = `/data/${city}/meta.json`;
     const metaResponse = await fetchInto(metaUrl);
     if (!metaResponse.ok) return;
     const meta = await metaResponse.json();
-    for (const url of offlineDataUrls(meta, now).filter((url) => url !== metaUrl)) {
+    for (const url of offlineDataUrls(meta, now, city).filter((url) => url !== metaUrl)) {
       try {
         await fetchInto(url);
       } catch {
@@ -232,8 +239,10 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('message', (event) => {
-  // From a page of this origin (src/lib/pwa.ts), which passes its clock: Athens dates follow it.
+  // From a page of this origin (src/lib/pwa.ts), which passes its clock (Athens dates follow it)
+  // and its home city.
   if (event.data?.type !== 'warm-up') return;
+  if (CITY_IDS.includes(event.data.city)) homeCity = event.data.city;
   const at = Number(event.data.now);
   event.waitUntil(warmUp(Number.isFinite(at) ? new Date(at) : new Date()));
 });

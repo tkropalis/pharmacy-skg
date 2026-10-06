@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import type { Locale } from '@pharmacy-skg/core';
-import { THESSALONIKI } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
 import type { Row } from '../../lib/list.ts';
 import type { MapController, OriginMark, Selection } from './map-controller.ts';
@@ -41,6 +40,8 @@ export interface MapSelection extends Selection {
 interface MapViewProps {
   readonly locale: Locale;
   readonly text: Dictionary['app']['map'];
+  /** Where the map starts, as [longitude, latitude]: the centre of the city shown. */
+  readonly center: readonly [number, number];
   /** Start loading the map (after the list has rendered, see use-map-start.ts). */
   readonly enabled: boolean;
   /** The list is ready and the map is on its way: say so instead of leaving the area blank. */
@@ -114,7 +115,7 @@ export function MapView(props: MapViewProps) {
           locale,
           text,
           style,
-          center: THESSALONIKI.center,
+          center: latest.current.center,
           zoom: 12,
           occludedBottom: latest.current.occludedBottom,
           reducedMotion: reducedRef.current,

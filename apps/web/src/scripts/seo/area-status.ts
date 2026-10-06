@@ -1,5 +1,6 @@
 import { coverage, pharmacyStatus } from '@pharmacy-skg/core';
 import type { Locale } from '@pharmacy-skg/core';
+import { DEFAULT_CITY_ID } from '../../config.ts';
 import { t } from '../../i18n/index.ts';
 import { fill } from '../../lib/seo/format.ts';
 import { describeStatus, timeInCity } from '../../lib/seo/status-text.ts';
@@ -20,7 +21,7 @@ async function show(root: HTMLElement): Promise<void> {
 
   try {
     const now = new Date();
-    const { data, failedDates } = await loadNowData(now);
+    const { data, failedDates } = await loadNowData(root.dataset['city'] ?? DEFAULT_CITY_ID, now);
     // The duty day (08:00 to 08:00), not the calendar date: before 08:00 it is yesterday's.
     const dutyDay = coverage(data, now);
 

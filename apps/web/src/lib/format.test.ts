@@ -43,6 +43,14 @@ describe('formatPhone', () => {
     expect(formatPhone('2311112375')).toBe('2311 112375');
     expect(formatPhone('2392012345')).toBe('23920 12345');
   });
+  it('knows the area codes of the rest of Greece', () => {
+    expect(formatPhone('2101234567')).toBe('210 1234567'); // Athens
+    expect(formatPhone('2131234567')).toBe('213 1234567'); // Athens, newer numbers
+    expect(formatPhone('2410123456')).toBe('2410 123456'); // Larissa
+    expect(formatPhone('2810123456')).toBe('2810 123456'); // Heraklion
+    expect(formatPhone('2421012345')).toBe('24210 12345'); // Volos
+    expect(formatPhone('2651012345')).toBe('26510 12345'); // Ioannina
+  });
   it('groups a mobile number and leaves anything else alone', () => {
     expect(formatPhone('6941234567')).toBe('694 123 4567');
     expect(formatPhone('+30 2310 023026')).toBe('+30 2310 023026');

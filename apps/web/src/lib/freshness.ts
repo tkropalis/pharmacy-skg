@@ -1,5 +1,5 @@
 import type { Locale } from '@pharmacy-skg/core';
-import { THESSALONIKI } from '@pharmacy-skg/core';
+import { GREECE_TIME_ZONE } from '@pharmacy-skg/core';
 import { STALE_AFTER_HOURS } from '../config.ts';
 
 const HOUR_MS = 3_600_000;
@@ -28,7 +28,7 @@ export function formatUpdatedShort(
   updatedAt: string,
   now: Date,
   locale: Locale,
-  timeZone: string = THESSALONIKI.timeZone,
+  timeZone: string = GREECE_TIME_ZONE,
 ): string {
   const date = new Date(updatedAt);
   if (Number.isNaN(date.getTime())) return updatedAt;
@@ -50,7 +50,7 @@ export function formatUpdatedShort(
 export function formatUpdatedAt(
   updatedAt: string,
   locale: Locale,
-  timeZone: string = THESSALONIKI.timeZone,
+  timeZone: string = GREECE_TIME_ZONE,
 ): string {
   const date = new Date(updatedAt);
   if (Number.isNaN(date.getTime())) return updatedAt;
