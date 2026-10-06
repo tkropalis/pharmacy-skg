@@ -1,3 +1,4 @@
+import type { ListedLocation } from '../cities/pipeline.ts';
 import type { ExtendedHoursEntry } from '../pkm/parse.ts';
 import type { DutyDay, ExtendedHours, Location, Pharmacy } from '../schema.ts';
 import { matchKey, normalizePhone } from '../text.ts';
@@ -157,7 +158,7 @@ interface Draft {
   postcode: string | null;
   phone: string | null;
   groupId: string | null;
-  sources: Set<'fsth' | 'pkm'>;
+  sources: Set<string>;
   firstSeen: string;
   lastSeen: string;
 }
@@ -170,8 +171,12 @@ export interface RegistryInput {
     readonly entries: ExtendedHours['entries'];
   }[];
   readonly overrides: Readonly<Record<string, Override>>;
+  /** Coordinates the duty lists give, by pharmacy id; they come after the overrides. */
+  readonly listed?: ReadonlyMap<string, ListedLocation>;
   readonly overture: OvertureIndex;
   readonly geocoder: Geocoder;
+  /** The source ids recorded in each pharmacy's `sources`. */
+  readonly sourceIds: { readonly duty: string; readonly extended: string | null };
 }
 
 /** Builds the pharmacy registry from every stored official list and locates each pharmacy. */
@@ -202,7 +207,7 @@ export async function buildRegistry(
             postcode: draft?.postcode ?? null,
             phone: phone ?? draft?.phone ?? null,
             groupId: group.id,
-            sources: new Set([...(draft?.sources ?? []), 'fsth']),
+            sources: new Set([...(draft?.sources ?? []), input.sourceIds.duty]),
             firstSeen: draft?.firstSeen ?? day.date,
             lastSeen: day.date,
           });
@@ -211,12 +216,13 @@ export async function buildRegistry(
     }
   }
 
+  const extendedSource = input.sourceIds.extended ?? input.sourceIds.duty;
   for (const list of input.extended) {
     for (const entry of list.entries) {
       const draft = drafts.get(entry.pharmacyId);
       if (draft) {
         draft.postcode ??= entry.postcode || null;
-        draft.sources.add('pkm');
+        draft.sources.add(extendedSource);
         continue;
       }
       drafts.set(entry.pharmacyId, {
@@ -227,7 +233,7 @@ export async function buildRegistry(
         postcode: entry.postcode || null,
         phone: null,
         groupId: null,
-        sources: new Set(['pkm']),
+        sources: new Set([extendedSource]),
         firstSeen: list.from,
         lastSeen: list.from,
       });
@@ -262,6 +268,8 @@ async function locate(
 ): Promise<Location | null> {
   const override = input.overrides[draft.id]?.location;
   if (override) return { ...override, source: 'override', precision: 'exact' };
+  const listed = input.listed?.get(draft.id);
+  if (listed) return { ...listed, source: 'list', precision: 'exact' };
 
   // A phone match, or a name and street match, is enough. The geocode is then
   // only a cross-check, so it uses cached results and spares Nominatim.

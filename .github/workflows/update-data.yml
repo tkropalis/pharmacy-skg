@@ -5,7 +5,7 @@ name: Update data
 # packages/ingest/src/cli/medicines.ts (medicine prices and shortages).
 on:
   schedule:
-    # Twice a day, Athens time. ΦΣΘ publishes duty lists a few days ahead.
+    # Twice a day, Athens time. The associations publish duty lists a few days to a week ahead.
     - cron: '20 6,18 * * *'
       timezone: Europe/Athens
   workflow_dispatch:
