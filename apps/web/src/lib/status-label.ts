@@ -73,6 +73,11 @@ export function describeStatus(options: {
   readonly locale: Locale;
   readonly text: StatusText;
   readonly timeZone?: string;
+  /**
+   * The city's regular hours are not known (decision D26): a pharmacy off the duty list is
+   * "not on duty", never "closed", and its next opening is its next duty.
+   */
+  readonly dutyOnly?: boolean;
 }): StatusView {
   const { status, at, live, locale, text } = options;
   const timeZone = options.timeZone ?? GREECE_TIME_ZONE;
@@ -114,17 +119,21 @@ export function describeStatus(options: {
         short: { label: text.short[kind], timing: text.short.callFirst },
       };
     case 'closed': {
+      const dutyOnly = options.dutyOnly === true;
       const timing =
         status.nextOpen === null
-          ? text.opensUnknown
-          : fill(text.opensAt, {
+          ? dutyOnly
+            ? text.dutyNotAnnounced
+            : text.opensUnknown
+          : fill(dutyOnly ? text.nextDuty : text.opensAt, {
               when: dayAndTime(status.nextOpen, at, locale, text, timeZone, true),
             });
+      const word = dutyOnly ? text.notOnDuty : text.closed;
       return {
         kind,
-        label: `${text.closed}, ${timing}`,
+        label: `${word}, ${timing}`,
         closingSoon: false,
-        short: { label: text.short[kind], timing },
+        short: { label: dutyOnly ? text.notOnDuty : text.short[kind], timing },
       };
     }
   }

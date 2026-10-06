@@ -87,6 +87,7 @@ Headings use `text-wrap: balance` and letter-spacing no tighter than -0.01em. Ti
 | Notice / callout     | `.notice` (inline), `.callout` (block, `.danger`)      | One sentence that needs attention. Never for explanations.                                                                                                                    |
 | Dialogs              | `AreaPicker.tsx` (`.ap`), `MedicineSearch.tsx` (`.ms`) | Full screen on a phone, field at the top, results under it, Close at the top end; Back and Escape close them.                                                                 |
 | Toast                | `.toast` in HomeApp                                    | A short visible confirmation ("link copied"); the live region says it to screen readers.                                                                                      |
+| Found it closed      | `ClosedReport.tsx`, `.closed-report`                   | In the row details of a pharmacy shown as open now: a quiet link, then a confirmation with Αποστολή and Άκυρο, then one sentence.                                             |
 | Emergency numbers    | `.sos`                                                 | 44px call buttons in the sheet's footer only (no emergency strip anywhere).                                                                                                   |
 
 Reuse these before making anything new. A new component needs a reason a person would notice.

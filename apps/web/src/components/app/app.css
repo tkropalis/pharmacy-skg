@@ -1561,6 +1561,32 @@ html.has-update-toast .sheet {
   text-decoration: none;
 }
 
+button.detail-link {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* "Το βρήκα κλειστό": quiet, under the maps links; its confirmation is two plain buttons. */
+.closed-report {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.closed-report > p {
+  margin: 0.25rem 0 0.5rem;
+  color: var(--fg);
+}
+
+.closed-report-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .detail-link:hover {
   text-decoration: underline;
 }

@@ -17,6 +17,7 @@ import { displayName } from '../../lib/names.ts';
 import { pinSvg } from '../../lib/pins.ts';
 import { describeStatus } from '../../lib/status-label.ts';
 import { MAPS_KEY, readItem, writeItem } from '../../lib/storage.ts';
+import { ClosedReport } from './ClosedReport.tsx';
 import { Icon } from './icons.tsx';
 
 type Text = Dictionary['app'];
@@ -38,6 +39,8 @@ export interface PharmacyRowProps {
   readonly lead?: boolean;
   /** The city shown: its own name is left out of addresses ("Λάρισα", "Θεσσαλονίκη"). */
   readonly cityName: string;
+  /** The city's regular hours are not known: "not on duty" instead of "closed" (D26). */
+  readonly dutyOnly?: boolean;
   readonly onToggle: (id: string) => void;
   readonly onToggleFavourite: (id: string, name: string) => void;
   readonly onMessage: (message: string) => void;
@@ -94,6 +97,7 @@ function PharmacyRowView({
   favourite,
   lead = false,
   cityName,
+  dutyOnly = false,
   onToggle,
   onToggleFavourite,
   onMessage,
@@ -101,7 +105,14 @@ function PharmacyRowView({
 }: PharmacyRowProps) {
   const { pharmacy } = row;
   const detailsId = useId();
-  const view = describeStatus({ status: row.status, at, live, locale, text: text.status });
+  const view = describeStatus({
+    status: row.status,
+    at,
+    live,
+    locale,
+    text: text.status,
+    dutyOnly,
+  });
   const approximate = pharmacy.location?.precision === 'locality';
   const target = directionsTarget(pharmacy);
   const name = displayName(pharmacy.name);
@@ -271,6 +282,18 @@ function PharmacyRowView({
               </a>
             ))}
           </p>
+          {/* Only for a pharmacy shown as open now: what someone standing at a shut door sees. */}
+          {live && view.kind !== 'closed' && (
+            <ClosedReport
+              pharmacyId={pharmacy.id}
+              name={name}
+              shown={view.label}
+              at={at}
+              locale={locale}
+              text={text}
+              onMessage={onMessage}
+            />
+          )}
         </div>
       </div>
 

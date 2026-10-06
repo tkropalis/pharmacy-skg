@@ -102,6 +102,9 @@ export const appEn: Dictionary['app'] = {
     noDuty: 'None on duty at this time.',
     showMore: 'Show more',
     noneOpen: 'No pharmacy open at this time. In an emergency: 166.',
+    /** When nothing is open: the pharmacies that open first (on duty next, in a city with duties only). */
+    openNext: 'Opening next',
+    dutyNext: 'On duty next',
     updated: 'List updated: {summary}',
   },
 
@@ -136,6 +139,8 @@ export const appEn: Dictionary['app'] = {
     closed: 'Closed',
     opensAt: 'opens {when}',
     opensUnknown: 'opening time unknown',
+    nextDuty: 'next duty {when}',
+    dutyNotAnnounced: 'no duty announced',
     closesIn: '{label} until {when}, closes in {duration}',
     openUntil: '{label} until {when}',
     allNight: '{label} all night',
@@ -164,6 +169,18 @@ export const appEn: Dictionary['app'] = {
     },
   },
 
+  /** "Found it closed" on a pharmacy shown as open (ClosedReport.tsx). */
+  closedReport: {
+    button: 'I found it closed',
+    buttonLabel: 'I found it closed: {name}',
+    confirm: 'Send a report?',
+    send: 'Send',
+    cancel: 'Cancel',
+    sent: 'Thank you. We will check it.',
+    failed: 'Not sent.',
+    checkConnection: 'Check your connection.',
+    form: 'Report a mistake',
+  },
   favourites: {
     empty: 'No favourites yet.',
     frequent: 'You open often',

@@ -91,6 +91,31 @@ export function buildRows(
   return { rows: [...open, ...closed], openCount: open.length };
 }
 
+/**
+ * When nothing is open at `at`: the pharmacies that open first, soonest first and, at the same
+ * time, nearest first (otherwise by name). The list never just ends with "none open".
+ */
+export function nextToOpen(data: CityData, at: Date, origin: Origin | null, limit: number): Row[] {
+  const rows: Row[] = [];
+  for (const pharmacy of data.pharmacies) {
+    const row = toRow(rowOf(data, pharmacy, at, origin));
+    if (row.status.state === 'closed' && row.status.nextOpen !== null) rows.push(row);
+  }
+  const opensAt = (row: Row) =>
+    row.status.state === 'closed' ? (row.status.nextOpen?.getTime() ?? Infinity) : Infinity;
+  rows.sort((a, b) => {
+    const time = opensAt(a) - opensAt(b);
+    if (time !== 0) return time;
+    if (origin && a.distance !== b.distance) {
+      if (a.distance === null) return 1;
+      if (b.distance === null) return -1;
+      return a.distance - b.distance;
+    }
+    return greek.compare(a.pharmacy.name, b.pharmacy.name);
+  });
+  return rows.slice(0, limit);
+}
+
 function distanceTo(origin: Origin | null, pharmacy: Pharmacy): number | null {
   return origin && pharmacy.location ? distanceMetres(origin, pharmacy.location) : null;
 }
