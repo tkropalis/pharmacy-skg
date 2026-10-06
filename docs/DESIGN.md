@@ -67,6 +67,7 @@ Headings use `text-wrap: balance` and letter-spacing no tighter than -0.01em. Ti
 - **Home screen** (`components/app/`): an app viewport (`100dvh`, safe areas respected). A one-row header (44px) above the map; a bottom sheet over the map on a phone, a 26rem side panel from 900px. The page never scrolls; the sheet's list does.
 - **Sheet sizes** (`Sheet.tsx`, `sheetHeights`): collapsed (exactly the handle and the header, measured), default (70% of the screen: the list first), large (94%). A flick goes on to the next size; pulling the list down from its top lowers the sheet; moving the map lowers it too.
 - **Other pages:** one column, max 44rem (`.container`), 1rem gutters (more with safe areas).
+- **More than one city** (decision D26): the home screen shows one city at a time. The area picker lists the other covered cities among the areas (no count, since their data is not loaded); choosing one, or a position inside one, switches to it and the map moves there. Favourites of another city are one `.action` button each in the Favourites tab ("Λάρισα: 2 αγαπημένα"). In a city whose regular hours are not known, one `.callout` line ("Εδώ φαίνονται μόνο τα φαρμακεία που εφημερεύουν.") heads the list, the count says "εφημερεύουν", there is no "show closed" option, and the pages say "Δεν εφημερεύει" where they would say "Κλειστό".
 - **Breakpoints:** 40rem (larger h1), 48rem (dialogs become centred panels), 900px (side panel).
 - **Radii:** `--radius` 0.75rem (fields, notices), `--radius-lg` 1.25rem (dialogs), 1rem (lead row, selected row), 999px only for things you can tap (buttons, segmented controls, chips). Status labels are 0.375rem so they never look tappable.
 - **Elevation:** `--shadow` and `--shadow-lg`; the sheet and the chosen marker have their own shadows. No glass, no blur except the marker's ground shadow.
@@ -99,7 +100,7 @@ Rules: animate `transform` and `opacity` (the sheet's height is the one delibera
 
 ## Light and dark
 
-Light by default. The footer's "Εμφάνιση" control offers light, dark and auto (dark after sunset in Thessaloniki or when the device asks); `public/theme.js` applies it before the first paint and sets `<html data-theme>`. Dark tokens are in `global.css` (`:root[data-theme='dark']`) and `app.css` (`--kind-*`). Every new screen or component must be checked in both looks. The map has its own dark base style (`lib/map-style.ts`); the markers keep their colours with a white halo.
+Light by default. The footer's "Εμφάνιση" control offers light, dark and auto (dark after sunset where the person was last located, otherwise in Thessaloniki, or when the device asks); `public/theme.js` applies it before the first paint and sets `<html data-theme>`. Dark tokens are in `global.css` (`:root[data-theme='dark']`) and `app.css` (`--kind-*`). Every new screen or component must be checked in both looks. The map has its own dark base style (`lib/map-style.ts`); the markers keep their colours with a white halo.
 
 ## Icons
 
