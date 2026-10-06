@@ -33,16 +33,20 @@ describe('sunIsDown (Thessaloniki)', () => {
 
 describe('public/theme.js', () => {
   const source = readFileSync(resolve(import.meta.dirname, '../../public/theme.js'), 'utf8');
+  const NIGHT = '2026-10-05T19:30:00Z';
+  const DAY = '2026-10-05T10:00:00Z';
 
   afterEach(() => {
     vi.useRealTimers();
   });
 
-  /** Runs the inline script at `iso` and returns the theme it set. */
-  function themeAt(iso: string, prefersDark = false): string | null {
+  /** Runs the script at `iso`, with a stored choice and the device's preference. */
+  function run(iso: string, options: { stored?: string; prefersDark?: boolean } = {}) {
     vi.useFakeTimers();
     vi.setSystemTime(new Date(iso));
     const attributes = new Map<string, string>();
+    const items = new Map<string, string>();
+    if (options.stored !== undefined) items.set('pharmacy-skg:theme', options.stored);
     const document = {
       documentElement: {
         getAttribute: (name: string) => attributes.get(name) ?? null,
@@ -52,20 +56,53 @@ describe('public/theme.js', () => {
       addEventListener: () => {},
       visibilityState: 'visible',
     };
-    const window = { matchMedia: () => ({ matches: prefersDark, addEventListener: () => {} }) };
-    new Function('document', 'window', source)(document, window);
-    return attributes.get('data-theme') ?? null;
+    const window: { pharmacyTheme?: { set(choice: string): void } } & Record<string, unknown> = {
+      matchMedia: () => ({ matches: options.prefersDark ?? false, addEventListener: () => {} }),
+      addEventListener: () => {},
+    };
+    const localStorage = {
+      getItem: (key: string) => items.get(key) ?? null,
+      setItem: (key: string, value: string) => items.set(key, value),
+      removeItem: (key: string) => items.delete(key),
+    };
+    new Function('document', 'window', 'localStorage', source)(document, window, localStorage);
+    return { attributes, items, window };
   }
 
-  it('agrees with lib/sun.ts through a day', () => {
-    for (let hour = 0; hour < 24; hour += 0.5) {
-      const date = new Date(Date.UTC(2026, 9, 5) + hour * 3_600_000);
-      const expected = sunIsDown(date, CENTRE.lat, CENTRE.lon) ? 'dark' : 'light';
-      expect(themeAt(date.toISOString()), date.toISOString()).toBe(expected);
+  it('is light by default, day and night, whatever the device asks', () => {
+    for (const iso of [DAY, NIGHT]) {
+      const { attributes } = run(iso, { prefersDark: true });
+      expect(attributes.get('data-theme'), iso).toBe('light');
+      expect(attributes.get('data-theme-choice')).toBe('light');
     }
   });
 
-  it('is dark at any hour when the device asks for it', () => {
-    expect(themeAt('2026-10-05T10:00:00Z', true)).toBe('dark');
+  it('is dark at any hour when dark was chosen', () => {
+    expect(run(DAY, { stored: 'dark' }).attributes.get('data-theme')).toBe('dark');
+  });
+
+  it('follows the sun when auto was chosen, in step with lib/sun.ts', () => {
+    for (let hour = 0; hour < 24; hour += 0.5) {
+      const date = new Date(Date.UTC(2026, 9, 5) + hour * 3_600_000);
+      const expected = sunIsDown(date, CENTRE.lat, CENTRE.lon) ? 'dark' : 'light';
+      const { attributes } = run(date.toISOString(), { stored: 'auto' });
+      expect(attributes.get('data-theme'), date.toISOString()).toBe(expected);
+    }
+  });
+
+  it('with auto, is dark by day when the device asks for it', () => {
+    const { attributes } = run(DAY, { stored: 'auto', prefersDark: true });
+    expect(attributes.get('data-theme')).toBe('dark');
+  });
+
+  it('applies a choice from the footer at once and remembers it; light is not stored', () => {
+    const { attributes, items, window } = run(DAY);
+    window.pharmacyTheme?.set('dark');
+    expect(attributes.get('data-theme')).toBe('dark');
+    expect(attributes.get('data-theme-choice')).toBe('dark');
+    expect(items.get('pharmacy-skg:theme')).toBe('dark');
+    window.pharmacyTheme?.set('light');
+    expect(attributes.get('data-theme')).toBe('light');
+    expect(items.has('pharmacy-skg:theme')).toBe(false);
   });
 });

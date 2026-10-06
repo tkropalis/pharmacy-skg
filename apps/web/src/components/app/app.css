@@ -1681,6 +1681,21 @@ html.has-update-toast .sheet {
   font-size: 0.875rem;
 }
 
+/* Light, dark or auto (ThemeChoice.tsx): the label, then the three options. */
+.theme-choice {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.375rem 0.75rem;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.theme-choice-label {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
 /* The emergency numbers: real buttons, not small links at the end of a long list. */
 .sos {
   display: flex;
