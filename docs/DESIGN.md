@@ -4,7 +4,7 @@ The visual system of the app, as built, and how to change it without breaking it
 
 ## Overview
 
-A light, calm, map-and-list app in pharmacy green on tinted near-white, with an optional dark look (deep green-black). Restrained colour: tinted neutrals, one green accent, and four status hues that always come with words and a marker shape. One typeface (Manrope). Plain lists divided by hairlines, not cards; the only cards are the answer (the nearest open pharmacy) and the chosen pharmacy's card. Motion is short and slows into place.
+A light, calm, map-and-list app in pharmacy green on tinted near-white, with an optional dark look (deep green-black). Restrained colour: tinted neutrals, one green accent, and status tints that always come with words and a marker. One typeface (Manrope). Plain lists divided by hairlines, not cards; the only cards are the answer (the nearest open pharmacy) and the chosen pharmacy's card. Motion is short and slows into place.
 
 ## Colour
 
@@ -27,9 +27,23 @@ Every colour is a token. Components never use hex values; a new colour is a new 
 | `--warn-*`        | amber     | amber     | Notices and callouts that need attention       |
 | `--danger-*`      | red       | red       | Only real problems (load errors, missing list) |
 
-Status colours (`apps/web/src/components/app/app.css`, `.hs`): duty green, regular slate blue, extended purple, duty without hours amber, closed grey, each as ink on its own tint (`--kind-*` and `--kind-*-bg`, set per `[data-kind]`). The map's markers use the same hues (`PIN_COLORS`, `apps/web/src/lib/pins.ts`).
+Status colours (`apps/web/src/components/app/app.css`, `.hs`): on duty (with or without printed hours) is the pharmacy green on its green tint, open the same green on a neutral tint, closed grey, each as ink on its tint (`--kind-*` and `--kind-*-bg`, set per `[data-kind]`). The map's markers use the same hues (`PIN_COLORS`, `apps/web/src/lib/pins.ts`); no status is orange, purple or blue, so the blue position dot stays the only blue on the map.
 
-Contrast, measured: body text at least 4.5:1 in both looks (the lowest pair is `--muted` on `--soft`, 4.99 light and 6.66 dark); the status labels are 6.5 to 8.8; edges of controls 3:1 or more. Check any new pair before using it (a contrast function is in `lib/map-layers.test.ts`).
+Contrast, measured: body text at least 4.5:1 in both looks (the lowest pair is `--muted` on `--soft`, 4.99 light and 6.66 dark); the status labels are 5.7 to 9.5 (the duty and open inks on their tints); edges of controls 3:1 or more. Check any new pair before using it (a contrast function is in `lib/map-layers.test.ts`).
+
+## Markers
+
+Every pharmacy is a rounded square with a cross (Font Awesome's plus, thickened), like the green cross outside every Greek pharmacy (`lib/pins.ts`). Size, body and glyph tell the statuses apart, never colour alone:
+
+| Status                            | Marker                                     |
+| --------------------------------- | ------------------------------------------ |
+| Εφημερεύει                        | Large, solid green, white cross            |
+| Εφημερεύει, καλέστε για το ωράριο | Large, solid green, white "?"              |
+| Ανοιχτό (regular or extended)     | Smaller, white, green edge and green cross |
+| Κλειστό (on request)              | Small, white, grey edge and cross, faded   |
+| Approximate location              | The same with a dashed edge, white body    |
+
+The chosen pharmacy is a drop with the same body and glyph. The list's status label is led by the same marker. Never draw a pharmacy as a dot: dots belong to the position.
 
 ## Typography
 
@@ -60,18 +74,18 @@ Headings use `text-wrap: balance` and letter-spacing no tighter than -0.01em. Ti
 
 ## Components
 
-| Component            | Where                                                  | Use it for                                                                                                        |
-| -------------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| Segmented control    | `Segmented.tsx`, `.seg` in app.css                     | Every either/or choice: the tabs, "All / On duty", "now / another time", the appearance. Its thumb slides.        |
-| Row                  | `PharmacyRow.tsx`, `.row`                              | A pharmacy in a list: name, status label led by its marker, time, distance and address, 46px Call and Directions. |
-| Lead row             | `.row.lead`                                            | Only the nearest pharmacy open now (with a position): on its status tint, with labelled 48px Call and Directions. |
-| Chosen pharmacy card | `SelectionCard.tsx`, `.peek`                           | A pharmacy chosen on the map, in the lowered sheet (phone only).                                                  |
-| Chosen marker        | `map-controller.ts` (`.sel`), `selectedPinSvg`         | The chosen pharmacy on the map: drop, flag (name, until when), ground shadow; the other pins dim.                 |
-| Buttons              | `.action`, `.action.primary`, `.big-action`, `.round`  | 44px pill (secondary, primary filled), 48px labelled pill, 46px icon circle.                                      |
-| Notice / callout     | `.notice` (inline), `.callout` (block, `.danger`)      | One sentence that needs attention. Never for explanations.                                                        |
-| Dialogs              | `AreaPicker.tsx` (`.ap`), `MedicineSearch.tsx` (`.ms`) | Full screen on a phone, field at the top, results under it, Close at the top end; Back and Escape close them.     |
-| Toast                | `.toast` in HomeApp                                    | A short visible confirmation ("link copied"); the live region says it to screen readers.                          |
-| Emergency numbers    | `.sos`                                                 | 44px call buttons in the sheet's footer only (no emergency strip anywhere).                                       |
+| Component            | Where                                                  | Use it for                                                                                                                                                                    |
+| -------------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Segmented control    | `Segmented.tsx`, `.seg` in app.css                     | Every either/or choice: the tabs, the list filter (its options are the counts), "now / another time", the appearance. Its thumb slides. Never in a row that scrolls sideways. |
+| Row                  | `PharmacyRow.tsx`, `.row`                              | A pharmacy in a list: name, status label led by its marker, time, distance and address, 46px Call and Directions.                                                             |
+| Lead row             | `.row.lead`                                            | Only the nearest pharmacy open now (with a position): on its status tint, with labelled 48px Call and Directions.                                                             |
+| Chosen pharmacy card | `SelectionCard.tsx`, `.peek`                           | A pharmacy chosen on the map, in the lowered sheet (phone only).                                                                                                              |
+| Chosen marker        | `map-controller.ts` (`.sel`), `selectedPinSvg`         | The chosen pharmacy on the map: drop, flag (name, until when), ground shadow; the other pins dim.                                                                             |
+| Buttons              | `.action`, `.action.primary`, `.big-action`, `.round`  | 44px pill (secondary, primary filled), 48px labelled pill, 46px icon circle.                                                                                                  |
+| Notice / callout     | `.notice` (inline), `.callout` (block, `.danger`)      | One sentence that needs attention. Never for explanations.                                                                                                                    |
+| Dialogs              | `AreaPicker.tsx` (`.ap`), `MedicineSearch.tsx` (`.ms`) | Full screen on a phone, field at the top, results under it, Close at the top end; Back and Escape close them.                                                                 |
+| Toast                | `.toast` in HomeApp                                    | A short visible confirmation ("link copied"); the live region says it to screen readers.                                                                                      |
+| Emergency numbers    | `.sos`                                                 | 44px call buttons in the sheet's footer only (no emergency strip anywhere).                                                                                                   |
 
 Reuse these before making anything new. A new component needs a reason a person would notice.
 

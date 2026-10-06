@@ -35,7 +35,7 @@ test.describe('the first pharmacy is on screen without a position, too', () => {
       await page.setViewportSize(size);
       await page.goto('/');
       const rows = await waitForRows(page);
-      await expect(page.locator('.summary')).toBeInViewport();
+      await expect(page.getByRole('group', { name: text.list.filterLabel })).toBeInViewport();
       await expect(page.locator('.nearby')).toBeInViewport();
       await expect(rows.first().locator('.row-name')).toBeInViewport();
       await expect(rows.first().locator('.row-status')).toBeInViewport();

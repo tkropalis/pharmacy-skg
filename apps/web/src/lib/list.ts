@@ -1,37 +1,30 @@
 import type { CityData, NearbyPharmacy, Pharmacy, PharmacyStatus } from '@pharmacy-skg/core';
 import { distanceMetres, openPharmacies, pharmacyStatus } from './engine.ts';
 
-/** The five looks a pharmacy can have on the map and in the list. */
-export type PinKind = 'duty' | 'regular' | 'extended' | 'duty-unknown' | 'closed';
+/**
+ * The four looks a pharmacy can have on the map and in the list. Regular and extended hours are
+ * one look, "open", as they are one word in the list (the owner, 6 Oct 2026).
+ */
+export type PinKind = 'duty' | 'open' | 'duty-unknown' | 'closed';
 
-export const PIN_KINDS: readonly PinKind[] = [
-  'duty',
-  'regular',
-  'extended',
-  'duty-unknown',
-  'closed',
-];
+export const PIN_KINDS: readonly PinKind[] = ['duty', 'open', 'duty-unknown', 'closed'];
 
 /** On duty, or on duty with no hours printed: what people look for at night. */
 export function isDutyKind(kind: PinKind): boolean {
   return kind === 'duty' || kind === 'duty-unknown';
 }
 
-/** Duty beats extended hours beats regular hours when several apply at once. */
+/** Duty beats regular or extended hours when several apply at once. */
 export function pinKindOf(status: PharmacyStatus): PinKind {
   switch (status.state) {
     case 'closed':
       return 'closed';
     case 'duty-hours-unknown':
       return 'duty-unknown';
-    case 'open': {
-      let kind: PinKind = 'regular';
-      for (const reason of status.reasons) {
-        if (reason.kind === 'duty' || reason.kind === 'duty-extra') return 'duty';
-        if (reason.kind === 'extended') kind = 'extended';
-      }
-      return kind;
-    }
+    case 'open':
+      return status.reasons.some((reason) => reason.kind === 'duty' || reason.kind === 'duty-extra')
+        ? 'duty'
+        : 'open';
   }
 }
 

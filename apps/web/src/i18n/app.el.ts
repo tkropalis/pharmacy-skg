@@ -107,8 +107,6 @@ export const appEl = {
   list: {
     label: 'Φαρμακεία',
     filterLabel: 'Ποια να φαίνονται',
-    filterAll: 'Όλα',
-    filterDuty: 'Εφημερεύοντα',
     noDuty: 'Κανένα δεν εφημερεύει αυτή την ώρα.',
     showMore: 'Περισσότερα',
     noneOpen: 'Κανένα ανοιχτό φαρμακείο αυτή την ώρα. Σε έκτακτη ανάγκη: 166.',
@@ -163,8 +161,7 @@ export const appEl = {
     minuteMany: 'λεπτά',
     short: {
       duty: 'Εφημερεύει',
-      regular: 'Ανοιχτό',
-      extended: 'Ανοιχτό',
+      open: 'Ανοιχτό',
       'duty-unknown': 'Εφημερεύει',
       closed: 'Κλειστό',
       until: 'έως {when}',
@@ -175,8 +172,7 @@ export const appEl = {
     kinds: { ...DUTY_KIND_LABELS.el },
     legend: {
       duty: 'Εφημερεύει',
-      regular: 'Ανοιχτό, συνηθισμένο ωράριο',
-      extended: 'Ανοιχτό, περισσότερες ώρες από τα άλλα',
+      open: 'Ανοιχτό',
       dutyUnknown: 'Εφημερεύει, καλέστε για το ωράριο',
       closed: 'Κλειστό',
       approximate: 'Διακεκομμένη γραμμή: θέση κατά προσέγγιση',

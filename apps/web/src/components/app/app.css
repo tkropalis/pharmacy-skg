@@ -11,15 +11,12 @@
   --selected-bg: var(--accent-soft);
   --selected-edge: color-mix(in srgb, var(--accent) 45%, transparent);
   --star: #b45309;
-  /* Status colours: ink on its own tint, at least 4.5:1 (the pins use the same hues). */
+  /* Status colours: ink on its own tint, at least 4.5:1 (the pins use the same hues). Open is
+     the pharmacy green on a neutral tint, on duty the same green on its own tint. */
   --kind-duty: #0b6b3a;
   --kind-duty-bg: #e3f3ea;
-  --kind-regular: #34536f;
-  --kind-regular-bg: #e8eef5;
-  --kind-extended: #5f3596;
-  --kind-extended-bg: #f0e9fa;
-  --kind-unknown: #8a4100;
-  --kind-unknown-bg: #fcefdf;
+  --kind-open: #0b6b3a;
+  --kind-open-bg: #eef3f0;
   --kind-closed: #4e5961;
   --kind-closed-bg: #eceff1;
   --warn-text: #8a4100;
@@ -40,12 +37,8 @@
   --star: #f5b54a;
   --kind-duty: #8fe0b5;
   --kind-duty-bg: #173a29;
-  --kind-regular: #b3cbe6;
-  --kind-regular-bg: #1d2b3a;
-  --kind-extended: #d4bdf5;
-  --kind-extended-bg: #2c2242;
-  --kind-unknown: #f3bf86;
-  --kind-unknown-bg: #3a2812;
+  --kind-open: #8fe0b5;
+  --kind-open-bg: #1f2a25;
   --kind-closed: #b7c2c8;
   --kind-closed-bg: #262e33;
   --warn-text: #f3bf86;
@@ -57,24 +50,17 @@
 }
 
 /* Each status's ink and tint, wherever a pharmacy is shown: row, card, marker. */
-.hs [data-kind='duty'] {
+/* On duty, with or without printed hours, shares one tint: the marker's "?" and the words tell
+   them apart. */
+.hs [data-kind='duty'],
+.hs [data-kind='duty-unknown'] {
   --kind: var(--kind-duty);
   --kind-bg: var(--kind-duty-bg);
 }
 
-.hs [data-kind='regular'] {
-  --kind: var(--kind-regular);
-  --kind-bg: var(--kind-regular-bg);
-}
-
-.hs [data-kind='extended'] {
-  --kind: var(--kind-extended);
-  --kind-bg: var(--kind-extended-bg);
-}
-
-.hs [data-kind='duty-unknown'] {
-  --kind: var(--kind-unknown);
-  --kind-bg: var(--kind-unknown-bg);
+.hs [data-kind='open'] {
+  --kind: var(--kind-open);
+  --kind-bg: var(--kind-open-bg);
 }
 
 .hs [data-kind='closed'] {
@@ -616,18 +602,21 @@ html.has-update-toast .sheet {
 
 /* --- Summary ------------------------------------------------------------------ */
 
+/* Under the tabs: the count (the filter by day), then where the distances are measured from
+   and how fresh the data is. When the text is large and the two do not fit, the age wraps under
+   the chip rather than pushing it off the screen. */
 .status-line {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.75rem;
-  margin: 0.5rem 0;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.75rem;
+  margin: 0.5rem 0 0.625rem;
 }
 
 .summary {
   /* One line is kept free, so the sheet does not jump when the answer arrives. */
   min-height: 1.4em;
-  margin: 0;
+  margin: 0.625rem 0 0;
   font-size: 0.875rem;
   font-weight: 650;
   line-height: 1.4;
@@ -641,7 +630,7 @@ html.has-update-toast .sheet {
   /* One line is kept free, so the sheet does not jump when meta.json arrives. */
   flex: none;
   min-height: 1.4em;
-  margin: 0;
+  margin: 0 0 0 auto;
   font-size: 0.8125rem;
   line-height: 1.4;
   color: var(--muted);
@@ -949,36 +938,21 @@ html.has-update-toast .sheet {
   font-size: 0.9375rem;
 }
 
-/* --- The toolbar: origin chip and list filter ------------------------------------ */
+/* --- The list filter and the origin chip --------------------------------------- */
 
-/* One row under the summary: where distances are measured from, then the filter. It scrolls
-   sideways rather than wrapping when the text is large; the cut edge fades. */
-.sheet-toolbar {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 0 calc(-1 * max(1rem, var(--safe-l))) 0 calc(-1 * max(1rem, var(--safe-r)));
-  padding: 0 max(1rem, var(--safe-r)) 0.625rem max(1rem, var(--safe-l));
-  overflow-x: auto;
-  scrollbar-width: none;
-  mask-image: linear-gradient(
-    to right,
-    #000 calc(100% - max(1rem, var(--safe-r)) - 1.25rem),
-    transparent
-  );
+/* By day the filter is the count, full width under the tabs; its options never scroll away. */
+.sheet-filter {
+  margin-top: 0.5rem;
 }
 
-.sheet-toolbar::-webkit-scrollbar {
-  display: none;
-}
-
-.sheet-toolbar .seg {
-  flex: none;
+.sheet-filter .seg > button {
+  font-variant-numeric: tabular-nums;
 }
 
 /* Where the distances are measured from: one tap to change. */
 .origin-chip {
-  flex: none;
+  /* Its own size; it shrinks (the label ellipsed) only when it alone is wider than the line. */
+  flex: 0 1 auto;
   display: inline-flex;
   align-items: center;
   gap: 0.3125rem;
