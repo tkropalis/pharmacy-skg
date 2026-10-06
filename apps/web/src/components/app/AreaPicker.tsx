@@ -1,6 +1,7 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import type { Dictionary } from '../../i18n/index.ts';
 import { fill } from '../../lib/format.ts';
+import { loadRecentAreas } from '../../lib/memory.ts';
 import { searchLocalities } from '../../lib/places.ts';
 import type { Locality } from '../../lib/places.ts';
 import { Icon } from './icons.tsx';
@@ -26,6 +27,19 @@ export function AreaPicker({ text, localities, onPick, onClose }: AreaPickerProp
   const id = useId();
   const [query, setQuery] = useState('');
   const matches = useMemo(() => searchLocalities(localities, query, SHOWN), [localities, query]);
+  // Before anything is typed, the areas chosen recently come first (kept on the device only).
+  const [recentNames] = useState(loadRecentAreas);
+  const recent = useMemo(
+    () =>
+      query.trim() === ''
+        ? recentNames.flatMap((name) => localities.filter((l) => l.name === name))
+        : [],
+    [query, recentNames, localities],
+  );
+  const rest = useMemo(
+    () => (recent.length === 0 ? matches : matches.filter((l) => !recent.includes(l))),
+    [matches, recent],
+  );
   const left = useRef(false);
 
   /** Takes back the history entry the dialog added (once; Back has already taken it). */
@@ -54,6 +68,26 @@ export function AreaPicker({ text, localities, onPick, onClose }: AreaPickerProp
     leave();
     onClose();
   }
+
+  const item = (locality: Locality) => (
+    <li key={locality.name}>
+      <button
+        type="button"
+        className="picker-item"
+        onClick={() => {
+          onPick(locality);
+          dialogRef.current?.close();
+        }}
+      >
+        <span>{locality.name}</span>
+        <span className="muted">
+          {locality.count === 1
+            ? text.origin.areaPharmacy
+            : fill(text.origin.areaPharmacies, { n: locality.count })}
+        </span>
+      </button>
+    </li>
+  );
 
   return (
     <dialog ref={dialogRef} className="ap" aria-labelledby={`${id}-title`} onClose={onClosed}>
@@ -97,28 +131,22 @@ export function AreaPicker({ text, localities, onPick, onClose }: AreaPickerProp
             : fill(text.origin.areaCount, { n: matches.length })}
       </p>
       <div className="ap-body">
-        {matches.length === 0 ? (
+        {matches.length === 0 && recent.length === 0 ? (
           <p className="ap-none">{text.origin.areaNone}</p>
         ) : (
-          <ul className="picker-list">
-            {matches.map((locality) => (
-              <li key={locality.name}>
-                <button
-                  type="button"
-                  className="picker-item"
-                  onClick={() => {
-                    onPick(locality);
-                    dialogRef.current?.close();
-                  }}
-                >
-                  <span>{locality.name}</span>
-                  <span className="muted">
-                    {fill(text.origin.areaPharmacies, { n: locality.count })}
-                  </span>
-                </button>
-              </li>
-            ))}
-          </ul>
+          <>
+            {recent.length > 0 && (
+              <>
+                <h3 id={`${id}-recent`} className="rows-heading">
+                  {text.origin.areaRecent}
+                </h3>
+                <ul className="picker-list" aria-labelledby={`${id}-recent`}>
+                  {recent.map((locality) => item(locality))}
+                </ul>
+              </>
+            )}
+            <ul className="picker-list">{rest.map((locality) => item(locality))}</ul>
+          </>
         )}
       </div>
     </dialog>

@@ -26,6 +26,15 @@ import type { Locality } from '../../lib/places.ts';
 import { describeStatus } from '../../lib/status-label.ts';
 import { AREA_KEY, FILTER_KEY, LOCATION_KEY, readItem, writeItem } from '../../lib/storage.ts';
 import {
+  forgetPosition,
+  frequentPharmacies,
+  loadPosition,
+  loadVisits,
+  recordVisit,
+  rememberArea,
+  savePosition,
+} from '../../lib/memory.ts';
+import {
   CONTROLS_ID,
   Filters,
   ListFilterChips,
@@ -68,7 +77,8 @@ const FLIP_ROWS = 12;
 type Tab = 'open' | 'favourites';
 
 interface OriginState extends Origin {
-  readonly kind: 'geo' | 'area';
+  /** The position now, the one remembered from an earlier visit, or a chosen area. */
+  readonly kind: 'geo' | 'last' | 'area';
   readonly label: string;
 }
 
@@ -94,8 +104,22 @@ function initialGeo(): GeoState {
     dismissed: readItem(LOCATION_KEY) === 'off',
     areaChosen: readItem(AREA_KEY) !== null,
     permission: 'unknown',
+    remembered: loadPosition() !== null,
   });
   return decision === 'locate' ? 'locating' : 'idle';
+}
+
+/**
+ * Where the list starts measuring from: the position remembered from an earlier visit, unless
+ * the person chose an area or turned the position off. It is replaced by a fresh position
+ * where the browser gives one without asking.
+ */
+function initialOrigin(label: string): OriginState | null {
+  if (readItem(LOCATION_KEY) === 'off' || readItem(AREA_KEY) !== null) return null;
+  const remembered = loadPosition();
+  return remembered === null
+    ? null
+    : { kind: 'last', lat: remembered.lat, lon: remembered.lon, label };
 }
 
 function isIsoDate(value: string): boolean {
@@ -126,10 +150,15 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
 
   const [tab, setTab] = useState<Tab>('open');
   const [timeMode, setTimeMode] = useState<TimeMode>({ kind: 'now' });
-  const [origin, setOrigin] = useState<OriginState | null>(null);
+  const [origin, setOrigin] = useState<OriginState | null>(() =>
+    initialOrigin(text.origin.lastHere),
+  );
   const [originNonce, setOriginNonce] = useState(0);
   const [geo, setGeo] = useState<GeoState>(initialGeo);
   const [showClosed, setShowClosed] = useState(false);
+  // The pharmacies opened most, on the device only. Read when the favourites tab opens, so its
+  // order does not change under the person while they use it.
+  const [visits, setVisits] = useState(loadVisits);
   // The options (location, time, filters) start closed, so the first pharmacy is on screen.
   const [controlsOpen, setControlsOpen] = useState(false);
   const [dutyFilter, setDutyFilter] = useState<ListFilter>(() =>
@@ -260,7 +289,12 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
           ? text.summary.one
           : fill(text.summary.many, { n });
     const closed = result.rows.length - n;
-    const withClosed = closed > 0 ? fill(text.summary.withClosed, { n: closed }) : null;
+    const withClosed =
+      closed === 0
+        ? null
+        : closed === 1
+          ? text.summary.withClosedOne
+          : fill(text.summary.withClosed, { n: closed });
     const join = (parts: (string | null)[]) =>
       parts.filter((part): part is string => part !== null).join(' · ');
     // On screen only the count: the origin chip already says where the distances are from.
@@ -309,6 +343,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
         clearSelection();
         return;
       }
+      recordVisit(id, Date.now());
       setSelectedId(id);
       setSelectedOnMap(true);
       setTab('open');
@@ -351,6 +386,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
       if (selectedId === id) setSelectedId(null);
       return;
     }
+    recordVisit(id, Date.now());
     setExpandedId(id);
     if (row?.pharmacy.location == null) {
       setSelectedId(null);
@@ -367,6 +403,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   }
 
   function changeTab(next: Tab) {
+    if (next === 'favourites') setVisits(loadVisits());
     setTab(next);
     setSelectedId(null);
     setExpandedId(null);
@@ -404,6 +441,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   function setAreaOrigin(locality: Locality) {
     pendingAnnouncement.current = true;
     writeItem(AREA_KEY, locality.name);
+    rememberArea(locality.name);
     setGeo('idle');
     setOrigin({ kind: 'area', lat: locality.lat, lon: locality.lon, label: locality.name });
     setOriginNonce((n) => n + 1);
@@ -412,8 +450,8 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
 
   /**
    * Asks the device for its position (the browser's own prompt appears on the first request).
-   * `auto` is the request made when the app opens. The position stays in memory: only the flags
-   * of the person's choices are stored, never coordinates.
+   * `auto` is the request made when the app opens. The position is kept on the device, rounded
+   * (lib/memory.ts), so the next visit starts from it without asking; it is never sent.
    */
   function locate(auto: boolean) {
     if (!('geolocation' in navigator)) {
@@ -427,19 +465,21 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
         // Asking for the position again is a choice for it: the opt-out and the area go.
         writeItem(LOCATION_KEY, null);
         writeItem(AREA_KEY, null);
+        const point = { lat: position.coords.latitude, lon: position.coords.longitude };
+        savePosition(point, Date.now());
         setGeo('idle');
-        setOrigin({
-          kind: 'geo',
-          lat: position.coords.latitude,
-          lon: position.coords.longitude,
-          label: text.origin.here,
-        });
+        setOrigin({ kind: 'geo', ...point, label: text.origin.here });
         setOriginNonce((n) => n + 1);
         setControlsOpen(false);
       },
       (error) => {
         const denied = error.code === error.PERMISSION_DENIED;
         setGeo(denied ? 'denied' : 'unavailable');
+        // Refused: the remembered position is not used any more either.
+        if (denied) {
+          forgetPosition();
+          setOrigin((current) => (current?.kind === 'last' ? null : current));
+        }
         // A refused automatic request is not repeated on every visit: Safari's "Ask" setting and
         // a dismissed Chrome prompt both report "prompt" again next time. The card offers a retry.
         if (auto && denied) writeItem(LOCATION_KEY, 'off');
@@ -451,8 +491,10 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   function clearOrigin() {
     pendingAnnouncement.current = true;
     writeItem(AREA_KEY, null);
-    // Clearing the position is also saying "not now": it is not asked for again by itself.
+    // Clearing the position is also saying "not now": it is not asked for again by itself,
+    // and the remembered one is forgotten.
     writeItem(LOCATION_KEY, 'off');
+    forgetPosition();
     setOrigin(null);
     setGeo('idle');
     announce(text.origin.cleared);
@@ -488,7 +530,9 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
         // Read when the permission has come back: the saved area may have been restored since.
         areaChosen: readItem(AREA_KEY) !== null,
         permission,
+        remembered: loadPosition() !== null,
       });
+      // 'remembered': the list already measures from the remembered position (initialOrigin).
       if (decision === 'locate') locate(true);
       else if (decision === 'denied') setGeo('denied');
       else setGeo((current) => (current === 'locating' ? 'idle' : current));
@@ -507,11 +551,13 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
       watchId = navigator.geolocation.watchPosition(
         (position) => {
           const next = { lat: position.coords.latitude, lon: position.coords.longitude };
-          setOrigin((previous) =>
-            previous?.kind !== 'geo' || distanceMetres(previous, next) <= WATCH_MOVE_METRES
-              ? previous
-              : { ...previous, ...next },
-          );
+          setOrigin((previous) => {
+            if (previous?.kind !== 'geo' || distanceMetres(previous, next) <= WATCH_MOVE_METRES) {
+              return previous;
+            }
+            savePosition(next, Date.now());
+            return { ...previous, ...next };
+          });
         },
         // A failed update keeps the last position; a position taken away stops following.
         (error) => {
@@ -555,7 +601,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   const nowParts = zonedParts(now, TIME_ZONE);
   const differs = deviceZoneDiffers(at);
   const far =
-    origin?.kind === 'geo' &&
+    (origin?.kind === 'geo' || origin?.kind === 'last') &&
     distanceMetres(origin, { lat: THESSALONIKI.center[1], lon: THESSALONIKI.center[0] }) >
       FAR_METRES;
 
@@ -637,7 +683,9 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                   ? text.origin.locating
                   : origin.kind === 'geo'
                     ? text.origin.myLocation
-                    : fill(text.origin.areaName, { name: origin.label })
+                    : origin.kind === 'last'
+                      ? text.origin.lastLocation
+                      : fill(text.origin.areaName, { name: origin.label })
               }
               when={showWhen}
               locating={origin === null}
@@ -684,6 +732,27 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   const dutiesLoading = Boolean(
     meta?.duties && data && meta.duties.to >= today && !data.duties.has(meta.duties.to),
   );
+
+  const frequentRows = useMemo(() => {
+    if (!data) return [];
+    return frequentPharmacies(visits, favourites.ids).flatMap((id) => {
+      const row = rowFor(data, id, at, originPoint);
+      return row === null ? [] : [row];
+    });
+  }, [data, visits, favourites.ids, at, originPoint]);
+
+  // A call or directions straight from a row counts as opening that pharmacy.
+  useEffect(() => {
+    const root = rootRef.current;
+    if (root === null) return;
+    const onClick = (event: MouseEvent) => {
+      const target = event.target instanceof Element ? event.target : null;
+      const row = target?.closest('a[href]')?.closest('li[id^="row-"]');
+      if (row) recordVisit(row.id.slice('row-'.length), Date.now());
+    };
+    root.addEventListener('click', onClick, true);
+    return () => root.removeEventListener('click', onClick, true);
+  }, []);
 
   const rowLive = live && timeMode.kind === 'now';
   const rowProps = {
@@ -1022,6 +1091,26 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
                     ),
                   )}
                 </ol>
+              )}
+              {frequentRows.length > 0 && (
+                <section className="frequent" aria-labelledby="frequent-heading">
+                  <h2 id="frequent-heading" className="rows-heading">
+                    {text.favourites.frequent}
+                  </h2>
+                  <ol className="rows" aria-labelledby="frequent-heading">
+                    {frequentRows.map((row) => (
+                      <PharmacyRow
+                        key={row.pharmacy.id}
+                        row={row}
+                        selected={row.pharmacy.id === selectedId}
+                        expanded={row.pharmacy.id === expandedId}
+                        favourite={false}
+                        onToggle={(rowId) => toggleRow(rowId, row)}
+                        {...rowProps}
+                      />
+                    ))}
+                  </ol>
+                </section>
               )}
             </>
           )}

@@ -216,6 +216,20 @@ describe('areaPageProps', () => {
     expect(areaPageProps(model, 'el', 'nowhere')).toBeNull();
   });
 
+  it('describes an area with one pharmacy in the singular', () => {
+    const single = model.areas.find((area) => area.pharmacies.length === 1);
+    const several = model.areas.find((area) => area.pharmacies.length > 1);
+    if (single === undefined || several === undefined) throw new Error('test data changed');
+    const el = areaPageProps(model, 'el', single.slug)?.meta.description ?? '';
+    const en = areaPageProps(model, 'en', single.slug)?.meta.description ?? '';
+    expect(el).toMatch(/^Το φαρμακείο της περιοχής /);
+    expect(en).toMatch(/^The pharmacy in /);
+    expect(`${el} ${en}`).not.toMatch(/\b1 (φαρμακεία|pharmacies)/);
+    expect(areaPageProps(model, 'el', several.slug)?.meta.description).toMatch(
+      new RegExp(`^Τα ${several.pharmacies.length} φαρμακεία `),
+    );
+  });
+
   it('uses the Greek name in Greek and a transliteration in English', () => {
     const el = areaPageProps(model, 'el', 'nea-michaniona');
     const en = areaPageProps(model, 'en', 'nea-michaniona');

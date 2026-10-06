@@ -35,6 +35,7 @@ export const appEn: Dictionary['app'] = {
     sortedByDistance: 'nearest first, distances from: {origin}',
     sortedByName: 'in alphabetical order',
     withClosed: '{n} closed',
+    withClosedOne: '1 closed',
   },
 
   nearby: {
@@ -53,6 +54,9 @@ export const appEn: Dictionary['app'] = {
     far: 'You are far from Thessaloniki.',
     myLocation: 'Near me',
     here: 'Your location',
+    lastLocation: 'Last location',
+    lastHere: 'Your last location',
+    areaRecent: 'Recent',
     areaName: 'Near: {name}',
     areaLabel: 'Area',
     areaSearch: 'Type the area',
@@ -61,6 +65,7 @@ export const appEn: Dictionary['app'] = {
     areaCount: '{n} areas',
     areaOne: '1 area',
     areaPharmacies: '{n} pharmacies',
+    areaPharmacy: '1 pharmacy',
     clear: 'Remove',
     current: 'Distances from: {origin}',
     cleared: 'Location removed',
@@ -165,6 +170,7 @@ export const appEn: Dictionary['app'] = {
 
   favourites: {
     empty: 'No favourites yet.',
+    frequent: 'You open often',
     emptyHint: 'Open a pharmacy and press “Favourite”.',
     notStored: 'Favourites will not be saved.',
     gone: 'This pharmacy no longer exists.',

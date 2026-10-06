@@ -41,6 +41,7 @@ export const appEl = {
     sortedByDistance: 'πρώτα τα πιο κοντινά, αποστάσεις από: {origin}',
     sortedByName: 'αλφαβητικά',
     withClosed: '{n} κλειστά',
+    withClosedOne: '1 κλειστό',
   },
 
   nearby: {
@@ -59,6 +60,11 @@ export const appEl = {
     far: 'Είστε μακριά από τη Θεσσαλονίκη.',
     myLocation: 'Κοντά μου',
     here: 'Η τοποθεσία σας',
+    /** The position remembered from an earlier visit (the chip, and "distances from"). */
+    lastLocation: 'Τελευταία τοποθεσία',
+    lastHere: 'Η τελευταία τοποθεσία σας',
+    /** Areas chosen recently, first in the area picker. */
+    areaRecent: 'Πρόσφατες',
     areaName: 'Κοντά σε: {name}',
     areaLabel: 'Περιοχή',
     areaSearch: 'Γράψτε την περιοχή',
@@ -67,6 +73,7 @@ export const appEl = {
     areaCount: '{n} περιοχές',
     areaOne: '1 περιοχή',
     areaPharmacies: '{n} φαρμακεία',
+    areaPharmacy: '1 φαρμακείο',
     clear: 'Αφαίρεση',
     current: 'Αποστάσεις από: {origin}',
     cleared: 'Η τοποθεσία αφαιρέθηκε',
@@ -178,6 +185,8 @@ export const appEl = {
 
   favourites: {
     empty: 'Κανένα αγαπημένο ακόμη.',
+    /** The pharmacies the person opens most (counted on the device only). */
+    frequent: 'Ανοίγετε συχνά',
     emptyHint: 'Ανοίξτε ένα φαρμακείο και πατήστε «Αγαπημένο».',
     notStored: 'Τα αγαπημένα δεν θα αποθηκευτούν.',
     gone: 'Αυτό το φαρμακείο δεν υπάρχει πια.',
