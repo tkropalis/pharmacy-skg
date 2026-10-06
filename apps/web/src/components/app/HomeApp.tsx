@@ -191,8 +191,12 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [peek, setPeek] = useState(false);
   const sizeBeforePeek = useRef<SheetSize>('medium');
-  const peekFocus = useRef<string | null>(null);
+  const peekFocus = useRef<{ readonly id: string; readonly withOrigin: boolean } | null>(null);
   const [mapFocus, setMapFocus] = useState<MapFocus | null>(null);
+  // The locate button found the position: choose the nearest open pharmacy once the list is
+  // measured from it. `stale` is the data shown when the position is in another city, whose
+  // own data has to load first.
+  const [pickNearest, setPickNearest] = useState<{ readonly stale: unknown } | null>(null);
   const [toast, setToast] = useState<{ readonly text: string; readonly key: number } | null>(null);
   const sheetApi = useRef<SheetApi | null>(null);
   const [sheetSize, setSheetSize] = useState<SheetSize>('medium');
@@ -376,11 +380,19 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
 
   // --- Actions ----------------------------------------------------------------------
 
-  /** Moves the map to a pharmacy; `size` is the size the sheet is going to, if it moves. */
+  /**
+   * Moves the map to a pharmacy; `size` is the size the sheet is going to, if it moves.
+   * `withOrigin` shows the origin with it, however far.
+   */
   const focusOn = useCallback(
-    (id: string, size: SheetSize | null) => {
+    (id: string, size: SheetSize | null, withOrigin = false) => {
       const occluded = wide ? 0 : size === null ? undefined : sheetApi.current?.heightFor(size);
-      setMapFocus((previous) => ({ id, nonce: (previous?.nonce ?? 0) + 1, occluded }));
+      setMapFocus((previous) => ({
+        id,
+        nonce: (previous?.nonce ?? 0) + 1,
+        occluded,
+        withOrigin,
+      }));
       // Asking for a pharmacy on the map must not wait for the map's timer.
       wakeMap();
     },
@@ -396,9 +408,12 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
     }
   }, [peek]);
 
-  /** A tap on a pin: the row opens and, on a phone, the sheet lowers to the chosen one's card. */
+  /**
+   * A tap on a pin: the row opens and, on a phone, the sheet lowers to the chosen one's card.
+   * `withOrigin` is the locate button's choice: the map shows the person and the pharmacy.
+   */
   const onMapSelect = useCallback(
-    (id: string | null) => {
+    (id: string | null, withOrigin = false) => {
       if (id === null) {
         clearSelection();
         return;
@@ -410,22 +425,23 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
       setExpandedId(id);
       if (wide) {
         scrollTo.current = id;
+        if (withOrigin) focusOn(id, null, true);
         return;
       }
       if (!peek) sizeBeforePeek.current = sheetSize === 'small' ? 'medium' : sheetSize;
       setPeek(true);
       setSheetSize('small');
       // The camera waits for the card, whose height it needs (see the layout effect below).
-      peekFocus.current = id;
+      peekFocus.current = { id, withOrigin };
     },
-    [wide, peek, sheetSize, clearSelection],
+    [wide, peek, sheetSize, clearSelection, focusOn],
   );
 
   useLayoutEffect(() => {
-    const id = peekFocus.current;
-    if (id === null || !peek) return;
+    const pending = peekFocus.current;
+    if (pending === null || !peek) return;
     peekFocus.current = null;
-    focusOn(id, 'small');
+    focusOn(pending.id, 'small', pending.withOrigin);
   }, [peek, selectedId, focusOn]);
 
   // Bring a row chosen on the map into view in the list.
@@ -513,10 +529,11 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
 
   /**
    * Asks the device for its position (the browser's own prompt appears on the first request).
-   * `auto` is the request made when the app opens. The position is kept on the device, rounded
+   * `auto` is the request made when the app opens; `pick` is the map's locate button, which
+   * then chooses the nearest open pharmacy. The position is kept on the device, rounded
    * (lib/memory.ts), so the next visit starts from it without asking; it is never sent.
    */
-  function locate(auto: boolean) {
+  function locate(auto: boolean, pick = false) {
     if (!('geolocation' in navigator)) {
       setGeo('unsupported');
       return;
@@ -532,8 +549,14 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
         savePosition(point, Date.now());
         setGeo('idle');
         setOrigin({ kind: 'geo', ...point, label: text.origin.here });
-        setOriginNonce((n) => n + 1);
         setControlsOpen(false);
+        if (pick) {
+          // The camera moves once, to the person and the pharmacy chosen (below).
+          const here = cityAt(point);
+          setPickNearest({ stale: here !== undefined && here.id !== city.id ? data : null });
+        } else {
+          setOriginNonce((n) => n + 1);
+        }
       },
       (error) => {
         const denied = error.code === error.PERMISSION_DENIED;
@@ -546,10 +569,30 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
         // A refused automatic request is not repeated on every visit: Safari's "Ask" setting and
         // a dismissed Chrome prompt both report "prompt" again next time. The card offers a retry.
         if (auto && denied) writeItem(LOCATION_KEY, 'off');
+        // The list's own messages may be out of sight under the map: say it where they look.
+        if (pick) notify(denied ? text.origin.deniedShort : text.origin.unavailable);
       },
       FIRST_FIX_OPTIONS,
     );
   }
+
+  useEffect(() => {
+    if (pickNearest === null || origin === null || ready === null || dutyLoading) return;
+    // In another city, wait until its data has replaced the data shown when the position came.
+    const here = cityAt(origin);
+    if (here !== undefined && (here.id !== city.id || ready.data === pickNearest.stale)) return;
+    setPickNearest(null);
+    const nearest =
+      here === undefined
+        ? undefined
+        : result.rows.find((row) => row.status.state !== 'closed' && row.pharmacy.location != null);
+    if (nearest === undefined) {
+      // Nothing open to choose (or the position is outside every covered area): show the person.
+      setOriginNonce((n) => n + 1);
+      return;
+    }
+    onMapSelect(nearest.pharmacy.id, true);
+  }, [pickNearest, origin, ready, dutyLoading, city.id, result.rows, onMapSelect]);
 
   function clearOrigin() {
     pendingAnnouncement.current = true;
@@ -1293,6 +1336,8 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
         covered={!wide && sheetSize === 'large'}
         onSelect={onMapSelect}
         onReach={onReach}
+        onLocate={() => locate(false, true)}
+        locating={geo === 'locating'}
         onStatus={setMapStatus}
       />
 

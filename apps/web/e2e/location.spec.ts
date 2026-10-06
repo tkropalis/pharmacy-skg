@@ -1,6 +1,6 @@
 import { t } from '../src/i18n/index.ts';
 import { POSITION } from './constants.ts';
-import { expect, openControls, test, waitForRows } from './support.ts';
+import { expect, openControls, test, waitForMap, waitForRows } from './support.ts';
 
 const text = t('el').app;
 
@@ -59,6 +59,27 @@ test.describe('with the location allowed (a returning visitor)', () => {
     expect(JSON.parse(stored ?? '{}')).toMatchObject({ lat: 40.633, lon: 22.941 });
     const everything = await page.evaluate(() => JSON.stringify({ ...localStorage }));
     expect(everything).not.toMatch(/40\.632|22\.940/);
+  });
+
+  test("the map's locate button shows the position and chooses the nearest open pharmacy", async ({
+    page,
+  }) => {
+    await spyOnGeolocation(page);
+    await page.goto('/');
+    await waitForRows(page);
+    await waitForMap(page);
+    const before = (await calls(page)).current;
+
+    const locate = page.locator('.maplibregl-ctrl-locate');
+    await expect(locate).toHaveAccessibleName(text.map.locate);
+    await locate.click();
+    expect((await calls(page)).current).toBe(before + 1);
+    // The nearest open pharmacy, the one that leads the list, is chosen and announced.
+    const lead = page.locator('ol.rows > li.row.lead');
+    const id = (await lead.getAttribute('id'))?.replace('row-', '');
+    await expect(page.locator('.map')).toHaveAttribute('data-selected', id ?? 'missing');
+    const name = await lead.locator('.row-name').first().innerText();
+    await expect(page.locator('[aria-live="polite"][data-map]')).toContainText(name);
   });
 
   test('while locating, says so in the summary and keeps the list usable', async ({ page }) => {

@@ -137,6 +137,17 @@
   background-color: var(--soft);
 }
 
+/* The locate button: its icon is inline, in the text colour, and turns while it waits. */
+.hs .map .maplibregl-ctrl-locate {
+  display: grid;
+  place-items: center;
+  color: var(--fg);
+}
+
+.hs .map .maplibregl-ctrl-locate[aria-busy='true'] svg {
+  animation: spin 1s linear infinite;
+}
+
 /* Font Awesome icons (map-controller.ts), drawn at a calm size. */
 .hs .map .maplibregl-ctrl-group .maplibregl-ctrl-icon {
   background-position: center;
