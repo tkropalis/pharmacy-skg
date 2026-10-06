@@ -80,8 +80,8 @@ export function describeStatus(options: {
 
   switch (status.state) {
     case 'open': {
-      const word =
-        kind === 'duty' ? text.onDuty : kind === 'extended' ? text.openExtended : text.openRegular;
+      const extended = status.reasons.some((reason) => reason.kind === 'extended');
+      const word = kind === 'duty' ? text.onDuty : extended ? text.openExtended : text.openRegular;
       const label =
         kind === 'duty' && allNight(status.reasons) ? fill(text.allNight, { label: word }) : word;
       const minutes = Math.ceil((status.until.getTime() - at.getTime()) / 60_000);

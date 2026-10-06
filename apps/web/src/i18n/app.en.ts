@@ -98,8 +98,6 @@ export const appEn: Dictionary['app'] = {
   list: {
     label: 'Pharmacies',
     filterLabel: 'Which to show',
-    filterAll: 'All',
-    filterDuty: 'On duty',
     noDuty: 'None on duty at this time.',
     showMore: 'Show more',
     noneOpen: 'No pharmacy open at this time. In an emergency: 166.',
@@ -149,8 +147,7 @@ export const appEn: Dictionary['app'] = {
     minuteMany: 'min',
     short: {
       duty: 'On duty',
-      regular: 'Open',
-      extended: 'Open',
+      open: 'Open',
       'duty-unknown': 'On duty',
       closed: 'Closed',
       until: 'until {when}',
@@ -160,8 +157,7 @@ export const appEn: Dictionary['app'] = {
     kinds: { ...DUTY_KIND_LABELS.en },
     legend: {
       duty: 'On duty',
-      regular: 'Open, usual hours',
-      extended: 'Open, longer hours than most',
+      open: 'Open',
       dutyUnknown: 'On duty, call for the hours',
       closed: 'Closed',
       approximate: 'Dashed line: approximate location',

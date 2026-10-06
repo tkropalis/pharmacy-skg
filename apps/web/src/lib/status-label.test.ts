@@ -83,8 +83,9 @@ describe('describeStatus', () => {
     });
     expect(extended.label).toBe('Open until 21:00');
     expect(extended.short.label).toBe('Open');
-    // The marker still tells them apart.
-    expect(extended.kind).toBe('extended');
+    // And the same marker (the owner, 6 Oct 2026).
+    expect(extended.kind).toBe('open');
+    expect(regular.kind).toBe('open');
   });
 
   it('says all night, with the day, for an all-night duty', () => {

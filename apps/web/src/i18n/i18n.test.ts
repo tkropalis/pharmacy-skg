@@ -86,13 +86,11 @@ describe('status labels', () => {
       expect(app.status.dutyUnknown).toBe(status.dutyUnknown);
       // The list's short words match the labels.
       expect(app.status.short.duty).toBe(status.onDuty);
-      expect(app.status.short.regular).toBe(status.openRegular);
-      expect(app.status.short.extended).toBe(status.openExtended);
-      // The legend starts from the same words; it adds plain words where shapes differ.
+      expect(app.status.short.open).toBe(status.openRegular);
+      expect(app.status.short.open).toBe(status.openExtended);
+      // The legend uses the same words: one marker for each.
       expect(app.status.legend.duty).toBe(status.onDuty);
-      expect(app.status.legend.regular.startsWith(status.openRegular)).toBe(true);
-      expect(app.status.legend.extended.startsWith(status.openExtended)).toBe(true);
-      expect(app.status.legend.regular).not.toBe(app.status.legend.extended);
+      expect(app.status.legend.open).toBe(status.openRegular);
       expect(app.status.legend.dutyUnknown).toBe(status.dutyUnknown);
     }
   });

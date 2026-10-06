@@ -25,19 +25,15 @@ function collection(kinds: readonly PinKind[]): PinCollection {
 describe('splitPins', () => {
   it('keeps every duty pin out of the clustered group', () => {
     const split = splitPins(
-      collection(['regular', 'duty', 'extended', 'duty-unknown', 'closed', 'duty', 'regular']),
+      collection(['open', 'duty', 'open', 'duty-unknown', 'closed', 'duty', 'open']),
     );
     expect(split.duty.map((f) => f.properties.kind)).toEqual(['duty', 'duty-unknown', 'duty']);
-    expect(split.clustered.map((f) => f.properties.kind)).toEqual([
-      'regular',
-      'extended',
-      'regular',
-    ]);
+    expect(split.clustered.map((f) => f.properties.kind)).toEqual(['open', 'open', 'open']);
     expect(split.closed.map((f) => f.properties.kind)).toEqual(['closed']);
   });
 
   it('loses nothing', () => {
-    const all = collection(['duty', 'regular', 'closed', 'extended']);
+    const all = collection(['duty', 'open', 'closed', 'open']);
     const { duty, clustered, closed } = splitPins(all);
     expect(duty.length + clustered.length + closed.length).toBe(all.features.length);
   });

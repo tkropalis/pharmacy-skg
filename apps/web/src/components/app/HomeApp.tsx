@@ -88,6 +88,13 @@ interface HomeAppProps {
   readonly title: string;
 }
 
+/** How many are open, or on duty: "1032 ανοιχτά", "14 εφημερεύουν". */
+function countText(text: Dictionary['app'], n: number, duty: boolean): string {
+  const words = text.summary;
+  if (duty) return n === 0 ? words.dutyNone : n === 1 ? words.dutyOne : fill(words.dutyMany, { n });
+  return n === 0 ? words.none : n === 1 ? words.one : fill(words.many, { n });
+}
+
 function clock(parts: { minutes: number }): string {
   const h = String(Math.floor(parts.minutes / 60)).padStart(2, '0');
   const m = String(parts.minutes % 60).padStart(2, '0');
@@ -276,18 +283,7 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
   // header chip shows on screen.
   const [summary, announcement] = useMemo(() => {
     const n = result.openCount;
-    const duty = result.active === 'duty';
-    const count = duty
-      ? n === 0
-        ? text.summary.dutyNone
-        : n === 1
-          ? text.summary.dutyOne
-          : fill(text.summary.dutyMany, { n })
-      : n === 0
-        ? text.summary.none
-        : n === 1
-          ? text.summary.one
-          : fill(text.summary.many, { n });
+    const count = countText(text, n, result.active === 'duty');
     const closed = result.rows.length - n;
     const withClosed =
       closed === 0
@@ -623,8 +619,9 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
     return () => document.removeEventListener('keydown', onKeyDown);
   }, [chosen, clearSelection]);
 
-  const showOriginChip = origin !== null || geo === 'locating';
-  const showChips = !dutyLoading && result.chips;
+  const showOriginChip =
+    ready !== null && tab === 'open' && (origin !== null || geo === 'locating');
+  const showChips = ready !== null && tab === 'open' && !dutyLoading && result.chips;
   const header = (
     <>
       <Segmented
@@ -652,10 +649,46 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
           },
         ]}
       />
+      {/* By day the filter is the count: "1032 ανοιχτά | 14 εφημερεύουν", full width. At night,
+          when every open pharmacy is on duty, the count is plain text. */}
+      {showChips ? (
+        <div className="sheet-filter">
+          <ListFilterChips
+            text={text}
+            active={result.active}
+            allCount={built.openCount}
+            dutyCount={result.dutyCount}
+            allLabel={countText(text, built.openCount, false)}
+            dutyLabel={countText(text, result.dutyCount, true)}
+            onChange={changeFilter}
+          />
+        </div>
+      ) : (
+        tab === 'open' && (
+          <p className="summary" key={summary}>
+            {ready ? (dutyLoading ? text.time.loadingDuties : summary) : ' '}
+          </p>
+        )
+      )}
       <div className="status-line">
-        <p className="summary" key={tab === 'open' ? summary : tab}>
-          {ready && tab === 'open' ? (dutyLoading ? text.time.loadingDuties : summary) : ' '}
-        </p>
+        {showOriginChip && (
+          <OriginChip
+            text={text}
+            label={
+              origin === null
+                ? text.origin.locating
+                : origin.kind === 'geo'
+                  ? text.origin.myLocation
+                  : origin.kind === 'last'
+                    ? text.origin.lastLocation
+                    : fill(text.origin.areaName, { name: origin.label })
+            }
+            when={showWhen}
+            locating={origin === null}
+            open={controlsOpen}
+            onToggle={toggleControls}
+          />
+        )}
         <p className="fresh">
           {meta && (
             <a href={`${localizedPath(locale, 'about')}#credits`}>
@@ -673,37 +706,6 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
           )}
         </p>
       </div>
-      {ready && tab === 'open' && (showOriginChip || showChips) && (
-        <div className="sheet-toolbar">
-          {showOriginChip && (
-            <OriginChip
-              text={text}
-              label={
-                origin === null
-                  ? text.origin.locating
-                  : origin.kind === 'geo'
-                    ? text.origin.myLocation
-                    : origin.kind === 'last'
-                      ? text.origin.lastLocation
-                      : fill(text.origin.areaName, { name: origin.label })
-              }
-              when={showWhen}
-              locating={origin === null}
-              open={controlsOpen}
-              onToggle={toggleControls}
-            />
-          )}
-          {showChips && (
-            <ListFilterChips
-              text={text}
-              active={result.active}
-              allCount={built.openCount}
-              dutyCount={result.dutyCount}
-              onChange={changeFilter}
-            />
-          )}
-        </div>
-      )}
     </>
   );
 

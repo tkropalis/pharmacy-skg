@@ -124,9 +124,10 @@ export function pinLayers(options: { readonly dark: boolean }): readonly LayerSp
       filter: ['!', ['has', 'point_count']],
       layout: {
         'icon-image': ['get', 'image'],
-        // Smaller than the duty pins, which are what people look for; both grow with the zoom
-        // so that the pins of a dense centre do not pile up when the whole city is in view.
-        'icon-size': ['interpolate', ['linear'], ['zoom'], 11, 0.55, 15, 0.8, 17, 0.95],
+        // Smaller than the duty pins, which are what people look for (their square is smaller
+        // in the image too); both grow with the zoom so that the pins of a dense centre do not
+        // pile up when the whole city is in view, and the cross can be read at street level.
+        'icon-size': ['interpolate', ['linear'], ['zoom'], 11, 0.6, 15, 0.9, 17, 1],
         'icon-allow-overlap': true,
         'icon-ignore-placement': true,
         'symbol-sort-key': ['get', 'sort'],

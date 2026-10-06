@@ -7,7 +7,7 @@ const DAY = '2026-10-05T08:01:00+03:00';
 test.describe('by day, when more than the duty pharmacies are open', () => {
   test.use({ now: DAY, autoLocate: false });
 
-  test('"All" and "On duty" chips: duty only on request, and remembered', async ({ page }) => {
+  test('the counts are the filter: duty only on request, and remembered', async ({ page }) => {
     await page.goto('/');
     await waitForRows(page);
     const chips = page.getByRole('group', { name: text.list.filterLabel });
@@ -22,11 +22,13 @@ test.describe('by day, when more than the duty pharmacies are open', () => {
     expect(allCount).toBeGreaterThan(1000);
     expect(dutyCount).toBeGreaterThan(0);
     expect(dutyCount).toBeLessThan(allCount);
-    await expect(page.locator('.summary')).toContainText(`${allCount}`);
+    // Each option is its count in words, and the count replaces the summary line.
+    await expect(all).toHaveText(text.summary.many.replace('{n}', String(allCount)));
+    await expect(duty).toHaveText(text.summary.dutyMany.replace('{n}', String(dutyCount)));
+    await expect(page.locator('.summary')).toHaveCount(0);
 
     await duty.click();
     await expect(duty).toHaveAttribute('aria-pressed', 'true');
-    await expect(page.locator('.summary')).toContainText(`${dutyCount}`);
     const rows = page.locator('ol.rows > li.row');
     expect(await rows.count()).toBeGreaterThan(0);
     for (const row of await rows.all()) {
@@ -47,7 +49,7 @@ test.describe('by day, when more than the duty pharmacies are open', () => {
       .getByRole('button')
       .nth(0)
       .click();
-    await expect(page.locator('.summary')).toContainText(`${allCount}`);
+    await expect(all).toHaveAttribute('aria-pressed', 'true');
   });
 
   test('the duty filter also thins the map: duty pins only, nothing to cluster', async ({
@@ -63,12 +65,31 @@ test.describe('by day, when more than the duty pharmacies are open', () => {
   });
 });
 
+test.describe('by day, with a position, on the smallest phone', () => {
+  test.use({ now: DAY, viewport: { width: 375, height: 667 } });
+
+  test('both options are whole on screen, under the tabs', async ({ page }) => {
+    await page.goto('/');
+    await waitForRows(page);
+    const chips = page.getByRole('group', { name: text.list.filterLabel });
+    for (const button of await chips.getByRole('button').all()) {
+      await expect(button).toBeInViewport({ ratio: 1 });
+    }
+    await expect(page.locator('.origin-chip')).toBeInViewport({ ratio: 1 });
+    await expect(page.locator('.fresh')).toBeInViewport();
+  });
+});
+
 test.describe('at night, when only duty pharmacies are open', () => {
   test('the chips are hidden, even if the duty filter was chosen', async ({ page }) => {
     await page.addInitScript(() => localStorage.setItem('pharmacy-skg:filter', 'duty'));
     await page.goto('/');
     await waitForRows(page);
     await expect(page.getByRole('group', { name: text.list.filterLabel })).toHaveCount(0);
+    // The count is plain text then.
+    await expect(page.locator('.summary')).toHaveText(
+      new RegExp(`^${text.summary.many.replace('{n}', '\\d+')}$`),
+    );
     expect(await page.locator('ol.rows > li.row').count()).toBeGreaterThan(3);
   });
 });

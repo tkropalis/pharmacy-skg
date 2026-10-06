@@ -117,7 +117,7 @@ describe('buildRows with closed pharmacies', () => {
   it('shows regular-hours pharmacies during the day', () => {
     const noon = new Date('2026-10-05T09:00:00Z'); // Monday 12:00
     const { rows } = buildRows(data, noon, null, false);
-    expect(rows.some((r) => r.kind === 'regular')).toBe(true);
+    expect(rows.some((r) => r.kind === 'open')).toBe(true);
   });
 });
 
@@ -130,10 +130,10 @@ describe('rowFor', () => {
 });
 
 describe('pinKindOf', () => {
-  it('lets duty win over extended and regular', () => {
+  it('lets duty win over extended and regular, which share one look', () => {
     const base = { state: 'open', until: new Date(), closingSoon: false, runReasons: [] } as const;
-    expect(pinKindOf({ ...base, reasons: [{ kind: 'regular' }] })).toBe('regular');
-    expect(pinKindOf({ ...base, reasons: [{ kind: 'extended' }] })).toBe('extended');
+    expect(pinKindOf({ ...base, reasons: [{ kind: 'regular' }] })).toBe('open');
+    expect(pinKindOf({ ...base, reasons: [{ kind: 'extended' }] })).toBe('open');
     expect(
       pinKindOf({
         ...base,

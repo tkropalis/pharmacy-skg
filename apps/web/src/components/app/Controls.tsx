@@ -229,18 +229,25 @@ interface ListFilterChipsProps {
   readonly active: 'all' | 'duty';
   readonly allCount: number;
   readonly dutyCount: number;
+  /** The counts in words: "1032 ανοιχτά", "14 εφημερεύουν". */
+  readonly allLabel: string;
+  readonly dutyLabel: string;
   readonly onChange: (filter: 'all' | 'duty') => void;
 }
 
 /**
- * "All" and "On duty": by day, so people can see only the duty pharmacies. The count is in the
- * summary line, for the chosen one; each option carries its own in data-count (tests).
+ * All open or only those on duty: by day, so people can see only the duty pharmacies. Each
+ * option is its own count ("1032 ανοιχτά", "14 εφημερεύουν"), so the filter takes the summary's
+ * place under the tabs, full width (the owner, 6 Oct 2026: in a row with the origin chip it was
+ * pushed off the screen). Each option also carries its count in data-count (tests).
  */
 export function ListFilterChips({
   text,
   active,
   allCount,
   dutyCount,
+  allLabel,
+  dutyLabel,
   onChange,
 }: ListFilterChipsProps) {
   return (
@@ -251,8 +258,8 @@ export function ListFilterChips({
       label={text.list.filterLabel}
       value={active}
       options={[
-        { id: 'all', label: text.list.filterAll, count: allCount },
-        { id: 'duty', label: text.list.filterDuty, count: dutyCount },
+        { id: 'all', label: allLabel, count: allCount },
+        { id: 'duty', label: dutyLabel, count: dutyCount },
       ]}
       onChange={onChange}
     />
@@ -362,8 +369,7 @@ export function Filters({ text, showClosed, onShowClosed }: FiltersProps) {
   const id = useId();
   const legendLabels: Record<(typeof PIN_KINDS)[number], string> = {
     duty: text.status.legend.duty,
-    regular: text.status.legend.regular,
-    extended: text.status.legend.extended,
+    open: text.status.legend.open,
     'duty-unknown': text.status.legend.dutyUnknown,
     closed: text.status.legend.closed,
   };
@@ -399,7 +405,7 @@ export function Filters({ text, showClosed, onShowClosed }: FiltersProps) {
             <span
               aria-hidden="true"
               dangerouslySetInnerHTML={{
-                __html: pinSvg('regular', { approximate: true, size: 24 }),
+                __html: pinSvg('open', { approximate: true, size: 24 }),
               }}
             />
             <span>{text.status.legend.approximate}</span>

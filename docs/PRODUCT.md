@@ -37,7 +37,7 @@ Calm, plain, trustworthy. A public service, not a product that wants attention: 
 
 1. **The answer first.** The nearest open pharmacy, with Call and Directions, is the first thing on the screen. Everything else is one tap away or on another page.
 2. **As few words as possible.** One sentence per warning. No explanations of sources, privacy or how the app works outside the about and privacy pages.
-3. **Never colour alone, never certainty it does not have.** Every status has words and its own marker shape; freshness is always visible; missing duty lists are said plainly.
+3. **Never colour alone, never certainty it does not have.** Every status has words and its own marker; freshness is always visible; missing duty lists are said plainly.
 4. **Built for a phone in one hand, at night.** Large targets, the list first, a calm dark look on request, text that grows with the system setting.
 5. **Neutral.** No ads, rankings, promotions or medical claims; every source credited on the about page.
 
