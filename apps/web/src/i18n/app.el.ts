@@ -41,6 +41,7 @@ export const appEl = {
     sortedByDistance: 'πρώτα τα πιο κοντινά, αποστάσεις από: {origin}',
     sortedByName: 'αλφαβητικά',
     withClosed: '{n} κλειστά',
+    withClosedOne: '1 κλειστό',
   },
 
   nearby: {
@@ -72,6 +73,7 @@ export const appEl = {
     areaCount: '{n} περιοχές',
     areaOne: '1 περιοχή',
     areaPharmacies: '{n} φαρμακεία',
+    areaPharmacy: '1 φαρμακείο',
     clear: 'Αφαίρεση',
     current: 'Αποστάσεις από: {origin}',
     cleared: 'Η τοποθεσία αφαιρέθηκε',

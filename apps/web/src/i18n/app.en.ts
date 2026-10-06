@@ -35,6 +35,7 @@ export const appEn: Dictionary['app'] = {
     sortedByDistance: 'nearest first, distances from: {origin}',
     sortedByName: 'in alphabetical order',
     withClosed: '{n} closed',
+    withClosedOne: '1 closed',
   },
 
   nearby: {
@@ -64,6 +65,7 @@ export const appEn: Dictionary['app'] = {
     areaCount: '{n} areas',
     areaOne: '1 area',
     areaPharmacies: '{n} pharmacies',
+    areaPharmacy: '1 pharmacy',
     clear: 'Remove',
     current: 'Distances from: {origin}',
     cleared: 'Location removed',

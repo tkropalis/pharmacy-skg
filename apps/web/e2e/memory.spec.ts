@@ -36,6 +36,12 @@ test.describe('kept on the device for the person', () => {
     // Typing searches every area as before.
     await page.getByLabel(text.origin.areaSearch).fill('kal');
     await expect(recent).toHaveCount(0);
+    // An area with one pharmacy says so in the singular.
+    await page.getByLabel(text.origin.areaSearch).fill('drymos');
+    await expect(dialog.locator('.picker-item', { hasText: 'Δρυμός' })).toContainText(
+      text.origin.areaPharmacy,
+    );
+    await expect(dialog).not.toContainText('1 φαρμακεία');
   });
 
   test('the pharmacies opened on two visits or more show under the favourites', async ({

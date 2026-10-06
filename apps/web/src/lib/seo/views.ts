@@ -480,7 +480,9 @@ export function areaPageProps(model: SeoModel, locale: Locale, slug: string): Ar
     meta: meta(
       locale,
       fill(seoArea.pageTitle, { area: label }),
-      fill(seoArea.pageDescription, { area: label, count: area.pharmacies.length }),
+      area.pharmacies.length === 1
+        ? fill(seoArea.pageDescriptionOne, { area: label })
+        : fill(seoArea.pageDescription, { area: label, count: area.pharmacies.length }),
       (l) => areaPath(l, slug),
     ),
     slug,

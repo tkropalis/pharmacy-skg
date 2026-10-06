@@ -80,7 +80,11 @@ export function AreaPicker({ text, localities, onPick, onClose }: AreaPickerProp
         }}
       >
         <span>{locality.name}</span>
-        <span className="muted">{fill(text.origin.areaPharmacies, { n: locality.count })}</span>
+        <span className="muted">
+          {locality.count === 1
+            ? text.origin.areaPharmacy
+            : fill(text.origin.areaPharmacies, { n: locality.count })}
+        </span>
       </button>
     </li>
   );

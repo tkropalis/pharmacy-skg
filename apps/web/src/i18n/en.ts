@@ -243,6 +243,8 @@ export const en: Dictionary = {
       pageTitle: 'Pharmacies in {area}, hours and duty days',
       pageDescription:
         'The {count} pharmacies in {area}: address, phone, which ones are open today and the official duty days.',
+      pageDescriptionOne:
+        'The pharmacy in {area}: address, phone, whether it is open today and the official duty days.',
       h1: 'Pharmacies in {area}',
       openNowHeading: 'Open now',
       openNowSummary: '{open} of {total}.',

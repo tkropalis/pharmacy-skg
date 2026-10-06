@@ -288,7 +288,12 @@ export default function HomeApp({ locale, text, title }: HomeAppProps) {
           ? text.summary.one
           : fill(text.summary.many, { n });
     const closed = result.rows.length - n;
-    const withClosed = closed > 0 ? fill(text.summary.withClosed, { n: closed }) : null;
+    const withClosed =
+      closed === 0
+        ? null
+        : closed === 1
+          ? text.summary.withClosedOne
+          : fill(text.summary.withClosed, { n: closed });
     const join = (parts: (string | null)[]) =>
       parts.filter((part): part is string => part !== null).join(' · ');
     // On screen only the count: the origin chip already says where the distances are from.
