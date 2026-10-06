@@ -228,6 +228,13 @@ test('a pharmacy page seen before opens offline; one never seen opens the home s
   await controlled(page); // this load went through the worker, which kept the page
   const title = await page.locator('h1').textContent();
   expect(title?.trim()).toBeTruthy();
+  // The status needs the data on the device: wait until the worker has stored what this load
+  // fetched (a large file can still be on its way into the cache).
+  for (const file of ['meta.json', 'pharmacies.json', 'duties/2026-10-05.json']) {
+    await expect
+      .poll(() => cached(page, `/data/thessaloniki/${file}`), { timeout: 20_000 })
+      .toBe(true);
+  }
 
   await setOffline(context, true, baseURL);
   await page.reload();

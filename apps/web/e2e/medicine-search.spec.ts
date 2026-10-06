@@ -6,7 +6,7 @@ import type { Page } from '@playwright/test';
 import { searchEl } from '../src/i18n/search.el.ts';
 import { searchEn } from '../src/i18n/search.en.ts';
 import { localizedPath } from '../src/i18n/routes.ts';
-import { expect, test, waitForRows } from './support.ts';
+import { expect, settleAnimations, test, waitForRows } from './support.ts';
 
 const WCAG_AA = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 
@@ -32,6 +32,7 @@ async function openSearch(page: Page, label: RegExp = /^Φάρμακα/) {
 }
 
 async function axeViolations(page: Page) {
+  await settleAnimations(page);
   const results = await new AxeBuilder({ page }).withTags(WCAG_AA).analyze();
   return results.violations.map((v) => [v.id, v.nodes.map((n) => n.html.slice(0, 160))]);
 }
