@@ -43,6 +43,36 @@ onConnectionChange((online) => {
   if (online) void refreshFreshness();
 });
 
+/**
+ * The footer's light / dark / auto buttons (SiteFooter.astro): public/theme.js keeps the
+ * choice and applies it; the buttons show <html data-theme-choice>.
+ */
+function setupThemeChoice(): void {
+  const control = document.querySelector<HTMLElement>('[data-theme-control]');
+  const theme = window.pharmacyTheme;
+  if (!control || theme === undefined) return;
+  const buttons = [...control.querySelectorAll<HTMLButtonElement>('button[data-choice]')];
+  const show = () => {
+    const chosen = document.documentElement.dataset['themeChoice'] ?? 'light';
+    for (const button of buttons) {
+      button.setAttribute('aria-pressed', String(button.dataset['choice'] === chosen));
+    }
+  };
+  for (const button of buttons) {
+    button.addEventListener('click', () => {
+      const choice = button.dataset['choice'];
+      if (choice === 'light' || choice === 'dark' || choice === 'auto') theme.set(choice);
+    });
+  }
+  new MutationObserver(show).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['data-theme-choice'],
+  });
+  show();
+  control.hidden = false;
+}
+
+setupThemeChoice();
 setupMedicineSearch();
 registerServiceWorker();
 keepOfflineDataWarm();

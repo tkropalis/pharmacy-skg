@@ -1,11 +1,15 @@
 /*
- * The night look. Runs synchronously in <head> (layouts/Base.astro), like stale-check.js, so
- * the first paint already has the right colours (the CSP allows no inline script): <html data-theme="dark"> after sunset in Thessaloniki or when the device asks
- * for dark, "light" otherwise. It checks again every minute and when the page comes back, so a
- * screen left open turns dark at sunset. The sun's height is lib/sun.ts (sun.test.ts keeps the
- * two in step); the place is the city centre.
+ * Light or dark. Runs synchronously in <head> (layouts/Base.astro), like stale-check.js, so the
+ * first paint already has the right colours (the CSP allows no inline script). Light unless the
+ * person chose otherwise in the footer: "dark", or "auto" (dark after sunset in Thessaloniki or
+ * when the device asks for dark). The choice is remembered on the device. It sets
+ * <html data-theme> ("light" or "dark") and data-theme-choice ("light", "dark" or "auto"),
+ * checks again every minute and when the page comes back, and offers
+ * window.pharmacyTheme.set(choice) to the footer's buttons. The sun's height is lib/sun.ts
+ * (sun.test.ts keeps the two in step); the place is the city centre.
  */
 (function () {
+  var KEY = 'pharmacy-skg:theme';
   var RAD = Math.PI / 180;
   var root = document.documentElement;
   var media = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
@@ -29,19 +33,56 @@
     );
   }
 
+  /** Where the choice is kept when the browser keeps nothing (private window, blocked data). */
+  var unsaved = 'light';
+
+  /** The person's choice: "light" (the default), "dark" or "auto". */
+  function choice() {
+    var value;
+    try {
+      value = localStorage.getItem(KEY);
+    } catch {
+      value = unsaved;
+    }
+    return value === 'dark' || value === 'auto' ? value : 'light';
+  }
+
   function apply() {
+    var chosen = choice();
     var dark =
-      Boolean(media && media.matches) || sunElevation(Date.now(), 40.6401, 22.9444) < -0.833;
+      chosen === 'dark' ||
+      (chosen === 'auto' &&
+        (Boolean(media && media.matches) || sunElevation(Date.now(), 40.6401, 22.9444) < -0.833));
     var theme = dark ? 'dark' : 'light';
     if (root.getAttribute('data-theme') !== theme) root.setAttribute('data-theme', theme);
+    if (root.getAttribute('data-theme-choice') !== chosen) {
+      root.setAttribute('data-theme-choice', chosen);
+    }
     var meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.setAttribute('content', dark ? '#151d19' : '#ffffff');
   }
+
+  window.pharmacyTheme = {
+    set: function (next) {
+      unsaved = next;
+      try {
+        if (next === 'dark' || next === 'auto') localStorage.setItem(KEY, next);
+        else localStorage.removeItem(KEY);
+      } catch {
+        // Not remembered: kept for this page only.
+      }
+      apply();
+    },
+  };
 
   apply();
   setInterval(apply, 60000);
   document.addEventListener('visibilitychange', function () {
     if (document.visibilityState === 'visible') apply();
+  });
+  // Another tab changed the choice.
+  window.addEventListener('storage', function (event) {
+    if (event.key === KEY) apply();
   });
   if (media && media.addEventListener) media.addEventListener('change', apply);
 })();

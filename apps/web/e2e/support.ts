@@ -108,3 +108,23 @@ export async function openControls(page: Page): Promise<void> {
     await page.locator('button.controls-toggle:visible').first().click();
   await expect(panel).toBeVisible();
 }
+
+/**
+ * Waits for the running (finite) animations to end, so an accessibility scan never measures
+ * something half-faded in, such as the chosen pharmacy's flag on the map (it fades in from
+ * transparent and reads as low contrast until it has).
+ */
+export async function settleAnimations(page: Page): Promise<void> {
+  await page.evaluate(() =>
+    Promise.all(
+      document
+        .getAnimations()
+        .filter(
+          (animation) =>
+            animation.playState === 'running' &&
+            animation.effect?.getTiming().iterations !== Infinity,
+        )
+        .map((animation) => animation.finished.catch(() => undefined)),
+    ),
+  );
+}
