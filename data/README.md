@@ -21,7 +21,7 @@ data/
 
 - **Pharmacy ids** are the 10-digit phone number. A pharmacy without a valid phone gets `x-` plus a hash of its name and locality.
 - **Hours** in duty sections are exactly what the section heading states, in local time (Europe/Athens). `hours` is `null` when the heading states none. `toNextDay` marks a shift that ends after midnight (decision D21).
-- **Locations** carry their `source` (`override`, `overture` or `nominatim`) and `precision` (`exact`, `street` or `locality`). Every pharmacy in a duty list must have one.
+- **Locations** carry their `source` (`override`, `list` for the coordinates a duty list gives, `overture` or `nominatim`) and `precision` (`exact`, `street` or `locality`). Every pharmacy in a duty list must have one.
 - **Only official dates** are published (decision D11). The reconstructed rotation is never written here.
 - **Medicines** (`pnpm --filter @pharmacy-skg/ingest run medicines`, decision D24): the yearly revision of the Ministry of Health's price bulletin, with every later bulletin applied in publication order by barcode, plus the non-prescription (ΜΗΣΥΦΑ) catalogue and its bulletins. `price` is the retail price with VAT: a maximum for prescription medicines, only indicative when `otc` is true. `shortage` comes from ΕΟΦ's latest limited-availability list. The app reads a compact index built from this file (`encodeMedicineIndex` in `@pharmacy-skg/core`).
 
@@ -44,6 +44,7 @@ data/
 | --- | --- | --- |
 | Φαρμακευτικός Σύλλογος Θεσσαλονίκης (ΦΣΘ), via the copies re-hosted by thess.guide | duty lists | public lists, attributed (decisions D2, D20) |
 | Περιφέρεια Κεντρικής Μακεδονίας (ΠΚΜ) | extended hours | public announcements |
+| Φαρμακευτικός Σύλλογος Λάρισας, via its duty site larisa.efhmeries.gr (ITeQ) | duty lists and locations for `larisa/` | public lists, attributed; read a page a second (decision D26) |
 | Overture Maps Foundation (`inputs/overture-pharmacies.json`) | locations | CDLA-Permissive-2.0 |
 | OpenStreetMap contributors, via Nominatim (`inputs/geocode-cache.json`) | locations | ODbL; individual geocoding results, stored once per address |
 | Υπουργείο Υγείας (moh.gov.gr), price bulletins | medicine prices | public ministerial decisions |

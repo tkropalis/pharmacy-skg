@@ -81,6 +81,8 @@ export const thessaloniki: CityPipeline = {
     },
   ],
 
+  sourceIds: { duty: 'fsth', extended: 'pkm' },
+
   async fetchDutyLists({ since, knownSources, log }) {
     const links = await listDutyPdfs(since);
     log(`thess.guide: ${links.length} duty PDFs uploaded since ${since}`);

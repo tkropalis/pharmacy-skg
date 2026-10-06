@@ -13,7 +13,7 @@ import { parseArgs } from 'node:util';
 import { join } from 'node:path';
 import { z } from 'zod';
 import { PIPELINES, type CityPipeline } from '../cities/index.ts';
-import type { FetchContext } from '../cities/pipeline.ts';
+import type { FetchContext, ListedLocation } from '../cities/pipeline.ts';
 import {
   buildRegistry,
   dutyEntryId,
@@ -45,6 +45,11 @@ import {
 } from '../store.ts';
 import { addDays, cityToday } from '../time.ts';
 import { validate } from '../validate.ts';
+
+const ListedLocationsSchema = z.record(
+  z.string(),
+  z.object({ lat: z.number(), lon: z.number(), ref: z.string() }),
+);
 
 const { values: args } = parseArgs({
   options: {
@@ -95,6 +100,9 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
     const list = await readJson(join(paths.extendedHours, file), ExtendedHoursSchema);
     if (list) extendedFiles.set(file, list);
   }
+  const listed = new Map<string, ListedLocation>(
+    Object.entries((await readJson(paths.listedLocations, ListedLocationsSchema)) ?? {}),
+  );
 
   const context: FetchContext = {
     today,
@@ -105,6 +113,7 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
       ),
     ),
     extendedFiles,
+    listedLocations: listed,
     log,
   };
 
@@ -129,10 +138,12 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
         hours: section.hours,
         extraHours: [...section.extraHours],
         notes: [...section.notes],
-        entries: section.entries.map((entry) => ({
-          pharmacyId: dutyEntryId(entry, known),
-          ...entry,
-        })),
+        entries: section.entries.map((entry) => {
+          const pharmacyId = dutyEntryId(entry, known);
+          const location = duties.locations?.get(entry.phone);
+          if (location) listed.set(pharmacyId, location);
+          return { pharmacyId, ...entry };
+        }),
       })),
     });
     const day = days.get(list.date) ?? {
@@ -142,6 +153,17 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
     };
     const existing = day.groups.find((g) => g.id === group.id);
     if (existing && existing.source.uploadedAt > group.source.uploadedAt) continue;
+    // A page read afresh on every run (ITeQ) gives the same list most times: keep the stored
+    // one, and its time, so nothing is written. (A re-uploaded PDF has its own URL and still
+    // replaces the old one.)
+    if (
+      existing &&
+      existing.source.url === group.source.url &&
+      existing.name === group.name &&
+      JSON.stringify(existing.sections) === JSON.stringify(group.sections)
+    ) {
+      continue;
+    }
     const groups = [...day.groups.filter((g) => g.id !== group.id), group];
     groups.sort((a, b) => a.id.localeCompare(b.id));
     days.set(list.date, { ...day, groups });
@@ -206,14 +228,20 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
       days: sortedDays,
       extended: extendedLists.map((list) => ({ from: list.period.from, entries: list.entries })),
       overrides,
+      listed,
       overture,
       geocoder,
+      sourceIds: pipeline.sourceIds,
     });
   } finally {
     // Keep geocoding results even if a later step fails, to spare Nominatim.
     // After a complete run, drop entries no longer used (e.g. old query forms).
     const cache = registry === undefined ? geocoder.cache : geocoder.usedEntries();
     await writeIfChanged(paths.geocodeCache, toJson(sortKeys(cache)));
+    // Coordinates read from the lists are kept the same way (each details page is read once).
+    if (listed.size > 0) {
+      await writeIfChanged(paths.listedLocations, toJson(sortKeys(Object.fromEntries(listed))));
+    }
   }
   log(
     `registry: ${registry.pharmacies.length} pharmacies (${geocoder.requests} Nominatim requests)`,

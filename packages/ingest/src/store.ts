@@ -17,6 +17,8 @@ export function cityPaths(city: string) {
     overrides: join(root, 'overrides.json'),
     overture: join(root, 'inputs', 'overture-pharmacies.json'),
     geocodeCache: join(root, 'inputs', 'geocode-cache.json'),
+    /** Coordinates read from the duty lists (ITeQ), by pharmacy id. */
+    listedLocations: join(root, 'inputs', 'listed-locations.json'),
   };
 }
 

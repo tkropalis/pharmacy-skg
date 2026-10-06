@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#x39B;&#x3B5;&#x3C0;&#x3C4;&#x3BF;&#x3BC;&#x3AD;&#x3C1;&#x3B5;&#x3B9;&#x3B5;&#x3C2; - &#x395;&#x3C6;&#x3B7;&#x3BC;&#x3B5;&#x3C1;&#x3AF;&#x3B5;&#x3C2; &#x3C6;&#x3B1;&#x3C1;&#x3BC;&#x3B1;&#x3BA;&#x3B5;&#x3AF;&#x3C9;&#x3BD; &#x39B;&#x3AC;&#x3C1;&#x3B9;&#x3C3;&#x3B1;&#x3C2;</title>
+    <script type="application/ld+json">
+        {
+          "@context" : "https://schema.org",
+          "@type" : "WebSite",
+          "name" : "&#x395;&#x3C6;&#x3B7;&#x3BC;&#x3B5;&#x3C1;&#x3AF;&#x3B5;&#x3C2; &#x3C6;&#x3B1;&#x3C1;&#x3BC;&#x3B1;&#x3BA;&#x3B5;&#x3AF;&#x3C9;&#x3BD; &#x39B;&#x3AC;&#x3C1;&#x3B9;&#x3C3;&#x3B1;&#x3C2;",
+          "alternateName": ["Πύλη Εφημεριών Φαρμακείων", "pharmacy duties - larisa"],
+          "url" : "https://larisa.efhmeries.gr/"
+        }
+    </script>
+
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css?v=hb5hDTJPRYwiB3DipR5EEZFIHRrd2pfMDOKTnP8kEik" type="text/css" />
+    <link rel="stylesheet" href="/css/larisa/site.css?v=cTFkOgABrLsDAGUa7tc9Uf5DatANtEDIriRhEr41z3k" type="text/css" />
+    <link href="/lib/icons-1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/lib/fontawesome-free-5.15.3-web/css/all.min.css" rel="stylesheet" />
+
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.maptiler.com/mapbox-gl-js/v1.5.1/mapbox-gl.css" />
+
+    <style type="text/css">
+        .map-container {
+            margin-bottom: 3px;
+        }
+        #map {
+            height: 600px;
+            width: 100%;
+            
+        }
+        .responsive {
+            width: 100%;
+            max-height: 600px;
+            height: auto;
+        }
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            #map{
+                height:300px;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            /* For mobile phones: */
+            #map{
+                height:200px;
+            }
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #28a745;
+            border-color: #43c1a2;
+            font-size: large;
+        }
+
+            .btn-primary:hover {
+                color: #fff;
+                background-color: #26542f;
+                border-color: #26542f;
+            }
+
+        .btn-map {
+            color: #fff;
+            background-color: #0096a3;
+            border-color: #004B52;
+            font-size: large;
+            justify-self:end;
+        }
+
+            .btn-map:hover {
+                color: #fff;
+                background-color: #005e66;
+                border-color: #005e66;
+            }
+
+      
+    </style>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197601444-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-197601444-1');
+    </script>
+
+</head>
+
+<body>
+    <header>
+        
+
+
+<div class="container">
+    <div class="d-flex flex-row justify-content-between">
+        <ul class="navbar-nav flex-row">
+    <li class="nav-item align-self-center d-none d-sm-block pr-3">
+        <span class="nav-link">Κατεβάστε το App!</span>
+    </li>
+    <li class="nav-item align-self-center pr-3">
+        <a class="nav-link text-dark"
+           href="https://apps.apple.com/gr/app/ifarmakeia/id1642895766"
+           target="_blank"
+           rel="noopener noreferrer">
+            <i class="fab fa-apple" style="font-size:2rem;"></i>
+        </a>
+    </li>
+    <li class="nav-item align-self-center align-self-sm-end pr-3">
+        <a class="nav-link text-dark"
+           href="https://play.google.com/store/apps/details?id=com.iteq.ifarmakeia_duties"
+           target="_blank"
+           rel="noopener noreferrer">
+            <i class="fab fa-google-play" style="font-size:1.6rem;"></i>
+        </a>
+    </li>
+</ul>
+
+
+
+        <ul class="navbar-nav flex-row justify-content-end">
+
+            
+    <ul class="navbar-nav flex-row justify-content-end">
+        <li class="nav-item pr-3">
+            <a class="nav-link btn btn-link text-dark" href="/Home/Prints">
+                <i class="bi bi-printer-fill"></i>
+                Εκτυπώσεις εφημεριών
+            </a>
+        </li>
+    </ul>
+
+
+                <li class="nav-item">
+                    <a class="nav-link btn btn-link text-dark" href="/Identity/Account/Login">
+                        <i class="fa fa-sign-in-alt" aria-hidden="false"></i>
+                        Είσοδος
+                    </a>
+                </li>
+        </ul>
+    </div>
+</div>
+        
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex" href="/tomeas">
+                <img src="/images/larisa-logo.jpg" width="90" alt="ΦΑΡΜΑΚΕΥΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΛΑΡΙΣΑΣ">
+            <div class="my-auto mx-5 h4 text-left text-break"> Εφημερεύοντα Φαρμακεία Λάρισας</div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3 pt-1">
+            
+
+&nbsp;
+&nbsp;
+<div class="container" style="padding-top:1%">
+    <div class="col" style="padding-top:0%;">
+        <table style="width:100%">
+            <tr>
+                <td>
+                            <i class="bi bi-clock" style="font-size:3rem;"></i>
+                </td>
+                <td style="vertical-align:bottom">
+                    <h4 style="text-align:center">Εφημερεύον Φαρμακείο | &#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 6 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</h4>
+                </td>
+            </tr>
+        </table>
+
+        <hr />
+        <table style="width:100%">
+            <tr>
+                <td style="width:10%">
+                    <p style="color:darkslategrey;">Ωράριο:</p>
+                </td>
+                <td>
+                    <h5>ΑΠΟ 08:00 ΕΩΣ 23:00</h5>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="color:darkslategrey;">Φαρμακείο:</p>
+                </td>
+                <td>
+                    <h5 style="float:left">&#x394;&#x391;&#x3A3;&#x3A4;&#x391;&#x39C;&#x391;&#x39D;&#x397;&#x3A3; &#x394;&#x397;&#x39C;.  &#x391;&#x398;&#x391;&#x39D;&#x391;&#x3A3;&#x399;&#x39F;&#x3A3;</h5>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="color:darkslategrey;">Διεύθυνση:</p>
+                </td>
+                <td>
+                    <h5 style="float:left">&#x391;&#x39D;&#x398;&#x399;&#x39C;&#x39F;&#x3A5; &#x393;&#x391;&#x396;&#x397; 41 &amp; &#x391;&#x393;. &#x39D;&#x399;&#x39A;&#x39F;&#x39B;&#x391;&#x39F;&#x3A5;</h5>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="color:darkslategrey;">Περιοχή:</p>
+                </td>
+                <td>
+                    <h5 style="float:left">&#x39B;&#x391;&#x3A1;&#x399;&#x3A3;&#x391;</h5>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="color:darkslategrey;">Τηλέφωνο:</p>
+                </td>
+                <td>
+                    <h5 style="float:left">2410672566</h5>
+                </td>
+            </tr>
+        </table>
+
+        &nbsp;
+        &nbsp;
+        &nbsp;
+    </div>
+    <div class="row justify-content-md-start">
+        <div class="col-sm-auto">
+            <a class="btn btn-primary my-2" href="/tomeas?date=2026-10-06"><span>< Όλα τα Εφημερεύοντα Φαρμακεία </span></a>
+        </div>
+
+        <div class="col-sm-auto d-flex justify-content-lg-end justify-content-center">
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=39.6335000%2C22.4133000"
+               class="btn btn-map my-2"
+               target="_blank"
+               rel="noreferrer"><i class="fa fa-map-marker-alt"></i> Πλοήγηση στους Χάρτες</a>
+        </div>
+    </div>
+
+    <div class="col" style="padding-top:4%;padding-bottom:8%">
+        <div class="map-container">
+            <div id="map" style="border: 2px solid #9CD699; border-radius: 5px;" class="responsive "></div>
+        </div>
+    </div>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+
+
+</div>
+
+
+        </main>
+    </div>
+      
+    <footer class="footer bg-dark text-light mt-5 py-2 text-break">
+    <div class="container d-flex justify-content-between">
+        <div>
+            &copy; 2026 - Εφημερίες φαρμακείων Λάρισας - <a class="text-light" href="/Home/Privacy">Πολιτική απορρήτου</a>
+            - <a class="text-light" href="/Identity/Account/Login">Διαχείριση Φαρμακείου</a>
+            - <a href="https://superadmin.efhmeries.gr/ApiUsers" target="_blank" class="text-light">API εφημεριών</a>
+        </div>
+        <div>
+            <a href="https://iteq.gr/" target="_blank" class="card-link"><span class="text-secondary">Powered by <span class="font-weight-bold " style="color:mediumpurple;font-size:18px;">IT<span style="color:forestgreen">e</span>Q</span></span></a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js"></script>
+    <script src="https://cdn.maptiler.com/mapbox-gl-js/v1.5.1/mapbox-gl.js"></script>
+    <script src="https://cdn.maptiler.com/mapbox-gl-leaflet/latest/leaflet-mapbox-gl.js"></script>
+
+    <script>
+        var _lat = 39.6335000 ;
+        var _lng = 22.4133000 ;
+        var _mapId;
+        var _content = "<p>&#x394;&#x391;&#x3A3;&#x3A4;&#x391;&#x39C;&#x391;&#x39D;&#x397;&#x3A3; &#x394;&#x397;&#x39C;.  &#x391;&#x398;&#x391;&#x39D;&#x391;&#x3A3;&#x399;&#x39F;&#x3A3;<br>&#x391;&#x39D;&#x398;&#x399;&#x39C;&#x39F;&#x3A5; &#x393;&#x391;&#x396;&#x397; 41 &amp; &#x391;&#x393;. &#x39D;&#x399;&#x39A;&#x39F;&#x39B;&#x391;&#x39F;&#x3A5;<br>&#x39B;&#x391;&#x3A1;&#x399;&#x3A3;&#x391;<br>Τηλ: 2410672566 </p>";
+    </script>
+    <script src="/js/map.js"></script>
+
+
+</body>
+</html>
