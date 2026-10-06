@@ -7,7 +7,7 @@
  *
  * The bulletins and the list are downloaded only when the set of them changed since the last
  * run (or with --force). Each article's attachments are cached in data/medicines/inputs/, as
- * published articles do not change.
+ * published articles rarely change; one whose cached table is gone is read again.
  */
 import { readFile } from 'node:fs/promises';
 import { parseArgs } from 'node:util';
@@ -52,6 +52,8 @@ const FileCacheSchema = z.record(
 );
 const fileCache = (await readJson(paths.articleFiles, FileCacheSchema)) ?? {};
 const previous = await readJson(paths.medicines, MedicinesSchema);
+/** Articles whose attachments are read again even though they are cached. */
+const reread = new Set<number>();
 
 async function plan(kind: PriceBulletin['kind'], listing: string, title: RegExp): Promise<Plan> {
   const articles = await listArticles(listing, (found) => findBase(found, title) !== null);
@@ -62,7 +64,8 @@ async function plan(kind: PriceBulletin['kind'], listing: string, title: RegExp)
     if (article.id < base.id) continue;
     const cached = fileCache[article.id];
     // An article listed without tables may get them later; ask again for those.
-    const known = cached?.some(isTable) ? cached : await articleFiles(article);
+    const known =
+      cached?.some(isTable) && !reread.has(article.id) ? cached : await articleFiles(article);
     fileCache[article.id] = [...known];
     files.set(article.id, known);
   }
@@ -90,17 +93,30 @@ function bulletinOf(
   };
 }
 
-const plans = {
-  prescription: await plan('prescription', PRESCRIPTION_LISTING, PRESCRIPTION_BASE),
-  otc: await plan('otc', OTC_LISTING, OTC_BASE),
-};
-await writeIfChanged(
-  paths.articleFiles,
-  toJson(Object.fromEntries(Object.entries(fileCache).sort(([a], [b]) => Number(a) - Number(b)))),
-);
-const bulletins = (['prescription', 'otc'] as const).flatMap((kind) =>
-  plans[kind].tables.map(({ article, file }) => bulletinOf(kind, article, file)),
-);
+/** Every table to apply, in order, with the article it is attached to. */
+async function planBulletins(): Promise<{ articleId: number; bulletin: PriceBulletin }[]> {
+  const plans = {
+    prescription: await plan('prescription', PRESCRIPTION_LISTING, PRESCRIPTION_BASE),
+    otc: await plan('otc', OTC_LISTING, OTC_BASE),
+  };
+  await writeIfChanged(
+    paths.articleFiles,
+    toJson(Object.fromEntries(Object.entries(fileCache).sort(([a], [b]) => Number(a) - Number(b)))),
+  );
+  return (['prescription', 'otc'] as const).flatMap((kind) =>
+    plans[kind].tables.map(({ article, file }) => ({
+      articleId: article.id,
+      bulletin: bulletinOf(kind, article, file),
+    })),
+  );
+}
+
+/** An .xlsx file is a zip archive; a removed attachment comes back as an HTML page instead. */
+const isZip = (bytes: Uint8Array) =>
+  bytes[0] === 0x50 && bytes[1] === 0x4b && bytes[2] === 0x03 && bytes[3] === 0x04;
+
+let planned = await planBulletins();
+let bulletins = planned.map(({ bulletin }) => bulletin);
 const shortageLink = await findShortageList();
 log(shortageLink ? `ΕΟΦ: ${shortageLink.title}` : 'ΕΟΦ: no limited-availability list found');
 
@@ -113,10 +129,32 @@ if (unchanged && !args.force) {
   process.exit(0);
 }
 
+// The ministry sometimes re-issues an article with new attachments ("Ο.Ε.", a corrected
+// version), and the cached file no longer exists. Read such an article's attachments again, once.
+const downloads = new Map<string, Uint8Array>();
+for (let attempt = 0; ; attempt++) {
+  const stale = new Set<number>();
+  for (const { articleId, bulletin } of planned) {
+    const bytes = downloads.get(bulletin.fileUrl) ?? (await getBytes(bulletin.fileUrl));
+    if (isZip(bytes)) downloads.set(bulletin.fileUrl, bytes);
+    else stale.add(articleId);
+  }
+  if (stale.size === 0) break;
+  if (attempt > 0) throw new Error(`No .xlsx table could be read from articles ${[...stale]}`);
+  for (const id of stale) {
+    log(`  note: ${id} no longer has its cached table; reading its attachments again`);
+    reread.add(id);
+  }
+  planned = await planBulletins();
+  bulletins = planned.map(({ bulletin }) => bulletin);
+}
+
 const tables: PriceTable[] = [];
 const rowWarnings: string[] = [];
 for (const bulletin of bulletins) {
-  const { rows, warnings } = parsePriceTable(readFirstSheet(await getBytes(bulletin.fileUrl)));
+  const bytes = downloads.get(bulletin.fileUrl);
+  if (!bytes) throw new Error(`${bulletin.fileUrl} was not downloaded`);
+  const { rows, warnings } = parsePriceTable(readFirstSheet(bytes));
   rowWarnings.push(...warnings.map((w) => `${bulletin.id}: ${w.message}`));
   tables.push({ bulletin, rows });
 }
