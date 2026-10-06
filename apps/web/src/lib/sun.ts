@@ -1,7 +1,7 @@
 /**
- * Where the sun is, for the night look (docs/decisions.md, Look): the app turns dark after
- * sunset in Thessaloniki, for people looking for a pharmacy in a dark room. The same few lines
- * run before the first paint in public/theme.js; sun.test.ts keeps the two in step.
+ * Where the sun is, for the "auto" appearance (docs/decisions.md, Look): chosen in the footer,
+ * it turns the app dark after sunset in Thessaloniki. The same few lines run before the first
+ * paint in public/theme.js; sun.test.ts keeps the two in step.
  *
  * The low-precision formulas of the Astronomical Almanac: good to about a minute in sunset
  * time, which is plenty for a colour scheme.

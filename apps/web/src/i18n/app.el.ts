@@ -225,6 +225,8 @@ export const appEl = {
     report: 'Αναφορά λάθους',
     install: 'Εγκατάσταση',
     disclaimer: 'Καλέστε πριν πάτε.',
+    /** Light or dark (public/theme.js); light unless chosen. */
+    theme: { label: 'Εμφάνιση', light: 'Φωτεινή', dark: 'Σκοτεινή', auto: 'Αυτόματη' },
   },
 
   map: {

@@ -59,7 +59,11 @@ test.describe('the home screen is an app viewport', () => {
     await page.goto('/');
     await waitForRows(page);
     const footer = page.locator('.sheet-footer');
-    await footer.scrollIntoViewIfNeeded();
+    // To the end of the list, as a person scrolls (the footer, with the theme choice, is taller
+    // than the list's visible part, so scrolling it "into view" would centre it).
+    await page.locator('.sheet-body').evaluate((list) => {
+      list.scrollTop = list.scrollHeight;
+    });
     await expect(footer).toBeInViewport();
     const text = t('el').app.footer;
     const links = footer.locator('.footer-links a');

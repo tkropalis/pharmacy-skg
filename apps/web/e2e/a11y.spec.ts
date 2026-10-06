@@ -3,7 +3,14 @@ import { LOCALES } from '@pharmacy-skg/core';
 import type { Locale } from '@pharmacy-skg/core';
 import { areaPath, dutyPath, localizedPath, pharmacyPath } from '../src/i18n/routes.ts';
 import { AREA_SLUG, DUTY_DATE, PHARMACY_ID } from './constants.ts';
-import { expect, openControls, test, waitForMap, waitForRows } from './support.ts';
+import {
+  expect,
+  openControls,
+  settleAnimations,
+  test,
+  waitForMap,
+  waitForRows,
+} from './support.ts';
 
 /** Every WCAG 2.0, 2.1 and 2.2 level A and AA rule axe knows. */
 const WCAG_AA = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
@@ -30,6 +37,7 @@ for (const scheme of ['light', 'dark'] as const) {
         } else {
           await page.waitForLoadState('networkidle');
         }
+        await settleAnimations(page);
         const results = await new AxeBuilder({ page }).withTags(WCAG_AA).analyze();
         const summary = results.violations.map((violation) => ({
           rule: violation.id,
@@ -54,6 +62,7 @@ test("the home list with the filters open and a row's details open has no violat
   // A row's details: favourite, share, the pharmacy's page and the other maps apps.
   await rows.first().locator('.row-toggle').click();
   await expect(rows.first().locator('.row-details')).toBeVisible();
+  await settleAnimations(page);
   const results = await new AxeBuilder({ page }).withTags(WCAG_AA).analyze();
   expect(results.violations.map((v) => [v.id, v.nodes.map((n) => n.html.slice(0, 160))])).toEqual(
     [],
@@ -65,6 +74,7 @@ test("the home list with the filters open and a row's details open has no violat
     .getByRole('button', { name: /^Περιοχή/ })
     .click();
   await expect(page.locator('dialog.ap')).toBeVisible();
+  await settleAnimations(page);
   const dialog = await new AxeBuilder({ page }).include('dialog.ap').withTags(WCAG_AA).analyze();
   expect(dialog.violations.map((v) => [v.id, v.nodes.map((n) => n.html.slice(0, 160))])).toEqual(
     [],

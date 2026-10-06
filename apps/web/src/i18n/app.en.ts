@@ -208,6 +208,8 @@ export const appEn: Dictionary['app'] = {
     report: 'Report a mistake',
     install: 'Install',
     disclaimer: 'Call before you go.',
+    /** Light or dark (public/theme.js); light unless chosen. */
+    theme: { label: 'Appearance', light: 'Light', dark: 'Dark', auto: 'Auto' },
   },
 
   map: {

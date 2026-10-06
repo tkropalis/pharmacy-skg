@@ -1,7 +1,8 @@
 :root {
   /*
-   * Light by day; the night look after sunset in Thessaloniki or when the device asks for dark
-   * (public/theme.js sets data-theme before the first paint; docs/decisions.md, Look).
+   * Light unless the person chose otherwise in the footer: dark, or auto (dark after sunset in
+   * Thessaloniki or when the device asks). public/theme.js sets data-theme before the first
+   * paint (docs/decisions.md, Look).
    */
   color-scheme: light;
 
@@ -46,7 +47,7 @@
   --safe-l: env(safe-area-inset-left, 0px);
 }
 
-/* The night look: the same roles on a deep green-black, with lighter ink. */
+/* The dark look: the same roles on a deep green-black, with lighter ink. */
 :root[data-theme='dark'] {
   color-scheme: dark;
 
@@ -70,32 +71,6 @@
   --danger-border: #e0605a;
   --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 4px 14px rgb(0 0 0 / 0.35);
   --shadow-lg: 0 2px 6px rgb(0 0 0 / 0.4), 0 12px 32px rgb(0 0 0 / 0.45);
-}
-
-/* Without JavaScript (theme.js never ran): the device's own preference. */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
-    color-scheme: dark;
-
-    --bg: #0e1512;
-    --surface: #151d19;
-    --soft: #1f2a25;
-    --fg: #e4ece7;
-    --muted: #a0b2a9;
-    --accent: #43c584;
-    --accent-ink: #8ddfb3;
-    --accent-soft: #183628;
-    --on-accent: #04140c;
-    --border: #26322c;
-    --border-strong: #64786e;
-    --focus: #86adff;
-    --warn-bg: #33270f;
-    --warn-fg: #f4d79c;
-    --warn-border: #a97f2c;
-    --danger-bg: #3a1714;
-    --danger-fg: #ffbab2;
-    --danger-border: #e0605a;
-  }
 }
 
 *,

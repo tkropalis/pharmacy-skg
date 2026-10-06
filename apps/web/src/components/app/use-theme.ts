@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 
 /**
- * True while the night look is on: public/theme.js sets <html data-theme="dark"> before the
- * first paint, after sunset in Thessaloniki or when the device asks for dark, and keeps it up
- * to date. The map follows it (its base map and markers are drawn, not styled by CSS).
+ * True while the dark look is on: public/theme.js sets <html data-theme="dark"> before the first
+ * paint when the person chose dark in the footer, or auto after sunset or with a dark device,
+ * and keeps it up to date. The map follows it (its base map and markers are drawn, not styled
+ * by CSS).
  */
 export function useNightLook(): boolean {
   const [dark, setDark] = useState(() => document.documentElement.dataset['theme'] === 'dark');
