@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { cleanAddress, inLocality } from './geocode.ts';
+import { cleanAddress } from './geocode.ts';
 
 describe('cleanAddress', () => {
   it.each([
@@ -11,19 +11,5 @@ describe('cleanAddress', () => {
     ['ΛΕΩΦ. ΠΑΠΑΝΙΚΟΛΑΟΥ 114', 'ΛΕΩΦΟΡΟΣ ΠΑΠΑΝΙΚΟΛΑΟΥ 114'],
   ])('%s → %s', (address, expected) => {
     expect(cleanAddress(address)).toBe(expected);
-  });
-});
-
-describe('inLocality', () => {
-  it('rejects a street of the same name in another municipality', () => {
-    const kalamaria = '17, Κομνηνών, Κέντρο, Δήμος Καλαμαριάς, Θεσσαλονίκη, Θέρμη';
-    expect(inLocality({ displayName: kalamaria }, 'Θεσσαλονίκη')).toBe(false);
-    expect(inLocality({ displayName: kalamaria }, 'Καλαμαριά')).toBe(true);
-    expect(
-      inLocality(
-        { displayName: 'Κομνηνών, Λουλουδάδικα, 1η Κοινότητα Θεσσαλονίκης, Δήμος Θεσσαλονίκης' },
-        'Θεσσαλονίκη',
-      ),
-    ).toBe(true);
   });
 });

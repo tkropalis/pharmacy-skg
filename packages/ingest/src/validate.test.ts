@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { thessaloniki } from './cities/thessaloniki.ts';
 import { AREA_GROUPS } from './fsth/groups.ts';
 import type { DutyDay, DutyGroup, Pharmacy } from './schema.ts';
 import { validate } from './validate.ts';
@@ -82,53 +83,68 @@ describe('validate', () => {
   const pharmacies = ids.map((id) => pharmacy(id));
 
   it('accepts a complete, plausible data set', () => {
-    const report = validate({
-      today: '2026-10-05',
-      days: [day('2026-10-05'), day('2026-10-06')],
-      pharmacies,
-      extended: [],
-    });
+    const report = validate(
+      {
+        today: '2026-10-05',
+        days: [day('2026-10-05'), day('2026-10-06')],
+        pharmacies,
+        extended: [],
+      },
+      thessaloniki.rules,
+    );
     expect(report.errors).toEqual([]);
   });
 
   it('rejects counts outside the expected ranges', () => {
-    const report = validate({
-      today: '2026-10-05',
-      days: [day('2026-10-05', { overnight: 2, afterMidnight: 6 }), day('2026-10-06')],
-      pharmacies,
-      extended: [],
-    });
+    const report = validate(
+      {
+        today: '2026-10-05',
+        days: [day('2026-10-05', { overnight: 2, afterMidnight: 6 }), day('2026-10-06')],
+        pharmacies,
+        extended: [],
+      },
+      thessaloniki.rules,
+    );
     expect(report.errors.map((e) => e.code)).toContain('count');
   });
 
   it('rejects a missing area group for today, but only warns for later days', () => {
-    const report = validate({
-      today: '2026-10-05',
-      days: [day('2026-10-05', undefined, ['metro']), day('2026-10-09', undefined, ['metro'])],
-      pharmacies,
-      extended: [],
-    });
+    const report = validate(
+      {
+        today: '2026-10-05',
+        days: [day('2026-10-05', undefined, ['metro']), day('2026-10-09', undefined, ['metro'])],
+        pharmacies,
+        extended: [],
+      },
+      thessaloniki.rules,
+    );
     expect(report.errors.filter((e) => e.code === 'missing-group')).toHaveLength(1);
     expect(report.warnings.filter((e) => e.code === 'missing-group')).toHaveLength(1);
   });
 
   it('rejects an on-duty pharmacy without a location', () => {
-    const report = validate({
-      today: '2026-10-05',
-      days: [day('2026-10-05'), day('2026-10-06')],
-      pharmacies: pharmacies.map((p, i) => (i === 0 ? pharmacy(p.id, false) : p)),
-      extended: [],
-    });
+    const report = validate(
+      {
+        today: '2026-10-05',
+        days: [day('2026-10-05'), day('2026-10-06')],
+        pharmacies: pharmacies.map((p, i) => (i === 0 ? pharmacy(p.id, false) : p)),
+        extended: [],
+      },
+      thessaloniki.rules,
+    );
     expect(report.errors.map((e) => e.code)).toContain('no-location');
   });
 
   it('only warns about a missing location on a past day', () => {
-    const report = validate({
-      today: '2026-10-05',
-      days: [day('2026-10-01'), day('2026-10-05'), day('2026-10-06')],
-      pharmacies: pharmacies.map((p) => (p.id === ids[299] ? pharmacy(p.id, false) : p)),
-      extended: [],
-    });
+    const report = validate(
+      {
+        today: '2026-10-05',
+        days: [day('2026-10-01'), day('2026-10-05'), day('2026-10-06')],
+        pharmacies: pharmacies.map((p) => (p.id === ids[299] ? pharmacy(p.id, false) : p)),
+        extended: [],
+      },
+      thessaloniki.rules,
+    );
     // The outlying groups list ids[299] on every day: errors for today and tomorrow only.
     const codes = (list: { code: string; message: string }[]) =>
       list.filter((e) => e.code === 'no-location').map((e) => e.message.slice(0, 10));
@@ -137,12 +153,15 @@ describe('validate', () => {
   });
 
   it('warns when tomorrow has no list yet', () => {
-    const report = validate({
-      today: '2026-10-05',
-      days: [day('2026-10-05')],
-      pharmacies,
-      extended: [],
-    });
+    const report = validate(
+      {
+        today: '2026-10-05',
+        days: [day('2026-10-05')],
+        pharmacies,
+        extended: [],
+      },
+      thessaloniki.rules,
+    );
     expect(report.warnings.map((e) => e.code)).toContain('coverage');
   });
   it('warns when one pharmacy has several rows in an extended-hours list', () => {
@@ -163,12 +182,15 @@ describe('validate', () => {
       source: { url: 'https://example.org/x.xlsx', uploadedAt: '2026-09-01T00:00:00Z' },
       entries: [...entries, { ...entries[0], name: 'again' }],
     };
-    const report = validate({
-      today: '2026-10-05',
-      days: [day('2026-10-05'), day('2026-10-06')],
-      pharmacies,
-      extended: [list as never],
-    });
+    const report = validate(
+      {
+        today: '2026-10-05',
+        days: [day('2026-10-05'), day('2026-10-06')],
+        pharmacies,
+        extended: [list as never],
+      },
+      thessaloniki.rules,
+    );
     const warning = report.warnings.find((w) => w.code === 'duplicate-extended');
     expect(warning?.message).toContain(ids[0]);
   });

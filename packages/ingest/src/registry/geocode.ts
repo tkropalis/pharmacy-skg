@@ -4,12 +4,12 @@
  * second and requires an identifying User-Agent.
  */
 import { z } from 'zod';
+import type { Bounds } from '@pharmacy-skg/core';
+import type { GeocodeArea } from '../cities/pipeline.ts';
 import { USER_AGENT } from '../sources/http.ts';
 import { squash } from '../text.ts';
 
 const ENDPOINT = 'https://nominatim.openstreetmap.org/search';
-// The Thessaloniki regional unit (Βόλβη reaches past 23.9°E), so that e.g. "Αμπελόκηποι" doesn't resolve to Athens.
-const VIEWBOX = '22.55,41.05,24.0,40.35';
 
 export const GeocodeHitSchema = z.object({
   lat: z.number(),
@@ -49,21 +49,9 @@ export function cleanAddress(address: string): string {
     .replace(/^ΛΕΩΦ\.?\s*/i, 'ΛΕΩΦΟΡΟΣ ');
 }
 
-// In ΦΣΘ lists "Θεσσαλονίκη" is the municipality; neighbouring municipalities
-// are listed by their own names. OpenStreetMap tags their addresses with the
-// city "Θεσσαλονίκη" too, so a plain query finds e.g. Κομνηνών 17 in Καλαμαριά.
-const THESSALONIKI = 'Θεσσαλονίκη';
-const THESSALONIKI_MUNICIPALITY = 'Δήμος Θεσσαλονίκης';
-
-function queryLocality(locality: string): string {
-  return locality === THESSALONIKI ? THESSALONIKI_MUNICIPALITY : locality;
-}
-
-/** Rejects a result for Θεσσαλονίκη that lies in another municipality. */
-export function inLocality(hit: Pick<GeocodeHit, 'displayName'>, locality: string): boolean {
-  if (locality !== THESSALONIKI) return true;
-  const municipality = /Δήμος [^,]+/.exec(hit.displayName)?.[0];
-  return municipality === undefined || municipality === THESSALONIKI_MUNICIPALITY;
+/** Nominatim's viewbox: left, top, right, bottom. */
+function viewbox([west, south, east, north]: Bounds): string {
+  return `${west},${north},${east},${south}`;
 }
 
 const EXACT_TYPES = new Set(['building', 'house', 'place', 'amenity', 'shop', 'healthcare']);
@@ -79,14 +67,26 @@ export class Geocoder {
   private online: boolean;
 
   private readonly budget: number;
+  private readonly bounds: Bounds;
+  private readonly area: GeocodeArea;
 
   /**
-   * With `online` false, only cached results are used. `budget` caps the
-   * requests per run; Nominatim's usage policy forbids bulk geocoding.
+   * Searches only inside `bounds` (the city's), so that e.g. "Αμπελόκηποι" in Thessaloniki does
+   * not resolve to Athens, with the city's locality rules (`area`). With `online` false, only
+   * cached results are used. `budget` caps the requests per run; Nominatim's usage policy
+   * forbids bulk geocoding.
    */
-  constructor(cache: GeocodeCache, online: boolean, budget = 150) {
+  constructor(
+    cache: GeocodeCache,
+    online: boolean,
+    bounds: Bounds,
+    area: GeocodeArea = {},
+    budget = 150,
+  ) {
     this.cache = cache;
     this.online = online;
+    this.bounds = bounds;
+    this.area = area;
     this.budget = budget;
   }
 
@@ -137,7 +137,7 @@ export class Geocoder {
     const params = new URLSearchParams({
       q: query,
       countrycodes: 'gr',
-      viewbox: VIEWBOX,
+      viewbox: viewbox(this.bounds),
       bounded: '1',
       format: 'jsonv2',
       limit: '1',
@@ -174,12 +174,12 @@ export class Geocoder {
     { cachedOnly = false } = {},
   ): Promise<(GeocodeHit & { query: string }) | null> {
     const street = cleanAddress(address);
-    const place = queryLocality(locality);
+    const place = this.area.queryLocality?.(locality) ?? locality;
     const queries = [street && /\d/.test(street) ? `${street}, ${place}` : null, place];
     for (const query of queries) {
       if (!query) continue;
       const hit = await this.search(query, cachedOnly);
-      if (hit && inLocality(hit, locality)) {
+      if (hit && (this.area.accepts?.(hit, locality) ?? true)) {
         const precision = query === place ? 'locality' : hit.precision;
         return { ...hit, precision, query };
       }
