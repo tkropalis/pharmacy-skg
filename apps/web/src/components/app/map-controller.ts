@@ -15,12 +15,17 @@ import type { AddLayerObject, GeoJSONSource } from 'maplibre-gl';
 // The stylesheet is added when the map starts. A plain CSS import here would make the build
 // link it into the page head, where it would block the first paint of the list.
 import maplibreCss from 'maplibre-gl/dist/maplibre-gl.css?url';
-import { faCircleInfo, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCircleInfo,
+  faLocationCrosshairs,
+  faMinus,
+  faPlus,
+} from '@fortawesome/free-solid-svg-icons';
 import type { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import type { Locale } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
 import { distanceMetres } from '../../lib/engine.ts';
-import { faDataUrl } from '../../lib/fa.ts';
+import { faDataUrl, faSvg } from '../../lib/fa.ts';
 import { yieldToMain } from '../../lib/idle.ts';
 import { PIN_KINDS } from '../../lib/list.ts';
 import type { Origin, Row } from '../../lib/list.ts';
@@ -53,6 +58,8 @@ export interface MapControllerOptions {
   readonly onSelect: (id: string | null) => void;
   /** The person moved the map themselves (a drag or a pinch): they are looking at it. */
   readonly onReach: () => void;
+  /** The locate button: the person's position and the nearest open pharmacy. */
+  readonly onLocate: () => void;
 }
 
 /**
@@ -81,10 +88,18 @@ export interface MapController {
   /**
    * Brings the pharmacy into the part of the map the sheet leaves free, with the origin too
    * when it is close, and does not move at all when the pharmacy is already in view.
+   * `withOrigin` always shows the origin with it, however far (the locate button).
    */
-  focusPharmacy(id: string, occludedBottom: number, origin: Origin | null): void;
+  focusPharmacy(
+    id: string,
+    occludedBottom: number,
+    origin: Origin | null,
+    withOrigin?: boolean,
+  ): void;
   /** Shows a city: its centre, above the sheet, at the zoom the map starts with. */
   showCity(center: readonly [number, number], occludedBottom: number): void;
+  /** The locate button waits for the position. */
+  setLocating(locating: boolean): void;
   resize(): void;
   destroy(): void;
 }
@@ -199,6 +214,29 @@ export async function createMapController(
   // Controls: zoom buttons, and the attribution OpenFreeMap's licence asks for. On a phone
   // the bottom edge is under the sheet, so the (collapsed) credit sits at the top.
   map.addControl(new NavigationControl({ showCompass: false }), 'top-right');
+  // Under the zoom buttons, an icon only, like every maps app: the person's position and the
+  // nearest open pharmacy. Its icon is inline, so it takes the text colour in both looks.
+  const locate = document.createElement('button');
+  locate.type = 'button';
+  locate.className = 'maplibregl-ctrl-locate';
+  locate.setAttribute('aria-label', text.locate);
+  locate.title = text.locate;
+  locate.innerHTML = faSvg(faLocationCrosshairs, { size: 16 });
+  locate.addEventListener('click', () => options.onLocate());
+  map.addControl(
+    {
+      onAdd() {
+        const group = document.createElement('div');
+        group.className = 'maplibregl-ctrl maplibregl-ctrl-group';
+        group.append(locate);
+        return group;
+      },
+      onRemove() {
+        locate.parentElement?.remove();
+      },
+    },
+    'top-right',
+  );
   map.addControl(
     new AttributionControl({ compact: !options.sideBySide }),
     options.sideBySide ? 'bottom-right' : 'top-left',
@@ -447,6 +485,10 @@ export async function createMapController(
       });
     },
 
+    setLocating(locating) {
+      locate.setAttribute('aria-busy', String(locating));
+    },
+
     setOrigin(origin, fly, occludedBottom) {
       source(SOURCES.origin)?.setData(
         origin === null
@@ -520,7 +562,7 @@ export async function createMapController(
       }
       placeMarker(ripple);
     },
-    focusPharmacy(id, occludedBottom, origin) {
+    focusPharmacy(id, occludedBottom, origin, withOrigin = false) {
       const feature = collection.features.find((f) => f.properties.id === id);
       if (!feature) return;
       const [lon, lat] = feature.geometry.coordinates;
@@ -532,9 +574,11 @@ export async function createMapController(
         point.x <= width - MARKER_ROOM.side &&
         point.y >= MARKER_ROOM.top &&
         point.y <= height - occludedBottom - MARKER_ROOM.bottom;
-      if (inView) return;
+      if (inView && !withOrigin) return;
       const padding = { top: 0, left: 0, right: 0, bottom: occludedBottom };
-      const near = origin !== null && distanceMetres(origin, { lat, lon }) <= WITH_ORIGIN_METRES;
+      const near =
+        origin !== null &&
+        (withOrigin || distanceMetres(origin, { lat, lon }) <= WITH_ORIGIN_METRES);
       if (near) {
         // The map's own padding is what the sheet covers; it is added to the fit's padding.
         if (Math.abs((map.getPadding().bottom ?? 0) - occludedBottom) > 2) map.setPadding(padding);

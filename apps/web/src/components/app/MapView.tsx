@@ -31,6 +31,8 @@ export interface MapFocus {
    * (the sheet reports its height only as it goes).
    */
   readonly occluded?: number;
+  /** Show the origin with it, however far (the locate button). */
+  readonly withOrigin?: boolean;
 }
 
 /** The chosen pharmacy; `ripple` when it was chosen on the map itself. */
@@ -64,6 +66,10 @@ interface MapViewProps {
   readonly onSelect: (id: string | null) => void;
   /** The person moved the map themselves. */
   readonly onReach: () => void;
+  /** The locate button on the map. */
+  readonly onLocate: () => void;
+  /** The position is being asked for: the locate button turns. */
+  readonly locating: boolean;
   readonly onStatus: (status: MapStatus) => void;
 }
 
@@ -125,6 +131,7 @@ export function MapView(props: MapViewProps) {
           dark,
           onSelect: (id) => latest.current.onSelect(id),
           onReach: () => latest.current.onReach(),
+          onLocate: () => latest.current.onLocate(),
         });
         if (cancelled) {
           created.destroy();
@@ -135,6 +142,7 @@ export function MapView(props: MapViewProps) {
         created.setRows(now.rows);
         created.setOrigin(now.origin, false, now.occludedBottom);
         created.setSelected(now.selection);
+        created.setLocating(now.locating);
         setStatus('ready');
       } catch {
         if (!cancelled) setStatus('failed');
@@ -178,11 +186,21 @@ export function MapView(props: MapViewProps) {
     }
   }, [status, center]);
 
+  const { locating } = props;
+  useEffect(() => {
+    if (status === 'ready') controller.current?.setLocating(locating);
+  }, [status, locating]);
+
   const { focus } = props;
   useEffect(() => {
     if (status === 'ready' && focus !== null) {
       const now = latest.current;
-      controller.current?.focusPharmacy(focus.id, focus.occluded ?? now.occludedBottom, now.origin);
+      controller.current?.focusPharmacy(
+        focus.id,
+        focus.occluded ?? now.occludedBottom,
+        now.origin,
+        focus.withOrigin,
+      );
     }
   }, [status, focus]);
 

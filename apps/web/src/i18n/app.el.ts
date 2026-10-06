@@ -238,5 +238,7 @@ export const appEl = {
     cluster: '{n} φαρμακεία: πατήστε για να τα δείτε',
     zoomIn: 'Μεγέθυνση',
     zoomOut: 'Σμίκρυνση',
+    /** The map's locate button: the person's position and the nearest open pharmacy. */
+    locate: 'Η τοποθεσία μου',
   },
 };

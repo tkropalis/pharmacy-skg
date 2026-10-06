@@ -219,5 +219,6 @@ export const appEn: Dictionary['app'] = {
     cluster: '{n} pharmacies: press to see them',
     zoomIn: 'Zoom in',
     zoomOut: 'Zoom out',
+    locate: 'My location',
   },
 };

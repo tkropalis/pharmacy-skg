@@ -55,7 +55,10 @@ for (const locale of LOCALES) {
       await waitForRows(page);
       await openControls(page);
 
-      await page.getByRole('button', { name: text.app.origin.useLocation }).click();
+      await page
+        .locator('#controls')
+        .getByRole('button', { name: text.app.origin.useLocation })
+        .click();
       await expect(page.locator('ol.rows > li.row .row-distance').first()).toBeVisible();
       await expect(page.locator('.origin-chip')).toContainText(text.app.origin.myLocation);
     });
@@ -129,9 +132,9 @@ test.describe('touch targets and focus', () => {
     const toggle = page.locator('summary.maplibregl-ctrl-attrib-button');
     if (await toggle.isVisible()) await toggle.click();
     const targets = page.locator(
-      '.maplibregl-ctrl-zoom-in, .maplibregl-ctrl-zoom-out, .maplibregl-ctrl-attrib-button, .maplibregl-ctrl-attrib-inner a',
+      '.maplibregl-ctrl-zoom-in, .maplibregl-ctrl-zoom-out, .maplibregl-ctrl-locate, .maplibregl-ctrl-attrib-button, .maplibregl-ctrl-attrib-inner a',
     );
-    expect(await targets.count()).toBeGreaterThanOrEqual(6);
+    expect(await targets.count()).toBeGreaterThanOrEqual(7);
     for (const target of await targets.all()) {
       if (!(await target.isVisible())) continue;
       const box = await target.boundingBox();
