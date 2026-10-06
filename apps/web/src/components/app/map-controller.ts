@@ -55,9 +55,12 @@ export interface MapControllerOptions {
   readonly onReach: () => void;
 }
 
-/** Where distances are measured from: the device's position (a dot) or a chosen area (a ring). */
+/**
+ * Where distances are measured from: the device's position, now or remembered from an earlier
+ * visit (a dot), or a chosen area (a ring).
+ */
 export interface OriginMark extends Origin {
-  readonly kind: 'geo' | 'area';
+  readonly kind: 'geo' | 'last' | 'area';
   readonly label: string;
 }
 
@@ -441,8 +444,8 @@ export async function createMapController(
                 {
                   type: 'Feature',
                   properties: {
-                    kind: origin.kind,
-                    name: origin.kind === 'geo' ? text.you : origin.label,
+                    kind: origin.kind === 'area' ? 'area' : 'geo',
+                    name: origin.kind === 'area' ? origin.label : text.you,
                   },
                   geometry: { type: 'Point', coordinates: [origin.lon, origin.lat] },
                 },

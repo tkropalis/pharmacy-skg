@@ -54,9 +54,11 @@ test.describe('with the location allowed (a returning visitor)', () => {
     expect((await calls(page)).current).toBe(1);
     const distance = await page.locator('ol.rows > li.row .row-distance').first().innerText();
     expect(distance).toMatch(/\d/);
-    // Only flags are stored, never the position.
-    const stored = await page.evaluate(() => JSON.stringify({ ...localStorage }));
-    expect(stored).not.toMatch(/40\.6|22\.9/);
+    // The position is kept on the device for the next visit, rounded to about 100 m.
+    const stored = await page.evaluate(() => localStorage.getItem('pharmacy-skg:last-position'));
+    expect(JSON.parse(stored ?? '{}')).toMatchObject({ lat: 40.633, lon: 22.941 });
+    const everything = await page.evaluate(() => JSON.stringify({ ...localStorage }));
+    expect(everything).not.toMatch(/40\.632|22\.940/);
   });
 
   test('while locating, says so in the summary and keeps the list usable', async ({ page }) => {
@@ -195,5 +197,72 @@ test.describe('when the person turned the request off', () => {
     await page.locator('.nearby').getByRole('button', { name: text.origin.useLocation }).click();
     await expect(page.locator('.origin-chip')).toContainText(text.origin.myLocation);
     expect(await page.evaluate(() => localStorage.getItem('pharmacy-skg:location'))).toBeNull();
+  });
+});
+
+/** Stores a value before the first load only (init scripts run again on every reload). */
+async function seedOnce(page: import('@playwright/test').Page, key: string, value: string) {
+  await page.addInitScript(
+    ([k, v]) => {
+      if (sessionStorage.getItem(`seeded:${k}`) !== null) return;
+      sessionStorage.setItem(`seeded:${k}`, '1');
+      localStorage.setItem(k, v);
+    },
+    [key, value] as const,
+  );
+}
+
+const LAST = JSON.stringify({ lat: 40.6, lon: 22.95, at: Date.parse('2026-10-04T09:00:00Z') });
+
+test.describe('a returning visitor whose browser forgot the permission (Safari)', () => {
+  test('starts from the last location without asking; one tap asks for a new one', async ({
+    page,
+  }) => {
+    await spyOnGeolocation(page, { permission: 'prompt' });
+    await seedOnce(page, 'pharmacy-skg:last-position', LAST);
+    await page.goto('/');
+    await waitForRows(page);
+    await expect(page.locator('.origin-chip')).toContainText(text.origin.lastLocation);
+    await expect(page.locator('ol.rows > li.row .row-distance').first()).toBeVisible();
+    await expect(page.locator('.nearby')).toHaveCount(0);
+    await page.waitForTimeout(500);
+    expect(await calls(page)).toEqual({ current: 0, watch: 0 });
+
+    await openControls(page);
+    await page.getByRole('button', { name: text.origin.useLocation }).first().click();
+    await expect(page.locator('.origin-chip')).toContainText(text.origin.myLocation);
+    expect((await calls(page)).current).toBe(1);
+    const stored = await page.evaluate(() => localStorage.getItem('pharmacy-skg:last-position'));
+    expect(JSON.parse(stored ?? '{}')).toMatchObject({ lat: 40.633, lon: 22.941 });
+  });
+
+  test('removing the location forgets it, and the next visit does not use it', async ({ page }) => {
+    await spyOnGeolocation(page, { permission: 'prompt' });
+    await seedOnce(page, 'pharmacy-skg:last-position', LAST);
+    await page.goto('/');
+    await waitForRows(page);
+    await openControls(page);
+    await page.getByRole('button', { name: text.origin.clear }).click();
+    await expect(page.locator('.origin-chip')).toHaveCount(0);
+    expect(
+      await page.evaluate(() => localStorage.getItem('pharmacy-skg:last-position')),
+    ).toBeNull();
+    await page.reload();
+    await waitForRows(page);
+    await expect(page.locator('.nearby')).toBeVisible();
+    expect((await calls(page)).current).toBe(0);
+  });
+});
+
+test.describe('a returning visitor whose browser kept the permission', () => {
+  test('starts from the last location and refreshes it by itself', async ({ page }) => {
+    await spyOnGeolocation(page, { permission: 'granted', delayMs: 800 });
+    await seedOnce(page, 'pharmacy-skg:last-position', LAST);
+    await page.goto('/');
+    await waitForRows(page);
+    // No waiting on an empty list: the last location is used until the new one comes.
+    await expect(page.locator('ol.rows > li.row .row-distance').first()).toBeVisible();
+    await expect(page.locator('.origin-chip')).toContainText(text.origin.myLocation);
+    expect((await calls(page)).current).toBe(1);
   });
 });

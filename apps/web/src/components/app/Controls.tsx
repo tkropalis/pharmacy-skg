@@ -17,7 +17,7 @@ export type GeoState = 'idle' | 'locating' | 'denied' | 'unavailable' | 'unsuppo
 
 export interface OriginView {
   readonly label: string;
-  readonly kind: 'geo' | 'area';
+  readonly kind: 'geo' | 'last' | 'area';
 }
 
 interface OriginControlsProps {

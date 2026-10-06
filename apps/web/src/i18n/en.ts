@@ -95,13 +95,13 @@ export const en: Dictionary = {
       {
         heading: 'Location',
         paragraphs: [
-          'It is used only on your device, to work out distances. It is not sent anywhere and not stored.',
+          'It is used only on your device, to work out distances, and is not sent anywhere. The last one is kept on your device, approximately, so we do not ask every time. “Remove” deletes it.',
         ],
       },
       {
         heading: 'Favourites and settings',
         paragraphs: [
-          'They stay only in your browser and are deleted when you clear the site’s data.',
+          'Favourites, recent areas, the pharmacies you open often and your settings stay only in your browser and are deleted when you clear the site’s data.',
         ],
       },
       {

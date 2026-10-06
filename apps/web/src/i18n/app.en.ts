@@ -53,6 +53,9 @@ export const appEn: Dictionary['app'] = {
     far: 'You are far from Thessaloniki.',
     myLocation: 'Near me',
     here: 'Your location',
+    lastLocation: 'Last location',
+    lastHere: 'Your last location',
+    areaRecent: 'Recent',
     areaName: 'Near: {name}',
     areaLabel: 'Area',
     areaSearch: 'Type the area',
@@ -165,6 +168,7 @@ export const appEn: Dictionary['app'] = {
 
   favourites: {
     empty: 'No favourites yet.',
+    frequent: 'You open often',
     emptyHint: 'Open a pharmacy and press “Favourite”.',
     notStored: 'Favourites will not be saved.',
     gone: 'This pharmacy no longer exists.',

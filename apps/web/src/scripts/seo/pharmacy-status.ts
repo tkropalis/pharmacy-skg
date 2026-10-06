@@ -1,6 +1,7 @@
 import { pharmacyStatus } from '@pharmacy-skg/core';
 import type { Locale } from '@pharmacy-skg/core';
 import { t } from '../../i18n/index.ts';
+import { recordVisit } from '../../lib/memory.ts';
 import { fill } from '../../lib/seo/format.ts';
 import { describeStatus, timeInCity } from '../../lib/seo/status-text.ts';
 import { loadNowData } from './now-data.ts';
@@ -38,4 +39,9 @@ async function show(root: HTMLElement): Promise<void> {
 }
 
 const root = document.querySelector<HTMLElement>('[data-pharmacy-status]');
-if (root !== null) void show(root);
+if (root !== null) {
+  void show(root);
+  // Opening a pharmacy's page counts towards "you open often" (on the device only).
+  const id = root.dataset['pharmacyId'];
+  if (id) recordVisit(id, Date.now());
+}

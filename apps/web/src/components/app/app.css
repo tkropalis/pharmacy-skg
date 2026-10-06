@@ -1199,6 +1199,18 @@ html.has-update-toast .sheet {
   color: var(--muted);
 }
 
+/* A short label over a group of rows: recent areas, the pharmacies opened often. */
+.rows-heading {
+  margin: 1rem 0 0;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.ap-body .rows-heading {
+  margin-top: 0.5rem;
+}
+
 /* --- Rows --------------------------------------------------------------------- */
 
 /*
