@@ -17,7 +17,7 @@ import type {
   TimeRange,
   TimeWindow,
 } from './data.ts';
-import { DEFAULT_GROUP_ID, isHoliday } from './holidays.ts';
+import { isHoliday } from './holidays.ts';
 import { regularRanges } from './regular-hours.ts';
 import { addDays, isoWeekday, localToInstant, zonedDate, zonedParts } from './zoned.ts';
 
@@ -558,7 +558,7 @@ function published(
     nextOpen && zonedDate(nextOpen, data.city.timeZone) > today
       ? zonedDate(nextOpen, data.city.timeZone)
       : today;
-  const group = groupId === undefined ? undefined : (groupId ?? DEFAULT_GROUP_ID);
+  const group = groupId === undefined ? undefined : (groupId ?? data.city.defaultGroupId);
   for (let date = dutyDate; date <= last; date = addDays(date, 1)) {
     if (group === undefined ? !data.duties.has(date) : !groupsOn(index, data, date).has(group)) {
       return false;
@@ -624,7 +624,9 @@ export function coverage(
   const groupId = options?.groupId;
   return {
     duties:
-      groupId === undefined ? data.duties.has(dutyDate) : present.has(groupId ?? DEFAULT_GROUP_ID),
+      groupId === undefined
+        ? data.duties.has(dutyDate)
+        : present.has(groupId ?? data.city.defaultGroupId),
     dutyDate,
     dutiesFrom: dates[0] ?? null,
     dutiesTo: dates.at(-1) ?? null,
@@ -666,7 +668,7 @@ function memoPublished(
   status: PharmacyStatus,
 ): boolean {
   const nextOpen = status.state === 'open' ? null : status.nextOpen;
-  const key = `${pharmacy.groupId ?? DEFAULT_GROUP_ID}|${nextOpen ? zonedDate(nextOpen, data.city.timeZone) : ''}`;
+  const key = `${pharmacy.groupId ?? data.city.defaultGroupId}|${nextOpen ? zonedDate(nextOpen, data.city.timeZone) : ''}`;
   let found = memo.get(key);
   if (found === undefined) {
     found = published(data, index, pharmacy.groupId, at, status);
