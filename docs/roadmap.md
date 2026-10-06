@@ -108,8 +108,22 @@ The owner's steps are in [beta-checklist.md](beta-checklist.md). The one-page br
   - dropped: the co-payment estimate (no public file has the reference price) and export bans (posted as scanned images; would need OCR).
 - **Duty forecasts,** only if ΦΣΘ agrees (decision D11).
 
+## National coverage
+
+Decision D26; the research is in [research-greece.md](research-greece.md).
+
+1. **Groundwork** (in review): Thessaloniki alone, nothing visible changes.
+   - A city registry with bounds and a default duty group (`packages/core/src/city.ts`); one national time zone.
+   - One pipeline per city (`packages/ingest/src/cities/`); the update command runs every city, and validation and geocoding take each city's rules.
+   - The app loads the home city's data, by the remembered position (`lib/home-city.ts`), in the home screen, the search-engine pages' live status, the freshness check and the service worker's warm-up; build-time data for any city.
+   - Phone numbers formatted for every Greek area code; the night look follows the sun where the person is.
+2. **ITeQ adapter**, piloted on Larissa: one parser for `<area>.efhmeries.gr` and `fsa-efimeries.gr`, coordinates from the lists; the app switches city with the position or the area picker, and area URLs get a city segment.
+3. **The map and the engine at national scale:** data split per city with a national index and a national file of each day's duty pharmacies; status computed only for the cities loaded, and only when a status changes; incremental map updates (`updateData`, `promoteId`, feature-state); Greece's bounds and a lower minimum zoom; pages with external CSS and a sitemap per city.
+4. **Every ITeQ area**, on duty only, until each area's regular hours are added from its Region's decision.
+5. **The rest:** Diavgeia's yearly duty tables, per-site parsers (Patra, Serres, Kilkis), extended-hours lists.
+6. **Contact** ITeQ and the associations (D26).
+
 ## Later
 
 - A dashboard for pharmacies, including "ask nearby pharmacies whether they have X".
-- More cities.
 - A native wrapper and push notifications.

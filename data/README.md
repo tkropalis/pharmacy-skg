@@ -1,6 +1,6 @@
 # Data
 
-Written by the scheduled pipeline (`packages/ingest`, workflow `update-data.yml`). Don't edit generated files by hand: the next run overwrites them. The pipeline writes only when every check in `packages/ingest/src/validate.ts` passes.
+Written by the scheduled pipeline (`packages/ingest`, workflow `update-data.yml`), one directory per covered city (the area of one pharmacists' association; `packages/ingest/src/cities/` says where each one's lists come from). Don't edit generated files by hand: the next run overwrites them. The pipeline writes a city only when every check in `packages/ingest/src/validate.ts` passes for it.
 
 ## Layout
 

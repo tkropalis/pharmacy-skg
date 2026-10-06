@@ -56,7 +56,7 @@ export interface DutySection {
 }
 
 export interface DutyGroup {
-  /** ΦΣΘ area group, e.g. 'metro', 'thermi'. */
+  /** The duty group, one per list the association publishes, e.g. 'metro', 'thermi'. */
   readonly id: string;
   readonly name: string;
   readonly source: { readonly url: string; readonly uploadedAt: string };

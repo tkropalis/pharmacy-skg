@@ -26,6 +26,7 @@ src/i18n/                  typed dictionaries (el.ts defines the shape, en.ts mu
 src/layouts/Base.astro     head tags, hreflang, header, stale banner, footer (none on the home screen: `app`)
 src/pages/[...path].astro  every page of every locale, from i18n/routes.ts
 src/lib/data.ts            loadCityData(cityId, dates): fetches the published JSON for the client
+src/lib/home-city.ts       the covered city the app opens on: where the remembered position is, else the default
 src/lib/seo/              view models for the search-engine pages (pure, tested): translit.ts (ELOT 743 slugs),
                            model.ts, views.ts, format.ts, status-text.ts, jsonld.ts, sitemap.ts;
                            site-data.ts is the only file that reads data/ at build time
@@ -150,7 +151,7 @@ Strategies:
 
 ## Offline
 
-**Warm-up.** The worker keeps meta, pharmacies, the extended-hours files and the duty lists for yesterday (the overnight list), today and the next three days (Europe/Athens) in its data cache, only for the days `meta.json` says are published (`warmUp` and `offlineDataUrls` in `sw/sw.js`, unit-tested in `integrations/sw.test.ts`). The worker fetches them itself when a page asks (`keepOfflineDataWarm` in `src/lib/pwa.ts`, which passes the page's clock): after load, when the app comes back to the foreground (at most hourly, or on a new day in Athens) and when the connection returns. Not with Data Saver on.
+**Warm-up.** The worker keeps meta, pharmacies, the extended-hours files and the duty lists for yesterday (the overnight list), today and the next three days (Europe/Athens) in its data cache, only for the days `meta.json` says are published (`warmUp` and `offlineDataUrls` in `sw/sw.js`, unit-tested in `integrations/sw.test.ts`). That is the home city's data (`src/lib/home-city.ts`): the page names it, and a worker that no page has spoken to yet (a periodic sync after a restart) warms the default city. The worker fetches them itself when a page asks (`keepOfflineDataWarm` in `src/lib/pwa.ts`, which passes the page's clock and its home city): after load, when the app comes back to the foreground (at most hourly, or on a new day in Athens) and when the connection returns. Not with Data Saver on.
 
 **Periodic background sync.** In an installed app in Chromium, the page registers a periodic sync (`refresh-data`, at most every 12 hours, if the browser grants it), and the worker runs the same warm-up, so the next days are on the device even if the app was not opened. Safari and Firefox have no periodic sync: there the data is as fresh as the last visit.
 

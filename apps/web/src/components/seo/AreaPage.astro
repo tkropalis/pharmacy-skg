@@ -34,7 +34,13 @@ const seo = d.seo.area;
   <section aria-labelledby="open-heading">
     <h2 id="open-heading">{seo.openNowHeading}</h2>
     <!-- Worked out in the browser (scripts/seo/area-status.ts): the open pharmacies by name. -->
-    <div class="seo-status" role="status" aria-live="polite" data-area-status>
+    <div
+      class="seo-status"
+      role="status"
+      aria-live="polite"
+      data-area-status
+      data-city={model.cityId}
+    >
       <p>{seo.openNowNoScript}</p>
     </div>
   </section>

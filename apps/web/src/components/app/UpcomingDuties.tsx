@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { Locale, Pharmacy, PublishedDuty } from '@pharmacy-skg/core';
-import { THESSALONIKI } from '@pharmacy-skg/core';
+import { GREECE_TIME_ZONE } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
 import { describeDuty } from '../../lib/duties.ts';
 import { fill, shortIsoDate } from '../../lib/format.ts';
@@ -37,7 +37,7 @@ export function UpcomingDuties({
   const shown = all ? duties : duties.slice(0, INITIAL);
 
   function exportCalendar() {
-    const events = dutyEvents(pharmacy, duties, text.ics, THESSALONIKI.timeZone);
+    const events = dutyEvents(pharmacy, duties, text.ics, GREECE_TIME_ZONE);
     downloadTextFile(
       `pharmacy-${pharmacy.id}-duties.ics`,
       buildIcs(events, now, text.ics.calendarName),

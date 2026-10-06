@@ -1,4 +1,4 @@
-import { THESSALONIKI } from '@pharmacy-skg/core';
+import { GREECE_TIME_ZONE } from '@pharmacy-skg/core';
 import type { Locale, OpenReason, PharmacyStatus } from '@pharmacy-skg/core';
 import type { Dictionary } from '../i18n/index.ts';
 import { fill } from './format.ts';
@@ -41,7 +41,7 @@ export function dayAndTime(
   at: Date,
   locale: Locale,
   text: StatusText,
-  timeZone: string = THESSALONIKI.timeZone,
+  timeZone: string = GREECE_TIME_ZONE,
   sameDayShowsWord = false,
 ): string {
   const when = whenOf(target, at, locale, timeZone);
@@ -75,7 +75,7 @@ export function describeStatus(options: {
   readonly timeZone?: string;
 }): StatusView {
   const { status, at, live, locale, text } = options;
-  const timeZone = options.timeZone ?? THESSALONIKI.timeZone;
+  const timeZone = options.timeZone ?? GREECE_TIME_ZONE;
   const kind = pinKindOf(status);
 
   switch (status.state) {

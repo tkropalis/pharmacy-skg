@@ -1,5 +1,6 @@
 import { pharmacyStatus } from '@pharmacy-skg/core';
 import type { Locale } from '@pharmacy-skg/core';
+import { DEFAULT_CITY_ID } from '../../config.ts';
 import { t } from '../../i18n/index.ts';
 import { recordVisit } from '../../lib/memory.ts';
 import { fill } from '../../lib/seo/format.ts';
@@ -20,7 +21,7 @@ async function show(root: HTMLElement): Promise<void> {
   root.textContent = labels.seo.pharmacy.statusLoading;
   try {
     const now = new Date();
-    const { data, failedDates } = await loadNowData(now);
+    const { data, failedDates } = await loadNowData(root.dataset['city'] ?? DEFAULT_CITY_ID, now);
     const { status, dutiesPublished } = pharmacyStatus(data, id, now);
     const text = describeStatus(status, dutiesPublished, now, locale, labels);
     const headline = document.createElement('p');

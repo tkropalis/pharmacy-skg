@@ -1,5 +1,5 @@
 import type { IsoDate } from '@pharmacy-skg/core';
-import { THESSALONIKI, addDays } from '@pharmacy-skg/core';
+import { GREECE_TIME_ZONE, addDays } from '@pharmacy-skg/core';
 
 const formatters = new Map<string, Intl.DateTimeFormat>();
 
@@ -18,7 +18,7 @@ function formatterFor(timeZone: string): Intl.DateTimeFormat {
 }
 
 /** The calendar date of an instant in a time zone (the city's, never the device's). */
-export function localIsoDate(at: Date, timeZone: string = THESSALONIKI.timeZone): IsoDate {
+export function localIsoDate(at: Date, timeZone: string = GREECE_TIME_ZONE): IsoDate {
   const parts = formatterFor(timeZone).formatToParts(at);
   const pick = (type: string): string => parts.find((p) => p.type === type)?.value ?? '';
   return `${pick('year')}-${pick('month')}-${pick('day')}`;

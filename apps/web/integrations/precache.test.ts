@@ -114,7 +114,7 @@ describe('renderServiceWorker', () => {
     expect(output).not.toContain('__BUILD_VERSION__');
     expect(output).not.toContain('__PRECACHE_URLS__');
     expect(output).not.toContain('__PRECACHE_HASHES__');
-    expect(output).toContain('const CITY_ID = "thessaloniki";');
+    expect(output).toContain('const CITY_IDS = ["thessaloniki"];');
     expect(() => new Script(output)).not.toThrow();
   });
 

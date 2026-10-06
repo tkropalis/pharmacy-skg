@@ -1,5 +1,5 @@
 import type { Locale, OpenReason, PharmacyStatus } from '@pharmacy-skg/core';
-import { THESSALONIKI } from '@pharmacy-skg/core';
+import { GREECE_TIME_ZONE } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
 import { fill } from './format.ts';
 import { isMidnightAfter, whenOf } from '../when.ts';
@@ -25,7 +25,7 @@ export interface StatusText {
 }
 
 /** HH:MM in the city's time zone, whatever the device's. */
-export function timeInCity(at: Date, locale: Locale, timeZone = THESSALONIKI.timeZone): string {
+export function timeInCity(at: Date, locale: Locale, timeZone = GREECE_TIME_ZONE): string {
   return new Intl.DateTimeFormat(INTL_LOCALE[locale], {
     timeZone,
     hour: '2-digit',
@@ -43,7 +43,7 @@ export function whenText(
   now: Date,
   locale: Locale,
   d: Dictionary['seo']['status'],
-  timeZone = THESSALONIKI.timeZone,
+  timeZone = GREECE_TIME_ZONE,
 ): string {
   const when = whenOf(at, now, locale, timeZone);
   switch (when.kind) {
@@ -64,7 +64,7 @@ export function untilText(
   now: Date,
   locale: Locale,
   d: Dictionary['seo']['status'],
-  timeZone = THESSALONIKI.timeZone,
+  timeZone = GREECE_TIME_ZONE,
 ): string {
   const when = whenOf(until, now, locale, timeZone);
   return when.kind === 'today'
@@ -89,7 +89,7 @@ export function describeStatus(
   now: Date,
   locale: Locale,
   d: StatusDictionary,
-  timeZone = THESSALONIKI.timeZone,
+  timeZone = GREECE_TIME_ZONE,
 ): StatusText {
   const s = d.seo.status;
   const tail = [dutiesPublished ? '' : s.unpublished, s.callFirst].filter(Boolean).join(' ');

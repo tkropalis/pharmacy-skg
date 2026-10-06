@@ -98,7 +98,7 @@ export function buildSeoModel(input: SeoInput): SeoModel {
   for (const date of [...input.duties.keys()].sort()) {
     const day = input.duties.get(date);
     for (const group of day?.groups ?? []) {
-      groupNames.set(group.id, groupDisplayName(group.id, group.name));
+      groupNames.set(group.id, groupDisplayName(input.cityId, group.id, group.name));
       for (const section of group.sections) {
         for (const { pharmacyId } of section.entries) {
           const list = listingsByPharmacy.get(pharmacyId) ?? [];

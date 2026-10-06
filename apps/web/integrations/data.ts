@@ -2,7 +2,7 @@ import { cp, mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { AstroIntegration } from 'astro';
-import { encodeMedicineIndex } from '@pharmacy-skg/core';
+import { CITIES, encodeMedicineIndex } from '@pharmacy-skg/core';
 import type { MedicinesFile, Meta } from '@pharmacy-skg/core';
 import { buildToday } from '../src/lib/build-today.ts';
 import { isExtendedHoursPath, isPublishedPath, selectDutyFiles } from './data-files.ts';
@@ -10,7 +10,7 @@ import { isExtendedHoursPath, isPublishedPath, selectDutyFiles } from './data-fi
 /** <repo>/data/, which lives outside apps/web (Vercel: "include files outside root"). */
 const DATA_ROOT = fileURLToPath(new URL('../../../data/', import.meta.url));
 
-const CITY_IDS = ['thessaloniki'];
+const CITY_IDS = CITIES.map((city) => city.id);
 
 /** Where the app reads the medicine index (lib/medicine-index.ts). */
 export const MEDICINE_INDEX_PATH = 'medicines/index.json';

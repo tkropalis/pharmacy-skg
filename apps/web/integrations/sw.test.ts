@@ -200,6 +200,14 @@ describe('warm-up', () => {
     expect(worker.fetched.filter((path) => path === data('meta.json'))).toHaveLength(1);
   });
 
+  it('keeps the city the page names, and only one it knows', async () => {
+    const worker = startWorker(dataRoutes());
+    const now = Date.parse('2026-10-05T09:00:00Z');
+    await worker.fire('message', { data: { type: 'warm-up', now, city: 'atlantis' } });
+    expect(worker.fetched).toContain(data('meta.json'));
+    expect(worker.fetched.every((path) => !path.includes('atlantis'))).toBe(true);
+  });
+
   it('ignores other messages', async () => {
     const worker = startWorker(dataRoutes());
     await worker.fire('message', { data: { type: 'something-else' } });

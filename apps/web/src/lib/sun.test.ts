@@ -41,12 +41,16 @@ describe('public/theme.js', () => {
   });
 
   /** Runs the script at `iso`, with a stored choice and the device's preference. */
-  function run(iso: string, options: { stored?: string; prefersDark?: boolean } = {}) {
+  function run(
+    iso: string,
+    options: { stored?: string; prefersDark?: boolean; position?: string } = {},
+  ) {
     vi.useFakeTimers();
     vi.setSystemTime(new Date(iso));
     const attributes = new Map<string, string>();
     const items = new Map<string, string>();
     if (options.stored !== undefined) items.set('pharmacy-skg:theme', options.stored);
+    if (options.position !== undefined) items.set('pharmacy-skg:last-position', options.position);
     const document = {
       documentElement: {
         getAttribute: (name: string) => attributes.get(name) ?? null,
@@ -88,6 +92,28 @@ describe('public/theme.js', () => {
       const { attributes } = run(date.toISOString(), { stored: 'auto' });
       expect(attributes.get('data-theme'), date.toISOString()).toBe(expected);
     }
+  });
+
+  it('with auto, follows the sun where the remembered position is', () => {
+    const rhodes = { lat: 36.434, lon: 28.217 };
+    const position = JSON.stringify({ ...rhodes, at: 0 });
+    let differs = false;
+    for (let minute = 0; minute < 24 * 60; minute += 10) {
+      const date = new Date(Date.UTC(2026, 9, 5) + minute * 60_000);
+      const expected = sunIsDown(date, rhodes.lat, rhodes.lon) ? 'dark' : 'light';
+      if (sunIsDown(date, rhodes.lat, rhodes.lon) !== sunIsDown(date, CENTRE.lat, CENTRE.lon)) {
+        differs = true;
+      }
+      const { attributes } = run(date.toISOString(), { stored: 'auto', position });
+      expect(attributes.get('data-theme'), date.toISOString()).toBe(expected);
+    }
+    // Rhodes is far enough east for its sunset to come at another time than Thessaloniki's.
+    expect(differs).toBe(true);
+  });
+
+  it('with auto, measures at the centre when the remembered position is unreadable', () => {
+    const { attributes } = run(NIGHT, { stored: 'auto', position: '{"lat":"x"' });
+    expect(attributes.get('data-theme')).toBe('dark');
   });
 
   it('with auto, is dark by day when the device asks for it', () => {

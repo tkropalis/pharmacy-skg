@@ -1,5 +1,6 @@
 import { isOnline, onConnectionChange } from './connection.ts';
 import { localIsoDate } from './dates.ts';
+import { homeCity } from './home-city.ts';
 import { ensureUpdateRegion, offerReload } from './update-toast.ts';
 
 /** The worker's periodic sync tag (PERIODIC_SYNC_TAG in sw/sw.js). */
@@ -103,8 +104,11 @@ export function keepOfflineDataWarm(): void {
     if (!isOnline() || (!force && !shouldWarmAgain(last, now))) return;
     last = now;
     void navigator.serviceWorker.ready
-      // The page's clock decides which days are "today" and "the next three".
-      .then((registration) => registration.active?.postMessage({ type: 'warm-up', now }))
+      // The page's clock decides which days are "today" and "the next three", and its home city
+      // which city's data is kept.
+      .then((registration) =>
+        registration.active?.postMessage({ type: 'warm-up', now, city: homeCity().id }),
+      )
       .catch(() => {});
   };
 

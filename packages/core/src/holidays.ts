@@ -3,13 +3,14 @@
  * national public holidays, local ones, and weekdays that the published duty
  * list marks with an "αργίες" heading.
  */
+import { cityById } from './city.ts';
 import type { CityData, IsoDate } from './data.ts';
 import { addDays, isoWeekday } from './zoned.ts';
 
 export interface Holiday {
   readonly date: IsoDate;
   readonly name: { readonly el: string; readonly en: string };
-  /** `national`, or only the listed ΦΣΘ area groups. */
+  /** `national`, or only the listed duty groups of the city. */
   readonly scope: 'national' | { readonly groupIds: readonly string[] };
   /**
    * True for a holiday that not every pharmacy observes (Μεγάλη Παρασκευή,
@@ -18,9 +19,6 @@ export interface Holiday {
    */
   readonly confirmedByList?: boolean;
 }
-
-/** The group assumed for a pharmacy whose area group is unknown. */
-export const DEFAULT_GROUP_ID = 'metro';
 
 const pad = (n: number) => String(n).padStart(2, '0');
 
@@ -101,13 +99,13 @@ function calendar(year: number, cityId: string): ReadonlyMap<IsoDate, readonly H
   return found;
 }
 
-/** The calendar holidays on `date` that apply to the group (a null group counts as metro). */
+/** The calendar holidays on `date` that apply to the group (null: the city's default group). */
 export function holidaysOn(cityId: string, date: IsoDate, groupId: string | null): Holiday[] {
-  const group = groupId ?? DEFAULT_GROUP_ID;
+  const group = groupId ?? cityById(cityId)?.defaultGroupId;
   const year = Number(date.slice(0, 4));
   if (year < 1900 || year > 2099) return [];
   return (calendar(year, cityId).get(date) ?? []).filter(
-    (h) => h.scope === 'national' || h.scope.groupIds.includes(group),
+    (h) => h.scope === 'national' || (group !== undefined && h.scope.groupIds.includes(group)),
   );
 }
 
@@ -140,7 +138,7 @@ function listedAsHoliday(
 }
 
 /**
- * Is `date` a holiday for the area group (null = unknown, treated as metro)?
+ * Is `date` a holiday for the duty group (null = unknown: the city's default group)?
  * - A fixed national holiday, a Easter-based one other than the two below, or a
  *   local one: always.
  * - Μεγάλη Παρασκευή and Αγίου Πνεύματος (`confirmedByList`): when the group's duty
@@ -150,7 +148,7 @@ function listedAsHoliday(
  * Memoised per `CityData`.
  */
 export function isHoliday(data: CityData, date: IsoDate, groupId: string | null): boolean {
-  const group = groupId ?? DEFAULT_GROUP_ID;
+  const group = groupId ?? data.city.defaultGroupId;
   let cache = holidayCache.get(data);
   if (!cache) holidayCache.set(data, (cache = new Map()));
   const key = `${date}|${group}`;

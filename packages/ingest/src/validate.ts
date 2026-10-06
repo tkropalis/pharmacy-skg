@@ -1,5 +1,4 @@
-import { AREA_GROUPS } from './fsth/groups.ts';
-import type { DutyKind } from './fsth/heading.ts';
+import type { ValidationRules } from './cities/pipeline.ts';
 import type { Warning } from './registry/build.ts';
 import {
   DutyDaySchema,
@@ -16,21 +15,6 @@ export interface Report {
   warnings: Warning[];
 }
 
-/**
- * Expected entries per section in the metro list, from the Jun–Oct 2026
- * lists. A count outside these ranges means the parser or the source broke.
- */
-const METRO_RANGES: Readonly<Record<DutyKind, readonly [number, number]>> = {
-  day: [20, 120],
-  'saturday-extra': [20, 120],
-  'on-duty': [1, 120],
-  overnight: [10, 60],
-  'after-midnight': [2, 15],
-};
-const OTHER_GROUP_RANGE = [1, 12] as const;
-const PHARMACY_RANGE = [200, 3000] as const;
-const MIN_EXTENDED_ENTRIES = 100;
-
 export interface DataSet {
   readonly today: string;
   readonly days: readonly DutyDay[];
@@ -38,8 +22,11 @@ export interface DataSet {
   readonly extended: readonly ExtendedHours[];
 }
 
-/** Checks everything the pipeline is about to publish. Errors block publishing; warnings are reported. */
-export function validate(data: DataSet): Report {
+/**
+ * Checks everything the pipeline is about to publish for a city, against the city's rules.
+ * Errors block publishing; warnings are reported.
+ */
+export function validate(data: DataSet, rules: ValidationRules): Report {
   const errors: Warning[] = [];
   const warnings: Warning[] = [];
   const error = (code: string, message: string) => errors.push({ code, message });
@@ -65,7 +52,7 @@ export function validate(data: DataSet): Report {
 
   for (const day of data.days) {
     const present = new Set(day.groups.map((group) => group.id));
-    const missing = AREA_GROUPS.filter((group) => !present.has(group.id)).map((group) => group.id);
+    const missing = rules.groupIds.filter((id) => !present.has(id));
     if (missing.length > 0) {
       const message = `${day.date}: no list for ${missing.join(', ')}`;
       if (day.date === data.today || day.date === tomorrow) error('missing-group', message);
@@ -73,7 +60,7 @@ export function validate(data: DataSet): Report {
     }
     for (const group of day.groups) {
       for (const section of group.sections) {
-        const [min, max] = group.id === 'metro' ? METRO_RANGES[section.kind] : OTHER_GROUP_RANGE;
+        const [min, max] = rules.sectionRange(group.id, section.kind);
         const count = section.entries.length;
         if (count < min || count > max) {
           error(
@@ -111,8 +98,9 @@ export function validate(data: DataSet): Report {
     warn('coverage', `latest duty list is for ${latest ?? 'no date'}`);
 
   const count = data.pharmacies.length;
-  if (count < PHARMACY_RANGE[0] || count > PHARMACY_RANGE[1]) {
-    error('count', `${count} pharmacies, expected ${PHARMACY_RANGE[0]}–${PHARMACY_RANGE[1]}`);
+  const [fewest, most] = rules.pharmacies;
+  if (count < fewest || count > most) {
+    error('count', `${count} pharmacies, expected ${fewest}–${most}`);
   }
   const approximate = data.pharmacies.filter((p) => p.location?.precision === 'locality');
   if (approximate.length > 0) {
@@ -123,7 +111,7 @@ export function validate(data: DataSet): Report {
   }
 
   for (const list of data.extended) {
-    if (list.entries.length < MIN_EXTENDED_ENTRIES) {
+    if (list.entries.length < (rules.minExtendedEntries ?? 0)) {
       error('count', `extended hours ${list.period.from}: ${list.entries.length} entries`);
     }
     const seen = new Set<string>();
@@ -147,6 +135,7 @@ export function validate(data: DataSet): Report {
     }
   }
   if (
+    rules.minExtendedEntries !== null &&
     !data.extended.some((list) => list.period.from <= data.today && data.today <= list.period.to)
   ) {
     warn('coverage', `no extended-hours list covers ${data.today}`);
