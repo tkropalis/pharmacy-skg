@@ -73,7 +73,8 @@ export interface DutyDay {
 export interface Location {
   readonly lat: number;
   readonly lon: number;
-  readonly source: 'override' | 'overture' | 'nominatim';
+  /** `list`: the coordinates the duty list itself gives. */
+  readonly source: 'override' | 'list' | 'overture' | 'nominatim';
   readonly precision: 'exact' | 'street' | 'locality';
   readonly ref?: string | undefined;
 }
@@ -87,7 +88,8 @@ export interface Pharmacy {
   readonly phone: string | null;
   readonly groupId: string | null;
   readonly location: Location | null;
-  readonly sources: readonly ('fsth' | 'pkm')[];
+  /** Ids of the lists it was found in (meta.json's `sources`). */
+  readonly sources: readonly string[];
   readonly firstSeen: IsoDate;
   readonly lastSeen: IsoDate;
 }
