@@ -326,10 +326,14 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
   }
 
   const previousMeta = await readJson(paths.meta, MetaSchema);
+  const now = new Date().toISOString();
   const meta: Meta = {
     schemaVersion: SCHEMA_VERSION,
     city: city.id,
-    updatedAt: changed || !previousMeta ? new Date().toISOString() : previousMeta.updatedAt,
+    updatedAt: changed || !previousMeta ? now : previousMeta.updatedAt,
+    // Every run that gets here read the sources and found them valid: the data is current even
+    // when an association has published nothing new for days (the stale banner reads this).
+    checkedAt: now,
     duties: sortedDays.length
       ? { from: sortedDays[0]?.date ?? today, to: sortedDays.at(-1)?.date ?? today }
       : null,

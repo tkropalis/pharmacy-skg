@@ -60,7 +60,7 @@ describe('precacheEntries', () => {
     ]);
   });
 
-  it('leaves out the generated pharmacy, duty-date and area pages, and the date index', () => {
+  it('leaves out the generated pharmacy, duty-date and area pages, and their indexes', () => {
     const kept = precacheEntries([
       file('farmakeio/2310023026/index.html'),
       file('en/pharmacy/2310023026/index.html'),
@@ -76,8 +76,8 @@ describe('precacheEntries', () => {
       file('en/area/index.html'),
       file('plirofories/index.html'),
     ]).map((f) => f.path);
-    // The area indexes stay; the duty index lists dates, so it would change with every day.
-    expect(kept).toEqual(['en/area/index.html', 'perioxi/index.html', 'plirofories/index.html']);
+    // The indexes list the dates and count each area's pharmacies, so they change with the data.
+    expect(kept).toEqual(['plirofories/index.html']);
   });
 
   it('covers both locales when both are built', () => {

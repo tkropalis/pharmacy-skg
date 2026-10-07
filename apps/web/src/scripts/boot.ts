@@ -1,7 +1,7 @@
 import { loadMeta } from '../lib/data.ts';
 import { homeCity } from '../lib/home-city.ts';
 import { markConnection, onConnectionChange } from '../lib/connection.ts';
-import { formatUpdatedAt, isStale } from '../lib/freshness.ts';
+import { checkedAt, formatUpdatedAt, isStale } from '../lib/freshness.ts';
 import { setupInstall } from '../lib/install.ts';
 import { keepOfflineDataWarm, registerServiceWorker } from '../lib/pwa.ts';
 import { DATA_UPDATED_KEY, writeItem } from '../lib/storage.ts';
@@ -26,7 +26,7 @@ function applyFreshness(updatedAt: string): void {
 
 async function refreshFreshness(): Promise<void> {
   try {
-    applyFreshness((await loadMeta(homeCity().id)).updatedAt);
+    applyFreshness(checkedAt(await loadMeta(homeCity().id)));
   } catch {
     // Offline and not cached: keep what was remembered on the last visit (the banner already
     // used it), and leave the dates in the page as they are.
