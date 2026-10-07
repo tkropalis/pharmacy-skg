@@ -58,6 +58,8 @@ export interface MapControllerOptions {
   readonly onSelect: (id: string | null) => void;
   /** The person moved the map themselves (a drag or a pinch): they are looking at it. */
   readonly onReach: () => void;
+  /** The person finished moving the map (a drag, a pinch, the wheel or the keys): its centre. */
+  readonly onMoved: (center: readonly [number, number], zoom: number) => void;
   /** The locate button: the person's position and the nearest open pharmacy. */
   readonly onLocate: () => void;
 }
@@ -358,6 +360,13 @@ export async function createMapController(
   });
   map.on('zoomstart', (event) => {
     if (event.originalEvent && event.originalEvent.type !== 'wheel') options.onReach();
+  });
+  // After a drag that glides on, MapLibre ends the move only when the glide does, with the
+  // event that ended the drag.
+  map.on('moveend', (event) => {
+    if (!event.originalEvent) return;
+    const { lng, lat } = map.getCenter();
+    options.onMoved([lng, lat], map.getZoom());
   });
   for (const id of [...PIN_LAYER_IDS, 'clusters']) {
     map.on('mouseenter', id, () => (map.getCanvas().style.cursor = 'pointer'));

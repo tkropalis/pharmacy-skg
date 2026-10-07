@@ -10,6 +10,8 @@ export type CityState =
   | { readonly status: 'error' }
   | {
       readonly status: 'ready';
+      /** The city the data is for: for one render after a switch, still the previous one. */
+      readonly cityId: string;
       readonly data: CityData;
       readonly meta: Meta;
       /** Duty dates that could not be fetched (not merely unpublished). */
@@ -112,6 +114,7 @@ export function useCityData(cityId: string): CityDataApi {
           startTransition(() =>
             setState({
               status: 'ready',
+              cityId,
               data: bundle.data,
               meta: bundle.meta,
               failedDates: bundle.failedDates,

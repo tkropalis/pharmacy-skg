@@ -8,6 +8,7 @@ type Ready = Extract<CityState, { readonly status: 'ready' }>;
 function ready(overrides: Partial<Ready>): Ready {
   return {
     status: 'ready',
+    cityId: 'thessaloniki',
     data: {} as CityData,
     meta: { duties: { from: '2026-10-01', to: '2026-10-10' } } as Meta,
     failedDates: [],
