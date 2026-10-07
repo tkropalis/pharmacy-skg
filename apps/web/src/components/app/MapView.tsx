@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import type { Locale } from '@pharmacy-skg/core';
+import type { City, Locale } from '@pharmacy-skg/core';
 import { cityAt } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
 import type { Row } from '../../lib/list.ts';
@@ -11,6 +11,12 @@ import { offerReload } from '../../lib/update-toast.ts';
 import { useMediaQuery } from './use-now.ts';
 
 type MapStatus = 'idle' | 'loading' | 'ready' | 'unavailable' | 'failed';
+
+/**
+ * Moving the map into another covered area shows that area from this zoom in; further out the
+ * map shows several areas at once, and the one shown stays.
+ */
+const AREA_ZOOM = 9;
 
 /** WebGL is required by MapLibre; without it the list is the whole app. */
 function webglAvailable(): boolean {
@@ -43,6 +49,8 @@ export interface MapSelection extends Selection {
 interface MapViewProps {
   readonly locale: Locale;
   readonly text: Dictionary['app']['map'];
+  /** The city shown. */
+  readonly cityId: string;
   /** Where the map starts, as [longitude, latitude]: the centre of the city shown. */
   readonly center: readonly [number, number];
   /** Start loading the map (after the list has rendered, see use-map-start.ts). */
@@ -66,6 +74,8 @@ interface MapViewProps {
   readonly onSelect: (id: string | null) => void;
   /** The person moved the map themselves. */
   readonly onReach: () => void;
+  /** The person moved the map into another covered area: show that one, where the map is. */
+  readonly onArea: (city: City) => void;
   /** The locate button on the map. */
   readonly onLocate: () => void;
   /** The position is being asked for: the locate button turns. */
@@ -90,6 +100,10 @@ export function MapView(props: MapViewProps) {
 
   const { onStatus } = props;
   useEffect(() => onStatus(status), [status, onStatus]);
+
+  // The centre of the city shown, once the map has shown it (see below).
+  const { center } = props;
+  const shownCenter = useRef(center);
 
   // Create (and re-create when the colour scheme or language changes) the map.
   useEffect(() => {
@@ -131,6 +145,14 @@ export function MapView(props: MapViewProps) {
           dark,
           onSelect: (id) => latest.current.onSelect(id),
           onReach: () => latest.current.onReach(),
+          onMoved: ([lon, lat], zoom) => {
+            if (zoom < AREA_ZOOM) return;
+            const here = cityAt({ lat, lon });
+            if (here === undefined || here.id === latest.current.cityId) return;
+            // The map is already there: it is not moved to the area's centre.
+            shownCenter.current = here.center;
+            latest.current.onArea(here);
+          },
           onLocate: () => latest.current.onLocate(),
         });
         if (cancelled) {
@@ -174,8 +196,6 @@ export function MapView(props: MapViewProps) {
   }, [status, origin, originNonce]);
 
   // Another city: show it, unless the origin is in it (the origin's own move shows it then).
-  const { center } = props;
-  const shownCenter = useRef(center);
   useEffect(() => {
     if (status !== 'ready' || shownCenter.current === center) return;
     shownCenter.current = center;

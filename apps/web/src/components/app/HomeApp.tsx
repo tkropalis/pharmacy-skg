@@ -214,7 +214,10 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
   const pendingAnnouncement = useRef(false);
   const scrollTo = useRef<string | null>(null);
 
-  const ready = state.status === 'ready' ? state : null;
+  // Right after a switch the data is still the previous city's: it is not shown with the new
+  // city's name and rules, nor announced as its list.
+  const ready = state.status === 'ready' && state.cityId === city.id ? state : null;
+  const loading = state.status === 'loading' || (state.status === 'ready' && ready === null);
   const online = useOnline();
   const mapStart = useMapStart(ready !== null);
   const wakeMap = mapStart.wake;
@@ -311,8 +314,20 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
     [city.id],
   );
 
+  // The person moved the map into another covered area: its pharmacies load where the map is.
+  const movedTo = useRef<string | null>(null);
+  const onMapArea = useCallback(
+    (next: City) => {
+      pendingAnnouncement.current = true;
+      movedTo.current = next.id;
+      switchCity(next);
+    },
+    [switchCity],
+  );
+
   // A new city: nothing chosen in the old one stays chosen, and the saved area is looked up
-  // again in the new city's areas once they load.
+  // again in the new city's areas once they load, unless the person moved the map there (the
+  // area would move it again).
   const shownCity = useRef(city.id);
   useEffect(() => {
     if (shownCity.current === city.id) return;
@@ -321,7 +336,8 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
     setExpandedId(null);
     setPeek(false);
     setShowClosed(false);
-    restoredArea.current = false;
+    restoredArea.current = movedTo.current === city.id;
+    movedTo.current = null;
   }, [city.id]);
   useEffect(() => {
     if (restoredArea.current || localities.length === 0) return;
@@ -429,10 +445,10 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
 
   // Announce list changes politely, and only after something the person did (not each minute).
   useEffect(() => {
-    if (!pendingAnnouncement.current || state.status !== 'ready' || dutyLoading) return;
+    if (!pendingAnnouncement.current || ready === null || dutyLoading) return;
     pendingAnnouncement.current = false;
     setMessage(fill(text.list.updated, { summary: announcement }));
-  }, [announcement, state.status, text, dutyLoading]);
+  }, [announcement, ready, text, dutyLoading]);
 
   const announce = useCallback((value: string) => setMessage(value), []);
 
@@ -1074,7 +1090,7 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
         api={sheetApi}
       >
         <div id="panel" role="tabpanel" aria-labelledby={`tab-${tab}`} data-tab={tab} key={tab}>
-          {state.status === 'loading' && <p className="state">{text.loading}</p>}
+          {loading && <p className="state">{text.loading}</p>}
           {state.status === 'error' && (
             <div className="callout danger" role="alert">
               <p>
@@ -1356,7 +1372,7 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
           )}
 
           {/* Not while loading: it would sit under the short loading note and then be pushed away. */}
-          {state.status !== 'loading' && (
+          {!loading && (
             <footer className="sheet-footer">
               <nav aria-label={text.footer.label}>
                 <ul className="footer-links">
@@ -1402,6 +1418,7 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
       <MapView
         locale={locale}
         text={text.map}
+        cityId={city.id}
         center={city.center}
         enabled={mapStart.started}
         waiting={ready !== null}
@@ -1417,6 +1434,7 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
         covered={!wide && sheetSize === 'large'}
         onSelect={onMapSelect}
         onReach={onReach}
+        onArea={onMapArea}
         onLocate={() => locate(false, true)}
         locating={geo === 'locating'}
         onStatus={setMapStatus}
