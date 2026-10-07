@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This is a free, ad-free PWA that shows which pharmacies are open in the Thessaloniki regional unit, including on-duty (εφημερεύοντα) and overnight (διανυκτερεύοντα) ones.
+This is a free, ad-free PWA that shows which pharmacies are open in Greece, area by area (Thessaloniki and the areas on ITeQ's duty platform so far, decision D26), including on-duty (εφημερεύοντα) and overnight (διανυκτερεύοντα) ones.
 
 Before changing behaviour, read [docs/decisions.md](docs/decisions.md). Before any UI or copy change, also read [docs/PRODUCT.md](docs/PRODUCT.md) (who it is for, the principles) and [docs/DESIGN.md](docs/DESIGN.md) (the design system, banned patterns, the review checklist and how to verify). For sources and the opening-hours rules, see [docs/research.md](docs/research.md); for milestones, [docs/roadmap.md](docs/roadmap.md).
 
@@ -54,6 +54,7 @@ The owner reviews the app on an iPhone; every change is judged on a phone first.
 
 - **Network access:** to scrape from a cloud session, these hosts must be allowed:
   - `www.thess.guide` (ΦΣΘ PDFs, decision D20), `www.pkm.gov.gr`, `nominatim.openstreetmap.org`
+  - `*.efhmeries.gr` (ITeQ's duty sites, one per area, all on one server: the pipeline asks one page a second)
   - `www.moh.gov.gr` (price bulletins) and `www.eof.gr` (shortage list), decision D24
   - `tiles.openfreemap.org`; for Overture refreshes, `overturemaps-us-west-2.s3.amazonaws.com`
   - `fsth.gr` and its subdomains answer automated clients with a Cloudflare challenge. Don't try to get past it.
