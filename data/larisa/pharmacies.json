@@ -160,7 +160,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
       "location": {
         "lat": 39.6388006,
         "lon": 22.4176563,
@@ -228,6 +228,27 @@
         "lat": 39.6424747,
         "lon": 22.4174687,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23040",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410254304",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΑΓΝΗ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΦΑΡΣΑΛΩΝ 6 (Σχεδόν γωνία Ηρώων Πολυτεχνείου – πλησίον υπ. διάβασης)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410254304",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.63028,
+        "lon": 22.41947,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23092",
         "source": "list",
         "precision": "exact"
       }
@@ -506,6 +527,27 @@
       }
     },
     {
+      "id": "2410530990",
+      "name": "ΒΑΗ ΧΡΙΣΤΙΝΑ",
+      "address": "ΑΣΚΛΗΠΙΟΥ 19 & ΚΟΥΜΑ",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410530990",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.63782,
+        "lon": 22.4184154,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23096",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410532451",
       "name": "ΣΙΑΤΡΑΒΑΝΗΣ Δ. ΣΩΚΡΑΤΗΣ",
       "address": "ΙΩΝ. ΔΡΑΓΟΥΜΗ 6 (Έναντι Δημαρχείου)",
@@ -548,6 +590,27 @@
       }
     },
     {
+      "id": "2410533930",
+      "name": "ΒΑΛΑΡΗΣ ΧΡΗΣΤΟΣ",
+      "address": "ΒΌΛΟΥ 16",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410533930",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.6341097,
+        "lon": 22.4312313,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23095",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410533990",
       "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ Β. ΛΑΖΑΡΟΣ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 209 (Πλατεία ΑΤΑ)",
@@ -585,6 +648,27 @@
         "lat": 39.63787,
         "lon": 22.4083,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23079",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410535260",
+      "name": "Σ.Φ. ΚΑΜΠΕΛΗΣ ΗΛΙΑΣ-ΚΟΕΝ ΡΑΣΕΛ Ο.Ε.",
+      "address": "ΑΝΘΙΜΟΥ ΓΑΖΗ 1 & ΚΥΠΡΟΥ ΓΩΝΙΑ (Πλατεία Εβραίων Μαρτύρων)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410535260",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.63838,
+        "lon": 22.41317,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23094",
         "source": "list",
         "precision": "exact"
       }
@@ -769,11 +853,32 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-13",
       "location": {
         "lat": 39.64068,
         "lon": 22.4222,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23045",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410573135",
+      "name": "ΚΥΡΓΙΑΝΝΗΣ Σ. ΓΕΩΡΓΙΟΣ",
+      "address": "ΚΟΛΟΚΟΤΡΩΝΗ 2 & ΜΑΝΔΗΛΑΡΑ",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410573135",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.63585,
+        "lon": 22.42148,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23091",
         "source": "list",
         "precision": "exact"
       }
@@ -874,7 +979,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-13",
       "location": {
         "lat": 39.668652,
         "lon": 22.394744,
@@ -900,27 +1005,6 @@
         "lat": 39.62518,
         "lon": 22.39695,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23076",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
-      "id": "2410614460",
-      "name": "ΜΠΕΓΑΣ ΑΛΜΠΕΡΤΟΣ",
-      "address": "ΛΑΓΟΥ 41 (Πλησίον ΔΕΥΑΛ, διασταύρωση με Κρανώνος)",
-      "locality": "Λάρισα",
-      "postcode": null,
-      "phone": "2410614460",
-      "groupId": "larisa",
-      "sources": [
-        "fsl"
-      ],
-      "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
-      "location": {
-        "lat": 39.63458,
-        "lon": 22.40281,
-        "ref": "https://larisa.efhmeries.gr/Home/Details/23047",
         "source": "list",
         "precision": "exact"
       }
@@ -1000,7 +1084,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-13",
       "location": {
         "lat": 39.63266,
         "lon": 22.39905,
@@ -1157,27 +1241,6 @@
       }
     },
     {
-      "id": "2410626612",
-      "name": "ΚΑΡΟΖΟΥ ΕΥΘΥΜΙΑ-ΛΩΡΕΤΤΑ",
-      "address": "ΚΑΡΔΙΤΣΗΣ 131 (Πλησίον Γηροκομείου)",
-      "locality": "Λάρισα",
-      "postcode": null,
-      "phone": "2410626612",
-      "groupId": "larisa",
-      "sources": [
-        "fsl"
-      ],
-      "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
-      "location": {
-        "lat": 39.62194,
-        "lon": 22.40726,
-        "ref": "https://larisa.efhmeries.gr/Home/Details/23044",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2410672566",
       "name": "ΔΑΣΤΑΜΑΝΗΣ ΔΗΜ. ΑΘΑΝΑΣΙΟΣ",
       "address": "ΑΝΘΙΜΟΥ ΓΑΖΗ 41 & ΑΓ. ΝΙΚΟΛΑΟΥ",
@@ -1210,7 +1273,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
       "location": {
         "lat": 39.563057,
         "lon": 22.464754,
@@ -1252,7 +1315,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
       "location": {
         "lat": 39.723169,
         "lon": 22.396167,
@@ -1420,7 +1483,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
       "location": {
         "lat": 39.293579,
         "lon": 22.383864,
@@ -1651,7 +1714,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-13",
       "location": {
         "lat": 39.737851,
         "lon": 22.288704,
@@ -1740,6 +1803,27 @@
         "lat": 39.746384,
         "lon": 22.36644,
         "ref": "https://larisa.efhmeries.gr/Home/Details/17617",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2492031278",
+      "name": "ΦΑΡΜΑΚΕΙΟ ΚΑΡΑΤΑΣΙΟΥ ΔΗΜΟΣΘΕΝΗ Ε.Ε.",
+      "address": "ΑΓ. ΚΩΝΣΤΑΝΤΙΝΟΥ 2",
+      "locality": "Αμπελώνας",
+      "postcode": null,
+      "phone": "2492031278",
+      "groupId": "ampelonas",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.745001,
+        "lon": 22.361499,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/17623",
         "source": "list",
         "precision": "exact"
       }
@@ -1882,7 +1966,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-13",
       "location": {
         "lat": 39.895649,
         "lon": 22.187327,
@@ -2008,7 +2092,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-13",
       "location": {
         "lat": 39.7190695,
         "lon": 22.7586904,
