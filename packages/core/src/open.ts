@@ -56,6 +56,8 @@ export interface DutyWithoutHours {
   readonly duty: DutyKind;
   readonly groupId: string;
   readonly heading: string;
+  /** On call (some ITeQ lists): its hours are printed, but the pharmacist serves whoever phones. */
+  readonly onCall: boolean;
 }
 
 export type PharmacyStatus =
@@ -118,6 +120,8 @@ export interface PublishedDuty {
   readonly duty: DutyKind;
   readonly heading: string;
   readonly hours: TimeWindow | null;
+  /** On call during `hours`: on duty, but call first (DutySection.onCall). */
+  readonly onCall: boolean;
 }
 
 const MINUTE_MS = 60_000;
@@ -320,6 +324,8 @@ function rawForDate(data: CityData, index: Index, pharmacy: Pharmacy, date: IsoD
   }
 
   for (const { groupId, section } of index.duties.get(pharmacy.id)?.get(date) ?? []) {
+    // On call: on duty, but not open (computeStatus says "call first" during its hours).
+    if (section.onCall === true) continue;
     const { hours } = section;
     if (hours) {
       const start = instant(date, hours.from, timeZone);
@@ -481,11 +487,14 @@ function computeStatus(
     };
   }
 
-  // Listed as on duty for the duty day containing `at` (08:00 to 08:00), but with no hours.
+  // Listed as on duty for the duty day containing `at` (08:00 to 08:00), but with no hours; or
+  // on call, with `at` within its hours.
   const listings = index.duties.get(pharmacy.id);
   if (listings) {
-    const { dutyDate } = dutyDayOf(data, at);
-    const unknown = listings.get(dutyDate)?.find((listing) => listing.section.hours === null);
+    const { today, dutyDate } = dutyDayOf(data, at);
+    const unknown =
+      listings.get(dutyDate)?.find((listing) => listing.section.hours === null) ??
+      onCallAt(data, listings, today, t);
     if (unknown) {
       return {
         complete: needsLookAhead,
@@ -496,6 +505,7 @@ function computeStatus(
             duty: unknown.section.kind,
             groupId: unknown.groupId,
             heading: unknown.section.heading,
+            onCall: unknown.section.onCall === true,
           },
           nextOpen: next ? new Date(next.start) : null,
         },
@@ -512,6 +522,26 @@ function computeStatus(
       nextRunReasons: next ? reasonsOf(next.parts) : [],
     },
   };
+}
+
+/** An on-call listing whose hours contain the instant `t` (it may have started yesterday). */
+function onCallAt(
+  data: CityData,
+  listings: ReadonlyMap<IsoDate, readonly DutyListing[]>,
+  today: IsoDate,
+  t: number,
+): DutyListing | undefined {
+  const timeZone = data.city.timeZone;
+  for (const date of [today, addDays(today, -1)]) {
+    for (const listing of listings.get(date) ?? []) {
+      const { hours, onCall } = listing.section;
+      if (onCall !== true || hours === null) continue;
+      const start = instant(date, hours.from, timeZone);
+      const end = instant(hours.toNextDay ? addDays(date, 1) : date, hours.to, timeZone);
+      if (start <= t && t < end) return listing;
+    }
+  }
+  return undefined;
 }
 
 /** The date of the duty day (08:00 to 08:00) that contains `at`. */
@@ -727,6 +757,7 @@ export function publishedDuties(
         duty: section.kind,
         heading: section.heading,
         hours: section.hours,
+        onCall: section.onCall === true,
       });
     }
   }
