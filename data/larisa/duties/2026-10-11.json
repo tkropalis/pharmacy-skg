@@ -163,9 +163,29 @@
       "name": "Λάρισα",
       "source": {
         "url": "https://larisa.efhmeries.gr/",
-        "uploadedAt": "2026-10-06T13:41:24.095Z"
+        "uploadedAt": "2026-10-07T20:39:44.095Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "23:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410255157",
+              "name": "ΜΗΤΣΟΚΑΛΗΣ Ι. ΔΙΟΝΥΣΙΟΣ",
+              "address": "ΚΑΡΑΘΑΝΟΥ 48",
+              "locality": "Λάρισα",
+              "phone": "2410255157"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 08:00 ΕΩΣ 23:00",
@@ -225,26 +245,6 @@
               "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ & 28ης ΟΚΤΩΒΡΙΟΥ",
               "locality": "Λάρισα",
               "phone": "2410553862"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "23:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2410255157",
-              "name": "ΜΗΤΣΟΚΑΛΗΣ Ι. ΔΙΟΝΥΣΙΟΣ",
-              "address": "ΚΑΡΑΘΑΝΟΥ 48",
-              "locality": "Λάρισα",
-              "phone": "2410255157"
             }
           ]
         }

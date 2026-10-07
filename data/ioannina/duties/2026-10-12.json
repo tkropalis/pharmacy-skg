@@ -7,9 +7,29 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T07:53:47.583Z"
+        "uploadedAt": "2026-10-07T20:41:00.015Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651035304",
+              "name": "ΠΑΠΑΗΛΙΑ ΑΡΤΕΜΙΣ",
+              "address": "Ν. ΖΕΡΒΑ 37",
+              "locality": "Ιωάννινα",
+              "phone": "2651035304"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -41,26 +61,6 @@
               "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 9 - ΚΑΡΔΑΜΗΤΣΙΑ",
               "locality": "Ιωάννινα",
               "phone": "2651028215"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651035304",
-              "name": "ΠΑΠΑΗΛΙΑ ΑΡΤΕΜΙΣ",
-              "address": "Ν. ΖΕΡΒΑ 37",
-              "locality": "Ιωάννινα",
-              "phone": "2651035304"
             }
           ]
         }

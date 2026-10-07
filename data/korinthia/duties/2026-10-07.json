@@ -7,9 +7,139 @@
       "name": "Κορινθία",
       "source": {
         "url": "https://korinthia.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T11:00:32.185Z"
+        "uploadedAt": "2026-10-07T20:41:25.157Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "22:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741051751",
+              "name": "ΖΙΟΥΒΑ ΚΩΝΣΤΑΝΤΙΝΑ καιΣΙΑ Ο.Ε.",
+              "address": "ΒΡΑΧΑΤΙ",
+              "locality": "Βραχάτι",
+              "phone": "2741051751"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741085491",
+              "name": "ΓΙΑΚΟΥΜΑΚΗΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΔΑΜΑΣΚΗΝΟΥ 7",
+              "locality": "Κόρινθος",
+              "phone": "2741085491"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741085491",
+              "name": "ΓΙΑΚΟΥΜΑΚΗΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΔΑΜΑΣΚΗΝΟΥ 7",
+              "locality": "Κόρινθος",
+              "phone": "2741085491"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2742022823",
+              "name": "ΘΕΟΔΩΡΟΥ ΜΠΙΝΟΥ ΣΟΦΙΑ",
+              "address": "ΠΕΡΙΑΝΔΡΟΥ 30",
+              "locality": "Κιάτο",
+              "phone": "2742022823"
+            },
+            {
+              "pharmacyId": "2743026911",
+              "name": "ΚΟΝΤΟΓΙΑΝΝΗ ΑΜΑΛΙΑ καιΣΙΑ Ο.Ε.",
+              "address": "Ι. ΙΩΑΝΝΟΥ 46",
+              "locality": "Ξυλόκαστρο",
+              "phone": "2743026911"
+            },
+            {
+              "pharmacyId": "2744022334",
+              "name": "ΜΗΤΡΟΥ ΓΙΑΝΝΟΥΛΑ &ΣΙΑ Ο.Ε.",
+              "address": "ΠΛΑΤ. 25ης ΜΑΡΤΙΟΥ",
+              "locality": "Λουτράκι",
+              "phone": "2744022334"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2746023591",
+              "name": "ΒΑΣΙΛΕΙΟΥ ΘΕΟΔΩΡΟΣ & ΣΙΑ ΕΕ",
+              "address": "Λ. ΠΑΠΑΚ/ΝΟΥ 47",
+              "locality": "Νεμέα",
+              "phone": "2746023591"
+            },
+            {
+              "pharmacyId": "2741098177",
+              "name": "ΚΑΛΑΡΑ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΧΙΛΙΟΜΟΔΙ",
+              "locality": "Χιλιομόδι",
+              "phone": "2741098177"
+            },
+            {
+              "pharmacyId": "2741082122",
+              "name": "ΜΑΡΙΝΗ ΣΤΑΥΡΟΥΛΑ",
+              "address": "ΖΕΥΓΟΛΑΤΙΟ",
+              "locality": "Ζευγολατιό",
+              "phone": "2741082122"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -162,136 +292,6 @@
               "address": "ΕΞΑΜΙΛΙΑ",
               "locality": "Εξαμίλια",
               "phone": "2741036008"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2742022823",
-              "name": "ΘΕΟΔΩΡΟΥ ΜΠΙΝΟΥ ΣΟΦΙΑ",
-              "address": "ΠΕΡΙΑΝΔΡΟΥ 30",
-              "locality": "Κιάτο",
-              "phone": "2742022823"
-            },
-            {
-              "pharmacyId": "2743026911",
-              "name": "ΚΟΝΤΟΓΙΑΝΝΗ ΑΜΑΛΙΑ καιΣΙΑ Ο.Ε.",
-              "address": "Ι. ΙΩΑΝΝΟΥ 46",
-              "locality": "Ξυλόκαστρο",
-              "phone": "2743026911"
-            },
-            {
-              "pharmacyId": "2744022334",
-              "name": "ΜΗΤΡΟΥ ΓΙΑΝΝΟΥΛΑ &ΣΙΑ Ο.Ε.",
-              "address": "ΠΛΑΤ. 25ης ΜΑΡΤΙΟΥ",
-              "locality": "Λουτράκι",
-              "phone": "2744022334"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2746023591",
-              "name": "ΒΑΣΙΛΕΙΟΥ ΘΕΟΔΩΡΟΣ & ΣΙΑ ΕΕ",
-              "address": "Λ. ΠΑΠΑΚ/ΝΟΥ 47",
-              "locality": "Νεμέα",
-              "phone": "2746023591"
-            },
-            {
-              "pharmacyId": "2741098177",
-              "name": "ΚΑΛΑΡΑ ΑΙΚΑΤΕΡΙΝΗ",
-              "address": "ΧΙΛΙΟΜΟΔΙ",
-              "locality": "Χιλιομόδι",
-              "phone": "2741098177"
-            },
-            {
-              "pharmacyId": "2741082122",
-              "name": "ΜΑΡΙΝΗ ΣΤΑΥΡΟΥΛΑ",
-              "address": "ΖΕΥΓΟΛΑΤΙΟ",
-              "locality": "Ζευγολατιό",
-              "phone": "2741082122"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
-          "hours": {
-            "from": "22:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741051751",
-              "name": "ΖΙΟΥΒΑ ΚΩΝΣΤΑΝΤΙΝΑ καιΣΙΑ Ο.Ε.",
-              "address": "ΒΡΑΧΑΤΙ",
-              "locality": "Βραχάτι",
-              "phone": "2741051751"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741085491",
-              "name": "ΓΙΑΚΟΥΜΑΚΗΣ ΚΩΝ/ΝΟΣ",
-              "address": "ΔΑΜΑΣΚΗΝΟΥ 7",
-              "locality": "Κόρινθος",
-              "phone": "2741085491"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741085491",
-              "name": "ΓΙΑΚΟΥΜΑΚΗΣ ΚΩΝ/ΝΟΣ",
-              "address": "ΔΑΜΑΣΚΗΝΟΥ 7",
-              "locality": "Κόρινθος",
-              "phone": "2741085491"
             }
           ]
         }

@@ -7,9 +7,29 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T07:51:03.115Z"
+        "uploadedAt": "2026-10-07T20:40:41.114Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331024123",
+              "name": "ΜΑΣΟΥΡΑ ΑΛΕΞΑΝΔΡΑ & ΣΙΑ Ε.Ε.",
+              "address": "ΒΕΝΙΖΕΛΟΥ 26",
+              "locality": "Βέροια",
+              "phone": "2331024123"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "08:00 ΠΡΩΙ ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -92,26 +112,6 @@
             "from": "19:00",
             "to": "21:00",
             "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2331024123",
-              "name": "ΜΑΣΟΥΡΑ ΑΛΕΞΑΝΔΡΑ & ΣΙΑ Ε.Ε.",
-              "address": "ΒΕΝΙΖΕΛΟΥ 26",
-              "locality": "Βέροια",
-              "phone": "2331024123"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],

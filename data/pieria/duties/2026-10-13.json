@@ -7,7 +7,7 @@
       "name": "Πιερία",
       "source": {
         "url": "https://pieria.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T11:01:22.440Z"
+        "uploadedAt": "2026-10-07T20:42:15.661Z"
       },
       "sections": [
         {
@@ -88,26 +88,6 @@
         },
         {
           "kind": "day",
-          "heading": "8:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2351027910",
-              "name": "ΚΩΝΣΤΑΝΤΙΝΙΔΟΥ ΟΛΓΑ",
-              "address": "ΕΙΡΗΝΗΣ 33",
-              "locality": "Κατερίνη",
-              "phone": "2351027910"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:00 & 18:00 - 8:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
             "from": "08:00",
@@ -143,6 +123,26 @@
               "address": "ΠΑΡΜΕΝΙΩΝΟΣ 15",
               "locality": "Κατερίνη",
               "phone": "2351036812"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351027910",
+              "name": "ΚΩΝΣΤΑΝΤΙΝΙΔΟΥ ΟΛΓΑ",
+              "address": "ΕΙΡΗΝΗΣ 33",
+              "locality": "Κατερίνη",
+              "phone": "2351027910"
             }
           ]
         }

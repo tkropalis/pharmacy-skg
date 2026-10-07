@@ -7,7 +7,7 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T11:00:57.338Z"
+        "uploadedAt": "2026-10-07T20:41:50.634Z"
       },
       "sections": [
         {
@@ -136,46 +136,6 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 20:30",
-          "hours": {
-            "from": "08:00",
-            "to": "20:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721069775",
-              "name": "ΣΥΝΙΩΡΗ ΑΛΚΗΣΤΙΣ & ΣΙΑ Ο.Ε.",
-              "address": "ΑΣΠΡΟΧΩΜΑ",
-              "locality": "Καλαμάτα",
-              "phone": "2721069775"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721069775",
-              "name": "ΣΥΝΙΩΡΗ ΑΛΚΗΣΤΙΣ & ΣΙΑ Ο.Ε.",
-              "address": "ΑΣΠΡΟΧΩΜΑ",
-              "locality": "Καλαμάτα",
-              "phone": "2721069775"
-            }
-          ]
-        },
-        {
           "kind": "saturday-extra",
           "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
@@ -212,6 +172,46 @@
               "address": "ΣΙΔ. ΣΤΑΘΜΟΥ 7",
               "locality": "Καλαμάτα",
               "phone": "2721027022"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 20:30",
+          "hours": {
+            "from": "08:00",
+            "to": "20:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721069775",
+              "name": "ΣΥΝΙΩΡΗ ΑΛΚΗΣΤΙΣ & ΣΙΑ Ο.Ε.",
+              "address": "ΑΣΠΡΟΧΩΜΑ",
+              "locality": "Καλαμάτα",
+              "phone": "2721069775"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721069775",
+              "name": "ΣΥΝΙΩΡΗ ΑΛΚΗΣΤΙΣ & ΣΙΑ Ο.Ε.",
+              "address": "ΑΣΠΡΟΧΩΜΑ",
+              "locality": "Καλαμάτα",
+              "phone": "2721069775"
             }
           ]
         }

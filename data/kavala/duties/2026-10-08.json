@@ -7,29 +7,9 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T07:54:15.572Z"
+        "uploadedAt": "2026-10-07T20:41:06.381Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510229257",
-              "name": "ΖΑΜΠΟΥΛΗΣ ΒΑΣΙΛΕΙΟΣ Α.",
-              "address": "ΜΗΤΡΟΠΟΛΙΤΟΥ ΧΡΥΣΟΣΤΟΜΟΥ 6",
-              "locality": "Καβάλα",
-              "phone": "2510229257"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΒΕΝΙΖΕΛΟΥ 35",
               "locality": "Καβάλα",
               "phone": "2510225182"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510229257",
+              "name": "ΖΑΜΠΟΥΛΗΣ ΒΑΣΙΛΕΙΟΣ Α.",
+              "address": "ΜΗΤΡΟΠΟΛΙΤΟΥ ΧΡΥΣΟΣΤΟΜΟΥ 6",
+              "locality": "Καβάλα",
+              "phone": "2510229257"
             }
           ]
         }

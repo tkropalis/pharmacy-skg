@@ -7,9 +7,29 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T07:54:15.572Z"
+        "uploadedAt": "2026-10-07T20:41:06.381Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510620027",
+              "name": "ΚΟΚΚΙΝΑΚΗ ΕΛΕΝΗ",
+              "address": "ΦΙΛΙΚΗΣ ΕΤΑΙΡΕΙΑΣ 4",
+              "locality": "Καβάλα",
+              "phone": "2510620027"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
@@ -34,26 +54,6 @@
               "address": "ΓΑΛΛ.ΔΗΜΟΚΡΑΤΙΑΣ 17",
               "locality": "Καβάλα",
               "phone": "2510831386"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510620027",
-              "name": "ΚΟΚΚΙΝΑΚΗ ΕΛΕΝΗ",
-              "address": "ΦΙΛΙΚΗΣ ΕΤΑΙΡΕΙΑΣ 4",
-              "locality": "Καβάλα",
-              "phone": "2510620027"
             }
           ]
         }

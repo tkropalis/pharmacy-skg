@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T07:54:30.731Z"
+        "uploadedAt": "2026-10-07T20:41:12.591Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441073963",
-              "name": "ΠΑΛΑΣΚΑ ΑΠΟΣΤΟΛΙΑ",
-              "address": "Α.ΠΑΠΑΝΔΡΕΟΥ 7",
-              "locality": "Καρδίτσα",
-              "phone": "2441073963"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ- 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΗΡ. ΠΟΛΥΤΕΧΝΕΙΟΥ 43",
               "locality": "Καρδίτσα",
               "phone": "2441022103"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441073963",
+              "name": "ΠΑΛΑΣΚΑ ΑΠΟΣΤΟΛΙΑ",
+              "address": "Α.ΠΑΠΑΝΔΡΕΟΥ 7",
+              "locality": "Καρδίτσα",
+              "phone": "2441073963"
             }
           ]
         }

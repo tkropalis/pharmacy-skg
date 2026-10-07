@@ -7,26 +7,26 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T10:59:48.045Z"
+        "uploadedAt": "2026-10-07T20:40:41.114Z"
       },
       "sections": [
         {
-          "kind": "day",
-          "heading": "13:30 ΕΩΣ 17:30",
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
-            "from": "13:30",
-            "to": "17:30",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331027475",
-              "name": "ΧΟΤΟΥΡΑΣ Α. ΟΔΥΣΣΕΑΣ",
-              "address": "ΜΑΥΡΟΜΙΧΑΛΗ 2",
+              "pharmacyId": "2331067420",
+              "name": "ΠΑΠΑΡΗ Χ. ΟΛΥΜΠΙΑ - ΥΠΟΚ/ΜΑ",
+              "address": "ΜΑΛΑΚΟΥΣΗ 4 - Πλ. Αγ. Αντωνίου",
               "locality": "Βέροια",
-              "phone": "2331027475"
+              "phone": "2331067420"
             }
           ]
         },
@@ -79,22 +79,22 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "13:30 ΕΩΣ 17:30",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "13:30",
+            "to": "17:30",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331067420",
-              "name": "ΠΑΠΑΡΗ Χ. ΟΛΥΜΠΙΑ - ΥΠΟΚ/ΜΑ",
-              "address": "ΜΑΛΑΚΟΥΣΗ 4 - Πλ. Αγ. Αντωνίου",
+              "pharmacyId": "2331027475",
+              "name": "ΧΟΤΟΥΡΑΣ Α. ΟΔΥΣΣΕΑΣ",
+              "address": "ΜΑΥΡΟΜΙΧΑΛΗ 2",
               "locality": "Βέροια",
-              "phone": "2331067420"
+              "phone": "2331027475"
             }
           ]
         }

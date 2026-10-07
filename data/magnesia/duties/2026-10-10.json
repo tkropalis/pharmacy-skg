@@ -7,57 +7,9 @@
       "name": "Μαγνησία",
       "source": {
         "url": "https://magnesia.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T07:57:41.293Z"
+        "uploadedAt": "2026-10-07T20:41:44.400Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2421069938",
-              "name": "ΑΘΗΝΑ ΠΕΛΕΚΟΥ",
-              "address": "ΕΛΛΗΣΠΟΝΤΟΥ 79",
-              "locality": "Νέα Ιωνία",
-              "phone": "2421069938"
-            },
-            {
-              "pharmacyId": "2421042900",
-              "name": "ΑΣΠΑΣΙΑ ΠΑΝΑΓΙΩΤΟΠΟΥΛΟΥ",
-              "address": "ΙΩΛΚΟΥ 227",
-              "locality": "Βόλος",
-              "phone": "2421042900"
-            },
-            {
-              "pharmacyId": "2421034333",
-              "name": "ΕΥΑΓΓΕΛΙΑ ΝΑΣΙΚΑ",
-              "address": "Κ.ΚΑΡΤΑΛΗ-ΑΝΘ.ΓΑΖΗ",
-              "locality": "Βόλος",
-              "phone": "2421034333"
-            },
-            {
-              "pharmacyId": "2421035598",
-              "name": "ΙΩΑΝΝΗΣ ΚΟΚΚΑΛΗΣ",
-              "address": "ΕΡΜΟΥ 231",
-              "locality": "Βόλος",
-              "phone": "2421035598"
-            },
-            {
-              "pharmacyId": "2421034304",
-              "name": "ΧΡΗΣΤΟΣ ΜΕΦΣΟΥΤ",
-              "address": "ΠΟΛΥΜΕΡΗ 56",
-              "locality": "Βόλος",
-              "phone": "2421034304"
-            }
-          ]
-        },
         {
           "kind": "saturday-extra",
           "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -109,6 +61,54 @@
               "address": "ΜΑΙΑΝΔΡΟΥ 60",
               "locality": "Νέα Ιωνία",
               "phone": "2421060651"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421069938",
+              "name": "ΑΘΗΝΑ ΠΕΛΕΚΟΥ",
+              "address": "ΕΛΛΗΣΠΟΝΤΟΥ 79",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421069938"
+            },
+            {
+              "pharmacyId": "2421042900",
+              "name": "ΑΣΠΑΣΙΑ ΠΑΝΑΓΙΩΤΟΠΟΥΛΟΥ",
+              "address": "ΙΩΛΚΟΥ 227",
+              "locality": "Βόλος",
+              "phone": "2421042900"
+            },
+            {
+              "pharmacyId": "2421034333",
+              "name": "ΕΥΑΓΓΕΛΙΑ ΝΑΣΙΚΑ",
+              "address": "Κ.ΚΑΡΤΑΛΗ-ΑΝΘ.ΓΑΖΗ",
+              "locality": "Βόλος",
+              "phone": "2421034333"
+            },
+            {
+              "pharmacyId": "2421035598",
+              "name": "ΙΩΑΝΝΗΣ ΚΟΚΚΑΛΗΣ",
+              "address": "ΕΡΜΟΥ 231",
+              "locality": "Βόλος",
+              "phone": "2421035598"
+            },
+            {
+              "pharmacyId": "2421034304",
+              "name": "ΧΡΗΣΤΟΣ ΜΕΦΣΟΥΤ",
+              "address": "ΠΟΛΥΜΕΡΗ 56",
+              "locality": "Βόλος",
+              "phone": "2421034304"
             }
           ]
         }

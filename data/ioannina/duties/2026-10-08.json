@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T07:53:47.583Z"
+        "uploadedAt": "2026-10-07T20:41:00.015Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651020977",
-              "name": "ΓΟΥΛΑΣ ΑΘΑΝΑΣΙΟΣ",
-              "address": "28ης ΟΚΤΩΒΡΙΟΥ 8Β",
-              "locality": "Ιωάννινα",
-              "phone": "2651020977"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "ΚΟΡΑΗ 13",
               "locality": "Ιωάννινα",
               "phone": "2651070146"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651020977",
+              "name": "ΓΟΥΛΑΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "28ης ΟΚΤΩΒΡΙΟΥ 8Β",
+              "locality": "Ιωάννινα",
+              "phone": "2651020977"
             }
           ]
         }

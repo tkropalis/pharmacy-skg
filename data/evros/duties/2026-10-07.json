@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T07:50:08.910Z"
+        "uploadedAt": "2026-10-07T20:40:28.736Z"
       },
       "sections": [
         {
@@ -34,6 +34,26 @@
               "address": "ΒΕΝΙΖΕΛΟΥ 85",
               "locality": "Διδυμότειχο",
               "phone": "2553024434"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551038473",
+              "name": "ΤΣΩΝΗΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "Μαζαράκη 11 (μεταξύ Αγ.Νικολάου & ΤΑΞΙ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551038473"
             }
           ]
         },
@@ -89,26 +109,6 @@
               "address": "Ι. Καβύρη 36 (γωνία Βιζβύζη)",
               "locality": "Αλεξανδρούπολη",
               "phone": "2551021444"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551038473",
-              "name": "ΤΣΩΝΗΣ ΑΘΑΝΑΣΙΟΣ",
-              "address": "Μαζαράκη 11 (μεταξύ Αγ.Νικολάου & ΤΑΞΙ)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551038473"
             }
           ]
         }

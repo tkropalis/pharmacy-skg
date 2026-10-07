@@ -7,9 +7,70 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T11:30:04.579Z"
+        "uploadedAt": "2026-10-07T20:42:52.832Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821058345",
+              "name": "ΑΛΙΓΙΖΑΚΗ ΜΑΡΙΑ/ΑLΙGΙΖΑΚΙ MARIA",
+              "address": "8ΗΣ ΔΕΚΕΜΒΡΙΟΥ 4/8TH DECEMBER 4",
+              "locality": "Χανιά",
+              "phone": "2821058345"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821058345",
+              "name": "ΑΛΙΓΙΖΑΚΗ ΜΑΡΙΑ/ΑLΙGΙΖΑΚΙ MARIA",
+              "address": "8ΗΣ ΔΕΚΕΜΒΡΙΟΥ 4/8TH DECEMBER 4",
+              "locality": "Χανιά",
+              "phone": "2821058345"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "6948462411",
+              "name": "ΔΑΜΟΡΑΚΗΣ ΕΥΤΥΧΗΣ/DΑΜΟRΑΚΙS EYTIXIS",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "6948462411"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
@@ -52,27 +113,6 @@
           ]
         },
         {
-          "kind": "on-duty",
-          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
-          "hours": {
-            "from": "08:15",
-            "to": "08:15",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "6948462411",
-              "name": "ΔΑΜΟΡΑΚΗΣ ΕΥΤΥΧΗΣ/DΑΜΟRΑΚΙS EYTIXIS",
-              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
-              "locality": "Δήμος Καντάνου-Σελίνου",
-              "phone": "6948462411"
-            }
-          ]
-        },
-        {
           "kind": "day",
           "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
           "hours": {
@@ -89,46 +129,6 @@
               "address": "ΟΜΟΓΕΝΩΝ ΑΜΕΡΙΚΗΣ 16/OMOGENON AMERIKIS 16",
               "locality": "Δήμος Κισσάμου",
               "phone": "2822024080"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
-          "hours": {
-            "from": "08:30",
-            "to": "14:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2821058345",
-              "name": "ΑΛΙΓΙΖΑΚΗ ΜΑΡΙΑ/ΑLΙGΙΖΑΚΙ MARIA",
-              "address": "8ΗΣ ΔΕΚΕΜΒΡΙΟΥ 4/8TH DECEMBER 4",
-              "locality": "Χανιά",
-              "phone": "2821058345"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:30",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2821058345",
-              "name": "ΑΛΙΓΙΖΑΚΗ ΜΑΡΙΑ/ΑLΙGΙΖΑΚΙ MARIA",
-              "address": "8ΗΣ ΔΕΚΕΜΒΡΙΟΥ 4/8TH DECEMBER 4",
-              "locality": "Χανιά",
-              "phone": "2821058345"
             }
           ]
         }

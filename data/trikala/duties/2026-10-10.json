@@ -7,29 +7,9 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T08:04:02.397Z"
+        "uploadedAt": "2026-10-07T20:42:40.331Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 23:00",
-          "hours": {
-            "from": "08:00",
-            "to": "23:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431073071",
-              "name": "ΣΑΡΑΝΤΗΣ ΓΕΩΡΓΙΟΣ",
-              "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 15",
-              "locality": "Τρίκαλα",
-              "phone": "2431073071"
-            }
-          ]
-        },
         {
           "kind": "saturday-extra",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -67,6 +47,26 @@
               "address": "ΔΕΛΗΓΙΩΡΓΗ & ΚΑΝΑΡΗ 20",
               "locality": "Τρίκαλα",
               "phone": "2431073240"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431073071",
+              "name": "ΣΑΡΑΝΤΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 15",
+              "locality": "Τρίκαλα",
+              "phone": "2431073071"
             }
           ]
         }
