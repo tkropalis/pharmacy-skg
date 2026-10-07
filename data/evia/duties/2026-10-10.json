@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "groups": [
+    {
+      "id": "evia",
+      "name": "Εύβοια",
+      "source": {
+        "url": "https://evia.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:49:26.779Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221062843",
+              "name": "ΑΝΤΩΝΙΟΥ ΝΙΚΟΛΑΟΣ",
+              "address": "ΝΕΟΦΥΤΟΥ 48Β",
+              "locality": "Χαλκίδα",
+              "phone": "2221062843"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221024646",
+              "name": "ΚΑΤΣΑΝΤΩΝΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΔΟΥΝΑ 8-10 ΕΝΑΝΤΙ ΔΙΚΑΣΤΗΡΙΩΝ",
+              "locality": "Χαλκίδα",
+              "phone": "2221024646"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221024646",
+              "name": "ΚΑΤΣΑΝΤΩΝΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΔΟΥΝΑ 8-10 ΕΝΑΝΤΙ ΔΙΚΑΣΤΗΡΙΩΝ",
+              "locality": "Χαλκίδα",
+              "phone": "2221024646"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 14:00",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221077961",
+              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
+              "address": "ΑΒΑΝΤΩΝ 81",
+              "locality": "Χαλκίδα",
+              "phone": "2221077961"
+            },
+            {
+              "pharmacyId": "2221094469",
+              "name": "ΛΟΥΚΑ ΠΑΝΑΓΙΩΤΑ",
+              "address": "Λ.ΚΑΡΑΜΑΝΛΗ 19",
+              "locality": "Χαλκίδα",
+              "phone": "2221094469"
+            },
+            {
+              "pharmacyId": "2221087414",
+              "name": "Σ.Φ. ΒΡΑΚΑ ΜΑΡΙΑ - ΒΑΡΟΥΧΑΚΗΣ ΑΝΤΩΝΙΟΣ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 30 & ΦΙΛΩΝΟΣ 7-ΕΝΑΝΤΙ ΑΡΧ. ΜΟΥΣΕΙΟΥ",
+              "locality": "Χαλκίδα",
+              "phone": "2221087414"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2226053141",
+              "name": "ΛΙΑΠΟΔΗΜΗΤΡΗ ΠΑΝΑΓΙΩΤΑ",
+              "address": "ΠΛΗΣΙΟΝ ΚΤΕΛ",
+              "locality": "Ιστιαία",
+              "phone": "2226053141"
+            },
+            {
+              "pharmacyId": "2221044062",
+              "name": "ΜΗΤΑΦΗ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΛΕΩΦ ΤΣΙΜΕΝΙΔΟΥ 12",
+              "locality": "Αρτάκη",
+              "phone": "2221044062"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2229062585",
+              "name": "ΜΙΧΟΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΦΙΛ. ΜΕΝΕΔΗΜΟΥ 36",
+              "locality": "Ερέτρια",
+              "phone": "2229062585"
+            },
+            {
+              "pharmacyId": "2224023543",
+              "name": "ΠΟΛΙΤΗΣ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΣΑΧΤΟΥΡΗ 80",
+              "locality": "Κάρυστος",
+              "phone": "2224023543"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221076486",
+              "name": "Σ.Φ. ΝΤΙΑΝΑ ΒΑΛΤΣΑΝΟΒΑ ΠΑΠΑΠΟΣΤΟΛΟΥ - ΜΑΡΤΙΝ ΠΑΠΑΠΟΣΤΟΛΟΥ ΟΕ",
+              "address": "ΑΡΕΘΟΥΣΗΣ 217",
+              "locality": "Χαλκίδα",
+              "phone": "2221076486"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221076486",
+              "name": "Σ.Φ. ΝΤΙΑΝΑ ΒΑΛΤΣΑΝΟΒΑ ΠΑΠΑΠΟΣΤΟΛΟΥ - ΜΑΡΤΙΝ ΠΑΠΑΠΟΣΤΟΛΟΥ ΟΕ",
+              "address": "ΑΡΕΘΟΥΣΗΣ 217",
+              "locality": "Χαλκίδα",
+              "phone": "2221076486"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -50,6 +50,12 @@ export interface DutySection {
   readonly heading: string;
   /** From the heading; null when the heading states no hours (decision D21). */
   readonly hours: TimeWindow | null;
+  /**
+   * On call (some ITeQ lists, marked "*"): the pharmacist may close at midday and is not in the
+   * pharmacy overnight, and serves whoever phones. During `hours` the pharmacy is on duty but
+   * not open: "call first", like a duty without hours.
+   */
+  readonly onCall?: boolean;
   readonly extraHours: readonly ExtraHours[];
   readonly notes: readonly string[];
   readonly entries: readonly DutyEntry[];

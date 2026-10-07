@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "lasithi",
+  "updatedAt": "2026-10-07T07:57:40.902Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-lasithi",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Λασιθίου",
+        "en": "Pharmaceutical Association of Lasithi"
+      },
+      "url": "https://lasithi.efhmeries.gr/",
+      "note": "Duty lists, from lasithi.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

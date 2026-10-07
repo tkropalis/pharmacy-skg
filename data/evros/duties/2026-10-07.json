@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-07",
+  "groups": [
+    {
+      "id": "evros",
+      "name": "Έβρος",
+      "source": {
+        "url": "https://evros.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:50:08.910Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552027049",
+              "name": "ΚΟΥΚΛΑΤΖΗ ΣΜΑΡΩ",
+              "address": "Β. ΚΩΝΣΤΑΝΤΙΝΟΥ 52",
+              "locality": "Ορεστιάδα",
+              "phone": "2552027049"
+            },
+            {
+              "pharmacyId": "2553024434",
+              "name": "ΜΟΝΑΣΤΗΡΙΩΤΟΥ ΔΙΑΜΑΝΤΙΔΟΥ ΑΝΝΑ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 85",
+              "locality": "Διδυμότειχο",
+              "phone": "2553024434"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2555022229",
+              "name": "ΗΛΙΑΚΗ ΒΑΣΙΛΙΚΗ",
+              "address": "ΠΛΑΣΤΗΡΑ 3",
+              "locality": "Φέρες",
+              "phone": "2555022229"
+            },
+            {
+              "pharmacyId": "2554042020",
+              "name": "ΠΑΠΑΜΙΧΑΗΛ ΠΑΣΧΑΛΗΣ",
+              "address": "ΝΙΚΗΣ 33",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042020"
+            },
+            {
+              "pharmacyId": "2554024303",
+              "name": "ΡΟΚΚΑ ΘΕΟΔΩΡΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 88",
+              "locality": "Σουφλί",
+              "phone": "2554024303"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:30-22:00",
+          "hours": {
+            "from": "14:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551021444",
+              "name": "Σ.Φ. ΑΔΑΜΙΔΗΣ Α.-ΑΔΑΜΙΔΟΥ Μ.",
+              "address": "Ι. Καβύρη 36 (γωνία Βιζβύζη)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551021444"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551038473",
+              "name": "ΤΣΩΝΗΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "Μαζαράκη 11 (μεταξύ Αγ.Νικολάου & ΤΑΞΙ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551038473"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

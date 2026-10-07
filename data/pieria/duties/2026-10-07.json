@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-07",
+  "groups": [
+    {
+      "id": "pieria",
+      "name": "Πιερία",
+      "source": {
+        "url": "https://pieria.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T08:02:40.030Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2352043297",
+              "name": "ΛΑΓΟΘΑΝΑΣΗ ΕΛΕΝΗ",
+              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 2",
+              "locality": "Νέος Παντελεήμονας",
+              "phone": "2352043297"
+            },
+            {
+              "pharmacyId": "2351063601",
+              "name": "ΟΙΚΟΝΟΜΙΚΟΣ ΝΙΚΟΛΑΟΣ",
+              "address": "Γ. ΣΕΠΤΕΜΒΡΙΟΥ 58",
+              "locality": "Καλλιθέα",
+              "phone": "2351063601"
+            },
+            {
+              "pharmacyId": "2353022855",
+              "name": "ΠΑΡΑΛΥΚΙΔΗΣ ΠΑΣΧΑΛΗΣ",
+              "address": "ΑΚΡΟΠΟΛΕΩΣ & ΛΥΚΟΥΡΓΟΥ",
+              "locality": "Αιγίνιο",
+              "phone": "2353022855"
+            },
+            {
+              "pharmacyId": "2352031038",
+              "name": "Σ.Φ. ΚΑΤΣΑΡΟΥ ΣΤΑΜΑΤΙΑ - ΚΟΥΛΙΟΥ ΕΛΕΝΗ",
+              "address": "ΜΕΤΑΞΑ ΙΩΑΝΝΗ 3",
+              "locality": "Λεπτοκαρυά",
+              "phone": "2352031038"
+            },
+            {
+              "pharmacyId": "2353031494",
+              "name": "ΣΑΜΨΟΥΡΗ ΕΥΓΕΝΙΑ-ΑΓΑΘΗ",
+              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 57",
+              "locality": "Κολινδρός",
+              "phone": "2353031494"
+            },
+            {
+              "pharmacyId": "2351041498",
+              "name": "ΧΑΜΑΛΑΚΗ ΘΕΟΠΙΑ",
+              "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 80",
+              "locality": "Κορινός",
+              "phone": "2351041498"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2352021095",
+              "name": "ΝΤΟΡΑ ΔΗΜΗΤΡΑ",
+              "address": "ΑΓΙΟΥ ΝΙΚΟΛΑΟΥ 102",
+              "locality": "Λιτόχωρο",
+              "phone": "2352021095"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351021415",
+              "name": "ΚΑΤΣΑΜΑΓΚΑ ΕΙΡΗΝΗ",
+              "address": "ΖΑΛΟΓΓΟΥ 1",
+              "locality": "Κατερίνη",
+              "phone": "2351021415"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:30 & 18:00 - 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351025789",
+              "name": "Σ.Φ. ΚΑΡΑΒΕΡΓΟΥ ΑΝΑΣΤΑΣΙΑ-ΚΑΡΑΒΕΡΓΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΕΙΡΗΝΗΣ 6",
+              "locality": "Κατερίνη",
+              "phone": "2351025789"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:30 & 18:00 - 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351025789",
+              "name": "Σ.Φ. ΚΑΡΑΒΕΡΓΟΥ ΑΝΑΣΤΑΣΙΑ-ΚΑΡΑΒΕΡΓΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΕΙΡΗΝΗΣ 6",
+              "locality": "Κατερίνη",
+              "phone": "2351025789"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

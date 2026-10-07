@@ -21,7 +21,10 @@ const SECTORS = [
 describe('iteqDutyLists', () => {
   it('makes one list per sector, one section per heading, in the page order', () => {
     const page = parseIteqPage(fixture('larisa_2026-10-10.html'));
-    const { lists, warnings } = iteqDutyLists(page, '2026-10-10', SECTORS);
+    const { lists, warnings } = iteqDutyLists(page, '2026-10-10', {
+      kind: 'sectors',
+      sectors: SECTORS,
+    });
     expect(warnings).toEqual([]);
     expect(lists.map((list) => list.groupId)).toEqual(SECTORS.map((sector) => sector.id));
 
@@ -50,9 +53,71 @@ describe('iteqDutyLists', () => {
 
   it('reports a card in a sector it does not know, and leaves it out', () => {
     const page = parseIteqPage(fixture('larisa_2026-10-06_home.html'));
-    const { lists, warnings } = iteqDutyLists(page, '2026-10-06', SECTORS.slice(0, 1));
+    const { lists, warnings } = iteqDutyLists(page, '2026-10-06', {
+      kind: 'sectors',
+      sectors: SECTORS.slice(0, 1),
+    });
     expect(lists.map((list) => list.groupId)).toEqual(['larisa']);
     expect(warnings).toHaveLength(8);
     expect(warnings[0]?.code).toBe('unknown-sector');
+  });
+
+  it('makes one list for an area whose cards print the place, one section per window', () => {
+    const page = parseIteqPage(fixture('piraeus_2026-10-07_home.html'));
+    const { lists, warnings } = iteqDutyLists(page, '2026-10-07', {
+      kind: 'area',
+      id: 'piraeus',
+      name: 'Πειραιάς',
+    });
+    expect(warnings).toEqual([]);
+    expect(lists.map((list) => [list.groupId, list.groupName])).toEqual([['piraeus', 'Πειραιάς']]);
+    const sections = lists[0]?.sections ?? [];
+    // "08:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ" is a day window and a night one.
+    const split = sections.filter(
+      (s) => s.heading === '08:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ',
+    );
+    expect(split.map((s) => [s.kind, s.hours])).toEqual([
+      ['day', { from: '08:00', to: '14:00', toNextDay: false }],
+      ['overnight', { from: '17:00', to: '08:00', toNextDay: true }],
+    ]);
+    expect(split[0]?.entries).toEqual(split[1]?.entries);
+    // Each pharmacy's locality is its place, written out.
+    const localities = new Set(sections.flatMap((s) => s.entries.map((e) => e.locality)));
+    expect(localities).toContain('Κερατσίνι');
+    expect(localities).toContain('Πειραιάς');
+    expect([...localities].every((place) => /[α-ω]/.test(place))).toBe(true);
+  });
+
+  it('marks on-call duties (the "*" headings)', () => {
+    const page = parseIteqPage(fixture('lakonia_2026-10-07_home.html'));
+    const { lists, warnings } = iteqDutyLists(page, '2026-10-07', {
+      kind: 'area',
+      id: 'lakonia',
+      name: 'Λακωνία',
+    });
+    expect(warnings).toEqual([]);
+    const sections = lists[0]?.sections ?? [];
+    expect(sections.map((s) => [s.heading, s.kind, s.onCall === true])).toEqual([
+      ['08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*', 'on-duty', true],
+      ['08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ', 'on-duty', false],
+      ['20:30 ΕΩΣ 20:30 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*', 'overnight', true],
+      ['21:00 ΕΩΣ 21:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*', 'overnight', true],
+    ]);
+  });
+
+  it('reports a place with no written-out name, keeping it as printed', () => {
+    const page = parseIteqPage(fixture('piraeus_2026-10-07_home.html'));
+    const renamed = {
+      ...page,
+      cards: page.cards.map((card, i) => (i === 0 ? { ...card, locality: 'ΑΤΛΑΝΤΙΔΑ' } : card)),
+    };
+    const { lists, warnings } = iteqDutyLists(renamed, '2026-10-07', {
+      kind: 'area',
+      id: 'piraeus',
+      name: 'Πειραιάς',
+    });
+    expect(warnings.map((w) => w.code)).toEqual(['unnamed-place']);
+    const places = lists[0]?.sections.flatMap((s) => s.entries.map((e) => e.locality)) ?? [];
+    expect(places).toContain('ΑΤΛΑΝΤΙΔΑ');
   });
 });

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "imathia",
+  "updatedAt": "2026-10-07T07:51:48.916Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-imathia",
+      "name": {
+        "el": "Εφημερίες φαρμακείων Ημαθίας",
+        "en": "Pharmacy duties of Imathia"
+      },
+      "url": "https://imathia.efhmeries.gr/",
+      "note": "Duty lists, from imathia.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

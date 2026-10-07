@@ -121,8 +121,11 @@ Decision D26; the research is in [research-greece.md](research-greece.md).
    - Pipeline (in review): one parser for `<area>.efhmeries.gr` (`packages/ingest/src/iteq/`, `cities/iteq.ts`); Larissa's nine sectors are duty groups; coordinates from each pharmacy's details page (`inputs/listed-locations.json`); `data/larisa/` is collected but not shown yet. The name on screen loses "Θεσσαλονίκης".
    - App (in review): Larissa in `CITIES`; the app switches city with the position, the area picker or a favourite, and remembers it; only pharmacies on duty where a city has no regular hours, with one line saying so; pages, duty-date and area URLs per city; the about page credits each association.
    - Later: `fsa-efimeries.gr` (Attica), which has its own page format.
-3. **The map and the engine at national scale:** data split per city with a national index and a national file of each day's duty pharmacies; status computed only for the cities loaded, and only when a status changes; incremental map updates (`updateData`, `promoteId`, feature-state); Greece's bounds and a lower minimum zoom; pages with external CSS and a sitemap per city.
-4. **Every ITeQ area**, on duty only, until each area's regular hours are added from its Region's decision.
+3. **The map and the engine at national scale:** data split per city with a national index and a national file of each day's duty pharmacies; status computed only for the cities loaded, and only when a status changes; incremental map updates (`updateData`, `promoteId`, feature-state); pages with external CSS and a sitemap per city.
+   - Done with step 4: the map zooms out to all of Greece (`minZoom` 5, `maxBounds`); a national list of places for the area picker (`/data/places.json`, about 6 KB compressed); the app still loads one area at a time, so the engine needs nothing yet (the largest area, Piraeus, has 131 pharmacies so far).
+4. **Every ITeQ area** (in review), on duty only, until each area's regular hours are added from its Region's decision.
+   - 30 areas besides Larissa, 983 pharmacies in their first week of lists, every one placed by the list's own coordinates or, for three placed at a namesake, by address. One duty group per area; places written out (`iteq/places.ts`); every form of hours the sites print, with on-call duties (`onCall`); bounds from the data, with smaller boxes where one would take in another association's town.
+   - The build: 5,221 pages, 167 MB, in seconds.
 5. **The rest:** Diavgeia's yearly duty tables, per-site parsers (Patra, Serres, Kilkis), extended-hours lists.
 6. **Contact** ITeQ and the associations (D26).
 

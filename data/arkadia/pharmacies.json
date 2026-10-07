@@ -1,0 +1,593 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2710222065",
+      "name": "ΘΕΟΔΟΣΙΟΥ ΣΟΦΙΑ",
+      "address": "ΕΘ. ΑΝΤΙΣΤΑΣΕΩΣ 40",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710222065",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.5123169,
+        "lon": 22.3735241,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5061",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710222348",
+      "name": "ΓΙΑΝΝΟΥΛΗΣ Γ. ΝΙΚΟΛΑΟΣ ΚΑΙ ΣΙΑ ΕΕ",
+      "address": "ΠΛ. ΑΓΙΟΥ ΒΑΣΙΛΕΙΟΥ 39",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710222348",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.5099187,
+        "lon": 22.3723329,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5055",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710222528",
+      "name": "ΑΠΟΣΤΟΛΟΠΟΥΛΟΥ ΣΠ. ΧΡΙΣΤΙΝΑ",
+      "address": "ΕΘ. ΑΝΤΙΣΤΑΣΕΩΣ 5",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710222528",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 37.5107972,
+        "lon": 22.3725914,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5049",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710222625",
+      "name": "ΠΑΠΑΒΑΣΙΛΟΠΟΥΛΟΥ ΟΛΓΑ",
+      "address": "ΚΑΛΑΒΡΥΤΩΝ 11",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710222625",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.5157861,
+        "lon": 22.3750827,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5048",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710223400",
+      "name": "ΑΓΓΕΛΑΚΟΠΟΥΛΟΥ ΜΑΡΙΑ ΕΛΙΣΑΒΕΤ & ΣΙΑ Ο.Ε",
+      "address": "ΕΘ. ΑΝΤΙΣΤΑΣΕΩΣ 19",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710223400",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.5111526,
+        "lon": 22.372721,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5054",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710225911",
+      "name": "ΠΟΛΥΜΕΝΟΠΟΥΛΟΥ ΓΕΩΡΓΙΑ",
+      "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 72",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710225911",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.5141388,
+        "lon": 22.3805177,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5052",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710232250",
+      "name": "ΧΑΡΩΝΗΣ ΘΕΟΔΩΡΟΣ",
+      "address": "ΚΥΠΡΟΥ 29",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710232250",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.5102535,
+        "lon": 22.3739255,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5053",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710233911",
+      "name": "ΚΑΜΠΥΛΑΥΚΑΣ ΚΩΝ/ΝΟΣ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΠΛ. ΚΟΛΟΚΟΤΡΩΝΗ 26",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710233911",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.509506,
+        "lon": 22.3748033,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5056",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710234540",
+      "name": "ΤΣΙΒΕΡΙΩΤΗ ΧΡΙΣΤΙΝΑ",
+      "address": "ΚΟΡΑΗ 15 ΚΑΙ ΜΑΝΤΖΑΡΗ",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710234540",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.5079161,
+        "lon": 22.37146,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5050",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710235577",
+      "name": "ΚΥΡΙΑΚΟΠΟΥΛΟΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΝΙΚΗΤΑΡΑ 13",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710235577",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.5109429,
+        "lon": 22.3712043,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5057",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710237771",
+      "name": "ΚΑΛΔΗ ΔΗΜ. ΑΘΑΝΑΣΙΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΟΥΑΣΙΝΓΚΤΟΝ 38",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710237771",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.5092039,
+        "lon": 22.371484,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5060",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710238474",
+      "name": "Σ.Φ.ΑΡΓΥΡΟΠΟΥΛΟΥ ΠΑΝΑΓΙΩΤΑ-ΜΠΑΡΙΑΜΗΣ ΣΤΑΥΡΟΣ Ο.Ε.",
+      "address": "ΓΕΩΡΓΙΟΥ Α 31",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710238474",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.5097434,
+        "lon": 22.373709,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5068",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710238588",
+      "name": "Σ.Φ.ΚΑΛΑΜΠΑΚΑ ΕΛΕΝΗ, ΚΑΡΜΟΥ ΠΑΝΑΓΙΩΤΑ, ΚΑΡΜΟΥ ΜΑΡΙΑ Ο.Ε.",
+      "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 14",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710238588",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.5114741,
+        "lon": 22.3722054,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5051",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710239077",
+      "name": "Σ.Φ.ΡΕΛΛΙΑ ΕΛΕΝΗ-ΤΕΡΙΑΚΗ ΛΟΥΚΙΑ Ο.Ε.",
+      "address": "ΤΑΣΟΥ ΣΕΧΙΩΤΗ 25",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710239077",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.5116626,
+        "lon": 22.3737268,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5059",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710242349",
+      "name": "ΑΘΑΝΑΣΙΑΔΟΥ Ε. ΑΝΑΣΤΑΣΙΑ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 97",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710242349",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.5162565,
+        "lon": 22.3722188,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5062",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2755022112",
+      "name": "ΓΑΪΤΑΝΗΣ ΑΝΔΡΕΑΣ",
+      "address": "ΑΣΤΡΟΣ",
+      "locality": "Άστρος",
+      "postcode": null,
+      "phone": "2755022112",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.4036411,
+        "lon": 22.7228236,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/3114",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2755022574",
+      "name": "ΓΑΪΤΑΝΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΑΣΤΡΟΣ",
+      "locality": "Άστρος",
+      "postcode": null,
+      "phone": "2755022574",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.4040532,
+        "lon": 22.7231501,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/3115",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2755023580",
+      "name": "ΚΑΡΑΓΙΑΝΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΑΣΤΡΟΣ",
+      "locality": "Άστρος",
+      "postcode": null,
+      "phone": "2755023580",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.4062373,
+        "lon": 22.71853,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/3116",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2757022202",
+      "name": "ΓΕΩΡΓΙΤΣΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΛΕΩΝΙΔΙΟ",
+      "locality": "Λεωνίδιο",
+      "postcode": null,
+      "phone": "2757022202",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.1674292,
+        "lon": 22.858743,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/3480",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2757022230",
+      "name": "ΚΟΝΤΟΛΕΩΝ ΓΕΩΡΓΙΟΣ",
+      "address": "ΛΕΩΝΙΔΙΟ",
+      "locality": "Λεωνίδιο",
+      "postcode": null,
+      "phone": "2757022230",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.1662669,
+        "lon": 22.86118,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/3481",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2757023570",
+      "name": "ΛΥΒΙΖΟΥ ΜΑΡΙΑ",
+      "address": "ΛΕΩΝΙΔΙΟ",
+      "locality": "Λεωνίδιο",
+      "postcode": null,
+      "phone": "2757023570",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.1677509,
+        "lon": 22.8579221,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/3479",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2791022626",
+      "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ ΣΟΦΙΑ",
+      "address": "ΣΤΑΘΟΠΟΥΛΟΥ 10",
+      "locality": "Μεγαλόπολη",
+      "postcode": null,
+      "phone": "2791022626",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.4017572,
+        "lon": 22.1361722,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/3847",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2791023786",
+      "name": "Σ.Φ.ΣΑΒΒΟΠΟΥΛΟΥ ΖΩΗ-ΒΑΡΕΛΑΣ ΝΙΚΟΛΑΟΣ Ο.Ε.",
+      "address": "ΠΑΠΑΝΑΣΤΑΣΙΟΥ 3",
+      "locality": "Μεγαλόπολη",
+      "postcode": null,
+      "phone": "2791023786",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.4014368,
+        "lon": 22.136571,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/3846",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2791024388",
+      "name": "ΓΑΪΤΑΝΑΚΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΚΟΛΟΚΟΤΡΩΝΗ 19",
+      "locality": "Μεγαλόπολη",
+      "postcode": null,
+      "phone": "2791024388",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.4007063,
+        "lon": 22.1355298,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/3845",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2791025471",
+      "name": "ΣΙΑΜΠΗΣ ΔΗΜΗΤΡΙΟΣ ΚΑΙ ΣΙΑ ΕΕ",
+      "address": "ΑΓ. ΚΩΝ.ΝΟΥ 5",
+      "locality": "Μεγαλόπολη",
+      "postcode": null,
+      "phone": "2791025471",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.4010985,
+        "lon": 22.1366148,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/3844",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2796022240",
+      "name": "Σ.Φ.ΓΚΙΝΤΩΝΗΣ ΒΑΣΙΛΕΙΟΣ-ΓΚΙΝΤΩΝΗ ΝΙΚΟΛΕΤΤΑ Ο.Ε.",
+      "address": "ΛΕΒΙΔΙ",
+      "locality": "Λεβίδι",
+      "postcode": null,
+      "phone": "2796022240",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.6845416,
+        "lon": 22.2955302,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/4160",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2797022300",
+      "name": "ΜΟΥΣΤΟΓΙΑΝΝΗ ΜΑΡΙΝΑ",
+      "address": "ΤΡΟΠΑΙΑ",
+      "locality": "Τρόπαια",
+      "postcode": null,
+      "phone": "2797022300",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.7322838,
+        "lon": 21.9594427,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/2751",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2797022444",
+      "name": "ΓΟΥΣΙΑ ΣΠΥΡΙΔΟΥΛΑ ΚΑΙ ΣΙΑ ΟΕ",
+      "address": "ΤΡΟΠΑΙΑ",
+      "locality": "Τρόπαια",
+      "postcode": null,
+      "phone": "2797022444",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 37.7322838,
+        "lon": 21.9594427,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/2749",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

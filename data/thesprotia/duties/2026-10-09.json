@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "groups": [
+    {
+      "id": "thesprotia",
+      "name": "Θεσπρωτία",
+      "source": {
+        "url": "https://thesprotia.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:53:35.509Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2665027833",
+              "name": "ΜΠΕΚΙΟΥ ΣΠΥΡΙΔΟΥΛΑ",
+              "address": "ΠΑΡΓΑΣ 3",
+              "locality": "Ηγουμενίτσα",
+              "phone": "2665027833"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "groups": [
+    {
+      "id": "pieria",
+      "name": "Πιερία",
+      "source": {
+        "url": "https://pieria.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T08:02:40.030Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2353022219",
+              "name": "ΑΥΛΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΚΟΛΟΚΟΤΡΩΝΗ 1",
+              "locality": "Αιγίνιο",
+              "phone": "2353022219"
+            },
+            {
+              "pharmacyId": "2352031110",
+              "name": "ΚΑΛΙΑΜΠΟΣ ΔΙΟΝΥΣΙΟΣ",
+              "address": "ΜΕΤΑΞΑ ΙΩΑΝΝΗ 21",
+              "locality": "Λεπτοκαρυά",
+              "phone": "2352031110"
+            },
+            {
+              "pharmacyId": "2352041055",
+              "name": "ΝΑΝΟΥ ΑΝΔΡΙΑΝΗ",
+              "address": "Κ. ΚΑΡΑΜΑΝΛΗ 20",
+              "locality": "Πλαταμώνας",
+              "phone": "2352041055"
+            },
+            {
+              "pharmacyId": "2351062390",
+              "name": "Σ.Φ. ΑΘΑΝΑΣΙΟΥ ΚΑΙ ΑΝΑΣΤΑΣΙΟΥ ΛΑΖΟΥ Ο.Ε.",
+              "address": "ΚΥΠΡΟΥ 4",
+              "locality": "Παραλία",
+              "phone": "2351062390"
+            },
+            {
+              "pharmacyId": "2353031494",
+              "name": "ΣΑΜΨΟΥΡΗ ΕΥΓΕΝΙΑ-ΑΓΑΘΗ",
+              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 57",
+              "locality": "Κολινδρός",
+              "phone": "2353031494"
+            },
+            {
+              "pharmacyId": "2351041498",
+              "name": "ΧΑΜΑΛΑΚΗ ΘΕΟΠΙΑ",
+              "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 80",
+              "locality": "Κορινός",
+              "phone": "2351041498"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2352083388",
+              "name": "ΧΡΙΣΤΟΓΙΑΝΝΗΣ ΔΙΟΝΥΣΙΟΣ",
+              "address": "ΑΓΊΟΥ ΓΕΩΡΓΊΟΥ 41",
+              "locality": "Λιτόχωρο",
+              "phone": "2352083388"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351027910",
+              "name": "ΚΩΝΣΤΑΝΤΙΝΙΔΟΥ ΟΛΓΑ",
+              "address": "ΕΙΡΗΝΗΣ 33",
+              "locality": "Κατερίνη",
+              "phone": "2351027910"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:00 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351036812",
+              "name": "Σ.Φ ΚΟΥΙΜΤΖΙΔΗΣ ΕΛΕΥΘΕΡΙΟΣ-ΚΟΥΙΜΤΖΙΔΗΣ ΧΡΥΣΟΒΑΛΑΝΤΗΣ",
+              "address": "ΠΑΡΜΕΝΙΩΝΟΣ 15",
+              "locality": "Κατερίνη",
+              "phone": "2351036812"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:00 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351036812",
+              "name": "Σ.Φ ΚΟΥΙΜΤΖΙΔΗΣ ΕΛΕΥΘΕΡΙΟΣ-ΚΟΥΙΜΤΖΙΔΗΣ ΧΡΥΣΟΒΑΛΑΝΤΗΣ",
+              "address": "ΠΑΡΜΕΝΙΩΝΟΣ 15",
+              "locality": "Κατερίνη",
+              "phone": "2351036812"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

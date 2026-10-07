@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "fthiotida",
+  "updatedAt": "2026-10-07T08:04:58.239Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-fthiotida",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Φθιώτιδας",
+        "en": "Pharmaceutical Association of Fthiotida"
+      },
+      "url": "https://fthiotida.efhmeries.gr/",
+      "note": "Duty lists, from fthiotida.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

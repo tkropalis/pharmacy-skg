@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2541022590",
+      "name": "ΚΟΝΤΕΡΙΔΟΥ ΕΥΑΓΓΕΛΙΑ",
+      "address": "ΗΡΟΔΟΤΟΥ 22",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541022590",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 41.1410894,
+        "lon": 24.8957674,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3596",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541022605",
+      "name": "ΙΩΑΝΝΙΔΗΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "40 ΕΚΚΛΗΣΙΩΝ 2Β",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541022605",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 41.1363689,
+        "lon": 24.886035,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3595",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541025260",
+      "name": "ΤΖΙΒΑΝΟΠΟΥΛΟΥ ΠΑΝΑΓΙΩΤΑ",
+      "address": "ΤΕΡΜΑ ΗΛΙΟΥΠΟΛΕΩΣ",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541025260",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 41.1267622,
+        "lon": 24.8816089,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3605",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541025551",
+      "name": "ΣΙΟΥΤΑΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΜΙΧ. ΚΑΡΑΟΛΗ 25",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541025551",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 41.1378815,
+        "lon": 24.8897799,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3597",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541025666",
+      "name": "ΓΑΪΤΑΝΕΡΗ ΠΑΝΑΓΙΩΤΑ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΊΟΥ 328",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541025666",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 41.1299438,
+        "lon": 24.8855563,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3598",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541029979",
+      "name": "ΚΟΥΤΣΟΓΙΑΝΝΗΣ ΧΡΗΣΤΟΣ",
+      "address": "ΑΓΙΟΥ ΕΛΕΥΘΕΡΙΟΥ 20",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541029979",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 41.135717,
+        "lon": 24.8861353,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3602",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541045007",
+      "name": "ΧΑΦΟΥΖ ΡΑΪΧΑΝ",
+      "address": "ΠΑΝΑΓΗ ΤΣΑΛΔΑΡΗ 27",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541045007",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 41.1400631,
+        "lon": 24.8888554,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3608",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541062622",
+      "name": "ΑΣΣΑΝΑΚΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΔΡΑΜΑΣ 70",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541062622",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 41.1297179,
+        "lon": 24.8880983,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3599",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541062999",
+      "name": "Σ.Φ. ΠΕΤΡΑ - ΤΑΡΣΟΥΔΗΣ",
+      "address": "Π.ΓΡΗΓΟΡΙΟΥ Ε.-ΑΙΔΙΝΙΟΥ 38",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541062999",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 41.1293198,
+        "lon": 24.8816843,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3611",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541071386",
+      "name": "ΚΟΥΜΤΖΗ ΔΗΜΗΤΡΑ",
+      "address": "ΜΙΧ. ΚΑΡΑΟΛΗ 1",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541071386",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 41.139325,
+        "lon": 24.8885903,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3594",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541076433",
+      "name": "ΠΑΝΑΓΙΩΤΑΚΟΠΟΥΛΟΥ ΣΟΦΙΑ",
+      "address": "ΑΝΔΡΕΟΥ ΔΗΜΗΤΡΙΟΥ 18",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541076433",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 41.1351998,
+        "lon": 24.8852832,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3600",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541084522",
+      "name": "ΑΔΑΜΙΔΟΥ ΖΑΧΑΡΟΥΛΑ",
+      "address": "ΙΚΟΝΙΟΥ 2",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541084522",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 41.1348353,
+        "lon": 24.8912485,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3609",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541302534",
+      "name": "ΣΑΠΟΥΝΙΔΗΣ ΙΩΑΚΕΙΜ",
+      "address": "ΛΕΩΦΟΡΟΥ ΣΤΡΑΤΟΥ 58-60",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541302534",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 41.1346175,
+        "lon": 24.895924,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3603",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

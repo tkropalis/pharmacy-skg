@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2665022410",
+      "name": "ΚΩΣΤΑΚΗ ΛΙΑΚΟΥ ΕΥΘΥΜΙΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΓΡ. ΛΑΜΠΡΑΚΗ 13",
+      "locality": "Ηγουμενίτσα",
+      "postcode": null,
+      "phone": "2665022410",
+      "groupId": "thesprotia",
+      "sources": [
+        "iteq-thesprotia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.5022385,
+        "lon": 20.2640589,
+        "ref": "https://thesprotia.efhmeries.gr/Home/Details/389",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2665022559",
+      "name": "ΟΛΓΑ ΣΠ. ΚΟΥΦΑΛΑ",
+      "address": "ΚΥΠΡΟΥ 7",
+      "locality": "Ηγουμενίτσα",
+      "postcode": null,
+      "phone": "2665022559",
+      "groupId": "thesprotia",
+      "sources": [
+        "iteq-thesprotia"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.5021847,
+        "lon": 20.264618,
+        "ref": "https://thesprotia.efhmeries.gr/Home/Details/392",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2665023290",
+      "name": "Σ.Φ. ΑΣΠΙΩΤΗΣ ΓΕΩΡΓΙΟΣ - ΑΣΠΙΩΤΗ ΣΠΥΡΙΔΟΥΛΑ ΟΕ",
+      "address": "25ΗΣ ΦΕΒΡΟΥΑΡΙΟΥ 15",
+      "locality": "Ηγουμενίτσα",
+      "postcode": null,
+      "phone": "2665023290",
+      "groupId": "thesprotia",
+      "sources": [
+        "iteq-thesprotia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 39.5030499,
+        "lon": 20.2641657,
+        "ref": "https://thesprotia.efhmeries.gr/Home/Details/390",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2665023856",
+      "name": "ΝΤΑΗ ΕΛΕΝΗ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΚΥΠΡΟΥ 4",
+      "locality": "Ηγουμενίτσα",
+      "postcode": null,
+      "phone": "2665023856",
+      "groupId": "thesprotia",
+      "sources": [
+        "iteq-thesprotia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.5027982,
+        "lon": 20.2647756,
+        "ref": "https://thesprotia.efhmeries.gr/Home/Details/385",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2665024540",
+      "name": "Σ.Φ. ΠΑΠΠΑΣ Π. ΠΑΠΠΑΣ Δ.",
+      "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΕΩΣ 50",
+      "locality": "Ηγουμενίτσα",
+      "postcode": null,
+      "phone": "2665024540",
+      "groupId": "thesprotia",
+      "sources": [
+        "iteq-thesprotia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.5034366,
+        "lon": 20.2632719,
+        "ref": "https://thesprotia.efhmeries.gr/Home/Details/384",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2665027833",
+      "name": "ΜΠΕΚΙΟΥ ΣΠΥΡΙΔΟΥΛΑ",
+      "address": "ΠΑΡΓΑΣ 3",
+      "locality": "Ηγουμενίτσα",
+      "postcode": null,
+      "phone": "2665027833",
+      "groupId": "thesprotia",
+      "sources": [
+        "iteq-thesprotia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 39.5000989,
+        "lon": 20.2641394,
+        "ref": "https://thesprotia.efhmeries.gr/Home/Details/386",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

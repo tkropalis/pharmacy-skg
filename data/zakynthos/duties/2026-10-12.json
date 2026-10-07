@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "groups": [
+    {
+      "id": "zakynthos",
+      "name": "Ζάκυνθος",
+      "source": {
+        "url": "https://zakynthos.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:50:49.960Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2695200270",
+              "name": "IONIAN FARM IKE",
+              "address": "ΓΑΪΤΑΝΙ (ΕΝΑΝΤΙ ΝΟΣΟΚΟΜΕΙΟΥ)",
+              "locality": "Ζάκυνθος",
+              "phone": "2695200270"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

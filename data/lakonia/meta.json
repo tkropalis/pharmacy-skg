@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "lakonia",
+  "updatedAt": "2026-10-07T07:57:08.812Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-lakonia",
+      "name": {
+        "el": "Εφημερίες φαρμακείων Λακωνίας",
+        "en": "Pharmacy duties of Laconia"
+      },
+      "url": "https://lakonia.efhmeries.gr/",
+      "note": "Duty lists, from lakonia.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

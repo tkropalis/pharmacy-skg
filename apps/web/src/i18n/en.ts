@@ -56,7 +56,8 @@ export const en: Dictionary = {
         heading: 'Opening hours',
         paragraphs: [
           'We show only officially announced duty days. In Thessaloniki other pharmacies have the usual hours: Monday and Wednesday 08:00–14:30, Tuesday, Thursday and Friday 08:00–14:00 and 17:00–21:00. Some have longer hours, announced by the Region.',
-          'Where we do not know the usual hours, as in Larissa, we show only the pharmacies on duty.',
+          'Outside Thessaloniki we do not know the usual hours yet, so we show only the pharmacies on duty.',
+          'Some duties are on call: the pharmacist serves whoever phones. So call before you go.',
         ],
       },
     ],
@@ -66,10 +67,11 @@ export const en: Dictionary = {
       ios: 'On iPhone and iPad: in Safari, tap Share, then “Add to Home Screen”.',
       button: 'Install',
     },
+    /** One per area whose lists come straight from its own site, followed by the site's link. */
+    dutyCredit: '{area}: {source},',
     creditsHeading: 'Sources',
     credits: {
       fsth: 'Duty lists in Thessaloniki: Pharmaceutical Association of Thessaloniki, via',
-      fsl: 'Duty lists in Larissa: Pharmaceutical Association of Larissa, via',
       pkm: 'Opening hours in Thessaloniki: Region of Central Macedonia.',
       overture: 'Pharmacy locations: Overture Maps Foundation, CDLA-Permissive-2.0.',
       osm: 'Map and addresses: © OpenStreetMap contributors, ODbL.',

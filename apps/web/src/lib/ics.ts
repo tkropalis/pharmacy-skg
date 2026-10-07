@@ -140,7 +140,8 @@ export function dutyEvents(
       texts.callFirst,
     ].join('\n');
     return {
-      uid: `${pharmacy.id}-${duty.date}-${duty.duty}-${duty.groupId}@pharmacy-skg`,
+      // Two windows on one day (ITeQ's "08:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 23:00") are two events.
+      uid: `${pharmacy.id}-${duty.date}-${duty.duty}-${duty.groupId}${duty.hours ? `-${duty.hours.from.replace(':', '')}` : ''}@pharmacy-skg`,
       when,
       summary: texts.summary.replace('{name}', pharmacy.name),
       location: [pharmacy.address, pharmacy.locality].filter((s) => s !== '').join(', '),

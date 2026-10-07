@@ -1,6 +1,12 @@
 import type { Pharmacy } from '@pharmacy-skg/core';
-import { describe, expect, it } from 'vitest';
-import { buildLocalities, searchLocalities, soundKey, stripAccents } from './places.ts';
+import { afterEach, describe, expect, it, vi } from 'vitest';
+import {
+  buildLocalities,
+  searchLocalities,
+  soundKey,
+  stripAccents,
+  loadNationalPlaces,
+} from './places.ts';
 
 function pharmacy(
   id: string,
@@ -111,5 +117,35 @@ describe('searchLocalities', () => {
   it('returns nothing for an unknown place and respects the limit', () => {
     expect(names('zzzz')).toEqual([]);
     expect(searchLocalities(localities, '', 2)).toHaveLength(2);
+  });
+});
+
+describe('loadNationalPlaces', () => {
+  afterEach(() => {
+    vi.unstubAllGlobals();
+  });
+
+  it('reads the places, leaving out anything malformed', async () => {
+    const good = { name: 'Ρόδος', cityId: 'dodecanese', lat: 36.43, lon: 28.22, count: 12 };
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async () => Response.json([good, { name: 'Κως' }, null, 'x'])),
+    );
+    expect(await loadNationalPlaces('/data/places.json')).toEqual([good]);
+  });
+
+  it('gives none when the file cannot be read (offline before the first read)', async () => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async () => {
+        throw new TypeError('offline');
+      }),
+    );
+    expect(await loadNationalPlaces('/data/places.json')).toEqual([]);
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async () => new Response('', { status: 404 })),
+    );
+    expect(await loadNationalPlaces('/data/places.json')).toEqual([]);
   });
 });

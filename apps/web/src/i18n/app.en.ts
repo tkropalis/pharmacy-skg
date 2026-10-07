@@ -158,6 +158,7 @@ export const appEn: Dictionary['app'] = {
       until: 'until {when}',
       closesIn: 'closes in {duration}',
       callFirst: 'call for the hours',
+      onCall: 'call first',
     },
     kinds: { ...DUTY_KIND_LABELS.en },
     legend: {

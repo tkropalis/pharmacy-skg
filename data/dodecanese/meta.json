@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "dodecanese",
+  "updatedAt": "2026-10-07T07:49:02.337Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-dodecanese",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Δωδεκανήσου",
+        "en": "Pharmaceutical Association of the Dodecanese"
+      },
+      "url": "https://dodecanese.efhmeries.gr/",
+      "note": "Duty lists, from dodecanese.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-07",
+  "groups": [
+    {
+      "id": "chania",
+      "name": "Χανιά",
+      "source": {
+        "url": "https://chania.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T08:04:58.650Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821056265",
+              "name": "Σ.Φ. ΑΡΧΟΝΤΑΚΗΣ ΙΩΑΝΝΗΣ & ΑΡΧΟΝΤΑΚΗΣ ΓΕΩΡΓΙΟΣ/ΑRCΗΟΝΤΑΚΙS I.& G. O.E.",
+              "address": "ΚΙΣΣΑΜΟΥ 184/KISAMOU 184",
+              "locality": "Χανιά",
+              "phone": "2821056265"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821040938",
+              "name": "ΑΔΟΝΤΑΚΗΣ Μ. - ΚΝΙΘΑΚΗ Μ.",
+              "address": "ΣΦΑΚΙΩΝ 1 ΚΑΙ ΒΟΛΟΥΔΑΚΗΔΩΝ",
+              "locality": "Χανιά",
+              "phone": "2821040938"
+            },
+            {
+              "pharmacyId": "2821039644",
+              "name": "ΑΛΕΞΑΚΗ ΗΛΙΑΝΑ/ΑLΕΧΑΚΙ ILIANA",
+              "address": "ΟΔΟΣ ΧΩΡΑΦΑ-ΧΩΡΑΦΑΚΙΑ ΑΚΡΩΤΗΡΙ/CΗΟRΑFΑΚΙΑ-ΑΚRΟΤΙRΙ",
+              "locality": "Ακρωτήρι",
+              "phone": "2821039644"
+            },
+            {
+              "pharmacyId": "2821089222",
+              "name": "ΔΗΜΗΤΡΟΥΛΑΚΗΣ ΠΑΝΑΓΙΩΤΗΣ/DΙΜΙΤRΟULΑΚΙS PANAGIOTIS",
+              "address": "ΠΛ. ΜΑΡΙΔΑΚΗ & ΕΛΛΗΣ/ΡL.ΜΑRΙDΑΚΙ & ELLIS",
+              "locality": "Σούδα",
+              "phone": "2821089222"
+            },
+            {
+              "pharmacyId": "2821090031",
+              "name": "ΚΑΤΣΑΡΑΚΗΣ ΕΜΜΑΝΟΥΗΛ/ΚΑΤSΑRΑΚΙS EMMANOYEL",
+              "address": "ΑΓΙΟΥ ΕΛΕΥΘΕΡΙΟΥ 29 , ΜΟΥΡΝΙΕΣ (ΕΝΑΝΤΙ ΝΟΣΟΚΟΜΕΙΟΥ)/ΑGΙΟU ELEFTHERIOU 29",
+              "locality": "Μουρνιές",
+              "phone": "2821090031"
+            },
+            {
+              "pharmacyId": "2821031110",
+              "name": "Σ.Φ. ΤΖΕΙΡΑΝΗ ΕΥΑ ΤΖΕΪΡΑΝΗΣ ΣΤΕΛΙΟΣ/ΤΖΕΙRΑΝΙ EVA-TZEIRANIS STELIOS",
+              "address": "ΚΑΛΑΜΑΚΙ (ΚΟΝΤΑ ΣΤΟ ΞΕΝΟΔΟΧΕΙΟ CORINA MARRE)/KALAMAKI-GALATAS",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821031110"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "6948462411",
+              "name": "ΔΑΜΟΡΑΚΗΣ ΕΥΤΥΧΗΣ/DΑΜΟRΑΚΙS EYTIXIS",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "6948462411"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
+          "hours": {
+            "from": "08:30",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2822024080",
+              "name": "Σ.Φ. ΚΩΝΣΤΑΝΤΙΝΟΣ ΡΕΒΕΛΑΚΗΣ- ΙΩΑΝΝΗΣ ΡΕΒΕΛΑΚΗΣ Ο.Ε.",
+              "address": "ΟΜΟΓΕΝΩΝ ΑΜΕΡΙΚΗΣ 16/OMOGENON AMERIKIS 16",
+              "locality": "Δήμος Κισσάμου",
+              "phone": "2822024080"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

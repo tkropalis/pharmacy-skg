@@ -11,6 +11,7 @@
  */
 import { parseArgs } from 'node:util';
 import { join } from 'node:path';
+import type { Bounds } from '@pharmacy-skg/core';
 import { z } from 'zod';
 import { PIPELINES, type CityPipeline } from '../cities/index.ts';
 import type { FetchContext, ListedLocation } from '../cities/pipeline.ts';
@@ -50,6 +51,19 @@ const ListedLocationsSchema = z.record(
   z.string(),
   z.object({ lat: z.number(), lon: z.number(), ref: z.string() }),
 );
+
+/** About 30 km: far enough for a village past the area's known pharmacies, not for a namesake. */
+const LISTED_MARGIN_DEGREES = 0.3;
+
+function nearBounds(
+  [west, south, east, north]: Bounds,
+  { lat, lon }: { lat: number; lon: number },
+  margin: number,
+): boolean {
+  return (
+    lon >= west - margin && lon <= east + margin && lat >= south - margin && lat <= north + margin
+  );
+}
 
 const { values: args } = parseArgs({
   options: {
@@ -136,6 +150,7 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
         kind: section.kind,
         heading: section.heading,
         hours: section.hours,
+        ...(section.onCall === true ? { onCall: true } : {}),
         extraHours: [...section.extraHours],
         notes: [...section.notes],
         entries: section.entries.map((entry) => {
@@ -222,13 +237,26 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
 
   const sortedDays = [...days.values()].sort((a, b) => a.date.localeCompare(b.date));
   const extendedLists = [...extendedFiles.values()];
+
+  // A list's coordinates are believed only near the area: a site sometimes places a pharmacy
+  // at another place of the same name (Νέα Ιωνία near Volos put in Athens). Such a pharmacy is
+  // placed like any other, by its address.
+  const nearby = new Map<string, ListedLocation>();
+  for (const [id, location] of listed) {
+    if (nearBounds(city.bounds, location, LISTED_MARGIN_DEGREES)) nearby.set(id, location);
+    else
+      parseFailures.push({
+        code: 'listed-location-far',
+        message: `${id}: ${location.lat}, ${location.lon} is far from ${city.id} (${location.ref})`,
+      });
+  }
   let registry: Awaited<ReturnType<typeof buildRegistry>> | undefined;
   try {
     registry = await buildRegistry({
       days: sortedDays,
       extended: extendedLists.map((list) => ({ from: list.period.from, entries: list.entries })),
       overrides,
-      listed,
+      listed: nearby,
       overture,
       geocoder,
       sourceIds: pipeline.sourceIds,

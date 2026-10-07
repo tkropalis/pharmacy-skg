@@ -1,0 +1,698 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2751022147",
+      "name": "ΣΤΑΥΡΟΠΟΥΛΟΥ ΚΩΝ. ΓΕΩΡΓΙΑ",
+      "address": "ΦΕΙΔΩΝΟΣ 10",
+      "locality": "Άργος",
+      "postcode": null,
+      "phone": "2751022147",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.6333134,
+        "lon": 22.7250463,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/18762",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2751023013",
+      "name": "ΑΥΓΟΥΣΤΟΠΟΥΛΟΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΚΟΡΙΝΘΟΥ 200",
+      "locality": "Άργος",
+      "postcode": null,
+      "phone": "2751023013",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.6439205,
+        "lon": 22.7293934,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/18765",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2751029850",
+      "name": "ΣΜΥΡΝΑΙΟΣ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΤΣΩΚΡΗ 41",
+      "locality": "Άργος",
+      "postcode": null,
+      "phone": "2751029850",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 37.6367054,
+        "lon": 22.7246397,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/18760",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2751051597",
+      "name": "ΔΕΛΗΓΙΟΡΙΔΟΥ ΠΑΝΑΓΙΩΤΑ",
+      "address": "ΝΕΑ ΚΙΟΣ",
+      "locality": "Νέα Κίος",
+      "postcode": null,
+      "phone": "2751051597",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.5874845,
+        "lon": 22.7447696,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/20590",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2751051835",
+      "name": "ΚΟΥΡΙΩΤΗΣ ΚΩΝ/ΝΟΣ",
+      "address": "Ν. ΚΙΟΣ",
+      "locality": "Νέα Κίος",
+      "postcode": null,
+      "phone": "2751051835",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.5874845,
+        "lon": 22.7447696,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/20585",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2751062555",
+      "name": "ΚΑΠΕΤΑΝΟΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΑΡΚΑΔΙΑΣ & ΜΕΣΣΗΝΙΑΣ 5",
+      "locality": "Άργος",
+      "postcode": null,
+      "phone": "2751062555",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 37.6294021,
+        "lon": 22.7318759,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/18761",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2751067700",
+      "name": "ΠΑΝΑΓΑΚΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 5",
+      "locality": "Άργος",
+      "postcode": null,
+      "phone": "2751067700",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.6341367,
+        "lon": 22.7268611,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/18766",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2751068487",
+      "name": "Σ.Φ. ΑΝΤΩΝΙΑΔΗΣ ΓΕΩΡΓΙΟΣ - ΛΕΩΝΙΔΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ο.Ε.",
+      "address": "ΔΑΝΑΟΥ 4",
+      "locality": "Άργος",
+      "postcode": null,
+      "phone": "2751068487",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.6339253,
+        "lon": 22.7282621,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/18764",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2751089555",
+      "name": "ΜΠΑΝΤΑΝΑ ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 25",
+      "locality": "Άργος",
+      "postcode": null,
+      "phone": "2751089555",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.6332897,
+        "lon": 22.7286433,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/18763",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2752021758",
+      "name": "ΜΑΝΤΑ ΜΕΤΑΞΙΑ",
+      "address": "ΑΣΚΛΗΠΙΟΥ & ΑΓΙΑΣ ΚΥΡΙΑΚΗΣ",
+      "locality": "Άρια Ναυπλίου",
+      "postcode": null,
+      "phone": "2752021758",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.567835,
+        "lon": 22.806998,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/21662",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2752022332",
+      "name": "Σ/Φ ΦΙΛΙΝΗΣ ΔΙΑΜΑΝΤΗ-ΦΙΛΙΝΗΣ ΖΗΣΗ",
+      "address": "ΑΡΓΟΥΣ 22",
+      "locality": "Ναύπλιο",
+      "postcode": null,
+      "phone": "2752022332",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.5678957,
+        "lon": 22.8070599,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/20224",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2752022622",
+      "name": "ΚΩΣΤΑΚΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΤΣΟΛΑΚΟΠΟΥΛΟΥ 2",
+      "locality": "Ναύπλιο",
+      "postcode": null,
+      "phone": "2752022622",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.5673173,
+        "lon": 22.8015531,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/20226",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2752026646",
+      "name": "ΓΕΩΡΓΟΠΟΥΛΟΥ ΕΥΑΓΓΕΛΙΑ",
+      "address": "25ΗΣ ΜΑΡΤΙΟΥ 59",
+      "locality": "Ναύπλιο",
+      "postcode": null,
+      "phone": "2752026646",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.5648252,
+        "lon": 22.8093203,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/20222",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2752027160",
+      "name": "ΣΚΟΥΛΑΣ ΜΙΧΑΗΛ",
+      "address": "ΧΑΡ. ΤΡΙΚΟΥΠΗ & ΙΚΟΝΙΟΥ",
+      "locality": "Ναύπλιο",
+      "postcode": null,
+      "phone": "2752027160",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 37.5712099,
+        "lon": 22.8078226,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/20220",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2752027893",
+      "name": "ΚΑΠΟΓΙΑΝΝΗΣ ΚΩΝ/ΝΟΣ",
+      "address": "Σ. ΜΕΡΑΡΧΙΑΣ 15",
+      "locality": "Ναύπλιο",
+      "postcode": null,
+      "phone": "2752027893",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 37.5661578,
+        "lon": 22.803564,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/20221",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2752027907",
+      "name": "ΚΑΤΡΑΜΑΝΟΥ ΕΥΑΓΓΕΛΙΑ",
+      "address": "ΒΑΡΒΑΚΗ 1",
+      "locality": "Ναύπλιο",
+      "postcode": null,
+      "phone": "2752027907",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.5657001,
+        "lon": 22.8074671,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/20225",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2752029844",
+      "name": "ΜΕΛΛΟΥ ΟΥΡΑΝΙΑ",
+      "address": "ΜΠΟΥΜΠΟΥΛΙΝΑΣ 37",
+      "locality": "Ναύπλιο",
+      "postcode": null,
+      "phone": "2752029844",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.5670421,
+        "lon": 22.8019546,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/20223",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2752044007",
+      "name": "ΜΗΤΡΟΣΥΛΗ ΔΗΜΗΤΡΑ",
+      "address": "ΜΗΔΕΑΣ 4",
+      "locality": "Αγία Τριάδα",
+      "postcode": null,
+      "phone": "2752044007",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.6377,
+        "lon": 22.8041,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/18394",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2752044134",
+      "name": "Σ/Φ ΑΣΗΜ. ΒΟΥΛΟΑΓΚΑ - ΖΑΧΟΥ & ΣΤΕΛΛΑΣ ΖΑΧΟΥ",
+      "address": "ΑΓΙΑ ΤΡΙΑΔΑ",
+      "locality": "Αγία Τριάδα",
+      "postcode": null,
+      "phone": "2752044134",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.638294,
+        "lon": 22.806886,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Αγία Τριάδα"
+      }
+    },
+    {
+      "id": "2752044555",
+      "name": "Σ/Φ ΔΗΜΑΣ ΝΙΚΟΛΑΟΣ - ΔΗΜΑΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΑΓΙΑ ΤΡΙΑΔΑ",
+      "locality": "Αγία Τριάδα",
+      "postcode": null,
+      "phone": "2752044555",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.638294,
+        "lon": 22.806886,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Αγία Τριάδα"
+      }
+    },
+    {
+      "id": "2752059194",
+      "name": "ΧΟΛΕΒΑ ΕΥΑΓΓΕΛΙΑ",
+      "address": "ΣΕΚΕΡΗ 37",
+      "locality": "Τολό",
+      "postcode": null,
+      "phone": "2752059194",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.5190545,
+        "lon": 22.8588221,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/21315",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2752110217",
+      "name": "ΜΠΑΡΛΑ ΕΛΕΝΗ",
+      "address": "Λ. ΑΣΠΛΗΠΙΟΥ 160",
+      "locality": "Άρια Ναυπλίου",
+      "postcode": null,
+      "phone": "2752110217",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.5729348,
+        "lon": 22.8334331,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/21667",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2753022215",
+      "name": "ΓΚΟΒΑΤΣΗΣ ΜΙΧΑΛΗΣ",
+      "address": "ΑΣΚΛΗΠΙΟΥ 97",
+      "locality": "Λυγουριό",
+      "postcode": null,
+      "phone": "2753022215",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.6117776,
+        "lon": 23.0395455,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/19860",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2753022363",
+      "name": "Σ/Φ ΧΡΥΣΟΥΛΑ ΤΟΥΡΛΟΥΚΗ - ΕΥΘΥΜΙΑ ΚΟΥΡΤΗ Ο.Ε.",
+      "address": "ΑΣΚΛΗΠΙΟΥ 126",
+      "locality": "Λυγουριό",
+      "postcode": null,
+      "phone": "2753022363",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.6115915,
+        "lon": 23.0467768,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/19855",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2754021200",
+      "name": "ΣΩΤΗΡΙΑΔΗΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΚΡΑΝΙΔΙ",
+      "locality": "Κρανίδι",
+      "postcode": null,
+      "phone": "2754021200",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.3805109,
+        "lon": 23.1602123,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/19490",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2754021700",
+      "name": "ΦΑΣΙΛΗ-ΜΟΥΔΑΚΗ ΒΑΣΙΛΙΚΗ",
+      "address": "ΚΡΑΝΙΔΙ",
+      "locality": "Κρανίδι",
+      "postcode": null,
+      "phone": "2754021700",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.3805109,
+        "lon": 23.1602123,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/19492",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2754022555",
+      "name": "Σ/Φ ΦΑΣΙΛΗΣ Δ-ΣΕΡΕΤΗ ΑΝΑΣΤΑΣΙΑ-ΟΙΚΟΝΟΜΟΥ Ι.",
+      "address": "ΚΡΑΝΙΔΙ",
+      "locality": "Κρανίδι",
+      "postcode": null,
+      "phone": "2754022555",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.3805109,
+        "lon": 23.1602123,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/19491",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2754022992",
+      "name": "ΚΟΝΤΟΒΡΑΚΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΜΙΧΑΗΛ ΧΑΣΠΑΡΗ 75",
+      "locality": "Κρανίδι",
+      "postcode": null,
+      "phone": "2754022992",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.378969,
+        "lon": 23.1599851,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/19494",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2754031200",
+      "name": "Σ.Φ. ΠΑΛΛΗ ΕΥΓΕΝΙΑ - ΔΡΟΥΖΑ ΣΤΑΜΑΤΙΝΑ",
+      "address": "ΕΠΑΡΧΙΑΚΗ ΕΡΜΙΟΝΗΣ - ΚΡΑΝΙΔΙΟΥ",
+      "locality": "Ερμιόνη",
+      "postcode": null,
+      "phone": "2754031200",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.3870814,
+        "lon": 23.2463689,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/19126",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2754031330",
+      "name": "ΔΗΜΑΡΑΚΗ ΕΛΕΝΗ - ΜΑΡΙΑ",
+      "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΗΣ",
+      "locality": "Ερμιόνη",
+      "postcode": null,
+      "phone": "2754031330",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.3852651,
+        "lon": 23.2492629,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/19125",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2754031590",
+      "name": "ΝΙΚΟΛΑΟΣ ΓΑΝΩΣΗΣ ΚΑΙ ΣΙΑ Ε.Ε.",
+      "address": "ΕΡΜΙΟΝΗ ΛΙΜΑΝΙ",
+      "locality": "Ερμιόνη",
+      "postcode": null,
+      "phone": "2754031590",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.3861438,
+        "lon": 23.2495752,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/19127",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2754051700",
+      "name": "ΝΤΟΥΝΕΤΑΣ ΣΤΑΥΡΟΣ",
+      "address": "ΠΟΡΤΟ ΧΕΛΙ",
+      "locality": "Πόρτο Χέλι",
+      "postcode": null,
+      "phone": "2754051700",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.327838,
+        "lon": 23.1437319,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/20950",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2754051988",
+      "name": "ΛΑΝΤΙΚΑ ΝΙΚΟΛΕΤΑ",
+      "address": "ΠΟΡΤΟ ΧΕΛΙ",
+      "locality": "Πόρτο Χέλι",
+      "postcode": null,
+      "phone": "2754051988",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.327838,
+        "lon": 23.1437319,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/20952",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

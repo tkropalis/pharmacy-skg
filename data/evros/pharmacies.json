@@ -1,0 +1,740 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2551020667",
+      "name": "Σ.Φ. ΚΑΪΣΑΣ Γ.-ΚΑΪΣΑ Χ.",
+      "address": "14ης Μαΐου 88 (έναντι ΚΕΠ)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551020667",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 40.8502059,
+        "lon": 25.873319,
+        "ref": "https://evros.efhmeries.gr/Home/Details/3993",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2551021444",
+      "name": "Σ.Φ. ΑΔΑΜΙΔΗΣ Α.-ΑΔΑΜΙΔΟΥ Μ.",
+      "address": "Ι. Καβύρη 36 (γωνία Βιζβύζη)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551021444",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 40.8474732,
+        "lon": 25.8730475,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4393",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2551026214",
+      "name": "ΓΑΛΑΖΙΟΥ ΑΣΠΑΣΙΑ",
+      "address": "Κουτάβου 5 (περιοχή Αγ. Βασιλείου)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551026214",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.8494053,
+        "lon": 25.8592314,
+        "ref": "https://evros.efhmeries.gr/Home/Details/3894",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2551027127",
+      "name": "ΤΕΡΖΗΣ ΑΝΑΣΤΑΣΙΟΣ",
+      "address": "Λ. Δημοκρατίας 48 (περιοχή Σκλαβενίτη)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551027127",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.8483377,
+        "lon": 25.8877169,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4243",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2551028337",
+      "name": "ΤΙΓΓΙΡΙΔΗΣ ΑΧΙΛΛΕΑΣ",
+      "address": "Ελ. Βενιζέλου 40 (παραπλεύρως ΚΤΕΛ)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551028337",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 40.8459625,
+        "lon": 25.8745502,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4042",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2551029082",
+      "name": "Σ.Φ. ΑΝΤΩΝΑΡΟΥ Ζ.-ΖΩΗ Α.",
+      "address": "28ης Οκτωβρίου 16Α (έναντι 1ου δημοτικού)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551029082",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.8462863,
+        "lon": 25.8677439,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4294",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2551031988",
+      "name": "ΤΡΕΜΜΑΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "Θράκης 10 (περιοχή Μουσικού Γυμνασίου)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551031988",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.8532547,
+        "lon": 25.870984,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4094",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2551038473",
+      "name": "ΤΣΩΝΗΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "Μαζαράκη 11 (μεταξύ Αγ.Νικολάου & ΤΑΞΙ)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551038473",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 40.8466057,
+        "lon": 25.8759453,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4143",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2551039222",
+      "name": "ΣΕΡΜΠΕΖΗ ΔΗΜΗΤΡΑ",
+      "address": "Λ. Μάκρης 15, Νέα Χιλή",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551039222",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.851118,
+        "lon": 25.8314228,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4344",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2551053261",
+      "name": "ΠΙΤΙΑΚΟΥΔΗΣ ΣΩΤΗΡΙΟΣ",
+      "address": "Πλ. Ελευθερίας 24 (Παλιά πλατεία Αστικών)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551053261",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.8457007,
+        "lon": 25.8780988,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4194",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2551083638",
+      "name": "Σ.Φ. ΠΑΓΙΑΝΝΙΔΟΥ Θ.-ΚΟΥΚΟΥΒΗ Ι.",
+      "address": "Ηροδότου & Προκόπη 14 (προς Παλαγία)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551083638",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.8584924,
+        "lon": 25.8694493,
+        "ref": "https://evros.efhmeries.gr/Home/Details/3945",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2552021141",
+      "name": "ΣΙΑΝΚΟΥΡΗ ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 257",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552021141",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 41.5070312,
+        "lon": 26.5326661,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4871",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2552022582",
+      "name": "ΑΛΒΑΝΟΥΔΗ ΝΕΡΑΝΤΖΙΑ",
+      "address": "ΚΩΝ/ΠΟΛΕΩΣ 201",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552022582",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 41.5026371,
+        "lon": 26.5325528,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4869",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2552022769",
+      "name": "ΜΕΛΑΣ ΕΜΜΑΝΟΥΗΛ",
+      "address": "ΕΥΡΥΠΙΔΟΥ 12",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552022769",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 41.4955525,
+        "lon": 26.5339423,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4606",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2552023803",
+      "name": "ΖΑΦΕΙΡΙΑΔΗΣ ΧΡΗΣΤΟΣ",
+      "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 82",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552023803",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 41.503015,
+        "lon": 26.53014,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4557",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2552023926",
+      "name": "Σ.Φ. Σ. ΚΥΡΟΥΔΗ-Β. ΜΠΙΜΠΟΥΔΗ",
+      "address": "ΚΩΝ/ΠΟΛΕΩΣ 222",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552023926",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 41.5025546,
+        "lon": 26.5322197,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4509",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2552025800",
+      "name": "Σ.Φ. ΤΣΙΑΤΣΙΟΥ Δ. - ΓΚΕΝΤΣΙΔΗΣ Γ.",
+      "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 189",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552025800",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 41.501659,
+        "lon": 26.532421,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4458",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2552027049",
+      "name": "ΚΟΥΚΛΑΤΖΗ ΣΜΑΡΩ",
+      "address": "Β. ΚΩΝΣΤΑΝΤΙΝΟΥ 52",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552027049",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 41.5029464,
+        "lon": 26.5314121,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4707",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2552029174",
+      "name": "ΑΝΤΩΝΙΑΔΗΣ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 225",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552029174",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 41.5047733,
+        "lon": 26.5327418,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4758",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2552029290",
+      "name": "ΚΑΦΕΤΖΗ Π. ΚΛΕΟΝΙΚΗ",
+      "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 190",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552029290",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 41.5002425,
+        "lon": 26.5320953,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4658",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2553023544",
+      "name": "ΠΑΡΑΣΚΕΥΟΠΟΥΛΟΣ ΙΩΑΝΝΗΣ",
+      "address": "ΒΕΝΙΖΕΛΟΥ 101",
+      "locality": "Διδυμότειχο",
+      "postcode": null,
+      "phone": "2553023544",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 41.3502885,
+        "lon": 26.4962599,
+        "ref": "https://evros.efhmeries.gr/Home/Details/5155",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2553024243",
+      "name": "ΤΡΙΑΝΤΑΦΥΛΛΙΔΟΥ ΕΛΕΝΗ",
+      "address": "25ης ΜΑΪΟΥ 113",
+      "locality": "Διδυμότειχο",
+      "postcode": null,
+      "phone": "2553024243",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 41.3525558,
+        "lon": 26.5026007,
+        "ref": "https://evros.efhmeries.gr/Home/Details/5103",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2553024434",
+      "name": "ΜΟΝΑΣΤΗΡΙΩΤΟΥ ΔΙΑΜΑΝΤΙΔΟΥ ΑΝΝΑ",
+      "address": "ΒΕΝΙΖΕΛΟΥ 85",
+      "locality": "Διδυμότειχο",
+      "postcode": null,
+      "phone": "2553024434",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 41.3502494,
+        "lon": 26.4959924,
+        "ref": "https://evros.efhmeries.gr/Home/Details/5204",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2553024676",
+      "name": "ΜΑΧΜΟΥΡΙΔΟΥ ΑΓΑΠΗ",
+      "address": "ΛΕΟΝΙΔΟΥ 61",
+      "locality": "Διδυμότειχο",
+      "postcode": null,
+      "phone": "2553024676",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 41.3528428,
+        "lon": 26.4958947,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4955",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2553025115",
+      "name": "Σ.Φ. ΒΑΦΕΙΑΔΗΣ Π. - ΒΑΦΕΙΑΔΟΥ Κ.",
+      "address": "25ΗΣ ΜΑΪΟΥ 131",
+      "locality": "Διδυμότειχο",
+      "postcode": null,
+      "phone": "2553025115",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 41.3526561,
+        "lon": 26.503006,
+        "ref": "https://evros.efhmeries.gr/Home/Details/5054",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2554022013",
+      "name": "ΜΠΑΜΙΔΟΥ ΚΟΡΤΕΣΣΑ ΤΟΥ ΠΑΝΑΓΙΩΤΗ",
+      "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 211",
+      "locality": "Σουφλί",
+      "postcode": null,
+      "phone": "2554022013",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 41.1947643,
+        "lon": 26.3052864,
+        "ref": "https://evros.efhmeries.gr/Home/Details/5584",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2554022232",
+      "name": "ΠΙΤΙΑΚΟΥΔΗΣ ΣΩΤΗΡΙΟΣ - ΜΠΑΜΙΔΟΥ ΚΟΡΤΕΣΣΑ",
+      "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 158",
+      "locality": "Σουφλί",
+      "postcode": null,
+      "phone": "2554022232",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 41.1936141,
+        "lon": 26.3050735,
+        "ref": "https://evros.efhmeries.gr/Home/Details/5585",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2554023176",
+      "name": "ΑΛΑΤΖΙΑ ΟΛΓΑ",
+      "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 93",
+      "locality": "Σουφλί",
+      "postcode": null,
+      "phone": "2554023176",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 41.1904766,
+        "lon": 26.3025729,
+        "ref": "https://evros.efhmeries.gr/Home/Details/5586",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2554024303",
+      "name": "ΡΟΚΚΑ ΘΕΟΔΩΡΑ",
+      "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 88",
+      "locality": "Σουφλί",
+      "postcode": null,
+      "phone": "2554024303",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 41.1917483,
+        "lon": 26.3037554,
+        "ref": "https://evros.efhmeries.gr/Home/Details/5583",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2554042020",
+      "name": "ΠΑΠΑΜΙΧΑΗΛ ΠΑΣΧΑΛΗΣ",
+      "address": "ΝΙΚΗΣ 33",
+      "locality": "Τυχερό, Προβατώνας",
+      "postcode": null,
+      "phone": "2554042020",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 41.0262152,
+        "lon": 26.2954437,
+        "ref": "https://evros.efhmeries.gr/Home/Details/5940",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2554042100",
+      "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛΕΜΑΧΟΣ",
+      "address": "ΠΡΟΒΑΤΩΝΑΣ",
+      "locality": "Τυχερό, Προβατώνας",
+      "postcode": null,
+      "phone": "2554042100",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 41.025262,
+        "lon": 26.2577482,
+        "ref": "https://evros.efhmeries.gr/Home/Details/5945",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2555022229",
+      "name": "ΗΛΙΑΚΗ ΒΑΣΙΛΙΚΗ",
+      "address": "ΠΛΑΣΤΗΡΑ 3",
+      "locality": "Φέρες",
+      "postcode": null,
+      "phone": "2555022229",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.8942408,
+        "lon": 26.1722017,
+        "ref": "https://evros.efhmeries.gr/Home/Details/6315",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2555022273",
+      "name": "ΜΠΟΥΡΟΥΛΙΤΗ ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΔΗΜΟΚΡΙΤΟΥ 17",
+      "locality": "Φέρες",
+      "postcode": null,
+      "phone": "2555022273",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.8932822,
+        "lon": 26.1698188,
+        "ref": "https://evros.efhmeries.gr/Home/Details/6318",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2555024096",
+      "name": "ΚΑΨΙΔΟΥ ΘΕΟΔΩΡΑ",
+      "address": "ΔΗΜΟΚΡΙΤΟΥ 28",
+      "locality": "Φέρες",
+      "postcode": null,
+      "phone": "2555024096",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.8935681,
+        "lon": 26.169281,
+        "ref": "https://evros.efhmeries.gr/Home/Details/6316",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2555024333",
+      "name": "ΜΑΛΑΚΗΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΟΡΦΕΩΣ 2",
+      "locality": "Φέρες",
+      "postcode": null,
+      "phone": "2555024333",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 40.8951274,
+        "lon": 26.1698018,
+        "ref": "https://evros.efhmeries.gr/Home/Details/6317",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

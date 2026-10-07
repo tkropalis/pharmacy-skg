@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "zakynthos",
+  "updatedAt": "2026-10-07T07:51:02.777Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-zakynthos",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Ζακύνθου",
+        "en": "Pharmaceutical Association of Zakynthos"
+      },
+      "url": "https://zakynthos.efhmeries.gr/",
+      "note": "Duty lists, from zakynthos.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "thesprotia",
+  "updatedAt": "2026-10-07T07:53:47.173Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-thesprotia",
+      "name": {
+        "el": "Εφημερίες φαρμακείων Θεσπρωτίας",
+        "en": "Pharmacy duties of Thesprotia"
+      },
+      "url": "https://thesprotia.efhmeries.gr/",
+      "note": "Duty lists, from thesprotia.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "groups": [
+    {
+      "id": "pella",
+      "name": "Πέλλα",
+      "source": {
+        "url": "https://pella.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T08:01:59.768Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2381089221",
+              "name": "ΝΑΤΣΚΟΥ ΦΩΤΕΙΝΗ",
+              "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 33",
+              "locality": "Σκύδρα",
+              "phone": "2381089221"
+            },
+            {
+              "pharmacyId": "2381022553",
+              "name": "ΝΟΥΣΗΚΥΡΟΥ ΙΩΑΝΝΗΣ-ΙΑΣΩΝ",
+              "address": "18ης ΟΚΤΩΒΡΙΟΥ 5",
+              "locality": "Έδεσσα",
+              "phone": "2381022553"
+            },
+            {
+              "pharmacyId": "2384022235",
+              "name": "Σ.Φ. ΣΙΓΚΕΡΗ ΖΩΗ - ΚΑΛΤΣΑ ΜΑΡΙΑ",
+              "address": "ΔΗΜΟΚΡΑΤΙΑΣ 2",
+              "locality": "Αριδαία",
+              "phone": "2384022235"
+            },
+            {
+              "pharmacyId": "2382028400",
+              "name": "ΣΤΑΥΡΟΠΟΥΛΟΣ ΣΤΑΥΡΟΣ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 140",
+              "locality": "Γιαννιτσά",
+              "phone": "2382028400"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382061028",
+              "name": "Σ.Φ. ΧΡΥΣΑΓΗΣ ΧΑΡΑΛ. - ΕΜΜΑΝΟΥΗΛΙΔΗΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΒΑΣ. ΠΑΥΛΟΥ 75",
+              "locality": "Κρύα Βρύση",
+              "phone": "2382061028"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

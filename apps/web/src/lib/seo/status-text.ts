@@ -117,7 +117,7 @@ export function describeStatus(
 
   if (status.state === 'duty-hours-unknown') {
     // The same words as the home screen's label, whose last words are "call first".
-    return make('duty-unknown', d.status.dutyUnknown, tail);
+    return make('duty-unknown', status.duty.onCall ? d.status.onCall : d.status.dutyUnknown, tail);
   }
 
   if (dutyOnly) {

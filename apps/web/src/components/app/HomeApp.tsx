@@ -4,6 +4,7 @@ import {
   CITIES,
   GREECE_TIME_ZONE,
   cityAt,
+  cityById,
   hasRegularHours,
   localToInstant,
   zonedDate,
@@ -12,10 +13,12 @@ import {
 import type { Dictionary } from '../../i18n/index.ts';
 import { EMERGENCY_NUMBERS } from '../../config.ts';
 import { addDays, dateRange } from '../../lib/dates.ts';
+import { DATA_BASE_PATH } from '../../lib/data.ts';
 import { telUrl } from '../../lib/directions.ts';
 import { upcomingDuties } from '../../lib/duties.ts';
 import { coverage, distanceMetres, publishedDuties } from '../../lib/engine.ts';
 import { formatUpdatedShort } from '../../lib/freshness.ts';
+import { whenIdle } from '../../lib/idle.ts';
 import { groupList, groupNames, groupNear } from '../../lib/groups.ts';
 import { deviceZoneDiffers, fill, shortIsoDate } from '../../lib/format.ts';
 import { applyListFilter, buildRows, nextToOpen, rowFor } from '../../lib/list.ts';
@@ -29,7 +32,8 @@ import {
 } from '../../lib/geolocation.ts';
 import { localizedPath } from '../../i18n/routes.ts';
 import { displayName } from '../../lib/names.ts';
-import { buildLocalities } from '../../lib/places.ts';
+import { buildLocalities, loadNationalPlaces, PLACES_PATH } from '../../lib/places.ts';
+import type { NationalPlace } from '../../lib/places.ts';
 import { rememberCity } from '../../lib/home-city.ts';
 import type { Locality } from '../../lib/places.ts';
 import { describeStatus } from '../../lib/status-label.ts';
@@ -244,7 +248,27 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
     () => (data ? buildLocalities(data.pharmacies) : []),
     [data],
   );
-  // The area picker also offers the other covered cities; choosing one switches to it.
+  // Every covered city's places (/data/places.json), read once the app is idle: a person can
+  // type their town wherever it is. Until then, or offline before the first read, the picker
+  // offers the other cities themselves.
+  const [nationalPlaces, setNationalPlaces] = useState<readonly NationalPlace[]>([]);
+  const started = ready !== null;
+  useEffect(() => {
+    if (!started) return;
+    let cancelled = false;
+    const cancel = whenIdle(() => {
+      void loadNationalPlaces(`${DATA_BASE_PATH}/${PLACES_PATH}`).then((places) => {
+        if (!cancelled) setNationalPlaces(places);
+      });
+    }, 5000);
+    return () => {
+      cancelled = true;
+      cancel();
+    };
+  }, [started]);
+
+  // The area picker also offers the other covered cities and their places; choosing one
+  // switches to that city.
   const pickable: readonly Locality[] = useMemo(() => {
     const names = new Set(localities.map((l) => l.name));
     const others = CITIES.filter((c) => c.id !== city.id && !names.has(c.name.el)).map(
@@ -257,8 +281,24 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
         cityId: c.id,
       }),
     );
-    return [...localities, ...others].sort((a, b) => greek.compare(a.name, b.name));
-  }, [localities, city.id]);
+    const cityNames = new Set(CITIES.map((c) => c.name.el));
+    const elsewhere = nationalPlaces.flatMap((place): Locality[] => {
+      const other = cityById(place.cityId);
+      if (other === undefined || other.id === city.id || cityNames.has(place.name)) return [];
+      return [
+        {
+          name: place.name,
+          lat: place.lat,
+          lon: place.lon,
+          count: place.count,
+          groupId: null,
+          cityId: other.id,
+          cityName: other.name[locale],
+        },
+      ];
+    });
+    return [...localities, ...others, ...elsewhere].sort((a, b) => greek.compare(a.name, b.name));
+  }, [localities, city.id, nationalPlaces, locale]);
   const restoredArea = useRef(false);
 
   /** Shows another covered city, and opens on it next time. */

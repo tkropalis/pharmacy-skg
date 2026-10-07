@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "pieria",
+  "updatedAt": "2026-10-07T08:03:16.739Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-pieria",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Πιερίας",
+        "en": "Pharmaceutical Association of Pieria"
+      },
+      "url": "https://pieria.efhmeries.gr/",
+      "note": "Duty lists, from pieria.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

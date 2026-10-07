@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2273022000",
+      "name": "ΕΛΕΥΘΕΡΙΟΥ ΣΤΑΥΡΟΣ",
+      "address": "Κ. ΣΤΑΜΑΤΗ 3",
+      "locality": "Βαθύ",
+      "postcode": null,
+      "phone": "2273022000",
+      "groupId": "samos",
+      "sources": [
+        "iteq-samos"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.75539,
+        "lon": 26.977529,
+        "ref": "https://samos.efhmeries.gr/Home/Details/6050",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2273022800",
+      "name": "ΚΙΛΟΥΚΙΩΤΟΥ ΑΛΕΞΑΝΔΡΑ",
+      "address": "ΠΡΟΣΦΥΓΙΚΑ",
+      "locality": "Άνω Βαθύ",
+      "postcode": null,
+      "phone": "2273022800",
+      "groupId": "samos",
+      "sources": [
+        "iteq-samos"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.7510828,
+        "lon": 26.9817138,
+        "ref": "https://samos.efhmeries.gr/Home/Details/5410",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2273023686",
+      "name": "ΚΩΝΣΤΑΝΤΑΚΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "Θ. ΣΟΦΟΥΛΗ 107",
+      "locality": "Βαθύ",
+      "postcode": null,
+      "phone": "2273023686",
+      "groupId": "samos",
+      "sources": [
+        "iteq-samos"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.798585,
+        "lon": 26.711838,
+        "ref": "https://samos.efhmeries.gr/Home/Details/6094",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2273023929",
+      "name": "ΦΙΛΙΑΚΟΣ ΕΜΜΑΝΟΥΗΛ",
+      "address": "ΠΑΝΑΓΙΑ",
+      "locality": "Άνω Βαθύ",
+      "postcode": null,
+      "phone": "2273023929",
+      "groupId": "samos",
+      "sources": [
+        "iteq-samos"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.7484236,
+        "lon": 26.9818534,
+        "ref": "https://samos.efhmeries.gr/Home/Details/5412",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2273027257",
+      "name": "ΑΠΟΣΤΟΛΟΥ ΧΡΙΣΤΟΦΟΡΟΣ",
+      "address": "ΠΛ. ΠΥΘΑΓΟΡΑ",
+      "locality": "Βαθύ",
+      "postcode": null,
+      "phone": "2273027257",
+      "groupId": "samos",
+      "sources": [
+        "iteq-samos"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.756184,
+        "lon": 26.976441,
+        "ref": "https://samos.efhmeries.gr/Home/Details/6006",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2273027487",
+      "name": "ΣΠΥΡΟΥ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "Κ. ΣΤΑΜΑΤΗ 28",
+      "locality": "Βαθύ",
+      "postcode": null,
+      "phone": "2273027487",
+      "groupId": "samos",
+      "sources": [
+        "iteq-samos"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 37.7558308,
+        "lon": 26.9773256,
+        "ref": "https://samos.efhmeries.gr/Home/Details/5918",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2273028002",
+      "name": "ΝΙΤΣΟΛΑΣ ΑΝΔΡΕΑΣ",
+      "address": "ΠΛΑΤΕΙΑ ΑΓ. ΝΙΚΟΛΑΟΥ",
+      "locality": "Βαθύ",
+      "postcode": null,
+      "phone": "2273028002",
+      "groupId": "samos",
+      "sources": [
+        "iteq-samos"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.7524585,
+        "lon": 27.0239125,
+        "ref": "https://samos.efhmeries.gr/Home/Details/5962",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2273030700",
+      "name": "ΚΕΛΕΣΙΔΟΥ ΜΑΡΙΑ",
+      "address": "Ι. ΖΑΙΜΗ",
+      "locality": "Καρλόβασι",
+      "postcode": null,
+      "phone": "2273030700",
+      "groupId": "samos",
+      "sources": [
+        "iteq-samos"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.7943883,
+        "lon": 26.7064246,
+        "ref": "https://samos.efhmeries.gr/Home/Details/5038",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2273032646",
+      "name": "ΦΩΤΙΟΥ - ΜΥΛΩΝΑ ΜΑΡΙΑ",
+      "address": "Ν. ΒΛΙΑΜΟΥ",
+      "locality": "Καρλόβασι",
+      "postcode": null,
+      "phone": "2273032646",
+      "groupId": "samos",
+      "sources": [
+        "iteq-samos"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.7916917,
+        "lon": 26.7032636,
+        "ref": "https://samos.efhmeries.gr/Home/Details/5040",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2273032658",
+      "name": "ΚΑΛΗΣΠΕΡΗ ΣΕΒΑΣΤΗ",
+      "address": "ΧΑΤΖΗΓΙΑΝΝΗ",
+      "locality": "Καρλόβασι",
+      "postcode": null,
+      "phone": "2273032658",
+      "groupId": "samos",
+      "sources": [
+        "iteq-samos"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.7913248,
+        "lon": 26.7043276,
+        "ref": "https://samos.efhmeries.gr/Home/Details/5034",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2273032838",
+      "name": "ΔΗΜΗΤΡΙΟΥ ΑΝΤΩΝΙΟΣ",
+      "address": "ΚΑΡΛΟΒΑΣΙ",
+      "locality": "Καρλόβασι",
+      "postcode": null,
+      "phone": "2273032838",
+      "groupId": "samos",
+      "sources": [
+        "iteq-samos"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.7927073,
+        "lon": 26.7046953,
+        "ref": "https://samos.efhmeries.gr/Home/Details/5037",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2273079147",
+      "name": "ΤΣΑΚΟΥΜΑΓΚΟΥ ΑΡΓΥΡΩ",
+      "address": "ΠΥΘΑΓΟΡΑ 3, ΝΕΟ ΚΑΡΛΟΒΑΣΙ",
+      "locality": "Καρλόβασι",
+      "postcode": null,
+      "phone": "2273079147",
+      "groupId": "samos",
+      "sources": [
+        "iteq-samos"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.7932683,
+        "lon": 26.7007142,
+        "ref": "https://samos.efhmeries.gr/Home/Details/5036",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2273081297",
+      "name": "ΠΑΝΑΓΙΩΤΑΚΟΠΟΥΛΟΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΚΑΝΑΔΑ 6",
+      "locality": "Βαθύ",
+      "postcode": null,
+      "phone": "2273081297",
+      "groupId": "samos",
+      "sources": [
+        "iteq-samos"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.757494,
+        "lon": 26.97231,
+        "ref": "https://samos.efhmeries.gr/Home/Details/6182",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2273100315",
+      "name": "ΞΕΝΑΚΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΣΟΦΟΥΛΗ",
+      "locality": "Καρλόβασι",
+      "postcode": null,
+      "phone": "2273100315",
+      "groupId": "samos",
+      "sources": [
+        "iteq-samos"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 37.7974422,
+        "lon": 26.7045698,
+        "ref": "https://samos.efhmeries.gr/Home/Details/5035",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2273105100",
+      "name": "ΦΙΛΙΑΚΟΣ ΕΜΜΑΝΟΥΗΛ",
+      "address": "ΝΕΑΠΟΛΗ-ΠΕΥΚΑΚΙΑ",
+      "locality": "Άνω Βαθύ",
+      "postcode": null,
+      "phone": "2273105100",
+      "groupId": "samos",
+      "sources": [
+        "iteq-samos"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.7473234,
+        "lon": 26.9719643,
+        "ref": "https://samos.efhmeries.gr/Home/Details/5411",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

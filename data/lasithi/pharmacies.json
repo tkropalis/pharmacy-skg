@@ -1,0 +1,551 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2841022334",
+      "name": "ΠΛΑΚΟΓΙΑΝΝΑΚΗΣ ΜΙΧΑΗΛ – ΠΛΑΚΟΓΙΑΝΝΑΚΗΣ ΓΕΩΡΓΙΟΣ Ο.Ε.Φ.Ε.Τ.",
+      "address": "ΡΟΥΣΟΥ ΚΟΥΝΔΟΥΡΟΥ 19 / 19, ROUSOU KOUNDOUROU STR.",
+      "locality": "Άγιος Νικόλαος",
+      "postcode": null,
+      "phone": "2841022334",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 35.1898791,
+        "lon": 25.718238,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4802",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2841022836",
+      "name": "Σ.Φ. ΣΟΦΙΑ ΓΚΟΥΜΑ-ΧΡΙΣΤΑ-ΜΑΡΙΑ ΑΘΑΝΑΣΙΟΥ Ο.Ε.",
+      "address": "ΚΟΝΤΟΓΙΑΝΝΗ 26 / 26, KONTOGIANNI STR.",
+      "locality": "Άγιος Νικόλαος",
+      "postcode": null,
+      "phone": "2841022836",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 35.1881423,
+        "lon": 25.7155964,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4808",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2841024011",
+      "name": "Σ.Φ. ΘΕΟΔΩΡΟΣ ΦΟΥΡΑΚΗΣ - ΜΑΡΙΟΣ ΦΟΥΡΑΚΗΣ Ο.Ε.",
+      "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 23 / 23, ELEFTHERIOU VENIZELOU SQ.",
+      "locality": "Άγιος Νικόλαος",
+      "postcode": null,
+      "phone": "2841024011",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 35.1890715,
+        "lon": 25.7174678,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4800",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2841024291",
+      "name": "ΦΑΡΜΑΚΕΙΟ ΒΑΣΙΛΙΚΗ ΠΑΝΑΓΙΩΤΟΠΟΥΛΟΥ & ΣΙΑ Ε.Ε.",
+      "address": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 11 / 11, ANDREA PAPANDREOU STR.",
+      "locality": "Άγιος Νικόλαος",
+      "postcode": null,
+      "phone": "2841024291",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 35.1948479,
+        "lon": 25.7126986,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4806",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2841024654",
+      "name": "Σ.Φ. ΠΕΝΙΔΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ ΚΑΙ ΔΗΜΗΤΡΙΟΣ Ο.Ε.",
+      "address": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 1 / 1, ANDREA PAPANDREOU STR.",
+      "locality": "Άγιος Νικόλαος",
+      "postcode": null,
+      "phone": "2841024654",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 35.1942753,
+        "lon": 25.7128263,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4798",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2841024795",
+      "name": "Σ.Φ. ΙΩΑΝΝΗ ΜΑΛΕΡΔΟΥ ΚΑΙ ΑΙΜΙΛΙΑΣ ΚΑΠΕΤΑΝΟΥ Ο.Ε.",
+      "address": "ΚΝΩΣΟΥ 29 / 29, KNOSOU STR.",
+      "locality": "Άγιος Νικόλαος",
+      "postcode": null,
+      "phone": "2841024795",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 35.1936878,
+        "lon": 25.7130207,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4804",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2841031650",
+      "name": "ΦΟΥΛΕΔΑΚΗΣ Δ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 27 / 27, ELEFTHERIOU VENIZELOU SQ.",
+      "locality": "Νεάπολη",
+      "postcode": null,
+      "phone": "2841031650",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 35.2557733,
+        "lon": 25.6064703,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4271",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2841032144",
+      "name": "ΠΡΟΖΥΜΗΣ Γ. ΕΥΑΓΓΕΛΟΣ",
+      "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 17 / 17, ELEFTHERIOU VENIZELOU SQ.",
+      "locality": "Νεάπολη",
+      "postcode": null,
+      "phone": "2841032144",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 35.2562283,
+        "lon": 25.6066956,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4234",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2841033376",
+      "name": "ΤΣΟΥΚΑΚΗΣ ΚΩΝ. ΓΕΩΡΓΙΟΣ ΙΩΑΝΝΗΣ",
+      "address": "ΑΝΑΠΗΡΩΝ ΠΟΛΕΜΟΥ 14 / 14, ΑΝΑΡΙRΟΝ POLEMOU STR.",
+      "locality": "Νεάπολη",
+      "postcode": null,
+      "phone": "2841033376",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 35.2549894,
+        "lon": 25.6082335,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4344",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2841033533",
+      "name": "Σ.Φ. ΞΕΝΗ ΣΚΟΝΤΙΝΗ ΚΑΙ ΠΑΡΑΣΧΟΣ ΧΟΥΡΣΑΝΙΔΗΣ Ο.Ε.",
+      "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 3-5 / 3-5, ETHNIKIS ΑΝΤΙSΤΑSΕΟS STR.",
+      "locality": "Νεάπολη",
+      "postcode": null,
+      "phone": "2841033533",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 35.256118,
+        "lon": 25.6063828,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4381",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2841041308",
+      "name": "Σ.Φ. ΔΕΣΠΟΙΝΑ ΤΣΑΝΙΚΛΙΔΟΥ - ΝΙΚΟΛΑΟΣ ΠΑΠΑΣΤΑΥΡΑΚΗΣ Ο.Ε.",
+      "address": "ΠΛΑΤΕΙΑ ΜΠΟΤΗ ΣΦΑΚΙΑΝΑΚΗ 15 / 15, MPOTI SFAKIANAKI SQ.",
+      "locality": "Ελούντα",
+      "postcode": null,
+      "phone": "2841041308",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 35.2617867,
+        "lon": 25.7226428,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/3794",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2841044277",
+      "name": "ΦΑΡΜΑΚΕΙΟ Ε. ΤΑΒΛΑ- Κ. ΚΟΖΥΡΗ Ο.Ε.",
+      "address": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 9 / 9, ANDREA PAPANDREOU STR.",
+      "locality": "Ελούντα",
+      "postcode": null,
+      "phone": "2841044277",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 35.2614561,
+        "lon": 25.7239692,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/3688",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2842022231",
+      "name": "ΤΥΡΑΚΗΣ Π. ΕΜΜΑΝΟΥΗΛ",
+      "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 4 / 4, ELEFTHERIOU VENIZELOU SQ.",
+      "locality": "Ιεράπετρα",
+      "postcode": null,
+      "phone": "2842022231",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 35.0103087,
+        "lon": 25.7407374,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4678",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2842022479",
+      "name": "ΦΑΡΜΑΚΕΙΟ ΜΑΡΙΑ ΔΕΡΜΙΤΖΑΚΗ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΔΗΜΟΚΡΑΤΙΑΣ 11 / 11, DIMOKRATIAS STR.",
+      "locality": "Ιεράπετρα",
+      "postcode": null,
+      "phone": "2842022479",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 35.0081694,
+        "lon": 25.7384268,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4684",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2842024888",
+      "name": "ΜΑΥΡΟΚΟΥΚΟΥΛΑΚΗΣ ΕΜΜ. ΜΑΡΚΟΣ",
+      "address": "ΔΗΜΟΚΡΑΤΙΑΣ 47 / 47, DIMOKRATIAS STR.",
+      "locality": "Ιεράπετρα",
+      "postcode": null,
+      "phone": "2842024888",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 35.0083817,
+        "lon": 25.736538,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4693",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2842025544",
+      "name": "ΣΗΦΑΚΗΣ Γ. ΙΩΑΝΝΗΣ",
+      "address": "ΚΑΛΗΜΕΡΑΚΗ 11 / 11, KALIMERAKI STR.",
+      "locality": "Ιεράπετρα",
+      "postcode": null,
+      "phone": "2842025544",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 35.013274,
+        "lon": 25.7419487,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4696",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2842027500",
+      "name": "Σ.Φ. ΛΕΜΠΙΔΑΚΗΣ ΝΙΚΟΛΑΟΣ-ΜΠΡΙΚΑ ΥΑΚΙΝΘΗ Ο.Ε.",
+      "address": "ΨΥΛΙΝΑΚΗ 4 / 4, PSYLINAKI STR.",
+      "locality": "Ιεράπετρα",
+      "postcode": null,
+      "phone": "2842027500",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 35.0130196,
+        "lon": 25.7432653,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4687",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2842027633",
+      "name": "ΑΠΙΔΙΑΝΑΚΗ Γ. ΑΡΓΥΡΩ",
+      "address": "ΔΗΜΟΚΡΑΤΙΑΣ 24 / 24, DIMOKRATIAS STR.",
+      "locality": "Ιεράπετρα",
+      "postcode": null,
+      "phone": "2842027633",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 35.0085403,
+        "lon": 25.7369789,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4690",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2842028884",
+      "name": "ΒΑΦΕΙΑΔΗΣ Ι. ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΝΑΥΑΡΧΟΥ ΚΟΥΝΤΟΥΡΙΩΤΟΥ 31 / 31, NAVARCHOU KOUNTOURIOTOU STR.",
+      "locality": "Ιεράπετρα",
+      "postcode": null,
+      "phone": "2842028884",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 35.0100841,
+        "lon": 25.7403897,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4681",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2843022276",
+      "name": "Σ.Φ. ΓΕΩΡΓΙΟΣ ΜΠΑΓΟΡΔΑΚΗΣ ΚΑΙ ΟΔΥΣΣΕΑΣ ΜΠΑΓΟΡΔΑΚΗΣ Ο.Ε.",
+      "address": "ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 107 / 107, ELEFTHERIOU VENIZELOU STR.",
+      "locality": "Σητεία",
+      "postcode": null,
+      "phone": "2843022276",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 35.2075877,
+        "lon": 26.1060533,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4750",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2843022335",
+      "name": "ΤΑΒΛΑΔΑΚΗΣ ΕΜΜ. ΙΩΑΝΝΗΣ",
+      "address": "ΔΗΜΟΚΡΑΤΙΑΣ ΚΑΙ ΠΑΝΑΓΟΥΛΗ (ΓΩΝΙΑ) / DIMOKRATIAS & PANAGOULI STR.",
+      "locality": "Σητεία",
+      "postcode": null,
+      "phone": "2843022335",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 35.20797,
+        "lon": 26.1053646,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4773",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2843022897",
+      "name": "ΦΑΡΜΑΚΕΙΟ ΕΙΡΗΝΗ ΠΝΕΥΜΑΤΙΚΑΚΗ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΜΕΛΙΝΑΣ ΜΕΡΚΟΥΡΗ 11 / 11, MELINAS MERKOURI STR.",
+      "locality": "Σητεία",
+      "postcode": null,
+      "phone": "2843022897",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 35.204825,
+        "lon": 26.1058842,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4777",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2843024416",
+      "name": "ΚΑΡΑΜΑΝΩΛΑΚΗΣ ΝΙΚΟΛΑΟΣ & ΣΙΑ Ο.Ε.",
+      "address": "ΚΑΠΕΤΑΝ ΓΙΑΝΝΗ ΠΑΠΑΔΑΚΗ 4 / 4, KAPETAN GIANNI PAPADAKI STR.",
+      "locality": "Σητεία",
+      "postcode": null,
+      "phone": "2843024416",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 35.2051441,
+        "lon": 26.0966064,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4755",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2843024455",
+      "name": "Σ.Φ. ΚΩΝΣΤΑΝΤΙΝΟΣ ΚΑΛΔΗΣ - ΗΛΙΑΣ ΚΑΛΔΗΣ - ΝΙΚΟΛΑΟΣ ΚΑΛΔΗΣ Ο.Ε.",
+      "address": "ΠΑΠΑΝΑΣΤΑΣΙΟΥ 10-12 / 10-12, PAPANASTASIOU STR.",
+      "locality": "Σητεία",
+      "postcode": null,
+      "phone": "2843024455",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 35.2061844,
+        "lon": 26.1040802,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4760",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2843028328",
+      "name": "ΣΤΑΘΕΛΛΗΣ Α. ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΚΑΠΕΤΑΝ ΣΗΦΗ 6 / 6, KAPETAN SIFI STR.",
+      "locality": "Σητεία",
+      "postcode": null,
+      "phone": "2843028328",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 35.2079866,
+        "lon": 26.1057743,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4765",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2843500622",
+      "name": "ΒΑΣΑΡΜΙΔΗ Μ. ΚΑΛΛΙΟΠΗ",
+      "address": "ΠΑΠΑΝΑΣΤΑΣΙΟΥ 55 / 55, PAPANASTASIOU STR.",
+      "locality": "Σητεία",
+      "postcode": null,
+      "phone": "2843500622",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 35.2065408,
+        "lon": 26.1024226,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4769",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

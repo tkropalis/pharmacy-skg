@@ -49,7 +49,45 @@ describe('cityAt', () => {
     expect(cityAt({ lat: 40.7245, lon: 23.7117 })).toBe(THESSALONIKI); // Ασπροβάλτα
   });
 
-  it('finds none outside the covered areas', () => {
-    expect(cityAt({ lat: 37.9838, lon: 23.7275 })).toBeUndefined(); // Athens
+  it('finds the areas on the ITeQ platform, the more specific where boxes overlap', () => {
+    const at = (lat: number, lon: number) => cityAt({ lat, lon })?.id;
+    expect(at(35.3387, 25.1442)).toBe('herakleion');
+    expect(at(37.0389, 22.1142)).toBe('messinia'); // Kalamata
+    expect(at(36.434, 28.2251)).toBe('dodecanese'); // Rhodes
+    expect(at(37.942, 23.647)).toBe('piraeus');
+    expect(at(37.94, 23.49)).toBe('piraeus'); // Salamina
+    expect(at(37.746, 23.43)).toBe('piraeus'); // Aegina
+    expect(at(39.362, 22.944)).toBe('magnesia'); // Volos, inside Larissa's box too
+    expect(at(38.852, 23.047)).toBe('evia'); // Edipsos, inside Fthiotida's box too
+    expect(at(38.463, 23.597)).toBe('evia'); // Chalkida
+    expect(at(38.015, 24.419)).toBe('evia'); // Karystos
+    expect(at(38.9, 22.434)).toBe('fthiotida'); // Lamia
+  });
+
+  it.each([
+    ['Athens', 37.9838, 23.7275],
+    ['Kallithea', 37.955, 23.702],
+    ['Elefsina', 38.041, 23.543],
+    ['Megara', 37.996, 23.344],
+    ['Marathon', 38.153, 23.963],
+    ['Rafina', 38.022, 24.005],
+    ['Thiva', 38.325, 23.319],
+    ['Livadeia', 38.436, 22.875],
+    ['Patra', 38.2466, 21.7346],
+    ['Agrinio', 38.6218, 21.4078],
+    ['Corfu', 39.6243, 19.9217],
+    ['Lefkada', 38.8336, 20.7069],
+    ['Argostoli', 38.1754, 20.489],
+    ['Rethymno', 35.3693, 24.4739],
+    ['Komotini', 41.1224, 25.4066],
+    ['Serres', 41.0856, 23.5484],
+    ['Kastoria', 40.5193, 21.2687],
+    ['Florina', 40.782, 21.4098],
+    ['Chios', 38.368, 26.1358],
+    ['Mytilene', 39.1047, 26.5551],
+    ['Naxos', 37.1036, 25.3766],
+    ['Ermoupoli', 37.4448, 24.9425],
+  ])('finds none in %s, which is not covered', (_, lat, lon) => {
+    expect(cityAt({ lat, lon })).toBeUndefined();
   });
 });

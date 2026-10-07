@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "messinia",
+  "updatedAt": "2026-10-07T07:59:23.129Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-messinia",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Μεσσηνίας",
+        "en": "Pharmaceutical Association of Messinia"
+      },
+      "url": "https://messinia.efhmeries.gr/",
+      "note": "Duty lists, from messinia.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

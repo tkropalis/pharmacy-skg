@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-07",
+  "groups": [
+    {
+      "id": "drama",
+      "name": "Δράμα",
+      "source": {
+        "url": "https://drama.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:49:02.795Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521036520",
+              "name": "ΦΕΤΦΑΤΖΙΔΗΣ ΘΕΟΔΩΡΟΣ",
+              "address": "ΕΘ. ΑΜΥΝΗΣ 25",
+              "locality": "Δράμα",
+              "phone": "2521036520"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521025150",
+              "name": "ΣΑΛΤΙΔΟΥ Γ. ΑΝΑΣΤΑΣΙΑ",
+              "address": "ΖΕΡΒΟΥ 32",
+              "locality": "Δράμα",
+              "phone": "2521025150"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521032256",
+              "name": "ΔΙΓΚΑ ΜΑΡΙΑ",
+              "address": "ΣΜΥΡΝΗΣ 34",
+              "locality": "Δράμα",
+              "phone": "2521032256"
+            },
+            {
+              "pharmacyId": "2521039495",
+              "name": "ΣΦ ΛΑΜΠΡΙΑΝΙΔΗΣ Α.- ΛΑΜΠΡΙΑΝΙΔΗΣ Θ. ΟΕ",
+              "address": "ΓΑΛΗΝΟΥ & ΦΙΛΙΠΠΟΥΠΟΛΕΩΣ 1",
+              "locality": "Δράμα",
+              "phone": "2521039495"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

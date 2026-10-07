@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "korinthia",
+  "updatedAt": "2026-10-07T07:56:33.717Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-korinthia",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Κορινθίας",
+        "en": "Pharmaceutical Association of Corinthia"
+      },
+      "url": "https://korinthia.efhmeries.gr/",
+      "note": "Duty lists, from korinthia.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

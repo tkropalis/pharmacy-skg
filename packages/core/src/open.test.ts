@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { THESSALONIKI } from './city.ts';
+import { LARISA, THESSALONIKI } from './city.ts';
 import type {
   DutyDay,
   DutyKind,
@@ -517,6 +517,7 @@ describe('duties', () => {
         duty: 'on-duty',
         groupId: 'thermi',
         heading: 'Εφημερεύοντα Φαρμακεία',
+        onCall: false,
       },
       nextOpen: at('2026-10-12', '08:00'),
     });
@@ -525,6 +526,33 @@ describe('duties', () => {
     expect(status(data, 't', at('2026-10-11', '08:00')).state).toBe('closed');
     // Before 08:00 on the listed day the duty has not begun.
     expect(status(data, 't', at('2026-10-10', '07:59')).state).toBe('closed');
+  });
+
+  it('reports an on-call duty as duty-hours-unknown during its hours only, never as open', () => {
+    // An area without regular hours: only the duty decides.
+    const onCall = (from: string, to: string): DutySection => ({
+      ...section('on-duty', win(from, to), ['c'], { heading: `${from} ΕΩΣ ${to} ΕΠΟΜΕΝΗΣ*` }),
+      onCall: true,
+    });
+    const data: CityData = {
+      ...city(
+        [pharmacy('c', { groupId: 'lakonia' })],
+        [day('2026-10-10', { lakonia: [onCall('21:00', '21:00')] })],
+      ),
+      city: LARISA,
+    };
+    expect(status(data, 'c', at('2026-10-10', '20:59')).state).toBe('closed');
+    expect(status(data, 'c', at('2026-10-10', '21:00'))).toMatchObject({
+      state: 'duty-hours-unknown',
+      duty: { date: '2026-10-10', duty: 'on-duty', groupId: 'lakonia', onCall: true },
+    });
+    // Past midnight and the usual 08:00, until 21:00 the next day.
+    expect(status(data, 'c', at('2026-10-11', '12:00')).state).toBe('duty-hours-unknown');
+    expect(status(data, 'c', at('2026-10-11', '21:00')).state).toBe('closed');
+    expect(openIntervals(data, 'c', at('2026-10-10', '00:00'), at('2026-10-12', '00:00'))).toEqual(
+      [],
+    );
+    expect(publishedDuties(data, 'c', '2026-10-10')[0]?.onCall).toBe(true);
   });
 
   it('prefers open over duty-hours-unknown when regular hours apply', () => {
@@ -573,6 +601,7 @@ describe('duties', () => {
         duty: 'day',
         heading: 'day heading',
         hours: win('08:00', '21:00'),
+        onCall: false,
       },
       {
         date: '2026-10-06',
@@ -580,6 +609,7 @@ describe('duties', () => {
         duty: 'on-duty',
         heading: 'on-duty heading',
         hours: null,
+        onCall: false,
       },
     ]);
     expect(publishedDuties(data, 'a', '2026-10-08')).toEqual([]);

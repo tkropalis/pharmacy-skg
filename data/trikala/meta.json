@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "trikala",
+  "updatedAt": "2026-10-07T08:04:22.129Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-12"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-trikala",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Τρικάλων",
+        "en": "Pharmaceutical Association of Trikala"
+      },
+      "url": "https://trikala.efhmeries.gr/",
+      "note": "Duty lists, from trikala.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

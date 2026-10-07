@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "groups": [
+    {
+      "id": "pieria",
+      "name": "Πιερία",
+      "source": {
+        "url": "https://pieria.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T08:02:40.030Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2353022219",
+              "name": "ΑΥΛΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΚΟΛΟΚΟΤΡΩΝΗ 1",
+              "locality": "Αιγίνιο",
+              "phone": "2353022219"
+            },
+            {
+              "pharmacyId": "2352031110",
+              "name": "ΚΑΛΙΑΜΠΟΣ ΔΙΟΝΥΣΙΟΣ",
+              "address": "ΜΕΤΑΞΑ ΙΩΑΝΝΗ 21",
+              "locality": "Λεπτοκαρυά",
+              "phone": "2352031110"
+            },
+            {
+              "pharmacyId": "2352041055",
+              "name": "ΝΑΝΟΥ ΑΝΔΡΙΑΝΗ",
+              "address": "Κ. ΚΑΡΑΜΑΝΛΗ 20",
+              "locality": "Πλαταμώνας",
+              "phone": "2352041055"
+            },
+            {
+              "pharmacyId": "2351063601",
+              "name": "ΟΙΚΟΝΟΜΙΚΟΣ ΝΙΚΟΛΑΟΣ",
+              "address": "Γ. ΣΕΠΤΕΜΒΡΙΟΥ 58",
+              "locality": "Καλλιθέα",
+              "phone": "2351063601"
+            },
+            {
+              "pharmacyId": "2353031494",
+              "name": "ΣΑΜΨΟΥΡΗ ΕΥΓΕΝΙΑ-ΑΓΑΘΗ",
+              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 57",
+              "locality": "Κολινδρός",
+              "phone": "2353031494"
+            },
+            {
+              "pharmacyId": "2351042303",
+              "name": "ΤΟΠΑΛΙΔΟΥ ΜΑΡΙΑ",
+              "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 43",
+              "locality": "Κορινός",
+              "phone": "2351042303"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:30 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351028889",
+              "name": "ΡΑΦΤΟΠΟΥΛΟΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΜΕΓ. ΑΛΕΞΆΝΔΡΟΥ 60",
+              "locality": "Κατερίνη",
+              "phone": "2351028889"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:30 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351028889",
+              "name": "ΡΑΦΤΟΠΟΥΛΟΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΜΕΓ. ΑΛΕΞΆΝΔΡΟΥ 60",
+              "locality": "Κατερίνη",
+              "phone": "2351028889"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2352021095",
+              "name": "ΝΤΟΡΑ ΔΗΜΗΤΡΑ",
+              "address": "ΑΓΙΟΥ ΝΙΚΟΛΑΟΥ 102",
+              "locality": "Λιτόχωρο",
+              "phone": "2352021095"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351038767",
+              "name": "ΠΑΝΑΓΙΩΤΗ ΑΓΑΠΗ -ΛΥΔΙΑ",
+              "address": "ΤΡΑΠΕΖΟΥΝΤΟΣ 1",
+              "locality": "Κατερίνη",
+              "phone": "2351038767"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

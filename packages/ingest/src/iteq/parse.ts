@@ -5,9 +5,6 @@
  * one card per pharmacy on duty: the hours, the name, the address, the sector and the phone, with
  * a link to a details page that holds the coordinates.
  */
-import type { DutyKind, TimeWindow } from '@pharmacy-skg/core';
-import { isoWeekday } from '@pharmacy-skg/core';
-import { toWindow } from '../fsth/heading.ts';
 import { cleanDisplay, squash } from '../text.ts';
 
 export interface IteqCard {
@@ -57,6 +54,18 @@ function textOf(html: string): string {
   return squash(decodeEntities(html.replace(/<[^>]*>/g, ' ')));
 }
 
+/**
+ * The pharmacy's phone: the first Greek number in the row. Some sites print it twice
+ * ("2754031330 2754031330") or add a mobile ("2754051700 6947619938"), and the pharmacy's id is
+ * its phone, so only the first number counts.
+ */
+export function phoneOf(row: string): string {
+  let digits = row.replace(/\D/g, '');
+  // The country code, written +30 or 0030.
+  digits = digits.replace(/^(?:00)?30(?=[26]\d{9})/, '');
+  return /^[26]\d{9}/.test(digits) ? digits.slice(0, 10) : digits;
+}
+
 function cardsOf(html: string): IteqCard[] {
   const cards: IteqCard[] = [];
   // Each card starts with its column; a page past the last card holds the footer.
@@ -76,7 +85,7 @@ function cardsOf(html: string): IteqCard[] {
       name: cleanDisplay(textOf(title?.[1] ?? '')),
       address: cleanDisplay(rows[0] ?? ''),
       locality: cleanDisplay(textOf(locality?.[1] ?? rows[1] ?? '')),
-      phone: (rows[2] ?? '').replace(/\D/g, ''),
+      phone: phoneOf(rows[2] ?? ''),
       detailsId: details?.[1] ?? null,
     });
   }
@@ -107,28 +116,4 @@ export function parseIteqDetails(html: string): { lat: number; lon: number } | n
   const point = { lat: Number(lat[1]), lon: Number(lon[1]) };
   // An unplaced pharmacy has 0, 0.
   return point.lat === 0 && point.lon === 0 ? null : point;
-}
-
-/**
- * The kind and hours of a card's heading on `date`:
- * - "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00": overnight;
- * - "ΑΠΟ 08:00 ΕΩΣ 14:00" on a Saturday, ending by 15:00: the Saturday-morning rota;
- * - "ΑΠΟ 08:00 ΕΩΣ 23:00": day duty;
- * - "ΕΦΗΜΕΡΕΥΕΙ": on duty, hours not printed ("ΕΦΗΜΕΡΕΥΕΙ 08:00 ΕΩΣ 23:00" with them).
- * Null for a heading in none of these forms, or with hours only half printed.
- */
-export function iteqHeading(
-  heading: string,
-  date: string,
-): { kind: DutyKind; hours: TimeWindow | null } | null {
-  const text = heading.toUpperCase();
-  const times = /(\d{1,2}:\d{2})\s+ΕΩΣ\s+(\d{1,2}:\d{2})/.exec(text);
-  const hours = times ? toWindow(times[1] ?? '', times[2] ?? '') : null;
-  if (/ΔΙΑΝΥΚΤΕΡΕΥ/.test(text) && hours) return { kind: 'overnight', hours };
-  if (/^ΑΠΟ\s/.test(text) && hours) {
-    const saturdayMorning = isoWeekday(date) === 6 && !hours.toNextDay && hours.to <= '15:00';
-    return { kind: saturdayMorning ? 'saturday-extra' : 'day', hours };
-  }
-  if (/^ΕΦΗΜΕΡΕΥ/.test(text) && (hours || !/\d/.test(text))) return { kind: 'on-duty', hours };
-  return null;
 }

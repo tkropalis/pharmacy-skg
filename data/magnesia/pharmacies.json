@@ -1,0 +1,803 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2421008596",
+      "name": "ΔΗΜΗΤΡΙΟΣ ΚΩΝΣΤΑΝΤΑΣ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 131",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421008596",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 39.3618314,
+        "lon": 22.9482691,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5388",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421022835",
+      "name": "ΚΕΧΑΓΙΑ ΜΑΡΙΑ-ΚΕΧΑΓΙΑ ΙΩΑΝΝΑ",
+      "address": "ΑΓ. ΝΙΚΟΛΑΟΥ 33",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421022835",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 39.360885,
+        "lon": 22.949057,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5376",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421023530",
+      "name": "ΖΗΝΟΒΙΑ ΧΑΡΜΑΝΗ",
+      "address": "ΕΡΜΟΥ 158- Κ. ΚΑΡΤΑΛΗ",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421023530",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 39.360802,
+        "lon": 22.947979,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5404",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421024449",
+      "name": "ΑΣΗΜΩ ΚΟΚΚΑ-ΞΕΝΑΚΗ",
+      "address": "ΣΠΥΡΙΔΗ 114",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421024449",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 39.362429,
+        "lon": 22.949713,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5386",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421025458",
+      "name": "ΦΑΝΗ ΧΑΤΖΗ",
+      "address": "ΙΑΣΟΝΟΣ 80",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421025458",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 39.359786,
+        "lon": 22.946819,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5402",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421028740",
+      "name": "ΣΙΤΟΚΩΝΣΤΑΝΤΙΝΟΥ ΧΡ.- ΣΙΤΟΚΩΝΣΤΑΝΤΙΝΟΥ ΜΑΡ.",
+      "address": "ΚΑΣΣΑΒΕΤΗ 16- 28ης ΟΚΤΩΒΡΙΟΥ",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421028740",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 39.358227,
+        "lon": 22.9552,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5381",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421032942",
+      "name": "ΔΗΜΗΤΡΙΟΣ ΔΑΛΑΚΙΑΡΗΣ",
+      "address": "Κ.ΚΑΡΤΑΛΗ 123 - ΓΑΛΛΙΑΣ",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421032942",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 39.362606,
+        "lon": 22.948676,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5400",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421034304",
+      "name": "ΧΡΗΣΤΟΣ ΜΕΦΣΟΥΤ",
+      "address": "ΠΟΛΥΜΕΡΗ 56",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421034304",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.35609,
+        "lon": 22.957056,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5392",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421034333",
+      "name": "ΕΥΑΓΓΕΛΙΑ ΝΑΣΙΚΑ",
+      "address": "Κ.ΚΑΡΤΑΛΗ-ΑΝΘ.ΓΑΖΗ",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421034333",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.36327,
+        "lon": 22.949383,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5393",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421035092",
+      "name": "ΑΘΗΝΑ ΑΔΑΜΑΚΗ",
+      "address": "2ας Νοεμβριου 81",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421035092",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 39.367654,
+        "lon": 22.938061,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5384",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421035598",
+      "name": "ΙΩΑΝΝΗΣ ΚΟΚΚΑΛΗΣ",
+      "address": "ΕΡΜΟΥ 231",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421035598",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.359479,
+        "lon": 22.950653,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5391",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421036356",
+      "name": "ΤΖΕΝΗ ΓΙΑΝΝΑΚΟΥ",
+      "address": "Κ.ΚΑΡΤΑΛΗ 172Ε",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421036356",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 39.366032,
+        "lon": 22.95185,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5374",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421037633",
+      "name": "ΓΕΩΡΓΙΑ ΦΑΡΜΑΚΗ- ΦΑΡΜΑΚΗ ΔΗΜΗΤΡΑ",
+      "address": "ΓΚΛΑΒΑΝΗ 40(μεταξυ Ερμου & Δημητριαδος)",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421037633",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 39.376893,
+        "lon": 22.92332,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5406",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421037950",
+      "name": "ΣΤΕΦΑΝΟΣ - ΑΓΓΕΛΟΣ ΠΑΝΤΣΑΣ",
+      "address": "ΣΠ. ΣΠΥΡΙΔΗ 5",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421037950",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 39.35976,
+        "lon": 22.947415,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5380",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421038774",
+      "name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΠΙΣΙΩΤΗΣ",
+      "address": "2ας ΝΟΕΜΒΡΙΟΥ 127",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421038774",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 39.364771,
+        "lon": 22.940053,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5378",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421042900",
+      "name": "ΑΣΠΑΣΙΑ ΠΑΝΑΓΙΩΤΟΠΟΥΛΟΥ",
+      "address": "ΙΩΛΚΟΥ 227",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421042900",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.374171,
+        "lon": 22.957712,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5382",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421043893",
+      "name": "ΒΑΣΙΛΕΙΟΣ ΠΟΛΥΔΩΡΟΥ",
+      "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 94",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421043893",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 39.366946,
+        "lon": 22.951143,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5387",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421044977",
+      "name": "ΠΡΙΤΣΑΣ ΑΡΙΣΤΕΙΔΗΣ",
+      "address": "ΙΩΛΚΟΥ 394Α",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421044977",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 39.3799329,
+        "lon": 22.9653979,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5385",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421046874",
+      "name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΖΑΦΛΕΡΗΣ",
+      "address": "ΚΥΠΡΟΥ 5",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421046874",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 39.365778,
+        "lon": 22.953265,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5372",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421048012",
+      "name": "ΔΑΡΔΟΥΜΠΑ ΧΡΥΣΟΥΛΑ",
+      "address": "ΑΝΑΛΗΨΕΩΣ 42",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421048012",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.3700709,
+        "lon": 22.944181,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5395",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421053286",
+      "name": "ΕΥΑΝΘΙΑ ΘΕΡΑΠΙΩΤΗ",
+      "address": "ΑΝΑΛΗΨΕΩΣ 224",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421053286",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 39.362263,
+        "lon": 22.9581296,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5405",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421053870",
+      "name": "ΝΙΚΟΛΑΟΣ ΜΕΦΣΟΥΤ",
+      "address": "ΑΓ.ΔΗΜΗΤΡΙΟΥ 16",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421053870",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 39.359521,
+        "lon": 22.963579,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5397",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421058580",
+      "name": "ΑΠΟΣΤΟΛΙΑ ΤΣΙΟΛΚΑ",
+      "address": "ΚΩΝΣΤΑΝΤΑ 181",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421058580",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 39.361905,
+        "lon": 22.953438,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5409",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421060038",
+      "name": "ΓΕΩΡΓΙΟΣ ΤΖΟΡΜΠΑΤΖΟΓΛΟΥ",
+      "address": "ΛΕΩΦ. ΕΙΡΗΝΗΣ 30",
+      "locality": "Νέα Ιωνία",
+      "postcode": null,
+      "phone": "2421060038",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 39.371194,
+        "lon": 22.935501,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5403",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421060266",
+      "name": "ΜΑΡΙΑ ΚΛΑΔΑ",
+      "address": "ΛΕΩΦΟΡΟΣ ΕΙΡΗΝΗΣ 13",
+      "locality": "Νέα Ιωνία",
+      "postcode": null,
+      "phone": "2421060266",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 39.370597,
+        "lon": 22.935664,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5377",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421060651",
+      "name": "ΜΙΧΑΗΛ ΧΑΡΑΛΑΜΠΙΔΗΣ",
+      "address": "ΜΑΙΑΝΔΡΟΥ 60",
+      "locality": "Νέα Ιωνία",
+      "postcode": null,
+      "phone": "2421060651",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.373969,
+        "lon": 22.93224,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΜΑΙΑΝΔΡΟΥ 60, Νέα Ιωνία"
+      }
+    },
+    {
+      "id": "2421064004",
+      "name": "ΦΩΤΕΙΝΗ ΜΠΑΛΔΙΜΤΣΗ",
+      "address": "ΦΥΤΟΚΟΥ 12",
+      "locality": "Νέα Ιωνία",
+      "postcode": null,
+      "phone": "2421064004",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 39.384438,
+        "lon": 22.939554,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5383",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421064816",
+      "name": "ΑΙΚΑΤΕΡΙΝΗ ΓΚΟΥΛΙΟΥ",
+      "address": "ΛΕΠΕΝΙΩΤΗ 6",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421064816",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 39.3623561,
+        "lon": 22.9275343,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5373",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421066810",
+      "name": "ΧΡΗΣΤΟΣ ΜΑΝΙΑΔΑΚΗΣ",
+      "address": "ΜΑΙΑΝΔΡΟΥ 127",
+      "locality": "Νέα Ιωνία",
+      "postcode": null,
+      "phone": "2421066810",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 39.372924,
+        "lon": 22.929782,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5408",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421066922",
+      "name": "ΤΣΑΡΝΑ ΑΙΚΑΤΕΡΙΝΗ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΑΝΑΠΑΥΣΕΩΣ 33",
+      "locality": "Νέα Ιωνία",
+      "postcode": null,
+      "phone": "2421066922",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 39.374156,
+        "lon": 22.938984,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5375",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421067008",
+      "name": "ΕΙΡΗΝΗ ΤΣΑΡΔΙΝΗ",
+      "address": "ΦΥΤΟΚΟΥ 1",
+      "locality": "Νέα Ιωνία",
+      "postcode": null,
+      "phone": "2421067008",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 39.378331,
+        "lon": 22.938179,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5410",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421069938",
+      "name": "ΑΘΗΝΑ ΠΕΛΕΚΟΥ",
+      "address": "ΕΛΛΗΣΠΟΝΤΟΥ 79",
+      "locality": "Νέα Ιωνία",
+      "postcode": null,
+      "phone": "2421069938",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.375704,
+        "lon": 22.926183,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5394",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421071321",
+      "name": "ΣΤΑΥΡΟΥΛΑ ΣΤΑΥΡΑΝΤΩΝΗ",
+      "address": "ΜΕΤΑΜΟΡΦΩΣΕΩΣ 138",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421071321",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 39.371014,
+        "lon": 22.949606,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5407",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421077077",
+      "name": "ΜΠΑΛΔΙΜΙΤΣΗ ΦΩΤΕΙΝΗ",
+      "address": "ΛΑΡΙΣΗΣ 86",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421077077",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 39.3637752,
+        "lon": 22.9297613,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5379",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421086088",
+      "name": "ΕΥΑΓΓΕΛΙΑ-ΑΣΤΕΡΙΑ ΣΑΝΔΡΗ",
+      "address": "ΜΑΙΑΝΔΡΟΥ 25",
+      "locality": "Νέα Ιωνία",
+      "postcode": null,
+      "phone": "2421086088",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 39.375646,
+        "lon": 22.936839,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5389",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421087770",
+      "name": "ΕΥΑΓΓΕΛΙΑ ΜΠΑΣΑΓΙΑΝΝΗ",
+      "address": "ΒΑΚΧΟΥ ΑΛΥΚΕΣ ΒΟΛΟΥ 20",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421087770",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 39.324911,
+        "lon": 22.926349,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5398",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421091915",
+      "name": "ΕΙΡΗΝΗ ΔΑΛΑΒΕΡΗ",
+      "address": "ΜΕΛΙΝΑΣ ΜΕΡΚΟΥΡΗ 57",
+      "locality": "Νέα Ιωνία",
+      "postcode": null,
+      "phone": "2421091915",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 39.37918,
+        "lon": 22.9359,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5401",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421100022",
+      "name": "ΓΟΥΝΑΡΗΣ ΓΡΗΓΟΡΗΣ",
+      "address": "ΓΟΥΝΑΡΗΣ ΓΡΗΓΟΡΗΣ",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421100022",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 39.3627673,
+        "lon": 22.9530526,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5399",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-08",
+  "groups": [
+    {
+      "id": "kozani",
+      "name": "Κοζάνη",
+      "source": {
+        "url": "https://kozani.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:54:50.849Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2461026612",
+              "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 7",
+              "locality": "Κοζάνη",
+              "phone": "2461026612"
+            },
+            {
+              "pharmacyId": "2463023124",
+              "name": "ΧΑΛΔΟΥΠΗ ΣΤΕΛΛΑ",
+              "address": "ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ 16",
+              "locality": "Πτολεμαΐδα",
+              "phone": "2463023124"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:30 ΠΡΩΙ - 2:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2463023344",
+              "name": "ΔΑΛΛΑΣ ΑΝΤ. ΑΓΓΕΛΟΣ",
+              "address": "Π. ΤΣΑΛΔΑΡΗ 10 (Απέναντι από το παλιό Πάρκο)",
+              "locality": "Πτολεμαΐδα",
+              "phone": "2463023344"
+            },
+            {
+              "pharmacyId": "2461033622",
+              "name": "ΚΤΕΝΙΔΗΣ ΣΑΒΒΑΣ",
+              "address": "Ι. ΤΡΑΝΤΑ 37",
+              "locality": "Κοζάνη",
+              "phone": "2461033622"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "8:30 ΠΡΩΙ - 2:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2463023344",
+              "name": "ΔΑΛΛΑΣ ΑΝΤ. ΑΓΓΕΛΟΣ",
+              "address": "Π. ΤΣΑΛΔΑΡΗ 10 (Απέναντι από το παλιό Πάρκο)",
+              "locality": "Πτολεμαΐδα",
+              "phone": "2463023344"
+            },
+            {
+              "pharmacyId": "2461033622",
+              "name": "ΚΤΕΝΙΔΗΣ ΣΑΒΒΑΣ",
+              "address": "Ι. ΤΡΑΝΤΑ 37",
+              "locality": "Κοζάνη",
+              "phone": "2461033622"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

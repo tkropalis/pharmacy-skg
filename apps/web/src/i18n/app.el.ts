@@ -173,6 +173,7 @@ export const appEl = {
       until: 'έως {when}',
       closesIn: 'κλείνει σε {duration}',
       callFirst: 'καλέστε για το ωράριο',
+      onCall: 'καλέστε πρώτα',
     },
     /** The kinds of duty, shared with the search-engine pages. */
     kinds: { ...DUTY_KIND_LABELS.el },

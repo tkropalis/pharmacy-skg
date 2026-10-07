@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "groups": [
+    {
+      "id": "trikala",
+      "name": "Τρίκαλα",
+      "source": {
+        "url": "https://trikala.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T08:04:02.397Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431029797",
+              "name": "Σ.Φ. ΣΧΟΙΝΑ ΕΛΙΝΑ - ΣΧΟΙΝΑΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΑΠΟΛΛΩΝΟΣ 19 & ΓΑΡΙΒΑΛΔΗ",
+              "locality": "Τρίκαλα",
+              "phone": "2431029797"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431029797",
+              "name": "Σ.Φ. ΣΧΟΙΝΑ ΕΛΙΝΑ - ΣΧΟΙΝΑΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΑΠΟΛΛΩΝΟΣ 19 & ΓΑΡΙΒΑΛΔΗ",
+              "locality": "Τρίκαλα",
+              "phone": "2431029797"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431023780",
+              "name": "ΣΑΚΚΑ ΑΘΑΝΑΣΙΑ",
+              "address": "ΣΑΡΑΦΗ 64",
+              "locality": "Τρίκαλα",
+              "phone": "2431023780"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

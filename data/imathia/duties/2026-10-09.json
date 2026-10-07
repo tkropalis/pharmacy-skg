@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "groups": [
+    {
+      "id": "imathia",
+      "name": "Ημαθία",
+      "source": {
+        "url": "https://imathia.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:51:03.115Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΠΡΩΙ ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2333023023",
+              "name": "ΔΕΜΕΡΤΖΙΔΟΥ Χ. ΓΕΩΡΓΙΑ",
+              "address": "Δ.ΒΕΤΣΟΠΟΥΛΟΥ 32",
+              "locality": "Αλεξάνδρεια",
+              "phone": "2333023023"
+            },
+            {
+              "pharmacyId": "2332020203",
+              "name": "ΚΑΠΕΤΑΝΟΠΟΥΛΟΣ Ε. ΑΘΑΝΑΣΙΟΣ & ΣΙΑ ΟΕ",
+              "address": "ΣΤ.ΔΡΑΓΟΥΜΗ 24 & ΖΑΦΕΙΡΑΚΗ ΓΩΝΙΑ",
+              "locality": "Νάουσα",
+              "phone": "2332020203"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΠΡΩΙ ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331041833",
+              "name": "ΜΠΟΥΡΑΣ Δ. ΧΡΥΣΟΣΤΟΜΟΣ",
+              "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 180-ΜΑΚΡΟΧΩΡΙ",
+              "locality": "Μακροχώρι",
+              "phone": "2331041833"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "13:30 ΕΩΣ 17:30",
+          "hours": {
+            "from": "13:30",
+            "to": "17:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331025130",
+              "name": "ΚΑΛΟΚΥΡΗ ΕΛΙΣΑΒΕΤ",
+              "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 28",
+              "locality": "Βέροια",
+              "phone": "2331025130"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331063620",
+              "name": "ΧΑΤΖΗΓΕΩΡΓΙΟΥ ΑΝΔ. ΓΕΩΡΓΙΟΣ",
+              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 6 - ΚΤΕΛ - ΑΣΤΙΚΑ",
+              "locality": "Βέροια",
+              "phone": "2331063620"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

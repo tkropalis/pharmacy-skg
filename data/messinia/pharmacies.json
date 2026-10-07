@@ -1,0 +1,1097 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2721021736",
+      "name": "Σ.Φ. ΒΑΣΙΛΟΓΙΑΝΝΑΚΟΠΟΥΛΟΥ ΕΛΕΝΗ - ΠΑΠΑΔΟΠΟΥΛΟΥ ΜΑΡΙΑ-ΟΛΓΑ Ο.Ε.",
+      "address": "ΦΑΡΩΝ 55",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721021736",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.0405265,
+        "lon": 22.1156922,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3525",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721022767",
+      "name": "ΚΕΦΑΛΑΣ ΙΩΑΝΝΗΣ",
+      "address": "ΣΠΑΡΤΗΣ 45",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721022767",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.0456677,
+        "lon": 22.1145102,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3428",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721027022",
+      "name": "ΠΑΝΑΓΑΚΗ ΜΑΡΙΑΝΑ",
+      "address": "ΣΙΔ. ΣΤΑΘΜΟΥ 7",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721027022",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.038544,
+        "lon": 22.110204,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3526",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721027683",
+      "name": "ΚΟΝΤΟΥ ΜΑΓΔΑΛΗΝΗ",
+      "address": "ΚΙΛΚΙΣ 11 & ΑΘΗΝΩΝ",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721027683",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 37.0417267,
+        "lon": 22.1096747,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3431",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721029866",
+      "name": "Σ.Φ. ΜΠΑΛΟΔΗΜΑΣ Δ.-ΜΠΑΛΟΔΗΜΑ Δ. Ο.Ε.",
+      "address": "ΧΡ. ΠΑΓΩΝΗ 10",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721029866",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 37.0389271,
+        "lon": 22.1094553,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3457",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721032172",
+      "name": "ΣΟΛΟΥΠΗΣ ΠΑΝΤΕΛΗΣ",
+      "address": "ΜΙΚΡΟΜΑΝΗ",
+      "locality": "Θουρία",
+      "postcode": null,
+      "phone": "2721032172",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.0767072,
+        "lon": 22.0313712,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2428",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721032913",
+      "name": "ΚΟΥΦΟΥ ΒΑΛΕΝΤΙΝΑ - ΦΛΩΡΑ",
+      "address": "ΑΙΘΑΙΑ",
+      "locality": "Θουρία",
+      "postcode": null,
+      "phone": "2721032913",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.0971332,
+        "lon": 22.0437407,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2433",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721033663",
+      "name": "ΜΑΡΑΛΕΤΟΥ ΒΑΣΙΛΙΚΗ & ΣΙΑ Ε.Ε.",
+      "address": "ΑΝΤΙΚΑΛΑΜΟΣ ΕΝΑΝΤΙ ΝΕΟΥ ΝΟΣΟΚΟ",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721033663",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 37.0683791,
+        "lon": 22.0596536,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3524",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721050200",
+      "name": "ΠΕΡΡΩΤΗΣ ΙΑΚΩΒΟΣ",
+      "address": "ΑΡΙΣ ΜΕΣΣΗΝΙΑΣ",
+      "locality": "Άρις",
+      "postcode": null,
+      "phone": "2721050200",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.0999089,
+        "lon": 22.0054464,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2020",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721058814",
+      "name": "ΡΕΪΤΖΟΠΟΥΛΟΣ ΚΩΝ/ΝΟΣ",
+      "address": "ΠΑΛΙΟΧΩΡΑ ΑΒΙΑΣ",
+      "locality": "Λεύκτρο",
+      "postcode": null,
+      "phone": "2721058814",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.9650409,
+        "lon": 22.1416971,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2756",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721064889",
+      "name": "ΕΥΘΥΜΙΟΥ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΑΓ. ΝΙΚΟΛΑΟΣ ΛΕΥΚΤΡΟΥ",
+      "locality": "Λεύκτρο",
+      "postcode": null,
+      "phone": "2721064889",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.8243603,
+        "lon": 22.2809448,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2752",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721069775",
+      "name": "ΣΥΝΙΩΡΗ ΑΛΚΗΣΤΙΣ & ΣΙΑ Ο.Ε.",
+      "address": "ΑΣΠΡΟΧΩΜΑ",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721069775",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.0591767,
+        "lon": 22.0657055,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3491",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721071622",
+      "name": "ΑΣΗΜΑΚΟΠΟΥΛΟΥ ΓΙΑΝΝΑ",
+      "address": "ΚΑΜΠΟΣ ΑΒΙΑΣ",
+      "locality": "Λεύκτρο",
+      "postcode": null,
+      "phone": "2721071622",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.93881,
+        "lon": 22.2025801,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2753",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721073270",
+      "name": "ΘΕΟΔΩΡΟΠΟΥΛΟΥ ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "ΚΑΡΔΑΜΥΛΗ ΛΕΥΚΤΡΟΥ",
+      "locality": "Λεύκτρο",
+      "postcode": null,
+      "phone": "2721073270",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 36.8880609,
+        "lon": 22.2325442,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2754",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721077999",
+      "name": "ΣΑΚΕΛΛΑΡΟΠΟΥΛΟΥ ΑΘΑΝΑΣΙΑ & ΣΙΑ Ε.Ε.",
+      "address": "ΣΤΟΥΠΑ",
+      "locality": "Λεύκτρο",
+      "postcode": null,
+      "phone": "2721077999",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 36.8504417,
+        "lon": 22.2618286,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2755",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721082666",
+      "name": "Σ.Φ. ΚΑΤΣΙΒΑ Μ. - ΓΑΡΑΤΖΙΩΤΗ Β. Ο.Ε.",
+      "address": "ΦΑΡΩΝ 155",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721082666",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.0324369,
+        "lon": 22.1135019,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3528",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721084925",
+      "name": "ΒΑΡΕΛΑ ΜΑΡΙΑ Ο.Ε.",
+      "address": "ΑΡΙΣΤΟΜΕΝΟΥΣ 79-81",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721084925",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.0355072,
+        "lon": 22.1108869,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3391",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721092255",
+      "name": "ΚΑΝΕΛΛΟΠΟΥΛΟΥ ΕΥΣΤΑΘΙΑ",
+      "address": "ΦΡΑΝΤΖΗ 6",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721092255",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.0372873,
+        "lon": 22.1098127,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3531",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721093780",
+      "name": "ΦΙΛΙΠΠΟΠΟΥΛΟΥ ΘΕΟΔΩΡΑ",
+      "address": "ΠΑΝ.ΚΑΙΣΑΡΗ 10",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721093780",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.0389328,
+        "lon": 22.1123349,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3498",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2722022269",
+      "name": "ΓΡΗΓΟΡΟΠΟΥΛΟΥ ΣΤΑΥΡΟΥΛΑ",
+      "address": "ΜΟΥΛΑΒΑΣΙΛΗ 2",
+      "locality": "Μεσσήνη",
+      "postcode": null,
+      "phone": "2722022269",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.0513209,
+        "lon": 22.0099278,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3082",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2722022777",
+      "name": "ΣΥΝΕΡΓΑΖ. ΦΑΡΜ. ΛΑΓΓΗΣ ΑΛΕΞ. & ΣΙΑ ΟΕ - ΥΠΟΚ/ΜΑ 3",
+      "address": "ΔΗΜ. ΚΟΥΤΣΙΚΑ 57",
+      "locality": "Μεσσήνη",
+      "postcode": null,
+      "phone": "2722022777",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 37.0475865,
+        "lon": 22.009227,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3076",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2722023542",
+      "name": "ΗΛΙΟΠΟΥΛΟΥ ΕΛΙΣΑΒΕΤ",
+      "address": "ΔΗΜ. ΚΟΥΤΣΙΚΑ 27",
+      "locality": "Μεσσήνη",
+      "postcode": null,
+      "phone": "2722023542",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 37.0500021,
+        "lon": 22.0085003,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3077",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2722024000",
+      "name": "ΓΙΑΝΝΑΡΗ ΣΟΦΙΑ Ο.Ε.",
+      "address": "28ης ΟΚΤΩΒΡΙΟΥ 37",
+      "locality": "Μεσσήνη",
+      "postcode": null,
+      "phone": "2722024000",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.0499394,
+        "lon": 22.0091043,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3078",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2722024284",
+      "name": "ΦΡΑΓΚΟΥ ΕΛΕΝΗ",
+      "address": "ΜΟΥΛΑΒΑΣΙΛΗ 22",
+      "locality": "Μεσσήνη",
+      "postcode": null,
+      "phone": "2722024284",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.0516335,
+        "lon": 22.0095193,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3079",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2722024932",
+      "name": "Σ.Φ. ΡΟΥΣΣΗΣ ΣΩΤ. - ΡΟΥΣΣΗΣ ΒΑΣ. Ο.Ε.",
+      "address": "ΣΤΑΔΙΟΥ 4",
+      "locality": "Μεσσήνη",
+      "postcode": null,
+      "phone": "2722024932",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.051833,
+        "lon": 22.0072403,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3081",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2722024955",
+      "name": "Σ.Φ. ΚΑΡΤΕΡΟΛΙΩΤΗΣ Γ.-ΚΑΡΤΕΡΟΛΙΩΤΗΣ ΗΛ. Ο.Ε.",
+      "address": "ΔΗΜ. ΚΟΥΤΣΙΚΑ 21",
+      "locality": "Μεσσήνη",
+      "postcode": null,
+      "phone": "2722024955",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.0503463,
+        "lon": 22.0084554,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3080",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2723022880",
+      "name": "Σ.Φ. ΜΠΟΓΙΑΤΖΗ Μ. - ΚΥΡΙΑΚΟΥΛΗ ΕΥΣΤ. Ο.Ε.",
+      "address": "ΠΛ. ΤΡΙΩΝ ΝΑΥΑΡΧΩΝ",
+      "locality": "Πύλος",
+      "postcode": null,
+      "phone": "2723022880",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.9134964,
+        "lon": 21.6967334,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3184",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2724022304",
+      "name": "ΔΡΑΚΟΠΟΥΛΟΣ Δ.ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΜΕΛΙΓΑΛΑ",
+      "locality": "Μελιγαλάς",
+      "postcode": null,
+      "phone": "2724022304",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 37.2259969,
+        "lon": 21.9698792,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2860",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2724023855",
+      "name": "ΠΑΝΤΕΛΟΠΟΥΛΟΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΦΩΤΟΠΟΥΛΟΥ 2",
+      "locality": "Μελιγαλάς",
+      "postcode": null,
+      "phone": "2724023855",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.2242962,
+        "lon": 21.9687224,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2862",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2725032000",
+      "name": "ΤΣΙΡΙΓΩΤΗ ΜΑΡΙΑ",
+      "address": "ΑΙΠΕΙΑ - ΝΕΑ ΚΟΡΩΝΗ",
+      "locality": "Αιπεία",
+      "postcode": null,
+      "phone": "2725032000",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.8483201,
+        "lon": 21.9227955,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2109",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2725032133",
+      "name": "ΧΑΝΔΡΙΝΟΥ ΣΤΑΥΡΟΥΛΑ & ΣΙΑ Ο.Ε.",
+      "address": "ΑΓ. ΑΝΔΡΕΑΣ",
+      "locality": "Αιπεία",
+      "postcode": null,
+      "phone": "2725032133",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.8637986,
+        "lon": 21.9206891,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2106",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2725041000",
+      "name": "ΓΕΩΡΓΑΚΟΠΟΥΛΟΥ ΕΛΕΝΗ - ΜΑΡΙΑ",
+      "address": "ΧΑΡΑΚΟΠΟΙΟ",
+      "locality": "Κορώνη",
+      "postcode": null,
+      "phone": "2725041000",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 36.8084051,
+        "lon": 21.9153934,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2536",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2725041305",
+      "name": "ΣΑΡΑΤΣΙΩΤΗ ΒΑΣ. ΟΛΓΑ",
+      "address": "ΧΑΡΑΚΟΠΟΙΟ",
+      "locality": "Κορώνη",
+      "postcode": null,
+      "phone": "2725041305",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.8084878,
+        "lon": 21.9149286,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2539",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2761022169",
+      "name": "ΠΑΠΑΘΕΟΔΩΡΟΠΟΥΛΟΥ Μ. - ΓΚΟΤΣΗ Ο.Ε.",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 34",
+      "locality": "Κυπαρισσία",
+      "postcode": null,
+      "phone": "2761022169",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 37.2506516,
+        "lon": 21.6692804,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2644",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2761032102",
+      "name": "ΣΕΡΑΦΕΙΜ ΠΗΝΕΛΟΠΗ",
+      "address": "ΟΘΩΝΟΣ & ΑΜΑΛΙΑΣ",
+      "locality": "Φιλιατρά",
+      "postcode": null,
+      "phone": "2761032102",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.1572577,
+        "lon": 21.5885809,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3297",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2761032229",
+      "name": "ΠΑΠΑΘΕΟΔΟΣΙΟΥ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΝΙΚ.ΣΠΕΝΤΖΑ 48",
+      "locality": "Φιλιατρά",
+      "postcode": null,
+      "phone": "2761032229",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.1570729,
+        "lon": 21.5851664,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3295",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2761032651",
+      "name": "ΜΠΙΜΠΑ ΧΡΙΣΤΙΝΑ",
+      "address": "ΑΓ. ΧΑΡΑΛΑΜΠΟΥΣ",
+      "locality": "Φιλιατρά",
+      "postcode": null,
+      "phone": "2761032651",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 37.1556307,
+        "lon": 21.5872017,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3293",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2761033560",
+      "name": "Σ.Φ. ΞΥΓΚΑΣ ΑΛΚΗΣ - ΞΥΓΚΑ ΜΑΓΔΑΛΗΝΗ Ο.Ε.",
+      "address": "ΟΘΩΝΟΣ & ΑΜΑΛΙΑΣ",
+      "locality": "Φιλιατρά",
+      "postcode": null,
+      "phone": "2761033560",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.1577885,
+        "lon": 21.5861777,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3294",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2761034065",
+      "name": "ΒΟΡΙΣΗ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΙΩΑΝ. ΣΠΕΝΤΖΑ 29",
+      "locality": "Φιλιατρά",
+      "postcode": null,
+      "phone": "2761034065",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.1569294,
+        "lon": 21.5830293,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3292",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2761062122",
+      "name": "ΚΩΝΣΤΑΝΤΟΠΟΥΛΟΣ ΙΩΑΝΝΗΣ",
+      "address": "ΑΛΕΞ. ΚΑΛΑΤΖΑΚΟΥ 1",
+      "locality": "Κυπαρισσία",
+      "postcode": null,
+      "phone": "2761062122",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.2509855,
+        "lon": 21.668076,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2646",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2761400428",
+      "name": "ΜΑΡΙΝΗ ΙΟΥΛΙΑ",
+      "address": "ΑΛ. ΚΑΛΑΝΤΖΑΚ. & ΚΟΚΚΕΒΗ",
+      "locality": "Κυπαρισσία",
+      "postcode": null,
+      "phone": "2761400428",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.2504743,
+        "lon": 21.6673901,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2649",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2763022457",
+      "name": "Σ.Φ. ΚΟΣΣΥΦΑ - ΦΑΣΟΥΛΗ ΙΩΑΝ. & ΚΟΣΣΥΦΑΣ ΠΑΝ.-ΓΕΩΡΓ. Ο.Ε.",
+      "address": "ΠΛΑΤΕΙΑ ΚΟΛΟΚΟΤΡΩΝΗ",
+      "locality": "Γαργαλιάνοι",
+      "postcode": null,
+      "phone": "2763022457",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.065972,
+        "lon": 21.6369701,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2212",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2763022840",
+      "name": "ΦΩΤΟΠΟΥΛΟΣ ΧΡΗΣΤΟΣ",
+      "address": "ΝΙΚΟΛΟΠΟΥΛΟΥ 4",
+      "locality": "Γαργαλιάνοι",
+      "postcode": null,
+      "phone": "2763022840",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.0600344,
+        "lon": 21.6401914,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2217",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2763023330",
+      "name": "ΚΡΕΚΟΥΚΙΑΣ ΘΕΜΙΣΤΟΚΛΗΣ",
+      "address": "ΒΑΣ.ΓΕΩΡΓΙΟΥ Β΄ 47Β",
+      "locality": "Γαργαλιάνοι",
+      "postcode": null,
+      "phone": "2763023330",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 37.0667276,
+        "lon": 21.636594,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2213",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2763029100",
+      "name": "ΜΑΚΡΗ ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΒΑΣ.ΓΕΩΡΓΙΟΥ Β΄ 39 / ΠΛΑΤΕΙΑ",
+      "locality": "Γαργαλιάνοι",
+      "postcode": null,
+      "phone": "2763029100",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.0665392,
+        "lon": 21.6360501,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2214",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2763031710",
+      "name": "ΓΕΩΡΓΟΠΟΥΛΟΣ ΑΝΑΣΤΑΣΙΟΣ & ΣΙΑ Ο.Ε.",
+      "address": "ΑΝΤΩΝΑΡΟΠΟΥΛΟΥ 9",
+      "locality": "Χώρα",
+      "postcode": null,
+      "phone": "2763031710",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.0512489,
+        "lon": 21.7159543,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2968",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2763031772",
+      "name": "ΑΓΓΕΛΟΠΟΥΛΟΥ ΕΥΓΕΝΙΑ & ΣΙΑ Ο.Ε.",
+      "address": "ΚΑΡΟΛΟΥ ΜΠΛΕΓΚΕΝ",
+      "locality": "Χώρα",
+      "postcode": null,
+      "phone": "2763031772",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.0518288,
+        "lon": 21.7159923,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2969",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2763032223",
+      "name": "ΤΣΑΒΟΛΑΚΗΣ ΜΙΧΑΗΛ-ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΚΑΡ. ΜΠΛΕΓΚΕΝ 37",
+      "locality": "Χώρα",
+      "postcode": null,
+      "phone": "2763032223",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.0509907,
+        "lon": 21.7175701,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2970",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2765022111",
+      "name": "ΚΟΜΙΑΝΟΥ ΑΙΚΑΤΕΡΙΝΗ-ΧΡΙΣΤΙΝΑ & ΣΙΑ Ο.Ε.",
+      "address": "ΚΟΠΑΝΑΚΙ",
+      "locality": "Αετός",
+      "postcode": null,
+      "phone": "2765022111",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.2886874,
+        "lon": 21.8173504,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/1823",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2765022601",
+      "name": "ΖΕΡΒΑΣ ΑΝΑΣΤΑΣΙΟΣ",
+      "address": "ΚΟΠΑΝΑΚΙ",
+      "locality": "Αετός",
+      "postcode": null,
+      "phone": "2765022601",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.2887111,
+        "lon": 21.8181746,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/1826",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2765031254",
+      "name": "ΑΛΕΞΟΠΟΥΛΟΥ ΒΑΣΙΛΙΚΗ",
+      "address": "ΚΑΛΑΤΖΑΚΟΥ 5",
+      "locality": "Δώριο",
+      "postcode": null,
+      "phone": "2765031254",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.2882175,
+        "lon": 21.8557238,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2323",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2765032155",
+      "name": "ΜΠΕΡΕΔΗΜΑΣ ΣΤΑΣΙΝΟΣ",
+      "address": "ΔΩΡΙΟ",
+      "locality": "Δώριο",
+      "postcode": null,
+      "phone": "2765032155",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.2874937,
+        "lon": 21.856315,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2320",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "drama",
+  "updatedAt": "2026-10-07T07:49:26.426Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-drama",
+      "name": {
+        "el": "Εφημερίες φαρμακείων Δράμας",
+        "en": "Pharmacy duties of Drama"
+      },
+      "url": "https://drama.efhmeries.gr/",
+      "note": "Duty lists, from drama.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

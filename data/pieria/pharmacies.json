@@ -1,0 +1,656 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2351021415",
+      "name": "ΚΑΤΣΑΜΑΓΚΑ ΕΙΡΗΝΗ",
+      "address": "ΖΑΛΟΓΓΟΥ 1",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351021415",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 40.2719021,
+        "lon": 22.5041382,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23526",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351025789",
+      "name": "Σ.Φ. ΚΑΡΑΒΕΡΓΟΥ ΑΝΑΣΤΑΣΙΑ-ΚΑΡΑΒΕΡΓΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΕΙΡΗΝΗΣ 6",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351025789",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 40.2704821,
+        "lon": 22.5098359,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23527",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351026375",
+      "name": "Σ.Φ. ΣΑΛΤΣΙΔΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ-ΣΑΛΤΣΙΔΗΣ ΛΑΖΑΡΟΣ",
+      "address": "ΞΗΡΟΜΕΡΙΤΟΥ 11",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351026375",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 40.2722363,
+        "lon": 22.5081659,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23529",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351026969",
+      "name": "Σ.Φ. ΣΥΜΕΩΝΙΔΟΥ ΕΥΑΝΘΙΑ -ΛΕΝΑΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 50",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351026969",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.2717245,
+        "lon": 22.5036666,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23532",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351027910",
+      "name": "ΚΩΝΣΤΑΝΤΙΝΙΔΟΥ ΟΛΓΑ",
+      "address": "ΕΙΡΗΝΗΣ 33",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351027910",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.270588,
+        "lon": 22.5118676,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23536",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351028039",
+      "name": "Σ.Φ. ΓΕΛΑΔΑΡΗ ΒΑΣΙΛΙΚΗ-ΓΕΛΑΔΑΡΗΣ ΑΛΕΞΙΟΣ",
+      "address": "7ΗΣ ΜΕΡΑΡΧΙΑΣ 86",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351028039",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 40.2721057,
+        "lon": 22.4940461,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23528",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351028889",
+      "name": "ΡΑΦΤΟΠΟΥΛΟΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΜΕΓ. ΑΛΕΞΆΝΔΡΟΥ 60",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351028889",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.2717095,
+        "lon": 22.5028173,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23535",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351029289",
+      "name": "Σ.Φ. ΧΙΟΝΙΔΟΥ ΕΛΕΝΑ-ΧΡΙΣΤΙΝΑ-ΜΕΪΜΑΡΗ ΤΙΝΑ",
+      "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ & ΒΟΤΣΗ 1",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351029289",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.2724855,
+        "lon": 22.5092904,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23533",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351034334",
+      "name": "ΜΑΛΟΥΤΑΣ ΙΩΑΝΝΗΣ",
+      "address": "ΚΑΣΣΑΝΔΡΟΥ 33",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351034334",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 40.2740105,
+        "lon": 22.511341,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23530",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351035492",
+      "name": "ΚΡΕΜΜΥΔΑ ΑΝΝΑ",
+      "address": "Μ.ΑΛΕΞΑΝΔΡΟΥ 66",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351035492",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 40.2717768,
+        "lon": 22.5022335,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23531",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351036812",
+      "name": "Σ.Φ ΚΟΥΙΜΤΖΙΔΗΣ ΕΛΕΥΘΕΡΙΟΣ-ΚΟΥΙΜΤΖΙΔΗΣ ΧΡΥΣΟΒΑΛΑΝΤΗΣ",
+      "address": "ΠΑΡΜΕΝΙΩΝΟΣ 15",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351036812",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.270056,
+        "lon": 22.5058377,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23537",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351038767",
+      "name": "ΠΑΝΑΓΙΩΤΗ ΑΓΑΠΗ -ΛΥΔΙΑ",
+      "address": "ΤΡΑΠΕΖΟΥΝΤΟΣ 1",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351038767",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.2724583,
+        "lon": 22.5095861,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23534",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351041498",
+      "name": "ΧΑΜΑΛΑΚΗ ΘΕΟΠΙΑ",
+      "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 80",
+      "locality": "Κορινός",
+      "postcode": null,
+      "phone": "2351041498",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.3148822,
+        "lon": 22.5846429,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/19826",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351041701",
+      "name": "ΚΑΡΑΚΟΥΣΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ ΚΑΙ ΣΙΑ Ε.Ε.",
+      "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 90",
+      "locality": "Κορινός",
+      "postcode": null,
+      "phone": "2351041701",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 40.3146883,
+        "lon": 22.5872503,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/19828",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351041883",
+      "name": "Σ.Φ ΜΑΚΡΥΓΙΩΡΓΟΣ ΓΙΩΡΓΟΣ-ΜΑΚΡΥΓΙΩΡΓΟΣ ΘΩΜΑΣ",
+      "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 70",
+      "locality": "Κορινός",
+      "postcode": null,
+      "phone": "2351041883",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 40.3150825,
+        "lon": 22.5838514,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/19827",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351042303",
+      "name": "ΤΟΠΑΛΙΔΟΥ ΜΑΡΙΑ",
+      "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 43",
+      "locality": "Κορινός",
+      "postcode": null,
+      "phone": "2351042303",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.3157962,
+        "lon": 22.5820356,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/19831",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351062390",
+      "name": "Σ.Φ. ΑΘΑΝΑΣΙΟΥ ΚΑΙ ΑΝΑΣΤΑΣΙΟΥ ΛΑΖΟΥ Ο.Ε.",
+      "address": "ΚΥΠΡΟΥ 4",
+      "locality": "Παραλία",
+      "postcode": null,
+      "phone": "2351062390",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.2666242,
+        "lon": 22.5967127,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/24350",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351063601",
+      "name": "ΟΙΚΟΝΟΜΙΚΟΣ ΝΙΚΟΛΑΟΣ",
+      "address": "Γ. ΣΕΠΤΕΜΒΡΙΟΥ 58",
+      "locality": "Καλλιθέα",
+      "postcode": null,
+      "phone": "2351063601",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.2627329,
+        "lon": 22.5020042,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/24344",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2352021095",
+      "name": "ΝΤΟΡΑ ΔΗΜΗΤΡΑ",
+      "address": "ΑΓΙΟΥ ΝΙΚΟΛΑΟΥ 102",
+      "locality": "Λιτόχωρο",
+      "postcode": null,
+      "phone": "2352021095",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.106084,
+        "lon": 22.5085247,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/21742",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2352031038",
+      "name": "Σ.Φ. ΚΑΤΣΑΡΟΥ ΣΤΑΜΑΤΙΑ - ΚΟΥΛΙΟΥ ΕΛΕΝΗ",
+      "address": "ΜΕΤΑΞΑ ΙΩΑΝΝΗ 3",
+      "locality": "Λεπτοκαρυά",
+      "postcode": null,
+      "phone": "2352031038",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.0583,
+        "lon": 22.56359,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/20230",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2352031110",
+      "name": "ΚΑΛΙΑΜΠΟΣ ΔΙΟΝΥΣΙΟΣ",
+      "address": "ΜΕΤΑΞΑ ΙΩΑΝΝΗ 21",
+      "locality": "Λεπτοκαρυά",
+      "postcode": null,
+      "phone": "2352031110",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.0580605,
+        "lon": 22.5615413,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/20235",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2352041055",
+      "name": "ΝΑΝΟΥ ΑΝΔΡΙΑΝΗ",
+      "address": "Κ. ΚΑΡΑΜΑΝΛΗ 20",
+      "locality": "Πλαταμώνας",
+      "postcode": null,
+      "phone": "2352041055",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.9952223,
+        "lon": 22.6179865,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23984",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2352043297",
+      "name": "ΛΑΓΟΘΑΝΑΣΗ ΕΛΕΝΗ",
+      "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 2",
+      "locality": "Νέος Παντελεήμονας",
+      "postcode": null,
+      "phone": "2352043297",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.0030004,
+        "lon": 22.5944624,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23979",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2352081301",
+      "name": "ΓΚΑΛΙΟΣ ΘΕΟΦΑΝΗΣ",
+      "address": "ΝΙΚ. ΕΠΙΣΚΟΠΟΥ ΚΙΤΡΟΥΣ 9",
+      "locality": "Λιτόχωρο",
+      "postcode": null,
+      "phone": "2352081301",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.1030592,
+        "lon": 22.5014766,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/21746",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2352081826",
+      "name": "ΜΠΟΥΡΑ ΕΛΕΝΗ",
+      "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 1",
+      "locality": "Λιτόχωρο",
+      "postcode": null,
+      "phone": "2352081826",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 40.1024391,
+        "lon": 22.5016686,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/21744",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2352082803",
+      "name": "ΣΚΡΕΚΑΣ ΑΓΓΕΛΗΣ",
+      "address": "ΚΕΝΤΡΙΚΗ ΠΛΑΤΕΙΑ ΛΙΤΟΧΩΡΙΟΥ",
+      "locality": "Λιτόχωρο",
+      "postcode": null,
+      "phone": "2352082803",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 40.1043166,
+        "lon": 22.5012641,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/21743",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2352083388",
+      "name": "ΧΡΙΣΤΟΓΙΑΝΝΗΣ ΔΙΟΝΥΣΙΟΣ",
+      "address": "ΑΓΊΟΥ ΓΕΩΡΓΊΟΥ 41",
+      "locality": "Λιτόχωρο",
+      "postcode": null,
+      "phone": "2352083388",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.104048,
+        "lon": 22.5062317,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/21748",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2352301789",
+      "name": "ΙΕΡΕΜΙΑΔΟΥ ΣΟΦΙΑ",
+      "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 56",
+      "locality": "Λιτόχωρο",
+      "postcode": null,
+      "phone": "2352301789",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.1016061,
+        "lon": 22.5002437,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/21745",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2353022219",
+      "name": "ΑΥΛΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΚΟΛΟΚΟΤΡΩΝΗ 1",
+      "locality": "Αιγίνιο",
+      "postcode": null,
+      "phone": "2353022219",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.4945468,
+        "lon": 22.5369608,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/19091",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2353022855",
+      "name": "ΠΑΡΑΛΥΚΙΔΗΣ ΠΑΣΧΑΛΗΣ",
+      "address": "ΑΚΡΟΠΟΛΕΩΣ & ΛΥΚΟΥΡΓΟΥ",
+      "locality": "Αιγίνιο",
+      "postcode": null,
+      "phone": "2353022855",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.495222,
+        "lon": 22.537137,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/19086",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2353031494",
+      "name": "ΣΑΜΨΟΥΡΗ ΕΥΓΕΝΙΑ-ΑΓΑΘΗ",
+      "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 57",
+      "locality": "Κολινδρός",
+      "postcode": null,
+      "phone": "2353031494",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.4793808,
+        "lon": 22.482706,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/19461",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

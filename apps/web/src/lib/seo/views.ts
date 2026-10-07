@@ -558,7 +558,10 @@ export interface AreaIndexGroup {
 export interface AreaIndexCity {
   readonly id: string;
   readonly name: string;
-  /** Areas by duty group; `flat` when every group is a single area (no group headings). */
+  /**
+   * Areas by duty group; `flat` (no group headings) when there is one group, as in the areas
+   * whose lists cover the whole area, or when every group is a single area.
+   */
   readonly groups: readonly AreaIndexGroup[];
   readonly flat: boolean;
 }
@@ -617,7 +620,7 @@ export function areaIndexProps(models: readonly SeoModel[], locale: Locale): Are
         id: model.cityId,
         name: cityName(model.cityId, locale),
         groups,
-        flat: groups.every((group) => group.areas.length <= 1),
+        flat: groups.length <= 1 || groups.every((group) => group.areas.length <= 1),
       };
     }),
     updatedAt,

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "piraeus",
+  "updatedAt": "2026-10-07T08:10:25.794Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-piraeus",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Πειραιά",
+        "en": "Pharmaceutical Association of Piraeus"
+      },
+      "url": "https://piraeus.efhmeries.gr/",
+      "note": "Duty lists, from piraeus.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

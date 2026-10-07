@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "groups": [
+    {
+      "id": "evros",
+      "name": "Έβρος",
+      "source": {
+        "url": "https://evros.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:50:08.910Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00-21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551039222",
+              "name": "ΣΕΡΜΠΕΖΗ ΔΗΜΗΤΡΑ",
+              "address": "Λ. Μάκρης 15, Νέα Χιλή",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551039222"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552029290",
+              "name": "ΚΑΦΕΤΖΗ Π. ΚΛΕΟΝΙΚΗ",
+              "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 190",
+              "locality": "Ορεστιάδα",
+              "phone": "2552029290"
+            },
+            {
+              "pharmacyId": "2553023544",
+              "name": "ΠΑΡΑΣΚΕΥΟΠΟΥΛΟΣ ΙΩΑΝΝΗΣ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 101",
+              "locality": "Διδυμότειχο",
+              "phone": "2553023544"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:30-14:00",
+          "hours": {
+            "from": "08:30",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552022582",
+              "name": "ΑΛΒΑΝΟΥΔΗ ΝΕΡΑΝΤΖΙΑ",
+              "address": "ΚΩΝ/ΠΟΛΕΩΣ 201",
+              "locality": "Ορεστιάδα",
+              "phone": "2552022582"
+            },
+            {
+              "pharmacyId": "2552023803",
+              "name": "ΖΑΦΕΙΡΙΑΔΗΣ ΧΡΗΣΤΟΣ",
+              "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 82",
+              "locality": "Ορεστιάδα",
+              "phone": "2552023803"
+            },
+            {
+              "pharmacyId": "2552021141",
+              "name": "ΣΙΑΝΚΟΥΡΗ ΑΝΑΣΤΑΣΙΑ",
+              "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 257",
+              "locality": "Ορεστιάδα",
+              "phone": "2552021141"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00-14:30",
+          "hours": {
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2553024243",
+              "name": "ΤΡΙΑΝΤΑΦΥΛΛΙΔΟΥ ΕΛΕΝΗ",
+              "address": "25ης ΜΑΪΟΥ 113",
+              "locality": "Διδυμότειχο",
+              "phone": "2553024243"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2554023176",
+              "name": "ΑΛΑΤΖΙΑ ΟΛΓΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 93",
+              "locality": "Σουφλί",
+              "phone": "2554023176"
+            },
+            {
+              "pharmacyId": "2555022273",
+              "name": "ΜΠΟΥΡΟΥΛΙΤΗ ΑΝΑΣΤΑΣΙΑ",
+              "address": "ΔΗΜΟΚΡΙΤΟΥ 17",
+              "locality": "Φέρες",
+              "phone": "2555022273"
+            },
+            {
+              "pharmacyId": "2554042020",
+              "name": "ΠΑΠΑΜΙΧΑΗΛ ΠΑΣΧΑΛΗΣ",
+              "address": "ΝΙΚΗΣ 33",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042020"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551031988",
+              "name": "ΤΡΕΜΜΑΣ ΒΑΣΙΛΕΙΟΣ",
+              "address": "Θράκης 10 (περιοχή Μουσικού Γυμνασίου)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551031988"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

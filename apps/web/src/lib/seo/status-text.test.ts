@@ -159,7 +159,7 @@ describe('describeStatus', () => {
   it('says on duty without hours', () => {
     const status: PharmacyStatus = {
       state: 'duty-hours-unknown',
-      duty: { date: '2026-10-05', duty: 'on-duty', groupId: 'thermi', heading: 'x' },
+      duty: { date: '2026-10-05', duty: 'on-duty', groupId: 'thermi', heading: 'x', onCall: false },
       nextOpen: null,
     };
     const result = describeStatus(status, true, now, 'el', t('el'));

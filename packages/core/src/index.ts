@@ -1,3 +1,4 @@
+export * from './areas.ts';
 export * from './city.ts';
 export * from './data.ts';
 export * from './holidays.ts';

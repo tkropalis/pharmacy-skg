@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-08",
+  "groups": [
+    {
+      "id": "chania",
+      "name": "Χανιά",
+      "source": {
+        "url": "https://chania.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T08:04:58.650Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821058345",
+              "name": "ΑΛΙΓΙΖΑΚΗ ΜΑΡΙΑ/ΑLΙGΙΖΑΚΙ MARIA",
+              "address": "8ΗΣ ΔΕΚΕΜΒΡΙΟΥ 4/8TH DECEMBER 4",
+              "locality": "Χανιά",
+              "phone": "2821058345"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821058345",
+              "name": "ΑΛΙΓΙΖΑΚΗ ΜΑΡΙΑ/ΑLΙGΙΖΑΚΙ MARIA",
+              "address": "8ΗΣ ΔΕΚΕΜΒΡΙΟΥ 4/8TH DECEMBER 4",
+              "locality": "Χανιά",
+              "phone": "2821058345"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821007000",
+              "name": "ΓΕΩΡΓΙΟΣ ΑΡΧΟΝΤΑΚΗΣ ΦΑΡΜΑΚΕΙΑ Ε.Ε.",
+              "address": "ΠΛ. ΕΛ ΒΕΝΙΖΕΛΟΥ ΚΑΙ ΑΓΙΟΥ ΝΟΥΦΡΙΟΥ 1",
+              "locality": "Ακρωτήρι",
+              "phone": "2821007000"
+            },
+            {
+              "pharmacyId": "2821093288",
+              "name": "ΚΝΙΘΑΚΗΣ ΓΕΩΡΓΙΟΣ/ΚΝΙΤΗΑΚΙS GEORGE",
+              "address": "ΑΝ.ΓΟΓΟΝΗ 51/AN. GOGONI 51",
+              "locality": "Μουρνιές",
+              "phone": "2821093288"
+            },
+            {
+              "pharmacyId": "2821045481",
+              "name": "ΜΠΑΚΙΡΤΖΟΓΛΟΥ ΒΑΣΙΛΗΣ/ΒΑΚΙRΤΖΟGLΟU VASILIS",
+              "address": "ΜΑΚΡΥΣ ΤΟΙΧΟΣ 363/MAKRYS TOICHOS 363",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821045481"
+            },
+            {
+              "pharmacyId": "2821097367",
+              "name": "ΣΟΛΙΔΑΚΗ ΕΛΕΝΗ / SOLIDAKI ELENI",
+              "address": "ΣΤΡ.ΤΖΑΝΑΚΑΚΗ 58-60/TZANAKAKI 58-60",
+              "locality": "Χανιά",
+              "phone": "2821097367"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "6948462411",
+              "name": "ΔΑΜΟΡΑΚΗΣ ΕΥΤΥΧΗΣ/DΑΜΟRΑΚΙS EYTIXIS",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "6948462411"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
+          "hours": {
+            "from": "08:30",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2822024080",
+              "name": "Σ.Φ. ΚΩΝΣΤΑΝΤΙΝΟΣ ΡΕΒΕΛΑΚΗΣ- ΙΩΑΝΝΗΣ ΡΕΒΕΛΑΚΗΣ Ο.Ε.",
+              "address": "ΟΜΟΓΕΝΩΝ ΑΜΕΡΙΚΗΣ 16/OMOGENON AMERIKIS 16",
+              "locality": "Δήμος Κισσάμου",
+              "phone": "2822024080"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

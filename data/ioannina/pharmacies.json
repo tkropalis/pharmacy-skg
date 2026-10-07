@@ -1,0 +1,467 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2651020110",
+      "name": "ΚΑΚΟΣΙΜΟΣ ΧΡΗΣΤΟΣ",
+      "address": "ΘΩΜΑ ΠΑΣΧΙΔΗ 40",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651020110",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 39.679203,
+        "lon": 20.834506,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5003",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651020320",
+      "name": "Σ.Φ. ΜΠΑΚΟΓΙΑΝΝΗ ΚΩΣΤΟΥΛΑ - ΠΑΠΑΔΗΜΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΊΟΥ 34",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651020320",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.6684978,
+        "lon": 20.8506054,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5006",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651020977",
+      "name": "ΓΟΥΛΑΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "28ης ΟΚΤΩΒΡΙΟΥ 8Β",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651020977",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 39.666568,
+        "lon": 20.8523697,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/4990",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651022100",
+      "name": "ΠΑΠΑΜΙΧΑΗΛ ΓΕΩΡΓΙΟΣ",
+      "address": "ΠΛΑΤΕΙΑ ΛΑΜΠΡΟΥ ΤΖΑΒΕΛΛΑ 1, ΤΖΑΜΙ ΚΑΛΟΥΤΣΙΑΝΗΣ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651022100",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 39.6611041,
+        "lon": 20.8545562,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/4992",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651023212",
+      "name": "Σ.Φ. ΚΟΝΤΟΧΡΗΣΤΟΥ ΑΛΕΞΑΝΔΡΑ - ΚΟΝΤΟΧΡΗΣΤΟΣ ΑΠΟΣΤΟΛΟΣ",
+      "address": "ΠΛ. ΠΑΡΓΗΣ 3",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651023212",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.6634511,
+        "lon": 20.8486347,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/4994",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651024330",
+      "name": "ΘΕΟΔΩΡΑΚΟΠΟΥΛΟΥ ΒΑΣΙΛΙΚΗ",
+      "address": "ΒΛΑΧΛΕΙΔΗ 7",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651024330",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.6652581,
+        "lon": 20.8519567,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5007",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651025155",
+      "name": "Σ.Φ. ΚΩΝΣΤΑΝΤΑΚΟΠΟΥΛΟΥ ΜΑΡΙΑ - ΜΠΑΡΜΠΟΥΤΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΗΣ 19, ΚΑΡΔΑΜΙΤΣΙΑ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651025155",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 39.6795136,
+        "lon": 20.8205647,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5001",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651028215",
+      "name": "ΤΣΑΚΑ ΝΕΚΤΑΡΙΑ",
+      "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 9 - ΚΑΡΔΑΜΗΤΣΙΑ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651028215",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 39.6819068,
+        "lon": 20.8220502,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5005",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651031161",
+      "name": "ΜΠΟΥΡΑΤΖΗΣ ΜΑΡΙΟΣ",
+      "address": "ΧΑΤΖΗ ΠΕΛΛΕΡΕΝ 10",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651031161",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.6611051,
+        "lon": 20.8523374,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/4995",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651031814",
+      "name": "ΜΟΥΣΕΛΙΜΗ ΧΡΙΣΤΙΝΑ",
+      "address": "ΚΑ΄ΦΕΒΡΟΥΑΡΙΟΥ 109 Α",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651031814",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 39.657883,
+        "lon": 20.8564284,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/4987",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651032223",
+      "name": "ΠΑΝΟΠΟΥΛΟΥ ΜΑΡΙΑΝΘΗ",
+      "address": "ΠΥΡΣΙΝΕΛΛΑ 16",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651032223",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 39.6639347,
+        "lon": 20.8503045,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/4986",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651035304",
+      "name": "ΠΑΠΑΗΛΙΑ ΑΡΤΕΜΙΣ",
+      "address": "Ν. ΖΕΡΒΑ 37",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651035304",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 39.6616812,
+        "lon": 20.8483341,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5004",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651035586",
+      "name": "ΜΠΟΥΚΟΣ ΖΗΣΗΣ-ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΑΓ.ΜΑΡΙΝΑΣ 64",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651035586",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 39.6650203,
+        "lon": 20.857249,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/4999",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651042722",
+      "name": "Σ.Φ. ΜΠΡΑΧΑΝΤΙΝΗΣ ΝΙΚΗΤΑΣ - ΟΥΕΡ ΜΑΛΒΙΝΑ",
+      "address": "3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ 23Α, ΑΝΑΤΟΛΗ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651042722",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 39.6404736,
+        "lon": 20.8681534,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5000",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651045233",
+      "name": "Σ.Φ. ΠΑΝΟΠΟΥΛΟΥ ΑΦΡΟΔΙΤΗ - ΜΗΤΣΙΟΣ ΙΩΑΝΝΗΣ",
+      "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 35",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651045233",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 39.660488,
+        "lon": 20.8490362,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/4988",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651048448",
+      "name": "ΓΙΑΝΝΟΥΛΗΣ ΙΩΑΝΝΗΣ",
+      "address": "ΑΣΗΜΑΚΟΠΟΥΛΟΥ 25",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651048448",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 39.6432702,
+        "lon": 20.8429107,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5002",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651066590",
+      "name": "Σ.Φ. ΖΗΚΟΥ ΑΝΝΑ - ΠΑΠΑΝΔΡΕΟΥ ΑΡΙΣΤΟΤΕΛΗΣ",
+      "address": "ΠΛΑΤΕΙΑ ΟΜΗΡΟΥ 12",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651066590",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 39.6593741,
+        "lon": 20.8448018,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/4989",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651067510",
+      "name": "ΠΑΠΑΝΔΡΕΟΥ ΓΕΩΡΓΙΑ",
+      "address": "ΝΑΠ. ΖΕΡΒΑ 61",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651067510",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.6605902,
+        "lon": 20.846732,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/4996",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651070146",
+      "name": "ΝΙΚΑΣ ΠΕΡΙΚΛΗΣ",
+      "address": "ΚΟΡΑΗ 13",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651070146",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 39.6690685,
+        "lon": 20.8514723,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/4991",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651076676",
+      "name": "Σ.Φ. ΚΟΣΙΝΑΣ ΧΡΗΣΤΟΣ ΚΟΣΙΝΑΣ ΑΝΤΩΝΙΟΣ ΚΑΙ ΚΟΣΙΝΑΣ ΒΑΣΙΛΕΙΟΣ ΟΕ",
+      "address": "21ης ΦΕΒΡΟΥΑΡΙΟΥ 186",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651076676",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.6544266,
+        "lon": 20.8578553,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/4998",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651085508",
+      "name": "ΣΔΡΑΛΑΓΚΑΣ ΣΤΑΥΡΟΣ",
+      "address": "ΚΑΠΕΤΑΝ ΚΛΕΙΔΗ 15",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651085508",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.662295,
+        "lon": 20.8380645,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/4997",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651090649",
+      "name": "ΤΣΕΦΑ ΕΛΕΟΝΩΡΑ",
+      "address": "ΙΩΑΝΝΙΝΩΝ 61, ΑΝΑΤΟΛΗ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651090649",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 39.6366493,
+        "lon": 20.8637669,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/4993",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

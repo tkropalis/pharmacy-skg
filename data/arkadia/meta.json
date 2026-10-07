@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "arkadia",
+  "updatedAt": "2026-10-07T07:47:11.090Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-arkadia",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Αρκαδίας",
+        "en": "Pharmaceutical Association of Arcadia"
+      },
+      "url": "https://arkadia.efhmeries.gr/",
+      "note": "Duty lists, from arkadia.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

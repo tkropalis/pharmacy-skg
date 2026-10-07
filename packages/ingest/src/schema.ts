@@ -40,6 +40,10 @@ export const DutySectionSchema = z.object({
   kind: z.enum(DUTY_KINDS),
   heading: z.string().describe('As printed'),
   hours: TimeWindowSchema.nullable().describe('From the heading; null when it states none'),
+  onCall: z
+    .literal(true)
+    .optional()
+    .describe('On call during the hours: on duty, but call first (some ITeQ lists, marked *)'),
   extraHours: z.array(ExtraHoursSchema),
   notes: z.array(z.string()),
   entries: z.array(DutyEntrySchema).min(1),

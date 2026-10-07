@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "groups": [
+    {
+      "id": "evia",
+      "name": "Εύβοια",
+      "source": {
+        "url": "https://evia.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:49:26.779Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221044646",
+              "name": "ΚΑΡΑΤΖΑ ΑΡΓΥΡΩ",
+              "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 96",
+              "locality": "Αρτάκη",
+              "phone": "2221044646"
+            },
+            {
+              "pharmacyId": "2226052506",
+              "name": "ΣΩΤΗΡΟΠΟΥΛΟΣ ΙΩΣΗΦ",
+              "address": "28ης ΟΚΤΩΒΡΙΟΥ 1",
+              "locality": "Ιστιαία",
+              "phone": "2226052506"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221064600",
+              "name": "ΝΙΦΟΡΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΑΜΑΡΥΣΙΑΣ ΑΡΤΕΜΙΔΟΣ ΚΑΙ ΑΠΟΣΤΟΛΗ",
+              "locality": "Ερέτρια",
+              "phone": "2221064600"
+            },
+            {
+              "pharmacyId": "2224022217",
+              "name": "Σ.Φ. ΠΛΑΤΥΜΕΣΗΣ ΣΠΥΡΟΣ & ΖΩΗ",
+              "address": "Ι. ΚΟΤΣΙΚΑ 9",
+              "locality": "Κάρυστος",
+              "phone": "2224022217"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221025636",
+              "name": "ΚΑΡΛΑΤΗΡΑΣ ΕΥΣΤΡΑΤΙΟΣ",
+              "address": "ΤΡΑΠΕΖΟΥΝΤΙΟΥ & ΙΣΑΙΟΥ - ΑΓ. ΒΑΡΒΑΡΑ",
+              "locality": "Χαλκίδα",
+              "phone": "2221025636"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221087998",
+              "name": "ΚΡΗΤΙΚΑΚΗ ΜΑΡΙΑ",
+              "address": "ΕΥΒΟΙΑΣ 49 ΠΛΗΣΙΟΝ ΤΕΧΝΙΚΟΥ ΛΥΚΕΙΟΥ",
+              "locality": "Χαλκίδα",
+              "phone": "2221087998"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221082278",
+              "name": "ΜΕΤΑΞΩΤΟΣ ΣΩΤΗΡΙΟΣ",
+              "address": "ΤΣΙΡΙΓΩΤΗ 5 - ΠΛΑΤΕΙΑ ΑΓ.ΝΙΚΟΛΑΟΥ",
+              "locality": "Χαλκίδα",
+              "phone": "2221082278"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

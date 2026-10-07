@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2681027317",
+      "name": "ΣΙΝΤΕΛΕ ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "ΠΥΡΡΟΥ 27",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681027317",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 39.162321,
+        "lon": 20.984082,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2417",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681028161",
+      "name": "Σ.Φ. ΠΑΠΑΝΙΚΟΛΑΟΥ ΞΕΝΙΑ & ΧΡΗΣΤΟΣ Ο.Ε.",
+      "address": "ΤΖΑΒΕΛΛΑ 26 & ΝΙΚΗΦΟΡΟΥ ΑΓΓΕΛΟΥ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681028161",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.1637604,
+        "lon": 20.9857891,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2419",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681067400",
+      "name": "ΓΕΩΡΓΟΠΟΥΛΟΣ",
+      "address": "ΔΙΑΣΕΛΛΟ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681067400",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.180431,
+        "lon": 21.189088,
+        "ref": "https://arta.efhmeries.gr/Home/Details/1967",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681068091",
+      "name": "ΤΣΑΡΑΚΛΗΜΑΝΗΣ",
+      "address": "ΑΝΩ ΚΑΛΕΝΤΙΝΗ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681068091",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 39.247688,
+        "lon": 21.161423,
+        "ref": "https://arta.efhmeries.gr/Home/Details/1969",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681069346",
+      "name": "ΠΛΕΥΡΗ ΟΛΓΑ",
+      "address": "ΣΥΚΙΕΣ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681069346",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 39.0622243,
+        "lon": 21.0530725,
+        "ref": "https://arta.efhmeries.gr/Home/Details/1964",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681070330",
+      "name": "ΖΟΡΜΠΑ ΦΡΕΙΔΕΡΙΚΗ",
+      "address": "ΓΡΑΙΚΟΥ ΜΑΞΙΜΟΥ 16",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681070330",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 39.160945,
+        "lon": 20.982182,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2418",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681071595",
+      "name": "ΤΟΜΟΥΤΖΟΓΛΟΥ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΒΑΣΙΛΕΩΣ ΠΥΡΡΟΥ 30",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681071595",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 39.1617619,
+        "lon": 20.9837472,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2416",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681073149",
+      "name": "ΣΚΑΝΔΑΛΗΣ ΗΛΙΑΣ ΕΕ",
+      "address": "ΣΚΟΥΦΑ 150",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681073149",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 39.1602479,
+        "lon": 20.9829211,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2421",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681075241",
+      "name": "ΚΥΡΙΑΚΗ ΜΑΡΕΤΗ ΚΑΙ ΣΙΑ ΕΕ",
+      "address": "ΓΡΙΜΠΟΒΟΥ 15",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681075241",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 39.1598902,
+        "lon": 20.9832537,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2420",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681079649",
+      "name": "ΚΩΝΣΤΑΝΤΗΣ ΙΑΣΩΝ",
+      "address": "ΣΚΟΥΦΑ 156 ΚΑΙ ΦΛΕΜΙΝΓΚ 1",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681079649",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.1577938,
+        "lon": 20.9818375,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2422",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681083700",
+      "name": "ΧΑΡΙΤΟΥ ΟΛΓΑ - ΧΑΤΤΑΡΙ ΦΑΝΤΙΑ",
+      "address": "ΚΕΝΤΡΙΚΗ ΠΛΑΤΕΙΑ ΠΕΤΑΣ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681083700",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.167183,
+        "lon": 21.034827,
+        "ref": "https://arta.efhmeries.gr/Home/Details/1966",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681300240",
+      "name": "ΜΑΛΛΙΟΥ ΑΝΝΑ",
+      "address": "ΠΑΧΥΚΑΛΑΜΟΣ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681300240",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 39.0828391,
+        "lon": 21.0168457,
+        "ref": "https://arta.efhmeries.gr/Home/Details/1968",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2685061100",
+      "name": "ΔΟΥΒΛΗΣ",
+      "address": "ΑΣΤΡΟΧΩΡΙ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2685061100",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 39.268112,
+        "lon": 21.27949,
+        "ref": "https://arta.efhmeries.gr/Home/Details/1965",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

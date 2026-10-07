@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "groups": [
+    {
+      "id": "lasithi",
+      "name": "Λασίθι",
+      "source": {
+        "url": "https://lasithi.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:57:09.201Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2841041308",
+              "name": "Σ.Φ. ΔΕΣΠΟΙΝΑ ΤΣΑΝΙΚΛΙΔΟΥ - ΝΙΚΟΛΑΟΣ ΠΑΠΑΣΤΑΥΡΑΚΗΣ Ο.Ε.",
+              "address": "ΠΛΑΤΕΙΑ ΜΠΟΤΗ ΣΦΑΚΙΑΝΑΚΗ 15 / 15, MPOTI SFAKIANAKI SQ.",
+              "locality": "Ελούντα",
+              "phone": "2841041308"
+            },
+            {
+              "pharmacyId": "2841033533",
+              "name": "Σ.Φ. ΞΕΝΗ ΣΚΟΝΤΙΝΗ ΚΑΙ ΠΑΡΑΣΧΟΣ ΧΟΥΡΣΑΝΙΔΗΣ Ο.Ε.",
+              "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 3-5 / 3-5, ETHNIKIS ΑΝΤΙSΤΑSΕΟS STR.",
+              "locality": "Νεάπολη",
+              "phone": "2841033533"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2841024011",
+              "name": "Σ.Φ. ΘΕΟΔΩΡΟΣ ΦΟΥΡΑΚΗΣ - ΜΑΡΙΟΣ ΦΟΥΡΑΚΗΣ Ο.Ε.",
+              "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 23 / 23, ELEFTHERIOU VENIZELOU SQ.",
+              "locality": "Άγιος Νικόλαος",
+              "phone": "2841024011"
+            },
+            {
+              "pharmacyId": "2842025544",
+              "name": "ΣΗΦΑΚΗΣ Γ. ΙΩΑΝΝΗΣ",
+              "address": "ΚΑΛΗΜΕΡΑΚΗ 11 / 11, KALIMERAKI STR.",
+              "locality": "Ιεράπετρα",
+              "phone": "2842025544"
+            },
+            {
+              "pharmacyId": "2843022897",
+              "name": "ΦΑΡΜΑΚΕΙΟ ΕΙΡΗΝΗ ΠΝΕΥΜΑΤΙΚΑΚΗ ΚΑΙ ΣΙΑ Ο.Ε.",
+              "address": "ΜΕΛΙΝΑΣ ΜΕΡΚΟΥΡΗ 11 / 11, MELINAS MERKOURI STR.",
+              "locality": "Σητεία",
+              "phone": "2843022897"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

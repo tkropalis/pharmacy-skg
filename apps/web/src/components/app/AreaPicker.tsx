@@ -70,7 +70,7 @@ export function AreaPicker({ text, localities, onPick, onClose }: AreaPickerProp
   }
 
   const item = (locality: Locality) => (
-    <li key={locality.name}>
+    <li key={`${locality.cityId ?? ''}|${locality.name}`}>
       <button
         type="button"
         className="picker-item"
@@ -80,7 +80,9 @@ export function AreaPicker({ text, localities, onPick, onClose }: AreaPickerProp
         }}
       >
         <span>{locality.name}</span>
-        {/* Another city's count is not known until its data loads. */}
+        {/* A place in another city says which; that city's own entry, and its counts, wait for
+            its data. */}
+        {locality.cityName !== undefined && <span className="muted">{locality.cityName}</span>}
         {locality.cityId === undefined && (
           <span className="muted">
             {locality.count === 1
