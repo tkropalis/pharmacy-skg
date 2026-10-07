@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#x395;&#x3C6;&#x3B7;&#x3BC;&#x3B5;&#x3C1;&#x3AF;&#x3B5;&#x3C2; - &#x395;&#x3C6;&#x3B7;&#x3BC;&#x3B5;&#x3C1;&#x3AF;&#x3B5;&#x3C2; &#x3C6;&#x3B1;&#x3C1;&#x3BC;&#x3B1;&#x3BA;&#x3B5;&#x3AF;&#x3C9;&#x3BD; &#x3A3;&#x3AC;&#x3BC;&#x3BF;&#x3C5;</title>
+    <script type="application/ld+json">
+        {
+          "@context" : "https://schema.org",
+          "@type" : "WebSite",
+          "name" : "&#x395;&#x3C6;&#x3B7;&#x3BC;&#x3B5;&#x3C1;&#x3AF;&#x3B5;&#x3C2; &#x3C6;&#x3B1;&#x3C1;&#x3BC;&#x3B1;&#x3BA;&#x3B5;&#x3AF;&#x3C9;&#x3BD; &#x3A3;&#x3AC;&#x3BC;&#x3BF;&#x3C5;",
+          "alternateName": ["Πύλη Εφημεριών Φαρμακείων", "pharmacy duties - samos"],
+          "url" : "https://samos.efhmeries.gr/"
+        }
+    </script>
+
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css?v=hb5hDTJPRYwiB3DipR5EEZFIHRrd2pfMDOKTnP8kEik" type="text/css" />
+    <link rel="stylesheet" href="/css/samos/site.css?v=cTFkOgABrLsDAGUa7tc9Uf5DatANtEDIriRhEr41z3k" type="text/css" />
+    <link href="/lib/icons-1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/lib/fontawesome-free-5.15.3-web/css/all.min.css" rel="stylesheet" />
+
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197601444-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-197601444-1');
+    </script>
+
+</head>
+
+<body>
+    <header>
+        
+
+
+<div class="container">
+    <div class="d-flex flex-row justify-content-between">
+        <ul class="navbar-nav flex-row">
+    <li class="nav-item align-self-center d-none d-sm-block pr-3">
+        <span class="nav-link">Κατεβάστε το App!</span>
+    </li>
+    <li class="nav-item align-self-center pr-3">
+        <a class="nav-link text-dark"
+           href="https://apps.apple.com/gr/app/ifarmakeia/id1642895766"
+           target="_blank"
+           rel="noopener noreferrer">
+            <i class="fab fa-apple" style="font-size:2rem;"></i>
+        </a>
+    </li>
+    <li class="nav-item align-self-center align-self-sm-end pr-3">
+        <a class="nav-link text-dark"
+           href="https://play.google.com/store/apps/details?id=com.iteq.ifarmakeia_duties"
+           target="_blank"
+           rel="noopener noreferrer">
+            <i class="fab fa-google-play" style="font-size:1.6rem;"></i>
+        </a>
+    </li>
+</ul>
+
+
+
+        <ul class="navbar-nav flex-row justify-content-end">
+
+            
+
+
+                <li class="nav-item">
+                    <a class="nav-link btn btn-link text-dark" href="/Identity/Account/Login">
+                        <i class="fa fa-sign-in-alt" aria-hidden="false"></i>
+                        Είσοδος
+                    </a>
+                </li>
+        </ul>
+    </div>
+</div>
+        
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex" href="/tomeas">
+            <div class="my-auto mx-5 h4 text-left text-break"> Εφημερεύοντα Φαρμακεία Σάμου</div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3 pt-1">
+            
+    <div class="modal fade" id="duty-info" tabindex="-1" role="dialog">
+    <div class="modal-dialog  modal-lg" role="document">
+        <div class="modal-content" id="duty-info-content">
+            <div class="modal-header bg-light">
+                <h5 class="modal-title">Διευκρίνηση</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="text-justify">
+                    Διευκρινίζεται ότι το εφημερεύον φαρμακείο:
+                </p>
+                <ol style="list-style:decimal">
+                    <li>Δικαιούται μεσημβρινή διακοπή</li>
+                    <li>Δεν διανυκτερεύει με παρόντα τον φαρμακοποιό εντός του φαρμακείου </li>
+                    <li>Κατά τις Κυριακές και τις Αργίες λειτουργεί κανονικά από τις 9:00 έως τις 13:00</li>
+                </ol>
+                <p class="text-justify">
+                    <strong class="text-danger">
+                        Κατά τη διάρκεια των (1) και (2), καθώς επίσης και τις λοιπές  ώρες του ωραρίου εφημερίας του  τις  Κυριακές και τις Αργίες,
+                    </strong>
+                    ο εφημερεύων φαρμακοποιός αναρτά το ονοματεπώνυμό του, το τηλέφωνο επικοινωνίας του και τη διεύθυνση κατοικίας του στην πρόσοψη του φαρμακείου και
+                    <strong class="text-danger">
+                        εξυπηρετεί το κοινό εφόσον δεχτεί τηλεφωνικό κάλεσμα.
+                    </strong>
+                </p>
+            </div>
+            <div class="modal-footer bg-light">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Ενημερώθηκα</button>
+            </div>
+        </div>
+    </div>
+</div>
+<form id="indexform" method="post" action="/tomeas">
+    &nbsp;
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <label for="date" style="font-weight:700">Ημερομηνία</label>
+            <select id="date" name="date" class="form-control"><option selected="selected" value="2026-10-07">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 7 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-08">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 8 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-09">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 9 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-10">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 10 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-11">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 11 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-12">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 12 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-13">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 13 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+</select>
+        </div>
+        <div class="form-group col-md-3">
+            <label for="tomeas" style="font-weight:700">Τομέας</label>
+            <select id="tomeas" name="tomeas" class="form-control">
+                <option value="">Όλοι οι Τομείς</option>
+            <option selected="selected" value="1">&#x3A3;&#x391;&#x39C;&#x39F;&#x3A3;</option>
+</select>
+        </div>
+    </div>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8MNgQ1nYKTBCkq-5np_2p2zZPcMEe7LcrtsANE65NLp7NWKWelb-wI0JNg_uzGGRZDjSRBiwmLu_Din7dOPSxzXd6gEzlvVnY_2vxMIcl35nFZG58EvJmJxiEYs8baqad-XweP6WmoHBGm46VblA1Jo" /></form>
+<div class="row card-deck">
+        <div class="col-sm-6 col-xl-4 mb-3 d-flex align-items-stretch">
+            <div class="card border-open flex-fill">
+                <div class="card-header text-light bg-dark d-flex fixed-height">
+                    <div class="card-title  d-flex justify-content-around align-content-lg-center">
+                                <div class="pharma-cross pharma-cross-open flex-shrink-0"></div>
+                        9 &#x3A0;&#x3A1;&#x3A9;&#x399; - 1:30 &#x39C;&#x395;&#x3A3;&#x397;&#x39C;&#x395;&#x3A1;&#x399; &amp; 6 &#x391;&#x3A0;&#x39F;&#x393;&#x395;&#x3A5;&#x39C;&#x391; - 10:30 &#x392;&#x3A1;&#x391;&#x394;&#x3A5;&#x9;
+                    </div>
+                </div>
+                <div class="card-body text-dark">
+                    <div class="card-title">&#x39A;&#x391;&#x39B;&#x397;&#x3A3;&#x3A0;&#x395;&#x3A1;&#x397; &#x3A3;&#x395;&#x392;&#x391;&#x3A3;&#x3A4;&#x397;</div>
+                    <div class="ml-1 ">
+                        <div class="card-text row pb-1">
+                            <div class="col-2 ">
+                                <i class="far fa-address-card"></i>
+                            </div>
+                            <div class="col-10">
+                                &#x3A7;&#x391;&#x3A4;&#x396;&#x397;&#x393;&#x399;&#x391;&#x39D;&#x39D;&#x397;
+                            </div>
+                        </div>
+                        <div class="card-text row pb-1">
+                            <div class="col-2 ">
+                                <i class="fas fa-map-pin"></i>
+                            </div>
+                            <div class="col-10">
+                                <strong>&#x39A;&#x391;&#x3A1;&#x39B;&#x39F;&#x392;&#x391;&#x3A3;&#x399;</strong>
+                            </div>
+                        </div>
+                        <div class="card-text row pb-1">
+                            <div class="col-2">
+                                <i class="fas fa-phone-square"></i>
+                            </div>
+                            <div class="col-10">
+                                22730-32658 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-around bg-success text-light">
+                    <a class="text-light" href="/Home/Details/5034"><i class="fas fa-map-marker-alt " style="font-size:2.5rem;"></i></a>
+                    <a href="tel:22730-32658 " class="text-light" data-toggle="tooltip" data-placement="top" title="22730-32658 "><i class="fas fa-phone " style="font-size: 2.5rem;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-4 mb-3 d-flex align-items-stretch">
+            <div class="card border-open flex-fill">
+                <div class="card-header text-light bg-dark d-flex fixed-height">
+                    <div class="card-title  d-flex justify-content-around align-content-lg-center">
+                                <div class="pharma-cross pharma-cross-open flex-shrink-0"></div>
+                        &#x395;&#x3A6;&#x397;&#x39C;&#x395;&#x3A1;&#x395;&#x3A5;&#x395;&#x399;*
+                    </div>
+                </div>
+                <div class="card-body text-dark">
+                    <div class="card-title">&#x39A;&#x399;&#x39B;&#x39F;&#x3A5;&#x39A;&#x399;&#x3A9;&#x3A4;&#x39F;&#x3A5; &#x391;&#x39B;&#x395;&#x39E;&#x391;&#x39D;&#x394;&#x3A1;&#x391;</div>
+                    <div class="ml-1 ">
+                        <div class="card-text row pb-1">
+                            <div class="col-2 ">
+                                <i class="far fa-address-card"></i>
+                            </div>
+                            <div class="col-10">
+                                &#x3A0;&#x3A1;&#x39F;&#x3A3;&#x3A6;&#x3A5;&#x393;&#x399;&#x39A;&#x391;
+                            </div>
+                        </div>
+                        <div class="card-text row pb-1">
+                            <div class="col-2 ">
+                                <i class="fas fa-map-pin"></i>
+                            </div>
+                            <div class="col-10">
+                                <strong>&#x391;&#x39D;&#x3A9; &#x392;&#x391;&#x398;&#x3A5;</strong>
+                            </div>
+                        </div>
+                        <div class="card-text row pb-1">
+                            <div class="col-2">
+                                <i class="fas fa-phone-square"></i>
+                            </div>
+                            <div class="col-10">
+                                22730-22800 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-around bg-success text-light">
+                    <a class="text-light" href="/Home/Details/5410"><i class="fas fa-map-marker-alt " style="font-size:2.5rem;"></i></a>
+                    <a href="tel:22730-22800 " class="text-light" data-toggle="tooltip" data-placement="top" title="22730-22800 "><i class="fas fa-phone " style="font-size: 2.5rem;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-4 mb-3 d-flex align-items-stretch">
+            <div class="card border-open flex-fill">
+                <div class="card-header text-light bg-dark d-flex fixed-height">
+                    <div class="card-title  d-flex justify-content-around align-content-lg-center">
+                                <div class="pharma-cross pharma-cross-open flex-shrink-0"></div>
+                        8 &#x3A0;&#x3A1;&#x3A9;&#x399; - 2 &#x39C;&#x395;&#x3A3;&#x397;&#x39C;&#x395;&#x3A1;&#x399; &amp; 6 &#x391;&#x3A0;&#x39F;&#x393;&#x395;&#x3A5;&#x39C;&#x391; - 10:30 &#x392;&#x3A1;&#x391;&#x394;&#x3A5;
+                    </div>
+                </div>
+                <div class="card-body text-dark">
+                    <div class="card-title">&#x3A3;&#x3A0;&#x3A5;&#x3A1;&#x39F;&#x3A5; &#x3A0;&#x391;&#x39D;&#x391;&#x393;&#x399;&#x3A9;&#x3A4;&#x397;&#x3A3;</div>
+                    <div class="ml-1 ">
+                        <div class="card-text row pb-1">
+                            <div class="col-2 ">
+                                <i class="far fa-address-card"></i>
+                            </div>
+                            <div class="col-10">
+                                &#x39A;. &#x3A3;&#x3A4;&#x391;&#x39C;&#x391;&#x3A4;&#x397; 28
+                            </div>
+                        </div>
+                        <div class="card-text row pb-1">
+                            <div class="col-2 ">
+                                <i class="fas fa-map-pin"></i>
+                            </div>
+                            <div class="col-10">
+                                <strong>&#x392;&#x391;&#x398;&#x3A5;</strong>
+                            </div>
+                        </div>
+                        <div class="card-text row pb-1">
+                            <div class="col-2">
+                                <i class="fas fa-phone-square"></i>
+                            </div>
+                            <div class="col-10">
+                                22730-27487 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-around bg-success text-light">
+                    <a class="text-light" href="/Home/Details/5918"><i class="fas fa-map-marker-alt " style="font-size:2.5rem;"></i></a>
+                    <a href="tel:22730-27487 " class="text-light" data-toggle="tooltip" data-placement="top" title="22730-27487 "><i class="fas fa-phone " style="font-size: 2.5rem;"></i></a>
+                </div>
+            </div>
+        </div>
+</div>
+    <div class="text-justify small mb-2">
+    * Διευκρινίζεται ότι το εφημερεύον φαρμακείο:
+    <ol style="list-style:decimal">
+        <li>Δικαιούται μεσημβρινή διακοπή</li>
+        <li>Δεν διανυκτερεύει με παρόντα τον φαρμακοποιό εντός του φαρμακείου </li>
+        <li>Κατά τις Κυριακές και τις Αργίες λειτουργεί κανονικά από τις 9:00 έως τις 13:00</li>
+    </ol>
+    <strong class="text-danger">
+        Κατά τη διάρκεια των (1) και (2), καθώς επίσης και τις λοιπές  ώρες του ωραρίου εφημερίας του  τις  Κυριακές και τις Αργίες
+    </strong>
+    ο εφημερεύων φαρμακοποιός αναρτά το ονοματεπώνυμό του, το τηλέφωνο επικοινωνίας του και τη διεύθυνση κατοικίας του στην πρόσοψη του φαρμακείου και
+    <strong class="text-danger">
+        εξυπηρετεί το κοινό εφόσον δεχτεί τηλεφωνικό κάλεσμα.
+    </strong>
+</div>
+
+<div id="floating-video-wrapper">
+    <div id="video-controls">
+        <button id="btn-minimize-video" title="Minimize video">–</button>
+    </div>
+
+    <div id="floating-video-container">
+        <iframe id="floating-video"
+                src="https://www.youtube.com/embed/VKkk46o-TtM?enablejsapi=1&autoplay=1&mute=1&loop=1&playlist=VKkk46o-TtM&controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+        </iframe>
+        <div id="floating-video-click-overlay"></div>
+    </div>
+</div>
+
+<div id="video-overlay" class="hidden">
+    <div id="video-overlay-content">
+        <iframe id="overlay-video"
+                src="https://www.youtube.com/embed/VKkk46o-TtM?enablejsapi=1&mute=1&autoplay=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+        </iframe>
+        <button id="close-overlay" title="Close video">✕</button>
+    </div>
+</div>
+
+<style>
+    /* --- Container --- */
+    #floating-video-wrapper {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+    }
+
+    /* --- Control bar --- */
+    #video-controls {
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 8px 8px 0 0;
+        padding: 6px 10px;
+        display: flex;
+        justify-content: flex-end;
+        box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    }
+
+        #video-controls button {
+            background: transparent;
+            color: #fff;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            transition: transform 0.2s, color 0.2s;
+        }
+
+            #video-controls button:hover {
+                color: #ffd700;
+                transform: scale(1.2);
+            }
+
+    /* --- Video container --- */
+    #floating-video-container {
+        position: relative;
+        width: 350px;
+    }
+
+        /* 16:9 responsive wrapper */
+        #floating-video-container::before {
+            content: "";
+            display: block;
+            padding-bottom: 56.25%;
+        }
+
+    #floating-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+    #floating-video-click-overlay {
+        position: absolute;
+        inset: 0;
+        cursor: pointer;
+        background: transparent;
+        z-index: 10000;
+    }
+
+    #video-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.85);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10001;
+    }
+
+        #video-overlay.hidden {
+            display: none;
+        }
+
+    #video-overlay-content {
+        position: relative;
+        width: 80%;
+        max-width: 960px;
+        aspect-ratio: 16 / 9;
+    }
+
+    #overlay-video {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
+
+    #close-overlay {
+        position: absolute;
+        top: -50px;
+        right: 0;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    /* --- Minimized state --- */
+    #floating-video-container.minimized {
+        width: 50px;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+</style>
+
+<script>
+    const overlay = document.getElementById("video-overlay");
+    const overlayVideo = document.getElementById("overlay-video");
+    const miniVideoOverlay = document.getElementById("floating-video-click-overlay");
+    const closeOverlay = document.getElementById("close-overlay");
+    const btnMinimize = document.getElementById("btn-minimize-video");
+    const floatingContainer = document.getElementById("floating-video-container");
+
+    // Click small video → open large overlay
+    miniVideoOverlay.addEventListener("click", () => {
+      overlay.classList.remove("hidden");
+      overlayVideo.src = overlayVideo.src.split("?")[0] + "?autoplay=1&cc_load_policy=1&cc_lang_pref=en";
+    });
+
+    // Close overlay → stop video
+    closeOverlay.addEventListener("click", () => {
+      overlay.classList.add("hidden");
+      overlayVideo.src = overlayVideo.src.split("?")[0];
+    });
+
+        // Minimize toggle
+    let isMinimized = false;
+    btnMinimize.addEventListener("click", () => {
+      isMinimized = !isMinimized;
+      floatingContainer.classList.toggle("minimized", isMinimized);
+      btnMinimize.textContent = isMinimized ? "⧉" : "–";
+      btnMinimize.title = isMinimized ? "Restore video" : "Minimize video";
+    });
+</script>
+
+
+
+
+        </main>
+    </div>
+      
+    <footer class="footer bg-dark text-light mt-5 py-2 text-break">
+    <div class="container d-flex justify-content-between">
+        <div>
+            &copy; 2026 - Εφημερίες φαρμακείων Σάμου - <a class="text-light" href="/Home/Privacy">Πολιτική απορρήτου</a>
+            - <a class="text-light" href="/Identity/Account/Login">Διαχείριση Φαρμακείου</a>
+            - <a href="https://superadmin.efhmeries.gr/ApiUsers" target="_blank" class="text-light">API εφημεριών</a>
+        </div>
+        <div>
+            <a href="https://iteq.gr/" target="_blank" class="card-link"><span class="text-secondary">Powered by <span class="font-weight-bold " style="color:mediumpurple;font-size:18px;">IT<span style="color:forestgreen">e</span>Q</span></span></a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+    
+    <script type="text/javascript">
+        $(function () {
+            $('#indexform').on('change', 'input,  select', function () {
+                $('#indexform').submit();
+            });
+
+            let modalOptions =
+            {
+                show: true,
+                backdrop: 'static'
+            }
+            $("#duty-info").modal(modalOptions);
+        });
+    </script>
+
+</body>
+</html>

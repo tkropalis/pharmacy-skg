@@ -92,6 +92,11 @@
                   ],
                   "description": "From the heading; null when it states none"
                 },
+                "onCall": {
+                  "description": "On call during the hours: on duty, but call first (some ITeQ lists, marked *)",
+                  "type": "boolean",
+                  "const": true
+                },
                 "extraHours": {
                   "type": "array",
                   "items": {

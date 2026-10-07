@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { decodeEntities, iteqHeading, parseIteqDetails, parseIteqPage } from './parse.ts';
+import { decodeEntities, parseIteqDetails, parseIteqPage, phoneOf } from './parse.ts';
 
 const fixture = (name: string) =>
   readFileSync(new URL(`../../fixtures/iteq/${name}`, import.meta.url), 'utf8');
@@ -71,42 +71,25 @@ describe('parseIteqDetails', () => {
   });
 });
 
-describe('iteqHeading', () => {
-  it.each([
-    ['ΑΠΟ 08:00 ΕΩΣ 23:00', '2026-10-06', 'day', { from: '08:00', to: '23:00', toNextDay: false }],
-    ['ΑΠΟ 08:00 ΕΩΣ 23:00', '2026-10-10', 'day', { from: '08:00', to: '23:00', toNextDay: false }],
-    [
-      'ΑΠΟ 08:00 ΕΩΣ 14:00',
-      '2026-10-10',
-      'saturday-extra',
-      { from: '08:00', to: '14:00', toNextDay: false },
-    ],
-    ['ΑΠΟ 08:00 ΕΩΣ 14:00', '2026-10-11', 'day', { from: '08:00', to: '14:00', toNextDay: false }],
-    [
-      'ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00',
-      '2026-10-06',
-      'overnight',
-      { from: '23:00', to: '08:00', toNextDay: true },
-    ],
-    ['ΕΦΗΜΕΡΕΥΕΙ', '2026-10-06', 'on-duty', null],
-    [
-      'ΕΦΗΜΕΡΕΥΕΙ 08:00 ΕΩΣ 23:00',
-      '2026-10-06',
-      'on-duty',
-      { from: '08:00', to: '23:00', toNextDay: false },
-    ],
-  ])('%s on %s', (heading, date, kind, hours) => {
-    expect(iteqHeading(heading, date)).toEqual({ kind, hours });
-  });
-
-  it('reads no other heading', () => {
-    expect(iteqHeading('ΚΛΕΙΣΤΟ', '2026-10-06')).toBeNull();
-    expect(iteqHeading('ΕΦΗΜΕΡΕΥΕΙ 08:00 ΕΩΣ', '2026-10-06')).toBeNull();
-  });
-});
-
 describe('decodeEntities', () => {
   it('decodes numeric and named entities', () => {
     expect(decodeEntities('&#x39B;&#x391;&#913; &amp; &nbsp;x')).toBe('ΛΑΑ &  x');
+  });
+});
+
+describe('phoneOf', () => {
+  it('takes the first Greek number of the row', () => {
+    expect(phoneOf('2410 614574')).toBe('2410614574');
+    // Argolida prints it twice, or adds a mobile.
+    expect(phoneOf(' 2754031330 2754031330 ')).toBe('2754031330');
+    expect(phoneOf('2754051700 6947619938 2754051700')).toBe('2754051700');
+    expect(phoneOf('+30 2310 123456')).toBe('2310123456');
+    expect(phoneOf('6947 619938')).toBe('6947619938');
+  });
+
+  it('keeps anything else as its digits, for validation to report', () => {
+    expect(phoneOf('2731081271-')).toBe('2731081271');
+    expect(phoneOf('12345')).toBe('12345');
+    expect(phoneOf('')).toBe('');
   });
 });

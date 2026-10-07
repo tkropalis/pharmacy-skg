@@ -25,6 +25,8 @@ export interface DutySection {
   readonly heading: string;
   /** Hours stated in the heading, or null when the heading states none. */
   readonly hours: TimeWindow | null;
+  /** On call during `hours` (some ITeQ lists): on duty, but call first. */
+  readonly onCall?: boolean;
   /** Extra hours read from the notes under the heading. */
   readonly extraHours: readonly ExtraHours[];
   /** Notes under the heading, as printed. */

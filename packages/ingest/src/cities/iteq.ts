@@ -2,8 +2,9 @@
  * A city whose association publishes its duty lists on ITeQ's platform (`<area>.efhmeries.gr`).
  * The lists carry each pharmacy's coordinates, so geocoding is only a fallback.
  */
-import type { Bounds, City } from '@pharmacy-skg/core';
-import { iteqDutyLists, type IteqSector } from '../iteq/lists.ts';
+import type { City } from '@pharmacy-skg/core';
+import { inGreece } from '@pharmacy-skg/core';
+import { iteqDutyLists, type IteqGrouping, type IteqSector } from '../iteq/lists.ts';
 import type { IteqCard } from '../iteq/parse.ts';
 import type { Warning } from '../registry/build.ts';
 import type { Meta } from '../schema.ts';
@@ -22,7 +23,11 @@ export interface IteqArea {
   readonly host: string;
   /** The association, credited as the source of the duty lists. */
   readonly association: Meta['sources'][number];
-  readonly sectors: readonly IteqSector[];
+  /**
+   * The sectors, when the cards print them (Larissa); otherwise the whole area is one group and
+   * each card's place is the pharmacy's locality.
+   */
+  readonly sectors?: readonly IteqSector[];
   readonly rules: ValidationRules;
   readonly geocoding?: GeocodeArea;
 }
@@ -34,11 +39,10 @@ const OSM_CREDIT: Meta['sources'][number] = {
   note: 'Geocoding via Nominatim, ODbL, where the list gives no coordinates',
 };
 
-function inside([west, south, east, north]: Bounds, point: { lat: number; lon: number }): boolean {
-  return point.lon >= west && point.lon <= east && point.lat >= south && point.lat <= north;
-}
-
 export function iteqPipeline(area: IteqArea): CityPipeline {
+  const grouping: IteqGrouping = area.sectors
+    ? { kind: 'sectors', sectors: area.sectors }
+    : { kind: 'area', id: area.city.defaultGroupId, name: area.city.name.el };
   return {
     city: area.city,
     sources: [area.association, OSM_CREDIT],
@@ -74,7 +78,7 @@ export function iteqPipeline(area: IteqArea): CityPipeline {
           });
           continue;
         }
-        const { lists, warnings } = iteqDutyLists(page, date, area.sectors);
+        const { lists, warnings } = iteqDutyLists(page, date, grouping);
         failures.push(...warnings);
         for (const list of lists)
           items.push({ list, source: { url: `${client.origin}/`, uploadedAt } });
@@ -90,12 +94,13 @@ export function iteqPipeline(area: IteqArea): CityPipeline {
           continue;
         try {
           const point = await client.details(id);
-          if (point && inside(area.city.bounds, point)) {
+          // The area's own bounds are only roughly known: anywhere in Greece is believed.
+          if (point && inGreece(point)) {
             locations.set(card.phone, { ...point, ref });
           } else {
             failures.push({
               code: 'no-listed-location',
-              message: `${ref}: ${point ? `${point.lat}, ${point.lon} is outside the area` : 'no coordinates'} (${card.name})`,
+              message: `${ref}: ${point ? `${point.lat}, ${point.lon} is outside Greece` : 'no coordinates'} (${card.name})`,
             });
           }
         } catch (error) {
