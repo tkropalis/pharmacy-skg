@@ -8,7 +8,7 @@ Written by the scheduled pipeline (`packages/ingest`, workflow `update-data.yml`
 data/
   schema/                         JSON Schema for each published file (pnpm --filter @pharmacy-skg/ingest schema)
   <city>/
-    meta.json                     last change, coverage and source credits
+    meta.json                     last check, last change, coverage and source credits
     pharmacies.json               every pharmacy in an official list, with its location
     duties/<YYYY-MM-DD>.json      officially published duty lists for one day, per area group
     extended-hours/<from>_<to>.json  the ΠΚΜ extended-hours list for one period

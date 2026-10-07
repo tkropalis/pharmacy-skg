@@ -17,7 +17,7 @@ import { DATA_BASE_PATH } from '../../lib/data.ts';
 import { telUrl } from '../../lib/directions.ts';
 import { upcomingDuties } from '../../lib/duties.ts';
 import { coverage, distanceMetres, publishedDuties } from '../../lib/engine.ts';
-import { formatUpdatedShort } from '../../lib/freshness.ts';
+import { checkedAt, formatUpdatedShort } from '../../lib/freshness.ts';
 import { whenIdle } from '../../lib/idle.ts';
 import { groupList, groupNames, groupNear } from '../../lib/groups.ts';
 import { deviceZoneDiffers, fill, shortIsoDate } from '../../lib/format.ts';
@@ -876,8 +876,8 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
           {meta && (
             <a href={`${localizedPath(locale, 'about')}#credits`}>
               {text.source.tiny}{' '}
-              <time dateTime={meta.updatedAt}>
-                {formatUpdatedShort(meta.updatedAt, now, locale)}
+              <time dateTime={checkedAt(meta)}>
+                {formatUpdatedShort(checkedAt(meta), now, locale)}
               </time>
             </a>
           )}

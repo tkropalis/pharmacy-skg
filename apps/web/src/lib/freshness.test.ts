@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { runInNewContext } from 'node:vm';
 import { describe, expect, it } from 'vitest';
-import { formatUpdatedAt, isStale } from './freshness.ts';
+import { checkedAt, formatUpdatedAt, isStale } from './freshness.ts';
 
 const updatedAt = '2026-10-04T23:04:48.920Z';
 const hours = (h: number) => new Date(Date.parse(updatedAt) + h * 3_600_000);
@@ -22,6 +22,18 @@ describe('isStale', () => {
 
   it('is not stale for a timestamp slightly in the future (clock skew)', () => {
     expect(isStale(updatedAt, hours(-2))).toBe(false);
+  });
+});
+
+describe('checkedAt', () => {
+  it('is the last check, which runs even when nothing changed', () => {
+    expect(checkedAt({ updatedAt, checkedAt: '2026-10-07T10:58:49.000Z' })).toBe(
+      '2026-10-07T10:58:49.000Z',
+    );
+  });
+
+  it('falls back to the last change in a meta file written before checks were recorded', () => {
+    expect(checkedAt({ updatedAt })).toBe(updatedAt);
   });
 });
 

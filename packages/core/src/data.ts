@@ -150,7 +150,13 @@ export interface SourceCredit {
 export interface Meta {
   readonly schemaVersion: 1;
   readonly city: string;
+  /** When the data last changed. */
   readonly updatedAt: string;
+  /**
+   * When the sources were last read and validated, changed or not: the age people are shown.
+   * Missing in meta files written before it existed.
+   */
+  readonly checkedAt?: string | undefined;
   readonly duties: { readonly from: IsoDate; readonly to: IsoDate } | null;
   readonly extendedHours: readonly {
     readonly from: IsoDate;

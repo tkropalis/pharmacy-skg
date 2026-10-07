@@ -152,6 +152,10 @@ export const MetaSchema = z.object({
   schemaVersion: z.literal(SCHEMA_VERSION),
   city: z.string(),
   updatedAt: isoDateTime.describe('When the data last changed'),
+  // Optional because meta files written before it existed may still be cached on devices.
+  checkedAt: isoDateTime
+    .optional()
+    .describe('When the sources were last read and validated, changed or not'),
   duties: z.object({ from: isoDate, to: isoDate }).nullable(),
   extendedHours: z.array(z.object({ from: isoDate, to: isoDate, file: z.string() })),
   sources: z.array(SourceCreditSchema),

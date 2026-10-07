@@ -1,8 +1,17 @@
-import type { Locale } from '@pharmacy-skg/core';
+import type { Locale, Meta } from '@pharmacy-skg/core';
 import { GREECE_TIME_ZONE } from '@pharmacy-skg/core';
 import { STALE_AFTER_HOURS } from '../config.ts';
 
 const HOUR_MS = 3_600_000;
+
+/**
+ * The data's age as people see it: when the sources were last checked, changed or not, so an
+ * association that publishes a week of duties at once does not look stale in between. Meta
+ * files from before the check was recorded (still cached on devices) give their last change.
+ */
+export function checkedAt(meta: Pick<Meta, 'updatedAt' | 'checkedAt'>): string {
+  return meta.checkedAt ?? meta.updatedAt;
+}
 
 /**
  * True when the data is older than the threshold, or when its timestamp is unusable (we would
