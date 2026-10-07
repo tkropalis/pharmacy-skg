@@ -1,5 +1,5 @@
 import { t } from '../src/i18n/index.ts';
-import { expect, test, waitForRows } from './support.ts';
+import { expect, test, waitForMap, waitForRows } from './support.ts';
 
 const text = t('el').app;
 /** Tuesday night: Larissa's lists start on 6 Oct 2026 (day duty until 23:00, one overnight). */
@@ -35,6 +35,35 @@ test.describe('another city', () => {
     await page.reload();
     await waitForRows(page);
     await expect(page.getByText(text.summary.dutyOnly)).toBeVisible();
+  });
+});
+
+test.describe('moving the map', () => {
+  test.use({ permissions: [] });
+
+  test('into another city shows its pharmacies, without typing it', async ({ page }) => {
+    // Without the animations each move ends at once.
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    await page.goto('/');
+    await waitForRows(page);
+    await waitForMap(page);
+    await expect(page.getByText(text.summary.dutyOnly)).toHaveCount(0);
+
+    // From Thessaloniki at zoom 12 out to 9, then south, past Pieria, into Larissa.
+    const zoomOut = page.locator('.maplibregl-ctrl-zoom-out');
+    for (let i = 0; i < 3; i++) await zoomOut.click();
+    await page.locator('.maplibregl-canvas').focus();
+    const shown = () => page.evaluate(() => localStorage.getItem('pharmacy-skg:city'));
+    await expect(async () => {
+      await page.keyboard.press('ArrowDown');
+      expect(await shown()).toBe('larisa');
+    }).toPass({ timeout: 15_000 });
+
+    // Its list, under the map that moved there (on a phone the list is lowered by then), and
+    // announced with its own count.
+    await expect(page.locator('ol.rows > li.row').first()).toContainText('Εφημερεύει');
+    const count = await page.locator('.summary').first().textContent();
+    await expect(page.locator('.sr-only[role="status"]')).toContainText(count ?? '-');
   });
 });
 
