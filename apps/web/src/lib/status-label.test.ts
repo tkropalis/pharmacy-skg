@@ -154,10 +154,33 @@ describe('describeStatus', () => {
     expect(chosen.short.timing).toBe('until 21:00');
   });
 
+  it('labels an on-call duty: on duty, call first', () => {
+    const status: PharmacyStatus = {
+      state: 'duty-hours-unknown',
+      duty: {
+        date: '2026-10-05',
+        duty: 'on-duty',
+        groupId: 'lakonia',
+        heading: 'H*',
+        onCall: true,
+      },
+      nextOpen: null,
+    };
+    const view = describeStatus({ status, at, live: true, locale: 'el', text: el });
+    expect(view).toMatchObject({
+      kind: 'duty-unknown',
+      label: 'Εφημερεύει, καλέστε πρώτα',
+      short: { label: 'Εφημερεύει', timing: 'καλέστε πρώτα' },
+    });
+    expect(describeStatus({ status, at, live: true, locale: 'en', text: en }).label).toBe(
+      'On duty, call first',
+    );
+  });
+
   it('labels a duty without printed hours', () => {
     const status: PharmacyStatus = {
       state: 'duty-hours-unknown',
-      duty: { date: '2026-10-05', duty: 'on-duty', groupId: 'thermi', heading: 'H' },
+      duty: { date: '2026-10-05', duty: 'on-duty', groupId: 'thermi', heading: 'H', onCall: false },
       nextOpen: null,
     };
     const view = describeStatus({ status, at, live: true, locale: 'el', text: el });

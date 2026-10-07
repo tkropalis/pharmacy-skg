@@ -114,9 +114,12 @@ export function describeStatus(options: {
     case 'duty-hours-unknown':
       return {
         kind,
-        label: text.dutyUnknown,
+        label: status.duty.onCall ? text.onCall : text.dutyUnknown,
         closingSoon: false,
-        short: { label: text.short[kind], timing: text.short.callFirst },
+        short: {
+          label: text.short[kind],
+          timing: status.duty.onCall ? text.short.onCall : text.short.callFirst,
+        },
       };
     case 'closed': {
       const dutyOnly = options.dutyOnly === true;

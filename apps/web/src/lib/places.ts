@@ -11,6 +11,47 @@ export interface Locality {
   readonly groupId: string | null;
   /** Set for another covered city offered in the area picker: choosing it switches to it. */
   readonly cityId?: string;
+  /** For a place in another city: that city's name, shown beside it in the picker. */
+  readonly cityName?: string;
+}
+
+/** Where the national list of places is published, under /data/ (integrations/data.ts). */
+export const PLACES_PATH = 'places.json';
+
+/** One entry of /data/places.json: a place in a covered city, where its pharmacies are. */
+export interface NationalPlace {
+  readonly name: string;
+  readonly cityId: string;
+  readonly lat: number;
+  readonly lon: number;
+  readonly count: number;
+}
+
+function isNationalPlace(value: unknown): value is NationalPlace {
+  if (typeof value !== 'object' || value === null) return false;
+  const place = value as Record<string, unknown>;
+  return (
+    typeof place['name'] === 'string' &&
+    typeof place['cityId'] === 'string' &&
+    typeof place['lat'] === 'number' &&
+    typeof place['lon'] === 'number' &&
+    typeof place['count'] === 'number'
+  );
+}
+
+/**
+ * The places of every covered city, for the area picker; an empty list when they cannot be
+ * read (offline before the first read): the picker still offers the cities themselves.
+ */
+export async function loadNationalPlaces(url: string): Promise<NationalPlace[]> {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) return [];
+    const body: unknown = await response.json();
+    return Array.isArray(body) ? body.filter(isNationalPlace) : [];
+  } catch {
+    return [];
+  }
 }
 
 const greek = new Intl.Collator('el');

@@ -7,7 +7,7 @@ const duty = (
   date: string,
   hours: PublishedDuty['hours'],
   kind: PublishedDuty['duty'] = 'overnight',
-): PublishedDuty => ({ date, groupId: 'metro', duty: kind, heading: 'H', hours });
+): PublishedDuty => ({ date, groupId: 'metro', duty: kind, heading: 'H', hours, onCall: false });
 
 const night = { from: '22:00', to: '08:00', toNextDay: true };
 

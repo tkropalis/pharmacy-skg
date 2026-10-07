@@ -44,6 +44,7 @@ describe('dictionaries', () => {
       openRegular: 'Ανοιχτό',
       openExtended: 'Ανοιχτό',
       dutyUnknown: 'Εφημερεύει, καλέστε για το ωράριο',
+      onCall: 'Εφημερεύει, καλέστε πρώτα',
       notOnDuty: 'Δεν εφημερεύει',
       midnight: 'τα μεσάνυχτα',
     });
@@ -52,6 +53,7 @@ describe('dictionaries', () => {
       openRegular: 'Open',
       openExtended: 'Open',
       dutyUnknown: 'On duty, call for the hours',
+      onCall: 'On duty, call first',
       notOnDuty: 'Not on duty',
       midnight: 'midnight',
     });

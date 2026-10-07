@@ -181,7 +181,12 @@ export async function createMapController(
     style: style as never,
     center: [options.center[0], options.center[1]],
     zoom: options.zoom,
-    minZoom: 8,
+    // All of Greece, from Corfu to Kastellorizo: the Dodecanese alone spans 250 km.
+    minZoom: 5,
+    maxBounds: [
+      [18.5, 34.0],
+      [30.5, 42.5],
+    ],
     maxZoom: 19,
     attributionControl: false,
     dragRotate: false,

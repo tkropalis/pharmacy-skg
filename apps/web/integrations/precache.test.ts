@@ -1,3 +1,4 @@
+import { CITIES } from '@pharmacy-skg/core';
 import { readFileSync } from 'node:fs';
 import { Script, runInNewContext } from 'node:vm';
 import { describe, expect, it } from 'vitest';
@@ -116,7 +117,7 @@ describe('renderServiceWorker', () => {
     expect(output).not.toContain('__BUILD_VERSION__');
     expect(output).not.toContain('__PRECACHE_URLS__');
     expect(output).not.toContain('__PRECACHE_HASHES__');
-    expect(output).toContain('const CITY_IDS = ["thessaloniki","larisa"];');
+    expect(output).toContain(`const CITY_IDS = ${JSON.stringify(CITIES.map((city) => city.id))};`);
     expect(() => new Script(output)).not.toThrow();
   });
 

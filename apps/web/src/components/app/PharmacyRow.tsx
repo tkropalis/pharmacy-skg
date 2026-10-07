@@ -13,7 +13,7 @@ import {
 import type { DirectionsApp } from '../../lib/directions.ts';
 import { fill, formatDistance } from '../../lib/format.ts';
 import type { Row } from '../../lib/list.ts';
-import { displayName } from '../../lib/names.ts';
+import { displayName, placeLine } from '../../lib/names.ts';
 import { pinSvg } from '../../lib/pins.ts';
 import { describeStatus } from '../../lib/status-label.ts';
 import { MAPS_KEY, readItem, writeItem } from '../../lib/storage.ts';
@@ -117,9 +117,7 @@ function PharmacyRowView({
   const target = directionsTarget(pharmacy);
   const name = displayName(pharmacy.name);
   // The city is the default; other places keep their name.
-  const place = [pharmacy.address, pharmacy.locality === cityName ? '' : pharmacy.locality]
-    .filter((part) => part !== '')
-    .join(', ');
+  const place = placeLine(pharmacy.address, pharmacy.locality, cityName);
   const call = pharmacy.phone === null ? null : telUrl(pharmacy.phone);
   const directions = directionsUrl(directionsApp(), target);
   const callLabel = fill(text.row.callLabel, { name });

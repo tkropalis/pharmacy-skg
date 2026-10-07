@@ -5,6 +5,7 @@ import { CONTACT_EMAIL, EMERGENCY_NUMBERS, REPO_URL } from '../../config.ts';
 import { telUrl } from '../../lib/directions.ts';
 import { localizedPath, t } from '../../i18n/index.ts';
 import { fill } from '../../lib/format.ts';
+import { buildMetaFor } from '../../lib/meta.ts';
 
 interface Props {
   locale: Locale;
@@ -16,7 +17,6 @@ const searchCredits = t(locale).search.credits;
 
 const creditLinks: Record<keyof typeof d.credits, string> = {
   fsth: 'https://www.thess.guide/',
-  fsl: 'https://larisa.efhmeries.gr/',
   pkm: 'https://www.pkm.gov.gr/',
   overture: 'https://overturemaps.org/',
   osm: 'https://www.openstreetmap.org/copyright',
@@ -29,11 +29,27 @@ const searchCreditLinks: Record<keyof typeof searchCredits, string> = {
   moh: 'https://www.moh.gov.gr/articles/times-farmakwn/deltia-timwn',
   eof: 'https://www.eof.gr/category/farmaka/eparkeia-farmaka/',
 };
+// Every other area's lists come straight from its own site, credited as the site names itself.
+const dutyCredits = CITIES.filter((city) => city.id !== 'thessaloniki').flatMap((city) => {
+  const source = buildMetaFor(city.id).sources[0];
+  if (source === undefined) return [];
+  return [
+    {
+      text: fill(d.dutyCredit, {
+        area: city.name[locale],
+        source: source.name[locale] ?? source.name.el ?? '',
+      }),
+      url: source.url,
+    },
+  ];
+});
+const [first, ...otherCredits] = (Object.keys(d.credits) as (keyof typeof d.credits)[]).map(
+  (id) => ({ text: d.credits[id], url: creditLinks[id] }),
+);
 const allCredits = [
-  ...(Object.keys(d.credits) as (keyof typeof d.credits)[]).map((id) => ({
-    text: d.credits[id],
-    url: creditLinks[id],
-  })),
+  ...(first ? [first] : []),
+  ...dutyCredits,
+  ...otherCredits,
   ...(Object.keys(searchCredits) as (keyof typeof searchCredits)[]).map((id) => ({
     text: searchCredits[id],
     url: searchCreditLinks[id],

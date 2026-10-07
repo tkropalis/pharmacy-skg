@@ -9,6 +9,7 @@ import type { DutyKind, Locale } from '@pharmacy-skg/core';
  * always text.
  *
  * `midnight` replaces "tomorrow 00:00" as an end time: "έως τα μεσάνυχτα", "until midnight".
+ * `onCall` is a duty whose pharmacist serves whoever phones (some ITeQ lists, marked "*").
  * `notOnDuty` replaces "closed" where a city's regular hours are not known (decision D26): the
  * pharmacy may well be open, only not on duty.
  */
@@ -18,6 +19,7 @@ export const STATUS_LABELS = {
     openRegular: 'Ανοιχτό',
     openExtended: 'Ανοιχτό',
     dutyUnknown: 'Εφημερεύει, καλέστε για το ωράριο',
+    onCall: 'Εφημερεύει, καλέστε πρώτα',
     notOnDuty: 'Δεν εφημερεύει',
     midnight: 'τα μεσάνυχτα',
   },
@@ -26,6 +28,7 @@ export const STATUS_LABELS = {
     openRegular: 'Open',
     openExtended: 'Open',
     dutyUnknown: 'On duty, call for the hours',
+    onCall: 'On duty, call first',
     notOnDuty: 'Not on duty',
     midnight: 'midnight',
   },

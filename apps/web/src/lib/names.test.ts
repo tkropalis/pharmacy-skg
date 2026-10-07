@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { displayName } from './names.ts';
+import { displayName, placeLine } from './names.ts';
 
 describe('displayName', () => {
   it.each([
@@ -32,5 +32,18 @@ describe('displayName', () => {
 
   it('never returns an empty name', () => {
     expect(displayName('Ο.Ε.')).toBe('Ο.Ε.');
+  });
+});
+
+describe('placeLine', () => {
+  it('gives the address and the locality, without the city', () => {
+    expect(placeLine('ΚΛΕΟΜΒΡΟΤΟΥ 13', 'Σπάρτη', 'Λακωνία')).toBe('ΚΛΕΟΜΒΡΟΤΟΥ 13, Σπάρτη');
+    expect(placeLine('ΤΣΙΜΙΣΚΗ 10', 'Θεσσαλονίκη', 'Θεσσαλονίκη')).toBe('ΤΣΙΜΙΣΚΗ 10');
+    expect(placeLine('', 'Εξοχή', 'Θεσσαλονίκη')).toBe('Εξοχή');
+  });
+
+  it('writes a place printed as the address once, as the locality is spelled', () => {
+    expect(placeLine('ΞΗΡΟΚΑΜΠΙ', 'Ξηροκάμπι', 'Λακωνία')).toBe('Ξηροκάμπι');
+    expect(placeLine('ΤΗΝΟΣ', 'Τήνος', 'Τήνος')).toBe('ΤΗΝΟΣ');
   });
 });

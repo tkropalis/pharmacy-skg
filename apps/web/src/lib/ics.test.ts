@@ -21,6 +21,7 @@ const duty = (date: string, hours: { from: string; to: string; toNextDay: boolea
   duty: 'overnight' as const,
   heading: 'ΔΙΑΝΥΚΤΕΡΕΥΟΝΤΑ, από 22:00 έως 08:00',
   hours,
+  onCall: false,
 });
 const now = new Date('2026-10-05T10:00:00Z');
 
