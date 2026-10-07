@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T07:49:26.779Z"
+        "uploadedAt": "2026-10-07T11:27:33.532Z"
       },
       "sections": [
         {
@@ -34,6 +34,26 @@
               "address": "28ης ΟΚΤΩΒΡΙΟΥ 1",
               "locality": "Ιστιαία",
               "phone": "2226052506"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221082278",
+              "name": "ΜΕΤΑΞΩΤΟΣ ΣΩΤΗΡΙΟΣ",
+              "address": "ΤΣΙΡΙΓΩΤΗ 5 - ΠΛΑΤΕΙΑ ΑΓ.ΝΙΚΟΛΑΟΥ",
+              "locality": "Χαλκίδα",
+              "phone": "2221082278"
             }
           ]
         },
@@ -102,26 +122,6 @@
               "address": "ΕΥΒΟΙΑΣ 49 ΠΛΗΣΙΟΝ ΤΕΧΝΙΚΟΥ ΛΥΚΕΙΟΥ",
               "locality": "Χαλκίδα",
               "phone": "2221087998"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "14:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "14:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221082278",
-              "name": "ΜΕΤΑΞΩΤΟΣ ΣΩΤΗΡΙΟΣ",
-              "address": "ΤΣΙΡΙΓΩΤΗ 5 - ΠΛΑΤΕΙΑ ΑΓ.ΝΙΚΟΛΑΟΥ",
-              "locality": "Χαλκίδα",
-              "phone": "2221082278"
             }
           ]
         }

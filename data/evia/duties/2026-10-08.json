@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T07:49:26.779Z"
+        "uploadedAt": "2026-10-07T11:27:33.532Z"
       },
       "sections": [
         {
@@ -39,6 +39,26 @@
           ]
         },
         {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 17:30",
+          "hours": {
+            "from": "14:00",
+            "to": "17:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221077929",
+              "name": "ΚΟΥΚΗ ΜΑΡΙΑΝΘΗ",
+              "address": "ΝΕΟΦΥΤΟΥ 10",
+              "locality": "Χαλκίδα",
+              "phone": "2221077929"
+            }
+          ]
+        },
+        {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
@@ -62,26 +82,6 @@
               "address": "ΠΛΗΣΙΟΝ Κ.Υ. ΙΣΤΙΑΙΑΣ",
               "locality": "Ιστιαία",
               "phone": "2226053155"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "14:00 ΕΩΣ 17:30",
-          "hours": {
-            "from": "14:00",
-            "to": "17:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221077929",
-              "name": "ΚΟΥΚΗ ΜΑΡΙΑΝΘΗ",
-              "address": "ΝΕΟΦΥΤΟΥ 10",
-              "locality": "Χαλκίδα",
-              "phone": "2221077929"
             }
           ]
         },
