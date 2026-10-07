@@ -7,9 +7,29 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T07:51:03.115Z"
+        "uploadedAt": "2026-10-07T10:59:48.045Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "13:30 ΕΩΣ 17:30",
+          "hours": {
+            "from": "13:30",
+            "to": "17:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331025130",
+              "name": "ΚΑΛΟΚΥΡΗ ΕΛΙΣΑΒΕΤ",
+              "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 28",
+              "locality": "Βέροια",
+              "phone": "2331025130"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "08:00 ΠΡΩΙ ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -55,26 +75,6 @@
               "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 180-ΜΑΚΡΟΧΩΡΙ",
               "locality": "Μακροχώρι",
               "phone": "2331041833"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "13:30 ΕΩΣ 17:30",
-          "hours": {
-            "from": "13:30",
-            "to": "17:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2331025130",
-              "name": "ΚΑΛΟΚΥΡΗ ΕΛΙΣΑΒΕΤ",
-              "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 28",
-              "locality": "Βέροια",
-              "phone": "2331025130"
             }
           ]
         },

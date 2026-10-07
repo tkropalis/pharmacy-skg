@@ -7,7 +7,7 @@
       "name": "Κορινθία",
       "source": {
         "url": "https://korinthia.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T07:55:28.059Z"
+        "uploadedAt": "2026-10-07T11:00:32.185Z"
       },
       "sections": [
         {
@@ -166,46 +166,6 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741076210",
-              "name": "ΓΙΑΝΝΟΥ ΜΙΧ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
-              "address": "Γ.ΠΑΠΑΝΔΡΕΟΥ 45",
-              "locality": "Κόρινθος",
-              "phone": "2741076210"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741076210",
-              "name": "ΓΙΑΝΝΟΥ ΜΙΧ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
-              "address": "Γ.ΠΑΠΑΝΔΡΕΟΥ 45",
-              "locality": "Κόρινθος",
-              "phone": "2741076210"
-            }
-          ]
-        },
-        {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
@@ -292,6 +252,46 @@
               "address": "ΒΕΛΟ",
               "locality": "Βέλο",
               "phone": "2742033488"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741076210",
+              "name": "ΓΙΑΝΝΟΥ ΜΙΧ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "Γ.ΠΑΠΑΝΔΡΕΟΥ 45",
+              "locality": "Κόρινθος",
+              "phone": "2741076210"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741076210",
+              "name": "ΓΙΑΝΝΟΥ ΜΙΧ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "Γ.ΠΑΠΑΝΔΡΕΟΥ 45",
+              "locality": "Κόρινθος",
+              "phone": "2741076210"
             }
           ]
         }
