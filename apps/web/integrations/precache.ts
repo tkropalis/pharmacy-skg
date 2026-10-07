@@ -23,14 +23,17 @@ const PARAM_PAGES = Object.values(PARAM_ROUTES).flatMap((route) =>
 );
 
 /**
- * The index of duty dates lists the published dates, so it changes every day and with every
- * data update; precaching it would make a new service worker version out of each of them. It
- * is fetched when visited.
+ * The index pages of the duty dates and the areas carry the data (the published dates, each
+ * area's number of pharmacies, when the data last changed), so they change with every data
+ * update; precaching them would make a new service worker version, and a "new version" notice
+ * for everyone, out of each of them. They are fetched when visited.
  */
-const DUTY_INDEXES = LOCALES.map((locale) => {
-  const directory = `${localePrefix(locale)}/${PARAM_ROUTES.duty[locale]}`.replace(/^\//, '');
-  return new RegExp(`^${directory}/index\\.html$`);
-});
+const DATA_INDEXES = (['duty', 'area'] as const).flatMap((route) =>
+  LOCALES.map((locale) => {
+    const directory = `${localePrefix(locale)}/${PARAM_ROUTES[route][locale]}`.replace(/^\//, '');
+    return new RegExp(`^${directory}/index\\.html$`);
+  }),
+);
 
 /**
  * The map: the MapLibre chunk, its worker files and its stylesheet (about 0.45 MB gzipped).
@@ -53,7 +56,7 @@ const EXCLUDED = [
   /^og-image\.png$/,
   /\.map$/,
   ...LAZY_MAP,
-  ...DUTY_INDEXES,
+  ...DATA_INDEXES,
   ...PARAM_PAGES,
 ];
 
