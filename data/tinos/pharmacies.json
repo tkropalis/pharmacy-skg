@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2283022213",
+      "name": "ΑΠΕΡΓΗΣ ΕΜΜΑΝΟΥΗΛ / APERGIS EMMANOUIL",
+      "address": "ΤΡΙΩΝ ΙΕΡΑΡΧΩΝ 2 / TRION IERARXON 2",
+      "locality": "Τήνος",
+      "postcode": null,
+      "phone": "2283022213",
+      "groupId": "tinos",
+      "sources": [
+        "iteq-tinos"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.537069,
+        "lon": 25.163127,
+        "ref": "https://cyclades.efhmeries.gr/Home/Details/1096",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2283022272",
+      "name": "Σ/Φ ΚΡΙΚΕΛΗ - ΒΕΡΣΑΛΗΣ / KRIKELI - VERSALIS",
+      "address": "ΠΛΑΤΕΙΑ ΠΑΝΤΑΝΑΣΣΗΣ 21 / PANTANASSIS SQUARE 21",
+      "locality": "Τήνος",
+      "postcode": null,
+      "phone": "2283022272",
+      "groupId": "tinos",
+      "sources": [
+        "iteq-tinos"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.537784,
+        "lon": 25.161514,
+        "ref": "https://cyclades.efhmeries.gr/Home/Details/1400",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2283022400",
+      "name": "ΦΑΝΕΡΟΥ ΕΙΡΗΝΗ / FANEROU EIRINI",
+      "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΑΣ 1",
+      "locality": "Τήνος",
+      "postcode": null,
+      "phone": "2283022400",
+      "groupId": "tinos",
+      "sources": [
+        "iteq-tinos"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 37.5361951,
+        "lon": 25.1639368,
+        "ref": "https://cyclades.efhmeries.gr/Home/Details/1339",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2283022500",
+      "name": "ΚΩΣΤΑ ΕΥΦΡΟΣΥΝΗ / KOSTA EFROSINI",
+      "address": "ΚΩΝ/ΝΟΥ ΑΛΑΒΑΝΟΥ 8 / KONSTANTINOU ALAVANOU 8",
+      "locality": "Τήνος",
+      "postcode": null,
+      "phone": "2283022500",
+      "groupId": "tinos",
+      "sources": [
+        "iteq-tinos"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.5357339,
+        "lon": 25.1648691,
+        "ref": "https://cyclades.efhmeries.gr/Home/Details/1278",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2283023888",
+      "name": "ΧΑΤΖΗΛΟΥΗ ΦΡΑΓΚΙΣΚΑ / XATZILOUI FRAGISKA",
+      "address": "ΖΑΝΝΑΚΗ ΑΛΑΒΑΝΟΥ 7 / ZANNAKI ALAVANOU 7",
+      "locality": "Τήνος",
+      "postcode": null,
+      "phone": "2283023888",
+      "groupId": "tinos",
+      "sources": [
+        "iteq-tinos"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.536766,
+        "lon": 25.165323,
+        "ref": "https://cyclades.efhmeries.gr/Home/Details/1157",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

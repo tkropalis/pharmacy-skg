@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "groups": [
+    {
+      "id": "fthiotida",
+      "name": "Φθιώτιδα",
+      "source": {
+        "url": "https://fthiotida.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T08:04:22.536Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:00",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231030161",
+              "name": "ΚΟΣΠΕΝΤΑΡΗ ΠΟΛΥΞΕΝΗ",
+              "address": "ΛΕΩΣΘΕΝΟΥΣ ΔΕΔΟΥΣΗ 11",
+              "locality": "Λαμία",
+              "phone": "2231030161"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231024872",
+              "name": "ΧΑΝΤΖΗΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΒΥΡΩΝΟΣ ΚΑΙ ΚΑΡΑΓΙΑΝΝΟΠΟΥΛΟΥ 11",
+              "locality": "Λαμία",
+              "phone": "2231024872"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231024872",
+              "name": "ΧΑΝΤΖΗΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΒΥΡΩΝΟΣ ΚΑΙ ΚΑΡΑΓΙΑΝΝΟΠΟΥΛΟΥ 11",
+              "locality": "Λαμία",
+              "phone": "2231024872"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2235023710",
+              "name": "ΓΚΟΛΦΟΜΗΤΣΟΥ ΑΓΓΕΛΙΚΗ",
+              "address": "ΓΕΡΑΣΙΜΟΥ ΒΑΣΙΛΕΙΑΔΗ 12",
+              "locality": "Καμένα Βούρλα",
+              "phone": "2235023710"
+            },
+            {
+              "pharmacyId": "2233022380",
+              "name": "ΛΑΓΓΟΥΡΑ ΕΛΕΝΗ",
+              "address": "ΑΙΑΝΤΟΣ ΛΟΚΡΟΥ 2",
+              "locality": "Αταλάντη",
+              "phone": "2233022380"
+            },
+            {
+              "pharmacyId": "2238022797",
+              "name": "ΜΙΧΑΣ ΙΩΑΝΝΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+              "address": "ΛΑΜΙΑΣ 20",
+              "locality": "Στυλίδα",
+              "phone": "2238022797"
+            },
+            {
+              "pharmacyId": "2233031911",
+              "name": "ΠΑΠΑΕΥΑΓΓΕΛΙΟΥ ΑΙΜΙΛΙΟΣ",
+              "address": "ΣΟΥΡΟΠΑΝΗ",
+              "locality": "Λιβανάτες",
+              "phone": "2233031911"
+            },
+            {
+              "pharmacyId": "2235051344",
+              "name": "ΣΑΚΕΛΛΑΡΟΠΟΥΛΟΣ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΛΕΩΝΙΔΟΥ 2",
+              "locality": "Μώλος",
+              "phone": "2235051344"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2235031900",
+              "name": "ΠΑΠΑΚΩΝΣΤΑΝΤΙΝΟΥ ΜΑΡΙΟΣ",
+              "address": "ΚΑΡΑΙΣΚΑΚΗ 20",
+              "locality": "Άγιος Κωνσταντίνος",
+              "phone": "2235031900"
+            },
+            {
+              "pharmacyId": "2236022766",
+              "name": "Σ.Φ. ΚΕΛΕΣΙΑΔΟΥ ΕΥΣ. - ΚΟΥΤΡΑΣ ΜΙΧ. & ΚΟΥΤΡΑ ΔΗΜ.",
+              "address": "ΜΑΚΡΑΚΩΜΗ",
+              "locality": "Μακρακώμη",
+              "phone": "2236022766"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

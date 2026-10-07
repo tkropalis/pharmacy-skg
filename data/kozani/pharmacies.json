@@ -1,0 +1,656 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2461022332",
+      "name": "Σ.Φ ΣΚΛΙΒΑΝΟΣ ΠΑΝΑΓΙΩΤΗΣ-ΧΑΡΑΜΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ο.Ε",
+      "address": "ΦΙΛΊΠΠΟΥ Β 39",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461022332",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.3025761,
+        "lon": 21.7997195,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6579",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461022452",
+      "name": "ΚΩΤΟΥΛΑΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΧΑΡΙΣΗ ΠΑΥΛΟΥ 20",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461022452",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.3003363,
+        "lon": 21.7853633,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6272",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461024433",
+      "name": "ΤΥΦΟΞΥΛΟΥ ΕΛΕΝΗ",
+      "address": "ΠΑΥΛΟΥ ΜΕΛΑ 12",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461024433",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.3026887,
+        "lon": 21.7884083,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6580",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461026612",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 7",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461026612",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.298405,
+        "lon": 21.7941875,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6017",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461028797",
+      "name": "ΧΑΡΑΜΗ ΤΕΡΕΖΑ",
+      "address": "11ΗΣ ΟΚΤΩΒΡΙΟΥ 49",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461028797",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.2992562,
+        "lon": 21.7975878,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/5917",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461029800",
+      "name": "ΓΚΙΝΟΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΟΛΥΜΠΟΥ 21",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461029800",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.297577,
+        "lon": 21.79156,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6271",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461030082",
+      "name": "ΠΑΥΛΙΔΗΣ ΘΕΟΔΩΡΟΣ",
+      "address": "ΤΡΙΑΝΤΑΦΥΛΛΙΔΗ ΞΕΝΟΦΩΝ 15",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461030082",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.3002682,
+        "lon": 21.7872736,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6273",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461031755",
+      "name": "ΔΙΚΟΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΔΗΜΟΚΡΑΤΙΑΣ 42",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461031755",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.3042722,
+        "lon": 21.7845547,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6270",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461031783",
+      "name": "Σ.Φ ΣΤΕΦΑΝΟΥ ΛΑΖΑΡΟΣ ΚΑΙ ΑΡΙΣΤΑΡΧΟΣ Ο.Ε",
+      "address": "ΠΛ. ΝΙΚΗΣ 16",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461031783",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.3011197,
+        "lon": 21.7884062,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/5734",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461033529",
+      "name": "ΜΑΤΙΑΚΗ ΗΛΙΑΝΑ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 2",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461033529",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.3005753,
+        "lon": 21.7893697,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/5690",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461033622",
+      "name": "ΚΤΕΝΙΔΗΣ ΣΑΒΒΑΣ",
+      "address": "Ι. ΤΡΑΝΤΑ 37",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461033622",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 40.2977716,
+        "lon": 21.7868661,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6016",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461034995",
+      "name": "ΧΑΡΑΜΗ ΜΑΡΙΑΝΝΑ",
+      "address": "ΟΛΥΜΠΙΟΥ ΓΕΩΡΓΑΚΗ 5",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461034995",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 40.3022471,
+        "lon": 21.7861325,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6467",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461037282",
+      "name": "ΣΠΑΧΙΔΟΥ ΑΡΧΟΝΤΙΑ",
+      "address": "ΦΟΝ ΚΟΖΑΝΗ 15 ΚΑΙ ΙΟΥΣΤΙΝΙΑΝΟΥ",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461037282",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.3029871,
+        "lon": 21.785236,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/5692",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461038003",
+      "name": "ΦΛΩΡΟΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΜΕΘΩΝΗΣ 1",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461038003",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 40.3013913,
+        "lon": 21.7931379,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6466",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461039107",
+      "name": "ΑΝΔΡΕΑΔΟΥ ΑΛΕΞΑΝΔΡΑ",
+      "address": "ΠΛ. 28ης ΟΚΤΩΒΡΙΟΥ 14",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461039107",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 40.3005239,
+        "lon": 21.7890545,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6465",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461040190",
+      "name": "Σ.Φ ΠΑΠΑΔΟΠΟΥΛΟΥ ΑΙΚ-Π. ΚΑΙ ΠΑΠΑΔΟΠΟΥΛΟΥ Ν-ΒΑΣ",
+      "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 50",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461040190",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.2999642,
+        "lon": 21.7913391,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6275",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463022288",
+      "name": "ΜΗΓΚΟΥ ΧΑΡΙΚΛΕΙΑ",
+      "address": "ΒΑΣΙΛΙΣΣΗΣ ΣΟΦΙΑΣ 29 (Απέναντι από τα υποδήματα Migato)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463022288",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.5135151,
+        "lon": 21.6771104,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/7247",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463022412",
+      "name": "ΜΠΙΝΤΣΗ - ΚΟΜΠΟΥ ΕΛΕΝΗ",
+      "address": "ΠΕΡΔΙΚΚΑ 22 (Δίπλα στον φούρνο Χατζής )",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463022412",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.5119644,
+        "lon": 21.6772422,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6787",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463022855",
+      "name": "ΣΠΥΡΙΔΩΝΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 5 (Πρώην κατάστημα BENETTON)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463022855",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.5132163,
+        "lon": 21.6789042,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6895",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463022922",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΦΑΝΗ",
+      "address": "ΠΟΝΤΟΥ 22 (Κάτω από το μικροβιολογικό εργαστήριο Χατζηπαντελή)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463022922",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 40.5135273,
+        "lon": 21.6768451,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6896",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463023124",
+      "name": "ΧΑΛΔΟΥΠΗ ΣΤΕΛΛΑ",
+      "address": "ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ 16",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463023124",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 40.51283,
+        "lon": 21.6778108,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6998",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463023224",
+      "name": "ΒΕΛΟΝΑ ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "Β.ΚΩΝ/ΝΟΥ 43 (Απέναντι από το FLOKA δίπλα στη ΜΕΛΩΔΙΑ)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463023224",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.512248,
+        "lon": 21.6769504,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/7246",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463023331",
+      "name": "ΑΝΤΩΝΙΑΔΗΣ ΑΝΤΩΝΙΟΣ",
+      "address": "25ΗΣ ΜΑΡΤΙΟΥ 39 (Κεντρική πλατεία-Δίπλα στην ALPHA BANK)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463023331",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.5130545,
+        "lon": 21.6791985,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6683",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463023344",
+      "name": "ΔΑΛΛΑΣ ΑΝΤ. ΑΓΓΕΛΟΣ",
+      "address": "Π. ΤΣΑΛΔΑΡΗ 10 (Απέναντι από το παλιό Πάρκο)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463023344",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 40.5113848,
+        "lon": 21.6798764,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6997",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463023440",
+      "name": "ΣΙΔΗΡΟΠΟΥΛΟΣ ΧΑΡΙΤΩΝ",
+      "address": "ΠΑΥΛΙΔΗ ΑΔΑΜΟΠΟΥΛΟΥ 1 (Πιάτσα ΤΑΞΙ)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463023440",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 40.5140893,
+        "lon": 21.6800212,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/7404",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463024054",
+      "name": "ΜΥΛΩΝΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΓΟΝΑΤΑ 1 (Απέναντι από το Κέντρο Υγείας πρώην ιατρεία ΔΕΗ)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463024054",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.514963,
+        "lon": 21.6802478,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6788",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463024539",
+      "name": "ΑΝΑΣΤΑΣΙΑΔΟΥ ΡΟΒΕΝΤΙΝΑ - ΧΑΤΖΟΠΟΥΛΟΥ ΡΟΥΘ",
+      "address": "25ΗΣ ΜΑΡΤΙΟΥ 56 (Παραδίπλα από την Τράπεζα Πειραιώς)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463024539",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.5154229,
+        "lon": 21.680099,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/7245",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463026177",
+      "name": "Σ.Φ. ΣΑΡΑΦΟΓΛΟΥ ΑΘΑΝΑΣΙΑ - ΤΣΑΧΟΥΡΙΔΟΥ ΒΑΣΙΛΙΚΗ",
+      "address": "ΜΕΓΑΛΟΥ ΑΛΕΞΑΝΔΡΟΥ 8 (Δίπλα στα Hondos Center)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463026177",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.5125784,
+        "lon": 21.6791469,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/7403",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463026259",
+      "name": "ΧΙΩΤΗΣ ΕΥΣΤΑΘΙΟΣ",
+      "address": "25ΗΣ ΜΑΡΤΙΟΥ 73 (Προς το Υδραγωγείο)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463026259",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.5164238,
+        "lon": 21.6801989,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6684",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463027271",
+      "name": "Σ.Φ. ΤΣΑΒΛΗ ΤΣΟΛΑΚΗ ΠΗΝΕΛΟΠΗ - ΧΑΤΖΗΕΥΣΤΡΑΤΙΟΥ ΕΛΕΥΘΕΡΙΑ & ΣΙΑ Ο.Ε.",
+      "address": "ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ & ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΗΣ (Γωνία έναντι Δ.Ε.Τ.Η.Π.)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463027271",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.5126475,
+        "lon": 21.6774642,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/7250",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463054688",
+      "name": "ΚΩΤΣΙΔΟΥ ΜΕΛΠΟΜΕΝΗ",
+      "address": "Β. ΚΩΝ/ΝΟΥ 61 (Μετά τον Τσιφτσάκη-Δίπλα στον Πουλτίδη)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463054688",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.511562,
+        "lon": 21.6756726,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/7506",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

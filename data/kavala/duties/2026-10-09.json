@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "groups": [
+    {
+      "id": "kavala",
+      "name": "Καβάλα",
+      "source": {
+        "url": "https://kavala.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:54:15.572Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510226813",
+              "name": "ΚΡΑΒΒΑΡΙΤΗΣ ΙΩΑΝΝΗΣ Ο.Ε.",
+              "address": "ΥΔΡΑΣ 3",
+              "locality": "Καβάλα",
+              "phone": "2510226813"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510229257",
+              "name": "ΖΑΜΠΟΥΛΗΣ ΒΑΣΙΛΕΙΟΣ Α.",
+              "address": "ΜΗΤΡΟΠΟΛΙΤΟΥ ΧΡΥΣΟΣΤΟΜΟΥ 6",
+              "locality": "Καβάλα",
+              "phone": "2510229257"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

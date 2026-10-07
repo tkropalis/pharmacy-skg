@@ -1,0 +1,635 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2231024872",
+      "name": "ΧΑΝΤΖΗΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΒΥΡΩΝΟΣ ΚΑΙ ΚΑΡΑΓΙΑΝΝΟΠΟΥΛΟΥ 11",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231024872",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 38.8995457,
+        "lon": 22.4325215,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11776",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2231025490",
+      "name": "ΚΟΛΟΚΥΘΑΣ ΕΥΑΓΓΕΛΟΣ",
+      "address": "ΚΑΖΟΥΛΗ 2",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231025490",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 38.9031499,
+        "lon": 22.4318697,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11778",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2231025544",
+      "name": "ΥΦΑΝΤΗ ΕΥΑΓΓΕΛΙΑ",
+      "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 12",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231025544",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 38.8998393,
+        "lon": 22.4355265,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11774",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2231028835",
+      "name": "ΠΑΠΟΥΤΣΑ ΚΑΛΛΙΟΠΗ",
+      "address": "ΣΑΤΩΒΡΙΑΝΔΟΥ 4",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231028835",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 38.8989625,
+        "lon": 22.4340591,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11771",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2231030161",
+      "name": "ΚΟΣΠΕΝΤΑΡΗ ΠΟΛΥΞΕΝΗ",
+      "address": "ΛΕΩΣΘΕΝΟΥΣ ΔΕΔΟΥΣΗ 11",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231030161",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 38.8987754,
+        "lon": 22.4353708,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11775",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2231030510",
+      "name": "ΛΑΓΟΥ ΧΡΥΣΑΦΟΥΛΑ-ΕΙΡΗΝΗ",
+      "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 12",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231030510",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 38.8998057,
+        "lon": 22.4353971,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11769",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2231033790",
+      "name": "ΚΟΛΟΚΥΘΑ ΕΛΠΙΔΑ",
+      "address": "ΠΑΠΑΦΛΕΣΣΑ 3",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231033790",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 38.8971671,
+        "lon": 22.4393569,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11772",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2231037594",
+      "name": "ΚΩΣΤΑΚΟΠΟΥΛΟΥ ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "ΚΑΡΑΝΤΖΑΒΕΛΟΥ 105 - ΡΟΔΙΤΣΑ",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231037594",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.8887395,
+        "lon": 22.4633697,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11781",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2231042797",
+      "name": "ΠΑΠΑΝΙΚΟΛΑΟΥ ΣΩΤΗΡΙΑ",
+      "address": "ΛΕΩΝΙΔΟΥ 15",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231042797",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.8988148,
+        "lon": 22.4367133,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11782",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2231050957",
+      "name": "ΡΕΤΣΙΟΥ ΧΡΥΣΑ",
+      "address": "ΑΘΗΝΩΝ 25",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231050957",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 38.8937089,
+        "lon": 22.438629,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11773",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2231052993",
+      "name": "ΛΑΣΠΙΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΠΛ.ΛΑΟΥ",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231052993",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 38.9014462,
+        "lon": 22.4335574,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11770",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2233022262",
+      "name": "ΠΑΠΑΝΙΚΟΛΑΟΥ ΜΙΧΑΛΗΣ",
+      "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΗΣ 20",
+      "locality": "Αταλάντη",
+      "postcode": null,
+      "phone": "2233022262",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 38.653995,
+        "lon": 22.9991831,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/8303",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2233022274",
+      "name": "ΘΩΜΑΙΔΗΣ ΘΩΜΑΣ",
+      "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΗΣ 21",
+      "locality": "Αταλάντη",
+      "postcode": null,
+      "phone": "2233022274",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 38.6540422,
+        "lon": 22.998775,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/8300",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2233022380",
+      "name": "ΛΑΓΓΟΥΡΑ ΕΛΕΝΗ",
+      "address": "ΑΙΑΝΤΟΣ ΛΟΚΡΟΥ 2",
+      "locality": "Αταλάντη",
+      "postcode": null,
+      "phone": "2233022380",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 38.6535798,
+        "lon": 23.000694,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/8298",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2233023222",
+      "name": "ΖΥΓΟΓΙΑΝΝΗ ΓΕΩΡΓΙΑ",
+      "address": "ΑΙΑΝΤΟΣ ΛΟΚΡΟΥ 14",
+      "locality": "Αταλάντη",
+      "postcode": null,
+      "phone": "2233023222",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.6541266,
+        "lon": 23.0008583,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/8304",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2233031040",
+      "name": "ΜΠΑΚΑΡΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΛΙΒΑΝΑΤΕΣ",
+      "locality": "Λιβανάτες",
+      "postcode": null,
+      "phone": "2233031040",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.7104122,
+        "lon": 23.0488276,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/9040",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2233031911",
+      "name": "ΠΑΠΑΕΥΑΓΓΕΛΙΟΥ ΑΙΜΙΛΙΟΣ",
+      "address": "ΣΟΥΡΟΠΑΝΗ",
+      "locality": "Λιβανάτες",
+      "postcode": null,
+      "phone": "2233031911",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 38.7101372,
+        "lon": 23.0533038,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/9035",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2233080005",
+      "name": "ΤΣΑΜΠΑΣ ΕΥΑΓΓΕΛΟΣ",
+      "address": "ΕΘΝ.ΑΝΤΙΣΤΑΣΕΩΣ 60",
+      "locality": "Αταλάντη",
+      "postcode": null,
+      "phone": "2233080005",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 38.6551803,
+        "lon": 22.9978894,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/8299",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2235023350",
+      "name": "ΠΑΠΑΚΩΝΣΤΑΝΤΙΝΟΥ ΜΙΧΑΗΛ",
+      "address": "ΓΕΡΑΣΙΜΟΥ ΒΑΣΙΛΕΙΑΔΗ 29",
+      "locality": "Καμένα Βούρλα",
+      "postcode": null,
+      "phone": "2235023350",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.7779111,
+        "lon": 22.7844951,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/12075",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2235023710",
+      "name": "ΓΚΟΛΦΟΜΗΤΣΟΥ ΑΓΓΕΛΙΚΗ",
+      "address": "ΓΕΡΑΣΙΜΟΥ ΒΑΣΙΛΕΙΑΔΗ 12",
+      "locality": "Καμένα Βούρλα",
+      "postcode": null,
+      "phone": "2235023710",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 38.7793312,
+        "lon": 22.7869897,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/12070",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2235031770",
+      "name": "ΚΩΛΕΤΗΣ ΒΥΡΩΝ",
+      "address": "ΑΓΙΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "locality": "Άγιος Κωνσταντίνος",
+      "postcode": null,
+      "phone": "2235031770",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.7599237,
+        "lon": 22.8577998,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/8664",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2235031900",
+      "name": "ΠΑΠΑΚΩΝΣΤΑΝΤΙΝΟΥ ΜΑΡΙΟΣ",
+      "address": "ΚΑΡΑΙΣΚΑΚΗ 20",
+      "locality": "Άγιος Κωνσταντίνος",
+      "postcode": null,
+      "phone": "2235031900",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 38.7579434,
+        "lon": 22.856005,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/8659",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2235051344",
+      "name": "ΣΑΚΕΛΛΑΡΟΠΟΥΛΟΣ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΛΕΩΝΙΔΟΥ 2",
+      "locality": "Μώλος",
+      "postcode": null,
+      "phone": "2235051344",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 38.8092056,
+        "lon": 22.6447967,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/10541",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2235051444",
+      "name": "ΠΙΣΛΗ ΓΕΩΡΓΙΑ",
+      "address": "ΘΕΡΜΟΠΥΛΩΝ 2",
+      "locality": "Μώλος",
+      "postcode": null,
+      "phone": "2235051444",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.809628,
+        "lon": 22.6448618,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/10546",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2236022240",
+      "name": "ΑΡΓΥΡΙΟΥ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΜΑΚΡΑΚΩΜΗ",
+      "locality": "Μακρακώμη",
+      "postcode": null,
+      "phone": "2236022240",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 38.9422852,
+        "lon": 22.1167605,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/10179",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2236022384",
+      "name": "ΛΑΜΠΡΑΚΟΠΟΥΛΟΣ ΧΑΡΙΛΑΟΣ",
+      "address": "ΠΛ.ΔΗΜΟΚΡΑΤΙΑΣ 3",
+      "locality": "Μακρακώμη",
+      "postcode": null,
+      "phone": "2236022384",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 38.9416767,
+        "lon": 22.1157712,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/10175",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2236022766",
+      "name": "Σ.Φ. ΚΕΛΕΣΙΑΔΟΥ ΕΥΣ. - ΚΟΥΤΡΑΣ ΜΙΧ. & ΚΟΥΤΡΑ ΔΗΜ.",
+      "address": "ΜΑΚΡΑΚΩΜΗ",
+      "locality": "Μακρακώμη",
+      "postcode": null,
+      "phone": "2236022766",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.9418095,
+        "lon": 22.1163153,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/10174",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2238022797",
+      "name": "ΜΙΧΑΣ ΙΩΑΝΝΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+      "address": "ΛΑΜΙΑΣ 20",
+      "locality": "Στυλίδα",
+      "postcode": null,
+      "phone": "2238022797",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 38.9143787,
+        "lon": 22.6148754,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/9795",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2238023777",
+      "name": "ΜΙΧΑΣ-ΣΑΙΤΗ ΣΥΣΤΕΓΑΣΜΕΝΑ",
+      "address": "ΛΑΜΙΑΣ 86",
+      "locality": "Στυλίδα",
+      "postcode": null,
+      "phone": "2238023777",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 38.9135166,
+        "lon": 22.6099063,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/9794",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2238023928",
+      "name": "Σ.Φ. ΓΚΛΕΤΣΟΣ ΑΘΑΝΑΣΙΟΣ & ΒΙΚΥ",
+      "address": "ΛΑΜΙΑΣ 7",
+      "locality": "Στυλίδα",
+      "postcode": null,
+      "phone": "2238023928",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.9142072,
+        "lon": 22.6152805,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/9792",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

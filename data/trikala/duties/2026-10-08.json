@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-08",
+  "groups": [
+    {
+      "id": "trikala",
+      "name": "Τρίκαλα",
+      "source": {
+        "url": "https://trikala.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T08:04:02.397Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431077297",
+              "name": "ΒΑΣΔΕΚΗΣ ΣΠΥΡΙΔΩΝ",
+              "address": "25ΗΣ ΜΑΡΤΙΟΥ 22",
+              "locality": "Τρίκαλα",
+              "phone": "2431077297"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431077297",
+              "name": "ΒΑΣΔΕΚΗΣ ΣΠΥΡΙΔΩΝ",
+              "address": "25ΗΣ ΜΑΡΤΙΟΥ 22",
+              "locality": "Τρίκαλα",
+              "phone": "2431077297"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431034412",
+              "name": "ΣΙΟΥΛΑΣ ΘΑΝΟΣ",
+              "address": "ΑΣΚΛΗΠΙΟΥ 17",
+              "locality": "Τρίκαλα",
+              "phone": "2431034412"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "18:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "18:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431020290",
+              "name": "ΚΟΥΛΟΥΡΙΔΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΓΑΡΙΒΑΛΔΗ 16 & ΒΥΡΩΝΟΣ",
+              "locality": "Τρίκαλα",
+              "phone": "2431020290"
+            },
+            {
+              "pharmacyId": "2431028876",
+              "name": "ΜΑΝΟΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΜΙΑΟΥΛΗ 3 & ΤΣΙΤΣΑΝΗ",
+              "locality": "Τρίκαλα",
+              "phone": "2431028876"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

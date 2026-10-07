@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2441020151",
+      "name": "Σ/Φ ΣΟΥΦΛΑΚΟΥ ΑΙΚΑΤΕΡΙΝΗ & ΣΟΥΦΛΑΚΟΥ-ΚΩΣΤΗ ΥΒΟΝΝΗ & ΣΙΑ Ο.Ε.",
+      "address": "ΚΑΡΑΙΣΚΑΚΗ 51",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441020151",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 39.3624525,
+        "lon": 21.9201342,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3745",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441020919",
+      "name": "ΝΤΑΝΤΑΜΗΣ ΣΤΕΦΑΝΟΣ & ΣΙΑ Ο.Ε.",
+      "address": "Α.ΠΑΠΑΝΔΡΕΟΥ 6",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441020919",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 39.3655233,
+        "lon": 21.9223087,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3754",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441021126",
+      "name": "ΣΔΟΓΓΟΥ ΧΡΙΣΤΙΝΑ & ΣΙΑ Ο.Ε.",
+      "address": "ΤΡΙΚΑΛΩΝ & Ρ.ΦΕΡΡΑΙΟΥ",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441021126",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 39.3672531,
+        "lon": 21.918125,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3746",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441022103",
+      "name": "ΚΟΡΟΜΠΙΛΗ ΒΑΣΙΛΙΚΗ-ΠΑΝΑΓΙΩΤΑ",
+      "address": "ΗΡ. ΠΟΛΥΤΕΧΝΕΙΟΥ 43",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441022103",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 39.3627512,
+        "lon": 21.9238859,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3743",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441024844",
+      "name": "ΓΟΥΓΟΥΛΑ ΤΡΙΑΝΤΑΦΥΛΛΙΑ",
+      "address": "ΙΕΖΕΚΙΗΛ 9",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441024844",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.3650649,
+        "lon": 21.9256769,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3749",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441025689",
+      "name": "ΚΑΤΣΙΟΥΛΑ ΑΠΟΣΤΟΛΙΑ",
+      "address": "ΤΕΡΜΑ ΤΑΥΡΩΠΟΥ (ΝΟΣΟΚΟΜΕΙΟ)",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441025689",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.3548722,
+        "lon": 21.9085607,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3756",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441027744",
+      "name": "ΑΠΟΣΤΟΛΟΠΟΥΛΟΣ ΗΛΙΑΣ",
+      "address": "ΚΑΡΑΙΣΚΑΚΗ 10",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441027744",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 39.364279,
+        "lon": 21.921154,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3748",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441028093",
+      "name": "ΨΩΧΙΑ ΝΙΚΟΛΕΤΑ",
+      "address": "ΑΛΛΑΜΑΝΗ & ΤΑΛΙΑΔΟΥΡΟΥ",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441028093",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 39.3645775,
+        "lon": 21.9200073,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3752",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441028597",
+      "name": "ΑΡΚΟΜΑΝΗ ΑΜΑΛΙΑ & ΣΙΑ Ε.Ε.",
+      "address": "ΙΕΖΕΚΙΗΛ ΚΑΙ ΓΑΚΙΟΠΟΥΛΟΥ 1-3",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441028597",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 39.365485,
+        "lon": 21.9244162,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3747",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441070500",
+      "name": "ΠΑΝΑΓΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΧΑΡΙΤΟΥ 6",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441070500",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 39.3659792,
+        "lon": 21.9240676,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3751",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441073356",
+      "name": "ΜΟΥΤΑΡΕΛΟΥ ΒΑΪΑ",
+      "address": "ΗΡ ΠΟΛΥΤΕΧΝΕΙΟΥ 33",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441073356",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.3636366,
+        "lon": 21.9239331,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3755",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441073963",
+      "name": "ΠΑΛΑΣΚΑ ΑΠΟΣΤΟΛΙΑ",
+      "address": "Α.ΠΑΠΑΝΔΡΕΟΥ 7",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441073963",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 39.365487,
+        "lon": 21.9221238,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3744",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441076190",
+      "name": "ΤΣΙΝΟΠΟΥΛΟΥ ΣΤΥΛΙΑΝΗ",
+      "address": "ΠΛΑΣΤΗΡΑ 12",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441076190",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 39.4082747,
+        "lon": 21.9653722,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3753",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441304733",
+      "name": "ΖΑΧΟΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΔΙΑΚΟΥ 5",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441304733",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 39.363408,
+        "lon": 21.922118,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3750",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

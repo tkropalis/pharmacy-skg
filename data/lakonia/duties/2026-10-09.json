@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "groups": [
+    {
+      "id": "lakonia",
+      "name": "Λακωνία",
+      "source": {
+        "url": "https://lakonia.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:56:34.175Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2735041679",
+              "name": "ΜΑΡΙΑ ΚΟΥΤΣΟΥΜΠΟΥ ΚΑΙ ΣΙΑ ΟΕ",
+              "address": "ΒΛΑΧΙΩΤΗ",
+              "locality": "Βλαχιώτης",
+              "phone": "2735041679"
+            },
+            {
+              "pharmacyId": "2735022530",
+              "name": "ΜΑΣΤΡΟΓΙΑΝΝΑΚΟΣ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΣΚΑΛΑ",
+              "locality": "Σκάλα",
+              "phone": "2735022530"
+            },
+            {
+              "pharmacyId": "2733029510",
+              "name": "ΜΗΤΣΑΚΟΥ ΜΑΡΙΑ- ΝΕΦΕΛΗ – ΒΑΒΟΥΛΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ο.Ε.",
+              "address": "ΑΡΕΟΠΟΛΗ",
+              "locality": "Αρεόπολη",
+              "phone": "2733029510"
+            },
+            {
+              "pharmacyId": "2731036000",
+              "name": "ΜΠΟΥΤΕΡΑΚΟΥ ΓΕΩΡΓΙΑ",
+              "address": "ΞΗΡΟΚΑΜΠΙ",
+              "locality": "Ξηροκάμπι",
+              "phone": "2731036000"
+            },
+            {
+              "pharmacyId": "2734022265",
+              "name": "Σ.Φ. ΚΩΝΣΤΑΝΤΙΝΟΣ ΠΑΠΟΥΛΗΣ-ΓΕΩΡΓΙΑ ΠΑΠΟΥΛΗ & ΣΙΑ ΟΕ",
+              "address": "ΝΕΑΠΟΛΗ",
+              "locality": "Νεάπολη",
+              "phone": "2734022265"
+            },
+            {
+              "pharmacyId": "2733023677",
+              "name": "Σ.Φ. Λ. ΜΑΝΔΡΑΠΥΛΙΑΣ -Θ. ΜΑΝΔΡΑΠΥΛΙΑ ΛΥΚΙΔΟΥ ΟΕ",
+              "address": "ΒΑΣ. ΠΑΥΛΟΥ 43",
+              "locality": "Γύθειο",
+              "phone": "2733023677"
+            },
+            {
+              "pharmacyId": "2731057757",
+              "name": "Σ.Φ. ΜΠΑΣΚΟΥΡΕΛΟΣ ΧΑΡΑΛΑΜΠΟΣ – ΜΠΑΣΚΟΥΡΕΛΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ο.Ε.",
+              "address": "ΚΑΣΤΟΡΙ",
+              "locality": "Καστόρειο",
+              "phone": "2731057757"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2731025041",
+              "name": "Σ.Φ. ΝΙΚΩΝ ΠΑΠΑΣΠΥΡΙΔΑΚΟΣ - ΠΑΝΑΓΙΩΤΗΣ ΠΑΠΑΣΠΥΡΙΔΑΚΟΣ & ΣΙΑ Ε Ο.Ε.",
+              "address": "ΠΑΛΑΙΟΛΟΓΟΥ 112",
+              "locality": "Σπάρτη",
+              "phone": "2731025041"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "20:30 ΕΩΣ 20:30 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "20:30",
+            "to": "20:30",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2732083490",
+              "name": "ΚΥΡΙΑΚΑΚΗΣ ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "ΠΑΠΑΔΙΑΝΙΚΑ",
+              "locality": "Παπαδιάνικα",
+              "phone": "2732083490"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 21:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "21:00",
+            "to": "21:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2732023396",
+              "name": "ΑΓΓΕΛΙΚΗ ΜΙΧΕΛΑΚΟΥ – ΛΑΓΓΗ ΚΑΙ ΣΙΑ Ο.Ε.",
+              "address": "ΜΟΛΑΟΙ",
+              "locality": "Μολάοι",
+              "phone": "2732023396"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

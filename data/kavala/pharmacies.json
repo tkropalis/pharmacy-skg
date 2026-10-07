@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2510222251",
+      "name": "ΚΑΡΕΜΦΥΛΗ ΣΟΦΙΑ",
+      "address": "ΔΟΙΡΑΝΗΣ 20",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510222251",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.9367535,
+        "lon": 24.4125974,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4001",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510225182",
+      "name": "ΚΥΡΙΑΖΙΔΟΥ ΚΥΡΙΑΚΗ",
+      "address": "ΒΕΝΙΖΕΛΟΥ 35",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510225182",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 40.9369156,
+        "lon": 24.4096345,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3958",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510226813",
+      "name": "ΚΡΑΒΒΑΡΙΤΗΣ ΙΩΑΝΝΗΣ Ο.Ε.",
+      "address": "ΥΔΡΑΣ 3",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510226813",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.936332,
+        "lon": 24.4123828,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3962",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510229257",
+      "name": "ΖΑΜΠΟΥΛΗΣ ΒΑΣΙΛΕΙΟΣ Α.",
+      "address": "ΜΗΤΡΟΠΟΛΙΤΟΥ ΧΡΥΣΟΣΤΟΜΟΥ 6",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510229257",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 40.9360646,
+        "lon": 24.4081128,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3960",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510620027",
+      "name": "ΚΟΚΚΙΝΑΚΗ ΕΛΕΝΗ",
+      "address": "ΦΙΛΙΚΗΣ ΕΤΑΙΡΕΙΑΣ 4",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510620027",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.9358943,
+        "lon": 24.4080484,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3964",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510831386",
+      "name": "Σ.Φ. ΠΑΠΑΧΡΙΣΤΟΔΟΥΛΟΥ ΦΩΤΕΙΝΗ - ΕΥΑΓΓΕΛΙΑ ΜΑΡΟΠΟΥΛΟΥ ΘΕΑΝΩ ΟΕ",
+      "address": "ΓΑΛΛ.ΔΗΜΟΚΡΑΤΙΑΣ 17",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510831386",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.937377,
+        "lon": 24.414484,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3966",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510833803",
+      "name": "ΚΟΥΣΟΥΛΙΔΟΥ ΤΖΟΥΛΙΑ",
+      "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 55",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510833803",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.9368264,
+        "lon": 24.4041002,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3967",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510833880",
+      "name": "Σ.Φ. ΠΙΣΤΟΦΙΔΟΥ ΚΑΛΛΙΟΠΗ ΠΙΣΤΟΦΙΔΟΥ ΜΑΡΙΑ ΠΙΣΤΟΦΙΔΟΥ ΠΑΡΘΕΝΟΠΗ ΟΕ",
+      "address": "ΚΟΥΝΤΟΥΡΙΩΤΗ 20",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510833880",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.9361699,
+        "lon": 24.4141638,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3999",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510839259",
+      "name": "ΚΟΝΤΟΝΙΚΟΥ ΜΑΡΙΑ",
+      "address": "ΔΑΓΚΛΗ 22",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510839259",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 40.939247,
+        "lon": 24.406999,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3959",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

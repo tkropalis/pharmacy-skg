@@ -1,0 +1,1811 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2241002403",
+      "name": "ΜΑΤΣΙΓΚΟΣ ΕΜ. ΑΝΤΩΝΙΟΣ / MATSIGKOS ANTONIOS",
+      "address": "ΠΕΡΝΟΥ 47 / PERNOU 47",
+      "locality": "Αφάντου",
+      "postcode": null,
+      "phone": "2241002403",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.2924549,
+        "lon": 28.1625698,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29006",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241002710",
+      "name": "ΧΑΤΖΗΜΑΝΩΛΗΣ Θ.ΕΜΜΑΝΟΥΗΛ / HATZIMANOLIS EMMANOUIL",
+      "address": "14 ΧΛΜ ΡΟΔΟΥ-ΛΙΝΔΟΥ / 14 KM RODOU-LINDOU",
+      "locality": "Καλλιθέα",
+      "postcode": null,
+      "phone": "2241002710",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 36.3413317,
+        "lon": 28.198454,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29440",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241009382",
+      "name": "ΜΑΝΙΑΣ ΠΑΝΑΓΙΩΤΗΣ / MANIAS PANAGIOTIS",
+      "address": "ΙΑΛΥΣΟΥ 83 / IALISOU 83",
+      "locality": "Πεταλούδες",
+      "postcode": null,
+      "phone": "2241009382",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 36.3612576,
+        "lon": 28.1181244,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29688",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241020900",
+      "name": "ΚΑΤΣΟΥΡΑΚΗ ΠΕΝΤΕ ΣΙΜΟΝΑ ΚΡΙΣΤΙΝΑ / KATSOURAKI",
+      "address": "ΑΘΗΝΑΣ ΕΡΓΑΝΗΣ & ΠΑΠΑΝΑΣΤΑΣΗ / ERGANIS ATHINAS&PAPANASTASI",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241020900",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 36.43249,
+        "lon": 28.2220821,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29747",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241021882",
+      "name": "ΥΦΑΝΤΗ ΜΑΡΙΕΤΤΑ-ΑΝΑΣΤΑΣΙΑ / IFANTI MARIETA - ANASTASIA",
+      "address": "Λ.ΗΡΑΚΛΕΙΔΩΝ 103 / L. IRAKLIDON 103",
+      "locality": "Ιαλυσός",
+      "postcode": null,
+      "phone": "2241021882",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.423934,
+        "lon": 28.1943906,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29184",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241025787",
+      "name": "ΠΑΠΑΣΤΕΡΓΗΣ ΣΤΕΡΓΟΣ / PAPASTERGIS STERGIOS",
+      "address": "ΚΟΔΡΙΓΚΤΩΝΟΣ 77 / KODRIGKTONOS 77",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241025787",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 36.4343016,
+        "lon": 28.2309388,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29748",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241027420",
+      "name": "ΦΑΝΟΥΡΑΚΗ ΚΩΝ/ΝΑ / FANOURAKI KONSTANTINA",
+      "address": "ΝΕΑ ΑΓΟΡΑ 48 / NEA AGORA 48",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241027420",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 36.4475714,
+        "lon": 28.2252964,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29752",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241030404",
+      "name": "ΨΥΛΛΑ ΑΛΕΞΑΝΔΡΑ & ΣΙΑ Ο.Ε/ PSILLA ALEXANDRA",
+      "address": "ΜΕΓ. ΚΩΝΣΤΑΝΤΙΝΟΥ 51 / MEGALOU KON/NOU 51",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241030404",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.4355044,
+        "lon": 28.2244578,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29756",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241030772",
+      "name": "ΓΑΝΩΤΑΚΗΣ ΧΑΡΑΡΑΛΑΜΠΟΣ / GANOTAKIS CHARALAMPOS",
+      "address": "ΑΜΕΡΙΚΗΣ 34 / AMERIKIS 34",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241030772",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.449004,
+        "lon": 28.222914,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29760",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241033144",
+      "name": "ΜΑΤΣΙΓΚΟΥ ΜΑΡΙΑ & ΣΙΑ Ε.Ε. / MATSIGKOY MARIA & SIA E.E.",
+      "address": "ΗΡΑΚΛΕΙΟΥ ΚΡΗΤΗΣ 1 / IRAKLEIOU KRITIS 1",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241033144",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 36.4335204,
+        "lon": 28.2269663,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29753",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241033855",
+      "name": "ΤΣΑΓΚΑΛΙΔΗΣ ΑΧΙΛΛΕΑΣ / TSAGKALIDIS AHILLEAS",
+      "address": "ΙΩΝΟΣ ΔΡΑΓΟΥΜΗ 5-7 / IONOS DRAGOUMI 5-7",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241033855",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 36.452539,
+        "lon": 28.2201788,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29749",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241036977",
+      "name": "ΚΑΤΩΓΑΣ ΗΛΙΑΣ / KATOGAS ILIAS",
+      "address": "ΕΘ. ΑΝΤΙΣΤΑΣΗΣ 33 / ETH. ANTISTASIS 33",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241036977",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.4334168,
+        "lon": 28.2234053,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29757",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241041022",
+      "name": "ΤΟΜΑΖΟΥ ΕΛΙΣΑΒΕΤ / TOMAZOY ELISAVET",
+      "address": "ΣΟΡΩΝΗ / SORONI",
+      "locality": "Κάμειρος",
+      "postcode": null,
+      "phone": "2241041022",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.3642985,
+        "lon": 28.0040931,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29334",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241041166",
+      "name": "PHARMA SPOT ΜΟΝΟΠΡΟΣΩΠΗ ΙΚΕ",
+      "address": "ΣΟΡΩΝΗ / SORONI",
+      "locality": "Κάμειρος",
+      "postcode": null,
+      "phone": "2241041166",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 36.3631546,
+        "lon": 28.0022399,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29347",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241041830",
+      "name": "ΚΑΪΚΗΣ ΜΙΧΑΗΛ ΚΑΙ ΣΙΑ Ε.Ε. / KAIKIS MIHAIL",
+      "address": "ΜΑΣΤΙΧΑΡΙ ΚΑΜΕΙΡΟΥ / MASTIHARI KAMIROY",
+      "locality": "Κάμειρος",
+      "postcode": null,
+      "phone": "2241041830",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.3546982,
+        "lon": 27.9850619,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29317",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241047022",
+      "name": "ΦΩΤΑΚΗ ΜΑΙΡΗ / FOTAKI MAIRI",
+      "address": "ΑΓΙΟΥ ΓΕΩΡΓΙΟΥ 9 ΠΑΣΤΙΔΑ / AGIOY GEORGIOY 9 PASTIDA",
+      "locality": "Πεταλούδες",
+      "postcode": null,
+      "phone": "2241047022",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.3867961,
+        "lon": 28.1355195,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29695",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241051595",
+      "name": "ΑΥΓΟΥΣΤΗ Μ. ΜΑΡΙΑ / AVGOUSTI MARIA",
+      "address": "ΕΘΝ.ΜΑΚΑΡΙΟΥ 1 / ETHN. MAKARIOU 1",
+      "locality": "Αφάντου",
+      "postcode": null,
+      "phone": "2241051595",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.2951904,
+        "lon": 28.1624606,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29051",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241052001",
+      "name": "ΠΕΛΛΟΣ ΑΥΓΕΡΙΝΟΣ / PELOS AVGERINOS",
+      "address": "ΑΦΑΝΤΟΥ / AFANTOU",
+      "locality": "Αφάντου",
+      "postcode": null,
+      "phone": "2241052001",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 36.2931103,
+        "lon": 28.158705,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29029",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241052200",
+      "name": "ΧΑΡΤΕΡΟΣ ΕΛΕΥΘΕΡΙΟΣ / HARTEROS ELEFTHERIOS",
+      "address": "ΑΦΑΝΤΟΥ / AFANTOU",
+      "locality": "Αφάντου",
+      "postcode": null,
+      "phone": "2241052200",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.2942003,
+        "lon": 28.1629734,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28990",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241056143",
+      "name": "Σ.Φ. ΧΑΤΖΗΝΙΚΟΛΑΣ ΑΝΤΩΝΙΟΣ-ΦΟΥΤΟΥΛΗ ΜΑΡΙΑ ΚΑΙ ΣΙΑ Ο.Ε. / HATZINIKOLAS ANTONIOS - FOUTOULI MARIA",
+      "address": "ΚΟΛΥΜΠΙΑ / KOLIMPIA",
+      "locality": "Αφάντου",
+      "postcode": null,
+      "phone": "2241056143",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.2534492,
+        "lon": 28.16348,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29043",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241056172",
+      "name": "ΧΑΤΖΗΝΙΚΟΛΑ ΜΑΡΙΑ & ΣΙΑ Ο.Ε. / HATZINIKOLA MARIA",
+      "address": "ΚΟΛΥΜΠΙΑ / KOLIMPIA",
+      "locality": "Αφάντου",
+      "postcode": null,
+      "phone": "2241056172",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 36.2583172,
+        "lon": 28.1432471,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29019",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241062968",
+      "name": "ΕΛΕΥΘΕΡΙΑΔΟΥ ΦΩΤΕΙΝΗ / ELEFTHERIADOU FOTINI",
+      "address": "ΚΟΣΚΙΝΟΥ ΡΟΔΟΥ / KOSKINOU RODOU",
+      "locality": "Καλλιθέα",
+      "postcode": null,
+      "phone": "2241062968",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.3890666,
+        "lon": 28.2145751,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29468",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241067830",
+      "name": "ΔΙΑΚΟΓΕΩΡΓΙΟΥ Α. ΚΩΝΣΤΑΝΤΙΝΟΣ / DIAKOGEORGIOY A. KONSTANTINOS",
+      "address": "Π. ΜΕΛΑ 74 / P.MELA 74",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241067830",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 36.4425183,
+        "lon": 28.218669,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29754",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241068937",
+      "name": "ΕΛΕΥΘΕΡΙΑΔΟΥ ΦΩΤΕΙΝΗ ΥΠΟΚΑΤ. Α' / ELEFTHERIADOY FOTINI",
+      "address": "6ο ΧΛΜ. ΡΟΔΟΥ-ΚΟΣΚΙΝΟΥ",
+      "locality": "Καλλιθέα",
+      "postcode": null,
+      "phone": "2241068937",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 36.388867,
+        "lon": 28.2159916,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29425",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241069772",
+      "name": "ΚΑΖΟΥΛΛΑΚΗΣ ΙΠΠΟΚΡΑΤΗΣ & ΣΙΑ Ο.Ε. / KAZOULAKIS IPOKRATIS",
+      "address": "5 ΧΛΜ ΛΕΩΦ. ΡΟΔΟΥ-ΚΑΛΛΙΘΕΑΣ / 5 KM L. RODOU-KALITHEAS",
+      "locality": "Καλλιθέα",
+      "postcode": null,
+      "phone": "2241069772",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.3890386,
+        "lon": 28.214573,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29379",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241070080",
+      "name": "ΔΗΜΗΤΡΑΚΟΠΟΥΛΟΣ ΑΘΑΝΑΣΙΟΣ & ΣΙΑ Ο.Ε. / DIMITRAKOPOULOS ATHANASIOS",
+      "address": "25ΗΣ ΜΑΡΤΙΟΥ 24 / 25IS MARTIOU 24",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241070080",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.4498683,
+        "lon": 28.2233005,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29758",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241074260",
+      "name": "Σ.Φ. Κ. ΠΑΠΑΛΑΖΑΡΟΥ - Κ. ΣΤΑΜΟΥΛΗ / PAPALAZAROU - STAMOULI",
+      "address": "ΚΑΝΑΔΑ 80 / KANADA 80",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241074260",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.4346219,
+        "lon": 28.233319,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29755",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241075128",
+      "name": "ΠΕΤΡΩΝΙΑΤΗ ΧΑΡΙΣΤΟΥΛΑ / PETRONIATI HARISTOYLA",
+      "address": "Μ. ΠΕΤΡΙΔΗ 28 & ΠΑΤΡΩΝ 2 / M. PETRIDI 28",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241075128",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.4328971,
+        "lon": 28.2141129,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29759",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241078803",
+      "name": "ΒΑΚΙΑΝΗΣ ΘΕΟΦΑΝΗΣ / VAKIANIS THEOFANIS",
+      "address": "ΔΕΛΦΩΝ 14 / DELPHON 14",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241078803",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 36.4229668,
+        "lon": 28.2266532,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29751",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241081661",
+      "name": "ΧΑΤΖΗΓΕΩΡΓΙΟΥ ΠΑΡΑΣΚΕΥΗ / HATZIGEORGIOU PARASKEVI",
+      "address": "ΠΑΡΑΔΕΙΣΙ / PARADISI",
+      "locality": "Πεταλούδες",
+      "postcode": null,
+      "phone": "2241081661",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 36.4002178,
+        "lon": 28.083015,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29685",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241081700",
+      "name": "ΨΑΡΡΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ / PSARAS KONSTANTINOS",
+      "address": "ΛΕΩΦ.ΕΛΕΥΘΕΡΙΑΣ 65-66 ΚΡΕΜΑΣΤΗ / L. ELEFTHERIAS 65-66 KREMASTI",
+      "locality": "Πεταλούδες",
+      "postcode": null,
+      "phone": "2241081700",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.4333524,
+        "lon": 28.2315232,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29694",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241081766",
+      "name": "ΠΟΤΣΟΥ ΝΙΚΟΛΑΟΣ ΕΛΕΥΘΕΡΙΟΣ / POTSOU NIKOLAOS ELEFTHERIOS",
+      "address": "ΛΕΩΦ.ΔΗΜΟΚΡΑΤΙΑΣ 90 / L. DIMOKRATIAS 90",
+      "locality": "Πεταλούδες",
+      "postcode": null,
+      "phone": "2241081766",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 36.4004764,
+        "lon": 28.0842375,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29691",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241085846",
+      "name": "ΧΑΤΖΗΑΝΤΩΝΙΑΔΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ ΚΑΙ ΣΙΑ Ο.Ε. / HATZIANTONIADIS KONSTANTINOS",
+      "address": "ΕΜΠΟΡ.ΚΕΝΤΡΟ ΕΨΙΛΟΝ ΦΑΛΗΡΑΚΙ / EMPOR. CENTER EPSILON FALIRAKI",
+      "locality": "Καλλιθέα",
+      "postcode": null,
+      "phone": "2241085846",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.3585988,
+        "lon": 28.2109246,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29409",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241085998",
+      "name": "Σ.Φ. ΡΟΖΑΣ & ΑΛΕΞΑΝΔΡΟΥ ΓΙΑΛΛΟΥΣΗ Ο.Ε. / ROZA & ALEXANDROS GIANNOUSI",
+      "address": "ΦΑΛΗΡΑΚΙ / FALIRAKI",
+      "locality": "Καλλιθέα",
+      "postcode": null,
+      "phone": "2241085998",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.3395744,
+        "lon": 28.2005336,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29450",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241087242",
+      "name": "ΧΑΤΖΗΑΝΤΩΝΙΑΔΗ ΚΑΛΛΙΟΠΗ-ΜΑΡΙΑ & ΣΙΑ Ο.Ε. / HATZIANTONIADI KALIOPI",
+      "address": "ΤΙΜΙΟΥ ΣΤΑΥΡΟΥ 21 / TIMIOU STAVROU 21",
+      "locality": "Καλλιθέα",
+      "postcode": null,
+      "phone": "2241087242",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.3354713,
+        "lon": 28.1758116,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29481",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241090004",
+      "name": "Σ.Φ. ΤΣΙΓΑΝΗ Ε.& ΜΑΛΑΝΔΡΗΣ Ε. & ΣΙΑ Ο.Ε. / TSIGANI E. & MALANDRIS E.",
+      "address": "ΙΚΑΡΩΝ 3 / IKARON 3",
+      "locality": "Πεταλούδες",
+      "postcode": null,
+      "phone": "2241090004",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 36.4109796,
+        "lon": 28.1209552,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29690",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241091817",
+      "name": "ΧΑΤΖΗΑΝΤΩΝΙΑΔΗΣ Ν.ΜΗΝΑΣ & ΣΙΑ Ο.Ε. / HATZIANTONIADIS MINAS",
+      "address": "ΙΑΛΥΣΟΥ 42 / IALISOU 42",
+      "locality": "Ιαλυσός",
+      "postcode": null,
+      "phone": "2241091817",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 36.2256314,
+        "lon": 27.8592134,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29165",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241091872",
+      "name": "ΧΑΤΖΗΣΤΑΜΑΤΗΣ ΕΜΜΑΝΟΥΗΛ / HATZISTAMATIS EMMANOUIL",
+      "address": "ΛΕΩΦ.ΗΡΑΚΛΕΙΔΩΝ ΕΝ. ΚΟΥΛΟΥΡΑΔΕΣ / L. IRAKLIDON EN. KOULOYRADES",
+      "locality": "Ιαλυσός",
+      "postcode": null,
+      "phone": "2241091872",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.4162884,
+        "lon": 28.1562341,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29141",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241093001",
+      "name": "ΚΑΣΑΠΗΣ ΚΥΡΙΑΚΟΣ ΤΟΥ ΒΑΣΙΛΕΙΟΥ / KASAPIS KIRIAKOS",
+      "address": "ΙΕΡΟΥ ΛΟΧΟΥ 11 / IEROU LOHOU 11",
+      "locality": "Ιαλυσός",
+      "postcode": null,
+      "phone": "2241093001",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.4173698,
+        "lon": 28.1567782,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29131",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241093390",
+      "name": "ΚΑΣΣΑΠΑΚΗ ΕΛΕΝΗ / KASAPAKI ELENI",
+      "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ / IROON POLITEXNIOU",
+      "locality": "Πεταλούδες",
+      "postcode": null,
+      "phone": "2241093390",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.4103543,
+        "lon": 28.1183767,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29698",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241095233",
+      "name": "ΠΑΠΑΕΛΕΥΘΕΡΙΟΥ ΚΥΡΙΑΚΗ-ΕΙΡΗΝΗ / PAPAELEFTHERIOU KIRIAKI-ELENI",
+      "address": "Λ. ΗΡΑΚΛΕΙΔΩΝ 7 / L. IRAKLIDON 7",
+      "locality": "Ιαλυσός",
+      "postcode": null,
+      "phone": "2241095233",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 36.4168532,
+        "lon": 28.153364,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29177",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241096114",
+      "name": "ΜΕΛΕΝΟΣ Μ. ΠΑΝΑΓΙΩΤΗΣ / MELENOS PANAGIOTIS",
+      "address": "ΕΝ.ΞΕΝ.ΑVRΑ BEACH ΙΞΙΑ / AVRA BEACH IXIA",
+      "locality": "Ιαλυσός",
+      "postcode": null,
+      "phone": "2241096114",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 36.4179602,
+        "lon": 28.1769707,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29172",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241098099",
+      "name": "ΜΗΤΣΟΥ Ε. ΘΩΜΑΙΣ / MITSOU THOMAIS",
+      "address": "ΦΕΡΕΝΙΚΗΣ - ΠΑΡΑΛΙΑ ΙΑΛΥΣΟΥ / FERENIKIS - IALISOS BEACH",
+      "locality": "Ιαλυσός",
+      "postcode": null,
+      "phone": "2241098099",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 36.4216332,
+        "lon": 28.1567497,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29152",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241601555",
+      "name": "ΓΚΟΡΤΣΙΛΑΣ Δ. ΑΡΓΥΡΗΣ / GKORTSILAS D. ARGYRIS",
+      "address": "ΕΘ. ΑΝΤΙΣΤΑΣΗΣ 56 / ETHN. ANTISTASEOS 56",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241601555",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 36.4346271,
+        "lon": 28.2206055,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29750",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242023007",
+      "name": "ΠΑΛΑΝΤΖΙΔΟΥ-ΚΥΠΡΑΙΟΣ ΟΕ / PALANTZIDOY-KIPRAIOS OE",
+      "address": "ΜΕΡΟΠΙΔΟΣ 3 / MEROPIDOS 3",
+      "locality": "Κως",
+      "postcode": null,
+      "phone": "2242023007",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 36.8915064,
+        "lon": 27.2877228,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29268",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242024060",
+      "name": "ΠΑΠΑΧΡΗΣΤΟΥ ΖΩΗ / PAPAHRISTOY ZOI",
+      "address": "ΒΑΣΙΛΕΩΣ ΠΑΥΛΟΥ 9 / VASILEOS PAVLOU 9",
+      "locality": "Κως",
+      "postcode": null,
+      "phone": "2242024060",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.8938958,
+        "lon": 27.2891306,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29275",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242025001",
+      "name": "ΚΑΜΠΑΝΗ ΑΝΝΑ ΜΑΡΙΑ / KAMPANI ANNA MARIA",
+      "address": "ΒΑΣ.ΓΕΩΡΓΙΟΥ & ΧΑΡΜΥΛΟΥ / VAS.GEORGIOY KAI HARMYLOY",
+      "locality": "Κως",
+      "postcode": null,
+      "phone": "2242025001",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 36.89172,
+        "lon": 27.29986,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29267",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242025159",
+      "name": "ΚΙΑΠΟΚΑΣ ΣΤΑΜΑΤΗΣ / KIAPOKAS STAMATIS",
+      "address": "ΜΑΚΡΥΓΙΑΝΝΗ 32 / MAKRYGIANNI 32",
+      "locality": "Κως",
+      "postcode": null,
+      "phone": "2242025159",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.8893992,
+        "lon": 27.296222,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29271",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242025515",
+      "name": "ΦΟΥΡΝΑΡΗΣ ΝΙΚΟΛΑΟΣ / FOYRNARIS NIKOLAOS",
+      "address": "ΜΑΚΡΥΓΙΑΝΝΗ 1 / MAKRYGIANNI 1",
+      "locality": "Κως",
+      "postcode": null,
+      "phone": "2242025515",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 36.8901121,
+        "lon": 27.2903769,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29263",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242026423",
+      "name": "ΑΞΑΡΛΗΣ ΣΤΑΥΡΟΣ / AKSARLIS STAYROS",
+      "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 4 / ELEYTHERIOY VENIZELOY 4",
+      "locality": "Κως",
+      "postcode": null,
+      "phone": "2242026423",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.8920584,
+        "lon": 27.2910808,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29273",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242026661",
+      "name": "ΓΟΥΝΑΡΗΣ ΕΜΜΑΝΟΥΗΛ /GOYNARIS EMMANOYIL",
+      "address": "ΑΡΤΕΜΗΣΙΑΣ 2A / ARTEMISIAS 2A",
+      "locality": "Κως",
+      "postcode": null,
+      "phone": "2242026661",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 36.8918717,
+        "lon": 27.2930764,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29265",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242028397",
+      "name": "ΚΑΒΟΥΚΛΗΣ ΝΙΚΟΛΑΟΣ / KAVOYKLIS NIKOLAOS",
+      "address": "ΛΕΩΦ. ΕΛ. ΒΕΝΙΖΕΛΟΥ 14/L. EL. VENIZELOY 14",
+      "locality": "Κως",
+      "postcode": null,
+      "phone": "2242028397",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 36.8921328,
+        "lon": 27.2900222,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29270",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242028410",
+      "name": "ΠΕΡΙΔΟΥ ΙΩΑΝΝΑ / PERIDOY IOANNA",
+      "address": "ΙΠΠΟΚΡΑΤΟΥΣ 6 / IPPOKRATOYS 6",
+      "locality": "Κως",
+      "postcode": null,
+      "phone": "2242028410",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.8928704,
+        "lon": 27.289004,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29276",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242041642",
+      "name": "ΧΑΤΖΗΠΑΝΤΣΟΥ ΕΛΕΝΗ / CHATZIPANTSOU ELENI",
+      "address": "ΠΥΛΙ / PYLI",
+      "locality": "Δίκαιο",
+      "postcode": null,
+      "phone": "2242041642",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.8520622,
+        "lon": 27.1586806,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28802",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242041995",
+      "name": "ΚΩΣΤΗ ΗΛΙΑΝΑ-ΠΑΡΑΣΚΕΥΗ",
+      "address": "ΜΑΡΜΑΡΙ",
+      "locality": "Δίκαιο",
+      "postcode": null,
+      "phone": "2242041995",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 36.8718378,
+        "lon": 27.1493341,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28834",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242042003",
+      "name": "ΠΑΛΑΝΤΖΙΔΟΥ-ΚΥΠΡΑΙΟΣ ΟΕ / PALANTZIDOY-KIPRAIOS OE",
+      "address": "ΠΥΛΙ / PILI",
+      "locality": "Δίκαιο",
+      "postcode": null,
+      "phone": "2242042003",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 36.8763847,
+        "lon": 27.2069582,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28824",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242048028",
+      "name": "ΚΩΤΟΥΛΑΣ ΧΡΗΣΤΟΣ & ΣΙΑ Ο.Ε. / KOTOULAS CHRISTOS",
+      "address": "ΚΑΜΑΡΙ 1 / KAMARI 1",
+      "locality": "Ηρακλειδών",
+      "postcode": null,
+      "phone": "2242048028",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.7458068,
+        "lon": 26.9693495,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28916",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242051524",
+      "name": "ΠΑΛΑΝΤΖΙΔΟΥ - ΚΥΠΡΑΙΟΣ Ο.Ε. / PALANTZIDOU - KIPRAIOS",
+      "address": "ΚΥΚΛΟΣ ΑΕΡΟΔΡΟΜΙΟΥ ΑΝΤΙΜΑΧΕΙΑΣ ΚΩ / AIRPORT CIRCLE ANTIMAHIAS KOS",
+      "locality": "Ηρακλειδών",
+      "postcode": null,
+      "phone": "2242051524",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 36.8044737,
+        "lon": 27.0956379,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28885",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242051599",
+      "name": "ΠΑΛΑΤΣΙΔΗ ΧΡΙΣΤΙΑΝΑ & ΣΙΑ ΕΕ / PALATSIDI CHRISTIANA",
+      "address": "25ΗΣ ΜΑΡΤΙΟΥ ΑΝΤΙΜΑΧΕΙΑ / 25FTH MARTIOU ANTIMAHIA",
+      "locality": "Ηρακλειδών",
+      "postcode": null,
+      "phone": "2242051599",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 36.8035168,
+        "lon": 27.0922692,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28875",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242067174",
+      "name": "ΛΑΜΠΡΙΝΟΣ ΓΕΩΡΓΙΟΣ / LAMPRINOS GEORGIOS",
+      "address": "ΖΙΠΑΡΙ ΑΣΦΕΝΔΙΟΥ / ZIPARI ASFENDIOU",
+      "locality": "Δίκαιο",
+      "postcode": null,
+      "phone": "2242067174",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.8764961,
+        "lon": 27.206106,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28854",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242068726",
+      "name": "ΠΑΠΑΘΩΜΑΣ ΖΑΧΑΡΙΑΣ / PAPATHOMAS ZACHARIAS",
+      "address": "ΖΙΠΑΡΙ / ZIPARI",
+      "locality": "Δίκαιο",
+      "postcode": null,
+      "phone": "2242068726",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.8766199,
+        "lon": 27.20516,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28843",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242069281",
+      "name": "ΒΑΡΕΛΗΣ ΜΙΧΑΗΛ / VARELIS MIHAIL",
+      "address": "ΤΙΓΚΑΚΙ ΑΣΦΕΝΔΙΟΥ / TIGKAKI ASFENDIOU",
+      "locality": "Δίκαιο",
+      "postcode": null,
+      "phone": "2242069281",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 36.8869572,
+        "lon": 27.1843395,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28813",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242072234",
+      "name": "ΠΑΝΑΓΙΩΤΟΥ ΝΙΚΟΛΑΟΣ / PANAGIOTOU NIKOLAOS",
+      "address": "ΚΕΦΑΛΟΣ / KEFALOS",
+      "locality": "Ηρακλειδών",
+      "postcode": null,
+      "phone": "2242072234",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.7445146,
+        "lon": 26.9591755,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28905",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242091478",
+      "name": "Σ.Φ. ΜΟΥΖΟΥΡΑΚΗΣ ΕΥΑΓΓ.-ΜΟΥΖΟΥΡΑΚΗ ΚΑΛΛ. ΟΕ / S.F. MOYZOURAKIS EVAGG.-MOUZOURAKI KALL. OE",
+      "address": "ΚΑΡΔΑΜΑΙΝΑ / KARDAMAINA",
+      "locality": "Ηρακλειδών",
+      "postcode": null,
+      "phone": "2242091478",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.7831808,
+        "lon": 27.1431993,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28864",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242307436",
+      "name": "ΚΑΡΚΑΛΗΣ ΒΑΣΙΛΕΙΟΣ / KARKALIS VASILEIOS",
+      "address": "ΜΗΤΡΟΠΟΛΕΩΣ 3 / MITROPOLEOS 3",
+      "locality": "Κως",
+      "postcode": null,
+      "phone": "2242307436",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.8917947,
+        "lon": 27.2912769,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29274",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2244022060",
+      "name": "ΠΟΤΣΟΥ ΝΙΚΟΛΑΟΣ-ΚΑΡΑΟΛΑΝΗΣ ΑΝΤ. Ο.Ε / POTSOY NIKOLAOS - KARAOLANIS ANT.",
+      "address": "ΑΡΧΑΓΓΕΛΟΣ / ARHAGGELOS",
+      "locality": "Αρχάγγελος",
+      "postcode": null,
+      "phone": "2244022060",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.2128506,
+        "lon": 28.1157274,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28950",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2244022200",
+      "name": "ΑΡΓΥΡΟΥ ΦΛΩΡΑ & ΣΙΑ Ο.Ε. / ARGIROU FLORA",
+      "address": "ΑΡΧΑΓΓΕΛΟΣ / ARHAGGELOS",
+      "locality": "Αρχάγγελος",
+      "postcode": null,
+      "phone": "2244022200",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 36.2143827,
+        "lon": 28.116279,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28961",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2244022543",
+      "name": "ΦΟΥΤΟΥΛΗΣ ΓΕΩΡΓΙΟΣ / FOUTOULIS GEORGE",
+      "address": "ΑΡΧΑΓΓΕΛΟΣ / ARHAGGELOS",
+      "locality": "Αρχάγγελος",
+      "postcode": null,
+      "phone": "2244022543",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 36.2147871,
+        "lon": 28.1167611,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28939",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2244022625",
+      "name": "ΧΑΤΖΗΝΙΚΟΛΑΣ ΤΣΑΜΠΙΚΟΣ-ΕΜΜΑΝΟΥΗΛ Ο.Ε. / HATZINIKOLAS TSAMPIKOS - EMMANOUIL",
+      "address": "ΑΡΧΑΓΓΕΛΟΣ / ARHAGGELOS",
+      "locality": "Αρχάγγελος",
+      "postcode": null,
+      "phone": "2244022625",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.2150927,
+        "lon": 28.1172433,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28927",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2244023020",
+      "name": "ΠΑΠΑΒΑΣΙΛΕΙΟΥ ΓΕΩΡΓΙΑ / PAPAVASILIOU GEORGIA",
+      "address": "ΑΡΧΑΓΓΕΛΟΣ / ARHAGGELOS",
+      "locality": "Αρχάγγελος",
+      "postcode": null,
+      "phone": "2244023020",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.2130748,
+        "lon": 28.1131076,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/28971",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2244031294",
+      "name": "ΕΜΜΑΝΟΥΗΛ ΜΙΧΑΗΛ / EMMANOUIL MIHAIL",
+      "address": "ΛΙΝΔΟΣ / LINDOS",
+      "locality": "Λίνδος",
+      "postcode": null,
+      "phone": "2244031294",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.0900222,
+        "lon": 28.0856787,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29523",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2244032232",
+      "name": "Σ.Φ. ΑΘΗΝΑΣ ΚΟΛΟΡΙΖΟΥ - ΚΡΙΣΤΙΑΝΑΣ ΣΑΜΠΑΓ Ο.Ε. / KOLORIZOY ATHINA - SAMBAG KRISTIANA",
+      "address": "ΚΑΛΑΘΟΣ / KALATHOS",
+      "locality": "Λίνδος",
+      "postcode": null,
+      "phone": "2244032232",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.1211165,
+        "lon": 28.0598513,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29521",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2244042047",
+      "name": "ΓΕΩΡΓΙΟΣ ΠΑΥΛΙΔΗΣ &ΣΙΑ Ο.Ε / GEORGE PAVLIDIS",
+      "address": "ΑΣΚΛΗΠΙΕΙΟ / ASKLIPIIO",
+      "locality": "Νότια Ρόδος",
+      "postcode": null,
+      "phone": "2244042047",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.0527267,
+        "lon": 27.9688626,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29607",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2244043490",
+      "name": "Σ.Φ. ΓΙΑΛΛΟΥΣΗΣ Ι. ΚΑΙ ΔΡΑΓΟΥΝΗΣ Χ. Ο.Ε. / GIALLOYSIS - DRAGOYNIS",
+      "address": "ΓΕΝΝΑΔΙ / GENNADI",
+      "locality": "Νότια Ρόδος",
+      "postcode": null,
+      "phone": "2244043490",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.024355,
+        "lon": 27.9274593,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29609",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2244044375",
+      "name": "ΕΥΑΓΓΕΛΙΔΗ ΔΗΜΗΤΡΑ ΜΙΧΑΛΙΤΣΑ ΚΑΙ ΣΙΑ Ο.Ε. / EYAGGELIDI DIMITRA",
+      "address": "ΛΑΡΔΟΣ / LARDOS",
+      "locality": "Λίνδος",
+      "postcode": null,
+      "phone": "2244044375",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.0934975,
+        "lon": 28.0169723,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29530",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2244047405",
+      "name": "ΒΕΡΔΕΛΛΗΣ ΕΙΡ. - ΠΙΣΣΑΚΑ ΑΝ. Ο.Ε. / VERDELIS - PISAKA",
+      "address": "ΑΣΚΛΗΠΙΕΙΟ / ASKLIPIIO",
+      "locality": "Νότια Ρόδος",
+      "postcode": null,
+      "phone": "2244047405",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.054353,
+        "lon": 27.9705901,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29612",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2244048222",
+      "name": "ΟΙΚΟΝΟΜΟΥ ΗΛΙΑΣ / IKONOMOU ILIAS",
+      "address": "ΠΕΥΚΟΙ / PEUKI",
+      "locality": "Λίνδος",
+      "postcode": null,
+      "phone": "2244048222",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.0754767,
+        "lon": 28.0539596,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29520",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2245022239",
+      "name": "ΛΑΜΠΡΟΣ ΗΛΙΑΣ ΚΑΙ ΑΝΔΡΕΑΣ Ο.Ε. / LAMPROS ILIAS & ANDREAS",
+      "address": "ΚΑΡΠΑΘΟΣ / KARPATHOS",
+      "locality": "Κάρπαθος",
+      "postcode": null,
+      "phone": "2245022239",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 35.5082305,
+        "lon": 27.2157383,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29242",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2245022331",
+      "name": "ΒΑΡΔΑΟΥΛΗ ΒΑΣΙΛΙΚΗ - ΑΘΑΝΑΣΙΑ ΚΑΙ ΣΙΑ Ο.Ε. / VARDAVOULI VASILIKI-ATHANASIA",
+      "address": "ΠΗΓΑΔΙΑ / PIGADIA",
+      "locality": "Κάρπαθος",
+      "postcode": null,
+      "phone": "2245022331",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 35.5073286,
+        "lon": 27.2109979,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29230",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2245022670",
+      "name": "Σ.Φ. ΛΑΜΠΡΙΝΟΥ ΒΕΝ-ΛΑΜΠΡΙΝΟΥ ΕΥΔ.ΟΕ / LAMPRINOY VEN. - LAMPRINOY EVD.",
+      "address": "ΚΑΡΠΑΘΟΣ / KARPATHOS",
+      "locality": "Κάρπαθος",
+      "postcode": null,
+      "phone": "2245022670",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 35.5074968,
+        "lon": 27.212631,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29194",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2245023107",
+      "name": "Σ.Φ. ΤΣΑΚΙΡΟΓΛΟΥ ΣΤ. & ΔΗΜ. Ο.Ε. / TSAKIROGLOU ST. & DIM.",
+      "address": "25ης ΜΑΡΤΙΟΥ ΠΗΓΑΔΙΑ / 25TH MARTIOY PIGADIA",
+      "locality": "Κάρπαθος",
+      "postcode": null,
+      "phone": "2245023107",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 35.5075007,
+        "lon": 27.2123783,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29216",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2246041183",
+      "name": "ΠΟΛΥΧΡΟΝΗ ΜΑΡΙΑ / POLIHRONI MARIA",
+      "address": "ΕΜΠΩΝΑΣ / EMPONAS",
+      "locality": "Αττάβυρος",
+      "postcode": null,
+      "phone": "2246041183",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.2269188,
+        "lon": 27.8561477,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29071",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2246041703",
+      "name": "ΛΙΑΧΑΝΟΣ ΘΕΟΔΩΡΟΣ / LIAHANOS THEODOROS",
+      "address": "ΕΜΠΩΝΑΣ / EMPONAS",
+      "locality": "Αττάβυρος",
+      "postcode": null,
+      "phone": "2246041703",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.2256667,
+        "lon": 27.8592298,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29104",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2246070040",
+      "name": "ΑΛΕΞΟΠΟΥΛΟΥ ΑΙΚΑΤΕΡΙΝΗ / ALEKSOPOULOU AIKATERINI",
+      "address": "ΣΥΜΗ / SIMI",
+      "locality": "Σύμη",
+      "postcode": null,
+      "phone": "2246070040",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.6158401,
+        "lon": 27.8355787,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29804",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2246071888",
+      "name": "ΤΣΑΒΑΡΗΣ ΙΩΑΝΝΗΣ / TSAVARIS IOANNIS",
+      "address": "ΣΥΜΗ / SIMI",
+      "locality": "Σύμη",
+      "postcode": null,
+      "phone": "2246071888",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.6154201,
+        "lon": 27.837024,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29836",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2246091295",
+      "name": "ΜΕΛΕΜΕΝΙΔΟΥ ΓΕΩΡΓ. ΦΩΤΕΙΝΗ / MELEMENIDOY FOTEINI",
+      "address": "ΑΠΟΛΛΩΝΑ / APOLLONA",
+      "locality": "Κάμειρος",
+      "postcode": null,
+      "phone": "2246091295",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.2600547,
+        "lon": 27.9663323,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29359",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

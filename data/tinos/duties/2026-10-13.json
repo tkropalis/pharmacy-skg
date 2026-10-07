@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "groups": [
+    {
+      "id": "tinos",
+      "name": "Τήνος",
+      "source": {
+        "url": "https://cyclades.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T08:03:51.336Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2283022500",
+              "name": "ΚΩΣΤΑ ΕΥΦΡΟΣΥΝΗ / KOSTA EFROSINI",
+              "address": "ΚΩΝ/ΝΟΥ ΑΛΑΒΑΝΟΥ 8 / KONSTANTINOU ALAVANOU 8",
+              "locality": "Τήνος",
+              "phone": "2283022500"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

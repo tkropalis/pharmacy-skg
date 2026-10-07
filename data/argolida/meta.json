@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "argolida",
+  "updatedAt": "2026-10-07T08:12:09.113Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-argolida",
+      "name": {
+        "el": "Εφημερίες φαρμακείων Αργολίδας",
+        "en": "Pharmacy duties of Argolida"
+      },
+      "url": "https://argolida.efhmeries.gr/",
+      "note": "Duty lists, from argolida.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

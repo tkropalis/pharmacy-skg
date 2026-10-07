@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "groups": [
+    {
+      "id": "arkadia",
+      "name": "Αρκαδία",
+      "source": {
+        "url": "https://arkadia.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:46:37.192Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:30 ΕΩΣ 08:30 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2710237771",
+              "name": "ΚΑΛΔΗ ΔΗΜ. ΑΘΑΝΑΣΙΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+              "address": "ΟΥΑΣΙΝΓΚΤΟΝ 38",
+              "locality": "Τρίπολη",
+              "phone": "2710237771"
+            },
+            {
+              "pharmacyId": "2755023580",
+              "name": "ΚΑΡΑΓΙΑΝΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΑΣΤΡΟΣ",
+              "locality": "Άστρος",
+              "phone": "2755023580"
+            },
+            {
+              "pharmacyId": "2757022230",
+              "name": "ΚΟΝΤΟΛΕΩΝ ΓΕΩΡΓΙΟΣ",
+              "address": "ΛΕΩΝΙΔΙΟ",
+              "locality": "Λεωνίδιο",
+              "phone": "2757022230"
+            },
+            {
+              "pharmacyId": "2797022300",
+              "name": "ΜΟΥΣΤΟΓΙΑΝΝΗ ΜΑΡΙΝΑ",
+              "address": "ΤΡΟΠΑΙΑ",
+              "locality": "Τρόπαια",
+              "phone": "2797022300"
+            },
+            {
+              "pharmacyId": "2791025471",
+              "name": "ΣΙΑΜΠΗΣ ΔΗΜΗΤΡΙΟΣ ΚΑΙ ΣΙΑ ΕΕ",
+              "address": "ΑΓ. ΚΩΝ.ΝΟΥ 5",
+              "locality": "Μεγαλόπολη",
+              "phone": "2791025471"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

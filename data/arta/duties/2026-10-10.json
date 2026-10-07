@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "groups": [
+    {
+      "id": "arta",
+      "name": "Άρτα",
+      "source": {
+        "url": "https://arta.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:47:11.305Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2681067400",
+              "name": "ΓΕΩΡΓΟΠΟΥΛΟΣ",
+              "address": "ΔΙΑΣΕΛΛΟ",
+              "locality": "Άρτα",
+              "phone": "2681067400"
+            },
+            {
+              "pharmacyId": "2681028161",
+              "name": "Σ.Φ. ΠΑΠΑΝΙΚΟΛΑΟΥ ΞΕΝΙΑ & ΧΡΗΣΤΟΣ Ο.Ε.",
+              "address": "ΤΖΑΒΕΛΛΑ 26 & ΝΙΚΗΦΟΡΟΥ ΑΓΓΕΛΟΥ",
+              "locality": "Άρτα",
+              "phone": "2681028161"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "herakleion",
+  "updatedAt": "2026-10-07T08:10:19.678Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-herakleion",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Ηρακλείου",
+        "en": "Pharmaceutical Association of Heraklion"
+      },
+      "url": "https://herakleion.efhmeries.gr/",
+      "note": "Duty lists, from herakleion.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

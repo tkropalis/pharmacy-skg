@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "kozani",
+  "updatedAt": "2026-10-07T07:55:27.592Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-kozani",
+      "name": {
+        "el": "Εφημερίες φαρμακείων Κοζάνης",
+        "en": "Pharmacy duties of Kozani"
+      },
+      "url": "https://kozani.efhmeries.gr/",
+      "note": "Duty lists, from kozani.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

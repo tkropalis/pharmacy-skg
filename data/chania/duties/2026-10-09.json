@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "groups": [
+    {
+      "id": "chania",
+      "name": "Χανιά",
+      "source": {
+        "url": "https://chania.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T08:04:58.650Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821043737",
+              "name": "ΝΤΑΟΥΚΑΚΗ ΜΑΡΙΑ/ΝΤΑΟUΚΑΚΙ MARY",
+              "address": "ΤΖΑΝΑΚΑΚΗ 30/TZANAKAKI 30",
+              "locality": "Χανιά",
+              "phone": "2821043737"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821043737",
+              "name": "ΝΤΑΟΥΚΑΚΗ ΜΑΡΙΑ/ΝΤΑΟUΚΑΚΙ MARY",
+              "address": "ΤΖΑΝΑΚΑΚΗ 30/TZANAKAKI 30",
+              "locality": "Χανιά",
+              "phone": "2821043737"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821038181",
+              "name": "ΑΘΑΝΑΣΑΚΗΣ ΓΕΩΡΓΙΟΣ/ΑΤΗΑΝΑSΑΚΙS GEORGE",
+              "address": "ΑΓΙΑ ΜΑΡΙΝΑ ΕΝΤΟΣ ΕΜΠΟΡΙΚΟΥ ΚΕΝΤΡΟΥ/ΑGΙΑ MARINA",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821038181"
+            },
+            {
+              "pharmacyId": "2821063282",
+              "name": "ΑΡΧΟΝΤΑΚΗΣ ΕΥΤΥΧΗΣ/ΑRCΗΟΝΤΑΚΙS EFTYCHIOS",
+              "address": "ΑΡΩΝΙ ΑΚΡΩΤΗΡΙΟΥ/ΑRΟΝΙ AKROTIRIOU",
+              "locality": "Ακρωτήρι",
+              "phone": "2821063282"
+            },
+            {
+              "pharmacyId": "2821053565",
+              "name": "ΒΡΟΥΛΙΔΑΚΗ ΓΕΩΡΓΙΑ/VRΟULΙDΑΚΙ GEORGIA",
+              "address": "ΠΑΠΑΝΑΣΤΑΣΊΟΥ & ΕΜΜΑΝΟΥΉΛ ΜΟΥΝΤΆΚΗ (ΑΠΕΝΑΝΤΙ ΑΠΟ ΑΝΘΟΠΩΛΕΙΟ ΡΟΖ-ΜΩΒ)/ΡΑΡΑΝΑSΤΑSΙΟU & MOUNTAKI",
+              "locality": "Χανιά",
+              "phone": "2821053565"
+            },
+            {
+              "pharmacyId": "2821078288",
+              "name": "ΚΟΥΛΟΥΡΙΔΑΚΗΣ ΙΩΑΝΝΗΣ/ΚΟULΟURΙDΑΚΙS IOANNIS",
+              "address": "ΑΓΥΙΑ (ΠΑΡΑΠΛΕΥΡΩΣ \"ΚΑΦΕ - ΚΑΠΑΚΙ\")/ΑGΥΙΑ",
+              "locality": "Μουρνιές",
+              "phone": "2821078288"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "6948462411",
+              "name": "ΔΑΜΟΡΑΚΗΣ ΕΥΤΥΧΗΣ/DΑΜΟRΑΚΙS EYTIXIS",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "6948462411"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
+          "hours": {
+            "from": "08:30",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2822022451",
+              "name": "Σ.Φ. ΚΑΤΑΚΗΣ ΠΑΝΤΕΛΗΣ-ΚΑΤΑΚΗ ΕΥΤΥΧΙΑ/S.F. KATAKIS PANTELIS-KATAKI EYTIXIA",
+              "address": "ΚΑΣΤΕΛΙ ΠΛΑΤΕΙΑ ΕΛ. ΒΕΝΙΖΕΛΟΥ (ΔΙΠΛΑ ΑΠΟ ΤΗΝ ΕΘΝ. ΤΡΑΠΕΖΑ)/ΚΑSΤΕLΙ PLATIA EL. VENIZELOU",
+              "locality": "Δήμος Κισσάμου",
+              "phone": "2822022451"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

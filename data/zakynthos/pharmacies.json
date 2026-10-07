@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2695023773",
+      "name": "ΒΟΥΛΤΣΟΥ ΜΑΡΙΑ (1)",
+      "address": "ΣΤΡΑΒΟΠΟΔΗ 11",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695023773",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.7753667,
+        "lon": 20.8936491,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/3983",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2695024373",
+      "name": "ΒΙΤΣΟΣ ΑΝΔΡΕΑΣ",
+      "address": "ΓΑΪΤΑΝΙ (ΕΝΑΝΤΙ ΝΟΣΟΚΟΜΕΙΟΥ)",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695024373",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.7844553,
+        "lon": 20.8747242,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4019",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2695028462",
+      "name": "ΒΟΥΤΟΣ ΛΑΜΠΡΟΣ Ο.Ε.",
+      "address": "ΚΑΛΥΒΑ ΝΙΚΟΛΑΟΥ 118",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695028462",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.7886694,
+        "lon": 20.8977995,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4055",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2695041570",
+      "name": "ΜΠΟΖΙΚΗΣ ΧΑΡΑΛΑΜΠΟΣ",
+      "address": "ΑΓ. ΛΑΖΑΡΟΥ 173",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695041570",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.7777432,
+        "lon": 20.8904718,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4001",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2695043818",
+      "name": "PHARMACY CHARTAS PHARM IKE",
+      "address": "ΜΟΥΤΖΑΝ ΜΑΡΤΙΝΕΓΚΟΥ 57 (ΠΡΩΗΝ ΤΑΒΟΥΛΑΡΗ)",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695043818",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 37.7810921,
+        "lon": 20.8954632,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4313",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2695044153",
+      "name": "ΦΡΑΓΚΟΓΙΑΝΝΗ ΕΛΙΣΑΒΕΤ & ΡΟΥΣΙΑΝΟΥ ΓΕΩΡΓΙΑ Ο.Ε.",
+      "address": "ΚΑΛΒΟΥ ΑΝΔΡΕΑ 80",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695044153",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 37.7775376,
+        "lon": 20.8948644,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4331",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2695200270",
+      "name": "IONIAN FARM IKE",
+      "address": "ΓΑΪΤΑΝΙ (ΕΝΑΝΤΙ ΝΟΣΟΚΟΜΕΙΟΥ)",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695200270",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.784861,
+        "lon": 20.8743623,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4037",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

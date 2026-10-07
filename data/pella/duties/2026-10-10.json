@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "groups": [
+    {
+      "id": "pella",
+      "name": "Πέλλα",
+      "source": {
+        "url": "https://pella.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T08:01:59.768Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2384021272",
+              "name": "ΑΘΑΝΑΣΙΑΔΗΣ ΕΥΣΤΡΑΤΙΟΣ ΚΑΙ ΣΙΑ Ο.Ε.",
+              "address": "ΚΥΠΡΟΥ 41",
+              "locality": "Αριδαία",
+              "phone": "2384021272"
+            },
+            {
+              "pharmacyId": "2381089199",
+              "name": "ΔΗΜΗΤΡΙΑΔΟΥ ΑΛΕΞΑΝΔΡΑ",
+              "address": "ΣΑΦΡΑΜΠΟΛΕΩΣ 17",
+              "locality": "Σκύδρα",
+              "phone": "2381089199"
+            },
+            {
+              "pharmacyId": "2381022232",
+              "name": "Σ.Φ. ΨΥΧΟΓΥΟΥ ΑΙΚΑΤΕΡΙΝΗ - ΨΥΧΟΓΥΟΥ ΣΟΦΙΑ ΧΡΙΣΤΙΝΑ",
+              "address": "ΕΓΝΑΤΙΑΣ 36",
+              "locality": "Έδεσσα",
+              "phone": "2381022232"
+            },
+            {
+              "pharmacyId": "2382024904",
+              "name": "ΣΟΥΜΠΑΣΗΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΑΡΒΑΝΙΤΗ 2 ΚΛΙΝΙΚΗ ΕΛΕΥΘΩ",
+              "locality": "Γιαννιτσά",
+              "phone": "2382024904"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382061124",
+              "name": "ΜΙΧΑΚΗ ΑΘΗΝΑ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 71",
+              "locality": "Κρύα Βρύση",
+              "phone": "2382061124"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382028806",
+              "name": "ΠΛΟΥΓΑΡΛΗΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 4 ΔΗΜΑΡΧΕΙΟ",
+              "locality": "Γιαννιτσά",
+              "phone": "2382028806"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

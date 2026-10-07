@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-08",
+  "groups": [
+    {
+      "id": "evros",
+      "name": "Έβρος",
+      "source": {
+        "url": "https://evros.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:50:08.910Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552022769",
+              "name": "ΜΕΛΑΣ ΕΜΜΑΝΟΥΗΛ",
+              "address": "ΕΥΡΥΠΙΔΟΥ 12",
+              "locality": "Ορεστιάδα",
+              "phone": "2552022769"
+            },
+            {
+              "pharmacyId": "2551028337",
+              "name": "ΤΙΓΓΙΡΙΔΗΣ ΑΧΙΛΛΕΑΣ",
+              "address": "Ελ. Βενιζέλου 40 (παραπλεύρως ΚΤΕΛ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551028337"
+            },
+            {
+              "pharmacyId": "2553024243",
+              "name": "ΤΡΙΑΝΤΑΦΥΛΛΙΔΟΥ ΕΛΕΝΗ",
+              "address": "25ης ΜΑΪΟΥ 113",
+              "locality": "Διδυμότειχο",
+              "phone": "2553024243"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2555024096",
+              "name": "ΚΑΨΙΔΟΥ ΘΕΟΔΩΡΑ",
+              "address": "ΔΗΜΟΚΡΙΤΟΥ 28",
+              "locality": "Φέρες",
+              "phone": "2555024096"
+            },
+            {
+              "pharmacyId": "2554022013",
+              "name": "ΜΠΑΜΙΔΟΥ ΚΟΡΤΕΣΣΑ ΤΟΥ ΠΑΝΑΓΙΩΤΗ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 211",
+              "locality": "Σουφλί",
+              "phone": "2554022013"
+            },
+            {
+              "pharmacyId": "2554042020",
+              "name": "ΠΑΠΑΜΙΧΑΗΛ ΠΑΣΧΑΛΗΣ",
+              "address": "ΝΙΚΗΣ 33",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042020"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

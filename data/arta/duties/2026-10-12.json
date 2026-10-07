@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "groups": [
+    {
+      "id": "arta",
+      "name": "Άρτα",
+      "source": {
+        "url": "https://arta.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:47:11.305Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2681073149",
+              "name": "ΣΚΑΝΔΑΛΗΣ ΗΛΙΑΣ ΕΕ",
+              "address": "ΣΚΟΥΦΑ 150",
+              "locality": "Άρτα",
+              "phone": "2681073149"
+            },
+            {
+              "pharmacyId": "2681068091",
+              "name": "ΤΣΑΡΑΚΛΗΜΑΝΗΣ",
+              "address": "ΑΝΩ ΚΑΛΕΝΤΙΝΗ",
+              "locality": "Άρτα",
+              "phone": "2681068091"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

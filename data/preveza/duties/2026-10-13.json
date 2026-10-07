@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "groups": [
+    {
+      "id": "preveza",
+      "name": "Πρέβεζα",
+      "source": {
+        "url": "https://preveza.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T08:03:17.022Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:30 ΕΩΣ 08:30 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2682024950",
+              "name": "Σ.Φ ΣΟΛΔΑΤΟΣ ΓΕΡΑΣΙΜΟΣ - ΣΟΛΔΑΤΟΥ ΕΛΙΖΑ Ο.Ε",
+              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 63",
+              "locality": "Πρέβεζα",
+              "phone": "2682024950"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

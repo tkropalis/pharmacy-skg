@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "kavala",
+  "updatedAt": "2026-10-07T07:54:30.404Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-kavala",
+      "name": {
+        "el": "Εφημερίες φαρμακείων Καβάλας",
+        "en": "Pharmacy duties of Kavala"
+      },
+      "url": "https://kavala.efhmeries.gr/",
+      "note": "Duty lists, from kavala.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-07",
+  "groups": [
+    {
+      "id": "kozani",
+      "name": "Κοζάνη",
+      "source": {
+        "url": "https://kozani.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:54:50.849Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2461039107",
+              "name": "ΑΝΔΡΕΑΔΟΥ ΑΛΕΞΑΝΔΡΑ",
+              "address": "ΠΛ. 28ης ΟΚΤΩΒΡΙΟΥ 14",
+              "locality": "Κοζάνη",
+              "phone": "2461039107"
+            },
+            {
+              "pharmacyId": "2463023440",
+              "name": "ΣΙΔΗΡΟΠΟΥΛΟΣ ΧΑΡΙΤΩΝ",
+              "address": "ΠΑΥΛΙΔΗ ΑΔΑΜΟΠΟΥΛΟΥ 1 (Πιάτσα ΤΑΞΙ)",
+              "locality": "Πτολεμαΐδα",
+              "phone": "2463023440"
+            },
+            {
+              "pharmacyId": "2461038003",
+              "name": "ΦΛΩΡΟΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΜΕΘΩΝΗΣ 1",
+              "locality": "Κοζάνη",
+              "phone": "2461038003"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:30 ΠΡΩΙ - 2:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2463026177",
+              "name": "Σ.Φ. ΣΑΡΑΦΟΓΛΟΥ ΑΘΑΝΑΣΙΑ - ΤΣΑΧΟΥΡΙΔΟΥ ΒΑΣΙΛΙΚΗ",
+              "address": "ΜΕΓΑΛΟΥ ΑΛΕΞΑΝΔΡΟΥ 8 (Δίπλα στα Hondos Center)",
+              "locality": "Πτολεμαΐδα",
+              "phone": "2463026177"
+            },
+            {
+              "pharmacyId": "2461034995",
+              "name": "ΧΑΡΑΜΗ ΜΑΡΙΑΝΝΑ",
+              "address": "ΟΛΥΜΠΙΟΥ ΓΕΩΡΓΑΚΗ 5",
+              "locality": "Κοζάνη",
+              "phone": "2461034995"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "8:30 ΠΡΩΙ - 2:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2463026177",
+              "name": "Σ.Φ. ΣΑΡΑΦΟΓΛΟΥ ΑΘΑΝΑΣΙΑ - ΤΣΑΧΟΥΡΙΔΟΥ ΒΑΣΙΛΙΚΗ",
+              "address": "ΜΕΓΑΛΟΥ ΑΛΕΞΑΝΔΡΟΥ 8 (Δίπλα στα Hondos Center)",
+              "locality": "Πτολεμαΐδα",
+              "phone": "2463026177"
+            },
+            {
+              "pharmacyId": "2461034995",
+              "name": "ΧΑΡΑΜΗ ΜΑΡΙΑΝΝΑ",
+              "address": "ΟΛΥΜΠΙΟΥ ΓΕΩΡΓΑΚΗ 5",
+              "locality": "Κοζάνη",
+              "phone": "2461034995"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

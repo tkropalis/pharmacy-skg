@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-07",
+  "groups": [
+    {
+      "id": "samos",
+      "name": "Σάμος",
+      "source": {
+        "url": "https://samos.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T08:03:30.179Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "9 ΠΡΩΙ - 1:30 ΜΕΣΗΜΕΡΙ & 6 ΑΠΟΓΕΥΜΑ - 10:30 ΒΡΑΔΥ",
+          "hours": {
+            "from": "09:00",
+            "to": "13:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273032658",
+              "name": "ΚΑΛΗΣΠΕΡΗ ΣΕΒΑΣΤΗ",
+              "address": "ΧΑΤΖΗΓΙΑΝΝΗ",
+              "locality": "Καρλόβασι",
+              "phone": "2273032658"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "9 ΠΡΩΙ - 1:30 ΜΕΣΗΜΕΡΙ & 6 ΑΠΟΓΕΥΜΑ - 10:30 ΒΡΑΔΥ",
+          "hours": {
+            "from": "18:00",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273032658",
+              "name": "ΚΑΛΗΣΠΕΡΗ ΣΕΒΑΣΤΗ",
+              "address": "ΧΑΤΖΗΓΙΑΝΝΗ",
+              "locality": "Καρλόβασι",
+              "phone": "2273032658"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ*",
+          "hours": null,
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273022800",
+              "name": "ΚΙΛΟΥΚΙΩΤΟΥ ΑΛΕΞΑΝΔΡΑ",
+              "address": "ΠΡΟΣΦΥΓΙΚΑ",
+              "locality": "Άνω Βαθύ",
+              "phone": "2273022800"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 6 ΑΠΟΓΕΥΜΑ - 10:30 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273027487",
+              "name": "ΣΠΥΡΟΥ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "Κ. ΣΤΑΜΑΤΗ 28",
+              "locality": "Βαθύ",
+              "phone": "2273027487"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 6 ΑΠΟΓΕΥΜΑ - 10:30 ΒΡΑΔΥ",
+          "hours": {
+            "from": "18:00",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273027487",
+              "name": "ΣΠΥΡΟΥ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "Κ. ΣΤΑΜΑΤΗ 28",
+              "locality": "Βαθύ",
+              "phone": "2273027487"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

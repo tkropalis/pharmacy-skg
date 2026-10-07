@@ -1,0 +1,614 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2731021681",
+      "name": "Δ.ΑΝΑΓΝΩΣΤΟΠΟΥΛΟΣ- Κ. ΝΙΚΟΛΑΡΟΣ – Κ. ΒΑΒΛΙΑΚΗΣ Ο.Ε.",
+      "address": "ΠΑΛΑΙΟΛΟΓΟΥ 22",
+      "locality": "Σπάρτη",
+      "postcode": null,
+      "phone": "2731021681",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 37.0724524,
+        "lon": 22.4311522,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/17042",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2731021950",
+      "name": "Σ.Φ. ΣΑΧΛΑ ΕΥΓΕΝΙΑ-ΚΥΡΙΑΚΟΥΛΙΑΣ ΓΕΩΡΓΙΟΣ Ο.Ε.",
+      "address": "ΛΥΚΟΥΡΓΟΥ 123",
+      "locality": "Σπάρτη",
+      "postcode": null,
+      "phone": "2731021950",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.0734288,
+        "lon": 22.4263492,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/17048",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2731023219",
+      "name": "Σ.Φ. Μ. ΒΑΚΑΛΟΠΟΥΛΟΣ Σ. –ΣΠ. ΛΙΝΑΡΔΑΚΗΣ Ο.Ε.",
+      "address": "ΠΑΛΑΙΟΛΟΓΟΥ 19",
+      "locality": "Σπάρτη",
+      "postcode": null,
+      "phone": "2731023219",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.0717821,
+        "lon": 22.4310113,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/17045",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2731025041",
+      "name": "Σ.Φ. ΝΙΚΩΝ ΠΑΠΑΣΠΥΡΙΔΑΚΟΣ - ΠΑΝΑΓΙΩΤΗΣ ΠΑΠΑΣΠΥΡΙΔΑΚΟΣ & ΣΙΑ Ε Ο.Ε.",
+      "address": "ΠΑΛΑΙΟΛΟΓΟΥ 112",
+      "locality": "Σπάρτη",
+      "postcode": null,
+      "phone": "2731025041",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.0765319,
+        "lon": 22.4295884,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/17043",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2731025244",
+      "name": "ΦΑΡΜ. ΚΩΝΣΤΑΝΤΙΝΟΥ ΑΓ. ΡΟΥΜΠΗ ΚΑΙ ΣΙΑ ΟΕ",
+      "address": "ΛΥΚΟΥΡΓΟΥ 95",
+      "locality": "Σπάρτη",
+      "postcode": null,
+      "phone": "2731025244",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.0739179,
+        "lon": 22.4284514,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/17044",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2731027212",
+      "name": "ΦΑΡΜΑΚΕΙΟ ΣΥΝΟΔΙΝΟΣ ΘΕΟΔΩΡΟΣ Ε.Ε. (Αδ. Φαρμ. Βελισσάρης Ηλίας)",
+      "address": "ΚΩΝ/ΝΟΥ ΠΑΛΑΙΟΛΟΓΟΥ 119",
+      "locality": "Σπάρτη",
+      "postcode": null,
+      "phone": "2731027212",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.0766363,
+        "lon": 22.4290449,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/17046",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2731035750",
+      "name": "ΚΑΨΑΣΚΗ ΜΑΡΙΑ",
+      "address": "ΞΗΡΟΚΑΜΠΙ",
+      "locality": "Ξηροκάμπι",
+      "postcode": null,
+      "phone": "2731035750",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.9593051,
+        "lon": 22.4522074,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/14447",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2731036000",
+      "name": "ΜΠΟΥΤΕΡΑΚΟΥ ΓΕΩΡΓΙΑ",
+      "address": "ΞΗΡΟΚΑΜΠΙ",
+      "locality": "Ξηροκάμπι",
+      "postcode": null,
+      "phone": "2731036000",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.9593051,
+        "lon": 22.4522074,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/14446",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2731057757",
+      "name": "Σ.Φ. ΜΠΑΣΚΟΥΡΕΛΟΣ ΧΑΡΑΛΑΜΠΟΣ – ΜΠΑΣΚΟΥΡΕΛΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ο.Ε.",
+      "address": "ΚΑΣΤΟΡΙ",
+      "locality": "Καστόρειο",
+      "postcode": null,
+      "phone": "2731057757",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.1706904,
+        "lon": 22.3044898,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/15541",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2731081271",
+      "name": "ΣΥΝΕΡΓ. ΦΑΡΜ. ΛΑΓΓΗΣ ΑΛΕΞΑΝΔΡΟΣ & ΣΙΑ Ο.Ε.",
+      "address": "ΚΛΕΟΜΒΡΟΤΟΥ 13",
+      "locality": "Σπάρτη",
+      "postcode": null,
+      "phone": "2731081271",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.0750805,
+        "lon": 22.4304731,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/17041",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2732022329",
+      "name": "ΔΙΚΑΙΑΚΟΣ ΧΑΡΙΛΑΟΣ",
+      "address": "ΜΟΛΑΟΙ",
+      "locality": "Μολάοι",
+      "postcode": null,
+      "phone": "2732022329",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 36.8028024,
+        "lon": 22.8510821,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/15176",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2732023396",
+      "name": "ΑΓΓΕΛΙΚΗ ΜΙΧΕΛΑΚΟΥ – ΛΑΓΓΗ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΜΟΛΑΟΙ",
+      "locality": "Μολάοι",
+      "postcode": null,
+      "phone": "2732023396",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.8028393,
+        "lon": 22.8517181,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/15178",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2732083333",
+      "name": "ΕΥΑΓΓΕΛΑΚΟΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "ΠΑΠΑΔΙΑΝΙΚΑ",
+      "locality": "Παπαδιάνικα",
+      "postcode": null,
+      "phone": "2732083333",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 36.7153949,
+        "lon": 22.8592885,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/14081",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2732083490",
+      "name": "ΚΥΡΙΑΚΑΚΗΣ ΑΝΑΣΤΑΣΙΟΣ",
+      "address": "ΠΑΠΑΔΙΑΝΙΚΑ",
+      "locality": "Παπαδιάνικα",
+      "postcode": null,
+      "phone": "2732083490",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.716179,
+        "lon": 22.8612624,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/14083",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2733022131",
+      "name": "ΟΡΕΣΤΗΣ ΚΑΛΑΜΠΑΛΙΚΗΣ Ε.Ε.",
+      "address": "ΓΥΘΕΙΟ",
+      "locality": "Γύθειο",
+      "postcode": null,
+      "phone": "2733022131",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.7603815,
+        "lon": 22.5641196,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/15906",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2733022265",
+      "name": "ΠΑΝΑΓΙΩΤΑ - ΛΥΜΠΕΡΗ ΑΝΔΡΕΑΚΟΥ & ΣΙΑ Ο.Ε.",
+      "address": "ΓΥΘΕΙΟ",
+      "locality": "Γύθειο",
+      "postcode": null,
+      "phone": "2733022265",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.7595537,
+        "lon": 22.5654202,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/15907",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2733022566",
+      "name": "ΚΑΛΑΠΟΘΑΚΟΥ ΝΙΚΟΛΕΤΑ",
+      "address": "ΓΥΘΕΙΟ",
+      "locality": "Γύθειο",
+      "postcode": null,
+      "phone": "2733022566",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 36.7608153,
+        "lon": 22.5629608,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/15909",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2733023677",
+      "name": "Σ.Φ. Λ. ΜΑΝΔΡΑΠΥΛΙΑΣ -Θ. ΜΑΝΔΡΑΠΥΛΙΑ ΛΥΚΙΔΟΥ ΟΕ",
+      "address": "ΒΑΣ. ΠΑΥΛΟΥ 43",
+      "locality": "Γύθειο",
+      "postcode": null,
+      "phone": "2733023677",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.7591707,
+        "lon": 22.5658321,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/15908",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2733029510",
+      "name": "ΜΗΤΣΑΚΟΥ ΜΑΡΙΑ- ΝΕΦΕΛΗ – ΒΑΒΟΥΛΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ο.Ε.",
+      "address": "ΑΡΕΟΠΟΛΗ",
+      "locality": "Αρεόπολη",
+      "postcode": null,
+      "phone": "2733029510",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.667192,
+        "lon": 22.3811891,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/16636",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2733051370",
+      "name": "Σ.Φ. ΕΥΑΓΓΕΛΟΣ Γ.ΛΥΚΟΥΣΑΣ-ΠΑΣΧΑΛΙΑ ΕΥΑΓΓ. ΛΥΚΟΥΣΑ & ΣΙΑ ΟΕ",
+      "address": "ΑΡΕΟΠΟΛΗ",
+      "locality": "Αρεόπολη",
+      "postcode": null,
+      "phone": "2733051370",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.666078,
+        "lon": 22.3806638,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/16641",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2734022265",
+      "name": "Σ.Φ. ΚΩΝΣΤΑΝΤΙΝΟΣ ΠΑΠΟΥΛΗΣ-ΓΕΩΡΓΙΑ ΠΑΠΟΥΛΗ & ΣΙΑ ΟΕ",
+      "address": "ΝΕΑΠΟΛΗ",
+      "locality": "Νεάπολη",
+      "postcode": null,
+      "phone": "2734022265",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.5108739,
+        "lon": 23.0597934,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/14811",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2734022989",
+      "name": "ΨΑΡΡΑΚΗ ΧΡΥΣΟΥΛΑ &ΣΙΑ Ο.Ε.",
+      "address": "ΝΕΑΠΟΛΗ",
+      "locality": "Νεάπολη",
+      "postcode": null,
+      "phone": "2734022989",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.5123972,
+        "lon": 23.0596787,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/14816",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2735022530",
+      "name": "ΜΑΣΤΡΟΓΙΑΝΝΑΚΟΣ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΣΚΑΛΑ",
+      "locality": "Σκάλα",
+      "postcode": null,
+      "phone": "2735022530",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 36.8511637,
+        "lon": 22.6663352,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/13718",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2735023159",
+      "name": "Σ.Φ. ΠΑΠΑΔΗΜΗΤΡΙΟΥ ΣΟΥΣΣΑΝΑ - ΣΤΑΥΡΙΑΝΑΚΟΣ ΦΩΤΙΟΣ",
+      "address": "ΣΚΑΛΑ",
+      "locality": "Σκάλα",
+      "postcode": null,
+      "phone": "2735023159",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.8513616,
+        "lon": 22.6670941,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/13716",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2735023370",
+      "name": "ΜΑΡΤΣΟΥΚΟΥ ΘΕΟΔΩΡΑ",
+      "address": "ΣΚΑΛΑ",
+      "locality": "Σκάλα",
+      "postcode": null,
+      "phone": "2735023370",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.8508627,
+        "lon": 22.6691794,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/13719",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2735041492",
+      "name": "ΧΙΩΤΗ – ΑΣΤΕΡΗ ΕΛΕΝΗ",
+      "address": "ΒΛΑΧΙΩΤΗ",
+      "locality": "Βλαχιώτης",
+      "postcode": null,
+      "phone": "2735041492",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 36.8611992,
+        "lon": 22.7048206,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/16271",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2735041594",
+      "name": "ΑΓΗΣΙΛΑΟΣ ΡΟΥΜΠΗΣ ΚΑΙ ΥΙΟΣ ΟΕ",
+      "address": "ΒΛΑΧΙΩΤΗ",
+      "locality": "Βλαχιώτης",
+      "postcode": null,
+      "phone": "2735041594",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 36.8618193,
+        "lon": 22.7063441,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/16274",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2735041679",
+      "name": "ΜΑΡΙΑ ΚΟΥΤΣΟΥΜΠΟΥ ΚΑΙ ΣΙΑ ΟΕ",
+      "address": "ΒΛΑΧΙΩΤΗ",
+      "locality": "Βλαχιώτης",
+      "postcode": null,
+      "phone": "2735041679",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 36.8619459,
+        "lon": 22.7073926,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/16273",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2735041682",
+      "name": "ΠΑΡΔΑΛΗ ΒΑΣΙΛΙΚΗ",
+      "address": "ΒΛΑΧΙΩΤΗ",
+      "locality": "Βλαχιώτης",
+      "postcode": null,
+      "phone": "2735041682",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 36.8617272,
+        "lon": 22.7074294,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/16272",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

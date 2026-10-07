@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "groups": [
+    {
+      "id": "pella",
+      "name": "Πέλλα",
+      "source": {
+        "url": "https://pella.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T08:01:59.768Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2384022300",
+              "name": "ΑΓΟΡΑΣΤΟΥ ΧΡΙΣΤΙΝΑ",
+              "address": "ΑΘ. ΔΙΑΚΟΥ 18",
+              "locality": "Αριδαία",
+              "phone": "2384022300"
+            },
+            {
+              "pharmacyId": "2382024555",
+              "name": "ΒΑΡΕΛΑΣ ΜΙΧΑΗΛ",
+              "address": "Π. ΜΕΛΑ 5",
+              "locality": "Γιαννιτσά",
+              "phone": "2382024555"
+            },
+            {
+              "pharmacyId": "2381082057",
+              "name": "ΒΕΧΤΣΑΛΗΣ ΣΩΤΗΡΙΟΣ",
+              "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 29",
+              "locality": "Σκύδρα",
+              "phone": "2381082057"
+            },
+            {
+              "pharmacyId": "2381023513",
+              "name": "ΓΙΑΝΝΙΟΣ ΠΟΛΥΖΩΗΣ",
+              "address": "ΔΗΜΟΚΡΑΤΙΑΣ 17",
+              "locality": "Έδεσσα",
+              "phone": "2381023513"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382062120",
+              "name": "ΝΑΥΡΟΖΙΔΗΣ ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "ΒΑΣ. ΠΑΥΛΟΥ 32",
+              "locality": "Κρύα Βρύση",
+              "phone": "2382062120"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

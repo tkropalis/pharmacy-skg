@@ -1,0 +1,1265 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2741021114",
+      "name": "ΣΙΑΠΚΑΡΑΣ ΓΕΩΡΓΙΟΣ &ΣΙΑ Ε.Ε.",
+      "address": "ΚΟΛΙΑΤΣΟΥ 45",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741021114",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.9389352,
+        "lon": 22.9313112,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35393",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741021820",
+      "name": "Σ.Φ. ΜΑΡΙΝΟΥ Χ.-ΜΑΡΜΑΡΑ-ΜΑΡΙΝΟΥ Π.-ΜΑΡΙΝΟΥ Γ.ΜΑΡΙΝΟΥ Χ. Ο.Ε.",
+      "address": "ΠΑΤΡΩΝ 36",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741021820",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.9377003,
+        "lon": 22.9237308,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35392",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741022515",
+      "name": "ΚΛΕΠΕΤΣΑΝΗ Ν. ΖΩΗ",
+      "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 23",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741022515",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.938485,
+        "lon": 22.9320638,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35396",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741022970",
+      "name": "ΛΕΚΚΑΣ ΑΡΓΥΡΙΟΣ",
+      "address": "ΑΠ. ΠΑΥΛΟΥ 40 & ΚΥΠΡΟΥ",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741022970",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.9408826,
+        "lon": 22.9297661,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35395",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741025806",
+      "name": "Σ.Φ. ΚΑΡΑΒΟΚΥΡΗ ΜΑΡΙΑ-ΠΑΠΑΘΑΝΑΣΙΟΥ ΑΝΑΣΤΑΣΙΟΣ ΟΕ",
+      "address": "ΝΟΤΑΡΑ 78",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741025806",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.9406739,
+        "lon": 22.9243584,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35400",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741026005",
+      "name": "ΣΤΑΜΟΥΛΗ Ι. ΑΙΚΑΤΕΡΙΝΗ & ΣΙΑ ΟΕ",
+      "address": "ΠΑΤΡΩΝ 49 & ΕΥΠΟΙΪΑΣ",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741026005",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 37.936771,
+        "lon": 22.9215657,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35389",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741027965",
+      "name": "ΔΕΔΕ ΣΩΤΗΡΙΟΥ &ΣΙΑ ΟΕ",
+      "address": "ΚΟΛΟΚΟΤΡΩΝΗ 24",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741027965",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.9392549,
+        "lon": 22.9315687,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35401",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741028477",
+      "name": "ΑΓΓΕΛΙΔΗ ΕΙΡΗΝΗ",
+      "address": "ΛΕΩΦ. ΙΩΝΙΑΣ 75",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741028477",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.9383662,
+        "lon": 22.947206,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35397",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741031655",
+      "name": "Σ.Φ.ΣΥΓΓΟΥΝΑ Α.-Α.&ΣΥΓΓΟΥΝΑ Χ. Ο.Ε.",
+      "address": "ΑΡΧΑΙΑ ΚΟΡΙΝΘΟΣ (4Ομ ΑΠΟ ΤΟ ΚΕΝΤΡΟ)",
+      "locality": "Αρχαία Κόρινθος",
+      "postcode": null,
+      "phone": "2741031655",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.9072675,
+        "lon": 22.88078,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35839",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741033040",
+      "name": "ΤΣΟΛΚΑ ΕΥΑΓ. ΚΑΛΛΙΟΠΗ",
+      "address": "ΛΟΥΤΡΑ ΩΡ.ΕΛΕΝΗΣ",
+      "locality": "Λουτρά Ωραίας Ελένης",
+      "postcode": null,
+      "phone": "2741033040",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.8610007,
+        "lon": 22.9972229,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/38399",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741033604",
+      "name": "ΓΚΕΛΗ ΜΑΡΙΑ & ΣΙΑ Ο.Ε.",
+      "address": "ΛΟΥΤΡΑ ΩΡ.ΕΛΕΝΗΣ",
+      "locality": "Λουτρά Ωραίας Ελένης",
+      "postcode": null,
+      "phone": "2741033604",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.8620424,
+        "lon": 22.9970282,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/38394",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741036008",
+      "name": "ΤΣΙΛΙΓΚΙΡΗ Α. ΑΓΓΕΛΙΚΗ",
+      "address": "ΕΞΑΜΙΛΙΑ",
+      "locality": "Εξαμίλια",
+      "postcode": null,
+      "phone": "2741036008",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.8973086,
+        "lon": 22.9276025,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/36204",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741036600",
+      "name": "ΚΛΟΚΩΝΗ ΣΤΑΜΑΤΗ ΣΟΦΙΑ καιΣΙΑ Ε.Ε.",
+      "address": "ΕΞΑΜΙΛΙΑ",
+      "locality": "Εξαμίλια",
+      "postcode": null,
+      "phone": "2741036600",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.8964006,
+        "lon": 22.9284049,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/36209",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741039000",
+      "name": "ΓΚΙΛΙΤΣΗΣ ΝΙΚΟΛΑΟΣ-ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΑΘΙΚΙΑ",
+      "locality": "Αθίκια",
+      "postcode": null,
+      "phone": "2741039000",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.8195361,
+        "lon": 22.9250024,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/36934",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741039118",
+      "name": "ΡΟΤΑ ΝΤΑΒΙΝΤ καιΣΙΑ Ο.Ε.",
+      "address": "ΑΘΙΚΙΑ",
+      "locality": "Αθίκια",
+      "postcode": null,
+      "phone": "2741039118",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.819328,
+        "lon": 22.9291721,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/36939",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741040691",
+      "name": "ΜΗΤΡΟΥ ΔΗΜΗΤΡΑ &ΣΙΑ Ο.Ε.",
+      "address": "ΑΔΕΙΜΑΝΤΟΥ 37",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741040691",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.937643,
+        "lon": 22.9314723,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35394",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741042109",
+      "name": "ΚΟΡΚΑΡΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΠΑΤΡΩΝ 83",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741042109",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 37.9353443,
+        "lon": 22.9159058,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35390",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741049800",
+      "name": "ΚΑΞΗΡΑ ΑΘΗΝΑ",
+      "address": "ΕΟ ΙΣΘΜΟΥ ΑΡΧΑΙΑΣ ΕΠΙΔΑΥΡΟΥ",
+      "locality": "Ίσθμια",
+      "postcode": null,
+      "phone": "2741049800",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.9172924,
+        "lon": 22.9993582,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/37304",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741051751",
+      "name": "ΖΙΟΥΒΑ ΚΩΝΣΤΑΝΤΙΝΑ καιΣΙΑ Ο.Ε.",
+      "address": "ΒΡΑΧΑΤΙ",
+      "locality": "Βραχάτι",
+      "postcode": null,
+      "phone": "2741051751",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.9578061,
+        "lon": 22.8039689,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/41314",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741053700",
+      "name": "ΚΑΛΠΑΞΗΣ ΑΝΔΡΕΑΣ",
+      "address": "ΒΡΑΧΑΤΙ",
+      "locality": "Βραχάτι",
+      "postcode": null,
+      "phone": "2741053700",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.9578061,
+        "lon": 22.8039689,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/41319",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741054232",
+      "name": "Σ.Φ. ΣΙΑΠΚΑΡΑΣ ΑΓΓΕΛΟΣ ΣΙΑΠΚΑΡΑ ΜΑΡΙΝΑ Ο.Ε.",
+      "address": "ΖΕΥΓΟΛΑΤΙΟ",
+      "locality": "Ζευγολατιό",
+      "postcode": null,
+      "phone": "2741054232",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.9375856,
+        "lon": 22.8008984,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/38764",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741061710",
+      "name": "ΜΑΤΑΤΣΗ Ε. ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΑΓ. ΘΕΟΔΩΡΟΙ",
+      "locality": "Άγιοι Θεόδωροι",
+      "postcode": null,
+      "phone": "2741061710",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.9282447,
+        "lon": 23.1433311,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/39127",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741062647",
+      "name": "ΚΟΝΤΟΥΛΗΣ ΙΩΑΝΝΗΣ και ΣΙΑ ΟΕ",
+      "address": "ΑΓ. ΘΕΟΔΩΡΟΙ",
+      "locality": "Άγιοι Θεόδωροι",
+      "postcode": null,
+      "phone": "2741062647",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.9282447,
+        "lon": 23.1433311,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/39126",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741067464",
+      "name": "ΝΙΚΟΛΑΟΥ ΓΕΩΡΓΙΑ και ΣΙΑ Ο.Ε.",
+      "address": "ΑΓ.ΘΕΟΔΩΡΟΙ",
+      "locality": "Άγιοι Θεόδωροι",
+      "postcode": null,
+      "phone": "2741067464",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.926956,
+        "lon": 23.1406295,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/39124",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741067766",
+      "name": "ΜΠΟΥΓΙΟΥΚΑΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΑΓ. ΘΕΟΔΩΡΟΙ",
+      "locality": "Άγιοι Θεόδωροι",
+      "postcode": null,
+      "phone": "2741067766",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.9282447,
+        "lon": 23.1433311,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/39128",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741069305",
+      "name": "ΧΑΤΖΗΘΩΜΑ ΓΡ. ΝΙΚΟΛΕΤΤΑ",
+      "address": "ΑΓ. ΘΕΟΔΩΡΟΙ",
+      "locality": "Άγιοι Θεόδωροι",
+      "postcode": null,
+      "phone": "2741069305",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.9282447,
+        "lon": 23.1433311,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/39125",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741072750",
+      "name": "ΜΠΑΡΤΖΗ Π. ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΚΟΛΙΑΤΣΟΥ 46",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741072750",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 37.9398404,
+        "lon": 22.9304323,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35391",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741076210",
+      "name": "ΓΙΑΝΝΟΥ ΜΙΧ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "Γ.ΠΑΠΑΝΔΡΕΟΥ 45",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741076210",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.9369717,
+        "lon": 22.923986,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35398",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741081302",
+      "name": "ΠΑΠΑΝΤΩΝΗ Φ. ΑΝΘΟΥΛΑ",
+      "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 62",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741081302",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.9365803,
+        "lon": 22.9297225,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35399",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741082044",
+      "name": "ΧΡΗΣΤΑΡΑ Γ. ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "ΛΕΧΑΙΟ",
+      "locality": "Λέχαιο",
+      "postcode": null,
+      "phone": "2741082044",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.9346483,
+        "lon": 22.8455989,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/37669",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741082122",
+      "name": "ΜΑΡΙΝΗ ΣΤΑΥΡΟΥΛΑ",
+      "address": "ΖΕΥΓΟΛΑΤΙΟ",
+      "locality": "Ζευγολατιό",
+      "postcode": null,
+      "phone": "2741082122",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.9375856,
+        "lon": 22.8008984,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/38759",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741085491",
+      "name": "ΓΙΑΚΟΥΜΑΚΗΣ ΚΩΝ/ΝΟΣ",
+      "address": "ΔΑΜΑΣΚΗΝΟΥ 7",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741085491",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 37.9379979,
+        "lon": 22.9375339,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35388",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741087397",
+      "name": "ΚΑΝΕΛΛΟΠΟΥΛΟΥ ΜΑΡΙΑ ΚΑΙ ΣΙΑ ΕΕ",
+      "address": "ΛΕΧΑΙΟ",
+      "locality": "Λέχαιο",
+      "postcode": null,
+      "phone": "2741087397",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.9354958,
+        "lon": 22.84306,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/37664",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741088100",
+      "name": "ΦΑΡΜΑΚΕΙΟ ΧΡΙΣΤΙΝΑΣ ΚΟΡΚΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΑΣΣΟΣ",
+      "locality": "Άσσος",
+      "postcode": null,
+      "phone": "2741088100",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.942303,
+        "lon": 22.8242966,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/40949",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741088882",
+      "name": "ΔΕΛΛΗ ΣΤΑΥΡΟΥΛΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΑΣΣΟΣ",
+      "locality": "Άσσος",
+      "postcode": null,
+      "phone": "2741088882",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.9422082,
+        "lon": 22.8251675,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/40954",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741098085",
+      "name": "ΠΑΠΑΘΑΝΑΣΙΟΥ ΛΟΥΤΣΙΑΝΟ & ΣΙΑ Ο.Ε.",
+      "address": "ΧΙΛΙΟΜΟΔΙ",
+      "locality": "Χιλιομόδι",
+      "postcode": null,
+      "phone": "2741098085",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.8116578,
+        "lon": 22.869699,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/38034",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741098177",
+      "name": "ΚΑΛΑΡΑ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΧΙΛΙΟΜΟΔΙ",
+      "locality": "Χιλιομόδι",
+      "postcode": null,
+      "phone": "2741098177",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.8116578,
+        "lon": 22.869699,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/38029",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741775315",
+      "name": "ΠΑΠΑΔΗΜΗΤΡΙΟΥ ΟΛΥΜΠΙΑ-ΜΑΡΙΑ",
+      "address": "ΕΟ ΙΣΘΜΟΥ ΑΡΧΑΙΑΣ ΕΠΙΔΑΥΡΟΥ",
+      "locality": "Ίσθμια",
+      "postcode": null,
+      "phone": "2741775315",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.9153307,
+        "lon": 23.0017927,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/37299",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2742022206",
+      "name": "ΚΑΚΑΒΑΚΗΣ ΟΘΩΝΑΣ &ΣΙΑ Ε.Ε.",
+      "address": "ΠΛ. ΠΛΟΥΜΙΣΤΟΥ",
+      "locality": "Κιάτο",
+      "postcode": null,
+      "phone": "2742022206",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 38.0117782,
+        "lon": 22.7505264,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/36572",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2742022541",
+      "name": "ΓΟΥΛΑΣ ΛΟΥΚΑΣ & ΣΙΑ Ο.Ε.",
+      "address": "ΚΛΕΙΣΘΕΝΟΥΣ 26",
+      "locality": "Κιάτο",
+      "postcode": null,
+      "phone": "2742022541",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 38.011896,
+        "lon": 22.7501929,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/36573",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2742022823",
+      "name": "ΘΕΟΔΩΡΟΥ ΜΠΙΝΟΥ ΣΟΦΙΑ",
+      "address": "ΠΕΡΙΑΝΔΡΟΥ 30",
+      "locality": "Κιάτο",
+      "postcode": null,
+      "phone": "2742022823",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 38.0102288,
+        "lon": 22.7507374,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/36569",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2742025640",
+      "name": "Σ.Φ. ΠΙΣΤΕΥΟΣ ΣΠ. και ΒΑΣΙΛΕΙΑΔΟΥ ΧΡ. ΟΕ",
+      "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 24",
+      "locality": "Κιάτο",
+      "postcode": null,
+      "phone": "2742025640",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 38.0149365,
+        "lon": 22.7444947,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/36571",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2742026203",
+      "name": "Σ.Φ. ΘΕΟΦ. ΤΟΜΑΡΑΣ - Κ. Μ. ΧΑΤΖΗΑΝΤΩΝΙΑΔΗ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΚΛΕΙΣΘΕΝΟΥΣ 1",
+      "locality": "Κιάτο",
+      "postcode": null,
+      "phone": "2742026203",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.0130605,
+        "lon": 22.7494687,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/36570",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2742032220",
+      "name": "ΠΑΠΑΚΥΡΙΑΚΟΣ ΑΝΝΙΒΑΣ & ΣΙΑ Ο.Ε.",
+      "address": "ΒΕΛΟ",
+      "locality": "Βέλο",
+      "postcode": null,
+      "phone": "2742032220",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.976489,
+        "lon": 22.760115,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/41681",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2742033488",
+      "name": "ΚΑΡΑΜΑΝΕΑΣ ΕΥΣΤΡΑΤΙΟΣ",
+      "address": "ΒΕΛΟ",
+      "locality": "Βέλο",
+      "postcode": null,
+      "phone": "2742033488",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.976028,
+        "lon": 22.759504,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/41680",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2742034488",
+      "name": "ΣΠΥΡΟΠΟΥΛΟΥ ΤΣΕΡΩΝΗ ΚΑΤΕΡΙΝΑ",
+      "address": "ΒΕΛΟ",
+      "locality": "Βέλο",
+      "postcode": null,
+      "phone": "2742034488",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.9834295,
+        "lon": 22.7664356,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/40584",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2743022376",
+      "name": "Σ.Φ. ΑΛΟΓΟΓΙΑΝΝΗΣ ΒΛ.-ΣΚΟΥΛΑΡΙΚΗΣ Γ. καιΣΙΑ Ο.Ε.",
+      "address": "Π. ΤΣΑΛΔΑΡΗ 49",
+      "locality": "Ξυλόκαστρο",
+      "postcode": null,
+      "phone": "2743022376",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 38.0788092,
+        "lon": 22.6318467,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/39491",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2743023644",
+      "name": "Σ.Φ. ΚΛΑΔΟΥΧΟΣ Α.-ΚΛΑΔΟΥΧΟΥ Π. Ο.Ε.",
+      "address": "Π.ΤΣΑΛΔΑΡΗ 53",
+      "locality": "Ξυλόκαστρο",
+      "postcode": null,
+      "phone": "2743023644",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 38.0788314,
+        "lon": 22.6314641,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/39490",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2743026911",
+      "name": "ΚΟΝΤΟΓΙΑΝΝΗ ΑΜΑΛΙΑ καιΣΙΑ Ο.Ε.",
+      "address": "Ι. ΙΩΑΝΝΟΥ 46",
+      "locality": "Ξυλόκαστρο",
+      "postcode": null,
+      "phone": "2743026911",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.0778071,
+        "lon": 22.6304969,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/39489",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2743028333",
+      "name": "Σ.Φ. ΜΠΟΥΡΝΑΖΟΥ Κ.-ΧΑΡΔΑΛΟΥΠΑ Ι.καιΣΙΑ Ο.Ε.",
+      "address": "Π. ΤΣΑΛΔΑΡΗ 28",
+      "locality": "Ξυλόκαστρο",
+      "postcode": null,
+      "phone": "2743028333",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 38.078413,
+        "lon": 22.6336694,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/39492",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2744021133",
+      "name": "ΔΕΤΖΑΝΗΣ ΑΛΕΞΑΝΔΡΟΣ &ΣΙΑ Ε.Ε.",
+      "address": "Λ. ΑΘΗΝΩΝ 84",
+      "locality": "Λουτράκι",
+      "postcode": null,
+      "phone": "2744021133",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.9663228,
+        "lon": 22.978093,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/40224",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2744021231",
+      "name": "ΣΤΕΛΛΑΤΟΥ ΕΛΕΝΗ",
+      "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ & ΣΟΛΩΜΟΥ 2",
+      "locality": "Λουτράκι",
+      "postcode": null,
+      "phone": "2744021231",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.9738342,
+        "lon": 22.9780519,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/40223",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2744021817",
+      "name": "ΔΕΔΕΣ Ε. ΣΩΤΗΡΙΟΣ",
+      "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 62-64",
+      "locality": "Λουτράκι",
+      "postcode": null,
+      "phone": "2744021817",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 37.9702009,
+        "lon": 22.9779007,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/40221",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2744022334",
+      "name": "ΜΗΤΡΟΥ ΓΙΑΝΝΟΥΛΑ &ΣΙΑ Ο.Ε.",
+      "address": "ΠΛΑΤ. 25ης ΜΑΡΤΙΟΥ",
+      "locality": "Λουτράκι",
+      "postcode": null,
+      "phone": "2744022334",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 37.9780078,
+        "lon": 22.9773615,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/40219",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2744061120",
+      "name": "ΜΕΞΙΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΚΑΡΑΪΣΚΆΚΗ 48",
+      "locality": "Λουτράκι",
+      "postcode": null,
+      "phone": "2744061120",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 37.9731425,
+        "lon": 22.9815257,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/40220",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2744300722",
+      "name": "ΤΣΙΑΜΗ Γ. ΠΑΝΑΓΙΩΤΑ",
+      "address": "Δ. ΜΑΤΣΗ 27",
+      "locality": "Λουτράκι",
+      "postcode": null,
+      "phone": "2744300722",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.9707019,
+        "lon": 22.9806049,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/40222",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2746022274",
+      "name": "Σ.Φ. ΖΑΧΟΥ Μ. ΓΡΙΒΑ Μ.Ε. Ο.Ε.",
+      "address": "Λ.ΠΑΠΑΚ/ΝΟΥ 62Α&ΜΑΝΙΑΤΗ",
+      "locality": "Νεμέα",
+      "postcode": null,
+      "phone": "2746022274",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 37.8207492,
+        "lon": 22.6615569,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/39855",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2746023107",
+      "name": "ΧΡΥΣΙΚΟΠΟΥΛΟΣ Δ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "Λ. ΠΑΠΑΚ/ΝΟΥ 79",
+      "locality": "Νεμέα",
+      "postcode": null,
+      "phone": "2746023107",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 37.8228995,
+        "lon": 22.6594993,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/39857",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2746023591",
+      "name": "ΒΑΣΙΛΕΙΟΥ ΘΕΟΔΩΡΟΣ & ΣΙΑ ΕΕ",
+      "address": "Λ. ΠΑΠΑΚ/ΝΟΥ 47",
+      "locality": "Νεμέα",
+      "postcode": null,
+      "phone": "2746023591",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 37.8213041,
+        "lon": 22.6609543,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/39854",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "6944332965",
+      "name": "Σ.Φ. ΔΗΜΗΤΡΙΟΥ Κ.-ΔΗΜΗΤΡΙΟΥ Π. Ο.Ε.",
+      "address": "ΦΛΟΙΟΥΝΤΟΣ 2",
+      "locality": "Νεμέα",
+      "postcode": null,
+      "phone": "6944332965",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 37.8220098,
+        "lon": 22.6629063,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/39856",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

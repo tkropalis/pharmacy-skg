@@ -1,0 +1,383 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2521020101",
+      "name": "ΛΕΜΟΝΙΔΗΣ Γ. ΛΑΖΑΡΟΣ",
+      "address": "ΠΤΟΛΕΜΑΙΩΝ 4",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521020101",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 41.15103,
+        "lon": 24.147467,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3139",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521023170",
+      "name": "ΚΑΖΗΣ Α. ΔΗΜΗΤΡΙΟΣ & ΣΙΑ ΟΕ",
+      "address": "ΑΓΑΜΕΜΝΟΝΟΣ 4",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521023170",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 41.1517799,
+        "lon": 24.1476031,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3132",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521023313",
+      "name": "ΤΖΙΒΑΝΑΚΗΣ Σ. ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 35",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521023313",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 41.1512613,
+        "lon": 24.1464372,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3134",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521024127",
+      "name": "ΔΟΥΡΛΙΟΥ ΧΡΥΣΑΝΘΗ ΑΡΤΕΜΙΣ",
+      "address": "ΛΑΜΠΡΙΑΝΙΔΟΥ ΛΑΜΠΡΟΥ 41",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521024127",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 41.1522443,
+        "lon": 24.1468133,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3140",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521025150",
+      "name": "ΣΑΛΤΙΔΟΥ Γ. ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΖΕΡΒΟΥ 32",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521025150",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 41.1508052,
+        "lon": 24.1481389,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3129",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521025734",
+      "name": "ΤΣΑΠΑΚΙΔΟΥ ΔΕΣΠΟΙΝΑ",
+      "address": "ΑΡΜΕΝ 24",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521025734",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 41.150828,
+        "lon": 24.1476356,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3143",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521030377",
+      "name": "ΜΑΛΑΜΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΒΕΝΙΖΕΛΟΥ 162",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521030377",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 41.152201,
+        "lon": 24.141134,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3144",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521031514",
+      "name": "ΣΦ ΤΣΑΤΣΑΛΙΔΟΥ Β.-ΤΣΑΤΣΑΛΙΔΟΥ Χ.",
+      "address": "ΒΑΡΔΟΥΣΙΩΝ 16",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521031514",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 41.1521205,
+        "lon": 24.1461361,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3137",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521032233",
+      "name": "Σ.Φ. ΜΙΧΑΗΛΙΔΟΥ Μ. - ΚΛΕΪΔΗΣ Α. Ο.Ε.",
+      "address": "19ΗΣ ΜΑΪ́ΟΥ 71",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521032233",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 41.1490682,
+        "lon": 24.1445446,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3142",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521032256",
+      "name": "ΔΙΓΚΑ ΜΑΡΙΑ",
+      "address": "ΣΜΥΡΝΗΣ 34",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521032256",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 41.1494276,
+        "lon": 24.1481823,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3128",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521036091",
+      "name": "ΑΡΑΜΠΑΤΖΗΣ ΕΥΣΤΡΑΤΙΟΣ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 59",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521036091",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 41.1510455,
+        "lon": 24.1440515,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3141",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521036520",
+      "name": "ΦΕΤΦΑΤΖΙΔΗΣ ΘΕΟΔΩΡΟΣ",
+      "address": "ΕΘ. ΑΜΥΝΗΣ 25",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521036520",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 41.1480127,
+        "lon": 24.1472882,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3131",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521037366",
+      "name": "ΛΑΖΑΡΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΕΜ. ΠΑΠΑ 12",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521037366",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 41.149961,
+        "lon": 24.148425,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3133",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521037705",
+      "name": "ΧΟΡΟΖΟΓΛΟΥ ΗΛΙΑΣ",
+      "address": "ΒΕΛΙΣΣΑΡΙΟΥ & ΣΚΟΡΔΑ 2",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521037705",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 41.15099,
+        "lon": 24.148686,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3135",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521039495",
+      "name": "ΣΦ ΛΑΜΠΡΙΑΝΙΔΗΣ Α.- ΛΑΜΠΡΙΑΝΙΔΗΣ Θ. ΟΕ",
+      "address": "ΓΑΛΗΝΟΥ & ΦΙΛΙΠΠΟΥΠΟΛΕΩΣ 1",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521039495",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 41.149427,
+        "lon": 24.151744,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3130",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521039715",
+      "name": "ΠΑΡΑΛΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΒΕΡΓΙΝΑΣ 51",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521039715",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 41.1494561,
+        "lon": 24.1485122,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3145",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521057888",
+      "name": "ΙΩΑΝΝΙΔΟΥ ΑΓΓΕΛΙΚΗ & ΣΙΑ ΕΕ",
+      "address": "1ης ΙΟΥΛΙΟΥ 28 & ΧΡΥΣΟΒΕΡΓΗ",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521057888",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 41.143966,
+        "lon": 24.150707,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3138",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521303481",
+      "name": "ΠΟΛΥΧΡΟΝΙΑΔΗΣ ΙΟΡΔΑΝΗΣ",
+      "address": "ΛΕΩΦ. ΑΓΙΑΣ ΣΟΦΙΑΣ 1",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521303481",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 41.1506061,
+        "lon": 24.1459047,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3136",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

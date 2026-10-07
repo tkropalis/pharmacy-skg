@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-07",
+  "groups": [
+    {
+      "id": "ioannina",
+      "name": "Ιωάννινα",
+      "source": {
+        "url": "https://ioannina.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:53:47.583Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651032223",
+              "name": "ΠΑΝΟΠΟΥΛΟΥ ΜΑΡΙΑΝΘΗ",
+              "address": "ΠΥΡΣΙΝΕΛΛΑ 16",
+              "locality": "Ιωάννινα",
+              "phone": "2651032223"
+            },
+            {
+              "pharmacyId": "2651066590",
+              "name": "Σ.Φ. ΖΗΚΟΥ ΑΝΝΑ - ΠΑΠΑΝΔΡΕΟΥ ΑΡΙΣΤΟΤΕΛΗΣ",
+              "address": "ΠΛΑΤΕΙΑ ΟΜΗΡΟΥ 12",
+              "locality": "Ιωάννινα",
+              "phone": "2651066590"
+            },
+            {
+              "pharmacyId": "2651045233",
+              "name": "Σ.Φ. ΠΑΝΟΠΟΥΛΟΥ ΑΦΡΟΔΙΤΗ - ΜΗΤΣΙΟΣ ΙΩΑΝΝΗΣ",
+              "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 35",
+              "locality": "Ιωάννινα",
+              "phone": "2651045233"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651031814",
+              "name": "ΜΟΥΣΕΛΙΜΗ ΧΡΙΣΤΙΝΑ",
+              "address": "ΚΑ΄ΦΕΒΡΟΥΑΡΙΟΥ 109 Α",
+              "locality": "Ιωάννινα",
+              "phone": "2651031814"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

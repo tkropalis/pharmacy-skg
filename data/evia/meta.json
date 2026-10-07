@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "evia",
+  "updatedAt": "2026-10-07T07:50:08.533Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-evia",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Ευβοίας",
+        "en": "Pharmaceutical Association of Evia"
+      },
+      "url": "https://evia.efhmeries.gr/",
+      "note": "Duty lists, from evia.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

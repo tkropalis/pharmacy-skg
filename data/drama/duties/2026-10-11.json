@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "groups": [
+    {
+      "id": "drama",
+      "name": "Δράμα",
+      "source": {
+        "url": "https://drama.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:49:02.795Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521020101",
+              "name": "ΛΕΜΟΝΙΔΗΣ Γ. ΛΑΖΑΡΟΣ",
+              "address": "ΠΤΟΛΕΜΑΙΩΝ 4",
+              "locality": "Δράμα",
+              "phone": "2521020101"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521057888",
+              "name": "ΙΩΑΝΝΙΔΟΥ ΑΓΓΕΛΙΚΗ & ΣΙΑ ΕΕ",
+              "address": "1ης ΙΟΥΛΙΟΥ 28 & ΧΡΥΣΟΒΕΡΓΗ",
+              "locality": "Δράμα",
+              "phone": "2521057888"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

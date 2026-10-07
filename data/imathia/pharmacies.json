@@ -1,0 +1,845 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2331022080",
+      "name": "Μ. ΝΟΥΛΑ & ΣΙΑ ΟΕ",
+      "address": "ΒΕΝΙΖΕΛΟΥ 35",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331022080",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.52688,
+        "lon": 22.2033584,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6184",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331022968",
+      "name": "ΠΡΟΔΡΟΜΙΔΗΣ ΠΡΟΔ. ΣΤΕΦΑΝΟΣ",
+      "address": "ΒΕΝΙΖΕΛΟΥ 32",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331022968",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.5258661,
+        "lon": 22.2040558,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6182",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331023132",
+      "name": "ΜΑΣΟΥΡΑ ΑΙΚΑΤΕΡΙΝΗ & ΣΙΑ Ε.Ε.",
+      "address": "ΒΕΝΙΖΕΛΟΥ 22",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331023132",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.5250306,
+        "lon": 22.204432,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6172",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331024123",
+      "name": "ΜΑΣΟΥΡΑ ΑΛΕΞΑΝΔΡΑ & ΣΙΑ Ε.Ε.",
+      "address": "ΒΕΝΙΖΕΛΟΥ 26",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331024123",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 40.5254067,
+        "lon": 22.204205,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6166",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331024534",
+      "name": "ΚΟΡΔΑΤΟΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΠΛΑΤΆΝΩΝ 1",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331024534",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.52315,
+        "lon": 22.2023882,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6185",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331025130",
+      "name": "ΚΑΛΟΚΥΡΗ ΕΛΙΣΑΒΕΤ",
+      "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 28",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331025130",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 40.5255362,
+        "lon": 22.2041513,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6169",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331027355",
+      "name": "Σ.Φ. ΜΟΥΡΤΖΙΛΑ Β. - ΜΟΥΡΤΖΙΛΑΣ Γ. ΟΕ",
+      "address": "ΤΡΕΜΠΕΣΙΝΑΣ 20 - ΚΤΕΛ",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331027355",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.5278383,
+        "lon": 22.2047059,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6183",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331027475",
+      "name": "ΧΟΤΟΥΡΑΣ Α. ΟΔΥΣΣΕΑΣ",
+      "address": "ΜΑΥΡΟΜΙΧΑΛΗ 2",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331027475",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 40.5195004,
+        "lon": 22.200004,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6168",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331028594",
+      "name": "ΠΑΝΑΓΑΚΗΣ ΧΡ. ΑΛΕΞΙΟΣ",
+      "address": "ΒΕΝΙΖΕΛΟΥ 7",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331028594",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.5244504,
+        "lon": 22.2046723,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6174",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331029551",
+      "name": "ΠΑΠΑΓΕΩΓΙΟΥ Ι. ΑΝΑΣΤΑΣΙΟΣ",
+      "address": "ΜΗΤΡΟΠΟΛΕΩΣ 38",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331029551",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.5223504,
+        "lon": 22.2035648,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6186",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331041833",
+      "name": "ΜΠΟΥΡΑΣ Δ. ΧΡΥΣΟΣΤΟΜΟΣ",
+      "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 180-ΜΑΚΡΟΧΩΡΙ",
+      "locality": "Μακροχώρι",
+      "postcode": null,
+      "phone": "2331041833",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 40.5545487,
+        "lon": 22.2539374,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6596",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331041840",
+      "name": "Σ.Φ. ΘΕΟΔΩΡΙΔΗΣ ΘΕΟΔΩΡΟΣ ΚΑΙ ΘΕΟΔΩΡΙΔΗΣ ΔΗΜΟΣΘΕΝΗΣ Ο.Ε.",
+      "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 145-ΜΑΚΡΟΧΩΡΙ",
+      "locality": "Μακροχώρι",
+      "postcode": null,
+      "phone": "2331041840",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.5540487,
+        "lon": 22.2537387,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6595",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331042914",
+      "name": "ΙΓΝΑΤΙΑΔΟΥ ΜΑΡΘΑ",
+      "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 81- ΜΑΚΡΟΧΩΡΙ",
+      "locality": "Μακροχώρι",
+      "postcode": null,
+      "phone": "2331042914",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.5500249,
+        "lon": 22.2439114,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6599",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331060064",
+      "name": "ΠΑΠΑΡΗ ΟΛΥΜΠΙΑ ΥΠΟΚ/ΣΜΑ",
+      "address": "ΕΛΗΑΣ 4",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331060064",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.5235333,
+        "lon": 22.205504,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6180",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331060279",
+      "name": "ΤΕΡΜΕΝΤΖΗ & ΣΙΑ Ο.Ε.",
+      "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ ΚΑΙ ΕΔΕΣΣΗΣ",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331060279",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 40.5253812,
+        "lon": 22.2052785,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6165",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331062163",
+      "name": "ΖΕΡΗΣ ΓΕΩΡΓΙΟΣ & ΣΙΑ Ο.Ε.",
+      "address": "ΚΟΝΙΤΣΗΣ 15 ΚΑΙ ΕΜΜ.ΖΑΧΟΥ - περ. ΚΤΕΛ",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331062163",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 40.5272645,
+        "lon": 22.2052054,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6163",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331063620",
+      "name": "ΧΑΤΖΗΓΕΩΡΓΙΟΥ ΑΝΔ. ΓΕΩΡΓΙΟΣ",
+      "address": "ΤΡΕΜΠΕΣΙΝΑΣ 6 - ΚΤΕΛ - ΑΣΤΙΚΑ",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331063620",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 40.5268506,
+        "lon": 22.2042012,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6170",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331065770",
+      "name": "ΧΕΙΜΩΝΙΔΗΣ ΜΙΧΑΗΛ & ΣΙΑ Ε.Ε.",
+      "address": "Μ. ΜΠΟΤΣΑΡΗ 29 - πλατεία Τσερμένι",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331065770",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.517614,
+        "lon": 22.2024058,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6176",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331065931",
+      "name": "ΚΟΥΡΚΟΥΤΑ ΑΘΑΝ. ΝΙΚΟΛΕΤΑ",
+      "address": "ΠΙΝΔΟΥ 15 ΚΑΙ ΚΑΡΑΤΑΣΟΥ",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331065931",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.5280736,
+        "lon": 22.2032728,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6171",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331066649",
+      "name": "ΝΕΔΕΛΚΟΥ ΓΡ. ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΜΟΡΑΒΑ 1 -Δίπλα στο ΙΚΑ",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331066649",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.5289607,
+        "lon": 22.2037535,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6173",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331067420",
+      "name": "ΠΑΠΑΡΗ Χ. ΟΛΥΜΠΙΑ - ΥΠΟΚ/ΜΑ",
+      "address": "ΜΑΛΑΚΟΥΣΗ 4 - Πλ. Αγ. Αντωνίου",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331067420",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 40.5255742,
+        "lon": 22.2033286,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6167",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331071601",
+      "name": "ΚΑΛΑΜΠΑΛΙΚΑΣ ΙΩΑΝΝΗΣ ΤΟΥ ΕΥΑΓΓΕΛΟΥ",
+      "address": "ΒΕΝΙΖΕΛΟΥ 48 ΚΑΙ ΚΟΝΙΤΣΗ",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331071601",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.5272051,
+        "lon": 22.2033525,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6177",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331075180",
+      "name": "ΦΥΤΟΠΟΥΛΟΣ ΚΩΝ. ΓΕΩΡΓΙΟΣ",
+      "address": "ΠΑΥΣΑΝΙΟΥ 3 - απέναντι από μαρκετ Γαλαξίας",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331075180",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.5335731,
+        "lon": 22.2062163,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6179",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331504142",
+      "name": "ΜΠΙΝΙΚΟΣ Γ.ΝΙΚΟΛΑΟΣ",
+      "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 107 -ΜΑΚΡΟΧΩΡΙ",
+      "locality": "Μακροχώρι",
+      "postcode": null,
+      "phone": "2331504142",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 40.5506235,
+        "lon": 22.248685,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6594",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2332020120",
+      "name": "ΛΙΤΟΣ ΑΘΑΝΑΣΙΟΣ & ΣΙΑ Ο.Ε.",
+      "address": "ΧΡ. ΛΑΝΑΡΑ 20",
+      "locality": "Νάουσα",
+      "postcode": null,
+      "phone": "2332020120",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.629792,
+        "lon": 22.066339,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/5770",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2332020203",
+      "name": "ΚΑΠΕΤΑΝΟΠΟΥΛΟΣ Ε. ΑΘΑΝΑΣΙΟΣ & ΣΙΑ ΟΕ",
+      "address": "ΣΤ.ΔΡΑΓΟΥΜΗ 24 & ΖΑΦΕΙΡΑΚΗ ΓΩΝΙΑ",
+      "locality": "Νάουσα",
+      "postcode": null,
+      "phone": "2332020203",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 40.6331765,
+        "lon": 22.0712714,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/5767",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2332022800",
+      "name": "ΕΛΕΥΘΕΡΙΑΔΟΥ ΚΑΛΛΙΟΠΗ",
+      "address": "ΚΑΜΠΊΤΗ 3",
+      "locality": "Νάουσα",
+      "postcode": null,
+      "phone": "2332022800",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.6301029,
+        "lon": 22.0698393,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/5768",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2332022831",
+      "name": "ΠΟΥΤΟΥΡΗ Α. ΔΕΣΠΟΙΝΑ",
+      "address": "ΠΛ.ΔΙΟΙΚΗΤΗΡΙΟΥ 1",
+      "locality": "Νάουσα",
+      "postcode": null,
+      "phone": "2332022831",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 40.6290104,
+        "lon": 22.0683474,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/5766",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2332024820",
+      "name": "ΠΑΝΑΓΙΩΤΟΥ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΖΑΦΕΙΡΑΚΗ 19",
+      "locality": "Νάουσα",
+      "postcode": null,
+      "phone": "2332024820",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 40.6315072,
+        "lon": 22.0686952,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/5765",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2332027000",
+      "name": "Σ.Φ. ΜΑΝΤΣΟΥ ΜΑΓΔ.-ΔΕΣΠ. Ο.Ε.",
+      "address": "ΠΛΑΤΕΙΑ ΚΑΡΑΤΑΣΟΥ 1",
+      "locality": "Νάουσα",
+      "postcode": null,
+      "phone": "2332027000",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.6299435,
+        "lon": 22.0631126,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/5772",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2332027906",
+      "name": "ΚΑΠΕΤΑΝΟΠΟΥΛΟΣ ΑΘ. ΒΑΓΓΕΛΗΣ",
+      "address": "ΠΛ.ΚΑΡΑΤΑΣΟΥ 2",
+      "locality": "Νάουσα",
+      "postcode": null,
+      "phone": "2332027906",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.6301597,
+        "lon": 22.0630418,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/5769",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2332028535",
+      "name": "ΒΟΓΙΑΤΖΗΣ Γ. ΠΡΟΚΟΠΙΟΣ",
+      "address": "ΖΑΦΕΙΡΑΚΗ 7",
+      "locality": "Νάουσα",
+      "postcode": null,
+      "phone": "2332028535",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.6308901,
+        "lon": 22.0682212,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/5771",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2333022274",
+      "name": "ΟΙΚΟΝΟΜΟΠΟΥΛΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "Δ.ΒΕΤΣΟΠΟΥΛΟΥ 117",
+      "locality": "Αλεξάνδρεια",
+      "postcode": null,
+      "phone": "2333022274",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.6223183,
+        "lon": 22.4408209,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6821",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2333023023",
+      "name": "ΔΕΜΕΡΤΖΙΔΟΥ Χ. ΓΕΩΡΓΙΑ",
+      "address": "Δ.ΒΕΤΣΟΠΟΥΛΟΥ 32",
+      "locality": "Αλεξάνδρεια",
+      "postcode": null,
+      "phone": "2333023023",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 40.6273733,
+        "lon": 22.4387028,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6820",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2333023608",
+      "name": "ΚΕΜΠΑΠΙΔΟΥ ΝΙΚΗ & ΣΙΑ Ο.Ε.",
+      "address": "Δ.ΒΕΤΣΟΠΟΥΛΟΥ 101",
+      "locality": "Αλεξάνδρεια",
+      "postcode": null,
+      "phone": "2333023608",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 40.6230174,
+        "lon": 22.4405378,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6819",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2333024452",
+      "name": "ΤΣΙΒΟΥΛΑΣ ΧΡΙΣΤΟΔΟΥΛΟΣ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 55",
+      "locality": "Αλεξάνδρεια",
+      "postcode": null,
+      "phone": "2333024452",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 40.6301808,
+        "lon": 22.4386665,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6822",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2333024893",
+      "name": "ΘΕΜΕΛΗΣ Α. ΘΩΜΑΣ",
+      "address": "Δ. ΒΕΤΣΟΠΟΥΛΟΥ 106",
+      "locality": "Αλεξάνδρεια",
+      "postcode": null,
+      "phone": "2333024893",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.6224995,
+        "lon": 22.4404848,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6824",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2333025666",
+      "name": "ΠΑΡΑΣΧΟΥ Κ. ΕΥΘΥΜΙΟΣ",
+      "address": "ΝΑΟΥΣΗΣ 12",
+      "locality": "Αλεξάνδρεια",
+      "postcode": null,
+      "phone": "2333025666",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.6276873,
+        "lon": 22.4359143,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6825",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2333026728",
+      "name": "Σ.Φ. ΔΑΥΙΔΗΣ ΚΑΛΟΥΔΗΣ ΔΑΥΙΔΗΣ ΧΑΡΑΛΑΜΠΟΣ & ΣΙΑ Ο.Ε",
+      "address": "ΣΜΥΡΝΗΣ 2",
+      "locality": "Αλεξάνδρεια",
+      "postcode": null,
+      "phone": "2333026728",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 40.6275043,
+        "lon": 22.4339659,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6818",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2333101014",
+      "name": "ΔΑΥΙΔΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΝΙΚ. ΠΛΑΣΤΗΡΑ 87",
+      "locality": "Αλεξάνδρεια",
+      "postcode": null,
+      "phone": "2333101014",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 40.6229662,
+        "lon": 22.4436822,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6823",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

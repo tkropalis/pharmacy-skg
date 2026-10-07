@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "magnesia",
+  "updatedAt": "2026-10-07T08:12:15.467Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-12"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-magnesia",
+      "name": {
+        "el": "Εφημερίες φαρμακείων Μαγνησίας",
+        "en": "Pharmacy duties of Magnesia"
+      },
+      "url": "https://magnesia.efhmeries.gr/",
+      "note": "Duty lists, from magnesia.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

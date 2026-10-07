@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "groups": [
+    {
+      "id": "imathia",
+      "name": "Ημαθία",
+      "source": {
+        "url": "https://imathia.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:51:03.115Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:30",
+          "hours": {
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331071601",
+              "name": "ΚΑΛΑΜΠΑΛΙΚΑΣ ΙΩΑΝΝΗΣ ΤΟΥ ΕΥΑΓΓΕΛΟΥ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 48 ΚΑΙ ΚΟΝΙΤΣΗ",
+              "locality": "Βέροια",
+              "phone": "2331071601"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΠΡΩΙ ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2333101014",
+              "name": "ΔΑΥΙΔΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΝΙΚ. ΠΛΑΣΤΗΡΑ 87",
+              "locality": "Αλεξάνδρεια",
+              "phone": "2333101014"
+            },
+            {
+              "pharmacyId": "2332020120",
+              "name": "ΛΙΤΟΣ ΑΘΑΝΑΣΙΟΣ & ΣΙΑ Ο.Ε.",
+              "address": "ΧΡ. ΛΑΝΑΡΑ 20",
+              "locality": "Νάουσα",
+              "phone": "2332020120"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΠΡΩΙ ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331041840",
+              "name": "Σ.Φ. ΘΕΟΔΩΡΙΔΗΣ ΘΕΟΔΩΡΟΣ ΚΑΙ ΘΕΟΔΩΡΙΔΗΣ ΔΗΜΟΣΘΕΝΗΣ Ο.Ε.",
+              "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 145-ΜΑΚΡΟΧΩΡΙ",
+              "locality": "Μακροχώρι",
+              "phone": "2331041840"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331075180",
+              "name": "ΦΥΤΟΠΟΥΛΟΣ ΚΩΝ. ΓΕΩΡΓΙΟΣ",
+              "address": "ΠΑΥΣΑΝΙΟΥ 3 - απέναντι από μαρκετ Γαλαξίας",
+              "locality": "Βέροια",
+              "phone": "2331075180"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "19:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "19:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331060064",
+              "name": "ΠΑΠΑΡΗ ΟΛΥΜΠΙΑ ΥΠΟΚ/ΣΜΑ",
+              "address": "ΕΛΗΑΣ 4",
+              "locality": "Βέροια",
+              "phone": "2331060064"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331060064",
+              "name": "ΠΑΠΑΡΗ ΟΛΥΜΠΙΑ ΥΠΟΚ/ΣΜΑ",
+              "address": "ΕΛΗΑΣ 4",
+              "locality": "Βέροια",
+              "phone": "2331060064"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

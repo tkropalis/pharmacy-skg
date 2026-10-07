@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "groups": [
+    {
+      "id": "evros",
+      "name": "Έβρος",
+      "source": {
+        "url": "https://evros.efhmeries.gr/",
+        "uploadedAt": "2026-10-07T07:50:08.910Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552023803",
+              "name": "ΖΑΦΕΙΡΙΑΔΗΣ ΧΡΗΣΤΟΣ",
+              "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 82",
+              "locality": "Ορεστιάδα",
+              "phone": "2552023803"
+            },
+            {
+              "pharmacyId": "2553025115",
+              "name": "Σ.Φ. ΒΑΦΕΙΑΔΗΣ Π. - ΒΑΦΕΙΑΔΟΥ Κ.",
+              "address": "25ΗΣ ΜΑΪΟΥ 131",
+              "locality": "Διδυμότειχο",
+              "phone": "2553025115"
+            },
+            {
+              "pharmacyId": "2551020667",
+              "name": "Σ.Φ. ΚΑΪΣΑΣ Γ.-ΚΑΪΣΑ Χ.",
+              "address": "14ης Μαΐου 88 (έναντι ΚΕΠ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551020667"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2555024333",
+              "name": "ΜΑΛΑΚΗΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "ΟΡΦΕΩΣ 2",
+              "locality": "Φέρες",
+              "phone": "2555024333"
+            },
+            {
+              "pharmacyId": "2554042020",
+              "name": "ΠΑΠΑΜΙΧΑΗΛ ΠΑΣΧΑΛΗΣ",
+              "address": "ΝΙΚΗΣ 33",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042020"
+            },
+            {
+              "pharmacyId": "2554022232",
+              "name": "ΠΙΤΙΑΚΟΥΔΗΣ ΣΩΤΗΡΙΟΣ - ΜΠΑΜΙΔΟΥ ΚΟΡΤΕΣΣΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 158",
+              "locality": "Σουφλί",
+              "phone": "2554022232"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,761 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2221020777",
+      "name": "Σ.Φ. ΠΑΠΑΔΟΠΟΥΛΟΥ ΔΗΜΗΤΡΑ & ΜΑΡΙΑ",
+      "address": "ΓΑΖΕΠΗ 46-ΝΟΣΟΚΟΜΕΙΟ",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221020777",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 38.4633594,
+        "lon": 23.5986972,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9296",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221024646",
+      "name": "ΚΑΤΣΑΝΤΩΝΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΔΟΥΝΑ 8-10 ΕΝΑΝΤΙ ΔΙΚΑΣΤΗΡΙΩΝ",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221024646",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 38.4634434,
+        "lon": 23.5922062,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9300",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221025295",
+      "name": "ΠΑΠΑΚΩΝΣΤΑΝΤΙΝΟΥ ΠΑΝΑΓΙΩΤΑ",
+      "address": "ΜΕΣΣΑΠΙΩΝ 26",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221025295",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 38.4651908,
+        "lon": 23.6039114,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9291",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221025636",
+      "name": "ΚΑΡΛΑΤΗΡΑΣ ΕΥΣΤΡΑΤΙΟΣ",
+      "address": "ΤΡΑΠΕΖΟΥΝΤΙΟΥ & ΙΣΑΙΟΥ - ΑΓ. ΒΑΡΒΑΡΑ",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221025636",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 38.4628098,
+        "lon": 23.5928468,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9309",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221042444",
+      "name": "ΣΠΑΝΟΥ ΔΕΣΠΟΙΝΑ",
+      "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 66",
+      "locality": "Αρτάκη",
+      "postcode": null,
+      "phone": "2221042444",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 38.5135666,
+        "lon": 23.6373025,
+        "ref": "https://evia.efhmeries.gr/Home/Details/8834",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221042721",
+      "name": "ΑΡΓΥΡΟΠΟΥΛΟΣ ΠΕΤΡΟΣ",
+      "address": "ΕΘ. ΑΝΤΙΣΤΑΣΕΩΣ 146",
+      "locality": "Αρτάκη",
+      "postcode": null,
+      "phone": "2221042721",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 38.5152697,
+        "lon": 23.6374886,
+        "ref": "https://evia.efhmeries.gr/Home/Details/8942",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221043777",
+      "name": "ΜΑΥΡΟΜΑΤΙΔΟΥ ΣΩΤΗΡΙΑ",
+      "address": "ΙΠΠΟΚΡΑΤΗ ΜΑΚΡΗ 35",
+      "locality": "Αρτάκη",
+      "postcode": null,
+      "phone": "2221043777",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 38.5218832,
+        "lon": 23.6329109,
+        "ref": "https://evia.efhmeries.gr/Home/Details/8959",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221044062",
+      "name": "ΜΗΤΑΦΗ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΛΕΩΦ ΤΣΙΜΕΝΙΔΟΥ 12",
+      "locality": "Αρτάκη",
+      "postcode": null,
+      "phone": "2221044062",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 38.5161637,
+        "lon": 23.63651,
+        "ref": "https://evia.efhmeries.gr/Home/Details/8815",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221044344",
+      "name": "Σ.Φ. ΛΑΛΑΝΙΤΗ - ΑΡΓΥΡΑΚΗΣ",
+      "address": "ΒΟΥΔΟΥΡΗ 7",
+      "locality": "Αρτάκη",
+      "postcode": null,
+      "phone": "2221044344",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 38.5148962,
+        "lon": 23.6379147,
+        "ref": "https://evia.efhmeries.gr/Home/Details/8796",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221044646",
+      "name": "ΚΑΡΑΤΖΑ ΑΡΓΥΡΩ",
+      "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 96",
+      "locality": "Αρτάκη",
+      "postcode": null,
+      "phone": "2221044646",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 38.5127647,
+        "lon": 23.6373757,
+        "ref": "https://evia.efhmeries.gr/Home/Details/8853",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221044680",
+      "name": "ΧΑΛΒΑΤΖΗ ΜΑΡΙΑ",
+      "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 77",
+      "locality": "Αρτάκη",
+      "postcode": null,
+      "phone": "2221044680",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.5135347,
+        "lon": 23.6372011,
+        "ref": "https://evia.efhmeries.gr/Home/Details/8872",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221062843",
+      "name": "ΑΝΤΩΝΙΟΥ ΝΙΚΟΛΑΟΣ",
+      "address": "ΝΕΟΦΥΤΟΥ 48Β",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221062843",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 38.465384,
+        "lon": 23.5975707,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9298",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221064600",
+      "name": "ΝΙΦΟΡΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΑΜΑΡΥΣΙΑΣ ΑΡΤΕΜΙΔΟΣ ΚΑΙ ΑΠΟΣΤΟΛΗ",
+      "locality": "Ερέτρια",
+      "postcode": null,
+      "phone": "2221064600",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.3913492,
+        "lon": 23.7944804,
+        "ref": "https://evia.efhmeries.gr/Home/Details/7979",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221076486",
+      "name": "Σ.Φ. ΝΤΙΑΝΑ ΒΑΛΤΣΑΝΟΒΑ ΠΑΠΑΠΟΣΤΟΛΟΥ - ΜΑΡΤΙΝ ΠΑΠΑΠΟΣΤΟΛΟΥ ΟΕ",
+      "address": "ΑΡΕΘΟΥΣΗΣ 217",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221076486",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 38.45883,
+        "lon": 23.608915,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9299",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221077929",
+      "name": "ΚΟΥΚΗ ΜΑΡΙΑΝΘΗ",
+      "address": "ΝΕΟΦΥΤΟΥ 10",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221077929",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 38.4631746,
+        "lon": 23.5959828,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9294",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221077961",
+      "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
+      "address": "ΑΒΑΝΤΩΝ 81",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221077961",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 38.4679058,
+        "lon": 23.5988216,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9302",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221082278",
+      "name": "ΜΕΤΑΞΩΤΟΣ ΣΩΤΗΡΙΟΣ",
+      "address": "ΤΣΙΡΙΓΩΤΗ 5 - ΠΛΑΤΕΙΑ ΑΓ.ΝΙΚΟΛΑΟΥ",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221082278",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 38.2364072,
+        "lon": 23.3813525,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9307",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221082969",
+      "name": "ΦΩΤΙΑΔΗ ΕΥΑΓΓΕΛΙΑ",
+      "address": "ΑΡΕΘΟΥΣΗΣ 12",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221082969",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 38.4621413,
+        "lon": 23.5960686,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9292",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221085586",
+      "name": "ΣΑΜΠΛΗ ΠΟΛΥΞΕΝΗ",
+      "address": "ΚΗΡΕΩΣ 11Β",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221085586",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-07",
+      "location": {
+        "lat": 38.4736664,
+        "lon": 23.6045981,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9293",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221085705",
+      "name": "Σ.Φ. Δ.ΧΑΝΤΖΗΣ-Ζ.ΧΑΝΤΖΗ Ο.Ε.",
+      "address": "ΧΑΪΝΑ 28",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221085705",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.468676,
+        "lon": 23.601998,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9311",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221087414",
+      "name": "Σ.Φ. ΒΡΑΚΑ ΜΑΡΙΑ - ΒΑΡΟΥΧΑΚΗΣ ΑΝΤΩΝΙΟΣ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 30 & ΦΙΛΩΝΟΣ 7-ΕΝΑΝΤΙ ΑΡΧ. ΜΟΥΣΕΙΟΥ",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221087414",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 38.463053,
+        "lon": 23.593886,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9301",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221087998",
+      "name": "ΚΡΗΤΙΚΑΚΗ ΜΑΡΙΑ",
+      "address": "ΕΥΒΟΙΑΣ 49 ΠΛΗΣΙΟΝ ΤΕΧΝΙΚΟΥ ΛΥΚΕΙΟΥ",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221087998",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 38.456986,
+        "lon": 23.597776,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9295",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221088494",
+      "name": "Σ.Φ. ΖΑΦΕΙΡΗ ΑΣΗΜΕΝΙΑ - ΚΥΡΑΝΑΣ ΙΩΑΝΝΗΣ",
+      "address": "ΛΗΛΑΝΤΙΩΝ 217 ΚΑΙ ΣΑΛΑΜΙΝΟΣ",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221088494",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 38.468587,
+        "lon": 23.622334,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9297",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221094469",
+      "name": "ΛΟΥΚΑ ΠΑΝΑΓΙΩΤΑ",
+      "address": "Λ.ΚΑΡΑΜΑΝΛΗ 19",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221094469",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 38.4650801,
+        "lon": 23.5782949,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9303",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221555103",
+      "name": "ΤΟΥΛΟΥΜΗ ΕΙΡΗΝΗ",
+      "address": "ΑΓΓΕΛΗ ΓΟΒΙΟΥ 20-ΠΛΗΣΙΟΝ ΞΕΝΟΔΟΧΕΙΟΥ ΠΑΛΙΡΡΟΙΑ",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221555103",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.4634152,
+        "lon": 23.5916951,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9310",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2224022217",
+      "name": "Σ.Φ. ΠΛΑΤΥΜΕΣΗΣ ΣΠΥΡΟΣ & ΖΩΗ",
+      "address": "Ι. ΚΟΤΣΙΚΑ 9",
+      "locality": "Κάρυστος",
+      "postcode": null,
+      "phone": "2224022217",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 38.0143048,
+        "lon": 24.4198213,
+        "ref": "https://evia.efhmeries.gr/Home/Details/7420",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2224023505",
+      "name": "ΒΕΛΙΣΣΑΡΑΚΟΣ ΑΝΑΣΤΑΣΙΟΣ",
+      "address": "Ι. ΚΟΤΣΙΚΑ 1",
+      "locality": "Κάρυστος",
+      "postcode": null,
+      "phone": "2224023505",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 38.0139844,
+        "lon": 24.4199375,
+        "ref": "https://evia.efhmeries.gr/Home/Details/7422",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2224023543",
+      "name": "ΠΟΛΙΤΗΣ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΣΑΧΤΟΥΡΗ 80",
+      "locality": "Κάρυστος",
+      "postcode": null,
+      "phone": "2224023543",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 38.0139058,
+        "lon": 24.4207056,
+        "ref": "https://evia.efhmeries.gr/Home/Details/7423",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2224023855",
+      "name": "ΣΙΑΣΑΚΟΣ ΕΛΕΥΘΕΡΙΟΣ",
+      "address": "ΣΑΧΤΟΥΡΗ 124",
+      "locality": "Κάρυστος",
+      "postcode": null,
+      "phone": "2224023855",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 38.0141849,
+        "lon": 24.4183416,
+        "ref": "https://evia.efhmeries.gr/Home/Details/7424",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2224025420",
+      "name": "ΓΙΑΝΝΑΚΟΥ - ΣΦΥΡΙΔΗ ΣΟΦΙΑ",
+      "address": "Θ. ΚΟΤΣΙΚΑ 32",
+      "locality": "Κάρυστος",
+      "postcode": null,
+      "phone": "2224025420",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.0151615,
+        "lon": 24.4189621,
+        "ref": "https://evia.efhmeries.gr/Home/Details/7421",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2226052506",
+      "name": "ΣΩΤΗΡΟΠΟΥΛΟΣ ΙΩΣΗΦ",
+      "address": "28ης ΟΚΤΩΒΡΙΟΥ 1",
+      "locality": "Ιστιαία",
+      "postcode": null,
+      "phone": "2226052506",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 38.954086,
+        "lon": 23.150921,
+        "ref": "https://evia.efhmeries.gr/Home/Details/8530",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2226053141",
+      "name": "ΛΙΑΠΟΔΗΜΗΤΡΗ ΠΑΝΑΓΙΩΤΑ",
+      "address": "ΠΛΗΣΙΟΝ ΚΤΕΛ",
+      "locality": "Ιστιαία",
+      "postcode": null,
+      "phone": "2226053141",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 38.956778,
+        "lon": 23.152573,
+        "ref": "https://evia.efhmeries.gr/Home/Details/8552",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2226053155",
+      "name": "ΣΩΤΗΡΟΠΟΥΛΟΣ 2 (ΠΕΡΠΑΤΑΡΗΣ)",
+      "address": "ΠΛΗΣΙΟΝ Κ.Υ. ΙΣΤΙΑΙΑΣ",
+      "locality": "Ιστιαία",
+      "postcode": null,
+      "phone": "2226053155",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 38.9551053,
+        "lon": 23.1442887,
+        "ref": "https://evia.efhmeries.gr/Home/Details/8428",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2226056148",
+      "name": "ΑΝΑΣΤΑΣΙΟΥ ΑΡΕΤΗ",
+      "address": "ΜΕΤΑΞΑ ΙΩΑΝΝΟΥ 4",
+      "locality": "Ιστιαία",
+      "postcode": null,
+      "phone": "2226056148",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 38.954759,
+        "lon": 23.153936,
+        "ref": "https://evia.efhmeries.gr/Home/Details/8448",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2229060906",
+      "name": "Σ.Φ. ΚΕΧΡΗΣ - ΚΟΥΚΗ Ο.Ε.",
+      "address": "ΑΡΧΑΙΟΥ ΘΕΑΤΡΟΥ 76",
+      "locality": "Ερέτρια",
+      "postcode": null,
+      "phone": "2229060906",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-07",
+      "lastSeen": "2026-10-08",
+      "location": {
+        "lat": 38.3946605,
+        "lon": 23.7919147,
+        "ref": "https://evia.efhmeries.gr/Home/Details/8040",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2229062585",
+      "name": "ΜΙΧΟΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΦΙΛ. ΜΕΝΕΔΗΜΟΥ 36",
+      "locality": "Ερέτρια",
+      "postcode": null,
+      "phone": "2229062585",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 38.3920871,
+        "lon": 23.7914086,
+        "ref": "https://evia.efhmeries.gr/Home/Details/7913",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}

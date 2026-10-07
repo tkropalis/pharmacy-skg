@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "city": "chania",
+  "updatedAt": "2026-10-07T08:05:24.331Z",
+  "duties": {
+    "from": "2026-10-07",
+    "to": "2026-10-13"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "iteq-chania",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Χανίων",
+        "en": "Pharmaceutical Association of Chania"
+      },
+      "url": "https://chania.efhmeries.gr/",
+      "note": "Duty lists, from chania.efhmeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}
