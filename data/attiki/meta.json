@@ -1,13 +1,19 @@
 {
   "schemaVersion": 1,
   "city": "attiki",
-  "updatedAt": "2026-10-08T13:16:24.660Z",
-  "checkedAt": "2026-10-08T13:16:24.660Z",
+  "updatedAt": "2026-10-08T20:50:17.772Z",
+  "checkedAt": "2026-10-08T20:50:55.084Z",
   "duties": {
     "from": "2026-10-08",
     "to": "2026-10-14"
   },
-  "extendedHours": [],
+  "extendedHours": [
+    {
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "file": "extended-hours/2026-10-01_2026-10-31.json"
+    }
+  ],
   "sources": [
     {
       "id": "fsa",
@@ -17,6 +23,24 @@
       },
       "url": "https://fsa-efimeries.gr/",
       "note": "Duty lists, from fsa-efimeries.gr"
+    },
+    {
+      "id": "fsa-hours",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Αττικής",
+        "en": "Pharmaceutical Association of Attica"
+      },
+      "url": "https://fsa.gr/",
+      "note": "Extended opening hours, from fsa.gr"
+    },
+    {
+      "id": "patt",
+      "name": {
+        "el": "Περιφέρεια Αττικής",
+        "en": "Region of Attica"
+      },
+      "url": "https://diavgeia.gov.gr/doc/ΨΔ8Π7Λ7-ΚΒΨ",
+      "note": "Regular opening hours, 13 May 2026 to 12 May 2027 (packages/core/src/regular-hours.ts)"
     },
     {
       "id": "osm",
