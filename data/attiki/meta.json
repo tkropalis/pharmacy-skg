@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "city": "attiki",
+  "updatedAt": "2026-10-08T13:16:24.660Z",
+  "checkedAt": "2026-10-08T13:16:24.660Z",
+  "duties": {
+    "from": "2026-10-08",
+    "to": "2026-10-14"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "fsa",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Αττικής",
+        "en": "Pharmaceutical Association of Attica"
+      },
+      "url": "https://fsa-efimeries.gr/",
+      "note": "Duty lists, from fsa-efimeries.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}
