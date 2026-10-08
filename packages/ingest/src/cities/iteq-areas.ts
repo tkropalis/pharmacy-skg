@@ -6,7 +6,7 @@
  *
  * Each is credited as its site names itself on 7 Oct 2026: the association where the site says
  * so, otherwise the site's own title. Left out: Rethymno, Rodopi and Kefalonia publish nothing,
- * and Attica's site (fsa-efimeries.gr) has its own format.
+ * and Attica's site (fsa-efimeries.gr) has its own format (cities/attiki.ts).
  */
 import type { City } from '@pharmacy-skg/core';
 import { ITEQ_AREAS } from '@pharmacy-skg/core';

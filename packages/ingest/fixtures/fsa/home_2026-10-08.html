@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="el" xml:lang="el" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8MT7PMKDL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-W8MT7PMKDL');
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> - Εφημερίες ΦΣΑ</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+    <script src="/lib/htmx.org/dist/htmx.min.js"></script>
+    
+    <link href="/lib/leaflet/leaflet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.maptiler.com/mapbox-gl-js/v1.5.1/mapbox-gl.css" />
+    <style>
+
+        #filter-form input[type=checkbox]:hover + label {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #filter-form input[type=checkbox]:checked + label {
+            background-color: #35C88A;
+            color: #fff;
+        }
+    </style>
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+
+        .header-title{
+            font-size: 3vw;
+        }
+
+        .img-fluid {
+            width: 100%;
+            max-width: 10vw;
+            opacity: 0.8;
+        }
+
+        .header {
+            overflow: hidden;
+            background: rgb(53,200,138);
+            background: radial-gradient(circle, rgba(53,200,138,1) 70%, rgba(14,149,148,1) 100%);
+            padding: 20px 10px;
+        }
+        .bg-gradient{
+            background: rgb(53,200,138);
+            background: linear-gradient(90deg, #f8f9fa 0%, #fff 15%, #fff 85%, #f8f9fa 100%);
+        }
+        .form-control:focus {
+            border-color: #28a745;
+            box-shadow: 0 0 0 0.2rem rgba(53, 200, 138, 0.25);
+        }
+
+        .theme-color {
+            color: #35C88A;
+        }
+
+        .theme-bg {
+            background-color: #35C88A;
+            color: white;
+        }
+
+        /*        .footer {
+            border-top: 1px solid #808080;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding-left: 20%;
+            padding-top: -20px;
+        }*/
+
+/*        .container {
+            margin-bottom: 7%;
+        }*/
+
+        @media only screen and (max-width: 1024px) {
+            .header-title {
+                font-size: 4vw;
+            }
+
+            .img-fluid {
+                width: 100%;
+                max-width: 12vw;
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+<body id="body" class="bg-light">
+    <header id="layout-header">
+        <div class="header d-flex justify-content-center align-items-center">
+            <a href="/">
+                <img src="/images/logo.png" alt="ΦΑΡΜΑΚΕΥΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΑΤΤΙΚΗΣ" class="img-fluid">
+            </a>
+            <div class="ml-3 header-title text-white display-4">
+                <span>ΦΑΡΜΑΚΕΥΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΑΤΤΙΚΗΣ<br />Eφημερεύοντα Φαρμακεία</span>
+            </div>
+        </div>
+    </header>
+    <div class=" px-sm-5">
+        <main role="main" class="pb-3">
+            
+    <div class="container bg-white my-3">
+        <div class="d-flex flex-column py-3">
+        <button class="btn btn-outline-primary btn-lg mx-auto" onclick="findLocation(true)">Εντοπισμός τοποθεσίας</button>
+            
+<style>
+
+    #address-input {
+        max-width: 70vw;
+    }
+    
+        #address-input:placeholder-shown {
+            opacity: 0;
+            max-width: 0;
+            transition: max-width 1s ease-in-out 0.2s, opacity 1s ease 0.2s;
+            padding: 0;
+        }
+
+        #address-input:focus {
+            max-width: 70vw;
+            opacity: 1;
+            padding: .5rem 1rem;
+        }
+
+    .input-group {
+        width: 100%; /* Ensure parent has consistent size */
+    }
+
+    label#address-input-label {
+        display: none;
+    }
+
+    #address-input:placeholder-shown + label {
+        display: inline-block;
+        cursor: pointer;
+        visibility: visible;
+    }
+
+    #address-input:focus + label {
+        display: none;
+    }
+</style>
+<div class=" d-flex justify-content-center flex-nowrap">
+    <div class="input-group input-group-lg justify-content-center mx-auto">
+        
+        <input id="address-input" name="address" type="text" class="form-control" placeholder="Εισάγετε διεύθυνση" autocomplete="off" hx-get="/api/google/autocomplete" hx-trigger="input[target.value.length > 5] delay:1.5s" hx-target="#address-suggestions"></input>
+        <label id="address-input-label" for="address-input" class="btn btn-link btn-sm my-auto" >Εισαγωγή διεύθυνσης</label>
+    </div>
+
+   
+
+</div>
+<div id="address-suggestions" hx-on="htmx:afterRequest:console.log(event.detail.xhr.response); storeCoordinates(event)">
+    <!-- Suggestions will be dynamically populated here -->
+</div>
+<script>
+    function storeCoordinates(event) {
+        console.log(event);
+        const response = JSON.parse(event.detail.xhr.response);
+
+        const latitude = response.lat;
+        const longitude = response.lng;
+
+        sessionStorage.setItem('userLatitude', JSON.stringify(latitude));
+        sessionStorage.setItem('userLongitude', JSON.stringify(longitude));
+        sessionStorage.setItem('userPositionCenter', JSON.stringify([latitude, longitude]));
+        sessionStorage.setItem('mapCenter', JSON.stringify([latitude, longitude]));
+        sessionStorage.setItem("zoomLevel", 15);
+        document.getElementById('address-input').value = response.address;
+    }
+</script>
+        
+        </div>
+        <form id="filter-form" hx-trigger="load once, change delay:0.5s, htmx:afterRequest from:#address-suggestions" hx-target="#duty-cards" hx-post="/Home/FilteredHomeResults">
+            <div class="form-row justify-content-between ">
+                <div class="form-group col-md-3">
+                    <label for="Date" class="theme-color">Ημερομηνία</label>
+                    <select hx-trigger="change" hx-target="#open-checkbox" hx-swap="outerHTML" id="Date" name="Date" class="form-control" hx-get="/Home/GetIsOpenButton"><option value="2026-10-08">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 8 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-09">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 9 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-10">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 10 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-11">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 11 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-12">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 12 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-13">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 13 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-14">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 14 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-15">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 15 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-16">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 16 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-17">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 17 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-18">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 18 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-19">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 19 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-20">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 20 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-21">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 21 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-22">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 22 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-23">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 23 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-24">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 24 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-25">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 25 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-26">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 26 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-27">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 27 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-28">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 28 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-29">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 29 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-30">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 30 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-10-31">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 31 &#x39F;&#x3BA;&#x3C4;&#x3C9;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-01">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 1 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-02">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 2 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-03">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 3 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-04">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 4 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-05">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 5 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-06">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 6 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-07">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 7 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-08">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 8 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-09">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 9 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-10">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 10 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-11">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 11 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-12">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 12 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-13">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 13 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-14">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 14 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-15">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 15 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-16">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 16 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-17">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 17 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-18">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 18 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-19">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 19 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-20">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 20 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-21">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 21 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-22">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 22 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-23">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 23 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-24">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 24 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-25">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 25 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-26">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 26 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-27">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 27 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-28">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 28 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-29">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 29 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-11-30">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 30 &#x39D;&#x3BF;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-01">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 1 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-02">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 2 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-03">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 3 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-04">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 4 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-05">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 5 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-06">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 6 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-07">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 7 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-08">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 8 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-09">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 9 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-10">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 10 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-11">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 11 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-12">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 12 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-13">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 13 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-14">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 14 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-15">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 15 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-16">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 16 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-17">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 17 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-18">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 18 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-19">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 19 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-20">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 20 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-21">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 21 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-22">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 22 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-23">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 23 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-24">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 24 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-25">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 25 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-26">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 26 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-27">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 27 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-28">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 28 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-29">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 29 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-30">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 30 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2026-12-31">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 31 &#x394;&#x3B5;&#x3BA;&#x3B5;&#x3BC;&#x3B2;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2026</option>
+<option value="2027-01-01">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 1 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-02">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 2 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-03">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 3 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-04">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 4 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-05">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 5 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-06">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 6 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-07">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 7 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-08">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 8 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-09">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 9 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-10">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 10 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-11">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 11 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-12">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 12 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-13">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 13 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-14">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 14 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-15">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 15 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-16">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 16 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-17">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 17 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-18">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 18 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-19">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 19 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-20">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 20 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-21">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 21 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-22">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 22 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-23">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 23 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-24">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 24 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-25">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 25 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-26">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 26 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-27">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 27 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-28">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 28 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-29">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 29 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-30">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 30 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-01-31">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 31 &#x399;&#x3B1;&#x3BD;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-01">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 1 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-02">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 2 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-03">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 3 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-04">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 4 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-05">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 5 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-06">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 6 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-07">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 7 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-08">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 8 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-09">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 9 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-10">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 10 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-11">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 11 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-12">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 12 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-13">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 13 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-14">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 14 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-15">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 15 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-16">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 16 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-17">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 17 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-18">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 18 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-19">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 19 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-20">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 20 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-21">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 21 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-22">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 22 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-23">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 23 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-24">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 24 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-25">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 25 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-26">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 26 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-27">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 27 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-02-28">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 28 &#x3A6;&#x3B5;&#x3B2;&#x3C1;&#x3BF;&#x3C5;&#x3B1;&#x3C1;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-01">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 1 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-02">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 2 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-03">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 3 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-04">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 4 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-05">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 5 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-06">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 6 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-07">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 7 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-08">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 8 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-09">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 9 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-10">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 10 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-11">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 11 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-12">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 12 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-13">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 13 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-14">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 14 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-15">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 15 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-16">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 16 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-17">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 17 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-18">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 18 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-19">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 19 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-20">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 20 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-21">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 21 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-22">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 22 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-23">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 23 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-24">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 24 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-25">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 25 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-26">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 26 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-27">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 27 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-28">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 28 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-29">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 29 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-30">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 30 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-03-31">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 31 &#x39C;&#x3B1;&#x3C1;&#x3C4;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-01">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 1 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-02">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 2 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-03">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 3 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-04">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 4 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-05">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 5 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-06">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 6 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-07">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 7 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-08">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 8 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-09">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 9 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-10">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 10 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-11">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 11 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-12">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 12 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-13">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 13 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-14">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 14 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-15">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 15 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-16">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 16 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-17">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 17 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-18">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 18 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-19">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 19 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-20">&#x3A4;&#x3C1;&#x3AF;&#x3C4;&#x3B7;, 20 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-21">&#x3A4;&#x3B5;&#x3C4;&#x3AC;&#x3C1;&#x3C4;&#x3B7;, 21 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-22">&#x3A0;&#x3AD;&#x3BC;&#x3C0;&#x3C4;&#x3B7;, 22 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-23">&#x3A0;&#x3B1;&#x3C1;&#x3B1;&#x3C3;&#x3BA;&#x3B5;&#x3C5;&#x3AE;, 23 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-24">&#x3A3;&#x3AC;&#x3B2;&#x3B2;&#x3B1;&#x3C4;&#x3BF;, 24 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-25">&#x39A;&#x3C5;&#x3C1;&#x3B9;&#x3B1;&#x3BA;&#x3AE;, 25 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+<option value="2027-04-26">&#x394;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C1;&#x3B1;, 26 &#x391;&#x3C0;&#x3C1;&#x3B9;&#x3BB;&#x3AF;&#x3BF;&#x3C5; 2027</option>
+</select>
+                </div>
+
+                <div id="open-checkbox" class="form-group col-md-3 mx-2 align-self-end text-right">
+                    <div class="form-check form-check-inline text-right mr-0">
+                        <input hidden type="checkbox" class="form-check-input" checked="checked" data-val="true" data-val-required="The IsOpen field is required." id="IsOpen" name="IsOpen" value="true">
+                        <label for="IsOpen" class=" form-check-label theme-color">
+                            <span class="nav-link  border">Aνοιχτά τώρα</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        <input name="IsOpen" type="hidden" value="false"></form>
+
+    </div>
+<div id="duty-cards">
+</div>
+<style>
+    #scroll-to-btn {
+        position: fixed;
+        bottom: 70px;
+        right: 20px;
+        display: block; /* Initially show the button */
+        transition: opacity 0.3s ease; /* Smooth transition */
+    }
+</style>
+<a href="#layout-header" class="text-dark">
+    <div id="scroll-to-btn" class="btn btn-outline-dark rounded-circle ">
+
+        <i class="fas fa-chevron-up fa-3x"></i>
+
+    </div>
+</a>
+<script>
+   
+    // Get the scroll to button and the target element based on the model
+    const scrollToTopBtn = document.getElementById('scroll-to-btn');
+    const targetElement = document.getElementById("layout-header");
+
+    // Create an intersection observer to watch when the target element enters and exits the viewport
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // If the target element is in view, hide the button
+                scrollToTopBtn.style.opacity = '0';
+                scrollToTopBtn.style.pointerEvents = 'none';  // Optional: Prevent interaction when hidden
+            } else {
+                // If the target element is out of view, show the button
+                scrollToTopBtn.style.opacity = '1';
+                scrollToTopBtn.style.pointerEvents = 'auto';
+            }
+        });
+    }, { threshold: 0.1 });  // Trigger the observer when at least 10% of the target is visible
+
+    // Start observing the target element
+    observer.observe(targetElement);
+</script>
+
+
+        </main>
+    </div>
+    <footer class="footer border-top text-muted text-break">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <span style="float:left">&copy; 2026 - Εφημερίες ΦΣΑ</span> 
+            </div>
+            <div>
+                <a href="https://iteq.gr/" target="_blank" class="card-link"><span class="text-secondary">Powered by <span class="font-weight-bold " style="color:mediumpurple;font-size:18px;">IT<span style="color:forestgreen">e</span>Q</span></span></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187341451-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-187341451-1');
+    </script>
+
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="/_content/AspNetCoreHero.ToastNotification/notyf.min.css">
+<script src="/_content/AspNetCoreHero.ToastNotification/notyf.min.js"></script>
+<script>
+    const notyf = new Notyf({"duration":4000,"position":{"x":"right","y":"bottom"},"dismissible":true,"ripple":true,"types":[{"type":"success","background":"#28a745"},{"type":"error","background":"#dc3545"},{"type":"warning","background":"orange","className":"text-dark","icon":{"className":"fa fa-warning text-dark","tagName":"i"}},{"type":"info","background":"#17a2b8","icon":{"className":"fa fa-info text-white","tagName":"i"}},{"type":"custom","background":"black"}]});
+</script>
+<script type="text/javascript">
+
+    function toastNotifySuccess(message, duration) {
+        if (duration) { notyf.success({ message: message, duration: duration }); }
+        else { notyf.success({ message: message }); }
+    }
+    function toastNotifyError(message, duration) {
+        if (duration) { notyf.error({ message: message, duration: duration }); }
+        else { notyf.error({ message: message }); }
+    }
+    function toastNotifyWarning(message, duration) {
+        if (duration) { notyf.open({ type: 'warning', message: message, duration: duration }); }
+        else { notyf.open({ type: 'warning', message: message }); }
+
+    }
+    function toastNotifyInformation(message, duration) {
+        if (duration) { notyf.open({ type: 'info', message: message, duration: duration }); }
+        else { notyf.open({ type: 'info', message: message }); }
+
+    }
+    function toastNotifyCustom(message, duration, color, iconClass) {
+
+        var lightOrDarkClassName = pickTextColorBasedOnBgColorAdvanced(color);
+        var iconClassName = iconClass.concat(' ').concat(lightOrDarkClassName);
+        if (duration) {
+            notyf.open({
+                type: 'custom',
+                message: message,
+                duration: duration,
+                className: lightOrDarkClassName,
+                background: color,
+                icon: {
+                    className: iconClassName,
+                    tagName: 'i'
+                }
+            });
+        }
+        else {
+            notyf.open({
+                type: 'custom',
+                message: message,
+                className: lightOrDarkClassName,
+                background: color,
+                icon: {
+                    className: iconClassName,
+                    tagName: 'i'
+                }
+            });
+        }
+
+    }
+    function colourNameToHex(colour) {
+        var colours = {
+            "aliceblue": "#f0f8ff", "antiquewhite": "#faebd7", "aqua": "#00ffff", "aquamarine": "#7fffd4", "azure": "#f0ffff",
+            "beige": "#f5f5dc", "bisque": "#ffe4c4", "black": "#000000", "blanchedalmond": "#ffebcd", "blue": "#0000ff", "blueviolet": "#8a2be2", "brown": "#a52a2a", "burlywood": "#deb887",
+            "cadetblue": "#5f9ea0", "chartreuse": "#7fff00", "chocolate": "#d2691e", "coral": "#ff7f50", "cornflowerblue": "#6495ed", "cornsilk": "#fff8dc", "crimson": "#dc143c", "cyan": "#00ffff",
+            "darkblue": "#00008b", "darkcyan": "#008b8b", "darkgoldenrod": "#b8860b", "darkgray": "#a9a9a9", "darkgreen": "#006400", "darkkhaki": "#bdb76b", "darkmagenta": "#8b008b", "darkolivegreen": "#556b2f",
+            "darkorange": "#ff8c00", "darkorchid": "#9932cc", "darkred": "#8b0000", "darksalmon": "#e9967a", "darkseagreen": "#8fbc8f", "darkslateblue": "#483d8b", "darkslategray": "#2f4f4f", "darkturquoise": "#00ced1",
+            "darkviolet": "#9400d3", "deeppink": "#ff1493", "deepskyblue": "#00bfff", "dimgray": "#696969", "dodgerblue": "#1e90ff",
+            "firebrick": "#b22222", "floralwhite": "#fffaf0", "forestgreen": "#228b22", "fuchsia": "#ff00ff",
+            "gainsboro": "#dcdcdc", "ghostwhite": "#f8f8ff", "gold": "#ffd700", "goldenrod": "#daa520", "gray": "#808080", "green": "#008000", "greenyellow": "#adff2f",
+            "honeydew": "#f0fff0", "hotpink": "#ff69b4",
+            "indianred ": "#cd5c5c", "indigo": "#4b0082", "ivory": "#fffff0", "khaki": "#f0e68c",
+            "lavender": "#e6e6fa", "lavenderblush": "#fff0f5", "lawngreen": "#7cfc00", "lemonchiffon": "#fffacd", "lightblue": "#add8e6", "lightcoral": "#f08080", "lightcyan": "#e0ffff", "lightgoldenrodyellow": "#fafad2",
+            "lightgrey": "#d3d3d3", "lightgreen": "#90ee90", "lightpink": "#ffb6c1", "lightsalmon": "#ffa07a", "lightseagreen": "#20b2aa", "lightskyblue": "#87cefa", "lightslategray": "#778899", "lightsteelblue": "#b0c4de",
+            "lightyellow": "#ffffe0", "lime": "#00ff00", "limegreen": "#32cd32", "linen": "#faf0e6",
+            "magenta": "#ff00ff", "maroon": "#800000", "mediumaquamarine": "#66cdaa", "mediumblue": "#0000cd", "mediumorchid": "#ba55d3", "mediumpurple": "#9370d8", "mediumseagreen": "#3cb371", "mediumslateblue": "#7b68ee",
+            "mediumspringgreen": "#00fa9a", "mediumturquoise": "#48d1cc", "mediumvioletred": "#c71585", "midnightblue": "#191970", "mintcream": "#f5fffa", "mistyrose": "#ffe4e1", "moccasin": "#ffe4b5",
+            "navajowhite": "#ffdead", "navy": "#000080",
+            "oldlace": "#fdf5e6", "olive": "#808000", "olivedrab": "#6b8e23", "orange": "#ffa500", "orangered": "#ff4500", "orchid": "#da70d6",
+            "palegoldenrod": "#eee8aa", "palegreen": "#98fb98", "paleturquoise": "#afeeee", "palevioletred": "#d87093", "papayawhip": "#ffefd5", "peachpuff": "#ffdab9", "peru": "#cd853f", "pink": "#ffc0cb", "plum": "#dda0dd", "powderblue": "#b0e0e6", "purple": "#800080",
+            "rebeccapurple": "#663399", "red": "#ff0000", "rosybrown": "#bc8f8f", "royalblue": "#4169e1",
+            "saddlebrown": "#8b4513", "salmon": "#fa8072", "sandybrown": "#f4a460", "seagreen": "#2e8b57", "seashell": "#fff5ee", "sienna": "#a0522d", "silver": "#c0c0c0", "skyblue": "#87ceeb", "slateblue": "#6a5acd", "slategray": "#708090", "snow": "#fffafa", "springgreen": "#00ff7f", "steelblue": "#4682b4",
+            "tan": "#d2b48c", "teal": "#008080", "thistle": "#d8bfd8", "tomato": "#ff6347", "turquoise": "#40e0d0",
+            "violet": "#ee82ee",
+            "wheat": "#f5deb3", "white": "#ffffff", "whitesmoke": "#f5f5f5",
+            "yellow": "#ffff00", "yellowgreen": "#9acd32"
+        };
+
+        if (typeof colours[colour.toLowerCase()] != 'undefined')
+            return colours[colour.toLowerCase()];
+
+        return false;
+    }
+    function pickTextColorBasedOnBgColorAdvanced(bgColor) {
+
+        var hexColor = colourNameToHex(bgColor);
+        var color = (bgColor.charAt(0) === '#') ? bgColor.substring(1, 7) : hexColor.substring(1, 7);
+        var r = parseInt(color.substring(0, 2), 16); // hexToR
+        var g = parseInt(color.substring(2, 4), 16); // hexToG
+        var b = parseInt(color.substring(4, 6), 16); // hexToB
+        var uicolors = [r / 255, g / 255, b / 255];
+        var c = uicolors.map((col) => {
+            if (col <= 0.03928) {
+                return col / 12.92;
+            }
+            return Math.pow((col + 0.055) / 1.055, 2.4);
+        });
+        var L = (0.2126 * c[0]) + (0.7152 * c[1]) + (0.0722 * c[2]);
+        return (L > 0.179) ? 'text-dark' : 'text-white';
+    }
+</script>
+    <script src="/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+    
+    <script src="/lib/leaflet/leaflet.js"></script>
+    <script src="https://cdn.maptiler.com/mapbox-gl-js/v1.5.1/mapbox-gl.js"></script>
+    <script src="https://cdn.maptiler.com/mapbox-gl-leaflet/latest/leaflet-mapbox-gl.js"></script>
+    <script>
+                document.getElementById('IsOpen').addEventListener('change', (e) => {
+                    var checkbox = e.currentTarget;
+            // Find the sibling label
+            const label = document.querySelector(`label[for="${checkbox.id}"] > span`);
+            if (label) {
+                // Update the label's text
+                label.innerText = checkbox.checked ? "Aνοιχτά τώρα" : "Aνοιχτά & κλειστά";
+            }
+        });
+
+        // Attach a listener for HTMX requests
+        document.getElementById('filter-form').addEventListener('htmx:configRequest', function (event) {
+            // Retrieve the value from sessionStorage
+            const userLatitudeValue = sessionStorage.getItem('userLatitude');
+            const userLongitudeValue = sessionStorage.getItem('userLongitude');
+            // If the session value exists, add it as a custom header
+            if (userLatitudeValue) {
+                event.detail.headers['x-session-position'] = [userLatitudeValue, userLongitudeValue];
+            }
+        });
+    </script>
+    <script id="location">
+        function findLocation(refresh) {
+            if (refresh == true){
+                navigator.permissions.query({ name: 'geolocation' }).then(permissionStatus => {
+    console.log('Geolocation permission state:', permissionStatus.state);
+
+        if (permissionStatus.state !== 'granted') {
+        alert('Πρέπει να επιτρέψετε την πρόσβαση στην τοποθεσία σας στις ρυθμίσεις ιστοτόπου (site settings) του περιηγητή σας.');
+            }})
+                }
+            if ("geolocation" in navigator) {
+              navigator.geolocation.getCurrentPosition(
+                    function (position) {
+                        console.log("Entered position");
+                        const latitude = position.coords.latitude;
+                        const longitude = position.coords.longitude;
+                        if (!sessionStorage.hasOwnProperty('userGpsCenter') || refresh == true) {
+                            // Store in localStorage
+
+                            sessionStorage.setItem('userGpsCenter', JSON.stringify([latitude, longitude]));
+                            sessionStorage.setItem('userPositionCenter', JSON.stringify([latitude, longitude]));
+                            sessionStorage.setItem('userLatitude', JSON.stringify(latitude));
+                            sessionStorage.setItem('userLongitude', JSON.stringify(longitude));
+                            sessionStorage.setItem('mapCenter', JSON.stringify([latitude, longitude]));
+                            location.reload();
+                        }
+
+                    },
+                    function (error) {
+                            if (sessionStorage.getItem('userGpsCenter')) {
+                                sessionStorage.removeItem('userGpsCenter');
+                            }
+                        console.error("Error getting location:", error.message);
+                    }
+                );
+            } else {
+                console.log("Geolocation is not supported by this browser.");
+            }
+        };
+        document.addEventListener("DOMContentLoaded", findLocation(false));
+    </script>
+    <script>
+        // Wait for the DOM to be ready
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add a click event listener to the document
+            document.addEventListener('click', function (event) {
+                // Find the suggestion list element
+                const suggestionList = document.getElementById('suggestion-list-items');
+
+                // If the list exists and the click is outside the list
+                if (suggestionList && !suggestionList.contains(event.target)) {
+                    // Remove the list from the DOM
+                    suggestionList.remove();
+                }
+            });
+        });
+    </script>
+
+
+</body>
+</html>

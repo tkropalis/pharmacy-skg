@@ -89,6 +89,7 @@ Fetched 6 Oct 2026; every tenant answered 200 from IIS, with no challenge and no
   - About 75–80 cards a day.
   - Dates are published about 200 days ahead.
   - There is no JSON API (`/swagger` and `/api` return 404).
+  - Read since 8 Oct 2026 (`cities/attiki.ts`): no token or cookie is needed; each card's maps link has its coordinates; the hours are written as on the shared platform ("8 ΠΡΩΙ - 11 ΒΡΑΔΥ"), and a pharmacy with a day and a night shift has a card for each. 201 dates on offer on 8 Oct 2026.
 - **`<area>.efhmeries.gr`**, one ASP.NET Core code base:
   - `POST /tomeas` (`date`, `tomeas` for the sector, an antiforgery token and cookie, ordinary form protection) returns the day's list.
   - `/Home/Details/{id}` has `_lat`/`_lng`.

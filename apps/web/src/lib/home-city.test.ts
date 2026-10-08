@@ -33,8 +33,13 @@ describe('homeCity', () => {
   });
 
   it('falls back to the default area elsewhere, without a position or with an unknown city', () => {
-    expect(homeCity(storageWith({ [LAST_POSITION_KEY]: position(37.984, 23.728) })).id).toBe(
+    // Patra: no area covers it yet.
+    expect(homeCity(storageWith({ [LAST_POSITION_KEY]: position(38.2466, 21.7346) })).id).toBe(
       'thessaloniki',
+    );
+    // Athens is Attica's.
+    expect(homeCity(storageWith({ [LAST_POSITION_KEY]: position(37.984, 23.728) })).id).toBe(
+      'attiki',
     );
     expect(homeCity(storageWith({})).id).toBe('thessaloniki');
     expect(homeCity(storageWith({ [CITY_KEY]: 'atlantis' })).id).toBe('thessaloniki');
