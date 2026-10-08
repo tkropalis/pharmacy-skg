@@ -52,7 +52,10 @@ export function allPathParams(): { path: string | undefined; locale: Locale; rou
 export const PARAM_ROUTES = {
   /** One pharmacy, by registry id: '/farmakeio/2310200022/', '/en/pharmacy/2310200022/'. */
   pharmacy: { el: 'farmakeio', en: 'pharmacy' },
-  /** A city's duty lists for one date: '/efimeries/thessaloniki/2026-10-05/'. */
+  /**
+   * A city's duty lists for one date, '/efimeries/thessaloniki/2026-10-05/', and the city's page
+   * for today, '/efimeries/thessaloniki/'.
+   */
   duty: { el: 'efimeries', en: 'duty' },
   /** One locality of a city: '/perioxi/thessaloniki/kalamaria/', '/en/area/larisa/tyrnavos/'. */
   area: { el: 'perioxi', en: 'area' },
@@ -69,6 +72,9 @@ export const pharmacyPath = (locale: Locale, id: string): string =>
   paramPath(locale, 'pharmacy', id);
 export const dutyPath = (locale: Locale, cityId: string, date: string): string =>
   paramPath(locale, 'duty', cityId, date);
+/** The city's duty page for today, at an address that does not change with the date. */
+export const dutyCityPath = (locale: Locale, cityId: string): string =>
+  paramPath(locale, 'duty', cityId);
 export const areaPath = (locale: Locale, cityId: string, slug: string): string =>
   paramPath(locale, 'area', cityId, slug);
 

@@ -80,6 +80,31 @@ test.describe('a position in another city', () => {
   });
 });
 
+test.describe("a city's page for today", () => {
+  test('opens the app on that city, though the position found by itself is in another', async ({
+    page,
+  }) => {
+    // The fixtures' position is in Thessaloniki; the person searched for Larissa.
+    await page.goto('/efimeries/larisa/');
+    await expect(page.getByText(text.summary.dutyOnly)).toBeVisible();
+    const rows = await waitForRows(page);
+    await expect(rows.first()).toContainText('Εφημερεύει');
+    await expect(page.locator('h1')).toHaveText('Εφημερεύοντα φαρμακεία σήμερα, Λάρισα');
+    expect(await page.evaluate(() => localStorage.getItem('pharmacy-skg:city'))).toBeNull();
+  });
+
+  test.describe('without JavaScript', () => {
+    test.use({ javaScriptEnabled: false });
+
+    test("is that day's published lists", async ({ page }) => {
+      await page.goto('/efimeries/larisa/');
+      await expect(page.locator('h1')).toContainText('Εφημερεύοντα φαρμακεία, Λάρισα,');
+      await expect(page.locator('.seo-group').first()).toBeVisible();
+      await expect(page.locator('.seo-breadcrumb a')).toHaveAttribute('href', '/efimeries/');
+    });
+  });
+});
+
 test.describe('favourites in another city', () => {
   test.use({ autoLocate: false });
 

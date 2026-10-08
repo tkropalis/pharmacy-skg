@@ -1,11 +1,10 @@
 ---
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import type { Locale } from '@pharmacy-skg/core';
-import { faSvg } from '../../lib/fa.ts';
-import { t } from '../../i18n/index.ts';
+import { SITE_URL } from '../../config.ts';
 import { loadSeoModel } from '../../lib/seo/site-data.ts';
-import { fill } from '../../lib/seo/format.ts';
+import { breadcrumbJsonLd, jsonLdScript } from '../../lib/seo/jsonld.ts';
 import { dutyPageProps } from '../../lib/seo/views.ts';
+import DutyDayContent from './DutyDayContent.astro';
 import SeoLayout from './SeoLayout.astro';
 
 interface Props {
@@ -17,104 +16,16 @@ interface Props {
 const { locale, cityId, date } = Astro.props;
 const model = await loadSeoModel(cityId);
 const page = dutyPageProps(model, locale, date);
-if (page === null) throw new Error(`No published duty list for ${date}`);
-
-const d = t(locale);
-const seo = d.seo.duty;
+if (page === null) throw new Error(`No published duty list for ${cityId} ${date}`);
+const origin = (Astro.site ?? new URL(SITE_URL)).origin;
 ---
 
-<!--
-  One day's published lists, one per area group: a plain heading with a hairline above it, then
-  each kind of duty with its hours on one line and its pharmacies.
--->
-<SeoLayout meta={page.meta} updated={{ at: page.updatedAt, text: page.updatedAtText }}>
-  <nav class="seo-breadcrumb" aria-label={d.seo.breadcrumbLabel}>
-    <ol>
-      <li>
-        <a href={page.indexPath}>{d.seo.footerDuty}</a>
-      </li>
-      <li aria-current="page">{page.dateLabel}</li>
-    </ol>
-  </nav>
-
-  <h1 data-duty-date={page.date} data-today-label={d.seo.todayBadge}>
-    {page.h1}
-  </h1>
-
-  {page.missingGroups.length > 0 && (
-    <p class="callout" role="note">
-      {fill(seo.missingGroups, { groups: page.missingGroups.join(', ') })}
-    </p>
-  )}
-
-  {/* The list of all dates is the breadcrumb's first link. */}
-  <nav class="seo-pager" aria-label={seo.pagerLabel}>
-    {page.prev !== null ? (
-      <a href={page.prev.path} rel="prev">
-        <Fragment set:html={faSvg(faArrowLeft, { size: 14 })} />
-        <span>
-          <span class="sr-only">{seo.prev}: </span>
-          {page.prev.label}
-        </span>
-      </a>
-    ) : (
-      <span></span>
-    )}
-    {page.next !== null && (
-      <a href={page.next.path} rel="next" class="next">
-        <span>
-          <span class="sr-only">{seo.next}: </span>
-          {page.next.label}
-        </span>
-        <Fragment set:html={faSvg(faArrowRight, { size: 14 })} />
-      </a>
-    )}
-  </nav>
-
-  {page.groups.map((group) => (
-    <section class="seo-group" aria-labelledby={`group-${group.id}`}>
-      <h2 id={`group-${group.id}`}>{group.name}</h2>
-      <p class="seo-meta">
-        <a href={group.sourceUrl} rel="noopener">
-          {seo.sourceLink}
-        </a>
-      </p>
-      {group.sections.map((section) => (
-        <div class="seo-section">
-          <h3>{section.kindLabel}</h3>
-          <p class="seo-meta">
-            {seo.hoursLabel} {section.hoursText}
-            {section.extraHours.map((extra) => (
-              <>
-                {' · '}
-                {seo.extraHoursLabel} {extra}
-              </>
-            ))}
-          </p>
-          {section.notes.map((note) => (
-            <p class="seo-meta">{note}</p>
-          ))}
-          <ul class="seo-list">
-            {section.entries.map((entry) => (
-              <li>
-                <span class="name">
-                  {entry.pagePath !== null ? <a href={entry.pagePath}>{entry.name}</a> : entry.name}
-                </span>
-                <span class="sub">
-                  {entry.address}, {entry.locality}
-                </span>
-                {entry.phoneHref !== null && (
-                  <span class="sub">
-                    <a href={entry.phoneHref}>{entry.phone}</a>
-                  </span>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </section>
-  ))}
+<SeoLayout
+  meta={page.meta}
+  jsonLd={jsonLdScript(breadcrumbJsonLd(page.breadcrumbs, origin))}
+  updated={{ at: page.updatedAt, text: page.updatedAtText }}
+>
+  <DutyDayContent locale={locale} page={page} />
 </SeoLayout>
 
 <script>

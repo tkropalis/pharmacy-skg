@@ -99,6 +99,12 @@ interface OriginState extends Origin {
 interface HomeAppProps {
   /** The covered city shown first (lib/home-city.ts); the person's position or choice can change it. */
   readonly initialCity: City;
+  /**
+   * The page is about initialCity (its page for today, reached from a search): a position in
+   * another city, remembered or found by itself, does not take the app away from it. Asking
+   * for the position, or choosing another city, still does.
+   */
+  readonly pageCity?: boolean;
   readonly locale: Locale;
   readonly text: Dictionary['app'];
   readonly title: string;
@@ -137,12 +143,12 @@ function initialGeo(): GeoState {
  * the person chose an area or turned the position off. It is replaced by a fresh position
  * where the browser gives one without asking.
  */
-function initialOrigin(label: string): OriginState | null {
+function initialOrigin(label: string, pinnedCityId: string | null): OriginState | null {
   if (readItem(LOCATION_KEY) === 'off' || readItem(AREA_KEY) !== null) return null;
   const remembered = loadPosition();
-  return remembered === null
-    ? null
-    : { kind: 'last', lat: remembered.lat, lon: remembered.lon, label };
+  if (remembered === null) return null;
+  if (pinnedCityId !== null && cityAt(remembered)?.id !== pinnedCityId) return null;
+  return { kind: 'last', lat: remembered.lat, lon: remembered.lon, label };
 }
 
 function isIsoDate(value: string): boolean {
@@ -163,8 +169,16 @@ function chosenInstant(mode: TimeMode): Date | null {
   }
 }
 
-export default function HomeApp({ initialCity, locale, text, title }: HomeAppProps) {
+export default function HomeApp({
+  initialCity,
+  pageCity = false,
+  locale,
+  text,
+  title,
+}: HomeAppProps) {
   const [city, setCity] = useState(initialCity);
+  // The city the page is about, until the person asks for their position or picks a city.
+  const pinnedCity = useRef(pageCity ? initialCity.id : null);
   const { state, retry, ensureDates } = useCityData(city.id);
   // Where the city's regular hours are not known, only pharmacies on duty are shown (D26).
   const dutyOnly = !hasRegularHours(city.id);
@@ -177,7 +191,7 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
   const [tab, setTab] = useState<Tab>('open');
   const [timeMode, setTimeMode] = useState<TimeMode>({ kind: 'now' });
   const [origin, setOrigin] = useState<OriginState | null>(() =>
-    initialOrigin(text.origin.lastHere),
+    initialOrigin(text.origin.lastHere, pinnedCity.current),
   );
   const [originNonce, setOriginNonce] = useState(0);
   const [geo, setGeo] = useState<GeoState>(initialGeo);
@@ -308,6 +322,7 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
   const switchCity = useCallback(
     (next: City) => {
       if (next.id === city.id) return;
+      pinnedCity.current = null;
       rememberCity(next.id);
       setCity(next);
     },
@@ -613,13 +628,21 @@ export default function HomeApp({ initialCity, locale, text, title }: HomeAppPro
       return;
     }
     setGeo('locating');
+    if (!auto) pinnedCity.current = null;
     navigator.geolocation.getCurrentPosition(
       (position) => {
+        const point = { lat: position.coords.latitude, lon: position.coords.longitude };
+        // Found by itself, elsewhere than the city this page is about: kept for the next visit,
+        // but the list stays on the city and does not measure from so far away.
+        if (auto && pinnedCity.current !== null && cityAt(point)?.id !== pinnedCity.current) {
+          savePosition(point, Date.now());
+          setGeo('idle');
+          return;
+        }
         pendingAnnouncement.current = true;
         // Asking for the position again is a choice for it: the opt-out and the area go.
         writeItem(LOCATION_KEY, null);
         writeItem(AREA_KEY, null);
-        const point = { lat: position.coords.latitude, lon: position.coords.longitude };
         savePosition(point, Date.now());
         setGeo('idle');
         setOrigin({ kind: 'geo', ...point, label: text.origin.here });

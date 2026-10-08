@@ -22,7 +22,9 @@ const seo = d.seo.duty;
 
   {page.cities.map((city) => (
     <section aria-labelledby={`city-${city.id}`}>
-      <h2 id={`city-${city.id}`}>{city.name}</h2>
+      <h2 id={`city-${city.id}`}>
+        {city.todayPath !== null ? <a href={city.todayPath}>{city.name}</a> : city.name}
+      </h2>
       {city.items.length === 0 ? (
         <p>{seo.indexNone}</p>
       ) : (

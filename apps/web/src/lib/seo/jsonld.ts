@@ -51,6 +51,35 @@ export function pharmacyJsonLd(pharmacy: Pharmacy, url: string): Record<string, 
   };
 }
 
+/** Schema.org `BreadcrumbList` for a page's visible breadcrumb; the last crumb is the page. */
+export function breadcrumbJsonLd(
+  crumbs: readonly { readonly name: string; readonly path: string }[],
+  origin: string,
+): Record<string, unknown> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map((crumb, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: crumb.name,
+      item: new URL(crumb.path, origin).href,
+    })),
+  };
+}
+
+/**
+ * Schema.org `WebSite` for the home page in each language: search engines take the site name
+ * they show from it instead of the domain.
+ */
+export function websiteJsonLd(
+  name: string,
+  url: string,
+  language: string,
+): Record<string, unknown> {
+  return { '@context': 'https://schema.org', '@type': 'WebSite', name, url, inLanguage: language };
+}
+
 /** JSON safe to put inside a <script type="application/ld+json"> element. */
 export function jsonLdScript(value: unknown): string {
   return JSON.stringify(value).replace(/</g, '\\u003c');

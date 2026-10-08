@@ -119,7 +119,7 @@ The owner creates and manages the Vercel project (decision D14).
    | Variable          | Value                                                                                                                                                                                           |
    | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
    | `GITHUB_TOKEN`    | A **fine-grained** personal access token for this repository only, with **Issues: read and write** and nothing else. Without it `/api/report` answers 503 and the form links to GitHub instead. |
-   | `PUBLIC_SITE_URL` | The public origin, e.g. `https://example.gr` (no trailing slash). Used for canonical, hreflang and Open Graph URLs. Defaults to the placeholder `https://pharmacy-skg.vercel.app`.              |
+   | `PUBLIC_SITE_URL` | The public origin, `https://farmakeiotwra.gr` (no trailing slash). Used for canonical, hreflang, Open Graph and sitemap URLs. Defaults to `SITE_URL` in `src/config.ts`, the same domain.       |
    | `GITHUB_REPO`     | Optional, `owner/name` the reports go to. Defaults to `tkropalis/pharmacy-skg`.                                                                                                                 |
 
 4. **Web Analytics:** enable it under the project's Analytics tab. `@vercel/analytics` is added to every page in builds made on Vercel (`VERCEL=1`), never locally, in CI or in the e2e build.

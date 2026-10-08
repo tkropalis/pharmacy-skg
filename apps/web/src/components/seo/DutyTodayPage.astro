@@ -1,0 +1,57 @@
+---
+import type { Locale } from '@pharmacy-skg/core';
+import { SITE_URL } from '../../config.ts';
+import Base from '../../layouts/Base.astro';
+import { cityDataUrl } from '../../lib/data.ts';
+import { breadcrumbJsonLd, jsonLdScript } from '../../lib/seo/jsonld.ts';
+import { loadSeoModel } from '../../lib/seo/site-data.ts';
+import { dutyTodayPageProps } from '../../lib/seo/views.ts';
+import HomePage from '../pages/HomePage.astro';
+import DutyDayContent from './DutyDayContent.astro';
+
+interface Props {
+  locale: Locale;
+  cityId: string;
+}
+
+const { locale, cityId } = Astro.props;
+const model = await loadSeoModel(cityId);
+const page = dutyTodayPageProps(model, locale);
+if (page === null) throw new Error(`No published duty list for ${cityId}`);
+const origin = (Astro.site ?? new URL(SITE_URL)).origin;
+---
+
+<!--
+  A city's page for today ('/efimeries/larisa/'), where most people arrive from a search: the
+  app itself, opened on this city, as on the home screen. Until it has loaded (and for search
+  engines and browsers without JavaScript) the page is that day's published lists.
+-->
+<Base
+  locale={locale}
+  route={null}
+  title={page.meta.title}
+  description={page.meta.description}
+  alternates={page.meta.alternates}
+  app
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    is:inline
+    set:html={jsonLdScript(breadcrumbJsonLd(page.breadcrumbs, origin))}
+  />
+  {['meta.json', 'pharmacies.json'].map((file) => (
+    <link
+      slot="head"
+      rel="preload"
+      as="fetch"
+      href={cityDataUrl(cityId, file)}
+      crossorigin="anonymous"
+    />
+  ))}
+  <HomePage locale={locale} cityId={cityId} title={page.meta.title}>
+    <div class="container seo-page">
+      <DutyDayContent locale={locale} page={page} />
+    </div>
+  </HomePage>
+</Base>

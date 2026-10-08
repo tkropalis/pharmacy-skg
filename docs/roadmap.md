@@ -69,7 +69,7 @@ Pure TypeScript in `packages/core`, specified by decision D23.
   - a "last updated" line and a stale-data banner;
   - a disclaimer, a privacy page and source credits;
   - the emergency numbers (166, 112, Poison Centre); an always-visible strip at first, moved to the sheet's footer and the about page on 5 Oct 2026.
-- **Search engines:** pages per area and day, and per pharmacy, plus a sitemap.
+- **Search engines:** pages per area and day, and per pharmacy, plus a sitemap; a page per city for today, breadcrumbs and site-name structured data (8 Oct 2026).
 - **Quality:** Playwright smoke tests, plus Lighthouse and accessibility passes.
   - Done: `apps/web/e2e` (Chromium, 390×844 phone and 1280×800 desktop, fixed clock, tile server stubbed) covers the home screen in both languages, the area picker, the pharmacy, duty-date and area pages (lang, canonical, hreflang), the report form (success, 503 fallback), offline reload with the map, touch targets and focus, and axe (WCAG 2.2 A/AA) on seven pages × two languages × two colour schemes. `pnpm e2e` builds with `PHARMACY_TODAY` and runs; CI has a separate `e2e` job.
   - Done: Lighthouse on the built home, a pharmacy page and a duty page (mobile): 90 or more for accessibility, best practices and SEO; the home screen's performance is 93 to 100 after the map was made to wait for a settled page (see apps/web/README.md).

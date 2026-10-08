@@ -8,6 +8,7 @@ import { t } from '../../i18n/index.ts';
 import {
   areaIndexPath,
   areaPath,
+  dutyCityPath,
   dutyIndexPath,
   dutyPath,
   localizedPath,
@@ -90,6 +91,12 @@ const greek = new Intl.Collator('el');
 /** The city's name in the locale ("Λάρισα", "Larissa"). */
 function cityName(cityId: string, locale: Locale): string {
   return cityById(cityId)?.name[locale] ?? cityId;
+}
+
+/** One step of a page's breadcrumb trail; the last is the page itself. */
+export interface Crumb {
+  readonly name: string;
+  readonly path: string;
 }
 
 /** The latest update of several cities' data. */
@@ -296,6 +303,8 @@ export interface DutyPageProps {
   readonly date: string;
   readonly dateLabel: string;
   readonly h1: string;
+  /** The duty index, the city's page for today and, on a dated page, the date. */
+  readonly breadcrumbs: readonly Crumb[];
   readonly prev: DutyNeighbour | null;
   readonly next: DutyNeighbour | null;
   readonly groups: readonly DutyGroupView[];
@@ -333,6 +342,7 @@ export function dutyPageProps(model: SeoModel, locale: Locale, date: string): Du
   const dateLabel = formatLongDate(date, locale);
   const city = cityName(model.cityId, locale);
   const title = fill(seo.duty.pageTitle, { city, date: dateLabel });
+  const path = (l: Locale) => dutyPath(l, model.cityId, date);
 
   const groups = day.groups.map((group): DutyGroupView => ({
     id: group.id,
@@ -366,12 +376,17 @@ export function dutyPageProps(model: SeoModel, locale: Locale, date: string): Du
         date: dateLabel,
         source: model.dutySource[locale] ?? model.dutySource.el ?? '',
       }),
-      (l) => dutyPath(l, model.cityId, date),
+      path,
     ),
     cityId: model.cityId,
     date,
     dateLabel,
     h1: title,
+    breadcrumbs: [
+      { name: seo.footerDuty, path: dutyIndexPath(locale) },
+      { name: city, path: dutyCityPath(locale, model.cityId) },
+      { name: dateLabel, path: path(locale) },
+    ],
     prev: neighbour(model.cityId, model.publishedDates[position - 1], locale),
     next: neighbour(model.cityId, model.publishedDates[position + 1], locale),
     groups,
@@ -382,6 +397,43 @@ export function dutyPageProps(model: SeoModel, locale: Locale, date: string): Du
     indexPath: dutyIndexPath(locale),
     updatedAt: model.updatedAt,
     updatedAtText: formatUpdatedAt(model.updatedAt, locale),
+  };
+}
+
+/**
+ * The date a city's page for today shows: today when its list is published, otherwise the next
+ * published date, otherwise the last one. The page is built twice a day, so between midnight and
+ * the morning build it still shows the day before; its heading always names the date.
+ */
+export function todayDutyDate(model: SeoModel): string | null {
+  const dates = model.publishedDates;
+  if (dates.includes(model.today)) return model.today;
+  return dates.find((date) => date > model.today) ?? dates.at(-1) ?? null;
+}
+
+/**
+ * A city's page for today ('/efimeries/thessaloniki/'): the dated page of todayDutyDate at an
+ * address that does not change, so links and search results keep pointing at the current list.
+ * Only the title, description, address and breadcrumb differ from the dated page.
+ */
+export function dutyTodayPageProps(model: SeoModel, locale: Locale): DutyPageProps | null {
+  const date = todayDutyDate(model);
+  const page = date === null ? null : dutyPageProps(model, locale, date);
+  if (page === null) return null;
+  const seo = t(locale).seo;
+  const city = cityName(model.cityId, locale);
+  return {
+    ...page,
+    meta: meta(
+      locale,
+      fill(seo.duty.todayTitle, { city }),
+      fill(seo.duty.todayDescription, {
+        city,
+        source: model.dutySource[locale] ?? model.dutySource.el ?? '',
+      }),
+      (l) => dutyCityPath(l, model.cityId),
+    ),
+    breadcrumbs: page.breadcrumbs.slice(0, 2),
   };
 }
 
@@ -396,6 +448,8 @@ export interface DutyIndexItem {
 export interface DutyIndexCity {
   readonly id: string;
   readonly name: string;
+  /** The city's page for today, or null when it has no published list. */
+  readonly todayPath: string | null;
   readonly items: readonly DutyIndexItem[];
 }
 
@@ -433,6 +487,7 @@ export function dutyIndexProps(models: readonly SeoModel[], locale: Locale): Dut
     cities: models.map((model) => ({
       id: model.cityId,
       name: cityName(model.cityId, locale),
+      todayPath: todayDutyDate(model) === null ? null : dutyCityPath(locale, model.cityId),
       items: dutyIndexItems(model, locale),
     })),
     updatedAt,
@@ -469,6 +524,8 @@ export interface AreaPageProps {
   readonly locality: string;
   readonly label: string;
   readonly h1: string;
+  /** All areas, then this area. */
+  readonly breadcrumbs: readonly Crumb[];
   readonly pharmacies: readonly AreaPharmacyView[];
   readonly dutyDays: readonly AreaDutyDayView[];
   readonly indexPath: string;
@@ -487,6 +544,10 @@ export function areaPageProps(model: SeoModel, locale: Locale, slug: string): Ar
   const seo = t(locale).seo;
   const label = areaLabel(area.locality, locale);
   const seoArea = seo.area;
+  // The city too, unless the area is the city itself: many places share a name across Greece.
+  const city = cityName(model.cityId, locale);
+  const place = label === city ? label : `${label}, ${city}`;
+  const path = (l: Locale) => areaPath(l, model.cityId, slug);
 
   const dutyDays: AreaDutyDayView[] = [];
   for (const date of model.publishedDates) {
@@ -518,16 +579,20 @@ export function areaPageProps(model: SeoModel, locale: Locale, slug: string): Ar
   return {
     meta: meta(
       locale,
-      fill(seoArea.pageTitle, { area: label }),
+      fill(seoArea.pageTitle, { area: place }),
       area.pharmacies.length === 1
         ? fill(seoArea.pageDescriptionOne, { area: label })
         : fill(seoArea.pageDescription, { area: label, count: area.pharmacies.length }),
-      (l) => areaPath(l, model.cityId, slug),
+      path,
     ),
     slug,
     locality: area.locality,
     label,
     h1: fill(seoArea.h1, { area: areaLabelBoth(area.locality, locale) }),
+    breadcrumbs: [
+      { name: seoArea.allAreas, path: areaIndexPath(locale) },
+      { name: label, path: path(locale) },
+    ],
     pharmacies: area.pharmacies.map((p) => ({
       id: p.id,
       name: p.name,

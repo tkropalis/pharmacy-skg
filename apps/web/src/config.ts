@@ -22,6 +22,12 @@ export const DEFAULT_CITY_ID = 'thessaloniki';
 /** The owner's public contact address (about and privacy pages). */
 export const CONTACT_EMAIL = 'kropalis.th@protonmail.com';
 
+/**
+ * The public origin (live since 6 Oct 2026). Builds take it from PUBLIC_SITE_URL when set
+ * (astro.config.mjs); this is the default there and wherever `Astro.site` is read.
+ */
+export const SITE_URL = 'https://farmakeiotwra.gr';
+
 export const REPO = 'tkropalis/pharmacy-skg';
 export const REPO_URL = `https://github.com/${REPO}`;
 

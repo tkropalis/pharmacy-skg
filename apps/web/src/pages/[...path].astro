@@ -6,9 +6,10 @@ import HomePage from '../components/pages/HomePage.astro';
 import PrivacyPage from '../components/pages/PrivacyPage.astro';
 import ReportPage from '../components/pages/ReportPage.astro';
 import Base from '../layouts/Base.astro';
-import { DEFAULT_CITY_ID } from '../config.ts';
+import { APP_NAME, DEFAULT_CITY_ID, SITE_URL } from '../config.ts';
 import { cityDataUrl } from '../lib/data.ts';
-import { allPathParams, t } from '../i18n/index.ts';
+import { allPathParams, localizedPath, t } from '../i18n/index.ts';
+import { jsonLdScript, websiteJsonLd } from '../lib/seo/jsonld.ts';
 import type { RouteKey } from '../i18n/index.ts';
 
 // One template for every page in every locale: the Greek and English slugs are listed in
@@ -27,11 +28,12 @@ interface Props {
 const { locale, route } = Astro.props;
 const d = t(locale);
 const meta = {
-  home: { title: d.home.title, description: d.home.description },
+  home: { title: d.home.documentTitle, description: d.home.description },
   about: { title: d.about.title, description: d.about.description },
   privacy: { title: d.privacy.title, description: d.privacy.description },
   report: { title: d.report.title, description: d.report.description },
 }[route];
+const homeUrl = new URL(localizedPath(locale, 'home'), Astro.site ?? SITE_URL).href;
 ---
 
 <Base
@@ -53,6 +55,14 @@ const meta = {
         crossorigin="anonymous"
       />
     ))}
+  {route === 'home' && (
+    <script
+      slot="head"
+      type="application/ld+json"
+      is:inline
+      set:html={jsonLdScript(websiteJsonLd(APP_NAME[locale], homeUrl, locale))}
+    />
+  )}
   {route === 'home' && <HomePage locale={locale} />}
   {route === 'about' && <AboutPage locale={locale} />}
   {route === 'privacy' && <PrivacyPage locale={locale} />}

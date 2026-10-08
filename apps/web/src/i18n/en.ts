@@ -35,6 +35,7 @@ export const en: Dictionary = {
 
   home: {
     title: 'Open pharmacies near you',
+    documentTitle: 'On-duty and overnight pharmacies now',
     description: 'Open, on-duty and overnight pharmacies right now, on a map. Free, no ads.',
     noScript: 'The map needs JavaScript.',
     dutyLink: 'Duty lists by day',
@@ -223,6 +224,9 @@ export const en: Dictionary = {
       indexCounts: '{pharmacies} pharmacies',
       missingGroups: 'Duty lists not announced yet for: {groups}. Call before you go.',
       pageTitle: 'Pharmacies on duty, {city}, {date}',
+      todayTitle: 'Pharmacies on duty today, {city}',
+      todayDescription:
+        'On-duty and overnight pharmacies today, {city}, by area, with hours and phone numbers. Source: {source}.',
       pageDescription:
         'On-duty and overnight pharmacies, {city}, {date}, by area, with hours and phone numbers. Source: {source}.',
       prev: 'Previous day',
@@ -243,7 +247,7 @@ export const en: Dictionary = {
       otherGroup: 'Other areas',
       countOne: '1 pharmacy',
       countMany: '{count} pharmacies',
-      pageTitle: 'Pharmacies in {area}, hours and duty days',
+      pageTitle: 'Pharmacies in {area}: hours and duty days',
       pageDescription:
         'The {count} pharmacies in {area}: address, phone, which ones are open today and the official duty days.',
       pageDescriptionOne:

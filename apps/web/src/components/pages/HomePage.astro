@@ -7,22 +7,29 @@ import { dutyIndexPath } from '../../i18n/routes.ts';
 
 interface Props {
   locale: Locale;
+  /**
+   * A city's page for today (DutyTodayPage): the app opens on this city, and the content given
+   * in the slot (that day's lists) stands in for it until it has loaded.
+   */
+  cityId?: string;
+  /** The app's heading, for screen readers; the home screen's by default. */
+  title?: string;
 }
 
-const { locale } = Astro.props;
+const { locale, cityId, title } = Astro.props;
 const d = t(locale).home;
 const app = t(locale).app;
-// The page carries nothing that depends on the date or on the data (a rebuild must not change
-// it, or every data update would create a new service worker version): the link goes to the
-// list of dates, and the interactive app that replaces this content works out today itself.
+// The home page carries nothing that depends on the date or on the data (a rebuild must not
+// change it, or every data update would create a new service worker version): the link goes to
+// the list of dates, and the interactive app that replaces this content works out today itself.
 const dutyHref = dutyIndexPath(locale);
 ---
 
 <!--
-  #app holds the content that works without JavaScript (the title and a link to the duty lists).
-  scripts/home-app.tsx replaces it with the map and the list. It is mounted from a bundled
-  module script, not an Astro island, because islands emit inline scripts that the site's
-  Content-Security-Policy (vercel.json, script-src 'self') forbids.
+  #app holds the content that works without JavaScript: the title and a link to the duty lists,
+  or a city's lists for the day. scripts/home-app.tsx replaces it with the map and the list. It
+  is mounted from a bundled module script, not an Astro island, because islands emit inline
+  scripts that the site's Content-Security-Policy (vercel.json, script-src 'self') forbids.
 -->
 <div
   id="app"
@@ -30,21 +37,26 @@ const dutyHref = dutyIndexPath(locale);
   role="region"
   aria-label={app.regionLabel}
   data-locale={locale}
-  data-title={d.title}
+  data-city={cityId}
+  data-title={title ?? d.title}
   data-text={JSON.stringify(app)}
 >
-  <div class="container fallback">
-    <span class="cross" set:html={faSvg(faPlus, { size: 28 })} />
-    <h1>{d.title}</h1>
-    <noscript>
-      <p>{d.noScript}</p>
-    </noscript>
-    <p>
-      <a class="button" href={dutyHref}>
-        {d.dutyLink}
-      </a>
-    </p>
-  </div>
+  {Astro.slots.has('default') ? (
+    <slot />
+  ) : (
+    <div class="container fallback">
+      <span class="cross" set:html={faSvg(faPlus, { size: 28 })} />
+      <h1>{d.title}</h1>
+      <noscript>
+        <p>{d.noScript}</p>
+      </noscript>
+      <p>
+        <a class="button" href={dutyHref}>
+          {d.dutyLink}
+        </a>
+      </p>
+    </div>
+  )}
 </div>
 
 <script>
