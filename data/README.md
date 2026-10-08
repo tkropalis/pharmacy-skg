@@ -11,9 +11,10 @@ data/
     meta.json                     last check, last change, coverage and source credits
     pharmacies.json               every pharmacy in an official list, with its location
     duties/<YYYY-MM-DD>.json      officially published duty lists for one day, per area group
-    extended-hours/<from>_<to>.json  the ΠΚΜ extended-hours list for one period
+    extended-hours/<from>_<to>.json  the extended-hours list for one period (ΠΚΜ's, or ΦΣΑ's by month)
     overrides.json                manual fixes, keyed by pharmacy id (edit this one)
     inputs/                       pipeline inputs and caches, not read by the app
+    inputs/roster.json            Attica: every pharmacy its duty site names, beyond the stored days
   medicines/
     medicines.json                official prices and ΕΟΦ shortages, national (one line per pack)
     inputs/moh-article-files.json the attachments of each ministry article read so far (a cache)

@@ -4,7 +4,7 @@
  * data should look like. Everything else in cli/update.ts is the same for every city.
  */
 import type { City, DutyKind } from '@pharmacy-skg/core';
-import type { DutyList } from '../fsth/parse.ts';
+import type { DutyEntry, DutyList } from '../fsth/parse.ts';
 import type { Warning } from '../registry/build.ts';
 import type { GeocodeHit } from '../registry/geocode.ts';
 import type { ExtendedHours, Meta } from '../schema.ts';
@@ -26,6 +26,26 @@ export interface ListedLocation {
   readonly ref: string;
 }
 
+/**
+ * The pharmacies a source names beyond the stored duty lists (Attica's site offers about 200
+ * days, of which only the next 7 are stored): every pharmacy in the area, with the date it was
+ * last named. Kept in inputs/roster.json between runs.
+ */
+export interface Roster {
+  /** When every offered date was last read; a run reads them all again after a week. */
+  readonly sweptAt: string;
+  /** The last date read. */
+  readonly readThrough: string;
+  readonly entries: readonly RosterEntry[];
+}
+
+export interface RosterEntry extends DutyEntry {
+  readonly groupId: string;
+  /** The duty date that named it. */
+  readonly date: string;
+  readonly location: { readonly lat: number; readonly lon: number } | null;
+}
+
 export interface FetchContext {
   readonly today: string;
   /** Fetch duty lists published on or after this date. */
@@ -36,6 +56,8 @@ export interface FetchContext {
   readonly extendedFiles: ReadonlyMap<string, ExtendedHours>;
   /** Coordinates already read from the lists, by pharmacy id (inputs/listed-locations.json). */
   readonly listedLocations: ReadonlyMap<string, ListedLocation>;
+  /** The stored roster, if the city keeps one (inputs/roster.json). */
+  readonly roster: Roster | null;
   readonly log: (message: string) => void;
 }
 
@@ -48,6 +70,8 @@ export interface Fetched<T> {
 export interface FetchedDutyLists extends Fetched<FetchedDutyList> {
   /** New coordinates the source gives, by the phone printed in the list. */
   readonly locations?: ReadonlyMap<string, ListedLocation>;
+  /** The updated roster, for a source that names more pharmacies than the stored lists. */
+  readonly roster?: Roster;
 }
 
 /** How addresses in the city are geocoded (registry/geocode.ts). */

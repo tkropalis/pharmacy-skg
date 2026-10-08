@@ -75,6 +75,13 @@ describe('holidays', () => {
     expect(holidays(2026, 'larissa')).toHaveLength(13);
   });
 
+  it('gives Attica 14 Sep in place of the patron saints, and not 26 Oct', () => {
+    const cross = holidays(2026, 'attiki').find((h) => h.date === '2026-09-14');
+    expect(cross?.scope).toEqual({ groupIds: ['attiki'] });
+    expect(holidays(2026, 'attiki').some((h) => h.date === '2026-10-26')).toBe(false);
+    expect(holidaysOn('attiki', '2026-09-14', null)).toHaveLength(1);
+  });
+
   it('gives every holiday a Greek and an English name', () => {
     for (const h of holidays(2026, 'thessaloniki')) {
       expect(h.name.el).not.toBe('');

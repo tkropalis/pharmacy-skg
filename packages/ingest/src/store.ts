@@ -19,6 +19,8 @@ export function cityPaths(city: string) {
     geocodeCache: join(root, 'inputs', 'geocode-cache.json'),
     /** Coordinates read from the duty lists (ITeQ), by pharmacy id. */
     listedLocations: join(root, 'inputs', 'listed-locations.json'),
+    /** Every pharmacy a source names beyond the stored duty lists (cities/pipeline.ts, Roster). */
+    roster: join(root, 'inputs', 'roster.json'),
   };
 }
 

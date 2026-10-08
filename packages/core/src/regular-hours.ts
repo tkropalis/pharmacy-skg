@@ -39,9 +39,38 @@ const THESSALONIKI_REGULAR: readonly RegularHoursPeriod[] = [
   },
 ];
 
+const attikiDays = (afternoon: TimeRange): RegularHoursPeriod['days'] => {
+  const split: readonly TimeRange[] = [{ from: '08:00', to: '14:00' }, afternoon];
+  return { 1: LONG_MORNING, 2: split, 3: LONG_MORNING, 4: split, 5: split, 6: [], 7: [] };
+};
+
+/**
+ * Attica, the association's area (decision D26). Each regional unit's deputy governor sets the
+ * hours for 13 May to 12 May, at the association's request (ΦΣΑ 1609/17.04.2026); the published
+ * decisions (Central, North and West Athens, West Attica) are word for word the same, and South
+ * Athens and East Attica, which publish none, follow the same request. The afternoons are
+ * 17:30–20:30 in summer and 17:00–20:00 in winter, which starts on 1 November (ΦΣΑ, 29 Oct 2024).
+ * When summer starts is not published: the winter hours stay until it is verified (roadmap).
+ */
+const ATTIKI_REGULAR: readonly RegularHoursPeriod[] = [
+  {
+    from: '2026-05-13',
+    to: '2026-10-31',
+    days: attikiDays({ from: '17:30', to: '20:30' }),
+    source: 'Περιφέρεια Αττικής, ΑΔΑ ΨΔ8Π7Λ7-ΚΒΨ, Ψ1ΑΗ7Λ7-ΙΞ0, Ψ3Δ17Λ7-8Δ0, ΡΩΡ47Λ7-ΠΞΡ (summer)',
+  },
+  {
+    from: '2026-11-01',
+    to: null,
+    days: attikiDays({ from: '17:00', to: '20:00' }),
+    source: 'Περιφέρεια Αττικής, the same decisions (winter, from 1 Nov as ΦΣΑ announced in 2024)',
+  },
+];
+
 /** Regular hours by city id. A city without an entry has none. */
 export const REGULAR_HOURS: Readonly<Record<string, readonly RegularHoursPeriod[]>> = {
   thessaloniki: THESSALONIKI_REGULAR,
+  attiki: ATTIKI_REGULAR,
 };
 
 /**

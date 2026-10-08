@@ -232,4 +232,28 @@ describe('buildRegistry with coordinates from the lists', () => {
       ],
     ]);
   });
+
+  it('adds the pharmacies a roster names beyond the stored lists, the lists winning', async () => {
+    const roster = [
+      { ...entry('2410672566', 'ΔΑΣΤΑΜΑΝΗΣ ΠΑΛΙΟ'), groupId: 'larisa', date: '2026-12-01' },
+      { ...entry('2410999999', 'ΝΕΟ ΦΑΡΜΑΚΕΙΟ'), groupId: 'larisa', date: '2027-01-15' },
+    ];
+    const { pharmacies } = await buildRegistry({
+      days: [day],
+      extended: [],
+      roster,
+      overrides: {},
+      listed: new Map([...listed, ['2410999999', { lat: 39.6, lon: 22.4, ref: 'roster' }]]),
+      overture: new OvertureIndex([]),
+      geocoder: new Geocoder({}, false, LARISA.bounds),
+      sourceIds: { duty: 'fsl', extended: null },
+    });
+    expect(
+      pharmacies.map((p) => [p.id, p.name, p.groupId, p.firstSeen, p.location?.source]),
+    ).toEqual([
+      ['2410536972', 'ΓΕΩΡΓΟΥΛΟΠΟΥΛΟΥ', 'larisa', '2026-10-06', 'list'],
+      ['2410672566', 'ΔΑΣΤΑΜΑΝΗΣ', 'larisa', '2026-10-06', 'list'],
+      ['2410999999', 'ΝΕΟ ΦΑΡΜΑΚΕΙΟ', 'larisa', '2027-01-15', 'list'],
+    ]);
+  });
 });
