@@ -1,4 +1,10 @@
-import { GREECE_TIME_ZONE, coverage, hasRegularHours, pharmacyStatus } from '@pharmacy-skg/core';
+import {
+  GREECE_TIME_ZONE,
+  coverage,
+  hasRegularHours,
+  pharmacyStatus,
+  zonedDate,
+} from '@pharmacy-skg/core';
 import type { Locale } from '@pharmacy-skg/core';
 import { DEFAULT_CITY_ID } from '../../config.ts';
 import { t } from '../../i18n/index.ts';
@@ -25,7 +31,7 @@ async function show(root: HTMLElement): Promise<void> {
     // The duty day (08:00 to 08:00), not the calendar date: before 08:00 it is yesterday's.
     const dutyDay = coverage(data, now);
     // Without the city's regular hours, a pharmacy not on duty is "not on duty", not closed.
-    const dutyOnly = !hasRegularHours(data.city.id);
+    const dutyOnly = !hasRegularHours(data.city.id, zonedDate(now, GREECE_TIME_ZONE));
 
     const open: HTMLLIElement[] = [];
     let allPublished = dutyDay.duties && failedDates.length === 0;

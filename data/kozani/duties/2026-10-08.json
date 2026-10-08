@@ -7,36 +7,9 @@
       "name": "Κοζάνη",
       "source": {
         "url": "https://kozani.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T11:16:43.083Z"
+        "uploadedAt": "2026-10-08T20:44:41.095Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2461026612",
-              "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ",
-              "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 7",
-              "locality": "Κοζάνη",
-              "phone": "2461026612"
-            },
-            {
-              "pharmacyId": "2463023124",
-              "name": "ΧΑΛΔΟΥΠΗ ΣΤΕΛΛΑ",
-              "address": "ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ 16",
-              "locality": "Πτολεμαΐδα",
-              "phone": "2463023124"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "8:30 ΠΡΩΙ - 2:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -88,6 +61,33 @@
               "address": "Ι. ΤΡΑΝΤΑ 37",
               "locality": "Κοζάνη",
               "phone": "2461033622"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2461026612",
+              "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 7",
+              "locality": "Κοζάνη",
+              "phone": "2461026612"
+            },
+            {
+              "pharmacyId": "2463023124",
+              "name": "ΧΑΛΔΟΥΠΗ ΣΤΕΛΛΑ",
+              "address": "ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ 16",
+              "locality": "Πτολεμαΐδα",
+              "phone": "2463023124"
             }
           ]
         }

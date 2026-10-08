@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T11:15:22.729Z"
+        "uploadedAt": "2026-10-08T20:43:51.300Z"
       },
       "sections": [
         {
@@ -34,6 +34,26 @@
               "address": "Β. ΚΩΝΣΤΑΝΤΙΝΟΥ 127",
               "locality": "Ορεστιάδα",
               "phone": "2552022643"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551027333",
+              "name": "ΧΑΤΖΗΣΩΤΗΡΙΟΥ ΠΕΤΡΟΣ",
+              "address": "Ανατ. Θράκης 47 (έναντι ΕΦΚΑ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551027333"
             }
           ]
         },
@@ -89,26 +109,6 @@
               "address": "Κων.Παλαιολόγου 34",
               "locality": "Αλεξανδρούπολη",
               "phone": "2551053464"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551027333",
-              "name": "ΧΑΤΖΗΣΩΤΗΡΙΟΥ ΠΕΤΡΟΣ",
-              "address": "Ανατ. Θράκης 47 (έναντι ΕΦΚΑ)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551027333"
             }
           ]
         }

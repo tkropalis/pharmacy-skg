@@ -790,7 +790,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-12",
       "location": {
         "lat": 39.63581,
         "lon": 22.41437,
@@ -1278,27 +1278,6 @@
         "lat": 39.61069,
         "lon": 22.43187,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23050",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
-      "id": "2410621965",
-      "name": "ΚΑΤΣΙΑΦΥΛΛΟΥΔΗ ΙΩΑΝΝΑ",
-      "address": "ΠΑΠΑΝΑΣΤΑΣΙΟΥ & ΗΠΕΙΡΟΥ 52 (Έναντι Αγ. Νικολάου)",
-      "locality": "Λάρισα",
-      "postcode": null,
-      "phone": "2410621965",
-      "groupId": "larisa",
-      "sources": [
-        "fsl"
-      ],
-      "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
-      "location": {
-        "lat": 39.63415,
-        "lon": 22.41531,
-        "ref": "https://larisa.efhmeries.gr/Home/Details/23086",
         "source": "list",
         "precision": "exact"
       }

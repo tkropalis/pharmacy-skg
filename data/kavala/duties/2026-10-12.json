@@ -7,29 +7,9 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T11:16:27.841Z"
+        "uploadedAt": "2026-10-08T20:44:28.728Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510833880",
-              "name": "Σ.Φ. ΠΙΣΤΟΦΙΔΟΥ ΚΑΛΛΙΟΠΗ ΠΙΣΤΟΦΙΔΟΥ ΜΑΡΙΑ ΠΙΣΤΟΦΙΔΟΥ ΠΑΡΘΕΝΟΠΗ ΟΕ",
-              "address": "ΚΟΥΝΤΟΥΡΙΩΤΗ 20",
-              "locality": "Καβάλα",
-              "phone": "2510833880"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΓΑΛΛ.ΔΗΜΟΚΡΑΤΙΑΣ 17",
               "locality": "Καβάλα",
               "phone": "2510831386"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510833880",
+              "name": "Σ.Φ. ΠΙΣΤΟΦΙΔΟΥ ΚΑΛΛΙΟΠΗ ΠΙΣΤΟΦΙΔΟΥ ΜΑΡΙΑ ΠΙΣΤΟΦΙΔΟΥ ΠΑΡΘΕΝΟΠΗ ΟΕ",
+              "address": "ΚΟΥΝΤΟΥΡΙΩΤΗ 20",
+              "locality": "Καβάλα",
+              "phone": "2510833880"
             }
           ]
         }

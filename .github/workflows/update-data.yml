@@ -33,7 +33,12 @@ jobs:
           node-version-file: .nvmrc
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      # Each area writes its files as soon as it passes; one that fails (a site down, as ITeQ's
+      # server was on 8 Oct 2026) keeps its old data. The others are still committed below, and
+      # the run is marked failed at the end.
       - name: Fetch, validate and write
+        id: update
+        continue-on-error: true
         run: pnpm --filter @pharmacy-skg/ingest run update ${SINCE:+--since "$SINCE"}
         env:
           SINCE: ${{ inputs.since }}
@@ -54,8 +59,13 @@ jobs:
           git add data/
           git commit -m "data: update $(TZ=Europe/Athens date +%Y-%m-%d)"
           git push
+      - name: Report a failed area
+        if: steps.update.outcome == 'failure'
+        run: |
+          echo "::error::Some areas failed and kept their old data; see the update step. The others were committed."
+          exit 1
       - name: Report a failed medicines update
-        if: steps.medicines.outcome == 'failure'
+        if: ${{ !cancelled() && steps.medicines.outcome == 'failure' }}
         run: |
           echo "::error::The medicines update failed; see its step. Any other data was still committed."
           exit 1

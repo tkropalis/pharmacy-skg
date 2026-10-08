@@ -7,9 +7,139 @@
       "name": "Κορινθία",
       "source": {
         "url": "https://korinthia.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T11:16:55.315Z"
+        "uploadedAt": "2026-10-08T20:44:47.213Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "22:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2742033488",
+              "name": "ΚΑΡΑΜΑΝΕΑΣ ΕΥΣΤΡΑΤΙΟΣ",
+              "address": "ΒΕΛΟ",
+              "locality": "Βέλο",
+              "phone": "2742033488"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741076210",
+              "name": "ΓΙΑΝΝΟΥ ΜΙΧ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "Γ.ΠΑΠΑΝΔΡΕΟΥ 45",
+              "locality": "Κόρινθος",
+              "phone": "2741076210"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741076210",
+              "name": "ΓΙΑΝΝΟΥ ΜΙΧ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "Γ.ΠΑΠΑΝΔΡΕΟΥ 45",
+              "locality": "Κόρινθος",
+              "phone": "2741076210"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2744021133",
+              "name": "ΔΕΤΖΑΝΗΣ ΑΛΕΞΑΝΔΡΟΣ &ΣΙΑ Ε.Ε.",
+              "address": "Λ. ΑΘΗΝΩΝ 84",
+              "locality": "Λουτράκι",
+              "phone": "2744021133"
+            },
+            {
+              "pharmacyId": "2742022823",
+              "name": "ΘΕΟΔΩΡΟΥ ΜΠΙΝΟΥ ΣΟΦΙΑ",
+              "address": "ΠΕΡΙΑΝΔΡΟΥ 30",
+              "locality": "Κιάτο",
+              "phone": "2742022823"
+            },
+            {
+              "pharmacyId": "2743028333",
+              "name": "Σ.Φ. ΜΠΟΥΡΝΑΖΟΥ Κ.-ΧΑΡΔΑΛΟΥΠΑ Ι.καιΣΙΑ Ο.Ε.",
+              "address": "Π. ΤΣΑΛΔΑΡΗ 28",
+              "locality": "Ξυλόκαστρο",
+              "phone": "2743028333"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741098085",
+              "name": "ΠΑΠΑΘΑΝΑΣΙΟΥ ΛΟΥΤΣΙΑΝΟ & ΣΙΑ Ο.Ε.",
+              "address": "ΧΙΛΙΟΜΟΔΙ",
+              "locality": "Χιλιομόδι",
+              "phone": "2741098085"
+            },
+            {
+              "pharmacyId": "2746022274",
+              "name": "Σ.Φ. ΖΑΧΟΥ Μ. ΓΡΙΒΑ Μ.Ε. Ο.Ε.",
+              "address": "Λ.ΠΑΠΑΚ/ΝΟΥ 62Α&ΜΑΝΙΑΤΗ",
+              "locality": "Νεμέα",
+              "phone": "2746022274"
+            },
+            {
+              "pharmacyId": "2741054232",
+              "name": "Σ.Φ. ΣΙΑΠΚΑΡΑΣ ΑΓΓΕΛΟΣ ΣΙΑΠΚΑΡΑ ΜΑΡΙΝΑ Ο.Ε.",
+              "address": "ΖΕΥΓΟΛΑΤΙΟ",
+              "locality": "Ζευγολατιό",
+              "phone": "2741054232"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -162,136 +292,6 @@
               "address": "ΕΞΑΜΙΛΙΑ",
               "locality": "Εξαμίλια",
               "phone": "2741036600"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2744021133",
-              "name": "ΔΕΤΖΑΝΗΣ ΑΛΕΞΑΝΔΡΟΣ &ΣΙΑ Ε.Ε.",
-              "address": "Λ. ΑΘΗΝΩΝ 84",
-              "locality": "Λουτράκι",
-              "phone": "2744021133"
-            },
-            {
-              "pharmacyId": "2742022823",
-              "name": "ΘΕΟΔΩΡΟΥ ΜΠΙΝΟΥ ΣΟΦΙΑ",
-              "address": "ΠΕΡΙΑΝΔΡΟΥ 30",
-              "locality": "Κιάτο",
-              "phone": "2742022823"
-            },
-            {
-              "pharmacyId": "2743028333",
-              "name": "Σ.Φ. ΜΠΟΥΡΝΑΖΟΥ Κ.-ΧΑΡΔΑΛΟΥΠΑ Ι.καιΣΙΑ Ο.Ε.",
-              "address": "Π. ΤΣΑΛΔΑΡΗ 28",
-              "locality": "Ξυλόκαστρο",
-              "phone": "2743028333"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741098085",
-              "name": "ΠΑΠΑΘΑΝΑΣΙΟΥ ΛΟΥΤΣΙΑΝΟ & ΣΙΑ Ο.Ε.",
-              "address": "ΧΙΛΙΟΜΟΔΙ",
-              "locality": "Χιλιομόδι",
-              "phone": "2741098085"
-            },
-            {
-              "pharmacyId": "2746022274",
-              "name": "Σ.Φ. ΖΑΧΟΥ Μ. ΓΡΙΒΑ Μ.Ε. Ο.Ε.",
-              "address": "Λ.ΠΑΠΑΚ/ΝΟΥ 62Α&ΜΑΝΙΑΤΗ",
-              "locality": "Νεμέα",
-              "phone": "2746022274"
-            },
-            {
-              "pharmacyId": "2741054232",
-              "name": "Σ.Φ. ΣΙΑΠΚΑΡΑΣ ΑΓΓΕΛΟΣ ΣΙΑΠΚΑΡΑ ΜΑΡΙΝΑ Ο.Ε.",
-              "address": "ΖΕΥΓΟΛΑΤΙΟ",
-              "locality": "Ζευγολατιό",
-              "phone": "2741054232"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
-          "hours": {
-            "from": "22:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2742033488",
-              "name": "ΚΑΡΑΜΑΝΕΑΣ ΕΥΣΤΡΑΤΙΟΣ",
-              "address": "ΒΕΛΟ",
-              "locality": "Βέλο",
-              "phone": "2742033488"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741076210",
-              "name": "ΓΙΑΝΝΟΥ ΜΙΧ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
-              "address": "Γ.ΠΑΠΑΝΔΡΕΟΥ 45",
-              "locality": "Κόρινθος",
-              "phone": "2741076210"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741076210",
-              "name": "ΓΙΑΝΝΟΥ ΜΙΧ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
-              "address": "Γ.ΠΑΠΑΝΔΡΕΟΥ 45",
-              "locality": "Κόρινθος",
-              "phone": "2741076210"
             }
           ]
         }

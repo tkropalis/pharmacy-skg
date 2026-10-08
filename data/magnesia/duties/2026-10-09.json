@@ -7,9 +7,69 @@
       "name": "Μαγνησία",
       "source": {
         "url": "https://magnesia.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T11:17:20.868Z"
+        "uploadedAt": "2026-10-08T20:45:06.110Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "13:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421008596",
+              "name": "ΔΗΜΗΤΡΙΟΣ ΚΩΝΣΤΑΝΤΑΣ",
+              "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 131",
+              "locality": "Βόλος",
+              "phone": "2421008596"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421008596",
+              "name": "ΔΗΜΗΤΡΙΟΣ ΚΩΝΣΤΑΝΤΑΣ",
+              "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 131",
+              "locality": "Βόλος",
+              "phone": "2421008596"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421086088",
+              "name": "ΕΥΑΓΓΕΛΙΑ-ΑΣΤΕΡΙΑ ΣΑΝΔΡΗ",
+              "address": "ΜΑΙΑΝΔΡΟΥ 25",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421086088"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -48,66 +108,6 @@
               "address": "ΙΩΛΚΟΥ 394Α",
               "locality": "Βόλος",
               "phone": "2421044977"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2421086088",
-              "name": "ΕΥΑΓΓΕΛΙΑ-ΑΣΤΕΡΙΑ ΣΑΝΔΡΗ",
-              "address": "ΜΑΙΑΝΔΡΟΥ 25",
-              "locality": "Νέα Ιωνία",
-              "phone": "2421086088"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "13:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2421008596",
-              "name": "ΔΗΜΗΤΡΙΟΣ ΚΩΝΣΤΑΝΤΑΣ",
-              "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 131",
-              "locality": "Βόλος",
-              "phone": "2421008596"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2421008596",
-              "name": "ΔΗΜΗΤΡΙΟΣ ΚΩΝΣΤΑΝΤΑΣ",
-              "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 131",
-              "locality": "Βόλος",
-              "phone": "2421008596"
             }
           ]
         }

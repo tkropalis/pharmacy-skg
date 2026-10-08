@@ -345,6 +345,7 @@ On a phone, the 11,000 case means long main-thread tasks every minute.
 - **Diavgeia open data:** `https://diavgeia.gov.gr/opendata/search.json` (org 5001–5013 are the 13 Regions); decisions at `https://diavgeia.gov.gr/doc/<ΑΔΑ>`.
   - Opening hours: ΨΔ8Π7Λ7-ΚΒΨ (Attica), 9ΠΠΦ7ΛΡ-45Ρ (Magnesia and the Sporades), Ψ5Μ67ΛΛ-ΤΔΑ (Pella), 9ΘΧΟ7Λ9-ΕΗ5 (Ioannina), ΨΦΘ57ΛΕ-19Ο (Corfu), ΨΑΑΣ7ΛΕ-ΠΝΦ (Zakynthos), ΨΔ4Η7ΛΚ-ΜΥ9 (Rethymno).
   - Attica holiday on 14 Sep: 96ΒΙ7Λ7-ΧΛΣ.
+  - Attica 2026–27 (13 May to 12 May), checked 8 Oct 2026: Central Athens ΨΔ8Π7Λ7-ΚΒΨ, North Athens Ψ1ΑΗ7Λ7-ΙΞ0 (amended 9ΛΤ07Λ7-149), West Athens Ψ3Δ17Λ7-8Δ0 (amended ΡΞΜΙ7Λ7-ΜΣΗ), West Attica ΡΩΡ47Λ7-ΠΞΡ (amended 96ΒΙ7Λ7-ΧΛΣ), all the same hours from the association's letter 1609/17.04.2026. South Athens and East Attica: nothing on Diavgeia for 2025 or 2026, searched by subject and by their directorates (78997, 80888). The seasons' dates are in none of them; the association's notice of 29 Oct 2024 (fsa.gr/6469-2) gives winter from 1 Nov.
   - Annual duty tables: ΡΣΦΞ7Λ6-2Κ3 (Ilia).
 - **Laws:**
   - https://www.taxheaven.gr/law/4512/2018/arthro/257

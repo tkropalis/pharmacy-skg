@@ -7,29 +7,9 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T11:15:22.729Z"
+        "uploadedAt": "2026-10-08T20:43:51.300Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00-21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551039222",
-              "name": "ΣΕΡΜΠΕΖΗ ΔΗΜΗΤΡΑ",
-              "address": "Λ. Μάκρης 15, Νέα Χιλή",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551039222"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "08:00-08:00",
@@ -58,22 +38,22 @@
           ]
         },
         {
-          "kind": "saturday-extra",
-          "heading": "08:00-14:30",
+          "kind": "overnight",
+          "heading": "18:00-08:00",
           "hours": {
-            "from": "08:00",
-            "to": "14:30",
-            "toNextDay": false
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2553024243",
-              "name": "ΤΡΙΑΝΤΑΦΥΛΛΙΔΟΥ ΕΛΕΝΗ",
-              "address": "25ης ΜΑΪΟΥ 113",
-              "locality": "Διδυμότειχο",
-              "phone": "2553024243"
+              "pharmacyId": "2551031988",
+              "name": "ΤΡΕΜΜΑΣ ΒΑΣΙΛΕΙΟΣ",
+              "address": "Θράκης 10 (περιοχή Μουσικού Γυμνασίου)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551031988"
             }
           ]
         },
@@ -113,22 +93,22 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
+          "kind": "day",
+          "heading": "08:00-21:00",
           "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2551031988",
-              "name": "ΤΡΕΜΜΑΣ ΒΑΣΙΛΕΙΟΣ",
-              "address": "Θράκης 10 (περιοχή Μουσικού Γυμνασίου)",
+              "pharmacyId": "2551039222",
+              "name": "ΣΕΡΜΠΕΖΗ ΔΗΜΗΤΡΑ",
+              "address": "Λ. Μάκρης 15, Νέα Χιλή",
               "locality": "Αλεξανδρούπολη",
-              "phone": "2551031988"
+              "phone": "2551039222"
             }
           ]
         },
@@ -163,6 +143,26 @@
               "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 257",
               "locality": "Ορεστιάδα",
               "phone": "2552021141"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00-14:30",
+          "hours": {
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2553024243",
+              "name": "ΤΡΙΑΝΤΑΦΥΛΛΙΔΟΥ ΕΛΕΝΗ",
+              "address": "25ης ΜΑΪΟΥ 113",
+              "locality": "Διδυμότειχο",
+              "phone": "2553024243"
             }
           ]
         }

@@ -46,8 +46,8 @@ const LOCAL: Readonly<
   Record<string, readonly (readonly [number, number, Holiday['name'], readonly string[]])[]>
 > = {
   thessaloniki: [[10, 26, { el: 'Αγίου Δημητρίου', en: 'Feast of Saint Demetrius' }, ['metro']]],
-  // In place of each town's patron saint, for the whole association (the Region's amending
-  // decisions of 2025 and 2026, e.g. ΑΔΑ 9ΛΤ07Λ7-149).
+  // In place of each town's patron saint, at the Attica and Piraeus associations' request: the
+  // 2026 amendments of the regular-hours decisions (9ΛΤ07Λ7-149, ΡΞΜΙ7Λ7-ΜΣΗ, 96ΒΙ7Λ7-ΧΛΣ).
   attiki: [
     [9, 14, { el: 'Ύψωση του Τιμίου Σταυρού', en: 'Exaltation of the Holy Cross' }, ['attiki']],
   ],

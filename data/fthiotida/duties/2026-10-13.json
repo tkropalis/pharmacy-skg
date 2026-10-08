@@ -7,26 +7,46 @@
       "name": "Φθιώτιδα",
       "source": {
         "url": "https://fthiotida.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T11:18:56.844Z"
+        "uploadedAt": "2026-10-08T20:46:07.990Z"
       },
       "sections": [
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 22:00",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
             "from": "08:00",
-            "to": "22:00",
+            "to": "14:00",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2231042797",
-              "name": "ΠΑΠΑΝΙΚΟΛΑΟΥ ΣΩΤΗΡΙΑ",
-              "address": "ΛΕΩΝΙΔΟΥ 15",
+              "pharmacyId": "2231037594",
+              "name": "ΚΩΣΤΑΚΟΠΟΥΛΟΥ ΚΩΝΣΤΑΝΤΙΝΑ",
+              "address": "ΚΑΡΑΝΤΖΑΒΕΛΟΥ 105 - ΡΟΔΙΤΣΑ",
               "locality": "Λαμία",
-              "phone": "2231042797"
+              "phone": "2231037594"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231037594",
+              "name": "ΚΩΣΤΑΚΟΠΟΥΛΟΥ ΚΩΝΣΤΑΝΤΙΝΑ",
+              "address": "ΚΑΡΑΝΤΖΑΒΕΛΟΥ 105 - ΡΟΔΙΤΣΑ",
+              "locality": "Λαμία",
+              "phone": "2231037594"
             }
           ]
         },
@@ -81,6 +101,26 @@
         },
         {
           "kind": "day",
+          "heading": "08:00 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:00",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231042797",
+              "name": "ΠΑΠΑΝΙΚΟΛΑΟΥ ΣΩΤΗΡΙΑ",
+              "address": "ΛΕΩΝΙΔΟΥ 15",
+              "locality": "Λαμία",
+              "phone": "2231042797"
+            }
+          ]
+        },
+        {
+          "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00*",
           "hours": {
             "from": "08:00",
@@ -104,46 +144,6 @@
               "address": "ΜΑΚΡΑΚΩΜΗ",
               "locality": "Μακρακώμη",
               "phone": "2236022766"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231037594",
-              "name": "ΚΩΣΤΑΚΟΠΟΥΛΟΥ ΚΩΝΣΤΑΝΤΙΝΑ",
-              "address": "ΚΑΡΑΝΤΖΑΒΕΛΟΥ 105 - ΡΟΔΙΤΣΑ",
-              "locality": "Λαμία",
-              "phone": "2231037594"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231037594",
-              "name": "ΚΩΣΤΑΚΟΠΟΥΛΟΥ ΚΩΝΣΤΑΝΤΙΝΑ",
-              "address": "ΚΑΡΑΝΤΖΑΒΕΛΟΥ 105 - ΡΟΔΙΤΣΑ",
-              "locality": "Λαμία",
-              "phone": "2231037594"
             }
           ]
         }

@@ -7,29 +7,9 @@
       "name": "Δράμα",
       "source": {
         "url": "https://drama.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T11:15:03.609Z"
+        "uploadedAt": "2026-10-08T20:43:39.069Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2521039715",
-              "name": "ΠΑΡΑΛΗΣ ΓΕΩΡΓΙΟΣ",
-              "address": "ΒΕΡΓΙΝΑΣ 51",
-              "locality": "Δράμα",
-              "phone": "2521039715"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "ΒΕΝΙΖΕΛΟΥ 162",
               "locality": "Δράμα",
               "phone": "2521030377"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521039715",
+              "name": "ΠΑΡΑΛΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΒΕΡΓΙΝΑΣ 51",
+              "locality": "Δράμα",
+              "phone": "2521039715"
             }
           ]
         }

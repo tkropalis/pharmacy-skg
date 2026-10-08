@@ -163,9 +163,29 @@
       "name": "Λάρισα",
       "source": {
         "url": "https://larisa.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T11:14:09.312Z"
+        "uploadedAt": "2026-10-08T20:43:00.643Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "23:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410231320",
+              "name": "ΚΑΛΥΒΗ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΟΙΚΟΝΟΜΟΥ ΕΞ ΟΙΚΟΝΟΜΩΝ 54 & ΚΟΛΟΚΟΤΡΩΝΗ ΓΩΝΙΑ (ΠΛΗΣΙΟΝ SUPER MARKET ΓΑΛΑΞΙΑ)",
+              "locality": "Λάρισα",
+              "phone": "2410231320"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 08:00 ΕΩΣ 23:00",
@@ -225,26 +245,6 @@
               "address": "ΓΕΩΡΓΙΑΔΟΥ 55 & ΟΛΥΜΠΟΥ (ΚΤΕΛ Λάρισας – έναντι καταστήματος ΠΛΑΙΣΙΟ)",
               "locality": "Λάρισα",
               "phone": "2410257150"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "23:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2410231320",
-              "name": "ΚΑΛΥΒΗ ΑΙΚΑΤΕΡΙΝΗ",
-              "address": "ΟΙΚΟΝΟΜΟΥ ΕΞ ΟΙΚΟΝΟΜΩΝ 54 & ΚΟΛΟΚΟΤΡΩΝΗ ΓΩΝΙΑ (ΠΛΗΣΙΟΝ SUPER MARKET ΓΑΛΑΞΙΑ)",
-              "locality": "Λάρισα",
-              "phone": "2410231320"
             }
           ]
         }

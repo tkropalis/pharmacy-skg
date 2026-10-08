@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T11:15:22.729Z"
+        "uploadedAt": "2026-10-08T20:43:51.300Z"
       },
       "sections": [
         {
@@ -34,6 +34,26 @@
               "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 189",
               "locality": "Ορεστιάδα",
               "phone": "2552025800"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551026214",
+              "name": "ΓΑΛΑΖΙΟΥ ΑΣΠΑΣΙΑ",
+              "address": "Κουτάβου 5 (περιοχή Αγ. Βασιλείου)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551026214"
             }
           ]
         },
@@ -89,26 +109,6 @@
               "address": "Λ. Δημοκρατίας 48 (περιοχή Σκλαβενίτη)",
               "locality": "Αλεξανδρούπολη",
               "phone": "2551027127"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551026214",
-              "name": "ΓΑΛΑΖΙΟΥ ΑΣΠΑΣΙΑ",
-              "address": "Κουτάβου 5 (περιοχή Αγ. Βασιλείου)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551026214"
             }
           ]
         }

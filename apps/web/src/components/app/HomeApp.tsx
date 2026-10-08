@@ -180,8 +180,6 @@ export default function HomeApp({
   // The city the page is about, until the person asks for their position or picks a city.
   const pinnedCity = useRef(pageCity ? initialCity.id : null);
   const { state, retry, ensureDates } = useCityData(city.id);
-  // Where the city's regular hours are not known, only pharmacies on duty are shown (D26).
-  const dutyOnly = !hasRegularHours(city.id);
   const now = useNow();
   const favourites = useFavourites();
   const wide = useMediaQuery('(min-width: 900px)');
@@ -243,6 +241,9 @@ export default function HomeApp({
   const at = live ? now : (customAt ?? now);
   const today = zonedDate(now, TIME_ZONE);
   const atDate = zonedDate(at, TIME_ZONE);
+  // Where the city's regular hours on that day are not known, only pharmacies on duty are shown
+  // (D26).
+  const dutyOnly = !hasRegularHours(city.id, atDate);
 
   // --- Data for the chosen moment -------------------------------------------------
 
