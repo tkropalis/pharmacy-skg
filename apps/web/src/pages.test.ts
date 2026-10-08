@@ -11,6 +11,7 @@ describe('generated page files', () => {
   it.each([
     ['pharmacy', '[id].astro'],
     ['duty', '[city]/[date].astro'],
+    ['duty', '[city]/index.astro'],
     ['duty', 'index.astro'],
     ['area', '[city]/[slug].astro'],
     ['area', 'index.astro'],

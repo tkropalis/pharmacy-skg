@@ -1,5 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { phoneToE164, pharmacyJsonLd, jsonLdScript, telHref } from './jsonld.ts';
+import {
+  breadcrumbJsonLd,
+  phoneToE164,
+  pharmacyJsonLd,
+  jsonLdScript,
+  telHref,
+  websiteJsonLd,
+} from './jsonld.ts';
 import { realModel } from './test-data.ts';
 import { renderRobots, renderSitemap, sitemapEntries } from './sitemap.ts';
 import { directionsUrl } from './views.ts';
@@ -14,9 +21,10 @@ describe('sitemapEntries', () => {
 
   it('has every page of every city once per locale and no duplicates', () => {
     expect(new Set(paths).size).toBe(paths.length);
-    // Home, about and privacy (not report), the two index pages, then each city's pages.
+    // Home, about and privacy (not report), the two index pages, then each city's pages: its
+    // page for today, its dates, areas and pharmacies.
     const generated = models.reduce(
-      (n, m) => n + m.publishedDates.length + m.areas.length + m.pharmacies.length,
+      (n, m) => n + 1 + m.publishedDates.length + m.areas.length + m.pharmacies.length,
       0,
     );
     expect(entries).toHaveLength(3 + 2 + generated);
@@ -38,6 +46,8 @@ describe('sitemapEntries', () => {
 
   it("puts each city's dates and areas under the city", () => {
     expect(paths).toContain('/efimeries/larisa/2026-10-07/');
+    expect(paths).toContain('/efimeries/larisa/');
+    expect(paths).toContain('/en/duty/thessaloniki/');
     expect(paths).toContain('/en/area/larisa/tyrnavos/');
     expect(paths).toContain('/farmakeio/2410672566/');
   });
@@ -90,6 +100,45 @@ describe('phone numbers', () => {
     expect(phoneToE164('123')).toBeNull();
     expect(telHref('2310023026')).toBe('tel:+302310023026');
     expect(telHref(null)).toBeNull();
+  });
+});
+
+describe('breadcrumbJsonLd', () => {
+  it('numbers the crumbs from 1 with absolute URLs', () => {
+    const crumbs = [
+      { name: 'Εφημερίες ανά μέρα', path: '/efimeries/' },
+      { name: 'Λάρισα', path: '/efimeries/larisa/' },
+    ];
+    expect(breadcrumbJsonLd(crumbs, 'https://x.test')).toEqual({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Εφημερίες ανά μέρα',
+          item: 'https://x.test/efimeries/',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Λάρισα',
+          item: 'https://x.test/efimeries/larisa/',
+        },
+      ],
+    });
+  });
+});
+
+describe('websiteJsonLd', () => {
+  it('names the site for the home page of a language', () => {
+    expect(websiteJsonLd('Open Pharmacies', 'https://x.test/en/', 'en')).toEqual({
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Open Pharmacies',
+      url: 'https://x.test/en/',
+      inLanguage: 'en',
+    });
   });
 });
 

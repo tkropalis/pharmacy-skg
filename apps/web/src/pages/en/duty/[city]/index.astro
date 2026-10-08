@@ -1,0 +1,18 @@
+---
+import DutyTodayPage from '../../../../components/seo/DutyTodayPage.astro';
+import { loadSeoModels } from '../../../../lib/seo/site-data.ts';
+import { todayDutyDate } from '../../../../lib/seo/views.ts';
+
+// Each city's page for today, at an address that does not change with the date: the app,
+// opened on the city (components/seo/DutyTodayPage.astro).
+export async function getStaticPaths() {
+  const models = await loadSeoModels();
+  return models
+    .filter((model) => todayDutyDate(model) !== null)
+    .map((model) => ({ params: { city: model.cityId } }));
+}
+
+const { city } = Astro.params;
+---
+
+<DutyTodayPage locale="en" cityId={city ?? ''} />

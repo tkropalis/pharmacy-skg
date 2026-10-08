@@ -4,13 +4,14 @@ import {
   alternatePaths,
   areaIndexPath,
   areaPath,
+  dutyCityPath,
   dutyIndexPath,
   dutyPath,
   pharmacyPath,
   ROUTE_KEYS,
 } from '../../i18n/routes.ts';
 import type { SeoModel } from './model.ts';
-import { alternatesFor } from './views.ts';
+import { alternatesFor, todayDutyDate } from './views.ts';
 import type { Alternates } from './views.ts';
 
 /** Pages left out of the sitemap: the problem report form has nothing to search for. */
@@ -24,7 +25,8 @@ export interface SitemapEntry {
 }
 
 /**
- * Every indexable page of every city, one entry per page (not per locale). The 404 page is never
+ * Every indexable page of every city, one entry per page (not per locale): each city's page
+ * for today, its dated duty pages, its areas and its pharmacies. The 404 page is never
  * listed. A data page's lastmod is its city's last data change; the index pages take the latest.
  */
 export function sitemapEntries(models: readonly SeoModel[]): SitemapEntry[] {
@@ -40,6 +42,9 @@ export function sitemapEntries(models: readonly SeoModel[]): SitemapEntry[] {
   entries.push({ alternates: alternatesFor(areaIndexPath), lastmod: latest });
   for (const model of models) {
     const lastmod = model.updatedAt.slice(0, 10);
+    if (todayDutyDate(model) !== null) {
+      entries.push({ alternates: alternatesFor((l) => dutyCityPath(l, model.cityId)), lastmod });
+    }
     for (const date of model.publishedDates) {
       entries.push({ alternates: alternatesFor((l) => dutyPath(l, model.cityId, date)), lastmod });
     }

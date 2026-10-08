@@ -3,16 +3,12 @@ import { defineConfig } from 'astro/config';
 import { dataIntegration } from './integrations/data.ts';
 import { maplibreWorkerIntegration } from './integrations/maplibre-worker.ts';
 import { serviceWorkerIntegration } from './integrations/service-worker.ts';
+import { SITE_URL } from './src/config.ts';
 
-// The public domain is not chosen yet (docs/decisions.md, Defaults). Set PUBLIC_SITE_URL in the
-// Vercel project once it is. A production build on Vercel without it uses the project's own
-// production domain (Vercel sets VERCEL_PROJECT_PRODUCTION_URL, without a scheme); anything else
-// uses the placeholder, so canonical links of preview builds never claim the real domain.
-const productionHost =
-  process.env.VERCEL_ENV === 'production' ? process.env.VERCEL_PROJECT_PRODUCTION_URL : undefined;
-const site =
-  process.env.PUBLIC_SITE_URL ||
-  (productionHost ? `https://${productionHost}` : 'https://pharmacy-skg.vercel.app');
+// The public origin for canonical, hreflang, Open Graph and sitemap URLs: PUBLIC_SITE_URL when
+// set (the Vercel project sets it; the e2e build sets a fixed one), else the live domain. Preview
+// builds name the live domain too, so a preview that gets crawled points search engines at it.
+const site = process.env.PUBLIC_SITE_URL || SITE_URL;
 
 export default defineConfig({
   site,

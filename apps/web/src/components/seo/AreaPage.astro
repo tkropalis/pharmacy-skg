@@ -1,6 +1,8 @@
 ---
 import type { Locale } from '@pharmacy-skg/core';
+import { SITE_URL } from '../../config.ts';
 import { t } from '../../i18n/index.ts';
+import { breadcrumbJsonLd, jsonLdScript } from '../../lib/seo/jsonld.ts';
 import { loadSeoModel } from '../../lib/seo/site-data.ts';
 import { areaPageProps } from '../../lib/seo/views.ts';
 import SeoLayout from './SeoLayout.astro';
@@ -15,12 +17,17 @@ const { locale, cityId, slug } = Astro.props;
 const model = await loadSeoModel(cityId);
 const page = areaPageProps(model, locale, slug);
 if (page === null) throw new Error(`No area with slug ${slug}`);
+const origin = (Astro.site ?? new URL(SITE_URL)).origin;
 
 const d = t(locale);
 const seo = d.seo.area;
 ---
 
-<SeoLayout meta={page.meta} updated={{ at: page.updatedAt, text: page.updatedAtText }}>
+<SeoLayout
+  meta={page.meta}
+  jsonLd={jsonLdScript(breadcrumbJsonLd(page.breadcrumbs, origin))}
+  updated={{ at: page.updatedAt, text: page.updatedAtText }}
+>
   <nav class="seo-breadcrumb" aria-label={d.seo.breadcrumbLabel}>
     <ol>
       <li>

@@ -48,6 +48,8 @@ export const el = {
 
   home: {
     title: 'Ανοιχτά φαρμακεία κοντά σας',
+    /** The browser tab and search results, before the app's name: the words people search for. */
+    documentTitle: 'Εφημερεύοντα και διανυκτερεύοντα φαρμακεία τώρα',
     description:
       'Ανοιχτά, εφημερεύοντα και διανυκτερεύοντα φαρμακεία τώρα, σε χάρτη. Δωρεάν, χωρίς διαφημίσεις.',
     noScript: 'Ο χάρτης χρειάζεται JavaScript.',
@@ -242,6 +244,9 @@ export const el = {
       indexCounts: '{pharmacies} φαρμακεία',
       missingGroups: 'Δεν έχουν ανακοινωθεί ακόμη οι εφημερίες για: {groups}. Καλέστε πριν πάτε.',
       pageTitle: 'Εφημερεύοντα φαρμακεία, {city}, {date}',
+      todayTitle: 'Εφημερεύοντα φαρμακεία σήμερα, {city}',
+      todayDescription:
+        'Εφημερεύοντα και διανυκτερεύοντα φαρμακεία σήμερα, {city}, ανά περιοχή, με ώρες και τηλέφωνα. Πηγή: {source}.',
       pageDescription:
         'Εφημερεύοντα και διανυκτερεύοντα φαρμακεία, {city}, {date}, ανά περιοχή, με ώρες και τηλέφωνα. Πηγή: {source}.',
       prev: 'Προηγούμενη μέρα',
@@ -262,7 +267,7 @@ export const el = {
       otherGroup: 'Άλλες περιοχές',
       countOne: '1 φαρμακείο',
       countMany: '{count} φαρμακεία',
-      pageTitle: 'Φαρμακεία: {area}, ωράριο και εφημερίες',
+      pageTitle: 'Φαρμακεία {area}: ωράριο και εφημερίες',
       pageDescription:
         'Τα {count} φαρμακεία της περιοχής {area}: διεύθυνση, τηλέφωνο, ποια είναι ανοιχτά σήμερα και οι επίσημες εφημερίες.',
       pageDescriptionOne:

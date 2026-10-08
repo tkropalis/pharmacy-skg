@@ -1,0 +1,117 @@
+---
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import type { Locale } from '@pharmacy-skg/core';
+import { faSvg } from '../../lib/fa.ts';
+import { t } from '../../i18n/index.ts';
+import { fill } from '../../lib/seo/format.ts';
+import type { DutyPageProps } from '../../lib/seo/views.ts';
+import '../../styles/seo.css';
+
+interface Props {
+  locale: Locale;
+  page: DutyPageProps;
+}
+
+const { locale, page } = Astro.props;
+const d = t(locale);
+const seo = d.seo.duty;
+---
+
+<!--
+  One day's published lists, one per area group: a plain heading with a hairline above it, then
+  each kind of duty with its hours on one line and its pharmacies. On a dated page
+  (DutyDatePage) and as the content of a city's page for today before the app replaces it
+  (DutyTodayPage).
+-->
+<nav class="seo-breadcrumb" aria-label={d.seo.breadcrumbLabel}>
+  <ol>
+    {page.breadcrumbs.map((crumb, index) =>
+      index < page.breadcrumbs.length - 1 ? (
+        <li>
+          <a href={crumb.path}>{crumb.name}</a>
+        </li>
+      ) : (
+        <li aria-current="page">{crumb.name}</li>
+      ),
+    )}
+  </ol>
+</nav>
+
+<h1 data-duty-date={page.date} data-today-label={d.seo.todayBadge}>
+  {page.h1}
+</h1>
+
+{page.missingGroups.length > 0 && (
+  <p class="callout" role="note">
+    {fill(seo.missingGroups, { groups: page.missingGroups.join(', ') })}
+  </p>
+)}
+
+{/* The list of all dates is the breadcrumb's first link. */}
+<nav class="seo-pager" aria-label={seo.pagerLabel}>
+  {page.prev !== null ? (
+    <a href={page.prev.path} rel="prev">
+      <Fragment set:html={faSvg(faArrowLeft, { size: 14 })} />
+      <span>
+        <span class="sr-only">{seo.prev}: </span>
+        {page.prev.label}
+      </span>
+    </a>
+  ) : (
+    <span></span>
+  )}
+  {page.next !== null && (
+    <a href={page.next.path} rel="next" class="next">
+      <span>
+        <span class="sr-only">{seo.next}: </span>
+        {page.next.label}
+      </span>
+      <Fragment set:html={faSvg(faArrowRight, { size: 14 })} />
+    </a>
+  )}
+</nav>
+
+{page.groups.map((group) => (
+  <section class="seo-group" aria-labelledby={`group-${group.id}`}>
+    <h2 id={`group-${group.id}`}>{group.name}</h2>
+    <p class="seo-meta">
+      <a href={group.sourceUrl} rel="noopener">
+        {seo.sourceLink}
+      </a>
+    </p>
+    {group.sections.map((section) => (
+      <div class="seo-section">
+        <h3>{section.kindLabel}</h3>
+        <p class="seo-meta">
+          {seo.hoursLabel} {section.hoursText}
+          {section.extraHours.map((extra) => (
+            <>
+              {' · '}
+              {seo.extraHoursLabel} {extra}
+            </>
+          ))}
+        </p>
+        {section.notes.map((note) => (
+          <p class="seo-meta">{note}</p>
+        ))}
+        <ul class="seo-list">
+          {section.entries.map((entry) => (
+            <li>
+              <span class="name">
+                {entry.pagePath !== null ? <a href={entry.pagePath}>{entry.name}</a> : entry.name}
+              </span>
+              <span class="sub">
+                {entry.address}, {entry.locality}
+              </span>
+              {entry.phoneHref !== null && (
+                <span class="sub">
+                  <a href={entry.phoneHref}>{entry.phone}</a>
+                </span>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </section>
+))}

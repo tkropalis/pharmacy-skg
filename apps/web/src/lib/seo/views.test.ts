@@ -6,7 +6,9 @@ import {
   areaPageProps,
   dutyIndexProps,
   dutyPageProps,
+  dutyTodayPageProps,
   pharmacyPageProps,
+  todayDutyDate,
 } from './views.ts';
 import { MAX_DUTY_PAGES, publishedDutyDates } from './model.ts';
 
@@ -167,6 +169,14 @@ describe('dutyPageProps', () => {
     expect(en?.next?.path).toBe('/en/duty/thessaloniki/2026-10-06/');
   });
 
+  it("has a breadcrumb through the city's page for today", () => {
+    expect(dutyPageProps(model, 'el', '2026-10-05')?.breadcrumbs).toEqual([
+      { name: 'Εφημερίες ανά μέρα', path: '/efimeries/' },
+      { name: 'Θεσσαλονίκη', path: '/efimeries/thessaloniki/' },
+      { name: 'Δευτέρα 5 Οκτωβρίου 2026', path: '/efimeries/thessaloniki/2026-10-05/' },
+    ]);
+  });
+
   it('names the area groups a day has no list for', () => {
     // 1 Oct 2026 has the metro list only; 5 Oct has all ten.
     expect(dutyPageProps(model, 'el', '2026-10-05')?.missingGroups).toEqual([]);
@@ -200,6 +210,47 @@ describe('dutyPageProps', () => {
   });
 });
 
+describe('todayDutyDate', () => {
+  it("is today when today's list is published", () => {
+    expect(todayDutyDate(model)).toBe('2026-10-05');
+  });
+
+  it('is the next published date when today has no list, else the last one', () => {
+    const dates = ['2026-10-03', '2026-10-04', '2026-10-07'];
+    const at = (today: string) => todayDutyDate({ ...model, today, publishedDates: dates });
+    expect(at('2026-10-05')).toBe('2026-10-07');
+    expect(at('2026-10-09')).toBe('2026-10-07');
+    expect(todayDutyDate({ ...model, publishedDates: [] })).toBeNull();
+  });
+});
+
+describe('dutyTodayPageProps', () => {
+  const el = dutyTodayPageProps(model, 'el');
+  const en = dutyTodayPageProps(model, 'en');
+
+  it("shows today's lists at the city's own address, in both locales", () => {
+    expect(el?.date).toBe('2026-10-05');
+    expect(el?.meta.alternates).toEqual({
+      el: '/efimeries/thessaloniki/',
+      en: '/en/duty/thessaloniki/',
+    });
+    expect(el?.groups).toEqual(dutyPageProps(model, 'el', '2026-10-05')?.groups);
+  });
+
+  it('says today in the title and names the date in the heading', () => {
+    expect(el?.meta.title).toBe('Εφημερεύοντα φαρμακεία σήμερα, Θεσσαλονίκη');
+    expect(en?.meta.title).toBe('Pharmacies on duty today, Thessaloniki');
+    expect(el?.meta.description).toContain('Πηγή: Φαρμακευτικός Σύλλογος Θεσσαλονίκης.');
+    expect(el?.h1).toBe('Εφημερεύοντα φαρμακεία, Θεσσαλονίκη, Δευτέρα 5 Οκτωβρίου 2026');
+  });
+
+  it('ends its breadcrumb at the city and keeps the links to the days around it', () => {
+    expect(el?.breadcrumbs.map((c) => c.path)).toEqual(['/efimeries/', '/efimeries/thessaloniki/']);
+    expect(el?.prev?.path).toBe('/efimeries/thessaloniki/2026-10-04/');
+    expect(el?.next?.path).toBe('/efimeries/thessaloniki/2026-10-06/');
+  });
+});
+
 describe('dutyIndexProps', () => {
   it("lists every city's published dates, in order, in both locales", () => {
     const el = dutyIndexProps([model, larisa], 'el');
@@ -214,6 +265,8 @@ describe('dutyIndexProps', () => {
     expect(en.meta.path).toBe('/en/duty/');
     expect(en.cities[1]?.name).toBe('Larissa');
     expect(en.cities[0]?.items[0]?.path).toBe(`/en/duty/thessaloniki/${model.publishedDates[0]}/`);
+    expect(el.cities[1]?.todayPath).toBe('/efimeries/larisa/');
+    expect(en.cities[0]?.todayPath).toBe('/en/duty/thessaloniki/');
   });
 });
 
@@ -245,6 +298,10 @@ describe('areaPageProps', () => {
     const en = areaPageProps(model, 'en', 'nea-michaniona');
     expect(el?.h1).toBe('Φαρμακεία: Νέα Μηχανιώνα');
     expect(en?.h1).toBe('Pharmacies in Nea Michaniona (Νέα Μηχανιώνα)');
+    expect(el?.breadcrumbs).toEqual([
+      { name: 'Όλες οι περιοχές', path: '/perioxi/' },
+      { name: 'Νέα Μηχανιώνα', path: '/perioxi/thessaloniki/nea-michaniona/' },
+    ]);
     expect(en?.meta.alternates).toEqual({
       el: '/perioxi/thessaloniki/nea-michaniona/',
       en: '/en/area/thessaloniki/nea-michaniona/',
@@ -259,6 +316,21 @@ describe('areaPageProps', () => {
       expect(day.pagePath).toBe(`/efimeries/thessaloniki/${day.date}/`);
       expect(day.items.length).toBeGreaterThan(0);
     }
+  });
+
+  it('names the city in the title, unless the area is the city itself', () => {
+    expect(areaPageProps(model, 'el', 'nea-michaniona')?.meta.title).toBe(
+      'Φαρμακεία Νέα Μηχανιώνα, Θεσσαλονίκη: ωράριο και εφημερίες',
+    );
+    expect(areaPageProps(model, 'en', 'nea-michaniona')?.meta.title).toBe(
+      'Pharmacies in Nea Michaniona, Thessaloniki: hours and duty days',
+    );
+    expect(areaPageProps(model, 'el', 'thessaloniki')?.meta.title).toBe(
+      'Φαρμακεία Θεσσαλονίκη: ωράριο και εφημερίες',
+    );
+    expect(areaPageProps(larisa, 'el', 'tyrnavos')?.meta.title).toBe(
+      'Φαρμακεία Τύρναβος, Λάρισα: ωράριο και εφημερίες',
+    );
   });
 });
 

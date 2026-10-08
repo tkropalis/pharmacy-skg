@@ -4,7 +4,7 @@ import type { Locale } from '@pharmacy-skg/core';
 import SiteFooter from '../components/SiteFooter.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import StaleBanner from '../components/StaleBanner.astro';
-import { APP_NAME, APP_SHORT_NAME, THEME_COLORS } from '../config.ts';
+import { APP_NAME, APP_SHORT_NAME, SITE_URL, THEME_COLORS } from '../config.ts';
 import { manifestPath } from '../lib/manifest.ts';
 import { alternatePaths, t } from '../i18n/index.ts';
 import type { RouteKey } from '../i18n/index.ts';
@@ -32,11 +32,11 @@ interface Props {
 const { locale, route, title, description, alternates: pageAlternates, app = false } = Astro.props;
 const d = t(locale);
 
-const site = Astro.site ?? new URL('https://pharmacy-skg.vercel.app');
+const site = Astro.site ?? new URL(SITE_URL);
 const absolute = (path: string) => new URL(path, site).href;
 const alternates = pageAlternates ?? (route === null ? null : alternatePaths(route));
 const canonical = alternates === null ? null : absolute(alternates[locale]);
-const fullTitle = route === 'home' ? `${APP_NAME[locale]}` : `${title} · ${APP_NAME[locale]}`;
+const fullTitle = `${title} · ${APP_NAME[locale]}`;
 const ogLocales: Record<Locale, string> = { el: 'el_GR', en: 'en_US' };
 // Vercel Web Analytics (cookieless, decision D16), only in builds made on Vercel: elsewhere
 // (local, CI, e2e) /_vercel/insights does not exist.
