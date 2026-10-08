@@ -1,4 +1,4 @@
-import { GREECE_TIME_ZONE, hasRegularHours, pharmacyStatus } from '@pharmacy-skg/core';
+import { GREECE_TIME_ZONE, hasRegularHours, pharmacyStatus, zonedDate } from '@pharmacy-skg/core';
 import type { Locale } from '@pharmacy-skg/core';
 import { DEFAULT_CITY_ID } from '../../config.ts';
 import { t } from '../../i18n/index.ts';
@@ -30,7 +30,7 @@ async function show(root: HTMLElement): Promise<void> {
       locale,
       labels,
       GREECE_TIME_ZONE,
-      !hasRegularHours(data.city.id),
+      !hasRegularHours(data.city.id, zonedDate(now, GREECE_TIME_ZONE)),
     );
     const headline = document.createElement('p');
     const strong = document.createElement('strong');

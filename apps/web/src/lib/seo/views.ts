@@ -213,7 +213,7 @@ export function pharmacyPageProps(
     });
   }
 
-  const regularHours = hasRegularHours(model.cityId)
+  const regularHours = hasRegularHours(model.cityId, model.today)
     ? regularHoursView(model.cityId, model.today, seo)
     : null;
   const area = model.areaByLocality.get(pharmacy.locality);
