@@ -12,7 +12,7 @@ web
 
 ## Users
 
-Everyone in the areas the app covers (Thessaloniki and 31 other areas so far, from Evros to Crete; all of Greece in time) who needs a pharmacy now: a parent at 2 a.m. with a sick child, an older person who has never heard of the pharmacists' association, a visitor who does not read Greek. They are usually on a phone, often in a hurry, sometimes in a dark room, often with large text turned on. The job is to find the nearest pharmacy that is open (or on duty) at this moment, then call it or get directions. A smaller group plans ahead: which pharmacy is on duty on Saturday, which favourite is open tomorrow.
+Everyone in the areas the app covers (Thessaloniki, Attica and 31 other areas so far, from Evros to Crete; all of Greece in time) who needs a pharmacy now: a parent at 2 a.m. with a sick child, an older person who has never heard of the pharmacists' association, a visitor who does not read Greek. They are usually on a phone, often in a hurry, sometimes in a dark room, often with large text turned on. The job is to find the nearest pharmacy that is open (or on duty) at this moment, then call it or get directions. A smaller group plans ahead: which pharmacy is on duty on Saturday, which favourite is open tomorrow.
 
 ## Product Purpose
 

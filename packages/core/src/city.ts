@@ -61,10 +61,32 @@ export const LARISA: City = {
   defaultGroupId: 'larisa',
 };
 
+/**
+ * The area of the Pharmaceutical Association of Attica: Attica without the Piraeus association's
+ * area (its city, the western suburbs on the coast and the islands). Its lists come from its own
+ * site, fsa-efimeries.gr, and it has no regular-hours decision the app knows yet, so the app
+ * shows only its pharmacies on duty (decision D26). The box is the region's mainland; Piraeus's
+ * smaller boxes win where the two meet (`cityAt`).
+ */
+export const ATTIKI: City = {
+  id: 'attiki',
+  name: { el: 'Αττική', en: 'Attica' },
+  timeZone: GREECE_TIME_ZONE,
+  center: [23.7348, 37.9755], // Σύνταγμα
+  // Megara and Vilia to the west, Lavrio to the east, Sounio to the south, Oropos to the north.
+  bounds: [23.2, 37.6, 24.15, 38.4],
+  regions: [
+    [23.2, 37.6, 24.15, 38.2],
+    // The north-east, to Oropos: not Boeotia's Oinofyta and Thiva, nor Evia across the strait.
+    [23.66, 38.2, 24.15, 38.35],
+  ],
+  defaultGroupId: 'attiki',
+};
+
 /** The cities the app shows; the first is the default, the rest in Greek alphabetical order. */
 export const CITIES: readonly City[] = [
   THESSALONIKI,
-  ...[LARISA, ...ITEQ_AREAS].sort((a, b) => a.name.el.localeCompare(b.name.el, 'el')),
+  ...[LARISA, ATTIKI, ...ITEQ_AREAS].sort((a, b) => a.name.el.localeCompare(b.name.el, 'el')),
 ];
 
 export function cityById(id: string): City | undefined {

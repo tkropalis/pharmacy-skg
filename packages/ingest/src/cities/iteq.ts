@@ -32,7 +32,8 @@ export interface IteqArea {
   readonly geocoding?: GeocodeArea;
 }
 
-const OSM_CREDIT: Meta['sources'][number] = {
+/** Credited wherever addresses the lists leave unplaced are geocoded with Nominatim. */
+export const OSM_CREDIT: Meta['sources'][number] = {
   id: 'osm',
   name: { el: 'Συντελεστές OpenStreetMap', en: 'OpenStreetMap contributors' },
   url: 'https://www.openstreetmap.org/copyright',

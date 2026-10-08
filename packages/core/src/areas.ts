@@ -69,7 +69,9 @@ export const ITEQ_AREAS: readonly City[] = [
     [23.647, 37.942],
     [23.33, 37.4, 23.78, 38.08],
     [
-      [23.55, 37.92, 23.695, 38.0],
+      // Piraeus, Nikaia and Korydallos to the north edge of Korydallos: Agia Varvara and Aigaleo,
+      // just north, are Attica's.
+      [23.55, 37.92, 23.695, 37.986],
       [23.4, 37.86, 23.56, 38.0],
       [23.4, 37.67, 23.57, 37.79],
       [23.35, 37.45, 23.55, 37.55],

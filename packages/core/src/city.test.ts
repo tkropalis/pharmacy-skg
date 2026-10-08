@@ -64,14 +64,28 @@ describe('cityAt', () => {
     expect(at(38.9, 22.434)).toBe('fthiotida'); // Lamia
   });
 
+  it("tells Attica's association from Piraeus's where they meet", () => {
+    const at = (lat: number, lon: number) => cityAt({ lat, lon })?.id;
+    expect(at(37.9755, 23.7348)).toBe('attiki'); // Σύνταγμα
+    expect(at(37.955, 23.702)).toBe('attiki'); // Καλλιθέα
+    expect(at(37.992, 23.682)).toBe('attiki'); // Αιγάλεω
+    expect(at(37.99, 23.659)).toBe('attiki'); // Αγία Βαρβάρα
+    expect(at(38.041, 23.543)).toBe('attiki'); // Ελευσίνα
+    expect(at(37.996, 23.344)).toBe('attiki'); // Μέγαρα
+    expect(at(38.153, 23.963)).toBe('attiki'); // Μαραθώνας
+    expect(at(38.022, 24.005)).toBe('attiki'); // Ραφήνα
+    expect(at(37.714, 24.056)).toBe('attiki'); // Λαύριο
+    expect(at(38.322, 23.765)).toBe('attiki'); // Σκάλα Ωρωπού
+    expect(at(37.984, 23.65)).toBe('piraeus'); // Κορυδαλλός
+    expect(at(37.975, 23.645)).toBe('piraeus'); // Νίκαια
+    expect(at(37.952, 23.68)).toBe('piraeus'); // Μοσχάτο
+    expect(at(38.392, 23.795)).toBe('evia'); // Ερέτρια, across the strait
+    expect(at(37.94, 22.93)).toBe('korinthia'); // Κόρινθος
+  });
+
   it.each([
-    ['Athens', 37.9838, 23.7275],
-    ['Kallithea', 37.955, 23.702],
-    ['Elefsina', 38.041, 23.543],
-    ['Megara', 37.996, 23.344],
-    ['Marathon', 38.153, 23.963],
-    ['Rafina', 38.022, 24.005],
     ['Thiva', 38.325, 23.319],
+    ['Oinofyta', 38.312, 23.637],
     ['Livadeia', 38.436, 22.875],
     ['Patra', 38.2466, 21.7346],
     ['Agrinio', 38.6218, 21.4078],
