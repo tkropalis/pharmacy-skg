@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "groups": [
+    {
+      "id": "drama",
+      "name": "Δράμα",
+      "source": {
+        "url": "https://drama.efhmeries.gr/",
+        "uploadedAt": "2026-10-08T11:15:03.609Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521027210",
+              "name": "ΣΠΥΡΟΠΟΥΛΟΥ ΔΗΜΗΤΡΑ",
+              "address": "ΑΓΑΜΕΜΝΩΝΟΣ 37 & ΠΤΟΛΕΜΑΙΩΝ 10",
+              "locality": "Δράμα",
+              "phone": "2521027210"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521031078",
+              "name": "ΚΑΡΑΜΠΟΥΓΙΟΥΚΙΔΟΥ ΕΛΠΙΔΑ & ΣΙΑ ΟΕ",
+              "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 32",
+              "locality": "Δράμα",
+              "phone": "2521031078"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521020600",
+              "name": "ΜΕΝΕΣΙΔΗΣ ΙΩΑΝΝΗΣ",
+              "address": "ΑΝΤΙΓΟΝΟΥ 15",
+              "locality": "Δράμα",
+              "phone": "2521020600"
+            },
+            {
+              "pharmacyId": "2521036333",
+              "name": "Σ.Φ. ΖΑΧΑΡΙΑΔΟΥ Δ.-ΜΑΝΤΙΟΥ Β. ΟΕ",
+              "address": "ΓΕΩΡ. ΠΑΠΑΝΔΡΕΟΥ 2",
+              "locality": "Δράμα",
+              "phone": "2521036333"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

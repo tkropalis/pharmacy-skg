@@ -7,26 +7,54 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T20:40:41.114Z"
+        "uploadedAt": "2026-10-08T11:15:41.301Z"
       },
       "sections": [
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 14:30",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331065770",
-              "name": "ΧΕΙΜΩΝΙΔΗΣ ΜΙΧΑΗΛ & ΣΙΑ Ε.Ε.",
-              "address": "Μ. ΜΠΟΤΣΑΡΗ 29 - πλατεία Τσερμένι",
+              "pharmacyId": "2332022800",
+              "name": "ΕΛΕΥΘΕΡΙΑΔΟΥ ΚΑΛΛΙΟΠΗ",
+              "address": "ΚΑΜΠΊΤΗ 3",
+              "locality": "Νάουσα",
+              "phone": "2332022800"
+            },
+            {
+              "pharmacyId": "2331065931",
+              "name": "ΚΟΥΡΚΟΥΤΑ ΑΘΑΝ. ΝΙΚΟΛΕΤΑ",
+              "address": "ΠΙΝΔΟΥ 15 ΚΑΙ ΚΑΡΑΤΑΣΟΥ",
               "locality": "Βέροια",
-              "phone": "2331065770"
+              "phone": "2331065931"
+            },
+            {
+              "pharmacyId": "2331028594",
+              "name": "ΠΑΝΑΓΑΚΗΣ ΧΡ. ΑΛΕΞΙΟΣ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 7",
+              "locality": "Βέροια",
+              "phone": "2331028594"
+            },
+            {
+              "pharmacyId": "2331060064",
+              "name": "ΠΑΠΑΡΗ ΟΛΥΜΠΙΑ ΥΠΟΚ/ΣΜΑ",
+              "address": "ΕΛΗΑΣ 4",
+              "locality": "Βέροια",
+              "phone": "2331060064"
+            },
+            {
+              "pharmacyId": "2333024452",
+              "name": "ΤΣΙΒΟΥΛΑΣ ΧΡΙΣΤΟΔΟΥΛΟΣ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 55",
+              "locality": "Αλεξάνδρεια",
+              "phone": "2333024452"
             }
           ]
         },
@@ -79,54 +107,6 @@
           ]
         },
         {
-          "kind": "saturday-extra",
-          "heading": "08:00 ΕΩΣ 14:30",
-          "hours": {
-            "from": "08:00",
-            "to": "14:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2332022800",
-              "name": "ΕΛΕΥΘΕΡΙΑΔΟΥ ΚΑΛΛΙΟΠΗ",
-              "address": "ΚΑΜΠΊΤΗ 3",
-              "locality": "Νάουσα",
-              "phone": "2332022800"
-            },
-            {
-              "pharmacyId": "2331065931",
-              "name": "ΚΟΥΡΚΟΥΤΑ ΑΘΑΝ. ΝΙΚΟΛΕΤΑ",
-              "address": "ΠΙΝΔΟΥ 15 ΚΑΙ ΚΑΡΑΤΑΣΟΥ",
-              "locality": "Βέροια",
-              "phone": "2331065931"
-            },
-            {
-              "pharmacyId": "2331023132",
-              "name": "ΜΑΣΟΥΡΑ ΑΙΚΑΤΕΡΙΝΗ & ΣΙΑ Ε.Ε.",
-              "address": "ΒΕΝΙΖΕΛΟΥ 22",
-              "locality": "Βέροια",
-              "phone": "2331023132"
-            },
-            {
-              "pharmacyId": "2331028594",
-              "name": "ΠΑΝΑΓΑΚΗΣ ΧΡ. ΑΛΕΞΙΟΣ",
-              "address": "ΒΕΝΙΖΕΛΟΥ 7",
-              "locality": "Βέροια",
-              "phone": "2331028594"
-            },
-            {
-              "pharmacyId": "2333024452",
-              "name": "ΤΣΙΒΟΥΛΑΣ ΧΡΙΣΤΟΔΟΥΛΟΣ",
-              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 55",
-              "locality": "Αλεξάνδρεια",
-              "phone": "2333024452"
-            }
-          ]
-        },
-        {
           "kind": "day",
           "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
@@ -153,6 +133,26 @@
             "from": "19:00",
             "to": "21:00",
             "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331065770",
+              "name": "ΧΕΙΜΩΝΙΔΗΣ ΜΙΧΑΗΛ & ΣΙΑ Ε.Ε.",
+              "address": "Μ. ΜΠΟΤΣΑΡΗ 29 - πλατεία Τσερμένι",
+              "locality": "Βέροια",
+              "phone": "2331065770"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],

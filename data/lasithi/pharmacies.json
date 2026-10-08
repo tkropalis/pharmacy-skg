@@ -160,7 +160,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 35.2562283,
         "lon": 25.6066956,
@@ -244,11 +244,32 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 35.2614561,
         "lon": 25.7239692,
         "ref": "https://lasithi.efhmeries.gr/Home/Details/3688",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2841082408",
+      "name": "ΑΣΚΟΞΥΛΑΚΗΣ Ε. ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΧΟΡΤΑΤΣΩΝ 26 / 26, CHORTATSON STR.",
+      "locality": "Άγιος Νικόλαος",
+      "postcode": null,
+      "phone": "2841082408",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.1882524,
+        "lon": 25.7138956,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4782",
         "source": "list",
         "precision": "exact"
       }
@@ -291,6 +312,27 @@
         "lat": 35.0081694,
         "lon": 25.7384268,
         "ref": "https://lasithi.efhmeries.gr/Home/Details/4684",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2842023336",
+      "name": "ΒΟΓΙΑΤΖΗΣ ΙΩΑΝΝΗΣ",
+      "address": "ΝΑΥΑΡΧΟΥ ΚΟΥΝΤΟΥΡΙΩΤΟΥ 23 / 23, NAVARCHOU KOUNTOURIOTOU STR.",
+      "locality": "Ιεράπετρα",
+      "postcode": null,
+      "phone": "2842023336",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.0096176,
+        "lon": 25.7399574,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4699",
         "source": "list",
         "precision": "exact"
       }
@@ -496,7 +538,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 35.2061844,
         "lon": 26.1040802,

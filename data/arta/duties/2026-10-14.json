@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "groups": [
+    {
+      "id": "arta",
+      "name": "Άρτα",
+      "source": {
+        "url": "https://arta.efhmeries.gr/",
+        "uploadedAt": "2026-10-08T11:14:44.178Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2681042633",
+              "name": "ΜΑΥΡΟΜΑΤΗ ΗΛΕΚΤΡΑ",
+              "address": "ΡΑΧΗ",
+              "locality": "Άρτα",
+              "phone": "2681042633"
+            },
+            {
+              "pharmacyId": "2681087115",
+              "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΜΕΛΠΟΜΕΝΗ",
+              "address": "ΝΕΟΧΩΡΙ",
+              "locality": "Άρτα",
+              "phone": "2681087115"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

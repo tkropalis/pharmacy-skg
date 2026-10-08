@@ -107,6 +107,27 @@
       }
     },
     {
+      "id": "2441025576",
+      "name": "Σ/Φ ΕΛΕΝΗ ΟΙΚΟΝΟΜΟΥ - ΘΩΜΑΣ ΚΥΡΙΤΣΗΣ Ο.Ε",
+      "address": "ΙΕΖΕΚΙΗΛ 51",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441025576",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 39.3658077,
+        "lon": 21.9220252,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3758",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2441025689",
       "name": "ΚΑΤΣΙΟΥΛΑ ΑΠΟΣΤΟΛΙΑ",
       "address": "ΤΕΡΜΑ ΤΑΥΡΩΠΟΥ (ΝΟΣΟΚΟΜΕΙΟ)",
@@ -123,6 +144,27 @@
         "lat": 39.3548722,
         "lon": 21.9085607,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3756",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441025847",
+      "name": "ΧΑΡΜΠΑ ΕΙΡΗΝΗ",
+      "address": "ΥΨΗΛΑΝΤΟΥ 60",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441025847",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 39.3637521,
+        "lon": 21.9262436,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3757",
         "source": "list",
         "precision": "exact"
       }

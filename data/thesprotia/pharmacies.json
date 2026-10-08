@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
+      "id": "2665021310",
+      "name": "ΚΑΤΣΙΟΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΚΥΠΡΟΥ 31",
+      "locality": "Ηγουμενίτσα",
+      "postcode": null,
+      "phone": "2665021310",
+      "groupId": "thesprotia",
+      "sources": [
+        "iteq-thesprotia"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 39.5036185,
+        "lon": 20.2643519,
+        "ref": "https://thesprotia.efhmeries.gr/Home/Details/393",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2665022410",
       "name": "ΚΩΣΤΑΚΗ ΛΙΑΚΟΥ ΕΥΘΥΜΙΑ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "ΓΡ. ΛΑΜΠΡΑΚΗ 13",

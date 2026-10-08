@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "groups": [
+    {
+      "id": "xanthi",
+      "name": "Ξάνθη",
+      "source": {
+        "url": "https://xanthi.efhmeries.gr/",
+        "uploadedAt": "2026-10-08T11:17:36.837Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2541026987",
+              "name": "ΔΙΟΥΔΗΣ ΓΡΗΓΟΡΗΣ",
+              "address": "ΜΠΡΩΚΟΥΜΗ 1",
+              "locality": "Ξάνθη",
+              "phone": "2541026987"
+            },
+            {
+              "pharmacyId": "2541022485",
+              "name": "ΡΑΝΟΣ ΑΛΕΞΑΝΔΡΟΣ",
+              "address": "40 ΕΚΚΛΗΣΙΩΝ 3",
+              "locality": "Ξάνθη",
+              "phone": "2541022485"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "20:00 ΕΩΣ 08:00 ΠΡΩΙ",
+          "hours": {
+            "from": "20:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2541028610",
+              "name": "Σ.Φ. ΑΣΛΑΝΙΔΟΥ - ΑΣΛΑΝΙΔΗΣ",
+              "address": "ΜΕΣΟΛΟΓΓΙΟΥ 39",
+              "locality": "Ξάνθη",
+              "phone": "2541028610"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

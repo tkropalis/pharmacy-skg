@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T20:41:12.591Z"
+        "uploadedAt": "2026-10-08T11:16:34.993Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "9 ΒΡΑΔΥ- 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441020151",
-              "name": "Σ/Φ ΣΟΥΦΛΑΚΟΥ ΑΙΚΑΤΕΡΙΝΗ & ΣΟΥΦΛΑΚΟΥ-ΚΩΣΤΗ ΥΒΟΝΝΗ & ΣΙΑ Ο.Ε.",
-              "address": "ΚΑΡΑΙΣΚΑΚΗ 51",
-              "locality": "Καρδίτσα",
-              "phone": "2441020151"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
@@ -47,6 +27,26 @@
               "address": "ΤΡΙΚΑΛΩΝ & Ρ.ΦΕΡΡΑΙΟΥ",
               "locality": "Καρδίτσα",
               "phone": "2441021126"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "9 ΒΡΑΔΥ- 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441020151",
+              "name": "Σ/Φ ΣΟΥΦΛΑΚΟΥ ΑΙΚΑΤΕΡΙΝΗ & ΣΟΥΦΛΑΚΟΥ-ΚΩΣΤΗ ΥΒΟΝΝΗ & ΣΙΑ Ο.Ε.",
+              "address": "ΚΑΡΑΙΣΚΑΚΗ 51",
+              "locality": "Καρδίτσα",
+              "phone": "2441020151"
             }
           ]
         }

@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T20:40:22.299Z"
+        "uploadedAt": "2026-10-08T11:15:13.728Z"
       },
       "sections": [
         {
@@ -35,26 +35,6 @@
               "address": "ΑΜΑΡΥΣΙΑΣ ΑΡΤΕΜΙΔΟΣ ΚΑΙ ΑΠΟΣΤΟΛΗ",
               "locality": "Ερέτρια",
               "phone": "2221064600"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221085705",
-              "name": "Σ.Φ. Δ.ΧΑΝΤΖΗΣ-Ζ.ΧΑΝΤΖΗ Ο.Ε.",
-              "address": "ΧΑΪΝΑ 28",
-              "locality": "Χαλκίδα",
-              "phone": "2221085705"
             }
           ]
         },
@@ -102,6 +82,26 @@
               "address": "ΑΓΓΕΛΗ ΓΟΒΙΟΥ 20-ΠΛΗΣΙΟΝ ΞΕΝΟΔΟΧΕΙΟΥ ΠΑΛΙΡΡΟΙΑ",
               "locality": "Χαλκίδα",
               "phone": "2221555103"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221085705",
+              "name": "Σ.Φ. Δ.ΧΑΝΤΖΗΣ-Ζ.ΧΑΝΤΖΗ Ο.Ε.",
+              "address": "ΧΑΪΝΑ 28",
+              "locality": "Χαλκίδα",
+              "phone": "2221085705"
             }
           ]
         }

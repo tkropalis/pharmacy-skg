@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2710222285",
+      "name": "Σ.Φ.ΦΡΑΓΚΟΥ ΒΑΣΙΛΙΚΗ-ΓΕΩΡΓΑΚΟΠΟΥΛΟΣ ΑΝΤΩΝΙΟΣ Ο.Ε.",
+      "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 1",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710222285",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 37.5105775,
+        "lon": 22.3726433,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5071",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2710222348",
       "name": "ΓΙΑΝΝΟΥΛΗΣ Γ. ΝΙΚΟΛΑΟΣ ΚΑΙ ΣΙΑ ΕΕ",
       "address": "ΠΛ. ΑΓΙΟΥ ΒΑΣΙΛΕΙΟΥ 39",
@@ -123,6 +144,27 @@
         "lat": 37.5141388,
         "lon": 22.3805177,
         "ref": "https://arkadia.efhmeries.gr/Home/Details/5052",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710226840",
+      "name": "ΜΠΕΤΑ ΑΓΓΕΛΙΚΗ",
+      "address": "ΗΡ. ΠΟΛΥΤΕΧΝΕΙΟΥ 17",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710226840",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 37.508609,
+        "lon": 22.3734217,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5069",
         "source": "list",
         "precision": "exact"
       }
@@ -286,7 +328,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.5116626,
         "lon": 22.3737268,
@@ -370,7 +412,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.4062373,
         "lon": 22.71853,
@@ -412,7 +454,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.1662669,
         "lon": 22.86118,
@@ -454,7 +496,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.4017572,
         "lon": 22.1361722,
@@ -538,7 +580,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.6845416,
         "lon": 22.2955302,
@@ -559,7 +601,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.7322838,
         "lon": 21.9594427,

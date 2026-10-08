@@ -7,7 +7,7 @@
       "name": "Αργολίδα",
       "source": {
         "url": "https://argolida.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T07:45:58.175Z"
+        "uploadedAt": "2026-10-08T11:14:26.750Z"
       },
       "sections": [
         {
@@ -22,13 +22,6 @@
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2751023013",
-              "name": "ΑΥΓΟΥΣΤΟΠΟΥΛΟΣ ΒΑΣΙΛΕΙΟΣ",
-              "address": "ΚΟΡΙΝΘΟΥ 200",
-              "locality": "Άργος",
-              "phone": "2751023013"
-            },
-            {
               "pharmacyId": "2753022215",
               "name": "ΓΚΟΒΑΤΣΗΣ ΜΙΧΑΛΗΣ",
               "address": "ΑΣΚΛΗΠΙΟΥ 97",
@@ -41,6 +34,13 @@
               "address": "ΝΕΑ ΚΙΟΣ",
               "locality": "Νέα Κίος",
               "phone": "2751051597"
+            },
+            {
+              "pharmacyId": "2751024339",
+              "name": "ΔΟΝΤΑ ΚΩΝΣΤΑΝΤΙΝΑ",
+              "address": "ΠΛΑΤΕΙΑ ΑΓΙΟΥ ΠΕΤΡΟΥ 1",
+              "locality": "Άργος",
+              "phone": "2751024339"
             },
             {
               "pharmacyId": "2752027907",

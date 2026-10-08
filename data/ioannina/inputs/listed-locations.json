@@ -64,6 +64,11 @@
     "lon": 20.857249,
     "ref": "https://ioannina.efhmeries.gr/Home/Details/4999"
   },
+  "2651036976": {
+    "lat": 39.6701128,
+    "lon": 20.8469068,
+    "ref": "https://ioannina.efhmeries.gr/Home/Details/5008"
+  },
   "2651042722": {
     "lat": 39.6404736,
     "lon": 20.8681534,
@@ -74,10 +79,20 @@
     "lon": 20.8490362,
     "ref": "https://ioannina.efhmeries.gr/Home/Details/4988"
   },
+  "2651045996": {
+    "lat": 39.6574932,
+    "lon": 20.8502042,
+    "ref": "https://ioannina.efhmeries.gr/Home/Details/5009"
+  },
   "2651048448": {
     "lat": 39.6432702,
     "lon": 20.8429107,
     "ref": "https://ioannina.efhmeries.gr/Home/Details/5002"
+  },
+  "2651049296": {
+    "lat": 39.6588612,
+    "lon": 20.8511128,
+    "ref": "https://ioannina.efhmeries.gr/Home/Details/5010"
   },
   "2651066590": {
     "lat": 39.6593741,
@@ -93,6 +108,11 @@
     "lat": 39.6690685,
     "lon": 20.8514723,
     "ref": "https://ioannina.efhmeries.gr/Home/Details/4991"
+  },
+  "2651076377": {
+    "lat": 39.662234,
+    "lon": 20.8568069,
+    "ref": "https://ioannina.efhmeries.gr/Home/Details/5011"
   },
   "2651076676": {
     "lat": 39.6544266,

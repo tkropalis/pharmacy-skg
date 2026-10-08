@@ -254,6 +254,27 @@
       }
     },
     {
+      "id": "2351039662",
+      "name": "Σ.Φ. ΚΟΥΛΚΟΥΔΙΝΑΣ ΕΥΡΙΠΙΔΗΣ-ΚΟΥΛΚΟΥΔΙΝΑΣ ΣΠΥΡΙΔΩΝ",
+      "address": "Ε. ΑΝΤΙΣΤΑΣΗΣ 58",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351039662",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 40.2702495,
+        "lon": 22.5121487,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23538",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2351041498",
       "name": "ΧΑΜΑΛΑΚΗ ΘΕΟΠΙΑ",
       "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 80",
@@ -307,7 +328,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 40.3150825,
         "lon": 22.5838514,
@@ -349,7 +370,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 40.2666242,
         "lon": 22.5967127,
@@ -375,6 +396,27 @@
         "lat": 40.2627329,
         "lon": 22.5020042,
         "ref": "https://pieria.efhmeries.gr/Home/Details/24344",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351079423",
+      "name": "Σ.Φ. ΑΛΚΙΒΙΑΔΗΣ & ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΡΙΑΝΤΑΦΥΛΛΟΠΟΥΛΟΣ Ο.Ε.",
+      "address": "ΑΘ. ΔΙΑΚΟΥ 4",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351079423",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 40.2742955,
+        "lon": 22.4991094,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23539",
         "source": "list",
         "precision": "exact"
       }
@@ -433,7 +475,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 40.0580605,
         "lon": 22.5615413,
@@ -454,7 +496,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 39.9952223,
         "lon": 22.6179865,
@@ -538,7 +580,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 40.1043166,
         "lon": 22.5012641,
@@ -601,7 +643,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 40.4945468,
         "lon": 22.5369608,
@@ -627,6 +669,27 @@
         "lat": 40.495222,
         "lon": 22.537137,
         "ref": "https://pieria.efhmeries.gr/Home/Details/19086",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2353031448",
+      "name": "ΚΑΛΟΓΙΑΝΝΙΔΟΥ ΠΑΡΑΣΚΕΥΗ",
+      "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 62",
+      "locality": "Κολινδρός",
+      "postcode": null,
+      "phone": "2353031448",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 40.4795366,
+        "lon": 22.4840158,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/19468",
         "source": "list",
         "precision": "exact"
       }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T10:24:58.121Z",
+  "updatedAt": "2026-10-08T11:19:34.169Z",
   "bulletins": [
     {
       "id": "14046/30656",
@@ -307,6 +307,15 @@
       "articleUrl": "https://www.moh.gov.gr/articles/times-farmakwn/deltia-timwn/14818-epikairopoihsh-deltioy-timwn-farmakwn-me-enswmatwsh-dioikhtikwn-metabolwn",
       "fileName": "Ο.Ε. Πίνακας Επικ. ΔΤΦ 09-2026.xlsx",
       "fileUrl": "https://www.moh.gov.gr/articles/times-farmakwn/deltia-timwn/14818-epikairopoihsh-deltioy-timwn-farmakwn-me-enswmatwsh-dioikhtikwn-metabolwn?fdl=31884"
+    },
+    {
+      "id": "14828/31891",
+      "kind": "prescription",
+      "title": "Συμπληρωματικό Δελτίο Τιμών Φαρμάκων Ανθρώπινης Χρήσης, κατόπιν αιτήματος μείωσης τιμής",
+      "date": "2026-10-08",
+      "articleUrl": "https://www.moh.gov.gr/articles/times-farmakwn/deltia-timwn/14828-symplhrwmatiko-deltio-timwn-farmakwn-anthrwpinhs-xrhshs-katopin-aithmatos-meiwshs-timhs",
+      "fileName": "Πίνακας οικειοθελούς μείωσης τιμών Alzkar - karian.xlsx",
+      "fileUrl": "https://www.moh.gov.gr/articles/times-farmakwn/deltia-timwn/14828-symplhrwmatiko-deltio-timwn-farmakwn-anthrwpinhs-xrhshs-katopin-aithmatos-meiwshs-timhs?fdl=31891"
     },
     {
       "id": "13661/29735",
@@ -839,8 +848,8 @@
     {"barcode":"2803272401012","name":"ALYMSYS C/S.SOL.IN 25MG/ML VIAL x 4 ML","atc":"L01XC07","substance":"BEVACIZUMAB","company":"MABXIENCE RESEARCH SL, SPAIN","price":194.09,"otc":false,"notReimbursed":false,"bulletin":"14818/31884","shortage":null},
     {"barcode":"2803272401029","name":"ALYMSYS C/S.SOL.IN 25MG/ML VIAL x 16 ML","atc":"L01XC07","substance":"BEVACIZUMAB","company":"MABXIENCE RESEARCH SL, SPAIN","price":687.8,"otc":false,"notReimbursed":false,"bulletin":"14818/31884","shortage":null},
     {"barcode":"2802890001024","name":"ALZIRAX F.C.TAB 600MG/TAB BTx8 (BLIST 1x8)","atc":"J01FA10","substance":"AZITHROMYCIN","company":"RAFARM A.E.B.E.","price":8.51,"otc":false,"notReimbursed":false,"bulletin":"14818/31884","shortage":null},
-    {"barcode":"2803354901034","name":"ALZKAR F.C.TAB (10+10)MG/TAB BT X 28 TABS ΣΕ BLISTER PVC/PE.EVOH.PE/PCTFE/ALU","atc":"N06DA52","substance":"DONEPEZIL HYDROCHLORIDE MONOHYDRATE, MEMANTINE HYDROCHLORIDE","company":"KARIAN ΦΑΡΜΑΚΕΥΤΙΚΗ ΙΔΙΩΤΙΚΗ ΚΕΦΑΛΑΙΟΥΧΙΚΗ ΕΤΑΙΡΕΙΑ Δ.Τ. KARIAN, ΕΛΛΑΔΑ","price":46.54,"otc":false,"notReimbursed":false,"bulletin":"14818/31884","shortage":null},
-    {"barcode":"2803354902031","name":"ALZKAR F.C.TAB (10+20)MG/TAB BT X 28 TABS ΣΕ BLISTER PVC/PE.EVOH.PE/PCTFE/ALU","atc":"N06DA52","substance":"DONEPEZIL HYDROCHLORIDE MONOHYDRATE, MEMANTINE HYDROCHLORIDE","company":"KARIAN ΦΑΡΜΑΚΕΥΤΙΚΗ ΙΔΙΩΤΙΚΗ ΚΕΦΑΛΑΙΟΥΧΙΚΗ ΕΤΑΙΡΕΙΑ Δ.Τ. KARIAN, ΕΛΛΑΔΑ","price":55.94,"otc":false,"notReimbursed":false,"bulletin":"14818/31884","shortage":null},
+    {"barcode":"2803354901034","name":"ALZKAR F.C.TAB (10+10)MG/TAB BT X 28 TABS ΣΕ BLISTER PVC/PE.EVOH.PE/PCTFE/ALU","atc":"N06DA52","substance":"DONEPEZIL HYDROCHLORIDE MONOHYDRATE, MEMANTINE HYDROCHLORIDE","company":"KARIAN ΦΑΡΜΑΚΕΥΤΙΚΗ ΙΔΙΩΤΙΚΗ ΚΕΦΑΛΑΙΟΥΧΙΚΗ ΕΤΑΙΡΕΙΑ Δ.Τ. KARIAN, ΕΛΛΑΔΑ","price":37.29,"otc":false,"notReimbursed":false,"bulletin":"14828/31891","shortage":null},
+    {"barcode":"2803354902031","name":"ALZKAR F.C.TAB (10+20)MG/TAB BT X 28 TABS ΣΕ BLISTER PVC/PE.EVOH.PE/PCTFE/ALU","atc":"N06DA52","substance":"DONEPEZIL HYDROCHLORIDE MONOHYDRATE, MEMANTINE HYDROCHLORIDE","company":"KARIAN ΦΑΡΜΑΚΕΥΤΙΚΗ ΙΔΙΩΤΙΚΗ ΚΕΦΑΛΑΙΟΥΧΙΚΗ ΕΤΑΙΡΕΙΑ Δ.Τ. KARIAN, ΕΛΛΑΔΑ","price":47.27,"otc":false,"notReimbursed":false,"bulletin":"14828/31891","shortage":null},
     {"barcode":"2803186601027","name":"AMARHYTON® PR.CAP 50MG/CAP BTx30 caps σε blister (PVC/PVDC-AL)","atc":"C01BC04","substance":"FLECAINIDE","company":"SWYSSI AG, GERMANY","price":7.59,"otc":false,"notReimbursed":false,"bulletin":"14818/31884","shortage":null},
     {"barcode":"2803186602024","name":"AMARHYTON® PR.CAP 100mg/cap BTx30 caps σε blister (PVC/PVDC-AL)","atc":"C01BC04","substance":"FLECAINIDE","company":"SWYSSI AG, GERMANY","price":6.89,"otc":false,"notReimbursed":false,"bulletin":"14818/31884","shortage":null},
     {"barcode":"2803201001047","name":"AMBICIPEN® F.C.TAB 5MG/TAB BTx30x1 tabs (σε Perforated unit-dose Blister PVC/PVdC/ALU)","atc":"C02KX02","substance":"AMBRISENTAN","company":"ELPEN AE ΦΑΡΜΑΚΕΥΤΙΚΗ ΒΙΟΜΗΧΑΝΙΑ","price":868.81,"otc":false,"notReimbursed":false,"bulletin":"14818/31884","shortage":null},

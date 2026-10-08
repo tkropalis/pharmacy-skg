@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "groups": [
+    {
+      "id": "evros",
+      "name": "Έβρος",
+      "source": {
+        "url": "https://evros.efhmeries.gr/",
+        "uploadedAt": "2026-10-08T11:15:22.729Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2553022322",
+              "name": "ΠΑΤΣΟΥΡΙΔΗΣ ΠΑΡΑΣΚΕΥΑΣ",
+              "address": "ΒΑΣ. ΑΛΕΞΑΝΔΡΟΥ 24",
+              "locality": "Διδυμότειχο",
+              "phone": "2553022322"
+            },
+            {
+              "pharmacyId": "2552022643",
+              "name": "ΤΕΠΕΝΗΣ ΑΠΟΣΤΟΛΟΣ",
+              "address": "Β. ΚΩΝΣΤΑΝΤΙΝΟΥ 127",
+              "locality": "Ορεστιάδα",
+              "phone": "2552022643"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2555024333",
+              "name": "ΜΑΛΑΚΗΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "ΟΡΦΕΩΣ 2",
+              "locality": "Φέρες",
+              "phone": "2555024333"
+            },
+            {
+              "pharmacyId": "2554022232",
+              "name": "ΠΙΤΙΑΚΟΥΔΗΣ ΣΩΤΗΡΙΟΣ - ΜΠΑΜΙΔΟΥ ΚΟΡΤΕΣΣΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 158",
+              "locality": "Σουφλί",
+              "phone": "2554022232"
+            },
+            {
+              "pharmacyId": "2554042100",
+              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛΕΜΑΧΟΣ",
+              "address": "ΠΡΟΒΑΤΩΝΑΣ",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042100"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:30-22:00",
+          "hours": {
+            "from": "14:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551053464",
+              "name": "ΔΗΜΗΤΡΙΑΔΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "Κων.Παλαιολόγου 34",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551053464"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551027333",
+              "name": "ΧΑΤΖΗΣΩΤΗΡΙΟΥ ΠΕΤΡΟΣ",
+              "address": "Ανατ. Θράκης 47 (έναντι ΕΦΚΑ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551027333"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -44,6 +44,27 @@
       }
     },
     {
+      "id": "2681042633",
+      "name": "ΜΑΥΡΟΜΑΤΗ ΗΛΕΚΤΡΑ",
+      "address": "ΡΑΧΗ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681042633",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 39.1140792,
+        "lon": 20.899601,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2423",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681067400",
       "name": "ΓΕΩΡΓΟΠΟΥΛΟΣ",
       "address": "ΔΙΑΣΕΛΛΟ",
@@ -228,6 +249,27 @@
         "lat": 39.167183,
         "lon": 21.034827,
         "ref": "https://arta.efhmeries.gr/Home/Details/1966",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681087115",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΜΕΛΠΟΜΕΝΗ",
+      "address": "ΝΕΟΧΩΡΙ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681087115",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 39.070637,
+        "lon": 21.018409,
+        "ref": "https://arta.efhmeries.gr/Home/Details/1971",
         "source": "list",
         "precision": "exact"
       }

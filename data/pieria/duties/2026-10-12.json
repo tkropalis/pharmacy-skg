@@ -7,7 +7,7 @@
       "name": "Πιερία",
       "source": {
         "url": "https://pieria.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T20:42:15.661Z"
+        "uploadedAt": "2026-10-08T11:18:21.534Z"
       },
       "sections": [
         {
@@ -88,6 +88,26 @@
         },
         {
           "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351038767",
+              "name": "ΠΑΝΑΓΙΩΤΗ ΑΓΑΠΗ -ΛΥΔΙΑ",
+              "address": "ΤΡΑΠΕΖΟΥΝΤΟΣ 1",
+              "locality": "Κατερίνη",
+              "phone": "2351038767"
+            }
+          ]
+        },
+        {
+          "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:30 & 18:00 - 8:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
             "from": "08:00",
@@ -123,26 +143,6 @@
               "address": "ΜΕΓ. ΑΛΕΞΆΝΔΡΟΥ 60",
               "locality": "Κατερίνη",
               "phone": "2351028889"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2351038767",
-              "name": "ΠΑΝΑΓΙΩΤΗ ΑΓΑΠΗ -ΛΥΔΙΑ",
-              "address": "ΤΡΑΠΕΖΟΥΝΤΟΣ 1",
-              "locality": "Κατερίνη",
-              "phone": "2351038767"
             }
           ]
         }

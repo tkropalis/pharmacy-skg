@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "groups": [
+    {
+      "id": "imathia",
+      "name": "Ημαθία",
+      "source": {
+        "url": "https://imathia.efhmeries.gr/",
+        "uploadedAt": "2026-10-08T11:15:41.301Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΠΡΩΙ ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2333023362",
+              "name": "ΚΕΜΠΑΠΙΔΟΥ ΙΩΑΝ. ΓΑΡΥΦΑΛΙΑ",
+              "address": "Δ.ΒΕΤΣΟΠΟΥΛΟΥ 45",
+              "locality": "Αλεξάνδρεια",
+              "phone": "2333023362"
+            },
+            {
+              "pharmacyId": "2332024100",
+              "name": "ΤΥΡΙΝΤΖΗΣ ΔΗΜΗΤΡΙΟΣ & ΣΙΑ Ο.Ε.",
+              "address": "ΠΑΝΑΓΟΥΛΗ 13",
+              "locality": "Νάουσα",
+              "phone": "2332024100"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΠΡΩΙ ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331504142",
+              "name": "ΜΠΙΝΙΚΟΣ Γ.ΝΙΚΟΛΑΟΣ",
+              "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 107 -ΜΑΚΡΟΧΩΡΙ",
+              "locality": "Μακροχώρι",
+              "phone": "2331504142"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331020200",
+              "name": "ΜΕΛΙΟΠΟΥΛΟΣ Δ. ΣΠΥΡΙΔΩΝ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 34",
+              "locality": "Βέροια",
+              "phone": "2331020200"
+            },
+            {
+              "pharmacyId": "2331026914",
+              "name": "ΠΟΤΑΜΟΠΟΥΛΟΣ ΑΝΤΩΝΙΟΣ & ΣΙΑ ΕΕ",
+              "address": "ΠΙΕΡΙΩΝ 44",
+              "locality": "Βέροια",
+              "phone": "2331026914"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "19:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "19:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331023023",
+              "name": "ΓΚΡΕΖΙΟΥ ΔΗΜΗΤΡΑ",
+              "address": "ΠΙΝΔΟΥ 11 - κάτω από τα αστικά",
+              "locality": "Βέροια",
+              "phone": "2331023023"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331023023",
+              "name": "ΓΚΡΕΖΙΟΥ ΔΗΜΗΤΡΑ",
+              "address": "ΠΙΝΔΟΥ 11 - κάτω από τα αστικά",
+              "locality": "Βέροια",
+              "phone": "2331023023"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

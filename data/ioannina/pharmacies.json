@@ -275,6 +275,27 @@
       }
     },
     {
+      "id": "2651036976",
+      "name": "Σ.Φ. ΚΟΥΛΑ ΑΝΑΣΤΑΣΙΑ - ΝΙΚΑΣ ΒΑΣΙΛΕΙΟΣ Ο.Ε.",
+      "address": "ΒΑΛΑΩΡΙΤΟΥ 33",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651036976",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 39.6701128,
+        "lon": 20.8469068,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5008",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651042722",
       "name": "Σ.Φ. ΜΠΡΑΧΑΝΤΙΝΗΣ ΝΙΚΗΤΑΣ - ΟΥΕΡ ΜΑΛΒΙΝΑ",
       "address": "3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ 23Α, ΑΝΑΤΟΛΗ",
@@ -317,6 +338,27 @@
       }
     },
     {
+      "id": "2651045996",
+      "name": "Σ.Φ. ΤΣΑΚΟΥΜΗ ΜΑΡΙΑ- ΤΣΑΚΟΥΜΗ ΝΑΤΑΛΙΑ",
+      "address": "ΔΩΔΩΝΗΣ 52 & ΑΡΥΒΑ 1",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651045996",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 39.6574932,
+        "lon": 20.8502042,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5009",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651048448",
       "name": "ΓΙΑΝΝΟΥΛΗΣ ΙΩΑΝΝΗΣ",
       "address": "ΑΣΗΜΑΚΟΠΟΥΛΟΥ 25",
@@ -333,6 +375,27 @@
         "lat": 39.6432702,
         "lon": 20.8429107,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5002",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651049296",
+      "name": "ΓΕΩΡΓΙΑΔΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΔΩΔΩΝΗΣ 45- 47",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651049296",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 39.6588612,
+        "lon": 20.8511128,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5010",
         "source": "list",
         "precision": "exact"
       }
@@ -396,6 +459,27 @@
         "lat": 39.6690685,
         "lon": 20.8514723,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/4991",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651076377",
+      "name": "ΜΠΟΥΚΟΥΒΑΛΑ ΠΑΡΑΣΚΕΥΗ",
+      "address": "ΧΡ. ΚΑΤΣΑΡΗ 27",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651076377",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 39.662234,
+        "lon": 20.8568069,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5011",
         "source": "list",
         "precision": "exact"
       }

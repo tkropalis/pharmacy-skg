@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "2551027333",
+      "name": "ΧΑΤΖΗΣΩΤΗΡΙΟΥ ΠΕΤΡΟΣ",
+      "address": "Ανατ. Θράκης 47 (έναντι ΕΦΚΑ)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551027333",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 40.8481538,
+        "lon": 25.8734091,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4144",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551028337",
       "name": "ΤΙΓΓΙΡΙΔΗΣ ΑΧΙΛΛΕΑΣ",
       "address": "Ελ. Βενιζέλου 40 (παραπλεύρως ΚΤΕΛ)",
@@ -212,6 +233,27 @@
       }
     },
     {
+      "id": "2551053464",
+      "name": "ΔΗΜΗΤΡΙΑΔΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "Κων.Παλαιολόγου 34",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551053464",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 40.8462422,
+        "lon": 25.8732309,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4394",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551083638",
       "name": "Σ.Φ. ΠΑΓΙΑΝΝΙΔΟΥ Θ.-ΚΟΥΚΟΥΒΗ Ι.",
       "address": "Ηροδότου & Προκόπη 14 (προς Παλαγία)",
@@ -270,6 +312,27 @@
         "lat": 41.5026371,
         "lon": 26.5325528,
         "ref": "https://evros.efhmeries.gr/Home/Details/4869",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2552022643",
+      "name": "ΤΕΠΕΝΗΣ ΑΠΟΣΤΟΛΟΣ",
+      "address": "Β. ΚΩΝΣΤΑΝΤΙΝΟΥ 127",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552022643",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 41.5034239,
+        "lon": 26.5270369,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4708",
         "source": "list",
         "precision": "exact"
       }
@@ -422,6 +485,27 @@
       }
     },
     {
+      "id": "2553022322",
+      "name": "ΠΑΤΣΟΥΡΙΔΗΣ ΠΑΡΑΣΚΕΥΑΣ",
+      "address": "ΒΑΣ. ΑΛΕΞΑΝΔΡΟΥ 24",
+      "locality": "Διδυμότειχο",
+      "postcode": null,
+      "phone": "2553022322",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 41.3502204,
+        "lon": 26.4935275,
+        "ref": "https://evros.efhmeries.gr/Home/Details/5205",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2553023544",
       "name": "ΠΑΡΑΣΚΕΥΟΠΟΥΛΟΣ ΙΩΑΝΝΗΣ",
       "address": "ΒΕΝΙΖΕΛΟΥ 101",
@@ -559,7 +643,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 41.1936141,
         "lon": 26.3050735,
@@ -643,7 +727,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 41.025262,
         "lon": 26.2577482,
@@ -727,7 +811,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 40.8951274,
         "lon": 26.1698018,

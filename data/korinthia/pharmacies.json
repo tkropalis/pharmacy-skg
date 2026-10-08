@@ -96,7 +96,7 @@
       "sources": [
         "iteq-korinthia"
       ],
-      "firstSeen": "2026-10-13",
+      "firstSeen": "2026-10-08",
       "lastSeen": "2026-10-13",
       "location": {
         "lat": 37.9406739,
@@ -181,7 +181,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.9072675,
         "lon": 22.88078,
@@ -202,7 +202,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.8610007,
         "lon": 22.9972229,
@@ -265,7 +265,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.8964006,
         "lon": 22.9284049,
@@ -307,7 +307,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.819328,
         "lon": 22.9291721,
@@ -338,27 +338,6 @@
       }
     },
     {
-      "id": "2741042109",
-      "name": "ΚΟΡΚΑΡΗΣ ΝΙΚΟΛΑΟΣ",
-      "address": "ΠΑΤΡΩΝ 83",
-      "locality": "Κόρινθος",
-      "postcode": null,
-      "phone": "2741042109",
-      "groupId": "korinthia",
-      "sources": [
-        "iteq-korinthia"
-      ],
-      "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
-      "location": {
-        "lat": 37.9353443,
-        "lon": 22.9159058,
-        "ref": "https://korinthia.efhmeries.gr/Home/Details/35390",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2741049800",
       "name": "ΚΑΞΗΡΑ ΑΘΗΝΑ",
       "address": "ΕΟ ΙΣΘΜΟΥ ΑΡΧΑΙΑΣ ΕΠΙΔΑΥΡΟΥ",
@@ -370,7 +349,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.9172924,
         "lon": 22.9993582,
@@ -412,7 +391,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.9578061,
         "lon": 22.8039689,
@@ -433,7 +412,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.9375856,
         "lon": 22.8008984,
@@ -475,7 +454,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.9282447,
         "lon": 23.1433311,
@@ -548,6 +527,27 @@
       }
     },
     {
+      "id": "2741071969",
+      "name": "ΚΩΝΣΤΑΝΤΟΓΙΑΝΝΗΣ Β. ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΚΥΠΡΟΥ 84 & ΠΕΡ.",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741071969",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 37.9402938,
+        "lon": 22.9311051,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35403",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2741072750",
       "name": "ΜΠΑΡΤΖΗ Π. ΑΝΑΣΤΑΣΙΑ",
       "address": "ΚΟΛΙΑΤΣΟΥ 46",
@@ -590,6 +590,27 @@
       }
     },
     {
+      "id": "2741080680",
+      "name": "ΠΑΠΑΦΙΛΗ ΜΑΡΙΑ - ΔΕΣΠΟΙΝΑ",
+      "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 81",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741080680",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 37.9352576,
+        "lon": 22.9288499,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35402",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2741081302",
       "name": "ΠΑΠΑΝΤΩΝΗ Φ. ΑΝΘΟΥΛΑ",
       "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 62",
@@ -622,7 +643,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.9346483,
         "lon": 22.8455989,
@@ -727,7 +748,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.9422082,
         "lon": 22.8251675,
@@ -748,7 +769,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.8116578,
         "lon": 22.869699,
@@ -795,6 +816,27 @@
         "lat": 37.9153307,
         "lon": 23.0017927,
         "ref": "https://korinthia.efhmeries.gr/Home/Details/37299",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2742021343",
+      "name": "ΚΩΝΣΤΑΝΤΙΝΟΥ ΕΛΕΝΗ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 119",
+      "locality": "Κιάτο",
+      "postcode": null,
+      "phone": "2742021343",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 38.0205856,
+        "lon": 22.7371056,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/36576",
         "source": "list",
         "precision": "exact"
       }
@@ -937,7 +979,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.976028,
         "lon": 22.759504,
@@ -1000,7 +1042,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 38.0788314,
         "lon": 22.6314641,
@@ -1157,6 +1199,27 @@
       }
     },
     {
+      "id": "2744061124",
+      "name": "ΣΑΡΔΕΛΗΣ ΜΙΧΑΗΛ",
+      "address": "ΚΑΡΑΪΣΚΑΚΗ 32",
+      "locality": "Λουτράκι",
+      "postcode": null,
+      "phone": "2744061124",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 37.9752167,
+        "lon": 22.9812852,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/40226",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2744300722",
       "name": "ΤΣΙΑΜΗ Γ. ΠΑΝΑΓΙΩΤΑ",
       "address": "Δ. ΜΑΤΣΗ 27",
@@ -1210,7 +1273,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.8228995,
         "lon": 22.6594993,

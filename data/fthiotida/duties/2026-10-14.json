@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "groups": [
+    {
+      "id": "fthiotida",
+      "name": "Φθιώτιδα",
+      "source": {
+        "url": "https://fthiotida.efhmeries.gr/",
+        "uploadedAt": "2026-10-08T11:18:56.844Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:00",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231045496",
+              "name": "ΑΝΤΩΝΙΟΥ ΙΩΑΝΝΑ",
+              "address": "ΠΑΠΑΘΑΝΑΣΙΟΥ 3",
+              "locality": "Λαμία",
+              "phone": "2231045496"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2233022840",
+              "name": "ΑΝΑΣΤΑΣΙΟΥ - ΜΟΝΟΧΑΡΗ ΠΑΝΑΓΙΩΤΑ",
+              "address": "25ης ΜΑΡΤΙΟΥ 9",
+              "locality": "Αταλάντη",
+              "phone": "2233022840"
+            },
+            {
+              "pharmacyId": "2233031040",
+              "name": "ΜΠΑΚΑΡΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+              "address": "ΛΙΒΑΝΑΤΕΣ",
+              "locality": "Λιβανάτες",
+              "phone": "2233031040"
+            },
+            {
+              "pharmacyId": "2235023350",
+              "name": "ΠΑΠΑΚΩΝΣΤΑΝΤΙΝΟΥ ΜΙΧΑΗΛ",
+              "address": "ΓΕΡΑΣΙΜΟΥ ΒΑΣΙΛΕΙΑΔΗ 29",
+              "locality": "Καμένα Βούρλα",
+              "phone": "2235023350"
+            },
+            {
+              "pharmacyId": "2235051444",
+              "name": "ΠΙΣΛΗ ΓΕΩΡΓΙΑ",
+              "address": "ΘΕΡΜΟΠΥΛΩΝ 2",
+              "locality": "Μώλος",
+              "phone": "2235051444"
+            },
+            {
+              "pharmacyId": "2238023928",
+              "name": "Σ.Φ. ΓΚΛΕΤΣΟΣ ΑΘΑΝΑΣΙΟΣ & ΒΙΚΥ",
+              "address": "ΛΑΜΙΑΣ 7",
+              "locality": "Στυλίδα",
+              "phone": "2238023928"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2235031770",
+              "name": "ΚΩΛΕΤΗΣ ΒΥΡΩΝ",
+              "address": "ΑΓΙΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "locality": "Άγιος Κωνσταντίνος",
+              "phone": "2235031770"
+            },
+            {
+              "pharmacyId": "2236022766",
+              "name": "Σ.Φ. ΚΕΛΕΣΙΑΔΟΥ ΕΥΣ. - ΚΟΥΤΡΑΣ ΜΙΧ. & ΚΟΥΤΡΑ ΔΗΜ.",
+              "address": "ΜΑΚΡΑΚΩΜΗ",
+              "locality": "Μακρακώμη",
+              "phone": "2236022766"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231030900",
+              "name": "Σ.Φ. ΜΟΣΧΟΥ ΕΛΕΝΗ - ΚΩΣΤΗΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "ΔΡΟΣΟΠΟΥΛΟΥ 1",
+              "locality": "Λαμία",
+              "phone": "2231030900"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231030900",
+              "name": "Σ.Φ. ΜΟΣΧΟΥ ΕΛΕΝΗ - ΚΩΣΤΗΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "ΔΡΟΣΟΠΟΥΛΟΥ 1",
+              "locality": "Λαμία",
+              "phone": "2231030900"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

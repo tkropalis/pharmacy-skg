@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T20:40:22.299Z"
+        "uploadedAt": "2026-10-08T11:15:13.728Z"
       },
       "sections": [
         {
@@ -38,22 +38,22 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 21:00",
           "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "14:00",
+            "to": "21:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2221025636",
-              "name": "ΚΑΡΛΑΤΗΡΑΣ ΕΥΣΤΡΑΤΙΟΣ",
-              "address": "ΤΡΑΠΕΖΟΥΝΤΙΟΥ & ΙΣΑΙΟΥ - ΑΓ. ΒΑΡΒΑΡΑ",
+              "pharmacyId": "2221082278",
+              "name": "ΜΕΤΑΞΩΤΟΣ ΣΩΤΗΡΙΟΣ",
+              "address": "ΤΣΙΡΙΓΩΤΗ 5 - ΠΛΑΤΕΙΑ ΑΓ.ΝΙΚΟΛΑΟΥ",
               "locality": "Χαλκίδα",
-              "phone": "2221025636"
+              "phone": "2221082278"
             }
           ]
         },
@@ -86,6 +86,26 @@
           ]
         },
         {
+          "kind": "overnight",
+          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221025636",
+              "name": "ΚΑΡΛΑΤΗΡΑΣ ΕΥΣΤΡΑΤΙΟΣ",
+              "address": "ΤΡΑΠΕΖΟΥΝΤΙΟΥ & ΙΣΑΙΟΥ - ΑΓ. ΒΑΡΒΑΡΑ",
+              "locality": "Χαλκίδα",
+              "phone": "2221025636"
+            }
+          ]
+        },
+        {
           "kind": "day",
           "heading": "17:30 ΕΩΣ 21:00",
           "hours": {
@@ -102,26 +122,6 @@
               "address": "ΕΥΒΟΙΑΣ 49 ΠΛΗΣΙΟΝ ΤΕΧΝΙΚΟΥ ΛΥΚΕΙΟΥ",
               "locality": "Χαλκίδα",
               "phone": "2221087998"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "14:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "14:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221082278",
-              "name": "ΜΕΤΑΞΩΤΟΣ ΣΩΤΗΡΙΟΣ",
-              "address": "ΤΣΙΡΙΓΩΤΗ 5 - ΠΛΑΤΕΙΑ ΑΓ.ΝΙΚΟΛΑΟΥ",
-              "locality": "Χαλκίδα",
-              "phone": "2221082278"
             }
           ]
         }

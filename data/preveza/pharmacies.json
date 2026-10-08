@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2682023640",
+      "name": "ΚΑΝΕΛΛΟΠΟΥΛΟΥ ΜΑΡΙΑΝΘΗ",
+      "address": "Π. ΤΣΑΛΔΑΡΗ 16",
+      "locality": "Πρέβεζα",
+      "postcode": null,
+      "phone": "2682023640",
+      "groupId": "preveza",
+      "sources": [
+        "iteq-preveza"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 38.960985,
+        "lon": 20.750891,
+        "ref": "https://preveza.efhmeries.gr/Home/Details/1409",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2682024076",
       "name": "ΖΑΛΟΚΩΣΤΑ ΜΑΡΙΝΑ",
       "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 15",

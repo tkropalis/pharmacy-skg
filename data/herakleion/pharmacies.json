@@ -13,7 +13,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-11",
       "location": {
         "lat": 35.3155673,
         "lon": 25.1407562,
@@ -102,6 +102,27 @@
         "lat": 35.3426884,
         "lon": 25.1586669,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57862",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810222656",
+      "name": "ΔΡΑΚΑΚΗ ΕΜΜ. ΜΑΡΙΑ",
+      "address": "ΓΕΡΩΝΥΜΑΚΗ 11 ΚΑΙ ΑΝΑΛΗΨΕΩΣ, ΑΝΑΛΗΨΗ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810222656",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.3346882,
+        "lon": 25.1399651,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57891",
         "source": "list",
         "precision": "exact"
       }
@@ -254,6 +275,27 @@
       }
     },
     {
+      "id": "2810225826",
+      "name": "ΜΑΡΚΑΝΤΩΝΑΚΗ ΝΑΥΣΙΚΑ",
+      "address": "ΛΕΩΦΟΡΟΣ ΙΚΑΡΟΥ 192",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810225826",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
+      "location": {
+        "lat": 35.33908,
+        "lon": 25.133284,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Ηράκλειο"
+      }
+    },
+    {
       "id": "2810227896",
       "name": "ΒΑΡΑΝΑΚΗΣ ΣΤΕΛΙΟΣ ΤΟΥ ΓΕΩΡΓΙΟΥ",
       "address": "Λ. IKAPOY 112 ΠΟΡΟΣ",
@@ -270,6 +312,27 @@
         "lat": 35.3389921,
         "lon": 25.1485724,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57885",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810229150",
+      "name": "ΤΣΙΚΡΙΤΣΑΚΗ ΜΑΡΙΑ",
+      "address": "Λ. IKAPOY 78 (ΧΑΛΚΙΑΔΑΚΗΣ) ΠΟΡΟΣ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810229150",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.3387214,
+        "lon": 25.1459079,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57893",
         "source": "list",
         "precision": "exact"
       }
@@ -317,6 +380,27 @@
       }
     },
     {
+      "id": "2810238604",
+      "name": "ΚΛΑΨΙΝΑΚΗ ΜΑΡΙΑ - ΑΝΝΑ",
+      "address": "ΛΕΩΦ. ΚΝΩΣΣΟΥ 4",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810238604",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.3316851,
+        "lon": 25.1351411,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57892",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810239536",
       "name": "ΛΑΓΟΥΔΑΚΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΟΥ ΠΑΥΛΟΥ",
       "address": "ΕΒΑΝΣ 16 (ΜΙΚΡΗ ΕΒΑΝΣ)",
@@ -333,6 +417,27 @@
         "lat": 35.338054,
         "lon": 25.1335339,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57833",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810239923",
+      "name": "ΚΑΝΙΑΔΑΚΗΣ Ι. ΑΝΤΩΝΙΟΣ",
+      "address": "ΚΝΩΣΟΥ 203 ΔΙΠΛΑ ΠΑΓΚΡΗΤΙΑ ΣΥΝΕΤΑΙΡΙΣΤΙΚΗΣ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810239923",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.314327,
+        "lon": 25.1483831,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57894",
         "source": "list",
         "precision": "exact"
       }
@@ -695,6 +800,27 @@
       }
     },
     {
+      "id": "2810287529",
+      "name": "ΠΛΑΚΙΔΑΣ ΣΤΑΥΡΟΣ",
+      "address": "ΜΑΥΡΟΛΕΝΗΣ 20 ALPHA BANK ΠΛΑΤΕΙΑ KOPNAPOY",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810287529",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.3361229,
+        "lon": 25.1336924,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57890",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810288534",
       "name": "ΡΟΥΣΣΟΣ ΓΕΩΡΓΙΟΣ",
       "address": "Χ. ΓΙΑΝΝΑΡΗ 7 ΠΛΑΤΕΙΑ ΔΑΣΚΑΛΟΓΙΑΝΝΗ",
@@ -947,6 +1073,27 @@
       }
     },
     {
+      "id": "2810321155",
+      "name": "ΠΡΙΝΙΩΤΑΚΗ ΜΑΤΘ. ΕΙΡΗΝΗ",
+      "address": "ΟΥΛΩΦ ΠΑΛΜΕ 22",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810321155",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.3173261,
+        "lon": 25.133069,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57895",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810322108",
       "name": "ΚΑΡΥΩΤΑΚΗ Α. ΕΛΕΝΗ",
       "address": "ΛΕΩΦ. ΙΩΝΙΑΣ 86",
@@ -1052,22 +1199,22 @@
       }
     },
     {
-      "id": "2810335708",
-      "name": "ΜΑΡΚΑΝΤΩΝΑΚΗ ΜΑΡΙΝΑ",
-      "address": "Λ.ΙΚΑΡΟΥ 19 Ν.ΑΛΙΚΑΡΝΑΣΣΟΣ (ΣΚΛΑΒΕΝΙΤΗΣ)",
-      "locality": "Νέα Αλικαρνασσός",
+      "id": "2810341025",
+      "name": "Σ.Φ ΝΙΚΗΦΟΡΟΣ ΝΙΚΟΛΑΟΣ & ΝΙΚΗΦΟΡΟΣ ΜΑΡΙΟΣ Ο.Ε.",
+      "address": "ΚΑΤΕΧΑΚΗ 27 ΠΛΗΣΙΟΝ ΑΓΙΟΥ ΜΗΝΑ",
+      "locality": "Ηράκλειο",
       "postcode": null,
-      "phone": "2810335708",
+      "phone": "2810341025",
       "groupId": "herakleion",
       "sources": [
         "iteq-herakleion"
       ],
-      "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
       "location": {
-        "lat": 35.3391729,
-        "lon": 25.1557713,
-        "ref": "https://herakleion.efhmeries.gr/Home/Details/57856",
+        "lat": 35.3369751,
+        "lon": 25.1310273,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57889",
         "source": "list",
         "precision": "exact"
       }
@@ -1157,27 +1304,6 @@
       }
     },
     {
-      "id": "2810361212",
-      "name": "ΤΣΙΚΝΑΚΗΣ ΑΝΤ. ΜΙΧΑΗΛ",
-      "address": "ΕΘΝΟΜΑΡΤΥΡΩΝ & ΚΟΡΙΝΘΟΥ ΒΑΘΥΠΕΤΡΟΥ ΗΛΙΟΥΠΟΛΗ",
-      "locality": "Ηράκλειο",
-      "postcode": null,
-      "phone": "2810361212",
-      "groupId": "herakleion",
-      "sources": [
-        "iteq-herakleion"
-      ],
-      "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
-      "location": {
-        "lat": 35.3175248,
-        "lon": 25.1358068,
-        "ref": "https://herakleion.efhmeries.gr/Home/Details/57871",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2810370290",
       "name": "Σ.Φ. ΕΠΙΤΡΟΠΑΚΗ ΕΥΓΕΝΙΑ - ΓΕΝΕΤΖΑΚΗΣ ΓΕΩΡΓΙΟΣ & ΣΙΑ Ο.Ε.",
       "address": "ΛΕΒΗΝΟΥ 74 ΚΑΙ ΣΤΡΥΜΩΝΟΣ ΤΕΡΜΑ ΘΕΡΙΣΣΟΥ",
@@ -1194,6 +1320,27 @@
         "lat": 35.3293396,
         "lon": 25.1189293,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57852",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810371551",
+      "name": "ΚΟΥΒΙΔΗ ΒΑΣΙΛΙΚΗ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 157",
+      "locality": "Γάζι",
+      "postcode": null,
+      "phone": "2810371551",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.3264826,
+        "lon": 25.0705762,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/54497",
         "source": "list",
         "precision": "exact"
       }
@@ -1262,6 +1409,27 @@
       }
     },
     {
+      "id": "2810542046",
+      "name": "ΛΑΙΔΟΥ-ΣΕΚΟΥΡΗ ΜΑΡΙΑ &ΣΙΑ Ο.Ε.",
+      "address": "ΠΑΝΕΠΙΣΤΗΜΙΟΥ 37 800 Μ. ΠΡΙΝ ΤΟ ΠΑΓΝΗ (απέναντι απο τον ΑΒ Βασιλόπουλο)",
+      "locality": "ΒΟΥΤΕΣ",
+      "postcode": null,
+      "phone": "2810542046",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.3112215,
+        "lon": 25.0914384,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57896",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810761785",
       "name": "Σ.Φ. ΧΑΤΖΗΔΑΚΗΣ Χ. - ΧΑΤΖΗΔΑΚΗΣ-ΚΟΥΤΡΟΥΛΗΣ Γ. Ο.Ε.",
       "address": "ΚΟΚΚΙΝΙ ΧΑΝΙ Τ.Θ. 80016",
@@ -1315,7 +1483,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 35.2589745,
         "lon": 25.2373575,
@@ -1441,7 +1609,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 35.1461483,
         "lon": 25.2653989,
@@ -1488,6 +1656,27 @@
         "lat": 35.0509811,
         "lon": 24.8723421,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/60340",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2892022356",
+      "name": "ΜΙΧΕΛΑΚΗΣ ΕΜΜΑΝΟΥΗΛ",
+      "address": "ΛΟΓΙΟΥ 23-25",
+      "locality": "Μοίρες",
+      "postcode": null,
+      "phone": "2892022356",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.0511203,
+        "lon": 24.8751267,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/60350",
         "source": "list",
         "precision": "exact"
       }
@@ -1693,7 +1882,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 35.0730386,
         "lon": 24.763541,
@@ -1798,7 +1987,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 35.3153174,
         "lon": 25.3937298,
@@ -1819,7 +2008,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 35.331734,
         "lon": 25.3452693,
@@ -2008,7 +2197,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 35.2926533,
         "lon": 25.4320195,
@@ -2029,7 +2218,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 35.2835724,
         "lon": 25.4643119,
@@ -2055,6 +2244,27 @@
         "lat": 35.2865171,
         "lon": 25.4614927,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/59216",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2897041680",
+      "name": "Σ.Φ. ΣΟΛΟΓΑΝΗ ΜΑΡΙΑ - ΣΟΛΟΓΑΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΚΑΤΩ ΓΟΥΒΕΣ",
+      "locality": "Καρτερός, Επισκοπή, Βαθειά, Κοκκίνη Χάνι, Γούρνες, Γούβες",
+      "postcode": null,
+      "phone": "2897041680",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.3294452,
+        "lon": 25.313214,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/60099",
         "source": "list",
         "precision": "exact"
       }

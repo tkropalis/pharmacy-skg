@@ -23,6 +23,48 @@
       }
     },
     {
+      "id": "2221021850",
+      "name": "ΤΣΟΜΩΚΟΥ ΚΩΝ/ΝΑ",
+      "address": "ΒΕΝΙΖΕΛΟΥ 43 - ΔΙΠΛΑ ΑΤΤΙΚΑ BANK",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221021850",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 38.5143948,
+        "lon": 23.6376784,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9314",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221022120",
+      "name": "ΚΥΛΕΡΤΖΗΣ ΧΡΗΣΤΟΣ",
+      "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221022120",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 38.4650711,
+        "lon": 23.5935252,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9313",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2221024646",
       "name": "ΚΑΤΣΑΝΤΩΝΗΣ ΓΕΩΡΓΙΟΣ",
       "address": "ΔΟΥΝΑ 8-10 ΕΝΑΝΤΙ ΔΙΚΑΣΤΗΡΙΩΝ",
@@ -181,7 +223,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 38.5148962,
         "lon": 23.6379147,
@@ -333,6 +375,27 @@
         "lat": 38.4679058,
         "lon": 23.5988216,
         "ref": "https://evia.efhmeries.gr/Home/Details/9302",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221081067",
+      "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
+      "address": "ΧΑΪΝΑ 56",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221081067",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 38.469188,
+        "lon": 23.6052,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9312",
         "source": "list",
         "precision": "exact"
       }
@@ -559,7 +622,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 38.0139844,
         "lon": 24.4199375,
@@ -653,27 +716,6 @@
       }
     },
     {
-      "id": "2226053141",
-      "name": "ΛΙΑΠΟΔΗΜΗΤΡΗ ΠΑΝΑΓΙΩΤΑ",
-      "address": "ΠΛΗΣΙΟΝ ΚΤΕΛ",
-      "locality": "Ιστιαία",
-      "postcode": null,
-      "phone": "2226053141",
-      "groupId": "evia",
-      "sources": [
-        "iteq-evia"
-      ],
-      "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
-      "location": {
-        "lat": 38.956778,
-        "lon": 23.152573,
-        "ref": "https://evia.efhmeries.gr/Home/Details/8552",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2226053155",
       "name": "ΣΩΤΗΡΟΠΟΥΛΟΣ 2 (ΠΕΡΠΑΤΑΡΗΣ)",
       "address": "ΠΛΗΣΙΟΝ Κ.Υ. ΙΣΤΙΑΙΑΣ",
@@ -685,7 +727,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 38.9551053,
         "lon": 23.1442887,
@@ -748,7 +790,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 38.3920871,
         "lon": 23.7914086,

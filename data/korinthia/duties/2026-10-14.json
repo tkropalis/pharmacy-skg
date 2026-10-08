@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "groups": [
+    {
+      "id": "korinthia",
+      "name": "Κορινθία",
+      "source": {
+        "url": "https://korinthia.efhmeries.gr/",
+        "uploadedAt": "2026-10-08T11:16:55.315Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741071969",
+              "name": "ΚΩΝΣΤΑΝΤΟΓΙΑΝΝΗΣ Β. ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΚΥΠΡΟΥ 84 & ΠΕΡ.",
+              "locality": "Κόρινθος",
+              "phone": "2741071969"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:30 ΕΩΣ 22:00 (ΠΡΟΑΙΡΕΤΙΚΗ ΜΕΣΗΜΒΡΙΝΗ ΔΙΑΚΟΠΗ)",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741039118",
+              "name": "ΡΟΤΑ ΝΤΑΒΙΝΤ καιΣΙΑ Ο.Ε.",
+              "address": "ΑΘΙΚΙΑ",
+              "locality": "Αθίκια",
+              "phone": "2741039118"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:30 ΕΩΣ 21:00 (ΠΡΟΑΙΡΕΤΙΚΗ ΜΕΣΗΜΒΡΙΝΗ ΔΙΑΚΟΠΗ)",
+          "hours": {
+            "from": "08:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741031655",
+              "name": "Σ.Φ.ΣΥΓΓΟΥΝΑ Α.-Α.&ΣΥΓΓΟΥΝΑ Χ. Ο.Ε.",
+              "address": "ΑΡΧΑΙΑ ΚΟΡΙΝΘΟΣ (4Ομ ΑΠΟ ΤΟ ΚΕΝΤΡΟ)",
+              "locality": "Αρχαία Κόρινθος",
+              "phone": "2741031655"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 22:00 (ΠΡΟΑΙΡΕΤΙΚΗ ΜΕΣΗΜΒΡΙΝΗ ΔΙΑΚΟΠΗ)",
+          "hours": {
+            "from": "08:00",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741088882",
+              "name": "ΔΕΛΛΗ ΣΤΑΥΡΟΥΛΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+              "address": "ΑΣΣΟΣ",
+              "locality": "Άσσος",
+              "phone": "2741088882"
+            },
+            {
+              "pharmacyId": "2741053700",
+              "name": "ΚΑΛΠΑΞΗΣ ΑΝΔΡΕΑΣ",
+              "address": "ΒΡΑΧΑΤΙ",
+              "locality": "Βραχάτι",
+              "phone": "2741053700"
+            },
+            {
+              "pharmacyId": "2741049800",
+              "name": "ΚΑΞΗΡΑ ΑΘΗΝΑ",
+              "address": "ΕΟ ΙΣΘΜΟΥ ΑΡΧΑΙΑΣ ΕΠΙΔΑΥΡΟΥ",
+              "locality": "Ίσθμια",
+              "phone": "2741049800"
+            },
+            {
+              "pharmacyId": "2742033488",
+              "name": "ΚΑΡΑΜΑΝΕΑΣ ΕΥΣΤΡΑΤΙΟΣ",
+              "address": "ΒΕΛΟ",
+              "locality": "Βέλο",
+              "phone": "2742033488"
+            },
+            {
+              "pharmacyId": "2741062647",
+              "name": "ΚΟΝΤΟΥΛΗΣ ΙΩΑΝΝΗΣ και ΣΙΑ ΟΕ",
+              "address": "ΑΓ. ΘΕΟΔΩΡΟΙ",
+              "locality": "Άγιοι Θεόδωροι",
+              "phone": "2741062647"
+            },
+            {
+              "pharmacyId": "2741033040",
+              "name": "ΤΣΟΛΚΑ ΕΥΑΓ. ΚΑΛΛΙΟΠΗ",
+              "address": "ΛΟΥΤΡΑ ΩΡ.ΕΛΕΝΗΣ",
+              "locality": "Λουτρά Ωραίας Ελένης",
+              "phone": "2741033040"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:30 (ΠΡΟΑΙΡΕΤΙΚΗ ΜΕΣΗΜΒΡΙΝΗ ΔΙΑΚΟΠΗ)",
+          "hours": {
+            "from": "08:00",
+            "to": "21:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741082044",
+              "name": "ΧΡΗΣΤΑΡΑ Γ. ΚΩΝΣΤΑΝΤΙΝΑ",
+              "address": "ΛΕΧΑΙΟ",
+              "locality": "Λέχαιο",
+              "phone": "2741082044"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:30 ΕΩΣ 21:30 (ΠΡΟΑΙΡΕΤΙΚΗ ΜΕΣΗΜΒΡΙΝΗ ΔΙΑΚΟΠΗ)",
+          "hours": {
+            "from": "08:30",
+            "to": "21:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741036600",
+              "name": "ΚΛΟΚΩΝΗ ΣΤΑΜΑΤΗ ΣΟΦΙΑ καιΣΙΑ Ε.Ε.",
+              "address": "ΕΞΑΜΙΛΙΑ",
+              "locality": "Εξαμίλια",
+              "phone": "2741036600"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2742021343",
+              "name": "ΚΩΝΣΤΑΝΤΙΝΟΥ ΕΛΕΝΗ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 119",
+              "locality": "Κιάτο",
+              "phone": "2742021343"
+            },
+            {
+              "pharmacyId": "2743023644",
+              "name": "Σ.Φ. ΚΛΑΔΟΥΧΟΣ Α.-ΚΛΑΔΟΥΧΟΥ Π. Ο.Ε.",
+              "address": "Π.ΤΣΑΛΔΑΡΗ 53",
+              "locality": "Ξυλόκαστρο",
+              "phone": "2743023644"
+            },
+            {
+              "pharmacyId": "2744061124",
+              "name": "ΣΑΡΔΕΛΗΣ ΜΙΧΑΗΛ",
+              "address": "ΚΑΡΑΪΣΚΑΚΗ 32",
+              "locality": "Λουτράκι",
+              "phone": "2744061124"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741098085",
+              "name": "ΠΑΠΑΘΑΝΑΣΙΟΥ ΛΟΥΤΣΙΑΝΟ & ΣΙΑ Ο.Ε.",
+              "address": "ΧΙΛΙΟΜΟΔΙ",
+              "locality": "Χιλιομόδι",
+              "phone": "2741098085"
+            },
+            {
+              "pharmacyId": "2741054232",
+              "name": "Σ.Φ. ΣΙΑΠΚΑΡΑΣ ΑΓΓΕΛΟΣ ΣΙΑΠΚΑΡΑ ΜΑΡΙΝΑ Ο.Ε.",
+              "address": "ΖΕΥΓΟΛΑΤΙΟ",
+              "locality": "Ζευγολατιό",
+              "phone": "2741054232"
+            },
+            {
+              "pharmacyId": "2746023107",
+              "name": "ΧΡΥΣΙΚΟΠΟΥΛΟΣ Δ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "Λ. ΠΑΠΑΚ/ΝΟΥ 79",
+              "locality": "Νεμέα",
+              "phone": "2746023107"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "22:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741053700",
+              "name": "ΚΑΛΠΑΞΗΣ ΑΝΔΡΕΑΣ",
+              "address": "ΒΡΑΧΑΤΙ",
+              "locality": "Βραχάτι",
+              "phone": "2741053700"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741080680",
+              "name": "ΠΑΠΑΦΙΛΗ ΜΑΡΙΑ - ΔΕΣΠΟΙΝΑ",
+              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 81",
+              "locality": "Κόρινθος",
+              "phone": "2741080680"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741080680",
+              "name": "ΠΑΠΑΦΙΛΗ ΜΑΡΙΑ - ΔΕΣΠΟΙΝΑ",
+              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 81",
+              "locality": "Κόρινθος",
+              "phone": "2741080680"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,9 @@
 {
+  "2331020200": {
+    "lat": 40.5259492,
+    "lon": 22.2040105,
+    "ref": "https://imathia.efhmeries.gr/Home/Details/6188"
+  },
   "2331022080": {
     "lat": 40.52688,
     "lon": 22.2033584,
@@ -8,6 +13,11 @@
     "lat": 40.5258661,
     "lon": 22.2040558,
     "ref": "https://imathia.efhmeries.gr/Home/Details/6182"
+  },
+  "2331023023": {
+    "lat": 40.5277029,
+    "lon": 22.2033565,
+    "ref": "https://imathia.efhmeries.gr/Home/Details/6190"
   },
   "2331023132": {
     "lat": 40.5250306,
@@ -28,6 +38,11 @@
     "lat": 40.5255362,
     "lon": 22.2041513,
     "ref": "https://imathia.efhmeries.gr/Home/Details/6169"
+  },
+  "2331026914": {
+    "lat": 40.5178304,
+    "lon": 22.2060922,
+    "ref": "https://imathia.efhmeries.gr/Home/Details/6189"
   },
   "2331027355": {
     "lat": 40.5278383,
@@ -139,6 +154,11 @@
     "lon": 22.0683474,
     "ref": "https://imathia.efhmeries.gr/Home/Details/5766"
   },
+  "2332024100": {
+    "lat": 40.6313919,
+    "lon": 22.0675281,
+    "ref": "https://imathia.efhmeries.gr/Home/Details/5773"
+  },
   "2332024820": {
     "lat": 40.6315072,
     "lon": 22.0686952,
@@ -168,6 +188,11 @@
     "lat": 40.6273733,
     "lon": 22.4387028,
     "ref": "https://imathia.efhmeries.gr/Home/Details/6820"
+  },
+  "2333023362": {
+    "lat": 40.6259441,
+    "lon": 22.4394364,
+    "ref": "https://imathia.efhmeries.gr/Home/Details/6826"
   },
   "2333023608": {
     "lat": 40.6230174,

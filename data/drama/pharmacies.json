@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2521020600",
+      "name": "ΜΕΝΕΣΙΔΗΣ ΙΩΑΝΝΗΣ",
+      "address": "ΑΝΤΙΓΟΝΟΥ 15",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521020600",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 41.153586,
+        "lon": 24.145689,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3147",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521023170",
       "name": "ΚΑΖΗΣ Α. ΔΗΜΗΤΡΙΟΣ & ΣΙΑ ΟΕ",
       "address": "ΑΓΑΜΕΜΝΟΝΟΣ 4",
@@ -128,6 +149,27 @@
       }
     },
     {
+      "id": "2521027210",
+      "name": "ΣΠΥΡΟΠΟΥΛΟΥ ΔΗΜΗΤΡΑ",
+      "address": "ΑΓΑΜΕΜΝΩΝΟΣ 37 & ΠΤΟΛΕΜΑΙΩΝ 10",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521027210",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 41.1519129,
+        "lon": 24.1474817,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3149",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521030377",
       "name": "ΜΑΛΑΜΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
       "address": "ΒΕΝΙΖΕΛΟΥ 162",
@@ -144,6 +186,27 @@
         "lat": 41.152201,
         "lon": 24.141134,
         "ref": "https://drama.efhmeries.gr/Home/Details/3144",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521031078",
+      "name": "ΚΑΡΑΜΠΟΥΓΙΟΥΚΙΔΟΥ ΕΛΠΙΔΑ & ΣΙΑ ΟΕ",
+      "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 32",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521031078",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 41.1504829,
+        "lon": 24.1454114,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3146",
         "source": "list",
         "precision": "exact"
       }
@@ -228,6 +291,27 @@
         "lat": 41.1510455,
         "lon": 24.1440515,
         "ref": "https://drama.efhmeries.gr/Home/Details/3141",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521036333",
+      "name": "Σ.Φ. ΖΑΧΑΡΙΑΔΟΥ Δ.-ΜΑΝΤΙΟΥ Β. ΟΕ",
+      "address": "ΓΕΩΡ. ΠΑΠΑΝΔΡΕΟΥ 2",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521036333",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 41.1500336,
+        "lon": 24.1476403,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3148",
         "source": "list",
         "precision": "exact"
       }

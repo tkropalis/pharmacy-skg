@@ -128,6 +128,27 @@
       }
     },
     {
+      "id": "2231030900",
+      "name": "Σ.Φ. ΜΟΣΧΟΥ ΕΛΕΝΗ - ΚΩΣΤΗΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΔΡΟΣΟΠΟΥΛΟΥ 1",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231030900",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 38.8989813,
+        "lon": 22.4339659,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11784",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2231033790",
       "name": "ΚΟΛΟΚΥΘΑ ΕΛΠΙΔΑ",
       "address": "ΠΑΠΑΦΛΕΣΣΑ 3",
@@ -186,6 +207,27 @@
         "lat": 38.8988148,
         "lon": 22.4367133,
         "ref": "https://fthiotida.efhmeries.gr/Home/Details/11782",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2231045496",
+      "name": "ΑΝΤΩΝΙΟΥ ΙΩΑΝΝΑ",
+      "address": "ΠΑΠΑΘΑΝΑΣΙΟΥ 3",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231045496",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 38.8928026,
+        "lon": 22.426679,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11783",
         "source": "list",
         "precision": "exact"
       }
@@ -296,6 +338,27 @@
       }
     },
     {
+      "id": "2233022840",
+      "name": "ΑΝΑΣΤΑΣΙΟΥ - ΜΟΝΟΧΑΡΗ ΠΑΝΑΓΙΩΤΑ",
+      "address": "25ης ΜΑΡΤΙΟΥ 9",
+      "locality": "Αταλάντη",
+      "postcode": null,
+      "phone": "2233022840",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 38.6519636,
+        "lon": 23.0046221,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/8305",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2233023222",
       "name": "ΖΥΓΟΓΙΑΝΝΗ ΓΕΩΡΓΙΑ",
       "address": "ΑΙΑΝΤΟΣ ΛΟΚΡΟΥ 14",
@@ -328,7 +391,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 38.7104122,
         "lon": 23.0488276,
@@ -391,7 +454,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 38.7779111,
         "lon": 22.7844951,
@@ -433,7 +496,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 38.7599237,
         "lon": 22.8577998,
@@ -496,7 +559,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 38.809628,
         "lon": 22.6448618,
@@ -559,7 +622,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 38.9418095,
         "lon": 22.1163153,
@@ -622,7 +685,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 38.9142072,
         "lon": 22.6152805,

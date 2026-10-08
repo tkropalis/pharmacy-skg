@@ -44,6 +44,27 @@
       }
     },
     {
+      "id": "2381022623",
+      "name": "Σ.Φ. ΙΟΡΔΑΝΑ ΓΡΟΠΑΛΗ - ΑΙΚΑΤΕΡΙΝΗ ΚΟΥΚΟΥ",
+      "address": "Ρ. ΦΕΡΑΙΟΥ 2 - ΕΝΑΝΤΙ ΙΚΑ",
+      "locality": "Έδεσσα",
+      "postcode": null,
+      "phone": "2381022623",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 40.8013462,
+        "lon": 22.0451764,
+        "ref": "https://pella.efhmeries.gr/Home/Details/6206",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2381023324",
       "name": "ΜΟΥΧΑΛΕΜΠΗΣ ΝΙΚΟΛΑΟΣ",
       "address": "ΔΗΜΟΚΡΑΤΙΑΣ 25",
@@ -296,6 +317,27 @@
       }
     },
     {
+      "id": "2381089980",
+      "name": "ΦΑΝΤΙΔΟΥ ΕΙΡΗΝΗ",
+      "address": "ΑΡΓΥΡΟΥΠΟΛΕΩΣ 23",
+      "locality": "Σκύδρα",
+      "postcode": null,
+      "phone": "2381089980",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 40.7674713,
+        "lon": 22.1556041,
+        "ref": "https://pella.efhmeries.gr/Home/Details/5991",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2382024555",
       "name": "ΒΑΡΕΛΑΣ ΜΙΧΑΗΛ",
       "address": "Π. ΜΕΛΑ 5",
@@ -527,6 +569,27 @@
       }
     },
     {
+      "id": "2382062010",
+      "name": "ΧΥΤΑ ΕΛΕΝΗ",
+      "address": "ΑΙΣΧΥΛΟΥ 19",
+      "locality": "Κρύα Βρύση",
+      "postcode": null,
+      "phone": "2382062010",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 40.6900509,
+        "lon": 22.303817,
+        "ref": "https://pella.efhmeries.gr/Home/Details/5791",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2382062100",
       "name": "Σ.Φ. ΑΔΑΜΙΔΗΣ ΘΕΟΔΟΣΙΟΣ -ΑΔΑΜΙΔΟΥ ΜΑΡΘΑ",
       "address": "ΒΑΣ. ΠΑΥΛΟΥ 77",
@@ -564,6 +627,27 @@
         "lat": 40.6879479,
         "lon": 22.3024282,
         "ref": "https://pella.efhmeries.gr/Home/Details/5786",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2382083233",
+      "name": "Σ.Φ. ΜΑΜΑΓΚΙΝΙΔΟΥ ΕΜΜΑΝΟΥΕΛΑ - ΚΥΡΙΑΚΙΔΗΣ ΕΥΑΓΓΕΛΟΣ",
+      "address": "ΜΠΑΦΡΑΣ 18",
+      "locality": "Γιαννιτσά",
+      "postcode": null,
+      "phone": "2382083233",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 40.7898401,
+        "lon": 22.4128438,
+        "ref": "https://pella.efhmeries.gr/Home/Details/4731",
         "source": "list",
         "precision": "exact"
       }
@@ -711,6 +795,27 @@
         "lat": 40.9746549,
         "lon": 22.0634344,
         "ref": "https://pella.efhmeries.gr/Home/Details/5540",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2384309184",
+      "name": "ΚΙΛΙΚΛΗΣ ΑΝΤΩΝΗΣ",
+      "address": "4ΗΣ ΝΟΕΜΒΡΙΟΥ 7",
+      "locality": "Αριδαία",
+      "postcode": null,
+      "phone": "2384309184",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 40.9741703,
+        "lon": 22.0641091,
+        "ref": "https://pella.efhmeries.gr/Home/Details/5546",
         "source": "list",
         "precision": "exact"
       }

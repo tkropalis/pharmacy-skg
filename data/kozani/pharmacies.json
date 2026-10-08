@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
+      "id": "2461022020",
+      "name": "ΧΑΡΑΛΑΜΠΙΔΗΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΦΙΛΊΠΠΟΥ Β 3 & ΠΕΡΓΑΜΟΥ",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461022020",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 40.3018139,
+        "lon": 21.7945459,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6470",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2461022332",
       "name": "Σ.Φ ΣΚΛΙΒΑΝΟΣ ΠΑΝΑΓΙΩΤΗΣ-ΧΑΡΑΜΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ο.Ε",
       "address": "ΦΙΛΊΠΠΟΥ Β 39",
@@ -233,6 +254,27 @@
       }
     },
     {
+      "id": "2461034343",
+      "name": "ΠΑΠΑΪΩΑΝΝΟΥ ΕΛΕΝΗ",
+      "address": "ΠΛ. ΕΛΕΥΘΕΡΙΑΣ 3",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461034343",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 40.301655,
+        "lon": 21.7857476,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6469",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2461034995",
       "name": "ΧΑΡΑΜΗ ΜΑΡΙΑΝΝΑ",
       "address": "ΟΛΥΜΠΙΟΥ ΓΕΩΡΓΑΚΗ 5",
@@ -249,6 +291,27 @@
         "lat": 40.3022471,
         "lon": 21.7861325,
         "ref": "https://kozani.efhmeries.gr/Home/Details/6467",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461035295",
+      "name": "ΚΕΡΙΔΟΥ-ΧΑΡΑΜΗ ΣΩΤΗΡΙΑ",
+      "address": "ΠΛ. 28ΗΣ ΟΚΤΩΒΡΙΟΥ & ΤΡΑΝΤΑ ΓΩΝΙΑ",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461035295",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 40.3000631,
+        "lon": 21.7882714,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6468",
         "source": "list",
         "precision": "exact"
       }
@@ -328,11 +391,32 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-10",
       "location": {
         "lat": 40.2999642,
         "lon": 21.7913391,
         "ref": "https://kozani.efhmeries.gr/Home/Details/6275",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461049355",
+      "name": "ΡΟΥΚΟΥΝΑΚΗ ΕΛΕΥΘΕΡΙΑ",
+      "address": "ΝΙΚΟΜΗΔΕΙΑΣ 23",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461049355",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 40.3014412,
+        "lon": 21.7970443,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/5691",
         "source": "list",
         "precision": "exact"
       }
@@ -590,6 +674,27 @@
       }
     },
     {
+      "id": "2463026200",
+      "name": "Σ.Φ. ΓΑΒΑΛΙΑΤΣΗ ΣΟΦΙΑ - ΑΝΤΩΝΙΑΔΗΣ ΧΡΗΣΤΟΣ Ο.Ε.",
+      "address": "ΠΑΥΛΙΔΗ ΑΔΑΜΟΠΟΥΛΟΥ 10 (Απέναντι από το πέτρινο Δημοτικο Σχολείο)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463026200",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 40.5142718,
+        "lon": 21.6808582,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/7405",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2463026259",
       "name": "ΧΙΩΤΗΣ ΕΥΣΤΑΘΙΟΣ",
       "address": "25ΗΣ ΜΑΡΤΙΟΥ 73 (Προς το Υδραγωγείο)",
@@ -627,6 +732,27 @@
         "lat": 40.5126475,
         "lon": 21.6774642,
         "ref": "https://kozani.efhmeries.gr/Home/Details/7250",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463053545",
+      "name": "ΠΟΥΜΠΟΥΛΙΔΟΥ ΒΑΡΒΑΡΑ",
+      "address": "ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ 14 (Είσοδος PARKING Λαζαρίδη)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463053545",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 40.5130375,
+        "lon": 21.6781791,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/7406",
         "source": "list",
         "precision": "exact"
       }

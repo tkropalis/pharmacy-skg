@@ -2,33 +2,12 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
-      "id": "2751022147",
-      "name": "ΣΤΑΥΡΟΠΟΥΛΟΥ ΚΩΝ. ΓΕΩΡΓΙΑ",
-      "address": "ΦΕΙΔΩΝΟΣ 10",
+      "id": "2751024339",
+      "name": "ΔΟΝΤΑ ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "ΠΛΑΤΕΙΑ ΑΓΙΟΥ ΠΕΤΡΟΥ 1",
       "locality": "Άργος",
       "postcode": null,
-      "phone": "2751022147",
-      "groupId": "argolida",
-      "sources": [
-        "iteq-argolida"
-      ],
-      "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
-      "location": {
-        "lat": 37.6333134,
-        "lon": 22.7250463,
-        "ref": "https://argolida.efhmeries.gr/Home/Details/18762",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
-      "id": "2751023013",
-      "name": "ΑΥΓΟΥΣΤΟΠΟΥΛΟΣ ΒΑΣΙΛΕΙΟΣ",
-      "address": "ΚΟΡΙΝΘΟΥ 200",
-      "locality": "Άργος",
-      "postcode": null,
-      "phone": "2751023013",
+      "phone": "2751024339",
       "groupId": "argolida",
       "sources": [
         "iteq-argolida"
@@ -36,11 +15,11 @@
       "firstSeen": "2026-10-12",
       "lastSeen": "2026-10-12",
       "location": {
-        "lat": 37.6439205,
-        "lon": 22.7293934,
-        "ref": "https://argolida.efhmeries.gr/Home/Details/18765",
-        "source": "list",
-        "precision": "exact"
+        "lat": 37.634782,
+        "lon": 22.728458,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΠΛΑΤΕΙΑ ΑΓΙΟΥ ΠΕΤΡΟΥ 1, Άργος"
       }
     },
     {
@@ -76,7 +55,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.5874845,
         "lon": 22.7447696,
@@ -128,6 +107,27 @@
       }
     },
     {
+      "id": "2751067364",
+      "name": "ΠΑΝΑΓΙΩΤΟΠΟΥΛΟΥ ΓΑΒΡΙΕΛΑ",
+      "address": "ΚΟΡΙΝΘΟΥ 21",
+      "locality": "Άργος",
+      "postcode": null,
+      "phone": "2751067364",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 37.643659,
+        "lon": 22.729221,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΚΟΡΙΝΘΟΥ 21, Άργος"
+      }
+    },
+    {
       "id": "2751067700",
       "name": "ΠΑΝΑΓΑΚΗΣ ΝΙΚΟΛΑΟΣ",
       "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 5",
@@ -170,6 +170,27 @@
       }
     },
     {
+      "id": "2751068822",
+      "name": "ΔΙΑΜΑΝΤΗΣ ΕΥΣΤΡΑΤΙΟΣ",
+      "address": "ΤΣΩΚΡΗ 22",
+      "locality": "Άργος",
+      "postcode": null,
+      "phone": "2751068822",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 37.6357901,
+        "lon": 22.7262266,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/18767",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2751089555",
       "name": "ΜΠΑΝΤΑΝΑ ΚΩΝΣΤΑΝΤΙΝΑ",
       "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 25",
@@ -180,8 +201,8 @@
       "sources": [
         "iteq-argolida"
       ],
-      "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "firstSeen": "2026-10-09",
+      "lastSeen": "2026-10-09",
       "location": {
         "lat": 37.6332897,
         "lon": 22.7286433,
@@ -207,6 +228,27 @@
         "lat": 37.567835,
         "lon": 22.806998,
         "ref": "https://argolida.efhmeries.gr/Home/Details/21662",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2752022233",
+      "name": "ΔΗΜΑ ΣΩΤΗΡΙΑ",
+      "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 6",
+      "locality": "Ναύπλιο",
+      "postcode": null,
+      "phone": "2752022233",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 37.5734802,
+        "lon": 22.8039643,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/20227",
         "source": "list",
         "precision": "exact"
       }
@@ -391,7 +433,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.638294,
         "lon": 22.806886,
@@ -433,7 +475,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.5190545,
         "lon": 22.8588221,
@@ -454,7 +496,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.5729348,
         "lon": 22.8334331,
@@ -475,7 +517,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.6117776,
         "lon": 23.0395455,
@@ -559,7 +601,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.3805109,
         "lon": 23.1602123,
@@ -601,7 +643,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.3870814,
         "lon": 23.2463689,
@@ -685,7 +727,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.327838,
         "lon": 23.1437319,

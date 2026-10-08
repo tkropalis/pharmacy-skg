@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "groups": [
+    {
+      "id": "evia",
+      "name": "Εύβοια",
+      "source": {
+        "url": "https://evia.efhmeries.gr/",
+        "uploadedAt": "2026-10-08T11:15:13.728Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2224023505",
+              "name": "ΒΕΛΙΣΣΑΡΑΚΟΣ ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "Ι. ΚΟΤΣΙΚΑ 1",
+              "locality": "Κάρυστος",
+              "phone": "2224023505"
+            },
+            {
+              "pharmacyId": "2229062585",
+              "name": "ΜΙΧΟΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΦΙΛ. ΜΕΝΕΔΗΜΟΥ 36",
+              "locality": "Ερέτρια",
+              "phone": "2229062585"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221081067",
+              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΧΑΪΝΑ 56",
+              "locality": "Χαλκίδα",
+              "phone": "2221081067"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221044344",
+              "name": "Σ.Φ. ΛΑΛΑΝΙΤΗ - ΑΡΓΥΡΑΚΗΣ",
+              "address": "ΒΟΥΔΟΥΡΗ 7",
+              "locality": "Αρτάκη",
+              "phone": "2221044344"
+            },
+            {
+              "pharmacyId": "2226053155",
+              "name": "ΣΩΤΗΡΟΠΟΥΛΟΣ 2 (ΠΕΡΠΑΤΑΡΗΣ)",
+              "address": "ΠΛΗΣΙΟΝ Κ.Υ. ΙΣΤΙΑΙΑΣ",
+              "locality": "Ιστιαία",
+              "phone": "2226053155"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221022120",
+              "name": "ΚΥΛΕΡΤΖΗΣ ΧΡΗΣΤΟΣ",
+              "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
+              "locality": "Χαλκίδα",
+              "phone": "2221022120"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221021850",
+              "name": "ΤΣΟΜΩΚΟΥ ΚΩΝ/ΝΑ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 43 - ΔΙΠΛΑ ΑΤΤΙΚΑ BANK",
+              "locality": "Χαλκίδα",
+              "phone": "2221021850"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

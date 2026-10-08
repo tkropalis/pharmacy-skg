@@ -1,4 +1,9 @@
 {
+  "2461022020": {
+    "lat": 40.3018139,
+    "lon": 21.7945459,
+    "ref": "https://kozani.efhmeries.gr/Home/Details/6470"
+  },
   "2461022332": {
     "lat": 40.3025761,
     "lon": 21.7997195,
@@ -54,10 +59,20 @@
     "lon": 21.7868661,
     "ref": "https://kozani.efhmeries.gr/Home/Details/6016"
   },
+  "2461034343": {
+    "lat": 40.301655,
+    "lon": 21.7857476,
+    "ref": "https://kozani.efhmeries.gr/Home/Details/6469"
+  },
   "2461034995": {
     "lat": 40.3022471,
     "lon": 21.7861325,
     "ref": "https://kozani.efhmeries.gr/Home/Details/6467"
+  },
+  "2461035295": {
+    "lat": 40.3000631,
+    "lon": 21.7882714,
+    "ref": "https://kozani.efhmeries.gr/Home/Details/6468"
   },
   "2461037282": {
     "lat": 40.3029871,
@@ -78,6 +93,11 @@
     "lat": 40.2999642,
     "lon": 21.7913391,
     "ref": "https://kozani.efhmeries.gr/Home/Details/6275"
+  },
+  "2461049355": {
+    "lat": 40.3014412,
+    "lon": 21.7970443,
+    "ref": "https://kozani.efhmeries.gr/Home/Details/5691"
   },
   "2463022288": {
     "lat": 40.5135151,
@@ -139,6 +159,11 @@
     "lon": 21.6791469,
     "ref": "https://kozani.efhmeries.gr/Home/Details/7403"
   },
+  "2463026200": {
+    "lat": 40.5142718,
+    "lon": 21.6808582,
+    "ref": "https://kozani.efhmeries.gr/Home/Details/7405"
+  },
   "2463026259": {
     "lat": 40.5164238,
     "lon": 21.6801989,
@@ -148,6 +173,11 @@
     "lat": 40.5126475,
     "lon": 21.6774642,
     "ref": "https://kozani.efhmeries.gr/Home/Details/7250"
+  },
+  "2463053545": {
+    "lat": 40.5130375,
+    "lon": 21.6781791,
+    "ref": "https://kozani.efhmeries.gr/Home/Details/7406"
   },
   "2463054688": {
     "lat": 40.511562,

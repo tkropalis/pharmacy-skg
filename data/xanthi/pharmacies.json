@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
+      "id": "2541022485",
+      "name": "ΡΑΝΟΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "40 ΕΚΚΛΗΣΙΩΝ 3",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541022485",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 41.1362707,
+        "lon": 24.885353,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3615",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2541022590",
       "name": "ΚΟΝΤΕΡΙΔΟΥ ΕΥΑΓΓΕΛΙΑ",
       "address": "ΗΡΟΔΟΤΟΥ 22",
@@ -102,6 +123,48 @@
         "lat": 41.1299438,
         "lon": 24.8855563,
         "ref": "https://xanthi.efhmeries.gr/Home/Details/3598",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541026987",
+      "name": "ΔΙΟΥΔΗΣ ΓΡΗΓΟΡΗΣ",
+      "address": "ΜΠΡΩΚΟΥΜΗ 1",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541026987",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 41.1366284,
+        "lon": 24.8882861,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3616",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541028610",
+      "name": "Σ.Φ. ΑΣΛΑΝΙΔΟΥ - ΑΣΛΑΝΙΔΗΣ",
+      "address": "ΜΕΣΟΛΟΓΓΙΟΥ 39",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541028610",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 41.1394278,
+        "lon": 24.8817998,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3617",
         "source": "list",
         "precision": "exact"
       }

@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2273022322",
+      "name": "ΣΑΤΣΜΑΤΖΗΣ ΑΡΙΣΤΕΙΔΗΣ",
+      "address": "ΠΡΟΣΦΥΓΙΚΑ",
+      "locality": "Βαθύ",
+      "postcode": null,
+      "phone": "2273022322",
+      "groupId": "samos",
+      "sources": [
+        "iteq-samos"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 37.755282,
+        "lon": 26.976939,
+        "ref": "https://samos.efhmeries.gr/Home/Details/6225",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2273022800",
       "name": "ΚΙΛΟΥΚΙΩΤΟΥ ΑΛΕΞΑΝΔΡΑ",
       "address": "ΠΡΟΣΦΥΓΙΚΑ",
@@ -223,7 +244,7 @@
         "iteq-samos"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.7927073,
         "lon": 26.7046953,
@@ -307,7 +328,7 @@
         "iteq-samos"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 37.7473234,
         "lon": 26.9719643,
