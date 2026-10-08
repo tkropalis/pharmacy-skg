@@ -171,6 +171,19 @@ export interface RegistryInput {
     readonly entries: ExtendedHours['entries'];
   }[];
   readonly overrides: Readonly<Record<string, Override>>;
+  /**
+   * Pharmacies the source names beyond the stored duty lists (cities/pipeline.ts, Roster), with
+   * their ids; the stored lists' printing wins for a pharmacy in both.
+   */
+  readonly roster?: readonly {
+    readonly pharmacyId: string;
+    readonly name: string;
+    readonly address: string;
+    readonly locality: string;
+    readonly phone: string;
+    readonly groupId: string;
+    readonly date: string;
+  }[];
   /** Coordinates the duty lists give, by pharmacy id; they come after the overrides. */
   readonly listed?: ReadonlyMap<string, ListedLocation>;
   readonly overture: OvertureIndex;
@@ -214,6 +227,22 @@ export async function buildRegistry(
         }
       }
     }
+  }
+
+  for (const entry of input.roster ?? []) {
+    if (drafts.has(entry.pharmacyId)) continue;
+    drafts.set(entry.pharmacyId, {
+      id: entry.pharmacyId,
+      name: entry.name,
+      address: entry.address,
+      locality: entry.locality,
+      postcode: null,
+      phone: normalizePhone(entry.phone),
+      groupId: entry.groupId,
+      sources: new Set([input.sourceIds.duty]),
+      firstSeen: entry.date,
+      lastSeen: entry.date,
+    });
   }
 
   const extendedSource = input.sourceIds.extended ?? input.sourceIds.duty;

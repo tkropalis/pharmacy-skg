@@ -190,12 +190,29 @@ Read in about 40 Diavgeia decisions [verified].
 
 ### Extended-hours lists
 
-| Who                                              | Format                         | Notes                                                                        |
-| ------------------------------------------------ | ------------------------------ | ---------------------------------------------------------------------------- |
-| ΠΚΜ (Thessaloniki)                               | XLSX                           | ingested today                                                               |
-| ΦΣΑ (Attica)                                     | 47-page PDF every two months   | the Greek font is broken (shifted glyphs), so it needs font remapping or OCR |
-| Peloponnese Region                               | PDF                            | lists only the _extra_ hours                                                 |
-| Western Macedonia, Evros, Ionian, Central Greece | Diavgeia PDFs every two months |                                                                              |
+| Who                                              | Format                         | Notes                                   |
+| ------------------------------------------------ | ------------------------------ | --------------------------------------- |
+| ΠΚΜ (Thessaloniki)                               | XLSX                           | ingested today                          |
+| ΦΣΑ (Attica)                                     | 50-page PDF every two months   | read since 8 Oct 2026; see Attica below |
+| Peloponnese Region                               | PDF                            | lists only the _extra_ hours            |
+| Western Macedonia, Evros, Ionian, Central Greece | Diavgeia PDFs every two months |                                         |
+
+### Attica
+
+Researched and built on 8 Oct 2026 (decision D27) [verified].
+
+- **Regular hours:** one decision per regional unit, each signed by its deputy governor, for 13 May 2026 to 12 May 2027, all at ΦΣΑ's request 1609/17.04.2026.
+  - On Diavgeia: Central Athens ΨΔ8Π7Λ7-ΚΒΨ, North Athens Ψ1ΑΗ7Λ7-ΙΞ0, West Athens Ψ3Δ17Λ7-8Δ0, West Attica ΡΩΡ47Λ7-ΠΞΡ. Word for word the same: Mon/Wed 08:00–14:30; Tue/Thu/Fri 08:00–14:00 and 17:00–20:00 (winter) or 17:30–20:30 (summer).
+  - South Athens and East Attica: nothing on Diavgeia in 2024–2026.
+  - Winter starts on 1 Nov (ΦΣΑ's post of 29 Oct 2024, fsa.gr/6469-2). When summer starts is published nowhere we found.
+  - 14 Sep replaces the patron saints: amending decisions 9ΛΤ07Λ7-149 (North), ΡΞΜΙ7Λ7-ΜΣΗ (West), 96ΒΙ7Λ7-ΧΛΣ (West Attica) for 2026; ΡΗΔΜ7Λ7-ΟΝΡ for 2025. The decisions also name each town's liberation day, but the duty list for 12 Oct (Athens) is an ordinary day's.
+- **Every pharmacy:** the 201 dates fsa-efimeries.gr offers name 3,111 pharmacies, all with coordinates; a week names about 500. The count levels off by early March (the rotation), and the dates after early April 2027 list two pharmacies a day.
+- **Extended hours:** fsa.gr posts the table in its category `dievrimeno-orario` (WordPress, `wp-json/wp/v2/posts`), about two months ahead.
+  - About 2,000 rows (Sep–Oct 2026): place, name, address, phone and each month's hours. 1,951 phones are among the 3,111.
+  - Word drew the table with no row rules; each cell's sides are thin filled boxes, which give the rows and columns. A row may run onto the next page.
+  - The letters are printed shifted, in two ways (one font from Δ on: "ΓΔΤΣΔΡΑ" for ΔΕΥΤΕΡΑ; another from Σ on: "ΔΕΤΣΕΡΑ"), and lower case its own way ("δεσηερα"). Two letters can share a glyph (Γ for Γ and Δ), so text is matched, not decoded. Phone numbers are printed as they are.
+  - The hours are typed freely ("ΔΕΥ-ΠΑΡ 8πμ-9μμ", "8-2,30 5-8,30", "όμοια με τον Ιούλιο"). A strict reader reads about 85% of the cells; the rest are ambiguous or misspelt.
+  - Some pharmacies list only what they add ("ΔΕΥ-ΠΕΜ 14:30-20:30"), others their whole day.
 
 ### Local holidays
 

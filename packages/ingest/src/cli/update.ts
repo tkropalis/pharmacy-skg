@@ -14,7 +14,7 @@ import { join } from 'node:path';
 import type { Bounds } from '@pharmacy-skg/core';
 import { z } from 'zod';
 import { PIPELINES, type CityPipeline } from '../cities/index.ts';
-import type { FetchContext, ListedLocation } from '../cities/pipeline.ts';
+import type { FetchContext, ListedLocation, Roster } from '../cities/pipeline.ts';
 import {
   buildRegistry,
   dutyEntryId,
@@ -51,6 +51,23 @@ const ListedLocationsSchema = z.record(
   z.string(),
   z.object({ lat: z.number(), lon: z.number(), ref: z.string() }),
 );
+
+const point = z.object({ lat: z.number(), lon: z.number() });
+const RosterSchema = z.object({
+  sweptAt: z.string(),
+  readThrough: z.string(),
+  entries: z.array(
+    z.object({
+      groupId: z.string(),
+      date: z.string(),
+      locality: z.string(),
+      name: z.string(),
+      address: z.string(),
+      phone: z.string(),
+      location: point.nullable(),
+    }),
+  ),
+});
 
 /** About 30 km: far enough for a village past the area's known pharmacies, not for a namesake. */
 const LISTED_MARGIN_DEGREES = 0.3;
@@ -128,6 +145,7 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
     ),
     extendedFiles,
     listedLocations: listed,
+    roster: ((await readJson(paths.roster, RosterSchema)) as Roster | undefined) ?? null,
     log,
   };
 
@@ -184,14 +202,30 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
     days.set(list.date, { ...day, groups });
   }
 
+  // The roster's pharmacies get their ids as the lists' do, and its coordinates count as theirs.
+  const dutySite = pipeline.sources.find((s) => s.id === pipeline.sourceIds.duty)?.url ?? '';
+  const roster = (duties.roster?.entries ?? context.roster?.entries ?? []).map((entry) => {
+    const pharmacyId = dutyEntryId(entry, known);
+    if (entry.location && !listed.has(pharmacyId)) {
+      listed.set(pharmacyId, { ...entry.location, ref: dutySite });
+    }
+    return { ...entry, pharmacyId };
+  });
+
   // --- Extended hours ---------------------------------------------------------------
 
-  const extended = await pipeline.fetchExtendedHours(context);
+  // With this run's roster: the first run reads it before any is stored.
+  const extended = await pipeline.fetchExtendedHours({
+    ...context,
+    roster: duties.roster ?? context.roster,
+  });
   parseFailures.push(...extended.failures);
   for (const [file, list] of extended.items) extendedFiles.set(file, list);
 
   // Pharmacies from the duty lists, to match extended-hours entries against.
   const dutyPharmacies = new Map<string, { id: string; name: string; address: string }>();
+  for (const entry of roster)
+    dutyPharmacies.set(entry.pharmacyId, { id: entry.pharmacyId, ...entry });
   for (const day of [...days.values()].sort((a, b) => a.date.localeCompare(b.date))) {
     for (const group of day.groups) {
       for (const section of group.sections) {
@@ -255,6 +289,7 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
     registry = await buildRegistry({
       days: sortedDays,
       extended: extendedLists.map((list) => ({ from: list.period.from, entries: list.entries })),
+      roster,
       overrides,
       listed: nearby,
       overture,
@@ -270,6 +305,7 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
     if (listed.size > 0) {
       await writeIfChanged(paths.listedLocations, toJson(sortKeys(Object.fromEntries(listed))));
     }
+    if (duties.roster) await writeIfChanged(paths.roster, toJson(duties.roster));
   }
   log(
     `registry: ${registry.pharmacies.length} pharmacies (${geocoder.requests} Nominatim requests)`,

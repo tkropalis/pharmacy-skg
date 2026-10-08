@@ -127,10 +127,12 @@ export const ExtendedHoursEntrySchema = z.object({
   postcode: z.string(),
   area: z.string(),
   schedule: ScheduleSchema,
-  scheduleText: z.string().describe('As published'),
+  scheduleText: z
+    .string()
+    .describe('As published, or written out from the schedule where the print is unreadable (ΦΣΑ)'),
 });
 
-/** data/<city>/extended-hours/<from>_<to>.json — the ΠΚΜ list for one period. */
+/** data/<city>/extended-hours/<from>_<to>.json — the ΠΚΜ list for one period, or ΦΣΑ's for a month. */
 export const ExtendedHoursSchema = z.object({
   schemaVersion: z.literal(SCHEMA_VERSION),
   period: z.object({ from: isoDate, to: isoDate }),

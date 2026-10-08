@@ -162,7 +162,7 @@
           },
           "scheduleText": {
             "type": "string",
-            "description": "As published"
+            "description": "As published, or written out from the schedule where the print is unreadable (ΦΣΑ)"
           }
         },
         "required": [

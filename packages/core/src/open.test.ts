@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { LARISA, THESSALONIKI } from './city.ts';
+import { ATTIKI, LARISA, THESSALONIKI } from './city.ts';
 import type {
   DutyDay,
   DutyKind,
@@ -217,6 +217,33 @@ describe('regular hours', () => {
     expect(describeStatus(status(data, 'a', new Date('2026-11-02T12:29:00Z')))).toBe(
       'open until 2026-11-02 14:30',
     );
+  });
+});
+
+describe('regular hours in Attica', () => {
+  const data: CityData = {
+    ...city([pharmacy('a', { groupId: 'attiki', locality: 'Αθήνα' })]),
+    city: ATTIKI,
+  };
+  const cases: [string, string, string, string][] = [
+    ['Monday 14:29 is open', MONDAY, '14:29', 'open until 2026-10-05 14:30'],
+    [
+      'Tuesday 14:00 closes until 17:30 in summer',
+      TUESDAY,
+      '14:00',
+      'closed, next 2026-10-06 17:30',
+    ],
+    ['Tuesday 17:30 reopens until 20:30', TUESDAY, '17:30', 'open until 2026-10-06 20:30'],
+    ['Friday 20:30 is closed until Monday', '2026-10-09', '20:30', 'closed, next 2026-10-12 08:00'],
+    ['Saturday noon is closed', '2026-10-10', '12:00', 'closed, next 2026-10-12 08:00'],
+    // 26 Oct is Thessaloniki's holiday, not Attica's.
+    ['Monday 26 Oct is an ordinary day', '2026-10-26', '10:00', 'open until 2026-10-26 14:30'],
+    ['Winter afternoons from 1 Nov', '2026-11-03', '17:00', 'open until 2026-11-03 20:00'],
+    ['Winter closes at 20:00', '2026-11-03', '20:00', 'closed, next 2026-11-04 08:00'],
+    ['14 Sep is a holiday', '2026-09-14', '10:00', 'closed, next 2026-09-15 08:00'],
+  ];
+  it.each(cases)('%s', (_name, date, time, expected) => {
+    expect(describeStatus(status(data, 'a', at(date, time)))).toBe(expected);
   });
 });
 
