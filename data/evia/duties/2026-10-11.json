@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T11:15:13.728Z"
+        "uploadedAt": "2026-10-08T20:43:45.212Z"
       },
       "sections": [
         {
@@ -34,94 +34,6 @@
               "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 66",
               "locality": "Αρτάκη",
               "phone": "2221042444"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2229062585",
-              "name": "ΜΙΧΟΣ ΔΗΜΗΤΡΙΟΣ",
-              "address": "ΦΙΛ. ΜΕΝΕΔΗΜΟΥ 36",
-              "locality": "Ερέτρια",
-              "phone": "2229062585"
-            },
-            {
-              "pharmacyId": "2224023855",
-              "name": "ΣΙΑΣΑΚΟΣ ΕΛΕΥΘΕΡΙΟΣ",
-              "address": "ΣΑΧΤΟΥΡΗ 124",
-              "locality": "Κάρυστος",
-              "phone": "2224023855"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221087414",
-              "name": "Σ.Φ. ΒΡΑΚΑ ΜΑΡΙΑ - ΒΑΡΟΥΧΑΚΗΣ ΑΝΤΩΝΙΟΣ",
-              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 30 & ΦΙΛΩΝΟΣ 7-ΕΝΑΝΤΙ ΑΡΧ. ΜΟΥΣΕΙΟΥ",
-              "locality": "Χαλκίδα",
-              "phone": "2221087414"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221077961",
-              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
-              "address": "ΑΒΑΝΤΩΝ 81",
-              "locality": "Χαλκίδα",
-              "phone": "2221077961"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "17:30",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221077961",
-              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
-              "address": "ΑΒΑΝΤΩΝ 81",
-              "locality": "Χαλκίδα",
-              "phone": "2221077961"
             }
           ]
         },
@@ -162,6 +74,94 @@
               "address": "Λ.ΚΑΡΑΜΑΝΛΗ 19",
               "locality": "Χαλκίδα",
               "phone": "2221094469"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2229062585",
+              "name": "ΜΙΧΟΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΦΙΛ. ΜΕΝΕΔΗΜΟΥ 36",
+              "locality": "Ερέτρια",
+              "phone": "2229062585"
+            },
+            {
+              "pharmacyId": "2224023855",
+              "name": "ΣΙΑΣΑΚΟΣ ΕΛΕΥΘΕΡΙΟΣ",
+              "address": "ΣΑΧΤΟΥΡΗ 124",
+              "locality": "Κάρυστος",
+              "phone": "2224023855"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221077961",
+              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
+              "address": "ΑΒΑΝΤΩΝ 81",
+              "locality": "Χαλκίδα",
+              "phone": "2221077961"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221077961",
+              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
+              "address": "ΑΒΑΝΤΩΝ 81",
+              "locality": "Χαλκίδα",
+              "phone": "2221077961"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221087414",
+              "name": "Σ.Φ. ΒΡΑΚΑ ΜΑΡΙΑ - ΒΑΡΟΥΧΑΚΗΣ ΑΝΤΩΝΙΟΣ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 30 & ΦΙΛΩΝΟΣ 7-ΕΝΑΝΤΙ ΑΡΧ. ΜΟΥΣΕΙΟΥ",
+              "locality": "Χαλκίδα",
+              "phone": "2221087414"
             }
           ]
         }

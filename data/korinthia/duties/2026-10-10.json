@@ -7,9 +7,139 @@
       "name": "Κορινθία",
       "source": {
         "url": "https://korinthia.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T11:16:55.315Z"
+        "uploadedAt": "2026-10-08T20:44:47.213Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "22:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2742034488",
+              "name": "ΣΠΥΡΟΠΟΥΛΟΥ ΤΣΕΡΩΝΗ ΚΑΤΕΡΙΝΑ",
+              "address": "ΒΕΛΟ",
+              "locality": "Βέλο",
+              "phone": "2742034488"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741040691",
+              "name": "ΜΗΤΡΟΥ ΔΗΜΗΤΡΑ &ΣΙΑ Ο.Ε.",
+              "address": "ΑΔΕΙΜΑΝΤΟΥ 37",
+              "locality": "Κόρινθος",
+              "phone": "2741040691"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741040691",
+              "name": "ΜΗΤΡΟΥ ΔΗΜΗΤΡΑ &ΣΙΑ Ο.Ε.",
+              "address": "ΑΔΕΙΜΑΝΤΟΥ 37",
+              "locality": "Κόρινθος",
+              "phone": "2741040691"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2742022206",
+              "name": "ΚΑΚΑΒΑΚΗΣ ΟΘΩΝΑΣ &ΣΙΑ Ε.Ε.",
+              "address": "ΠΛ. ΠΛΟΥΜΙΣΤΟΥ",
+              "locality": "Κιάτο",
+              "phone": "2742022206"
+            },
+            {
+              "pharmacyId": "2743028333",
+              "name": "Σ.Φ. ΜΠΟΥΡΝΑΖΟΥ Κ.-ΧΑΡΔΑΛΟΥΠΑ Ι.καιΣΙΑ Ο.Ε.",
+              "address": "Π. ΤΣΑΛΔΑΡΗ 28",
+              "locality": "Ξυλόκαστρο",
+              "phone": "2743028333"
+            },
+            {
+              "pharmacyId": "2744300722",
+              "name": "ΤΣΙΑΜΗ Γ. ΠΑΝΑΓΙΩΤΑ",
+              "address": "Δ. ΜΑΤΣΗ 27",
+              "locality": "Λουτράκι",
+              "phone": "2744300722"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741098177",
+              "name": "ΚΑΛΑΡΑ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΧΙΛΙΟΜΟΔΙ",
+              "locality": "Χιλιομόδι",
+              "phone": "2741098177"
+            },
+            {
+              "pharmacyId": "2741082122",
+              "name": "ΜΑΡΙΝΗ ΣΤΑΥΡΟΥΛΑ",
+              "address": "ΖΕΥΓΟΛΑΤΙΟ",
+              "locality": "Ζευγολατιό",
+              "phone": "2741082122"
+            },
+            {
+              "pharmacyId": "2746023107",
+              "name": "ΧΡΥΣΙΚΟΠΟΥΛΟΣ Δ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "Λ. ΠΑΠΑΚ/ΝΟΥ 79",
+              "locality": "Νεμέα",
+              "phone": "2746023107"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -133,75 +263,6 @@
           ]
         },
         {
-          "kind": "on-duty",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2742022206",
-              "name": "ΚΑΚΑΒΑΚΗΣ ΟΘΩΝΑΣ &ΣΙΑ Ε.Ε.",
-              "address": "ΠΛ. ΠΛΟΥΜΙΣΤΟΥ",
-              "locality": "Κιάτο",
-              "phone": "2742022206"
-            },
-            {
-              "pharmacyId": "2743028333",
-              "name": "Σ.Φ. ΜΠΟΥΡΝΑΖΟΥ Κ.-ΧΑΡΔΑΛΟΥΠΑ Ι.καιΣΙΑ Ο.Ε.",
-              "address": "Π. ΤΣΑΛΔΑΡΗ 28",
-              "locality": "Ξυλόκαστρο",
-              "phone": "2743028333"
-            },
-            {
-              "pharmacyId": "2744300722",
-              "name": "ΤΣΙΑΜΗ Γ. ΠΑΝΑΓΙΩΤΑ",
-              "address": "Δ. ΜΑΤΣΗ 27",
-              "locality": "Λουτράκι",
-              "phone": "2744300722"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741098177",
-              "name": "ΚΑΛΑΡΑ ΑΙΚΑΤΕΡΙΝΗ",
-              "address": "ΧΙΛΙΟΜΟΔΙ",
-              "locality": "Χιλιομόδι",
-              "phone": "2741098177"
-            },
-            {
-              "pharmacyId": "2741082122",
-              "name": "ΜΑΡΙΝΗ ΣΤΑΥΡΟΥΛΑ",
-              "address": "ΖΕΥΓΟΛΑΤΙΟ",
-              "locality": "Ζευγολατιό",
-              "phone": "2741082122"
-            },
-            {
-              "pharmacyId": "2746023107",
-              "name": "ΧΡΥΣΙΚΟΠΟΥΛΟΣ Δ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
-              "address": "Λ. ΠΑΠΑΚ/ΝΟΥ 79",
-              "locality": "Νεμέα",
-              "phone": "2746023107"
-            }
-          ]
-        },
-        {
           "kind": "day",
           "heading": "09:00 ΕΩΣ 21:00",
           "hours": {
@@ -218,67 +279,6 @@
               "address": "ΑΡΧΑΙΑ ΚΟΡΙΝΘΟΣ (4Ομ ΑΠΟ ΤΟ ΚΕΝΤΡΟ)",
               "locality": "Αρχαία Κόρινθος",
               "phone": "2741031655"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
-          "hours": {
-            "from": "22:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2742034488",
-              "name": "ΣΠΥΡΟΠΟΥΛΟΥ ΤΣΕΡΩΝΗ ΚΑΤΕΡΙΝΑ",
-              "address": "ΒΕΛΟ",
-              "locality": "Βέλο",
-              "phone": "2742034488"
-            }
-          ]
-        },
-        {
-          "kind": "saturday-extra",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741040691",
-              "name": "ΜΗΤΡΟΥ ΔΗΜΗΤΡΑ &ΣΙΑ Ο.Ε.",
-              "address": "ΑΔΕΙΜΑΝΤΟΥ 37",
-              "locality": "Κόρινθος",
-              "phone": "2741040691"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741040691",
-              "name": "ΜΗΤΡΟΥ ΔΗΜΗΤΡΑ &ΣΙΑ Ο.Ε.",
-              "address": "ΑΔΕΙΜΑΝΤΟΥ 37",
-              "locality": "Κόρινθος",
-              "phone": "2741040691"
             }
           ]
         }

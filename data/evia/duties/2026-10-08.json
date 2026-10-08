@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T11:15:13.728Z"
+        "uploadedAt": "2026-10-08T20:43:45.212Z"
       },
       "sections": [
         {
@@ -39,22 +39,22 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "14:00 ΕΩΣ 17:30",
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
-            "from": "14:00",
-            "to": "17:30",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2221077929",
-              "name": "ΚΟΥΚΗ ΜΑΡΙΑΝΘΗ",
-              "address": "ΝΕΟΦΥΤΟΥ 10",
+              "pharmacyId": "2221087998",
+              "name": "ΚΡΗΤΙΚΑΚΗ ΜΑΡΙΑ",
+              "address": "ΕΥΒΟΙΑΣ 49 ΠΛΗΣΙΟΝ ΤΕΧΝΙΚΟΥ ΛΥΚΕΙΟΥ",
               "locality": "Χαλκίδα",
-              "phone": "2221077929"
+              "phone": "2221087998"
             }
           ]
         },
@@ -86,22 +86,22 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 17:30",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "14:00",
+            "to": "17:30",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2221087998",
-              "name": "ΚΡΗΤΙΚΑΚΗ ΜΑΡΙΑ",
-              "address": "ΕΥΒΟΙΑΣ 49 ΠΛΗΣΙΟΝ ΤΕΧΝΙΚΟΥ ΛΥΚΕΙΟΥ",
+              "pharmacyId": "2221077929",
+              "name": "ΚΟΥΚΗ ΜΑΡΙΑΝΘΗ",
+              "address": "ΝΕΟΦΥΤΟΥ 10",
               "locality": "Χαλκίδα",
-              "phone": "2221087998"
+              "phone": "2221077929"
             }
           ]
         }

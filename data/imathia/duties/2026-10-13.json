@@ -7,26 +7,26 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T11:15:41.301Z"
+        "uploadedAt": "2026-10-08T20:44:03.940Z"
       },
       "sections": [
         {
-          "kind": "day",
-          "heading": "13:30 ΕΩΣ 17:30",
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
-            "from": "13:30",
-            "to": "17:30",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331024534",
-              "name": "ΚΟΡΔΑΤΟΣ ΒΑΣΙΛΕΙΟΣ",
-              "address": "ΠΛΑΤΆΝΩΝ 1",
+              "pharmacyId": "2331029551",
+              "name": "ΠΑΠΑΓΕΩΓΙΟΥ Ι. ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "ΜΗΤΡΟΠΟΛΕΩΣ 38",
               "locality": "Βέροια",
-              "phone": "2331024534"
+              "phone": "2331029551"
             }
           ]
         },
@@ -79,22 +79,22 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "13:30 ΕΩΣ 17:30",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "13:30",
+            "to": "17:30",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331029551",
-              "name": "ΠΑΠΑΓΕΩΓΙΟΥ Ι. ΑΝΑΣΤΑΣΙΟΣ",
-              "address": "ΜΗΤΡΟΠΟΛΕΩΣ 38",
+              "pharmacyId": "2331024534",
+              "name": "ΚΟΡΔΑΤΟΣ ΒΑΣΙΛΕΙΟΣ",
+              "address": "ΠΛΑΤΆΝΩΝ 1",
               "locality": "Βέροια",
-              "phone": "2331029551"
+              "phone": "2331024534"
             }
           ]
         }

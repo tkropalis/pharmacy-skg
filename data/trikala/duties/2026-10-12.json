@@ -7,29 +7,9 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T11:18:50.605Z"
+        "uploadedAt": "2026-10-08T20:46:01.670Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 23:00",
-          "hours": {
-            "from": "08:00",
-            "to": "23:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431076140",
-              "name": "Σ.Φ. ΓΙΑΝΝΕΛΟΣ ΗΛΙΑΣ - ΚΟΥΤΟΥΛΑ ΜΑΡΙΑ",
-              "address": "ΦΛΕΓΙΟΥ 70",
-              "locality": "Τρίκαλα",
-              "phone": "2431076140"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -67,6 +47,26 @@
               "address": "ΔΙΟΝΥΣΙΟΥ 3",
               "locality": "Τρίκαλα",
               "phone": "2431027340"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431076140",
+              "name": "Σ.Φ. ΓΙΑΝΝΕΛΟΣ ΗΛΙΑΣ - ΚΟΥΤΟΥΛΑ ΜΑΡΙΑ",
+              "address": "ΦΛΕΓΙΟΥ 70",
+              "locality": "Τρίκαλα",
+              "phone": "2431076140"
             }
           ]
         }
