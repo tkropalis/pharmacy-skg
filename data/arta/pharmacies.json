@@ -191,6 +191,27 @@
       }
     },
     {
+      "id": "2681073290",
+      "name": "ΜΠΑΝΙΑ ΕΥΑΓΓΕΛΙΑ",
+      "address": "ΖΑΡΑ Α. 25",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681073290",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 39.155456,
+        "lon": 20.9812367,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2424",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681075241",
       "name": "ΚΥΡΙΑΚΗ ΜΑΡΕΤΗ ΚΑΙ ΣΙΑ ΕΕ",
       "address": "ΓΡΙΜΠΟΒΟΥ 15",
@@ -228,6 +249,27 @@
         "lat": 39.1577938,
         "lon": 20.9818375,
         "ref": "https://arta.efhmeries.gr/Home/Details/2422",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681082045",
+      "name": "ΓΚΟΝΤΖΟΣ",
+      "address": "ΑΓΙΟΣ ΔΗΜΗΤΡΙΟΣ, ΠΕΤΑ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681082045",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 39.160357,
+        "lon": 21.015347,
+        "ref": "https://arta.efhmeries.gr/Home/Details/1972",
         "source": "list",
         "precision": "exact"
       }

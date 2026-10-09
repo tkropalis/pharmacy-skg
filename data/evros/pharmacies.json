@@ -44,6 +44,27 @@
       }
     },
     {
+      "id": "2551024463",
+      "name": "Σ.Φ. ΓΚΑΪΝΤΑΤΖΗΣ Β. - ΓΚΑΪΝΤΑΤΖΗ Ε.",
+      "address": "14ης Μαΐου & Παλαιολόγου",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551024463",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 40.8466292,
+        "lon": 25.8751441,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4043",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551026214",
       "name": "ΓΑΛΑΖΙΟΥ ΑΣΠΑΣΙΑ",
       "address": "Κουτάβου 5 (περιοχή Αγ. Βασιλείου)",
@@ -412,7 +433,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 41.501659,
         "lon": 26.532421,
@@ -501,6 +522,27 @@
         "lat": 41.3502204,
         "lon": 26.4935275,
         "ref": "https://evros.efhmeries.gr/Home/Details/5205",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2553022922",
+      "name": "ΓΙΟΥΡΤΣΟΓΛΟΥ ΧΡΗΣΤΟΣ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 9",
+      "locality": "Διδυμότειχο",
+      "postcode": null,
+      "phone": "2553022922",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 41.3497643,
+        "lon": 26.4941195,
+        "ref": "https://evros.efhmeries.gr/Home/Details/5104",
         "source": "list",
         "precision": "exact"
       }
@@ -685,7 +727,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 41.1917483,
         "lon": 26.3037554,
@@ -727,7 +769,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 41.025262,
         "lon": 26.2577482,
@@ -769,7 +811,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 40.8932822,
         "lon": 26.1698188,

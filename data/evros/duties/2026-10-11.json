@@ -7,9 +7,29 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T20:43:51.300Z"
+        "uploadedAt": "2026-10-09T10:41:20.610Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00-21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551029082",
+              "name": "Σ.Φ. ΑΝΤΩΝΑΡΟΥ Ζ.-ΖΩΗ Α.",
+              "address": "28ης Οκτωβρίου 16Α (έναντι 1ου δημοτικού)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551029082"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "10:00-14:00 & 18:00-08:00",
@@ -109,26 +129,6 @@
               "address": "ΝΙΚΗΣ 33",
               "locality": "Τυχερό, Προβατώνας",
               "phone": "2554042020"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00-21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551029082",
-              "name": "Σ.Φ. ΑΝΤΩΝΑΡΟΥ Ζ.-ΖΩΗ Α.",
-              "address": "28ης Οκτωβρίου 16Α (έναντι 1ου δημοτικού)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551029082"
             }
           ]
         }

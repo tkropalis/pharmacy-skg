@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T20:43:45.212Z"
+        "uploadedAt": "2026-10-09T10:41:11.573Z"
       },
       "sections": [
         {
@@ -66,26 +66,6 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221021850",
-              "name": "ΤΣΟΜΩΚΟΥ ΚΩΝ/ΝΑ",
-              "address": "ΒΕΝΙΖΕΛΟΥ 43 - ΔΙΠΛΑ ΑΤΤΙΚΑ BANK",
-              "locality": "Χαλκίδα",
-              "phone": "2221021850"
-            }
-          ]
-        },
-        {
           "kind": "day",
           "heading": "14:00 ΕΩΣ 21:00",
           "hours": {
@@ -122,6 +102,26 @@
               "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
               "locality": "Χαλκίδα",
               "phone": "2221022120"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221021850",
+              "name": "ΤΣΟΜΩΚΟΥ ΚΩΝ/ΝΑ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 43 - ΔΙΠΛΑ ΑΤΤΙΚΑ BANK",
+              "locality": "Χαλκίδα",
+              "phone": "2221021850"
             }
           ]
         }

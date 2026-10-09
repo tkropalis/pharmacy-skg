@@ -7,9 +7,29 @@
       "name": "Φθιώτιδα",
       "source": {
         "url": "https://fthiotida.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T20:46:07.990Z"
+        "uploadedAt": "2026-10-09T10:44:37.285Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:00",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231045496",
+              "name": "ΑΝΤΩΝΙΟΥ ΙΩΑΝΝΑ",
+              "address": "ΠΑΠΑΘΑΝΑΣΙΟΥ 3",
+              "locality": "Λαμία",
+              "phone": "2231045496"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -96,26 +116,6 @@
               "address": "ΛΑΜΙΑΣ 7",
               "locality": "Στυλίδα",
               "phone": "2238023928"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 22:00",
-          "hours": {
-            "from": "08:00",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231045496",
-              "name": "ΑΝΤΩΝΙΟΥ ΙΩΑΝΝΑ",
-              "address": "ΠΑΠΑΘΑΝΑΣΙΟΥ 3",
-              "locality": "Λαμία",
-              "phone": "2231045496"
             }
           ]
         },

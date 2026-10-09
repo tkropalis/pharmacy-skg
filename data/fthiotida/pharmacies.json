@@ -34,7 +34,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 38.9031499,
         "lon": 22.4318697,
@@ -144,6 +144,27 @@
         "lat": 38.8989813,
         "lon": 22.4339659,
         "ref": "https://fthiotida.efhmeries.gr/Home/Details/11784",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2231033242",
+      "name": "ΜΠΟΥΚΑ ΙΖΟΛΔΗ-ΖΩΗ",
+      "address": "ΑΜΑΛΙΑΣ 11-13",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231033242",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 38.9008608,
+        "lon": 22.4358984,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11785",
         "source": "list",
         "precision": "exact"
       }
@@ -328,7 +349,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 38.6535798,
         "lon": 23.000694,
@@ -391,7 +412,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 38.7104122,
         "lon": 23.0488276,
@@ -454,7 +475,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 38.7779111,
         "lon": 22.7844951,
@@ -496,7 +517,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 38.7599237,
         "lon": 22.8577998,
@@ -559,7 +580,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 38.809628,
         "lon": 22.6448618,
@@ -622,7 +643,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 38.9418095,
         "lon": 22.1163153,
@@ -664,7 +685,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 38.9135166,
         "lon": 22.6099063,

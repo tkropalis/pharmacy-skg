@@ -7,139 +7,9 @@
       "name": "Κορινθία",
       "source": {
         "url": "https://korinthia.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T20:44:47.213Z"
+        "uploadedAt": "2026-10-09T10:42:43.239Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
-          "hours": {
-            "from": "22:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2742034488",
-              "name": "ΣΠΥΡΟΠΟΥΛΟΥ ΤΣΕΡΩΝΗ ΚΑΤΕΡΙΝΑ",
-              "address": "ΒΕΛΟ",
-              "locality": "Βέλο",
-              "phone": "2742034488"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741022515",
-              "name": "ΚΛΕΠΕΤΣΑΝΗ Ν. ΖΩΗ",
-              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 23",
-              "locality": "Κόρινθος",
-              "phone": "2741022515"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741022515",
-              "name": "ΚΛΕΠΕΤΣΑΝΗ Ν. ΖΩΗ",
-              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 23",
-              "locality": "Κόρινθος",
-              "phone": "2741022515"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2742022541",
-              "name": "ΓΟΥΛΑΣ ΛΟΥΚΑΣ & ΣΙΑ Ο.Ε.",
-              "address": "ΚΛΕΙΣΘΕΝΟΥΣ 26",
-              "locality": "Κιάτο",
-              "phone": "2742022541"
-            },
-            {
-              "pharmacyId": "2743022376",
-              "name": "Σ.Φ. ΑΛΟΓΟΓΙΑΝΝΗΣ ΒΛ.-ΣΚΟΥΛΑΡΙΚΗΣ Γ. καιΣΙΑ Ο.Ε.",
-              "address": "Π. ΤΣΑΛΔΑΡΗ 49",
-              "locality": "Ξυλόκαστρο",
-              "phone": "2743022376"
-            },
-            {
-              "pharmacyId": "2744021231",
-              "name": "ΣΤΕΛΛΑΤΟΥ ΕΛΕΝΗ",
-              "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ & ΣΟΛΩΜΟΥ 2",
-              "locality": "Λουτράκι",
-              "phone": "2744021231"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741098177",
-              "name": "ΚΑΛΑΡΑ ΑΙΚΑΤΕΡΙΝΗ",
-              "address": "ΧΙΛΙΟΜΟΔΙ",
-              "locality": "Χιλιομόδι",
-              "phone": "2741098177"
-            },
-            {
-              "pharmacyId": "2741082122",
-              "name": "ΜΑΡΙΝΗ ΣΤΑΥΡΟΥΛΑ",
-              "address": "ΖΕΥΓΟΛΑΤΙΟ",
-              "locality": "Ζευγολατιό",
-              "phone": "2741082122"
-            },
-            {
-              "pharmacyId": "2746023107",
-              "name": "ΧΡΥΣΙΚΟΠΟΥΛΟΣ Δ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
-              "address": "Λ. ΠΑΠΑΚ/ΝΟΥ 79",
-              "locality": "Νεμέα",
-              "phone": "2746023107"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -273,6 +143,136 @@
               "address": "ΑΣΣΟΣ",
               "locality": "Άσσος",
               "phone": "2741088100"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741022515",
+              "name": "ΚΛΕΠΕΤΣΑΝΗ Ν. ΖΩΗ",
+              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 23",
+              "locality": "Κόρινθος",
+              "phone": "2741022515"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741022515",
+              "name": "ΚΛΕΠΕΤΣΑΝΗ Ν. ΖΩΗ",
+              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 23",
+              "locality": "Κόρινθος",
+              "phone": "2741022515"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2742022541",
+              "name": "ΓΟΥΛΑΣ ΛΟΥΚΑΣ & ΣΙΑ Ο.Ε.",
+              "address": "ΚΛΕΙΣΘΕΝΟΥΣ 26",
+              "locality": "Κιάτο",
+              "phone": "2742022541"
+            },
+            {
+              "pharmacyId": "2743022376",
+              "name": "Σ.Φ. ΑΛΟΓΟΓΙΑΝΝΗΣ ΒΛ.-ΣΚΟΥΛΑΡΙΚΗΣ Γ. καιΣΙΑ Ο.Ε.",
+              "address": "Π. ΤΣΑΛΔΑΡΗ 49",
+              "locality": "Ξυλόκαστρο",
+              "phone": "2743022376"
+            },
+            {
+              "pharmacyId": "2744021231",
+              "name": "ΣΤΕΛΛΑΤΟΥ ΕΛΕΝΗ",
+              "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ & ΣΟΛΩΜΟΥ 2",
+              "locality": "Λουτράκι",
+              "phone": "2744021231"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741098177",
+              "name": "ΚΑΛΑΡΑ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΧΙΛΙΟΜΟΔΙ",
+              "locality": "Χιλιομόδι",
+              "phone": "2741098177"
+            },
+            {
+              "pharmacyId": "2741082122",
+              "name": "ΜΑΡΙΝΗ ΣΤΑΥΡΟΥΛΑ",
+              "address": "ΖΕΥΓΟΛΑΤΙΟ",
+              "locality": "Ζευγολατιό",
+              "phone": "2741082122"
+            },
+            {
+              "pharmacyId": "2746023107",
+              "name": "ΧΡΥΣΙΚΟΠΟΥΛΟΣ Δ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "Λ. ΠΑΠΑΚ/ΝΟΥ 79",
+              "locality": "Νεμέα",
+              "phone": "2746023107"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "22:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2742034488",
+              "name": "ΣΠΥΡΟΠΟΥΛΟΥ ΤΣΕΡΩΝΗ ΚΑΤΕΡΙΝΑ",
+              "address": "ΒΕΛΟ",
+              "locality": "Βέλο",
+              "phone": "2742034488"
             }
           ]
         },

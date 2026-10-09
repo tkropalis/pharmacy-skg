@@ -7,7 +7,7 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T20:45:12.228Z"
+        "uploadedAt": "2026-10-09T10:43:15.173Z"
       },
       "sections": [
         {
@@ -103,6 +103,46 @@
         },
         {
           "kind": "day",
+          "heading": "08:00 ΕΩΣ 20:30",
+          "hours": {
+            "from": "08:00",
+            "to": "20:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721095521",
+              "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Κ. ΣΤΑΥΡΟΥΛΑ",
+              "address": "ΦΑΡΩΝ 186",
+              "locality": "Καλαμάτα",
+              "phone": "2721095521"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721095521",
+              "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Κ. ΣΤΑΥΡΟΥΛΑ",
+              "address": "ΦΑΡΩΝ 186",
+              "locality": "Καλαμάτα",
+              "phone": "2721095521"
+            }
+          ]
+        },
+        {
+          "kind": "day",
           "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
             "from": "08:00",
@@ -172,46 +212,6 @@
               "address": "ΜΕΛΙΟΥ 11",
               "locality": "Κυπαρισσία",
               "phone": "2761022919"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 20:30",
-          "hours": {
-            "from": "08:00",
-            "to": "20:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721095521",
-              "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Κ. ΣΤΑΥΡΟΥΛΑ",
-              "address": "ΦΑΡΩΝ 186",
-              "locality": "Καλαμάτα",
-              "phone": "2721095521"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721095521",
-              "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Κ. ΣΤΑΥΡΟΥΛΑ",
-              "address": "ΦΑΡΩΝ 186",
-              "locality": "Καλαμάτα",
-              "phone": "2721095521"
             }
           ]
         }

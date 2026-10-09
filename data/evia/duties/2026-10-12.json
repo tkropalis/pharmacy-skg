@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T20:43:45.212Z"
+        "uploadedAt": "2026-10-09T10:41:11.573Z"
       },
       "sections": [
         {
@@ -38,26 +38,6 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221025636",
-              "name": "ΚΑΡΛΑΤΗΡΑΣ ΕΥΣΤΡΑΤΙΟΣ",
-              "address": "ΤΡΑΠΕΖΟΥΝΤΙΟΥ & ΙΣΑΙΟΥ - ΑΓ. ΒΑΡΒΑΡΑ",
-              "locality": "Χαλκίδα",
-              "phone": "2221025636"
-            }
-          ]
-        },
-        {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
           "hours": {
@@ -82,6 +62,26 @@
               "address": "Ι. ΚΟΤΣΙΚΑ 9",
               "locality": "Κάρυστος",
               "phone": "2224022217"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221025636",
+              "name": "ΚΑΡΛΑΤΗΡΑΣ ΕΥΣΤΡΑΤΙΟΣ",
+              "address": "ΤΡΑΠΕΖΟΥΝΤΙΟΥ & ΙΣΑΙΟΥ - ΑΓ. ΒΑΡΒΑΡΑ",
+              "locality": "Χαλκίδα",
+              "phone": "2221025636"
             }
           ]
         },

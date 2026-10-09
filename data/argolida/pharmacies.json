@@ -55,7 +55,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.5874845,
         "lon": 22.7447696,
@@ -125,6 +125,27 @@
         "source": "nominatim",
         "precision": "street",
         "ref": "ΚΟΡΙΝΘΟΥ 21, Άργος"
+      }
+    },
+    {
+      "id": "2751067554",
+      "name": "ΠΑΠΑΓΕΩΡΓΙΟΥ Δ. ΑΠΟΣΤΟΛΟΣ",
+      "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 7",
+      "locality": "Άργος",
+      "postcode": null,
+      "phone": "2751067554",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 37.6351718,
+        "lon": 22.7279158,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/18768",
+        "source": "list",
+        "precision": "exact"
       }
     },
     {
@@ -275,6 +296,27 @@
       }
     },
     {
+      "id": "2752022523",
+      "name": "Σ.Φ. ΑΘΑΝΑΣΙΟΣ ΚΟΜΝΗΝΟΣ ΑΙΜΙΛΙΑΝΟΣ ΚΟΜΝΗΝΟΣ ΟΕ",
+      "address": "ΑΡΓΟΥΣ 27",
+      "locality": "Ναύπλιο",
+      "postcode": null,
+      "phone": "2752022523",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 37.5691409,
+        "lon": 22.8066643,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/20228",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2752022622",
       "name": "ΚΩΣΤΑΚΗΣ ΓΕΩΡΓΙΟΣ",
       "address": "ΤΣΟΛΑΚΟΠΟΥΛΟΥ 2",
@@ -412,7 +454,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.6377,
         "lon": 22.8041,
@@ -475,7 +517,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.5190545,
         "lon": 22.8588221,
@@ -496,7 +538,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.5729348,
         "lon": 22.8334331,
@@ -538,7 +580,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.6115915,
         "lon": 23.0467768,
@@ -580,7 +622,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.3805109,
         "lon": 23.1602123,
@@ -685,7 +727,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.3861438,
         "lon": 23.2495752,
@@ -727,7 +769,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.327838,
         "lon": 23.1437319,

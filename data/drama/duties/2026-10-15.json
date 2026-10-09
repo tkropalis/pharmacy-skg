@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "groups": [
+    {
+      "id": "drama",
+      "name": "Δράμα",
+      "source": {
+        "url": "https://drama.efhmeries.gr/",
+        "uploadedAt": "2026-10-09T10:41:03.414Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521020220",
+              "name": "ΒΑΡΑΝΟΥ Θ. ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΒΕΛΙΣΑΡΙΟΥ 2",
+              "locality": "Δράμα",
+              "phone": "2521020220"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521047210",
+              "name": "ΚΑΛΑΪΤΖΙΔΟΥ ΚΑΤΕΡΙΝΑ",
+              "address": "ΔΗΜΟΚΡΙΤΟΥ & ΑΙΣΧΥΛΟΥ 11Α",
+              "locality": "Δράμα",
+              "phone": "2521047210"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

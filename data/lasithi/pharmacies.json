@@ -128,6 +128,27 @@
       }
     },
     {
+      "id": "2841028298",
+      "name": "ΖΩΑΚΗ Ι. ΚΑΛΛΙΟΠΗ",
+      "address": "ΣΟΦΟΚΛΗ ΒΕΝΙΖΕΛΟΥ 12 / 12, SOFOKLI VENIZELOU STR.",
+      "locality": "Άγιος Νικόλαος",
+      "postcode": null,
+      "phone": "2841028298",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 35.1887795,
+        "lon": 25.7170791,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4785",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2841031650",
       "name": "ΦΟΥΛΕΔΑΚΗΣ Δ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 27 / 27, ELEFTHERIOU VENIZELOU SQ.",
@@ -139,7 +160,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 35.2557733,
         "lon": 25.6064703,
@@ -223,7 +244,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 35.2617867,
         "lon": 25.7226428,
@@ -380,6 +401,27 @@
       }
     },
     {
+      "id": "2842026021",
+      "name": "Σ.Φ. ΓΕΩΡΓΙΟΣ & ΙΩΑΝΝΗΣ ΛΑΜΠΡΑΚΗΣ Ο.Ε.",
+      "address": "ΜΕΛΕΤΙΟΥ ΜΕΤΑΞΑΚΗ 13 / 13, MELETIOU METAXAKI STR.",
+      "locality": "Ιεράπετρα",
+      "postcode": null,
+      "phone": "2842026021",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 35.0118672,
+        "lon": 25.7413494,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4702",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2842027500",
       "name": "Σ.Φ. ΛΕΜΠΙΔΑΚΗΣ ΝΙΚΟΛΑΟΣ-ΜΠΡΙΚΑ ΥΑΚΙΝΘΗ Ο.Ε.",
       "address": "ΨΥΛΙΝΑΚΗ 4 / 4, PSYLINAKI STR.",
@@ -454,7 +496,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 35.2075877,
         "lon": 26.1060533,

@@ -7,9 +7,77 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T08:04:58.650Z"
+        "uploadedAt": "2026-10-09T10:44:44.733Z"
       },
       "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821058956",
+              "name": "ΒΛΑΧΑΚΗ Ε.-ΒΑΡΔΟΥΛΑΚΗΣ Π./VLΑCΗΑΚΙ E.-VARDOULAKIS P.",
+              "address": "ΤΖΑΝΑΚΑΚΗ 52/TZANAKAKI 52",
+              "locality": "Χανιά",
+              "phone": "2821058956"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821093850",
+              "name": "ΑΓΟΡΑΣΤΑΚΗ-ΜΑΝΤΩΝΑΝΑΚΗ ΑΡΓΥΡΩ/ΑGΟRΑSΤΑΚΙ-ΜΑΝΤΟΝΑΝΑΚΙ ARGIRO",
+              "address": "ΧΑΤΖ.ΓΙΑΝΝΑΡΗ 31/CHATZIMICHALI GIANNARI 31",
+              "locality": "Χανιά",
+              "phone": "2821093850"
+            },
+            {
+              "pharmacyId": "2821020750",
+              "name": "ΚΑΜΑΡΙΑΝΑΚΗΣ ΧΡΗΣΤΟΣ/ΚΑΜΑRΙΑΝΑΚΙS CHRISTOS",
+              "address": "ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 37,ΕΝΑΝΤΙ ΙΝΚΑ,ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΑΚΡΩΤΗΡΙΟΥ/ΕL. VENIZELOU 37",
+              "locality": "Ακρωτήρι",
+              "phone": "2821020750"
+            },
+            {
+              "pharmacyId": "2821601496",
+              "name": "ΜΑΝΔΡΑΜΠΑΖΑΚΗ ΜΑΡΙΑ/ΜΑΝDRΑΜΒΑΖΑΚΙ MARY",
+              "address": "ΑΝ. ΓΟΓΟΝΗ 137/AN. GOGONI 137",
+              "locality": "Μουρνιές",
+              "phone": "2821601496"
+            },
+            {
+              "pharmacyId": "2821089179",
+              "name": "ΝΙΚΗΦΟΡΑΚΗΣ ΜΙΧΑΗΛ/ΝΙΚΙFΟRΑΚΙS MICHAEL",
+              "address": "ΕΘΝ. ΒΕΝΙΖΕΛΟΥ 59,ΣΟΥΔΑ/ΕΤΗΝ. VENIZELOU 59-SOUDA",
+              "locality": "Σούδα",
+              "phone": "2821089179"
+            },
+            {
+              "pharmacyId": "2821009880",
+              "name": "ΠΙΤΣΙΚΟΥΛΑΚΗ ΕΥΑΓΓΕΛΙΑ",
+              "address": "ΓΕΡΟΓΙΑΝΝΗΔΩΝ-ΓΑΛΑΤΑΣ (ΚΟΝΤΑ ΣΕ ΚΡΕΟΠΩΛΕΙΟ Ο ΠΟΛΙΟΣ)",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821009880"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",

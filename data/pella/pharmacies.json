@@ -107,6 +107,27 @@
       }
     },
     {
+      "id": "2381023770",
+      "name": "Σ.Φ. ΒΑΡΒΑΡΑ ΧΡΗΣΤΟΥ - ΔΗΜΗΤΡΙΟΣ ΓΚΙΚΑΣ",
+      "address": "ΘΕΟΤΟΚΟΠΟΥΛΟΥ 5",
+      "locality": "Έδεσσα",
+      "postcode": null,
+      "phone": "2381023770",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 40.8008584,
+        "lon": 22.0487887,
+        "ref": "https://pella.efhmeries.gr/Home/Details/6207",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2381024191",
       "name": "ΤΡΥΨΙΑΝΗ ΕΙΡΗΝΗ",
       "address": "ΑΛΜΩΠΙΑΣ 1",
@@ -223,7 +244,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 40.7680316,
         "lon": 22.1560749,
@@ -506,6 +527,27 @@
       }
     },
     {
+      "id": "2382029030",
+      "name": "ΓΟΤΟΥΧΙΔΗΣ ΧΑΡΑΛΑΜΠΟΣ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 49 ΚΛΙΝΙΚΗ ΕΛΕΥΘΩ",
+      "locality": "Γιαννιτσά",
+      "postcode": null,
+      "phone": "2382029030",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 40.7869094,
+        "lon": 22.4107639,
+        "ref": "https://pella.efhmeries.gr/Home/Details/4732",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2382061028",
       "name": "Σ.Φ. ΧΡΥΣΑΓΗΣ ΧΑΡΑΛ. - ΕΜΜΑΝΟΥΗΛΙΔΗΣ ΚΩΝ/ΝΟΣ",
       "address": "ΒΑΣ. ΠΑΥΛΟΥ 75",
@@ -601,7 +643,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 40.6866277,
         "lon": 22.3032052,
@@ -795,6 +837,27 @@
         "lat": 40.9746549,
         "lon": 22.0634344,
         "ref": "https://pella.efhmeries.gr/Home/Details/5540",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2384025424",
+      "name": "ΚΙΟΣΗΣ ΙΩΑΝΝΗΣ",
+      "address": "ΠΛΑΤΕΙΑ ΑΓΓΕΛΗ ΓΑΤΣΟΥ 1",
+      "locality": "Αριδαία",
+      "postcode": null,
+      "phone": "2384025424",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 40.9730073,
+        "lon": 22.0631053,
+        "ref": "https://pella.efhmeries.gr/Home/Details/5547",
         "source": "list",
         "precision": "exact"
       }

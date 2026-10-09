@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "groups": [
+    {
+      "id": "lakonia",
+      "name": "Λακωνία",
+      "source": {
+        "url": "https://lakonia.efhmeries.gr/",
+        "uploadedAt": "2026-10-09T10:42:53.704Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2733022566",
+              "name": "ΚΑΛΑΠΟΘΑΚΟΥ ΝΙΚΟΛΕΤΑ",
+              "address": "ΓΥΘΕΙΟ",
+              "locality": "Γύθειο",
+              "phone": "2733022566"
+            },
+            {
+              "pharmacyId": "2735023370",
+              "name": "ΜΑΡΤΣΟΥΚΟΥ ΘΕΟΔΩΡΑ",
+              "address": "ΣΚΑΛΑ",
+              "locality": "Σκάλα",
+              "phone": "2735023370"
+            },
+            {
+              "pharmacyId": "2731036000",
+              "name": "ΜΠΟΥΤΕΡΑΚΟΥ ΓΕΩΡΓΙΑ",
+              "address": "ΞΗΡΟΚΑΜΠΙ",
+              "locality": "Ξηροκάμπι",
+              "phone": "2731036000"
+            },
+            {
+              "pharmacyId": "2733051370",
+              "name": "Σ.Φ. ΕΥΑΓΓΕΛΟΣ Γ.ΛΥΚΟΥΣΑΣ-ΠΑΣΧΑΛΙΑ ΕΥΑΓΓ. ΛΥΚΟΥΣΑ & ΣΙΑ ΟΕ",
+              "address": "ΑΡΕΟΠΟΛΗ",
+              "locality": "Αρεόπολη",
+              "phone": "2733051370"
+            },
+            {
+              "pharmacyId": "2731057757",
+              "name": "Σ.Φ. ΜΠΑΣΚΟΥΡΕΛΟΣ ΧΑΡΑΛΑΜΠΟΣ – ΜΠΑΣΚΟΥΡΕΛΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ο.Ε.",
+              "address": "ΚΑΣΤΟΡΙ",
+              "locality": "Καστόρειο",
+              "phone": "2731057757"
+            },
+            {
+              "pharmacyId": "2735041492",
+              "name": "ΧΙΩΤΗ – ΑΣΤΕΡΗ ΕΛΕΝΗ",
+              "address": "ΒΛΑΧΙΩΤΗ",
+              "locality": "Βλαχιώτης",
+              "phone": "2735041492"
+            },
+            {
+              "pharmacyId": "2734022989",
+              "name": "ΨΑΡΡΑΚΗ ΧΡΥΣΟΥΛΑ &ΣΙΑ Ο.Ε.",
+              "address": "ΝΕΑΠΟΛΗ",
+              "locality": "Νεάπολη",
+              "phone": "2734022989"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2731027227",
+              "name": "ΝΙΚΗ ΒΑΧΑΒΙΩΛΟΥ ΚΑΠΡΑΝΟΥ &ΣΙΑ Ε.Ε.",
+              "address": "ΑΓΊΟΥ ΝΙΚΩΝΟΣ 98",
+              "locality": "Σπάρτη",
+              "phone": "2731027227"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "20:30 ΕΩΣ 20:30 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "20:30",
+            "to": "20:30",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2732083490",
+              "name": "ΚΥΡΙΑΚΑΚΗΣ ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "ΠΑΠΑΔΙΑΝΙΚΑ",
+              "locality": "Παπαδιάνικα",
+              "phone": "2732083490"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 21:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "21:00",
+            "to": "21:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2732023396",
+              "name": "ΑΓΓΕΛΙΚΗ ΜΙΧΕΛΑΚΟΥ – ΛΑΓΓΗ ΚΑΙ ΣΙΑ Ο.Ε.",
+              "address": "ΜΟΛΑΟΙ",
+              "locality": "Μολάοι",
+              "phone": "2732023396"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

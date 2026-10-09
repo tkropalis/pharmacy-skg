@@ -118,7 +118,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.936771,
         "lon": 22.9215657,
@@ -144,6 +144,27 @@
         "lat": 37.9392549,
         "lon": 22.9315687,
         "ref": "https://korinthia.efhmeries.gr/Home/Details/35401",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741028033",
+      "name": "Σ.Φ. Ε. ΜΑΥΡΑΓΑΝΗ - Σ. ΜΑΥΡΑΓΑΝΗ Ο.Ε.",
+      "address": "ΚΟΛΙΑΤΣΟΥ 35",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741028033",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 37.9376161,
+        "lon": 22.9331691,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35405",
         "source": "list",
         "precision": "exact"
       }
@@ -181,7 +202,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.9072675,
         "lon": 22.88078,
@@ -202,7 +223,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.8610007,
         "lon": 22.9972229,
@@ -265,7 +286,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.8964006,
         "lon": 22.9284049,
@@ -307,7 +328,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.819328,
         "lon": 22.9291721,
@@ -349,7 +370,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.9172924,
         "lon": 22.9993582,
@@ -391,7 +412,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.9578061,
         "lon": 22.8039689,
@@ -412,7 +433,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.9375856,
         "lon": 22.8008984,
@@ -433,7 +454,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.9282447,
         "lon": 23.1433311,
@@ -643,7 +664,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.9346483,
         "lon": 22.8455989,
@@ -748,7 +769,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.9422082,
         "lon": 22.8251675,
@@ -769,7 +790,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.8116578,
         "lon": 22.869699,
@@ -947,6 +968,27 @@
       }
     },
     {
+      "id": "2742029320",
+      "name": "ΛΟΥΤΑΣ ΠΑΝΑΓΙΩΤΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+      "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 27",
+      "locality": "Κιάτο",
+      "postcode": null,
+      "phone": "2742029320",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 38.0111616,
+        "lon": 22.7516934,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/36577",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2742032220",
       "name": "ΠΑΠΑΚΥΡΙΑΚΟΣ ΑΝΝΙΒΑΣ & ΣΙΑ Ο.Ε.",
       "address": "ΒΕΛΟ",
@@ -958,7 +1000,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.976489,
         "lon": 22.760115,
@@ -979,7 +1021,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.976028,
         "lon": 22.759504,
@@ -1021,7 +1063,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 38.0788092,
         "lon": 22.6318467,
@@ -1220,6 +1262,48 @@
       }
     },
     {
+      "id": "2744062863",
+      "name": "ΠΑΠΑΘΕΟΔΩΡΟΥ Ι. ΠΑΝΑΓΙΩΤΑ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 69",
+      "locality": "Λουτράκι",
+      "postcode": null,
+      "phone": "2744062863",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 37.9715339,
+        "lon": 22.9779998,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/40227",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2744079350",
+      "name": "ΠΑΝΑΓΙΩΤΙΔΗΣ Κ. ΧΡΗΣΤΟΣ",
+      "address": "ΞΕΝΟΦΩΝΤΟΣ & ΝΟΤΑΡΑ",
+      "locality": "Περαχώρα",
+      "postcode": null,
+      "phone": "2744079350",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 38.0301124,
+        "lon": 22.9485075,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/41786",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2744300722",
       "name": "ΤΣΙΑΜΗ Γ. ΠΑΝΑΓΙΩΤΑ",
       "address": "Δ. ΜΑΤΣΗ 27",
@@ -1294,7 +1378,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.8213041,
         "lon": 22.6609543,

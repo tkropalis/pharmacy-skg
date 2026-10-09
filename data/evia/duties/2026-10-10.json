@@ -7,9 +7,29 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T20:43:45.212Z"
+        "uploadedAt": "2026-10-09T10:41:11.573Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221062843",
+              "name": "ΑΝΤΩΝΙΟΥ ΝΙΚΟΛΑΟΣ",
+              "address": "ΝΕΟΦΥΤΟΥ 48Β",
+              "locality": "Χαλκίδα",
+              "phone": "2221062843"
+            }
+          ]
+        },
         {
           "kind": "saturday-extra",
           "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +67,40 @@
               "address": "ΔΟΥΝΑ 8-10 ΕΝΑΝΤΙ ΔΙΚΑΣΤΗΡΙΩΝ",
               "locality": "Χαλκίδα",
               "phone": "2221024646"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 14:00",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221077961",
+              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
+              "address": "ΑΒΑΝΤΩΝ 81",
+              "locality": "Χαλκίδα",
+              "phone": "2221077961"
+            },
+            {
+              "pharmacyId": "2221094469",
+              "name": "ΛΟΥΚΑ ΠΑΝΑΓΙΩΤΑ",
+              "address": "Λ.ΚΑΡΑΜΑΝΛΗ 19",
+              "locality": "Χαλκίδα",
+              "phone": "2221094469"
+            },
+            {
+              "pharmacyId": "2221087414",
+              "name": "Σ.Φ. ΒΡΑΚΑ ΜΑΡΙΑ - ΒΑΡΟΥΧΑΚΗΣ ΑΝΤΩΝΙΟΣ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 30 & ΦΙΛΩΝΟΣ 7-ΕΝΑΝΤΙ ΑΡΧ. ΜΟΥΣΕΙΟΥ",
+              "locality": "Χαλκίδα",
+              "phone": "2221087414"
             }
           ]
         },
@@ -102,60 +156,6 @@
               "address": "ΣΑΧΤΟΥΡΗ 80",
               "locality": "Κάρυστος",
               "phone": "2224023543"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221062843",
-              "name": "ΑΝΤΩΝΙΟΥ ΝΙΚΟΛΑΟΣ",
-              "address": "ΝΕΟΦΥΤΟΥ 48Β",
-              "locality": "Χαλκίδα",
-              "phone": "2221062843"
-            }
-          ]
-        },
-        {
-          "kind": "saturday-extra",
-          "heading": "08:00 ΕΩΣ 14:00",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221077961",
-              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
-              "address": "ΑΒΑΝΤΩΝ 81",
-              "locality": "Χαλκίδα",
-              "phone": "2221077961"
-            },
-            {
-              "pharmacyId": "2221094469",
-              "name": "ΛΟΥΚΑ ΠΑΝΑΓΙΩΤΑ",
-              "address": "Λ.ΚΑΡΑΜΑΝΛΗ 19",
-              "locality": "Χαλκίδα",
-              "phone": "2221094469"
-            },
-            {
-              "pharmacyId": "2221087414",
-              "name": "Σ.Φ. ΒΡΑΚΑ ΜΑΡΙΑ - ΒΑΡΟΥΧΑΚΗΣ ΑΝΤΩΝΙΟΣ",
-              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 30 & ΦΙΛΩΝΟΣ 7-ΕΝΑΝΤΙ ΑΡΧ. ΜΟΥΣΕΙΟΥ",
-              "locality": "Χαλκίδα",
-              "phone": "2221087414"
             }
           ]
         },

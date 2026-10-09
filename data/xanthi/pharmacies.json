@@ -128,6 +128,27 @@
       }
     },
     {
+      "id": "2541026137",
+      "name": "ΦΩΤΙΑΔΗΣ ΠΟΛΥΚΑΡΠΟΣ",
+      "address": "28ης ΟΚΤΩΒΡΙΟΥ 71",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541026137",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 41.1375825,
+        "lon": 24.8880047,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3619",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2541026987",
       "name": "ΔΙΟΥΔΗΣ ΓΡΗΓΟΡΗΣ",
       "address": "ΜΠΡΩΚΟΥΜΗ 1",
@@ -254,6 +275,27 @@
       }
     },
     {
+      "id": "2541066123",
+      "name": "ΓΕΩΡΓΑΝΤΑΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΤΣΙΜΙΣΚΗ 51",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541066123",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 41.1389205,
+        "lon": 24.8917554,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3618",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2541071386",
       "name": "ΚΟΥΜΤΖΗ ΔΗΜΗΤΡΑ",
       "address": "ΜΙΧ. ΚΑΡΑΟΛΗ 1",
@@ -270,6 +312,27 @@
         "lat": 41.139325,
         "lon": 24.8885903,
         "ref": "https://xanthi.efhmeries.gr/Home/Details/3594",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541072800",
+      "name": "ΚΟΥΚΟΣ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΣΑΡΑΝΤΑΠΟΡΟΥ-ΠΕΡΙΚΛΕΟΥΣ 18",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541072800",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 41.1341394,
+        "lon": 24.8822296,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3620",
         "source": "list",
         "precision": "exact"
       }

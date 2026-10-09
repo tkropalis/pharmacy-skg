@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "groups": [
+    {
+      "id": "arta",
+      "name": "Άρτα",
+      "source": {
+        "url": "https://arta.efhmeries.gr/",
+        "uploadedAt": "2026-10-09T10:40:42.428Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2681082045",
+              "name": "ΓΚΟΝΤΖΟΣ",
+              "address": "ΑΓΙΟΣ ΔΗΜΗΤΡΙΟΣ, ΠΕΤΑ",
+              "locality": "Άρτα",
+              "phone": "2681082045"
+            },
+            {
+              "pharmacyId": "2681073290",
+              "name": "ΜΠΑΝΙΑ ΕΥΑΓΓΕΛΙΑ",
+              "address": "ΖΑΡΑ Α. 25",
+              "locality": "Άρτα",
+              "phone": "2681073290"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

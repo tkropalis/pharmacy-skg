@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T20:44:35.034Z"
+        "uploadedAt": "2026-10-09T10:42:25.655Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "9 ΒΡΑΔΥ- 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441076190",
-              "name": "ΤΣΙΝΟΠΟΥΛΟΥ ΣΤΥΛΙΑΝΗ",
-              "address": "ΠΛΑΣΤΗΡΑ 12",
-              "locality": "Καρδίτσα",
-              "phone": "2441076190"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
@@ -47,6 +27,26 @@
               "address": "Α.ΠΑΠΑΝΔΡΕΟΥ 6",
               "locality": "Καρδίτσα",
               "phone": "2441020919"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "9 ΒΡΑΔΥ- 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441076190",
+              "name": "ΤΣΙΝΟΠΟΥΛΟΥ ΣΤΥΛΙΑΝΗ",
+              "address": "ΠΛΑΣΤΗΡΑ 12",
+              "locality": "Καρδίτσα",
+              "phone": "2441076190"
             }
           ]
         }

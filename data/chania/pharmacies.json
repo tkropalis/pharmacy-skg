@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
+      "id": "2821002080",
+      "name": "ΜΑΣΤΟΡΑΚΗ ΕΛΕΝΗ/ΜΑSΤΟRΑΚΙ HELEN",
+      "address": "ΑΝ. ΓΟΓΟΝΗ 169/AN. GOGONI 169",
+      "locality": "Μουρνιές",
+      "postcode": null,
+      "phone": "2821002080",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 35.5040092,
+        "lon": 24.0087278,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13484",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2821007000",
       "name": "ΓΕΩΡΓΙΟΣ ΑΡΧΟΝΤΑΚΗΣ ΦΑΡΜΑΚΕΙΑ Ε.Ε.",
       "address": "ΠΛ. ΕΛ ΒΕΝΙΖΕΛΟΥ ΚΑΙ ΑΓΙΟΥ ΝΟΥΦΡΙΟΥ 1",
@@ -23,6 +44,69 @@
       }
     },
     {
+      "id": "2821008222",
+      "name": "ΦΙΩΤΑΚΗΣ ΚΩΝ/ΝΟΣ/FΙΟΤΑΚΙS KONSTANTINOS",
+      "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΑΣ 6/ELEFTHERIAS SQUARE 6",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821008222",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 35.5100736,
+        "lon": 24.0300941,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13504",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821009880",
+      "name": "ΠΙΤΣΙΚΟΥΛΑΚΗ ΕΥΑΓΓΕΛΙΑ",
+      "address": "ΓΕΡΟΓΙΑΝΝΗΔΩΝ-ΓΑΛΑΤΑΣ (ΚΟΝΤΑ ΣΕ ΚΡΕΟΠΩΛΕΙΟ Ο ΠΟΛΙΟΣ)",
+      "locality": "Νέα Κυδωνία",
+      "postcode": null,
+      "phone": "2821009880",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 35.499777,
+        "lon": 23.963521,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13492",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821020750",
+      "name": "ΚΑΜΑΡΙΑΝΑΚΗΣ ΧΡΗΣΤΟΣ/ΚΑΜΑRΙΑΝΑΚΙS CHRISTOS",
+      "address": "ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 37,ΕΝΑΝΤΙ ΙΝΚΑ,ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΑΚΡΩΤΗΡΙΟΥ/ΕL. VENIZELOU 37",
+      "locality": "Ακρωτήρι",
+      "postcode": null,
+      "phone": "2821020750",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 35.52965,
+        "lon": 24.0750572,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13489",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2821031110",
       "name": "Σ.Φ. ΤΖΕΙΡΑΝΗ ΕΥΑ ΤΖΕΪΡΑΝΗΣ ΣΤΕΛΙΟΣ/ΤΖΕΙRΑΝΙ EVA-TZEIRANIS STELIOS",
       "address": "ΚΑΛΑΜΑΚΙ (ΚΟΝΤΑ ΣΤΟ ΞΕΝΟΔΟΧΕΙΟ CORINA MARRE)/KALAMAKI-GALATAS",
@@ -34,11 +118,53 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
       "location": {
         "lat": 35.512957,
         "lon": 23.967459,
         "ref": "https://chania.efhmeries.gr/Home/Details/13464",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821031430",
+      "name": "ΚΥΡΙΑΚΑΚΗ ΕΛΕΝΗ/ΚΥRΙΑΚΑΚΙ HELEN",
+      "address": "ΜΑΚΡΥΣ ΤΟΙΧΟΣ (ΠΛΗΣΙΟΝ ΙΕΡΟΥ ΝΑΟΥ ΑΓΙΟΥ ΠΑΝΤΕΛΕΗΜΟΝΟΣ)/ΜΑΚRΥS TOICHOS",
+      "locality": "Νέα Κυδωνία",
+      "postcode": null,
+      "phone": "2821031430",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 35.5072902,
+        "lon": 23.9855775,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13480",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821033466",
+      "name": "ΦΑΝΟΥΡΓΙΑΚΗΣ ΒΑΣΙΛΗΣ & ΣΙΑ ΟΕ/FΑΝΟURGΙΑΚΙS VASILIS",
+      "address": "Π. Ε. Ο. ΧΑΝΙΩΝ-ΚΙΣΣΑΜΟΥ (ΔΙΠΛΑ ΣΕ ΒΙΒΛΙΟΠΩΛΕΙΟ ΠΟΠΗΘΕΟΔΩΡΑΚΗ)/ΚΙSΑΜΟU-DΑRΑΤSΟ",
+      "locality": "Νέα Κυδωνία",
+      "postcode": null,
+      "phone": "2821033466",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 35.5078029,
+        "lon": 23.9790945,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13508",
         "source": "list",
         "precision": "exact"
       }
@@ -97,7 +223,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 35.5128773,
         "lon": 24.0209684,
@@ -139,11 +265,53 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-13",
       "location": {
         "lat": 35.5068073,
         "lon": 23.9880296,
         "ref": "https://chania.efhmeries.gr/Home/Details/13469",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821049292",
+      "name": "ΛΙΛΙΚΑΚΗ ΜΑΙΡΗ/LΙLΙΚΑΚΙ MARY",
+      "address": "ΑΓ. ΠΑΝΤΩΝ 23 ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΑΚΡΩΤΗΡΙΟΥ/ΑGΙΟΝ PANTON 23-KOUNOUPIDIANA",
+      "locality": "Ακρωτήρι",
+      "postcode": null,
+      "phone": "2821049292",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 35.5336344,
+        "lon": 24.078449,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13495",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821053063",
+      "name": "ΑΤΣΑΛΑΚΗΣ ΕΜΜΑΝΟΥΗΛ/ΑΤSΑLΑΚΙS EMMANOYEL",
+      "address": "ΗΡ.ΠΟΛΥΤΕΧΝΕΙΟΥ 1/HER. POLYTECHNIOU 1",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821053063",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.5146324,
+        "lon": 24.031033,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13499",
         "source": "list",
         "precision": "exact"
       }
@@ -170,6 +338,27 @@
       }
     },
     {
+      "id": "2821056188",
+      "name": "ΚΕΛΑΪΔΗ ΟΛΓΑ/ΚΕLΑΙDΙ OLGA",
+      "address": "ΔΑΣΚΑΛΟΓΙΑΝΝΗ 43/DASKALOGIANNI 43",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821056188",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 35.5162027,
+        "lon": 24.0211462,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13505",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2821056265",
       "name": "Σ.Φ. ΑΡΧΟΝΤΑΚΗΣ ΙΩΑΝΝΗΣ & ΑΡΧΟΝΤΑΚΗΣ ΓΕΩΡΓΙΟΣ/ΑRCΗΟΝΤΑΚΙS I.& G. O.E.",
       "address": "ΚΙΣΣΑΜΟΥ 184/KISAMOU 184",
@@ -181,11 +370,32 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-10",
       "location": {
         "lat": 35.5083614,
         "lon": 24.0073544,
         "ref": "https://chania.efhmeries.gr/Home/Details/13459",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821057112",
+      "name": "ΒΑΡΒΑΤΣΟΥΛΑΚΗΣ Ε./VΑRVΑΤSΟULΑΚΙS E.",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 13/EL. VENIZELOU 13",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821057112",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 35.5144822,
+        "lon": 24.0255975,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13482",
         "source": "list",
         "precision": "exact"
       }
@@ -212,6 +422,48 @@
       }
     },
     {
+      "id": "2821058956",
+      "name": "ΒΛΑΧΑΚΗ Ε.-ΒΑΡΔΟΥΛΑΚΗΣ Π./VLΑCΗΑΚΙ E.-VARDOULAKIS P.",
+      "address": "ΤΖΑΝΑΚΑΚΗ 52/TZANAKAKI 52",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821058956",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 35.5127563,
+        "lon": 24.0223904,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13487",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821060078",
+      "name": "Σ.Φ. ΜΠΟΤΩΝΑΚΗΣ Ι.-ΚΑΤΑΚΗΣ Π./S.F. MPOTONAKIS I-KATAKIS P.",
+      "address": "ΑΓΙΑ ΜΑΡΙΝΑ ΠΛΑΤΑΝΙΑΣ ΧΑΝΙΑ (ΔΙΠΛΑ ΣΕ ARTEMIS BEACH BAR)/AGIA MARINA",
+      "locality": "Νέα Κυδωνία",
+      "postcode": null,
+      "phone": "2821060078",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.5174627,
+        "lon": 23.9361317,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13503",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2821063282",
       "name": "ΑΡΧΟΝΤΑΚΗΣ ΕΥΤΥΧΗΣ/ΑRCΗΟΝΤΑΚΙS EFTYCHIOS",
       "address": "ΑΡΩΝΙ ΑΚΡΩΤΗΡΙΟΥ/ΑRΟΝΙ AKROTIRIOU",
@@ -228,6 +480,132 @@
         "lat": 35.5155989,
         "lon": 24.1076107,
         "ref": "https://chania.efhmeries.gr/Home/Details/13472",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821064460",
+      "name": "ΓΝΑΦΑΚΗ ΕΦΗ/GΝΑFΑΚΙ EFFIE",
+      "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 90,ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΑΚΡΩΤΗΡΙΟΥ/ΕL. VENIZELOU 90, KOUNOUPIDIANA",
+      "locality": "Ακρωτήρι",
+      "postcode": null,
+      "phone": "2821064460",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 35.5321675,
+        "lon": 24.0764789,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13483",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821069539",
+      "name": "ΜΟΝΟΤΡΑΚΗ ΓΕΩΡΓΙΑ/ΜΟΝΟΤRΑΚΙ GEORGIA",
+      "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ & ΚΟΡΑΗ ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΑΚΡΩΤΗΡΙΟΥ/ΑRΙSΤΟΤΕLΟUS & KORAI",
+      "locality": "Ακρωτήρι",
+      "postcode": null,
+      "phone": "2821069539",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 35.5278698,
+        "lon": 24.0776645,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13506",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821069791",
+      "name": "Σ.Φ. ΒΛΑΧΑΚΗ ΜΑΡΙΑ ΛΟΥΠΑΣΑΚΗΣ ΜΑΝΩΛΗΣ ΚΑΙ ΣΙΑ ΟΕ/VLΑCΗΑΚΙ M.-LOUPASAKIS M.",
+      "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 1 ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΑΚΡΩΤΗΡΙΟΥ/ΑRΙSΤΟΤΕLΟUS 1-KOUNOUPIDIANA",
+      "locality": "Ακρωτήρι",
+      "postcode": null,
+      "phone": "2821069791",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.5307429,
+        "lon": 24.0759463,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13477",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821072156",
+      "name": "ΑΝΑΣΤΑΣΑΚΗΣ ΘΡΑΣΥΒΟΥΛΟΣ/ΑΝΑSΤΑSΑΚΙS THRASIVOULOS",
+      "address": "ΑΝΔΡΈΑ ΠΑΠΑΝΔΡΈΟΥ 47 Γ / ANDREA PAPANDREOU 47",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821072156",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 35.5134669,
+        "lon": 24.0230911,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13493",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821072442",
+      "name": "ΛΕΛΕΔΑΚΗ ΑΓΓΕΛΙΝΑ/LΕLΕDΑΚΙ AGGELIKI",
+      "address": "ΑΝ.ΓΟΓΟΝΗ 82/AN. GOGONI 82",
+      "locality": "Μουρνιές",
+      "postcode": null,
+      "phone": "2821072442",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 35.5042062,
+        "lon": 24.0170812,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13478",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821075505",
+      "name": "ΔΗΜΗΤΡΟΥΛΑΚΗΣ ΠΑΝΑΓΙΩΤΗΣ & ΣΙΑ/DΙΜΙΤRΟULΑΚΙS PANAGIOTIS & SIA",
+      "address": "ΠΛΑΤΕΙΑ ΕΛ. ΒΕΝΙΖΕΛΟΥ-ΜΟΥΡΝΙΕΣ/ΕL. VENIZELOU SQUARE-MOURNIES",
+      "locality": "Μουρνιές",
+      "postcode": null,
+      "phone": "2821075505",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.5164381,
+        "lon": 24.0179193,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13501",
         "source": "list",
         "precision": "exact"
       }
@@ -254,6 +632,27 @@
       }
     },
     {
+      "id": "2821089179",
+      "name": "ΝΙΚΗΦΟΡΑΚΗΣ ΜΙΧΑΗΛ/ΝΙΚΙFΟRΑΚΙS MICHAEL",
+      "address": "ΕΘΝ. ΒΕΝΙΖΕΛΟΥ 59,ΣΟΥΔΑ/ΕΤΗΝ. VENIZELOU 59-SOUDA",
+      "locality": "Σούδα",
+      "postcode": null,
+      "phone": "2821089179",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 35.4878205,
+        "lon": 24.0733964,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13479",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2821089222",
       "name": "ΔΗΜΗΤΡΟΥΛΑΚΗΣ ΠΑΝΑΓΙΩΤΗΣ/DΙΜΙΤRΟULΑΚΙS PANAGIOTIS",
       "address": "ΠΛ. ΜΑΡΙΔΑΚΗ & ΕΛΛΗΣ/ΡL.ΜΑRΙDΑΚΙ & ELLIS",
@@ -265,7 +664,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-11",
       "location": {
         "lat": 35.4876131,
         "lon": 24.061287,
@@ -296,6 +695,27 @@
       }
     },
     {
+      "id": "2821093013",
+      "name": "ΜΑΡΙΝΑΚΗ ΜΑΡΙΑ/ΜΑRΙΝΑΚΙ MARY",
+      "address": "ΚΡΙΑΡΙ 1 ΠΛ.ΚΟΤΖΑΜΠΑΣΗ/ΚRΙΑRΙ 1 & KARAISKAKI",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821093013",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 35.5137109,
+        "lon": 24.0195317,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13494",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2821093288",
       "name": "ΚΝΙΘΑΚΗΣ ΓΕΩΡΓΙΟΣ/ΚΝΙΤΗΑΚΙS GEORGE",
       "address": "ΑΝ.ΓΟΓΟΝΗ 51/AN. GOGONI 51",
@@ -307,11 +727,53 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 35.5040946,
         "lon": 24.020972,
         "ref": "https://chania.efhmeries.gr/Home/Details/13468",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821093850",
+      "name": "ΑΓΟΡΑΣΤΑΚΗ-ΜΑΝΤΩΝΑΝΑΚΗ ΑΡΓΥΡΩ/ΑGΟRΑSΤΑΚΙ-ΜΑΝΤΟΝΑΝΑΚΙ ARGIRO",
+      "address": "ΧΑΤΖ.ΓΙΑΝΝΑΡΗ 31/CHATZIMICHALI GIANNARI 31",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821093850",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 35.5089801,
+        "lon": 24.0269311,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13488",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821096625",
+      "name": "ΑΛΕΞΑΚΗ ΣΜΑΡΑΓΔΗ/ΑLΕΧΑΚΙ SMARAGDI",
+      "address": "ΠΛΑΤΕΙΑ 1866 5/ 1866 SQUARE 5",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821096625",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-10",
+      "lastSeen": "2026-10-10",
+      "location": {
+        "lat": 35.5137304,
+        "lon": 24.0177421,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13475",
         "source": "list",
         "precision": "exact"
       }
@@ -338,6 +800,69 @@
       }
     },
     {
+      "id": "2821097711",
+      "name": "ΑΔΙΚΗΜΕΝΑΚΗ ΜΑΡΙΛΕΝΑ & ΣΙΑ/ΑDΙΚΙΜΕΝΑΚΙ MARILENA & SIA",
+      "address": "ΚΥΔΩΝΙΑΣ 50/KIDONIAS 50",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821097711",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-11",
+      "lastSeen": "2026-10-11",
+      "location": {
+        "lat": 35.5125937,
+        "lon": 24.0185466,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13481",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821601000",
+      "name": "ΒΑΜΒΟΥΚΑΣ ΤΑΣΟΣ/VΑΜVΟUΚΑS TASOS",
+      "address": "ΑΚΡΩΤΗΡΙΟΥ 57, ΕΝΑΝΤΙ ΠΡΑΤ. ΚΑΥΣΙΜΩΝ ΕΚΟ (ΒΛΗΤΕΣ)/ΑΚRΟΤΙRΙΟU 57/VLYTES",
+      "locality": "Σούδα",
+      "postcode": null,
+      "phone": "2821601000",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 35.4991039,
+        "lon": 24.0546775,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13502",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821601496",
+      "name": "ΜΑΝΔΡΑΜΠΑΖΑΚΗ ΜΑΡΙΑ/ΜΑΝDRΑΜΒΑΖΑΚΙ MARY",
+      "address": "ΑΝ. ΓΟΓΟΝΗ 137/AN. GOGONI 137",
+      "locality": "Μουρνιές",
+      "postcode": null,
+      "phone": "2821601496",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-12",
+      "lastSeen": "2026-10-12",
+      "location": {
+        "lat": 35.5039301,
+        "lon": 24.0132363,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13490",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2822022451",
       "name": "Σ.Φ. ΚΑΤΑΚΗΣ ΠΑΝΤΕΛΗΣ-ΚΑΤΑΚΗ ΕΥΤΥΧΙΑ/S.F. KATAKIS PANTELIS-KATAKI EYTIXIA",
       "address": "ΚΑΣΤΕΛΙ ΠΛΑΤΕΙΑ ΕΛ. ΒΕΝΙΖΕΛΟΥ (ΔΙΠΛΑ ΑΠΟ ΤΗΝ ΕΘΝ. ΤΡΑΠΕΖΑ)/ΚΑSΤΕLΙ PLATIA EL. VENIZELOU",
@@ -349,7 +874,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 35.4944211,
         "lon": 23.6539618,
@@ -391,7 +916,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 35.2294606,
         "lon": 23.6819128,

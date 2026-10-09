@@ -107,6 +107,27 @@
       }
     },
     {
+      "id": "2441025525",
+      "name": "Σ/Φ ΜΠΕΚΟΥ ΜΙΡΑΝΤΑ - ΑΜΟΥΝΤΖΙΑ ΜΑΡΙΑΝΝΑ & ΣΙΑ Ο.Ε.",
+      "address": "ΑΒΕΡΩΦ 26",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441025525",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 39.362352,
+        "lon": 21.9225945,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3760",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2441025576",
       "name": "Σ/Φ ΕΛΕΝΗ ΟΙΚΟΝΟΜΟΥ - ΘΩΜΑΣ ΚΥΡΙΤΣΗΣ Ο.Ε",
       "address": "ΙΕΖΕΚΙΗΛ 51",
@@ -118,7 +139,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 39.3658077,
         "lon": 21.9220252,

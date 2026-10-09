@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "groups": [
+    {
+      "id": "evia",
+      "name": "Εύβοια",
+      "source": {
+        "url": "https://evia.efhmeries.gr/",
+        "uploadedAt": "2026-10-09T10:41:11.573Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2226056148",
+              "name": "ΑΝΑΣΤΑΣΙΟΥ ΑΡΕΤΗ",
+              "address": "ΜΕΤΑΞΑ ΙΩΑΝΝΟΥ 4",
+              "locality": "Ιστιαία",
+              "phone": "2226056148"
+            },
+            {
+              "pharmacyId": "2221043211",
+              "name": "ΚΑΡΑΧΑΝΗΣ ΣΤΕΦΑΝΟΣ",
+              "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 94",
+              "locality": "Αρτάκη",
+              "phone": "2221043211"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2229062585",
+              "name": "ΜΙΧΟΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΦΙΛ. ΜΕΝΕΔΗΜΟΥ 36",
+              "locality": "Ερέτρια",
+              "phone": "2229062585"
+            },
+            {
+              "pharmacyId": "2224023543",
+              "name": "ΠΟΛΙΤΗΣ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΣΑΧΤΟΥΡΗ 80",
+              "locality": "Κάρυστος",
+              "phone": "2224023543"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 17:30",
+          "hours": {
+            "from": "14:00",
+            "to": "17:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221083605",
+              "name": "ΓΛΥΚΟΣ ΗΛΙΑΣ",
+              "address": "ΒΕΛΙΣΣΑΡΙΟΥ 13 ΚΑΙ ΣΙΩΚΟΥ",
+              "locality": "Χαλκίδα",
+              "phone": "2221083605"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221062640",
+              "name": "ΠΑΠΑΔΑΚΗ ΝΑΝΣΥ",
+              "address": "ΜΙΑΟΥΛΗ 1 - ΚΡΗΠΙΔΩΜΑ ΧΑΛΚΙΔΑΣ",
+              "locality": "Χαλκίδα",
+              "phone": "2221062640"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

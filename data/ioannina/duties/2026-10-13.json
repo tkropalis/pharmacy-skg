@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T20:44:22.360Z"
+        "uploadedAt": "2026-10-09T10:42:10.110Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651020320",
-              "name": "Σ.Φ. ΜΠΑΚΟΓΙΑΝΝΗ ΚΩΣΤΟΥΛΑ - ΠΑΠΑΔΗΜΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
-              "address": "28ΗΣ ΟΚΤΩΒΡΊΟΥ 34",
-              "locality": "Ιωάννινα",
-              "phone": "2651020320"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -47,6 +27,26 @@
               "address": "ΒΛΑΧΛΕΙΔΗ 7",
               "locality": "Ιωάννινα",
               "phone": "2651024330"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651020320",
+              "name": "Σ.Φ. ΜΠΑΚΟΓΙΑΝΝΗ ΚΩΣΤΟΥΛΑ - ΠΑΠΑΔΗΜΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "28ΗΣ ΟΚΤΩΒΡΊΟΥ 34",
+              "locality": "Ιωάννινα",
+              "phone": "2651020320"
             }
           ]
         }

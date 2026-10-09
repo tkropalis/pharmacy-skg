@@ -163,29 +163,9 @@
       "name": "Λάρισα",
       "source": {
         "url": "https://larisa.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T20:43:00.643Z"
+        "uploadedAt": "2026-10-09T10:39:59.248Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "23:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2410535412",
-              "name": "ΠΑΠΑΛΕΞΙΟΥ Γ. ΧΡΥΣΟΣΤΟΜΟΣ",
-              "address": "ΒΕΝΙΖΕΛΟΥ 39",
-              "locality": "Λάρισα",
-              "phone": "2410535412"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 08:00 ΕΩΣ 23:00",
@@ -231,6 +211,26 @@
               "address": "ΠΑΠΑΝΑΣΤΑΣΙΟΥ 94 (Πλησίον Αγ. Νικολάου)",
               "locality": "Λάρισα",
               "phone": "2413020559"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "23:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410535412",
+              "name": "ΠΑΠΑΛΕΞΙΟΥ Γ. ΧΡΥΣΟΣΤΟΜΟΣ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 39",
+              "locality": "Λάρισα",
+              "phone": "2410535412"
             }
           ]
         }

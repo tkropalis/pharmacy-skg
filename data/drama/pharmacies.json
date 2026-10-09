@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2521020220",
+      "name": "ΒΑΡΑΝΟΥ Θ. ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΒΕΛΙΣΑΡΙΟΥ 2",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521020220",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 41.1507246,
+        "lon": 24.1488356,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3150",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521020600",
       "name": "ΜΕΝΕΣΙΔΗΣ ΙΩΑΝΝΗΣ",
       "address": "ΑΝΤΙΓΟΝΟΥ 15",
@@ -417,6 +438,27 @@
         "lat": 41.1494561,
         "lon": 24.1485122,
         "ref": "https://drama.efhmeries.gr/Home/Details/3145",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521047210",
+      "name": "ΚΑΛΑΪΤΖΙΔΟΥ ΚΑΤΕΡΙΝΑ",
+      "address": "ΔΗΜΟΚΡΙΤΟΥ & ΑΙΣΧΥΛΟΥ 11Α",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521047210",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 41.142452,
+        "lon": 24.148391,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3151",
         "source": "list",
         "precision": "exact"
       }

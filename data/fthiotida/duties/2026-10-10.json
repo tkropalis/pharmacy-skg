@@ -7,9 +7,29 @@
       "name": "Φθιώτιδα",
       "source": {
         "url": "https://fthiotida.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T20:46:07.990Z"
+        "uploadedAt": "2026-10-09T10:44:37.285Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:00",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231030161",
+              "name": "ΚΟΣΠΕΝΤΑΡΗ ΠΟΛΥΞΕΝΗ",
+              "address": "ΛΕΩΣΘΕΝΟΥΣ ΔΕΔΟΥΣΗ 11",
+              "locality": "Λαμία",
+              "phone": "2231030161"
+            }
+          ]
+        },
         {
           "kind": "saturday-extra",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -96,26 +116,6 @@
               "address": "ΛΕΩΝΙΔΟΥ 2",
               "locality": "Μώλος",
               "phone": "2235051344"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 22:00",
-          "hours": {
-            "from": "08:00",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231030161",
-              "name": "ΚΟΣΠΕΝΤΑΡΗ ΠΟΛΥΞΕΝΗ",
-              "address": "ΛΕΩΣΘΕΝΟΥΣ ΔΕΔΟΥΣΗ 11",
-              "locality": "Λαμία",
-              "phone": "2231030161"
             }
           ]
         },

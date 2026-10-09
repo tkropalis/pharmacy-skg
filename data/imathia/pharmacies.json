@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "2331023416",
+      "name": "ΠΙΣΚΙΛΙΔΗΣ ΙΟΡΔ. ΙΩΑΝΝΗΣ ΥΠ/ΜΑ",
+      "address": "ΜΗΤΡΟΠΟΛΕΩΣ 20",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331023416",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 40.5210255,
+        "lon": 22.2019496,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6191",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2331024123",
       "name": "ΜΑΣΟΥΡΑ ΑΛΕΞΑΝΔΡΑ & ΣΙΑ Ε.Ε.",
       "address": "ΒΕΝΙΖΕΛΟΥ 26",
@@ -286,7 +307,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 40.5540487,
         "lon": 22.2537387,
@@ -375,6 +396,27 @@
         "lat": 40.5272645,
         "lon": 22.2052054,
         "ref": "https://imathia.efhmeries.gr/Home/Details/6163",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331062989",
+      "name": "Σ.Φ. ΚΑΛΑΪΤΖΙΔΗΣ Π. - ΚΑΛΑΪΤΖΙΔΗΣ Γ. Ο.Ε.",
+      "address": "ΗΡΑΣ 9 - κοντά στα ΚΤΕΛ",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331062989",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 40.5266924,
+        "lon": 22.2052137,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6192",
         "source": "list",
         "precision": "exact"
       }
@@ -695,6 +737,27 @@
       }
     },
     {
+      "id": "2332027180",
+      "name": "ΣΤΑΜΠΟΥΛΗΣ Δ & ΣΙΑ ΕΕ",
+      "address": "ΚΩΝΣΤΑΝΤΙΝΙΔΟΥ 15",
+      "locality": "Νάουσα",
+      "postcode": null,
+      "phone": "2332027180",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 40.6298234,
+        "lon": 22.0688401,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/5774",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2332027906",
       "name": "ΚΑΠΕΤΑΝΟΠΟΥΛΟΣ ΑΘ. ΒΑΓΓΕΛΗΣ",
       "address": "ΠΛ.ΚΑΡΑΤΑΣΟΥ 2",
@@ -895,7 +958,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 40.6275043,
         "lon": 22.4339659,

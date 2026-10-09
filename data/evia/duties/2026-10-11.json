@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-08T20:43:45.212Z"
+        "uploadedAt": "2026-10-09T10:41:11.573Z"
       },
       "sections": [
         {
@@ -34,6 +34,46 @@
               "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 66",
               "locality": "Αρτάκη",
               "phone": "2221042444"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221077961",
+              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
+              "address": "ΑΒΑΝΤΩΝ 81",
+              "locality": "Χαλκίδα",
+              "phone": "2221077961"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221077961",
+              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
+              "address": "ΑΒΑΝΤΩΝ 81",
+              "locality": "Χαλκίδα",
+              "phone": "2221077961"
             }
           ]
         },
@@ -102,46 +142,6 @@
               "address": "ΣΑΧΤΟΥΡΗ 124",
               "locality": "Κάρυστος",
               "phone": "2224023855"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221077961",
-              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
-              "address": "ΑΒΑΝΤΩΝ 81",
-              "locality": "Χαλκίδα",
-              "phone": "2221077961"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "17:30",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221077961",
-              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
-              "address": "ΑΒΑΝΤΩΝ 81",
-              "locality": "Χαλκίδα",
-              "phone": "2221077961"
             }
           ]
         },

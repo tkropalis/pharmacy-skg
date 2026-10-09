@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "groups": [
+    {
+      "id": "lasithi",
+      "name": "Λασίθι",
+      "source": {
+        "url": "https://lasithi.efhmeries.gr/",
+        "uploadedAt": "2026-10-09T10:43:00.559Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2841028298",
+              "name": "ΖΩΑΚΗ Ι. ΚΑΛΛΙΟΠΗ",
+              "address": "ΣΟΦΟΚΛΗ ΒΕΝΙΖΕΛΟΥ 12 / 12, SOFOKLI VENIZELOU STR.",
+              "locality": "Άγιος Νικόλαος",
+              "phone": "2841028298"
+            },
+            {
+              "pharmacyId": "2842026021",
+              "name": "Σ.Φ. ΓΕΩΡΓΙΟΣ & ΙΩΑΝΝΗΣ ΛΑΜΠΡΑΚΗΣ Ο.Ε.",
+              "address": "ΜΕΛΕΤΙΟΥ ΜΕΤΑΞΑΚΗ 13 / 13, MELETIOU METAXAKI STR.",
+              "locality": "Ιεράπετρα",
+              "phone": "2842026021"
+            },
+            {
+              "pharmacyId": "2843022276",
+              "name": "Σ.Φ. ΓΕΩΡΓΙΟΣ ΜΠΑΓΟΡΔΑΚΗΣ ΚΑΙ ΟΔΥΣΣΕΑΣ ΜΠΑΓΟΡΔΑΚΗΣ Ο.Ε.",
+              "address": "ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 107 / 107, ELEFTHERIOU VENIZELOU STR.",
+              "locality": "Σητεία",
+              "phone": "2843022276"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2841041308",
+              "name": "Σ.Φ. ΔΕΣΠΟΙΝΑ ΤΣΑΝΙΚΛΙΔΟΥ - ΝΙΚΟΛΑΟΣ ΠΑΠΑΣΤΑΥΡΑΚΗΣ Ο.Ε.",
+              "address": "ΠΛΑΤΕΙΑ ΜΠΟΤΗ ΣΦΑΚΙΑΝΑΚΗ 15 / 15, MPOTI SFAKIANAKI SQ.",
+              "locality": "Ελούντα",
+              "phone": "2841041308"
+            },
+            {
+              "pharmacyId": "2841031650",
+              "name": "ΦΟΥΛΕΔΑΚΗΣ Δ ΚΑΙ ΣΙΑ Ο.Ε.",
+              "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 27 / 27, ELEFTHERIOU VENIZELOU SQ.",
+              "locality": "Νεάπολη",
+              "phone": "2841031650"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

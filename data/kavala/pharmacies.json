@@ -76,7 +76,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 40.936409,
         "lon": 24.4089542,
@@ -207,6 +207,27 @@
         "lat": 40.939247,
         "lon": 24.406999,
         "ref": "https://kavala.efhmeries.gr/Home/Details/3959",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2511103901",
+      "name": "ΒΑΚΙΡΤΖΗ ΒΑΣΙΛΙΚΗ",
+      "address": "25ης ΜΑΡΤΙΟΥ 30",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2511103901",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 40.930899,
+        "lon": 24.383471,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4005",
         "source": "list",
         "precision": "exact"
       }

@@ -23,27 +23,6 @@
       }
     },
     {
-      "id": "2461022332",
-      "name": "Σ.Φ ΣΚΛΙΒΑΝΟΣ ΠΑΝΑΓΙΩΤΗΣ-ΧΑΡΑΜΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ο.Ε",
-      "address": "ΦΙΛΊΠΠΟΥ Β 39",
-      "locality": "Κοζάνη",
-      "postcode": null,
-      "phone": "2461022332",
-      "groupId": "kozani",
-      "sources": [
-        "iteq-kozani"
-      ],
-      "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
-      "location": {
-        "lat": 40.3025761,
-        "lon": 21.7997195,
-        "ref": "https://kozani.efhmeries.gr/Home/Details/6579",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2461022452",
       "name": "ΚΩΤΟΥΛΑΣ ΔΗΜΗΤΡΙΟΣ",
       "address": "ΧΑΡΙΣΗ ΠΑΥΛΟΥ 20",
@@ -128,6 +107,27 @@
       }
     },
     {
+      "id": "2461028818",
+      "name": "ΡΕΒΒΑ ΑΝΤΙΓΟΝΗ",
+      "address": "ΠΑΥΛΟΥ ΧΑΡΙΣΗ 50",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461028818",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 40.2980838,
+        "lon": 21.7850839,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6018",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2461029800",
       "name": "ΓΚΙΝΟΣ ΑΘΑΝΑΣΙΟΣ",
       "address": "ΟΛΥΜΠΟΥ 21",
@@ -165,6 +165,27 @@
         "lat": 40.3002682,
         "lon": 21.7872736,
         "ref": "https://kozani.efhmeries.gr/Home/Details/6273",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461030230",
+      "name": "ΤΣΙΦΤΣΗΣ ΑΡΙΣΤΕΙΔΗΣ",
+      "address": "ΜΑΚΕΔΟΝΟΜΑΧΩΝ 23",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461030230",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 40.3013973,
+        "lon": 21.789992,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6019",
         "source": "list",
         "precision": "exact"
       }
@@ -380,6 +401,27 @@
       }
     },
     {
+      "id": "2461039938",
+      "name": "ΚΑΡΑΜΗΤΡΟΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΟΛΥΜΠΟΥ 5",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461039938",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 40.296106,
+        "lon": 21.792936,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΟΛΥΜΠΟΥ 5, Κοζάνη"
+      }
+    },
+    {
       "id": "2461040190",
       "name": "Σ.Φ ΠΑΠΑΔΟΠΟΥΛΟΥ ΑΙΚ-Π. ΚΑΙ ΠΑΠΑΔΟΠΟΥΛΟΥ Ν-ΒΑΣ",
       "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 50",
@@ -459,6 +501,48 @@
         "lat": 40.5119644,
         "lon": 21.6772422,
         "ref": "https://kozani.efhmeries.gr/Home/Details/6787",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463022802",
+      "name": "ΣΙΑΠΑΛΙΔΟΥ ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ 87 (Στον Άγιο Ιωάννη)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463022802",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 40.5101034,
+        "lon": 21.6731308,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6919",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463022853",
+      "name": "Σ.Φ. ΤΖΙΜΙΚΑ ΟΥΡΑΝΙΑ - ΤΖΙΜΙΚΑ ΙΩΑΝΝΑ",
+      "address": "ΚΑΠΕΤΑΝ ΦΟΥΦΑ 14 (Δίπλα στα Αστικά Λεωφορεία)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463022853",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 40.5141091,
+        "lon": 21.6762325,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6920",
         "source": "list",
         "precision": "exact"
       }

@@ -149,6 +149,27 @@
       }
     },
     {
+      "id": "2651027678",
+      "name": "ΚΑΪΛΗ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 24Β",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651027678",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 39.667476,
+        "lon": 20.8517295,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5012",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651028215",
       "name": "ΤΣΑΚΑ ΝΕΚΤΑΡΙΑ",
       "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 9 - ΚΑΡΔΑΜΗΤΣΙΑ",
@@ -165,6 +186,27 @@
         "lat": 39.6819068,
         "lon": 20.8220502,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5005",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651030729",
+      "name": "ΖΑΡΑΧΗΣ ΛΟΥΚΑΣ & ΖΑΡΑΧΗΣ ΣΟΦΟΚΛΗΣ-ΜΑΡΙΟΣ",
+      "address": "ΚΕΝΤΡΙΚΗ ΠΛΑΤΕΙΑ 2",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651030729",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 39.6650288,
+        "lon": 20.8537466,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5013",
         "source": "list",
         "precision": "exact"
       }

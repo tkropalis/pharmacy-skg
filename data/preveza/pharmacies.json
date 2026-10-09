@@ -107,6 +107,27 @@
       }
     },
     {
+      "id": "2682047876",
+      "name": "ΜΑΓΚΛΑΡΑΣ ΗΛΙΑΣ",
+      "address": "ΣΠΛΗΛΙΑΔΟΥ ΚΑΙ ΠΕΡΔΙΚΑΡΗ 2",
+      "locality": "Πρέβεζα",
+      "postcode": null,
+      "phone": "2682047876",
+      "groupId": "preveza",
+      "sources": [
+        "iteq-preveza"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 38.959111,
+        "lon": 20.754545,
+        "ref": "https://preveza.efhmeries.gr/Home/Details/1410",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2682060332",
       "name": "ΚΥΡΛΑΣ ΕΥΑΓΓΕΛΟΣ",
       "address": "Λ. ΙΩΑΝΝΙΝΩΝ 7",

@@ -149,6 +149,27 @@
       }
     },
     {
+      "id": "2695045044",
+      "name": "ΖΑΡΚΑΔΗΣ ΑΝΤΩΝΙΟΣ & ΒΑΣΙΛΕΙΟΣ Ο.Ε.",
+      "address": "ΦΩΣΚΟΛΟΥ 11",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695045044",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 37.7866886,
+        "lon": 20.8980003,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4089",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2695200270",
       "name": "IONIAN FARM IKE",
       "address": "ΓΑΪΤΑΝΙ (ΕΝΑΝΤΙ ΝΟΣΟΚΟΜΕΙΟΥ)",
