@@ -7,7 +7,7 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-10-09T10:44:44.733Z"
+        "uploadedAt": "2026-10-10T19:22:27.701Z"
       },
       "sections": [
         {
@@ -27,47 +27,6 @@
               "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΑΣ 6/ELEFTHERIAS SQUARE 6",
               "locality": "Χανιά",
               "phone": "2821008222"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
-          "hours": {
-            "from": "08:30",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2821056188",
-              "name": "ΚΕΛΑΪΔΗ ΟΛΓΑ/ΚΕLΑΙDΙ OLGA",
-              "address": "ΔΑΣΚΑΛΟΓΙΑΝΝΗ 43/DASKALOGIANNI 43",
-              "locality": "Χανιά",
-              "phone": "2821056188"
-            },
-            {
-              "pharmacyId": "2821093288",
-              "name": "ΚΝΙΘΑΚΗΣ ΓΕΩΡΓΙΟΣ/ΚΝΙΤΗΑΚΙS GEORGE",
-              "address": "ΑΝ.ΓΟΓΟΝΗ 51/AN. GOGONI 51",
-              "locality": "Μουρνιές",
-              "phone": "2821093288"
-            },
-            {
-              "pharmacyId": "2821069539",
-              "name": "ΜΟΝΟΤΡΑΚΗ ΓΕΩΡΓΙΑ/ΜΟΝΟΤRΑΚΙ GEORGIA",
-              "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ & ΚΟΡΑΗ ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΑΚΡΩΤΗΡΙΟΥ/ΑRΙSΤΟΤΕLΟUS & KORAI",
-              "locality": "Ακρωτήρι",
-              "phone": "2821069539"
-            },
-            {
-              "pharmacyId": "2821033466",
-              "name": "ΦΑΝΟΥΡΓΙΑΚΗΣ ΒΑΣΙΛΗΣ & ΣΙΑ ΟΕ/FΑΝΟURGΙΑΚΙS VASILIS",
-              "address": "Π. Ε. Ο. ΧΑΝΙΩΝ-ΚΙΣΣΑΜΟΥ (ΔΙΠΛΑ ΣΕ ΒΙΒΛΙΟΠΩΛΕΙΟ ΠΟΠΗΘΕΟΔΩΡΑΚΗ)/ΚΙSΑΜΟU-DΑRΑΤSΟ",
-              "locality": "Νέα Κυδωνία",
-              "phone": "2821033466"
             }
           ]
         },
@@ -109,6 +68,47 @@
               "address": "ΚΑΣΤΕΛΙ ΠΛΑΤΕΙΑ ΕΛ. ΒΕΝΙΖΕΛΟΥ (ΔΙΠΛΑ ΑΠΟ ΤΗΝ ΕΘΝ. ΤΡΑΠΕΖΑ)/ΚΑSΤΕLΙ PLATIA EL. VENIZELOU",
               "locality": "Δήμος Κισσάμου",
               "phone": "2822022451"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821056188",
+              "name": "ΚΕΛΑΪΔΗ ΟΛΓΑ/ΚΕLΑΙDΙ OLGA",
+              "address": "ΔΑΣΚΑΛΟΓΙΑΝΝΗ 43/DASKALOGIANNI 43",
+              "locality": "Χανιά",
+              "phone": "2821056188"
+            },
+            {
+              "pharmacyId": "2821093288",
+              "name": "ΚΝΙΘΑΚΗΣ ΓΕΩΡΓΙΟΣ/ΚΝΙΤΗΑΚΙS GEORGE",
+              "address": "ΑΝ.ΓΟΓΟΝΗ 51/AN. GOGONI 51",
+              "locality": "Μουρνιές",
+              "phone": "2821093288"
+            },
+            {
+              "pharmacyId": "2821069539",
+              "name": "ΜΟΝΟΤΡΑΚΗ ΓΕΩΡΓΙΑ/ΜΟΝΟΤRΑΚΙ GEORGIA",
+              "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ & ΚΟΡΑΗ ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΑΚΡΩΤΗΡΙΟΥ/ΑRΙSΤΟΤΕLΟUS & KORAI",
+              "locality": "Ακρωτήρι",
+              "phone": "2821069539"
+            },
+            {
+              "pharmacyId": "2821033466",
+              "name": "ΦΑΝΟΥΡΓΙΑΚΗΣ ΒΑΣΙΛΗΣ & ΣΙΑ ΟΕ/FΑΝΟURGΙΑΚΙS VASILIS",
+              "address": "Π. Ε. Ο. ΧΑΝΙΩΝ-ΚΙΣΣΑΜΟΥ (ΔΙΠΛΑ ΣΕ ΒΙΒΛΙΟΠΩΛΕΙΟ ΠΟΠΗΘΕΟΔΩΡΑΚΗ)/ΚΙSΑΜΟU-DΑRΑΤSΟ",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821033466"
             }
           ]
         }
