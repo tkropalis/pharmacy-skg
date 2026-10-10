@@ -139,7 +139,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 40.297577,
         "lon": 21.79156,
@@ -291,6 +291,27 @@
         "lat": 40.301655,
         "lon": 21.7857476,
         "ref": "https://kozani.efhmeries.gr/Home/Details/6469",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461034453",
+      "name": "ΜΟΥΣΤΑΚΑ ΘΕΟΔΩΡΑ",
+      "address": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 4",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461034453",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 40.2969014,
+        "lon": 21.785085,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/5919",
         "source": "list",
         "precision": "exact"
       }
@@ -475,7 +496,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 40.5135151,
         "lon": 21.6771104,
@@ -832,7 +853,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 40.5130375,
         "lon": 21.6781791,

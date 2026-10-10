@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-16",
+  "groups": [
+    {
+      "id": "karditsa",
+      "name": "Καρδίτσα",
+      "source": {
+        "url": "https://karditsa.efhmeries.gr/",
+        "uploadedAt": "2026-10-10T09:58:28.636Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441029411",
+              "name": "ΓΚΟΛΙΑ ΑΝΔΡΟΝΙΚΗ",
+              "address": "ΔΙΑΚΟΥ 15",
+              "locality": "Καρδίτσα",
+              "phone": "2441029411"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "9 ΒΡΑΔΥ- 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441028597",
+              "name": "ΑΡΚΟΜΑΝΗ ΑΜΑΛΙΑ & ΣΙΑ Ε.Ε.",
+              "address": "ΙΕΖΕΚΙΗΛ ΚΑΙ ΓΑΚΙΟΠΟΥΛΟΥ 1-3",
+              "locality": "Καρδίτσα",
+              "phone": "2441028597"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

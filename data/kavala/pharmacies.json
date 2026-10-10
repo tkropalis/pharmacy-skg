@@ -107,6 +107,27 @@
       }
     },
     {
+      "id": "2510243751",
+      "name": "ΚΡΥΟΝΕΡΙΤΟΥ ΖΩΗ",
+      "address": "7ΗΣ ΜΕΡΑΡΧΙΑΣ 58",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510243751",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 40.938351,
+        "lon": 24.395633,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4007",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510620027",
       "name": "ΚΟΚΚΙΝΑΚΗ ΕΛΕΝΗ",
       "address": "ΦΙΛΙΚΗΣ ΕΤΑΙΡΕΙΑΣ 4",
@@ -223,7 +244,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 40.930899,
         "lon": 24.383471,

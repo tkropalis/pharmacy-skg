@@ -265,11 +265,32 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 35.5068073,
         "lon": 23.9880296,
         "ref": "https://chania.efhmeries.gr/Home/Details/13469",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821047990",
+      "name": "ΠΟΙΜΕΝΙΔΟΥ ΑΓΓΕΛΙΚΗ/ΡΟΙΜΕΝΙDΟU ANGELA",
+      "address": "ΑΡΩΝΙ ΑΚΡΩΤΗΡΙΟΥ(ΑΠΕΝΑΝΤΙ ΑΠΟ ΒΕΝΖΙΝΑΔΙΚΟ BP)/ARONI-AKROTIRI",
+      "locality": "Ακρωτήρι",
+      "postcode": null,
+      "phone": "2821047990",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 35.5168849,
+        "lon": 24.1109224,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13511",
         "source": "list",
         "precision": "exact"
       }
@@ -800,6 +821,27 @@
       }
     },
     {
+      "id": "2821097560",
+      "name": "ΑΡΧΟΛΕΩΝ ΕΛΕΥΘΕΡΙΟΣ/ΑRCΗΟLΕΟΝ ELEFTHERIOS",
+      "address": "ΖΥΜΒΡΑΚΑΚΗΔΩΝ 21/ZYMVRAKAKIDON 21",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821097560",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 35.5115845,
+        "lon": 24.0176101,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13510",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2821097711",
       "name": "ΑΔΙΚΗΜΕΝΑΚΗ ΜΑΡΙΛΕΝΑ & ΣΙΑ/ΑDΙΚΙΜΕΝΑΚΙ MARILENA & SIA",
       "address": "ΚΥΔΩΝΙΑΣ 50/KIDONIAS 50",
@@ -816,6 +858,48 @@
         "lat": 35.5125937,
         "lon": 24.0185466,
         "ref": "https://chania.efhmeries.gr/Home/Details/13481",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821098982",
+      "name": "ΣΟΓΙΑΣ ΙΩΑΝΝΗΣ/SΟGΙΑS IOANNIS",
+      "address": "Σ. ΒΕΝΙΖΕΛΟΥ 46-ΜΟΥΡΝΙΕΣ-S. VENIZELOU 46-MOURNIES",
+      "locality": "Μουρνιές",
+      "postcode": null,
+      "phone": "2821098982",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 35.5011511,
+        "lon": 24.0214713,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13512",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821099672",
+      "name": "ΜΑΡΑΚΑΣ ΝΙΚΟΛΑΟΣ/ΜΑRΑΚΑS NIKOLAOS",
+      "address": "ΧΑΤΖ/ΧΑΛΗ ΓΙΑΝΝΑΡΗ 11/CHATZIMICHALI GIANNARI 11",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821099672",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 35.5137749,
+        "lon": 24.0189938,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13509",
         "source": "list",
         "precision": "exact"
       }
@@ -884,6 +968,27 @@
       }
     },
     {
+      "id": "2822022742",
+      "name": "Σ.Φ. ΦΑΡΑΓΓΙΤΑΚΗΣ Ι.ΦΑΡΑΓΓΙΤΑΚΗΣ ΕΜ./S.F. FARAGGITAKIS I. & FARAGGITAKIS E.",
+      "address": "ΟΜΟΓΕΝΩΝ ΑΜΕΡΙΚΗΣ 23,ΚΑΣΤΕΛΛΙ ΚΙΣΑΜΟΥ/ΟΜΟGΕΝΟΝ AMERIKIS 23",
+      "locality": "Δήμος Κισσάμου",
+      "postcode": null,
+      "phone": "2822022742",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 35.4940194,
+        "lon": 23.6540401,
+        "ref": "https://chania.efhmeries.gr/Home/Details/11820",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2822024080",
       "name": "Σ.Φ. ΚΩΝΣΤΑΝΤΙΝΟΣ ΡΕΒΕΛΑΚΗΣ- ΙΩΑΝΝΗΣ ΡΕΒΕΛΑΚΗΣ Ο.Ε.",
       "address": "ΟΜΟΓΕΝΩΝ ΑΜΕΡΙΚΗΣ 16/OMOGENON AMERIKIS 16",
@@ -916,7 +1021,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 35.2294606,
         "lon": 23.6819128,

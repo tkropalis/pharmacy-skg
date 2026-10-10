@@ -244,11 +244,32 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 39.365485,
         "lon": 21.9244162,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3747",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441029411",
+      "name": "ΓΚΟΛΙΑ ΑΝΔΡΟΝΙΚΗ",
+      "address": "ΔΙΑΚΟΥ 15",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441029411",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 39.3630985,
+        "lon": 21.9235097,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3762",
         "source": "list",
         "precision": "exact"
       }

@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-16",
+  "groups": [
+    {
+      "id": "chania",
+      "name": "Χανιά",
+      "source": {
+        "url": "https://chania.efhmeries.gr/",
+        "uploadedAt": "2026-10-10T10:00:51.105Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821099672",
+              "name": "ΜΑΡΑΚΑΣ ΝΙΚΟΛΑΟΣ/ΜΑRΑΚΑS NIKOLAOS",
+              "address": "ΧΑΤΖ/ΧΑΛΗ ΓΙΑΝΝΑΡΗ 11/CHATZIMICHALI GIANNARI 11",
+              "locality": "Χανιά",
+              "phone": "2821099672"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821099672",
+              "name": "ΜΑΡΑΚΑΣ ΝΙΚΟΛΑΟΣ/ΜΑRΑΚΑS NIKOLAOS",
+              "address": "ΧΑΤΖ/ΧΑΛΗ ΓΙΑΝΝΑΡΗ 11/CHATZIMICHALI GIANNARI 11",
+              "locality": "Χανιά",
+              "phone": "2821099672"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821097560",
+              "name": "ΑΡΧΟΛΕΩΝ ΕΛΕΥΘΕΡΙΟΣ/ΑRCΗΟLΕΟΝ ELEFTHERIOS",
+              "address": "ΖΥΜΒΡΑΚΑΚΗΔΩΝ 21/ZYMVRAKAKIDON 21",
+              "locality": "Χανιά",
+              "phone": "2821097560"
+            },
+            {
+              "pharmacyId": "2821045481",
+              "name": "ΜΠΑΚΙΡΤΖΟΓΛΟΥ ΒΑΣΙΛΗΣ/ΒΑΚΙRΤΖΟGLΟU VASILIS",
+              "address": "ΜΑΚΡΥΣ ΤΟΙΧΟΣ 363/MAKRYS TOICHOS 363",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821045481"
+            },
+            {
+              "pharmacyId": "2821047990",
+              "name": "ΠΟΙΜΕΝΙΔΟΥ ΑΓΓΕΛΙΚΗ/ΡΟΙΜΕΝΙDΟU ANGELA",
+              "address": "ΑΡΩΝΙ ΑΚΡΩΤΗΡΙΟΥ(ΑΠΕΝΑΝΤΙ ΑΠΟ ΒΕΝΖΙΝΑΔΙΚΟ BP)/ARONI-AKROTIRI",
+              "locality": "Ακρωτήρι",
+              "phone": "2821047990"
+            },
+            {
+              "pharmacyId": "2821098982",
+              "name": "ΣΟΓΙΑΣ ΙΩΑΝΝΗΣ/SΟGΙΑS IOANNIS",
+              "address": "Σ. ΒΕΝΙΖΕΛΟΥ 46-ΜΟΥΡΝΙΕΣ-S. VENIZELOU 46-MOURNIES",
+              "locality": "Μουρνιές",
+              "phone": "2821098982"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2823041160",
+              "name": "Σ.Φ. ΑΘΟΥΣΑΚΗ Ο.Ε./S.F. ATHOUSAKI O.E.",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "2823041160"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
+          "hours": {
+            "from": "08:30",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2822022742",
+              "name": "Σ.Φ. ΦΑΡΑΓΓΙΤΑΚΗΣ Ι.ΦΑΡΑΓΓΙΤΑΚΗΣ ΕΜ./S.F. FARAGGITAKIS I. & FARAGGITAKIS E.",
+              "address": "ΟΜΟΓΕΝΩΝ ΑΜΕΡΙΚΗΣ 23,ΚΑΣΤΕΛΛΙ ΚΙΣΑΜΟΥ/ΟΜΟGΕΝΟΝ AMERIKIS 23",
+              "locality": "Δήμος Κισσάμου",
+              "phone": "2822022742"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

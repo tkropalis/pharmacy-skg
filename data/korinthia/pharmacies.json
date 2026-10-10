@@ -34,11 +34,32 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.9377003,
         "lon": 22.9237308,
         "ref": "https://korinthia.efhmeries.gr/Home/Details/35392",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741022067",
+      "name": "ΜΑΜΑΛΟΥΚΑΣ Γ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΠΥΛΑΡΙΝΟΥ 49",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741022067",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 37.9395651,
+        "lon": 22.9337983,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35407",
         "source": "list",
         "precision": "exact"
       }
@@ -202,7 +223,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.9072675,
         "lon": 22.88078,
@@ -223,7 +244,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.8610007,
         "lon": 22.9972229,
@@ -286,7 +307,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.8964006,
         "lon": 22.9284049,
@@ -328,7 +349,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.819328,
         "lon": 22.9291721,
@@ -370,7 +391,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.9172924,
         "lon": 22.9993582,
@@ -412,7 +433,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.9578061,
         "lon": 22.8039689,
@@ -433,11 +454,32 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.9375856,
         "lon": 22.8008984,
         "ref": "https://korinthia.efhmeries.gr/Home/Details/38764",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741055222",
+      "name": "ΒΑΣΙΛΕΙΟΥ ΠΑΡΑΣΚΕΥΗ & ΣΙΑ ΕΕ",
+      "address": "ΒΡΑΧΑΤΙ",
+      "locality": "Βραχάτι",
+      "postcode": null,
+      "phone": "2741055222",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 37.9578061,
+        "lon": 22.8039689,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/41688",
         "source": "list",
         "precision": "exact"
       }
@@ -517,7 +559,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.9282447,
         "lon": 23.1433311,
@@ -664,7 +706,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.9346483,
         "lon": 22.8455989,
@@ -769,7 +811,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.9422082,
         "lon": 22.8251675,
@@ -790,7 +832,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.8116578,
         "lon": 22.869699,
@@ -900,6 +942,27 @@
         "lat": 38.011896,
         "lon": 22.7501929,
         "ref": "https://korinthia.efhmeries.gr/Home/Details/36573",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2742022744",
+      "name": "ΠΡΑΤΣΑ ΠΑΝΑΓΙΩΤΑ &ΣΙΑ Ο.Ε.",
+      "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 43",
+      "locality": "Κιάτο",
+      "postcode": null,
+      "phone": "2742022744",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 38.0103103,
+        "lon": 22.7525761,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/36578",
         "source": "list",
         "precision": "exact"
       }
@@ -1021,7 +1084,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.976028,
         "lon": 22.759504,
@@ -1126,7 +1189,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 38.078413,
         "lon": 22.6336694,
@@ -1173,6 +1236,27 @@
         "lat": 37.9738342,
         "lon": 22.9780519,
         "ref": "https://korinthia.efhmeries.gr/Home/Details/40223",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2744021666",
+      "name": "ΚΑΡΑΠΑΝΑΓΙΩΤΗ Β. ΜΑΡΙΑ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 48",
+      "locality": "Λουτράκι",
+      "postcode": null,
+      "phone": "2744021666",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 37.9718758,
+        "lon": 22.9777105,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/40228",
         "source": "list",
         "precision": "exact"
       }
@@ -1336,7 +1420,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.8207492,
         "lon": 22.6615569,

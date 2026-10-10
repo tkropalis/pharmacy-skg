@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-16",
+  "groups": [
+    {
+      "id": "drama",
+      "name": "Δράμα",
+      "source": {
+        "url": "https://drama.efhmeries.gr/",
+        "uploadedAt": "2026-10-10T09:57:08.976Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521028022",
+              "name": "ΟΥΖΟΥΝΗΣ ΚΛΕΑΝΘΗΣ",
+              "address": "19ης ΜΑΪΟΥ 106",
+              "locality": "Δράμα",
+              "phone": "2521028022"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521039495",
+              "name": "ΣΦ ΛΑΜΠΡΙΑΝΙΔΗΣ Α.- ΛΑΜΠΡΙΑΝΙΔΗΣ Θ. ΟΕ",
+              "address": "ΓΑΛΗΝΟΥ & ΦΙΛΙΠΠΟΥΠΟΛΕΩΣ 1",
+              "locality": "Δράμα",
+              "phone": "2521039495"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

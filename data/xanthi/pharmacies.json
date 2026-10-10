@@ -76,7 +76,7 @@
         "iteq-xanthi"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 41.1267622,
         "lon": 24.8816089,
@@ -165,6 +165,48 @@
         "lat": 41.1366284,
         "lon": 24.8882861,
         "ref": "https://xanthi.efhmeries.gr/Home/Details/3616",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541027062",
+      "name": "ΡΟΪΔΟΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "40 ΕΚΚΛΗΣΙΩΝ 5-7",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541027062",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 41.1363133,
+        "lon": 24.8851961,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3621",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541028272",
+      "name": "Σ.Φ. ΡΟΪΔΟΥ - ΘΕΟΔΩΡΑΚΑΤΟΥ",
+      "address": "ΚΕΝΤΡΙΚΗ ΠΛΑΤΕΙΑ",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541028272",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 41.1398831,
+        "lon": 24.8881043,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3622",
         "source": "list",
         "precision": "exact"
       }

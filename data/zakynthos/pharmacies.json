@@ -107,6 +107,27 @@
       }
     },
     {
+      "id": "2695042623",
+      "name": "ΒΙΤΣΟΣ ΠΕΤΡΟΣ",
+      "address": "ΡΩΜΑ ΑΛΕΞΑΝΔΡΟΥ 6",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695042623",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 37.7866904,
+        "lon": 20.8974752,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4106",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2695043818",
       "name": "PHARMACY CHARTAS PHARM IKE",
       "address": "ΜΟΥΤΖΑΝ ΜΑΡΤΙΝΕΓΚΟΥ 57 (ΠΡΩΗΝ ΤΑΒΟΥΛΑΡΗ)",

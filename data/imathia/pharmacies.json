@@ -97,7 +97,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 40.5210255,
         "lon": 22.2019496,
@@ -170,6 +170,27 @@
       }
     },
     {
+      "id": "2331026757",
+      "name": "ΠΑΜΠΟΥΚΙΔΟΥ Ι. ΕΛΕΝΗ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 45",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331026757",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 40.5276163,
+        "lon": 22.2027065,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6194",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2331026914",
       "name": "ΠΟΤΑΜΟΠΟΥΛΟΣ ΑΝΤΩΝΙΟΣ & ΣΙΑ ΕΕ",
       "address": "ΠΙΕΡΙΩΝ 44",
@@ -223,7 +244,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 40.5195004,
         "lon": 22.200004,
@@ -286,7 +307,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 40.5545487,
         "lon": 22.2539374,
@@ -632,6 +653,27 @@
       }
     },
     {
+      "id": "2332021062",
+      "name": "ΑΝΑΣΤΑΣΙΟΥ ΣΟΦΙΑ - ΓΙΑΝΝΑΚΟΒΙΤΗ ΦΑΙΗ",
+      "address": "ΕΘ. ΑΝΤΙΣΤΑΣΗΣ 10",
+      "locality": "Νάουσα",
+      "postcode": null,
+      "phone": "2332021062",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 40.6267951,
+        "lon": 22.0711161,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/5775",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2332022800",
       "name": "ΕΛΕΥΘΕΡΙΑΔΟΥ ΚΑΛΛΙΟΠΗ",
       "address": "ΚΑΜΠΊΤΗ 3",
@@ -942,6 +984,27 @@
         "lat": 40.6276873,
         "lon": 22.4359143,
         "ref": "https://imathia.efhmeries.gr/Home/Details/6825",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2333026701",
+      "name": "ΑΝΕΣΙΔΗΣ ΝΙΚ. ΡΑΦΑΗΛ",
+      "address": "ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 5",
+      "locality": "Αλεξάνδρεια",
+      "postcode": null,
+      "phone": "2333026701",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 40.6287193,
+        "lon": 22.4338333,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6828",
         "source": "list",
         "precision": "exact"
       }

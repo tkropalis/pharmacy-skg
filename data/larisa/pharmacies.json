@@ -55,7 +55,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 39.6342388,
         "lon": 22.4192138,
@@ -181,7 +181,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 39.6388006,
         "lon": 22.4176563,
@@ -569,6 +569,27 @@
       }
     },
     {
+      "id": "2410286636",
+      "name": "ΦΑΡΜΑΚΕΙΟ ΜΠΕΗ ΣΤΑΥΡΟΥ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΚΟΜΟΤΗΝΗΣ 24 & ΗΓΟΥΜΕΝΙΤΣΗΣ - ΧΑΡΑΥΓΗ (Πλησίον πλατείας)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410286636",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 39.6267501,
+        "lon": 22.4252116,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/24381",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410287253",
       "name": "ΓΑΤΟΥΔΗΣ ΑΝΔΡΕΑΣ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "ΑΛ. ΠΑΝΑΓΟΥΛΗ & ΠΑΠΑΚΥΡΙΑΖΗ ΓΩΝΙΑ (Πλατεία Ταχυδρομείου)",
@@ -648,6 +669,27 @@
         "lat": 39.63765,
         "lon": 22.40705,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23032",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410289764",
+      "name": "ΝΤΟΥΡΑΗ ΣΤΕΛΑ",
+      "address": "ΤΣΑΚΑΛΩΦ 6",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410289764",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 39.64242,
+        "lon": 22.42269,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23113",
         "source": "list",
         "precision": "exact"
       }
@@ -832,7 +874,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 39.63581,
         "lon": 22.41437,
@@ -942,6 +984,27 @@
         "lat": 39.6398515,
         "lon": 22.417722,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23088",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410539843",
+      "name": "ΔΟΜΑΚΗΣ ΗΛΙΑΣ",
+      "address": "ΑΛΜΥΡΟΥ & ΛΕΠΤΟΚΑΡΥΑΣ, ΑΜΠΕΛΟΚΗΠΟΙ (ΤΑΜΠΑΚΙΚΑ) (Πλατεία όπισθεν Β. Κ. ΚΑΖΑΝΑ)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410539843",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 39.6451009,
+        "lon": 22.4176833,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23112",
         "source": "list",
         "precision": "exact"
       }
@@ -1514,6 +1577,27 @@
       }
     },
     {
+      "id": "2410626916",
+      "name": "ΜΠΑΚΑΛΗ ΜΑΡΙΛΕΝΑ",
+      "address": "ΜΑΝΔΗΛΑΡΑ 14 (Νομαρχία, πίσω από το Γερμανό)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410626916",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 39.6348542,
+        "lon": 22.4148844,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23114",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410672566",
       "name": "ΔΑΣΤΑΜΑΝΗΣ ΔΗΜ. ΑΘΑΝΑΣΙΟΣ",
       "address": "ΑΝΘΙΜΟΥ ΓΑΖΗ 41 & ΑΓ. ΝΙΚΟΛΑΟΥ",
@@ -1546,7 +1630,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 39.563057,
         "lon": 22.464754,
@@ -1588,7 +1672,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 39.723169,
         "lon": 22.396167,
@@ -1672,7 +1756,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 39.6665575,
         "lon": 22.390773,
@@ -1882,7 +1966,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 39.294703,
         "lon": 22.386494,
@@ -1971,6 +2055,27 @@
         "lat": 39.737269,
         "lon": 22.287352,
         "ref": "https://larisa.efhmeries.gr/Home/Details/20145",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2492024160",
+      "name": "ΚΑΚΑΡΟΝΤΖΑΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΚΑΡΑΓΑΤΣΗ 3",
+      "locality": "Τύρναβος",
+      "postcode": null,
+      "phone": "2492024160",
+      "groupId": "tyrnavos",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 39.7393105,
+        "lon": 22.2761796,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/20152",
         "source": "list",
         "precision": "exact"
       }
@@ -2134,7 +2239,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 39.745096,
         "lon": 22.359568,
@@ -2459,6 +2564,27 @@
       }
     },
     {
+      "id": "2493024377",
+      "name": "ΦΩΤΙΟΥ Σ. ΚΥΡΙΑΚΟΣ",
+      "address": "ΑΝΑΠΑΥΣΕΩΣ (ΑΦΡΟΔΙΤΗΣ) 24",
+      "locality": "Ελασσόνα",
+      "postcode": null,
+      "phone": "2493024377",
+      "groupId": "elassona",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 39.895065,
+        "lon": 22.183764,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/18543",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2494022245",
       "name": "ΜΟΛΛΑ ΣΩΤΗΡΙΑ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "25ης ΜΑΡΤΙΟΥ 38",
@@ -2533,7 +2659,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 39.715785,
         "lon": 22.759203,

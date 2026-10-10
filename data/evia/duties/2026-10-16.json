@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-16",
+  "groups": [
+    {
+      "id": "evia",
+      "name": "Εύβοια",
+      "source": {
+        "url": "https://evia.efhmeries.gr/",
+        "uploadedAt": "2026-10-10T09:57:16.159Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221043724",
+              "name": "ΑΘΑΝΑΣΙΑΔΗ ΑΝΝΑ-ΝΑΤΑΛΙ",
+              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΕΩΣ 36",
+              "locality": "Αρτάκη",
+              "phone": "2221043724"
+            },
+            {
+              "pharmacyId": "2226053570",
+              "name": "ΜΙΧΑΗΛ ΧΡΙΣΤΙΝΗ",
+              "address": "ΚΟΡΦΙΑΤΗ ΑΘ. 15",
+              "locality": "Ιστιαία",
+              "phone": "2226053570"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2229060906",
+              "name": "Σ.Φ. ΚΕΧΡΗΣ - ΚΟΥΚΗ Ο.Ε.",
+              "address": "ΑΡΧΑΙΟΥ ΘΕΑΤΡΟΥ 76",
+              "locality": "Ερέτρια",
+              "phone": "2229060906"
+            },
+            {
+              "pharmacyId": "2224023855",
+              "name": "ΣΙΑΣΑΚΟΣ ΕΛΕΥΘΕΡΙΟΣ",
+              "address": "ΣΑΧΤΟΥΡΗ 124",
+              "locality": "Κάρυστος",
+              "phone": "2224023855"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221054954",
+              "name": "ΘΕΟΔΟΣΙΟΥ ΔΕΣΠΟΙΝΑ",
+              "address": "ΝΕΟΦΥΤΟΥ 27",
+              "locality": "Χαλκίδα",
+              "phone": "2221054954"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 17:30",
+          "hours": {
+            "from": "14:00",
+            "to": "17:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221041413",
+              "name": "ΜΠΡΟΚΑΛΑΚΗΣ ΙΩΣΗΦ",
+              "address": "5ο ΧΛΜ. ΧΑΛΚΙΔΑΣ-Ν. ΑΡΤΑΚΗΣ",
+              "locality": "Χαλκίδα",
+              "phone": "2221041413"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

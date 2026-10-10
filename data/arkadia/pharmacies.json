@@ -34,7 +34,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.5105775,
         "lon": 22.3726433,
@@ -391,7 +391,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.4040532,
         "lon": 22.7231501,
@@ -433,7 +433,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.1674292,
         "lon": 22.858743,
@@ -538,7 +538,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.4007063,
         "lon": 22.1355298,
@@ -580,7 +580,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.6845416,
         "lon": 22.2955302,
@@ -627,6 +627,27 @@
         "lat": 37.7322838,
         "lon": 21.9594427,
         "ref": "https://arkadia.efhmeries.gr/Home/Details/2749",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2797022848",
+      "name": "ΜΙΧΑΛΑΚΟΠΟΥΛΟΣ ΕΥΑΓΓΕΛΟΣ",
+      "address": "ΤΡΟΠΑΙΑ",
+      "locality": "Τρόπαια",
+      "postcode": null,
+      "phone": "2797022848",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 37.7322838,
+        "lon": 21.9594427,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/2758",
         "source": "list",
         "precision": "exact"
       }

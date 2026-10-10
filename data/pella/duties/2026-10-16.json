@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-16",
+  "groups": [
+    {
+      "id": "pella",
+      "name": "Πέλλα",
+      "source": {
+        "url": "https://pella.efhmeries.gr/",
+        "uploadedAt": "2026-10-10T10:00:01.343Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2381089588",
+              "name": "ΓΩΝΙΑΔΗ ΛΙΑΝΑ",
+              "address": "24ΗΣ ΙΟΥΛΙΟΥ 8-10",
+              "locality": "Σκύδρα",
+              "phone": "2381089588"
+            },
+            {
+              "pharmacyId": "2381023410",
+              "name": "Σ.Φ. ΑΓΓΕΛΟΥ ΜΑΡΙΑ-ΖΩΗ - ΑΓΓΕΛΟΥ ΑΓΓΕΛΟΣ",
+              "address": "ΕΓΝΑΤΙΑΣ 5",
+              "locality": "Έδεσσα",
+              "phone": "2381023410"
+            },
+            {
+              "pharmacyId": "2384022908",
+              "name": "Σ.Φ. ΚΟΤΙΔΟΥ ΕΥΑ - ΠΛΑΤΗΣ ΒΑΣΙΛΕΙΟΣ",
+              "address": "ΜΙΑΟΥΛΗ 21",
+              "locality": "Αριδαία",
+              "phone": "2384022908"
+            },
+            {
+              "pharmacyId": "2382082190",
+              "name": "ΦΟΥΝΤΟΥΚΙΔΗΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΒΕΛΙΚΑ ΡΩΜΑ 12",
+              "locality": "Γιαννιτσά",
+              "phone": "2382082190"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382061786",
+              "name": "ΛΑΠΠΑ ΑΓΓΕΛΑ",
+              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 8",
+              "locality": "Κρύα Βρύση",
+              "phone": "2382061786"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "2381023410",
+      "name": "Σ.Φ. ΑΓΓΕΛΟΥ ΜΑΡΙΑ-ΖΩΗ - ΑΓΓΕΛΟΥ ΑΓΓΕΛΟΣ",
+      "address": "ΕΓΝΑΤΙΑΣ 5",
+      "locality": "Έδεσσα",
+      "postcode": null,
+      "phone": "2381023410",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 40.8001902,
+        "lon": 22.0491762,
+        "ref": "https://pella.efhmeries.gr/Home/Details/6208",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2381023513",
       "name": "ΓΙΑΝΝΙΟΣ ΠΟΛΥΖΩΗΣ",
       "address": "ΔΗΜΟΚΡΑΤΙΑΣ 17",
@@ -328,7 +349,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 40.7662531,
         "lon": 22.1557555,
@@ -601,7 +622,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 40.6858286,
         "lon": 22.2938406,
@@ -669,6 +690,27 @@
         "lat": 40.6879479,
         "lon": 22.3024282,
         "ref": "https://pella.efhmeries.gr/Home/Details/5786",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2382082190",
+      "name": "ΦΟΥΝΤΟΥΚΙΔΗΣ ΚΩΝ/ΝΟΣ",
+      "address": "ΒΕΛΙΚΑ ΡΩΜΑ 12",
+      "locality": "Γιαννιτσά",
+      "postcode": null,
+      "phone": "2382082190",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 40.7922863,
+        "lon": 22.4128949,
+        "ref": "https://pella.efhmeries.gr/Home/Details/4733",
         "source": "list",
         "precision": "exact"
       }
@@ -795,6 +837,27 @@
         "lat": 40.97372,
         "lon": 22.0618702,
         "ref": "https://pella.efhmeries.gr/Home/Details/5541",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2384022908",
+      "name": "Σ.Φ. ΚΟΤΙΔΟΥ ΕΥΑ - ΠΛΑΤΗΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΜΙΑΟΥΛΗ 21",
+      "locality": "Αριδαία",
+      "postcode": null,
+      "phone": "2384022908",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 40.976456,
+        "lon": 22.0620605,
+        "ref": "https://pella.efhmeries.gr/Home/Details/5548",
         "source": "list",
         "precision": "exact"
       }

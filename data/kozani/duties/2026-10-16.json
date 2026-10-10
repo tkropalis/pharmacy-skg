@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-16",
+  "groups": [
+    {
+      "id": "kozani",
+      "name": "Κοζάνη",
+      "source": {
+        "url": "https://kozani.efhmeries.gr/",
+        "uploadedAt": "2026-10-10T09:58:35.925Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2461034453",
+              "name": "ΜΟΥΣΤΑΚΑ ΘΕΟΔΩΡΑ",
+              "address": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 4",
+              "locality": "Κοζάνη",
+              "phone": "2461034453"
+            },
+            {
+              "pharmacyId": "2463053545",
+              "name": "ΠΟΥΜΠΟΥΛΙΔΟΥ ΒΑΡΒΑΡΑ",
+              "address": "ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ 14 (Είσοδος PARKING Λαζαρίδη)",
+              "locality": "Πτολεμαΐδα",
+              "phone": "2463053545"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:30 ΠΡΩΙ - 2:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2461029800",
+              "name": "ΓΚΙΝΟΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "ΟΛΥΜΠΟΥ 21",
+              "locality": "Κοζάνη",
+              "phone": "2461029800"
+            },
+            {
+              "pharmacyId": "2463022288",
+              "name": "ΜΗΓΚΟΥ ΧΑΡΙΚΛΕΙΑ",
+              "address": "ΒΑΣΙΛΙΣΣΗΣ ΣΟΦΙΑΣ 29 (Απέναντι από τα υποδήματα Migato)",
+              "locality": "Πτολεμαΐδα",
+              "phone": "2463022288"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "8:30 ΠΡΩΙ - 2:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2461029800",
+              "name": "ΓΚΙΝΟΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "ΟΛΥΜΠΟΥ 21",
+              "locality": "Κοζάνη",
+              "phone": "2461029800"
+            },
+            {
+              "pharmacyId": "2463022288",
+              "name": "ΜΗΓΚΟΥ ΧΑΡΙΚΛΕΙΑ",
+              "address": "ΒΑΣΙΛΙΣΣΗΣ ΣΟΦΙΑΣ 29 (Απέναντι από τα υποδήματα Migato)",
+              "locality": "Πτολεμαΐδα",
+              "phone": "2463022288"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

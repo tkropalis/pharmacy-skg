@@ -7,26 +7,9 @@
       "name": "Σάμος",
       "source": {
         "url": "https://samos.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T11:01:35.111Z"
+        "uploadedAt": "2026-10-10T10:00:23.825Z"
       },
       "sections": [
-        {
-          "kind": "on-duty",
-          "heading": "ΕΦΗΜΕΡΕΥΕΙ*",
-          "hours": null,
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2273105100",
-              "name": "ΦΙΛΙΑΚΟΣ ΕΜΜΑΝΟΥΗΛ",
-              "address": "ΝΕΑΠΟΛΗ-ΠΕΥΚΑΚΙΑ",
-              "locality": "Άνω Βαθύ",
-              "phone": "2273105100"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "9 ΠΡΩΙ - 1:30 ΜΕΣΗΜΕΡΙ & 6 ΑΠΟΓΕΥΜΑ - 10:30 ΒΡΑΔΥ",
@@ -78,6 +61,23 @@
               "address": "Θ. ΣΟΦΟΥΛΗ 107",
               "locality": "Βαθύ",
               "phone": "2273023686"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ*",
+          "hours": null,
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273105100",
+              "name": "ΦΙΛΙΑΚΟΣ ΕΜΜΑΝΟΥΗΛ",
+              "address": "ΝΕΑΠΟΛΗ-ΠΕΥΚΑΚΙΑ",
+              "locality": "Άνω Βαθύ",
+              "phone": "2273105100"
             }
           ]
         }

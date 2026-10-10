@@ -64,6 +64,11 @@
     "lon": 23.9880296,
     "ref": "https://chania.efhmeries.gr/Home/Details/13469"
   },
+  "2821047990": {
+    "lat": 35.5168849,
+    "lon": 24.1109224,
+    "ref": "https://chania.efhmeries.gr/Home/Details/13511"
+  },
   "2821049292": {
     "lat": 35.5336344,
     "lon": 24.078449,
@@ -189,10 +194,25 @@
     "lon": 24.0227962,
     "ref": "https://chania.efhmeries.gr/Home/Details/13466"
   },
+  "2821097560": {
+    "lat": 35.5115845,
+    "lon": 24.0176101,
+    "ref": "https://chania.efhmeries.gr/Home/Details/13510"
+  },
   "2821097711": {
     "lat": 35.5125937,
     "lon": 24.0185466,
     "ref": "https://chania.efhmeries.gr/Home/Details/13481"
+  },
+  "2821098982": {
+    "lat": 35.5011511,
+    "lon": 24.0214713,
+    "ref": "https://chania.efhmeries.gr/Home/Details/13512"
+  },
+  "2821099672": {
+    "lat": 35.5137749,
+    "lon": 24.0189938,
+    "ref": "https://chania.efhmeries.gr/Home/Details/13509"
   },
   "2821601000": {
     "lat": 35.4991039,
@@ -208,6 +228,11 @@
     "lat": 35.4944211,
     "lon": 23.6539618,
     "ref": "https://chania.efhmeries.gr/Home/Details/11813"
+  },
+  "2822022742": {
+    "lat": 35.4940194,
+    "lon": 23.6540401,
+    "ref": "https://chania.efhmeries.gr/Home/Details/11820"
   },
   "2822024080": {
     "lat": 35.4942057,

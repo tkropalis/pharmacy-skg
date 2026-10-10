@@ -485,6 +485,27 @@
       }
     },
     {
+      "id": "2651068660",
+      "name": "ΠΑΠΠΑ ΝΑΤΑΛΙΑ",
+      "address": "ΧΡ. ΠΑΤΣΗ 7 & ΣΠ. ΛΑΜΠΡΟΥ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651068660",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 39.6634769,
+        "lon": 20.8477191,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5014",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651070146",
       "name": "ΝΙΚΑΣ ΠΕΡΙΚΛΗΣ",
       "address": "ΚΟΡΑΗ 13",
@@ -501,6 +522,27 @@
         "lat": 39.6690685,
         "lon": 20.8514723,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/4991",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651070704",
+      "name": "ΠΑΡΟΥΤΙΑΔΗΣ ΚΥΡΙΑΚΟΣ",
+      "address": "Σ. ΛΑΜΠΡΟΥ 38",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651070704",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 39.6661017,
+        "lon": 20.8456713,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5015",
         "source": "list",
         "precision": "exact"
       }

@@ -191,6 +191,27 @@
       }
     },
     {
+      "id": "2551035897",
+      "name": "ΙΩΑΝΝΙΔΟΥ ΣΤΑΥΡΟΥΛΑ",
+      "address": "Λ. Δημοκρατίας 190",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551035897",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 40.8467201,
+        "lon": 25.8787177,
+        "ref": "https://evros.efhmeries.gr/Home/Details/3994",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551038473",
       "name": "ΤΣΩΝΗΣ ΑΘΑΝΑΣΙΟΣ",
       "address": "Μαζαράκη 11 (μεταξύ Αγ.Νικολάου & ΤΑΞΙ)",
@@ -454,7 +475,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 41.5029464,
         "lon": 26.5314121,
@@ -601,7 +622,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 41.3502494,
         "lon": 26.4959924,
@@ -706,7 +727,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 41.1904766,
         "lon": 26.3025729,
@@ -769,7 +790,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 41.025262,
         "lon": 26.2577482,
@@ -816,6 +837,27 @@
         "lat": 40.8932822,
         "lon": 26.1698188,
         "ref": "https://evros.efhmeries.gr/Home/Details/6318",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2555022744",
+      "name": "ΧΑΤΖΗ ΔΗΜΗΤΡΑ",
+      "address": "ΤΡΑΙΑΝΟΥΠΟΛΕΩΣ 3",
+      "locality": "Φέρες",
+      "postcode": null,
+      "phone": "2555022744",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 40.8896855,
+        "lon": 26.1651715,
+        "ref": "https://evros.efhmeries.gr/Home/Details/6324",
         "source": "list",
         "precision": "exact"
       }

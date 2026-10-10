@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
+      "id": "2681021151",
+      "name": "ΝΤΑΣΗ ΛΑΜΠΡΙΝΗ",
+      "address": "ΣΤΡΑΤΗΓΟΥ ΚΑΤΣΙΜΗΤΡΟΥ 40",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681021151",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 39.151753,
+        "lon": 20.978833,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2425",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681027317",
       "name": "ΣΙΝΤΕΛΕ ΚΩΝΣΤΑΝΤΙΝΑ",
       "address": "ΠΥΡΡΟΥ 27",
@@ -312,6 +333,27 @@
         "lat": 39.070637,
         "lon": 21.018409,
         "ref": "https://arta.efhmeries.gr/Home/Details/1971",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681087275",
+      "name": "ΠΑΠΑΝΙΚΟΛΑΟΥ ΚΩΝ/ΝΟΣ",
+      "address": "ΝΕΟΧΩΡΙ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681087275",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 39.070637,
+        "lon": 21.018409,
+        "ref": "https://arta.efhmeries.gr/Home/Details/1973",
         "source": "list",
         "precision": "exact"
       }

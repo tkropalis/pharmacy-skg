@@ -7,7 +7,7 @@
       "name": "Κορινθία",
       "source": {
         "url": "https://korinthia.efhmeries.gr/",
-        "uploadedAt": "2026-10-09T10:42:43.239Z"
+        "uploadedAt": "2026-10-10T09:58:43.037Z"
       },
       "sections": [
         {
@@ -256,6 +256,26 @@
           ]
         },
         {
+          "kind": "day",
+          "heading": "09:00 ΕΩΣ 13:00",
+          "hours": {
+            "from": "09:00",
+            "to": "13:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741031655",
+              "name": "Σ.Φ.ΣΥΓΓΟΥΝΑ Α.-Α.&ΣΥΓΓΟΥΝΑ Χ. Ο.Ε.",
+              "address": "ΑΡΧΑΙΑ ΚΟΡΙΝΘΟΣ (4Ομ ΑΠΟ ΤΟ ΚΕΝΤΡΟ)",
+              "locality": "Αρχαία Κόρινθος",
+              "phone": "2741031655"
+            }
+          ]
+        },
+        {
           "kind": "overnight",
           "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
           "hours": {
@@ -273,26 +293,6 @@
               "address": "ΒΕΛΟ",
               "locality": "Βέλο",
               "phone": "2742034488"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "09:00 ΕΩΣ 13:00",
-          "hours": {
-            "from": "09:00",
-            "to": "13:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741031655",
-              "name": "Σ.Φ.ΣΥΓΓΟΥΝΑ Α.-Α.&ΣΥΓΓΟΥΝΑ Χ. Ο.Ε.",
-              "address": "ΑΡΧΑΙΑ ΚΟΡΙΝΘΟΣ (4Ομ ΑΠΟ ΤΟ ΚΕΝΤΡΟ)",
-              "locality": "Αρχαία Κόρινθος",
-              "phone": "2741031655"
             }
           ]
         }

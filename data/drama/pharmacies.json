@@ -191,6 +191,27 @@
       }
     },
     {
+      "id": "2521028022",
+      "name": "ΟΥΖΟΥΝΗΣ ΚΛΕΑΝΘΗΣ",
+      "address": "19ης ΜΑΪΟΥ 106",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521028022",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 41.152173,
+        "lon": 24.145033,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3152",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521030377",
       "name": "ΜΑΛΑΜΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
       "address": "ΒΕΝΙΖΕΛΟΥ 162",
@@ -412,7 +433,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 41.149427,
         "lon": 24.151744,

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-16",
+  "groups": [
+    {
+      "id": "arta",
+      "name": "Άρτα",
+      "source": {
+        "url": "https://arta.efhmeries.gr/",
+        "uploadedAt": "2026-10-10T09:56:49.563Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2681021151",
+              "name": "ΝΤΑΣΗ ΛΑΜΠΡΙΝΗ",
+              "address": "ΣΤΡΑΤΗΓΟΥ ΚΑΤΣΙΜΗΤΡΟΥ 40",
+              "locality": "Άρτα",
+              "phone": "2681021151"
+            },
+            {
+              "pharmacyId": "2681087275",
+              "name": "ΠΑΠΑΝΙΚΟΛΑΟΥ ΚΩΝ/ΝΟΣ",
+              "address": "ΝΕΟΧΩΡΙ",
+              "locality": "Άρτα",
+              "phone": "2681087275"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

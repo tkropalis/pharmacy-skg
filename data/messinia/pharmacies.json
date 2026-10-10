@@ -181,7 +181,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.0971332,
         "lon": 22.0437407,
@@ -223,7 +223,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.0999089,
         "lon": 22.0054464,
@@ -244,7 +244,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 36.9650409,
         "lon": 22.1416971,
@@ -354,6 +354,27 @@
         "lat": 36.8504417,
         "lon": 22.2618286,
         "ref": "https://messinia.efhmeries.gr/Home/Details/2755",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721082587",
+      "name": "ΠΑΠΑΝΙΚΟΛΑΟΥ ΠΕΡΙΚΛΗΣ",
+      "address": "ΝΕΔΟΝΤΟΣ 71",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721082587",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 37.041254,
+        "lon": 22.111324,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3471",
         "source": "list",
         "precision": "exact"
       }
@@ -590,6 +611,27 @@
       }
     },
     {
+      "id": "2722024445",
+      "name": "ΦΑΝΟΥ ΣΤΑΥΡΟΥΛΑ & ΣΙΑ Ο.Ε.",
+      "address": "Λ. ΠΑΥΛΟΥ ΠΤΩΧΟΥ 30",
+      "locality": "Μεσσήνη",
+      "postcode": null,
+      "phone": "2722024445",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 37.0462843,
+        "lon": 22.0073834,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3085",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2722024932",
       "name": "Σ.Φ. ΡΟΥΣΣΗΣ ΣΩΤ. - ΡΟΥΣΣΗΣ ΒΑΣ. Ο.Ε.",
       "address": "ΣΤΑΔΙΟΥ 4",
@@ -664,7 +706,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 36.9134964,
         "lon": 21.6967334,
@@ -690,6 +732,27 @@
         "lat": 37.2259969,
         "lon": 21.9698792,
         "ref": "https://messinia.efhmeries.gr/Home/Details/2860",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2724022446",
+      "name": "ΛΥΚΟΓΙΑΝΝΗΣ ΠΕΡΙΚΛΗΣ ΟΕ",
+      "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ",
+      "locality": "Μελιγαλάς",
+      "postcode": null,
+      "phone": "2724022446",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 37.2235364,
+        "lon": 21.9678339,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2869",
         "source": "list",
         "precision": "exact"
       }
@@ -727,7 +790,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 36.8483201,
         "lon": 21.9227955,
@@ -790,7 +853,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 36.8084878,
         "lon": 21.9149286,
@@ -816,6 +879,27 @@
         "lat": 37.2506516,
         "lon": 21.6692804,
         "ref": "https://messinia.efhmeries.gr/Home/Details/2644",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2761022751",
+      "name": "ΑΝΑΓΝΩΣΤΟΠΟΥΛΟΥ ΜΑΓΔΑΛΗΝΗ",
+      "address": "ΝΟΣΟΚΟΜΕΙΟΥ 4",
+      "locality": "Κυπαρισσία",
+      "postcode": null,
+      "phone": "2761022751",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 37.2499571,
+        "lon": 21.6668878,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2653",
         "source": "list",
         "precision": "exact"
       }
@@ -900,6 +984,27 @@
         "lat": 37.1556307,
         "lon": 21.5872017,
         "ref": "https://messinia.efhmeries.gr/Home/Details/3293",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2761032940",
+      "name": "ΧΑΪΔΕΜΕΝΟΥ ΑΘΗΝΑ",
+      "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ",
+      "locality": "Φιλιατρά",
+      "postcode": null,
+      "phone": "2761032940",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 37.1576618,
+        "lon": 21.5869557,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3301",
         "source": "list",
         "precision": "exact"
       }
@@ -1000,7 +1105,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.065972,
         "lon": 21.6369701,
@@ -1105,7 +1210,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.0518288,
         "lon": 21.7159923,
@@ -1168,7 +1273,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.2887111,
         "lon": 21.8181746,
@@ -1189,7 +1294,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.2882175,
         "lon": 21.8557238,

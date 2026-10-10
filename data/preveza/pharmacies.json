@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "2682025576",
+      "name": "ΜΠΟΣΙΩΛΗΣ ΠΑΥΛΟΣ",
+      "address": "Κ. ΚΑΡΥΩΤΑΚΗ 5",
+      "locality": "Πρέβεζα",
+      "postcode": null,
+      "phone": "2682025576",
+      "groupId": "preveza",
+      "sources": [
+        "iteq-preveza"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 38.95479,
+        "lon": 20.75089,
+        "ref": "https://preveza.efhmeries.gr/Home/Details/1411",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2682028009",
       "name": "ΝΤΑΟΥΛΑ ΛΑΜΠΡΙΝΗ",
       "address": "ΠΡΟΜΗΘΕΩΣ 26",

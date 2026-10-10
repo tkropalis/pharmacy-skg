@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-16",
+  "groups": [
+    {
+      "id": "tinos",
+      "name": "Τήνος",
+      "source": {
+        "url": "https://cyclades.efhmeries.gr/",
+        "uploadedAt": "2026-10-10T10:00:30.013Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2283022213",
+              "name": "ΑΠΕΡΓΗΣ ΕΜΜΑΝΟΥΗΛ / APERGIS EMMANOUIL",
+              "address": "ΤΡΙΩΝ ΙΕΡΑΡΧΩΝ 2 / TRION IERARXON 2",
+              "locality": "Τήνος",
+              "phone": "2283022213"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

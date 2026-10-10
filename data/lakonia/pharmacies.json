@@ -13,7 +13,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.0723237,
         "lon": 22.4268528,
@@ -181,7 +181,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 36.9593051,
         "lon": 22.4522074,
@@ -223,7 +223,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.1706904,
         "lon": 22.3044898,
@@ -275,6 +275,27 @@
       }
     },
     {
+      "id": "2732022331",
+      "name": "ΠΑΝΟΥΤΣΟΠΟΥΛΟΣ ΓΡΗΓΟΡΙΟΣ",
+      "address": "ΜΟΛΑΟΙ",
+      "locality": "Μολάοι",
+      "postcode": null,
+      "phone": "2732022331",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 36.8034443,
+        "lon": 22.8514313,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/15185",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2732023396",
       "name": "ΑΓΓΕΛΙΚΗ ΜΙΧΕΛΑΚΟΥ – ΛΑΓΓΗ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "ΜΟΛΑΟΙ",
@@ -291,6 +312,27 @@
         "lat": 36.8028393,
         "lon": 22.8517181,
         "ref": "https://lakonia.efhmeries.gr/Home/Details/15178",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2732082370",
+      "name": "ΠΑΝΑΓΙΩΤΗΣ ΒΛΑΧΑΚΗΣ ΚΑΙ ΣΙΑ Ε.Ε.",
+      "address": "ΑΣΩΠΟΣ",
+      "locality": "ΑΣΩΠΟΣ",
+      "postcode": null,
+      "phone": "2732082370",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 36.730498,
+        "lon": 22.8542705,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/14090",
         "source": "list",
         "precision": "exact"
       }
@@ -412,7 +454,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 36.7591707,
         "lon": 22.5658321,
@@ -454,7 +496,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 36.666078,
         "lon": 22.3806638,
@@ -496,7 +538,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 36.5123972,
         "lon": 23.0596787,
@@ -543,6 +585,27 @@
         "lat": 36.8513616,
         "lon": 22.6670941,
         "ref": "https://lakonia.efhmeries.gr/Home/Details/13716",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2735023344",
+      "name": "ΠΑΝΑΓΑΚΟΥ ΜΑΡΙΑ",
+      "address": "ΣΚΑΛΑ",
+      "locality": "Σκάλα",
+      "postcode": null,
+      "phone": "2735023344",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 36.8511423,
+        "lon": 22.6663306,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/13725",
         "source": "list",
         "precision": "exact"
       }
@@ -643,7 +706,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 36.8617272,
         "lon": 22.7074294,

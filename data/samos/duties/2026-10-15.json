@@ -7,9 +7,49 @@
       "name": "Σάμος",
       "source": {
         "url": "https://samos.efhmeries.gr/",
-        "uploadedAt": "2026-10-09T10:44:19.062Z"
+        "uploadedAt": "2026-10-10T10:00:23.825Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "9 ΠΡΩΙ - 1:30 ΜΕΣΗΜΕΡΙ & 6 ΑΠΟΓΕΥΜΑ - 10:30 ΒΡΑΔΥ",
+          "hours": {
+            "from": "09:00",
+            "to": "13:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273030700",
+              "name": "ΚΕΛΕΣΙΔΟΥ ΜΑΡΙΑ",
+              "address": "Ι. ΖΑΙΜΗ",
+              "locality": "Καρλόβασι",
+              "phone": "2273030700"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "9 ΠΡΩΙ - 1:30 ΜΕΣΗΜΕΡΙ & 6 ΑΠΟΓΕΥΜΑ - 10:30 ΒΡΑΔΥ",
+          "hours": {
+            "from": "18:00",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273030700",
+              "name": "ΚΕΛΕΣΙΔΟΥ ΜΑΡΙΑ",
+              "address": "Ι. ΖΑΙΜΗ",
+              "locality": "Καρλόβασι",
+              "phone": "2273030700"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 6 ΑΠΟΓΕΥΜΑ - 10:30 ΒΡΑΔΥ",
@@ -64,46 +104,6 @@
               "address": "ΠΑΝΑΓΙΑ",
               "locality": "Άνω Βαθύ",
               "phone": "2273023929"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "9 ΠΡΩΙ - 1:30 ΜΕΣΗΜΕΡΙ & 6 ΑΠΟΓΕΥΜΑ - 10:30 ΒΡΑΔΥ",
-          "hours": {
-            "from": "09:00",
-            "to": "13:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2273030700",
-              "name": "ΚΕΛΕΣΙΔΟΥ ΜΑΡΙΑ",
-              "address": "Ι. ΖΑΙΜΗ",
-              "locality": "Καρλόβασι",
-              "phone": "2273030700"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "9 ΠΡΩΙ - 1:30 ΜΕΣΗΜΕΡΙ & 6 ΑΠΟΓΕΥΜΑ - 10:30 ΒΡΑΔΥ",
-          "hours": {
-            "from": "18:00",
-            "to": "22:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2273030700",
-              "name": "ΚΕΛΕΣΙΔΟΥ ΜΑΡΙΑ",
-              "address": "Ι. ΖΑΙΜΗ",
-              "locality": "Καρλόβασι",
-              "phone": "2273030700"
             }
           ]
         }

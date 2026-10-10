@@ -64,10 +64,20 @@
     "lon": 22.8510821,
     "ref": "https://lakonia.efhmeries.gr/Home/Details/15176"
   },
+  "2732022331": {
+    "lat": 36.8034443,
+    "lon": 22.8514313,
+    "ref": "https://lakonia.efhmeries.gr/Home/Details/15185"
+  },
   "2732023396": {
     "lat": 36.8028393,
     "lon": 22.8517181,
     "ref": "https://lakonia.efhmeries.gr/Home/Details/15178"
+  },
+  "2732082370": {
+    "lat": 36.730498,
+    "lon": 22.8542705,
+    "ref": "https://lakonia.efhmeries.gr/Home/Details/14090"
   },
   "2732083333": {
     "lat": 36.7153949,
@@ -128,6 +138,11 @@
     "lat": 36.8513616,
     "lon": 22.6670941,
     "ref": "https://lakonia.efhmeries.gr/Home/Details/13716"
+  },
+  "2735023344": {
+    "lat": 36.8511423,
+    "lon": 22.6663306,
+    "ref": "https://lakonia.efhmeries.gr/Home/Details/13725"
   },
   "2735023370": {
     "lat": 36.8508627,
