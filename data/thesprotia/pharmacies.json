@@ -55,11 +55,32 @@
         "iteq-thesprotia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 39.5021847,
         "lon": 20.264618,
         "ref": "https://thesprotia.efhmeries.gr/Home/Details/392",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2665023220",
+      "name": "ΚΟΥΡΗ ΘΕΟΔΩΡΑ",
+      "address": "8ΗΣ ΔΕΚΕΜΒΡΙΟΥ 3",
+      "locality": "Ηγουμενίτσα",
+      "postcode": null,
+      "phone": "2665023220",
+      "groupId": "thesprotia",
+      "sources": [
+        "iteq-thesprotia"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 39.5017664,
+        "lon": 20.2647081,
+        "ref": "https://thesprotia.efhmeries.gr/Home/Details/397",
         "source": "list",
         "precision": "exact"
       }
@@ -123,6 +144,27 @@
         "lat": 39.5034366,
         "lon": 20.2632719,
         "ref": "https://thesprotia.efhmeries.gr/Home/Details/384",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2665025204",
+      "name": "ΚΟΤΙΝΑ ΧΡΙΣΤΙΝΑ",
+      "address": "ΚΥΠΡΟΥ 69",
+      "locality": "Ηγουμενίτσα",
+      "postcode": null,
+      "phone": "2665025204",
+      "groupId": "thesprotia",
+      "sources": [
+        "iteq-thesprotia"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 39.5078693,
+        "lon": 20.263187,
+        "ref": "https://thesprotia.efhmeries.gr/Home/Details/396",
         "source": "list",
         "precision": "exact"
       }

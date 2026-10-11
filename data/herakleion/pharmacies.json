@@ -34,7 +34,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 35.3290456,
         "lon": 25.1303678,
@@ -569,6 +569,27 @@
       }
     },
     {
+      "id": "2810242088",
+      "name": "Σ.Φ. ΤΑΒΛΑΔΩΡΑΚΗΣ Ι.-ΤΑΒΛΑΔΩΡΑΚΗΣ Ε.",
+      "address": "ΚΟΝΙΤΣΗΣ 32 I.N. ΑΓΙΟΥ ΓΕΩΡΓΙΟΥ ΠΟΡΟΥ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810242088",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 35.3366806,
+        "lon": 25.1475977,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57917",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810243795",
       "name": "ΠΑΡΑΣΥΡΗΣ Γ. &ΣΙΑ Ο.Ε. ΥΠΟΚΑΤΑΣΤΗΜΑ",
       "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΑΣ 3 ΞΕΝΟΔΟΧΕΙΟ ΑΣΤΟΡΙΑ",
@@ -585,6 +606,27 @@
         "lat": 35.3384601,
         "lon": 25.1364094,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57834",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810243796",
+      "name": "ΠΑΡΑΣΥΡΗΣ Γ. &ΣΙΑ Ο.Ε.",
+      "address": "Λ. ΚΑΛΟΚΑΙΡΙΝΟΥ 259",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810243796",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 35.3374094,
+        "lon": 25.125267,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57913",
         "source": "list",
         "precision": "exact"
       }
@@ -690,6 +732,27 @@
         "lat": 35.323211,
         "lon": 25.1068237,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57846",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810255011",
+      "name": "ΒΑΡΔΑΚΗ ΜΑΡΙΑ & ΣΙΑ Ε.Ε.",
+      "address": "ΜΙΝΩΟΣ 81-83, ΜΕΤΑΞΥ ΟΔΟΥ ΘΕΡΙΣΟΥ & INTERCLINIC",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810255011",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 35.3336207,
+        "lon": 25.1210804,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57915",
         "source": "list",
         "precision": "exact"
       }
@@ -1115,6 +1178,27 @@
       }
     },
     {
+      "id": "2810315051",
+      "name": "Σ.Φ. ΤΣΙΚΑΝΔΗΛΑΚΗ ΣΤΕΦΑΝΙΑ - ΤΣΙΚΑΝΔΗΛΑΚΗΣ ΙΩΑΝΝΗΣ Ο.Ε.",
+      "address": "ΜΕΝ.ΠΑΡΛΑΜΑ 34-ΓΙΟΦΥΡΟ ΓΙΑ ΡΕΘΥΜΝΟ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810315051",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 35.3244259,
+        "lon": 25.1037355,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57916",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810315655",
       "name": "Σ.Φ. ΣΦΑΚΙΑΝΑΚΗ ΕΙΡΗΝΗ - ΜΑΥΡΟΥΔΗΣ ΕΥΑΓΓΕΛΟΣ Ο.Ε.",
       "address": "ΕΟΚ 28 ΜΑΣΤΑΜΠΑΣ (ΔΙΠΛΑ ΣΤΟ SUPER MARKET BAZAAR)",
@@ -1283,6 +1367,27 @@
       }
     },
     {
+      "id": "2810320177",
+      "name": "ΜΠΑΛΟΘΙΑΡΗ ΕΛΕΝΗ",
+      "address": "ΛΕΩΦ. ΚΝΩΣΣΟΥ 245 ΕΝΑΝΤΙ ΣΑΒΟΪΔΑΚΗ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810320177",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 35.310896,
+        "lon": 25.1499714,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57918",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810320552",
       "name": "ΚΟΥΒΙΔΗ ΤΗΛ. ΕΥΑΓΓΕΛΙΑ",
       "address": "ΠΑΠΑΝΑΣΤΑΣΙΟΥ 178 ΜΕΣΑΜΠΕΛΙΕΣ",
@@ -1446,6 +1551,27 @@
         "lat": 35.3305104,
         "lon": 25.207893,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/59385",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810339088",
+      "name": "ΔΑΜΙΑΝΑΚΗΣ ΣΤΑΥΡΟΣ",
+      "address": "ΟΔΟΣ 1866 Αρ.106",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810339088",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 35.3368873,
+        "lon": 25.1333613,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57919",
         "source": "list",
         "precision": "exact"
       }
@@ -1724,6 +1850,27 @@
       }
     },
     {
+      "id": "2810761250",
+      "name": "ΠΑΤΙΤΑΚΗΣ ΑΝΤΩΝΙΟΣ & ΣΙΑ Ε.Ε.",
+      "address": "ΓΟΥΡΝΕΣ ΠΕΔΙΑΔΟΣ ΗΡΑΚΛΕΙΟΥ",
+      "locality": "Καρτερός, Επισκοπή, Βαθειά, Κοκκίνη Χάνι, Γούρνες, Γούβες",
+      "postcode": null,
+      "phone": "2810761250",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 35.3251619,
+        "lon": 25.2774059,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/59409",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810761785",
       "name": "Σ.Φ. ΧΑΤΖΗΔΑΚΗΣ Χ. - ΧΑΤΖΗΔΑΚΗΣ-ΚΟΥΤΡΟΥΛΗΣ Γ. Ο.Ε.",
       "address": "ΚΟΚΚΙΝΙ ΧΑΝΙ Τ.Θ. 80016",
@@ -1861,7 +2008,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 35.3270459,
         "lon": 25.1284259,
@@ -1997,6 +2144,27 @@
       }
     },
     {
+      "id": "2891023310",
+      "name": "ΠΑΠΑΔΟΓΙΩΡΓΑΚΗ ΜΑΡΙΑ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 220",
+      "locality": "Αρκαλοχώρι",
+      "postcode": null,
+      "phone": "2891023310",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 35.1426915,
+        "lon": 25.2648432,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/54057",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2892022172",
       "name": "ΒΟΛΩΝΑΚΗΣ ΑΧΙΛΛΕΑΣ",
       "address": "25ΗΣ ΜΑΡΤΙΟΥ 264",
@@ -2092,7 +2260,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 35.0505572,
         "lon": 24.8759916,
@@ -2249,6 +2417,27 @@
       }
     },
     {
+      "id": "2892042876",
+      "name": "ΧΑΡΙΤΑΚΗ ΧΡΥΣΗ",
+      "address": "ΠΛΑΤΕΙΑ ΣΤΡΑΤΑ, ΚΑΜΗΛΑΡΙ",
+      "locality": "ΚΑΜΗΛΑΡΙ",
+      "postcode": null,
+      "phone": "2892042876",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 35.0347809,
+        "lon": 24.7855503,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/60360",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2892051215",
       "name": "ΧΡΙΣΤΟΔΟΥΛΑΚΗΣ ΑΛΕΞΑΝΔΡΟΣ",
       "address": "ΤΥΜΠΑΚΙ",
@@ -2281,7 +2470,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 35.071895,
         "lon": 24.7683537,
@@ -2386,7 +2575,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 35.3179965,
         "lon": 25.3895652,
@@ -2491,7 +2680,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 35.331734,
         "lon": 25.3452693,
@@ -2554,7 +2743,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 35.2837755,
         "lon": 25.4631057,
@@ -2680,7 +2869,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 35.2865171,
         "lon": 25.4614927,
@@ -2743,11 +2932,32 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 35.2632695,
         "lon": 25.4226697,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/59815",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "6948649753",
+      "name": "ΤΣΑΠΑΚΗΣ ΝΕΚΤΑΡΙΟΣ",
+      "address": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 21",
+      "locality": "Αμμουδάρα",
+      "postcode": null,
+      "phone": "6948649753",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 35.3344331,
+        "lon": 25.0937293,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/54500",
         "source": "list",
         "precision": "exact"
       }

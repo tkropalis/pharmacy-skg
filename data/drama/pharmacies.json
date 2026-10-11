@@ -65,6 +65,48 @@
       }
     },
     {
+      "id": "2521021009",
+      "name": "ΜΟΥΤΙΔΟΥ Θ. ΣΤΑΥΡΟΥΛΑ",
+      "address": "ΑΡΜΕΝ 36",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521021009",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 41.1511025,
+        "lon": 24.1483116,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3155",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521022606",
+      "name": "ΓΙΑΚΟΥΜΗ ΧΡΥΣΑΝΘΟΠΟΥΛΟΥ ΣΤΕΛΛΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΛΑΜΠΡΙΑΝΙΔΟΥ ΛΑΜΠΡΟΥ 20",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521022606",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 41.1511993,
+        "lon": 24.1470465,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3154",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521023170",
       "name": "ΚΑΖΗΣ Α. ΔΗΜΗΤΡΙΟΣ & ΣΙΑ ΟΕ",
       "address": "ΑΓΑΜΕΜΝΟΝΟΣ 4",

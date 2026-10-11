@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-17",
+  "groups": [
+    {
+      "id": "ioannina",
+      "name": "Ιωάννινα",
+      "source": {
+        "url": "https://ioannina.efhmeries.gr/",
+        "uploadedAt": "2026-10-11T10:08:00.216Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651028505",
+              "name": "ΑΝΤΩΝΙΑΔΟΥ ΣΟΥΛΤΑΝΑ",
+              "address": "ΒΗΛΑΡΑ 40",
+              "locality": "Ιωάννινα",
+              "phone": "2651028505"
+            },
+            {
+              "pharmacyId": "2651071537",
+              "name": "ΔΟΓΟΡΙΤΗΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΚΕΝΤΡΙΚΗ ΠΛΑΤΕΙΑ 10",
+              "locality": "Ιωάννινα",
+              "phone": "2651071537"
+            },
+            {
+              "pharmacyId": "2651072127",
+              "name": "ΜΑΝΤΕΛΟΣ ΓΕΩΡΓΙΟΣ",
+              "address": "Π. ΜΕΛΑ 26",
+              "locality": "Ιωάννινα",
+              "phone": "2651072127"
+            },
+            {
+              "pharmacyId": "2651030705",
+              "name": "ΠΕΡΩΝΗ ΑΜΑΛΙΑ-ΜΑΡΙΑ",
+              "address": "ΔΑΓΚΛΗ 4",
+              "locality": "Ιωάννινα",
+              "phone": "2651030705"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651046300",
+              "name": "Σ.Φ. ΝΤΑΤΣΗΣ ΧΡΗΣΤΟΣ - ΝΤΑΤΣΗΣ ΑΛΕΞΑΝΔΡΟΣ",
+              "address": "ΙΩΑΝΝΙΝΩΝ 38, ΑΝΑΤΟΛΗ",
+              "locality": "Ιωάννινα",
+              "phone": "2651046300"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -170,6 +170,27 @@
       }
     },
     {
+      "id": "2231031381",
+      "name": "ΜΠΛΟΥΝΑ ΜΑΡΙΑ",
+      "address": "ΚΟΛΟΚΟΤΡΏΝΗ 16",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231031381",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 38.9008904,
+        "lon": 22.4337331,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11790",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2231033242",
       "name": "ΜΠΟΥΚΑ ΙΖΟΛΔΗ-ΖΩΗ",
       "address": "ΑΜΑΛΙΑΣ 11-13",
@@ -207,6 +228,27 @@
         "lat": 38.8971262,
         "lon": 22.4363204,
         "ref": "https://fthiotida.efhmeries.gr/Home/Details/11788",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2231033633",
+      "name": "ΔΗΜΟΤΣΗ ΜΑΡΙΑ",
+      "address": "ΕΝΑΝΤΙ ΝΟΣΟΚΟΜΕΙΟΥ",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231033633",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 38.9273328,
+        "lon": 22.4210898,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11789",
         "source": "list",
         "precision": "exact"
       }
@@ -454,7 +496,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 38.7104122,
         "lon": 23.0488276,
@@ -496,7 +538,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 38.6551803,
         "lon": 22.9978894,
@@ -517,7 +559,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 38.7779111,
         "lon": 22.7844951,
@@ -559,7 +601,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 38.7599237,
         "lon": 22.8577998,
@@ -622,7 +664,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 38.809628,
         "lon": 22.6448618,
@@ -664,7 +706,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 38.9416767,
         "lon": 22.1157712,
@@ -690,6 +732,27 @@
         "lat": 38.9418095,
         "lon": 22.1163153,
         "ref": "https://fthiotida.efhmeries.gr/Home/Details/10174",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2238022600",
+      "name": "ΠΑΝΩΡΗ ΕΛΕΝΗ",
+      "address": "ΜΗΤΡΟΠΟΛΕΩΣ 2",
+      "locality": "Στυλίδα",
+      "postcode": null,
+      "phone": "2238022600",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 38.9143171,
+        "lon": 22.616397,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/9802",
         "source": "list",
         "precision": "exact"
       }

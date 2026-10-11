@@ -97,7 +97,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.0765319,
         "lon": 22.4295884,
@@ -123,6 +123,27 @@
         "lat": 37.0739179,
         "lon": 22.4284514,
         "ref": "https://lakonia.efhmeries.gr/Home/Details/17044",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2731026271",
+      "name": "ΒΑΦΕΙΑΔΗΣ ΣΩΤΗΡΙΟΣ",
+      "address": "ΛΥΚΟΥΡΓΟΥ 108",
+      "locality": "Σπάρτη",
+      "postcode": null,
+      "phone": "2731026271",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 37.0743797,
+        "lon": 22.4294186,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/17052",
         "source": "list",
         "precision": "exact"
       }
@@ -202,7 +223,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 36.9593051,
         "lon": 22.4522074,
@@ -223,7 +244,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.1706904,
         "lon": 22.3044898,
@@ -286,7 +307,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 36.8034443,
         "lon": 22.8514313,
@@ -328,7 +349,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 36.730498,
         "lon": 22.8542705,
@@ -391,7 +412,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 36.7603815,
         "lon": 22.5641196,
@@ -496,7 +517,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 36.666078,
         "lon": 22.3806638,
@@ -538,7 +559,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 36.5123972,
         "lon": 23.0596787,
@@ -580,7 +601,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 36.8513616,
         "lon": 22.6670941,
@@ -685,7 +706,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 36.8619459,
         "lon": 22.7073926,

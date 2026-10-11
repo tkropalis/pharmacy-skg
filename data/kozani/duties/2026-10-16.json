@@ -7,9 +7,36 @@
       "name": "Κοζάνη",
       "source": {
         "url": "https://kozani.efhmeries.gr/",
-        "uploadedAt": "2026-10-10T19:20:54.801Z"
+        "uploadedAt": "2026-10-11T10:08:26.634Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2461034453",
+              "name": "ΜΟΥΣΤΑΚΑ ΘΕΟΔΩΡΑ",
+              "address": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 4",
+              "locality": "Κοζάνη",
+              "phone": "2461034453"
+            },
+            {
+              "pharmacyId": "2463053545",
+              "name": "ΠΟΥΜΠΟΥΛΙΔΟΥ ΒΑΡΒΑΡΑ",
+              "address": "ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ 14 (Είσοδος PARKING Λαζαρίδη)",
+              "locality": "Πτολεμαΐδα",
+              "phone": "2463053545"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "8:30 ΠΡΩΙ - 2:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -61,33 +88,6 @@
               "address": "ΒΑΣΙΛΙΣΣΗΣ ΣΟΦΙΑΣ 29 (Απέναντι από τα υποδήματα Migato)",
               "locality": "Πτολεμαΐδα",
               "phone": "2463022288"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2461034453",
-              "name": "ΜΟΥΣΤΑΚΑ ΘΕΟΔΩΡΑ",
-              "address": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 4",
-              "locality": "Κοζάνη",
-              "phone": "2461034453"
-            },
-            {
-              "pharmacyId": "2463053545",
-              "name": "ΠΟΥΜΠΟΥΛΙΔΟΥ ΒΑΡΒΑΡΑ",
-              "address": "ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ 14 (Είσοδος PARKING Λαζαρίδη)",
-              "locality": "Πτολεμαΐδα",
-              "phone": "2463053545"
             }
           ]
         }

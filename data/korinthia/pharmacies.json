@@ -149,6 +149,27 @@
       }
     },
     {
+      "id": "2741026680",
+      "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Ι. ΜΑΡΙΑΝΝΑ",
+      "address": "ΑΠ. ΠΑΥΛΟΥ 46",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741026680",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 37.9406108,
+        "lon": 22.9295819,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35408",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2741027965",
       "name": "ΔΕΔΕ ΣΩΤΗΡΙΟΥ &ΣΙΑ ΟΕ",
       "address": "ΚΟΛΟΚΟΤΡΩΝΗ 24",
@@ -223,7 +244,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.9072675,
         "lon": 22.88078,
@@ -244,7 +265,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.8610007,
         "lon": 22.9972229,
@@ -307,7 +328,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.8964006,
         "lon": 22.9284049,
@@ -349,7 +370,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.819328,
         "lon": 22.9291721,
@@ -391,7 +412,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.9172924,
         "lon": 22.9993582,
@@ -433,7 +454,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.9578061,
         "lon": 22.8039689,
@@ -454,7 +475,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.9375856,
         "lon": 22.8008984,
@@ -538,7 +559,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.926956,
         "lon": 23.1406295,
@@ -706,7 +727,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.9346483,
         "lon": 22.8455989,
@@ -748,7 +769,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.9379979,
         "lon": 22.9375339,
@@ -811,7 +832,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.9422082,
         "lon": 22.8251675,
@@ -832,7 +853,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.8116578,
         "lon": 22.869699,
@@ -900,6 +921,27 @@
         "lat": 38.0205856,
         "lon": 22.7371056,
         "ref": "https://korinthia.efhmeries.gr/Home/Details/36576",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2742022205",
+      "name": "ΣΠΥΡΟΠΟΥΛΟΥ ΣΠΥΡΙΔΟΥΛΑ",
+      "address": "ΚΛΕΙΣΘΕΝΟΥΣ 13",
+      "locality": "Κιάτο",
+      "postcode": null,
+      "phone": "2742022205",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 38.0127466,
+        "lon": 22.7497417,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/36579",
         "source": "list",
         "precision": "exact"
       }
@@ -1084,7 +1126,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.976028,
         "lon": 22.759504,
@@ -1131,6 +1173,27 @@
         "lat": 38.0788092,
         "lon": 22.6318467,
         "ref": "https://korinthia.efhmeries.gr/Home/Details/39491",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2743022769",
+      "name": "ΔΗΜΗΤΡΕΛΛΟΥ ΡΩΞΑΝΗ καιΣΙΑ Ο.Ε.",
+      "address": "Π.ΤΣΑΛΔΑΡΗ 41",
+      "locality": "Ξυλόκαστρο",
+      "postcode": null,
+      "phone": "2743022769",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 38.0785889,
+        "lon": 22.6324646,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/39499",
         "source": "list",
         "precision": "exact"
       }
@@ -1299,6 +1362,27 @@
         "lat": 37.9780078,
         "lon": 22.9773615,
         "ref": "https://korinthia.efhmeries.gr/Home/Details/40219",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2744023003",
+      "name": "ΜΗΤΡΟΥ ΣΠΥΡΙΔΩΝ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 24",
+      "locality": "Λουτράκι",
+      "postcode": null,
+      "phone": "2744023003",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 37.9750634,
+        "lon": 22.977442,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/40229",
         "source": "list",
         "precision": "exact"
       }
@@ -1483,7 +1567,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.8220098,
         "lon": 22.6629063,

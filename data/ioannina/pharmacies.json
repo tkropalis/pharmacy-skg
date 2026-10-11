@@ -191,6 +191,48 @@
       }
     },
     {
+      "id": "2651028505",
+      "name": "ΑΝΤΩΝΙΑΔΟΥ ΣΟΥΛΤΑΝΑ",
+      "address": "ΒΗΛΑΡΑ 40",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651028505",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 39.6730243,
+        "lon": 20.8427691,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5016",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651030705",
+      "name": "ΠΕΡΩΝΗ ΑΜΑΛΙΑ-ΜΑΡΙΑ",
+      "address": "ΔΑΓΚΛΗ 4",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651030705",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 39.6680603,
+        "lon": 20.852754,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5019",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651030729",
       "name": "ΖΑΡΑΧΗΣ ΛΟΥΚΑΣ & ΖΑΡΑΧΗΣ ΣΟΦΟΚΛΗΣ-ΜΑΡΙΟΣ",
       "address": "ΚΕΝΤΡΙΚΗ ΠΛΑΤΕΙΑ 2",
@@ -401,6 +443,27 @@
       }
     },
     {
+      "id": "2651046300",
+      "name": "Σ.Φ. ΝΤΑΤΣΗΣ ΧΡΗΣΤΟΣ - ΝΤΑΤΣΗΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "ΙΩΑΝΝΙΝΩΝ 38, ΑΝΑΤΟΛΗ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651046300",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 39.6379488,
+        "lon": 20.8634091,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5020",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651048448",
       "name": "ΓΙΑΝΝΟΥΛΗΣ ΙΩΑΝΝΗΣ",
       "address": "ΑΣΗΜΑΚΟΠΟΥΛΟΥ 25",
@@ -543,6 +606,48 @@
         "lat": 39.6661017,
         "lon": 20.8456713,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5015",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651071537",
+      "name": "ΔΟΓΟΡΙΤΗΣ ΚΩΝ/ΝΟΣ",
+      "address": "ΚΕΝΤΡΙΚΗ ΠΛΑΤΕΙΑ 10",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651071537",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 39.6656295,
+        "lon": 20.853602,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5017",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651072127",
+      "name": "ΜΑΝΤΕΛΟΣ ΓΕΩΡΓΙΟΣ",
+      "address": "Π. ΜΕΛΑ 26",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651072127",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 39.6720466,
+        "lon": 20.8476145,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5018",
         "source": "list",
         "precision": "exact"
       }

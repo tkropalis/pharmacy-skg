@@ -13,11 +13,32 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 38.4633594,
         "lon": 23.5986972,
         "ref": "https://evia.efhmeries.gr/Home/Details/9296",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221021220",
+      "name": "ΛΙΟΠΥΡΗ ΑΘΑΝΑΣΙΑ",
+      "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 40",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221021220",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 38.4618473,
+        "lon": 23.5950923,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9321",
         "source": "list",
         "precision": "exact"
       }
@@ -181,7 +202,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 38.5152697,
         "lon": 23.6374886,
@@ -496,7 +517,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 38.469188,
         "lon": 23.6052,
@@ -601,11 +622,53 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 38.468676,
         "lon": 23.601998,
         "ref": "https://evia.efhmeries.gr/Home/Details/9311",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221087100",
+      "name": "Σ.Φ. ΣΤΡΑΤΙΚΗΣ ΠΑΝΑΓΙΩΤΗΣ ΣΤΡΑΤΙΚΗ ΜΑΡΙΝΑ ΣΠΥΡΙΔΟΥΛΑ",
+      "address": "ΦΑΒΙΕΡΟΥ 9",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221087100",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 38.4619229,
+        "lon": 23.5939765,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9323",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221087225",
+      "name": "ΜΑΝΟΥΣΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΕΘΝΑΡΧΟΥ ΜΑΚΑΡΙΟΥ 43",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221087225",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 38.412958,
+        "lon": 23.679222,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9320",
         "source": "list",
         "precision": "exact"
       }
@@ -727,7 +790,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 38.0143048,
         "lon": 24.4198213,
@@ -874,7 +937,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 38.953719,
         "lon": 23.152572,
@@ -916,7 +979,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 38.3946605,
         "lon": 23.7919147,

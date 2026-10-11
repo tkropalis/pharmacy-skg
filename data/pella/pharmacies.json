@@ -13,7 +13,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 40.7990597,
         "lon": 22.0482625,
@@ -223,7 +223,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 40.7694443,
         "lon": 22.1562914,
@@ -506,6 +506,48 @@
       }
     },
     {
+      "id": "2382026979",
+      "name": "ΜΑΝΘΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΚΟΛΟΚΟΤΡΩΝΗ 11 ΛΑΪΚΗ ΑΓΟΡΑ",
+      "locality": "Γιαννιτσά",
+      "postcode": null,
+      "phone": "2382026979",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 40.7975143,
+        "lon": 22.4121475,
+        "ref": "https://pella.efhmeries.gr/Home/Details/4735",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2382027545",
+      "name": "Σ.Φ. ΣΟΦΙΑ & ΘΕΟΔΩΡΑ ΤΣΙΤΣΙΓΙΑ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 127",
+      "locality": "Γιαννιτσά",
+      "postcode": null,
+      "phone": "2382027545",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 40.7924906,
+        "lon": 22.4113047,
+        "ref": "https://pella.efhmeries.gr/Home/Details/4734",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2382028400",
       "name": "ΣΤΑΥΡΟΠΟΥΛΟΣ ΣΤΑΥΡΟΣ",
       "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 140",
@@ -664,7 +706,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 40.6866277,
         "lon": 22.3032052,
@@ -879,6 +921,27 @@
         "lat": 40.9759194,
         "lon": 22.0612362,
         "ref": "https://pella.efhmeries.gr/Home/Details/5544",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2384024074",
+      "name": "ΜΑΥΡΟΠΟΥΛΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΠΟΛΥΤΕΧΝΕΙΟΥ 1",
+      "locality": "Αριδαία",
+      "postcode": null,
+      "phone": "2384024074",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 40.9739871,
+        "lon": 22.0605989,
+        "ref": "https://pella.efhmeries.gr/Home/Details/5549",
         "source": "list",
         "precision": "exact"
       }

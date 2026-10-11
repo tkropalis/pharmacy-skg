@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2681022879",
+      "name": "ΣΥΝΓΚΙΡΙΔΗΣ-ΤΣΙΚΑ",
+      "address": "ΟΡΛΑΝΔΟΥ 2 ΕΝΑΝΤΙ ΠΑΛΑΙΟΥ ΝΟΣΟΚΟΜΕΙΟΥ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681022879",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 39.1585924,
+        "lon": 20.9826422,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2426",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681027317",
       "name": "ΣΙΝΤΕΛΕ ΚΩΝΣΤΑΝΤΙΝΑ",
       "address": "ΠΥΡΡΟΥ 27",
@@ -81,6 +102,27 @@
         "lat": 39.1140792,
         "lon": 20.899601,
         "ref": "https://arta.efhmeries.gr/Home/Details/2423",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681065202",
+      "name": "ΓΙΑΝΝΟΥΛΗΣ ΕΥΣΤΑΘΙΟΣ",
+      "address": "ΣΚΟΥΦΑ ΝΙΚΟΛΑΟΥ 3",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681065202",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 39.102071,
+        "lon": 21.083716,
+        "ref": "https://arta.efhmeries.gr/Home/Details/1974",
         "source": "list",
         "precision": "exact"
       }

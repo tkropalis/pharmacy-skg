@@ -107,6 +107,27 @@
       }
     },
     {
+      "id": "2682026945",
+      "name": "ΚΑΤΩΓΙΑΝΝΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "Λ. ΕΙΡΗΝΗΣ 30",
+      "locality": "Πρέβεζα",
+      "postcode": null,
+      "phone": "2682026945",
+      "groupId": "preveza",
+      "sources": [
+        "iteq-preveza"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 38.956963,
+        "lon": 20.751675,
+        "ref": "https://preveza.efhmeries.gr/Home/Details/1412",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2682028009",
       "name": "ΝΤΑΟΥΛΑ ΛΑΜΠΡΙΝΗ",
       "address": "ΠΡΟΜΗΘΕΩΣ 26",

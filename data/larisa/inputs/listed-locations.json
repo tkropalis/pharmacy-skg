@@ -19,6 +19,11 @@
     "lon": 22.42342,
     "ref": "https://larisa.efhmeries.gr/Home/Details/23071"
   },
+  "2410234150": {
+    "lat": 39.6355234,
+    "lon": 22.4195007,
+    "ref": "https://larisa.efhmeries.gr/Home/Details/23149"
+  },
   "2410235977": {
     "lat": 39.6353034,
     "lon": 22.4278708,
@@ -53,6 +58,11 @@
     "lat": 39.64066,
     "lon": 22.4136,
     "ref": "https://larisa.efhmeries.gr/Home/Details/24237"
+  },
+  "2410252928": {
+    "lat": 39.63559,
+    "lon": 22.41532,
+    "ref": "https://larisa.efhmeries.gr/Home/Details/23150"
   },
   "2410252988": {
     "lat": 39.6424747,
@@ -124,10 +134,20 @@
     "lon": 22.42032,
     "ref": "https://larisa.efhmeries.gr/Home/Details/23037"
   },
+  "2410281830": {
+    "lat": 39.63673,
+    "lon": 22.42512,
+    "ref": "https://larisa.efhmeries.gr/Home/Details/23145"
+  },
   "2410282270": {
     "lat": 39.65044,
     "lon": 22.433,
     "ref": "https://larisa.efhmeries.gr/Home/Details/23083"
+  },
+  "2410283213": {
+    "lat": 39.63952,
+    "lon": 22.42531,
+    "ref": "https://larisa.efhmeries.gr/Home/Details/23146"
   },
   "2410283721": {
     "lat": 39.64674,
@@ -138,6 +158,11 @@
     "lat": 39.6267501,
     "lon": 22.4252116,
     "ref": "https://larisa.efhmeries.gr/Home/Details/24381"
+  },
+  "2410287195": {
+    "lat": 39.63897,
+    "lon": 22.41948,
+    "ref": "https://larisa.efhmeries.gr/Home/Details/23148"
   },
   "2410287253": {
     "lat": 39.63715,
@@ -188,6 +213,11 @@
     "lat": 39.64084,
     "lon": 22.42966,
     "ref": "https://larisa.efhmeries.gr/Home/Details/23027"
+  },
+  "2410534888": {
+    "lat": 39.64128,
+    "lon": 22.42214,
+    "ref": "https://larisa.efhmeries.gr/Home/Details/23147"
   },
   "2410535062": {
     "lat": 39.63787,
@@ -384,6 +414,11 @@
     "lon": 22.4183,
     "ref": "https://larisa.efhmeries.gr/Home/Details/23024"
   },
+  "2410626047": {
+    "lat": 39.63087,
+    "lon": 22.41568,
+    "ref": "https://larisa.efhmeries.gr/Home/Details/23151"
+  },
   "2410626612": {
     "lat": 39.62194,
     "lon": 22.40726,
@@ -474,6 +509,11 @@
     "lon": 22.3838606,
     "ref": "https://larisa.efhmeries.gr/Home/Details/19738"
   },
+  "2491023023": {
+    "lat": 39.294583,
+    "lon": 22.3848851,
+    "ref": "https://larisa.efhmeries.gr/Home/Details/19746"
+  },
   "2491023089": {
     "lat": 39.294434,
     "lon": 22.385567,
@@ -493,6 +533,11 @@
     "lat": 39.298572,
     "lon": 22.384296,
     "ref": "https://larisa.efhmeries.gr/Home/Details/19743"
+  },
+  "2491026303": {
+    "lat": 39.294989,
+    "lon": 22.39181,
+    "ref": "https://larisa.efhmeries.gr/Home/Details/19747"
   },
   "2492022880": {
     "lat": 39.738517,
@@ -623,6 +668,11 @@
     "lat": 39.895065,
     "lon": 22.183764,
     "ref": "https://larisa.efhmeries.gr/Home/Details/18542"
+  },
+  "2493024104": {
+    "lat": 39.89418,
+    "lon": 22.189207,
+    "ref": "https://larisa.efhmeries.gr/Home/Details/18546"
   },
   "2493024377": {
     "lat": 39.895065,

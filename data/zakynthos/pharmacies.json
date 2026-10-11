@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2695024373",
+      "name": "ΒΙΤΣΟΣ ΑΝΔΡΕΑΣ",
+      "address": "ΓΑΪΤΑΝΙ (ΕΝΑΝΤΙ ΝΟΣΟΚΟΜΕΙΟΥ)",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695024373",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 37.7844553,
+        "lon": 20.8747242,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4019",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2695026912",
       "name": "ΠΑΡΑΣΚΕΥΗ ΘΕΟΔΟΣΗ & ΦΑΙΔΡΑ ΑΒΟΥΡΗ",
       "address": "ΚΛΑΥΔΙΑΝΟΥ ΙΩΑΝΝΗ 28",

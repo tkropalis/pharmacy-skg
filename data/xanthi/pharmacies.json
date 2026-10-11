@@ -139,7 +139,7 @@
         "iteq-xanthi"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 41.1375825,
         "lon": 24.8880047,
@@ -265,7 +265,7 @@
         "iteq-xanthi"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 41.1400631,
         "lon": 24.8888554,
@@ -396,6 +396,27 @@
         "lat": 41.1351998,
         "lon": 24.8852832,
         "ref": "https://xanthi.efhmeries.gr/Home/Details/3600",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541078349",
+      "name": "ΧΟΧΟΛΗ ΒΑΣΙΛΙΚΗ",
+      "address": "28ης ΟΚΤΩΒΡΙΟΥ 201",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541078349",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 41.1343718,
+        "lon": 24.8875517,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3626",
         "source": "list",
         "precision": "exact"
       }

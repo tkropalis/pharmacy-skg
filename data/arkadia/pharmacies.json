@@ -34,7 +34,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.5105775,
         "lon": 22.3726433,
@@ -128,6 +128,27 @@
       }
     },
     {
+      "id": "2710223636",
+      "name": "ΑΓΓΕΛΑΚΟΥ Α.ΙΩΑΝΝΑ & ΣΙΑ E.E.",
+      "address": "ΤΆΣΟΥ ΣΕΧΙΩΤΗ 22",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710223636",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 37.5112673,
+        "lon": 22.3736288,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5075",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2710225911",
       "name": "ΠΟΛΥΜΕΝΟΠΟΥΛΟΥ ΓΕΩΡΓΙΑ",
       "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 72",
@@ -139,7 +160,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.5141388,
         "lon": 22.3805177,
@@ -275,6 +296,27 @@
       }
     },
     {
+      "id": "2710237773",
+      "name": "Σ.Φ. ΠΑΠΑΪΩΑΝΝΟΥ ΑΦΡΟΔΙΤΗ -ΒΕΜΜΟΥ ΜΑΡΙΑ Ο.Ε.",
+      "address": "ΠΑΤΡΙΑΡΧΟΥ ΓΡΗΓΟΡΙΟΥ Ε 9",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710237773",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 37.5101494,
+        "lon": 22.3749398,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5077",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2710238474",
       "name": "Σ.Φ.ΑΡΓΥΡΟΠΟΥΛΟΥ ΠΑΝΑΓΙΩΤΑ-ΜΠΑΡΙΑΜΗΣ ΣΤΑΥΡΟΣ Ο.Ε.",
       "address": "ΓΕΩΡΓΙΟΥ Α 31",
@@ -286,7 +328,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.5097434,
         "lon": 22.373709,
@@ -307,7 +349,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.5114741,
         "lon": 22.3722054,
@@ -333,6 +375,27 @@
         "lat": 37.5116626,
         "lon": 22.3737268,
         "ref": "https://arkadia.efhmeries.gr/Home/Details/5059",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710242222",
+      "name": "ΙΩΑΝΝΙΔΗΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΓΡ. ΛΑΜΠΡΑΚΗ 8",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710242222",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 37.5085669,
+        "lon": 22.3749095,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5074",
         "source": "list",
         "precision": "exact"
       }
@@ -391,7 +454,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.4040532,
         "lon": 22.7231501,
@@ -433,7 +496,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.1674292,
         "lon": 22.858743,
@@ -517,7 +580,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.4014368,
         "lon": 22.136571,
@@ -580,7 +643,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.6845416,
         "lon": 22.2955302,
@@ -643,7 +706,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 37.7322838,
         "lon": 21.9594427,

@@ -65,6 +65,27 @@
       }
     },
     {
+      "id": "2551025013",
+      "name": "ΑΠΟΤΑ ΓΕΩΡΓΙΑ",
+      "address": "Ελ. Βενιζέλου 47 (έναντι ΚΤΕΛ)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551025013",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 40.845627,
+        "lon": 25.8744696,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4345",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551026214",
       "name": "ΓΑΛΑΖΙΟΥ ΑΣΠΑΣΙΑ",
       "address": "Κουτάβου 5 (περιοχή Αγ. Βασιλείου)",
@@ -118,7 +139,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 40.8481538,
         "lon": 25.8734091,
@@ -338,6 +359,27 @@
       }
     },
     {
+      "id": "2552022456",
+      "name": "Σ.Φ ΚΑΛΛΙΝΑΚΗ Π-ΤΣΑΒΔΑΡΙΔΟΥ Δ",
+      "address": "ΕΥΡΙΠΙΔΟΥ 17",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552022456",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 41.4961317,
+        "lon": 26.5342729,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4874",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2552022582",
       "name": "ΑΛΒΑΝΟΥΔΗ ΝΕΡΑΝΤΖΙΑ",
       "address": "ΚΩΝ/ΠΟΛΕΩΣ 201",
@@ -349,11 +391,32 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 41.5026371,
         "lon": 26.5325528,
         "ref": "https://evros.efhmeries.gr/Home/Details/4869",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2552022610",
+      "name": "ΓΚΑΪΔΑΤΖΗΣ ΑΠΟΣΤΟΛΟΣ",
+      "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 44",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552022610",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 41.5030094,
+        "lon": 26.5316454,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4872",
         "source": "list",
         "precision": "exact"
       }
@@ -396,6 +459,27 @@
         "lat": 41.4955525,
         "lon": 26.5339423,
         "ref": "https://evros.efhmeries.gr/Home/Details/4606",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2552023733",
+      "name": "ΚΑΦΕΤΖΗ ΦΩΤΕΙΝΗ",
+      "address": "ΑΘ. ΠΑΝΤΑΖΙΔΟΥ 83",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552023733",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 41.5016584,
+        "lon": 26.5334306,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4873",
         "source": "list",
         "precision": "exact"
       }
@@ -538,7 +622,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 41.3502204,
         "lon": 26.4935275,
@@ -643,7 +727,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 41.3528428,
         "lon": 26.4958947,
@@ -690,6 +774,27 @@
         "lat": 41.1947643,
         "lon": 26.3052864,
         "ref": "https://evros.efhmeries.gr/Home/Details/5584",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2554022033",
+      "name": "ΚΥΡΙΑΚΟΥΔΗ ΑΝΝΑ",
+      "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 157",
+      "locality": "Σουφλί",
+      "postcode": null,
+      "phone": "2554022033",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 41.1924991,
+        "lon": 26.304174,
+        "ref": "https://evros.efhmeries.gr/Home/Details/5593",
         "source": "list",
         "precision": "exact"
       }
@@ -790,7 +895,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 41.025262,
         "lon": 26.2577482,
@@ -811,7 +916,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 40.8942408,
         "lon": 26.1722017,
