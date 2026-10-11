@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-11T10:08:00.216Z"
+        "uploadedAt": "2026-10-11T19:36:44.433Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651030729",
-              "name": "ΖΑΡΑΧΗΣ ΛΟΥΚΑΣ & ΖΑΡΑΧΗΣ ΣΟΦΟΚΛΗΣ-ΜΑΡΙΟΣ",
-              "address": "ΚΕΝΤΡΙΚΗ ΠΛΑΤΕΙΑ 2",
-              "locality": "Ιωάννινα",
-              "phone": "2651030729"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 24Β",
               "locality": "Ιωάννινα",
               "phone": "2651027678"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651030729",
+              "name": "ΖΑΡΑΧΗΣ ΛΟΥΚΑΣ & ΖΑΡΑΧΗΣ ΣΟΦΟΚΛΗΣ-ΜΑΡΙΟΣ",
+              "address": "ΚΕΝΤΡΙΚΗ ΠΛΑΤΕΙΑ 2",
+              "locality": "Ιωάννινα",
+              "phone": "2651030729"
             }
           ]
         }
