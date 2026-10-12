@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2665022155",
+      "name": "ΠΑΠΑΓΙΑΝΝΗ ΜΑΚΡΙΔΗ ΣΠΥΡΙΔΟΥΛΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΚΥΠΡΟΥ 16",
+      "locality": "Ηγουμενίτσα",
+      "postcode": null,
+      "phone": "2665022155",
+      "groupId": "thesprotia",
+      "sources": [
+        "iteq-thesprotia"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 39.5040302,
+        "lon": 20.2645707,
+        "ref": "https://thesprotia.efhmeries.gr/Home/Details/399",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2665022410",
       "name": "ΚΩΣΤΑΚΗ ΛΙΑΚΟΥ ΕΥΘΥΜΙΑ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "ΓΡ. ΛΑΜΠΡΑΚΗ 13",

@@ -244,7 +244,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.9072675,
         "lon": 22.88078,
@@ -265,7 +265,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.8610007,
         "lon": 22.9972229,
@@ -328,7 +328,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.8964006,
         "lon": 22.9284049,
@@ -370,7 +370,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.819328,
         "lon": 22.9291721,
@@ -412,7 +412,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.9172924,
         "lon": 22.9993582,
@@ -454,7 +454,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.9578061,
         "lon": 22.8039689,
@@ -475,7 +475,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.9375856,
         "lon": 22.8008984,
@@ -601,7 +601,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.9282447,
         "lon": 23.1433311,
@@ -643,11 +643,32 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.9398404,
         "lon": 22.9304323,
         "ref": "https://korinthia.efhmeries.gr/Home/Details/35391",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2741075320",
+      "name": "ΜΑΥΡΟΜΜΑΤΗΣ Α. ΣΠΥΡΙΔΩΝ",
+      "address": "ΠΛΑΤ. ΚΟΥΝΤΟΥΡΙΩΤΗ 3 (ΕΝΑΝΤΙ ΝΟΣΟΚΟΜΕΙΟΥ)",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741075320",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 37.9394643,
+        "lon": 22.9487415,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35411",
         "source": "list",
         "precision": "exact"
       }
@@ -727,7 +748,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.9346483,
         "lon": 22.8455989,
@@ -832,7 +853,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.9422082,
         "lon": 22.8251675,
@@ -853,7 +874,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.8116578,
         "lon": 22.869699,
@@ -1063,7 +1084,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 38.0130605,
         "lon": 22.7494687,
@@ -1126,7 +1147,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.976028,
         "lon": 22.759504,
@@ -1252,7 +1273,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 38.078413,
         "lon": 22.6336694,
@@ -1451,6 +1472,27 @@
       }
     },
     {
+      "id": "2744064101",
+      "name": "ΤΣΙΩΤΑ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ38",
+      "locality": "Λουτράκι",
+      "postcode": null,
+      "phone": "2744064101",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 37.9735519,
+        "lon": 22.9773819,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/40230",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2744079350",
       "name": "ΠΑΝΑΓΙΩΤΙΔΗΣ Κ. ΧΡΗΣΤΟΣ",
       "address": "ΞΕΝΟΦΩΝΤΟΣ & ΝΟΤΑΡΑ",
@@ -1567,7 +1609,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.8220098,
         "lon": 22.6629063,

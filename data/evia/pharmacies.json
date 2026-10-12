@@ -13,7 +13,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 38.4633594,
         "lon": 23.5986972,
@@ -265,7 +265,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 38.5218832,
         "lon": 23.6329109,
@@ -622,7 +622,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 38.468676,
         "lon": 23.601998,
@@ -643,7 +643,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 38.4619229,
         "lon": 23.5939765,
@@ -874,7 +874,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 38.0151615,
         "lon": 24.4189621,
@@ -947,6 +947,27 @@
       }
     },
     {
+      "id": "2226055355",
+      "name": "ΤΖΗΜΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "25ης ΜΑΡΤΙΟΥ 46",
+      "locality": "Ιστιαία",
+      "postcode": null,
+      "phone": "2226055355",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 38.952122,
+        "lon": 23.153383,
+        "ref": "https://evia.efhmeries.gr/Home/Details/8631",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2226056148",
       "name": "ΑΝΑΣΤΑΣΙΟΥ ΑΡΕΤΗ",
       "address": "ΜΕΤΑΞΑ ΙΩΑΝΝΟΥ 4",
@@ -979,7 +1000,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 38.3946605,
         "lon": 23.7919147,

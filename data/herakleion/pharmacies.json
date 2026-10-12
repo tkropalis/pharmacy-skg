@@ -422,6 +422,27 @@
       }
     },
     {
+      "id": "2810230013",
+      "name": "ΜΠΑΡΜΠΑΡΗΓΟΥ ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΦΙΛΕΛΛΗΝΩΝ 19 ΚΗΠΟΥΠΟΛΗ ΕΡΓΑΤ.ΚΑΤΟΙΚΙΕΣ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810230013",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 35.3266301,
+        "lon": 25.1421313,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57927",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810233369",
       "name": "ΠΑΝΑΓΙΩΤΑΚΗΣ ΕΥΑΓ. ΖΑΧΑΡΙΑΣ",
       "address": "Λ. ΚΝΩΣΟΥ 224 ΑΠΕΝΑΝΤΙ ΑΠΟ PIZZA SOFIA ΑΓ.ΙΩΑΝΝΗΣ",
@@ -459,6 +480,27 @@
         "lat": 35.3059663,
         "lon": 25.1527451,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57855",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810235972",
+      "name": "ΔΑΣΚΑΛΑΚΗΣ ΝΙΚΟΛΑΟΣ & ΣΙΑ Ο.Ε.",
+      "address": "ΠΑΡΑΣΚΕΥΟΠΟΥΛΟΥ 109 (ΠΑΝΑΓΙΤΣΑ ΜΑΣΤΑΜΠΑ)",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810235972",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 35.3247513,
+        "lon": 25.1305894,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57928",
         "source": "list",
         "precision": "exact"
       }
@@ -522,6 +564,27 @@
         "lat": 35.330256,
         "lon": 25.1365563,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57909",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810239129",
+      "name": "ΜΙΧΕΛΑΚΗ ΟΡ. ΕΛΕΥΘΕΡΙΑ",
+      "address": "ΝΙΚΗΦ. ΛΥΤΡΑ 7, ΑΤΣΑΛΕΝΙΟ (ΒΑΖΖΑR) Λ.ΙΩΝΙΑΣ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810239129",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 35.3203927,
+        "lon": 25.1338881,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57925",
         "source": "list",
         "precision": "exact"
       }
@@ -732,6 +795,27 @@
         "lat": 35.323211,
         "lon": 25.1068237,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57846",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810254698",
+      "name": "ΤΖΩΡΑΚΟΛΕΥΘΕΡΑΚΗΣ ΒΑΣΙΛΕΙΟΣ ΜΑΡΙΟΣ ΚΑΙ ΣΙΑ Ε.Ε.",
+      "address": "ΗΡΑΚΛΗ ΚΑΙ ΑΓΙΟΥ ΙΩΑΝΝΗ ΧΩΣΤΟΥ 1 (ΠΛΗΣΙΟΝ ΚΡΗΤΙΚΟΥ ΦΟΥΡΝΟΥ)",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810254698",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 35.3240411,
+        "lon": 25.1164613,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57924",
         "source": "list",
         "precision": "exact"
       }
@@ -1031,6 +1115,27 @@
       }
     },
     {
+      "id": "2810287038",
+      "name": "ΦΑΡΜΑΚΕΙΟ ΕΥΑΓΓΕΛΟΣ ΚΟΚΟΚΙΟΣ & ΣΙΑ Ε.Ε.",
+      "address": "Λ. ΚΑΛΟΚΑΙΡΙΝΟΥ 234, ΧΑΝΙΟΠΟΡΤΑ, ΕΘΝΙΚΗΣ ΤΡΑΠ.",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810287038",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 35.3376538,
+        "lon": 25.1264053,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57922",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810287529",
       "name": "ΠΛΑΚΙΔΑΣ ΣΤΑΥΡΟΣ",
       "address": "ΜΑΥΡΟΛΕΝΗΣ 20 ALPHA BANK ΠΛΑΤΕΙΑ KOPNAPOY",
@@ -1047,6 +1152,27 @@
         "lat": 35.3361229,
         "lon": 25.1336924,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57890",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810287538",
+      "name": "ΝΙΦΟΡΟΠΟΥΛΟΥ ΕΥΑΓΓΕΛΙΑ ΤΟΥ ΔΗΜΗΤΡΙΟΥ",
+      "address": "ΚΑΛΟΚΑΙΡΙΝΟΥ 83 KAMAPAKI",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810287538",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 35.3384277,
+        "lon": 25.1299495,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57921",
         "source": "list",
         "precision": "exact"
       }
@@ -1105,7 +1231,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 35.3360581,
         "lon": 25.1328308,
@@ -1467,6 +1593,27 @@
         "lat": 35.3303577,
         "lon": 25.1446795,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57877",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810322749",
+      "name": "ΡΟΒΙΘΗ Ν. ΚΟΡΙΝΝΑ",
+      "address": "Γ. ΠΑΠΑΝΔΡΕΟΥ 27",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810322749",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 35.3313157,
+        "lon": 25.1373112,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57926",
         "source": "list",
         "precision": "exact"
       }
@@ -1861,7 +2008,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 35.3251619,
         "lon": 25.2774059,
@@ -2155,7 +2302,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 35.1426915,
         "lon": 25.2648432,
@@ -2365,7 +2512,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 35.0504637,
         "lon": 24.8763094,
@@ -2470,7 +2617,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 35.071895,
         "lon": 24.7683537,
@@ -2575,7 +2722,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 35.3179965,
         "lon": 25.3895652,
@@ -2659,7 +2806,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 35.3141363,
         "lon": 25.3951863,
@@ -2680,7 +2827,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 35.331734,
         "lon": 25.3452693,
@@ -2785,7 +2932,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 35.2831684,
         "lon": 25.4628694,
@@ -2932,7 +3079,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 35.2632695,
         "lon": 25.4226697,
@@ -2953,7 +3100,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 35.3344331,
         "lon": 25.0937293,

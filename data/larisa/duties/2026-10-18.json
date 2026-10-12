@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-18",
+  "groups": [
+    {
+      "id": "agia",
+      "name": "Αγιά",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-12T10:58:11.531Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2494022636",
+              "name": "ΤΣΟΤΣΑ Η. ΜΑΡΙΑ",
+              "address": "ΑΓΙΟΚΑΜΠΟΥ 50",
+              "locality": "Αγιά",
+              "phone": "2494022636"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ampelonas",
+      "name": "Αμπελώνας",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-12T10:58:11.531Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2492031115",
+              "name": "Σ.Φ. ΠΕΤΣΟΠΟΥΛΟΥ - ΜΟΡΗ Ο.Ε.",
+              "address": "ΕΛΕΥΘ. ΒΕΝΙΖΕΛΟΥ 22",
+              "locality": "Αμπελώνας",
+              "phone": "2492031115"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elassona",
+      "name": "Ελασσόνα",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-12T10:58:11.531Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2493022150",
+              "name": "ΑΝΑΓΝΩΣΤΟΥΛΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 53",
+              "locality": "Ελασσόνα",
+              "phone": "2493022150"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "falani",
+      "name": "Φαλάνη",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-12T10:58:11.531Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410942053",
+              "name": "ΠΑΝΙΔΟΥ ΑΝΑΣΤΑΣΙΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+              "address": "ΑΜΠΕΛΩΝΟΣ 28",
+              "locality": "Φαλάνη",
+              "phone": "2410942053"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "farsala",
+      "name": "Φάρσαλα",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-12T10:58:11.531Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2491022465",
+              "name": "Σ.Φ. ΦΩΤΕΙΝΗ ΒΟΥΤΣΙΛΑ - ΜΑΡΙΑ ΣΕΡΑΣΚΕΡΗ Ο.Ε.",
+              "address": "ΚΑΝΑΔΑ 5",
+              "locality": "Φάρσαλα",
+              "phone": "2491022465"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "giannouli",
+      "name": "Γιάννουλη",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-12T10:58:11.531Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2411811945",
+              "name": "Σ.Φ. ΚΑΚΑΡΟΝΤΖΑΣ ΓΕΩΡΓΙΟΣ - ΚΑΚΑΡΟΝΤΖΑΣ ΣΟΛΩΝ Ο.Ε.",
+              "address": "ΚΟΖΑΝΗΣ 63",
+              "locality": "Γιάννουλη",
+              "phone": "2411811945"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "larisa",
+      "name": "Λάρισα",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-12T10:58:11.531Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410539843",
+              "name": "ΔΟΜΑΚΗΣ ΗΛΙΑΣ",
+              "address": "ΑΛΜΥΡΟΥ & ΛΕΠΤΟΚΑΡΥΑΣ, ΑΜΠΕΛΟΚΗΠΟΙ (ΤΑΜΠΑΚΙΚΑ) (Πλατεία όπισθεν Β. Κ. ΚΑΖΑΝΑ)",
+              "locality": "Λάρισα",
+              "phone": "2410539843"
+            },
+            {
+              "pharmacyId": "2410288488",
+              "name": "ΚΑΛΜΠΟΚΙΝΗΣ ΧΡ. ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "23ης ΟΚΤΩΒΡΙΟΥ 24-26 (Παραπλεύρως Ξεν. Διόνυσος)",
+              "locality": "Λάρισα",
+              "phone": "2410288488"
+            },
+            {
+              "pharmacyId": "2410626654",
+              "name": "ΜΠΟΥΤΛΑ ΒΑΣΙΛΙΚΗ",
+              "address": "1ης ΜΕΡΑΡΧΙΑΣ 1 - ΝΕΑΠΟΛΗ (Πλατεία Νεάπολης)",
+              "locality": "Λάρισα",
+              "phone": "2410626654"
+            },
+            {
+              "pharmacyId": "2410614649",
+              "name": "ΠΑΥΛΟΠΟΥΛΟΣ ΒΑΣΙΛΕΙΟΣ",
+              "address": "ΛΟΓΙΩΤΑΤΟΥ 4 & ΤΖΑΒΕΛΑ ΓΩΝΙΑ (Πίσω από το 4ο Λύκειο)",
+              "locality": "Λάρισα",
+              "phone": "2410614649"
+            },
+            {
+              "pharmacyId": "2410286122",
+              "name": "Σ.Φ. ΓΑΙΤΑΝΗ ΣΤΑΜΑΤΙΑ - ΓΑΙΤΑΝΗ ΓΛΥΚΕΡΙΑ Ο.Ε.",
+              "address": "ΑΛ. ΠΑΝΑΓΟΥΛΗ 91 (Πλησίον σούπερ Μάρκετ Σκλαβενίτης)",
+              "locality": "Λάρισα",
+              "phone": "2410286122"
+            },
+            {
+              "pharmacyId": "2410535620",
+              "name": "Σ.Φ. ΛΕΓΟΣ Φ. - ΛΕΓΟΥ Ε. Ο.Ε.",
+              "address": "ΑΣΚΛΗΠΙΟΥ 26 (Μεταξύ Πλατείας Ταχυδρομείου & Πατρόκλου)",
+              "locality": "Λάρισα",
+              "phone": "2410535620"
+            },
+            {
+              "pharmacyId": "2410258681",
+              "name": "Σ.Φ. ΜΙΧΑΗΛ Δ. - ΜΙΧΑΗΛ ΕΛ. Ο.Ε.",
+              "address": "ΚΕΝΤΑΥΡΩΝ 19 & ΚΥΠΡΟΥ ΓΩΝΙΑ (Πλατεία Εβραίων Μαρτύρων)",
+              "locality": "Λάρισα",
+              "phone": "2410258681"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "23:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410535931",
+              "name": "ΚΑΡΑΠΕΤΣΑΣ ΓΕΩΡΓΙΟΣ & ΚΑΡΑΠΕΤΣΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ο.Ε.",
+              "address": "ΘΟΥΚΥΔΙΔΟΥ 1 & ΠΑΛΑΙΣΤΙΝΗΣ (Έξι δρόμοι)",
+              "locality": "Λάρισα",
+              "phone": "2410535931"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nikaia",
+      "name": "Νίκαια",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-12T10:58:11.531Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410921760",
+              "name": "Σ.Φ. ΝΙΚΟΛΟΥΛΗΣ Α. - ΝΙΚΟΛΟΥΛΗ Μ. Ο.Ε.",
+              "address": "ΦΑΡΣΑΛΩΝ 131",
+              "locality": "Νίκαια",
+              "phone": "2410921760"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tyrnavos",
+      "name": "Τύρναβος",
+      "source": {
+        "url": "https://larisa.efhmeries.gr/",
+        "uploadedAt": "2026-10-12T10:58:11.531Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2492029244",
+              "name": "ΣΔΑΝΗ Κ. ΜΑΡΙΑ",
+              "address": "ΕΥΘ. ΓΟΥΝΙΤΣΙΩΤΗ 5",
+              "locality": "Τύρναβος",
+              "phone": "2492029244"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2441020555",
+      "name": "ΜΗΛΑΡΑ ΑΡΙΑΔΝΗ",
+      "address": "ΚΑΡΑΙΣΚΑΚΗ 3",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441020555",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 39.36485,
+        "lon": 21.921878,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3766",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2441020919",
       "name": "ΝΤΑΝΤΑΜΗΣ ΣΤΕΦΑΝΟΣ & ΣΙΑ Ο.Ε.",
       "address": "Α.ΠΑΠΑΝΔΡΕΟΥ 6",
@@ -81,6 +102,27 @@
         "lat": 39.3627512,
         "lon": 21.9238859,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3743",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441022222",
+      "name": "ΚΟΛΟΒΟΥ ΜΑΡΙΑ",
+      "address": "ΔΗΜ. ΛΑΠΠΑ 117",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441022222",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 39.3607545,
+        "lon": 21.9260789,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3765",
         "source": "list",
         "precision": "exact"
       }

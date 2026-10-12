@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-18",
+  "groups": [
+    {
+      "id": "arta",
+      "name": "Άρτα",
+      "source": {
+        "url": "https://arta.efhmeries.gr/",
+        "uploadedAt": "2026-10-12T10:58:51.364Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2681077007",
+              "name": "ΒΟΥΤΟΥ ΙΩΑΝΝΑ",
+              "address": "ΠΛΑΤΕΙΑ ΚΙΛΚΙΣ",
+              "locality": "Άρτα",
+              "phone": "2681077007"
+            },
+            {
+              "pharmacyId": "2681069012",
+              "name": "ΚΑΡΑΜΑΝΙΔΗΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΚΟΜΜΕΝΟ",
+              "locality": "Άρτα",
+              "phone": "2681069012"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

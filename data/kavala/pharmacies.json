@@ -34,11 +34,32 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 40.9368994,
         "lon": 24.4052374,
         "ref": "https://kavala.efhmeries.gr/Home/Details/4009",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510223619",
+      "name": "ΝΙΚΟΛΑΪΔΟΥ ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΡΟΥΣΒΕΛΤ ΚΑΙ ΣΕΡΔΑΡΟΓΛΟΥ 8",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510223619",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 40.940227,
+        "lon": 24.403448,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4011",
         "source": "list",
         "precision": "exact"
       }
@@ -144,6 +165,27 @@
         "lat": 40.938351,
         "lon": 24.395633,
         "ref": "https://kavala.efhmeries.gr/Home/Details/4007",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510250944",
+      "name": "ΜΑΡΚΑΤΟΥ ΠΑΡΑΣΚΕΥΗ",
+      "address": "ΒΟΥΛΓΑΡΟΚΤΟΝΟΥ 50",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510250944",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 40.936676,
+        "lon": 24.395784,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4012",
         "source": "list",
         "precision": "exact"
       }

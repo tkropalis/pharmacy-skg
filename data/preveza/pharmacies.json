@@ -128,6 +128,27 @@
       }
     },
     {
+      "id": "2682027289",
+      "name": "ΒΛΑΧΟΣ ΧΡΗΣΤΟΣ",
+      "address": "ΔΗΜΑΡΧΟΥ ΚΡΟΚΟΥ ΔΗΜΗΤΡΙΟΥ 78",
+      "locality": "Πρέβεζα",
+      "postcode": null,
+      "phone": "2682027289",
+      "groupId": "preveza",
+      "sources": [
+        "iteq-preveza"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 38.958346,
+        "lon": 20.747586,
+        "ref": "https://preveza.efhmeries.gr/Home/Details/1413",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2682028009",
       "name": "ΝΤΑΟΥΛΑ ΛΑΜΠΡΙΝΗ",
       "address": "ΠΡΟΜΗΘΕΩΣ 26",

@@ -7,7 +7,7 @@
       "name": "Πέλλα",
       "source": {
         "url": "https://pella.efhmeries.gr/",
-        "uploadedAt": "2026-10-11T19:37:51.905Z"
+        "uploadedAt": "2026-10-12T11:02:19.486Z"
       },
       "sections": [
         {
@@ -52,6 +52,26 @@
           ]
         },
         {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382026979",
+              "name": "ΜΑΝΘΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΚΟΛΟΚΟΤΡΩΝΗ 11 ΛΑΪΚΗ ΑΓΟΡΑ",
+              "locality": "Γιαννιτσά",
+              "phone": "2382026979"
+            }
+          ]
+        },
+        {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
           "hours": {
@@ -69,26 +89,6 @@
               "address": "ΒΑΣ. ΠΑΥΛΟΥ 77",
               "locality": "Κρύα Βρύση",
               "phone": "2382062100"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2382026979",
-              "name": "ΜΑΝΘΟΥ ΑΙΚΑΤΕΡΙΝΗ",
-              "address": "ΚΟΛΟΚΟΤΡΩΝΗ 11 ΛΑΪΚΗ ΑΓΟΡΑ",
-              "locality": "Γιαννιτσά",
-              "phone": "2382026979"
             }
           ]
         }

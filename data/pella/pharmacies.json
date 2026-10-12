@@ -65,6 +65,27 @@
       }
     },
     {
+      "id": "2381023080",
+      "name": "ΜΠΑΧΤΣΕΒΑΝΙΔΟΥ ΜΕΡΟΠΗ",
+      "address": "25ης ΜΑΡΤΙΟΥ 12",
+      "locality": "Έδεσσα",
+      "postcode": null,
+      "phone": "2381023080",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 40.8043123,
+        "lon": 22.0523908,
+        "ref": "https://pella.efhmeries.gr/Home/Details/6210",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2381023324",
       "name": "ΜΟΥΧΑΛΕΜΠΗΣ ΝΙΚΟΛΑΟΣ",
       "address": "ΔΗΜΟΚΡΑΤΙΑΣ 25",
@@ -370,11 +391,32 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 40.7674713,
         "lon": 22.1556041,
         "ref": "https://pella.efhmeries.gr/Home/Details/5991",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2382024060",
+      "name": "ΓΟΡΟΖΙΔΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΑΓΙΟΥ ΓΕΩΡΓΙΟΥ 11Α",
+      "locality": "Γιαννιτσά",
+      "postcode": null,
+      "phone": "2382024060",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 40.789788,
+        "lon": 22.4072782,
+        "ref": "https://pella.efhmeries.gr/Home/Details/4736",
         "source": "list",
         "precision": "exact"
       }
@@ -706,7 +748,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 40.6866277,
         "lon": 22.3032052,
@@ -921,6 +963,27 @@
         "lat": 40.9759194,
         "lon": 22.0612362,
         "ref": "https://pella.efhmeries.gr/Home/Details/5544",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2384024073",
+      "name": "Σ.Φ. ΜΕΤΑΞΑΣ ΘΕΟΔΩΡΟΣ - ΜΕΤΑΞΑ ΕΛΙΣΑΒΕΤ",
+      "address": "ΑΓ. ΝΙΚΑΝΔΡΟΥ 21",
+      "locality": "Αριδαία",
+      "postcode": null,
+      "phone": "2384024073",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 40.9734218,
+        "lon": 22.0602808,
+        "ref": "https://pella.efhmeries.gr/Home/Details/5550",
         "source": "list",
         "precision": "exact"
       }

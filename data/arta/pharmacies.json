@@ -170,6 +170,27 @@
       }
     },
     {
+      "id": "2681069012",
+      "name": "ΚΑΡΑΜΑΝΙΔΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΚΟΜΜΕΝΟ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681069012",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 39.046958,
+        "lon": 21.032133,
+        "ref": "https://arta.efhmeries.gr/Home/Details/1975",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681069346",
       "name": "ΠΛΕΥΡΗ ΟΛΓΑ",
       "address": "ΣΥΚΙΕΣ",
@@ -291,6 +312,27 @@
         "lat": 39.1598902,
         "lon": 20.9832537,
         "ref": "https://arta.efhmeries.gr/Home/Details/2420",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681077007",
+      "name": "ΒΟΥΤΟΥ ΙΩΑΝΝΑ",
+      "address": "ΠΛΑΤΕΙΑ ΚΙΛΚΙΣ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681077007",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 39.1600359,
+        "lon": 20.9823731,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2427",
         "source": "list",
         "precision": "exact"
       }

@@ -128,6 +128,27 @@
       }
     },
     {
+      "id": "2841027162",
+      "name": "ΠΛΑΚΟΓΙΑΝΝΑΚΗΣ ΜΙΧΑΗΛ – ΠΛΑΚΟΓΙΑΝΝΑΚΗΣ ΓΕΩΡΓΙΟΣ Ο.Ε.Φ.Ε.Τ. (ΥΠΟΚΑΤΑΣΤΗΜΑ)",
+      "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 17 / 17, ELEFTHERIOU VENIZELOU SQ.",
+      "locality": "Άγιος Νικόλαος",
+      "postcode": null,
+      "phone": "2841027162",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 35.1892405,
+        "lon": 25.7174072,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4794",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2841028210",
       "name": "Σ.Φ. ΤΑΒΛΑ ΜΑΡΙΑ-ΤΑΒΛΑ ΑΙΚΑΤΕΡΙΝΗ Ο.Ε.",
       "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 6 / 6, ELEFTHERIOU VENIZELOU SQ.",
@@ -244,7 +265,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 35.256118,
         "lon": 25.6063828,
@@ -286,7 +307,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 35.2614561,
         "lon": 25.7239692,
@@ -475,7 +496,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 35.0118672,
         "lon": 25.7413494,
@@ -664,7 +685,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 35.2061844,
         "lon": 26.1040802,

@@ -76,7 +76,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 40.298405,
         "lon": 21.7941875,
@@ -160,7 +160,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 40.3002682,
         "lon": 21.7872736,
@@ -207,6 +207,27 @@
         "lat": 40.3018829,
         "lon": 21.7856261,
         "ref": "https://kozani.efhmeries.gr/Home/Details/6278",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461031191",
+      "name": "ΑΔΑΜΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΜΑΚΕΔΟΝΟΜΑΧΩΝ 6",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461031191",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 40.3012304,
+        "lon": 21.788967,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/5812",
         "source": "list",
         "precision": "exact"
       }
@@ -291,27 +312,6 @@
         "lat": 40.2977716,
         "lon": 21.7868661,
         "ref": "https://kozani.efhmeries.gr/Home/Details/6016",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
-      "id": "2461034223",
-      "name": "ΑΣΒΕΣΤΑΣ ΝΙΚΟΛΑΟΣ",
-      "address": "ΑΡΙΣΤΟΦΑΝΟΥΣ 5",
-      "locality": "Κοζάνη",
-      "postcode": null,
-      "phone": "2461034223",
-      "groupId": "kozani",
-      "sources": [
-        "iteq-kozani"
-      ],
-      "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
-      "location": {
-        "lat": 40.2980046,
-        "lon": 21.7925566,
-        "ref": "https://kozani.efhmeries.gr/Home/Details/6276",
         "source": "list",
         "precision": "exact"
       }
@@ -916,7 +916,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 40.5142718,
         "lon": 21.6808582,
@@ -958,7 +958,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 40.5126475,
         "lon": 21.6774642,

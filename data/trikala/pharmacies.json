@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2431021789",
+      "name": "Σ.Φ. ΚΟΥΡΣΟΒΙΤΗ ΕΒΙΤΑ - ΣΑΡΓΙΩΤΗΣ ΚΩΝ/ΝΟΣ Ο.Ε.",
+      "address": "25ΗΣ ΜΑΡΤΙΟΥ 12",
+      "locality": "Τρίκαλα",
+      "postcode": null,
+      "phone": "2431021789",
+      "groupId": "trikala",
+      "sources": [
+        "iteq-trikala"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 39.556726,
+        "lon": 21.766263,
+        "ref": "https://trikala.efhmeries.gr/Home/Details/4111",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2431022175",
       "name": "ΤΣΑΓΚΟΥΛΗ ΣΟΦΙΑ",
       "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 14",
@@ -44,6 +65,48 @@
       }
     },
     {
+      "id": "2431022622",
+      "name": "ΤΡΙΑΝΤΑΦΥΛΛΟΥ ΛΙΛΙΑ",
+      "address": "ΟΘΩΝΟΣ 2",
+      "locality": "Τρίκαλα",
+      "postcode": null,
+      "phone": "2431022622",
+      "groupId": "trikala",
+      "sources": [
+        "iteq-trikala"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.554947,
+        "lon": 21.768546,
+        "ref": "https://trikala.efhmeries.gr/Home/Details/4112",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2431023767",
+      "name": "ΖΑΛΑΒΡΑΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΑΘΑΝΑΣΙΟΥ ΔΙΑΚΟΥ & ΤΙΟΥΣΟΝ",
+      "locality": "Τρίκαλα",
+      "postcode": null,
+      "phone": "2431023767",
+      "groupId": "trikala",
+      "sources": [
+        "iteq-trikala"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.557528,
+        "lon": 21.767952,
+        "ref": "https://trikala.efhmeries.gr/Home/Details/4110",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2431023780",
       "name": "ΣΑΚΚΑ ΑΘΑΝΑΣΙΑ",
       "address": "ΣΑΡΑΦΗ 64",
@@ -55,11 +118,32 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 39.556731,
         "lon": 21.762283,
         "ref": "https://trikala.efhmeries.gr/Home/Details/4106",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2431023885",
+      "name": "ΣΑΠΟΥΝΑΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΣΤ. ΣΑΡΑΦΗ 18",
+      "locality": "Τρίκαλα",
+      "postcode": null,
+      "phone": "2431023885",
+      "groupId": "trikala",
+      "sources": [
+        "iteq-trikala"
+      ],
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
+      "location": {
+        "lat": 39.556027,
+        "lon": 21.765954,
+        "ref": "https://trikala.efhmeries.gr/Home/Details/4118",
         "source": "list",
         "precision": "exact"
       }
@@ -128,6 +212,27 @@
       }
     },
     {
+      "id": "2431028133",
+      "name": "ΤΣΕΛΙΟΣ ΣΩΤΗΡΗΣ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 83",
+      "locality": "Τρίκαλα",
+      "postcode": null,
+      "phone": "2431028133",
+      "groupId": "trikala",
+      "sources": [
+        "iteq-trikala"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 39.556133,
+        "lon": 21.76984,
+        "ref": "https://trikala.efhmeries.gr/Home/Details/4113",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2431028876",
       "name": "ΜΑΝΟΣ ΝΙΚΟΛΑΟΣ",
       "address": "ΜΙΑΟΥΛΗ 3 & ΤΣΙΤΣΑΝΗ",
@@ -160,11 +265,95 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 39.553459,
         "lon": 21.768616,
         "ref": "https://trikala.efhmeries.gr/Home/Details/4105",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2431031180",
+      "name": "ΓΚΟΥΛΙΟΠΟΥΛΟΥ ΒΑΣΙΛΙΚΗ",
+      "address": "ΚΑΝΟΥΤΑ 1",
+      "locality": "Τρίκαλα",
+      "postcode": null,
+      "phone": "2431031180",
+      "groupId": "trikala",
+      "sources": [
+        "iteq-trikala"
+      ],
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
+      "location": {
+        "lat": 39.555177,
+        "lon": 21.766575,
+        "ref": "https://trikala.efhmeries.gr/Home/Details/4114",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2431031770",
+      "name": "ΠΑΤΣΙΑ ΕΛΕΝΗ",
+      "address": "ΒΥΡΩΝΟΣ 16",
+      "locality": "Τρίκαλα",
+      "postcode": null,
+      "phone": "2431031770",
+      "groupId": "trikala",
+      "sources": [
+        "iteq-trikala"
+      ],
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
+      "location": {
+        "lat": 39.553008,
+        "lon": 21.768039,
+        "ref": "https://trikala.efhmeries.gr/Home/Details/4109",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2431032657",
+      "name": "ΛΕΒΕΝΤΗΣ ΦΩΤΗΣ",
+      "address": "ΓΕΩΡΓΙΟΥ ΚΟΝΔΥΛΗ 24",
+      "locality": "Τρίκαλα",
+      "postcode": null,
+      "phone": "2431032657",
+      "groupId": "trikala",
+      "sources": [
+        "iteq-trikala"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 39.5580512,
+        "lon": 21.7688942,
+        "ref": "https://trikala.efhmeries.gr/Home/Details/4124",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2431033299",
+      "name": "ΖΩΗΣ ΓΙΩΡΓΟΣ",
+      "address": "ΑΘΑΜΑΝΩΝ 13",
+      "locality": "Τρίκαλα",
+      "postcode": null,
+      "phone": "2431033299",
+      "groupId": "trikala",
+      "sources": [
+        "iteq-trikala"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 39.5489486,
+        "lon": 21.7614014,
+        "ref": "https://trikala.efhmeries.gr/Home/Details/4122",
         "source": "list",
         "precision": "exact"
       }
@@ -223,7 +412,7 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 39.553548,
         "lon": 21.771325,
@@ -244,11 +433,32 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 39.553399,
         "lon": 21.762221,
         "ref": "https://trikala.efhmeries.gr/Home/Details/4103",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2431074560",
+      "name": "ΤΣΕΛΙΟΥ ΚΑΤΕΡΙΝΑ",
+      "address": "ΑΡΡΙΑΝΟΥ 24",
+      "locality": "Τρίκαλα",
+      "postcode": null,
+      "phone": "2431074560",
+      "groupId": "trikala",
+      "sources": [
+        "iteq-trikala"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 39.5474454,
+        "lon": 21.771923,
+        "ref": "https://trikala.efhmeries.gr/Home/Details/4121",
         "source": "list",
         "precision": "exact"
       }
@@ -265,7 +475,7 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 39.546937,
         "lon": 21.768584,

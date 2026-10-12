@@ -212,6 +212,27 @@
       }
     },
     {
+      "id": "2695045500",
+      "name": "ΒΟΥΛΤΣΟΥ ΜΑΡΙΑ (2)",
+      "address": "ΛΟΜΒΑΡΔΟΥ 30",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695045500",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 37.7840142,
+        "lon": 20.8982611,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4140",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2695200270",
       "name": "IONIAN FARM IKE",
       "address": "ΓΑΪΤΑΝΙ (ΕΝΑΝΤΙ ΝΟΣΟΚΟΜΕΙΟΥ)",

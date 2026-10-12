@@ -359,6 +359,48 @@
       }
     },
     {
+      "id": "2521032535",
+      "name": "ΓΑΛΑΝΟΠΟΥΛΟΥ Λ. ΕΛΠΙΔΑ",
+      "address": "Θ. ΑΘΑΝΑΣΙΑΔΗ 45",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521032535",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 41.149255,
+        "lon": 24.146676,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3156",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521032766",
+      "name": "ΚΑΧΡΙΜΑΝΙΔΟΥ ΜΑΡΙΑ",
+      "address": "ΗΠΕΙΡΟΥ 1",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521032766",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 41.148535,
+        "lon": 24.148251,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3157",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521036091",
       "name": "ΑΡΑΜΠΑΤΖΗΣ ΕΥΣΤΡΑΤΙΟΣ",
       "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 59",

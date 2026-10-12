@@ -191,27 +191,6 @@
       }
     },
     {
-      "id": "2651028505",
-      "name": "ΑΝΤΩΝΙΑΔΟΥ ΣΟΥΛΤΑΝΑ",
-      "address": "ΒΗΛΑΡΑ 40",
-      "locality": "Ιωάννινα",
-      "postcode": null,
-      "phone": "2651028505",
-      "groupId": "ioannina",
-      "sources": [
-        "iteq-ioannina"
-      ],
-      "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
-      "location": {
-        "lat": 39.6730243,
-        "lon": 20.8427691,
-        "ref": "https://ioannina.efhmeries.gr/Home/Details/5016",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2651030705",
       "name": "ΠΕΡΩΝΗ ΑΜΑΛΙΑ-ΜΑΡΙΑ",
       "address": "ΔΑΓΚΛΗ 4",
@@ -312,6 +291,27 @@
         "lat": 39.6639347,
         "lon": 20.8503045,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/4986",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651035088",
+      "name": "ΜΠΟΒΙΛΑΣ ΒΑΣΙΛΕΙΟΣ & ΜΠΟΒΙΛΑΣ ΙΩΑΝΝΗΣ",
+      "address": "ΚΑΛΛΑΡΗ 27 (ΚΟΥΡΜΑΝΙΟ)",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651035088",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 39.6692749,
+        "lon": 20.8564182,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5022",
         "source": "list",
         "precision": "exact"
       }
@@ -419,6 +419,27 @@
         "ref": "https://ioannina.efhmeries.gr/Home/Details/4988",
         "source": "list",
         "precision": "exact"
+      }
+    },
+    {
+      "id": "2651045900",
+      "name": "ΑΝΔΡΙΚΟΥ ΚΑΛΕΣΟΓΛΟΥ ΕΛΕΝΗ",
+      "address": "ΔΩΔΩΝΗΣ 26",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651045900",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-17",
+      "lastSeen": "2026-10-17",
+      "location": {
+        "lat": 39.65931,
+        "lon": 20.850738,
+        "source": "nominatim",
+        "precision": "exact",
+        "ref": "ΔΩΔΩΝΗΣ 26, Ιωάννινα"
       }
     },
     {
@@ -685,11 +706,32 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 39.6544266,
         "lon": 20.8578553,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/4998",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651077722",
+      "name": "ΛΕΚΚΑ ΑΓΓΕΛΙΚΗ",
+      "address": "ΝΑΠΟΛΕΟΝΤΟΣ ΖΕΡΒΑ 55",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651077722",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 39.6609368,
+        "lon": 20.8472401,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5021",
         "source": "list",
         "precision": "exact"
       }

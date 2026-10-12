@@ -7,7 +7,7 @@
       "name": "Αρκαδία",
       "source": {
         "url": "https://arkadia.efhmeries.gr/",
-        "uploadedAt": "2026-10-07T07:46:37.192Z"
+        "uploadedAt": "2026-10-12T10:58:45.243Z"
       },
       "sections": [
         {
@@ -76,13 +76,6 @@
           "extraHours": [],
           "notes": [],
           "entries": [
-            {
-              "pharmacyId": "2710242349",
-              "name": "ΑΘΑΝΑΣΙΑΔΟΥ Ε. ΑΝΑΣΤΑΣΙΑ",
-              "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 97",
-              "locality": "Τρίπολη",
-              "phone": "2710242349"
-            },
             {
               "pharmacyId": "2710233911",
               "name": "ΚΑΜΠΥΛΑΥΚΑΣ ΚΩΝ/ΝΟΣ ΚΑΙ ΣΙΑ Ο.Ε.",

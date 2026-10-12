@@ -223,7 +223,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.0971332,
         "lon": 22.0437407,
@@ -265,7 +265,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.0999089,
         "lon": 22.0054464,
@@ -349,7 +349,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 36.93881,
         "lon": 22.2025801,
@@ -459,6 +459,27 @@
         "lat": 37.0355072,
         "lon": 22.1108869,
         "ref": "https://messinia.efhmeries.gr/Home/Details/3391",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721086622",
+      "name": "ΑΓΓΕΛΟΠΟΥΛΟΣ Ε. ΑΛΕΞΑΝΔΡΟΣ Ο.Ε.",
+      "address": "ΠΟΛΥΧΑΡΟΥΣ 4",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721086622",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 37.0384462,
+        "lon": 22.1114572,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3380",
         "source": "list",
         "precision": "exact"
       }
@@ -685,7 +706,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.051833,
         "lon": 22.0072403,
@@ -748,7 +769,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 36.9134964,
         "lon": 21.6967334,
@@ -790,7 +811,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.2235364,
         "lon": 21.9678339,
@@ -832,7 +853,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 36.7968805,
         "lon": 21.9573842,
@@ -853,7 +874,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 36.8483201,
         "lon": 21.9227955,
@@ -958,7 +979,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.2499571,
         "lon": 21.6668878,
@@ -1084,7 +1105,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.1577885,
         "lon": 21.5861777,
@@ -1210,7 +1231,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.0674579,
         "lon": 21.6360549,
@@ -1315,7 +1336,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.0509907,
         "lon": 21.7175701,
@@ -1336,7 +1357,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.2886874,
         "lon": 21.8173504,
@@ -1399,7 +1420,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 37.2874937,
         "lon": 21.856315,

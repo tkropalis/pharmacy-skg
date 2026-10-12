@@ -34,7 +34,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 40.8474732,
         "lon": 25.8730475,
@@ -207,6 +207,27 @@
         "lat": 40.8532547,
         "lon": 25.870984,
         "ref": "https://evros.efhmeries.gr/Home/Details/4094",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2551035223",
+      "name": "ΖΗΚΙΔΟΥ ΑΣΠΑΣΙΑ",
+      "address": "Κ. Παλαιολόγου 51 (γωνία Κομνηνών)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551035223",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
+      "location": {
+        "lat": 40.8456273,
+        "lon": 25.8720171,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4295",
         "source": "list",
         "precision": "exact"
       }
@@ -496,7 +517,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 41.503015,
         "lon": 26.53014,
@@ -622,7 +643,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 41.3502204,
         "lon": 26.4935275,
@@ -790,7 +811,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 41.1924991,
         "lon": 26.304174,
@@ -895,7 +916,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 41.025262,
         "lon": 26.2577482,
@@ -916,7 +937,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 40.8942408,
         "lon": 26.1722017,

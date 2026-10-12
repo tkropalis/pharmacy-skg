@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-17",
+  "groups": [
+    {
+      "id": "magnesia",
+      "name": "Μαγνησία",
+      "source": {
+        "url": "https://magnesia.efhmeries.gr/",
+        "uploadedAt": "2026-10-12T11:01:01.098Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421061444",
+              "name": "ΑΝΑΣΤΑΣΙΟΣ ΤΣΙΛΟΓΛΟΥ",
+              "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 142",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421061444"
+            },
+            {
+              "pharmacyId": "2421025713",
+              "name": "ΕΡΙΦΥΛΗ ΡΟΥΣΣΟΥ",
+              "address": "ΔΗΜΗΤΡΙΑΔΟΣ 229",
+              "locality": "Βόλος",
+              "phone": "2421025713"
+            },
+            {
+              "pharmacyId": "2421080781",
+              "name": "ΕΥΘΥΜΙΑ ΠΑΠΑΙΩΑΝΝΟΥ",
+              "address": "ΜΠΟΤΣΑΡΗ 36",
+              "locality": "Βόλος",
+              "phone": "2421080781"
+            },
+            {
+              "pharmacyId": "2421078708",
+              "name": "ΚΑΤΕΡΙΝΑ ΚΛΙΜΑ",
+              "address": "ΟΡΜΙΝΙΟΥ 66",
+              "locality": "Βόλος",
+              "phone": "2421078708"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "13:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421066644",
+              "name": "ΒΑΣΙΛΕΙΟΣ ΜΕΙΚΟΠΟΥΛΟΣ",
+              "address": "ΛΕΩΦ. ΕΙΡΗΝΗΣ 104",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421066644"
+            },
+            {
+              "pharmacyId": "2421029947",
+              "name": "ΓΕΩΡΓΙΑ ΤΣΑΤΣΟΥ",
+              "address": "Κ. ΚΑΡΤΑΛΗ 102",
+              "locality": "Βόλος",
+              "phone": "2421029947"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421066644",
+              "name": "ΒΑΣΙΛΕΙΟΣ ΜΕΙΚΟΠΟΥΛΟΣ",
+              "address": "ΛΕΩΦ. ΕΙΡΗΝΗΣ 104",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421066644"
+            },
+            {
+              "pharmacyId": "2421029947",
+              "name": "ΓΕΩΡΓΙΑ ΤΣΑΤΣΟΥ",
+              "address": "Κ. ΚΑΡΤΑΛΗ 102",
+              "locality": "Βόλος",
+              "phone": "2421029947"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

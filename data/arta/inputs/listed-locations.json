@@ -39,6 +39,11 @@
     "lon": 21.161423,
     "ref": "https://arta.efhmeries.gr/Home/Details/1969"
   },
+  "2681069012": {
+    "lat": 39.046958,
+    "lon": 21.032133,
+    "ref": "https://arta.efhmeries.gr/Home/Details/1975"
+  },
   "2681069346": {
     "lat": 39.0622243,
     "lon": 21.0530725,
@@ -68,6 +73,11 @@
     "lat": 39.1598902,
     "lon": 20.9832537,
     "ref": "https://arta.efhmeries.gr/Home/Details/2420"
+  },
+  "2681077007": {
+    "lat": 39.1600359,
+    "lon": 20.9823731,
+    "ref": "https://arta.efhmeries.gr/Home/Details/2427"
   },
   "2681079649": {
     "lat": 39.1577938,

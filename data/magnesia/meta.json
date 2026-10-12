@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "magnesia",
-  "updatedAt": "2026-10-10T19:21:25.134Z",
-  "checkedAt": "2026-10-11T20:51:37.768Z",
+  "updatedAt": "2026-10-12T11:01:43.889Z",
+  "checkedAt": "2026-10-12T11:01:43.889Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-10-12"
+    "to": "2026-10-18"
   },
   "extendedHours": [],
   "sources": [

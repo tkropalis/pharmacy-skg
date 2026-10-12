@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-18",
+  "groups": [
+    {
+      "id": "pella",
+      "name": "Πέλλα",
+      "source": {
+        "url": "https://pella.efhmeries.gr/",
+        "uploadedAt": "2026-10-12T11:02:19.486Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382024060",
+              "name": "ΓΟΡΟΖΙΔΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΑΓΙΟΥ ΓΕΩΡΓΙΟΥ 11Α",
+              "locality": "Γιαννιτσά",
+              "phone": "2382024060"
+            },
+            {
+              "pharmacyId": "2381023080",
+              "name": "ΜΠΑΧΤΣΕΒΑΝΙΔΟΥ ΜΕΡΟΠΗ",
+              "address": "25ης ΜΑΡΤΙΟΥ 12",
+              "locality": "Έδεσσα",
+              "phone": "2381023080"
+            },
+            {
+              "pharmacyId": "2384024073",
+              "name": "Σ.Φ. ΜΕΤΑΞΑΣ ΘΕΟΔΩΡΟΣ - ΜΕΤΑΞΑ ΕΛΙΣΑΒΕΤ",
+              "address": "ΑΓ. ΝΙΚΑΝΔΡΟΥ 21",
+              "locality": "Αριδαία",
+              "phone": "2384024073"
+            },
+            {
+              "pharmacyId": "2381089980",
+              "name": "ΦΑΝΤΙΔΟΥ ΕΙΡΗΝΗ",
+              "address": "ΑΡΓΥΡΟΥΠΟΛΕΩΣ 23",
+              "locality": "Σκύδρα",
+              "phone": "2381089980"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382062100",
+              "name": "Σ.Φ. ΑΔΑΜΙΔΗΣ ΘΕΟΔΟΣΙΟΣ -ΑΔΑΜΙΔΟΥ ΜΑΡΘΑ",
+              "address": "ΒΑΣ. ΠΑΥΛΟΥ 77",
+              "locality": "Κρύα Βρύση",
+              "phone": "2382062100"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
