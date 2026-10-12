@@ -17122,7 +17122,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 38.0445606,
         "lon": 23.5364102,
@@ -17510,7 +17510,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 38.0729435,
         "lon": 23.4969098,
@@ -23737,7 +23737,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.9496496,
         "lon": 23.8627168,
@@ -23780,7 +23780,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 38.0036693,
         "lon": 23.8789897,
@@ -29686,7 +29686,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.9002317,
         "lon": 23.8726718,
@@ -29772,7 +29772,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.9624381,
         "lon": 23.9108612,
@@ -31352,7 +31352,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 38.0238314,
         "lon": 23.804595,
@@ -60304,7 +60304,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.9290335,
         "lon": 23.748345,
@@ -62470,8 +62470,8 @@
         "fsa",
         "fsa-hours"
       ],
-      "firstSeen": "2026-10-29",
-      "lastSeen": "2026-10-29",
+      "firstSeen": "2026-10-13",
+      "lastSeen": "2026-10-13",
       "location": {
         "lat": 38.0213022,
         "lon": 23.847324,
@@ -63183,7 +63183,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.9926351,
         "lon": 23.7620146,
@@ -63573,7 +63573,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.7485893,
         "lon": 23.9081304,
@@ -63917,7 +63917,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.7155985,
         "lon": 24.0540557,
@@ -64674,7 +64674,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.9772402,
         "lon": 24.0082415,
@@ -65174,7 +65174,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 38.1968717,
         "lon": 23.8421288,
@@ -65453,7 +65453,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 38.3315913,
         "lon": 23.7346208,
@@ -65538,7 +65538,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 38.2179607,
         "lon": 23.8764474,
@@ -66590,7 +66590,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.8350688,
         "lon": 23.9253862,
@@ -66785,7 +66785,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.8072468,
         "lon": 23.9811291,
@@ -66982,7 +66982,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.8934749,
         "lon": 24.0101771,

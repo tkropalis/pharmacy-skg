@@ -7,7 +7,7 @@
       "name": "Λακωνία",
       "source": {
         "url": "https://lakonia.efhmeries.gr/",
-        "uploadedAt": "2026-10-11T10:08:49.968Z"
+        "uploadedAt": "2026-10-12T22:33:05.324Z"
       },
       "sections": [
         {
@@ -23,6 +23,13 @@
           "notes": [],
           "entries": [
             {
+              "pharmacyId": "2733022566",
+              "name": "ΚΑΛΑΠΟΘΑΚΟΥ ΝΙΚΟΛΕΤΑ",
+              "address": "ΓΥΘΕΙΟ",
+              "locality": "Γύθειο",
+              "phone": "2733022566"
+            },
+            {
               "pharmacyId": "2735041679",
               "name": "ΜΑΡΙΑ ΚΟΥΤΣΟΥΜΠΟΥ ΚΑΙ ΣΙΑ ΟΕ",
               "address": "ΒΛΑΧΙΩΤΗ",
@@ -35,13 +42,6 @@
               "address": "ΞΗΡΟΚΑΜΠΙ",
               "locality": "Ξηροκάμπι",
               "phone": "2731036000"
-            },
-            {
-              "pharmacyId": "2733022131",
-              "name": "ΟΡΕΣΤΗΣ ΚΑΛΑΜΠΑΛΙΚΗΣ Ε.Ε.",
-              "address": "ΓΥΘΕΙΟ",
-              "locality": "Γύθειο",
-              "phone": "2733022131"
             },
             {
               "pharmacyId": "2733051370",

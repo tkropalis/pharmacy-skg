@@ -170,27 +170,6 @@
       }
     },
     {
-      "id": "2731027227",
-      "name": "ΝΙΚΗ ΒΑΧΑΒΙΩΛΟΥ ΚΑΠΡΑΝΟΥ &ΣΙΑ Ε.Ε.",
-      "address": "ΑΓΊΟΥ ΝΙΚΩΝΟΣ 98",
-      "locality": "Σπάρτη",
-      "postcode": null,
-      "phone": "2731027227",
-      "groupId": "lakonia",
-      "sources": [
-        "iteq-lakonia"
-      ],
-      "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
-      "location": {
-        "lat": 37.0742496,
-        "lon": 22.431869,
-        "ref": "https://lakonia.efhmeries.gr/Home/Details/17050",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2731035750",
       "name": "ΚΑΨΑΣΚΗ ΜΑΡΙΑ",
       "address": "ΞΗΡΟΚΑΜΠΙ",
@@ -412,7 +391,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-12",
       "location": {
         "lat": 36.7603815,
         "lon": 22.5641196,
@@ -454,7 +433,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 36.7608153,
         "lon": 22.5629608,
