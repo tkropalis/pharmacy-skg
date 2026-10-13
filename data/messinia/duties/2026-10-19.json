@@ -7,7 +7,7 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-10-13T10:45:44.376Z"
+        "uploadedAt": "2026-10-13T20:45:41.274Z"
       },
       "sections": [
         {
@@ -41,46 +41,6 @@
               "address": "25ης ΜΑΡΤΙΟΥ 29",
               "locality": "Κυπαρισσία",
               "phone": "2761023832"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721084098",
-              "name": "ΔΗΜΗΤΡΟΠΟΥΛΟΣ ΠΑΝΑΓΙΩΤΗΣ & ΣΙΑ Ο.Ε.",
-              "address": "ΜΑΚΕΔΟΝΙΑΣ 18",
-              "locality": "Καλαμάτα",
-              "phone": "2721084098"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 20:30",
-          "hours": {
-            "from": "08:00",
-            "to": "20:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721084098",
-              "name": "ΔΗΜΗΤΡΟΠΟΥΛΟΣ ΠΑΝΑΓΙΩΤΗΣ & ΣΙΑ Ο.Ε.",
-              "address": "ΜΑΚΕΔΟΝΙΑΣ 18",
-              "locality": "Καλαμάτα",
-              "phone": "2721084098"
             }
           ]
         },
@@ -212,6 +172,46 @@
               "address": "ΑΙΠΥΤΟΥ 22",
               "locality": "Καλαμάτα",
               "phone": "2721083888"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721084098",
+              "name": "ΔΗΜΗΤΡΟΠΟΥΛΟΣ ΠΑΝΑΓΙΩΤΗΣ & ΣΙΑ Ο.Ε.",
+              "address": "ΜΑΚΕΔΟΝΙΑΣ 18",
+              "locality": "Καλαμάτα",
+              "phone": "2721084098"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 20:30",
+          "hours": {
+            "from": "08:00",
+            "to": "20:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721084098",
+              "name": "ΔΗΜΗΤΡΟΠΟΥΛΟΣ ΠΑΝΑΓΙΩΤΗΣ & ΣΙΑ Ο.Ε.",
+              "address": "ΜΑΚΕΔΟΝΙΑΣ 18",
+              "locality": "Καλαμάτα",
+              "phone": "2721084098"
             }
           ]
         }

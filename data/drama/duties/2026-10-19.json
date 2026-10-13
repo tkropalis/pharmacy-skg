@@ -7,29 +7,9 @@
       "name": "Δράμα",
       "source": {
         "url": "https://drama.efhmeries.gr/",
-        "uploadedAt": "2026-10-13T10:43:33.050Z"
+        "uploadedAt": "2026-10-13T20:44:07.023Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2521036091",
-              "name": "ΑΡΑΜΠΑΤΖΗΣ ΕΥΣΤΡΑΤΙΟΣ",
-              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 59",
-              "locality": "Δράμα",
-              "phone": "2521036091"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "Γ. ΣΤΑΥΡΟΥ 1 ΚΑΙ ΚΥΠΡΟΥ 3",
               "locality": "Δράμα",
               "phone": "2521036888"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521036091",
+              "name": "ΑΡΑΜΠΑΤΖΗΣ ΕΥΣΤΡΑΤΙΟΣ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 59",
+              "locality": "Δράμα",
+              "phone": "2521036091"
             }
           ]
         },
