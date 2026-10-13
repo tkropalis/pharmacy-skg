@@ -506,6 +506,27 @@
       }
     },
     {
+      "id": "2331064102",
+      "name": "ΒΕΧΤΣΑΛΗ ΔΗΜΗΤΡΑ",
+      "address": "ΕΜΜ. ΠΑΠΑ 19 ΚΑΙ ΜΟΡΑΒΑ - έναντι ΙΚΑ",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331064102",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 40.5287487,
+        "lon": 22.2036954,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6207",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2331065770",
       "name": "ΧΕΙΜΩΝΙΔΗΣ ΜΙΧΑΗΛ & ΣΙΑ Ε.Ε.",
       "address": "Μ. ΜΠΟΤΣΑΡΗ 29 - πλατεία Τσερμένι",
@@ -580,7 +601,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 40.5255742,
         "lon": 22.2033286,
@@ -601,7 +622,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 40.5272051,
         "lon": 22.2033525,
@@ -685,7 +706,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 40.5506235,
         "lon": 22.248685,
@@ -926,6 +947,27 @@
       }
     },
     {
+      "id": "2332029341",
+      "name": "ΓΩΤΑ ΑΙΜΙΛΙΑ",
+      "address": "Γ ΠΑΡΟΔΟΣ ΝΙΚΟΛΑΟΥ ΑΝΑΔΟΛΗ 14Α",
+      "locality": "Νάουσα",
+      "postcode": null,
+      "phone": "2332029341",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 40.6275101,
+        "lon": 22.0695492,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/5778",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2332052992",
       "name": "ΑΝΤΙΦΑΚΟΣ Χ. ΓΕΩΡΓΙΟΣ",
       "address": "ΚΑΜΠΙΤΗ 14",
@@ -958,7 +1000,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 40.6223183,
         "lon": 22.4408209,

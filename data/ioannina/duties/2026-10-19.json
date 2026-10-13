@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-19",
+  "groups": [
+    {
+      "id": "ioannina",
+      "name": "Ιωάννινα",
+      "source": {
+        "url": "https://ioannina.efhmeries.gr/",
+        "uploadedAt": "2026-10-13T10:44:35.568Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651074161",
+              "name": "ΝΤΑΝΗΣ Β. ΣΩΤΗΡΙΟΣ",
+              "address": "ΒΗΛΑΡΑ 37",
+              "locality": "Ιωάννινα",
+              "phone": "2651074161"
+            },
+            {
+              "pharmacyId": "2651031726",
+              "name": "ΝΤΟΥΣΚΑΣ ΘΕΟΔΩΡΟΣ",
+              "address": "ΣΑΜΟΥΗΛ 43",
+              "locality": "Ιωάννινα",
+              "phone": "2651031726"
+            },
+            {
+              "pharmacyId": "2651038000",
+              "name": "ΞΕΝΗΚΑΚΗΣ ΕΜΜΑΝΟΥΗΛ",
+              "address": "ΒΛΑΧΛΕΙΔΗ 2",
+              "locality": "Ιωάννινα",
+              "phone": "2651038000"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651038350",
+              "name": "ΓΙΟΥΝΗΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "Ν. ΖΕΡΒΑ 1",
+              "locality": "Ιωάννινα",
+              "phone": "2651038350"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

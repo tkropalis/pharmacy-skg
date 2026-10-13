@@ -34,7 +34,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 40.3003363,
         "lon": 21.7853633,
@@ -517,7 +517,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 40.2999642,
         "lon": 21.7913391,
@@ -543,6 +543,27 @@
         "lat": 40.2986575,
         "lon": 21.7900977,
         "ref": "https://kozani.efhmeries.gr/Home/Details/6280",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461041705",
+      "name": "ΚΑΡΑΣΤΕΡΓΙΟΥ ΚΥΡΙΑΚΗ",
+      "address": "11ΗΣ ΟΚΤΩΒΡΙΟΥ 31",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461041705",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 40.2992606,
+        "lon": 21.7952855,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/5693",
         "source": "list",
         "precision": "exact"
       }
@@ -874,11 +895,32 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 40.5154229,
         "lon": 21.680099,
         "ref": "https://kozani.efhmeries.gr/Home/Details/7245",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463026144",
+      "name": "ΑΣΙΑΝΟΣ ΙΩΑΚΕΙΜ",
+      "address": "25ΗΣ ΜΑΡΤΙΟΥ 65 (Απέναντι από το βιβλιοπωλείο ΑΣΙΑΝΟΣ)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463026144",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 40.5155296,
+        "lon": 21.6797491,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6686",
         "source": "list",
         "precision": "exact"
       }

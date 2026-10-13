@@ -233,6 +233,27 @@
       }
     },
     {
+      "id": "2431028739",
+      "name": "ΤΖΗΜΑ ΟΛΓΑ",
+      "address": "ΑΣΚΛΗΠΙΟΥ 26",
+      "locality": "Τρίκαλα",
+      "postcode": null,
+      "phone": "2431028739",
+      "groupId": "trikala",
+      "sources": [
+        "iteq-trikala"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.552177,
+        "lon": 21.766236,
+        "ref": "https://trikala.efhmeries.gr/Home/Details/4126",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2431028876",
       "name": "ΜΑΝΟΣ ΝΙΚΟΛΑΟΣ",
       "address": "ΜΙΑΟΥΛΗ 3 & ΤΣΙΤΣΑΝΗ",
@@ -501,6 +522,27 @@
         "lat": 39.556912,
         "lon": 21.765166,
         "ref": "https://trikala.efhmeries.gr/Home/Details/4098",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2431079410",
+      "name": "ΖΥΓΟΥΡΑΚΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ & ΣΙΑ ΕΕ",
+      "address": "ΑΡΡΙΑΝΟΥ 3ΟΒ-ΕΝΑΝΤΙ ΝΟΣΟΚΟΜΕΙΟΥ",
+      "locality": "Τρίκαλα",
+      "postcode": null,
+      "phone": "2431079410",
+      "groupId": "trikala",
+      "sources": [
+        "iteq-trikala"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.546936,
+        "lon": 21.771059,
+        "ref": "https://trikala.efhmeries.gr/Home/Details/4125",
         "source": "list",
         "precision": "exact"
       }

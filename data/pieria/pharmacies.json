@@ -149,6 +149,27 @@
       }
     },
     {
+      "id": "2351029128",
+      "name": "ΤΟΛΙΟΣ ΞΕΝΟΦΩΝ",
+      "address": "ΠΛ. ΔΗΜΑΡΧΕΙΟΥ 10",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351029128",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 40.273145,
+        "lon": 22.5077812,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23545",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2351029289",
       "name": "Σ.Φ. ΧΙΟΝΙΔΟΥ ΕΛΕΝΑ-ΧΡΙΣΤΙΝΑ-ΜΕΪΜΑΡΗ ΤΙΝΑ",
       "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ & ΒΟΤΣΗ 1",
@@ -207,6 +228,27 @@
         "lat": 40.2740105,
         "lon": 22.511341,
         "ref": "https://pieria.efhmeries.gr/Home/Details/23530",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351035148",
+      "name": "ΤΣΙΟΥΜΑΝΗ ΕΛΕΝΗ",
+      "address": "ΣΒΟΡΩΝΟΥ 16 & Δ. ΓΟΥΝΑΡΗ ΓΩΝΙΑ",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351035148",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 40.2725619,
+        "lon": 22.5012104,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23546",
         "source": "list",
         "precision": "exact"
       }
@@ -307,7 +349,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 40.3148822,
         "lon": 22.5846429,
@@ -391,7 +433,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 40.2666242,
         "lon": 22.5967127,
@@ -506,6 +548,27 @@
       }
     },
     {
+      "id": "2352032285",
+      "name": "ΓΚΕΜΑΛΜΑΣ ΜΙΧΑΗΛ",
+      "address": "ΒΑΣ. ΣΟΦΙΑΣ 22",
+      "locality": "Λεπτοκαρυά",
+      "postcode": null,
+      "phone": "2352032285",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 40.0588965,
+        "lon": 22.5606957,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/20242",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2352041055",
       "name": "ΝΑΝΟΥ ΑΝΔΡΙΑΝΗ",
       "address": "Κ. ΚΑΡΑΜΑΝΛΗ 20",
@@ -522,6 +585,27 @@
         "lat": 39.9952223,
         "lon": 22.6179865,
         "ref": "https://pieria.efhmeries.gr/Home/Details/23984",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2352042400",
+      "name": "Σ.Φ. ΤΖΗΜΑ ΑΝΝΑ-ΜΑΡΙΑ - ΒΟΥΖΙΚΑ ΣΤΑΥΡΟΥΛΑ",
+      "address": "Κ. ΚΑΡΑΜΑΝΛΗ 56",
+      "locality": "Πλαταμώνας",
+      "postcode": null,
+      "phone": "2352042400",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.9919599,
+        "lon": 22.6244695,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23991",
         "source": "list",
         "precision": "exact"
       }
@@ -643,11 +727,32 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 40.1016061,
         "lon": 22.5002437,
         "ref": "https://pieria.efhmeries.gr/Home/Details/21745",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2353022173",
+      "name": "Σ.Φ. ΠΑΠΑΖΟΓΛΟΥ ΜΑΡΙΑ-ΜΠΑΚΑ ΔΗΜΗΤΡΑ",
+      "address": "ΑΛ. ΠΑΠΑΓΟΥ 20",
+      "locality": "Αιγίνιο",
+      "postcode": null,
+      "phone": "2353022173",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 40.4994548,
+        "lon": 22.5422727,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/19098",
         "source": "list",
         "precision": "exact"
       }
@@ -706,7 +811,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 40.4795366,
         "lon": 22.4840158,

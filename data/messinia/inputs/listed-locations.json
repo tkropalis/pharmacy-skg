@@ -49,6 +49,11 @@
     "lon": 22.0313712,
     "ref": "https://messinia.efhmeries.gr/Home/Details/2428"
   },
+  "2721032672": {
+    "lat": 37.082691,
+    "lon": 22.0485688,
+    "ref": "https://messinia.efhmeries.gr/Home/Details/2440"
+  },
   "2721032913": {
     "lat": 37.0971332,
     "lon": 22.0437407,
@@ -104,6 +109,16 @@
     "lon": 22.1135019,
     "ref": "https://messinia.efhmeries.gr/Home/Details/3528"
   },
+  "2721083888": {
+    "lat": 37.0430877,
+    "lon": 22.1130171,
+    "ref": "https://messinia.efhmeries.gr/Home/Details/3481"
+  },
+  "2721084098": {
+    "lat": 37.0330797,
+    "lon": 22.1073175,
+    "ref": "https://messinia.efhmeries.gr/Home/Details/3538"
+  },
   "2721084925": {
     "lat": 37.0355072,
     "lon": 22.1108869,
@@ -149,6 +164,11 @@
     "lon": 22.0085003,
     "ref": "https://messinia.efhmeries.gr/Home/Details/3077"
   },
+  "2722023773": {
+    "lat": 37.050807,
+    "lon": 22.008398,
+    "ref": "https://messinia.efhmeries.gr/Home/Details/3088"
+  },
   "2722024000": {
     "lat": 37.0499394,
     "lon": 22.0091043,
@@ -179,6 +199,11 @@
     "lon": 22.0082397,
     "ref": "https://messinia.efhmeries.gr/Home/Details/3083"
   },
+  "2723022556": {
+    "lat": 36.9138599,
+    "lon": 21.6969145,
+    "ref": "https://messinia.efhmeries.gr/Home/Details/3196"
+  },
   "2723022880": {
     "lat": 36.9134964,
     "lon": 21.6967334,
@@ -203,6 +228,11 @@
     "lat": 36.7968805,
     "lon": 21.9573842,
     "ref": "https://messinia.efhmeries.gr/Home/Details/2546"
+  },
+  "2725031170": {
+    "lat": 36.9031234,
+    "lon": 21.9215367,
+    "ref": "https://messinia.efhmeries.gr/Home/Details/2116"
   },
   "2725032000": {
     "lat": 36.8483201,
@@ -238,6 +268,11 @@
     "lat": 37.2505789,
     "lon": 21.669843,
     "ref": "https://messinia.efhmeries.gr/Home/Details/2651"
+  },
+  "2761023832": {
+    "lat": 37.2505725,
+    "lon": 21.6701016,
+    "ref": "https://messinia.efhmeries.gr/Home/Details/2656"
   },
   "2761032102": {
     "lat": 37.1572577,

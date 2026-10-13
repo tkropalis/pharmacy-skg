@@ -55,7 +55,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.5099187,
         "lon": 22.3723329,
@@ -254,6 +254,27 @@
       }
     },
     {
+      "id": "2710234732",
+      "name": "ΚΑΡΚΟΥΛΗ ΜΑΡΙΑ",
+      "address": "ΕΡ. ΣΤΑΥΡΟΥ ΚΑΙ ΑΝΑΓΝΩΣΤΑΡΑ",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710234732",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 37.5127045,
+        "lon": 22.3679173,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5087",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2710235577",
       "name": "ΚΥΡΙΑΚΟΠΟΥΛΟΣ ΑΘΑΝΑΣΙΟΣ",
       "address": "ΝΙΚΗΤΑΡΑ 13",
@@ -307,11 +328,32 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.5101494,
         "lon": 22.3749398,
         "ref": "https://arkadia.efhmeries.gr/Home/Details/5077",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710237979",
+      "name": "ΔΕΛΗ ΓΕΩΡΓΙΑ Ο.Ε.",
+      "address": "ΕΘΝΟΜΑΡΤΥΡΩΝ 25",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710237979",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 37.5111574,
+        "lon": 22.3705772,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5084",
         "source": "list",
         "precision": "exact"
       }
@@ -349,7 +391,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.5114741,
         "lon": 22.3722054,
@@ -380,6 +422,27 @@
       }
     },
     {
+      "id": "2710241560",
+      "name": "ΔΗΜΗΤΡΟΠΟΥΛΟΥ Ε. ΣΤΑΥΡΟΥΛΑ",
+      "address": "ΚΑΛΑΜΑΤΑΣ 5",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710241560",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 37.507385,
+        "lon": 22.3699548,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5085",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2710242222",
       "name": "ΙΩΑΝΝΙΔΗΣ ΑΘΑΝΑΣΙΟΣ",
       "address": "ΓΡ. ΛΑΜΠΡΑΚΗ 8",
@@ -391,7 +454,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.5085669,
         "lon": 22.3749095,
@@ -454,7 +517,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.4062373,
         "lon": 22.71853,
@@ -496,7 +559,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.1662669,
         "lon": 22.86118,
@@ -601,7 +664,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.4010985,
         "lon": 22.1366148,
@@ -622,7 +685,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.6845416,
         "lon": 22.2955302,
@@ -685,7 +748,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.7322838,
         "lon": 21.9594427,

@@ -7,26 +7,47 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-10-12T22:32:16.158Z"
+        "uploadedAt": "2026-10-13T10:44:09.320Z"
       },
       "sections": [
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 14:30",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331062163",
-              "name": "ΖΕΡΗΣ ΓΕΩΡΓΙΟΣ & ΣΙΑ Ο.Ε.",
-              "address": "ΚΟΝΙΤΣΗΣ 15 ΚΑΙ ΕΜΜ.ΖΑΧΟΥ - περ. ΚΤΕΛ",
+              "pharmacyId": "2333023608",
+              "name": "ΚΕΜΠΑΠΙΔΟΥ ΝΙΚΗ & ΣΙΑ Ο.Ε.",
+              "address": "Δ.ΒΕΤΣΟΠΟΥΛΟΥ 101",
+              "locality": "Αλεξάνδρεια",
+              "phone": "2333023608"
+            },
+            {
+              "pharmacyId": "2331029759",
+              "name": "ΜΠΑΛΙΟΥ Θ. ΜΑΡΙΑ - ΧΡΙΣΤΙΝΑ",
+              "address": "ΜΑΛΑΚΟΥΣΗ 18 ΚΑΙ ΒΕΝΙΖΕΛΟΥ",
               "locality": "Βέροια",
-              "phone": "2331062163"
+              "phone": "2331029759"
+            },
+            {
+              "pharmacyId": "2331021741",
+              "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΒΑΣΙΛΙΚΗ ΤΟΥ ΓΕΩΡΓΙΟΥ",
+              "address": "ΒΕΡΜΙΟΥ 10",
+              "locality": "Βέροια",
+              "phone": "2331021741"
+            },
+            {
+              "pharmacyId": "2331074374",
+              "name": "ΧΑΡΑΛΑΜΠΙΔΟΥ ΜΑΡΙΑ",
+              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 21",
+              "locality": "Βέροια",
+              "phone": "2331074374"
             }
           ]
         },
@@ -79,47 +100,6 @@
           ]
         },
         {
-          "kind": "saturday-extra",
-          "heading": "08:00 ΕΩΣ 14:30",
-          "hours": {
-            "from": "08:00",
-            "to": "14:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2333023608",
-              "name": "ΚΕΜΠΑΠΙΔΟΥ ΝΙΚΗ & ΣΙΑ Ο.Ε.",
-              "address": "Δ.ΒΕΤΣΟΠΟΥΛΟΥ 101",
-              "locality": "Αλεξάνδρεια",
-              "phone": "2333023608"
-            },
-            {
-              "pharmacyId": "2331029759",
-              "name": "ΜΠΑΛΙΟΥ Θ. ΜΑΡΙΑ - ΧΡΙΣΤΙΝΑ",
-              "address": "ΜΑΛΑΚΟΥΣΗ 18 ΚΑΙ ΒΕΝΙΖΕΛΟΥ",
-              "locality": "Βέροια",
-              "phone": "2331029759"
-            },
-            {
-              "pharmacyId": "2331021741",
-              "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΒΑΣΙΛΙΚΗ ΤΟΥ ΓΕΩΡΓΙΟΥ",
-              "address": "ΒΕΡΜΙΟΥ 10",
-              "locality": "Βέροια",
-              "phone": "2331021741"
-            },
-            {
-              "pharmacyId": "2331074374",
-              "name": "ΧΑΡΑΛΑΜΠΙΔΟΥ ΜΑΡΙΑ",
-              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 21",
-              "locality": "Βέροια",
-              "phone": "2331074374"
-            }
-          ]
-        },
-        {
           "kind": "day",
           "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
@@ -146,6 +126,26 @@
             "from": "19:00",
             "to": "21:00",
             "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331062163",
+              "name": "ΖΕΡΗΣ ΓΕΩΡΓΙΟΣ & ΣΙΑ Ο.Ε.",
+              "address": "ΚΟΝΙΤΣΗΣ 15 ΚΑΙ ΕΜΜ.ΖΑΧΟΥ - περ. ΚΤΕΛ",
+              "locality": "Βέροια",
+              "phone": "2331062163"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],

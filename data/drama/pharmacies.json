@@ -44,6 +44,27 @@
       }
     },
     {
+      "id": "2521020430",
+      "name": "ΚΕΧΑΓΙΟΓΛΟΥ ΖΟΥΜΠΟΥΛΙΑ",
+      "address": "Μ.ΑΛΕΞΑΝΔΡΟΥ 117",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521020430",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 41.153056,
+        "lon": 24.14674,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3160",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521020600",
       "name": "ΜΕΝΕΣΙΔΗΣ ΙΩΑΝΝΗΣ",
       "address": "ΑΝΤΙΓΟΝΟΥ 15",
@@ -81,6 +102,27 @@
         "lat": 41.1511025,
         "lon": 24.1483116,
         "ref": "https://drama.efhmeries.gr/Home/Details/3155",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521021144",
+      "name": "ΚΑΛΛΙΑΣ ΑΝΤΩΝΙΟΣ",
+      "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 26",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521021144",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 41.1509877,
+        "lon": 24.1465581,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3159",
         "source": "list",
         "precision": "exact"
       }
@@ -412,7 +454,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 41.1510455,
         "lon": 24.1440515,
@@ -459,6 +501,27 @@
         "lat": 41.1480127,
         "lon": 24.1472882,
         "ref": "https://drama.efhmeries.gr/Home/Details/3131",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521036888",
+      "name": "ΧΑΤΖΗΣΤΑΥΡΟΣ Χ. ΔΗΜΗΤΡΙΟΣ",
+      "address": "Γ. ΣΤΑΥΡΟΥ 1 ΚΑΙ ΚΥΠΡΟΥ 3",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521036888",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 41.1496635,
+        "lon": 24.1455595,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3161",
         "source": "list",
         "precision": "exact"
       }

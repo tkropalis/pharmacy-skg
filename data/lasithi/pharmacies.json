@@ -160,7 +160,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 35.1895469,
         "lon": 25.717248,
@@ -223,7 +223,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 35.2562283,
         "lon": 25.6066956,
@@ -286,7 +286,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 35.2617867,
         "lon": 25.7226428,
@@ -438,6 +438,27 @@
         "lat": 35.0083817,
         "lon": 25.736538,
         "ref": "https://lasithi.efhmeries.gr/Home/Details/4693",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2842024910",
+      "name": "ΚΕΒΡΕΚΙΔΟΥ Ι. ΕΙΡΗΝΗ",
+      "address": "ΛΑΣΘΈΝΟΥΣ 55 / 55, LASTHENOUS STR.",
+      "locality": "Ιεράπετρα",
+      "postcode": null,
+      "phone": "2842024910",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 35.0131874,
+        "lon": 25.7430014,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4714",
         "source": "list",
         "precision": "exact"
       }
@@ -648,6 +669,27 @@
         "lat": 35.204825,
         "lon": 26.1058842,
         "ref": "https://lasithi.efhmeries.gr/Home/Details/4777",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2843023374",
+      "name": "Σ.Φ. ΣΤΑΥΡΟΣ ΣΥΛΛΙΓΑΡΔΑΚΗΣ-ΓΕΩΡΓΙΑ ΣΥΛΛΙΓΑΡΔΑΚΗ Ο.Ε.",
+      "address": "ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 7 / 7, ELEFTHERIOU VENIZELOU STR.",
+      "locality": "Σητεία",
+      "postcode": null,
+      "phone": "2843023374",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 35.2056639,
+        "lon": 26.1048292,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4746",
         "source": "list",
         "precision": "exact"
       }

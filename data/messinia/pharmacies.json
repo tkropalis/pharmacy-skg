@@ -212,6 +212,27 @@
       }
     },
     {
+      "id": "2721032672",
+      "name": "ΜΠΡΑΤΣΙΑΚΟΥ ΚΩΝΣΤΑΝΤΙΝΑ & ΣΙΑ Ο.Ε",
+      "address": "ΘΟΥΡΙΑ",
+      "locality": "Θουρία",
+      "postcode": null,
+      "phone": "2721032672",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 37.082691,
+        "lon": 22.0485688,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2440",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2721032913",
       "name": "ΚΟΥΦΟΥ ΒΑΛΕΝΤΙΝΑ - ΦΛΩΡΑ",
       "address": "ΑΙΘΑΙΑ",
@@ -265,7 +286,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.0999089,
         "lon": 22.0054464,
@@ -370,7 +391,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.8880609,
         "lon": 22.2325442,
@@ -438,6 +459,48 @@
         "lat": 37.0324369,
         "lon": 22.1135019,
         "ref": "https://messinia.efhmeries.gr/Home/Details/3528",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721083888",
+      "name": "Σ.Φ. ΧΑΡΑΜΑΡΑ ΠΡΑΤΤΗ Σ. - ΠΡΑΤΤΗ Μ. Ο.Ε.",
+      "address": "ΑΙΠΥΤΟΥ 22",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721083888",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 37.0430877,
+        "lon": 22.1130171,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3481",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2721084098",
+      "name": "ΔΗΜΗΤΡΟΠΟΥΛΟΣ ΠΑΝΑΓΙΩΤΗΣ & ΣΙΑ Ο.Ε.",
+      "address": "ΜΑΚΕΔΟΝΙΑΣ 18",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721084098",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 37.0330797,
+        "lon": 22.1073175,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3538",
         "source": "list",
         "precision": "exact"
       }
@@ -632,6 +695,27 @@
       }
     },
     {
+      "id": "2722023773",
+      "name": "ΚΟΥΦΟΥ ΓΑΒΡΙΕΛΑ-ΕΛΕΟΝΩΡΑ",
+      "address": "ΠΟΛΥΤΕΧΝΕΙΟΥ 33",
+      "locality": "Μεσσήνη",
+      "postcode": null,
+      "phone": "2722023773",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 37.050807,
+        "lon": 22.008398,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3088",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2722024000",
       "name": "ΓΙΑΝΝΑΡΗ ΣΟΦΙΑ Ο.Ε.",
       "address": "28ης ΟΚΤΩΒΡΙΟΥ 37",
@@ -758,6 +842,27 @@
       }
     },
     {
+      "id": "2723022556",
+      "name": "ΤΣΑΡΠΑΛΑΣ ΠΕΡ. - ΤΣΑΡΠΑΛΑΣ ΑΓΓ. Ο.Ε.",
+      "address": "ΠΥΛΟΣ",
+      "locality": "Πύλος",
+      "postcode": null,
+      "phone": "2723022556",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 36.9138599,
+        "lon": 21.6969145,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3196",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2723022880",
       "name": "Σ.Φ. ΜΠΟΓΙΑΤΖΗ Μ. - ΚΥΡΙΑΚΟΥΛΗ ΕΥΣΤ. Ο.Ε.",
       "address": "ΠΛ. ΤΡΙΩΝ ΝΑΥΑΡΧΩΝ",
@@ -811,7 +916,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.2235364,
         "lon": 21.9678339,
@@ -853,11 +958,32 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.7968805,
         "lon": 21.9573842,
         "ref": "https://messinia.efhmeries.gr/Home/Details/2546",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2725031170",
+      "name": "ΠΑΠΑΓΙΑΝΝΗΣ ΧΡΗΣΤΟΣ",
+      "address": "ΧΡΑΝΟΙ",
+      "locality": "Αιπεία",
+      "postcode": null,
+      "phone": "2725031170",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 36.9031234,
+        "lon": 21.9215367,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2116",
         "source": "list",
         "precision": "exact"
       }
@@ -1010,6 +1136,27 @@
       }
     },
     {
+      "id": "2761023832",
+      "name": "ΣΑΜΠΑΖΙΩΤΗΣ ΓΕΩΡΓΙΟΣ & ΣΙΑ Ο.Ε.",
+      "address": "25ης ΜΑΡΤΙΟΥ 29",
+      "locality": "Κυπαρισσία",
+      "postcode": null,
+      "phone": "2761023832",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 37.2505725,
+        "lon": 21.6701016,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2656",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2761032102",
       "name": "ΣΕΡΑΦΕΙΜ ΠΗΝΕΛΟΠΗ",
       "address": "ΟΘΩΝΟΣ & ΑΜΑΛΙΑΣ",
@@ -1126,7 +1273,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.1569294,
         "lon": 21.5830293,
@@ -1189,7 +1336,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.065972,
         "lon": 21.6369701,
@@ -1336,7 +1483,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.0509907,
         "lon": 21.7175701,
@@ -1357,7 +1504,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.2886874,
         "lon": 21.8173504,
@@ -1420,7 +1567,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.2874937,
         "lon": 21.856315,

@@ -34,6 +34,16 @@
     "lon": 23.5928468,
     "ref": "https://evia.efhmeries.gr/Home/Details/9309"
   },
+  "2221025704": {
+    "lat": 38.471461,
+    "lon": 23.64434,
+    "ref": "https://evia.efhmeries.gr/Home/Details/9328"
+  },
+  "2221029509": {
+    "lat": 38.468614,
+    "lon": 23.600894,
+    "ref": "https://evia.efhmeries.gr/Home/Details/9330"
+  },
   "2221041413": {
     "lat": 38.4923664,
     "lon": 23.6335631,
@@ -248,5 +258,10 @@
     "lat": 38.3920871,
     "lon": 23.7914086,
     "ref": "https://evia.efhmeries.gr/Home/Details/7913"
+  },
+  "2229063332": {
+    "lat": 38.3921653,
+    "lon": 23.7950923,
+    "ref": "https://evia.efhmeries.gr/Home/Details/7727"
   }
 }

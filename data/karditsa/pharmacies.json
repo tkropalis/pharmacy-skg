@@ -149,6 +149,27 @@
       }
     },
     {
+      "id": "2441025403",
+      "name": "ΝΤΑΝΟΒΑΣΙΛΗΣ ΙΩΑΝΝΗΣ",
+      "address": "ΧΑΤΖΗΜΗΤΡΟΥ 5",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441025403",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.3649679,
+        "lon": 21.9251075,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3768",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2441025525",
       "name": "Σ/Φ ΜΠΕΚΟΥ ΜΙΡΑΝΤΑ - ΑΜΟΥΝΤΖΙΑ ΜΑΡΙΑΝΝΑ & ΣΙΑ Ο.Ε.",
       "address": "ΑΒΕΡΩΦ 26",
@@ -270,6 +291,27 @@
         "lat": 39.3645775,
         "lon": 21.9200073,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3752",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441028266",
+      "name": "ΜΠΑΤΣΟΥΚΑ ΑΣΠΑΣΙΑ",
+      "address": "ΙΕΖΕΚΙΗΛ 31",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441028266",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.3655377,
+        "lon": 21.9234027,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3767",
         "source": "list",
         "precision": "exact"
       }

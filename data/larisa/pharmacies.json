@@ -2,22 +2,22 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
-      "id": "2410231320",
-      "name": "ΚΑΛΥΒΗ ΑΙΚΑΤΕΡΙΝΗ",
-      "address": "ΟΙΚΟΝΟΜΟΥ ΕΞ ΟΙΚΟΝΟΜΩΝ 54 & ΚΟΛΟΚΟΤΡΩΝΗ ΓΩΝΙΑ (ΠΛΗΣΙΟΝ SUPER MARKET ΓΑΛΑΞΙΑ)",
+      "id": "2410232050",
+      "name": "ΚΕΧΑΓΙΑΣ ΣΩΚΡΑΤΗΣ-ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΑΓΙΑΣ 83 (Δίπλα στην πύλη ΑΤΑ)",
       "locality": "Λάρισα",
       "postcode": null,
-      "phone": "2410231320",
+      "phone": "2410232050",
       "groupId": "larisa",
       "sources": [
         "fsl"
       ],
-      "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
       "location": {
-        "lat": 39.63407,
-        "lon": 22.42231,
-        "ref": "https://larisa.efhmeries.gr/Home/Details/24241",
+        "lat": 39.64201,
+        "lon": 22.43284,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23161",
         "source": "list",
         "precision": "exact"
       }
@@ -186,6 +186,27 @@
         "lat": 39.63607,
         "lon": 22.42231,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23019",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410238822",
+      "name": "ΝΙΚΟΥ ΤΡΙΑΝΤΑΦΥΛΛΙΑ",
+      "address": "ΝΙΚΗΦΟΡΟΥ ΦΩΚΑ 1 (Πλησίον Σταθμού ΟΣΕ)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410238822",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.6301,
+        "lon": 22.42137,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23159",
         "source": "list",
         "precision": "exact"
       }
@@ -459,6 +480,27 @@
         "lat": 39.6391,
         "lon": 22.41322,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23028",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410259776",
+      "name": "ΚΑΛΑΜΠΟΥΚΑΣ Κ. ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΑΣΚΛΗΠΙΟΥ 34",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410259776",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.63575,
+        "lon": 22.41822,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23163",
         "source": "list",
         "precision": "exact"
       }
@@ -779,6 +821,27 @@
       }
     },
     {
+      "id": "2410287824",
+      "name": "ΚΑΦΦΕ ΠΑΝΑΓΙΩΤΑ",
+      "address": "ΠΑΛΑΜΑ 1 & ΑΛ. ΠΑΝΑΓΟΥΛΗ",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410287824",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.6384253,
+        "lon": 22.419235,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23164",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410288488",
       "name": "ΚΑΛΜΠΟΚΙΝΗΣ ΧΡ. ΑΝΑΣΤΑΣΙΟΣ",
       "address": "23ης ΟΚΤΩΒΡΙΟΥ 24-26 (Παραπλεύρως Ξεν. Διόνυσος)",
@@ -816,6 +879,27 @@
         "lat": 39.63765,
         "lon": 22.40705,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23032",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410289611",
+      "name": "ΒΟΥΝΤΑ ΕΛΕΝΗ",
+      "address": "ΝΙΚΗΤΑΡΑ 33 (Πλησίον πρώην Υποθηκοφυλακείου)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410289611",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.63954,
+        "lon": 22.4235,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23160",
         "source": "list",
         "precision": "exact"
       }
@@ -1021,7 +1105,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 39.63976,
         "lon": 22.4174568,
@@ -1409,6 +1493,27 @@
       }
     },
     {
+      "id": "2410591878",
+      "name": "Σ.Φ. ΕΥΑΓΓΕΛΙΑ ΚΟΛΟΤΣΙΟΥ - ΚΩΝΣΤΑΝΤΙΝΟΣ ΚΟΛΟΤΣΙΟΣ Ο.Ε.",
+      "address": "ΚΟΖΑΝΗΣ 39",
+      "locality": "Γιάννουλη",
+      "postcode": null,
+      "phone": "2410591878",
+      "groupId": "giannouli",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.665178,
+        "lon": 22.394285,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/18934",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410591955",
       "name": "ΜΠΟΥΝΤΙΝΑ ΒΑΣΙΛΙΚΗ",
       "address": "ΚΩΝ/ΝΟΥ ΠΑΛΑΙΟΛΟΓΟΥ 44",
@@ -1504,7 +1609,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 39.62518,
         "lon": 22.39695,
@@ -1714,7 +1819,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 39.635,
         "lon": 22.41837,
@@ -1850,6 +1955,27 @@
       }
     },
     {
+      "id": "2410626223",
+      "name": "ΤΗΝΕΛΗ ΓΙΑΝΝΙΚΗ ΜΥΡΣΙΝΗ",
+      "address": "ΠΑΠΑΝΑΣΤΑΣΙΟΥ 121 (Πλησίον κτηνιατρείου)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410626223",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.63182,
+        "lon": 22.41528,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23162",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410626654",
       "name": "ΜΠΟΥΤΛΑ ΒΑΣΙΛΙΚΗ",
       "address": "1ης ΜΕΡΑΡΧΙΑΣ 1 - ΝΕΑΠΟΛΗ (Πλατεία Νεάπολης)",
@@ -1955,6 +2081,27 @@
       }
     },
     {
+      "id": "2410941606",
+      "name": "ΤΑΣΗ ΓΕΩΡΓΙΑ",
+      "address": "ΑΣΚΛΗΠΙΟΥ 1",
+      "locality": "Φαλάνη",
+      "postcode": null,
+      "phone": "2410941606",
+      "groupId": "falani",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.722099,
+        "lon": 22.39727,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/3851",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410942053",
       "name": "ΠΑΝΙΔΟΥ ΑΝΑΣΤΑΣΙΑ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "ΑΜΠΕΛΩΝΟΣ 28",
@@ -2055,6 +2202,27 @@
         "lat": 39.6665575,
         "lon": 22.390773,
         "ref": "https://larisa.efhmeries.gr/Home/Details/18921",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2413010446",
+      "name": "ΖΑΧΟΣ ΚΩΝ. ΕΜΜΑΝΟΥΗΛ",
+      "address": "ΦΑΡΣΑΛΩΝ 159",
+      "locality": "Νίκαια",
+      "postcode": null,
+      "phone": "2413010446",
+      "groupId": "nikaia",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.560673,
+        "lon": 22.465792,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/18007",
         "source": "list",
         "precision": "exact"
       }
@@ -2223,6 +2391,27 @@
         "lat": 39.293758,
         "lon": 22.385252,
         "ref": "https://larisa.efhmeries.gr/Home/Details/19748",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2491022501",
+      "name": "ΜΗΤΑ Γ. ΖΩΗ",
+      "address": "ΚΑΝΑΔΑ 23",
+      "locality": "Φάρσαλα",
+      "postcode": null,
+      "phone": "2491022501",
+      "groupId": "farsala",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.29387,
+        "lon": 22.387869,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/19749",
         "source": "list",
         "precision": "exact"
       }
@@ -2659,7 +2848,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 39.745199,
         "lon": 22.363246,
@@ -2685,6 +2874,27 @@
         "lat": 39.746426,
         "lon": 22.360094,
         "ref": "https://larisa.efhmeries.gr/Home/Details/17622",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2492301598",
+      "name": "ΚΟΝΤΟΓΙΑΝΝΗ ΕΛΕΝΗ",
+      "address": "ΚΑΡΑΟΛΗ & ΔΗΜΗΤΡΙΟΥ",
+      "locality": "Τύρναβος",
+      "postcode": null,
+      "phone": "2492301598",
+      "groupId": "tyrnavos",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.736681,
+        "lon": 22.289553,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/20156",
         "source": "list",
         "precision": "exact"
       }
@@ -2869,7 +3079,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 39.895126,
         "lon": 22.182629,
@@ -3037,7 +3247,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 39.7190695,
         "lon": 22.7586904,

@@ -149,6 +149,27 @@
       }
     },
     {
+      "id": "2731026474",
+      "name": "ΚΑΡΤΣΙΔΗΜΑΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΠΑΛΑΙΟΛΟΓΟΥ 71",
+      "locality": "Σπάρτη",
+      "postcode": null,
+      "phone": "2731026474",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 37.0741072,
+        "lon": 22.4301107,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/17055",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2731027212",
       "name": "ΦΑΡΜΑΚΕΙΟ ΣΥΝΟΔΙΝΟΣ ΘΕΟΔΩΡΟΣ Ε.Ε. (Αδ. Φαρμ. Βελισσάρης Ηλίας)",
       "address": "ΚΩΝ/ΝΟΥ ΠΑΛΑΙΟΛΟΓΟΥ 119",
@@ -202,7 +223,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.9593051,
         "lon": 22.4522074,
@@ -223,7 +244,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 37.1706904,
         "lon": 22.3044898,
@@ -286,7 +307,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.8034443,
         "lon": 22.8514313,
@@ -328,7 +349,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.730498,
         "lon": 22.8542705,
@@ -454,7 +475,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.7591707,
         "lon": 22.5658321,
@@ -475,7 +496,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.667192,
         "lon": 22.3811891,
@@ -527,6 +548,27 @@
       }
     },
     {
+      "id": "2734022322",
+      "name": "ΤΣΑΛΑΒΟΥΤΑ ΜΑΡΙΑ",
+      "address": "ΝΕΑΠΟΛΗ",
+      "locality": "Νεάπολη",
+      "postcode": null,
+      "phone": "2734022322",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 36.5084673,
+        "lon": 23.061024,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/14823",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2734022989",
       "name": "ΨΑΡΡΑΚΗ ΧΡΥΣΟΥΛΑ &ΣΙΑ Ο.Ε.",
       "address": "ΝΕΑΠΟΛΗ",
@@ -559,7 +601,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.8511637,
         "lon": 22.6663352,
@@ -643,7 +685,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.8611992,
         "lon": 22.7048206,

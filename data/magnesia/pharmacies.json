@@ -338,6 +338,27 @@
       }
     },
     {
+      "id": "2421034240",
+      "name": "ΠΕΡΙΣΤΕΡΑ ΧΟΥΡΜΑ",
+      "address": "ΑΝΘ.ΓΑΖΗ-ΧΑΤΖΗΑΡΓΥΡΗ",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421034240",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.364607,
+        "lon": 22.946961,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5448",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2421034304",
       "name": "ΧΡΗΣΤΟΣ ΜΕΦΣΟΥΤ",
       "address": "ΠΟΛΥΜΕΡΗ 56",
@@ -438,6 +459,27 @@
         "lat": 39.366032,
         "lon": 22.95185,
         "ref": "https://magnesia.efhmeries.gr/Home/Details/5374",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421037447",
+      "name": "ΔΗΜΗΤΡΑ ΣΤΕΦΑΝΑΚΗ",
+      "address": "ΤΟΠΑΛΗ 61",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421037447",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.361289,
+        "lon": 22.948063,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5451",
         "source": "list",
         "precision": "exact"
       }
@@ -585,6 +627,27 @@
         "lat": 39.379554,
         "lon": 22.958581,
         "ref": "https://magnesia.efhmeries.gr/Home/Details/5417",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2421042822",
+      "name": "ΑΠΟΣΤΟΛΟΣ ΓΕΡΟΒΑΣΙΛΗΣ-ΠΑΠΑΛΕΞΟΠΟΥΛΟΥ ΜΑΡΙΑ",
+      "address": "Κ.ΚΑΡΤΑΛΗ-Γ.ΔΗΜΟΥ",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421042822",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.36967,
+        "lon": 22.955506,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5449",
         "source": "list",
         "precision": "exact"
       }
@@ -842,6 +905,27 @@
       }
     },
     {
+      "id": "2421055380",
+      "name": "ΜΑΚΡΙΝΑ-ΔΑΝΑΗ ΠΑΠΑΘΕΟΛΟΓΟΥ",
+      "address": "ΑΓΙΟΥ ΔΗΜΗΤΡΙΟΥ 49",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421055380",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.3581509,
+        "lon": 22.9650601,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5453",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2421057700",
       "name": "ΑΓΓΕΛΟΣ-ΣΠΥΡΙΔΩΝ ΑΛΕΞΑΝΔΡΟΠΟΥΛΟΣ",
       "address": "ΚΑΣΣΑΒΕΤΗ 43 - ΡΗΓΑ ΦΕΡΑΙΟΥ",
@@ -979,7 +1063,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 39.373969,
         "lon": 22.93224,
@@ -1049,6 +1133,27 @@
         "source": "nominatim",
         "precision": "street",
         "ref": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 142, Νέα Ιωνία"
+      }
+    },
+    {
+      "id": "2421061456",
+      "name": "ΑΙΚΑΤΕΡΙΝΗ ΚΑΡΑΚΑΝΑ",
+      "address": "Μπότσαρη-Βρ.Θεοδωρητου 20",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421061456",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.367438,
+        "lon": 22.925031,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5450",
+        "source": "list",
+        "precision": "exact"
       }
     },
     {
@@ -1294,7 +1399,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 39.375704,
         "lon": 22.926183,

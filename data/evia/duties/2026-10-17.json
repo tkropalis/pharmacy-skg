@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-12T22:31:57.823Z"
+        "uploadedAt": "2026-10-13T10:43:41.992Z"
       },
       "sections": [
         {
@@ -34,6 +34,26 @@
               "address": "ΚΟΡΦΙΑΤΗ ΑΘ. 15",
               "locality": "Ιστιαία",
               "phone": "2226053570"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221081067",
+              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΧΑΪΝΑ 56",
+              "locality": "Χαλκίδα",
+              "phone": "2221081067"
             }
           ]
         },
@@ -74,54 +94,6 @@
               "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 40",
               "locality": "Χαλκίδα",
               "phone": "2221021220"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2229060906",
-              "name": "Σ.Φ. ΚΕΧΡΗΣ - ΚΟΥΚΗ Ο.Ε.",
-              "address": "ΑΡΧΑΙΟΥ ΘΕΑΤΡΟΥ 76",
-              "locality": "Ερέτρια",
-              "phone": "2229060906"
-            },
-            {
-              "pharmacyId": "2224022217",
-              "name": "Σ.Φ. ΠΛΑΤΥΜΕΣΗΣ ΣΠΥΡΟΣ & ΖΩΗ",
-              "address": "Ι. ΚΟΤΣΙΚΑ 9",
-              "locality": "Κάρυστος",
-              "phone": "2224022217"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221081067",
-              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
-              "address": "ΧΑΪΝΑ 56",
-              "locality": "Χαλκίδα",
-              "phone": "2221081067"
             }
           ]
         },
@@ -196,6 +168,34 @@
               "address": "ΦΑΒΙΕΡΟΥ 9",
               "locality": "Χαλκίδα",
               "phone": "2221087100"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2229060906",
+              "name": "Σ.Φ. ΚΕΧΡΗΣ - ΚΟΥΚΗ Ο.Ε.",
+              "address": "ΑΡΧΑΙΟΥ ΘΕΑΤΡΟΥ 76",
+              "locality": "Ερέτρια",
+              "phone": "2229060906"
+            },
+            {
+              "pharmacyId": "2224022217",
+              "name": "Σ.Φ. ΠΛΑΤΥΜΕΣΗΣ ΣΠΥΡΟΣ & ΖΩΗ",
+              "address": "Ι. ΚΟΤΣΙΚΑ 9",
+              "locality": "Κάρυστος",
+              "phone": "2224022217"
             }
           ]
         }

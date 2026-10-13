@@ -55,7 +55,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 40.940227,
         "lon": 24.403448,
@@ -144,6 +144,27 @@
         "lat": 40.9360646,
         "lon": 24.4081128,
         "ref": "https://kavala.efhmeries.gr/Home/Details/3960",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510229432",
+      "name": "ΣΙΜΙΤΣΗΣ ΑΡΙΣΤΕΙΔΗΣ",
+      "address": "ΔΡΑΓΟΥΜΗ ΊΩΝΟΣ 4Α",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510229432",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 40.937541,
+        "lon": 24.412349,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3984",
         "source": "list",
         "precision": "exact"
       }

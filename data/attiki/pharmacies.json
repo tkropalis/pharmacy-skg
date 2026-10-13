@@ -4204,8 +4204,8 @@
       "sources": [
         "fsa"
       ],
-      "firstSeen": "2026-11-18",
-      "lastSeen": "2026-11-18",
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18",
       "location": {
         "lat": 38.0309898,
         "lon": 23.7362067,
@@ -25850,7 +25850,7 @@
         "fsa",
         "fsa-hours"
       ],
-      "firstSeen": "2026-10-15",
+      "firstSeen": "2026-10-18",
       "lastSeen": "2026-10-18",
       "location": {
         "lat": 38.131237,
@@ -41607,8 +41607,8 @@
         "fsa",
         "fsa-hours"
       ],
-      "firstSeen": "2026-12-15",
-      "lastSeen": "2026-12-15",
+      "firstSeen": "2026-10-14",
+      "lastSeen": "2026-10-14",
       "location": {
         "lat": 38.0563425,
         "lon": 23.8069966,
@@ -42710,8 +42710,8 @@
         "fsa",
         "fsa-hours"
       ],
-      "firstSeen": "2026-11-14",
-      "lastSeen": "2026-11-14",
+      "firstSeen": "2026-10-15",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 38.1347862,
         "lon": 23.8576964,

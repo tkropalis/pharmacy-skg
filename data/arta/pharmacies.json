@@ -128,6 +128,27 @@
       }
     },
     {
+      "id": "2681065402",
+      "name": "ΣΙΛΙΩΝΗΣ ΕΥΣΤΡΑΤΙΟΣ",
+      "address": "ΚΟΜΠΟΤΙ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681065402",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.102071,
+        "lon": 21.083716,
+        "ref": "https://arta.efhmeries.gr/Home/Details/1976",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681067400",
       "name": "ΓΕΩΡΓΟΠΟΥΛΟΣ",
       "address": "ΔΙΑΣΕΛΛΟ",
@@ -333,6 +354,27 @@
         "lat": 39.1600359,
         "lon": 20.9823731,
         "ref": "https://arta.efhmeries.gr/Home/Details/2427",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681079396",
+      "name": "ΚΑΛΟΜΠΑΤΣΟΥ ΑΘΗΝΑ",
+      "address": "ΑΠΟΚΑΥΚΟΥ 4",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681079396",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.159437,
+        "lon": 20.983383,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2428",
         "source": "list",
         "precision": "exact"
       }

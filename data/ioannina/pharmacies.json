@@ -254,6 +254,27 @@
       }
     },
     {
+      "id": "2651031726",
+      "name": "ΝΤΟΥΣΚΑΣ ΘΕΟΔΩΡΟΣ",
+      "address": "ΣΑΜΟΥΗΛ 43",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651031726",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.6681732,
+        "lon": 20.8472428,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5025",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651031814",
       "name": "ΜΟΥΣΕΛΙΜΗ ΧΡΙΣΤΙΝΑ",
       "address": "ΚΑ΄ΦΕΒΡΟΥΑΡΙΟΥ 109 Α",
@@ -375,6 +396,48 @@
         "lat": 39.6701128,
         "lon": 20.8469068,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5008",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651038000",
+      "name": "ΞΕΝΗΚΑΚΗΣ ΕΜΜΑΝΟΥΗΛ",
+      "address": "ΒΛΑΧΛΕΙΔΗ 2",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651038000",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.6657472,
+        "lon": 20.8526757,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5026",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651038350",
+      "name": "ΓΙΟΥΝΗΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "Ν. ΖΕΡΒΑ 1",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651038350",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.662944,
+        "lon": 20.8509811,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5024",
         "source": "list",
         "precision": "exact"
       }
@@ -669,6 +732,27 @@
         "lat": 39.6720466,
         "lon": 20.8476145,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5018",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651074161",
+      "name": "ΝΤΑΝΗΣ Β. ΣΩΤΗΡΙΟΣ",
+      "address": "ΒΗΛΑΡΑ 37",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651074161",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 39.6727603,
+        "lon": 20.8429394,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5027",
         "source": "list",
         "precision": "exact"
       }

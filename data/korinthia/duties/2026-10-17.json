@@ -7,139 +7,9 @@
       "name": "Κορινθία",
       "source": {
         "url": "https://korinthia.efhmeries.gr/",
-        "uploadedAt": "2026-10-12T22:32:58.982Z"
+        "uploadedAt": "2026-10-13T10:45:09.210Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
-          "hours": {
-            "from": "22:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2742033488",
-              "name": "ΚΑΡΑΜΑΝΕΑΣ ΕΥΣΤΡΑΤΙΟΣ",
-              "address": "ΒΕΛΟ",
-              "locality": "Βέλο",
-              "phone": "2742033488"
-            }
-          ]
-        },
-        {
-          "kind": "saturday-extra",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741026680",
-              "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Ι. ΜΑΡΙΑΝΝΑ",
-              "address": "ΑΠ. ΠΑΥΛΟΥ 46",
-              "locality": "Κόρινθος",
-              "phone": "2741026680"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741026680",
-              "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Ι. ΜΑΡΙΑΝΝΑ",
-              "address": "ΑΠ. ΠΑΥΛΟΥ 46",
-              "locality": "Κόρινθος",
-              "phone": "2741026680"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2743022769",
-              "name": "ΔΗΜΗΤΡΕΛΛΟΥ ΡΩΞΑΝΗ καιΣΙΑ Ο.Ε.",
-              "address": "Π.ΤΣΑΛΔΑΡΗ 41",
-              "locality": "Ξυλόκαστρο",
-              "phone": "2743022769"
-            },
-            {
-              "pharmacyId": "2744023003",
-              "name": "ΜΗΤΡΟΥ ΣΠΥΡΙΔΩΝ ΚΑΙ ΣΙΑ Ο.Ε.",
-              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 24",
-              "locality": "Λουτράκι",
-              "phone": "2744023003"
-            },
-            {
-              "pharmacyId": "2742022205",
-              "name": "ΣΠΥΡΟΠΟΥΛΟΥ ΣΠΥΡΙΔΟΥΛΑ",
-              "address": "ΚΛΕΙΣΘΕΝΟΥΣ 13",
-              "locality": "Κιάτο",
-              "phone": "2742022205"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741098085",
-              "name": "ΠΑΠΑΘΑΝΑΣΙΟΥ ΛΟΥΤΣΙΑΝΟ & ΣΙΑ Ο.Ε.",
-              "address": "ΧΙΛΙΟΜΟΔΙ",
-              "locality": "Χιλιομόδι",
-              "phone": "2741098085"
-            },
-            {
-              "pharmacyId": "6944332965",
-              "name": "Σ.Φ. ΔΗΜΗΤΡΙΟΥ Κ.-ΔΗΜΗΤΡΙΟΥ Π. Ο.Ε.",
-              "address": "ΦΛΟΙΟΥΝΤΟΣ 2",
-              "locality": "Νεμέα",
-              "phone": "6944332965"
-            },
-            {
-              "pharmacyId": "2741054232",
-              "name": "Σ.Φ. ΣΙΑΠΚΑΡΑΣ ΑΓΓΕΛΟΣ ΣΙΑΠΚΑΡΑ ΜΑΡΙΝΑ Ο.Ε.",
-              "address": "ΖΕΥΓΟΛΑΤΙΟ",
-              "locality": "Ζευγολατιό",
-              "phone": "2741054232"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -263,6 +133,115 @@
           ]
         },
         {
+          "kind": "saturday-extra",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741026680",
+              "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Ι. ΜΑΡΙΑΝΝΑ",
+              "address": "ΑΠ. ΠΑΥΛΟΥ 46",
+              "locality": "Κόρινθος",
+              "phone": "2741026680"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741026680",
+              "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Ι. ΜΑΡΙΑΝΝΑ",
+              "address": "ΑΠ. ΠΑΥΛΟΥ 46",
+              "locality": "Κόρινθος",
+              "phone": "2741026680"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2743022769",
+              "name": "ΔΗΜΗΤΡΕΛΛΟΥ ΡΩΞΑΝΗ καιΣΙΑ Ο.Ε.",
+              "address": "Π.ΤΣΑΛΔΑΡΗ 41",
+              "locality": "Ξυλόκαστρο",
+              "phone": "2743022769"
+            },
+            {
+              "pharmacyId": "2744023003",
+              "name": "ΜΗΤΡΟΥ ΣΠΥΡΙΔΩΝ ΚΑΙ ΣΙΑ Ο.Ε.",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 24",
+              "locality": "Λουτράκι",
+              "phone": "2744023003"
+            },
+            {
+              "pharmacyId": "2742022205",
+              "name": "ΣΠΥΡΟΠΟΥΛΟΥ ΣΠΥΡΙΔΟΥΛΑ",
+              "address": "ΚΛΕΙΣΘΕΝΟΥΣ 13",
+              "locality": "Κιάτο",
+              "phone": "2742022205"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741098085",
+              "name": "ΠΑΠΑΘΑΝΑΣΙΟΥ ΛΟΥΤΣΙΑΝΟ & ΣΙΑ Ο.Ε.",
+              "address": "ΧΙΛΙΟΜΟΔΙ",
+              "locality": "Χιλιομόδι",
+              "phone": "2741098085"
+            },
+            {
+              "pharmacyId": "6944332965",
+              "name": "Σ.Φ. ΔΗΜΗΤΡΙΟΥ Κ.-ΔΗΜΗΤΡΙΟΥ Π. Ο.Ε.",
+              "address": "ΦΛΟΙΟΥΝΤΟΣ 2",
+              "locality": "Νεμέα",
+              "phone": "6944332965"
+            },
+            {
+              "pharmacyId": "2741054232",
+              "name": "Σ.Φ. ΣΙΑΠΚΑΡΑΣ ΑΓΓΕΛΟΣ ΣΙΑΠΚΑΡΑ ΜΑΡΙΝΑ Ο.Ε.",
+              "address": "ΖΕΥΓΟΛΑΤΙΟ",
+              "locality": "Ζευγολατιό",
+              "phone": "2741054232"
+            }
+          ]
+        },
+        {
           "kind": "day",
           "heading": "09:00 ΕΩΣ 21:00",
           "hours": {
@@ -279,6 +258,27 @@
               "address": "ΑΡΧΑΙΑ ΚΟΡΙΝΘΟΣ (4Ομ ΑΠΟ ΤΟ ΚΕΝΤΡΟ)",
               "locality": "Αρχαία Κόρινθος",
               "phone": "2741031655"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "22:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2742033488",
+              "name": "ΚΑΡΑΜΑΝΕΑΣ ΕΥΣΤΡΑΤΙΟΣ",
+              "address": "ΒΕΛΟ",
+              "locality": "Βέλο",
+              "phone": "2742033488"
             }
           ]
         }

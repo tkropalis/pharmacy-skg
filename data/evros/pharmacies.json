@@ -233,6 +233,27 @@
       }
     },
     {
+      "id": "2551035777",
+      "name": "ΚΑΡΑΚΥΡΙΟΣ ΣΤΕΦΑΝΟΣ",
+      "address": "Λεωφ. Δημοκρατίας 381",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551035777",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 40.8441111,
+        "lon": 25.8703216,
+        "ref": "https://evros.efhmeries.gr/Home/Details/3895",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551035897",
       "name": "ΙΩΑΝΝΙΔΟΥ ΣΤΑΥΡΟΥΛΑ",
       "address": "Λ. Δημοκρατίας 190",
@@ -354,6 +375,27 @@
         "lat": 40.8584924,
         "lon": 25.8694493,
         "ref": "https://evros.efhmeries.gr/Home/Details/3945",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2551084110",
+      "name": "ΑΠΟΣΤΟΛΟΥ ΙΩΑΝΝΗΣ",
+      "address": "Πατριάρχου Κυρίλλου 113 (γεφ. Καλλιθέας-Παπαν/σίου)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551084110",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 40.8482468,
+        "lon": 25.8667932,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4244",
         "source": "list",
         "precision": "exact"
       }
@@ -590,6 +632,27 @@
       }
     },
     {
+      "id": "2552029084",
+      "name": "ΜΠΕΔΡΕΛΗΣ ΧΡΙΣΤΟΔΟΥΛΟΣ",
+      "address": "ΑΓ. ΘΕΟΔΩΡΩΝ 150",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552029084",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 41.5034555,
+        "lon": 26.5312193,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4459",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2552029174",
       "name": "ΑΝΤΩΝΙΑΔΗΣ ΠΑΝΑΓΙΩΤΗΣ",
       "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 225",
@@ -669,6 +732,27 @@
         "lat": 41.3497643,
         "lon": 26.4941195,
         "ref": "https://evros.efhmeries.gr/Home/Details/5104",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2553023466",
+      "name": "ΤΣΕΚΟΥΡΑ ΗΡΩ",
+      "address": "ΠΛΑΤ. ΕΛΕΥΘΕΡΙΑΣ 1",
+      "locality": "Διδυμότειχο",
+      "postcode": null,
+      "phone": "2553023466",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 41.3497126,
+        "lon": 26.4936993,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4956",
         "source": "list",
         "precision": "exact"
       }
@@ -874,7 +958,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 41.1917483,
         "lon": 26.3037554,
@@ -900,6 +984,27 @@
         "lat": 41.0262152,
         "lon": 26.2954437,
         "ref": "https://evros.efhmeries.gr/Home/Details/5940",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2554042042",
+      "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛ. & ΟΛΓΑ",
+      "address": "ΝΙΚΗΣ 19",
+      "locality": "Τυχερό, Προβατώνας",
+      "postcode": null,
+      "phone": "2554042042",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 41.0273977,
+        "lon": 26.2963052,
+        "ref": "https://evros.efhmeries.gr/Home/Details/5952",
         "source": "list",
         "precision": "exact"
       }
@@ -1021,7 +1126,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 40.8951274,
         "lon": 26.1698018,

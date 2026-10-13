@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2381022236",
+      "name": "ΒΑΣΙΛΕΙΑΔΗΣ ΑΝΑΣΤΑΣΙΟΣ",
+      "address": "Π. ΜΕΛΑ 18 - ΕΝΑΝΤΙ ΚΤΕΛ",
+      "locality": "Έδεσσα",
+      "postcode": null,
+      "phone": "2381022236",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 40.7989489,
+        "lon": 22.0501775,
+        "ref": "https://pella.efhmeries.gr/Home/Details/6211",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2381022553",
       "name": "ΝΟΥΣΗΚΥΡΟΥ ΙΩΑΝΝΗΣ-ΙΑΣΩΝ",
       "address": "18ης ΟΚΤΩΒΡΙΟΥ 5",
@@ -265,7 +286,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 40.7674934,
         "lon": 22.1567882,
@@ -396,6 +417,27 @@
         "lat": 40.7674713,
         "lon": 22.1556041,
         "ref": "https://pella.efhmeries.gr/Home/Details/5991",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2382023881",
+      "name": "ΣΙΓΚΟΥΔΗ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΖΑΜΙΔΗ 3 (ΟΠΙΣΘΕΝ GOODY'S)",
+      "locality": "Γιαννιτσά",
+      "postcode": null,
+      "phone": "2382023881",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 40.7905402,
+        "lon": 22.4108506,
+        "ref": "https://pella.efhmeries.gr/Home/Details/4737",
         "source": "list",
         "precision": "exact"
       }
@@ -769,7 +811,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 40.6879479,
         "lon": 22.3024282,
@@ -937,7 +979,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 40.976456,
         "lon": 22.0620605,

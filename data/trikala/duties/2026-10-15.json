@@ -7,9 +7,29 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-10-12T22:34:12.678Z"
+        "uploadedAt": "2026-10-13T10:47:07.480Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431029797",
+              "name": "Σ.Φ. ΣΧΟΙΝΑ ΕΛΙΝΑ - ΣΧΟΙΝΑΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΑΠΟΛΛΩΝΟΣ 19 & ΓΑΡΙΒΑΛΔΗ",
+              "locality": "Τρίκαλα",
+              "phone": "2431029797"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -74,26 +94,6 @@
               "address": "ΣΤ. ΣΑΡΑΦΗ 18",
               "locality": "Τρίκαλα",
               "phone": "2431023885"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 23:00",
-          "hours": {
-            "from": "08:00",
-            "to": "23:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431029797",
-              "name": "Σ.Φ. ΣΧΟΙΝΑ ΕΛΙΝΑ - ΣΧΟΙΝΑΣ ΔΗΜΗΤΡΙΟΣ",
-              "address": "ΑΠΟΛΛΩΝΟΣ 19 & ΓΑΡΙΒΑΛΔΗ",
-              "locality": "Τρίκαλα",
-              "phone": "2431029797"
             }
           ]
         }

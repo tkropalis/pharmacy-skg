@@ -149,6 +149,48 @@
       }
     },
     {
+      "id": "2221025704",
+      "name": "ΚΟΖΙΩΝΑ ΟΥΡΑΝΙΑ",
+      "address": "ΑΝ. ΜΑΡΓΑΡΙΤΗ 154",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221025704",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 38.471461,
+        "lon": 23.64434,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9328",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221029509",
+      "name": "ΧΑΜΗΣ ΗΛΙΑΣ",
+      "address": "ΚΑΤΣΙΚΟΓΙΑΝΝΗ 35",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221029509",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 38.468614,
+        "lon": 23.600894,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9330",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2221041413",
       "name": "ΜΠΡΟΚΑΛΑΚΗΣ ΙΩΣΗΦ",
       "address": "5ο ΧΛΜ. ΧΑΛΚΙΔΑΣ-Ν. ΑΡΤΑΚΗΣ",
@@ -307,7 +349,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 38.5148962,
         "lon": 23.6379147,
@@ -643,7 +685,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 38.4619229,
         "lon": 23.5939765,
@@ -811,7 +853,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 38.0139844,
         "lon": 24.4199375,
@@ -979,7 +1021,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 38.954759,
         "lon": 23.153936,
@@ -1026,6 +1068,27 @@
         "lat": 38.3920871,
         "lon": 23.7914086,
         "ref": "https://evia.efhmeries.gr/Home/Details/7913",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2229063332",
+      "name": "ΜΑΝΕΤΑ ΜΑΡΙΑ",
+      "address": "ΛΕΩΦ.ΑΜΑΡ.ΑΡΤΕΜΙΔΟΣ 48 / ΟΙΚΙΑ: ΑΡΙΣΤΟΤΕΛΟΥΣ 1 - ΒΑΣΙΛΙΚΟ",
+      "locality": "Ερέτρια",
+      "postcode": null,
+      "phone": "2229063332",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 38.3921653,
+        "lon": 23.7950923,
+        "ref": "https://evia.efhmeries.gr/Home/Details/7727",
         "source": "list",
         "precision": "exact"
       }

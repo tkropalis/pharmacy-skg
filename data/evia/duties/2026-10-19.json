@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-19",
+  "groups": [
+    {
+      "id": "evia",
+      "name": "Εύβοια",
+      "source": {
+        "url": "https://evia.efhmeries.gr/",
+        "uploadedAt": "2026-10-13T10:43:41.992Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2226056148",
+              "name": "ΑΝΑΣΤΑΣΙΟΥ ΑΡΕΤΗ",
+              "address": "ΜΕΤΑΞΑ ΙΩΑΝΝΟΥ 4",
+              "locality": "Ιστιαία",
+              "phone": "2226056148"
+            },
+            {
+              "pharmacyId": "2221044344",
+              "name": "Σ.Φ. ΛΑΛΑΝΙΤΗ - ΑΡΓΥΡΑΚΗΣ",
+              "address": "ΒΟΥΔΟΥΡΗ 7",
+              "locality": "Αρτάκη",
+              "phone": "2221044344"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2224023505",
+              "name": "ΒΕΛΙΣΣΑΡΑΚΟΣ ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "Ι. ΚΟΤΣΙΚΑ 1",
+              "locality": "Κάρυστος",
+              "phone": "2224023505"
+            },
+            {
+              "pharmacyId": "2229063332",
+              "name": "ΜΑΝΕΤΑ ΜΑΡΙΑ",
+              "address": "ΛΕΩΦ.ΑΜΑΡ.ΑΡΤΕΜΙΔΟΣ 48 / ΟΙΚΙΑ: ΑΡΙΣΤΟΤΕΛΟΥΣ 1 - ΒΑΣΙΛΙΚΟ",
+              "locality": "Ερέτρια",
+              "phone": "2229063332"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221025704",
+              "name": "ΚΟΖΙΩΝΑ ΟΥΡΑΝΙΑ",
+              "address": "ΑΝ. ΜΑΡΓΑΡΙΤΗ 154",
+              "locality": "Χαλκίδα",
+              "phone": "2221025704"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221087100",
+              "name": "Σ.Φ. ΣΤΡΑΤΙΚΗΣ ΠΑΝΑΓΙΩΤΗΣ ΣΤΡΑΤΙΚΗ ΜΑΡΙΝΑ ΣΠΥΡΙΔΟΥΛΑ",
+              "address": "ΦΑΒΙΕΡΟΥ 9",
+              "locality": "Χαλκίδα",
+              "phone": "2221087100"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221029509",
+              "name": "ΧΑΜΗΣ ΗΛΙΑΣ",
+              "address": "ΚΑΤΣΙΚΟΓΙΑΝΝΗ 35",
+              "locality": "Χαλκίδα",
+              "phone": "2221029509"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

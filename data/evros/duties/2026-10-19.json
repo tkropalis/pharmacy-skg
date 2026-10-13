@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-19",
+  "groups": [
+    {
+      "id": "evros",
+      "name": "Έβρος",
+      "source": {
+        "url": "https://evros.efhmeries.gr/",
+        "uploadedAt": "2026-10-13T10:43:50.997Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552029084",
+              "name": "ΜΠΕΔΡΕΛΗΣ ΧΡΙΣΤΟΔΟΥΛΟΣ",
+              "address": "ΑΓ. ΘΕΟΔΩΡΩΝ 150",
+              "locality": "Ορεστιάδα",
+              "phone": "2552029084"
+            },
+            {
+              "pharmacyId": "2553023466",
+              "name": "ΤΣΕΚΟΥΡΑ ΗΡΩ",
+              "address": "ΠΛΑΤ. ΕΛΕΥΘΕΡΙΑΣ 1",
+              "locality": "Διδυμότειχο",
+              "phone": "2553023466"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2555024333",
+              "name": "ΜΑΛΑΚΗΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "ΟΡΦΕΩΣ 2",
+              "locality": "Φέρες",
+              "phone": "2555024333"
+            },
+            {
+              "pharmacyId": "2554024303",
+              "name": "ΡΟΚΚΑ ΘΕΟΔΩΡΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 88",
+              "locality": "Σουφλί",
+              "phone": "2554024303"
+            },
+            {
+              "pharmacyId": "2554042042",
+              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛ. & ΟΛΓΑ",
+              "address": "ΝΙΚΗΣ 19",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042042"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:30-22:00",
+          "hours": {
+            "from": "14:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551084110",
+              "name": "ΑΠΟΣΤΟΛΟΥ ΙΩΑΝΝΗΣ",
+              "address": "Πατριάρχου Κυρίλλου 113 (γεφ. Καλλιθέας-Παπαν/σίου)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551084110"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551035777",
+              "name": "ΚΑΡΑΚΥΡΙΟΣ ΣΤΕΦΑΝΟΣ",
+              "address": "Λεωφ. Δημοκρατίας 381",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551035777"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

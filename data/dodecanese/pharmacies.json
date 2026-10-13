@@ -65,6 +65,27 @@
       }
     },
     {
+      "id": "2241020508",
+      "name": "ΝΙΚΟΛΑΟΥ ΝΙΚΟΛΑΟΣ/ NIKOALOU NIKOLAOS",
+      "address": "Π. ΠΑΤΡΩΝ ΓΕΡΜΑΝΟΥ 24 / P. PATRON GERMANOU 24",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241020508",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 36.4361661,
+        "lon": 28.2263344,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29772",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2241020900",
       "name": "ΚΑΤΣΟΥΡΑΚΗ ΠΕΝΤΕ ΣΙΜΟΝΑ ΚΡΙΣΤΙΝΑ / KATSOURAKI",
       "address": "ΑΘΗΝΑΣ ΕΡΓΑΝΗΣ & ΠΑΠΑΝΑΣΤΑΣΗ / ERGANIS ATHINAS&PAPANASTASI",
@@ -275,6 +296,27 @@
       }
     },
     {
+      "id": "2241031843",
+      "name": "Σ.Φ. ΣΤΑΥΡΟΠΟΥΛΟΣ ΧΑΡ. - ΠΑΠΠΟΥ ΕΥΑΓΓ. Ο.Ε. / S.F. STAVROPOULOS - PAPPOU",
+      "address": "ΠΛΑΤΕΙΑ ΑΚΑΔΗΜΙΑΣ / AKADIMIAS SQ.",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241031843",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 36.4499009,
+        "lon": 28.2214812,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29771",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2241033144",
       "name": "ΜΑΤΣΙΓΚΟΥ ΜΑΡΙΑ & ΣΙΑ Ε.Ε. / MATSIGKOY MARIA & SIA E.E.",
       "address": "ΗΡΑΚΛΕΙΟΥ ΚΡΗΤΗΣ 1 / IRAKLEIOU KRITIS 1",
@@ -454,7 +496,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.3631546,
         "lon": 28.0022399,
@@ -538,7 +580,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.2951904,
         "lon": 28.1624606,
@@ -727,7 +769,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.3890386,
         "lon": 28.214573,
@@ -1021,7 +1063,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.3395744,
         "lon": 28.2005336,
@@ -1168,7 +1210,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.4108314,
         "lon": 28.118549,
@@ -1252,7 +1294,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.4216332,
         "lon": 28.1567497,
@@ -1378,7 +1420,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.89172,
         "lon": 27.29986,
@@ -1609,7 +1651,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.8520622,
         "lon": 27.1586806,
@@ -1819,7 +1861,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.7831808,
         "lon": 27.1431993,
@@ -1845,6 +1887,27 @@
         "lat": 36.8917947,
         "lon": 27.2912769,
         "ref": "https://dodecanese.efhmeries.gr/Home/Details/29274",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2242307557",
+      "name": "ΑΓΓΕΛΟΠΟΥΛΟΣ ΙΩΑΝΝΗΣ & ΣΙΑ/ AGGELOPOYLOS IOANNIS & SIA",
+      "address": "ΜΑΚΡΥΓΙΑΝΝΗ 8",
+      "locality": "Κως",
+      "postcode": null,
+      "phone": "2242307557",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 36.8895234,
+        "lon": 27.2917956,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29288",
         "source": "list",
         "precision": "exact"
       }
@@ -1882,7 +1945,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.2143827,
         "lon": 28.116279,
@@ -1966,7 +2029,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.0900222,
         "lon": 28.0856787,
@@ -2008,7 +2071,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.0527267,
         "lon": 27.9688626,
@@ -2155,7 +2218,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 35.5074968,
         "lon": 27.212631,
@@ -2197,7 +2260,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.2269188,
         "lon": 27.8561477,
@@ -2239,7 +2302,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 36.6158401,
         "lon": 27.8355787,

@@ -34,7 +34,7 @@
         "iteq-xanthi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 41.1410894,
         "lon": 24.8957674,
@@ -55,11 +55,32 @@
         "iteq-xanthi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-19",
       "location": {
         "lat": 41.1363689,
         "lon": 24.886035,
         "ref": "https://xanthi.efhmeries.gr/Home/Details/3595",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541022808",
+      "name": "ΓΚΑΚΙΔΗΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΛΕΥΚΙΠΠΟΥ 5",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541022808",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 41.1326796,
+        "lon": 24.8934958,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3631",
         "source": "list",
         "precision": "exact"
       }
