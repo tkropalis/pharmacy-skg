@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-14T08:50:07.888Z"
+        "uploadedAt": "2026-10-14T19:28:49.623Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651031434",
-              "name": "ΠΑΠΑΘΑΝΑΣΙΟΥ ΔΗΜΗΤΡΙΟΣ",
-              "address": "ΔΑΓΚΛΗ 1 ΚΑΙ ΝΟΤΗ ΜΠΟΤΣΑΡΗ 18",
-              "locality": "Ιωάννινα",
-              "phone": "2651031434"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "Φ. ΤΖΑΒΕΛΛΑ & ΟΠΛ. ΠΟΥΤΕΤΣΗ 24",
               "locality": "Ιωάννινα",
               "phone": "2651070991"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651031434",
+              "name": "ΠΑΠΑΘΑΝΑΣΙΟΥ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΔΑΓΚΛΗ 1 ΚΑΙ ΝΟΤΗ ΜΠΟΤΣΑΡΗ 18",
+              "locality": "Ιωάννινα",
+              "phone": "2651031434"
             }
           ]
         }

@@ -7,29 +7,9 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-14T08:49:27.021Z"
+        "uploadedAt": "2026-10-14T19:28:17.536Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00-21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551035223",
-              "name": "ΖΗΚΙΔΟΥ ΑΣΠΑΣΙΑ",
-              "address": "Κ. Παλαιολόγου 51 (γωνία Κομνηνών)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551035223"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "10:00-14:00 & 18:00-08:00",
@@ -129,6 +109,26 @@
               "address": "ΠΡΟΒΑΤΩΝΑΣ",
               "locality": "Τυχερό, Προβατώνας",
               "phone": "2554042100"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00-21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551035223",
+              "name": "ΖΗΚΙΔΟΥ ΑΣΠΑΣΙΑ",
+              "address": "Κ. Παλαιολόγου 51 (γωνία Κομνηνών)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551035223"
             }
           ]
         }

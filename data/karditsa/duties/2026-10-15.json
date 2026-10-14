@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-10-14T08:50:22.082Z"
+        "uploadedAt": "2026-10-14T19:29:01.818Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441025525",
-              "name": "Σ/Φ ΜΠΕΚΟΥ ΜΙΡΑΝΤΑ - ΑΜΟΥΝΤΖΙΑ ΜΑΡΙΑΝΝΑ & ΣΙΑ Ο.Ε.",
-              "address": "ΑΒΕΡΩΦ 26",
-              "locality": "Καρδίτσα",
-              "phone": "2441025525"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ- 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΙΕΖΕΚΙΗΛ 51",
               "locality": "Καρδίτσα",
               "phone": "2441025576"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441025525",
+              "name": "Σ/Φ ΜΠΕΚΟΥ ΜΙΡΑΝΤΑ - ΑΜΟΥΝΤΖΙΑ ΜΑΡΙΑΝΝΑ & ΣΙΑ Ο.Ε.",
+              "address": "ΑΒΕΡΩΦ 26",
+              "locality": "Καρδίτσα",
+              "phone": "2441025525"
             }
           ]
         }
