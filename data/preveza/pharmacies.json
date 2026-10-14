@@ -128,6 +128,27 @@
       }
     },
     {
+      "id": "2682026146",
+      "name": "ΡΟΥΣΣΟΥ ΚΥΡΙΑΚΗ",
+      "address": "Π. ΤΣΑΛΔΑΡΗ 62",
+      "locality": "Πρέβεζα",
+      "postcode": null,
+      "phone": "2682026146",
+      "groupId": "preveza",
+      "sources": [
+        "iteq-preveza"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 38.95889,
+        "lon": 20.752747,
+        "ref": "https://preveza.efhmeries.gr/Home/Details/1415",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2682026945",
       "name": "ΚΑΤΩΓΙΑΝΝΗΣ ΓΕΩΡΓΙΟΣ",
       "address": "Λ. ΕΙΡΗΝΗΣ 30",

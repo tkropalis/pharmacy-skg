@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "2351027865",
+      "name": "Σ.Φ. ΖΙΩΓΑ ΕΞΑΡΧΟΥ ΑΝΝΑ-ΖΙΩΓΑ ΔΗΜΗΤΡΑ",
+      "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 51",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351027865",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 40.2714846,
+        "lon": 22.5043245,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23547",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2351027910",
       "name": "ΚΩΝΣΤΑΝΤΙΝΙΔΟΥ ΟΛΓΑ",
       "address": "ΕΙΡΗΝΗΣ 33",
@@ -181,7 +202,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 40.2724855,
         "lon": 22.5092904,
@@ -391,7 +412,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 40.3150825,
         "lon": 22.5838514,
@@ -438,6 +459,27 @@
         "lat": 40.2666242,
         "lon": 22.5967127,
         "ref": "https://pieria.efhmeries.gr/Home/Details/24350",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351063203",
+      "name": "ΤΖΙΑΝΚΑΡΛΟ ΦΟΡΝΑΡΕΛΛΙ",
+      "address": "ΑΔΡΕΑ Γ. ΠΑΠΑΔΡΕΟΥ 30",
+      "locality": "Καλλιθέα",
+      "postcode": null,
+      "phone": "2351063203",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 40.2723065,
+        "lon": 22.5812906,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/24357",
         "source": "list",
         "precision": "exact"
       }
@@ -559,7 +601,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 40.0588965,
         "lon": 22.5606957,
@@ -601,7 +643,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 39.9919599,
         "lon": 22.6244695,
@@ -643,7 +685,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 40.1030592,
         "lon": 22.5014766,
@@ -748,7 +790,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 40.4994548,
         "lon": 22.5422727,
@@ -811,7 +853,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 40.4795366,
         "lon": 22.4840158,

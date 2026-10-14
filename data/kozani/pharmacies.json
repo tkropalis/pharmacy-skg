@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "2461028007",
+      "name": "ΤΖΙΩΝΑ ΠΑΡΑΣΚΕΥΗ",
+      "address": "ΜΟΝΑΣΤΗΡΙΟΥ 40",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461028007",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 40.3079607,
+        "lon": 21.7865261,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6582",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2461028797",
       "name": "ΧΑΡΑΜΗ ΤΕΡΕΖΑ",
       "address": "11ΗΣ ΟΚΤΩΒΡΙΟΥ 49",
@@ -417,6 +438,27 @@
         "lat": 40.3029871,
         "lon": 21.785236,
         "ref": "https://kozani.efhmeries.gr/Home/Details/5692",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461037739",
+      "name": "ΛΕΝΤΖΑΣ ΑΡΙΣΤΑΡΧΟΣ",
+      "address": "ΠΑΝΑΓΙΩΤΗ ΛΙΟΥΦΗ 3",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461037739",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 40.3003966,
+        "lon": 21.7900109,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6581",
         "source": "list",
         "precision": "exact"
       }
@@ -811,7 +853,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 40.5113848,
         "lon": 21.6798764,
@@ -1005,6 +1047,27 @@
         "lat": 40.5126475,
         "lon": 21.6774642,
         "ref": "https://kozani.efhmeries.gr/Home/Details/7250",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463028776",
+      "name": "Σ.Φ. ΠΑΝΑΓΙΩΤΙΔΗΣ Π. - ΣΠΥΡΟΠΟΥΛΟΥ Α. & ΣΙΑ Ο.Ε.",
+      "address": "ΑΔΑΜ. ΠΑΥΛΙΔΗ 6 (Έναντι ΤΑΞΙ κεντρου)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463028776",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 40.5137072,
+        "lon": 21.67975,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/7508",
         "source": "list",
         "precision": "exact"
       }

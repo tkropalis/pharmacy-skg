@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
+      "id": "2751020235",
+      "name": "ΚΟΛΙΑ ΧΡΙΣΤΙΝΑ",
+      "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 27",
+      "locality": "Άργος",
+      "postcode": null,
+      "phone": "2751020235",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 37.6354059,
+        "lon": 22.7267729,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/18773",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2751024339",
       "name": "ΔΟΝΤΑ ΚΩΝΣΤΑΝΤΙΝΑ",
       "address": "ΠΛΑΤΕΙΑ ΑΓΙΟΥ ΠΕΤΡΟΥ 1",
@@ -118,7 +139,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 37.5874845,
         "lon": 22.7447696,
@@ -370,7 +391,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 37.5727416,
         "lon": 22.8318131,
@@ -459,6 +480,27 @@
         "lat": 37.5673173,
         "lon": 22.8015531,
         "ref": "https://argolida.efhmeries.gr/Home/Details/20226",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2752022833",
+      "name": "ΜΕΛΛΟΥ - ΠΑΠΑΔΗΜΟΠΟΥΛΟΣ ΔΗΜΟΣ",
+      "address": "ΑΡΓΟΥΣ 38Α",
+      "locality": "Ναύπλιο",
+      "postcode": null,
+      "phone": "2752022833",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 37.5697255,
+        "lon": 22.8068651,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/20233",
         "source": "list",
         "precision": "exact"
       }
@@ -622,7 +664,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 37.638294,
         "lon": 22.806886,
@@ -664,7 +706,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 37.5190545,
         "lon": 22.8588221,
@@ -727,7 +769,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 37.6115915,
         "lon": 23.0467768,
@@ -790,7 +832,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 37.3805109,
         "lon": 23.1602123,
@@ -832,7 +874,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 37.3870814,
         "lon": 23.2463689,
@@ -895,7 +937,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 37.327838,
         "lon": 23.1437319,

@@ -223,7 +223,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 40.5278383,
         "lon": 22.2047059,
@@ -370,7 +370,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 40.5540487,
         "lon": 22.2537387,
@@ -412,7 +412,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 40.5235333,
         "lon": 22.205504,
@@ -874,7 +874,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 40.6299435,
         "lon": 22.0631126,
@@ -1152,6 +1152,27 @@
         "lat": 40.6276873,
         "lon": 22.4359143,
         "ref": "https://imathia.efhmeries.gr/Home/Details/6825",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2333025811",
+      "name": "ΤΕΓΟΥ Ι. ΠΑΡΑΣΚΕΥΗ",
+      "address": "ΠΑΠΑΓΟΥ 26",
+      "locality": "Αλεξάνδρεια",
+      "postcode": null,
+      "phone": "2333025811",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 40.6240018,
+        "lon": 22.4413913,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6833",
         "source": "list",
         "precision": "exact"
       }

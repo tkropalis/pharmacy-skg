@@ -170,6 +170,27 @@
       }
     },
     {
+      "id": "2221028599",
+      "name": "ΚΑΝΔΥΛΗΣ ΣΤΕΛΙΟΣ",
+      "address": "ΒΕΝΙΖΕΛΟΥ 10 - ΕΝΑΝΤΙ ΔΙΚΑΣΤΗΡΙΩΝ",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221028599",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 38.464357,
+        "lon": 23.593086,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9331",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2221029509",
       "name": "ΧΑΜΗΣ ΗΛΙΑΣ",
       "address": "ΚΑΤΣΙΚΟΓΙΑΝΝΗ 35",
@@ -328,7 +349,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 38.5161637,
         "lon": 23.63651,
@@ -779,6 +800,27 @@
       }
     },
     {
+      "id": "2221088902",
+      "name": "ΓΕΩΡΓΟΥΣΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΑΒΑΝΤΩΝ 53",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221088902",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 38.467017,
+        "lon": 23.5975,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9332",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2221094469",
       "name": "ΛΟΥΚΑ ΠΑΝΑΓΙΩΤΑ",
       "address": "Λ.ΚΑΡΑΜΑΝΛΗ 19",
@@ -874,7 +916,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 38.0139058,
         "lon": 24.4207056,
@@ -958,7 +1000,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 38.9551053,
         "lon": 23.1442887,
@@ -1084,7 +1126,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 38.3921653,
         "lon": 23.7950923,

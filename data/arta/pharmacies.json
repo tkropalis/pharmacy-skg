@@ -65,6 +65,27 @@
       }
     },
     {
+      "id": "2681027396",
+      "name": "ΑΝΑΛΟΓΙΔΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΣΚΟΥΦΑ 159",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681027396",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 39.1605474,
+        "lon": 20.9837687,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2429",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681028161",
       "name": "Σ.Φ. ΠΑΠΑΝΙΚΟΛΑΟΥ ΞΕΝΙΑ & ΧΡΗΣΤΟΣ Ο.Ε.",
       "address": "ΤΖΑΒΕΛΛΑ 26 & ΝΙΚΗΦΟΡΟΥ ΑΓΓΕΛΟΥ",
@@ -480,6 +501,27 @@
         "lat": 39.070637,
         "lon": 21.018409,
         "ref": "https://arta.efhmeries.gr/Home/Details/1973",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681098100",
+      "name": "ΑΝΤΩΝΙΟΥ ΙΩΑΝΝΗΣ",
+      "address": "ΑΓΙΑ ΠΑΡΑΣΚΕΥΗ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681098100",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 39.098553,
+        "lon": 20.991002,
+        "ref": "https://arta.efhmeries.gr/Home/Details/1977",
         "source": "list",
         "precision": "exact"
       }

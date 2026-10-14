@@ -29,6 +29,16 @@
     "lon": 25.1342102,
     "ref": "https://herakleion.efhmeries.gr/Home/Details/57849"
   },
+  "2810221084": {
+    "lat": 35.3370512,
+    "lon": 25.1307866,
+    "ref": "https://herakleion.efhmeries.gr/Home/Details/57937"
+  },
+  "2810221255": {
+    "lat": 35.336241,
+    "lon": 25.1343269,
+    "ref": "https://herakleion.efhmeries.gr/Home/Details/57938"
+  },
   "2810222311": {
     "lat": 35.3426884,
     "lon": 25.1586669,
@@ -203,6 +213,11 @@
     "lat": 35.3336207,
     "lon": 25.1210804,
     "ref": "https://herakleion.efhmeries.gr/Home/Details/57915"
+  },
+  "2810255155": {
+    "lat": 35.327911,
+    "lon": 25.1116329,
+    "ref": "https://herakleion.efhmeries.gr/Home/Details/57943"
   },
   "2810256280": {
     "lat": 35.3387197,
@@ -449,6 +464,11 @@
     "lon": 25.1605506,
     "ref": "https://herakleion.efhmeries.gr/Home/Details/57911"
   },
+  "2810346073": {
+    "lat": 35.3325014,
+    "lon": 25.138174,
+    "ref": "https://herakleion.efhmeries.gr/Home/Details/57941"
+  },
   "2810346377": {
     "lat": 35.3395187,
     "lon": 25.1338742,
@@ -559,6 +579,11 @@
     "lon": 25.1409987,
     "ref": "https://herakleion.efhmeries.gr/Home/Details/57936"
   },
+  "2813027000": {
+    "lat": 35.309441,
+    "lon": 25.1450433,
+    "ref": "https://herakleion.efhmeries.gr/Home/Details/57944"
+  },
   "2814012002": {
     "lat": 35.3362486,
     "lon": 25.1233349,
@@ -578,6 +603,11 @@
     "lat": 35.1426915,
     "lon": 25.2648432,
     "ref": "https://herakleion.efhmeries.gr/Home/Details/54057"
+  },
+  "2891023381": {
+    "lat": 35.1470333,
+    "lon": 25.2653989,
+    "ref": "https://herakleion.efhmeries.gr/Home/Details/54060"
   },
   "2892022172": {
     "lat": 35.0509811,

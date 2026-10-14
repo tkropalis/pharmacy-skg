@@ -76,7 +76,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 35.1948479,
         "lon": 25.7126986,
@@ -97,7 +97,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 35.1942753,
         "lon": 25.7128263,
@@ -202,7 +202,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 35.2557733,
         "lon": 25.6064703,
@@ -307,7 +307,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 35.2614561,
         "lon": 25.7239692,
@@ -396,6 +396,27 @@
         "lat": 35.0093446,
         "lon": 25.7397987,
         "ref": "https://lasithi.efhmeries.gr/Home/Details/4705",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2842022900",
+      "name": "ΚΕΒΡΕΚΙΔΗΣ Ι. ΕΥΣΤΑΘΙΟΣ",
+      "address": "ΛΑΣΘΕΝΟΥΣ 3 / 3, LASTHENOUS STR.",
+      "locality": "Ιεράπετρα",
+      "postcode": null,
+      "phone": "2842022900",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 35.010589,
+        "lon": 25.7404525,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4717",
         "source": "list",
         "precision": "exact"
       }
@@ -622,7 +643,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 35.2075877,
         "lon": 26.1060533,

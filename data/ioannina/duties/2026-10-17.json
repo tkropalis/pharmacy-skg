@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-13T20:44:50.994Z"
+        "uploadedAt": "2026-10-14T08:50:07.888Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651046300",
-              "name": "Σ.Φ. ΝΤΑΤΣΗΣ ΧΡΗΣΤΟΣ - ΝΤΑΤΣΗΣ ΑΛΕΞΑΝΔΡΟΣ",
-              "address": "ΙΩΑΝΝΙΝΩΝ 38, ΑΝΑΤΟΛΗ",
-              "locality": "Ιωάννινα",
-              "phone": "2651046300"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -68,6 +48,26 @@
               "address": "ΔΑΓΚΛΗ 4",
               "locality": "Ιωάννινα",
               "phone": "2651030705"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651046300",
+              "name": "Σ.Φ. ΝΤΑΤΣΗΣ ΧΡΗΣΤΟΣ - ΝΤΑΤΣΗΣ ΑΛΕΞΑΝΔΡΟΣ",
+              "address": "ΙΩΑΝΝΙΝΩΝ 38, ΑΝΑΤΟΛΗ",
+              "locality": "Ιωάννινα",
+              "phone": "2651046300"
             }
           ]
         }

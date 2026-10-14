@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "herakleion",
-  "updatedAt": "2026-10-13T20:44:43.425Z",
-  "checkedAt": "2026-10-13T20:44:43.425Z",
+  "updatedAt": "2026-10-14T08:50:00.756Z",
+  "checkedAt": "2026-10-14T08:50:00.756Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-10-19"
+    "to": "2026-10-20"
   },
   "extendedHours": [],
   "sources": [

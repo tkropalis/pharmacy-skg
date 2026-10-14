@@ -212,6 +212,27 @@
       }
     },
     {
+      "id": "2695045433",
+      "name": "ΒΟΡΡΙΣΗ ΔΙΟΝΥΣΙΑ",
+      "address": "ΑΓ. ΙΩΑΝΝΟΥ. ΛΟΓΟΘΕΤΩΝ 6",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695045433",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 37.7808527,
+        "lon": 20.8969085,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4175",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2695045466",
       "name": "ΜΑΝΙΟΥΔΑΚΗ ΑΡΓΥΡΩ",
       "address": "ΦΩΣΚΟΛΟΥ 56",

@@ -7,7 +7,7 @@
       "name": "Πιερία",
       "source": {
         "url": "https://pieria.efhmeries.gr/",
-        "uploadedAt": "2026-10-13T20:46:06.418Z"
+        "uploadedAt": "2026-10-14T08:51:54.063Z"
       },
       "sections": [
         {
@@ -88,6 +88,26 @@
         },
         {
           "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351039662",
+              "name": "Σ.Φ. ΚΟΥΛΚΟΥΔΙΝΑΣ ΕΥΡΙΠΙΔΗΣ-ΚΟΥΛΚΟΥΔΙΝΑΣ ΣΠΥΡΙΔΩΝ",
+              "address": "Ε. ΑΝΤΙΣΤΑΣΗΣ 58",
+              "locality": "Κατερίνη",
+              "phone": "2351039662"
+            }
+          ]
+        },
+        {
+          "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:30 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
             "from": "08:00",
@@ -123,26 +143,6 @@
               "address": "ΑΘ. ΔΙΑΚΟΥ 4",
               "locality": "Κατερίνη",
               "phone": "2351079423"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2351039662",
-              "name": "Σ.Φ. ΚΟΥΛΚΟΥΔΙΝΑΣ ΕΥΡΙΠΙΔΗΣ-ΚΟΥΛΚΟΥΔΙΝΑΣ ΣΠΥΡΙΔΩΝ",
-              "address": "Ε. ΑΝΤΙΣΤΑΣΗΣ 58",
-              "locality": "Κατερίνη",
-              "phone": "2351039662"
             }
           ]
         }

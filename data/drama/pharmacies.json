@@ -65,6 +65,27 @@
       }
     },
     {
+      "id": "2521020550",
+      "name": "ΖΑΒΕΡΔΑ ΧΑΡΑ-ΓΙΑΝΝΑΚΗ Ο.Ε.",
+      "address": "ΛΕΩΦ. ΣΤΡΑΤΟΎ 2",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521020550",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 41.1526853,
+        "lon": 24.1515295,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3163",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521020600",
       "name": "ΜΕΝΕΣΙΔΗΣ ΙΩΑΝΝΗΣ",
       "address": "ΑΝΤΙΓΟΝΟΥ 15",
@@ -627,6 +648,27 @@
         "lat": 41.142452,
         "lon": 24.148391,
         "ref": "https://drama.efhmeries.gr/Home/Details/3151",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521055341",
+      "name": "ΔΟΥΡΑ ΜΑΡΙΑ",
+      "address": "ΜΕΝΕΜΕΝΗΣ 21",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521055341",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 41.1528508,
+        "lon": 24.1559206,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3162",
         "source": "list",
         "precision": "exact"
       }

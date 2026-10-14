@@ -254,6 +254,27 @@
       }
     },
     {
+      "id": "2651031434",
+      "name": "ΠΑΠΑΘΑΝΑΣΙΟΥ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΔΑΓΚΛΗ 1 ΚΑΙ ΝΟΤΗ ΜΠΟΤΣΑΡΗ 18",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651031434",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 39.6677773,
+        "lon": 20.8527274,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5029",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651031726",
       "name": "ΝΤΟΥΣΚΑΣ ΘΕΟΔΩΡΟΣ",
       "address": "ΣΑΜΟΥΗΛ 43",
@@ -690,6 +711,27 @@
         "lat": 39.6661017,
         "lon": 20.8456713,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5015",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651070991",
+      "name": "Σ.Φ. ΠΑΠΠΑ ΕΛΕΝΗ - ΦΕΡΕΝΤΙΝΟΥ ΑΛΕΞΑΝΔΡΑ",
+      "address": "Φ. ΤΖΑΒΕΛΛΑ & ΟΠΛ. ΠΟΥΤΕΤΣΗ 24",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651070991",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 39.6671373,
+        "lon": 20.8498576,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5028",
         "source": "list",
         "precision": "exact"
       }

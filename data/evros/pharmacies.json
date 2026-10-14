@@ -191,6 +191,27 @@
       }
     },
     {
+      "id": "2551029987",
+      "name": "ΧΡΙΣΤΟΔΟΥΛΟΥ ΧΡΥΣΑΝΘΗ",
+      "address": "Δήμητρας 54 (έναντι EUROMEDICA)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551029987",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 40.8496719,
+        "lon": 25.8653394,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4195",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551031988",
       "name": "ΤΡΕΜΜΑΣ ΒΑΣΙΛΕΙΟΣ",
       "address": "Θράκης 10 (περιοχή Μουσικού Γυμνασίου)",
@@ -632,6 +653,27 @@
       }
     },
     {
+      "id": "2552027306",
+      "name": "ΓΚΑΪΝΤΑΤΖΗ ΕΛΕΝΗ",
+      "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 75",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552027306",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 41.5033119,
+        "lon": 26.5305606,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4759",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2552029084",
       "name": "ΜΠΕΔΡΕΛΗΣ ΧΡΙΣΤΟΔΟΥΛΟΣ",
       "address": "ΑΓ. ΘΕΟΔΩΡΩΝ 150",
@@ -790,7 +832,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 41.3525558,
         "lon": 26.5026007,
@@ -916,7 +958,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 41.1936141,
         "lon": 26.3050735,
@@ -1000,7 +1042,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 41.0273977,
         "lon": 26.2963052,
@@ -1063,7 +1105,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 40.8932822,
         "lon": 26.1698188,

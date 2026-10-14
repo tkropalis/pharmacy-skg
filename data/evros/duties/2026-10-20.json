@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-20",
+  "groups": [
+    {
+      "id": "evros",
+      "name": "Έβρος",
+      "source": {
+        "url": "https://evros.efhmeries.gr/",
+        "uploadedAt": "2026-10-14T08:49:27.021Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552027306",
+              "name": "ΓΚΑΪΝΤΑΤΖΗ ΕΛΕΝΗ",
+              "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 75",
+              "locality": "Ορεστιάδα",
+              "phone": "2552027306"
+            },
+            {
+              "pharmacyId": "2553024243",
+              "name": "ΤΡΙΑΝΤΑΦΥΛΛΙΔΟΥ ΕΛΕΝΗ",
+              "address": "25ης ΜΑΪΟΥ 113",
+              "locality": "Διδυμότειχο",
+              "phone": "2553024243"
+            },
+            {
+              "pharmacyId": "2551029987",
+              "name": "ΧΡΙΣΤΟΔΟΥΛΟΥ ΧΡΥΣΑΝΘΗ",
+              "address": "Δήμητρας 54 (έναντι EUROMEDICA)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551029987"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2555022273",
+              "name": "ΜΠΟΥΡΟΥΛΙΤΗ ΑΝΑΣΤΑΣΙΑ",
+              "address": "ΔΗΜΟΚΡΙΤΟΥ 17",
+              "locality": "Φέρες",
+              "phone": "2555022273"
+            },
+            {
+              "pharmacyId": "2554022232",
+              "name": "ΠΙΤΙΑΚΟΥΔΗΣ ΣΩΤΗΡΙΟΣ - ΜΠΑΜΙΔΟΥ ΚΟΡΤΕΣΣΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 158",
+              "locality": "Σουφλί",
+              "phone": "2554022232"
+            },
+            {
+              "pharmacyId": "2554042042",
+              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛ. & ΟΛΓΑ",
+              "address": "ΝΙΚΗΣ 19",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042042"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

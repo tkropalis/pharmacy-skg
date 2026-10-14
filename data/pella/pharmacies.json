@@ -233,6 +233,27 @@
       }
     },
     {
+      "id": "2381027741",
+      "name": "ΔΙΤΣΟΣ ΛΑΖΑΡΟΣ",
+      "address": "ΑΓ. ΔΗΜΗΤΡΙΟΥ 28",
+      "locality": "Έδεσσα",
+      "postcode": null,
+      "phone": "2381027741",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 40.8005559,
+        "lon": 22.0464844,
+        "ref": "https://pella.efhmeries.gr/Home/Details/6212",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2381028554",
       "name": "ΛΟΥΣΙΩΤΗΣ ΠΕΤΡΟΣ-ΚΑΡΟΛΟΣ",
       "address": "ΑΡΧ. ΠΑΝΤΕΛΕΗΜΟΝΟΣ 26",
@@ -370,7 +391,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 40.7677765,
         "lon": 22.1566861,
@@ -417,6 +438,27 @@
         "lat": 40.7674713,
         "lon": 22.1556041,
         "ref": "https://pella.efhmeries.gr/Home/Details/5991",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2382022888",
+      "name": "ΔΕΜΕΡΤΖΙΔΟΥ ΧΡΙΣΤΙΝΑ",
+      "address": "ΧΑΤΖΗΔΗΜΗΤΡΊΟΥ 17",
+      "locality": "Γιαννιτσά",
+      "postcode": null,
+      "phone": "2382022888",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 40.7939336,
+        "lon": 22.4124129,
+        "ref": "https://pella.efhmeries.gr/Home/Details/4738",
         "source": "list",
         "precision": "exact"
       }
@@ -727,7 +769,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 40.6859837,
         "lon": 22.3057578,
@@ -1005,6 +1047,27 @@
         "lat": 40.9759194,
         "lon": 22.0612362,
         "ref": "https://pella.efhmeries.gr/Home/Details/5544",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2384023325",
+      "name": "ΣΑΠΟΥΝΤΖΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΠΑΥΛΟΥ ΜΕΛΑ 28",
+      "locality": "Αριδαία",
+      "postcode": null,
+      "phone": "2384023325",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 40.9701313,
+        "lon": 22.0607514,
+        "ref": "https://pella.efhmeries.gr/Home/Details/5552",
         "source": "list",
         "precision": "exact"
       }

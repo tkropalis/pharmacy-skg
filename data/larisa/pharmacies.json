@@ -233,6 +233,27 @@
       }
     },
     {
+      "id": "2410252010",
+      "name": "ΤΣΟΛΑΚΗ ΑΣΠΑΣΙΑ",
+      "address": "ΜΑΝΩΛΑΚΗ 1 & ΚΥΠΡΟΥ ΓΩΝΙΑ (Πλησίον Τράπεζας Ελλάδος)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410252010",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 39.6389219,
+        "lon": 22.4145253,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23171",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410252531",
       "name": "Σ.Φ. ΤΡΑΧΑΛΙΟΥ ΚΑΛΛΙΟΠΗ & ΑΓΓΕΛΑΚΟΠΟΥΛΟΥ ΙΩΑΝΝΑ Ο.Ε.",
       "address": "ΝΕΟΦΥΤΟΥ 9 & ΠΑΛΑΜΑ (Πάροδος Παναγούλη, όπισθεν ψαράδικων Κύπρου)",
@@ -244,7 +265,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 39.6385663,
         "lon": 22.4199753,
@@ -438,6 +459,27 @@
         "lat": 39.64282,
         "lon": 22.41879,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23046",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410257282",
+      "name": "ΓΡΗΓΟΡΙΟΥ Σ. ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΕΡ. ΣΤΑΥΡΟΥ 30 (Πλησίον της πύλης του παλαιού Γενικού Νοσοκομείου)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410257282",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 39.64193,
+        "lon": 22.42205,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23168",
         "source": "list",
         "precision": "exact"
       }
@@ -748,7 +790,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 39.63897,
         "lon": 22.41948,
@@ -1325,6 +1367,27 @@
       }
     },
     {
+      "id": "2410550948",
+      "name": "ΜΕΤΑΞΙΩΤΗΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 157-159 (Διασταύρωση Υψηλάντου)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410550948",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 39.63296,
+        "lon": 22.42687,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23166",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410552426",
       "name": "ΜΑΝΗ ΧΑΙΔΩ",
       "address": "23ης ΟΚΤΩΒΡΙΟΥ 40 (παραπλεύρως Ξεν. Διόνυσος)",
@@ -1430,6 +1493,27 @@
       }
     },
     {
+      "id": "2410571035",
+      "name": "ΜΗΝΑ Ε. ΧΡΥΣΟΥΛΑ",
+      "address": "ΒΟΛΟΥ 142",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410571035",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 39.63122,
+        "lon": 22.44698,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23167",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410573135",
       "name": "ΚΥΡΓΙΑΝΝΗΣ Σ. ΓΕΩΡΓΙΟΣ",
       "address": "ΚΟΛΟΚΟΤΡΩΝΗ 2 & ΜΑΝΔΗΛΑΡΑ",
@@ -1504,7 +1588,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 39.665178,
         "lon": 22.394285,
@@ -1766,6 +1850,27 @@
       }
     },
     {
+      "id": "2410620128",
+      "name": "ΚΑΦΑΝΕΛΗΣ ΠΕΤΡΟΣ",
+      "address": "ΑΒΔΗΡΩΝ 45 - ΑΓΙΟΣ ΘΩΜΑΣ (Δίπλα στο Δημ. Σχολείο Αγ. Θωμά)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410620128",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 39.6314608,
+        "lon": 22.3881573,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23172",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410621104",
       "name": "ΣΙΑΜΠΟΥΡΔΑΝΗΣ Α. ΒΑΣΙΛΕΙΟΣ",
       "address": "ΑΣΚΛΗΠΙΟΥ 38 (Πλησίον ΙΚΑ)",
@@ -1882,7 +1987,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 39.63539,
         "lon": 22.41618,
@@ -2092,7 +2197,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 39.722099,
         "lon": 22.39727,
@@ -2218,7 +2323,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 39.560673,
         "lon": 22.465792,
@@ -2365,7 +2470,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-06",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 39.294269,
         "lon": 22.382052,
@@ -2559,6 +2664,27 @@
         "lat": 39.294989,
         "lon": 22.39181,
         "ref": "https://larisa.efhmeries.gr/Home/Details/19747",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2492022237",
+      "name": "ΚΟΥΚΟΥΒΙΤΗΣ Α. ΑΝΤΩΝΙΟΣ",
+      "address": "ΚΙΛΕΛΕΡ 7",
+      "locality": "Τύρναβος",
+      "postcode": null,
+      "phone": "2492022237",
+      "groupId": "tyrnavos",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-20",
+      "lastSeen": "2026-10-20",
+      "location": {
+        "lat": 39.739425,
+        "lon": 22.28779,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/20157",
         "source": "list",
         "precision": "exact"
       }
@@ -2869,7 +2995,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 39.746426,
         "lon": 22.360094,
@@ -3163,7 +3289,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 39.89418,
         "lon": 22.189207,
@@ -3205,7 +3331,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 39.7186221,
         "lon": 22.7552863,
