@@ -13,7 +13,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-07",
       "location": {
         "lat": 40.2719021,
         "lon": 22.5041382,
@@ -118,7 +118,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 40.270588,
         "lon": 22.5118676,
@@ -207,6 +207,27 @@
         "lat": 40.2724855,
         "lon": 22.5092904,
         "ref": "https://pieria.efhmeries.gr/Home/Details/23533",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351030867",
+      "name": "ΤΖΑΓΚΑ ΕΛΕΝΗ",
+      "address": "ΖΑΛΟΓΓΟΥ 33",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351030867",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 40.2740253,
+        "lon": 22.5067457,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23550",
         "source": "list",
         "precision": "exact"
       }
@@ -338,6 +359,27 @@
       }
     },
     {
+      "id": "2351038927",
+      "name": "ΚΑΣΤΑΝΑΡΑ ΠΑΡΑΣΚΕΥΗ",
+      "address": "ΣΑΡΑΝΤΑΠΟΡΟΥ 19",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351038927",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 40.272738,
+        "lon": 22.503578,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23542",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2351039662",
       "name": "Σ.Φ. ΚΟΥΛΚΟΥΔΙΝΑΣ ΕΥΡΙΠΙΔΗΣ-ΚΟΥΛΚΟΥΔΙΝΑΣ ΣΠΥΡΙΔΩΝ",
       "address": "Ε. ΑΝΤΙΣΤΑΣΗΣ 58",
@@ -391,7 +433,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 40.3146883,
         "lon": 22.5872503,
@@ -475,7 +517,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 40.2723065,
         "lon": 22.5812906,
@@ -601,7 +643,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 40.0588965,
         "lon": 22.5606957,
@@ -643,7 +685,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 39.9919599,
         "lon": 22.6244695,
@@ -706,7 +748,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 40.1024391,
         "lon": 22.5016686,
@@ -790,7 +832,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 40.4994548,
         "lon": 22.5422727,
@@ -879,6 +921,27 @@
         "lat": 40.4793808,
         "lon": 22.482706,
         "ref": "https://pieria.efhmeries.gr/Home/Details/19461",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2353031937",
+      "name": "ΜΑΚΡΙΔΟΥ ΣΟΦΙΑ",
+      "address": "ΑΓΙΟΥ ΔΗΜΗΤΡΙΟΥ & ΠΑΥΣΙΛΙΠΟΥ",
+      "locality": "Κολινδρός",
+      "postcode": null,
+      "phone": "2353031937",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 40.478824,
+        "lon": 22.4858967,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/19475",
         "source": "list",
         "precision": "exact"
       }

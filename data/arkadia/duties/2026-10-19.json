@@ -7,7 +7,7 @@
       "name": "Αρκαδία",
       "source": {
         "url": "https://arkadia.efhmeries.gr/",
-        "uploadedAt": "2026-10-13T10:43:06.406Z"
+        "uploadedAt": "2026-10-15T08:27:31.203Z"
       },
       "sections": [
         {
@@ -103,13 +103,6 @@
               "address": "ΓΡ. ΛΑΜΠΡΑΚΗ 8",
               "locality": "Τρίπολη",
               "phone": "2710242222"
-            },
-            {
-              "pharmacyId": "2710234732",
-              "name": "ΚΑΡΚΟΥΛΗ ΜΑΡΙΑ",
-              "address": "ΕΡ. ΣΤΑΥΡΟΥ ΚΑΙ ΑΝΑΓΝΩΣΤΑΡΑ",
-              "locality": "Τρίπολη",
-              "phone": "2710234732"
             },
             {
               "pharmacyId": "2710237773",

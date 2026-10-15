@@ -275,6 +275,27 @@
       }
     },
     {
+      "id": "2695048238",
+      "name": "ΜΟΥΖΑΚΗΣ ΝΙΚΟΛΑΟΣ & ΜΟΥΖΑΚΗΣ ΙΩΑΝΝΗΣ Ο.Ε.",
+      "address": "ΠΛ. ΑΓΙΩΝ ΣΑΡΑΝΤΑ 19-15",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695048238",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 37.7827739,
+        "lon": 20.8962791,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4192",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2695200270",
       "name": "IONIAN FARM IKE",
       "address": "ΓΑΪΤΑΝΙ (ΕΝΑΝΤΙ ΝΟΣΟΚΟΜΕΙΟΥ)",

@@ -107,6 +107,27 @@
       }
     },
     {
+      "id": "2510227271",
+      "name": "ΝΙΚΟΛΑΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΓΑΛΛΙΚΗΣ ΔΗΜΟΚΡΑΤΙΑΣ 5",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510227271",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 40.936916,
+        "lon": 24.414314,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3989",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510228281",
       "name": "ΝΙΚΟΛΑΙΔΟΥ ΑΝΑΣΤΑΣΙΑ",
       "address": "ΕΡΥΘΡΟΥ ΣΤΑΥΡΟΥ 1",
@@ -118,7 +139,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 40.936409,
         "lon": 24.4089542,

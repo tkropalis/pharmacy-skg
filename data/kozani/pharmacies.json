@@ -65,6 +65,27 @@
       }
     },
     {
+      "id": "2461025984",
+      "name": "ΜΗΤΡΑΓΚΑ ΕΥΓΕΝΙΑ - ΔΙΑΦΑ ΘΕΟΔΩΡΑ",
+      "address": "ΠΑΥΛΟΥ ΜΕΛΑ 55",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461025984",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 40.3052552,
+        "lon": 21.7892783,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6473",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2461026612",
       "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ",
       "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 7",
@@ -81,6 +102,27 @@
         "lat": 40.298405,
         "lon": 21.7941875,
         "ref": "https://kozani.efhmeries.gr/Home/Details/6017",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461026744",
+      "name": "ΓΚΑΝΑ ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΤΣΟΝΤΖΑ Ν. 1",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461026744",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 40.3017664,
+        "lon": 21.7875004,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6471",
         "source": "list",
         "precision": "exact"
       }
@@ -307,7 +349,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 40.3005753,
         "lon": 21.7893697,
@@ -790,7 +832,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 40.51283,
         "lon": 21.6778108,
@@ -921,6 +963,27 @@
         "lat": 40.514963,
         "lon": 21.6802478,
         "ref": "https://kozani.efhmeries.gr/Home/Details/6788",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463024466",
+      "name": "ΒΕΛΟΝΑ ΜΑΡΙΑ",
+      "address": "ΦΙΛΙΠΠΟΥ 1 (Απέναντι από το Ξενοδοχείο Κωστής)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463024466",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 40.511224,
+        "lon": 21.6778337,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/7407",
         "source": "list",
         "precision": "exact"
       }

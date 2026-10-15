@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-21",
+  "groups": [
+    {
+      "id": "zakynthos",
+      "name": "Ζάκυνθος",
+      "source": {
+        "url": "https://zakynthos.efhmeries.gr/",
+        "uploadedAt": "2026-10-15T08:28:21.565Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2695048238",
+              "name": "ΜΟΥΖΑΚΗΣ ΝΙΚΟΛΑΟΣ & ΜΟΥΖΑΚΗΣ ΙΩΑΝΝΗΣ Ο.Ε.",
+              "address": "ΠΛ. ΑΓΙΩΝ ΣΑΡΑΝΤΑ 19-15",
+              "locality": "Ζάκυνθος",
+              "phone": "2695048238"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

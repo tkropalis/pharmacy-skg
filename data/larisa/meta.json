@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "larisa",
-  "updatedAt": "2026-10-14T08:48:26.946Z",
-  "checkedAt": "2026-10-14T19:27:26.510Z",
+  "updatedAt": "2026-10-15T08:23:56.795Z",
+  "checkedAt": "2026-10-15T08:23:56.795Z",
   "duties": {
     "from": "2026-10-06",
-    "to": "2026-10-20"
+    "to": "2026-10-21"
   },
   "extendedHours": [],
   "sources": [

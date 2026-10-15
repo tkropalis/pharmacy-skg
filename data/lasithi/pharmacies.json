@@ -55,7 +55,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 35.1890715,
         "lon": 25.7174678,
@@ -265,7 +265,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 35.256118,
         "lon": 25.6063828,
@@ -286,7 +286,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 35.2617867,
         "lon": 25.7226428,
@@ -438,6 +438,27 @@
         "lat": 35.0096176,
         "lon": 25.7399574,
         "ref": "https://lasithi.efhmeries.gr/Home/Details/4699",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2842024407",
+      "name": "ΠΕΡΑΚΗ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΒΙΤΣΕΝΤΖΟΥ ΚΟΡΝΑΡΟΥ 6 / 6, VITSENTZOU KORNAROU STR.",
+      "locality": "Ιεράπετρα",
+      "postcode": null,
+      "phone": "2842024407",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 35.0073457,
+        "lon": 25.7370331,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4660",
         "source": "list",
         "precision": "exact"
       }
@@ -727,7 +748,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 35.2051441,
         "lon": 26.0966064,

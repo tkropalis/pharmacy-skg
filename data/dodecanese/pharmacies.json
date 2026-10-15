@@ -13,7 +13,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 36.2924549,
         "lon": 28.1625698,
@@ -60,6 +60,27 @@
         "lat": 36.3612576,
         "lon": 28.1181244,
         "ref": "https://dodecanese.efhmeries.gr/Home/Details/29688",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241020246",
+      "name": "ΣΑΡΗ Κ.ΣΤΑΜΑΤΙΑ-ΜΑΡΙΑ / SARI K.STAMATIA-MARIA",
+      "address": "ΔΑΜΑΣΚΗΝΟΎ 95 / DAMASKINOU 95",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241020246",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 36.4350622,
+        "lon": 28.2324206,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29776",
         "source": "list",
         "precision": "exact"
       }
@@ -443,6 +464,27 @@
       }
     },
     {
+      "id": "2241036683",
+      "name": "ΚΟΥΡΤΗΣ ΙΩΑΝΝΗΣ / KOURTIS IOANNIS",
+      "address": "ΠΑΠΑΛΟΥΚΑ 17 / PAPALOUKA 17",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241036683",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 36.4468573,
+        "lon": 28.2165235,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29775",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2241036977",
       "name": "ΚΑΤΩΓΑΣ ΗΛΙΑΣ / KATOGAS ILIAS",
       "address": "ΕΘ. ΑΝΤΙΣΤΑΣΗΣ 33 / ETH. ANTISTASIS 33",
@@ -538,7 +580,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 36.3546982,
         "lon": 27.9850619,
@@ -811,7 +853,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 36.3890386,
         "lon": 28.214573,
@@ -900,6 +942,48 @@
         "lat": 36.4171142,
         "lon": 28.174137,
         "ref": "https://dodecanese.efhmeries.gr/Home/Details/29161",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241071920",
+      "name": "ΜΙΧΑΛΑΚΗ ΧΡΙΣΤΙΝΑ / MIXALAKI CHRISTINA",
+      "address": "ΛΕΩΦ.ΕΛΕΥΘΕΡΙΑΣ / L. ELEFTHERIAS",
+      "locality": "Πεταλούδες",
+      "postcode": null,
+      "phone": "2241071920",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 36.4140101,
+        "lon": 28.1257706,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29713",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241071991",
+      "name": "ΡΙΖΟΠΟΥΛΟΥ ΑΝΝΑ / RIZOPOULOU ANNA",
+      "address": "ΙΕΡΟΥ ΛΟΧΟΥ 30 / IEROU LOHOU 30",
+      "locality": "Ιαλυσός",
+      "postcode": null,
+      "phone": "2241071991",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 36.41915,
+        "lon": 28.1579292,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29188",
         "source": "list",
         "precision": "exact"
       }
@@ -1168,7 +1252,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 36.3354713,
         "lon": 28.1758116,
@@ -1441,7 +1525,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 36.8915064,
         "lon": 27.2877228,
@@ -1756,7 +1840,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 36.8763847,
         "lon": 27.2069582,
@@ -1798,7 +1882,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 36.8044737,
         "lon": 27.0956379,
@@ -2050,7 +2134,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 36.2150927,
         "lon": 28.1172433,
@@ -2176,7 +2260,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 36.0934975,
         "lon": 28.0169723,
@@ -2197,7 +2281,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 36.054353,
         "lon": 27.9705901,
@@ -2260,7 +2344,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 35.5073286,
         "lon": 27.2109979,
@@ -2323,7 +2407,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 36.2269188,
         "lon": 27.8561477,
@@ -2365,7 +2449,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 36.6158401,
         "lon": 27.8355787,

@@ -149,6 +149,27 @@
       }
     },
     {
+      "id": "2521021220",
+      "name": "ΑΙΚ.ΠΑΠΑΔΗΜΑ & ΣΙΑ ΟΕ",
+      "address": "ΙΠΠΟΚΡΑΤΟΥΣ 51",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521021220",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 41.1586876,
+        "lon": 24.1474244,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3164",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521022606",
       "name": "ΓΙΑΚΟΥΜΗ ΧΡΥΣΑΝΘΟΠΟΥΛΟΥ ΣΤΕΛΛΑ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "ΛΑΜΠΡΙΑΝΙΔΟΥ ΛΑΜΠΡΟΥ 20",
@@ -254,6 +275,27 @@
       }
     },
     {
+      "id": "2521025505",
+      "name": "ΧΑΤΖΗΣΤΕΦΑΝΟΥ ΑΝΝΑ",
+      "address": "Κ. ΠΑΛΑΙΟΛΟΓΟΥ 22",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521025505",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 41.15201,
+        "lon": 24.148309,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3167",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521025734",
       "name": "ΤΣΑΠΑΚΙΔΟΥ ΔΕΣΠΟΙΝΑ",
       "address": "ΑΡΜΕΝ 24",
@@ -354,6 +396,27 @@
         "lat": 41.1504829,
         "lon": 24.1454114,
         "ref": "https://drama.efhmeries.gr/Home/Details/3146",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521031232",
+      "name": "ΦΑΝΤΗ ΒΑΣΙΛΙΚΗ ΚΑΙ ΣΙΑ ΟΕ",
+      "address": "ΚΟΛΟΚΟΤΡΩΝΗ 11",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521031232",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 41.1488332,
+        "lon": 24.145371,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3166",
         "source": "list",
         "precision": "exact"
       }
@@ -496,7 +559,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 41.1500336,
         "lon": 24.1476403,

@@ -7,9 +7,29 @@
       "name": "Φθιώτιδα",
       "source": {
         "url": "https://fthiotida.efhmeries.gr/",
-        "uploadedAt": "2026-10-14T19:30:35.498Z"
+        "uploadedAt": "2026-10-15T08:31:25.116Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:00",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231031381",
+              "name": "ΜΠΛΟΥΝΑ ΜΑΡΙΑ",
+              "address": "ΚΟΛΟΚΟΤΡΏΝΗ 16",
+              "locality": "Λαμία",
+              "phone": "2231031381"
+            }
+          ]
+        },
         {
           "kind": "saturday-extra",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -96,26 +116,6 @@
               "address": "ΕΘΝ.ΑΝΤΙΣΤΑΣΕΩΣ 60",
               "locality": "Αταλάντη",
               "phone": "2233080005"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 22:00",
-          "hours": {
-            "from": "08:00",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231031381",
-              "name": "ΜΠΛΟΥΝΑ ΜΑΡΙΑ",
-              "address": "ΚΟΛΟΚΟΤΡΏΝΗ 16",
-              "locality": "Λαμία",
-              "phone": "2231031381"
             }
           ]
         },

@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2541022527",
+      "name": "ΑΝΤΩΝΙΑΔΗΣ ΑΝΤΩΝΗΣ",
+      "address": "28ης ΟΚΤΩΒΡΙΟΥ 12",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541022527",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 41.1389737,
+        "lon": 24.8877801,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3636",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2541022590",
       "name": "ΚΟΝΤΕΡΙΔΟΥ ΕΥΑΓΓΕΛΙΑ",
       "address": "ΗΡΟΔΟΤΟΥ 22",
@@ -81,6 +102,27 @@
         "lat": 41.1326796,
         "lon": 24.8934958,
         "ref": "https://xanthi.efhmeries.gr/Home/Details/3631",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541023940",
+      "name": "ΤΑΡΕΝΙΔΗΣ ΣΑΒΒΑΣ",
+      "address": "ΗΡΩΩΝ 113",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541023940",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 41.1365936,
+        "lon": 24.88731,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3637",
         "source": "list",
         "precision": "exact"
       }
@@ -349,7 +391,7 @@
         "iteq-xanthi"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 41.1389205,
         "lon": 24.8917554,

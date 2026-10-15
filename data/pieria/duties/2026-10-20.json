@@ -7,7 +7,7 @@
       "name": "Πιερία",
       "source": {
         "url": "https://pieria.efhmeries.gr/",
-        "uploadedAt": "2026-10-14T19:30:04.181Z"
+        "uploadedAt": "2026-10-15T08:30:50.237Z"
       },
       "sections": [
         {
@@ -88,6 +88,26 @@
         },
         {
           "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351029289",
+              "name": "Σ.Φ. ΧΙΟΝΙΔΟΥ ΕΛΕΝΑ-ΧΡΙΣΤΙΝΑ-ΜΕΪΜΑΡΗ ΤΙΝΑ",
+              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ & ΒΟΤΣΗ 1",
+              "locality": "Κατερίνη",
+              "phone": "2351029289"
+            }
+          ]
+        },
+        {
+          "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:00 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
             "from": "08:00",
@@ -123,26 +143,6 @@
               "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 51",
               "locality": "Κατερίνη",
               "phone": "2351027865"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2351029289",
-              "name": "Σ.Φ. ΧΙΟΝΙΔΟΥ ΕΛΕΝΑ-ΧΡΙΣΤΙΝΑ-ΜΕΪΜΑΡΗ ΤΙΝΑ",
-              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ & ΒΟΤΣΗ 1",
-              "locality": "Κατερίνη",
-              "phone": "2351029289"
             }
           ]
         }

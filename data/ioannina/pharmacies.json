@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "2651022901",
+      "name": "ΛΙΟΛΙΟΥ ΠΑΡΑΣΚΕΥΗ - ΜΑΡΙΑ",
+      "address": "28 ΟΚΤΩΒΡΙΟΥ 55",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651022901",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 39.6671606,
+        "lon": 20.851807,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5033",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651023212",
       "name": "Σ.Φ. ΚΟΝΤΟΧΡΗΣΤΟΥ ΑΛΕΞΑΝΔΡΑ - ΚΟΝΤΟΧΡΗΣΤΟΣ ΑΠΟΣΤΟΛΟΣ",
       "address": "ΠΛ. ΠΑΡΓΗΣ 3",
@@ -317,6 +338,27 @@
       }
     },
     {
+      "id": "2651031994",
+      "name": "ΛΙΑΣΚΑΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 124",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651031994",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 39.6756579,
+        "lon": 20.8378493,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5031",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651032223",
       "name": "ΠΑΝΟΠΟΥΛΟΥ ΜΑΡΙΑΝΘΗ",
       "address": "ΠΥΡΣΙΝΕΛΛΑ 16",
@@ -464,6 +506,27 @@
       }
     },
     {
+      "id": "2651038580",
+      "name": "ΤΣΕΛΙΚΗ ΕΥΤΥΧΙΑ",
+      "address": "ΑΒΕΡΩΦ 26",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651038580",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 39.668227,
+        "lon": 20.856176,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5030",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651042722",
       "name": "Σ.Φ. ΜΠΡΑΧΑΝΤΙΝΗΣ ΝΙΚΗΤΑΣ - ΟΥΕΡ ΜΑΛΒΙΝΑ",
       "address": "3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ 23Α, ΑΝΑΤΟΛΗ",
@@ -606,6 +669,27 @@
         "lat": 39.6588612,
         "lon": 20.8511128,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5010",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651066310",
+      "name": "ΧΡΥΣΑΝΘΟΠΟΥΛΟΣ ΜΙΛΤΙΑΔΗΣ",
+      "address": "3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ 55, ΑΝΑΤΟΛΗ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651066310",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 39.6366007,
+        "lon": 20.8713763,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5032",
         "source": "list",
         "precision": "exact"
       }

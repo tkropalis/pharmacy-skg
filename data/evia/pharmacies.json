@@ -244,7 +244,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 38.5135666,
         "lon": 23.6373025,
@@ -653,6 +653,27 @@
       }
     },
     {
+      "id": "2221085106",
+      "name": "ΦΑΡΑΚΛΙΩΤΗΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΣΤΎΡΩΝ 5",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221085106",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 38.4588618,
+        "lon": 23.6113887,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9334",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2221085586",
       "name": "ΣΑΜΠΛΗ ΠΟΛΥΞΕΝΗ",
       "address": "ΚΗΡΕΩΣ 11Β",
@@ -821,6 +842,27 @@
       }
     },
     {
+      "id": "2221088935",
+      "name": "ΚΩΣΤΗ ΙΩΑΝΝΑ",
+      "address": "ΙΣΑΪΟΥ 14",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221088935",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 38.4626874,
+        "lon": 23.5927534,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9333",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2221094469",
       "name": "ΛΟΥΚΑ ΠΑΝΑΓΙΩΤΑ",
       "address": "Λ.ΚΑΡΑΜΑΝΛΗ 19",
@@ -858,6 +900,27 @@
         "lat": 38.4634152,
         "lon": 23.5916951,
         "ref": "https://evia.efhmeries.gr/Home/Details/9310",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221600237",
+      "name": "ΚΟΝΤΟΥ ΒΑΣΙΛΙΚΗ",
+      "address": "ΓΑΖΕΠΗ 83",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221600237",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 38.4638002,
+        "lon": 23.5996829,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9335",
         "source": "list",
         "precision": "exact"
       }
@@ -937,7 +1000,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 38.0141849,
         "lon": 24.4183416,
@@ -1063,7 +1126,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 38.954759,
         "lon": 23.153936,
@@ -1084,7 +1147,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 38.3946605,
         "lon": 23.7919147,

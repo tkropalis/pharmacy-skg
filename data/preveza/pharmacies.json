@@ -44,6 +44,27 @@
       }
     },
     {
+      "id": "2682022919",
+      "name": "ΑΜΑΡΑΝΤΟΣ ΣΤΑΥΡΟΣ",
+      "address": "ΥΔΡΑΓΩΓΕΙΟΥ 1",
+      "locality": "Πρέβεζα",
+      "postcode": null,
+      "phone": "2682022919",
+      "groupId": "preveza",
+      "sources": [
+        "iteq-preveza"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 38.959265,
+        "lon": 20.751716,
+        "ref": "https://preveza.efhmeries.gr/Home/Details/1416",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2682023640",
       "name": "ΚΑΝΕΛΛΟΠΟΥΛΟΥ ΜΑΡΙΑΝΘΗ",
       "address": "Π. ΤΣΑΛΔΑΡΗ 16",

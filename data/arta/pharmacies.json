@@ -65,6 +65,27 @@
       }
     },
     {
+      "id": "2681027328",
+      "name": "ΜΑΤΣΟΥΚΑΣ",
+      "address": "ΣΚΟΥΦΑ 110",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681027328",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 39.1607304,
+        "lon": 20.9842193,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2430",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681027396",
       "name": "ΑΝΑΛΟΓΙΔΗΣ ΓΕΩΡΓΙΟΣ",
       "address": "ΣΚΟΥΦΑ 159",
@@ -123,6 +144,27 @@
         "lat": 39.1140792,
         "lon": 20.899601,
         "ref": "https://arta.efhmeries.gr/Home/Details/2423",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681061577",
+      "name": "ΓΕΩΡΓΟΥΛΑΣ",
+      "address": "4ο ΧΛΜ. ΑΡΤΑΣ - ΑΓΡΙΝΙΟΥ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681061577",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 39.14338,
+        "lon": 21.020815,
+        "ref": "https://arta.efhmeries.gr/Home/Details/1978",
         "source": "list",
         "precision": "exact"
       }

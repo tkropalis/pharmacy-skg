@@ -49,6 +49,11 @@
     "lon": 22.5092904,
     "ref": "https://pieria.efhmeries.gr/Home/Details/23533"
   },
+  "2351030867": {
+    "lat": 40.2740253,
+    "lon": 22.5067457,
+    "ref": "https://pieria.efhmeries.gr/Home/Details/23550"
+  },
   "2351033864": {
     "lat": 40.2722572,
     "lon": 22.5045722,
@@ -78,6 +83,11 @@
     "lat": 40.2724583,
     "lon": 22.5095861,
     "ref": "https://pieria.efhmeries.gr/Home/Details/23534"
+  },
+  "2351038927": {
+    "lat": 40.272738,
+    "lon": 22.503578,
+    "ref": "https://pieria.efhmeries.gr/Home/Details/23542"
   },
   "2351039662": {
     "lat": 40.2702495,
@@ -208,5 +218,10 @@
     "lat": 40.4793808,
     "lon": 22.482706,
     "ref": "https://pieria.efhmeries.gr/Home/Details/19461"
+  },
+  "2353031937": {
+    "lat": 40.478824,
+    "lon": 22.4858967,
+    "ref": "https://pieria.efhmeries.gr/Home/Details/19475"
   }
 }

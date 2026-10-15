@@ -464,6 +464,27 @@
       }
     },
     {
+      "id": "2441071902",
+      "name": "ΣΤΡΑΤΙΚΗ ΣΩΤΗΡΙΑ & ΣΙΑ Ο.Ε.",
+      "address": "ΧΑΤΖΗΜΗΤΡΟΥ & ΝΙΚΗΤΑΡΑ 19",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441071902",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 39.3635755,
+        "lon": 21.9247158,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3772",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2441073356",
       "name": "ΜΟΥΤΑΡΕΛΟΥ ΒΑΪΑ",
       "address": "ΗΡ ΠΟΛΥΤΕΧΝΕΙΟΥ 33",
@@ -522,6 +543,27 @@
         "lat": 39.4082747,
         "lon": 21.9653722,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3753",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441304534",
+      "name": "ΜΑΡΙΑΝΝΑ ΛΕΜΑ",
+      "address": "Ν.ΠΛΑΣΤΗΡΑ 26",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441304534",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 39.3640258,
+        "lon": 21.9214049,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3771",
         "source": "list",
         "precision": "exact"
       }

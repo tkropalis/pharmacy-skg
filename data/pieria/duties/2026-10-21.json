@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-21",
+  "groups": [
+    {
+      "id": "pieria",
+      "name": "Πιερία",
+      "source": {
+        "url": "https://pieria.efhmeries.gr/",
+        "uploadedAt": "2026-10-15T08:30:50.237Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2352032285",
+              "name": "ΓΚΕΜΑΛΜΑΣ ΜΙΧΑΗΛ",
+              "address": "ΒΑΣ. ΣΟΦΙΑΣ 22",
+              "locality": "Λεπτοκαρυά",
+              "phone": "2352032285"
+            },
+            {
+              "pharmacyId": "2351041701",
+              "name": "ΚΑΡΑΚΟΥΣΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ ΚΑΙ ΣΙΑ Ε.Ε.",
+              "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 90",
+              "locality": "Κορινός",
+              "phone": "2351041701"
+            },
+            {
+              "pharmacyId": "2353031937",
+              "name": "ΜΑΚΡΙΔΟΥ ΣΟΦΙΑ",
+              "address": "ΑΓΙΟΥ ΔΗΜΗΤΡΙΟΥ & ΠΑΥΣΙΛΙΠΟΥ",
+              "locality": "Κολινδρός",
+              "phone": "2353031937"
+            },
+            {
+              "pharmacyId": "2353022173",
+              "name": "Σ.Φ. ΠΑΠΑΖΟΓΛΟΥ ΜΑΡΙΑ-ΜΠΑΚΑ ΔΗΜΗΤΡΑ",
+              "address": "ΑΛ. ΠΑΠΑΓΟΥ 20",
+              "locality": "Αιγίνιο",
+              "phone": "2353022173"
+            },
+            {
+              "pharmacyId": "2352042400",
+              "name": "Σ.Φ. ΤΖΗΜΑ ΑΝΝΑ-ΜΑΡΙΑ - ΒΟΥΖΙΚΑ ΣΤΑΥΡΟΥΛΑ",
+              "address": "Κ. ΚΑΡΑΜΑΝΛΗ 56",
+              "locality": "Πλαταμώνας",
+              "phone": "2352042400"
+            },
+            {
+              "pharmacyId": "2351063203",
+              "name": "ΤΖΙΑΝΚΑΡΛΟ ΦΟΡΝΑΡΕΛΛΙ",
+              "address": "ΑΔΡΕΑ Γ. ΠΑΠΑΔΡΕΟΥ 30",
+              "locality": "Καλλιθέα",
+              "phone": "2351063203"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2352081826",
+              "name": "ΜΠΟΥΡΑ ΕΛΕΝΗ",
+              "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 1",
+              "locality": "Λιτόχωρο",
+              "phone": "2352081826"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351030867",
+              "name": "ΤΖΑΓΚΑ ΕΛΕΝΗ",
+              "address": "ΖΑΛΟΓΓΟΥ 33",
+              "locality": "Κατερίνη",
+              "phone": "2351030867"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:30 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351027910",
+              "name": "ΚΩΝΣΤΑΝΤΙΝΙΔΟΥ ΟΛΓΑ",
+              "address": "ΕΙΡΗΝΗΣ 33",
+              "locality": "Κατερίνη",
+              "phone": "2351027910"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:30 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351027910",
+              "name": "ΚΩΝΣΤΑΝΤΙΝΙΔΟΥ ΟΛΓΑ",
+              "address": "ΕΙΡΗΝΗΣ 33",
+              "locality": "Κατερίνη",
+              "phone": "2351027910"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

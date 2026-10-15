@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-14T19:28:49.623Z"
+        "uploadedAt": "2026-10-15T08:28:58.142Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651070991",
-              "name": "Σ.Φ. ΠΑΠΠΑ ΕΛΕΝΗ - ΦΕΡΕΝΤΙΝΟΥ ΑΛΕΞΑΝΔΡΑ",
-              "address": "Φ. ΤΖΑΒΕΛΛΑ & ΟΠΛ. ΠΟΥΤΕΤΣΗ 24",
-              "locality": "Ιωάννινα",
-              "phone": "2651070991"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -47,6 +27,26 @@
               "address": "ΔΑΓΚΛΗ 1 ΚΑΙ ΝΟΤΗ ΜΠΟΤΣΑΡΗ 18",
               "locality": "Ιωάννινα",
               "phone": "2651031434"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651070991",
+              "name": "Σ.Φ. ΠΑΠΠΑ ΕΛΕΝΗ - ΦΕΡΕΝΤΙΝΟΥ ΑΛΕΞΑΝΔΡΑ",
+              "address": "Φ. ΤΖΑΒΕΛΛΑ & ΟΠΛ. ΠΟΥΤΕΤΣΗ 24",
+              "locality": "Ιωάννινα",
+              "phone": "2651070991"
             }
           ]
         }

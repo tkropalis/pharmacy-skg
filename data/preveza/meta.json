@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "preveza",
-  "updatedAt": "2026-10-14T08:52:08.347Z",
-  "checkedAt": "2026-10-14T19:30:16.009Z",
+  "updatedAt": "2026-10-15T08:31:05.648Z",
+  "checkedAt": "2026-10-15T08:31:05.648Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-10-20"
+    "to": "2026-10-21"
   },
   "extendedHours": [],
   "sources": [

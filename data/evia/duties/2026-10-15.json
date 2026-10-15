@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-14T19:28:11.197Z"
+        "uploadedAt": "2026-10-15T08:28:05.928Z"
       },
       "sections": [
         {
@@ -66,26 +66,6 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221062640",
-              "name": "ΠΑΠΑΔΑΚΗ ΝΑΝΣΥ",
-              "address": "ΜΙΑΟΥΛΗ 1 - ΚΡΗΠΙΔΩΜΑ ΧΑΛΚΙΔΑΣ",
-              "locality": "Χαλκίδα",
-              "phone": "2221062640"
-            }
-          ]
-        },
-        {
           "kind": "day",
           "heading": "14:00 ΕΩΣ 17:30",
           "hours": {
@@ -102,6 +82,26 @@
               "address": "ΒΕΛΙΣΣΑΡΙΟΥ 13 ΚΑΙ ΣΙΩΚΟΥ",
               "locality": "Χαλκίδα",
               "phone": "2221083605"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221062640",
+              "name": "ΠΑΠΑΔΑΚΗ ΝΑΝΣΥ",
+              "address": "ΜΙΑΟΥΛΗ 1 - ΚΡΗΠΙΔΩΜΑ ΧΑΛΚΙΔΑΣ",
+              "locality": "Χαλκίδα",
+              "phone": "2221062640"
             }
           ]
         }

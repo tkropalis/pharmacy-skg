@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-21",
+  "groups": [
+    {
+      "id": "lakonia",
+      "name": "Λακωνία",
+      "source": {
+        "url": "https://lakonia.efhmeries.gr/",
+        "uploadedAt": "2026-10-15T08:29:40.339Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2735041679",
+              "name": "ΜΑΡΙΑ ΚΟΥΤΣΟΥΜΠΟΥ ΚΑΙ ΣΙΑ ΟΕ",
+              "address": "ΒΛΑΧΙΩΤΗ",
+              "locality": "Βλαχιώτης",
+              "phone": "2735041679"
+            },
+            {
+              "pharmacyId": "2733029510",
+              "name": "ΜΗΤΣΑΚΟΥ ΜΑΡΙΑ- ΝΕΦΕΛΗ – ΒΑΒΟΥΛΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ο.Ε.",
+              "address": "ΑΡΕΟΠΟΛΗ",
+              "locality": "Αρεόπολη",
+              "phone": "2733029510"
+            },
+            {
+              "pharmacyId": "2731036000",
+              "name": "ΜΠΟΥΤΕΡΑΚΟΥ ΓΕΩΡΓΙΑ",
+              "address": "ΞΗΡΟΚΑΜΠΙ",
+              "locality": "Ξηροκάμπι",
+              "phone": "2731036000"
+            },
+            {
+              "pharmacyId": "2735023344",
+              "name": "ΠΑΝΑΓΑΚΟΥ ΜΑΡΙΑ",
+              "address": "ΣΚΑΛΑ",
+              "locality": "Σκάλα",
+              "phone": "2735023344"
+            },
+            {
+              "pharmacyId": "2733023677",
+              "name": "Σ.Φ. Λ. ΜΑΝΔΡΑΠΥΛΙΑΣ -Θ. ΜΑΝΔΡΑΠΥΛΙΑ ΛΥΚΙΔΟΥ ΟΕ",
+              "address": "ΒΑΣ. ΠΑΥΛΟΥ 43",
+              "locality": "Γύθειο",
+              "phone": "2733023677"
+            },
+            {
+              "pharmacyId": "2731057757",
+              "name": "Σ.Φ. ΜΠΑΣΚΟΥΡΕΛΟΣ ΧΑΡΑΛΑΜΠΟΣ – ΜΠΑΣΚΟΥΡΕΛΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ο.Ε.",
+              "address": "ΚΑΣΤΟΡΙ",
+              "locality": "Καστόρειο",
+              "phone": "2731057757"
+            },
+            {
+              "pharmacyId": "2734022322",
+              "name": "ΤΣΑΛΑΒΟΥΤΑ ΜΑΡΙΑ",
+              "address": "ΝΕΑΠΟΛΗ",
+              "locality": "Νεάπολη",
+              "phone": "2734022322"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2731021950",
+              "name": "Σ.Φ. ΣΑΧΛΑ ΕΥΓΕΝΙΑ-ΚΥΡΙΑΚΟΥΛΙΑΣ ΓΕΩΡΓΙΟΣ Ο.Ε.",
+              "address": "ΛΥΚΟΥΡΓΟΥ 123",
+              "locality": "Σπάρτη",
+              "phone": "2731021950"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "20:30 ΕΩΣ 20:30 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "20:30",
+            "to": "20:30",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2732082370",
+              "name": "ΠΑΝΑΓΙΩΤΗΣ ΒΛΑΧΑΚΗΣ ΚΑΙ ΣΙΑ Ε.Ε.",
+              "address": "ΑΣΩΠΟΣ",
+              "locality": "ΑΣΩΠΟΣ",
+              "phone": "2732082370"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 21:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "21:00",
+            "to": "21:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2732022331",
+              "name": "ΠΑΝΟΥΤΣΟΠΟΥΛΟΣ ΓΡΗΓΟΡΙΟΣ",
+              "address": "ΜΟΛΑΟΙ",
+              "locality": "Μολάοι",
+              "phone": "2732022331"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

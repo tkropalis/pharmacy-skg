@@ -254,6 +254,27 @@
       }
     },
     {
+      "id": "2381028200",
+      "name": "ΚΥΡΙΑΖΟΠΟΥΛΟΣ ΔΗΜΗΤΡΗΣ",
+      "address": "18ης ΟΚΤΩΒΡΙΟΥ 10",
+      "locality": "Έδεσσα",
+      "postcode": null,
+      "phone": "2381028200",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 40.8047676,
+        "lon": 22.0505899,
+        "ref": "https://pella.efhmeries.gr/Home/Details/6213",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2381028554",
       "name": "ΛΟΥΣΙΩΤΗΣ ΠΕΤΡΟΣ-ΚΑΡΟΛΟΣ",
       "address": "ΑΡΧ. ΠΑΝΤΕΛΕΗΜΟΝΟΣ 26",
@@ -370,7 +391,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 40.7680257,
         "lon": 22.1567142,
@@ -674,6 +695,27 @@
       }
     },
     {
+      "id": "2382028229",
+      "name": "ΛΑΠΙΧΟΥ ΚΑΛΛΙΟΠΗ",
+      "address": "ΠΛΑΤΕΙΑ ΓΚΟΝΟΥ ΓΙΩΤΑ 2",
+      "locality": "Γιαννιτσά",
+      "postcode": null,
+      "phone": "2382028229",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 40.7928306,
+        "lon": 22.4118667,
+        "ref": "https://pella.efhmeries.gr/Home/Details/4739",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2382028400",
       "name": "ΣΤΑΥΡΟΠΟΥΛΟΣ ΣΤΑΥΡΟΣ",
       "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 140",
@@ -832,7 +874,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 40.6866277,
         "lon": 22.3032052,
@@ -1126,7 +1168,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 40.9746549,
         "lon": 22.0634344,

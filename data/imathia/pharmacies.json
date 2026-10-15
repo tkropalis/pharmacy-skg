@@ -118,7 +118,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 40.5210255,
         "lon": 22.2019496,
@@ -349,7 +349,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 40.5545487,
         "lon": 22.2539374,
@@ -438,6 +438,27 @@
         "lat": 40.5253812,
         "lon": 22.2052785,
         "ref": "https://imathia.efhmeries.gr/Home/Details/6165",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331060340",
+      "name": "ΜΠΟΥΛΑΣΙΚΗΣ ΕΜ. ΑΝΑΣΤΑΣΙΟΣ",
+      "address": "ΚΕΝΤΡΙΚΗΣ 119 ΚΑΙ ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331060340",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 40.5250235,
+        "lon": 22.202813,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6213",
         "source": "list",
         "precision": "exact"
       }
@@ -585,6 +606,27 @@
         "lat": 40.5289607,
         "lon": 22.2037535,
         "ref": "https://imathia.efhmeries.gr/Home/Details/6173",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331066812",
+      "name": "ΠΑΝΤΑΖΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΟΥ ΜΙΧΑΗΛ",
+      "address": "ΑΪΒΑΛΙΟΥ 2 & ΑΚΡΟΠΟΛΕΩΣ ΚΕΝΤΡΟ ΠΡΟΜΗΘΕΑ",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331066812",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 40.5266321,
+        "lon": 22.1976072,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6216",
         "source": "list",
         "precision": "exact"
       }
@@ -816,6 +858,27 @@
         "lat": 40.6290104,
         "lon": 22.0683474,
         "ref": "https://imathia.efhmeries.gr/Home/Details/5766",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2332023030",
+      "name": "ΔΙΓΚΑ ΜΑΡΙΑ & ΣΙΑ Ο.Ε.",
+      "address": "17ΗΣ ΟΚΤΩΒΡΙΟΥ 10",
+      "locality": "Νάουσα",
+      "postcode": null,
+      "phone": "2332023030",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 40.6318847,
+        "lon": 22.0673843,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/5780",
         "source": "list",
         "precision": "exact"
       }
@@ -1105,7 +1168,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 40.6301808,
         "lon": 22.4386665,

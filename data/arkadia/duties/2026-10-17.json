@@ -7,7 +7,7 @@
       "name": "Αρκαδία",
       "source": {
         "url": "https://arkadia.efhmeries.gr/",
-        "uploadedAt": "2026-10-11T10:06:12.528Z"
+        "uploadedAt": "2026-10-15T08:27:31.203Z"
       },
       "sections": [
         {
@@ -82,13 +82,6 @@
               "address": "ΤΆΣΟΥ ΣΕΧΙΩΤΗ 22",
               "locality": "Τρίπολη",
               "phone": "2710223636"
-            },
-            {
-              "pharmacyId": "2710225911",
-              "name": "ΠΟΛΥΜΕΝΟΠΟΥΛΟΥ ΓΕΩΡΓΙΑ",
-              "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 72",
-              "locality": "Τρίπολη",
-              "phone": "2710225911"
             },
             {
               "pharmacyId": "2710237773",

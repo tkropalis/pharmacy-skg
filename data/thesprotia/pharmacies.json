@@ -170,6 +170,27 @@
       }
     },
     {
+      "id": "2665025059",
+      "name": "ΧΟΥΛΙΑΡΑ ΒΑΙΑ ΒΑΝΕΣΑ",
+      "address": "ΚΥΠΡΟΥ 156",
+      "locality": "Ηγουμενίτσα",
+      "postcode": null,
+      "phone": "2665025059",
+      "groupId": "thesprotia",
+      "sources": [
+        "iteq-thesprotia"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 39.5138568,
+        "lon": 20.2590806,
+        "ref": "https://thesprotia.efhmeries.gr/Home/Details/402",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2665025204",
       "name": "ΚΟΤΙΝΑ ΧΡΙΣΤΙΝΑ",
       "address": "ΚΥΠΡΟΥ 69",

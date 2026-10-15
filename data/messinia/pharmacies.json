@@ -170,6 +170,27 @@
       }
     },
     {
+      "id": "2721027350",
+      "name": "Σ.Φ. ΑΡΓΥΡΟΠΟΥΛΟΣ Σ.-ΑΡΓΥΡΟΠΟΥΛΟΥ Μ. Ο.Ε.",
+      "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 1",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721027350",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 37.0370464,
+        "lon": 22.1114532,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3541",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2721027683",
       "name": "ΚΟΝΤΟΥ ΜΑΓΔΑΛΗΝΗ",
       "address": "ΚΙΛΚΙΣ 11 & ΑΘΗΝΩΝ",
@@ -244,7 +265,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 37.082691,
         "lon": 22.0485688,
@@ -307,7 +328,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 37.0999089,
         "lon": 22.0054464,
@@ -328,7 +349,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 36.9650409,
         "lon": 22.1416971,
@@ -548,6 +569,27 @@
       }
     },
     {
+      "id": "2721084344",
+      "name": "ΔΙΑΚΟΥΜΕΑ ΕΛΕΝΗ",
+      "address": "ΜΑΥΡΟΜΙΧΑΛΗ 73",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721084344",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 37.0410856,
+        "lon": 22.1191806,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3416",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2721084925",
       "name": "ΒΑΡΕΛΑ ΜΑΡΙΑ Ο.Ε.",
       "address": "ΑΡΙΣΤΟΜΕΝΟΥΣ 79-81",
@@ -727,7 +769,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 37.0500021,
         "lon": 22.0085003,
@@ -895,7 +937,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 36.9138599,
         "lon": 21.6969145,
@@ -958,7 +1000,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 37.2235364,
         "lon": 21.9678339,
@@ -1000,7 +1042,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 36.7968805,
         "lon": 21.9573842,
@@ -1021,7 +1063,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 36.9031234,
         "lon": 21.9215367,
@@ -1178,6 +1220,27 @@
       }
     },
     {
+      "id": "2761023026",
+      "name": "ΜΑΡΙΝΗ ΙΟΥΛΙΑ (ΥΠΟΚ/ΜΑ)",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ & ΛΑΜΠΡΟΠΟΥΛΟΥ",
+      "locality": "Κυπαρισσία",
+      "postcode": null,
+      "phone": "2761023026",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 37.2517514,
+        "lon": 21.667619,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/2658",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2761023832",
       "name": "ΣΑΜΠΑΖΙΩΤΗΣ ΓΕΩΡΓΙΟΣ & ΣΙΑ Ο.Ε.",
       "address": "25ης ΜΑΡΤΙΟΥ 29",
@@ -1294,7 +1357,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 37.1577885,
         "lon": 21.5861777,
@@ -1462,7 +1525,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 37.0665392,
         "lon": 21.6360501,
@@ -1504,7 +1567,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 37.0518288,
         "lon": 21.7159923,
@@ -1546,7 +1609,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 37.2886874,
         "lon": 21.8173504,
@@ -1609,7 +1672,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 37.2874937,
         "lon": 21.856315,
