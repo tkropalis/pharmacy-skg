@@ -516,7 +516,7 @@
       "sources": [
         "fsl"
       ],
-      "firstSeen": "2026-10-20",
+      "firstSeen": "2026-10-17",
       "lastSeen": "2026-10-20",
       "location": {
         "lat": 39.64193,
@@ -1152,27 +1152,6 @@
         "lat": 39.64084,
         "lon": 22.42966,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23027",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
-      "id": "2410534888",
-      "name": "ΛΑΠΟΥΣΗ ΒΑΣΙΛΙΚΗ",
-      "address": "31ης ΑΥΓΟΥΣΤΟΥ 27 (Πλησίον Γενικού Νοσοκομείου - έναντι 6ου Δημ. Σχολείου Λάρισας)",
-      "locality": "Λάρισα",
-      "postcode": null,
-      "phone": "2410534888",
-      "groupId": "larisa",
-      "sources": [
-        "fsl"
-      ],
-      "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
-      "location": {
-        "lat": 39.64128,
-        "lon": 22.42214,
-        "ref": "https://larisa.efhmeries.gr/Home/Details/23147",
         "source": "list",
         "precision": "exact"
       }

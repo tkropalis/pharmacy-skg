@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-10-15T08:29:15.545Z"
+        "uploadedAt": "2026-10-15T19:14:39.997Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441029330",
-              "name": "ΑΚΡΙΒΟΥ ΜΕΛΠΟΜΕΝΗ",
-              "address": "Δ.ΛΑΠΠΑ & ΚΟΥΜΟΥΝΔΟΥΡΟΥ",
-              "locality": "Καρδίτσα",
-              "phone": "2441029330"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "8 ΠΡΩΙ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΧΑΡΙΤΟΥ & ΚΑΖΑΜΠΑΚΑ",
               "locality": "Καρδίτσα",
               "phone": "2441041940"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441029330",
+              "name": "ΑΚΡΙΒΟΥ ΜΕΛΠΟΜΕΝΗ",
+              "address": "Δ.ΛΑΠΠΑ & ΚΟΥΜΟΥΝΔΟΥΡΟΥ",
+              "locality": "Καρδίτσα",
+              "phone": "2441029330"
             }
           ]
         }

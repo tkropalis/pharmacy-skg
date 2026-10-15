@@ -7,50 +7,9 @@
       "name": "Μαγνησία",
       "source": {
         "url": "https://magnesia.efhmeries.gr/",
-        "uploadedAt": "2026-10-15T08:29:53.712Z"
+        "uploadedAt": "2026-10-15T19:15:11.194Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2421045431",
-              "name": "ΑΝΕΣΤΗΣ ΣΦΥΑΚΗΣ",
-              "address": "Π.ΜΕΛΑ 31",
-              "locality": "Βόλος",
-              "phone": "2421045431"
-            },
-            {
-              "pharmacyId": "2421071515",
-              "name": "ΕΛΕΝΗ ΚΟΝΤΟΠΑΝΑΓΙΩΤΗ",
-              "address": "Α. ΖΑΧΟΥ 83",
-              "locality": "Βόλος",
-              "phone": "2421071515"
-            },
-            {
-              "pharmacyId": "2421076100",
-              "name": "ΦΑΝΗ ΖΑΧΑΡΙΟΥ",
-              "address": "ΙΑΣΟΝΟΣ 103-107",
-              "locality": "Βόλος",
-              "phone": "2421076100"
-            },
-            {
-              "pharmacyId": "2421043839",
-              "name": "ΧΡΥΣΟΣΤΟΜΟΣ ΤΣΕΡΓΑΣ",
-              "address": "ΟΡΜΥΝΙΟΥ 40",
-              "locality": "Βόλος",
-              "phone": "2421043839"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -108,6 +67,47 @@
               "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 153",
               "locality": "Νέα Ιωνία",
               "phone": "2421061122"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421045431",
+              "name": "ΑΝΕΣΤΗΣ ΣΦΥΑΚΗΣ",
+              "address": "Π.ΜΕΛΑ 31",
+              "locality": "Βόλος",
+              "phone": "2421045431"
+            },
+            {
+              "pharmacyId": "2421071515",
+              "name": "ΕΛΕΝΗ ΚΟΝΤΟΠΑΝΑΓΙΩΤΗ",
+              "address": "Α. ΖΑΧΟΥ 83",
+              "locality": "Βόλος",
+              "phone": "2421071515"
+            },
+            {
+              "pharmacyId": "2421076100",
+              "name": "ΦΑΝΗ ΖΑΧΑΡΙΟΥ",
+              "address": "ΙΑΣΟΝΟΣ 103-107",
+              "locality": "Βόλος",
+              "phone": "2421076100"
+            },
+            {
+              "pharmacyId": "2421043839",
+              "name": "ΧΡΥΣΟΣΤΟΜΟΣ ΤΣΕΡΓΑΣ",
+              "address": "ΟΡΜΥΝΙΟΥ 40",
+              "locality": "Βόλος",
+              "phone": "2421043839"
             }
           ]
         }

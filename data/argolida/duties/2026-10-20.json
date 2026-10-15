@@ -7,7 +7,7 @@
       "name": "Αργολίδα",
       "source": {
         "url": "https://argolida.efhmeries.gr/",
-        "uploadedAt": "2026-10-14T08:48:39.064Z"
+        "uploadedAt": "2026-10-15T19:13:18.825Z"
       },
       "sections": [
         {
@@ -21,13 +21,6 @@
           "extraHours": [],
           "notes": [],
           "entries": [
-            {
-              "pharmacyId": "2751020235",
-              "name": "ΚΟΛΙΑ ΧΡΙΣΤΙΝΑ",
-              "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 27",
-              "locality": "Άργος",
-              "phone": "2751020235"
-            },
             {
               "pharmacyId": "2751051835",
               "name": "ΚΟΥΡΙΩΤΗΣ ΚΩΝ/ΝΟΣ",
@@ -76,6 +69,13 @@
               "address": "ΑΣΚΛΗΠΙΟΥ 126",
               "locality": "Λυγουριό",
               "phone": "2753022363"
+            },
+            {
+              "pharmacyId": "2751029850",
+              "name": "ΣΜΥΡΝΑΙΟΣ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΤΣΩΚΡΗ 41",
+              "locality": "Άργος",
+              "phone": "2751029850"
             },
             {
               "pharmacyId": "2752022172",

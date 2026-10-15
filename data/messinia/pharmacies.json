@@ -65,27 +65,6 @@
       }
     },
     {
-      "id": "2721023431",
-      "name": "ΔΕΜΠΕΓΙΩΤΗΣ ΦΩΤΙΟΣ",
-      "address": "ΠΛΑΤΩΝΟΣ 8",
-      "locality": "Καλαμάτα",
-      "postcode": null,
-      "phone": "2721023431",
-      "groupId": "messinia",
-      "sources": [
-        "iteq-messinia"
-      ],
-      "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
-      "location": {
-        "lat": 37.0328596,
-        "lon": 22.1112252,
-        "ref": "https://messinia.efhmeries.gr/Home/Details/3408",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2721024222",
       "name": "ΤΑΚΗΣ ΑΝΑΣΤΑΣΙΟΣ",
       "address": "ΑΡΙΣΤΟΜΕΝΟΥΣ 37",
@@ -464,27 +443,6 @@
       }
     },
     {
-      "id": "2721082587",
-      "name": "ΠΑΠΑΝΙΚΟΛΑΟΥ ΠΕΡΙΚΛΗΣ",
-      "address": "ΝΕΔΟΝΤΟΣ 71",
-      "locality": "Καλαμάτα",
-      "postcode": null,
-      "phone": "2721082587",
-      "groupId": "messinia",
-      "sources": [
-        "iteq-messinia"
-      ],
-      "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
-      "location": {
-        "lat": 37.041254,
-        "lon": 22.111324,
-        "ref": "https://messinia.efhmeries.gr/Home/Details/3471",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2721082666",
       "name": "Σ.Φ. ΚΑΤΣΙΒΑ Μ. - ΓΑΡΑΤΖΙΩΤΗ Β. Ο.Ε.",
       "address": "ΦΑΡΩΝ 155",
@@ -692,6 +650,27 @@
         "ref": "https://messinia.efhmeries.gr/Home/Details/3383",
         "source": "list",
         "precision": "exact"
+      }
+    },
+    {
+      "id": "2721181092",
+      "name": "ΜΠΟΥΖΙΑΝΗ Π. - ΜΑΥΡΟΥ-ΜΠΟΥΖΙΑΝΗ Α. Ο.Ε.",
+      "address": "ΑΘΗΝΩΝ 70",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721181092",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 37.043898,
+        "lon": 22.085659,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΑΘΗΝΩΝ 70, Καλαμάτα"
       }
     },
     {

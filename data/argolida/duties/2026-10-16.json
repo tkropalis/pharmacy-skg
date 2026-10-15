@@ -7,7 +7,7 @@
       "name": "Αργολίδα",
       "source": {
         "url": "https://argolida.efhmeries.gr/",
-        "uploadedAt": "2026-10-10T09:56:34.061Z"
+        "uploadedAt": "2026-10-15T19:13:18.825Z"
       },
       "sections": [
         {
@@ -21,13 +21,6 @@
           "extraHours": [],
           "notes": [],
           "entries": [
-            {
-              "pharmacyId": "2751029129",
-              "name": "ΑΠΟΣΤΟΛΟΠΟΥΛΟΣ ΜΙΛΤΙΑΔΗΣ",
-              "address": "ΗΡΑΚΛΕΟΥΣ 184",
-              "locality": "Άργος",
-              "phone": "2751029129"
-            },
             {
               "pharmacyId": "2753022215",
               "name": "ΓΚΟΒΑΤΣΗΣ ΜΙΧΑΛΗΣ",
@@ -55,6 +48,13 @@
               "address": "ΠΛΑΤΕΙΑ ΣΥΝΤΑΓΜΑΤΟΣ 2.",
               "locality": "Ναύπλιο",
               "phone": "2752027445"
+            },
+            {
+              "pharmacyId": "2751089555",
+              "name": "ΜΠΑΝΤΑΝΑ ΚΩΝΣΤΑΝΤΙΝΑ",
+              "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 25",
+              "locality": "Άργος",
+              "phone": "2751089555"
             },
             {
               "pharmacyId": "2752110217",

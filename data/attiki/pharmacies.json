@@ -66064,6 +66064,27 @@
       }
     },
     {
+      "id": "2296034087",
+      "name": "ΜΗΤΡΟΓΙΩΡΓΗ ΑΘΗΝΑ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 352, ΝΕΑ ΠΕΡΑΜΟΣ 19006",
+      "locality": "Νέα Πέραμος",
+      "postcode": null,
+      "phone": "2296034087",
+      "groupId": "attiki",
+      "sources": [
+        "fsa"
+      ],
+      "firstSeen": "2026-10-16",
+      "lastSeen": "2026-10-16",
+      "location": {
+        "lat": 38.0034822,
+        "lon": 23.4214414,
+        "ref": "https://fsa-efimeries.gr/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2296035200",
       "name": "ΧΑΤΖΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ",
       "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 323",

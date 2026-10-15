@@ -2,27 +2,6 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
-      "id": "2751020235",
-      "name": "ΚΟΛΙΑ ΧΡΙΣΤΙΝΑ",
-      "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 27",
-      "locality": "Άργος",
-      "postcode": null,
-      "phone": "2751020235",
-      "groupId": "argolida",
-      "sources": [
-        "iteq-argolida"
-      ],
-      "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
-      "location": {
-        "lat": 37.6354059,
-        "lon": 22.7267729,
-        "ref": "https://argolida.efhmeries.gr/Home/Details/18773",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2751022400",
       "name": "ΜΠΑΡΛΑΣ ΕΥΑΓΓΕΛΟΣ",
       "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 14",
@@ -86,27 +65,6 @@
       }
     },
     {
-      "id": "2751029129",
-      "name": "ΑΠΟΣΤΟΛΟΠΟΥΛΟΣ ΜΙΛΤΙΑΔΗΣ",
-      "address": "ΗΡΑΚΛΕΟΥΣ 184",
-      "locality": "Άργος",
-      "postcode": null,
-      "phone": "2751029129",
-      "groupId": "argolida",
-      "sources": [
-        "iteq-argolida"
-      ],
-      "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
-      "location": {
-        "lat": 37.6428076,
-        "lon": 22.7283374,
-        "ref": "https://argolida.efhmeries.gr/Home/Details/18769",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2751029850",
       "name": "ΣΜΥΡΝΑΙΟΣ ΠΑΝΑΓΙΩΤΗΣ",
       "address": "ΤΣΩΚΡΗ 41",
@@ -118,7 +76,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-20",
       "location": {
         "lat": 37.6367054,
         "lon": 22.7246397,
@@ -328,7 +286,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-16",
       "location": {
         "lat": 37.6332897,
         "lon": 22.7286433,
@@ -475,7 +433,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 37.5691409,
         "lon": 22.8066643,
@@ -627,6 +585,27 @@
         "lat": 37.5661578,
         "lon": 22.803564,
         "ref": "https://argolida.efhmeries.gr/Home/Details/20221",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2752027907",
+      "name": "ΚΑΤΡΑΜΑΝΟΥ ΕΥΑΓΓΕΛΙΑ",
+      "address": "ΒΑΡΒΑΚΗ 1",
+      "locality": "Ναύπλιο",
+      "postcode": null,
+      "phone": "2752027907",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 37.5657001,
+        "lon": 22.8074671,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/20225",
         "source": "list",
         "precision": "exact"
       }

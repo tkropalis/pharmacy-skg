@@ -7,7 +7,7 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-10-15T08:29:59.857Z"
+        "uploadedAt": "2026-10-15T19:15:17.392Z"
       },
       "sections": [
         {
@@ -103,26 +103,6 @@
         },
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721084344",
-              "name": "ΔΙΑΚΟΥΜΕΑ ΕΛΕΝΗ",
-              "address": "ΜΑΥΡΟΜΙΧΑΛΗ 73",
-              "locality": "Καλαμάτα",
-              "phone": "2721084344"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
             "from": "08:00",
@@ -181,26 +161,6 @@
           "hours": {
             "from": "08:00",
             "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721027350",
-              "name": "Σ.Φ. ΑΡΓΥΡΟΠΟΥΛΟΣ Σ.-ΑΡΓΥΡΟΠΟΥΛΟΥ Μ. Ο.Ε.",
-              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 1",
-              "locality": "Καλαμάτα",
-              "phone": "2721027350"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 20:30",
-          "hours": {
-            "from": "08:00",
-            "to": "20:30",
             "toNextDay": false
           },
           "extraHours": [],
