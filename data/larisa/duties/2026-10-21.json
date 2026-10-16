@@ -163,9 +163,29 @@
       "name": "Λάρισα",
       "source": {
         "url": "https://larisa.efhmeries.gr/",
-        "uploadedAt": "2026-10-15T08:23:45.622Z"
+        "uploadedAt": "2026-10-16T01:01:09.638Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "23:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410233395",
+              "name": "ΚΑΡΑΤΑΣΙΟΥ ΤΖΕΝΗ ΑΓΑΠΗ",
+              "address": "31ης ΑΥΓΟΥΣΤΟΥ 44 (Απέναντι από το Γεν. Νοσοκομείο)",
+              "locality": "Λάρισα",
+              "phone": "2410233395"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 08:00 ΕΩΣ 23:00",
@@ -225,26 +245,6 @@
               "address": "ΓΡΗΓΟΡΙΟΥ Ε΄ 13 (Έναντι παλαιάς Τροχαίας, Αγ. Νικόλαος)",
               "locality": "Λάρισα",
               "phone": "2410618533"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "23:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2410233395",
-              "name": "ΚΑΡΑΤΑΣΙΟΥ ΤΖΕΝΗ ΑΓΑΠΗ",
-              "address": "31ης ΑΥΓΟΥΣΤΟΥ 44 (Απέναντι από το Γεν. Νοσοκομείο)",
-              "locality": "Λάρισα",
-              "phone": "2410233395"
             }
           ]
         }
