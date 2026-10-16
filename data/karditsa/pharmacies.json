@@ -128,6 +128,27 @@
       }
     },
     {
+      "id": "2441022155",
+      "name": "ΤΣΙΝΟΠΟΥΛΟΣ ΦΩΤΙΟΣ",
+      "address": "ΓΑΚΙΟΠΟΥΛΟΥ 5",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441022155",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 39.3656964,
+        "lon": 21.9243844,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3773",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2441022222",
       "name": "ΚΟΛΟΒΟΥ ΜΑΡΙΑ",
       "address": "ΔΗΜ. ΛΑΠΠΑ 117",
@@ -312,6 +333,27 @@
         "lat": 39.364279,
         "lon": 21.921154,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3748",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441028088",
+      "name": "ΜΟΥΣΤΟΣ ΗΛΙΑΣ",
+      "address": "ΚΟΛΟΚΟΤΡΩΝΗ 10",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441028088",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 39.3656055,
+        "lon": 21.9217645,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3774",
         "source": "list",
         "precision": "exact"
       }

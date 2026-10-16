@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-15T19:13:56.696Z"
+        "uploadedAt": "2026-10-16T08:17:13.320Z"
       },
       "sections": [
         {
@@ -34,26 +34,6 @@
               "address": "ΠΛΑΤ. ΕΛΕΥΘΕΡΙΑΣ 1",
               "locality": "Διδυμότειχο",
               "phone": "2553023466"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551035777",
-              "name": "ΚΑΡΑΚΥΡΙΟΣ ΣΤΕΦΑΝΟΣ",
-              "address": "Λεωφ. Δημοκρατίας 381",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551035777"
             }
           ]
         },
@@ -109,6 +89,26 @@
               "address": "Πατριάρχου Κυρίλλου 113 (γεφ. Καλλιθέας-Παπαν/σίου)",
               "locality": "Αλεξανδρούπολη",
               "phone": "2551084110"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551035777",
+              "name": "ΚΑΡΑΚΥΡΙΟΣ ΣΤΕΦΑΝΟΣ",
+              "address": "Λεωφ. Δημοκρατίας 381",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551035777"
             }
           ]
         }

@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
+      "id": "2221020042",
+      "name": "ΛΥΚΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΧΑΪΝΑ 37",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221020042",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 38.46902,
+        "lon": 23.60364,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9337",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2221020777",
       "name": "Σ.Φ. ΠΑΠΑΔΟΠΟΥΛΟΥ ΔΗΜΗΤΡΑ & ΜΑΡΙΑ",
       "address": "ΓΑΖΕΠΗ 46-ΝΟΣΟΚΟΜΕΙΟ",
@@ -212,6 +233,27 @@
       }
     },
     {
+      "id": "2221029600",
+      "name": "ΚΟΝΤΟΥ ΕΡΙΚΕΤΗ",
+      "address": "ΑΓΙΟΥ ΑΝΤΩΝΙΟΥ 3",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221029600",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 38.4654428,
+        "lon": 23.5944593,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9336",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2221041413",
       "name": "ΜΠΡΟΚΑΛΑΚΗΣ ΙΩΣΗΦ",
       "address": "5ο ΧΛΜ. ΧΑΛΚΙΔΑΣ-Ν. ΑΡΤΑΚΗΣ",
@@ -391,7 +433,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 38.5127647,
         "lon": 23.6373757,
@@ -937,7 +979,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 38.0143048,
         "lon": 24.4198213,
@@ -1084,7 +1126,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 38.953719,
         "lon": 23.152572,
@@ -1147,7 +1189,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 38.3946605,
         "lon": 23.7919147,

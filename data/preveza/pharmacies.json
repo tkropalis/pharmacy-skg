@@ -254,6 +254,27 @@
       }
     },
     {
+      "id": "2682060660",
+      "name": "ΚΑΤΣΑΟΥΝΗ ΜΕΡΩΠΗ",
+      "address": "Λ. ΕΙΡΗΝΗΣ 85",
+      "locality": "Πρέβεζα",
+      "postcode": null,
+      "phone": "2682060660",
+      "groupId": "preveza",
+      "sources": [
+        "iteq-preveza"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 38.953012,
+        "lon": 20.753817,
+        "ref": "https://preveza.efhmeries.gr/Home/Details/1417",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2682089019",
       "name": "ΚΑΤΣΑΒΑΡΟΣ ΧΑΡΙΛΑΟΣ",
       "address": "Λ. ΕΙΡΗΝΗΣ 53",

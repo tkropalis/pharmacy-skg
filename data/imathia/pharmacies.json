@@ -160,7 +160,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 40.5255362,
         "lon": 22.2041513,
@@ -265,7 +265,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 40.5244504,
         "lon": 22.2046723,
@@ -370,7 +370,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 40.5540487,
         "lon": 22.2537387,
@@ -916,7 +916,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 40.6315072,
         "lon": 22.0686952,
@@ -1320,6 +1320,27 @@
         "lat": 40.6229662,
         "lon": 22.4436822,
         "ref": "https://imathia.efhmeries.gr/Home/Details/6823",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2333401080",
+      "name": "ΠΑΣΧΑΛΙΩΡΗΣ Κ. ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΒΕΤΣΟΠΟΥΛΟΥ 87",
+      "locality": "Αλεξάνδρεια",
+      "postcode": null,
+      "phone": "2333401080",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 40.6238404,
+        "lon": 22.4402438,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6835",
         "source": "list",
         "precision": "exact"
       }

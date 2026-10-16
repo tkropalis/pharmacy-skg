@@ -107,6 +107,27 @@
       }
     },
     {
+      "id": "2461026651",
+      "name": "ΧΟΥΛΙΑΡΑΣ ΜΑΡΙΟΣ",
+      "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 24",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461026651",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 40.3010316,
+        "lon": 21.7906202,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6021",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2461026744",
       "name": "ΓΚΑΝΑ ΑΝΑΣΤΑΣΙΑ",
       "address": "ΤΣΟΝΤΖΑ Ν. 1",
@@ -475,7 +496,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 40.3029871,
         "lon": 21.785236,
@@ -769,7 +790,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 40.5141091,
         "lon": 21.6762325,
@@ -1173,6 +1194,27 @@
         "lat": 40.511562,
         "lon": 21.6756726,
         "ref": "https://kozani.efhmeries.gr/Home/Details/7506",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463054831",
+      "name": "ΕΥΚΛΕΙΔΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΒΑΣΙΛΙΣΣΗΣ ΣΟΦΙΑΣ 22",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463054831",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 40.5131304,
+        "lon": 21.677883,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6999",
         "source": "list",
         "precision": "exact"
       }

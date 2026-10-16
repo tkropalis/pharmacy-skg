@@ -118,7 +118,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 40.936916,
         "lon": 24.414314,
@@ -312,6 +312,27 @@
         "lat": 40.9361699,
         "lon": 24.4141638,
         "ref": "https://kavala.efhmeries.gr/Home/Details/3999",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510837812",
+      "name": "ΓΕΩΡΓΙΑΔΟΥ ΝΑΖΛΟΥ Α.",
+      "address": "ΚΟΥΝΤΟΥΡΙΩΤΟΥ 6",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510837812",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 40.935779,
+        "lon": 24.413224,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3991",
         "source": "list",
         "precision": "exact"
       }

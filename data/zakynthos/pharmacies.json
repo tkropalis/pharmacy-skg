@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
+      "id": "2695023762",
+      "name": "ΒΕΝΕΤΣΑΝΟΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "ΤΖΟΥΛΑΤΗ 5",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695023762",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 37.7826273,
+        "lon": 20.8972841,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4227",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2695023773",
       "name": "ΒΟΥΛΤΣΟΥ ΜΑΡΙΑ (1)",
       "address": "ΣΤΡΑΒΟΠΟΔΗ 11",

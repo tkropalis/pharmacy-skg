@@ -128,6 +128,27 @@
       }
     },
     {
+      "id": "2651023658",
+      "name": "ΒΑΚΑΛΗΣ ΙΩΑΝΝΗΣ",
+      "address": "ΔΩΔΩΝΗΣ 2",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651023658",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 39.6626675,
+        "lon": 20.8516711,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5034",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651024330",
       "name": "ΘΕΟΔΩΡΑΚΟΠΟΥΛΟΥ ΒΑΣΙΛΙΚΗ",
       "address": "ΒΛΑΧΛΕΙΔΗ 7",
@@ -186,6 +207,27 @@
         "lat": 39.667476,
         "lon": 20.8517295,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5012",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651027870",
+      "name": "ΣΤΑΥΡΟΠΟΥΛΟΣ ΣΤΑΥΡΟΣ",
+      "address": "ΣΠ. ΛΑΜΠΡΟΥ 27",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651027870",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 39.664887,
+        "lon": 20.8463432,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5035",
         "source": "list",
         "precision": "exact"
       }

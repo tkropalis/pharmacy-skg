@@ -223,7 +223,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 40.8532547,
         "lon": 25.870984,
@@ -737,6 +737,27 @@
       }
     },
     {
+      "id": "2552112450",
+      "name": "ΖΗΣΙΔΗΣ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "Λ. ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 36",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552112450",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 41.5029918,
+        "lon": 26.5320188,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4608",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2553022322",
       "name": "ΠΑΤΣΟΥΡΙΔΗΣ ΠΑΡΑΣΚΕΥΑΣ",
       "address": "ΒΑΣ. ΑΛΕΞΑΝΔΡΟΥ 24",
@@ -895,7 +916,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 41.3526561,
         "lon": 26.503006,
@@ -958,7 +979,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 41.1936141,
         "lon": 26.3050735,
@@ -1042,7 +1063,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 41.0273977,
         "lon": 26.2963052,
@@ -1084,7 +1105,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 40.8942408,
         "lon": 26.1722017,

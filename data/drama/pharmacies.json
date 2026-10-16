@@ -317,6 +317,27 @@
       }
     },
     {
+      "id": "2521026699",
+      "name": "ΚΑΡΑΣΑΚΑΛΙΔΟΥ ΣΤ.-ΠΑΠΑΔΗΜΑ ΑΙΚ. Ο.Ε.",
+      "address": "ΙΟΥΣΤΙΝΙΑΝΟΎ 2",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521026699",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 41.155394,
+        "lon": 24.1412262,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3168",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521027210",
       "name": "ΣΠΥΡΟΠΟΥΛΟΥ ΔΗΜΗΤΡΑ",
       "address": "ΑΓΑΜΕΜΝΩΝΟΣ 37 & ΠΤΟΛΕΜΑΙΩΝ 10",
@@ -438,6 +459,27 @@
         "lat": 41.1521205,
         "lon": 24.1461361,
         "ref": "https://drama.efhmeries.gr/Home/Details/3137",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521031761",
+      "name": "ΣΤΕΦΟΥ ΧΑΡΙΚΛΕΙΑ",
+      "address": "ΚΩΝ/ΝΟΥ ΠΑΛΑΙΟΛΟΓΟΥ 17",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521031761",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 41.1521376,
+        "lon": 24.1479042,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3169",
         "source": "list",
         "precision": "exact"
       }

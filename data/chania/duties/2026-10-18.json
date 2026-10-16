@@ -7,9 +7,97 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-10-12T11:03:18.681Z"
+        "uploadedAt": "2026-10-16T08:20:13.287Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821057112",
+              "name": "ΒΑΡΒΑΤΣΟΥΛΑΚΗΣ Ε./VΑRVΑΤSΟULΑΚΙS E.",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 13/EL. VENIZELOU 13",
+              "locality": "Χανιά",
+              "phone": "2821057112"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821057112",
+              "name": "ΒΑΡΒΑΤΣΟΥΛΑΚΗΣ Ε./VΑRVΑΤSΟULΑΚΙS E.",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 13/EL. VENIZELOU 13",
+              "locality": "Χανιά",
+              "phone": "2821057112"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821055524",
+              "name": "ΒΟΡΔΟΥ ΜΑΡΙΑΝΝΑ/VΟRDΟU MARIANNA",
+              "address": "ΜΠΟΝΙΑΛΗ 13 - 19/BONIALI 13-19",
+              "locality": "Χανιά",
+              "phone": "2821055524"
+            },
+            {
+              "pharmacyId": "2821080063",
+              "name": "ΒΟΥΡΔΟΥΜΠΑ ΑΝΝΑ/VΟURDΟUΜΡΑ ANNA",
+              "address": "ΕΘΝΑΡΧΟΥ ΒΕΝΙΖΕΛΟΥ 94,ΚΑΤΩ ΣΟΥΔΑ/ΕΤΗΝ. VENIZELOU 94",
+              "locality": "Σούδα",
+              "phone": "2821080063"
+            },
+            {
+              "pharmacyId": "2821075505",
+              "name": "ΔΗΜΗΤΡΟΥΛΑΚΗΣ ΠΑΝΑΓΙΩΤΗΣ & ΣΙΑ/DΙΜΙΤRΟULΑΚΙS PANAGIOTIS & SIA",
+              "address": "ΠΛΑΤΕΙΑ ΕΛ. ΒΕΝΙΖΕΛΟΥ-ΜΟΥΡΝΙΕΣ/ΕL. VENIZELOU SQUARE-MOURNIES",
+              "locality": "Μουρνιές",
+              "phone": "2821075505"
+            },
+            {
+              "pharmacyId": "2821049777",
+              "name": "ΤΣΕΡΕΤΟΠΟΥΛΟΥ Ε. - ΧΑΤΖΗΑΘΑΝΑΣΙΟΥ Σ.",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 49 - ΚΟΥΝΟΥΠΙΔΙΑΝΑ/ΕL. VENIZELOU 90, KOUNOUPIDIANA",
+              "locality": "Ακρωτήρι",
+              "phone": "2821049777"
+            },
+            {
+              "pharmacyId": "2821033466",
+              "name": "ΦΑΝΟΥΡΓΙΑΚΗΣ ΒΑΣΙΛΗΣ & ΣΙΑ ΟΕ/FΑΝΟURGΙΑΚΙS VASILIS",
+              "address": "Π. Ε. Ο. ΧΑΝΙΩΝ-ΚΙΣΣΑΜΟΥ (ΔΙΠΛΑ ΣΕ ΒΙΒΛΙΟΠΩΛΕΙΟ ΠΟΠΗΘΕΟΔΩΡΑΚΗ)/ΚΙSΑΜΟU-DΑRΑΤSΟ",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821033466"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",

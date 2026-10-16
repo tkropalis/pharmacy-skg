@@ -244,7 +244,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 37.082691,
         "lon": 22.0485688,
@@ -307,7 +307,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 37.0999089,
         "lon": 22.0054464,
@@ -349,7 +349,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 36.8243603,
         "lon": 22.2809448,
@@ -611,6 +611,27 @@
       }
     },
     {
+      "id": "2721093773",
+      "name": "ΠΟΝΤΙΚΗΣ ΧΡΗΣΤΟΣ & ΣΙΑ Ε.Ε.",
+      "address": "ΝΕΔΟΝΤΟΣ 85",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721093773",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 37.0396214,
+        "lon": 22.1094355,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3476",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2721093780",
       "name": "ΦΙΛΙΠΠΟΠΟΥΛΟΥ ΘΕΟΔΩΡΑ",
       "address": "ΠΑΝ.ΚΑΙΣΑΡΗ 10",
@@ -790,7 +811,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 37.0499394,
         "lon": 22.0091043,
@@ -916,7 +937,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 36.9138599,
         "lon": 21.6969145,
@@ -979,7 +1000,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 37.2235364,
         "lon": 21.9678339,
@@ -1021,7 +1042,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 36.7968805,
         "lon": 21.9573842,
@@ -1042,7 +1063,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 36.9031234,
         "lon": 21.9215367,
@@ -1210,7 +1231,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 37.2517514,
         "lon": 21.667619,
@@ -1315,7 +1336,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 37.1576618,
         "lon": 21.5869557,
@@ -1420,7 +1441,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 37.065972,
         "lon": 21.6369701,
@@ -1567,7 +1588,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 37.0509907,
         "lon": 21.7175701,
@@ -1588,7 +1609,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 37.2886874,
         "lon": 21.8173504,
@@ -1651,7 +1672,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 37.2874937,
         "lon": 21.856315,

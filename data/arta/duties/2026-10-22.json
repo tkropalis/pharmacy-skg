@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-22",
+  "groups": [
+    {
+      "id": "arta",
+      "name": "Άρτα",
+      "source": {
+        "url": "https://arta.efhmeries.gr/",
+        "uploadedAt": "2026-10-16T08:16:39.728Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2681066271",
+              "name": "ΚΟΚΟΒΕ ΛΥΔΙΑ",
+              "address": "ΣΕΛΛΑΔΕΣ",
+              "locality": "Άρτα",
+              "phone": "2681066271"
+            },
+            {
+              "pharmacyId": "2681075318",
+              "name": "ΧΑΡΜΠΗ ΓΕΩΡΓΙΑ",
+              "address": "ΠΛΑΤΕΙΑ ΚΑΚΑΒΑ",
+              "locality": "Άρτα",
+              "phone": "2681075318"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

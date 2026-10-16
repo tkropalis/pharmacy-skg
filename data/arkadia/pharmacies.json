@@ -118,7 +118,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-10",
       "location": {
         "lat": 37.5111526,
         "lon": 22.372721,
@@ -144,6 +144,27 @@
         "lat": 37.5112673,
         "lon": 22.3736288,
         "ref": "https://arkadia.efhmeries.gr/Home/Details/5075",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710224222",
+      "name": "ΑΘΑΝΑΣΟΠΟΥΛΟΥ ΖΩΗ",
+      "address": "ΑΓΙΟΥ ΚΩΝΣΤΑΝΤΙΝΟΥ 154",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710224222",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 37.5217781,
+        "lon": 22.3892751,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5093",
         "source": "list",
         "precision": "exact"
       }
@@ -517,7 +538,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 37.4062373,
         "lon": 22.71853,
@@ -559,7 +580,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 37.1662669,
         "lon": 22.86118,
@@ -601,7 +622,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 37.4017572,
         "lon": 22.1361722,
@@ -685,7 +706,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 37.6845416,
         "lon": 22.2955302,
@@ -748,7 +769,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 37.7322838,
         "lon": 21.9594427,

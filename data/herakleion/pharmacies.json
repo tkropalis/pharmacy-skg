@@ -76,7 +76,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 35.3299225,
         "lon": 25.143283,
@@ -212,6 +212,27 @@
       }
     },
     {
+      "id": "2810222020",
+      "name": "ΠΑΠΥΡΑΚΗ ΕΛΕΝΗ-ΑΡΓΥΡΗ",
+      "address": "ΛΕΩΦ. ΠΑΠΑΝΑΣΤΑΣΙΟΥ 160",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810222020",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 35.3128194,
+        "lon": 25.1423358,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57953",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810222311",
       "name": "ΧΟΝΔΡΑΚΗΣ ΙΑΚΩΒΟΣ",
       "address": "ΔΙΟΝΥΣΙΟΥ 56 & ΚΑΡΙΑΣ (ΦΥΛΑΚΕΣ) Ν.ΑΛΙΚΑΡΝΑΣΣΟΣ",
@@ -307,7 +328,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 35.3342946,
         "lon": 25.1596274,
@@ -349,7 +370,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 35.334419,
         "lon": 25.1397734,
@@ -842,6 +863,27 @@
       }
     },
     {
+      "id": "2810250132",
+      "name": "ΜΑΡΚΑΚΗΣ Ε. ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΑΝΩΓΕΙΩΝ 77 ΑΠΟ Λ.62 ΜΑΡΤΥΡΩΝ (ΠΙΑΤΣΑ ΤΑΞΙ)",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810250132",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 35.3344566,
+        "lon": 25.1180665,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57955",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810250141",
       "name": "KTISIAS HEALTH PHARMACY - Γ. ΑΓΡΙΜΑΝΑΚΗΣ ΚΑΙ ΣΙΑ Ε.Ε.",
       "address": "ΘΕΡΙΣΣΟΥ 110 & ΙΦΙΓΕΝΕΙΑΣ ΓΩΝΙΑ",
@@ -1147,7 +1189,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 35.3385055,
         "lon": 25.1328158,
@@ -1777,7 +1819,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 35.3278012,
         "lon": 25.1340549,
@@ -1903,7 +1945,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 35.3305104,
         "lon": 25.207893,
@@ -2260,7 +2302,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 35.3112215,
         "lon": 25.0914384,
@@ -2370,6 +2412,27 @@
         "lat": 35.3250117,
         "lon": 25.0651566,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/54491",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810821454",
+      "name": "ΠΟΛΙΤΑΚΗΣ Σ. ΕΜΜΑΝΟΥΗΛ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 115",
+      "locality": "Γάζι",
+      "postcode": null,
+      "phone": "2810821454",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 35.328176,
+        "lon": 25.078497,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/54505",
         "source": "list",
         "precision": "exact"
       }
@@ -2659,7 +2722,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 35.1470333,
         "lon": 25.2653989,
@@ -2806,7 +2869,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 35.0511554,
         "lon": 24.8735883,
@@ -2974,7 +3037,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 35.0717018,
         "lon": 24.7695425,
@@ -3089,6 +3152,27 @@
       }
     },
     {
+      "id": "2894031822",
+      "name": "ΜΑΚΡΥΓΙΑΝΝΑΚΗΣ ΕΜΜΑΝΟΥΗΛ",
+      "address": "ΖΑΡΟΣ",
+      "locality": "Ζαρός",
+      "postcode": null,
+      "phone": "2894031822",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 35.1287939,
+        "lon": 24.9054466,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/60375",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2897021501",
       "name": "ΕΥΑ ΠΕΤΡΑΚΗ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 73",
@@ -3142,7 +3226,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 35.3153174,
         "lon": 25.3937298,
@@ -3226,7 +3310,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 35.331734,
         "lon": 25.3452693,
@@ -3310,7 +3394,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 35.283432,
         "lon": 25.4619771,
@@ -3373,7 +3457,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 35.2926533,
         "lon": 25.4320195,

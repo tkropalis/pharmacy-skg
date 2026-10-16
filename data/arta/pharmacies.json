@@ -212,6 +212,27 @@
       }
     },
     {
+      "id": "2681066271",
+      "name": "ΚΟΚΟΒΕ ΛΥΔΙΑ",
+      "address": "ΣΕΛΛΑΔΕΣ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681066271",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 39.10841,
+        "lon": 21.077862,
+        "ref": "https://arta.efhmeries.gr/Home/Details/1979",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681067400",
       "name": "ΓΕΩΡΓΟΠΟΥΛΟΣ",
       "address": "ΔΙΑΣΕΛΛΟ",
@@ -396,6 +417,27 @@
         "lat": 39.1598902,
         "lon": 20.9832537,
         "ref": "https://arta.efhmeries.gr/Home/Details/2420",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681075318",
+      "name": "ΧΑΡΜΠΗ ΓΕΩΡΓΙΑ",
+      "address": "ΠΛΑΤΕΙΑ ΚΑΚΑΒΑ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681075318",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 39.160747,
+        "lon": 20.9846699,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2431",
         "source": "list",
         "precision": "exact"
       }

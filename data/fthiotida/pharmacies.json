@@ -265,7 +265,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 38.9008608,
         "lon": 22.4358984,
@@ -464,6 +464,27 @@
       }
     },
     {
+      "id": "2231400870",
+      "name": "ΑΝΔΡΕΟΠΟΥΛΟΣ ΗΛΙΑΣ",
+      "address": "ΚΑΡΑΤΖΑΒΕΛΟΥ 41, ΡΟΔΙΤΣΑ",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231400870",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 38.886153,
+        "lon": 22.4669416,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11799",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2233022262",
       "name": "ΠΑΠΑΝΙΚΟΛΑΟΥ ΜΙΧΑΛΗΣ",
       "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΗΣ 20",
@@ -538,7 +559,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 38.6519636,
         "lon": 23.0046221,
@@ -601,7 +622,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 38.710956,
         "lon": 23.0490466,
@@ -664,7 +685,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 38.7785901,
         "lon": 22.7843158,
@@ -748,7 +769,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 38.7579434,
         "lon": 22.856005,
@@ -769,7 +790,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 38.8092056,
         "lon": 22.6447967,
@@ -853,7 +874,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 38.9418095,
         "lon": 22.1163153,
@@ -895,7 +916,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 38.9143787,
         "lon": 22.6148754,

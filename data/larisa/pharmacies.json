@@ -160,7 +160,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 39.63922,
         "lon": 22.42035,
@@ -207,6 +207,27 @@
         "lat": 39.6301,
         "lon": 22.42137,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23159",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410250292",
+      "name": "ΓΚΟΡΤΣΙΛΑΣ ΜΑΝΘ. ΓΕΩΡΓΙΟΣ",
+      "address": "ΠΑΤΡΟΚΛΟΥ 15 (Έναντι Μεραρχίας - μεταξύ Ρούσβελτ & Μ. Αλεξάνδρου)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410250292",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 39.63628,
+        "lon": 22.41714,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23184",
         "source": "list",
         "precision": "exact"
       }
@@ -412,7 +433,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 39.63623,
         "lon": 22.4091,
@@ -548,6 +569,27 @@
       }
     },
     {
+      "id": "2410258215",
+      "name": "ΤΖΑΝΑΣ ΣΠΥΡΙΔΩΝ",
+      "address": "ΔΗΜΗΤΡΑΣ 23 & ΓΑΡΙΒΑΛΔΗ",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410258215",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 39.64127,
+        "lon": 22.41764,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23183",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410258681",
       "name": "Σ.Φ. ΜΙΧΑΗΛ Δ. - ΜΙΧΑΗΛ ΕΛ. Ο.Ε.",
       "address": "ΚΕΝΤΑΥΡΩΝ 19 & ΚΥΠΡΟΥ ΓΩΝΙΑ (Πλατεία Εβραίων Μαρτύρων)",
@@ -601,7 +643,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-15",
       "location": {
         "lat": 39.63716,
         "lon": 22.41465,
@@ -916,7 +958,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 39.6384253,
         "lon": 22.419235,
@@ -1693,7 +1735,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 39.666932,
         "lon": 22.394532,
@@ -2060,6 +2102,27 @@
       }
     },
     {
+      "id": "2410622860",
+      "name": "ΠΑΠΑΤΟΛΙΑ Γ. ΕΥΑΝΘΙΑ",
+      "address": "ΧΑΤΖΗΜΙΧΑΛΗ 49 (Πλατεία Φιλιππούπολης)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410622860",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 39.6322055,
+        "lon": 22.3968712,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23186",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410623196",
       "name": "Σ.Φ. ΦΑΙΔΡΑ ΝΙΚ. ΓΚΑΝΑΚΗ - ΝΙΚΟΛΑΟΣ ΚΩΝ. ΓΚΑΝΑΚΗΣ & ΣΙΑ Ο.Ε.",
       "address": "ΜΑΝΔΗΛΑΡΑ 13 (Πλησίον Τρίγωνης Πλατείας)",
@@ -2302,7 +2365,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 39.722099,
         "lon": 22.39727,
@@ -2386,7 +2449,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 39.63616,
         "lon": 22.42595,
@@ -2428,7 +2491,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 39.560673,
         "lon": 22.465792,
@@ -2475,6 +2538,27 @@
         "lat": 39.6330969,
         "lon": 22.41512,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23041",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2413026012",
+      "name": "ΠΟΛΙΤΙΑΝΟΥ ΓΕΩΡΓΙΑ-ΧΡΙΣΤΙΝΑ",
+      "address": "ΜΑΝΩΛΑΚΗ 8 & ΗΦΑΙΣΤΟΥ",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2413026012",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 39.63982,
+        "lon": 22.41384,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23185",
         "source": "list",
         "precision": "exact"
       }
@@ -2559,6 +2643,27 @@
         "lat": 39.293248,
         "lon": 22.38237,
         "ref": "https://larisa.efhmeries.gr/Home/Details/19735",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2491022342",
+      "name": "ΘΕΟΧΑΡΟΠΟΥΛΟΣ Ν. ΒΑΙΟΣ & ΣΙΑ Ο.Ε.",
+      "address": "Μ. ΙΕΖΕΚΙΗΛ 7",
+      "locality": "Φάρσαλα",
+      "postcode": null,
+      "phone": "2491022342",
+      "groupId": "farsala",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-22",
+      "lastSeen": "2026-10-22",
+      "location": {
+        "lat": 39.295637,
+        "lon": 22.384559,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/19752",
         "source": "list",
         "precision": "exact"
       }
@@ -2806,7 +2911,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 39.738517,
         "lon": 22.28905,
@@ -2995,7 +3100,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 39.745187,
         "lon": 22.363491,
@@ -3331,7 +3436,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 39.893788,
         "lon": 22.1888346,
@@ -3499,7 +3604,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 39.715785,
         "lon": 22.759203,
