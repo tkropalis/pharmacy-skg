@@ -7,7 +7,7 @@
       "name": "Ηράκλειο",
       "source": {
         "url": "https://herakleion.efhmeries.gr/",
-        "uploadedAt": "2026-10-16T08:17:34.798Z"
+        "uploadedAt": "2026-10-16T18:51:35.470Z"
       },
       "sections": [
         {
@@ -69,26 +69,6 @@
               "address": "ΚΟΝΙΤΣΗΣ 32 I.N. ΑΓΙΟΥ ΓΕΩΡΓΙΟΥ ΠΟΡΟΥ",
               "locality": "Ηράκλειο",
               "phone": "2810242088"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΑΠΟ 09:00 ΕΩΣ 19:00",
-          "hours": {
-            "from": "09:00",
-            "to": "19:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2897061301",
-              "name": "ΑΛΕΞΗΣ Ι. ΑΠΟΣΤΟΛΗΣ",
-              "address": "ΜΟΧΟΣ",
-              "locality": "Σταλίδα, Μόχος, Γωνιές, Ποταμιές",
-              "phone": "2897061301"
             }
           ]
         },
@@ -202,6 +182,26 @@
         },
         {
           "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 21:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2892042876",
+              "name": "ΧΑΡΙΤΑΚΗ ΧΡΥΣΗ",
+              "address": "ΠΛΑΤΕΙΑ ΣΤΡΑΤΑ, ΚΑΜΗΛΑΡΙ",
+              "locality": "ΚΑΜΗΛΑΡΙ",
+              "phone": "2892042876"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 22:00 ΕΩΣ 08:30 ΠΡΩΙ",
           "hours": {
             "from": "22:00",
@@ -228,22 +228,22 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 21:00 ΕΩΣ 08:00",
+          "kind": "day",
+          "heading": "ΑΠΟ 09:00 ΕΩΣ 19:00",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "09:00",
+            "to": "19:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2892042876",
-              "name": "ΧΑΡΙΤΑΚΗ ΧΡΥΣΗ",
-              "address": "ΠΛΑΤΕΙΑ ΣΤΡΑΤΑ, ΚΑΜΗΛΑΡΙ",
-              "locality": "ΚΑΜΗΛΑΡΙ",
-              "phone": "2892042876"
+              "pharmacyId": "2897061301",
+              "name": "ΑΛΕΞΗΣ Ι. ΑΠΟΣΤΟΛΗΣ",
+              "address": "ΜΟΧΟΣ",
+              "locality": "Σταλίδα, Μόχος, Γωνιές, Ποταμιές",
+              "phone": "2897061301"
             }
           ]
         }

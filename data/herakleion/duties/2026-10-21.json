@@ -7,7 +7,7 @@
       "name": "Ηράκλειο",
       "source": {
         "url": "https://herakleion.efhmeries.gr/",
-        "uploadedAt": "2026-10-16T08:17:34.798Z"
+        "uploadedAt": "2026-10-16T18:51:35.470Z"
       },
       "sections": [
         {
@@ -69,26 +69,6 @@
               "address": "ΑΒΕΡΩΦ 3 ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΑΣ",
               "locality": "Ηράκλειο",
               "phone": "2810214242"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΑΠΟ 09:00 ΕΩΣ 19:00",
-          "hours": {
-            "from": "09:00",
-            "to": "19:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2897061301",
-              "name": "ΑΛΕΞΗΣ Ι. ΑΠΟΣΤΟΛΗΣ",
-              "address": "ΜΟΧΟΣ",
-              "locality": "Σταλίδα, Μόχος, Γωνιές, Ποταμιές",
-              "phone": "2897061301"
             }
           ]
         },
@@ -181,6 +161,26 @@
           ]
         },
         {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 21:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2892042002",
+              "name": "ΠΑΠΑΔΑΚΗ ΜΑΡΙΑ ΤΟΥ ΕΜΜΑΝΟΥΗΛ",
+              "address": "ΣΙΒΑΣ",
+              "locality": "ΣΙΒΑΣ",
+              "phone": "2892042002"
+            }
+          ]
+        },
+        {
           "kind": "on-duty",
           "heading": "8:30 ΕΩΣ 8:30 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
@@ -228,22 +228,22 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 21:00 ΕΩΣ 08:00",
+          "kind": "day",
+          "heading": "ΑΠΟ 09:00 ΕΩΣ 19:00",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "09:00",
+            "to": "19:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2892042002",
-              "name": "ΠΑΠΑΔΑΚΗ ΜΑΡΙΑ ΤΟΥ ΕΜΜΑΝΟΥΗΛ",
-              "address": "ΣΙΒΑΣ",
-              "locality": "ΣΙΒΑΣ",
-              "phone": "2892042002"
+              "pharmacyId": "2897061301",
+              "name": "ΑΛΕΞΗΣ Ι. ΑΠΟΣΤΟΛΗΣ",
+              "address": "ΜΟΧΟΣ",
+              "locality": "Σταλίδα, Μόχος, Γωνιές, Ποταμιές",
+              "phone": "2897061301"
             }
           ]
         }
