@@ -231,6 +231,27 @@
         "source": "list",
         "precision": "exact"
       }
+    },
+    {
+      "id": "2665028328",
+      "name": "ΚΟΝΤΟΣ ΙΩΑΝΝΗΣ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΚΥΠΡΟΥ 34",
+      "locality": "Ηγουμενίτσα",
+      "postcode": null,
+      "phone": "2665028328",
+      "groupId": "thesprotia",
+      "sources": [
+        "iteq-thesprotia"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 39.5052038,
+        "lon": 20.2642109,
+        "ref": "https://thesprotia.efhmeries.gr/Home/Details/404",
+        "source": "list",
+        "precision": "exact"
+      }
     }
   ]
 }

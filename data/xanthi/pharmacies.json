@@ -76,7 +76,7 @@
         "iteq-xanthi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 41.1363689,
         "lon": 24.886035,
@@ -401,6 +401,27 @@
       }
     },
     {
+      "id": "2541070661",
+      "name": "ΑΘΑΝΑΣΙΑΔΟΥ ΕΛΕΝΗ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΊΟΥ 354",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541070661",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 41.1292359,
+        "lon": 24.8853531,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3643",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2541071386",
       "name": "ΚΟΥΜΤΖΗ ΔΗΜΗΤΡΑ",
       "address": "ΜΙΧ. ΚΑΡΑΟΛΗ 1",
@@ -412,7 +433,7 @@
         "iteq-xanthi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 41.139325,
         "lon": 24.8885903,

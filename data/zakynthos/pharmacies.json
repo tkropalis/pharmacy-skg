@@ -233,6 +233,27 @@
       }
     },
     {
+      "id": "2695045284",
+      "name": "ΛΕΥΤΑΚΗ ΜΑΡΙΑ & ΚΕΦΑΛΛΗΝΟΥ ΑΝΤΩΝΙΑ",
+      "address": "ΠΛΑΤΕΙΑ ΑΓΙΟΥ ΛΟΥΚΑ",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695045284",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 37.7821619,
+        "lon": 20.8963613,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4244",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2695045433",
       "name": "ΒΟΡΡΙΣΗ ΔΙΟΝΥΣΙΑ",
       "address": "ΑΓ. ΙΩΑΝΝΟΥ. ΛΟΓΟΘΕΤΩΝ 6",

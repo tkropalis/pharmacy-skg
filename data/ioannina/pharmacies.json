@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "2651022848",
+      "name": "Σ.Φ. ΓΚΑΤΖΙΑΝΗΣ ΕΜΜΑΝΟΥΗΛ - ΝΤΑΣΗΣ ΧΡΙΣΤΟΔΟΥΛΟΣ",
+      "address": "Μ. ΑΓΓΕΛΟΥ 2",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651022848",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 39.6647611,
+        "lon": 20.8521335,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5036",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651022901",
       "name": "ΛΙΟΛΙΟΥ ΠΑΡΑΣΚΕΥΗ - ΜΑΡΙΑ",
       "address": "28 ΟΚΤΩΒΡΙΟΥ 55",
@@ -984,6 +1005,27 @@
         "lat": 39.6609368,
         "lon": 20.8472401,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5021",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651079570",
+      "name": "ΘΕΟΔΩΡΗ ΔΗΜΗΤΡΑ",
+      "address": "Π.ΜΑΥΡΟΓΙΑΝΝΗ 58",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651079570",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 39.6755698,
+        "lon": 20.8434055,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5037",
         "source": "list",
         "precision": "exact"
       }

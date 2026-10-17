@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-23",
+  "groups": [
+    {
+      "id": "karditsa",
+      "name": "Καρδίτσα",
+      "source": {
+        "url": "https://karditsa.efhmeries.gr/",
+        "uploadedAt": "2026-10-17T07:54:54.843Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441020522",
+              "name": "ΝΤΙ-ΤΖΙΑΜΜΑΡΙΝΟ ΟΣΚΑΡ",
+              "address": "ΙΕΖΕΚΙΗΛ 37",
+              "locality": "Καρδίτσα",
+              "phone": "2441020522"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "9 ΒΡΑΔΥ- 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441024993",
+              "name": "ΓΚΑΡΑΓΚΑΝΗΣ ΧΡΗΣΤΟΣ",
+              "address": "Μ.ΑΛΕΞΑΝΔΡΟΥ & ΑΒΕΡΩΦ",
+              "locality": "Καρδίτσα",
+              "phone": "2441024993"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

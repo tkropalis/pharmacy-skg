@@ -44,6 +44,27 @@
       }
     },
     {
+      "id": "2461023876",
+      "name": "ΚΥΡΚΟΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΟΛΥΜΠΟΥ 42",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461023876",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 40.2966723,
+        "lon": 21.7922856,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/5920",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2461024433",
       "name": "ΤΥΦΟΞΥΛΟΥ ΕΛΕΝΗ",
       "address": "ΠΑΥΛΟΥ ΜΕΛΑ 12",
@@ -370,7 +391,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.3005753,
         "lon": 21.7893697,
@@ -769,7 +790,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.5101034,
         "lon": 21.6731308,
@@ -1063,7 +1084,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.5125784,
         "lon": 21.6791469,

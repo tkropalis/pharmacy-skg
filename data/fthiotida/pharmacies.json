@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2231025125",
+      "name": "ΧΑΔΟΣ ΛΟΥΚΑΣ",
+      "address": "ΡΟΖΑΚΗ ΑΓΓΕΛΗ 73",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231025125",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 38.9003223,
+        "lon": 22.4374144,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11802",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2231025490",
       "name": "ΚΟΛΟΚΥΘΑΣ ΕΥΑΓΓΕΛΟΣ",
       "address": "ΚΑΖΟΥΛΗ 2",
@@ -380,6 +401,27 @@
       }
     },
     {
+      "id": "2231044994",
+      "name": "ΠΑΠΑΠΑΝΑΓΙΩΤΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΑΘΗΝΩΝ 104 Ν.ΑΜΠΛΙΑΝΗ",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231044994",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 38.8879736,
+        "lon": 22.4385805,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11801",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2231045496",
       "name": "ΑΝΤΩΝΙΟΥ ΙΩΑΝΝΑ",
       "address": "ΠΑΠΑΘΑΝΑΣΙΟΥ 3",
@@ -538,7 +580,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 38.6535798,
         "lon": 23.000694,
@@ -622,7 +664,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 38.710956,
         "lon": 23.0490466,
@@ -685,7 +727,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 38.7785901,
         "lon": 22.7843158,
@@ -769,7 +811,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 38.7579434,
         "lon": 22.856005,
@@ -790,7 +832,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 38.8092056,
         "lon": 22.6447967,
@@ -874,7 +916,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 38.9418095,
         "lon": 22.1163153,
@@ -895,7 +937,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 38.9143171,
         "lon": 22.616397,

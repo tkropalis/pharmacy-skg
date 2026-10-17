@@ -7,9 +7,43 @@
       "name": "Πειραιάς",
       "source": {
         "url": "https://piraeus.efhmeries.gr/",
-        "uploadedAt": "2026-10-16T18:52:49.871Z"
+        "uploadedAt": "2026-10-17T07:55:53.156Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 20:00",
+          "hours": {
+            "from": "08:00",
+            "to": "20:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2104971704",
+              "name": "ΜΙΧΑΗΛ ΚΑΤΕΡΙΝΑ & ΠΑΟΛΟ ΛΑΤΖΙΟΙΑ Ο.Ε.",
+              "address": "ΔΙΑΜΑΝΤΙΔΗ 8",
+              "locality": "Κορυδαλλός",
+              "phone": "2104971704"
+            },
+            {
+              "pharmacyId": "2104178655",
+              "name": "ΣΤΑΣΙΝΟΠΟΥΛΟΣ ΑΔ. ΙΩΑΝΝΗΣ",
+              "address": "ΤΖΑΒΕΛΛΑ 33",
+              "locality": "Πειραιάς",
+              "phone": "2104178655"
+            },
+            {
+              "pharmacyId": "2104009252",
+              "name": "ΤΖΑΝΗΣ ΛΟΥΚΑΣ",
+              "address": "Α. ΓΙΑΝΝΟΥΡΗ 21 (ΑΠΌ ΓΡ. ΛΑΜΠΡΑΚΗ 668. ΝΕΑ ΙΑΤΡΕΙΑ ΙΚΑ ΑΜΦΙΑΛΗΣ)",
+              "locality": "Αμφιάλη",
+              "phone": "2104009252"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 23:00",
@@ -231,22 +265,22 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 17:00",
           "hours": {
-            "from": "17:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "08:00",
+            "to": "17:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2104650118",
-              "name": "ΓΚΙΟΚΑ ΕΛΕΝΗ",
-              "address": "Λ.ΦΑΝΕΡΩΜΕΝΗΣ 53",
+              "pharmacyId": "2104653263",
+              "name": "ΦΩΤΙΟΥ Β. ΒΑΣΙΛΕΙΟΥ",
+              "address": "ΛΕΩΦ. ΣΑΛΑΜΙΝΟΣ 268 (Δίπλα στην EUROBANK)",
               "locality": "Σαλαμίνα",
-              "phone": "2104650118"
+              "phone": "2104653263"
             }
           ]
         },
@@ -305,56 +339,22 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 20:00",
+          "kind": "overnight",
+          "heading": "17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
-            "from": "08:00",
-            "to": "20:00",
-            "toNextDay": false
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2104971704",
-              "name": "ΜΙΧΑΗΛ ΚΑΤΕΡΙΝΑ & ΠΑΟΛΟ ΛΑΤΖΙΟΙΑ Ο.Ε.",
-              "address": "ΔΙΑΜΑΝΤΙΔΗ 8",
-              "locality": "Κορυδαλλός",
-              "phone": "2104971704"
-            },
-            {
-              "pharmacyId": "2104178655",
-              "name": "ΣΤΑΣΙΝΟΠΟΥΛΟΣ ΑΔ. ΙΩΑΝΝΗΣ",
-              "address": "ΤΖΑΒΕΛΛΑ 33",
-              "locality": "Πειραιάς",
-              "phone": "2104178655"
-            },
-            {
-              "pharmacyId": "2104009252",
-              "name": "ΤΖΑΝΗΣ ΛΟΥΚΑΣ",
-              "address": "Α. ΓΙΑΝΝΟΥΡΗ 21 (ΑΠΌ ΓΡ. ΛΑΜΠΡΑΚΗ 668. ΝΕΑ ΙΑΤΡΕΙΑ ΙΚΑ ΑΜΦΙΑΛΗΣ)",
-              "locality": "Αμφιάλη",
-              "phone": "2104009252"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 17:00",
-          "hours": {
-            "from": "08:00",
-            "to": "17:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2104653263",
-              "name": "ΦΩΤΙΟΥ Β. ΒΑΣΙΛΕΙΟΥ",
-              "address": "ΛΕΩΦ. ΣΑΛΑΜΙΝΟΣ 268 (Δίπλα στην EUROBANK)",
+              "pharmacyId": "2104650118",
+              "name": "ΓΚΙΟΚΑ ΕΛΕΝΗ",
+              "address": "Λ.ΦΑΝΕΡΩΜΕΝΗΣ 53",
               "locality": "Σαλαμίνα",
-              "phone": "2104653263"
+              "phone": "2104650118"
             }
           ]
         }

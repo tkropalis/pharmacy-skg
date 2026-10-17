@@ -254,6 +254,27 @@
       }
     },
     {
+      "id": "2381026158",
+      "name": "ΠΕΤΡΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "Γ. ΠΕΤΣΟΥ 2-4",
+      "locality": "Έδεσσα",
+      "postcode": null,
+      "phone": "2381026158",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 40.8019426,
+        "lon": 22.0495323,
+        "ref": "https://pella.efhmeries.gr/Home/Details/6215",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2381027741",
       "name": "ΔΙΤΣΟΣ ΛΑΖΑΡΟΣ",
       "address": "ΑΓ. ΔΗΜΗΤΡΙΟΥ 28",
@@ -370,7 +391,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.7680316,
         "lon": 22.1560749,
@@ -790,7 +811,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.7960039,
         "lon": 22.4144053,
@@ -895,7 +916,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.6900509,
         "lon": 22.303817,
@@ -1089,6 +1110,27 @@
         "lat": 40.97372,
         "lon": 22.0618702,
         "ref": "https://pella.efhmeries.gr/Home/Details/5541",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2384022430",
+      "name": "Σ.Φ. ΤΣΑΚΩΝΑ ΑΙΚΑΤΕΡΙΝΗ - ΤΟΥΜΑΝΙΔΗΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "ΧΡΥΣ. ΣΜΥΡΝΗΣ 8",
+      "locality": "Αριδαία",
+      "postcode": null,
+      "phone": "2384022430",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 40.9740761,
+        "lon": 22.061103,
+        "ref": "https://pella.efhmeries.gr/Home/Details/5555",
         "source": "list",
         "precision": "exact"
       }

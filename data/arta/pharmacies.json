@@ -307,7 +307,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 39.0622243,
         "lon": 21.0530725,
@@ -396,6 +396,27 @@
         "lat": 39.155456,
         "lon": 20.9812367,
         "ref": "https://arta.efhmeries.gr/Home/Details/2424",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681074102",
+      "name": "ΣΑΠΡΙΚΗ ΒΑΣΙΛΙΚΗ",
+      "address": "ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ 125",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681074102",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 39.1607803,
+        "lon": 20.9859788,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2432",
         "source": "list",
         "precision": "exact"
       }

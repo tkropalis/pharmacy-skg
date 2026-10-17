@@ -485,6 +485,48 @@
       }
     },
     {
+      "id": "2241035503",
+      "name": "ΙΩΑΝΝΙΔΗΣ ΓΕΩΡΓΙΟΣ / IOANNIDIS GEORGIOS",
+      "address": "ΑΜΕΡΙΚΗΣ 11 / AMERIKIS 11",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241035503",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 36.4482416,
+        "lon": 28.2225563,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29779",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241036000",
+      "name": "ΦΑΝΟΥΡΑΚΗ ΑΙΚΑΤΕΡΙΝΗ / FANOURAKI AIKATERINI",
+      "address": "Θ. ΣΟΦΟΥΛΗ 83 / SOFOULI 83",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241036000",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 36.4366658,
+        "lon": 28.2154219,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29780",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2241036683",
       "name": "ΚΟΥΡΤΗΣ ΙΩΑΝΝΗΣ / KOURTIS IOANNIS",
       "address": "ΠΑΠΑΛΟΥΚΑ 17 / PAPALOUKA 17",
@@ -580,7 +622,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.3631546,
         "lon": 28.0022399,
@@ -748,7 +790,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.2942003,
         "lon": 28.1629734,
@@ -895,7 +937,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.3890386,
         "lon": 28.214573,
@@ -1273,7 +1315,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.3395744,
         "lon": 28.2005336,
@@ -1399,7 +1441,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.4173698,
         "lon": 28.1567782,
@@ -1420,7 +1462,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.4108314,
         "lon": 28.118549,
@@ -1630,7 +1672,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.89172,
         "lon": 27.29986,
@@ -2008,7 +2050,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.8766199,
         "lon": 27.20516,
@@ -2050,7 +2092,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.7445146,
         "lon": 26.9591755,
@@ -2134,7 +2176,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.2128506,
         "lon": 28.1157274,
@@ -2260,7 +2302,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.1211165,
         "lon": 28.0598513,
@@ -2302,7 +2344,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.024355,
         "lon": 27.9274593,
@@ -2407,7 +2449,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.5073286,
         "lon": 27.2109979,
@@ -2470,7 +2512,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.2269188,
         "lon": 27.8561477,
@@ -2512,7 +2554,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.6158401,
         "lon": 27.8355787,

@@ -275,6 +275,27 @@
       }
     },
     {
+      "id": "2510832484",
+      "name": "ΜΕΛΙΔΟΥ ΧΙΤΟΠΟΥΛΑ",
+      "address": "ΦΙΛ. ΕΤΑΙΡΙΑΣ 1",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510832484",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 40.935895,
+        "lon": 24.408052,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3993",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510833803",
       "name": "ΚΟΥΣΟΥΛΙΔΟΥ ΤΖΟΥΛΙΑ",
       "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 55",
@@ -328,7 +349,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.935779,
         "lon": 24.413224,

@@ -359,6 +359,27 @@
       }
     },
     {
+      "id": "2810223626",
+      "name": "ΤΡΟΥΛΛΙΝΟΥ-ΚΑΠΛΑΝΤΖΗ ΘΕΟΧΑΡΗ",
+      "address": "ΚΟΣΜΩΝ 16 (ΚΕΝΤΡΙΚΗ ΑΓΟΡΑ, ΔΙΠΛΑ ΑΠΟ ΤΟ ΤΑΧΥΔΡΟΜΙΟ)",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810223626",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 35.3375999,
+        "lon": 25.1328422,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57962",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810223918",
       "name": "ΖΑΧΑΡΕΝΑΚΗΣ ΙΩΑΝΝΗΣ",
       "address": "ΓΕΡΩΝΥΜΑΚΗ 16, ΑΝΑΛΗΨΗ, ΠΛΗΣΙΟΝ ΓΗΡΟΚΟΜΕΙΟΥ ΗΡΑ 3",
@@ -433,7 +454,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.3372877,
         "lon": 25.1600453,
@@ -669,6 +690,27 @@
         "lat": 35.3247513,
         "lon": 25.1305894,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57928",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810238370",
+      "name": "ΚΟΥΦΑΚΗΣ ΙΩΑΝΝΗΣ & ΣΙΑ Ο.Ε.",
+      "address": "Μ.ΓΕΩΡΓΙΑΔΟΥ 34 (ΝΕΚΡΟΤΑΦΕΙΟΥ ΑΓ.ΚΩΝ/ΝΟΥ)",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810238370",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 35.3250304,
+        "lon": 25.1360402,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57965",
         "source": "list",
         "precision": "exact"
       }
@@ -968,6 +1010,27 @@
       }
     },
     {
+      "id": "2810253188",
+      "name": "ΚΑΡΟΥΖΑΚΗΣ ΓΕΩΡΓΙΟΣ ΤΟΥ ΘΕΟΧΑΡΗ",
+      "address": "ΘΕΡΙΣΟΥ 34, ΘΕΡΙΣΟΣ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810253188",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 35.3341352,
+        "lon": 25.1226065,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57963",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810253232",
       "name": "ΚΑΠΕΤΑΝΑΚΗ ΓΕΩΡΓΙΑ-ΙΩΑΝΝΑ",
       "address": "Μ.ΠΑΡΛΑΜΑ 77-81 & ΕΥΑΡΕΣΤΟΥ 3 (ΧΑΛΚΙΑΔΑΚΗΣ) ΕΣΤΑΥΡΩΜ.",
@@ -1115,6 +1178,27 @@
       }
     },
     {
+      "id": "2810262363",
+      "name": "ΑΝΔΡΙΑΝΑΚΗΣ ΕΜΜΑΝΟΥΗΛ",
+      "address": "ΛΕΥΚΩΣΙΑΣ 11 (ΔΕΙΛΙΝΑ ΑΠΕΝΑΝΤΙ ΑΠΟ SUPER MARKET ΚΡΗΤΙΚΟΣ ΠΛΗΣΙΟΝ JUMBO)",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810262363",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 35.3309252,
+        "lon": 25.113932,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57968",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810262556",
       "name": "Σ.Φ. ΚΑΛΛΕΡΓΗ-ΡΙΖΙΚΙΑΝΟΣ Ο.Ε",
       "address": "ΛΕΟΦΩΡΟΣ ΜΙΝΩΟΣ 111",
@@ -1152,6 +1236,27 @@
         "lat": 35.335111,
         "lon": 25.0894814,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/54493",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810281429",
+      "name": "ΝΟΙΚΟΚΥΡΑΚΗ ΕΥΑΓΓΕΛΙΑ",
+      "address": "ΛΕΩΦ. ΠΑΝΕΠΙΣΤΗΜΙΟΥ ΓΙΟΦΥΡΑΚΙΑ-ΒΟΥΤΩΝ, ΠΑΓΝΗ",
+      "locality": "ΒΟΥΤΕΣ",
+      "postcode": null,
+      "phone": "2810281429",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 35.307522,
+        "lon": 25.0889695,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57966",
         "source": "list",
         "precision": "exact"
       }
@@ -1745,6 +1850,27 @@
       }
     },
     {
+      "id": "2810319974",
+      "name": "ΑΘΟΥΣΑΚΗ ΕΥΣΤΡΑΤΙΑ",
+      "address": "A. ΠΑΠΑΝΔΡΕΟΥ & ΠΕΤΡΑΚΟΓΙΩΡΓΗ 1, ΜΑΣΤΑΜΠΑΣ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810319974",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 35.3257664,
+        "lon": 25.1236248,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57964",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810320177",
       "name": "ΜΠΑΛΟΘΙΑΡΗ ΕΛΕΝΗ",
       "address": "ΛΕΩΦ. ΚΝΩΣΣΟΥ 245 ΕΝΑΝΤΙ ΣΑΒΟΪΔΑΚΗ",
@@ -2029,7 +2155,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.3381708,
         "lon": 25.129111,
@@ -2323,7 +2449,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.3251619,
         "lon": 25.2774059,
@@ -2454,6 +2580,27 @@
         "lat": 35.316295,
         "lon": 25.09264,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/54490",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810823732",
+      "name": "ΠΑΠΑΔΙΟΥ ΕΛΕΝΗ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 206",
+      "locality": "Γάζι",
+      "postcode": null,
+      "phone": "2810823732",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 35.3259319,
+        "lon": 25.0685117,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/54506",
         "source": "list",
         "precision": "exact"
       }
@@ -2722,7 +2869,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.1470333,
         "lon": 25.2653989,
@@ -2848,7 +2995,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.0511268,
         "lon": 24.8739641,
@@ -3037,7 +3184,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.0717018,
         "lon": 24.7695425,
@@ -3247,7 +3394,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.331734,
         "lon": 25.3452693,
@@ -3331,7 +3478,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.3110083,
         "lon": 25.398915,
@@ -3478,7 +3625,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.2835724,
         "lon": 25.4643119,
@@ -3562,7 +3709,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.2632695,
         "lon": 25.4226697,

@@ -7,26 +7,26 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-10-16T18:51:29.261Z"
+        "uploadedAt": "2026-10-17T07:54:11.092Z"
       },
       "sections": [
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:30",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331073124",
-              "name": "ΣΙΜΟΥ ΜΙΜΙΚΑ",
-              "address": "ΚΑΠΠΟΥ 4 - πεζόδρομος αγοράς",
+              "pharmacyId": "2331066649",
+              "name": "ΝΕΔΕΛΚΟΥ ΓΡ. ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΜΟΡΑΒΑ 1 -Δίπλα στο ΙΚΑ",
               "locality": "Βέροια",
-              "phone": "2331073124"
+              "phone": "2331066649"
             }
           ]
         },
@@ -80,26 +80,6 @@
         },
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:30",
-          "hours": {
-            "from": "08:00",
-            "to": "14:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2331066649",
-              "name": "ΝΕΔΕΛΚΟΥ ΓΡ. ΑΙΚΑΤΕΡΙΝΗ",
-              "address": "ΜΟΡΑΒΑ 1 -Δίπλα στο ΙΚΑ",
-              "locality": "Βέροια",
-              "phone": "2331066649"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
             "from": "14:30",
@@ -125,6 +105,26 @@
             "from": "19:00",
             "to": "21:00",
             "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331073124",
+              "name": "ΣΙΜΟΥ ΜΙΜΙΚΑ",
+              "address": "ΚΑΠΠΟΥ 4 - πεζόδρομος αγοράς",
+              "locality": "Βέροια",
+              "phone": "2331073124"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],

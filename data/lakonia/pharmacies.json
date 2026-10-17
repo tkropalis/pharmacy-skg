@@ -212,6 +212,27 @@
       }
     },
     {
+      "id": "2731029221",
+      "name": "Σ.Φ. ΧΡΙΣΤΟΔΟΥΛΑΚΟΣ ΓΕΩΡΓΙΟΣ & ΧΡΙΣΤΟΔΟΥΛΑΚΟΣ ΛΑΜΠΡΟΣ",
+      "address": "ΘΕΡΜΟΠΥΛΩΝ 115",
+      "locality": "Σπάρτη",
+      "postcode": null,
+      "phone": "2731029221",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 37.0765294,
+        "lon": 22.4270824,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/17059",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2731035750",
       "name": "ΚΑΨΑΣΚΗ ΜΑΡΙΑ",
       "address": "ΞΗΡΟΚΑΜΠΙ",
@@ -244,7 +265,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.9593051,
         "lon": 22.4522074,
@@ -265,7 +286,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 37.1706904,
         "lon": 22.3044898,
@@ -291,6 +312,27 @@
         "lat": 37.0750805,
         "lon": 22.4304731,
         "ref": "https://lakonia.efhmeries.gr/Home/Details/17041",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2732022202",
+      "name": "ΜΟΣΧΟΒΑΚΟΣ ΣΩΤΗΡΙΟΣ",
+      "address": "ΜΟΛΑΟΙ",
+      "locality": "Μολάοι",
+      "postcode": null,
+      "phone": "2732022202",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 36.8046192,
+        "lon": 22.8518212,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/15192",
         "source": "list",
         "precision": "exact"
       }
@@ -391,7 +433,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.7153949,
         "lon": 22.8592885,
@@ -454,7 +496,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.7595537,
         "lon": 22.5654202,
@@ -517,7 +559,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.667192,
         "lon": 22.3811891,
@@ -580,7 +622,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.5084673,
         "lon": 23.061024,
@@ -643,7 +685,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.8513616,
         "lon": 22.6670941,
@@ -706,7 +748,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 36.8611992,
         "lon": 22.7048206,

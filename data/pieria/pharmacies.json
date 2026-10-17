@@ -65,6 +65,27 @@
       }
     },
     {
+      "id": "2351026010",
+      "name": "ΝΤΟΡΑΣ ΧΡΗΣΤΟΣ",
+      "address": "Δ. ΑΡΕΟΠΑΓΙΤΟΥ 5",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351026010",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 40.269586,
+        "lon": 22.5087641,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23553",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2351026375",
       "name": "Σ.Φ. ΣΑΛΤΣΙΔΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ-ΣΑΛΤΣΙΔΗΣ ΛΑΖΑΡΟΣ",
       "address": "ΞΗΡΟΜΕΡΙΤΟΥ 11",
@@ -81,6 +102,27 @@
         "lat": 40.2722363,
         "lon": 22.5081659,
         "ref": "https://pieria.efhmeries.gr/Home/Details/23529",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351026738",
+      "name": "Σ.Φ. ΜΑΡΙΝΟΠΟΥΛΟΣ ΔΗΜΗΤΡΙΟΣ-ΜΑΡΙΝΟΠΟΥΛΟΣ ΓΡΗΓΟΡΙΟΣ",
+      "address": "Π.ΤΣΑΛΔΑΡΗ 7",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351026738",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 40.2716517,
+        "lon": 22.5100051,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23554",
         "source": "list",
         "precision": "exact"
       }
@@ -433,7 +475,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.3148822,
         "lon": 22.5846429,
@@ -538,7 +580,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.2723065,
         "lon": 22.5812906,
@@ -664,7 +706,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.0588965,
         "lon": 22.5606957,
@@ -706,7 +748,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 39.9919599,
         "lon": 22.6244695,
@@ -790,7 +832,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.1043166,
         "lon": 22.5012641,
@@ -853,7 +895,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.4994548,
         "lon": 22.5422727,
@@ -958,7 +1000,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.478824,
         "lon": 22.4858967,

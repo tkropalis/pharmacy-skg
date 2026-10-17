@@ -170,6 +170,27 @@
       }
     },
     {
+      "id": "2521022103",
+      "name": "ΧΑΤΖΗΘΕΟΔΩΡΙΔΟΥ Σ. ΣΟΦΙΑ",
+      "address": "ΦΩΚΙΩΝΟΣ 5",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521022103",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 41.1516428,
+        "lon": 24.1484912,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3171",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521022606",
       "name": "ΓΙΑΚΟΥΜΗ ΧΡΥΣΑΝΘΟΠΟΥΛΟΥ ΣΤΕΛΛΑ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "ΛΑΜΠΡΙΑΝΙΔΟΥ ΛΑΜΠΡΟΥ 20",
@@ -706,7 +727,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 41.149427,
         "lon": 24.151744,

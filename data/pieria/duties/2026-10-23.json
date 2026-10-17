@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-23",
+  "groups": [
+    {
+      "id": "pieria",
+      "name": "Πιερία",
+      "source": {
+        "url": "https://pieria.efhmeries.gr/",
+        "uploadedAt": "2026-10-17T07:56:24.914Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2352032285",
+              "name": "ΓΚΕΜΑΛΜΑΣ ΜΙΧΑΗΛ",
+              "address": "ΒΑΣ. ΣΟΦΙΑΣ 22",
+              "locality": "Λεπτοκαρυά",
+              "phone": "2352032285"
+            },
+            {
+              "pharmacyId": "2353031937",
+              "name": "ΜΑΚΡΙΔΟΥ ΣΟΦΙΑ",
+              "address": "ΑΓΙΟΥ ΔΗΜΗΤΡΙΟΥ & ΠΑΥΣΙΛΙΠΟΥ",
+              "locality": "Κολινδρός",
+              "phone": "2353031937"
+            },
+            {
+              "pharmacyId": "2353022173",
+              "name": "Σ.Φ. ΠΑΠΑΖΟΓΛΟΥ ΜΑΡΙΑ-ΜΠΑΚΑ ΔΗΜΗΤΡΑ",
+              "address": "ΑΛ. ΠΑΠΑΓΟΥ 20",
+              "locality": "Αιγίνιο",
+              "phone": "2353022173"
+            },
+            {
+              "pharmacyId": "2352042400",
+              "name": "Σ.Φ. ΤΖΗΜΑ ΑΝΝΑ-ΜΑΡΙΑ - ΒΟΥΖΙΚΑ ΣΤΑΥΡΟΥΛΑ",
+              "address": "Κ. ΚΑΡΑΜΑΝΛΗ 56",
+              "locality": "Πλαταμώνας",
+              "phone": "2352042400"
+            },
+            {
+              "pharmacyId": "2351063203",
+              "name": "ΤΖΙΑΝΚΑΡΛΟ ΦΟΡΝΑΡΕΛΛΙ",
+              "address": "ΑΔΡΕΑ Γ. ΠΑΠΑΔΡΕΟΥ 30",
+              "locality": "Καλλιθέα",
+              "phone": "2351063203"
+            },
+            {
+              "pharmacyId": "2351041498",
+              "name": "ΧΑΜΑΛΑΚΗ ΘΕΟΠΙΑ",
+              "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 80",
+              "locality": "Κορινός",
+              "phone": "2351041498"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2352082803",
+              "name": "ΣΚΡΕΚΑΣ ΑΓΓΕΛΗΣ",
+              "address": "ΚΕΝΤΡΙΚΗ ΠΛΑΤΕΙΑ ΛΙΤΟΧΩΡΙΟΥ",
+              "locality": "Λιτόχωρο",
+              "phone": "2352082803"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351026738",
+              "name": "Σ.Φ. ΜΑΡΙΝΟΠΟΥΛΟΣ ΔΗΜΗΤΡΙΟΣ-ΜΑΡΙΝΟΠΟΥΛΟΣ ΓΡΗΓΟΡΙΟΣ",
+              "address": "Π.ΤΣΑΛΔΑΡΗ 7",
+              "locality": "Κατερίνη",
+              "phone": "2351026738"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:00 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351026010",
+              "name": "ΝΤΟΡΑΣ ΧΡΗΣΤΟΣ",
+              "address": "Δ. ΑΡΕΟΠΑΓΙΤΟΥ 5",
+              "locality": "Κατερίνη",
+              "phone": "2351026010"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:00 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351026010",
+              "name": "ΝΤΟΡΑΣ ΧΡΗΣΤΟΣ",
+              "address": "Δ. ΑΡΕΟΠΑΓΙΤΟΥ 5",
+              "locality": "Κατερίνη",
+              "phone": "2351026010"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

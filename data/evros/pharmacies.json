@@ -44,6 +44,27 @@
       }
     },
     {
+      "id": "2551024266",
+      "name": "ΔΙΑΜΑΝΤΙΔΟΥ ΑΝΝΑ",
+      "address": "Ελ. Βενιζέλου 54 (όπισθεν ΟΤΕ)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551024266",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 40.8456447,
+        "lon": 25.8736448,
+        "ref": "https://evros.efhmeries.gr/Home/Details/3995",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551024463",
       "name": "Σ.Φ. ΓΚΑΪΝΤΑΤΖΗΣ Β. - ΓΚΑΪΝΤΑΤΖΗ Ε.",
       "address": "14ης Μαΐου & Παλαιολόγου",
@@ -601,7 +622,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 41.5025546,
         "lon": 26.5322197,
@@ -769,7 +790,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 41.3502204,
         "lon": 26.4935275,
@@ -958,7 +979,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 41.1924991,
         "lon": 26.304174,
@@ -1063,7 +1084,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 41.0273977,
         "lon": 26.2963052,
@@ -1168,7 +1189,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.8935681,
         "lon": 26.169281,

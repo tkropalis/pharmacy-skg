@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2441020522",
+      "name": "ΝΤΙ-ΤΖΙΑΜΜΑΡΙΝΟ ΟΣΚΑΡ",
+      "address": "ΙΕΖΕΚΙΗΛ 37",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441020522",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 39.3656798,
+        "lon": 21.922804,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3776",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2441020555",
       "name": "ΜΗΛΑΡΑ ΑΡΙΑΔΝΗ",
       "address": "ΚΑΡΑΙΣΚΑΚΗ 3",
@@ -207,6 +228,27 @@
         "lat": 39.3650649,
         "lon": 21.9256769,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3749",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441024993",
+      "name": "ΓΚΑΡΑΓΚΑΝΗΣ ΧΡΗΣΤΟΣ",
+      "address": "Μ.ΑΛΕΞΑΝΔΡΟΥ & ΑΒΕΡΩΦ",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441024993",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 39.3626595,
+        "lon": 21.9212158,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3775",
         "source": "list",
         "precision": "exact"
       }

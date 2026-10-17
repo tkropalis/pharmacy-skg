@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "2221021853",
+      "name": "ΚΙΑΠΕΚΟΥ ΚΥΡΙΑΚΗ",
+      "address": "ΑΜΦΙΔΑΜΑΝΤΟΣ 70 & ΑΘ.ΔΙΑΚΟΥ-ΠΛΑΤΕΙΑ ΚΑΝΗΘΟΥ",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221021853",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 38.4703271,
+        "lon": 23.586014,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9339",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2221022120",
       "name": "ΚΥΛΕΡΤΖΗΣ ΧΡΗΣΤΟΣ",
       "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
@@ -223,7 +244,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 38.468614,
         "lon": 23.600894,
@@ -454,7 +475,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 38.5135347,
         "lon": 23.6372011,
@@ -1063,7 +1084,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 38.0151615,
         "lon": 24.4189621,
@@ -1178,6 +1199,27 @@
       }
     },
     {
+      "id": "2226069398",
+      "name": "ΦΑΡΑΝΤΟΥ ΦΛΩΡΑ",
+      "address": "ΙΣΤΑΙΑ",
+      "locality": "Ιστιαία",
+      "postcode": null,
+      "phone": "2226069398",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 38.9542,
+        "lon": 23.149816,
+        "ref": "https://evia.efhmeries.gr/Home/Details/8491",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2229060906",
       "name": "Σ.Φ. ΚΕΧΡΗΣ - ΚΟΥΚΗ Ο.Ε.",
       "address": "ΑΡΧΑΙΟΥ ΘΕΑΤΡΟΥ 76",
@@ -1215,6 +1257,27 @@
         "lat": 38.3920871,
         "lon": 23.7914086,
         "ref": "https://evia.efhmeries.gr/Home/Details/7913",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2229062775",
+      "name": "ΠΑΝΑΓΙΑΡΗΣ ΑΝΑΣΤΑΣΙΟΣ",
+      "address": "ΦΙΛ.ΜΕΝΕΔΗΜΟΥ 42",
+      "locality": "Ερέτρια",
+      "postcode": null,
+      "phone": "2229062775",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 38.3927513,
+        "lon": 23.7922033,
+        "ref": "https://evia.efhmeries.gr/Home/Details/7853",
         "source": "list",
         "precision": "exact"
       }

@@ -107,6 +107,27 @@
       }
     },
     {
+      "id": "2331023360",
+      "name": "ΠΑΠΑΡΗ ΧΡ. ΟΛΥΜΠΙΑ",
+      "address": "Λ. ΣΤΡΑΤΟΥ 27 -Έναντι Σκλαβενίτη",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331023360",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 40.5283932,
+        "lon": 22.2085606,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6220",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2331023416",
       "name": "ΠΙΣΚΙΛΙΔΗΣ ΙΟΡΔ. ΙΩΑΝΝΗΣ ΥΠ/ΜΑ",
       "address": "ΜΗΤΡΟΠΟΛΕΩΣ 20",
@@ -223,7 +244,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.5278383,
         "lon": 22.2047059,
@@ -391,7 +412,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.5500249,
         "lon": 22.2439114,
@@ -905,6 +926,27 @@
       }
     },
     {
+      "id": "2332024220",
+      "name": "Σ.Φ. ΤΣΙΟΓΚΑ Ν. ΑΝΑΣΤΑΣΙΑ ΜΠΟΛΙΟΥ Ι. ΑΙΚΑΤΕΡΙΝΗ Ο.Ε.",
+      "address": "ΠΛ.ΚΑΡΑΤΑΣΟΥ 18",
+      "locality": "Νάουσα",
+      "postcode": null,
+      "phone": "2332024220",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 40.6310487,
+        "lon": 22.0698803,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/5782",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2332024820",
       "name": "ΠΑΝΑΓΙΩΤΟΥ ΠΑΝΑΓΙΩΤΗΣ",
       "address": "ΖΑΦΕΙΡΑΚΗ 19",
@@ -1294,7 +1336,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 40.6275043,
         "lon": 22.4339659,

@@ -307,7 +307,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.5068073,
         "lon": 23.9880296,
@@ -433,7 +433,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.5146324,
         "lon": 24.031033,
@@ -580,7 +580,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.5103648,
         "lon": 24.031863,
@@ -748,7 +748,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.5307429,
         "lon": 24.0759463,
@@ -1063,7 +1063,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.5040946,
         "lon": 24.020972,
@@ -1283,6 +1283,27 @@
       }
     },
     {
+      "id": "2822022182",
+      "name": "ΜΑΖΟΚΟΠΑΚΗΣ ΙΩΑΝΝΗΣ/ΜΑΖΟΚΟΡΑΚΙS IOANNIS",
+      "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 143 ΚΑΣΤΕΛΙ/ΙRΟΟΝ POLITEXNIOU 143 KASTELI",
+      "locality": "Δήμος Κισσάμου",
+      "postcode": null,
+      "phone": "2822022182",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-23",
+      "location": {
+        "lat": 35.4944787,
+        "lon": 23.6527239,
+        "ref": "https://chania.efhmeries.gr/Home/Details/11827",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2822022451",
       "name": "Σ.Φ. ΚΑΤΑΚΗΣ ΠΑΝΤΕΛΗΣ-ΚΑΤΑΚΗ ΕΥΤΥΧΙΑ/S.F. KATAKIS PANTELIS-KATAKI EYTIXIA",
       "address": "ΚΑΣΤΕΛΙ ΠΛΑΤΕΙΑ ΕΛ. ΒΕΝΙΖΕΛΟΥ (ΔΙΠΛΑ ΑΠΟ ΤΗΝ ΕΘΝ. ΤΡΑΠΕΖΑ)/ΚΑSΤΕLΙ PLATIA EL. VENIZELOU",
@@ -1378,7 +1399,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 35.2294606,
         "lon": 23.6819128,

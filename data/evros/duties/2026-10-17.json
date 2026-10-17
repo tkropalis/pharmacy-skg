@@ -7,9 +7,29 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-16T18:51:16.897Z"
+        "uploadedAt": "2026-10-17T07:53:56.554Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00-21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551025013",
+              "name": "ΑΠΟΤΑ ΓΕΩΡΓΙΑ",
+              "address": "Ελ. Βενιζέλου 47 (έναντι ΚΤΕΛ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551025013"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "08:00-08:00",
@@ -34,81 +54,6 @@
               "address": "ΒΑΣ. ΑΛΕΞΑΝΔΡΟΥ 24",
               "locality": "Διδυμότειχο",
               "phone": "2553022322"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551027333",
-              "name": "ΧΑΤΖΗΣΩΤΗΡΙΟΥ ΠΕΤΡΟΣ",
-              "address": "Ανατ. Θράκης 47 (έναντι ΕΦΚΑ)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551027333"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:00-08:00*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2555022229",
-              "name": "ΗΛΙΑΚΗ ΒΑΣΙΛΙΚΗ",
-              "address": "ΠΛΑΣΤΗΡΑ 3",
-              "locality": "Φέρες",
-              "phone": "2555022229"
-            },
-            {
-              "pharmacyId": "2554022033",
-              "name": "ΚΥΡΙΑΚΟΥΔΗ ΑΝΝΑ",
-              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 157",
-              "locality": "Σουφλί",
-              "phone": "2554022033"
-            },
-            {
-              "pharmacyId": "2554042100",
-              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛΕΜΑΧΟΣ",
-              "address": "ΠΡΟΒΑΤΩΝΑΣ",
-              "locality": "Τυχερό, Προβατώνας",
-              "phone": "2554042100"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00-21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551025013",
-              "name": "ΑΠΟΤΑ ΓΕΩΡΓΙΑ",
-              "address": "Ελ. Βενιζέλου 47 (έναντι ΚΤΕΛ)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551025013"
             }
           ]
         },
@@ -163,6 +108,61 @@
               "address": "ΛΕΟΝΙΔΟΥ 61",
               "locality": "Διδυμότειχο",
               "phone": "2553024676"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2555022229",
+              "name": "ΗΛΙΑΚΗ ΒΑΣΙΛΙΚΗ",
+              "address": "ΠΛΑΣΤΗΡΑ 3",
+              "locality": "Φέρες",
+              "phone": "2555022229"
+            },
+            {
+              "pharmacyId": "2554022033",
+              "name": "ΚΥΡΙΑΚΟΥΔΗ ΑΝΝΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 157",
+              "locality": "Σουφλί",
+              "phone": "2554022033"
+            },
+            {
+              "pharmacyId": "2554042100",
+              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛΕΜΑΧΟΣ",
+              "address": "ΠΡΟΒΑΤΩΝΑΣ",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042100"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551027333",
+              "name": "ΧΑΤΖΗΣΩΤΗΡΙΟΥ ΠΕΤΡΟΣ",
+              "address": "Ανατ. Θράκης 47 (έναντι ΕΦΚΑ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551027333"
             }
           ]
         }
