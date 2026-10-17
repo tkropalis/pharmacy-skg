@@ -7,7 +7,7 @@
       "name": "Δράμα",
       "source": {
         "url": "https://drama.efhmeries.gr/",
-        "uploadedAt": "2026-10-17T07:53:40.201Z"
+        "uploadedAt": "2026-10-17T17:53:38.737Z"
       },
       "sections": [
         {
@@ -27,26 +27,6 @@
               "address": "Κ. ΠΑΛΑΙΟΛΟΓΟΥ 22",
               "locality": "Δράμα",
               "phone": "2521025505"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2521021220",
-              "name": "ΑΙΚ.ΠΑΠΑΔΗΜΑ & ΣΙΑ ΟΕ",
-              "address": "ΙΠΠΟΚΡΑΤΟΥΣ 51",
-              "locality": "Δράμα",
-              "phone": "2521021220"
             }
           ]
         },
@@ -74,6 +54,26 @@
               "address": "ΚΟΛΟΚΟΤΡΩΝΗ 11",
               "locality": "Δράμα",
               "phone": "2521031232"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521021220",
+              "name": "ΑΙΚ.ΠΑΠΑΔΗΜΑ & ΣΙΑ ΟΕ",
+              "address": "ΙΠΠΟΚΡΑΤΟΥΣ 51",
+              "locality": "Δράμα",
+              "phone": "2521021220"
             }
           ]
         }

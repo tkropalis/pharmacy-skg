@@ -7,7 +7,7 @@
       "name": "Ηράκλειο",
       "source": {
         "url": "https://herakleion.efhmeries.gr/",
-        "uploadedAt": "2026-10-17T07:54:19.303Z"
+        "uploadedAt": "2026-10-17T17:54:09.412Z"
       },
       "sections": [
         {
@@ -69,26 +69,6 @@
               "address": "ΚΟΝΙΤΣΗΣ 32 I.N. ΑΓΙΟΥ ΓΕΩΡΓΙΟΥ ΠΟΡΟΥ",
               "locality": "Ηράκλειο",
               "phone": "2810242088"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΑΠΟ 09:00 ΕΩΣ 19:00",
-          "hours": {
-            "from": "09:00",
-            "to": "19:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2897061301",
-              "name": "ΑΛΕΞΗΣ Ι. ΑΠΟΣΤΟΛΗΣ",
-              "address": "ΜΟΧΟΣ",
-              "locality": "Σταλίδα, Μόχος, Γωνιές, Ποταμιές",
-              "phone": "2897061301"
             }
           ]
         },
@@ -224,6 +204,26 @@
               "address": "ΣΜΠΩΚΟΥ & ΛΕΥΘΕΡΕΟΥ 8 ΜΑΣΤΑΜΠΑΣ ,ΠΛΑΤΕΙΑ ΝΙΚΑΙΑΣ, ΠΕΤΑΛΟΕΙΔΗΣ",
               "locality": "Ηράκλειο",
               "phone": "2811103195"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 09:00 ΕΩΣ 19:00",
+          "hours": {
+            "from": "09:00",
+            "to": "19:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2897061301",
+              "name": "ΑΛΕΞΗΣ Ι. ΑΠΟΣΤΟΛΗΣ",
+              "address": "ΜΟΧΟΣ",
+              "locality": "Σταλίδα, Μόχος, Γωνιές, Ποταμιές",
+              "phone": "2897061301"
             }
           ]
         },

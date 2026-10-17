@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-17T07:53:47.578Z"
+        "uploadedAt": "2026-10-17T17:53:44.738Z"
       },
       "sections": [
         {
@@ -34,34 +34,6 @@
               "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 66",
               "locality": "Αρτάκη",
               "phone": "2221042444"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2229060906",
-              "name": "Σ.Φ. ΚΕΧΡΗΣ - ΚΟΥΚΗ Ο.Ε.",
-              "address": "ΑΡΧΑΙΟΥ ΘΕΑΤΡΟΥ 76",
-              "locality": "Ερέτρια",
-              "phone": "2229060906"
-            },
-            {
-              "pharmacyId": "2224023855",
-              "name": "ΣΙΑΣΑΚΟΣ ΕΛΕΥΘΕΡΙΟΣ",
-              "address": "ΣΑΧΤΟΥΡΗ 124",
-              "locality": "Κάρυστος",
-              "phone": "2224023855"
             }
           ]
         },
@@ -102,6 +74,34 @@
               "address": "ΙΣΑΪΟΥ 14",
               "locality": "Χαλκίδα",
               "phone": "2221088935"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2229060906",
+              "name": "Σ.Φ. ΚΕΧΡΗΣ - ΚΟΥΚΗ Ο.Ε.",
+              "address": "ΑΡΧΑΙΟΥ ΘΕΑΤΡΟΥ 76",
+              "locality": "Ερέτρια",
+              "phone": "2229060906"
+            },
+            {
+              "pharmacyId": "2224023855",
+              "name": "ΣΙΑΣΑΚΟΣ ΕΛΕΥΘΕΡΙΟΣ",
+              "address": "ΣΑΧΤΟΥΡΗ 124",
+              "locality": "Κάρυστος",
+              "phone": "2224023855"
             }
           ]
         },

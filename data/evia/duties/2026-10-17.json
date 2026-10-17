@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-17T07:53:47.578Z"
+        "uploadedAt": "2026-10-17T17:53:44.738Z"
       },
       "sections": [
         {
@@ -138,6 +138,34 @@
           ]
         },
         {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2229060906",
+              "name": "Σ.Φ. ΚΕΧΡΗΣ - ΚΟΥΚΗ Ο.Ε.",
+              "address": "ΑΡΧΑΙΟΥ ΘΕΑΤΡΟΥ 76",
+              "locality": "Ερέτρια",
+              "phone": "2229060906"
+            },
+            {
+              "pharmacyId": "2224022217",
+              "name": "Σ.Φ. ΠΛΑΤΥΜΕΣΗΣ ΣΠΥΡΟΣ & ΖΩΗ",
+              "address": "Ι. ΚΟΤΣΙΚΑ 9",
+              "locality": "Κάρυστος",
+              "phone": "2224022217"
+            }
+          ]
+        },
+        {
           "kind": "saturday-extra",
           "heading": "08:00 ΕΩΣ 14:00",
           "hours": {
@@ -168,34 +196,6 @@
               "address": "ΦΑΒΙΕΡΟΥ 9",
               "locality": "Χαλκίδα",
               "phone": "2221087100"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2229060906",
-              "name": "Σ.Φ. ΚΕΧΡΗΣ - ΚΟΥΚΗ Ο.Ε.",
-              "address": "ΑΡΧΑΙΟΥ ΘΕΑΤΡΟΥ 76",
-              "locality": "Ερέτρια",
-              "phone": "2229060906"
-            },
-            {
-              "pharmacyId": "2224022217",
-              "name": "Σ.Φ. ΠΛΑΤΥΜΕΣΗΣ ΣΠΥΡΟΣ & ΖΩΗ",
-              "address": "Ι. ΚΟΤΣΙΚΑ 9",
-              "locality": "Κάρυστος",
-              "phone": "2224022217"
             }
           ]
         }

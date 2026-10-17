@@ -7,26 +7,46 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-10-17T07:54:11.092Z"
+        "uploadedAt": "2026-10-17T17:54:03.406Z"
       },
       "sections": [
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:30",
+          "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
-            "from": "08:00",
-            "to": "14:30",
+            "from": "14:30",
+            "to": "21:00",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331066649",
-              "name": "ΝΕΔΕΛΚΟΥ ΓΡ. ΑΙΚΑΤΕΡΙΝΗ",
-              "address": "ΜΟΡΑΒΑ 1 -Δίπλα στο ΙΚΑ",
+              "pharmacyId": "2331021741",
+              "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΒΑΣΙΛΙΚΗ ΤΟΥ ΓΕΩΡΓΙΟΥ",
+              "address": "ΒΕΡΜΙΟΥ 10",
               "locality": "Βέροια",
-              "phone": "2331066649"
+              "phone": "2331021741"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "19:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "19:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331073124",
+              "name": "ΣΙΜΟΥ ΜΙΜΙΚΑ",
+              "address": "ΚΑΠΠΟΥ 4 - πεζόδρομος αγοράς",
+              "locality": "Βέροια",
+              "phone": "2331073124"
             }
           ]
         },
@@ -80,41 +100,21 @@
         },
         {
           "kind": "day",
-          "heading": "14:30 ΕΩΣ 21:00",
+          "heading": "08:00 ΕΩΣ 14:30",
           "hours": {
-            "from": "14:30",
-            "to": "21:00",
+            "from": "08:00",
+            "to": "14:30",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331021741",
-              "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΒΑΣΙΛΙΚΗ ΤΟΥ ΓΕΩΡΓΙΟΥ",
-              "address": "ΒΕΡΜΙΟΥ 10",
+              "pharmacyId": "2331066649",
+              "name": "ΝΕΔΕΛΚΟΥ ΓΡ. ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΜΟΡΑΒΑ 1 -Δίπλα στο ΙΚΑ",
               "locality": "Βέροια",
-              "phone": "2331021741"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "19:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "19:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2331073124",
-              "name": "ΣΙΜΟΥ ΜΙΜΙΚΑ",
-              "address": "ΚΑΠΠΟΥ 4 - πεζόδρομος αγοράς",
-              "locality": "Βέροια",
-              "phone": "2331073124"
+              "phone": "2331066649"
             }
           ]
         },

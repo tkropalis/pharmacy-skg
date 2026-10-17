@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-17T07:53:56.554Z"
+        "uploadedAt": "2026-10-17T17:53:51.026Z"
       },
       "sections": [
         {
@@ -34,41 +34,6 @@
               "address": "ΕΥΡΙΠΙΔΟΥ 17",
               "locality": "Ορεστιάδα",
               "phone": "2552022456"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:00-08:00*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2554023176",
-              "name": "ΑΛΑΤΖΙΑ ΟΛΓΑ",
-              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 93",
-              "locality": "Σουφλί",
-              "phone": "2554023176"
-            },
-            {
-              "pharmacyId": "2554042042",
-              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛ. & ΟΛΓΑ",
-              "address": "ΝΙΚΗΣ 19",
-              "locality": "Τυχερό, Προβατώνας",
-              "phone": "2554042042"
-            },
-            {
-              "pharmacyId": "2555022744",
-              "name": "ΧΑΤΖΗ ΔΗΜΗΤΡΑ",
-              "address": "ΤΡΑΙΑΝΟΥΠΟΛΕΩΣ 3",
-              "locality": "Φέρες",
-              "phone": "2555022744"
             }
           ]
         },
@@ -109,6 +74,41 @@
               "address": "Ηροδότου & Προκόπη 14 (προς Παλαγία)",
               "locality": "Αλεξανδρούπολη",
               "phone": "2551083638"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2554023176",
+              "name": "ΑΛΑΤΖΙΑ ΟΛΓΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 93",
+              "locality": "Σουφλί",
+              "phone": "2554023176"
+            },
+            {
+              "pharmacyId": "2554042042",
+              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛ. & ΟΛΓΑ",
+              "address": "ΝΙΚΗΣ 19",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042042"
+            },
+            {
+              "pharmacyId": "2555022744",
+              "name": "ΧΑΤΖΗ ΔΗΜΗΤΡΑ",
+              "address": "ΤΡΑΙΑΝΟΥΠΟΛΕΩΣ 3",
+              "locality": "Φέρες",
+              "phone": "2555022744"
             }
           ]
         }
