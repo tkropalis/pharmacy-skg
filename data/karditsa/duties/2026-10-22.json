@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-10-17T07:54:54.843Z"
+        "uploadedAt": "2026-10-18T18:11:43.467Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441028088",
-              "name": "ΜΟΥΣΤΟΣ ΗΛΙΑΣ",
-              "address": "ΚΟΛΟΚΟΤΡΩΝΗ 10",
-              "locality": "Καρδίτσα",
-              "phone": "2441028088"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ- 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΓΑΚΙΟΠΟΥΛΟΥ 5",
               "locality": "Καρδίτσα",
               "phone": "2441022155"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441028088",
+              "name": "ΜΟΥΣΤΟΣ ΗΛΙΑΣ",
+              "address": "ΚΟΛΟΚΟΤΡΩΝΗ 10",
+              "locality": "Καρδίτσα",
+              "phone": "2441028088"
             }
           ]
         }

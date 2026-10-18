@@ -7,7 +7,7 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-10-17T07:55:37.819Z"
+        "uploadedAt": "2026-10-18T18:12:20.569Z"
       },
       "sections": [
         {
@@ -41,26 +41,6 @@
               "address": "25ης ΜΑΡΤΙΟΥ 29",
               "locality": "Κυπαρισσία",
               "phone": "2761023832"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721084098",
-              "name": "ΔΗΜΗΤΡΟΠΟΥΛΟΣ ΠΑΝΑΓΙΩΤΗΣ & ΣΙΑ Ο.Ε.",
-              "address": "ΜΑΚΕΔΟΝΙΑΣ 18",
-              "locality": "Καλαμάτα",
-              "phone": "2721084098"
             }
           ]
         },
@@ -172,6 +152,26 @@
               "address": "ΑΙΠΥΤΟΥ 22",
               "locality": "Καλαμάτα",
               "phone": "2721083888"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721084098",
+              "name": "ΔΗΜΗΤΡΟΠΟΥΛΟΣ ΠΑΝΑΓΙΩΤΗΣ & ΣΙΑ Ο.Ε.",
+              "address": "ΜΑΚΕΔΟΝΙΑΣ 18",
+              "locality": "Καλαμάτα",
+              "phone": "2721084098"
             }
           ]
         }

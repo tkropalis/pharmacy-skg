@@ -7,29 +7,9 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-10-17T07:54:47.629Z"
+        "uploadedAt": "2026-10-18T18:11:37.188Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510229432",
-              "name": "ΣΙΜΙΤΣΗΣ ΑΡΙΣΤΕΙΔΗΣ",
-              "address": "ΔΡΑΓΟΥΜΗ ΊΩΝΟΣ 4Α",
-              "locality": "Καβάλα",
-              "phone": "2510229432"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΡΟΥΣΒΕΛΤ ΚΑΙ ΣΕΡΔΑΡΟΓΛΟΥ 8",
               "locality": "Καβάλα",
               "phone": "2510223619"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510229432",
+              "name": "ΣΙΜΙΤΣΗΣ ΑΡΙΣΤΕΙΔΗΣ",
+              "address": "ΔΡΑΓΟΥΜΗ ΊΩΝΟΣ 4Α",
+              "locality": "Καβάλα",
+              "phone": "2510229432"
             }
           ]
         }

@@ -7,29 +7,9 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-18T08:08:08.044Z"
+        "uploadedAt": "2026-10-18T18:10:53.842Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221082202",
-              "name": "ΒΑΘΗΣ ΕΥΑΓΓΕΛΟΣ",
-              "address": "ΦΑΒΙΕΡΟΥ 40 ΠΡΩΝ ΚΤΕΛ",
-              "locality": "Χαλκίδα",
-              "phone": "2221082202"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
@@ -48,40 +28,6 @@
               "address": "Ι. ΚΟΤΣΙΚΑ 1",
               "locality": "Κάρυστος",
               "phone": "2224023505"
-            }
-          ]
-        },
-        {
-          "kind": "saturday-extra",
-          "heading": "08:00 ΕΩΣ 14:00",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221022120",
-              "name": "ΚΥΛΕΡΤΖΗΣ ΧΡΗΣΤΟΣ",
-              "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
-              "locality": "Χαλκίδα",
-              "phone": "2221022120"
-            },
-            {
-              "pharmacyId": "2221028079",
-              "name": "ΠΑΥΛΟΥ ΑΝΤΩΝΗΣ",
-              "address": "ΓΑΖΕΠΗ ΗΡΑΚΛΗ 49",
-              "locality": "Χαλκίδα",
-              "phone": "2221028079"
-            },
-            {
-              "pharmacyId": "2221076486",
-              "name": "Σ.Φ. ΝΤΙΑΝΑ ΒΑΛΤΣΑΝΟΒΑ ΠΑΠΑΠΟΣΤΟΛΟΥ - ΜΑΡΤΙΝ ΠΑΠΑΠΟΣΤΟΛΟΥ ΟΕ",
-              "address": "ΑΡΕΘΟΥΣΗΣ 217",
-              "locality": "Χαλκίδα",
-              "phone": "2221076486"
             }
           ]
         },
@@ -156,6 +102,60 @@
               "address": "ΑΝΑΠΑΥΣΕΩΣ 30",
               "locality": "Χαλκίδα",
               "phone": "2221088061"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221082202",
+              "name": "ΒΑΘΗΣ ΕΥΑΓΓΕΛΟΣ",
+              "address": "ΦΑΒΙΕΡΟΥ 40 ΠΡΩΝ ΚΤΕΛ",
+              "locality": "Χαλκίδα",
+              "phone": "2221082202"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 14:00",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221022120",
+              "name": "ΚΥΛΕΡΤΖΗΣ ΧΡΗΣΤΟΣ",
+              "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
+              "locality": "Χαλκίδα",
+              "phone": "2221022120"
+            },
+            {
+              "pharmacyId": "2221028079",
+              "name": "ΠΑΥΛΟΥ ΑΝΤΩΝΗΣ",
+              "address": "ΓΑΖΕΠΗ ΗΡΑΚΛΗ 49",
+              "locality": "Χαλκίδα",
+              "phone": "2221028079"
+            },
+            {
+              "pharmacyId": "2221076486",
+              "name": "Σ.Φ. ΝΤΙΑΝΑ ΒΑΛΤΣΑΝΟΒΑ ΠΑΠΑΠΟΣΤΟΛΟΥ - ΜΑΡΤΙΝ ΠΑΠΑΠΟΣΤΟΛΟΥ ΟΕ",
+              "address": "ΑΡΕΘΟΥΣΗΣ 217",
+              "locality": "Χαλκίδα",
+              "phone": "2221076486"
             }
           ]
         },
