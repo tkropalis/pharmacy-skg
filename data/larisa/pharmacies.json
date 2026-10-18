@@ -13,7 +13,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.64201,
         "lon": 22.43284,
@@ -118,7 +118,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.6353034,
         "lon": 22.4278708,
@@ -160,7 +160,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.63922,
         "lon": 22.42035,
@@ -202,7 +202,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.6301,
         "lon": 22.42137,
@@ -223,7 +223,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.63628,
         "lon": 22.41714,
@@ -286,7 +286,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.6389219,
         "lon": 22.4145253,
@@ -307,7 +307,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.6385663,
         "lon": 22.4199753,
@@ -433,11 +433,32 @@
         "fsl"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.6380798,
         "lon": 22.4169333,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23178",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410254714",
+      "name": "ΚΟΣΣΥΒΑΣ ΓΕΩΡΓΙΟΣ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΧΡΥΣΟΣΤΟΜΟΥ & ΖΩΟΔ. ΠΗΓΗΣ 23 (Απέναντι από την Παναγία)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410254714",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 39.64363,
+        "lon": 22.41587,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23223",
         "source": "list",
         "precision": "exact"
       }
@@ -454,7 +475,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.63623,
         "lon": 22.4091,
@@ -475,7 +496,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.64043,
         "lon": 22.41862,
@@ -538,7 +559,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.64282,
         "lon": 22.41879,
@@ -559,7 +580,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.64193,
         "lon": 22.42205,
@@ -601,7 +622,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.64127,
         "lon": 22.41764,
@@ -643,7 +664,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.63575,
         "lon": 22.41822,
@@ -790,7 +811,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.65044,
         "lon": 22.433,
@@ -979,7 +1000,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.6384253,
         "lon": 22.419235,
@@ -1021,7 +1042,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.63308,
         "lon": 22.41911,
@@ -1063,7 +1084,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.63954,
         "lon": 22.4235,
@@ -1126,7 +1147,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.64269,
         "lon": 22.40821,
@@ -1152,6 +1173,27 @@
         "lat": 39.63807,
         "lon": 22.41476,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23049",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410533059",
+      "name": "ΑΙΚΑΤΕΡΙΝΗ Χ. ΚΩΣΤΟΠΟΥΛΟΥ",
+      "address": "ΑΓΙΟΥ ΧΑΡΑΛΑΜΠΟΥΣ 9 (Μετά την γέφυρα Αλκαζάρ)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410533059",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 39.6426,
+        "lon": 22.40983,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23225",
         "source": "list",
         "precision": "exact"
       }
@@ -1252,7 +1294,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.63838,
         "lon": 22.41317,
@@ -1336,7 +1378,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.640347,
         "lon": 22.42077,
@@ -1525,7 +1567,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.63296,
         "lon": 22.42687,
@@ -1651,7 +1693,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.63122,
         "lon": 22.44698,
@@ -1819,7 +1861,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.668652,
         "lon": 22.394744,
@@ -1850,6 +1892,27 @@
       }
     },
     {
+      "id": "2410611909",
+      "name": "ΦΡΥΔΑ ΠΑΡΑΣΚΕΥΗ ΚΑΙ ΣΙΑ Ε.Ε.",
+      "address": "ΘΕΟΔΩΡΑΚΟΠΟΥΛΟΥ 56 & ΔΡΟΣΗ – ΝΕΑ ΠΟΛΙΤΕΙΑ",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410611909",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 39.6157467,
+        "lon": 22.4137613,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23228",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410613798",
       "name": "Σ.Φ. ΡΩΜΑΝΟΠΟΥΛΟΥ Ε. - ΦΕΣΛΗΚΙΔΗ Θ. Ο.Ε.",
       "address": "ΚΑΡΑΟΛΗ-ΔΗΜΗΤΡΙΟΥ 31 (Πλατεία Νεάπολης)",
@@ -1861,7 +1924,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.62518,
         "lon": 22.39695,
@@ -1987,7 +2050,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.63327,
         "lon": 22.41616,
@@ -2050,7 +2113,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.6314608,
         "lon": 22.3881573,
@@ -2197,7 +2260,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.6322055,
         "lon": 22.3968712,
@@ -2218,7 +2281,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.63539,
         "lon": 22.41618,
@@ -2281,7 +2344,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.63454,
         "lon": 22.4183,
@@ -2323,7 +2386,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.63182,
         "lon": 22.41528,
@@ -2386,7 +2449,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.6307292,
         "lon": 22.3908971,
@@ -2470,7 +2533,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.722099,
         "lon": 22.39727,
@@ -2554,7 +2617,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.63616,
         "lon": 22.42595,
@@ -2596,7 +2659,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.560673,
         "lon": 22.465792,
@@ -2659,7 +2722,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.63982,
         "lon": 22.41384,
@@ -2785,7 +2848,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.294269,
         "lon": 22.382052,
@@ -2953,7 +3016,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.293849,
         "lon": 22.383583,
@@ -3068,6 +3131,27 @@
       }
     },
     {
+      "id": "2492023529",
+      "name": "ΚΑΜΒΟΥΚΟΥ ΧΡΙΣΤΙΝΑ ΑΝΝΑ",
+      "address": "ΣΤΡΑΤΗΓΟΥ ΤΟΤΣΙΟΥ 23",
+      "locality": "Τύρναβος",
+      "postcode": null,
+      "phone": "2492023529",
+      "groupId": "tyrnavos",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 39.738718,
+        "lon": 22.285778,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/20161",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2492024160",
       "name": "ΚΑΚΑΡΟΝΤΖΑΣ ΔΗΜΗΤΡΙΟΣ",
       "address": "ΚΑΡΑΓΑΤΣΗ 3",
@@ -3079,7 +3163,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.7393105,
         "lon": 22.2761796,
@@ -3247,7 +3331,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.745096,
         "lon": 22.359568,
@@ -3373,7 +3457,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.896209,
         "lon": 22.188256,
@@ -3457,7 +3541,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.895689,
         "lon": 22.18844,
@@ -3478,7 +3562,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.8933017,
         "lon": 22.1882592,
@@ -3646,7 +3730,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.895065,
         "lon": 22.183764,
@@ -3667,7 +3751,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.7186221,
         "lon": 22.7552863,

@@ -128,6 +128,27 @@
       }
     },
     {
+      "id": "2821027997",
+      "name": "ΚΑΛΦΑΚΗ ΕΥΤΥΧΙΑ / KALFAKI EFFIE",
+      "address": "ΚΥΔΩΝΙΑΣ 30/KYDONIAS 30",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821027997",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 35.5125777,
+        "lon": 24.0191311,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13553",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2821031110",
       "name": "Σ.Φ. ΤΖΕΙΡΑΝΗ ΕΥΑ ΤΖΕΪΡΑΝΗΣ ΣΤΕΛΙΟΣ/ΤΖΕΙRΑΝΙ EVA-TZEIRANIS STELIOS",
       "address": "ΚΑΛΑΜΑΚΙ (ΚΟΝΤΑ ΣΤΟ ΞΕΝΟΔΟΧΕΙΟ CORINA MARRE)/KALAMAKI-GALATAS",
@@ -270,6 +291,27 @@
         "lat": 35.5128773,
         "lon": 24.0209684,
         "ref": "https://chania.efhmeries.gr/Home/Details/13460",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821041594",
+      "name": "Σ.Φ. Σ. ΣΩΜΑΚΗ - Ε. ΜΙΧΑΗΛΕΛΛΗ & ΣΙΑ Ο.Ε/SΟΜΑΚΙ ST.-MICHAILELLI E.",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 8/EL. VENIZELOU 8",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821041594",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 35.5142321,
+        "lon": 24.0219848,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13554",
         "source": "list",
         "precision": "exact"
       }
@@ -622,7 +664,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.5174627,
         "lon": 23.9361317,
@@ -706,7 +748,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.5321675,
         "lon": 24.0764789,
@@ -979,7 +1021,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.4876131,
         "lon": 24.061287,
@@ -1000,7 +1042,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.480999,
         "lon": 24.0175658,
@@ -1294,7 +1336,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.4944787,
         "lon": 23.6527239,
@@ -1399,7 +1441,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.2294606,
         "lon": 23.6819128,

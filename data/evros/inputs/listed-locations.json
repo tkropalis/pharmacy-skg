@@ -29,6 +29,11 @@
     "lon": 25.8592314,
     "ref": "https://evros.efhmeries.gr/Home/Details/3894"
   },
+  "2551027077": {
+    "lat": 40.8459553,
+    "lon": 25.8743428,
+    "ref": "https://evros.efhmeries.gr/Home/Details/4346"
+  },
   "2551027127": {
     "lat": 40.8483377,
     "lon": 25.8877169,
@@ -93,6 +98,11 @@
     "lat": 40.8462422,
     "lon": 25.8732309,
     "ref": "https://evros.efhmeries.gr/Home/Details/4394"
+  },
+  "2551080077": {
+    "lat": 40.8458588,
+    "lon": 25.8758803,
+    "ref": "https://evros.efhmeries.gr/Home/Details/4096"
   },
   "2551083638": {
     "lat": 40.8584924,
@@ -178,6 +188,11 @@
     "lat": 41.5002425,
     "lon": 26.5320953,
     "ref": "https://evros.efhmeries.gr/Home/Details/4658"
+  },
+  "2552029302": {
+    "lat": 41.5038438,
+    "lon": 26.5325326,
+    "ref": "https://evros.efhmeries.gr/Home/Details/4876"
   },
   "2552112450": {
     "lat": 41.5029918,

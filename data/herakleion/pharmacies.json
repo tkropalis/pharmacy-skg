@@ -349,7 +349,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.3392512,
         "lon": 25.1360495,
@@ -396,6 +396,27 @@
         "lat": 35.334419,
         "lon": 25.1397734,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57844",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810223955",
+      "name": "ΛΥΔΑΚΗ ΛΕΩΝΙΔΙΤΣΑ",
+      "address": "ΗΡΟΔΟΤΟΥ 128 ΝΕΑ ΑΛΙΚΑΡΝΑΣΣΟΣ",
+      "locality": "Νέα Αλικαρνασσός",
+      "postcode": null,
+      "phone": "2810223955",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 35.3390665,
+        "lon": 25.1584822,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57975",
         "source": "list",
         "precision": "exact"
       }
@@ -622,7 +643,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.3266301,
         "lon": 25.1421313,
@@ -774,6 +795,27 @@
         "lat": 35.330256,
         "lon": 25.1365563,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57909",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810239094",
+      "name": "ΣΑΡΙΔΑΚΗΣ ΜΙΧΑΗΛ",
+      "address": "ΠΑΤΕΛΑΡΟΥ 25 & ΑΤΣΙΠΑΔΩΝ ΠΑΡ. ΣΜΠΩΚΟΥ EKO ΜΑΣΤΑΜΠΑΣ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810239094",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 35.3263763,
+        "lon": 25.1318091,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57973",
         "source": "list",
         "precision": "exact"
       }
@@ -1000,7 +1042,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.3299207,
         "lon": 25.1223774,
@@ -1262,6 +1304,27 @@
       }
     },
     {
+      "id": "2810282204",
+      "name": "ΛΥΔΑΚΗ Γ. ΟΛΓΑ Ε.Ε.",
+      "address": "ΠΛΑΤΕΙΑ ΝΙΚΗΦΟΡΟΥ ΦΩΚΑΜΕΪΝΤΑΝΙ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810282204",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 35.3387056,
+        "lon": 25.1326739,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57969",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810282439",
       "name": "ΣΑΛΟΥΣΤΡΟΥ ΕΛΕΝΗ",
       "address": "ΣΤΥΛΙΑΝΟΥ ΓΙΑΜΑΛΑΚΗ 8",
@@ -1315,7 +1378,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.3374427,
         "lon": 25.1301255,
@@ -1756,7 +1819,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.3374458,
         "lon": 25.1221711,
@@ -2438,6 +2501,27 @@
       }
     },
     {
+      "id": "2810761123",
+      "name": "ΠΑΤΙΤΑΚΗΣ ΑΝΤΩΝΗΣ",
+      "address": "ΚΟΚΚΙΝΗ ΧΑΝΙ ΣΤΑΣΗ ΧΑΤΖΗ",
+      "locality": "Καρτερός, Επισκοπή, Βαθειά, Κοκκίνη Χάνι, Γούρνες, Γούβες",
+      "postcode": null,
+      "phone": "2810761123",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 35.3306826,
+        "lon": 25.2563374,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/59412",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810761250",
       "name": "ΠΑΤΙΤΑΚΗΣ ΑΝΤΩΝΙΟΣ & ΣΙΑ Ε.Ε.",
       "address": "ΓΟΥΡΝΕΣ ΠΕΔΙΑΔΟΣ ΗΡΑΚΛΕΙΟΥ",
@@ -2701,7 +2785,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.3142435,
         "lon": 25.0920938,
@@ -2911,7 +2995,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.0511203,
         "lon": 24.8751267,
@@ -3000,6 +3084,27 @@
         "lat": 35.0511268,
         "lon": 24.8739641,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/60346",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2892023282",
+      "name": "ΣΤΡΑΤΙΔΑΚΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΓΑΛΙΑ",
+      "locality": "ΓΑΛΙΑ",
+      "postcode": null,
+      "phone": "2892023282",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 35.0760938,
+        "lon": 24.8682531,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/60381",
         "source": "list",
         "precision": "exact"
       }
@@ -3247,7 +3352,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.0730386,
         "lon": 24.763541,
@@ -3373,7 +3478,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.3153174,
         "lon": 25.3937298,
@@ -3394,7 +3499,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.331734,
         "lon": 25.3452693,
@@ -3520,7 +3625,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.2837755,
         "lon": 25.4631057,
@@ -3604,7 +3709,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.2926533,
         "lon": 25.4320195,
@@ -3751,7 +3856,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.147913,
         "lon": 25.2653693,

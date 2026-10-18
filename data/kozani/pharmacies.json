@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2461022332",
+      "name": "Σ.Φ ΣΚΛΙΒΑΝΟΣ ΠΑΝΑΓΙΩΤΗΣ-ΧΑΡΑΜΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ο.Ε",
+      "address": "ΦΙΛΊΠΠΟΥ Β 39",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461022332",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 40.3025761,
+        "lon": 21.7997195,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6579",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2461022452",
       "name": "ΚΩΤΟΥΛΑΣ ΔΗΜΗΤΡΙΟΣ",
       "address": "ΧΑΡΙΣΗ ΠΑΥΛΟΥ 20",
@@ -76,7 +97,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.3026887,
         "lon": 21.7884083,
@@ -475,7 +496,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.3022471,
         "lon": 21.7861325,
@@ -580,7 +601,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.3005239,
         "lon": 21.7890545,
@@ -622,13 +643,13 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-24",
       "location": {
-        "lat": 40.296106,
-        "lon": 21.792936,
-        "source": "nominatim",
-        "precision": "street",
-        "ref": "ΟΛΥΜΠΟΥ 5, Κοζάνη"
+        "lat": 40.2986059,
+        "lon": 21.7906126,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6283",
+        "source": "list",
+        "precision": "exact"
       }
     },
     {
@@ -643,7 +664,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.2999642,
         "lon": 21.7913391,
@@ -895,7 +916,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.512248,
         "lon": 21.6769504,
@@ -958,7 +979,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.5140893,
         "lon": 21.6800212,
@@ -1042,7 +1063,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.5154229,
         "lon": 21.680099,
@@ -1063,7 +1084,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.5155296,
         "lon": 21.6797491,
@@ -1147,7 +1168,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.5126475,
         "lon": 21.6774642,
@@ -1168,7 +1189,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.5137072,
         "lon": 21.67975,

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-24",
+  "groups": [
+    {
+      "id": "chania",
+      "name": "Χανιά",
+      "source": {
+        "url": "https://chania.efhmeries.gr/",
+        "uploadedAt": "2026-10-18T08:11:19.385Z"
+      },
+      "sections": [
+        {
+          "kind": "saturday-extra",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821027997",
+              "name": "ΚΑΛΦΑΚΗ ΕΥΤΥΧΙΑ / KALFAKI EFFIE",
+              "address": "ΚΥΔΩΝΙΑΣ 30/KYDONIAS 30",
+              "locality": "Χανιά",
+              "phone": "2821027997"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821027997",
+              "name": "ΚΑΛΦΑΚΗ ΕΥΤΥΧΙΑ / KALFAKI EFFIE",
+              "address": "ΚΥΔΩΝΙΑΣ 30/KYDONIAS 30",
+              "locality": "Χανιά",
+              "phone": "2821027997"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821064460",
+              "name": "ΓΝΑΦΑΚΗ ΕΦΗ/GΝΑFΑΚΙ EFFIE",
+              "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 90,ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΑΚΡΩΤΗΡΙΟΥ/ΕL. VENIZELOU 90, KOUNOUPIDIANA",
+              "locality": "Ακρωτήρι",
+              "phone": "2821064460"
+            },
+            {
+              "pharmacyId": "2821089222",
+              "name": "ΔΗΜΗΤΡΟΥΛΑΚΗΣ ΠΑΝΑΓΙΩΤΗΣ/DΙΜΙΤRΟULΑΚΙS PANAGIOTIS",
+              "address": "ΠΛ. ΜΑΡΙΔΑΚΗ & ΕΛΛΗΣ/ΡL.ΜΑRΙDΑΚΙ & ELLIS",
+              "locality": "Σούδα",
+              "phone": "2821089222"
+            },
+            {
+              "pharmacyId": "2821090031",
+              "name": "ΚΑΤΣΑΡΑΚΗΣ ΕΜΜΑΝΟΥΗΛ/ΚΑΤSΑRΑΚΙS EMMANOYEL",
+              "address": "ΑΓΙΟΥ ΕΛΕΥΘΕΡΙΟΥ 29 , ΜΟΥΡΝΙΕΣ (ΕΝΑΝΤΙ ΝΟΣΟΚΟΜΕΙΟΥ)/ΑGΙΟU ELEFTHERIOU 29",
+              "locality": "Μουρνιές",
+              "phone": "2821090031"
+            },
+            {
+              "pharmacyId": "2821060078",
+              "name": "Σ.Φ. ΜΠΟΤΩΝΑΚΗΣ Ι.-ΚΑΤΑΚΗΣ Π./S.F. MPOTONAKIS I-KATAKIS P.",
+              "address": "ΑΓΙΑ ΜΑΡΙΝΑ ΠΛΑΤΑΝΙΑΣ ΧΑΝΙΑ (ΔΙΠΛΑ ΣΕ ARTEMIS BEACH BAR)/AGIA MARINA",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821060078"
+            },
+            {
+              "pharmacyId": "2821041594",
+              "name": "Σ.Φ. Σ. ΣΩΜΑΚΗ - Ε. ΜΙΧΑΗΛΕΛΛΗ & ΣΙΑ Ο.Ε/SΟΜΑΚΙ ST.-MICHAILELLI E.",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 8/EL. VENIZELOU 8",
+              "locality": "Χανιά",
+              "phone": "2821041594"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "6948462411",
+              "name": "ΔΑΜΟΡΑΚΗΣ ΕΥΤΥΧΗΣ/DΑΜΟRΑΚΙS EYTIXIS",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "6948462411"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
+          "hours": {
+            "from": "08:30",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2822022182",
+              "name": "ΜΑΖΟΚΟΠΑΚΗΣ ΙΩΑΝΝΗΣ/ΜΑΖΟΚΟΡΑΚΙS IOANNIS",
+              "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 143 ΚΑΣΤΕΛΙ/ΙRΟΟΝ POLITEXNIOU 143 KASTELI",
+              "locality": "Δήμος Κισσάμου",
+              "phone": "2822022182"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

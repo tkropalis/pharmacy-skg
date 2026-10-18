@@ -34,7 +34,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 36.3413317,
         "lon": 28.198454,
@@ -55,7 +55,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 36.3612576,
         "lon": 28.1181244,
@@ -207,6 +207,27 @@
         "lat": 36.44814,
         "lon": 28.2244947,
         "ref": "https://dodecanese.efhmeries.gr/Home/Details/29769",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241024900",
+      "name": "ΚΑΤΣΟΥΡΑΚΗΣ ΜΙΧΑΗΛ / KATSOURAKIS MIHAIL",
+      "address": "ΒΥΡΩΝΟΣ & ΒΕΝΕΤΟΚΛΕΩΝ / VYRONOS & VENETOKLEON",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241024900",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 36.437791,
+        "lon": 28.2272188,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29782",
         "source": "list",
         "precision": "exact"
       }
@@ -748,7 +769,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 36.2951904,
         "lon": 28.1624606,
@@ -853,7 +874,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 36.3890666,
         "lon": 28.2145751,
@@ -879,6 +900,27 @@
         "lat": 36.4252552,
         "lon": 28.2121924,
         "ref": "https://dodecanese.efhmeries.gr/Home/Details/29767",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241065872",
+      "name": "ΠΑΠΑΜΙΧΑΗΛ ΒΑΣΙΛΕΙΟΣ / PAPAMICHAIL VASILIOS",
+      "address": "Ι. ΤΣΑΒΑΡΗ 7 / I. TSAVARI 7",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241065872",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 36.4264545,
+        "lon": 28.211637,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29781",
         "source": "list",
         "precision": "exact"
       }
@@ -1420,7 +1462,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 36.4162884,
         "lon": 28.1562341,
@@ -1892,6 +1934,27 @@
       }
     },
     {
+      "id": "2242028959",
+      "name": "ΚΙΛΙΜΑΤΟΣ ΗΛΙΑΣ / KILIMATOS ILIAS",
+      "address": "ΛΕΩΦ. ΕΛ. ΒΕΝΙΖΕΛΟΥ 42 / LEOF. EL. VENIZELOU 42",
+      "locality": "Κως",
+      "postcode": null,
+      "phone": "2242028959",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 36.8922542,
+        "lon": 27.287537,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29297",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2242041642",
       "name": "ΧΑΤΖΗΠΑΝΤΣΟΥ ΕΛΕΝΗ / CHATZIPANTSOU ELENI",
       "address": "ΠΥΛΙ / PYLI",
@@ -1966,7 +2029,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 36.7458068,
         "lon": 26.9693495,
@@ -2029,7 +2092,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 36.8764961,
         "lon": 27.206106,
@@ -2197,7 +2260,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 36.2143827,
         "lon": 28.116279,
@@ -2281,7 +2344,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 36.0900222,
         "lon": 28.0856787,
@@ -2386,7 +2449,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 36.054353,
         "lon": 27.9705901,
@@ -2407,7 +2470,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 36.0754767,
         "lon": 28.0539596,
@@ -2428,7 +2491,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 35.5082305,
         "lon": 27.2157383,
@@ -2533,7 +2596,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 36.2256667,
         "lon": 27.8592298,
@@ -2575,7 +2638,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 36.6154201,
         "lon": 27.837024,
@@ -2596,7 +2659,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 36.2600547,
         "lon": 27.9663323,

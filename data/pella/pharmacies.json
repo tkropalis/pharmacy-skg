@@ -139,7 +139,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.8001902,
         "lon": 22.0491762,
@@ -475,7 +475,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.7662531,
         "lon": 22.1557555,
@@ -585,6 +585,27 @@
         "lat": 40.7890434,
         "lon": 22.4103785,
         "ref": "https://pella.efhmeries.gr/Home/Details/4725",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2382024753",
+      "name": "ΣΚΡΕΚΑ ΘΕΟΓΝΩΣΙΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΤΣΑΚΜΑΚΗ 72 ΕΝΑΝΤΙ ΕΟΠΥΥ",
+      "locality": "Γιαννιτσά",
+      "postcode": null,
+      "phone": "2382024753",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 40.7982196,
+        "lon": 22.4117478,
+        "ref": "https://pella.efhmeries.gr/Home/Details/4742",
         "source": "list",
         "precision": "exact"
       }
@@ -790,7 +811,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.7909411,
         "lon": 22.4113611,
@@ -853,7 +874,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.6855995,
         "lon": 22.3034577,
@@ -1126,7 +1147,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.9740761,
         "lon": 22.061103,

@@ -202,7 +202,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.5276163,
         "lon": 22.2027065,
@@ -517,7 +517,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.5266924,
         "lon": 22.2052137,
@@ -632,6 +632,27 @@
       }
     },
     {
+      "id": "2331066755",
+      "name": "ΜΙΛΤΙΑΔΗΣ Κ ΝΙΚΟΛΑΪΔΗΣ",
+      "address": "ΚΑΡΑΤΑΣΟΥ 19 - Κοντά στο 6ο Δημοτικό σχολείο",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331066755",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 40.528074,
+        "lon": 22.2039344,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6222",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2331066812",
       "name": "ΠΑΝΤΑΖΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΟΥ ΜΙΧΑΗΛ",
       "address": "ΑΪΒΑΛΙΟΥ 2 & ΑΚΡΟΠΟΛΕΩΣ ΚΕΝΤΡΟ ΠΡΟΜΗΘΕΑ",
@@ -716,6 +737,27 @@
       }
     },
     {
+      "id": "2331073324",
+      "name": "ΑΝΑΣΤΑΣΙΟΥ ΣΟΦΙΑ & ΣΙΑ Ο.Ε.",
+      "address": "ΠΙΕΡΙΩΝ 7 (απέναντι από βενζινάδικο Γαλάνη)",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331073324",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 40.5194648,
+        "lon": 22.2058071,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6221",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2331074374",
       "name": "ΧΑΡΑΛΑΜΠΙΔΟΥ ΜΑΡΙΑ",
       "address": "ΤΡΕΜΠΕΣΙΝΑΣ 21",
@@ -748,7 +790,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.5335731,
         "lon": 22.2062163,
@@ -769,7 +811,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.5506235,
         "lon": 22.248685,
@@ -811,7 +853,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.6331765,
         "lon": 22.0712714,
@@ -837,6 +879,27 @@
         "lat": 40.6267951,
         "lon": 22.0711161,
         "ref": "https://imathia.efhmeries.gr/Home/Details/5775",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2332022269",
+      "name": "ΑΝΔΡΕΑΔΗΣ Π. ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "ΔΗΜΑΡΧΙΑΣ 17",
+      "locality": "Νάουσα",
+      "postcode": null,
+      "phone": "2332022269",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 40.6299993,
+        "lon": 22.0678325,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/5783",
         "source": "list",
         "precision": "exact"
       }
@@ -1147,7 +1210,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.6270335,
         "lon": 22.4388605,
@@ -1189,7 +1252,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.6230174,
         "lon": 22.4405378,

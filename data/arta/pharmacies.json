@@ -422,6 +422,27 @@
       }
     },
     {
+      "id": "2681074927",
+      "name": "ΓΕΙΤΟΝΑΣ",
+      "address": "ΠΡΙΟΒΟΛΟΥ 1",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681074927",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 39.1621695,
+        "lon": 20.9850454,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2433",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681075241",
       "name": "ΚΥΡΙΑΚΗ ΜΑΡΕΤΗ ΚΑΙ ΣΙΑ ΕΕ",
       "address": "ΓΡΙΜΠΟΒΟΥ 15",
@@ -664,7 +685,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.268112,
         "lon": 21.27949,

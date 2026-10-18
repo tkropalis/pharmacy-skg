@@ -34,7 +34,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 37.5105775,
         "lon": 22.3726433,
@@ -202,11 +202,32 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 37.508609,
         "lon": 22.3734217,
         "ref": "https://arkadia.efhmeries.gr/Home/Details/5069",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710227495",
+      "name": "ΠΑΠΑΝΙΚΟΛΑΟΥ Ν. ΚΥΡΙΑΚΟΣ",
+      "address": "ΔΗΜΗΤΡΑΚΟΠΟΥΛΟΥ 11",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710227495",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 37.513319,
+        "lon": 22.3733156,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5098",
         "source": "list",
         "precision": "exact"
       }
@@ -244,7 +265,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 37.5125486,
         "lon": 22.3716968,
@@ -349,7 +370,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 37.5101494,
         "lon": 22.3749398,
@@ -391,7 +412,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 37.5097434,
         "lon": 22.373709,
@@ -412,7 +433,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 37.5114741,
         "lon": 22.3722054,
@@ -496,7 +517,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 37.4036411,
         "lon": 22.7228236,
@@ -601,7 +622,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 37.1677509,
         "lon": 22.8579221,
@@ -664,7 +685,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 37.4007063,
         "lon": 22.1355298,
@@ -706,7 +727,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 37.6845416,
         "lon": 22.2955302,
@@ -748,7 +769,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 37.7322838,
         "lon": 21.9594427,

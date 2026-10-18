@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-24",
+  "groups": [
+    {
+      "id": "pella",
+      "name": "Πέλλα",
+      "source": {
+        "url": "https://pella.efhmeries.gr/",
+        "uploadedAt": "2026-10-18T08:10:32.292Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2381089588",
+              "name": "ΓΩΝΙΑΔΗ ΛΙΑΝΑ",
+              "address": "24ΗΣ ΙΟΥΛΙΟΥ 8-10",
+              "locality": "Σκύδρα",
+              "phone": "2381089588"
+            },
+            {
+              "pharmacyId": "2381023410",
+              "name": "Σ.Φ. ΑΓΓΕΛΟΥ ΜΑΡΙΑ-ΖΩΗ - ΑΓΓΕΛΟΥ ΑΓΓΕΛΟΣ",
+              "address": "ΕΓΝΑΤΙΑΣ 5",
+              "locality": "Έδεσσα",
+              "phone": "2381023410"
+            },
+            {
+              "pharmacyId": "2384022430",
+              "name": "Σ.Φ. ΤΣΑΚΩΝΑ ΑΙΚΑΤΕΡΙΝΗ - ΤΟΥΜΑΝΙΔΗΣ ΑΛΕΞΑΝΔΡΟΣ",
+              "address": "ΧΡΥΣ. ΣΜΥΡΝΗΣ 8",
+              "locality": "Αριδαία",
+              "phone": "2384022430"
+            },
+            {
+              "pharmacyId": "2382024753",
+              "name": "ΣΚΡΕΚΑ ΘΕΟΓΝΩΣΙΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+              "address": "ΤΣΑΚΜΑΚΗ 72 ΕΝΑΝΤΙ ΕΟΠΥΥ",
+              "locality": "Γιαννιτσά",
+              "phone": "2382024753"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382061028",
+              "name": "Σ.Φ. ΧΡΥΣΑΓΗΣ ΧΑΡΑΛ. - ΕΜΜΑΝΟΥΗΛΙΔΗΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΒΑΣ. ΠΑΥΛΟΥ 75",
+              "locality": "Κρύα Βρύση",
+              "phone": "2382061028"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382028400",
+              "name": "ΣΤΑΥΡΟΠΟΥΛΟΣ ΣΤΑΥΡΟΣ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 140",
+              "locality": "Γιαννιτσά",
+              "phone": "2382028400"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

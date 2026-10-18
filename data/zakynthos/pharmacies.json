@@ -191,6 +191,27 @@
       }
     },
     {
+      "id": "2695044061",
+      "name": "ΜΑΝΕΣΗ ΣΤΥΛΙΑΝΗ",
+      "address": "ΜΟΥΤΖΑΝ ΜΑΡΤΙΝΕΓΚΟΥ 24 (ΠΡΩΗΝ ΤΑΒΟΥΛΑΡΗ)",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695044061",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 37.7822478,
+        "lon": 20.895684,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4261",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2695044153",
       "name": "ΦΡΑΓΚΟΓΙΑΝΝΗ ΕΛΙΣΑΒΕΤ & ΡΟΥΣΙΑΝΟΥ ΓΕΩΡΓΙΑ Ο.Ε.",
       "address": "ΚΑΛΒΟΥ ΑΝΔΡΕΑ 80",

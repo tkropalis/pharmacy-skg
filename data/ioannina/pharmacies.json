@@ -65,6 +65,27 @@
       }
     },
     {
+      "id": "2651021808",
+      "name": "ΓΚΟΓΚΟΥ ΓΕΩΡΓΙΑ",
+      "address": "ΑΓ. ΜΑΡΙΝΑΣ 5ΟΒ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651021808",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 39.6644438,
+        "lon": 20.8527869,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5039",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651022100",
       "name": "ΠΑΠΑΜΙΧΑΗΛ ΓΕΩΡΓΙΟΣ",
       "address": "ΠΛΑΤΕΙΑ ΛΑΜΠΡΟΥ ΤΖΑΒΕΛΛΑ 1, ΤΖΑΜΙ ΚΑΛΟΥΤΣΙΑΝΗΣ",
@@ -611,6 +632,27 @@
       }
     },
     {
+      "id": "2651043221",
+      "name": "ΜΠΛΕΤΣΟΥ ΣΠΥΡΙΔΟΥΛΑ",
+      "address": "ΑΓΙΑΣ ΣΟΦΙΑΣ 15, ΑΝΑΤΟΛΗ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651043221",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 39.6343451,
+        "lon": 20.8672941,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5041",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651045233",
       "name": "Σ.Φ. ΠΑΝΟΠΟΥΛΟΥ ΑΦΡΟΔΙΤΗ - ΜΗΤΣΙΟΣ ΙΩΑΝΝΗΣ",
       "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 35",
@@ -622,7 +664,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.660488,
         "lon": 20.8490362,
@@ -643,13 +685,13 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-24",
       "location": {
-        "lat": 39.65931,
-        "lon": 20.850738,
-        "source": "nominatim",
-        "precision": "exact",
-        "ref": "ΔΩΔΩΝΗΣ 26, Ιωάννινα"
+        "lat": 39.6595074,
+        "lon": 20.8507267,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5038",
+        "source": "list",
+        "precision": "exact"
       }
     },
     {
@@ -769,7 +811,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 39.6593741,
         "lon": 20.8448018,

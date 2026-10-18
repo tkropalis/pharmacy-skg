@@ -128,6 +128,27 @@
       }
     },
     {
+      "id": "2551027077",
+      "name": "ΜΥΡΜΙΛΙΑΓΚΟΣ ΝΙΚΟΛΑΟΣ",
+      "address": "Ελ. Βενιζέλου 46 (όπισθεν Δημαρχείου)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551027077",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 40.8459553,
+        "lon": 25.8743428,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4346",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551027127",
       "name": "ΤΕΡΖΗΣ ΑΝΑΣΤΑΣΙΟΣ",
       "address": "Λ. Δημοκρατίας 48 (περιοχή Σκλαβενίτη)",
@@ -401,6 +422,27 @@
       }
     },
     {
+      "id": "2551080077",
+      "name": "ΠΑΠΑΔΗΜΗΤΡΙΟΥ ΒΑΣΙΛΙΚΗ",
+      "address": "14ης Μαΐου 8",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551080077",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 40.8458588,
+        "lon": 25.8758803,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4096",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551083638",
       "name": "Σ.Φ. ΠΑΓΙΑΝΝΙΔΟΥ Θ.-ΚΟΥΚΟΥΒΗ Ι.",
       "address": "Ηροδότου & Προκόπη 14 (προς Παλαγία)",
@@ -475,7 +517,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 41.4961317,
         "lon": 26.5342729,
@@ -496,7 +538,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 41.5026371,
         "lon": 26.5325528,
@@ -727,7 +769,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 41.5047733,
         "lon": 26.5327418,
@@ -753,6 +795,27 @@
         "lat": 41.5002425,
         "lon": 26.5320953,
         "ref": "https://evros.efhmeries.gr/Home/Details/4658",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2552029302",
+      "name": "ΖΟΥΠΙΔΟΥ ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 211",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552029302",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 41.5038438,
+        "lon": 26.5325326,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4876",
         "source": "list",
         "precision": "exact"
       }
@@ -832,7 +895,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 41.3497126,
         "lon": 26.4936993,
@@ -895,7 +958,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 41.3502494,
         "lon": 26.4959924,
@@ -958,7 +1021,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 41.1947643,
         "lon": 26.3052864,
@@ -1084,7 +1147,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 41.0273977,
         "lon": 26.2963052,
@@ -1210,7 +1273,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 40.8951274,
         "lon": 26.1698018,

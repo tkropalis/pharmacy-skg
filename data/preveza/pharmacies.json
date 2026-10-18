@@ -170,6 +170,27 @@
       }
     },
     {
+      "id": "2682026007",
+      "name": "ΚΑΤΣΑΜΩΡΗ ΕΛΕΑΝΑ",
+      "address": "ΣΠΗΛΙΑΔΟΥ 13 (ΔΙΠΛΑ ΣΤΗΝ ΔΕΗ)",
+      "locality": "Πρέβεζα",
+      "postcode": null,
+      "phone": "2682026007",
+      "groupId": "preveza",
+      "sources": [
+        "iteq-preveza"
+      ],
+      "firstSeen": "2026-10-24",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 38.959265,
+        "lon": 20.751716,
+        "ref": "https://preveza.efhmeries.gr/Home/Details/1419",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2682026146",
       "name": "ΡΟΥΣΣΟΥ ΚΥΡΙΑΚΗ",
       "address": "Π. ΤΣΑΛΔΑΡΗ 62",
