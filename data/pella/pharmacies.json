@@ -338,6 +338,27 @@
       }
     },
     {
+      "id": "2381028673",
+      "name": "ΙΩΑΝΝΙΔΟΥ ΧΡΙΣΤΙΝΑ",
+      "address": "ΦΛΩΡΙΝΗΣ 7",
+      "locality": "Έδεσσα",
+      "postcode": null,
+      "phone": "2381028673",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 40.801313,
+        "lon": 22.0460709,
+        "ref": "https://pella.efhmeries.gr/Home/Details/6217",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2381082057",
       "name": "ΒΕΧΤΣΑΛΗΣ ΣΩΤΗΡΙΟΣ",
       "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 29",
@@ -349,7 +370,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 40.7694443,
         "lon": 22.1562914,
@@ -501,6 +522,27 @@
         "lat": 40.7674713,
         "lon": 22.1556041,
         "ref": "https://pella.efhmeries.gr/Home/Details/5991",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2382022735",
+      "name": "ΜΑΝΔΑΛΤΣΗ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΚΟΛΟΚΟΤΡΩΝΗ 15 ΛΑΪΚΗ ΑΓΟΡΑ",
+      "locality": "Γιαννιτσά",
+      "postcode": null,
+      "phone": "2382022735",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 40.7978838,
+        "lon": 22.4113896,
+        "ref": "https://pella.efhmeries.gr/Home/Details/4744",
         "source": "list",
         "precision": "exact"
       }
@@ -874,7 +916,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 40.6855995,
         "lon": 22.3034577,
@@ -1084,7 +1126,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 40.9755226,
         "lon": 22.0616408,

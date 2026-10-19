@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
+      "id": "2541021050",
+      "name": "ΨΩΜΙΑΔΗΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "28ης ΟΚΤΩΒΡΙΟΥ 64",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541021050",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 41.1382397,
+        "lon": 24.8878637,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3648",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2541022485",
       "name": "ΡΑΝΟΣ ΑΛΕΞΑΝΔΡΟΣ",
       "address": "40 ΕΚΚΛΗΣΙΩΝ 3",
@@ -401,6 +422,27 @@
       }
     },
     {
+      "id": "2541068825",
+      "name": "ΤΟΠΑΛΙΔΗΣ ΕΥΘΥΜΙΟΣ",
+      "address": "ΒΕΝΙΖΕΛΟΥ 100",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541068825",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 41.1382371,
+        "lon": 24.8849234,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3649",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2541070661",
       "name": "ΑΘΑΝΑΣΙΑΔΟΥ ΕΛΕΝΗ",
       "address": "28ΗΣ ΟΚΤΩΒΡΊΟΥ 354",
@@ -501,6 +543,27 @@
         "lat": 41.1343718,
         "lon": 24.8875517,
         "ref": "https://xanthi.efhmeries.gr/Home/Details/3626",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541083399",
+      "name": "ΣΤΡΑΤΟΓΙΑΝΝΑΚΟΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΑΝΔΡ. ΔΗΜΗΤΡΙΟΥ 63",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541083399",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 41.1325542,
+        "lon": 24.8854579,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3650",
         "source": "list",
         "precision": "exact"
       }

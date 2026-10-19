@@ -107,6 +107,27 @@
       }
     },
     {
+      "id": "2331023132",
+      "name": "ΜΑΣΟΥΡΑ ΑΙΚΑΤΕΡΙΝΗ & ΣΙΑ Ε.Ε.",
+      "address": "ΒΕΝΙΖΕΛΟΥ 22",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331023132",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 40.5250306,
+        "lon": 22.204432,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6172",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2331023360",
       "name": "ΠΑΠΑΡΗ ΧΡ. ΟΛΥΜΠΙΑ",
       "address": "Λ. ΣΤΡΑΤΟΥ 27 -Έναντι Σκλαβενίτη",
@@ -170,6 +191,27 @@
       }
     },
     {
+      "id": "2331024534",
+      "name": "ΚΟΡΔΑΤΟΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΠΛΑΤΆΝΩΝ 1",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331024534",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 40.52315,
+        "lon": 22.2023882,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6185",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2331025130",
       "name": "ΚΑΛΟΚΥΡΗ ΕΛΙΣΑΒΕΤ",
       "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 28",
@@ -223,7 +265,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 40.5178304,
         "lon": 22.2060922,
@@ -811,7 +853,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 40.5506235,
         "lon": 22.248685,
@@ -916,7 +958,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 40.6301029,
         "lon": 22.0698393,
@@ -1189,7 +1231,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 40.6273733,
         "lon": 22.4387028,

@@ -149,6 +149,27 @@
       }
     },
     {
+      "id": "2665024409",
+      "name": "ΜΑΣΤΟΡΑΣ ΞΕΝΟΦΩΝ",
+      "address": "8ΗΣ ΔΕΚΕΜΒΡΙΟΥ 8",
+      "locality": "Ηγουμενίτσα",
+      "postcode": null,
+      "phone": "2665024409",
+      "groupId": "thesprotia",
+      "sources": [
+        "iteq-thesprotia"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 39.501196,
+        "lon": 20.2639462,
+        "ref": "https://thesprotia.efhmeries.gr/Home/Details/408",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2665024540",
       "name": "Σ.Φ. ΠΑΠΠΑΣ Π. ΠΑΠΠΑΣ Δ.",
       "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΕΩΣ 50",

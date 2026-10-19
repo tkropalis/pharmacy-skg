@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-18T18:10:59.790Z"
+        "uploadedAt": "2026-10-19T09:01:01.588Z"
       },
       "sections": [
         {
@@ -34,46 +34,6 @@
               "address": "ΠΛΑΤ. ΕΛΕΥΘΕΡΙΑΣ 1",
               "locality": "Διδυμότειχο",
               "phone": "2553023466"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "14:30-22:00",
-          "hours": {
-            "from": "14:30",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551084110",
-              "name": "ΑΠΟΣΤΟΛΟΥ ΙΩΑΝΝΗΣ",
-              "address": "Πατριάρχου Κυρίλλου 113 (γεφ. Καλλιθέας-Παπαν/σίου)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551084110"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551035777",
-              "name": "ΚΑΡΑΚΥΡΙΟΣ ΣΤΕΦΑΝΟΣ",
-              "address": "Λεωφ. Δημοκρατίας 381",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551035777"
             }
           ]
         },
@@ -109,6 +69,46 @@
               "address": "ΝΙΚΗΣ 19",
               "locality": "Τυχερό, Προβατώνας",
               "phone": "2554042042"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:30-22:00",
+          "hours": {
+            "from": "14:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551036511",
+              "name": "ΤΣΟΛΑΚΗ ΑΡΧΟΝΤΙΑ",
+              "address": "Διον. Σολωμού 15 (δρόμος ΔΕΥΑΑ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551036511"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551035777",
+              "name": "ΚΑΡΑΚΥΡΙΟΣ ΣΤΕΦΑΝΟΣ",
+              "address": "Λεωφ. Δημοκρατίας 381",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551035777"
             }
           ]
         }

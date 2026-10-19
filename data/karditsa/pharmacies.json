@@ -317,6 +317,27 @@
       }
     },
     {
+      "id": "2441025655",
+      "name": "ΧΑΤΖΟΠΟΥΛΟΥ ΛΕΥΚΗ",
+      "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 44",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441025655",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 39.3670834,
+        "lon": 21.9248385,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3780",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2441025689",
       "name": "ΚΑΤΣΙΟΥΛΑ ΑΠΟΣΤΟΛΙΑ",
       "address": "ΤΕΡΜΑ ΤΑΥΡΩΠΟΥ (ΝΟΣΟΚΟΜΕΙΟ)",
@@ -585,6 +606,27 @@
         "lat": 39.3636366,
         "lon": 21.9239331,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3755",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441073803",
+      "name": "ΜΠΑΛΟΓΙΑΝΝΗ Β. ΝΙΚΟΛΕΤΤΑ Ο.Ε.",
+      "address": "ΚΑΡΑΙΣΚΑΚΗ 23",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441073803",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 39.363627,
+        "lon": 21.9209066,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3779",
         "source": "list",
         "precision": "exact"
       }

@@ -7,29 +7,9 @@
       "name": "Δράμα",
       "source": {
         "url": "https://drama.efhmeries.gr/",
-        "uploadedAt": "2026-10-18T18:10:47.696Z"
+        "uploadedAt": "2026-10-19T09:00:47.036Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2521032256",
-              "name": "ΔΙΓΚΑ ΜΑΡΙΑ",
-              "address": "ΣΜΥΡΝΗΣ 34",
-              "locality": "Δράμα",
-              "phone": "2521032256"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -47,6 +27,26 @@
               "address": "ΒΕΛΙΣΣΑΡΙΟΥ & ΣΚΟΡΔΑ 2",
               "locality": "Δράμα",
               "phone": "2521037705"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521032256",
+              "name": "ΔΙΓΚΑ ΜΑΡΙΑ",
+              "address": "ΣΜΥΡΝΗΣ 34",
+              "locality": "Δράμα",
+              "phone": "2521032256"
             }
           ]
         }

@@ -191,6 +191,27 @@
       }
     },
     {
+      "id": "2551027917",
+      "name": "ΜΑΧΑΙΡΙΔΗΣ ΣΠΥΡΟΣ",
+      "address": "Δήμητρας 46 (έναντι Παλ. Νοσοκομείου)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551027917",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 40.85038,
+        "lon": 25.8656259,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4296",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551028337",
       "name": "ΤΙΓΓΙΡΙΔΗΣ ΑΧΙΛΛΕΑΣ",
       "address": "Ελ. Βενιζέλου 40 (παραπλεύρως ΚΤΕΛ)",
@@ -338,6 +359,27 @@
       }
     },
     {
+      "id": "2551036511",
+      "name": "ΤΣΟΛΑΚΗ ΑΡΧΟΝΤΙΑ",
+      "address": "Διον. Σολωμού 15 (δρόμος ΔΕΥΑΑ)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551036511",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-19",
+      "lastSeen": "2026-10-19",
+      "location": {
+        "lat": 40.845666,
+        "lon": 25.877881,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Αλεξανδρούπολη"
+      }
+    },
+    {
       "id": "2551038473",
       "name": "ΤΣΩΝΗΣ ΑΘΑΝΑΣΙΟΣ",
       "address": "Μαζαράκη 11 (μεταξύ Αγ.Νικολάου & ΤΑΞΙ)",
@@ -464,22 +506,22 @@
       }
     },
     {
-      "id": "2551084110",
-      "name": "ΑΠΟΣΤΟΛΟΥ ΙΩΑΝΝΗΣ",
-      "address": "Πατριάρχου Κυρίλλου 113 (γεφ. Καλλιθέας-Παπαν/σίου)",
+      "id": "2551400229",
+      "name": "Σ.Φ. ΓΟΥΣΗ Μ.Ε.-ΓΡΗΓΟΡΙΟΥ Σ.",
+      "address": "Εθν. Αντιστάσεως 146 (πλησίον S/M Μασούτη & AB)",
       "locality": "Αλεξανδρούπολη",
       "postcode": null,
-      "phone": "2551084110",
+      "phone": "2551400229",
       "groupId": "evros",
       "sources": [
         "iteq-evros"
       ],
-      "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
       "location": {
-        "lat": 40.8482468,
-        "lon": 25.8667932,
-        "ref": "https://evros.efhmeries.gr/Home/Details/4244",
+        "lat": 40.8446882,
+        "lon": 25.8695789,
+        "ref": "https://evros.efhmeries.gr/Home/Details/3947",
         "source": "list",
         "precision": "exact"
       }
@@ -685,7 +727,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 41.501659,
         "lon": 26.532421,
@@ -958,7 +1000,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 41.3502494,
         "lon": 26.4959924,
@@ -1021,7 +1063,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 41.1947643,
         "lon": 26.3052864,
@@ -1147,7 +1189,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 41.0273977,
         "lon": 26.2963052,
@@ -1273,7 +1315,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 40.8951274,
         "lon": 26.1698018,

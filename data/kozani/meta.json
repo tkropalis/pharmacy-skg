@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "kozani",
-  "updatedAt": "2026-10-18T18:11:54.887Z",
-  "checkedAt": "2026-10-18T18:11:54.887Z",
+  "updatedAt": "2026-10-19T09:02:10.386Z",
+  "checkedAt": "2026-10-19T09:02:10.386Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-10-24"
+    "to": "2026-10-25"
   },
   "extendedHours": [],
   "sources": [

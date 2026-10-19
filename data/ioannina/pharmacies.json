@@ -611,6 +611,27 @@
       }
     },
     {
+      "id": "2651040452",
+      "name": "ΒΑΣΙΛΕΙΟΥ ΕΙΡΗΝΗ",
+      "address": "ΔΩΔΩΝΗΣ 109",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651040452",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 39.6555172,
+        "lon": 20.8498261,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5043",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651042722",
       "name": "Σ.Φ. ΜΠΡΑΧΑΝΤΙΝΗΣ ΝΙΚΗΤΑΣ - ΟΥΕΡ ΜΑΛΒΙΝΑ",
       "address": "3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ 23Α, ΑΝΑΤΟΛΗ",
@@ -664,7 +685,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 39.660488,
         "lon": 20.8490362,
@@ -1110,6 +1131,27 @@
         "lat": 39.6366493,
         "lon": 20.8637669,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/4993",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651400832",
+      "name": "ΔΡΟΣΟΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΧΑΡ. ΤΡΙΚΟΥΠΗ 7",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651400832",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 39.6671906,
+        "lon": 20.8520086,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5045",
         "source": "list",
         "precision": "exact"
       }

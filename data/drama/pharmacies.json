@@ -758,6 +758,48 @@
       }
     },
     {
+      "id": "2521045445",
+      "name": "ΟΙΚΟΝΟΜΟΥ ΓΕΩΡΓΙΟΣ",
+      "address": "ΒΕΡΓΙΝΑΣ 26",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521045445",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 41.1498074,
+        "lon": 24.1477504,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3175",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521046261",
+      "name": "ΑΤΜΑΤΖΙΔΟΥ ΝΤΕΜΠΟΡΑ ΚΑΙ ΣΙΑ Ε.Ε.",
+      "address": "ΕΥΞΕΙΝΟΥ ΠΟΝΤΟΥ 31",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521046261",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 41.1529787,
+        "lon": 24.1254024,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3174",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521047210",
       "name": "ΚΑΛΑΪΤΖΙΔΟΥ ΚΑΤΕΡΙΝΑ",
       "address": "ΔΗΜΟΚΡΙΤΟΥ & ΑΙΣΧΥΛΟΥ 11Α",

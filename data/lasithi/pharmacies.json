@@ -34,7 +34,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 35.1881423,
         "lon": 25.7155964,
@@ -202,7 +202,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 35.2557733,
         "lon": 25.6064703,
@@ -286,7 +286,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 35.2617867,
         "lon": 25.7226428,
@@ -438,6 +438,27 @@
         "lat": 35.0096176,
         "lon": 25.7399574,
         "ref": "https://lasithi.efhmeries.gr/Home/Details/4699",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2842023363",
+      "name": "Σ.Φ. ΔΑΜΗΛΑΚΗ ΑΝΑΣΤΑΣΑΚΗ ΑΙΚΑΤΕΡΙΝΗ & ΑΝΑΣΤΑΣΑΚΗΣ ΚΩΝ/ΝΟΣ Ο.Ε.",
+      "address": "ΛΑΣΘΕΝΟΥΣ 47 / 47, LASTHENOUS STR.",
+      "locality": "Ιεράπετρα",
+      "postcode": null,
+      "phone": "2842023363",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 35.0127047,
+        "lon": 25.7423407,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4673",
         "source": "list",
         "precision": "exact"
       }
@@ -685,7 +706,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 35.20797,
         "lon": 26.1053646,

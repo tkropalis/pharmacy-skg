@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-24",
+  "groups": [
+    {
+      "id": "magnesia",
+      "name": "Μαγνησία",
+      "source": {
+        "url": "https://magnesia.efhmeries.gr/",
+        "uploadedAt": "2026-10-19T09:02:31.347Z"
+      },
+      "sections": [
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "13:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421048888",
+              "name": "ΕΛΕΥΘΕΡΙΑ ΠΑΠΑΔΟΠΟΥΛΟΥ",
+              "address": "Κ.ΚΑΡΤΑΛΗ 215",
+              "locality": "Βόλος",
+              "phone": "2421048888"
+            },
+            {
+              "pharmacyId": "2421061116",
+              "name": "ΠΟΛΥΧΡΟΝΗΣ ΒΥΖΙΩΤΗΣ",
+              "address": "ΜΑΙΑΝΔΡΟΥ 103",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421061116"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421048888",
+              "name": "ΕΛΕΥΘΕΡΙΑ ΠΑΠΑΔΟΠΟΥΛΟΥ",
+              "address": "Κ.ΚΑΡΤΑΛΗ 215",
+              "locality": "Βόλος",
+              "phone": "2421048888"
+            },
+            {
+              "pharmacyId": "2421061116",
+              "name": "ΠΟΛΥΧΡΟΝΗΣ ΒΥΖΙΩΤΗΣ",
+              "address": "ΜΑΙΑΝΔΡΟΥ 103",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421061116"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421038466",
+              "name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΖΩΡΤΖΑΚΗΣ",
+              "address": "28ης Οκτωβρίου 233",
+              "locality": "Βόλος",
+              "phone": "2421038466"
+            },
+            {
+              "pharmacyId": "2421071375",
+              "name": "ΝΕΣΤΩΡ ΠΑΠΑΙΩΑΝΝΟΥ-ΠΑΠΑΙΩΑΝΝΟΥ ΑΛΕΞΑΝΔΡΟΣ",
+              "address": "ΙΩΛΚΟΥ 133",
+              "locality": "Βόλος",
+              "phone": "2421071375"
+            },
+            {
+              "pharmacyId": "2421023325",
+              "name": "ΝΙΚΟΛΑΟΣ ΔΙΔΑΓΓΕΛΟΣ",
+              "address": "ΔΗΜΗΤΡΙΑΔΟΣ 164",
+              "locality": "Βόλος",
+              "phone": "2421023325"
+            },
+            {
+              "pharmacyId": "2421064004",
+              "name": "ΦΩΤΕΙΝΗ ΜΠΑΛΔΙΜΤΣΗ",
+              "address": "ΦΥΤΟΚΟΥ 12",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421064004"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

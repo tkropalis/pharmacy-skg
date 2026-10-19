@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-25",
+  "groups": [
+    {
+      "id": "kavala",
+      "name": "Καβάλα",
+      "source": {
+        "url": "https://kavala.efhmeries.gr/",
+        "uploadedAt": "2026-10-19T09:01:47.817Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510839181",
+              "name": "ΒΕΛΑΚΗ ΕΥΑ",
+              "address": "ΣΑΠΠΑΙΩΝ 26Α",
+              "locality": "Καβάλα",
+              "phone": "2510839181"
+            },
+            {
+              "pharmacyId": "2510250371",
+              "name": "ΚΟΥΡΤΣΟΠΟΥΛΟΥ Α. - ΑΔΑΜΟΠΟΥΛΟΥ Ε.",
+              "address": "ΧΡΥΣΟΣΤΟΜΟΥ ΣΜΥΡΝΗΣ 18Β",
+              "locality": "Καβάλα",
+              "phone": "2510250371"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510220042",
+              "name": "ΚΑΜΑΜΗ ΑΝΔΡΟΜΑΧΗ",
+              "address": "ΜΕΛΑ ΠΑΥΛΟΥ 5",
+              "locality": "Καβάλα",
+              "phone": "2510220042"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

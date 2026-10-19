@@ -412,7 +412,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 40.3005753,
         "lon": 21.7893697,
@@ -716,6 +716,27 @@
       }
     },
     {
+      "id": "2461041961",
+      "name": "ΜΟΥΜΟΥΛΙΔΟΥ ΜΑΡΙΑ",
+      "address": "ΜΟΝΑΣΤΗΡΙΟΥ 30",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461041961",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 40.3073149,
+        "lon": 21.7876898,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/5815",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2461049355",
       "name": "ΡΟΥΚΟΥΝΑΚΗ ΕΛΕΥΘΕΡΙΑ",
       "address": "ΝΙΚΟΜΗΔΕΙΑΣ 23",
@@ -853,7 +874,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 40.5132163,
         "lon": 21.6789042,
@@ -1000,7 +1021,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 40.5117975,
         "lon": 21.6786401,

@@ -13,7 +13,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 40.9384879,
         "lon": 24.411267,
@@ -233,6 +233,27 @@
       }
     },
     {
+      "id": "2510250371",
+      "name": "ΚΟΥΡΤΣΟΠΟΥΛΟΥ Α. - ΑΔΑΜΟΠΟΥΛΟΥ Ε.",
+      "address": "ΧΡΥΣΟΣΤΟΜΟΥ ΣΜΥΡΝΗΣ 18Β",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510250371",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 40.93508,
+        "lon": 24.397128,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3997",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510250944",
       "name": "ΜΑΡΚΑΤΟΥ ΠΑΡΑΣΚΕΥΗ",
       "address": "ΒΟΥΛΓΑΡΟΚΤΟΝΟΥ 50",
@@ -375,6 +396,27 @@
         "lat": 40.935779,
         "lon": 24.413224,
         "ref": "https://kavala.efhmeries.gr/Home/Details/3991",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510839181",
+      "name": "ΒΕΛΑΚΗ ΕΥΑ",
+      "address": "ΣΑΠΠΑΙΩΝ 26Α",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510839181",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 40.9399062,
+        "lon": 24.4194853,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3996",
         "source": "list",
         "precision": "exact"
       }

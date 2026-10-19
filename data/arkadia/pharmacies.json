@@ -233,6 +233,27 @@
       }
     },
     {
+      "id": "2710230667",
+      "name": "ΚΟΣΜΟΠΟΥΛΟΥ ΒΑΣΙΛΙΚΗ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΑΛ. ΣΟΥΤΣΟΥ 2",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710230667",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 37.505984,
+        "lon": 22.3785498,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5102",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2710232250",
       "name": "ΧΑΡΩΝΗΣ ΘΕΟΔΩΡΟΣ",
       "address": "ΚΥΠΡΟΥ 29",
@@ -517,7 +538,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 37.4036411,
         "lon": 22.7228236,
@@ -622,7 +643,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 37.1677509,
         "lon": 22.8579221,
@@ -664,7 +685,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 37.4014368,
         "lon": 22.136571,
@@ -769,7 +790,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 37.7322838,
         "lon": 21.9594427,

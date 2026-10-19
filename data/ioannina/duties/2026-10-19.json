@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-18T18:11:31.034Z"
+        "uploadedAt": "2026-10-19T09:01:39.673Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651038350",
-              "name": "ΓΙΟΥΝΗΣ ΔΗΜΗΤΡΙΟΣ",
-              "address": "Ν. ΖΕΡΒΑ 1",
-              "locality": "Ιωάννινα",
-              "phone": "2651038350"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -61,6 +41,26 @@
               "address": "ΒΛΑΧΛΕΙΔΗ 2",
               "locality": "Ιωάννινα",
               "phone": "2651038000"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651038350",
+              "name": "ΓΙΟΥΝΗΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "Ν. ΖΕΡΒΑ 1",
+              "locality": "Ιωάννινα",
+              "phone": "2651038350"
             }
           ]
         }

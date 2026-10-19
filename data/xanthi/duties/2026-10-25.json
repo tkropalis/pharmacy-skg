@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-25",
+  "groups": [
+    {
+      "id": "xanthi",
+      "name": "Ξάνθη",
+      "source": {
+        "url": "https://xanthi.efhmeries.gr/",
+        "uploadedAt": "2026-10-19T09:03:15.697Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2541083399",
+              "name": "ΣΤΡΑΤΟΓΙΑΝΝΑΚΟΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΑΝΔΡ. ΔΗΜΗΤΡΙΟΥ 63",
+              "locality": "Ξάνθη",
+              "phone": "2541083399"
+            },
+            {
+              "pharmacyId": "2541021050",
+              "name": "ΨΩΜΙΑΔΗΣ ΑΛΕΞΑΝΔΡΟΣ",
+              "address": "28ης ΟΚΤΩΒΡΙΟΥ 64",
+              "locality": "Ξάνθη",
+              "phone": "2541021050"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "20:00 ΕΩΣ 08:00 ΠΡΩΙ",
+          "hours": {
+            "from": "20:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2541068825",
+              "name": "ΤΟΠΑΛΙΔΗΣ ΕΥΘΥΜΙΟΣ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 100",
+              "locality": "Ξάνθη",
+              "phone": "2541068825"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

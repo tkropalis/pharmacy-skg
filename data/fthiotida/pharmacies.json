@@ -223,7 +223,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 38.9008904,
         "lon": 22.4337331,
@@ -375,6 +375,27 @@
         "lat": 38.8971671,
         "lon": 22.4393569,
         "ref": "https://fthiotida.efhmeries.gr/Home/Details/11772",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2231035567",
+      "name": "Σ.Φ. ΝΤΑΣΕΝΟΥ ΜΑΡΙΑΣ - ΠΟΥΡΝΑΡΑ ΧΡΗΣΤΟΥ Ο.Ε.",
+      "address": "ΦΛΕΜΙΝΓΚ 1",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231035567",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 38.9093821,
+        "lon": 22.4296889,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11806",
         "source": "list",
         "precision": "exact"
       }
@@ -580,7 +601,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 38.6540422,
         "lon": 22.998775,
@@ -685,7 +706,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 38.710956,
         "lon": 23.0490466,
@@ -748,7 +769,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 38.7785901,
         "lon": 22.7843158,
@@ -832,7 +853,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 38.7579434,
         "lon": 22.856005,
@@ -853,7 +874,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 38.8092056,
         "lon": 22.6447967,
@@ -937,7 +958,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 38.9418095,
         "lon": 22.1163153,
@@ -1000,7 +1021,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 38.9135166,
         "lon": 22.6099063,

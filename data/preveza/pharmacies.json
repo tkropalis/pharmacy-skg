@@ -275,6 +275,27 @@
       }
     },
     {
+      "id": "2682029114",
+      "name": "ΓΚΟΠΗ ΑΛΕΞΑΝΔΡΑ",
+      "address": "ΣΕΛΕΥΚΕΙΑΣ 5",
+      "locality": "Πρέβεζα",
+      "postcode": null,
+      "phone": "2682029114",
+      "groupId": "preveza",
+      "sources": [
+        "iteq-preveza"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 38.962794,
+        "lon": 20.750102,
+        "ref": "https://preveza.efhmeries.gr/Home/Details/1420",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2682060332",
       "name": "ΚΥΡΛΑΣ ΕΥΑΓΓΕΛΟΣ",
       "address": "Λ. ΙΩΑΝΝΙΝΩΝ 7",

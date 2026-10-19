@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "tinos",
-  "updatedAt": "2026-10-18T08:11:05.172Z",
-  "checkedAt": "2026-10-18T18:13:09.461Z",
+  "updatedAt": "2026-10-19T09:04:19.638Z",
+  "checkedAt": "2026-10-19T09:04:19.638Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-10-24"
+    "to": "2026-10-25"
   },
   "extendedHours": [],
   "sources": [

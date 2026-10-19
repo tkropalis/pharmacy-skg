@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-25",
+  "groups": [
+    {
+      "id": "thesprotia",
+      "name": "Θεσπρωτία",
+      "source": {
+        "url": "https://thesprotia.efhmeries.gr/",
+        "uploadedAt": "2026-10-19T09:01:32.419Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2665024409",
+              "name": "ΜΑΣΤΟΡΑΣ ΞΕΝΟΦΩΝ",
+              "address": "8ΗΣ ΔΕΚΕΜΒΡΙΟΥ 8",
+              "locality": "Ηγουμενίτσα",
+              "phone": "2665024409"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

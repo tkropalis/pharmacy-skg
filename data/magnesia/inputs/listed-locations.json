@@ -4,6 +4,11 @@
     "lon": 22.9482691,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5388"
   },
+  "2421020201": {
+    "lat": 39.36016,
+    "lon": 22.947916,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5488"
+  },
   "2421022064": {
     "lat": 39.363786,
     "lon": 22.944248,
@@ -24,6 +29,16 @@
     "lon": 22.949057,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5376"
   },
+  "2421023200": {
+    "lat": 39.3624068,
+    "lon": 22.9483112,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5455"
+  },
+  "2421023325": {
+    "lat": 39.359225,
+    "lon": 22.949064,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5480"
+  },
   "2421023508": {
     "lat": 39.359345,
     "lon": 22.947881,
@@ -39,10 +54,20 @@
     "lon": 22.946314,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5428"
   },
+  "2421024043": {
+    "lat": 39.320514,
+    "lon": 22.924718,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5457"
+  },
   "2421024449": {
     "lat": 39.362429,
     "lon": 22.949713,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5386"
+  },
+  "2421024560": {
+    "lat": 39.359824,
+    "lon": 22.946976,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5473"
   },
   "2421025458": {
     "lat": 39.359786,
@@ -59,6 +84,11 @@
     "lon": 22.949683,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5435"
   },
+  "2421027807": {
+    "lat": 39.361634,
+    "lon": 22.948393,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5474"
+  },
   "2421028740": {
     "lat": 39.358227,
     "lon": 22.9552,
@@ -69,15 +99,45 @@
     "lon": 22.948112,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5439"
   },
+  "2421030818": {
+    "lat": 39.362364,
+    "lon": 22.944697,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5487"
+  },
+  "2421031690": {
+    "lat": 39.364705,
+    "lon": 22.938742,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5468"
+  },
+  "2421032224": {
+    "lat": 39.366994,
+    "lon": 22.951063,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5470"
+  },
+  "2421032622": {
+    "lat": 39.36811,
+    "lon": 22.937425,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5477"
+  },
   "2421032942": {
     "lat": 39.362606,
     "lon": 22.948676,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5400"
   },
+  "2421033121": {
+    "lat": 39.360379,
+    "lon": 22.94976,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5467"
+  },
   "2421033133": {
     "lat": 39.359744,
     "lon": 22.94995,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5412"
+  },
+  "2421033380": {
+    "lat": 39.354611,
+    "lon": 22.959942,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5461"
   },
   "2421034240": {
     "lat": 39.364607,
@@ -88,6 +148,11 @@
     "lat": 39.35609,
     "lon": 22.957056,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5392"
+  },
+  "2421034316": {
+    "lat": 39.364781,
+    "lon": 22.938265,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5458"
   },
   "2421034333": {
     "lat": 39.36327,
@@ -109,6 +174,16 @@
     "lon": 22.95185,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5374"
   },
+  "2421037089": {
+    "lat": 39.36089,
+    "lon": 22.948433,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5459"
+  },
+  "2421037136": {
+    "lat": 39.362962,
+    "lon": 22.941767,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5462"
+  },
   "2421037447": {
     "lat": 39.361289,
     "lon": 22.948063,
@@ -128,6 +203,11 @@
     "lat": 39.362719,
     "lon": 22.949778,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5441"
+  },
+  "2421038466": {
+    "lat": 39.357527,
+    "lon": 22.95659,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5481"
   },
   "2421038774": {
     "lat": 39.364771,
@@ -159,6 +239,11 @@
     "lon": 22.957712,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5382"
   },
+  "2421043398": {
+    "lat": 39.377303,
+    "lon": 22.961489,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5475"
+  },
   "2421043839": {
     "lat": 39.36123,
     "lon": 22.965596,
@@ -168,6 +253,11 @@
     "lat": 39.366946,
     "lon": 22.951143,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5387"
+  },
+  "2421044496": {
+    "lat": 39.368822,
+    "lon": 22.946746,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5465"
   },
   "2421044977": {
     "lat": 39.3799329,
@@ -184,10 +274,20 @@
     "lon": 22.945794,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5427"
   },
+  "2421046866": {
+    "lat": 39.369904,
+    "lon": 22.953667,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5471"
+  },
   "2421046874": {
     "lat": 39.365778,
     "lon": 22.953265,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5372"
+  },
+  "2421047859": {
+    "lat": 39.364232,
+    "lon": 22.950216,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5486"
   },
   "2421048012": {
     "lat": 39.3700709,
@@ -198,6 +298,21 @@
     "lat": 39.3731686,
     "lon": 22.9489266,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5418"
+  },
+  "2421048888": {
+    "lat": 39.365328,
+    "lon": 22.951004,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5483"
+  },
+  "2421048941": {
+    "lat": 39.3679748,
+    "lon": 22.9590499,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5490"
+  },
+  "2421052200": {
+    "lat": 39.37661,
+    "lon": 22.96034,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5476"
   },
   "2421052600": {
     "lat": 39.375689,
@@ -223,6 +338,11 @@
     "lat": 39.360598,
     "lon": 22.956867,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5432"
+  },
+  "2421058359": {
+    "lat": 39.361994,
+    "lon": 22.948788,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5463"
   },
   "2421058364": {
     "lat": 39.363429,
@@ -253,6 +373,11 @@
     "lat": 38.032098,
     "lon": 23.759604,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5396"
+  },
+  "2421061116": {
+    "lat": 39.373574,
+    "lon": 22.931464,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5485"
   },
   "2421061122": {
     "lat": 39.377705,
@@ -288,6 +413,11 @@
     "lat": 39.372232,
     "lon": 22.928265,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5445"
+  },
+  "2421064440": {
+    "lat": 39.37253,
+    "lon": 22.922831,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5472"
   },
   "2421064816": {
     "lat": 39.3623561,
@@ -349,6 +479,11 @@
     "lon": 22.932667,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5426"
   },
+  "2421071900": {
+    "lat": 39.361887,
+    "lon": 22.959341,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5469"
+  },
   "2421076100": {
     "lat": 39.359441,
     "lon": 22.947595,
@@ -374,6 +509,16 @@
     "lon": 23.760282,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5447"
   },
+  "2421082082": {
+    "lat": 39.3746679,
+    "lon": 22.9339529,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5464"
+  },
+  "2421082226": {
+    "lat": 39.38078,
+    "lon": 22.939468,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5466"
+  },
   "2421086088": {
     "lat": 39.375646,
     "lon": 22.936839,
@@ -384,6 +529,11 @@
     "lon": 22.926349,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5398"
   },
+  "2421091624": {
+    "lat": 39.370635,
+    "lon": 22.927428,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5491"
+  },
   "2421091915": {
     "lat": 39.37918,
     "lon": 22.9359,
@@ -393,5 +543,10 @@
     "lat": 39.3627673,
     "lon": 22.9530526,
     "ref": "https://magnesia.efhmeries.gr/Home/Details/5399"
+  },
+  "2421104946": {
+    "lat": 39.3537,
+    "lon": 22.961582,
+    "ref": "https://magnesia.efhmeries.gr/Home/Details/5456"
   }
 }

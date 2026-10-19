@@ -118,7 +118,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 35.52965,
         "lon": 24.0750572,
@@ -160,7 +160,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 35.512957,
         "lon": 23.967459,
@@ -333,6 +333,27 @@
         "lat": 35.5130084,
         "lon": 24.0217383,
         "ref": "https://chania.efhmeries.gr/Home/Details/13470",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821044226",
+      "name": "ΒΕΡΓΑΝΕΛΑΚΗ ΜΑΡΙΑ ΚΑΙ ΣΙΑ/VΕRGΑΝΕLΑΚΙ MARIA & SIA",
+      "address": "ΕΙΣΟΔΙΩΝ 4/EISODION 4",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821044226",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 35.5160847,
+        "lon": 24.018118,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13560",
         "source": "list",
         "precision": "exact"
       }
@@ -832,7 +853,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 35.5042062,
         "lon": 24.0170812,
@@ -947,6 +968,27 @@
       }
     },
     {
+      "id": "2821081180",
+      "name": "ΑΔΙΚΗΜΕΝΑΚΗ ΜΑΡΙΛΕΝΑ/ ADIKIMENAKI MARILENA",
+      "address": "ΕΘΝ.ΒΕΝΙΖΕΛΟΥ 2-ΣΟΥΔΑ/ΕΤΗΝ.VΕΝΙΖΕLΟU 2-SOUDA",
+      "locality": "Σούδα",
+      "postcode": null,
+      "phone": "2821081180",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 35.4880754,
+        "lon": 24.0713227,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13563",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2821086400",
       "name": "ΑΔΟΝΤΑΚΗ ΕΛΕΝΗ/ΑDΟΝΤΑΚΙ HELEN",
       "address": "ΑΓΙΟΥ ΕΛΕΥΘΕΡΙΟΥ 25,ΜΟΥΡΝΙΕΣ/ΑGΙΟU ELEFTHERIOU 25-MOURNIES",
@@ -1047,6 +1089,27 @@
         "lat": 35.480999,
         "lon": 24.0175658,
         "ref": "https://chania.efhmeries.gr/Home/Details/13462",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821091788",
+      "name": "ΡΟΥΚΟΥΤΑΚΗ Π. - ΓΙΑΝΝΟΥΛΑΚΗΣ Α./RΟUΚΟUΤΑΚΙ P.-GIANNOULAKIS A.",
+      "address": "ΜΥΛΩΝΟΓΙΑΝΝΗ 29/MYLONOGIANNI 29",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821091788",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 35.5131729,
+        "lon": 24.0188123,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13559",
         "source": "list",
         "precision": "exact"
       }
@@ -1336,7 +1399,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 35.4944787,
         "lon": 23.6527239,
@@ -1441,7 +1504,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 35.2294606,
         "lon": 23.6819128,
