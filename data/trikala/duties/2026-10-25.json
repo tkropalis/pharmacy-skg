@@ -7,29 +7,9 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-10-19T09:04:20.433Z"
+        "uploadedAt": "2026-10-19T20:40:19.720Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 23:00",
-          "hours": {
-            "from": "08:00",
-            "to": "23:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431022622",
-              "name": "ΤΡΙΑΝΤΑΦΥΛΛΟΥ ΛΙΛΙΑ",
-              "address": "ΟΘΩΝΟΣ 2",
-              "locality": "Τρίκαλα",
-              "phone": "2431022622"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -67,6 +47,26 @@
               "address": "ΣΤΡΑΤΗΓΟΥ ΣΑΡΑΦΗ 21",
               "locality": "Τρίκαλα",
               "phone": "2431026644"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431022622",
+              "name": "ΤΡΙΑΝΤΑΦΥΛΛΟΥ ΛΙΛΙΑ",
+              "address": "ΟΘΩΝΟΣ 2",
+              "locality": "Τρίκαλα",
+              "phone": "2431022622"
             }
           ]
         }

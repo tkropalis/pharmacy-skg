@@ -163,9 +163,29 @@
       "name": "Λάρισα",
       "source": {
         "url": "https://larisa.efhmeries.gr/",
-        "uploadedAt": "2026-10-17T07:52:45.332Z"
+        "uploadedAt": "2026-10-19T20:37:14.848Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "23:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410287468",
+              "name": "ΚΙΤΑ Σ. ΣΤΥΛΙΑΝΗ",
+              "address": "ΑΛ. ΠΑΝΑΓΟΥΛΗ 15 & ΚΟΥΜΑ ΓΩΝΙΑ",
+              "locality": "Λάρισα",
+              "phone": "2410287468"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 08:00 ΕΩΣ 23:00",
@@ -225,26 +245,6 @@
               "address": "ΓΕΩΡΓΙΑΔΟΥ 30 (πλησίον Γενικού Νοσοκομείου)",
               "locality": "Λάρισα",
               "phone": "2410251231"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "23:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2410287468",
-              "name": "ΚΙΤΑ Σ. ΣΤΥΛΙΑΝΗ",
-              "address": "ΑΛ. ΠΑΝΑΓΟΥΛΗ 15 & ΚΟΥΜΑ ΓΩΝΙΑ",
-              "locality": "Λάρισα",
-              "phone": "2410287468"
             }
           ]
         }

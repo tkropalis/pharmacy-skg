@@ -7,7 +7,7 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-10-19T09:04:20.433Z"
+        "uploadedAt": "2026-10-19T20:40:19.720Z"
       },
       "sections": [
         {
@@ -52,26 +52,6 @@
         },
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 23:00",
-          "hours": {
-            "from": "08:00",
-            "to": "23:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431029828",
-              "name": "ΤΣΙΟΥΤΣΙΑΣ ΒΑΣΙΛΕΙΟΣ",
-              "address": "ΑΣΚΛΗΠΙΟΥ 36",
-              "locality": "Τρίκαλα",
-              "phone": "2431029828"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "18:00 ΕΩΣ 21:00",
           "hours": {
             "from": "18:00",
@@ -94,6 +74,26 @@
               "address": "ΑΣΚΛΗΠΙΟΥ 26",
               "locality": "Τρίκαλα",
               "phone": "2431028739"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431029828",
+              "name": "ΤΣΙΟΥΤΣΙΑΣ ΒΑΣΙΛΕΙΟΣ",
+              "address": "ΑΣΚΛΗΠΙΟΥ 36",
+              "locality": "Τρίκαλα",
+              "phone": "2431029828"
             }
           ]
         }

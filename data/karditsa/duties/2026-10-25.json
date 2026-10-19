@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-10-19T09:01:55.831Z"
+        "uploadedAt": "2026-10-19T20:38:52.768Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441025655",
-              "name": "ΧΑΤΖΟΠΟΥΛΟΥ ΛΕΥΚΗ",
-              "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 44",
-              "locality": "Καρδίτσα",
-              "phone": "2441025655"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "8 ΠΡΩΙ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΚΑΡΑΙΣΚΑΚΗ 23",
               "locality": "Καρδίτσα",
               "phone": "2441073803"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441025655",
+              "name": "ΧΑΤΖΟΠΟΥΛΟΥ ΛΕΥΚΗ",
+              "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 44",
+              "locality": "Καρδίτσα",
+              "phone": "2441025655"
             }
           ]
         }

@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-10-19T09:01:55.831Z"
+        "uploadedAt": "2026-10-19T20:38:52.768Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441020922",
-              "name": "ΡΩΤΣΙΑΜΗ-ΣΙΟΥΡΤΟΥ ΓΕΩΡΓΙΑ",
-              "address": "ΣΤΑΜΟΥΛΗ 3",
-              "locality": "Καρδίτσα",
-              "phone": "2441020922"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ- 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΚΟΥΜΟΥΝΔΟΥΡΟΥ 36",
               "locality": "Καρδίτσα",
               "phone": "2441024834"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441020922",
+              "name": "ΡΩΤΣΙΑΜΗ-ΣΙΟΥΡΤΟΥ ΓΕΩΡΓΙΑ",
+              "address": "ΣΤΑΜΟΥΛΗ 3",
+              "locality": "Καρδίτσα",
+              "phone": "2441020922"
             }
           ]
         }

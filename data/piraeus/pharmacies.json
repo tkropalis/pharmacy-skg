@@ -821,27 +821,6 @@
       }
     },
     {
-      "id": "2104175555",
-      "name": "ΒΕΗΚΩΝΤΗΣ Β. ΚΩΝ/ΝΟΣ",
-      "address": "ΜΠΟΥΜΠΟΥΛΙΝΑΣ 19 & ΚΟΛΟΚΟΤΡΩΝΗ",
-      "locality": "Πειραιάς",
-      "postcode": null,
-      "phone": "2104175555",
-      "groupId": "piraeus",
-      "sources": [
-        "iteq-piraeus"
-      ],
-      "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-24",
-      "location": {
-        "lat": 37.941638,
-        "lon": 23.644805,
-        "ref": "https://piraeus.efhmeries.gr/Home/Details/38224",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2104175841",
       "name": "Σ/Φ ΖΕΡΒΟΓΙΑΝΝΗΣ ΠΑΝ.-ΣΤΑΜΑΤΑΚΟΥ Α. ΟΕ",
       "address": "ΦΙΛΩΝΟΣ 52 ΚΑΙ ΜΠΟΥΜΠΟΥΛΙΝΑΣ",
@@ -1840,7 +1819,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-24",
       "location": {
         "lat": 37.9400709,
         "lon": 23.6457877,
@@ -4832,6 +4811,27 @@
       }
     },
     {
+      "id": "2104915844",
+      "name": "ΜΟΥΤΑΦΙΔΗΣ ΧΑΡ. ΓΕΩΡΓΙΟΣ",
+      "address": "ΕΛΛΗΣΠΟΝΤΟΥ 46 ΚΑΙ ΚΕΡΑΜΕΙΚΟΥ 4",
+      "locality": "Νίκαια",
+      "postcode": null,
+      "phone": "2104915844",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-25",
+      "lastSeen": "2026-10-25",
+      "location": {
+        "lat": 37.977872,
+        "lon": 23.637046,
+        "source": "nominatim",
+        "precision": "exact",
+        "ref": "ΕΛΛΗΣΠΟΝΤΟΥ 46, Νίκαια"
+      }
+    },
+    {
       "id": "2104916253",
       "name": "ΜΟΥΠΑΓΙΤΣΟΓΛΟΥ ΟΛΓΑ",
       "address": "ΙΩΝΙΑΣ 87",
@@ -5100,27 +5100,6 @@
         "lat": 37.9795346,
         "lon": 23.6334223,
         "ref": "https://piraeus.efhmeries.gr/Home/Details/39246",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
-      "id": "2104933191",
-      "name": "ΜΟΥΡΟΥΤΗ ΚΑΝΕΛΛΑ - ΣΤΕΦΑΝΙΑ",
-      "address": "ΚΟΥΤΑΙΣΗ 23",
-      "locality": "Νίκαια",
-      "postcode": null,
-      "phone": "2104933191",
-      "groupId": "piraeus",
-      "sources": [
-        "iteq-piraeus"
-      ],
-      "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-25",
-      "location": {
-        "lat": 37.9784076,
-        "lon": 23.6405195,
-        "ref": "https://piraeus.efhmeries.gr/Home/Details/38288",
         "source": "list",
         "precision": "exact"
       }

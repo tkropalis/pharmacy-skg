@@ -7,29 +7,9 @@
       "name": "Δράμα",
       "source": {
         "url": "https://drama.efhmeries.gr/",
-        "uploadedAt": "2026-10-19T09:00:47.036Z"
+        "uploadedAt": "2026-10-19T20:37:57.177Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2521022103",
-              "name": "ΧΑΤΖΗΘΕΟΔΩΡΙΔΟΥ Σ. ΣΟΦΙΑ",
-              "address": "ΦΩΚΙΩΝΟΣ 5",
-              "locality": "Δράμα",
-              "phone": "2521022103"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "ΓΑΛΗΝΟΥ & ΦΙΛΙΠΠΟΥΠΟΛΕΩΣ 1",
               "locality": "Δράμα",
               "phone": "2521039495"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521022103",
+              "name": "ΧΑΤΖΗΘΕΟΔΩΡΙΔΟΥ Σ. ΣΟΦΙΑ",
+              "address": "ΦΩΚΙΩΝΟΣ 5",
+              "locality": "Δράμα",
+              "phone": "2521022103"
             }
           ]
         }
