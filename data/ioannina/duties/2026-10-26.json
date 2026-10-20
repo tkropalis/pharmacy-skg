@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "groups": [
+    {
+      "id": "ioannina",
+      "name": "Ιωάννινα",
+      "source": {
+        "url": "https://ioannina.efhmeries.gr/",
+        "uploadedAt": "2026-10-20T08:40:06.799Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651033430",
+              "name": "ΝΤΑΣΕΝΟΥ ΚΩΝΣΤΑΝΤΙΝΑ",
+              "address": "ΦΙΛΙΚΗΣ ΕΤΑΙΡΕΙΑΣ 15Β",
+              "locality": "Ιωάννινα",
+              "phone": "2651033430"
+            },
+            {
+              "pharmacyId": "2651025155",
+              "name": "Σ.Φ. ΚΩΝΣΤΑΝΤΑΚΟΠΟΥΛΟΥ ΜΑΡΙΑ - ΜΠΑΡΜΠΟΥΤΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΗΣ 19, ΚΑΡΔΑΜΙΤΣΙΑ",
+              "locality": "Ιωάννινα",
+              "phone": "2651025155"
+            },
+            {
+              "pharmacyId": "2651027681",
+              "name": "ΣΑΛΤΑΣ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΚΡΥΣΤΑΛΛΗ 4",
+              "locality": "Ιωάννινα",
+              "phone": "2651027681"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651030443",
+              "name": "ΖΩΝΙΟΥ ΜΑΡΙΑ",
+              "address": "Κ.ΦΡΟΝΤΖΟΥ 4",
+              "locality": "Ιωάννινα",
+              "phone": "2651030443"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

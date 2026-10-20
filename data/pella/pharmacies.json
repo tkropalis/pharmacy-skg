@@ -233,6 +233,27 @@
       }
     },
     {
+      "id": "2381025007",
+      "name": "ΝΟΥΣΗΚΥΡΟΥ ΓΕΩΡΓΙΟΣ",
+      "address": "Π. ΜΕΛΑ 11",
+      "locality": "Έδεσσα",
+      "postcode": null,
+      "phone": "2381025007",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 40.7995177,
+        "lon": 22.0491641,
+        "ref": "https://pella.efhmeries.gr/Home/Details/6218",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2381025510",
       "name": "ΚΑΤΣΙΜΗΡΗΣ ΔΗΜΗΤΡΙΟΣ",
       "address": "ΜΟΝΑΣΤΗΡΙΟΥ 31",
@@ -433,7 +454,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.7660956,
         "lon": 22.1561518,
@@ -790,7 +811,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.7975143,
         "lon": 22.4121475,
@@ -1000,7 +1021,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.6866277,
         "lon": 22.3032052,
@@ -1315,7 +1336,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.9746549,
         "lon": 22.0634344,

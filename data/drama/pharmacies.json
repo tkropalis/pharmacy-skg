@@ -191,6 +191,27 @@
       }
     },
     {
+      "id": "2521022296",
+      "name": "ΦΑΝΤΗ ΒΑΣΙΛΙΚΗ",
+      "address": "ΓΕΩΡ. ΠΑΠΑΝΔΡΕΟΥ 40",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521022296",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 41.1508004,
+        "lon": 24.1499967,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3179",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521022606",
       "name": "ΓΙΑΚΟΥΜΗ ΧΡΥΣΑΝΘΟΠΟΥΛΟΥ ΣΤΕΛΛΑ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "ΛΑΜΠΡΙΑΝΙΔΟΥ ΛΑΜΠΡΟΥ 20",
@@ -275,6 +296,27 @@
       }
     },
     {
+      "id": "2521024434",
+      "name": "ΠΑΥΛΙΔΟΥ ΜΑΡΙΑ",
+      "address": "ΚΩΝ/ΝΟΥ ΠΑΛΑΙΟΛΟΓΟΥ 18",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521024434",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 41.152108,
+        "lon": 24.1475656,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3176",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521025150",
       "name": "ΣΑΛΤΙΔΟΥ Γ. ΑΝΑΣΤΑΣΙΑ",
       "address": "ΖΕΡΒΟΥ 32",
@@ -328,7 +370,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 41.150828,
         "lon": 24.1476356,
@@ -585,6 +627,27 @@
         "lat": 41.148535,
         "lon": 24.148251,
         "ref": "https://drama.efhmeries.gr/Home/Details/3157",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521036008",
+      "name": "ΤΣΑΚΙΡΙΔΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΑΣ 30",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521036008",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 41.1498446,
+        "lon": 24.147329,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3177",
         "source": "list",
         "precision": "exact"
       }

@@ -233,6 +233,27 @@
       }
     },
     {
+      "id": "2551028764",
+      "name": "Σ.Φ. ΓΕΡΟΝΤΟΠΟΥΛΟΣ Ν. - ΓΕΡΟΝΤΟΠΟΥΛΟΣ Θ.",
+      "address": "14ης Μαΐου 76",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551028764",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 40.8494878,
+        "lon": 25.8737471,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4245",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551029082",
       "name": "Σ.Φ. ΑΝΤΩΝΑΡΟΥ Ζ.-ΖΩΗ Α.",
       "address": "28ης Οκτωβρίου 16Α (έναντι 1ου δημοτικού)",
@@ -485,6 +506,27 @@
       }
     },
     {
+      "id": "2551081381",
+      "name": "ΑΛΓΙΑΝΝΑΚΗΣ ΣΥΜΕΩΝ",
+      "address": "Εθν. Αντιστάσεως 132",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551081381",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 40.8464233,
+        "lon": 25.8712075,
+        "ref": "https://evros.efhmeries.gr/Home/Details/3896",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551083638",
       "name": "Σ.Φ. ΠΑΓΙΑΝΝΙΔΟΥ Θ.-ΚΟΥΚΟΥΒΗ Ι.",
       "address": "Ηροδότου & Προκόπη 14 (προς Παλαγία)",
@@ -706,7 +748,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 41.5025546,
         "lon": 26.5322197,
@@ -916,7 +958,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 41.3497643,
         "lon": 26.4941195,
@@ -1105,7 +1147,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 41.1936141,
         "lon": 26.3050735,
@@ -1168,7 +1210,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 41.0262152,
         "lon": 26.2954437,
@@ -1273,7 +1315,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.8896855,
         "lon": 26.1651715,

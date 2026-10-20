@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-19T20:38:03.432Z"
+        "uploadedAt": "2026-10-20T08:39:19.930Z"
       },
       "sections": [
         {
@@ -85,6 +85,26 @@
           ]
         },
         {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221028079",
+              "name": "ΠΑΥΛΟΥ ΑΝΤΩΝΗΣ",
+              "address": "ΓΑΖΕΠΗ ΗΡΑΚΛΗ 49",
+              "locality": "Χαλκίδα",
+              "phone": "2221028079"
+            }
+          ]
+        },
+        {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
           "hours": {
@@ -102,26 +122,6 @@
               "address": "ΣΑΧΤΟΥΡΗ 80",
               "locality": "Κάρυστος",
               "phone": "2224023543"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221028079",
-              "name": "ΠΑΥΛΟΥ ΑΝΤΩΝΗΣ",
-              "address": "ΓΑΖΕΠΗ ΗΡΑΚΛΗ 49",
-              "locality": "Χαλκίδα",
-              "phone": "2221028079"
             }
           ]
         },

@@ -212,6 +212,27 @@
       }
     },
     {
+      "id": "2510232271",
+      "name": "ΘΕΟΔΩΡΙΔΗΣ ΒΑΛΕΝΤΙΝΟΣ",
+      "address": "ΚΟΛΟΚΟΤΡΩΝΗ 81",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510232271",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 40.9375883,
+        "lon": 24.4201934,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3969",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510243751",
       "name": "ΚΡΥΟΝΕΡΙΤΟΥ ΖΩΗ",
       "address": "7ΗΣ ΜΕΡΑΡΧΙΑΣ 58",
@@ -412,7 +433,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.9399062,
         "lon": 24.4194853,

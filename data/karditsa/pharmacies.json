@@ -433,7 +433,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 39.3645775,
         "lon": 21.9200073,
@@ -564,6 +564,27 @@
         "lat": 39.3659792,
         "lon": 21.9240676,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3751",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441071442",
+      "name": "ΠΙΤΣΑΒΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ & ΣΙΑ Ο.Ε.",
+      "address": "Α.ΠΑΠΑΝΔΡΕΟΥ 30-32",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441071442",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 39.3674088,
+        "lon": 21.9233364,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3781",
         "source": "list",
         "precision": "exact"
       }

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "groups": [
+    {
+      "id": "arta",
+      "name": "Άρτα",
+      "source": {
+        "url": "https://arta.efhmeries.gr/",
+        "uploadedAt": "2026-10-20T08:38:55.492Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2681071222",
+              "name": "ΒΑΔΙΒΟΥΛΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΦΙΛΕΛΛΗΝΩΝ 38",
+              "locality": "Άρτα",
+              "phone": "2681071222"
+            },
+            {
+              "pharmacyId": "2681067400",
+              "name": "ΓΕΩΡΓΟΠΟΥΛΟΣ",
+              "address": "ΔΙΑΣΕΛΛΟ",
+              "locality": "Άρτα",
+              "phone": "2681067400"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

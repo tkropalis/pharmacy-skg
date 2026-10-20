@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "groups": [
+    {
+      "id": "chania",
+      "name": "Χανιά",
+      "source": {
+        "url": "https://chania.efhmeries.gr/",
+        "uploadedAt": "2026-10-20T08:42:31.523Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821056265",
+              "name": "Σ.Φ. ΑΡΧΟΝΤΑΚΗΣ ΙΩΑΝΝΗΣ & ΑΡΧΟΝΤΑΚΗΣ ΓΕΩΡΓΙΟΣ/ΑRCΗΟΝΤΑΚΙS I.& G. O.E.",
+              "address": "ΚΙΣΣΑΜΟΥ 184/KISAMOU 184",
+              "locality": "Χανιά",
+              "phone": "2821056265"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821075505",
+              "name": "ΔΗΜΗΤΡΟΥΛΑΚΗΣ ΠΑΝΑΓΙΩΤΗΣ & ΣΙΑ/DΙΜΙΤRΟULΑΚΙS PANAGIOTIS & SIA",
+              "address": "ΠΛΑΤΕΙΑ ΕΛ. ΒΕΝΙΖΕΛΟΥ-ΜΟΥΡΝΙΕΣ/ΕL. VENIZELOU SQUARE-MOURNIES",
+              "locality": "Μουρνιές",
+              "phone": "2821075505"
+            },
+            {
+              "pharmacyId": "2821056188",
+              "name": "ΚΕΛΑΪΔΗ ΟΛΓΑ/ΚΕLΑΙDΙ OLGA",
+              "address": "ΔΑΣΚΑΛΟΓΙΑΝΝΗ 43/DASKALOGIANNI 43",
+              "locality": "Χανιά",
+              "phone": "2821056188"
+            },
+            {
+              "pharmacyId": "2821049292",
+              "name": "ΛΙΛΙΚΑΚΗ ΜΑΙΡΗ/LΙLΙΚΑΚΙ MARY",
+              "address": "ΑΓ. ΠΑΝΤΩΝ 23 ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΑΚΡΩΤΗΡΙΟΥ/ΑGΙΟΝ PANTON 23-KOUNOUPIDIANA",
+              "locality": "Ακρωτήρι",
+              "phone": "2821049292"
+            },
+            {
+              "pharmacyId": "2821089179",
+              "name": "ΝΙΚΗΦΟΡΑΚΗΣ ΜΙΧΑΗΛ/ΝΙΚΙFΟRΑΚΙS MICHAEL",
+              "address": "ΕΘΝ. ΒΕΝΙΖΕΛΟΥ 59,ΣΟΥΔΑ/ΕΤΗΝ. VENIZELOU 59-SOUDA",
+              "locality": "Σούδα",
+              "phone": "2821089179"
+            },
+            {
+              "pharmacyId": "2821009880",
+              "name": "ΠΙΤΣΙΚΟΥΛΑΚΗ ΕΥΑΓΓΕΛΙΑ",
+              "address": "ΓΕΡΟΓΙΑΝΝΗΔΩΝ-ΓΑΛΑΤΑΣ (ΚΟΝΤΑ ΣΕ ΚΡΕΟΠΩΛΕΙΟ Ο ΠΟΛΙΟΣ)",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821009880"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2823041160",
+              "name": "Σ.Φ. ΑΘΟΥΣΑΚΗ Ο.Ε./S.F. ATHOUSAKI O.E.",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "2823041160"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
+          "hours": {
+            "from": "08:30",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2822022182",
+              "name": "ΜΑΖΟΚΟΠΑΚΗΣ ΙΩΑΝΝΗΣ/ΜΑΖΟΚΟΡΑΚΙS IOANNIS",
+              "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 143 ΚΑΣΤΕΛΙ/ΙRΟΟΝ POLITEXNIOU 143 KASTELI",
+              "locality": "Δήμος Κισσάμου",
+              "phone": "2822022182"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

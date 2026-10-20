@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "pieria",
-  "updatedAt": "2026-10-19T20:40:00.327Z",
-  "checkedAt": "2026-10-19T20:40:00.327Z",
+  "updatedAt": "2026-10-20T08:41:59.034Z",
+  "checkedAt": "2026-10-20T08:41:59.034Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-10-25"
+    "to": "2026-10-26"
   },
   "extendedHours": [],
   "sources": [

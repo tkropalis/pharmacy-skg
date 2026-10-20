@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "kavala",
-  "updatedAt": "2026-10-19T20:38:51.880Z",
-  "checkedAt": "2026-10-19T20:38:51.880Z",
+  "updatedAt": "2026-10-20T08:40:22.504Z",
+  "checkedAt": "2026-10-20T08:40:22.504Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-10-25"
+    "to": "2026-10-26"
   },
   "extendedHours": [],
   "sources": [

@@ -223,11 +223,32 @@
         "iteq-xanthi"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 41.1375825,
         "lon": 24.8880047,
         "ref": "https://xanthi.efhmeries.gr/Home/Details/3619",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541026588",
+      "name": "ΖΟΥΓΡΗ ΖΩΗ",
+      "address": "28ης ΟΚΤΩΒΡΙΟΥ 177",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541026588",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 41.135526,
+        "lon": 24.8877396,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3651",
         "source": "list",
         "precision": "exact"
       }
@@ -270,6 +291,27 @@
         "lat": 41.1363133,
         "lon": 24.8851961,
         "ref": "https://xanthi.efhmeries.gr/Home/Details/3621",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541028100",
+      "name": "ΤΣΙΝΤΣΩΝΗΣ ΘΕΟΔΩΡΟΣ",
+      "address": "ΚΕΝΤΡΙΚΗ ΠΛΑΤΕΙΑ",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541028100",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 41.1398486,
+        "lon": 24.8879237,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3652",
         "source": "list",
         "precision": "exact"
       }

@@ -244,7 +244,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 39.180431,
         "lon": 21.189088,
@@ -333,6 +333,27 @@
         "lat": 39.160945,
         "lon": 20.982182,
         "ref": "https://arta.efhmeries.gr/Home/Details/2418",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681071222",
+      "name": "ΒΑΔΙΒΟΥΛΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΦΙΛΕΛΛΗΝΩΝ 38",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681071222",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 39.163068,
+        "lon": 20.9864402,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2435",
         "source": "list",
         "precision": "exact"
       }

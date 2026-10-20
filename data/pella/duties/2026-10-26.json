@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "groups": [
+    {
+      "id": "pella",
+      "name": "Πέλλα",
+      "source": {
+        "url": "https://pella.efhmeries.gr/",
+        "uploadedAt": "2026-10-20T08:41:44.503Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2381089199",
+              "name": "ΔΗΜΗΤΡΙΑΔΟΥ ΑΛΕΞΑΝΔΡΑ",
+              "address": "ΣΑΦΡΑΜΠΟΛΕΩΣ 17",
+              "locality": "Σκύδρα",
+              "phone": "2381089199"
+            },
+            {
+              "pharmacyId": "2382026979",
+              "name": "ΜΑΝΘΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΚΟΛΟΚΟΤΡΩΝΗ 11 ΛΑΪΚΗ ΑΓΟΡΑ",
+              "locality": "Γιαννιτσά",
+              "phone": "2382026979"
+            },
+            {
+              "pharmacyId": "2381025007",
+              "name": "ΝΟΥΣΗΚΥΡΟΥ ΓΕΩΡΓΙΟΣ",
+              "address": "Π. ΜΕΛΑ 11",
+              "locality": "Έδεσσα",
+              "phone": "2381025007"
+            },
+            {
+              "pharmacyId": "2384024298",
+              "name": "Σ.Φ. ΧΡΗΣΤΟΥ ΠΕΛΑΓΙΑ - ΣΑΡΗΓΚΙΟΛΗΣ ΟΡΕΣΤΗΣ",
+              "address": "ΛΟΧ. ΠΑΣΣΙΑ 26 & ΑΘΑΝ. ΔΙΑΚΟΥ",
+              "locality": "Αριδαία",
+              "phone": "2384024298"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382062100",
+              "name": "Σ.Φ. ΑΔΑΜΙΔΗΣ ΘΕΟΔΟΣΙΟΣ -ΑΔΑΜΙΔΟΥ ΜΑΡΘΑ",
+              "address": "ΒΑΣ. ΠΑΥΛΟΥ 77",
+              "locality": "Κρύα Βρύση",
+              "phone": "2382062100"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

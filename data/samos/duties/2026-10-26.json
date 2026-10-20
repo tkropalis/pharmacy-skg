@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "groups": [
+    {
+      "id": "samos",
+      "name": "Σάμος",
+      "source": {
+        "url": "https://samos.efhmeries.gr/",
+        "uploadedAt": "2026-10-20T08:42:05.654Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273022000",
+              "name": "ΕΛΕΥΘΕΡΙΟΥ ΣΤΑΥΡΟΣ",
+              "address": "Κ. ΣΤΑΜΑΤΗ 3",
+              "locality": "Βαθύ",
+              "phone": "2273022000"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
+          "hours": {
+            "from": "17:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273022000",
+              "name": "ΕΛΕΥΘΕΡΙΟΥ ΣΤΑΥΡΟΣ",
+              "address": "Κ. ΣΤΑΜΑΤΗ 3",
+              "locality": "Βαθύ",
+              "phone": "2273022000"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "9 ΠΡΩΙ - 1:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
+          "hours": {
+            "from": "09:00",
+            "to": "13:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273100315",
+              "name": "ΞΕΝΑΚΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΣΟΦΟΥΛΗ",
+              "locality": "Καρλόβασι",
+              "phone": "2273100315"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "9 ΠΡΩΙ - 1:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
+          "hours": {
+            "from": "17:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273100315",
+              "name": "ΞΕΝΑΚΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΣΟΦΟΥΛΗ",
+              "locality": "Καρλόβασι",
+              "phone": "2273100315"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ*",
+          "hours": null,
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273105100",
+              "name": "ΦΙΛΙΑΚΟΣ ΕΜΜΑΝΟΥΗΛ",
+              "address": "ΝΕΑΠΟΛΗ-ΠΕΥΚΑΚΙΑ",
+              "locality": "Άνω Βαθύ",
+              "phone": "2273105100"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

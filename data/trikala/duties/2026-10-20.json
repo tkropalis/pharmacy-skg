@@ -7,7 +7,7 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-10-19T20:40:19.720Z"
+        "uploadedAt": "2026-10-20T08:42:18.197Z"
       },
       "sections": [
         {
@@ -52,6 +52,26 @@
         },
         {
           "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431037470",
+              "name": "ΠΑΠΑΧΡΗΣΤΟΥ ΧΡΙΣΤΙΝΑ",
+              "address": "ΔΙΑΚΟΥ ΚΑΙ ΠΕΡΣΕΦΟΝΗΣ 13",
+              "locality": "Τρίκαλα",
+              "phone": "2431037470"
+            }
+          ]
+        },
+        {
+          "kind": "day",
           "heading": "18:00 ΕΩΣ 21:00",
           "hours": {
             "from": "18:00",
@@ -74,26 +94,6 @@
               "address": "ΜΙΑΟΥΛΗ 3 & ΤΣΙΤΣΑΝΗ",
               "locality": "Τρίκαλα",
               "phone": "2431028876"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 23:00",
-          "hours": {
-            "from": "08:00",
-            "to": "23:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431037470",
-              "name": "ΠΑΠΑΧΡΗΣΤΟΥ ΧΡΙΣΤΙΝΑ",
-              "address": "ΔΙΑΚΟΥ ΚΑΙ ΠΕΡΣΕΦΟΝΗΣ 13",
-              "locality": "Τρίκαλα",
-              "phone": "2431037470"
             }
           ]
         }

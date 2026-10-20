@@ -223,7 +223,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.2721057,
         "lon": 22.4940461,
@@ -291,6 +291,27 @@
         "lat": 40.2724855,
         "lon": 22.5092904,
         "ref": "https://pieria.efhmeries.gr/Home/Details/23533",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351029577",
+      "name": "ΖΑΝΝΑΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "ΠΛ. ΕΛΕΥΘΕΡΙΑΣ & Γ.ΟΛΥΜΠΙΟΥ 1",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351029577",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 40.2702163,
+        "lon": 22.5082109,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23558",
         "source": "list",
         "precision": "exact"
       }
@@ -538,7 +559,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.3150825,
         "lon": 22.5838514,
@@ -601,7 +622,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.2723065,
         "lon": 22.5812906,
@@ -716,6 +737,27 @@
       }
     },
     {
+      "id": "2352031352",
+      "name": "Σ.Φ. ΦΩΤΙΟΥ ΔΗΜΗΤΡΙΟΣ - ΦΩΤΙΟΥ ΓΕΩΡΓΙΟΣ Ο.Ε.",
+      "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 20",
+      "locality": "Λεπτοκαρυά",
+      "postcode": null,
+      "phone": "2352031352",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 40.0590353,
+        "lon": 22.5621882,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/20249",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2352032285",
       "name": "ΓΚΕΜΑΛΜΑΣ ΜΙΧΑΗΛ",
       "address": "ΒΑΣ. ΣΟΦΙΑΣ 22",
@@ -790,7 +832,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.0030004,
         "lon": 22.5944624,
@@ -874,7 +916,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.104048,
         "lon": 22.5062317,
@@ -958,7 +1000,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.495222,
         "lon": 22.537137,
@@ -1021,7 +1063,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.478824,
         "lon": 22.4858967,

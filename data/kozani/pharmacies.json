@@ -433,7 +433,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.2977716,
         "lon": 21.7868661,
@@ -480,6 +480,27 @@
         "lat": 40.2969014,
         "lon": 21.785085,
         "ref": "https://kozani.efhmeries.gr/Home/Details/5919",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461034939",
+      "name": "ΡΟΜΠΟΤΗ ΕΥΤΥΧΙΑ",
+      "address": "ΠΑΥΛΟΥ ΜΕΛΑ 10",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461034939",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 40.302298,
+        "lon": 21.7884351,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/5697",
         "source": "list",
         "precision": "exact"
       }
@@ -580,7 +601,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.3013913,
         "lon": 21.7931379,
@@ -790,7 +811,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.5124033,
         "lon": 21.679868,
@@ -895,7 +916,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 40.5135273,
         "lon": 21.6768451,
@@ -916,7 +937,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-08",
       "location": {
         "lat": 40.51283,
         "lon": 21.6778108,
@@ -1089,6 +1110,27 @@
         "lat": 40.5154229,
         "lon": 21.680099,
         "ref": "https://kozani.efhmeries.gr/Home/Details/7245",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463025040",
+      "name": "ΟΙΚΟΝΟΜΑΚΗ ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΒΑΣΙΛΙΣΣΗΣ ΣΟΦΙΑΣ 28 (Δίπλα από τα Υποδήματα ΒΛΑΧΑΔΗ)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463025040",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-21",
+      "lastSeen": "2026-10-21",
+      "location": {
+        "lat": 40.5132357,
+        "lon": 21.6774632,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/7408",
         "source": "list",
         "precision": "exact"
       }

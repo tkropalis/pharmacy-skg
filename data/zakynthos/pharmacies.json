@@ -149,6 +149,27 @@
       }
     },
     {
+      "id": "2695042403",
+      "name": "ΜΟΥΖΑΚΗΣ ΝΟΔΑΡΕΟΝΕΣ ΤΖΑΝΕΤΟΣ",
+      "address": "ΜΟΥΤΖΑΝ ΜΑΡΤΙΝΕΓΚΟΥ 37 (ΠΡΩΗΝ ΤΑΒΟΥΛΑΡΗ)",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695042403",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 37.7818473,
+        "lon": 20.8955247,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4296",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2695042623",
       "name": "ΒΙΤΣΟΣ ΠΕΤΡΟΣ",
       "address": "ΡΩΜΑ ΑΛΕΞΑΝΔΡΟΥ 6",

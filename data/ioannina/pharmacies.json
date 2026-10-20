@@ -223,7 +223,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-26",
       "location": {
         "lat": 39.6795136,
         "lon": 20.8205647,
@@ -249,6 +249,27 @@
         "lat": 39.667476,
         "lon": 20.8517295,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5012",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651027681",
+      "name": "ΣΑΛΤΑΣ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΚΡΥΣΤΑΛΛΗ 4",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651027681",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 39.6680576,
+        "lon": 20.8552233,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5047",
         "source": "list",
         "precision": "exact"
       }
@@ -291,6 +312,27 @@
         "lat": 39.6819068,
         "lon": 20.8220502,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5005",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651030443",
+      "name": "ΖΩΝΙΟΥ ΜΑΡΙΑ",
+      "address": "Κ.ΦΡΟΝΤΖΟΥ 4",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651030443",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 39.6669793,
+        "lon": 20.8531542,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5046",
         "source": "list",
         "precision": "exact"
       }
@@ -459,6 +501,27 @@
         "lat": 39.6639347,
         "lon": 20.8503045,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/4986",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651033430",
+      "name": "ΝΤΑΣΕΝΟΥ ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "ΦΙΛΙΚΗΣ ΕΤΑΙΡΕΙΑΣ 15Β",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651033430",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "location": {
+        "lat": 39.6719093,
+        "lon": 20.851495,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5049",
         "source": "list",
         "precision": "exact"
       }
