@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-20T08:39:26.214Z"
+        "uploadedAt": "2026-10-20T19:20:44.183Z"
       },
       "sections": [
         {
@@ -34,6 +34,26 @@
               "address": "ΚΩΝ/ΠΟΛΕΩΣ 222",
               "locality": "Ορεστιάδα",
               "phone": "2552023926"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551081381",
+              "name": "ΑΛΓΙΑΝΝΑΚΗΣ ΣΥΜΕΩΝ",
+              "address": "Εθν. Αντιστάσεως 132",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551081381"
             }
           ]
         },
@@ -89,26 +109,6 @@
               "address": "14ης Μαΐου 76",
               "locality": "Αλεξανδρούπολη",
               "phone": "2551028764"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551081381",
-              "name": "ΑΛΓΙΑΝΝΑΚΗΣ ΣΥΜΕΩΝ",
-              "address": "Εθν. Αντιστάσεως 132",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551081381"
             }
           ]
         }

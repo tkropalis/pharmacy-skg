@@ -7,7 +7,7 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-10-20T08:42:31.523Z"
+        "uploadedAt": "2026-10-20T19:23:05.245Z"
       },
       "sections": [
         {
@@ -51,47 +51,6 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
-          "hours": {
-            "from": "08:30",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2821063282",
-              "name": "ΑΡΧΟΝΤΑΚΗΣ ΕΥΤΥΧΗΣ/ΑRCΗΟΝΤΑΚΙS EFTYCHIOS",
-              "address": "ΑΡΩΝΙ ΑΚΡΩΤΗΡΙΟΥ/ΑRΟΝΙ AKROTIRIOU",
-              "locality": "Ακρωτήρι",
-              "phone": "2821063282"
-            },
-            {
-              "pharmacyId": "2821034431",
-              "name": "ΙΟΡΔΑΝΙΔΟΥ ΑΝΑΣΤΑΣΙΑ",
-              "address": "ΓΑΛΑΤΑΣ (ΕΝΑΝΤΙ ΔΗΜΟΤΙΚΟΥ ΠΑΙΔΙΚΟΥ ΣΤΑΘΜΟΥ ΓΑΛΑΤΑ)",
-              "locality": "Νέα Κυδωνία",
-              "phone": "2821034431"
-            },
-            {
-              "pharmacyId": "2821074525",
-              "name": "ΚΥΝΗΓΑΚΗ ΕΥΓΕΝΙΑ/ΚΙΝΙGΑΚΙ EVGENIA",
-              "address": "ΚΙΣΣΑΜΟΥ 85/KISAMOU 85",
-              "locality": "Χανιά",
-              "phone": "2821074525"
-            },
-            {
-              "pharmacyId": "2821072442",
-              "name": "ΛΕΛΕΔΑΚΗ ΑΓΓΕΛΙΝΑ/LΕLΕDΑΚΙ AGGELIKI",
-              "address": "ΑΝ.ΓΟΓΟΝΗ 82/AN. GOGONI 82",
-              "locality": "Μουρνιές",
-              "phone": "2821072442"
-            }
-          ]
-        },
-        {
           "kind": "on-duty",
           "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
           "hours": {
@@ -129,6 +88,47 @@
               "address": "ΟΜΟΓΕΝΩΝ ΑΜΕΡΙΚΗΣ 23,ΚΑΣΤΕΛΛΙ ΚΙΣΑΜΟΥ/ΟΜΟGΕΝΟΝ AMERIKIS 23",
               "locality": "Δήμος Κισσάμου",
               "phone": "2822022742"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821063282",
+              "name": "ΑΡΧΟΝΤΑΚΗΣ ΕΥΤΥΧΗΣ/ΑRCΗΟΝΤΑΚΙS EFTYCHIOS",
+              "address": "ΑΡΩΝΙ ΑΚΡΩΤΗΡΙΟΥ/ΑRΟΝΙ AKROTIRIOU",
+              "locality": "Ακρωτήρι",
+              "phone": "2821063282"
+            },
+            {
+              "pharmacyId": "2821034431",
+              "name": "ΙΟΡΔΑΝΙΔΟΥ ΑΝΑΣΤΑΣΙΑ",
+              "address": "ΓΑΛΑΤΑΣ (ΕΝΑΝΤΙ ΔΗΜΟΤΙΚΟΥ ΠΑΙΔΙΚΟΥ ΣΤΑΘΜΟΥ ΓΑΛΑΤΑ)",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821034431"
+            },
+            {
+              "pharmacyId": "2821074525",
+              "name": "ΚΥΝΗΓΑΚΗ ΕΥΓΕΝΙΑ/ΚΙΝΙGΑΚΙ EVGENIA",
+              "address": "ΚΙΣΣΑΜΟΥ 85/KISAMOU 85",
+              "locality": "Χανιά",
+              "phone": "2821074525"
+            },
+            {
+              "pharmacyId": "2821072442",
+              "name": "ΛΕΛΕΔΑΚΗ ΑΓΓΕΛΙΝΑ/LΕLΕDΑΚΙ AGGELIKI",
+              "address": "ΑΝ.ΓΟΓΟΝΗ 82/AN. GOGONI 82",
+              "locality": "Μουρνιές",
+              "phone": "2821072442"
             }
           ]
         }

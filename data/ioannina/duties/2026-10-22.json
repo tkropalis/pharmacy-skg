@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-20T08:40:06.799Z"
+        "uploadedAt": "2026-10-20T19:21:14.702Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651023658",
-              "name": "ΒΑΚΑΛΗΣ ΙΩΑΝΝΗΣ",
-              "address": "ΔΩΔΩΝΗΣ 2",
-              "locality": "Ιωάννινα",
-              "phone": "2651023658"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "ΣΠ. ΛΑΜΠΡΟΥ 27",
               "locality": "Ιωάννινα",
               "phone": "2651027870"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651023658",
+              "name": "ΒΑΚΑΛΗΣ ΙΩΑΝΝΗΣ",
+              "address": "ΔΩΔΩΝΗΣ 2",
+              "locality": "Ιωάννινα",
+              "phone": "2651023658"
             }
           ]
         }

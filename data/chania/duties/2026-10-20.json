@@ -7,7 +7,7 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-10-20T08:42:31.523Z"
+        "uploadedAt": "2026-10-20T19:23:05.245Z"
       },
       "sections": [
         {
@@ -51,47 +51,6 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
-          "hours": {
-            "from": "08:30",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2821086400",
-              "name": "ΑΔΟΝΤΑΚΗ ΕΛΕΝΗ/ΑDΟΝΤΑΚΙ HELEN",
-              "address": "ΑΓΙΟΥ ΕΛΕΥΘΕΡΙΟΥ 25,ΜΟΥΡΝΙΕΣ/ΑGΙΟU ELEFTHERIOU 25-MOURNIES",
-              "locality": "Μουρνιές",
-              "phone": "2821086400"
-            },
-            {
-              "pharmacyId": "2821039644",
-              "name": "ΑΛΕΞΑΚΗ ΗΛΙΑΝΑ/ΑLΕΧΑΚΙ ILIANA",
-              "address": "ΟΔΟΣ ΧΩΡΑΦΑ-ΧΩΡΑΦΑΚΙΑ ΑΚΡΩΤΗΡΙ/CΗΟRΑFΑΚΙΑ-ΑΚRΟΤΙRΙ",
-              "locality": "Ακρωτήρι",
-              "phone": "2821039644"
-            },
-            {
-              "pharmacyId": "2821053565",
-              "name": "ΒΡΟΥΛΙΔΑΚΗ ΓΕΩΡΓΙΑ/VRΟULΙDΑΚΙ GEORGIA",
-              "address": "ΠΑΠΑΝΑΣΤΑΣΊΟΥ & ΕΜΜΑΝΟΥΉΛ ΜΟΥΝΤΆΚΗ (ΑΠΕΝΑΝΤΙ ΑΠΟ ΑΝΘΟΠΩΛΕΙΟ ΡΟΖ-ΜΩΒ)/ΡΑΡΑΝΑSΤΑSΙΟU & MOUNTAKI",
-              "locality": "Χανιά",
-              "phone": "2821053565"
-            },
-            {
-              "pharmacyId": "2821031430",
-              "name": "ΚΥΡΙΑΚΑΚΗ ΕΛΕΝΗ/ΚΥRΙΑΚΑΚΙ HELEN",
-              "address": "ΜΑΚΡΥΣ ΤΟΙΧΟΣ (ΠΛΗΣΙΟΝ ΙΕΡΟΥ ΝΑΟΥ ΑΓΙΟΥ ΠΑΝΤΕΛΕΗΜΟΝΟΣ)/ΜΑΚRΥS TOICHOS",
-              "locality": "Νέα Κυδωνία",
-              "phone": "2821031430"
-            }
-          ]
-        },
-        {
           "kind": "on-duty",
           "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
           "hours": {
@@ -129,6 +88,47 @@
               "address": "ΟΜΟΓΕΝΩΝ ΑΜΕΡΙΚΗΣ 16/OMOGENON AMERIKIS 16",
               "locality": "Δήμος Κισσάμου",
               "phone": "2822024080"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821086400",
+              "name": "ΑΔΟΝΤΑΚΗ ΕΛΕΝΗ/ΑDΟΝΤΑΚΙ HELEN",
+              "address": "ΑΓΙΟΥ ΕΛΕΥΘΕΡΙΟΥ 25,ΜΟΥΡΝΙΕΣ/ΑGΙΟU ELEFTHERIOU 25-MOURNIES",
+              "locality": "Μουρνιές",
+              "phone": "2821086400"
+            },
+            {
+              "pharmacyId": "2821039644",
+              "name": "ΑΛΕΞΑΚΗ ΗΛΙΑΝΑ/ΑLΕΧΑΚΙ ILIANA",
+              "address": "ΟΔΟΣ ΧΩΡΑΦΑ-ΧΩΡΑΦΑΚΙΑ ΑΚΡΩΤΗΡΙ/CΗΟRΑFΑΚΙΑ-ΑΚRΟΤΙRΙ",
+              "locality": "Ακρωτήρι",
+              "phone": "2821039644"
+            },
+            {
+              "pharmacyId": "2821053565",
+              "name": "ΒΡΟΥΛΙΔΑΚΗ ΓΕΩΡΓΙΑ/VRΟULΙDΑΚΙ GEORGIA",
+              "address": "ΠΑΠΑΝΑΣΤΑΣΊΟΥ & ΕΜΜΑΝΟΥΉΛ ΜΟΥΝΤΆΚΗ (ΑΠΕΝΑΝΤΙ ΑΠΟ ΑΝΘΟΠΩΛΕΙΟ ΡΟΖ-ΜΩΒ)/ΡΑΡΑΝΑSΤΑSΙΟU & MOUNTAKI",
+              "locality": "Χανιά",
+              "phone": "2821053565"
+            },
+            {
+              "pharmacyId": "2821031430",
+              "name": "ΚΥΡΙΑΚΑΚΗ ΕΛΕΝΗ/ΚΥRΙΑΚΑΚΙ HELEN",
+              "address": "ΜΑΚΡΥΣ ΤΟΙΧΟΣ (ΠΛΗΣΙΟΝ ΙΕΡΟΥ ΝΑΟΥ ΑΓΙΟΥ ΠΑΝΤΕΛΕΗΜΟΝΟΣ)/ΜΑΚRΥS TOICHOS",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821031430"
             }
           ]
         }

@@ -1052,27 +1052,6 @@
       }
     },
     {
-      "id": "2410288022",
-      "name": "ΤΣΙΑΝΑ ΕΛΕΝΗ",
-      "address": "ΝΙΚΗΤΑΡΑ 3",
-      "locality": "Λάρισα",
-      "postcode": null,
-      "phone": "2410288022",
-      "groupId": "larisa",
-      "sources": [
-        "fsl"
-      ],
-      "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-26",
-      "location": {
-        "lat": 39.6394,
-        "lon": 22.42098,
-        "ref": "https://larisa.efhmeries.gr/Home/Details/23238",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2410288488",
       "name": "ΚΑΛΜΠΟΚΙΝΗΣ ΧΡ. ΑΝΑΣΤΑΣΙΟΣ",
       "address": "23ης ΟΚΤΩΒΡΙΟΥ 24-26 (Παραπλεύρως Ξεν. Διόνυσος)",
@@ -2638,7 +2617,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-21",
       "location": {
         "lat": 39.6307292,
         "lon": 22.3908971,
