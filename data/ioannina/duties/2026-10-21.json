@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-20T19:21:14.702Z"
+        "uploadedAt": "2026-10-21T08:41:14.449Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651022901",
-              "name": "ΛΙΟΛΙΟΥ ΠΑΡΑΣΚΕΥΗ - ΜΑΡΙΑ",
-              "address": "28 ΟΚΤΩΒΡΙΟΥ 55",
-              "locality": "Ιωάννινα",
-              "phone": "2651022901"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -61,6 +41,26 @@
               "address": "3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ 55, ΑΝΑΤΟΛΗ",
               "locality": "Ιωάννινα",
               "phone": "2651066310"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651022901",
+              "name": "ΛΙΟΛΙΟΥ ΠΑΡΑΣΚΕΥΗ - ΜΑΡΙΑ",
+              "address": "28 ΟΚΤΩΒΡΙΟΥ 55",
+              "locality": "Ιωάννινα",
+              "phone": "2651022901"
             }
           ]
         }

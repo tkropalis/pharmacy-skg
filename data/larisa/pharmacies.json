@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
+      "id": "2410231320",
+      "name": "ΚΑΛΥΒΗ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΟΙΚΟΝΟΜΟΥ ΕΞ ΟΙΚΟΝΟΜΩΝ 54 & ΚΟΛΟΚΟΤΡΩΝΗ ΓΩΝΙΑ (ΠΛΗΣΙΟΝ SUPER MARKET ΓΑΛΑΞΙΑ)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410231320",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 39.63407,
+        "lon": 22.42231,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/24241",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410232050",
       "name": "ΚΕΧΑΓΙΑΣ ΣΩΚΡΑΤΗΣ-ΠΑΝΑΓΙΩΤΗΣ",
       "address": "ΑΓΙΑΣ 83 (Δίπλα στην πύλη ΑΤΑ)",
@@ -312,6 +333,27 @@
         "lat": 39.6389219,
         "lon": 22.4145253,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23171",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410252069",
+      "name": "ΟΙΚΟΝΟΜΟΥ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΓΕΩΡΓΙΟΥ ΡΗΚΑ 11 (Πλατεία μικρού Προφήτη Ηλία)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410252069",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 39.6298,
+        "lon": 22.41704,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23249",
         "source": "list",
         "precision": "exact"
       }
@@ -664,7 +706,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-22",
       "location": {
         "lat": 39.64127,
         "lon": 22.41764,
@@ -1052,6 +1094,27 @@
       }
     },
     {
+      "id": "2410288078",
+      "name": "ΚΟΥΤΣΟΥΚΗΣ Π. ΓΕΩΡΓΙΟΣ",
+      "address": "31ης ΑΥΓΟΥΣΤΟΥ 10 & ΟΓΛ (Πλατεία Αγ. Βελισαρίου)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410288078",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 39.639851,
+        "lon": 22.420247,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23244",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410288488",
       "name": "ΚΑΛΜΠΟΚΙΝΗΣ ΧΡ. ΑΝΑΣΤΑΣΙΟΣ",
       "address": "23ης ΟΚΤΩΒΡΙΟΥ 24-26 (Παραπλεύρως Ξεν. Διόνυσος)",
@@ -1152,6 +1215,27 @@
         "lat": 39.64242,
         "lon": 22.42269,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23113",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410510000",
+      "name": "ΜΠΟΥΛΙΜΑΡΗ Α. ΕΥΡΙΔΙΚΗ",
+      "address": "ΚΥΠΡΟΥ 70 - ΚΕΝΤΡΙΚΗ ΠΛΑΤΕΙΑ (Έναντι Σταθμαρχείου Αστ. Λεωφορείων)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410510000",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 39.63894,
+        "lon": 22.41656,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23247",
         "source": "list",
         "precision": "exact"
       }
@@ -1420,7 +1504,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 39.63637,
         "lon": 22.41822,
@@ -1467,6 +1551,27 @@
         "lat": 39.63766,
         "lon": 22.410602,
         "ref": "https://larisa.efhmeries.gr/Home/Details/24245",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410535973",
+      "name": "ΤΖΕΛΛΟΥ Κ. ΚΥΡΙΑΚΟΥΛΑ",
+      "address": "ΑΝΘΙΜΟΥ ΓΑΖΗ 10",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410535973",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 39.6376885,
+        "lon": 22.413038,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23245",
         "source": "list",
         "precision": "exact"
       }
@@ -1787,6 +1892,27 @@
       }
     },
     {
+      "id": "2410555314",
+      "name": "ΒΑΣΙΛΑΚΟΥ ΚΩΝΣΤΑΝΤΙΝΑ-ΔΕΣΠΟΙΝΑ",
+      "address": "ΦΑΡΣΑΛΩΝ 49 (Πλησίον Τελωνείου)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410555314",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 39.62595,
+        "lon": 22.42342,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23248",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410571035",
       "name": "ΜΗΝΑ Ε. ΧΡΥΣΟΥΛΑ",
       "address": "ΒΟΛΟΥ 142",
@@ -1903,7 +2029,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 39.663144,
         "lon": 22.393744,
@@ -2407,7 +2533,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 39.63539,
         "lon": 22.41618,
@@ -2659,7 +2785,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 39.563057,
         "lon": 22.464754,
@@ -2701,7 +2827,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 39.717364,
         "lon": 22.39587,
@@ -3163,7 +3289,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 39.294434,
         "lon": 22.385567,
@@ -3331,7 +3457,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 39.738718,
         "lon": 22.285778,
@@ -3583,7 +3709,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 39.745199,
         "lon": 22.363246,
@@ -3730,7 +3856,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 39.895689,
         "lon": 22.18844,
@@ -4003,7 +4129,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 39.715785,
         "lon": 22.759203,

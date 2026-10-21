@@ -380,6 +380,27 @@
       }
     },
     {
+      "id": "2521026333",
+      "name": "ΤΖΗΜΟΣ ΧΡΗΣΤΟΣ",
+      "address": "ΑΓΑΜΕΜΝΟΝΟΣ 25",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521026333",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 41.1514313,
+        "lon": 24.1479399,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3181",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521026699",
       "name": "ΚΑΡΑΣΑΚΑΛΙΔΟΥ ΣΤ.-ΠΑΠΑΔΗΜΑ ΑΙΚ. Ο.Ε.",
       "address": "ΙΟΥΣΤΙΝΙΑΝΟΎ 2",
@@ -916,7 +937,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 41.143966,
         "lon": 24.150707,

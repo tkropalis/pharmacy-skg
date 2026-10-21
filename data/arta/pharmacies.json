@@ -338,6 +338,27 @@
       }
     },
     {
+      "id": "2681070377",
+      "name": "ΜΑΝΟΥ ΜΑΛΒΙΝΑ",
+      "address": "ΦΙΛΕΛΛΗΝΩΝ 5 ΚΑΙ ΠΛΑΤΕΙΑ ΜΟΝΟΠΩΛΙΟΥ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681070377",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 39.1620531,
+        "lon": 20.9868908,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2436",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681071222",
       "name": "ΒΑΔΙΒΟΥΛΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
       "address": "ΦΙΛΕΛΛΗΝΩΝ 38",
@@ -685,7 +706,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 39.0828391,
         "lon": 21.0168457,

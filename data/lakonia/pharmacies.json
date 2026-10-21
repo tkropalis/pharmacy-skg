@@ -254,6 +254,27 @@
       }
     },
     {
+      "id": "2731029265",
+      "name": "ΣΤΑΘΑΚΟΣ ΧΡΙΣΤΟΔΟΥΛΟΣ",
+      "address": "ΛΥΚΟΥΡΓΟΥ 20",
+      "locality": "Σπάρτη",
+      "postcode": null,
+      "phone": "2731029265",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.0770084,
+        "lon": 22.4372536,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/17064",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2731035750",
       "name": "ΚΑΨΑΣΚΗ ΜΑΡΙΑ",
       "address": "ΞΗΡΟΚΑΜΠΙ",
@@ -286,7 +307,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 36.9593051,
         "lon": 22.4522074,
@@ -307,7 +328,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 37.1706904,
         "lon": 22.3044898,
@@ -349,7 +370,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 36.8046192,
         "lon": 22.8518212,
@@ -454,7 +475,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 36.7153949,
         "lon": 22.8592885,
@@ -496,7 +517,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 36.7603815,
         "lon": 22.5641196,
@@ -601,7 +622,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 36.666078,
         "lon": 22.3806638,
@@ -622,7 +643,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 36.5108739,
         "lon": 23.0597934,
@@ -706,7 +727,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 36.8513616,
         "lon": 22.6670941,
@@ -769,7 +790,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 36.8611992,
         "lon": 22.7048206,

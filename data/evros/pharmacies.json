@@ -107,6 +107,27 @@
       }
     },
     {
+      "id": "2551025210",
+      "name": "ΠΕΤΙΝΟΣ ΝΙΚΟΛΑΟΣ",
+      "address": "Λεωφ. Δημοκρατίας 382 (Έναντι Ακαδημίας)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551025210",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 40.8442016,
+        "lon": 25.8715768,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4196",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551026214",
       "name": "ΓΑΛΑΖΙΟΥ ΑΣΠΑΣΙΑ",
       "address": "Κουτάβου 5 (περιοχή Αγ. Βασιλείου)",
@@ -790,7 +811,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 41.5029464,
         "lon": 26.5314121,
@@ -1063,7 +1084,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 41.3528428,
         "lon": 26.4958947,
@@ -1168,7 +1189,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 41.1904766,
         "lon": 26.3025729,
@@ -1210,7 +1231,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 41.0262152,
         "lon": 26.2954437,
@@ -1273,7 +1294,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 40.8942408,
         "lon": 26.1722017,

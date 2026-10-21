@@ -7,7 +7,7 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-10-20T19:23:05.245Z"
+        "uploadedAt": "2026-10-21T08:43:32.655Z"
       },
       "sections": [
         {
@@ -27,47 +27,6 @@
               "address": "ΠΛΑΤΕΙΑ 1866 5/ 1866 SQUARE 5",
               "locality": "Χανιά",
               "phone": "2821096625"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
-          "hours": {
-            "from": "08:15",
-            "to": "08:15",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "6948462411",
-              "name": "ΔΑΜΟΡΑΚΗΣ ΕΥΤΥΧΗΣ/DΑΜΟRΑΚΙS EYTIXIS",
-              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
-              "locality": "Δήμος Καντάνου-Σελίνου",
-              "phone": "6948462411"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
-          "hours": {
-            "from": "08:30",
-            "to": "22:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2822022742",
-              "name": "Σ.Φ. ΦΑΡΑΓΓΙΤΑΚΗΣ Ι.ΦΑΡΑΓΓΙΤΑΚΗΣ ΕΜ./S.F. FARAGGITAKIS I. & FARAGGITAKIS E.",
-              "address": "ΟΜΟΓΕΝΩΝ ΑΜΕΡΙΚΗΣ 23,ΚΑΣΤΕΛΛΙ ΚΙΣΑΜΟΥ/ΟΜΟGΕΝΟΝ AMERIKIS 23",
-              "locality": "Δήμος Κισσάμου",
-              "phone": "2822022742"
             }
           ]
         },
@@ -116,6 +75,47 @@
               "address": "ΕΘΝΑΡΧΟΥ ΒΕΝΙΖΕΛΟΥ 51 , ΣΟΥΔΑ/ΕΤΗΝ. VENIZELOU 53, SOUDA",
               "locality": "Σούδα",
               "phone": "2821089100"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "6948462411",
+              "name": "ΔΑΜΟΡΑΚΗΣ ΕΥΤΥΧΗΣ/DΑΜΟRΑΚΙS EYTIXIS",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "6948462411"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
+          "hours": {
+            "from": "08:30",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2822022742",
+              "name": "Σ.Φ. ΦΑΡΑΓΓΙΤΑΚΗΣ Ι.ΦΑΡΑΓΓΙΤΑΚΗΣ ΕΜ./S.F. FARAGGITAKIS I. & FARAGGITAKIS E.",
+              "address": "ΟΜΟΓΕΝΩΝ ΑΜΕΡΙΚΗΣ 23,ΚΑΣΤΕΛΛΙ ΚΙΣΑΜΟΥ/ΟΜΟGΕΝΟΝ AMERIKIS 23",
+              "locality": "Δήμος Κισσάμου",
+              "phone": "2822022742"
             }
           ]
         }

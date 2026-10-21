@@ -370,11 +370,32 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 37.943587,
         "lon": 23.64576,
         "ref": "https://piraeus.efhmeries.gr/Home/Details/38291",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2104113487",
+      "name": "ΧΕΛΜΗ ΛΟΥΚΙΑ",
+      "address": "ΤΖΑΒΕΛΛΑ 59 & ΔΥΟΒΟΥΝΙΩΤΟΥ",
+      "locality": "ΠΕΙΡΑΙΑΣ-ΜΙΚΡΟΛΙΜΑΝΟ",
+      "postcode": null,
+      "phone": "2104113487",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.944086,
+        "lon": 23.661195,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/38436",
         "source": "list",
         "precision": "exact"
       }
@@ -811,7 +832,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 37.9403207,
         "lon": 23.6493933,
@@ -942,6 +963,27 @@
         "lat": 37.9423868,
         "lon": 23.6479855,
         "ref": "https://piraeus.efhmeries.gr/Home/Details/39812",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2104178433",
+      "name": "ΚΑΛΥΒΗΣ Π. ΑΓΓΕΛΟΣ",
+      "address": "ΚΑΡΑΟΛΗ ΔΗΜΗΤΡΙΟΥ 34 ΚΑΙ ΚΑΡΑΙΣΚΟΥ",
+      "locality": "Πειραιάς",
+      "postcode": null,
+      "phone": "2104178433",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.944304,
+        "lon": 23.649189,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/38433",
         "source": "list",
         "precision": "exact"
       }
@@ -2144,6 +2186,27 @@
       }
     },
     {
+      "id": "2104322177",
+      "name": "ΚΥΡΙΑΚΙΔΟΥ ΚΑΛΛΙΟΠΗ & ΣΙΑ Ε.Ε",
+      "address": "Π.ΤΣΑΛΔΑΡΗ 54",
+      "locality": "Αμφιάλη",
+      "postcode": null,
+      "phone": "2104322177",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.967409,
+        "lon": 23.622555,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/38425",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2104323403",
       "name": "ΧΟΝΔΡΟΓΙΑΝΝΟΣ ΓΕΩΡΓΙΟΣ & ΣΙΑ Ο.Ε.",
       "address": "ΕΡΜΟΥ 24 ΚΑΙ ΡΕΠΟΥΛΗ",
@@ -2375,6 +2438,27 @@
       }
     },
     {
+      "id": "2104413167",
+      "name": "ΛΕΜΟΝΙΔΟΥ ΑΝΝΑ & ΣΙΑ Ο.Ε",
+      "address": "ΚΑΡΑΟΛΗ ΚΑΙ ΔΗΜΗΤΡΙΟΥ 17",
+      "locality": "Πέραμα",
+      "postcode": null,
+      "phone": "2104413167",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.9653,
+        "lon": 23.565689,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/38441",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2104413350",
       "name": "ΞΑΝΘΗΣ ΚΑΡΟΛΟΣ & ΣΙΑ Ε.Ε.",
       "address": "ΛΕΩΦ. ΕΙΡΉΝΗΣ 149",
@@ -2559,6 +2643,27 @@
         "lat": 37.936288,
         "lon": 23.64124,
         "ref": "https://piraeus.efhmeries.gr/Home/Details/39390",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2104512176",
+      "name": "ΜΑΡΚΑΝΤΩΝΑΤΟΥ Π. ΜΑΡΙΑ",
+      "address": "2ας ΜΕΡΑΡΧΙΑΣ 2 ΚΑΙ ΑΚΤΗ ΜΙΑΟΥΛΗ 29",
+      "locality": "Πειραιάς",
+      "postcode": null,
+      "phone": "2104512176",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.9413904,
+        "lon": 23.6421764,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/38438",
         "source": "list",
         "precision": "exact"
       }
@@ -3005,6 +3110,27 @@
       }
     },
     {
+      "id": "2104539077",
+      "name": "ΣΑΡΡΗ ΚΥΡΙΑΚΗ",
+      "address": "ΣΑΧΤΟΥΡΗ 100 ΚΑΙ ΖΑΝΝΗ",
+      "locality": "Πειραιάς, Άγιος Βασίλειος",
+      "postcode": null,
+      "phone": "2104539077",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.9309852,
+        "lon": 23.6421921,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/38435",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2104539329",
       "name": "ΕΥΣΤΡΑΤΙΑΔΗ Ε.ΑΛΕΞΑΝΔΡΑ - ΚΛΑΙΡΗ",
       "address": "ΣΚΟΥΖΕ 40 & ΚΟΥΝΤΟΥΡΙΩΤΟΥ",
@@ -3383,6 +3509,27 @@
       }
     },
     {
+      "id": "2104620065",
+      "name": "ΘΕΟΔΩΡΟΠΟΥΛΟΥ ΧΡ. ΧΡΙΣΤΙΝΑ",
+      "address": "ΥΠΑΠΑΝΤΗΣ 14 ΚΑΙ ΣΩΚΡΑΤΟΥΣ 57",
+      "locality": "Δραπετσώνα",
+      "postcode": null,
+      "phone": "2104620065",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.950272,
+        "lon": 23.630076,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/38426",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2104621107",
       "name": "ART PHARMACIES Ι.Κ.Ε.",
       "address": "ΤΡΑΠΕΖΟΥΝΤΟΣ 22",
@@ -3751,7 +3898,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 37.9658776,
         "lon": 23.5092017,
@@ -4255,7 +4402,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 37.9644842,
         "lon": 23.5253326,
@@ -4344,6 +4491,27 @@
         "lat": 37.9544609,
         "lon": 23.6702921,
         "ref": "https://piraeus.efhmeries.gr/Home/Details/38149",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2104812663",
+      "name": "ΓΙΑΚΟΥΜΕΛΗ ΕΥΑΓΓΕΛΙΑ (1)",
+      "address": "ΛΕΩΦ. ΦΛΕΜΙΝΓΚ 1",
+      "locality": "Άγιος Ιωάννης Ρέντης",
+      "postcode": null,
+      "phone": "2104812663",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.9611484,
+        "lon": 23.6739494,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/38443",
         "source": "list",
         "precision": "exact"
       }
@@ -4622,6 +4790,27 @@
       }
     },
     {
+      "id": "2104831220",
+      "name": "ΒΑΣΙΛΕΙΑΔΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΜΑΚΡΥΓΙΑΝΝΗ 101 ΚΑΙ ΜΕΤΑΜΟΡΦΩΣΕΩΣ 73",
+      "locality": "Μοσχάτο",
+      "postcode": null,
+      "phone": "2104831220",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.9520785,
+        "lon": 23.6789709,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/38429",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2104833320",
       "name": "ΠΟΤΗΡΗ ΓΕΩΡΓΙΑ",
       "address": "ΚΕΦΑΛΛΗΝΙΑΣ 6",
@@ -4680,6 +4869,27 @@
         "lat": 37.952459,
         "lon": 23.680238,
         "ref": "https://piraeus.efhmeries.gr/Home/Details/39735",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2104900406",
+      "name": "ΒΟΥΝΕΛΑΚΗΣ ΣΠΥΡΟΣ",
+      "address": "ΘΗΒΩΝ 127",
+      "locality": "Πειραιάς, Παλαιά Κοκκινιά",
+      "postcode": null,
+      "phone": "2104900406",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.9631202,
+        "lon": 23.6574557,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/38437",
         "source": "list",
         "precision": "exact"
       }
@@ -4890,6 +5100,27 @@
         "lat": 37.9624551,
         "lon": 23.6493134,
         "ref": "https://piraeus.efhmeries.gr/Home/Details/38361",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2104912186",
+      "name": "ΡΙΖΑΚΗ ΝΙΚ. ΣΟΦΙΑ",
+      "address": "Κ.ΓΕΜΕΛΟΥ 323 ΚΑΙ ΑΝΩΓΕΙΩΝ",
+      "locality": "Νίκαια",
+      "postcode": null,
+      "phone": "2104912186",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.975436,
+        "lon": 23.641513,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/38430",
         "source": "list",
         "precision": "exact"
       }
@@ -5205,6 +5436,27 @@
         "lat": 37.975558,
         "lon": 23.642132,
         "ref": "https://piraeus.efhmeries.gr/Home/Details/39111",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2104925735",
+      "name": "ΘΕΟΔΩΡΟΠΟΥΛΟΣ - ΜΑΡΑΝΤΙΔΗΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "Π.ΤΣΑΛΔΑΡΗ 79",
+      "locality": "Νίκαια",
+      "postcode": null,
+      "phone": "2104925735",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.966769,
+        "lon": 23.646794,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/38431",
         "source": "list",
         "precision": "exact"
       }
@@ -5840,6 +6092,27 @@
       }
     },
     {
+      "id": "2104959216",
+      "name": "ΓΕΩΡΓΙΟΣ ΚΑΤΡΑΠΑΣ Ε.Ε.",
+      "address": "ΓΡ.ΛΑΜΠΡΑΚΗ 89",
+      "locality": "Κορυδαλλός",
+      "postcode": null,
+      "phone": "2104959216",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.9789751,
+        "lon": 23.6589853,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/38427",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2104959532",
       "name": "Σ/Φ ΠΕΤΡΟΥΣΙΑΝ ΛΑΜΠΡΟΣ & ΣΑΚΕΛΛΑΡΗ ΜΑΡΙΑ ΟΕ",
       "address": "ΑΘΗΝΑΣ 40",
@@ -5856,6 +6129,27 @@
         "lat": 37.974441,
         "lon": 23.652439,
         "ref": "https://piraeus.efhmeries.gr/Home/Details/38758",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2104960083",
+      "name": "ΣΤΥΛΙΑΝΟΥ Κ. ΦΩΤΕΙΝΗ",
+      "address": "ΞΕΝΟΦΩΝΤΟΣ 34 & ΣΕΡΡΩΝ (Πλατεία Μέμου)",
+      "locality": "Κορυδαλλός",
+      "postcode": null,
+      "phone": "2104960083",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.975782,
+        "lon": 23.654679,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/38428",
         "source": "list",
         "precision": "exact"
       }
@@ -6255,6 +6549,27 @@
         "lat": 37.977662,
         "lon": 23.645506,
         "ref": "https://piraeus.efhmeries.gr/Home/Details/39734",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2104978559",
+      "name": "ΓΚΙΝΗΣ ΚΩΝ. ΣΠΥΡΙΔΩΝ",
+      "address": "ΑΒΕΡΩΦ 117 & ΖΩΟΔΟΧΟΥ ΠΗΓΗΣ (ΣΥΝΕΧΕΙΑ ΜΟΥΓΛΩΝ)",
+      "locality": "Κορυδαλλός",
+      "postcode": null,
+      "phone": "2104978559",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.9725573,
+        "lon": 23.6476159,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/38442",
         "source": "list",
         "precision": "exact"
       }
@@ -6764,6 +7079,27 @@
       }
     },
     {
+      "id": "2109681654",
+      "name": "ΣΑΠΟΡΙΤΑ Φ.Σ. & ΣΙΑ Ο.Ε.",
+      "address": "Λ. ΔΗΜΟΚΡΑΤΙΑΣ 45",
+      "locality": "Κερατσίνι",
+      "postcode": null,
+      "phone": "2109681654",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.9582352,
+        "lon": 23.624377,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/38439",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2110013122",
       "name": "ΧΑΤΖΗΚΟΚΚΙΝΟΣ ΓΕΩΡΓΙΟΣ ΚΑΙ ΣΙΑ ΟΕ",
       "address": "ΑΓΙΑΣ ΣΟΦΙΑΣ 2",
@@ -7247,6 +7583,27 @@
       }
     },
     {
+      "id": "2160048477",
+      "name": "Σ/Φ ΚΟΥΒΑΡΗΣ Ν. & ΚΩΝΣΤΑΝΤΙΑΝΟΥ Χ.",
+      "address": "ΝΙΚΗΣ 2 (ΠΛΑΤΕΙΑ ΝΙΚΗΣ, ΑΜΦΙΑΛΗ)",
+      "locality": "Κερατσίνι",
+      "postcode": null,
+      "phone": "2160048477",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 37.9701772,
+        "lon": 23.6218675,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/42215",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2169390830",
       "name": "ΤΣΙΡΑΚΟΠΟΥΛΟΣ ΙΩΑΝΝΗΣ Ε.Ε.",
       "address": "ΔΙΓΕΝΗ ΑΚΡΙΤΑ 35",
@@ -7279,7 +7636,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 37.497224,
         "lon": 23.445792,
@@ -7300,7 +7657,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 37.49674,
         "lon": 23.44842,
@@ -7321,7 +7678,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 37.496382,
         "lon": 23.448271,

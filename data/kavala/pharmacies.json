@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "2510223733",
+      "name": "ΣΕΡΑΦΕΙΜΙΔΗΣ ΧΑΡΑΛΑΜΠΟΣ ΤΟΥ ΣΤΕΦΑΝΟΥ",
+      "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 3ΟΓ",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510223733",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 40.9368994,
+        "lon": 24.4048512,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3972",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510225182",
       "name": "ΚΥΡΙΑΖΙΔΟΥ ΚΥΡΙΑΚΗ",
       "address": "ΒΕΝΙΖΕΛΟΥ 35",
@@ -223,7 +244,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 40.9375883,
         "lon": 24.4201934,

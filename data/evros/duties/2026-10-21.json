@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-20T19:20:44.183Z"
+        "uploadedAt": "2026-10-21T08:40:40.719Z"
       },
       "sections": [
         {
@@ -34,26 +34,6 @@
               "address": "ΕΥΡΙΠΙΔΟΥ 17",
               "locality": "Ορεστιάδα",
               "phone": "2552022456"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551083638",
-              "name": "Σ.Φ. ΠΑΓΙΑΝΝΙΔΟΥ Θ.-ΚΟΥΚΟΥΒΗ Ι.",
-              "address": "Ηροδότου & Προκόπη 14 (προς Παλαγία)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551083638"
             }
           ]
         },
@@ -109,6 +89,26 @@
               "address": "28ης Οκτωβρίου 16Α (έναντι 1ου δημοτικού)",
               "locality": "Αλεξανδρούπολη",
               "phone": "2551029082"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551083638",
+              "name": "Σ.Φ. ΠΑΓΙΑΝΝΙΔΟΥ Θ.-ΚΟΥΚΟΥΒΗ Ι.",
+              "address": "Ηροδότου & Προκόπη 14 (προς Παλαγία)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551083638"
             }
           ]
         }

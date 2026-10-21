@@ -76,7 +76,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 40.5258661,
         "lon": 22.2040558,
@@ -433,7 +433,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 40.5545487,
         "lon": 22.2539374,
@@ -496,7 +496,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 40.5235333,
         "lon": 22.205504,
@@ -942,6 +942,27 @@
         "lat": 40.6267951,
         "lon": 22.0711161,
         "ref": "https://imathia.efhmeries.gr/Home/Details/5775",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2332021442",
+      "name": "ΚΑΠΕΤΑΝΟΠΟΥΛΟΣ ΙΩΑΝ. ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΠΛΑΤΕΙΑ ΔΙΟΙΚΗΤΗΡΙΟΥ 5",
+      "locality": "Νάουσα",
+      "postcode": null,
+      "phone": "2332021442",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 40.6290406,
+        "lon": 22.0685666,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/5787",
         "source": "list",
         "precision": "exact"
       }
@@ -1504,7 +1525,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 40.6229662,
         "lon": 22.4436822,

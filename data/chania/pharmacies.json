@@ -13,7 +13,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 35.5040092,
         "lon": 24.0087278,
@@ -160,7 +160,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 35.512957,
         "lon": 23.967459,
@@ -459,6 +459,27 @@
         "lat": 35.5145614,
         "lon": 24.0308471,
         "ref": "https://chania.efhmeries.gr/Home/Details/13514",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821051744",
+      "name": "ΧΑΤΖΗ ΕΦΗ/CΗΑΤΖΙ EFFIE",
+      "address": "ΑΠΟΚΟΡΩΝΟΥ 51 -53/APOKORONOU 51-53",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821051744",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 35.5121044,
+        "lon": 24.0208248,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13571",
         "source": "list",
         "precision": "exact"
       }
@@ -811,7 +832,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 35.5307429,
         "lon": 24.0759463,
@@ -1199,6 +1220,27 @@
       }
     },
     {
+      "id": "2821093780",
+      "name": "ΣΩΜΑΚΗ ΕΛΕΝΗ/SΟΜΑΚΙ ELENI",
+      "address": "ΣΚΑΛΙΔΗ 29 (ΕΝΑΝΤΙ ΚΩΤΣΟΒΟΛΟΥ)/SΚΑLΙDΙ 29",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821093780",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-27",
+      "lastSeen": "2026-10-27",
+      "location": {
+        "lat": 35.513382,
+        "lon": 24.0161691,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13572",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2821093850",
       "name": "ΑΓΟΡΑΣΤΑΚΗ-ΜΑΝΤΩΝΑΝΑΚΗ ΑΡΓΥΡΩ/ΑGΟRΑSΤΑΚΙ-ΜΑΝΤΟΝΑΝΑΚΙ ARGIRO",
       "address": "ΧΑΤΖ.ΓΙΑΝΝΑΡΗ 31/CHATZIMICHALI GIANNARI 31",
@@ -1399,7 +1441,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 35.4944787,
         "lon": 23.6527239,
@@ -1483,7 +1525,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 35.2294606,
         "lon": 23.6819128,

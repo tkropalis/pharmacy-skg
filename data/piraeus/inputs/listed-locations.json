@@ -89,6 +89,11 @@
     "lon": 23.64576,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/38291"
   },
+  "2104113487": {
+    "lat": 37.944086,
+    "lon": 23.661195,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/38436"
+  },
   "2104113706": {
     "lat": 37.945537,
     "lon": 23.644447,
@@ -228,6 +233,11 @@
     "lat": 37.9423868,
     "lon": 23.6479855,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/39812"
+  },
+  "2104178433": {
+    "lat": 37.944304,
+    "lon": 23.649189,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/38433"
   },
   "2104178615": {
     "lat": 37.946716,
@@ -514,6 +524,11 @@
     "lon": 23.6264475,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/38841"
   },
+  "2104322177": {
+    "lat": 37.967409,
+    "lon": 23.622555,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/38425"
+  },
   "2104323403": {
     "lat": 37.9602243,
     "lon": 23.6219934,
@@ -569,6 +584,11 @@
     "lon": 23.5669425,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/38767"
   },
+  "2104413167": {
+    "lat": 37.9653,
+    "lon": 23.565689,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/38441"
+  },
   "2104413350": {
     "lat": 37.9640268,
     "lon": 23.5712585,
@@ -613,6 +633,11 @@
     "lat": 37.936288,
     "lon": 23.64124,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/39390"
+  },
+  "2104512176": {
+    "lat": 37.9413904,
+    "lon": 23.6421764,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/38438"
   },
   "2104513245": {
     "lat": 37.932461,
@@ -719,6 +744,11 @@
     "lon": 23.62856,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/38230"
   },
+  "2104539077": {
+    "lat": 37.9309852,
+    "lon": 23.6421921,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/38435"
+  },
   "2104539329": {
     "lat": 37.938351,
     "lon": 23.645725,
@@ -808,6 +838,11 @@
     "lat": 37.9517363,
     "lon": 23.626458,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/38296"
+  },
+  "2104620065": {
+    "lat": 37.950272,
+    "lon": 23.630076,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/38426"
   },
   "2104621107": {
     "lat": 37.9554786,
@@ -1039,6 +1074,11 @@
     "lon": 23.6702921,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/38149"
   },
+  "2104812663": {
+    "lat": 37.9611484,
+    "lon": 23.6739494,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/38443"
+  },
   "2104812677": {
     "lat": 37.9469368,
     "lon": 23.6690676,
@@ -1104,6 +1144,11 @@
     "lon": 23.657201,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/39535"
   },
+  "2104831220": {
+    "lat": 37.9520785,
+    "lon": 23.6789709,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/38429"
+  },
   "2104833320": {
     "lat": 37.9545,
     "lon": 23.680484,
@@ -1118,6 +1163,11 @@
     "lat": 37.952459,
     "lon": 23.680238,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/39735"
+  },
+  "2104900406": {
+    "lat": 37.9631202,
+    "lon": 23.6574557,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/38437"
   },
   "2104901471": {
     "lat": 37.972906,
@@ -1168,6 +1218,11 @@
     "lat": 37.9624551,
     "lon": 23.6493134,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/38361"
+  },
+  "2104912186": {
+    "lat": 37.975436,
+    "lon": 23.641513,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/38430"
   },
   "2104912318": {
     "lat": 37.976157,
@@ -1243,6 +1298,11 @@
     "lat": 37.975558,
     "lon": 23.642132,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/39111"
+  },
+  "2104925735": {
+    "lat": 37.966769,
+    "lon": 23.646794,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/38431"
   },
   "2104926334": {
     "lat": 37.970968,
@@ -1399,10 +1459,20 @@
     "lon": 23.661512,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/39736"
   },
+  "2104959216": {
+    "lat": 37.9789751,
+    "lon": 23.6589853,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/38427"
+  },
   "2104959532": {
     "lat": 37.974441,
     "lon": 23.652439,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/38758"
+  },
+  "2104960083": {
+    "lat": 37.975782,
+    "lon": 23.654679,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/38428"
   },
   "2104960093": {
     "lat": 37.97291,
@@ -1498,6 +1568,11 @@
     "lat": 37.977662,
     "lon": 23.645506,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/39734"
+  },
+  "2104978559": {
+    "lat": 37.9725573,
+    "lon": 23.6476159,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/38442"
   },
   "2104979883": {
     "lat": 37.975,
@@ -1619,6 +1694,11 @@
     "lon": 23.6799831,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/39394"
   },
+  "2109681654": {
+    "lat": 37.9582352,
+    "lon": 23.624377,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/38439"
+  },
   "2110013122": {
     "lat": 37.976613,
     "lon": 23.6439678,
@@ -1733,6 +1813,11 @@
     "lat": 37.9576243,
     "lon": 23.6284539,
     "ref": "https://piraeus.efhmeries.gr/Home/Details/38770"
+  },
+  "2160048477": {
+    "lat": 37.9701772,
+    "lon": 23.6218675,
+    "ref": "https://piraeus.efhmeries.gr/Home/Details/42215"
   },
   "2169390830": {
     "lat": 37.9529685,
