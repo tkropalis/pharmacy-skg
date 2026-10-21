@@ -7,29 +7,9 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-10-21T08:41:20.605Z"
+        "uploadedAt": "2026-10-21T19:21:52.574Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510227271",
-              "name": "ΝΙΚΟΛΑΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
-              "address": "ΓΑΛΛΙΚΗΣ ΔΗΜΟΚΡΑΤΙΑΣ 5",
-              "locality": "Καβάλα",
-              "phone": "2510227271"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΕΡΥΘΡΟΥ ΣΤΑΥΡΟΥ 1",
               "locality": "Καβάλα",
               "phone": "2510228281"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510227271",
+              "name": "ΝΙΚΟΛΑΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΓΑΛΛΙΚΗΣ ΔΗΜΟΚΡΑΤΙΑΣ 5",
+              "locality": "Καβάλα",
+              "phone": "2510227271"
             }
           ]
         }

@@ -7,7 +7,7 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-10-21T08:42:07.442Z"
+        "uploadedAt": "2026-10-21T19:22:36.042Z"
       },
       "sections": [
         {
@@ -102,26 +102,6 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721091515",
-              "name": "ΑΝΖΑΟΥΗ ΜΑΡΙΑΝΑ",
-              "address": "ΑΚΡΙΤΑ 79",
-              "locality": "Καλαμάτα",
-              "phone": "2721091515"
-            }
-          ]
-        },
-        {
           "kind": "saturday-extra",
           "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
@@ -172,6 +152,26 @@
               "address": "ΟΘΩΝΟΣ & ΑΜΑΛΙΑΣ",
               "locality": "Φιλιατρά",
               "phone": "2761032102"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721091515",
+              "name": "ΑΝΖΑΟΥΗ ΜΑΡΙΑΝΑ",
+              "address": "ΑΚΡΙΤΑ 79",
+              "locality": "Καλαμάτα",
+              "phone": "2721091515"
             }
           ]
         }

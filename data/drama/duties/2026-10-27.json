@@ -7,29 +7,9 @@
       "name": "Δράμα",
       "source": {
         "url": "https://drama.efhmeries.gr/",
-        "uploadedAt": "2026-10-21T08:40:26.154Z"
+        "uploadedAt": "2026-10-21T19:21:01.647Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2521057888",
-              "name": "ΙΩΑΝΝΙΔΟΥ ΑΓΓΕΛΙΚΗ & ΣΙΑ ΕΕ",
-              "address": "1ης ΙΟΥΛΙΟΥ 28 & ΧΡΥΣΟΒΕΡΓΗ",
-              "locality": "Δράμα",
-              "phone": "2521057888"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "ΑΓΑΜΕΜΝΟΝΟΣ 25",
               "locality": "Δράμα",
               "phone": "2521026333"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521057888",
+              "name": "ΙΩΑΝΝΙΔΟΥ ΑΓΓΕΛΙΚΗ & ΣΙΑ ΕΕ",
+              "address": "1ης ΙΟΥΛΙΟΥ 28 & ΧΡΥΣΟΒΕΡΓΗ",
+              "locality": "Δράμα",
+              "phone": "2521057888"
             }
           ]
         }

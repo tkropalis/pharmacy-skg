@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-10-21T08:41:27.752Z"
+        "uploadedAt": "2026-10-21T19:21:58.724Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441028093",
-              "name": "ΨΩΧΙΑ ΝΙΚΟΛΕΤΑ",
-              "address": "ΑΛΛΑΜΑΝΗ & ΤΑΛΙΑΔΟΥΡΟΥ",
-              "locality": "Καρδίτσα",
-              "phone": "2441028093"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ- 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "Α.ΠΑΠΑΝΔΡΕΟΥ 30-32",
               "locality": "Καρδίτσα",
               "phone": "2441071442"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441028093",
+              "name": "ΨΩΧΙΑ ΝΙΚΟΛΕΤΑ",
+              "address": "ΑΛΛΑΜΑΝΗ & ΤΑΛΙΑΔΟΥΡΟΥ",
+              "locality": "Καρδίτσα",
+              "phone": "2441028093"
             }
           ]
         }
