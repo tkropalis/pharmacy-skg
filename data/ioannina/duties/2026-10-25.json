@@ -7,36 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-22T08:46:39.228Z"
+        "uploadedAt": "2026-10-22T19:16:55.416Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651040452",
-              "name": "ΒΑΣΙΛΕΙΟΥ ΕΙΡΗΝΗ",
-              "address": "ΔΩΔΩΝΗΣ 109",
-              "locality": "Ιωάννινα",
-              "phone": "2651040452"
-            },
-            {
-              "pharmacyId": "2651045233",
-              "name": "Σ.Φ. ΠΑΝΟΠΟΥΛΟΥ ΑΦΡΟΔΙΤΗ - ΜΗΤΣΙΟΣ ΙΩΑΝΝΗΣ",
-              "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 35",
-              "locality": "Ιωάννινα",
-              "phone": "2651045233"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 14:30& 18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -74,6 +47,33 @@
               "address": "ΧΑΡ. ΤΡΙΚΟΥΠΗ 7",
               "locality": "Ιωάννινα",
               "phone": "2651400832"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651040452",
+              "name": "ΒΑΣΙΛΕΙΟΥ ΕΙΡΗΝΗ",
+              "address": "ΔΩΔΩΝΗΣ 109",
+              "locality": "Ιωάννινα",
+              "phone": "2651040452"
+            },
+            {
+              "pharmacyId": "2651045233",
+              "name": "Σ.Φ. ΠΑΝΟΠΟΥΛΟΥ ΑΦΡΟΔΙΤΗ - ΜΗΤΣΙΟΣ ΙΩΑΝΝΗΣ",
+              "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 35",
+              "locality": "Ιωάννινα",
+              "phone": "2651045233"
             }
           ]
         }

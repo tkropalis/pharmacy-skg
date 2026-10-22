@@ -7,29 +7,9 @@
       "name": "Δράμα",
       "source": {
         "url": "https://drama.efhmeries.gr/",
-        "uploadedAt": "2026-10-22T08:45:51.380Z"
+        "uploadedAt": "2026-10-22T19:16:12.205Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2521022296",
-              "name": "ΦΑΝΤΗ ΒΑΣΙΛΙΚΗ",
-              "address": "ΓΕΩΡ. ΠΑΠΑΝΔΡΕΟΥ 40",
-              "locality": "Δράμα",
-              "phone": "2521022296"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "ΑΡΜΕΝ 24",
               "locality": "Δράμα",
               "phone": "2521025734"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521022296",
+              "name": "ΦΑΝΤΗ ΒΑΣΙΛΙΚΗ",
+              "address": "ΓΕΩΡ. ΠΑΠΑΝΔΡΕΟΥ 40",
+              "locality": "Δράμα",
+              "phone": "2521022296"
             }
           ]
         },

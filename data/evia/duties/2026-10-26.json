@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-22T08:45:58.768Z"
+        "uploadedAt": "2026-10-22T19:16:18.345Z"
       },
       "sections": [
         {
@@ -66,6 +66,26 @@
           ]
         },
         {
+          "kind": "overnight",
+          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221082969",
+              "name": "ΦΩΤΙΑΔΗ ΕΥΑΓΓΕΛΙΑ",
+              "address": "ΑΡΕΘΟΥΣΗΣ 12",
+              "locality": "Χαλκίδα",
+              "phone": "2221082969"
+            }
+          ]
+        },
+        {
           "kind": "day",
           "heading": "17:30 ΕΩΣ 21:00",
           "hours": {
@@ -102,26 +122,6 @@
               "address": "ΚΗΡΕΩΣ 11Β",
               "locality": "Χαλκίδα",
               "phone": "2221085586"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221082969",
-              "name": "ΦΩΤΙΑΔΗ ΕΥΑΓΓΕΛΙΑ",
-              "address": "ΑΡΕΘΟΥΣΗΣ 12",
-              "locality": "Χαλκίδα",
-              "phone": "2221082969"
             }
           ]
         }

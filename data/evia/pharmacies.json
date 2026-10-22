@@ -86,27 +86,6 @@
       }
     },
     {
-      "id": "2221021853",
-      "name": "ΚΙΑΠΕΚΟΥ ΚΥΡΙΑΚΗ",
-      "address": "ΑΜΦΙΔΑΜΑΝΤΟΣ 70 & ΑΘ.ΔΙΑΚΟΥ-ΠΛΑΤΕΙΑ ΚΑΝΗΘΟΥ",
-      "locality": "Χαλκίδα",
-      "postcode": null,
-      "phone": "2221021853",
-      "groupId": "evia",
-      "sources": [
-        "iteq-evia"
-      ],
-      "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
-      "location": {
-        "lat": 38.4703271,
-        "lon": 23.586014,
-        "ref": "https://evia.efhmeries.gr/Home/Details/9339",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2221022120",
       "name": "ΚΥΛΕΡΤΖΗΣ ΧΡΗΣΤΟΣ",
       "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
@@ -1063,7 +1042,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-23",
       "location": {
         "lat": 38.4634152,
         "lon": 23.5916951,

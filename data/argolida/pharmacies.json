@@ -2,27 +2,6 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
-      "id": "2751020676",
-      "name": "ΔΗΜΑΚΗ ΠΑΝ. ΒΑΣΙΛΙΚΗ",
-      "address": "ΚΑΛΛΕΡΓΗ 11",
-      "locality": "Άργος",
-      "postcode": null,
-      "phone": "2751020676",
-      "groupId": "argolida",
-      "sources": [
-        "iteq-argolida"
-      ],
-      "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-27",
-      "location": {
-        "lat": 37.6344328,
-        "lon": 22.7266531,
-        "ref": "https://argolida.efhmeries.gr/Home/Details/18780",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2751022400",
       "name": "ΜΠΑΡΛΑΣ ΕΥΑΓΓΕΛΟΣ",
       "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 14",
@@ -202,7 +181,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-10",
       "location": {
         "lat": 37.6359828,
         "lon": 22.7285968,
@@ -286,7 +265,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-27",
       "location": {
         "lat": 37.6341367,
         "lon": 22.7268611,
@@ -370,7 +349,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 37.6332897,
         "lon": 22.7286433,
@@ -732,27 +711,6 @@
         "lat": 37.5652271,
         "lon": 22.8002198,
         "ref": "https://argolida.efhmeries.gr/Home/Details/20235",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
-      "id": "2752028249",
-      "name": "ΚΑΤΣΟΥΛΑΚΟΥ ΑΡΙΣΤΕΑ",
-      "address": "ΚΟΥΝΤΟΥΡΙΩΤΗ 4",
-      "locality": "Ναύπλιο",
-      "postcode": null,
-      "phone": "2752028249",
-      "groupId": "argolida",
-      "sources": [
-        "iteq-argolida"
-      ],
-      "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-24",
-      "location": {
-        "lat": 37.5658312,
-        "lon": 22.80844,
-        "ref": "https://argolida.efhmeries.gr/Home/Details/20237",
         "source": "list",
         "precision": "exact"
       }

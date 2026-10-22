@@ -7,29 +7,9 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-22T08:46:05.056Z"
+        "uploadedAt": "2026-10-22T19:16:24.393Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00-21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551027917",
-              "name": "ΜΑΧΑΙΡΙΔΗΣ ΣΠΥΡΟΣ",
-              "address": "Δήμητρας 46 (έναντι Παλ. Νοσοκομείου)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551027917"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "10:00-14:00 & 18:00-08:00",
@@ -129,6 +109,26 @@
               "address": "ΝΙΚΗΣ 19",
               "locality": "Τυχερό, Προβατώνας",
               "phone": "2554042042"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00-21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551027917",
+              "name": "ΜΑΧΑΙΡΙΔΗΣ ΣΠΥΡΟΣ",
+              "address": "Δήμητρας 46 (έναντι Παλ. Νοσοκομείου)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551027917"
             }
           ]
         }
