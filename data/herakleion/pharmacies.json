@@ -244,7 +244,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.3426884,
         "lon": 25.1586669,
@@ -265,7 +265,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.3305586,
         "lon": 25.1342859,
@@ -727,7 +727,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.3059663,
         "lon": 25.1527451,
@@ -832,7 +832,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.330256,
         "lon": 25.1365563,
@@ -958,7 +958,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.3384601,
         "lon": 25.1364094,
@@ -1252,7 +1252,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.3387197,
         "lon": 25.1414931,
@@ -1740,6 +1740,27 @@
         "lat": 35.3360581,
         "lon": 25.1328308,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57864",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810289009",
+      "name": "ΚΩΝ/ΝΟΣ Ν. ΚΟΚΑΛΗΣ ΕΕ",
+      "address": "ΤΕΛΟΣ ΟΔΟΥ 1821 / AP. 82 (ΦΑΝΑΡΙΑ)",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810289009",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "location": {
+        "lat": 35.3367349,
+        "lon": 25.1317327,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/58001",
         "source": "list",
         "precision": "exact"
       }
@@ -2260,7 +2281,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.3305104,
         "lon": 25.207893,
@@ -2743,7 +2764,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.3250117,
         "lon": 25.0651566,
@@ -2953,7 +2974,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.3187187,
         "lon": 25.1445227,
@@ -3058,7 +3079,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.150501,
         "lon": 25.2645342,
@@ -3331,7 +3352,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.0504637,
         "lon": 24.8763094,
@@ -3499,7 +3520,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.0716793,
         "lon": 24.7705765,
@@ -3667,7 +3688,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.331734,
         "lon": 25.3452693,
@@ -3709,7 +3730,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.3141363,
         "lon": 25.3951863,
@@ -3835,7 +3856,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.2831684,
         "lon": 25.4628694,
@@ -3856,7 +3877,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.2926492,
         "lon": 25.4330368,
@@ -3877,7 +3898,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 35.2926533,
         "lon": 25.4320195,

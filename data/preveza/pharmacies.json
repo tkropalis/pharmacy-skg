@@ -128,6 +128,27 @@
       }
     },
     {
+      "id": "2682024888",
+      "name": "ΑΔΑΜΗ ΑΡΤΕΜΙΣ",
+      "address": "ΛΕΩΦ. ΕΙΡΗΝΗΣ 63",
+      "locality": "Πρέβεζα",
+      "postcode": null,
+      "phone": "2682024888",
+      "groupId": "preveza",
+      "sources": [
+        "iteq-preveza"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "location": {
+        "lat": 38.9558445,
+        "lon": 20.7526286,
+        "ref": "https://preveza.efhmeries.gr/Home/Details/1423",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2682024950",
       "name": "Σ.Φ ΣΟΛΔΑΤΟΣ ΓΕΡΑΣΙΜΟΣ - ΣΟΛΔΑΤΟΥ ΕΛΙΖΑ Ο.Ε",
       "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 63",

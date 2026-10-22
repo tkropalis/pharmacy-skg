@@ -149,6 +149,27 @@
       }
     },
     {
+      "id": "2551026478",
+      "name": "Σ.Φ. ΜΠΟΛΙΑΚΗΣ Σ. - ΑΘΑΝΑΣΙΑΔΟΥ Ε.",
+      "address": "14ης Μαΐου 53",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551026478",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "location": {
+        "lat": 40.8476851,
+        "lon": 25.8745777,
+        "ref": "https://evros.efhmeries.gr/Home/Details/3839",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551027077",
       "name": "ΜΥΡΜΙΛΙΑΓΚΟΣ ΝΙΚΟΛΑΟΣ",
       "address": "Ελ. Βενιζέλου 46 (όπισθεν Δημαρχείου)",
@@ -270,6 +291,27 @@
         "lat": 40.8494878,
         "lon": 25.8737471,
         "ref": "https://evros.efhmeries.gr/Home/Details/4245",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2551029022",
+      "name": "Σ.Φ. ΠΟΥΡΝΑΡΑΣ ΤΡ.-ΣΑΛΟΝΙΚΙΔΟΥ Ε.",
+      "address": "Αίνου 27 (έναντι Δημ. Βιβλιοθήκης)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551029022",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "location": {
+        "lat": 40.8468183,
+        "lon": 25.8735907,
+        "ref": "https://evros.efhmeries.gr/Home/Details/3855",
         "source": "list",
         "precision": "exact"
       }
@@ -706,7 +748,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 41.4955525,
         "lon": 26.5339423,
@@ -1105,7 +1147,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 41.3526561,
         "lon": 26.503006,
@@ -1147,7 +1189,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 41.1924991,
         "lon": 26.304174,
@@ -1231,7 +1273,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 41.0262152,
         "lon": 26.2954437,
@@ -1357,7 +1399,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 40.8935681,
         "lon": 26.169281,

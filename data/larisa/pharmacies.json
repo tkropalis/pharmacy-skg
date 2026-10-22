@@ -170,6 +170,27 @@
       }
     },
     {
+      "id": "2410236566",
+      "name": "ΧΟΛΕΒΑΣ Β. ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΥΨΗΛΑΝΤΟΥ 2 (Άγιος Κωνσταντίνος)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410236566",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "location": {
+        "lat": 39.63743,
+        "lon": 22.42281,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23250",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410236750",
       "name": "ΜΠΕΓΑ ΕΣΤΕΡ",
       "address": "ΒΟΛΟΥ 79",
@@ -370,7 +391,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 39.6385663,
         "lon": 22.4199753,
@@ -438,6 +459,27 @@
         "lat": 39.6424747,
         "lon": 22.4174687,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23040",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410253509",
+      "name": "ΜΠΑΡΜΠΟΥΤΗΣ Γ. ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΒΕΝΙΖΕΛΟΥ 15",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410253509",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "location": {
+        "lat": 39.6395648,
+        "lon": 22.4182384,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23253",
         "source": "list",
         "precision": "exact"
       }
@@ -585,6 +627,27 @@
         "lat": 39.64043,
         "lon": 22.41862,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23174",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410255542",
+      "name": "ΟΙΚΟΝΟΜΟΥ ΑΧ. ΑΡΕΤΗ-ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΠΑΠΑΚΥΡΙΑΖΗ 53 & ΔΙΟΓΕΝΟΥΣ (έναντι ΔΕΗ κέντρου)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410255542",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "location": {
+        "lat": 39.63714,
+        "lon": 22.41382,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23255",
         "source": "list",
         "precision": "exact"
       }
@@ -1336,7 +1399,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 39.63895,
         "lon": 22.41849,
@@ -2092,7 +2155,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 39.668652,
         "lon": 22.394744,
@@ -2606,6 +2669,48 @@
       }
     },
     {
+      "id": "2410625232",
+      "name": "ΠΑΝΑΓΙΩΤΑΚΟΠΟΥΛΟΥ ΑΓΓΕΛΙΚΗ",
+      "address": "ΡΟΥΣΒΕΛΤ 73",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410625232",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "location": {
+        "lat": 39.63293,
+        "lon": 22.418,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23252",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410625700",
+      "name": "ΓΙΩΤΣΑ ΒΑΣΙΛΙΚΗ",
+      "address": "ΗΠΕΙΡΟΥ 8 & ΣΜΟΛΕΝΣΚΥ (Κοντά στο Στρατιωτικό Νοσοκομείο)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410625700",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "location": {
+        "lat": 39.63408,
+        "lon": 22.40868,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23251",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2410626047",
       "name": "ΣΤΑΥΡΑΚΗΣ Ν. ΠΕΤΡΟΣ",
       "address": "ΣΚΟΠΑΔΩΝ 7 (Αρχή οδού Καρδίτσης - πρώτος δρόμος αριστερά)",
@@ -2785,7 +2890,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 39.563057,
         "lon": 22.464754,
@@ -2869,7 +2974,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 39.723169,
         "lon": 22.396167,
@@ -3226,7 +3331,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 39.2937484,
         "lon": 22.3838606,
@@ -3562,7 +3667,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 39.738841,
         "lon": 22.28971,
@@ -3730,7 +3835,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 39.746426,
         "lon": 22.360094,
@@ -3835,7 +3940,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 39.896002,
         "lon": 22.188355,
@@ -4066,7 +4171,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 39.7186221,
         "lon": 22.7552863,

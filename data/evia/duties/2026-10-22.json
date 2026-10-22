@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-21T19:21:07.808Z"
+        "uploadedAt": "2026-10-22T08:45:58.768Z"
       },
       "sections": [
         {
@@ -34,26 +34,6 @@
               "address": "ΚΟΡΦΙΑΤΗ ΑΘ. 15",
               "locality": "Ιστιαία",
               "phone": "2226053570"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221020042",
-              "name": "ΛΥΚΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
-              "address": "ΧΑΪΝΑ 37",
-              "locality": "Χαλκίδα",
-              "phone": "2221020042"
             }
           ]
         },
@@ -102,6 +82,26 @@
               "address": "ΑΓΙΟΥ ΑΝΤΩΝΙΟΥ 3",
               "locality": "Χαλκίδα",
               "phone": "2221029600"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221020042",
+              "name": "ΛΥΚΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΧΑΪΝΑ 37",
+              "locality": "Χαλκίδα",
+              "phone": "2221020042"
             }
           ]
         }

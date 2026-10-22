@@ -97,7 +97,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 40.9368994,
         "lon": 24.4048512,
@@ -202,7 +202,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 40.9360646,
         "lon": 24.4081128,
@@ -417,6 +417,27 @@
         "lat": 40.9361699,
         "lon": 24.4141638,
         "ref": "https://kavala.efhmeries.gr/Home/Details/3999",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510834141",
+      "name": "ΓΕΩΡΓΙΑΔΟΥ ΓΕΩΡΓΙΑ-ΣΑΡΛΟΤ",
+      "address": "ΒΕΝΙΖΕΛΟΥ 28",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510834141",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "location": {
+        "lat": 40.9370128,
+        "lon": 24.4074583,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3974",
         "source": "list",
         "precision": "exact"
       }

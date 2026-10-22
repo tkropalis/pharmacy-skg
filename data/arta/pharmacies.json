@@ -265,7 +265,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 39.247688,
         "lon": 21.161423,
@@ -459,6 +459,27 @@
         "lat": 39.1607803,
         "lon": 20.9859788,
         "ref": "https://arta.efhmeries.gr/Home/Details/2432",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681074180",
+      "name": "ΖΑΡΩΤΙΑΔΟΥ ΚΑΛΛΙΟΠΗ",
+      "address": "ΣΤΡΑΤΗΓΟΥ ΜΑΚΡΥΓΙΑΝΝΗ 12",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681074180",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "location": {
+        "lat": 39.162515,
+        "lon": 20.987242,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2437",
         "source": "list",
         "precision": "exact"
       }

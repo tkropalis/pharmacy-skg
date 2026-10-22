@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
+      "id": "2541020862",
+      "name": "ΤΣΑΜΟΥΡΛΙΔΗΣ ΙΩΣΗΦ",
+      "address": "ΜΠΡΩΚΟΥΜΗ 31-ΠΛ. ΕΛΕΥΘΕΡΙΑΣ",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541020862",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "location": {
+        "lat": 41.1359982,
+        "lon": 24.8890618,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3657",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2541021050",
       "name": "ΨΩΜΙΑΔΗΣ ΑΛΕΞΑΝΔΡΟΣ",
       "address": "28ης ΟΚΤΩΒΡΙΟΥ 64",
@@ -601,7 +622,7 @@
         "iteq-xanthi"
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 41.1325542,
         "lon": 24.8854579,
@@ -643,7 +664,7 @@
         "iteq-xanthi"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 41.1346175,
         "lon": 24.895924,

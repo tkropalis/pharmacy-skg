@@ -286,7 +286,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 41.1522443,
         "lon": 24.1468133,
@@ -706,7 +706,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 41.1500336,
         "lon": 24.1476403,
@@ -963,6 +963,27 @@
         "lat": 41.1506061,
         "lon": 24.1459047,
         "ref": "https://drama.efhmeries.gr/Home/Details/3136",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "x-78776d90bd",
+      "name": "ΑΡΓΙΑ",
+      "address": "ΔΡΑΜΑ",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": null,
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "location": {
+        "lat": 41.1502273,
+        "lon": 24.1469489,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3184",
         "source": "list",
         "precision": "exact"
       }

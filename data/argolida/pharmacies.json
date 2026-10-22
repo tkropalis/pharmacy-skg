@@ -118,7 +118,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 37.5874845,
         "lon": 22.7447696,
@@ -165,6 +165,27 @@
         "lat": 37.6294021,
         "lon": 22.7318759,
         "ref": "https://argolida.efhmeries.gr/Home/Details/18761",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2751066609",
+      "name": "ΑΝΑΓΝΩΣΤΟΠΟΥΛΟΣ ΠΕΤΡΟΣ",
+      "address": "ΤΣΩΚΡΗ 32",
+      "locality": "Άργος",
+      "postcode": null,
+      "phone": "2751066609",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "location": {
+        "lat": 37.6362348,
+        "lon": 22.7257453,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/18781",
         "source": "list",
         "precision": "exact"
       }
@@ -391,7 +412,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 37.567835,
         "lon": 22.806998,
@@ -664,7 +685,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 37.5661578,
         "lon": 22.803564,
@@ -832,7 +853,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 37.638294,
         "lon": 22.806886,
@@ -874,7 +895,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 37.5190545,
         "lon": 22.8588221,
@@ -937,7 +958,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 37.6115915,
         "lon": 23.0467768,
@@ -1000,7 +1021,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 37.3805109,
         "lon": 23.1602123,
@@ -1063,7 +1084,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 37.3852651,
         "lon": 23.2492629,
@@ -1126,7 +1147,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 37.327838,
         "lon": 23.1437319,

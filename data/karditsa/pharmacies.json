@@ -76,7 +76,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 39.3655233,
         "lon": 21.9223087,
@@ -165,6 +165,27 @@
         "lat": 39.3607545,
         "lon": 21.9260789,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3765",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441023597",
+      "name": "ΣΠΥΡΟΥ ΒΑΙΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΚΟΥΜΟΥΝΔΟΥΡΟΥ & ΑΒΕΡΩΦ",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441023597",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-28",
+      "lastSeen": "2026-10-28",
+      "location": {
+        "lat": 39.362338,
+        "lon": 21.9228827,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3786",
         "source": "list",
         "precision": "exact"
       }

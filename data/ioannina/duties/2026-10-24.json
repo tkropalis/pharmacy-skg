@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-21T19:21:45.774Z"
+        "uploadedAt": "2026-10-22T08:46:39.228Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651066590",
-              "name": "Σ.Φ. ΖΗΚΟΥ ΑΝΝΑ - ΠΑΠΑΝΔΡΕΟΥ ΑΡΙΣΤΟΤΕΛΗΣ",
-              "address": "ΠΛΑΤΕΙΑ ΟΜΗΡΟΥ 12",
-              "locality": "Ιωάννινα",
-              "phone": "2651066590"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -68,6 +48,26 @@
               "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 35",
               "locality": "Ιωάννινα",
               "phone": "2651045233"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651066590",
+              "name": "Σ.Φ. ΖΗΚΟΥ ΑΝΝΑ - ΠΑΠΑΝΔΡΕΟΥ ΑΡΙΣΤΟΤΕΛΗΣ",
+              "address": "ΠΛΑΤΕΙΑ ΟΜΗΡΟΥ 12",
+              "locality": "Ιωάννινα",
+              "phone": "2651066590"
             }
           ]
         }

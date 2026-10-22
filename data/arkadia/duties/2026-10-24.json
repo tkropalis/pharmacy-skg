@@ -7,7 +7,7 @@
       "name": "Αρκαδία",
       "source": {
         "url": "https://arkadia.efhmeries.gr/",
-        "uploadedAt": "2026-10-21T08:40:03.702Z"
+        "uploadedAt": "2026-10-22T08:45:29.116Z"
       },
       "sections": [
         {
@@ -76,13 +76,6 @@
           "extraHours": [],
           "notes": [],
           "entries": [
-            {
-              "pharmacyId": "2710232301",
-              "name": "ΛΑΜΠΡΟΠΟΥΛΟΥ ΚΑΛΛΙΟΠΗ",
-              "address": "ΔΕΛΗΓΙΑΝΝΗ 31",
-              "locality": "Τρίπολη",
-              "phone": "2710232301"
-            },
             {
               "pharmacyId": "2710226840",
               "name": "ΜΠΕΤΑ ΑΓΓΕΛΙΚΗ",
