@@ -7,7 +7,7 @@
       "name": "Πιερία",
       "source": {
         "url": "https://pieria.efhmeries.gr/",
-        "uploadedAt": "2026-10-23T08:41:41.222Z"
+        "uploadedAt": "2026-10-23T19:22:30.597Z"
       },
       "sections": [
         {
@@ -88,26 +88,6 @@
         },
         {
           "kind": "day",
-          "heading": "8:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2351026738",
-              "name": "Σ.Φ. ΜΑΡΙΝΟΠΟΥΛΟΣ ΔΗΜΗΤΡΙΟΣ-ΜΑΡΙΝΟΠΟΥΛΟΣ ΓΡΗΓΟΡΙΟΣ",
-              "address": "Π.ΤΣΑΛΔΑΡΗ 7",
-              "locality": "Κατερίνη",
-              "phone": "2351026738"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:00 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
             "from": "08:00",
@@ -143,6 +123,26 @@
               "address": "Δ. ΑΡΕΟΠΑΓΙΤΟΥ 5",
               "locality": "Κατερίνη",
               "phone": "2351026010"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351026738",
+              "name": "Σ.Φ. ΜΑΡΙΝΟΠΟΥΛΟΣ ΔΗΜΗΤΡΙΟΣ-ΜΑΡΙΝΟΠΟΥΛΟΣ ΓΡΗΓΟΡΙΟΣ",
+              "address": "Π.ΤΣΑΛΔΑΡΗ 7",
+              "locality": "Κατερίνη",
+              "phone": "2351026738"
             }
           ]
         }

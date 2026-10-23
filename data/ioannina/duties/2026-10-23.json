@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-23T08:40:02.254Z"
+        "uploadedAt": "2026-10-23T19:21:15.720Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651079570",
-              "name": "ΘΕΟΔΩΡΗ ΔΗΜΗΤΡΑ",
-              "address": "Π.ΜΑΥΡΟΓΙΑΝΝΗ 58",
-              "locality": "Ιωάννινα",
-              "phone": "2651079570"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "Μ. ΑΓΓΕΛΟΥ 2",
               "locality": "Ιωάννινα",
               "phone": "2651022848"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651079570",
+              "name": "ΘΕΟΔΩΡΗ ΔΗΜΗΤΡΑ",
+              "address": "Π.ΜΑΥΡΟΓΙΑΝΝΗ 58",
+              "locality": "Ιωάννινα",
+              "phone": "2651079570"
             }
           ]
         }

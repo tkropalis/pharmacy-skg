@@ -3866,6 +3866,27 @@
       }
     },
     {
+      "id": "2897023923",
+      "name": "ΔΡΑΚΑΚΗΣ ΙΩΑΝΝΗΣ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ ΑΝΩ ΧΕΡΣΟΝΗΣΟΣ",
+      "locality": "Ανάληψη Χερσονήσου",
+      "postcode": null,
+      "phone": "2897023923",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-23",
+      "lastSeen": "2026-10-24",
+      "location": {
+        "lat": 35.288699,
+        "lon": 25.4429594,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/59966",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2897024810",
       "name": "ΜΠΟΡΜΠΟΥΔΑΚΗΣ ΜΙΧΑΗΛ",
       "address": "ΑΝΑΛΗΨΗ ΧΕΡΣΟΝΗΣΟΥ",

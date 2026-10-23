@@ -7,7 +7,7 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-10-23T08:42:20.565Z"
+        "uploadedAt": "2026-10-23T19:23:07.502Z"
       },
       "sections": [
         {
@@ -27,47 +27,6 @@
               "address": "ΚΥΔΩΝΙΑΣ 27/KYDONIAS 27",
               "locality": "Χανιά",
               "phone": "2821002891"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
-          "hours": {
-            "from": "08:30",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2821038181",
-              "name": "ΑΘΑΝΑΣΑΚΗΣ ΓΕΩΡΓΙΟΣ/ΑΤΗΑΝΑSΑΚΙS GEORGE",
-              "address": "ΑΓΙΑ ΜΑΡΙΝΑ ΕΝΤΟΣ ΕΜΠΟΡΙΚΟΥ ΚΕΝΤΡΟΥ/ΑGΙΑ MARINA",
-              "locality": "Νέα Κυδωνία",
-              "phone": "2821038181"
-            },
-            {
-              "pharmacyId": "2821057112",
-              "name": "ΒΑΡΒΑΤΣΟΥΛΑΚΗΣ Ε./VΑRVΑΤSΟULΑΚΙS E.",
-              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 13/EL. VENIZELOU 13",
-              "locality": "Χανιά",
-              "phone": "2821057112"
-            },
-            {
-              "pharmacyId": "2821047990",
-              "name": "ΠΟΙΜΕΝΙΔΟΥ ΑΓΓΕΛΙΚΗ/ΡΟΙΜΕΝΙDΟU ANGELA",
-              "address": "ΑΡΩΝΙ ΑΚΡΩΤΗΡΙΟΥ(ΑΠΕΝΑΝΤΙ ΑΠΟ ΒΕΝΖΙΝΑΔΙΚΟ BP)/ARONI-AKROTIRI",
-              "locality": "Ακρωτήρι",
-              "phone": "2821047990"
-            },
-            {
-              "pharmacyId": "2821092191",
-              "name": "ΤΣΑΚΩΝΑ ΕΛΛΗ -ΑΡΓΥΡΩ/ΤSΑΚΟΝΑ IRO",
-              "address": "ΑΝ. ΓΟΓΟΝΗ & ΜΟΥΡΝΙΩΝ 15 (ΠΛΗΣΙΟΝ ΓΟΓΟΝΗ)/ΑΝ. GOGONI & MOYRNION 15",
-              "locality": "Μουρνιές",
-              "phone": "2821092191"
             }
           ]
         },
@@ -109,6 +68,47 @@
               "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 143 ΚΑΣΤΕΛΙ/ΙRΟΟΝ POLITEXNIOU 143 KASTELI",
               "locality": "Δήμος Κισσάμου",
               "phone": "2822022182"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821038181",
+              "name": "ΑΘΑΝΑΣΑΚΗΣ ΓΕΩΡΓΙΟΣ/ΑΤΗΑΝΑSΑΚΙS GEORGE",
+              "address": "ΑΓΙΑ ΜΑΡΙΝΑ ΕΝΤΟΣ ΕΜΠΟΡΙΚΟΥ ΚΕΝΤΡΟΥ/ΑGΙΑ MARINA",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821038181"
+            },
+            {
+              "pharmacyId": "2821057112",
+              "name": "ΒΑΡΒΑΤΣΟΥΛΑΚΗΣ Ε./VΑRVΑΤSΟULΑΚΙS E.",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 13/EL. VENIZELOU 13",
+              "locality": "Χανιά",
+              "phone": "2821057112"
+            },
+            {
+              "pharmacyId": "2821047990",
+              "name": "ΠΟΙΜΕΝΙΔΟΥ ΑΓΓΕΛΙΚΗ/ΡΟΙΜΕΝΙDΟU ANGELA",
+              "address": "ΑΡΩΝΙ ΑΚΡΩΤΗΡΙΟΥ(ΑΠΕΝΑΝΤΙ ΑΠΟ ΒΕΝΖΙΝΑΔΙΚΟ BP)/ARONI-AKROTIRI",
+              "locality": "Ακρωτήρι",
+              "phone": "2821047990"
+            },
+            {
+              "pharmacyId": "2821092191",
+              "name": "ΤΣΑΚΩΝΑ ΕΛΛΗ -ΑΡΓΥΡΩ/ΤSΑΚΟΝΑ IRO",
+              "address": "ΑΝ. ΓΟΓΟΝΗ & ΜΟΥΡΝΙΩΝ 15 (ΠΛΗΣΙΟΝ ΓΟΓΟΝΗ)/ΑΝ. GOGONI & MOYRNION 15",
+              "locality": "Μουρνιές",
+              "phone": "2821092191"
             }
           ]
         }

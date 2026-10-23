@@ -7,7 +7,7 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-10-23T08:42:20.565Z"
+        "uploadedAt": "2026-10-23T19:23:07.502Z"
       },
       "sections": [
         {
@@ -51,47 +51,6 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
-          "hours": {
-            "from": "08:30",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2821053063",
-              "name": "ΑΤΣΑΛΑΚΗΣ ΕΜΜΑΝΟΥΗΛ/ΑΤSΑLΑΚΙS EMMANOYEL",
-              "address": "ΗΡ.ΠΟΛΥΤΕΧΝΕΙΟΥ 1/HER. POLYTECHNIOU 1",
-              "locality": "Χανιά",
-              "phone": "2821053063"
-            },
-            {
-              "pharmacyId": "2821093288",
-              "name": "ΚΝΙΘΑΚΗΣ ΓΕΩΡΓΙΟΣ/ΚΝΙΤΗΑΚΙS GEORGE",
-              "address": "ΑΝ.ΓΟΓΟΝΗ 51/AN. GOGONI 51",
-              "locality": "Μουρνιές",
-              "phone": "2821093288"
-            },
-            {
-              "pharmacyId": "2821045481",
-              "name": "ΜΠΑΚΙΡΤΖΟΓΛΟΥ ΒΑΣΙΛΗΣ/ΒΑΚΙRΤΖΟGLΟU VASILIS",
-              "address": "ΜΑΚΡΥΣ ΤΟΙΧΟΣ 363/MAKRYS TOICHOS 363",
-              "locality": "Νέα Κυδωνία",
-              "phone": "2821045481"
-            },
-            {
-              "pharmacyId": "2821069791",
-              "name": "Σ.Φ. ΒΛΑΧΑΚΗ ΜΑΡΙΑ ΛΟΥΠΑΣΑΚΗΣ ΜΑΝΩΛΗΣ ΚΑΙ ΣΙΑ ΟΕ/VLΑCΗΑΚΙ M.-LOUPASAKIS M.",
-              "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 1 ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΑΚΡΩΤΗΡΙΟΥ/ΑRΙSΤΟΤΕLΟUS 1-KOUNOUPIDIANA",
-              "locality": "Ακρωτήρι",
-              "phone": "2821069791"
-            }
-          ]
-        },
-        {
           "kind": "on-duty",
           "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
           "hours": {
@@ -129,6 +88,47 @@
               "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 143 ΚΑΣΤΕΛΙ/ΙRΟΟΝ POLITEXNIOU 143 KASTELI",
               "locality": "Δήμος Κισσάμου",
               "phone": "2822022182"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821053063",
+              "name": "ΑΤΣΑΛΑΚΗΣ ΕΜΜΑΝΟΥΗΛ/ΑΤSΑLΑΚΙS EMMANOYEL",
+              "address": "ΗΡ.ΠΟΛΥΤΕΧΝΕΙΟΥ 1/HER. POLYTECHNIOU 1",
+              "locality": "Χανιά",
+              "phone": "2821053063"
+            },
+            {
+              "pharmacyId": "2821093288",
+              "name": "ΚΝΙΘΑΚΗΣ ΓΕΩΡΓΙΟΣ/ΚΝΙΤΗΑΚΙS GEORGE",
+              "address": "ΑΝ.ΓΟΓΟΝΗ 51/AN. GOGONI 51",
+              "locality": "Μουρνιές",
+              "phone": "2821093288"
+            },
+            {
+              "pharmacyId": "2821045481",
+              "name": "ΜΠΑΚΙΡΤΖΟΓΛΟΥ ΒΑΣΙΛΗΣ/ΒΑΚΙRΤΖΟGLΟU VASILIS",
+              "address": "ΜΑΚΡΥΣ ΤΟΙΧΟΣ 363/MAKRYS TOICHOS 363",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821045481"
+            },
+            {
+              "pharmacyId": "2821069791",
+              "name": "Σ.Φ. ΒΛΑΧΑΚΗ ΜΑΡΙΑ ΛΟΥΠΑΣΑΚΗΣ ΜΑΝΩΛΗΣ ΚΑΙ ΣΙΑ ΟΕ/VLΑCΗΑΚΙ M.-LOUPASAKIS M.",
+              "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 1 ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΑΚΡΩΤΗΡΙΟΥ/ΑRΙSΤΟΤΕLΟUS 1-KOUNOUPIDIANA",
+              "locality": "Ακρωτήρι",
+              "phone": "2821069791"
             }
           ]
         }
