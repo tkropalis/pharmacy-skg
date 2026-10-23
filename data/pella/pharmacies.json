@@ -139,7 +139,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 40.8012164,
         "lon": 22.0498357,
@@ -496,7 +496,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 40.7680257,
         "lon": 22.1567142,
@@ -989,6 +989,27 @@
       }
     },
     {
+      "id": "2382029108",
+      "name": "ΑΘΑΝΑΣΙΑΔΗΣ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΠΛΑΣΤΗΡΑ 29",
+      "locality": "Γιαννιτσά",
+      "postcode": null,
+      "phone": "2382029108",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-29",
+      "lastSeen": "2026-10-29",
+      "location": {
+        "lat": 40.7882202,
+        "lon": 22.4100663,
+        "ref": "https://pella.efhmeries.gr/Home/Details/4748",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2382061028",
       "name": "Σ.Φ. ΧΡΥΣΑΓΗΣ ΧΑΡΑΛ. - ΕΜΜΑΝΟΥΗΛΙΔΗΣ ΚΩΝ/ΝΟΣ",
       "address": "ΒΑΣ. ΠΑΥΛΟΥ 75",
@@ -1021,7 +1042,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 40.6859837,
         "lon": 22.3057578,
@@ -1168,7 +1189,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 40.9755182,
         "lon": 22.0605139,

@@ -328,7 +328,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 39.3548722,
         "lon": 21.9085607,
@@ -627,6 +627,27 @@
         "lat": 39.3636366,
         "lon": 21.9239331,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3755",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441073454",
+      "name": "ΤΑΜΠΑΚΗ ΑΡΓΥΡΩ - ΕΛΕΝΗ",
+      "address": "ΧΑΡΙΤΟΥ 13",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441073454",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-29",
+      "lastSeen": "2026-10-29",
+      "location": {
+        "lat": 39.3666869,
+        "lon": 21.9240731,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3787",
         "source": "list",
         "precision": "exact"
       }

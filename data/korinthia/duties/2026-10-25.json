@@ -7,139 +7,9 @@
       "name": "Κορινθία",
       "source": {
         "url": "https://korinthia.efhmeries.gr/",
-        "uploadedAt": "2026-10-22T19:17:20.170Z"
+        "uploadedAt": "2026-10-23T08:40:31.967Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
-          "hours": {
-            "from": "22:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2742032220",
-              "name": "ΠΑΠΑΚΥΡΙΑΚΟΣ ΑΝΝΙΒΑΣ & ΣΙΑ Ο.Ε.",
-              "address": "ΒΕΛΟ",
-              "locality": "Βέλο",
-              "phone": "2742032220"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741028033",
-              "name": "Σ.Φ. Ε. ΜΑΥΡΑΓΑΝΗ - Σ. ΜΑΥΡΑΓΑΝΗ Ο.Ε.",
-              "address": "ΚΟΛΙΑΤΣΟΥ 35",
-              "locality": "Κόρινθος",
-              "phone": "2741028033"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741028033",
-              "name": "Σ.Φ. Ε. ΜΑΥΡΑΓΑΝΗ - Σ. ΜΑΥΡΑΓΑΝΗ Ο.Ε.",
-              "address": "ΚΟΛΙΑΤΣΟΥ 35",
-              "locality": "Κόρινθος",
-              "phone": "2741028033"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2742022206",
-              "name": "ΚΑΚΑΒΑΚΗΣ ΟΘΩΝΑΣ &ΣΙΑ Ε.Ε.",
-              "address": "ΠΛ. ΠΛΟΥΜΙΣΤΟΥ",
-              "locality": "Κιάτο",
-              "phone": "2742022206"
-            },
-            {
-              "pharmacyId": "2743026911",
-              "name": "ΚΟΝΤΟΓΙΑΝΝΗ ΑΜΑΛΙΑ καιΣΙΑ Ο.Ε.",
-              "address": "Ι. ΙΩΑΝΝΟΥ 46",
-              "locality": "Ξυλόκαστρο",
-              "phone": "2743026911"
-            },
-            {
-              "pharmacyId": "2744300722",
-              "name": "ΤΣΙΑΜΗ Γ. ΠΑΝΑΓΙΩΤΑ",
-              "address": "Δ. ΜΑΤΣΗ 27",
-              "locality": "Λουτράκι",
-              "phone": "2744300722"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741098177",
-              "name": "ΚΑΛΑΡΑ ΑΙΚΑΤΕΡΙΝΗ",
-              "address": "ΧΙΛΙΟΜΟΔΙ",
-              "locality": "Χιλιομόδι",
-              "phone": "2741098177"
-            },
-            {
-              "pharmacyId": "2741301107",
-              "name": "ΠΙΤΣΟΥΝΗΣ Γ. ΕΥΑΓΓΕΛΟΣ",
-              "address": "ΖΕΥΓΟΛΑΤΙΟ",
-              "locality": "Ζευγολατιό",
-              "phone": "2741301107"
-            },
-            {
-              "pharmacyId": "2746022274",
-              "name": "Σ.Φ. ΖΑΧΟΥ Μ. ΓΡΙΒΑ Μ.Ε. Ο.Ε.",
-              "address": "Λ.ΠΑΠΑΚ/ΝΟΥ 62Α&ΜΑΝΙΑΤΗ",
-              "locality": "Νεμέα",
-              "phone": "2746022274"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -278,6 +148,115 @@
         },
         {
           "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741028033",
+              "name": "Σ.Φ. Ε. ΜΑΥΡΑΓΑΝΗ - Σ. ΜΑΥΡΑΓΑΝΗ Ο.Ε.",
+              "address": "ΚΟΛΙΑΤΣΟΥ 35",
+              "locality": "Κόρινθος",
+              "phone": "2741028033"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741028033",
+              "name": "Σ.Φ. Ε. ΜΑΥΡΑΓΑΝΗ - Σ. ΜΑΥΡΑΓΑΝΗ Ο.Ε.",
+              "address": "ΚΟΛΙΑΤΣΟΥ 35",
+              "locality": "Κόρινθος",
+              "phone": "2741028033"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2742022206",
+              "name": "ΚΑΚΑΒΑΚΗΣ ΟΘΩΝΑΣ &ΣΙΑ Ε.Ε.",
+              "address": "ΠΛ. ΠΛΟΥΜΙΣΤΟΥ",
+              "locality": "Κιάτο",
+              "phone": "2742022206"
+            },
+            {
+              "pharmacyId": "2743026911",
+              "name": "ΚΟΝΤΟΓΙΑΝΝΗ ΑΜΑΛΙΑ καιΣΙΑ Ο.Ε.",
+              "address": "Ι. ΙΩΑΝΝΟΥ 46",
+              "locality": "Ξυλόκαστρο",
+              "phone": "2743026911"
+            },
+            {
+              "pharmacyId": "2744300722",
+              "name": "ΤΣΙΑΜΗ Γ. ΠΑΝΑΓΙΩΤΑ",
+              "address": "Δ. ΜΑΤΣΗ 27",
+              "locality": "Λουτράκι",
+              "phone": "2744300722"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741098177",
+              "name": "ΚΑΛΑΡΑ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΧΙΛΙΟΜΟΔΙ",
+              "locality": "Χιλιομόδι",
+              "phone": "2741098177"
+            },
+            {
+              "pharmacyId": "2741301107",
+              "name": "ΠΙΤΣΟΥΝΗΣ Γ. ΕΥΑΓΓΕΛΟΣ",
+              "address": "ΖΕΥΓΟΛΑΤΙΟ",
+              "locality": "Ζευγολατιό",
+              "phone": "2741301107"
+            },
+            {
+              "pharmacyId": "2746022274",
+              "name": "Σ.Φ. ΖΑΧΟΥ Μ. ΓΡΙΒΑ Μ.Ε. Ο.Ε.",
+              "address": "Λ.ΠΑΠΑΚ/ΝΟΥ 62Α&ΜΑΝΙΑΤΗ",
+              "locality": "Νεμέα",
+              "phone": "2746022274"
+            }
+          ]
+        },
+        {
+          "kind": "day",
           "heading": "09:00 ΕΩΣ 13:00",
           "hours": {
             "from": "09:00",
@@ -293,6 +272,27 @@
               "address": "ΑΡΧΑΙΑ ΚΟΡΙΝΘΟΣ (4Ομ ΑΠΟ ΤΟ ΚΕΝΤΡΟ)",
               "locality": "Αρχαία Κόρινθος",
               "phone": "2741031655"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "22:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2742032220",
+              "name": "ΠΑΠΑΚΥΡΙΑΚΟΣ ΑΝΝΙΒΑΣ & ΣΙΑ Ο.Ε.",
+              "address": "ΒΕΛΟ",
+              "locality": "Βέλο",
+              "phone": "2742032220"
             }
           ]
         }

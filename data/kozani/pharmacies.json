@@ -286,7 +286,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 40.297577,
         "lon": 21.79156,
@@ -438,6 +438,27 @@
         "lat": 40.3005753,
         "lon": 21.7893697,
         "ref": "https://kozani.efhmeries.gr/Home/Details/5690",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461033533",
+      "name": "ΚΑΡΑΘΑΝΑΣΗ ΘΕΟΔΩΡΑ",
+      "address": "ΕΙΡΗΝΗΣ 3",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461033533",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-29",
+      "lastSeen": "2026-10-29",
+      "location": {
+        "lat": 40.301114,
+        "lon": 21.7872883,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6022",
         "source": "list",
         "precision": "exact"
       }
@@ -811,7 +832,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 40.5135151,
         "lon": 21.6771104,
@@ -1273,7 +1294,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 40.5137072,
         "lon": 21.67975,

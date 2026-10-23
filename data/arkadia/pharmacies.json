@@ -380,6 +380,27 @@
       }
     },
     {
+      "id": "2710237472",
+      "name": "Σ.Φ.ΣΑΒΒΑΚΗ ΕΥΣΕΒΙΑ-ΑΔΑΜΟΠΟΥΛΟΥ ΧΡΙΣΤΙΝΑ Ο.Ε.",
+      "address": "ΚΥΠΡΟΥ 1",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710237472",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-10-29",
+      "lastSeen": "2026-10-29",
+      "location": {
+        "lat": 37.5103519,
+        "lon": 22.3729014,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5112",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2710237771",
       "name": "ΚΑΛΔΗ ΔΗΜ. ΑΘΑΝΑΣΙΑ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "ΟΥΑΣΙΝΓΚΤΟΝ 38",
@@ -580,7 +601,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 37.4040532,
         "lon": 22.7231501,
@@ -622,7 +643,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 37.1674292,
         "lon": 22.858743,
@@ -706,7 +727,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 37.4014368,
         "lon": 22.136571,
@@ -769,7 +790,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 37.6845416,
         "lon": 22.2955302,
@@ -811,7 +832,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 37.7322838,
         "lon": 21.9594427,

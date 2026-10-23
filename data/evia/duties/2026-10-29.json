@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-29",
+  "groups": [
+    {
+      "id": "evia",
+      "name": "Εύβοια",
+      "source": {
+        "url": "https://evia.efhmeries.gr/",
+        "uploadedAt": "2026-10-23T08:39:20.576Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2224023505",
+              "name": "ΒΕΛΙΣΣΑΡΑΚΟΣ ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "Ι. ΚΟΤΣΙΚΑ 1",
+              "locality": "Κάρυστος",
+              "phone": "2224023505"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2229062775",
+              "name": "ΠΑΝΑΓΙΑΡΗΣ ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "ΦΙΛ.ΜΕΝΕΔΗΜΟΥ 42",
+              "locality": "Ερέτρια",
+              "phone": "2229062775"
+            },
+            {
+              "pharmacyId": "2221044344",
+              "name": "Σ.Φ. ΛΑΛΑΝΙΤΗ - ΑΡΓΥΡΑΚΗΣ",
+              "address": "ΒΟΥΔΟΥΡΗ 7",
+              "locality": "Αρτάκη",
+              "phone": "2221044344"
+            },
+            {
+              "pharmacyId": "2226069398",
+              "name": "ΦΑΡΑΝΤΟΥ ΦΛΩΡΑ",
+              "address": "ΙΣΤΑΙΑ",
+              "locality": "Ιστιαία",
+              "phone": "2226069398"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 17:30",
+          "hours": {
+            "from": "14:00",
+            "to": "17:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221024646",
+              "name": "ΚΑΤΣΑΝΤΩΝΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΔΟΥΝΑ 8-10 ΕΝΑΝΤΙ ΔΙΚΑΣΤΗΡΙΩΝ",
+              "locality": "Χαλκίδα",
+              "phone": "2221024646"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221076486",
+              "name": "Σ.Φ. ΝΤΙΑΝΑ ΒΑΛΤΣΑΝΟΒΑ ΠΑΠΑΠΟΣΤΟΛΟΥ - ΜΑΡΤΙΝ ΠΑΠΑΠΟΣΤΟΛΟΥ ΟΕ",
+              "address": "ΑΡΕΘΟΥΣΗΣ 217",
+              "locality": "Χαλκίδα",
+              "phone": "2221076486"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

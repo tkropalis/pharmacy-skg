@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "evros",
-  "updatedAt": "2026-10-22T19:16:29.808Z",
-  "checkedAt": "2026-10-22T19:16:29.808Z",
+  "updatedAt": "2026-10-23T08:39:31.952Z",
+  "checkedAt": "2026-10-23T08:39:31.952Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-10-28"
+    "to": "2026-10-29"
   },
   "extendedHours": [],
   "sources": [

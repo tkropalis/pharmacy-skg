@@ -44,6 +44,27 @@
       }
     },
     {
+      "id": "2821002891",
+      "name": "ΚΝΙΘΑΚΗ ΜΑΡΙΑ/ΚΝΙΤΗΑΚΙ MARY",
+      "address": "ΚΥΔΩΝΙΑΣ 27/KYDONIAS 27",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821002891",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-29",
+      "lastSeen": "2026-10-29",
+      "location": {
+        "lat": 35.512431,
+        "lon": 24.019428,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13582",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2821007000",
       "name": "ΓΕΩΡΓΙΟΣ ΑΡΧΟΝΤΑΚΗΣ ΦΑΡΜΑΚΕΙΑ Ε.Ε.",
       "address": "ΠΛ. ΕΛ ΒΕΝΙΖΕΛΟΥ ΚΑΙ ΑΓΙΟΥ ΝΟΥΦΡΙΟΥ 1",
@@ -244,7 +265,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 35.5158169,
         "lon": 23.9251309,
@@ -391,7 +412,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 35.5168849,
         "lon": 24.1109224,
@@ -643,7 +664,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 35.5144822,
         "lon": 24.0255975,
@@ -1147,7 +1168,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 35.5029619,
         "lon": 24.0195549,
@@ -1441,7 +1462,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 35.4944787,
         "lon": 23.6527239,
@@ -1525,7 +1546,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 35.2294606,
         "lon": 23.6819128,

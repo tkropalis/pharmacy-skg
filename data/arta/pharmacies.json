@@ -401,6 +401,27 @@
       }
     },
     {
+      "id": "2681072235",
+      "name": "ΒΟΥΤΟΣ ΑΠΟΣΤΟΛΟΣ",
+      "address": "ΣΤΡΑΤΩΝΟΣ - ΠΛΗΣΙΟΝ ΝΟΣΟΚΟΜΕΙΟΥ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681072235",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-29",
+      "lastSeen": "2026-10-29",
+      "location": {
+        "lat": 39.15272,
+        "lon": 20.98873,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2438",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681073149",
       "name": "ΣΚΑΝΔΑΛΗΣ ΗΛΙΑΣ ΕΕ",
       "address": "ΣΚΟΥΦΑ 150",
@@ -643,7 +664,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-29",
       "location": {
         "lat": 39.167183,
         "lon": 21.034827,
