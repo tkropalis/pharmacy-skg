@@ -1,3 +1,4 @@
+import type { Meta } from '@pharmacy-skg/core';
 import { addDays } from '../src/lib/dates.ts';
 
 /** How many days of past duty lists the build keeps (the app can look a week back). */
@@ -34,4 +35,18 @@ export function isPublishedPath(path: string): boolean {
   if (path === 'meta.json' || path === 'pharmacies.json') return true;
   if (path.startsWith('duties/')) return DUTY_FILE.test(path.slice('duties/'.length));
   return isExtendedHoursPath(path);
+}
+
+/**
+ * meta.json as the site publishes it: with the dates of the duty files it publishes, so the app
+ * and the service worker ask only for those, never for a gap the source left inside the range.
+ */
+export function withPublishedDates(meta: Meta, dutyFiles: readonly string[]): Meta {
+  if (meta.duties === null) return meta;
+  const { from, to } = meta.duties;
+  const dates = dutyFiles
+    .map((name) => DUTY_FILE.exec(name)?.[1])
+    .filter((date): date is string => date !== undefined && date >= from && date <= to)
+    .sort();
+  return { ...meta, duties: { from, to, dates } };
 }

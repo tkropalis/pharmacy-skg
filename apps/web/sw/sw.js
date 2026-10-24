@@ -145,10 +145,14 @@ function offlineDataUrls(meta, now, city = homeCity) {
   }
   const range = meta?.duties;
   if (range && typeof range.from === 'string' && typeof range.to === 'string') {
+    // The build lists the dates that have a file (a source can leave gaps); older copies of
+    // meta.json only give the range (isPublishedDutyDate in @pharmacy-skg/core).
+    const dates = Array.isArray(range.dates) ? new Set(range.dates) : null;
     const today = athensDate(now);
     for (let day = -WARM_DAYS_BEFORE; day <= WARM_DAYS_AHEAD; day += 1) {
       const date = addDays(today, day);
-      if (date >= range.from && date <= range.to) urls.push(`${base}duties/${date}.json`);
+      const published = dates ? dates.has(date) : date >= range.from && date <= range.to;
+      if (published) urls.push(`${base}duties/${date}.json`);
     }
   }
   return urls;

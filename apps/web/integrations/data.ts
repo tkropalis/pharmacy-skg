@@ -7,7 +7,12 @@ import type { MedicinesFile, Meta, Pharmacies } from '@pharmacy-skg/core';
 import { buildToday } from '../src/lib/build-today.ts';
 import { buildLocalities, PLACES_PATH } from '../src/lib/places.ts';
 import type { NationalPlace } from '../src/lib/places.ts';
-import { isExtendedHoursPath, isPublishedPath, selectDutyFiles } from './data-files.ts';
+import {
+  isExtendedHoursPath,
+  isPublishedPath,
+  selectDutyFiles,
+  withPublishedDates,
+} from './data-files.ts';
 
 /** <repo>/data/, which lives outside apps/web (Vercel: "include files outside root"). */
 const DATA_ROOT = fileURLToPath(new URL('../../../data/', import.meta.url));
@@ -48,6 +53,17 @@ async function nationalPlaces(): Promise<string> {
   return JSON.stringify(places);
 }
 
+/** A city's meta.json as published, with the dates of the duty files the build publishes. */
+async function publishedMeta(
+  cityId: string,
+  today: string,
+): Promise<{ meta: Meta; duties: string[] }> {
+  const source = `${DATA_ROOT}${cityId}/`;
+  const meta = JSON.parse(await readFile(`${source}meta.json`, 'utf8')) as Meta;
+  const duties = selectDutyFiles(await readdir(`${source}duties`), today);
+  return { meta: withPublishedDates(meta, duties), duties };
+}
+
 /**
  * Publishes data/<city>/ under /data/<city>/: in the build output, and through a small
  * middleware in `astro dev`. Only the files the app reads are published (see isPublishedPath).
@@ -76,7 +92,11 @@ export function dataIntegration(): AstroIntegration {
             next();
             return;
           }
-          readFile(`${DATA_ROOT}${cityId}/${relative}`).then(
+          const body =
+            relative === 'meta.json'
+              ? publishedMeta(cityId, buildToday()).then(({ meta }) => JSON.stringify(meta))
+              : readFile(`${DATA_ROOT}${cityId}/${relative}`);
+          body.then(
             (body) => {
               res.setHeader('Content-Type', 'application/json');
               res.setHeader('Cache-Control', 'no-cache');
@@ -95,13 +115,14 @@ export function dataIntegration(): AstroIntegration {
         for (const cityId of CITY_IDS) {
           const source = `${DATA_ROOT}${cityId}/`;
           const target = fileURLToPath(new URL(`data/${cityId}/`, dir));
-          const meta = JSON.parse(await readFile(`${source}meta.json`, 'utf8')) as Meta;
+          const { meta, duties } = await publishedMeta(cityId, today);
+          await mkdir(target, { recursive: true });
+          await writeFile(`${target}meta.json`, `${JSON.stringify(meta, null, 2)}\n`);
 
           const files = [
-            'meta.json',
             'pharmacies.json',
             ...meta.extendedHours.map((entry) => entry.file),
-            ...selectDutyFiles(await readdir(`${source}duties`), today).map((n) => `duties/${n}`),
+            ...duties.map((n) => `duties/${n}`),
           ];
           for (const file of files) {
             if (file.startsWith('extended-hours/') && !isExtendedHoursPath(file)) {
@@ -110,7 +131,7 @@ export function dataIntegration(): AstroIntegration {
             await mkdir(dirname(`${target}${file}`), { recursive: true });
             await cp(`${source}${file}`, `${target}${file}`);
           }
-          logger.info(`${cityId}: published ${files.length} data files`);
+          logger.info(`${cityId}: published ${files.length + 1} data files`);
         }
         const index = await medicineIndex();
         const indexPath = fileURLToPath(new URL(`data/${MEDICINE_INDEX_PATH}`, dir));
