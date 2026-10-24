@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T08:15:29.310Z"
+        "uploadedAt": "2026-10-24T18:14:18.490Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441070500",
-              "name": "ΠΑΝΑΓΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ",
-              "address": "ΧΑΡΙΤΟΥ 6",
-              "locality": "Καρδίτσα",
-              "phone": "2441070500"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ- 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΙΕΖΕΚΙΗΛ 51",
               "locality": "Καρδίτσα",
               "phone": "2441025576"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441070500",
+              "name": "ΠΑΝΑΓΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΧΑΡΙΤΟΥ 6",
+              "locality": "Καρδίτσα",
+              "phone": "2441070500"
             }
           ]
         }

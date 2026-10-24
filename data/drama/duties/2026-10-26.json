@@ -7,9 +7,29 @@
       "name": "Δράμα",
       "source": {
         "url": "https://drama.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T15:29:56.176Z"
+        "uploadedAt": "2026-10-24T18:13:23.481Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521025734",
+              "name": "ΤΣΑΠΑΚΙΔΟΥ ΔΕΣΠΟΙΝΑ",
+              "address": "ΑΡΜΕΝ 24",
+              "locality": "Δράμα",
+              "phone": "2521025734"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -54,26 +74,6 @@
               "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΑΣ 30",
               "locality": "Δράμα",
               "phone": "2521036008"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2521025734",
-              "name": "ΤΣΑΠΑΚΙΔΟΥ ΔΕΣΠΟΙΝΑ",
-              "address": "ΑΡΜΕΝ 24",
-              "locality": "Δράμα",
-              "phone": "2521025734"
             }
           ]
         }

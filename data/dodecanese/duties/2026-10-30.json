@@ -7,127 +7,9 @@
       "name": "Δωδεκάνησα",
       "source": {
         "url": "https://dodecanese.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T08:14:17.804Z"
+        "uploadedAt": "2026-10-24T18:13:17.406Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:30 ΕΩΣ 20:30",
-          "hours": {
-            "from": "08:30",
-            "to": "20:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2244047405",
-              "name": "ΒΕΡΔΕΛΛΗΣ ΕΙΡ. - ΠΙΣΣΑΚΑ ΑΝ. Ο.Ε. / VERDELIS - PISAKA",
-              "address": "ΑΣΚΛΗΠΙΕΙΟ / ASKLIPIIO",
-              "locality": "Νότια Ρόδος",
-              "phone": "2244047405"
-            },
-            {
-              "pharmacyId": "2242026661",
-              "name": "ΓΟΥΝΑΡΗΣ ΕΜΜΑΝΟΥΗΛ /GOYNARIS EMMANOYIL",
-              "address": "ΑΡΤΕΜΗΣΙΑΣ 2A / ARTEMISIAS 2A",
-              "locality": "Κως",
-              "phone": "2242026661"
-            },
-            {
-              "pharmacyId": "2241082270",
-              "name": "ΔΙΑΚΟΣΑΒΒΑΣ ΚΛΕΟΒΟΥΛΟΣ / DIAKOSAVAS KLEOVOULOS",
-              "address": "ΘΕΟΛΟΓΟΣ / THEOLOGOS",
-              "locality": "Πεταλούδες",
-              "phone": "2241082270"
-            },
-            {
-              "pharmacyId": "2241068937",
-              "name": "ΕΛΕΥΘΕΡΙΑΔΟΥ ΦΩΤΕΙΝΗ ΥΠΟΚΑΤ. Α' / ELEFTHERIADOY FOTINI",
-              "address": "6ο ΧΛΜ. ΡΟΔΟΥ-ΚΟΣΚΙΝΟΥ",
-              "locality": "Καλλιθέα",
-              "phone": "2241068937"
-            },
-            {
-              "pharmacyId": "2242048028",
-              "name": "ΚΩΤΟΥΛΑΣ ΧΡΗΣΤΟΣ & ΣΙΑ Ο.Ε. / KOTOULAS CHRISTOS",
-              "address": "ΚΑΜΑΡΙ 1 / KAMARI 1",
-              "locality": "Ηρακλειδών",
-              "phone": "2242048028"
-            },
-            {
-              "pharmacyId": "2242067174",
-              "name": "ΛΑΜΠΡΙΝΟΣ ΓΕΩΡΓΙΟΣ / LAMPRINOS GEORGIOS",
-              "address": "ΖΙΠΑΡΙ ΑΣΦΕΝΔΙΟΥ / ZIPARI ASFENDIOU",
-              "locality": "Δίκαιο",
-              "phone": "2242067174"
-            },
-            {
-              "pharmacyId": "2246041703",
-              "name": "ΛΙΑΧΑΝΟΣ ΘΕΟΔΩΡΟΣ / LIAHANOS THEODOROS",
-              "address": "ΕΜΠΩΝΑΣ / EMPONAS",
-              "locality": "Αττάβυρος",
-              "phone": "2246041703"
-            },
-            {
-              "pharmacyId": "2241002403",
-              "name": "ΜΑΤΣΙΓΚΟΣ ΕΜ. ΑΝΤΩΝΙΟΣ / MATSIGKOS ANTONIOS",
-              "address": "ΠΕΡΝΟΥ 47 / PERNOU 47",
-              "locality": "Αφάντου",
-              "phone": "2241002403"
-            },
-            {
-              "pharmacyId": "2241098099",
-              "name": "ΜΗΤΣΟΥ Ε. ΘΩΜΑΙΣ / MITSOU THOMAIS",
-              "address": "ΦΕΡΕΝΙΚΗΣ - ΠΑΡΑΛΙΑ ΙΑΛΥΣΟΥ / FERENIKIS - IALISOS BEACH",
-              "locality": "Ιαλυσός",
-              "phone": "2241098099"
-            },
-            {
-              "pharmacyId": "2244023020",
-              "name": "ΠΑΠΑΒΑΣΙΛΕΙΟΥ ΓΕΩΡΓΙΑ / PAPAVASILIOU GEORGIA",
-              "address": "ΑΡΧΑΓΓΕΛΟΣ / ARHAGGELOS",
-              "locality": "Αρχάγγελος",
-              "phone": "2244023020"
-            },
-            {
-              "pharmacyId": "2244032232",
-              "name": "Σ.Φ. ΑΘΗΝΑΣ ΚΟΛΟΡΙΖΟΥ - ΚΡΙΣΤΙΑΝΑΣ ΣΑΜΠΑΓ Ο.Ε. / KOLORIZOY ATHINA - SAMBAG KRISTIANA",
-              "address": "ΚΑΛΑΘΟΣ / KALATHOS",
-              "locality": "Λίνδος",
-              "phone": "2244032232"
-            },
-            {
-              "pharmacyId": "2241085998",
-              "name": "Σ.Φ. ΡΟΖΑΣ & ΑΛΕΞΑΝΔΡΟΥ ΓΙΑΛΛΟΥΣΗ Ο.Ε. / ROZA & ALEXANDROS GIANNOUSI",
-              "address": "ΦΑΛΗΡΑΚΙ / FALIRAKI",
-              "locality": "Καλλιθέα",
-              "phone": "2241085998"
-            },
-            {
-              "pharmacyId": "2245023107",
-              "name": "Σ.Φ. ΤΣΑΚΙΡΟΓΛΟΥ ΣΤ. & ΔΗΜ. Ο.Ε. / TSAKIROGLOU ST. & DIM.",
-              "address": "25ης ΜΑΡΤΙΟΥ ΠΗΓΑΔΙΑ / 25TH MARTIOY PIGADIA",
-              "locality": "Κάρπαθος",
-              "phone": "2245023107"
-            },
-            {
-              "pharmacyId": "2244301356",
-              "name": "ΣΤΑΥΡΑΣ ΠΑΝΤΕΛΗΣ / STAVRAS PANTELIS",
-              "address": "ΕΜΠΟΡΙΚΟ ΚΕΝΤΡΟ ΧΡΥΣΟΒΕΡΓΗ / SHOPPIN CENTER CHRYSOVERGI",
-              "locality": "Ρόδος",
-              "phone": "2244301356"
-            },
-            {
-              "pharmacyId": "2246071888",
-              "name": "ΤΣΑΒΑΡΗΣ ΙΩΑΝΝΗΣ / TSAVARIS IOANNIS",
-              "address": "ΣΥΜΗ / SIMI",
-              "locality": "Σύμη",
-              "phone": "2246071888"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:30 ΕΩΣ 13:30 & 16:30 ΕΩΣ 08:30 ΕΠΟΜΕΝΗΣ",
@@ -354,6 +236,124 @@
               "address": "25ης ΜΑΡΤΙΟΥ ΠΗΓΑΔΙΑ / 25TH MARTIOY PIGADIA",
               "locality": "Κάρπαθος",
               "phone": "2245023107"
+            },
+            {
+              "pharmacyId": "2246071888",
+              "name": "ΤΣΑΒΑΡΗΣ ΙΩΑΝΝΗΣ / TSAVARIS IOANNIS",
+              "address": "ΣΥΜΗ / SIMI",
+              "locality": "Σύμη",
+              "phone": "2246071888"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:30 ΕΩΣ 20:30",
+          "hours": {
+            "from": "08:30",
+            "to": "20:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2244047405",
+              "name": "ΒΕΡΔΕΛΛΗΣ ΕΙΡ. - ΠΙΣΣΑΚΑ ΑΝ. Ο.Ε. / VERDELIS - PISAKA",
+              "address": "ΑΣΚΛΗΠΙΕΙΟ / ASKLIPIIO",
+              "locality": "Νότια Ρόδος",
+              "phone": "2244047405"
+            },
+            {
+              "pharmacyId": "2242026661",
+              "name": "ΓΟΥΝΑΡΗΣ ΕΜΜΑΝΟΥΗΛ /GOYNARIS EMMANOYIL",
+              "address": "ΑΡΤΕΜΗΣΙΑΣ 2A / ARTEMISIAS 2A",
+              "locality": "Κως",
+              "phone": "2242026661"
+            },
+            {
+              "pharmacyId": "2241082270",
+              "name": "ΔΙΑΚΟΣΑΒΒΑΣ ΚΛΕΟΒΟΥΛΟΣ / DIAKOSAVAS KLEOVOULOS",
+              "address": "ΘΕΟΛΟΓΟΣ / THEOLOGOS",
+              "locality": "Πεταλούδες",
+              "phone": "2241082270"
+            },
+            {
+              "pharmacyId": "2241068937",
+              "name": "ΕΛΕΥΘΕΡΙΑΔΟΥ ΦΩΤΕΙΝΗ ΥΠΟΚΑΤ. Α' / ELEFTHERIADOY FOTINI",
+              "address": "6ο ΧΛΜ. ΡΟΔΟΥ-ΚΟΣΚΙΝΟΥ",
+              "locality": "Καλλιθέα",
+              "phone": "2241068937"
+            },
+            {
+              "pharmacyId": "2242048028",
+              "name": "ΚΩΤΟΥΛΑΣ ΧΡΗΣΤΟΣ & ΣΙΑ Ο.Ε. / KOTOULAS CHRISTOS",
+              "address": "ΚΑΜΑΡΙ 1 / KAMARI 1",
+              "locality": "Ηρακλειδών",
+              "phone": "2242048028"
+            },
+            {
+              "pharmacyId": "2242067174",
+              "name": "ΛΑΜΠΡΙΝΟΣ ΓΕΩΡΓΙΟΣ / LAMPRINOS GEORGIOS",
+              "address": "ΖΙΠΑΡΙ ΑΣΦΕΝΔΙΟΥ / ZIPARI ASFENDIOU",
+              "locality": "Δίκαιο",
+              "phone": "2242067174"
+            },
+            {
+              "pharmacyId": "2246041703",
+              "name": "ΛΙΑΧΑΝΟΣ ΘΕΟΔΩΡΟΣ / LIAHANOS THEODOROS",
+              "address": "ΕΜΠΩΝΑΣ / EMPONAS",
+              "locality": "Αττάβυρος",
+              "phone": "2246041703"
+            },
+            {
+              "pharmacyId": "2241002403",
+              "name": "ΜΑΤΣΙΓΚΟΣ ΕΜ. ΑΝΤΩΝΙΟΣ / MATSIGKOS ANTONIOS",
+              "address": "ΠΕΡΝΟΥ 47 / PERNOU 47",
+              "locality": "Αφάντου",
+              "phone": "2241002403"
+            },
+            {
+              "pharmacyId": "2241098099",
+              "name": "ΜΗΤΣΟΥ Ε. ΘΩΜΑΙΣ / MITSOU THOMAIS",
+              "address": "ΦΕΡΕΝΙΚΗΣ - ΠΑΡΑΛΙΑ ΙΑΛΥΣΟΥ / FERENIKIS - IALISOS BEACH",
+              "locality": "Ιαλυσός",
+              "phone": "2241098099"
+            },
+            {
+              "pharmacyId": "2244023020",
+              "name": "ΠΑΠΑΒΑΣΙΛΕΙΟΥ ΓΕΩΡΓΙΑ / PAPAVASILIOU GEORGIA",
+              "address": "ΑΡΧΑΓΓΕΛΟΣ / ARHAGGELOS",
+              "locality": "Αρχάγγελος",
+              "phone": "2244023020"
+            },
+            {
+              "pharmacyId": "2244032232",
+              "name": "Σ.Φ. ΑΘΗΝΑΣ ΚΟΛΟΡΙΖΟΥ - ΚΡΙΣΤΙΑΝΑΣ ΣΑΜΠΑΓ Ο.Ε. / KOLORIZOY ATHINA - SAMBAG KRISTIANA",
+              "address": "ΚΑΛΑΘΟΣ / KALATHOS",
+              "locality": "Λίνδος",
+              "phone": "2244032232"
+            },
+            {
+              "pharmacyId": "2241085998",
+              "name": "Σ.Φ. ΡΟΖΑΣ & ΑΛΕΞΑΝΔΡΟΥ ΓΙΑΛΛΟΥΣΗ Ο.Ε. / ROZA & ALEXANDROS GIANNOUSI",
+              "address": "ΦΑΛΗΡΑΚΙ / FALIRAKI",
+              "locality": "Καλλιθέα",
+              "phone": "2241085998"
+            },
+            {
+              "pharmacyId": "2245023107",
+              "name": "Σ.Φ. ΤΣΑΚΙΡΟΓΛΟΥ ΣΤ. & ΔΗΜ. Ο.Ε. / TSAKIROGLOU ST. & DIM.",
+              "address": "25ης ΜΑΡΤΙΟΥ ΠΗΓΑΔΙΑ / 25TH MARTIOY PIGADIA",
+              "locality": "Κάρπαθος",
+              "phone": "2245023107"
+            },
+            {
+              "pharmacyId": "2244301356",
+              "name": "ΣΤΑΥΡΑΣ ΠΑΝΤΕΛΗΣ / STAVRAS PANTELIS",
+              "address": "ΕΜΠΟΡΙΚΟ ΚΕΝΤΡΟ ΧΡΥΣΟΒΕΡΓΗ / SHOPPIN CENTER CHRYSOVERGI",
+              "locality": "Ρόδος",
+              "phone": "2244301356"
             },
             {
               "pharmacyId": "2246071888",

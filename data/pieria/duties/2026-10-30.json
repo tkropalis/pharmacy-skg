@@ -7,7 +7,7 @@
       "name": "Πιερία",
       "source": {
         "url": "https://pieria.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T08:16:47.988Z"
+        "uploadedAt": "2026-10-24T18:15:20.118Z"
       },
       "sections": [
         {
@@ -88,26 +88,6 @@
         },
         {
           "kind": "day",
-          "heading": "8:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2351027865",
-              "name": "Σ.Φ. ΖΙΩΓΑ ΕΞΑΡΧΟΥ ΑΝΝΑ-ΖΙΩΓΑ ΔΗΜΗΤΡΑ",
-              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 51",
-              "locality": "Κατερίνη",
-              "phone": "2351027865"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:00 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
             "from": "08:00",
@@ -143,6 +123,26 @@
               "address": "ΚΥΠΡΟΥ 9",
               "locality": "Κατερίνη",
               "phone": "2351025463"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351027865",
+              "name": "Σ.Φ. ΖΙΩΓΑ ΕΞΑΡΧΟΥ ΑΝΝΑ-ΖΙΩΓΑ ΔΗΜΗΤΡΑ",
+              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 51",
+              "locality": "Κατερίνη",
+              "phone": "2351027865"
             }
           ]
         }

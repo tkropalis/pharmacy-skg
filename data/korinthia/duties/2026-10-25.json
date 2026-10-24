@@ -7,29 +7,9 @@
       "name": "Κορινθία",
       "source": {
         "url": "https://korinthia.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T15:31:04.061Z"
+        "uploadedAt": "2026-10-24T18:14:30.955Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741026680",
-              "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Ι. ΜΑΡΙΑΝΝΑ",
-              "address": "ΑΠ. ΠΑΥΛΟΥ 46",
-              "locality": "Κόρινθος",
-              "phone": "2741026680"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 22:00 (ΠΡΟΑΙΡΕΤΙΚΗ ΜΕΣΗΜΒΡΙΝΗ ΔΙΑΚΟΠΗ)",
@@ -218,6 +198,26 @@
               "address": "Λ.ΠΑΠΑΚ/ΝΟΥ 62Α&ΜΑΝΙΑΤΗ",
               "locality": "Νεμέα",
               "phone": "2746022274"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741026680",
+              "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Ι. ΜΑΡΙΑΝΝΑ",
+              "address": "ΑΠ. ΠΑΥΛΟΥ 46",
+              "locality": "Κόρινθος",
+              "phone": "2741026680"
             }
           ]
         },

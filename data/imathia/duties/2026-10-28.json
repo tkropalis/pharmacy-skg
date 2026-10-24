@@ -7,26 +7,26 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T15:30:20.873Z"
+        "uploadedAt": "2026-10-24T18:13:47.864Z"
       },
       "sections": [
         {
-          "kind": "day",
-          "heading": "14:30 ΕΩΣ 21:00",
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
-            "from": "14:30",
-            "to": "21:00",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331067420",
-              "name": "ΠΑΠΑΡΗ Χ. ΟΛΥΜΠΙΑ - ΥΠΟΚ/ΜΑ",
-              "address": "ΜΑΛΑΚΟΥΣΗ 4 - Πλ. Αγ. Αντωνίου",
+              "pharmacyId": "2331027355",
+              "name": "Σ.Φ. ΜΟΥΡΤΖΙΛΑ Β. - ΜΟΥΡΤΖΙΛΑΣ Γ. ΟΕ",
+              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 20 - ΚΤΕΛ",
               "locality": "Βέροια",
-              "phone": "2331067420"
+              "phone": "2331027355"
             }
           ]
         },
@@ -100,9 +100,9 @@
         },
         {
           "kind": "day",
-          "heading": "19:00 ΕΩΣ 21:00",
+          "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
-            "from": "19:00",
+            "from": "14:30",
             "to": "21:00",
             "toNextDay": false
           },
@@ -110,21 +110,21 @@
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331027355",
-              "name": "Σ.Φ. ΜΟΥΡΤΖΙΛΑ Β. - ΜΟΥΡΤΖΙΛΑΣ Γ. ΟΕ",
-              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 20 - ΚΤΕΛ",
+              "pharmacyId": "2331067420",
+              "name": "ΠΑΠΑΡΗ Χ. ΟΛΥΜΠΙΑ - ΥΠΟΚ/ΜΑ",
+              "address": "ΜΑΛΑΚΟΥΣΗ 4 - Πλ. Αγ. Αντωνίου",
               "locality": "Βέροια",
-              "phone": "2331027355"
+              "phone": "2331067420"
             }
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "19:00 ΕΩΣ 21:00",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "19:00",
+            "to": "21:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],

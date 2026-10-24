@@ -7,29 +7,9 @@
       "name": "Κορινθία",
       "source": {
         "url": "https://korinthia.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T15:31:04.061Z"
+        "uploadedAt": "2026-10-24T18:14:30.955Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741026005",
-              "name": "ΣΤΑΜΟΥΛΗ Ι. ΑΙΚΑΤΕΡΙΝΗ & ΣΙΑ ΟΕ",
-              "address": "ΠΑΤΡΩΝ 49 & ΕΥΠΟΙΪΑΣ",
-              "locality": "Κόρινθος",
-              "phone": "2741026005"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:30 ΕΩΣ 22:00 (ΠΡΟΑΙΡΕΤΙΚΗ ΜΕΣΗΜΒΡΙΝΗ ΔΙΑΚΟΠΗ)",
@@ -47,26 +27,6 @@
               "address": "ΑΘΙΚΙΑ",
               "locality": "Αθίκια",
               "phone": "2741039118"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:30 ΕΩΣ 21:00 (ΠΡΟΑΙΡΕΤΙΚΗ ΜΕΣΗΜΒΡΙΝΗ ΔΙΑΚΟΠΗ)",
-          "hours": {
-            "from": "08:30",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741031655",
-              "name": "Σ.Φ.ΣΥΓΓΟΥΝΑ Α.-Α.&ΣΥΓΓΟΥΝΑ Χ. Ο.Ε.",
-              "address": "ΑΡΧΑΙΑ ΚΟΡΙΝΘΟΣ (4Ομ ΑΠΟ ΤΟ ΚΕΝΤΡΟ)",
-              "locality": "Αρχαία Κόρινθος",
-              "phone": "2741031655"
             }
           ]
         },
@@ -122,26 +82,6 @@
               "address": "ΛΟΥΤΡΑ ΩΡ.ΕΛΕΝΗΣ",
               "locality": "Λουτρά Ωραίας Ελένης",
               "phone": "2741033040"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:30 (ΠΡΟΑΙΡΕΤΙΚΗ ΜΕΣΗΜΒΡΙΝΗ ΔΙΑΚΟΠΗ)",
-          "hours": {
-            "from": "08:00",
-            "to": "21:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741082044",
-              "name": "ΧΡΗΣΤΑΡΑ Γ. ΚΩΝΣΤΑΝΤΙΝΑ",
-              "address": "ΛΕΧΑΙΟ",
-              "locality": "Λέχαιο",
-              "phone": "2741082044"
             }
           ]
         },
@@ -276,6 +216,87 @@
         },
         {
           "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741026005",
+              "name": "ΣΤΑΜΟΥΛΗ Ι. ΑΙΚΑΤΕΡΙΝΗ & ΣΙΑ ΟΕ",
+              "address": "ΠΑΤΡΩΝ 49 & ΕΥΠΟΙΪΑΣ",
+              "locality": "Κόρινθος",
+              "phone": "2741026005"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:30 ΕΩΣ 21:00 (ΠΡΟΑΙΡΕΤΙΚΗ ΜΕΣΗΜΒΡΙΝΗ ΔΙΑΚΟΠΗ)",
+          "hours": {
+            "from": "08:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741031655",
+              "name": "Σ.Φ.ΣΥΓΓΟΥΝΑ Α.-Α.&ΣΥΓΓΟΥΝΑ Χ. Ο.Ε.",
+              "address": "ΑΡΧΑΙΑ ΚΟΡΙΝΘΟΣ (4Ομ ΑΠΟ ΤΟ ΚΕΝΤΡΟ)",
+              "locality": "Αρχαία Κόρινθος",
+              "phone": "2741031655"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:30 (ΠΡΟΑΙΡΕΤΙΚΗ ΜΕΣΗΜΒΡΙΝΗ ΔΙΑΚΟΠΗ)",
+          "hours": {
+            "from": "08:00",
+            "to": "21:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741082044",
+              "name": "ΧΡΗΣΤΑΡΑ Γ. ΚΩΝΣΤΑΝΤΙΝΑ",
+              "address": "ΛΕΧΑΙΟ",
+              "locality": "Λέχαιο",
+              "phone": "2741082044"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "22:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741055222",
+              "name": "ΒΑΣΙΛΕΙΟΥ ΠΑΡΑΣΚΕΥΗ & ΣΙΑ ΕΕ",
+              "address": "ΒΡΑΧΑΤΙ",
+              "locality": "Βραχάτι",
+              "phone": "2741055222"
+            }
+          ]
+        },
+        {
+          "kind": "day",
           "heading": "08:30 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00*",
           "hours": {
             "from": "08:30",
@@ -313,27 +334,6 @@
               "address": "ΞΕΝΟΦΩΝΤΟΣ & ΝΟΤΑΡΑ",
               "locality": "Περαχώρα",
               "phone": "2744079350"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
-          "hours": {
-            "from": "22:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741055222",
-              "name": "ΒΑΣΙΛΕΙΟΥ ΠΑΡΑΣΚΕΥΗ & ΣΙΑ ΕΕ",
-              "address": "ΒΡΑΧΑΤΙ",
-              "locality": "Βραχάτι",
-              "phone": "2741055222"
             }
           ]
         }

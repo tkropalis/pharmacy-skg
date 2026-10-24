@@ -7,29 +7,9 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T08:15:22.012Z"
+        "uploadedAt": "2026-10-24T18:14:12.475Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510222798",
-              "name": "ΓΟΥΡΓΙΩΤΗΣ ΔΗΜΗΤΡΙΟΣ Α.",
-              "address": "ΑΒΕΡΩΦ 2",
-              "locality": "Καβάλα",
-              "phone": "2510222798"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 3ΟΑ",
               "locality": "Καβάλα",
               "phone": "2510223750"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510222798",
+              "name": "ΓΟΥΡΓΙΩΤΗΣ ΔΗΜΗΤΡΙΟΣ Α.",
+              "address": "ΑΒΕΡΩΦ 2",
+              "locality": "Καβάλα",
+              "phone": "2510222798"
             }
           ]
         }
