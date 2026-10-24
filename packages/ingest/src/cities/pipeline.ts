@@ -84,7 +84,7 @@ export interface GeocodeArea {
 
 /** What a plausible data set looks like for the city (validate.ts). */
 export interface ValidationRules {
-  /** The groups whose lists must be published for today and tomorrow. */
+  /** The groups the source publishes lists for; a day without one of them is reported. */
   readonly groupIds: readonly string[];
   /** Expected entries in a section; a count outside means the parser or the source broke. */
   readonly sectionRange: (groupId: string, kind: DutyKind) => readonly [number, number];

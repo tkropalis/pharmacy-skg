@@ -45,7 +45,7 @@ import {
   writeIfChanged,
 } from '../store.ts';
 import { addDays, cityToday } from '../time.ts';
-import { validate } from '../validate.ts';
+import { implausibleCount, validate } from '../validate.ts';
 
 const ListedLocationsSchema = z.record(
   z.string(),
@@ -160,6 +160,19 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
   );
   const known = [...previousPharmacies];
   for (const { list, source } of fetched) {
+    // A list whose counts look wrong (a misread or a changed layout) is not published; the day
+    // keeps any earlier upload, and the others still go through.
+    const implausible = implausibleCount(
+      { id: list.groupId, sections: list.sections },
+      pipeline.rules,
+    );
+    if (implausible) {
+      parseFailures.push({
+        code: 'count',
+        message: `${list.date} ${implausible}: not published (${source.url})`,
+      });
+      continue;
+    }
     const group: DutyGroup = DutyGroupSchema.parse({
       id: list.groupId,
       name: list.groupName,
@@ -340,6 +353,10 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
     );
     return false;
   }
+  // The source has published nothing for today: write what there is, but do not count the data as
+  // checked, so the app's stale-data banner shows once it is old and the run fails.
+  const coversToday = sortedDays.some((day) => day.date === today);
+  if (!coversToday) console.error(`error [coverage] ${city.id}: no duty list for today, ${today}`);
 
   let changed = false;
   for (const day of sortedDays) {
@@ -367,9 +384,10 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
     schemaVersion: SCHEMA_VERSION,
     city: city.id,
     updatedAt: changed || !previousMeta ? now : previousMeta.updatedAt,
-    // Every run that gets here read the sources and found them valid: the data is current even
-    // when an association has published nothing new for days (the stale banner reads this).
-    checkedAt: now,
+    // A run that gets here read the sources and found them valid: the data is current even when
+    // an association has published nothing new for days (the stale banner reads this). Not when
+    // nothing covers today, which is a source gone quiet rather than a quiet week.
+    checkedAt: coversToday ? now : (previousMeta?.checkedAt ?? previousMeta?.updatedAt ?? now),
     duties: sortedDays.length
       ? { from: sortedDays[0]?.date ?? today, to: sortedDays.at(-1)?.date ?? today }
       : null,
@@ -381,7 +399,7 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
   MetaSchema.parse(meta);
   await writeIfChanged(paths.meta, toJson(meta));
   log(changed ? `${city.id}: data updated.` : `${city.id}: no changes.`);
-  return true;
+  return coversToday;
 }
 
 function sortKeys<T extends Record<string, unknown>>(record: T): T {
