@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T08:14:33.329Z"
+        "uploadedAt": "2026-10-24T11:22:35.975Z"
       },
       "sections": [
         {
@@ -67,26 +67,6 @@
         },
         {
           "kind": "day",
-          "heading": "17:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "17:30",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221025295",
-              "name": "ΠΑΠΑΚΩΝΣΤΑΝΤΙΝΟΥ ΠΑΝΑΓΙΩΤΑ",
-              "address": "ΜΕΣΣΑΠΙΩΝ 26",
-              "locality": "Χαλκίδα",
-              "phone": "2221025295"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "14:00 ΕΩΣ 21:00",
           "hours": {
             "from": "14:00",
@@ -102,6 +82,26 @@
               "address": "ΚΗΡΕΩΣ 11Β",
               "locality": "Χαλκίδα",
               "phone": "2221085586"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221025295",
+              "name": "ΠΑΠΑΚΩΝΣΤΑΝΤΙΝΟΥ ΠΑΝΑΓΙΩΤΑ",
+              "address": "ΜΕΣΣΑΠΙΩΝ 26",
+              "locality": "Χαλκίδα",
+              "phone": "2221025295"
             }
           ]
         },

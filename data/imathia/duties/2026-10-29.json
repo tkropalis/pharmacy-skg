@@ -7,9 +7,29 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T08:14:53.580Z"
+        "uploadedAt": "2026-10-24T11:22:54.459Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "13:30 ΕΩΣ 17:30",
+          "hours": {
+            "from": "13:30",
+            "to": "17:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331065770",
+              "name": "ΧΕΙΜΩΝΙΔΗΣ ΜΙΧΑΗΛ & ΣΙΑ Ε.Ε.",
+              "address": "Μ. ΜΠΟΤΣΑΡΗ 29 - πλατεία Τσερμένι",
+              "locality": "Βέροια",
+              "phone": "2331065770"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "08:00 ΠΡΩΙ ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -55,26 +75,6 @@
               "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 81- ΜΑΚΡΟΧΩΡΙ",
               "locality": "Μακροχώρι",
               "phone": "2331042914"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "13:30 ΕΩΣ 17:30",
-          "hours": {
-            "from": "13:30",
-            "to": "17:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2331065770",
-              "name": "ΧΕΙΜΩΝΙΔΗΣ ΜΙΧΑΗΛ & ΣΙΑ Ε.Ε.",
-              "address": "Μ. ΜΠΟΤΣΑΡΗ 29 - πλατεία Τσερμένι",
-              "locality": "Βέροια",
-              "phone": "2331065770"
             }
           ]
         },

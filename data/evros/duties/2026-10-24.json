@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T08:14:40.430Z"
+        "uploadedAt": "2026-10-24T11:22:42.266Z"
       },
       "sections": [
         {
@@ -54,40 +54,6 @@
               "address": "ΕΥΡΙΠΙΔΟΥ 17",
               "locality": "Ορεστιάδα",
               "phone": "2552022456"
-            }
-          ]
-        },
-        {
-          "kind": "saturday-extra",
-          "heading": "08:30-14:00",
-          "hours": {
-            "from": "08:30",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2552022582",
-              "name": "ΑΛΒΑΝΟΥΔΗ ΝΕΡΑΝΤΖΙΑ",
-              "address": "ΚΩΝ/ΠΟΛΕΩΣ 201",
-              "locality": "Ορεστιάδα",
-              "phone": "2552022582"
-            },
-            {
-              "pharmacyId": "2552029174",
-              "name": "ΑΝΤΩΝΙΑΔΗΣ ΠΑΝΑΓΙΩΤΗΣ",
-              "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 225",
-              "locality": "Ορεστιάδα",
-              "phone": "2552029174"
-            },
-            {
-              "pharmacyId": "2552029302",
-              "name": "ΖΟΥΠΙΔΟΥ ΑΝΑΣΤΑΣΙΑ",
-              "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 211",
-              "locality": "Ορεστιάδα",
-              "phone": "2552029302"
             }
           ]
         },
@@ -163,6 +129,40 @@
               "address": "14ης Μαΐου 8",
               "locality": "Αλεξανδρούπολη",
               "phone": "2551080077"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:30-14:00",
+          "hours": {
+            "from": "08:30",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552022582",
+              "name": "ΑΛΒΑΝΟΥΔΗ ΝΕΡΑΝΤΖΙΑ",
+              "address": "ΚΩΝ/ΠΟΛΕΩΣ 201",
+              "locality": "Ορεστιάδα",
+              "phone": "2552022582"
+            },
+            {
+              "pharmacyId": "2552029174",
+              "name": "ΑΝΤΩΝΙΑΔΗΣ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 225",
+              "locality": "Ορεστιάδα",
+              "phone": "2552029174"
+            },
+            {
+              "pharmacyId": "2552029302",
+              "name": "ΖΟΥΠΙΔΟΥ ΑΝΑΣΤΑΣΙΑ",
+              "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 211",
+              "locality": "Ορεστιάδα",
+              "phone": "2552029302"
             }
           ]
         }

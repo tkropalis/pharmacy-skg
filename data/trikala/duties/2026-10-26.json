@@ -7,9 +7,29 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-10-20T08:42:18.197Z"
+        "uploadedAt": "2026-10-24T11:24:52.055Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431028876",
+              "name": "ΜΑΝΟΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΜΙΑΟΥΛΗ 3 & ΤΣΙΤΣΑΝΗ",
+              "locality": "Τρίκαλα",
+              "phone": "2431028876"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -47,26 +67,6 @@
               "address": "ΓΑΡΙΒΑΛΔΗ 16 & ΒΥΡΩΝΟΣ",
               "locality": "Τρίκαλα",
               "phone": "2431020290"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 23:00",
-          "hours": {
-            "from": "08:00",
-            "to": "23:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431028876",
-              "name": "ΜΑΝΟΣ ΝΙΚΟΛΑΟΣ",
-              "address": "ΜΙΑΟΥΛΗ 3 & ΤΣΙΤΣΑΝΗ",
-              "locality": "Τρίκαλα",
-              "phone": "2431028876"
             }
           ]
         }

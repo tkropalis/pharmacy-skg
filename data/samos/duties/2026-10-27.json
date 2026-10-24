@@ -7,9 +7,26 @@
       "name": "Σάμος",
       "source": {
         "url": "https://samos.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T08:17:00.191Z"
+        "uploadedAt": "2026-10-24T11:24:39.733Z"
       },
       "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ*",
+          "hours": null,
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273023929",
+              "name": "ΦΙΛΙΑΚΟΣ ΕΜΜΑΝΟΥΗΛ",
+              "address": "ΠΑΝΑΓΙΑ",
+              "locality": "Άνω Βαθύ",
+              "phone": "2273023929"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
@@ -87,23 +104,6 @@
               "address": "ΠΥΘΑΓΟΡΑ 3, ΝΕΟ ΚΑΡΛΟΒΑΣΙ",
               "locality": "Καρλόβασι",
               "phone": "2273079147"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "ΕΦΗΜΕΡΕΥΕΙ*",
-          "hours": null,
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2273023929",
-              "name": "ΦΙΛΙΑΚΟΣ ΕΜΜΑΝΟΥΗΛ",
-              "address": "ΠΑΝΑΓΙΑ",
-              "locality": "Άνω Βαθύ",
-              "phone": "2273023929"
             }
           ]
         }
