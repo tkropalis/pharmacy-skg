@@ -1,3 +1,4 @@
+import type { DutyKind } from '@pharmacy-skg/core';
 import type { ValidationRules } from './cities/pipeline.ts';
 import type { Warning } from './registry/build.ts';
 import {
@@ -20,6 +21,27 @@ export interface DataSet {
   readonly days: readonly DutyDay[];
   readonly pharmacies: readonly Pharmacy[];
   readonly extended: readonly ExtendedHours[];
+}
+
+/**
+ * Describes the first section of a group's list whose entry count is outside the city's range
+ * ("metro day: 1 entries, expected 20–120"), or returns null when every count is plausible.
+ */
+export function implausibleCount(
+  group: {
+    readonly id: string;
+    readonly sections: readonly { readonly kind: DutyKind; readonly entries: readonly unknown[] }[];
+  },
+  rules: Pick<ValidationRules, 'sectionRange'>,
+): string | null {
+  for (const section of group.sections) {
+    const [min, max] = rules.sectionRange(group.id, section.kind);
+    const count = section.entries.length;
+    if (count < min || count > max) {
+      return `${group.id} ${section.kind}: ${count} entries, expected ${min}–${max}`;
+    }
+  }
+  return null;
 }
 
 /**
@@ -53,21 +75,13 @@ export function validate(data: DataSet, rules: ValidationRules): Report {
   for (const day of data.days) {
     const present = new Set(day.groups.map((group) => group.id));
     const missing = rules.groupIds.filter((id) => !present.has(id));
-    if (missing.length > 0) {
-      const message = `${day.date}: no list for ${missing.join(', ')}`;
-      if (day.date === data.today || day.date === tomorrow) error('missing-group', message);
-      else warn('missing-group', message);
-    }
+    // A group the source has not published yet is shown as unknown in the app; the others are
+    // still worth publishing.
+    if (missing.length > 0) warn('missing-group', `${day.date}: no list for ${missing.join(', ')}`);
     for (const group of day.groups) {
+      const implausible = implausibleCount(group, rules);
+      if (implausible) error('count', `${day.date} ${implausible}`);
       for (const section of group.sections) {
-        const [min, max] = rules.sectionRange(group.id, section.kind);
-        const count = section.entries.length;
-        if (count < min || count > max) {
-          error(
-            'count',
-            `${day.date} ${group.id} ${section.kind}: ${count} entries, expected ${min}–${max}`,
-          );
-        }
         if (section.notes.length > 0 && section.extraHours.length === 0) {
           warn(
             'unread-note',
@@ -94,7 +108,9 @@ export function validate(data: DataSet, rules: ValidationRules): Report {
     .map((day) => day.date)
     .sort()
     .at(-1);
-  if (!latest || latest < tomorrow)
+  if (!data.days.some((day) => day.date === data.today))
+    warn('coverage', `no duty list for today, ${data.today}`);
+  else if (!latest || latest < tomorrow)
     warn('coverage', `latest duty list is for ${latest ?? 'no date'}`);
 
   const count = data.pharmacies.length;

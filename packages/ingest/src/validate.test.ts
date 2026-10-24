@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { thessaloniki } from './cities/thessaloniki.ts';
 import { AREA_GROUPS } from './fsth/groups.ts';
 import type { DutyDay, DutyGroup, Pharmacy } from './schema.ts';
-import { validate } from './validate.ts';
+import { implausibleCount, validate } from './validate.ts';
 
 const pharmacy = (id: string, located = true): Pharmacy => ({
   id,
@@ -108,18 +108,29 @@ describe('validate', () => {
     expect(report.errors.map((e) => e.code)).toContain('count');
   });
 
-  it('rejects a missing area group for today, but only warns for later days', () => {
+  it('only warns about a missing area group, today included', () => {
     const report = validate(
       {
         today: '2026-10-05',
-        days: [day('2026-10-05', undefined, ['metro']), day('2026-10-09', undefined, ['metro'])],
+        days: [day('2026-10-05', undefined, ['metro']), day('2026-10-06', undefined, ['metro'])],
         pharmacies,
         extended: [],
       },
       thessaloniki.rules,
     );
-    expect(report.errors.filter((e) => e.code === 'missing-group')).toHaveLength(1);
-    expect(report.warnings.filter((e) => e.code === 'missing-group')).toHaveLength(1);
+    expect(report.errors).toEqual([]);
+    expect(report.warnings.filter((e) => e.code === 'missing-group')).toHaveLength(2);
+  });
+
+  it('warns when nothing covers today', () => {
+    const report = validate(
+      { today: '2026-10-24', days: [day('2026-10-08')], pharmacies, extended: [] },
+      thessaloniki.rules,
+    );
+    expect(report.warnings).toContainEqual({
+      code: 'coverage',
+      message: 'no duty list for today, 2026-10-24',
+    });
   });
 
   it('rejects an on-duty pharmacy without a location', () => {
@@ -193,5 +204,22 @@ describe('validate', () => {
     );
     const warning = report.warnings.find((w) => w.code === 'duplicate-extended');
     expect(warning?.message).toContain(ids[0]);
+  });
+});
+
+describe('implausibleCount', () => {
+  it('names the first section outside its range', () => {
+    expect(
+      implausibleCount(group('metro', { overnight: 28, afterMidnight: 1 }), thessaloniki.rules),
+    ).toBe('metro after-midnight: 1 entries, expected 2–15');
+  });
+
+  it('accepts plausible counts', () => {
+    expect(
+      implausibleCount(group('metro', { overnight: 28, afterMidnight: 6 }), thessaloniki.rules),
+    ).toBeNull();
+    expect(
+      implausibleCount(group('thermi', { overnight: 0, afterMidnight: 0 }), thessaloniki.rules),
+    ).toBeNull();
   });
 });
