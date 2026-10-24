@@ -88,8 +88,9 @@ test.describe('duty lists that are still loading', () => {
 
     await page.route('**/data/thessaloniki/meta.json', async (route) => {
       const response = await route.fetch();
-      const meta = (await response.json()) as { duties: { to: string } };
+      const meta = (await response.json()) as { duties: { to: string; dates?: string[] } };
       meta.duties.to = '2026-10-13';
+      meta.duties.dates = [...(meta.duties.dates ?? []), ...lateDays];
       await route.fulfill({ response, json: meta });
     });
     for (const date of lateDays) {
