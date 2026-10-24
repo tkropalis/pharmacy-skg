@@ -1,5 +1,6 @@
 import { startTransition, useCallback, useEffect, useRef, useState } from 'react';
 import type { CityData, DutyDay, IsoDate, Meta } from '@pharmacy-skg/core';
+import { isPublishedDutyDate } from '@pharmacy-skg/core';
 import { onConnectionChange } from '../../lib/connection.ts';
 import { addDays, dateRange, localIsoDate } from '../../lib/dates.ts';
 import { loadCityBundle, loadDutyDays } from '../../lib/data.ts';
@@ -39,8 +40,7 @@ export function isDutyLoading(
   date: IsoDate,
 ): boolean {
   if (state.pendingDates.includes(date)) return true;
-  const range = state.meta.duties;
-  if (range === null || date < range.from || date > range.to) return false;
+  if (!isPublishedDutyDate(state.meta.duties, date)) return false;
   return !state.settledDates.includes(date);
 }
 

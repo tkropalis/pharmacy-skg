@@ -128,6 +128,17 @@ describe('onlyPublishedDates', () => {
     expect(bundle.failedDates).toEqual([]);
   });
 
+  it('does not ask for a gap inside the range when meta.json lists the dates', async () => {
+    const f = fakeFetch(server);
+    const gappy = { ...meta, duties: { ...meta.duties, dates: ['2026-10-05'] } } as Meta;
+    const { duties } = await loadDutyDays('thessaloniki', ['2026-10-05', '2026-10-06'], gappy, {
+      fetch: f,
+      onlyPublishedDates: true,
+    });
+    expect([...duties.keys()]).toEqual(['2026-10-05']);
+    expect(f).toHaveBeenCalledTimes(1);
+  });
+
   it('loadDutyDays loads only duty lists', async () => {
     const f = fakeFetch(server);
     const { duties, failedDates } = await loadDutyDays(

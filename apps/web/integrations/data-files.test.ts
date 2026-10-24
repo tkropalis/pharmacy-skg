@@ -1,5 +1,11 @@
 import { describe, expect, it } from 'vitest';
-import { isExtendedHoursPath, isPublishedPath, selectDutyFiles } from './data-files.ts';
+import type { Meta } from '@pharmacy-skg/core';
+import {
+  isExtendedHoursPath,
+  isPublishedPath,
+  selectDutyFiles,
+  withPublishedDates,
+} from './data-files.ts';
 
 const names = [
   '2026-09-27.json',
@@ -55,5 +61,31 @@ describe('isExtendedHoursPath / isPublishedPath', () => {
     ]) {
       expect(isPublishedPath(path), path).toBe(false);
     }
+  });
+});
+
+describe('withPublishedDates', () => {
+  const meta = {
+    schemaVersion: 1,
+    city: 'thessaloniki',
+    updatedAt: '2026-10-24T08:00:00.000Z',
+    duties: { from: '2026-06-04', to: '2026-10-29' },
+    extendedHours: [],
+    sources: [],
+  } satisfies Meta;
+
+  it('lists the dates of the published duty files, gaps left out', () => {
+    const files = ['2026-10-25.json', '2026-10-08.json', '2026-10-24.json', '2026-10-27.json'];
+    expect(withPublishedDates(meta, files).duties?.dates).toEqual([
+      '2026-10-08',
+      '2026-10-24',
+      '2026-10-25',
+      '2026-10-27',
+    ]);
+  });
+
+  it('leaves a city without duties alone', () => {
+    const none = { ...meta, duties: null };
+    expect(withPublishedDates(none, ['2026-10-24.json'])).toBe(none);
   });
 });

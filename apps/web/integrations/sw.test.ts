@@ -157,6 +157,14 @@ describe('offlineDataUrls', () => {
     ]);
   });
 
+  it('skips the dates the build does not list, inside the range too', () => {
+    const gappy = { ...meta, duties: { ...meta.duties, dates: ['2026-10-04', '2026-10-07'] } };
+    expect(urls(gappy, new Date('2026-10-05T09:00:00Z')).slice(3)).toEqual([
+      data('duties/2026-10-04.json'),
+      data('duties/2026-10-07.json'),
+    ]);
+  });
+
   it('asks for no duty day when none is published', () => {
     expect(urls({ ...meta, duties: null }, new Date('2026-10-05T09:00:00Z'))).toEqual([
       data('meta.json'),

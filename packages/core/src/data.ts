@@ -157,7 +157,16 @@ export interface Meta {
    * Missing in meta files written before it existed.
    */
   readonly checkedAt?: string | undefined;
-  readonly duties: { readonly from: IsoDate; readonly to: IsoDate } | null;
+  readonly duties: {
+    readonly from: IsoDate;
+    readonly to: IsoDate;
+    /**
+     * The dates that have a duty file, in order. Added by the site build to the meta.json it
+     * publishes (apps/web/integrations/data.ts); absent in data/ and in older copies, where every
+     * date from `from` to `to` counts. A source can leave gaps.
+     */
+    readonly dates?: readonly IsoDate[] | undefined;
+  } | null;
   readonly extendedHours: readonly {
     readonly from: IsoDate;
     readonly to: IsoDate;
@@ -173,4 +182,11 @@ export interface CityData {
   /** Published duty lists, by date. Missing dates are unpublished, not "no duty". */
   readonly duties: ReadonlyMap<IsoDate, DutyDay>;
   readonly extendedHours: readonly ExtendedHours[];
+}
+
+/** Whether meta.json says a duty list is published for this date (so asking for it is no 404). */
+export function isPublishedDutyDate(duties: Meta['duties'], date: IsoDate): boolean {
+  if (duties === null) return false;
+  if (duties.dates !== undefined) return duties.dates.includes(date);
+  return date >= duties.from && date <= duties.to;
 }

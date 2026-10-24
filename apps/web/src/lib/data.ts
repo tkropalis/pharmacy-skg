@@ -6,7 +6,7 @@ import type {
   Meta,
   Pharmacies,
 } from '@pharmacy-skg/core';
-import { CITIES } from '@pharmacy-skg/core';
+import { CITIES, isPublishedDutyDate } from '@pharmacy-skg/core';
 
 /** Where the build copies data/ to (integrations/data.ts). */
 export const DATA_BASE_PATH = '/data';
@@ -18,8 +18,8 @@ export interface LoadOptions {
   readonly basePath?: string;
   readonly signal?: AbortSignal;
   /**
-   * Skip duty dates outside the range meta.json says is published, instead of asking for them
-   * and getting a 404 (which browsers log as a console error).
+   * Skip duty dates meta.json does not list as published, instead of asking for them and
+   * getting a 404 (which browsers log as a console error).
    */
   readonly onlyPublishedDates?: boolean;
 }
@@ -78,8 +78,7 @@ export async function loadMeta(cityId: string, options: LoadOptions = {}): Promi
 function wantedDates(dates: readonly IsoDate[], meta: Meta, options: LoadOptions): IsoDate[] {
   const unique = [...new Set(dates)];
   if (!options.onlyPublishedDates) return unique;
-  const range = meta.duties;
-  return range === null ? [] : unique.filter((d) => d >= range.from && d <= range.to);
+  return unique.filter((date) => isPublishedDutyDate(meta.duties, date));
 }
 
 interface DutyLoad {
