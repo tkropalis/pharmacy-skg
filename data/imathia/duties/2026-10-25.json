@@ -7,26 +7,26 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T08:14:53.580Z"
+        "uploadedAt": "2026-10-24T15:30:20.873Z"
       },
       "sections": [
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:30",
+          "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
-            "from": "08:00",
-            "to": "14:30",
+            "from": "14:30",
+            "to": "21:00",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331024534",
-              "name": "ΚΟΡΔΑΤΟΣ ΒΑΣΙΛΕΙΟΣ",
-              "address": "ΠΛΑΤΆΝΩΝ 1",
+              "pharmacyId": "2331023132",
+              "name": "ΜΑΣΟΥΡΑ ΑΙΚΑΤΕΡΙΝΗ & ΣΙΑ Ε.Ε.",
+              "address": "ΒΕΝΙΖΕΛΟΥ 22",
               "locality": "Βέροια",
-              "phone": "2331024534"
+              "phone": "2331023132"
             }
           ]
         },
@@ -80,21 +80,21 @@
         },
         {
           "kind": "day",
-          "heading": "14:30 ΕΩΣ 21:00",
+          "heading": "08:00 ΕΩΣ 14:30",
           "hours": {
-            "from": "14:30",
-            "to": "21:00",
+            "from": "08:00",
+            "to": "14:30",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331023132",
-              "name": "ΜΑΣΟΥΡΑ ΑΙΚΑΤΕΡΙΝΗ & ΣΙΑ Ε.Ε.",
-              "address": "ΒΕΝΙΖΕΛΟΥ 22",
+              "pharmacyId": "2331024534",
+              "name": "ΚΟΡΔΑΤΟΣ ΒΑΣΙΛΕΙΟΣ",
+              "address": "ΠΛΑΤΆΝΩΝ 1",
               "locality": "Βέροια",
-              "phone": "2331023132"
+              "phone": "2331024534"
             }
           ]
         },

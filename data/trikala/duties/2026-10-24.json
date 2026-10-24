@@ -7,29 +7,9 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T11:24:52.055Z"
+        "uploadedAt": "2026-10-24T15:32:18.295Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 23:00",
-          "hours": {
-            "from": "08:00",
-            "to": "23:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431023885",
-              "name": "ΣΑΠΟΥΝΑΣ ΝΙΚΟΛΑΟΣ",
-              "address": "ΣΤ. ΣΑΡΑΦΗ 18",
-              "locality": "Τρίκαλα",
-              "phone": "2431023885"
-            }
-          ]
-        },
         {
           "kind": "saturday-extra",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -67,6 +47,26 @@
               "address": "ΦΛΕΓΙΟΥ 70",
               "locality": "Τρίκαλα",
               "phone": "2431076140"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431023885",
+              "name": "ΣΑΠΟΥΝΑΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΣΤ. ΣΑΡΑΦΗ 18",
+              "locality": "Τρίκαλα",
+              "phone": "2431023885"
             }
           ]
         }

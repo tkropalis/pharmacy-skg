@@ -7,7 +7,7 @@
       "name": "Φθιώτιδα",
       "source": {
         "url": "https://fthiotida.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T11:24:58.258Z"
+        "uploadedAt": "2026-10-24T15:32:24.484Z"
       },
       "sections": [
         {
@@ -27,6 +27,46 @@
               "address": "ΣΤΥΛΙΔΟΣ 15",
               "locality": "Λαμία",
               "phone": "2231021900"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231033790",
+              "name": "ΚΟΛΟΚΥΘΑ ΕΛΠΙΔΑ",
+              "address": "ΠΑΠΑΦΛΕΣΣΑ 3",
+              "locality": "Λαμία",
+              "phone": "2231033790"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231033790",
+              "name": "ΚΟΛΟΚΥΘΑ ΕΛΠΙΔΑ",
+              "address": "ΠΑΠΑΦΛΕΣΣΑ 3",
+              "locality": "Λαμία",
+              "phone": "2231033790"
             }
           ]
         },
@@ -104,46 +144,6 @@
               "address": "ΠΛ.ΔΗΜΟΚΡΑΤΙΑΣ 3",
               "locality": "Μακρακώμη",
               "phone": "2236022384"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231033790",
-              "name": "ΚΟΛΟΚΥΘΑ ΕΛΠΙΔΑ",
-              "address": "ΠΑΠΑΦΛΕΣΣΑ 3",
-              "locality": "Λαμία",
-              "phone": "2231033790"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231033790",
-              "name": "ΚΟΛΟΚΥΘΑ ΕΛΠΙΔΑ",
-              "address": "ΠΑΠΑΦΛΕΣΣΑ 3",
-              "locality": "Λαμία",
-              "phone": "2231033790"
             }
           ]
         }

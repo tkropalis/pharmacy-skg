@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T11:22:42.266Z"
+        "uploadedAt": "2026-10-24T15:30:08.504Z"
       },
       "sections": [
         {
@@ -58,22 +58,22 @@
           ]
         },
         {
-          "kind": "saturday-extra",
-          "heading": "08:00-14:30",
+          "kind": "overnight",
+          "heading": "18:00-08:00",
           "hours": {
-            "from": "08:00",
-            "to": "14:30",
-            "toNextDay": false
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2553023466",
-              "name": "ΤΣΕΚΟΥΡΑ ΗΡΩ",
-              "address": "ΠΛΑΤ. ΕΛΕΥΘΕΡΙΑΣ 1",
-              "locality": "Διδυμότειχο",
-              "phone": "2553023466"
+              "pharmacyId": "2551080077",
+              "name": "ΠΑΠΑΔΗΜΗΤΡΙΟΥ ΒΑΣΙΛΙΚΗ",
+              "address": "14ης Μαΐου 8",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551080077"
             }
           ]
         },
@@ -113,26 +113,6 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551080077",
-              "name": "ΠΑΠΑΔΗΜΗΤΡΙΟΥ ΒΑΣΙΛΙΚΗ",
-              "address": "14ης Μαΐου 8",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551080077"
-            }
-          ]
-        },
-        {
           "kind": "saturday-extra",
           "heading": "08:30-14:00",
           "hours": {
@@ -163,6 +143,26 @@
               "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 211",
               "locality": "Ορεστιάδα",
               "phone": "2552029302"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00-14:30",
+          "hours": {
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2553023466",
+              "name": "ΤΣΕΚΟΥΡΑ ΗΡΩ",
+              "address": "ΠΛΑΤ. ΕΛΕΥΘΕΡΙΑΣ 1",
+              "locality": "Διδυμότειχο",
+              "phone": "2553023466"
             }
           ]
         }

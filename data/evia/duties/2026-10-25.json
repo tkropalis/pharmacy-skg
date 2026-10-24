@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T11:22:35.975Z"
+        "uploadedAt": "2026-10-24T15:30:02.372Z"
       },
       "sections": [
         {
@@ -41,6 +41,46 @@
               "address": "ΠΛΗΣΙΟΝ Κ.Υ. ΙΣΤΙΑΙΑΣ",
               "locality": "Ιστιαία",
               "phone": "2226053155"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221022120",
+              "name": "ΚΥΛΕΡΤΖΗΣ ΧΡΗΣΤΟΣ",
+              "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
+              "locality": "Χαλκίδα",
+              "phone": "2221022120"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221022120",
+              "name": "ΚΥΛΕΡΤΖΗΣ ΧΡΗΣΤΟΣ",
+              "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
+              "locality": "Χαλκίδα",
+              "phone": "2221022120"
             }
           ]
         },
@@ -82,46 +122,6 @@
               "address": "ΣΑΧΤΟΥΡΗ 80",
               "locality": "Κάρυστος",
               "phone": "2224023543"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221022120",
-              "name": "ΚΥΛΕΡΤΖΗΣ ΧΡΗΣΤΟΣ",
-              "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
-              "locality": "Χαλκίδα",
-              "phone": "2221022120"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221022120",
-              "name": "ΚΥΛΕΡΤΖΗΣ ΧΡΗΣΤΟΣ",
-              "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
-              "locality": "Χαλκίδα",
-              "phone": "2221022120"
             }
           ]
         },

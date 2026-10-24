@@ -7,7 +7,7 @@
       "name": "Κορινθία",
       "source": {
         "url": "https://korinthia.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T11:23:37.831Z"
+        "uploadedAt": "2026-10-24T15:31:04.061Z"
       },
       "sections": [
         {
@@ -115,6 +115,46 @@
               "address": "ΑΣΣΟΣ",
               "locality": "Άσσος",
               "phone": "2741088882"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741081302",
+              "name": "ΠΑΠΑΝΤΩΝΗ Φ. ΑΝΘΟΥΛΑ",
+              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 62",
+              "locality": "Κόρινθος",
+              "phone": "2741081302"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741081302",
+              "name": "ΠΑΠΑΝΤΩΝΗ Φ. ΑΝΘΟΥΛΑ",
+              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 62",
+              "locality": "Κόρινθος",
+              "phone": "2741081302"
             }
           ]
         },
@@ -239,46 +279,6 @@
               "address": "ΒΕΛΟ",
               "locality": "Βέλο",
               "phone": "2742034488"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741081302",
-              "name": "ΠΑΠΑΝΤΩΝΗ Φ. ΑΝΘΟΥΛΑ",
-              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 62",
-              "locality": "Κόρινθος",
-              "phone": "2741081302"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741081302",
-              "name": "ΠΑΠΑΝΤΩΝΗ Φ. ΑΝΘΟΥΛΑ",
-              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ 62",
-              "locality": "Κόρινθος",
-              "phone": "2741081302"
             }
           ]
         }

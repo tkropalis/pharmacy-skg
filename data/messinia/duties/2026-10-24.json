@@ -7,7 +7,7 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T11:24:02.608Z"
+        "uploadedAt": "2026-10-24T15:31:28.829Z"
       },
       "sections": [
         {
@@ -122,6 +122,26 @@
           ]
         },
         {
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721020757",
+              "name": "ΜΙΧΑΛΟΠΟΥΛΟΥ ΝΙΚΟΛΕΤΑ & ΣΙΑ Ο.Ε.",
+              "address": "ΓΕΡΜΑΝΟΥ 3",
+              "locality": "Καλαμάτα",
+              "phone": "2721020757"
+            }
+          ]
+        },
+        {
           "kind": "on-duty",
           "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
@@ -152,26 +172,6 @@
               "address": "ΟΘΩΝΟΣ & ΑΜΑΛΙΑΣ",
               "locality": "Φιλιατρά",
               "phone": "2761032102"
-            }
-          ]
-        },
-        {
-          "kind": "saturday-extra",
-          "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721020757",
-              "name": "ΜΙΧΑΛΟΠΟΥΛΟΥ ΝΙΚΟΛΕΤΑ & ΣΙΑ Ο.Ε.",
-              "address": "ΓΕΡΜΑΝΟΥ 3",
-              "locality": "Καλαμάτα",
-              "phone": "2721020757"
             }
           ]
         }

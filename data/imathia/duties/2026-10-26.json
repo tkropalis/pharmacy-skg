@@ -7,9 +7,36 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T08:14:53.580Z"
+        "uploadedAt": "2026-10-24T15:30:20.873Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "14:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331025130",
+              "name": "ΚΑΛΟΚΥΡΗ ΕΛΙΣΑΒΕΤ",
+              "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 28",
+              "locality": "Βέροια",
+              "phone": "2331025130"
+            },
+            {
+              "pharmacyId": "2331025669",
+              "name": "ΧΑΤΖΗΚΥΡΙΑΚΙΔΟΥ ΕΥΘΥΜΙΑ",
+              "address": "ΑΓ.ΔΗΜΗΤΡΙΟΥ 8 -στενό Ν. Δημαρχείου",
+              "locality": "Βέροια",
+              "phone": "2331025669"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "08:00 ΠΡΩΙ ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -55,33 +82,6 @@
               "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 145-ΜΑΚΡΟΧΩΡΙ",
               "locality": "Μακροχώρι",
               "phone": "2331041840"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "14:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "14:30",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2331025130",
-              "name": "ΚΑΛΟΚΥΡΗ ΕΛΙΣΑΒΕΤ",
-              "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 28",
-              "locality": "Βέροια",
-              "phone": "2331025130"
-            },
-            {
-              "pharmacyId": "2331025669",
-              "name": "ΧΑΤΖΗΚΥΡΙΑΚΙΔΟΥ ΕΥΘΥΜΙΑ",
-              "address": "ΑΓ.ΔΗΜΗΤΡΙΟΥ 8 -στενό Ν. Δημαρχείου",
-              "locality": "Βέροια",
-              "phone": "2331025669"
             }
           ]
         },
