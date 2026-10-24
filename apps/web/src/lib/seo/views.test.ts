@@ -1,3 +1,4 @@
+import { readdirSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { t } from '../../i18n/index.ts';
 import { realModel } from './test-data.ts';
@@ -48,9 +49,12 @@ describe('publishedDutyDates', () => {
   });
 
   it('matches the model built from the real data', () => {
+    // data/ grows with every update, so the dates on disk are the expectation, not a snapshot.
+    const onDisk = readdirSync(new URL('../../../../../data/thessaloniki/duties/', import.meta.url))
+      .map((name) => name.slice(0, -'.json'.length))
+      .sort();
     expect(model.publishedDates[0]).toBe('2026-09-28');
-    expect(model.publishedDates.at(-1)).toBe('2026-10-08');
-    expect(model.publishedDates).toHaveLength(11);
+    expect(model.publishedDates).toEqual(publishedDutyDates(onDisk, '2026-10-05'));
   });
 });
 

@@ -182,7 +182,7 @@ function warmUp(now) {
         // Offline again: the next run gets the rest.
       }
     }
-    await trimDutyFiles();
+    await trimDutyFiles(now);
   })()
     .catch(() => {})
     .finally(() => {
@@ -191,10 +191,11 @@ function warmUp(now) {
   return warming;
 }
 
-async function trimDutyFiles() {
+/** Drops the duty lists that are too old, by the warm-up's clock when it asks (otherwise now). */
+async function trimDutyFiles(now = new Date()) {
   const cache = await caches.open(DATA_CACHE);
   const urls = (await cache.keys()).map((request) => request.url);
-  for (const url of staleDutyUrls(urls, new Date())) await cache.delete(url, { ignoreVary: true });
+  for (const url of staleDutyUrls(urls, now)) await cache.delete(url, { ignoreVary: true });
 }
 
 let lastTrim = 0;
