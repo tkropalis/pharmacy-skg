@@ -254,6 +254,27 @@
       }
     },
     {
+      "id": "2551028164",
+      "name": "ΦΡΑΝΤΖΙΔΗΣ ΧΡΗΣΤΟΣ",
+      "address": "Λ. Δημοκρατίας 217",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551028164",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 40.8461063,
+        "lon": 25.8774493,
+        "ref": "https://evros.efhmeries.gr/Home/Details/3996",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551028337",
       "name": "ΤΙΓΓΙΡΙΔΗΣ ΑΧΙΛΛΕΑΣ",
       "address": "Ελ. Βενιζέλου 40 (παραπλεύρως ΚΤΕΛ)",
@@ -727,7 +748,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 41.5034239,
         "lon": 26.5270369,
@@ -1084,7 +1105,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 41.3525558,
         "lon": 26.5026007,
@@ -1168,7 +1189,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 41.1947643,
         "lon": 26.3052864,
@@ -1273,7 +1294,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 41.0262152,
         "lon": 26.2954437,
@@ -1357,7 +1378,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 40.8932822,
         "lon": 26.1698188,

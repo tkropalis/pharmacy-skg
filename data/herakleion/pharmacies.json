@@ -34,7 +34,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.3155673,
         "lon": 25.1407562,
@@ -517,7 +517,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.3372877,
         "lon": 25.1600453,
@@ -790,7 +790,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.3247513,
         "lon": 25.1305894,
@@ -984,6 +984,27 @@
         "lat": 35.3366806,
         "lon": 25.1475977,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57917",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810242100",
+      "name": "ΧΑΝΙΩΤΑΚΗ ΕΥΑΓΓΕΛΙΑ",
+      "address": "Λ.ΧΡΥΣΟΣΤΟΜΟΥ 23 (ΠΡΙΝ ΤΗΝ ΚΑΙΝΟΥΡΓΙΑ ΠΟΡΤΑ)",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810242100",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 35.3324692,
+        "lon": 25.136344,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/58020",
         "source": "list",
         "precision": "exact"
       }
@@ -1304,6 +1325,27 @@
       }
     },
     {
+      "id": "2810256059",
+      "name": "ΝΤΑΓΙΑΝΤΑΣ ΚΩΝ/ΝΟΣ",
+      "address": "ΛΕΩΦ. 62 ΜΑΡΤΥΡΩΝ 67 ΣΤΑΣΗ ΜΙΝΩΟΣ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810256059",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 35.3357047,
+        "lon": 25.1196879,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/58019",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810256280",
       "name": "ΧΑΜΑΛΑΚΗ ΧΡΥΣΟΥΛΑ",
       "address": "Λ. ΙΚΑΡΟΥ 44 (ΔΙΠΛΑ McDonald’s, ΕΝΑΝΤΙ ΝΕΩΝ ΚΤΕΛ)",
@@ -1567,7 +1609,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.3391579,
         "lon": 25.1317544,
@@ -1651,7 +1693,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.3353561,
         "lon": 25.1503808,
@@ -1840,7 +1882,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.337974,
         "lon": 25.1344,
@@ -2785,7 +2827,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.3306826,
         "lon": 25.2563374,
@@ -2932,7 +2974,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.316295,
         "lon": 25.09264,
@@ -3205,7 +3247,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.150501,
         "lon": 25.2645342,
@@ -3310,7 +3352,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.0502105,
         "lon": 24.8777487,
@@ -3646,7 +3688,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.0716793,
         "lon": 24.7705765,
@@ -3693,6 +3735,27 @@
         "lat": 35.0670369,
         "lon": 24.8129476,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/60342",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2892501569",
+      "name": "ΤΣΟΥΒΑΛΑΣ ΕΥΑΓΓΕΛΟΣ",
+      "address": "ΠΕΤΡΟΚΕΦΑΛΙ",
+      "locality": "ΠΕΤΡΟΚΕΦΑΛΙ",
+      "postcode": null,
+      "phone": "2892501569",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 35.0314805,
+        "lon": 24.8356007,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/60399",
         "source": "list",
         "precision": "exact"
       }
@@ -3814,7 +3877,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.331734,
         "lon": 25.3452693,
@@ -3919,7 +3982,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.3110083,
         "lon": 25.398915,
@@ -3940,7 +4003,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.2905044,
         "lon": 25.4606531,
@@ -4045,7 +4108,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.2926533,
         "lon": 25.4320195,

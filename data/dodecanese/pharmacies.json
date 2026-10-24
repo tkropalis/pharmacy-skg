@@ -13,7 +13,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.2924549,
         "lon": 28.1625698,
@@ -417,6 +417,27 @@
         "lat": 36.449004,
         "lon": 28.222914,
         "ref": "https://dodecanese.efhmeries.gr/Home/Details/29760",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241031140",
+      "name": "ΚΑΤΣΑΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ / KATSANIS KONSTANTINOS",
+      "address": "ΚΑΝΑΔΑ 107/KANADA 107",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241031140",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 36.432716,
+        "lon": 28.2334114,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29794",
         "source": "list",
         "precision": "exact"
       }
@@ -1105,7 +1126,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.388867,
         "lon": 28.2159916,
@@ -1462,7 +1483,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.3837796,
         "lon": 28.0345566,
@@ -1504,7 +1525,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.3395744,
         "lon": 28.2005336,
@@ -1735,7 +1756,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.4216332,
         "lon": 28.1567497,
@@ -1987,7 +2008,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.8918717,
         "lon": 27.2930764,
@@ -2176,7 +2197,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.7458068,
         "lon": 26.9693495,
@@ -2239,7 +2260,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.8764961,
         "lon": 27.206106,
@@ -2470,7 +2491,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.2130748,
         "lon": 28.1131076,
@@ -2512,7 +2533,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.1211165,
         "lon": 28.0598513,
@@ -2596,7 +2617,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.054353,
         "lon": 27.9705901,
@@ -2622,6 +2643,27 @@
         "lat": 36.0754767,
         "lon": 28.0539596,
         "ref": "https://dodecanese.efhmeries.gr/Home/Details/29520",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2244301356",
+      "name": "ΣΤΑΥΡΑΣ ΠΑΝΤΕΛΗΣ / STAVRAS PANTELIS",
+      "address": "ΕΜΠΟΡΙΚΟ ΚΕΝΤΡΟ ΧΡΥΣΟΒΕΡΓΗ / SHOPPIN CENTER CHRYSOVERGI",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2244301356",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 36.4035399,
+        "lon": 28.2045592,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29793",
         "source": "list",
         "precision": "exact"
       }
@@ -2701,7 +2743,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.5075007,
         "lon": 27.2123783,
@@ -2743,7 +2785,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.2256667,
         "lon": 27.8592298,
@@ -2785,7 +2827,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.6154201,
         "lon": 27.837024,

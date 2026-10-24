@@ -475,7 +475,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 41.152201,
         "lon": 24.141134,
@@ -690,6 +690,27 @@
         "lat": 41.1510455,
         "lon": 24.1440515,
         "ref": "https://drama.efhmeries.gr/Home/Details/3141",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521036314",
+      "name": "ΤΖΕΛΗ ΔΕΛΗΓΙΩΡΓΗ ΣΟΦΙΑ",
+      "address": "Γ. ΠΑΠΑΝΔΡΕΟΥ 36",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521036314",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 41.150592,
+        "lon": 24.14933,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3188",
         "source": "list",
         "precision": "exact"
       }

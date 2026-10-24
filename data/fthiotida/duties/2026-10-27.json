@@ -7,9 +7,29 @@
       "name": "Φθιώτιδα",
       "source": {
         "url": "https://fthiotida.efhmeries.gr/",
-        "uploadedAt": "2026-10-23T19:23:01.302Z"
+        "uploadedAt": "2026-10-24T08:17:18.744Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:00",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231031741",
+              "name": "ΔΑΣΚΑΛΟΠΟΥΛΟΣ ΕΛΕΥΘΕΡΙΟΣ",
+              "address": "ΠΛ.ΠΑΡΚΟΥ",
+              "locality": "Λαμία",
+              "phone": "2231031741"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -96,26 +116,6 @@
               "address": "ΘΕΡΜΟΠΥΛΩΝ 2",
               "locality": "Μώλος",
               "phone": "2235051444"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 22:00",
-          "hours": {
-            "from": "08:00",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231031741",
-              "name": "ΔΑΣΚΑΛΟΠΟΥΛΟΣ ΕΛΕΥΘΕΡΙΟΣ",
-              "address": "ΠΛ.ΠΑΡΚΟΥ",
-              "locality": "Λαμία",
-              "phone": "2231031741"
             }
           ]
         },

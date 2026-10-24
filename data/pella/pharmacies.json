@@ -244,7 +244,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 40.8014866,
         "lon": 22.0465806,
@@ -412,7 +412,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 40.7694443,
         "lon": 22.1562914,
@@ -1105,7 +1105,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 40.6866277,
         "lon": 22.3032052,
@@ -1131,6 +1131,27 @@
         "lat": 40.6879479,
         "lon": 22.3024282,
         "ref": "https://pella.efhmeries.gr/Home/Details/5786",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2382081100",
+      "name": "ΣΟΥΜΠΑΣΗΣ ΔΗΜΗΤΡΗΣ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ & ΤΑΓΜ. ΓΕΩΡΓΟΥΛΗ",
+      "locality": "Γιαννιτσά",
+      "postcode": null,
+      "phone": "2382081100",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 40.7920032,
+        "lon": 22.4114265,
+        "ref": "https://pella.efhmeries.gr/Home/Details/4749",
         "source": "list",
         "precision": "exact"
       }
@@ -1336,7 +1357,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 40.9759194,
         "lon": 22.0612362,

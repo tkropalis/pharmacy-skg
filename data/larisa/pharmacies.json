@@ -76,7 +76,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 39.6342388,
         "lon": 22.4192138,
@@ -727,7 +727,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 39.64282,
         "lon": 22.41879,
@@ -1189,7 +1189,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 39.639851,
         "lon": 22.420247,
@@ -1378,7 +1378,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 39.63807,
         "lon": 22.41476,
@@ -1945,7 +1945,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 39.64068,
         "lon": 22.4222,
@@ -2134,7 +2134,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 39.666932,
         "lon": 22.394532,
@@ -2223,6 +2223,27 @@
         "lat": 39.62518,
         "lon": 22.39695,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23076",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410614460",
+      "name": "ΜΠΕΓΑΣ ΑΛΜΠΕΡΤΟΣ",
+      "address": "ΛΑΓΟΥ 41 (Πλησίον ΔΕΥΑΛ, διασταύρωση με Κρανώνος)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410614460",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 39.63458,
+        "lon": 22.40281,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23047",
         "source": "list",
         "precision": "exact"
       }
@@ -2407,7 +2428,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 39.61069,
         "lon": 22.43187,
@@ -2932,7 +2953,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 39.563057,
         "lon": 22.464754,
@@ -2974,7 +2995,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 39.717364,
         "lon": 22.39587,
@@ -3247,7 +3268,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 39.293579,
         "lon": 22.383864,
@@ -3730,7 +3751,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 39.737851,
         "lon": 22.288704,
@@ -3772,7 +3793,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 39.745187,
         "lon": 22.363491,
@@ -4150,7 +4171,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 39.895065,
         "lon": 22.183764,
@@ -4234,7 +4255,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 39.715748,
         "lon": 22.75908,

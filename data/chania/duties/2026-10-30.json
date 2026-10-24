@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-30",
+  "groups": [
+    {
+      "id": "chania",
+      "name": "Χανιά",
+      "source": {
+        "url": "https://chania.efhmeries.gr/",
+        "uploadedAt": "2026-10-24T08:17:24.824Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821043737",
+              "name": "ΝΤΑΟΥΚΑΚΗ ΜΑΡΙΑ/ΝΤΑΟUΚΑΚΙ MARY",
+              "address": "ΤΖΑΝΑΚΑΚΗ 30/TZANAKAKI 30",
+              "locality": "Χανιά",
+              "phone": "2821043737"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821043737",
+              "name": "ΝΤΑΟΥΚΑΚΗ ΜΑΡΙΑ/ΝΤΑΟUΚΑΚΙ MARY",
+              "address": "ΤΖΑΝΑΚΑΚΗ 30/TZANAKAKI 30",
+              "locality": "Χανιά",
+              "phone": "2821043737"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821097711",
+              "name": "ΑΔΙΚΗΜΕΝΑΚΗ ΜΑΡΙΛΕΝΑ & ΣΙΑ/ΑDΙΚΙΜΕΝΑΚΙ MARILENA & SIA",
+              "address": "ΚΥΔΩΝΙΑΣ 50/KIDONIAS 50",
+              "locality": "Χανιά",
+              "phone": "2821097711"
+            },
+            {
+              "pharmacyId": "2821063771",
+              "name": "ΑΛΕΞΑΚΗ ΣΜΑΡΑΓΔΗ",
+              "address": "ΣΤΕΡΝΕΣ & 11 ΕΚΤΕΛΕΣΘΕΝΤΩΝ",
+              "locality": "Ακρωτήρι",
+              "phone": "2821063771"
+            },
+            {
+              "pharmacyId": "2821031430",
+              "name": "ΚΥΡΙΑΚΑΚΗ ΕΛΕΝΗ/ΚΥRΙΑΚΑΚΙ HELEN",
+              "address": "ΜΑΚΡΥΣ ΤΟΙΧΟΣ (ΠΛΗΣΙΟΝ ΙΕΡΟΥ ΝΑΟΥ ΑΓΙΟΥ ΠΑΝΤΕΛΕΗΜΟΝΟΣ)/ΜΑΚRΥS TOICHOS",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821031430"
+            },
+            {
+              "pharmacyId": "2821093480",
+              "name": "ΜΠΟΤΩΝΑΚΗ ΑΛΕΞΑΝΔΡΑ",
+              "address": "ΒΑΜΒΑΚΟΠΟΥΛΟ",
+              "locality": "ΒΑΜΒΑΚΟΠΟΥΛΟ",
+              "phone": "2821093480"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2823041160",
+              "name": "Σ.Φ. ΑΘΟΥΣΑΚΗ Ο.Ε./S.F. ATHOUSAKI O.E.",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "2823041160"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
+          "hours": {
+            "from": "08:30",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2822024080",
+              "name": "Σ.Φ. ΚΩΝΣΤΑΝΤΙΝΟΣ ΡΕΒΕΛΑΚΗΣ- ΙΩΑΝΝΗΣ ΡΕΒΕΛΑΚΗΣ Ο.Ε.",
+              "address": "ΟΜΟΓΕΝΩΝ ΑΜΕΡΙΚΗΣ 16/OMOGENON AMERIKIS 16",
+              "locality": "Δήμος Κισσάμου",
+              "phone": "2822024080"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -254,6 +254,27 @@
       }
     },
     {
+      "id": "2731027227",
+      "name": "ΝΙΚΗ ΒΑΧΑΒΙΩΛΟΥ ΚΑΠΡΑΝΟΥ &ΣΙΑ Ε.Ε.",
+      "address": "ΑΓΊΟΥ ΝΙΚΩΝΟΣ 98",
+      "locality": "Σπάρτη",
+      "postcode": null,
+      "phone": "2731027227",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 37.0742496,
+        "lon": 22.431869,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/17050",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2731028823",
       "name": "ΦΑΡΜ. ΠΟΛΥΤΙΜΗ ΠΑΠΑΔΟΛΙΑ ΚΑΙ ΣΙΑ ΕΕ",
       "address": "ΠΑΛΑΙΟΛΟΓΟΥ 54",
@@ -328,7 +349,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.9593051,
         "lon": 22.4522074,
@@ -370,7 +391,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.1706904,
         "lon": 22.3044898,
@@ -485,6 +506,27 @@
       }
     },
     {
+      "id": "2732024170",
+      "name": "ΦΑΡΜ. K. ΝΙΚΟΛΑΡΟΣ-Κ. ΒΑΒΛΙΑΚΗΣ-Δ. ΑΝΑΓΝΩΣΤΟΠΟΥΛΟΣ Ι.Κ.Ε. (1)",
+      "address": "ΜΟΛΑΟΙ",
+      "locality": "Μολάοι",
+      "postcode": null,
+      "phone": "2732024170",
+      "groupId": "lakonia",
+      "sources": [
+        "iteq-lakonia"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 36.8015346,
+        "lon": 22.8551335,
+        "ref": "https://lakonia.efhmeries.gr/Home/Details/15199",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2732082370",
       "name": "ΠΑΝΑΓΙΩΤΗΣ ΒΛΑΧΑΚΗΣ ΚΑΙ ΣΙΑ Ε.Ε.",
       "address": "ΑΣΩΠΟΣ",
@@ -538,7 +580,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.716179,
         "lon": 22.8612624,
@@ -601,7 +643,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.7608153,
         "lon": 22.5629608,
@@ -664,7 +706,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.666078,
         "lon": 22.3806638,
@@ -685,7 +727,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.5108739,
         "lon": 23.0597934,
@@ -811,7 +853,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.8508627,
         "lon": 22.6691794,
@@ -853,7 +895,7 @@
         "iteq-lakonia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 36.8618193,
         "lon": 22.7063441,

@@ -233,6 +233,27 @@
       }
     },
     {
+      "id": "2461028727",
+      "name": "ΧΑΡΑΜΗΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΣΤΡ. ΜΑΚΡΥΓΙΑΝΝΗ 5",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461028727",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 40.2941467,
+        "lon": 21.7874216,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/5923",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2461028797",
       "name": "ΧΑΡΑΜΗ ΤΕΡΕΖΑ",
       "address": "11ΗΣ ΟΚΤΩΒΡΙΟΥ 49",
@@ -706,7 +727,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 40.2986059,
         "lon": 21.7906126,
@@ -1147,7 +1168,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 40.5154229,
         "lon": 21.680099,
@@ -1362,6 +1383,27 @@
         "lat": 40.5131304,
         "lon": 21.677883,
         "ref": "https://kozani.efhmeries.gr/Home/Details/6999",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2463080008",
+      "name": "ΠΑΓΙΟΣ ΧΑΡΑΛΑΜΠΟΣ & ΣΙΑ Ο.Ε.",
+      "address": "ΝΟΣΟΚΟΜΕΙΟΥ 3 (Δίπλα στα οπτικά Κάτανας)",
+      "locality": "Πτολεμαΐδα",
+      "postcode": null,
+      "phone": "2463080008",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 40.5135327,
+        "lon": 21.6788093,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6902",
         "source": "list",
         "precision": "exact"
       }

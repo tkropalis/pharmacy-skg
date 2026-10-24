@@ -317,6 +317,27 @@
       }
     },
     {
+      "id": "2681070135",
+      "name": "ΤΖΑΧΡΗΣΤΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΠΛΑΤΕΙΑ ΜΟΝΟΠΩΛΙΟΥ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681070135",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 39.163756,
+        "lon": 20.98599,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2439",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681070330",
       "name": "ΖΟΡΜΠΑ ΦΡΕΙΔΕΡΙΚΗ",
       "address": "ΓΡΑΙΚΟΥ ΜΑΞΙΜΟΥ 16",
@@ -685,7 +706,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 39.070637,
         "lon": 21.018409,

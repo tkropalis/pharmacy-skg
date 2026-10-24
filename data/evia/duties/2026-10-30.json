@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-30",
+  "groups": [
+    {
+      "id": "evia",
+      "name": "Εύβοια",
+      "source": {
+        "url": "https://evia.efhmeries.gr/",
+        "uploadedAt": "2026-10-24T08:14:33.329Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2226053141",
+              "name": "ΛΙΑΠΟΔΗΜΗΤΡΗ ΠΑΝΑΓΙΩΤΑ",
+              "address": "ΠΛΗΣΙΟΝ ΚΤΕΛ",
+              "locality": "Ιστιαία",
+              "phone": "2226053141"
+            },
+            {
+              "pharmacyId": "2221044062",
+              "name": "ΜΗΤΑΦΗ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΛΕΩΦ ΤΣΙΜΕΝΙΔΟΥ 12",
+              "locality": "Αρτάκη",
+              "phone": "2221044062"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221064600",
+              "name": "ΝΙΦΟΡΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΑΜΑΡΥΣΙΑΣ ΑΡΤΕΜΙΔΟΣ ΚΑΙ ΑΠΟΣΤΟΛΗ",
+              "locality": "Ερέτρια",
+              "phone": "2221064600"
+            },
+            {
+              "pharmacyId": "2224023543",
+              "name": "ΠΟΛΙΤΗΣ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΣΑΧΤΟΥΡΗ 80",
+              "locality": "Κάρυστος",
+              "phone": "2224023543"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221077961",
+              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
+              "address": "ΑΒΑΝΤΩΝ 81",
+              "locality": "Χαλκίδα",
+              "phone": "2221077961"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 17:30",
+          "hours": {
+            "from": "14:00",
+            "to": "17:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221077007",
+              "name": "ΜΠΑΪΜΠΑΚΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΧΑΪΝΑ 72",
+              "locality": "Χαλκίδα",
+              "phone": "2221077007"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

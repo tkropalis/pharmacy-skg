@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-30",
+  "groups": [
+    {
+      "id": "pieria",
+      "name": "Πιερία",
+      "source": {
+        "url": "https://pieria.efhmeries.gr/",
+        "uploadedAt": "2026-10-24T08:16:47.988Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2352043297",
+              "name": "ΛΑΓΟΘΑΝΑΣΗ ΕΛΕΝΗ",
+              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 2",
+              "locality": "Νέος Παντελεήμονας",
+              "phone": "2352043297"
+            },
+            {
+              "pharmacyId": "2353022855",
+              "name": "ΠΑΡΑΛΥΚΙΔΗΣ ΠΑΣΧΑΛΗΣ",
+              "address": "ΑΚΡΟΠΟΛΕΩΣ & ΛΥΚΟΥΡΓΟΥ",
+              "locality": "Αιγίνιο",
+              "phone": "2353022855"
+            },
+            {
+              "pharmacyId": "2351041883",
+              "name": "Σ.Φ ΜΑΚΡΥΓΙΩΡΓΟΣ ΓΙΩΡΓΟΣ-ΜΑΚΡΥΓΙΩΡΓΟΣ ΘΩΜΑΣ",
+              "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 70",
+              "locality": "Κορινός",
+              "phone": "2351041883"
+            },
+            {
+              "pharmacyId": "2352031352",
+              "name": "Σ.Φ. ΦΩΤΙΟΥ ΔΗΜΗΤΡΙΟΣ - ΦΩΤΙΟΥ ΓΕΩΡΓΙΟΣ Ο.Ε.",
+              "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 20",
+              "locality": "Λεπτοκαρυά",
+              "phone": "2352031352"
+            },
+            {
+              "pharmacyId": "2353031494",
+              "name": "ΣΑΜΨΟΥΡΗ ΕΥΓΕΝΙΑ-ΑΓΑΘΗ",
+              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 57",
+              "locality": "Κολινδρός",
+              "phone": "2353031494"
+            },
+            {
+              "pharmacyId": "2351063966",
+              "name": "ΧΑΪΛΑΤΖΙΔΟΥ ΧΡΙΣΤΙΝΑ",
+              "address": "ΝΙΚΗΣ 6",
+              "locality": "Παραλία",
+              "phone": "2351063966"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2352081826",
+              "name": "ΜΠΟΥΡΑ ΕΛΕΝΗ",
+              "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 1",
+              "locality": "Λιτόχωρο",
+              "phone": "2352081826"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351027865",
+              "name": "Σ.Φ. ΖΙΩΓΑ ΕΞΑΡΧΟΥ ΑΝΝΑ-ΖΙΩΓΑ ΔΗΜΗΤΡΑ",
+              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 51",
+              "locality": "Κατερίνη",
+              "phone": "2351027865"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:00 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351025463",
+              "name": "ΚΑΡΑΓΙΑΝΝΗΣ ΙΩΑΝΝΗΣ",
+              "address": "ΚΥΠΡΟΥ 9",
+              "locality": "Κατερίνη",
+              "phone": "2351025463"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:00 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351025463",
+              "name": "ΚΑΡΑΓΙΑΝΝΗΣ ΙΩΑΝΝΗΣ",
+              "address": "ΚΥΠΡΟΥ 9",
+              "locality": "Κατερίνη",
+              "phone": "2351025463"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

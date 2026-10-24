@@ -107,6 +107,27 @@
       }
     },
     {
+      "id": "2741024246",
+      "name": "ΜΟΥΣΤΑΚΑ ΔΑΝΑΗ-ΔΗΜΗΤΡΑ",
+      "address": "ΕΘΝ. ΑΝΕΞ. & ΠΥΛΑΡΙΝΟΥ",
+      "locality": "Κόρινθος",
+      "postcode": null,
+      "phone": "2741024246",
+      "groupId": "korinthia",
+      "sources": [
+        "iteq-korinthia"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 37.9380372,
+        "lon": 22.9358908,
+        "ref": "https://korinthia.efhmeries.gr/Home/Details/35435",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2741025522",
       "name": "ΣΕΡΠΗ ΕΛΕΥΘΕΡΙΑ",
       "address": "ΓΕΩΡ. ΠΑΠΑΝΔΡΕΟΥ 29Β (ΕΝΑΝΤΙ MEDICENTER)",
@@ -265,7 +286,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.9072675,
         "lon": 22.88078,
@@ -286,7 +307,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.8610007,
         "lon": 22.9972229,
@@ -349,7 +370,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.8964006,
         "lon": 22.9284049,
@@ -391,7 +412,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.819328,
         "lon": 22.9291721,
@@ -433,7 +454,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.9172924,
         "lon": 22.9993582,
@@ -454,7 +475,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.9578061,
         "lon": 22.8039689,
@@ -496,7 +517,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.9375856,
         "lon": 22.8008984,
@@ -538,7 +559,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.9282447,
         "lon": 23.1433311,
@@ -685,7 +706,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.9394643,
         "lon": 22.9487415,
@@ -769,7 +790,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.9346483,
         "lon": 22.8455989,
@@ -874,7 +895,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.9422082,
         "lon": 22.8251675,
@@ -895,7 +916,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.8116578,
         "lon": 22.869699,
@@ -1126,7 +1147,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 38.0130605,
         "lon": 22.7494687,
@@ -1231,7 +1252,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.976028,
         "lon": 22.759504,
@@ -1252,7 +1273,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.9834295,
         "lon": 22.7664356,
@@ -1273,7 +1294,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 38.0788092,
         "lon": 22.6318467,
@@ -1588,7 +1609,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.9735519,
         "lon": 22.9773819,
@@ -1672,7 +1693,7 @@
         "iteq-korinthia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.8228995,
         "lon": 22.6594993,

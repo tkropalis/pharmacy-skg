@@ -7,9 +7,36 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-23T19:21:15.720Z"
+        "uploadedAt": "2026-10-24T08:15:14.851Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651035390",
+              "name": "ΖΑΨΑΣ ΑΠΟΣΤΟΛΟΣ",
+              "address": "ΣΤΡΑΤΗΓΟΥ ΒΟΓΙΑΝΟΥ 16 - ΒΟΤΑΝΙΚΟΣ",
+              "locality": "Ιωάννινα",
+              "phone": "2651035390"
+            },
+            {
+              "pharmacyId": "2651024880",
+              "name": "ΣΟΡΟΓΚΑ ΑΛΕΞΑΝΔΡΑ",
+              "address": "Γ. ΠΑΠΑΝΔΡΕΟΥ 38",
+              "locality": "Ιωάννινα",
+              "phone": "2651024880"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 14:30& 18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,33 +74,6 @@
               "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 9 - ΚΑΡΔΑΜΗΤΣΙΑ",
               "locality": "Ιωάννινα",
               "phone": "2651028215"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651035390",
-              "name": "ΖΑΨΑΣ ΑΠΟΣΤΟΛΟΣ",
-              "address": "ΣΤΡΑΤΗΓΟΥ ΒΟΓΙΑΝΟΥ 16 - ΒΟΤΑΝΙΚΟΣ",
-              "locality": "Ιωάννινα",
-              "phone": "2651035390"
-            },
-            {
-              "pharmacyId": "2651024880",
-              "name": "ΣΟΡΟΓΚΑ ΑΛΕΞΑΝΔΡΑ",
-              "address": "Γ. ΠΑΠΑΝΔΡΕΟΥ 38",
-              "locality": "Ιωάννινα",
-              "phone": "2651024880"
             }
           ]
         }

@@ -202,7 +202,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.5072902,
         "lon": 23.9855775,
@@ -349,7 +349,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.5130084,
         "lon": 24.0217383,
@@ -790,7 +790,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.5108564,
         "lon": 24.1453609,
@@ -1220,6 +1220,27 @@
       }
     },
     {
+      "id": "2821093480",
+      "name": "ΜΠΟΤΩΝΑΚΗ ΑΛΕΞΑΝΔΡΑ",
+      "address": "ΒΑΜΒΑΚΟΠΟΥΛΟ",
+      "locality": "ΒΑΜΒΑΚΟΠΟΥΛΟ",
+      "postcode": null,
+      "phone": "2821093480",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 35.493875,
+        "lon": 23.9819569,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13590",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2821093717",
       "name": "ΒΕΡΓΑΝΕΛΑΚΗ ΜΑΡΩ/VΕRGΑΝΕLΑΚΙ MARO",
       "address": "ΠΛΑΤΕΙΑ 1866 37/1866 SQUARE 37",
@@ -1357,7 +1378,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.5125937,
         "lon": 24.0185466,
@@ -1525,7 +1546,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.4942057,
         "lon": 23.6538069,
@@ -1546,7 +1567,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 35.2294606,
         "lon": 23.6819128,

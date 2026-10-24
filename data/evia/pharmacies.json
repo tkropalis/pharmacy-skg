@@ -454,7 +454,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 38.5161637,
         "lon": 23.63651,
@@ -601,7 +601,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 38.3913492,
         "lon": 23.7944804,
@@ -627,6 +627,27 @@
         "lat": 38.45883,
         "lon": 23.608915,
         "ref": "https://evia.efhmeries.gr/Home/Details/9299",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221077007",
+      "name": "ΜΠΑΪΜΠΑΚΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΧΑΪΝΑ 72",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221077007",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-30",
+      "lastSeen": "2026-10-30",
+      "location": {
+        "lat": 38.4693825,
+        "lon": 23.606379,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9359",
         "source": "list",
         "precision": "exact"
       }
@@ -664,7 +685,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 38.4679058,
         "lon": 23.5988216,
@@ -1126,7 +1147,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 38.0139058,
         "lon": 24.4207056,
@@ -1210,7 +1231,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 38.956778,
         "lon": 23.152573,

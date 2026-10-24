@@ -7,7 +7,7 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-10-23T19:23:07.502Z"
+        "uploadedAt": "2026-10-24T08:17:24.824Z"
       },
       "sections": [
         {
@@ -27,47 +27,6 @@
               "address": "ΚΙΣΣΑΜΟΥ 184/KISAMOU 184",
               "locality": "Χανιά",
               "phone": "2821056265"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
-          "hours": {
-            "from": "08:15",
-            "to": "08:15",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2823041160",
-              "name": "Σ.Φ. ΑΘΟΥΣΑΚΗ Ο.Ε./S.F. ATHOUSAKI O.E.",
-              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
-              "locality": "Δήμος Καντάνου-Σελίνου",
-              "phone": "2823041160"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
-          "hours": {
-            "from": "08:30",
-            "to": "22:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2822022182",
-              "name": "ΜΑΖΟΚΟΠΑΚΗΣ ΙΩΑΝΝΗΣ/ΜΑΖΟΚΟΡΑΚΙS IOANNIS",
-              "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 143 ΚΑΣΤΕΛΙ/ΙRΟΟΝ POLITEXNIOU 143 KASTELI",
-              "locality": "Δήμος Κισσάμου",
-              "phone": "2822022182"
             }
           ]
         },
@@ -116,6 +75,47 @@
               "address": "ΓΕΡΟΓΙΑΝΝΗΔΩΝ-ΓΑΛΑΤΑΣ (ΚΟΝΤΑ ΣΕ ΚΡΕΟΠΩΛΕΙΟ Ο ΠΟΛΙΟΣ)",
               "locality": "Νέα Κυδωνία",
               "phone": "2821009880"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2823041160",
+              "name": "Σ.Φ. ΑΘΟΥΣΑΚΗ Ο.Ε./S.F. ATHOUSAKI O.E.",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "2823041160"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
+          "hours": {
+            "from": "08:30",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2822022182",
+              "name": "ΜΑΖΟΚΟΠΑΚΗΣ ΙΩΑΝΝΗΣ/ΜΑΖΟΚΟΡΑΚΙS IOANNIS",
+              "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 143 ΚΑΣΤΕΛΙ/ΙRΟΟΝ POLITEXNIOU 143 KASTELI",
+              "locality": "Δήμος Κισσάμου",
+              "phone": "2822022182"
             }
           ]
         }
