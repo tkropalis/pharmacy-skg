@@ -7,29 +7,9 @@
       "name": "Δράμα",
       "source": {
         "url": "https://drama.efhmeries.gr/",
-        "uploadedAt": "2026-10-25T09:13:19.683Z"
+        "uploadedAt": "2026-10-25T19:07:11.397Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2521030377",
-              "name": "ΜΑΛΑΜΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
-              "address": "ΒΕΝΙΖΕΛΟΥ 162",
-              "locality": "Δράμα",
-              "phone": "2521030377"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "Γ. ΠΑΠΑΝΔΡΕΟΥ 36",
               "locality": "Δράμα",
               "phone": "2521036314"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521030377",
+              "name": "ΜΑΛΑΜΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 162",
+              "locality": "Δράμα",
+              "phone": "2521030377"
             }
           ]
         }

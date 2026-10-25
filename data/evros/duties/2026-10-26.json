@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-25T09:13:33.117Z"
+        "uploadedAt": "2026-10-25T19:07:23.630Z"
       },
       "sections": [
         {
@@ -34,41 +34,6 @@
               "address": "ΚΩΝ/ΠΟΛΕΩΣ 222",
               "locality": "Ορεστιάδα",
               "phone": "2552023926"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:00-08:00*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2554042020",
-              "name": "ΠΑΠΑΜΙΧΑΗΛ ΠΑΣΧΑΛΗΣ",
-              "address": "ΝΙΚΗΣ 33",
-              "locality": "Τυχερό, Προβατώνας",
-              "phone": "2554042020"
-            },
-            {
-              "pharmacyId": "2554022232",
-              "name": "ΠΙΤΙΑΚΟΥΔΗΣ ΣΩΤΗΡΙΟΣ - ΜΠΑΜΙΔΟΥ ΚΟΡΤΕΣΣΑ",
-              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 158",
-              "locality": "Σουφλί",
-              "phone": "2554022232"
-            },
-            {
-              "pharmacyId": "2555022744",
-              "name": "ΧΑΤΖΗ ΔΗΜΗΤΡΑ",
-              "address": "ΤΡΑΙΑΝΟΥΠΟΛΕΩΣ 3",
-              "locality": "Φέρες",
-              "phone": "2555022744"
             }
           ]
         },
@@ -109,6 +74,41 @@
               "address": "Εθν. Αντιστάσεως 132",
               "locality": "Αλεξανδρούπολη",
               "phone": "2551081381"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2554042020",
+              "name": "ΠΑΠΑΜΙΧΑΗΛ ΠΑΣΧΑΛΗΣ",
+              "address": "ΝΙΚΗΣ 33",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042020"
+            },
+            {
+              "pharmacyId": "2554022232",
+              "name": "ΠΙΤΙΑΚΟΥΔΗΣ ΣΩΤΗΡΙΟΣ - ΜΠΑΜΙΔΟΥ ΚΟΡΤΕΣΣΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 158",
+              "locality": "Σουφλί",
+              "phone": "2554022232"
+            },
+            {
+              "pharmacyId": "2555022744",
+              "name": "ΧΑΤΖΗ ΔΗΜΗΤΡΑ",
+              "address": "ΤΡΑΙΑΝΟΥΠΟΛΕΩΣ 3",
+              "locality": "Φέρες",
+              "phone": "2555022744"
             }
           ]
         }

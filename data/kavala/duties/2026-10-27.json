@@ -7,29 +7,9 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-10-25T09:14:14.951Z"
+        "uploadedAt": "2026-10-25T19:08:00.454Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510223733",
-              "name": "ΣΕΡΑΦΕΙΜΙΔΗΣ ΧΑΡΑΛΑΜΠΟΣ ΤΟΥ ΣΤΕΦΑΝΟΥ",
-              "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 3ΟΓ",
-              "locality": "Καβάλα",
-              "phone": "2510223733"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΚΟΛΟΚΟΤΡΩΝΗ 81",
               "locality": "Καβάλα",
               "phone": "2510232271"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510223733",
+              "name": "ΣΕΡΑΦΕΙΜΙΔΗΣ ΧΑΡΑΛΑΜΠΟΣ ΤΟΥ ΣΤΕΦΑΝΟΥ",
+              "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 3ΟΓ",
+              "locality": "Καβάλα",
+              "phone": "2510223733"
             }
           ]
         }

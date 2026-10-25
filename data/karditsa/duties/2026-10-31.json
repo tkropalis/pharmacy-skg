@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-10-25T09:14:22.003Z"
+        "uploadedAt": "2026-10-25T19:08:06.457Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441020553",
-              "name": "Σ.Φ. ΕΥΘΥΜΙΟΥ ΕΛΕΝΗ - ΚΥΡΙΤΣΟΠΟΥΛΟΥ ΜΑΡΙΑ-ΑΦΡΟΔΙΤΗ Ο.Ε.",
-              "address": "ΥΨΗΛΑΝΤΟΥ 9",
-              "locality": "Καρδίτσα",
-              "phone": "2441020553"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "8 ΠΡΩΙ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΚΑΡΑΙΣΚΑΚΗ 51",
               "locality": "Καρδίτσα",
               "phone": "2441020151"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441020553",
+              "name": "Σ.Φ. ΕΥΘΥΜΙΟΥ ΕΛΕΝΗ - ΚΥΡΙΤΣΟΠΟΥΛΟΥ ΜΑΡΙΑ-ΑΦΡΟΔΙΤΗ Ο.Ε.",
+              "address": "ΥΨΗΛΑΝΤΟΥ 9",
+              "locality": "Καρδίτσα",
+              "phone": "2441020553"
             }
           ]
         }

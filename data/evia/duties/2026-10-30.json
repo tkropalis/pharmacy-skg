@@ -7,9 +7,29 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-25T09:13:26.010Z"
+        "uploadedAt": "2026-10-25T19:07:17.572Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221077961",
+              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
+              "address": "ΑΒΑΝΤΩΝ 81",
+              "locality": "Χαλκίδα",
+              "phone": "2221077961"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -62,26 +82,6 @@
               "address": "ΣΑΧΤΟΥΡΗ 80",
               "locality": "Κάρυστος",
               "phone": "2224023543"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221077961",
-              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
-              "address": "ΑΒΑΝΤΩΝ 81",
-              "locality": "Χαλκίδα",
-              "phone": "2221077961"
             }
           ]
         },
