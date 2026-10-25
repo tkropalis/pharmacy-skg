@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-31",
+  "groups": [
+    {
+      "id": "ioannina",
+      "name": "Ιωάννινα",
+      "source": {
+        "url": "https://ioannina.efhmeries.gr/",
+        "uploadedAt": "2026-10-25T09:14:06.749Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651021721",
+              "name": "ΓΚΑΡΑΛΑΝΗΣ ΜΙΧΑΗΛ",
+              "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 25",
+              "locality": "Ιωάννινα",
+              "phone": "2651021721"
+            },
+            {
+              "pharmacyId": "2651070110",
+              "name": "ΜΥΣΤΑΚΙΔΟΥ ΕΛΕΝΗ",
+              "address": "ΘΩΜΑ ΠΑΣΧΙΔΗ & ΒΑΡΝΑΛΗ ΓΩΝΙΑ",
+              "locality": "Ιωάννινα",
+              "phone": "2651070110"
+            },
+            {
+              "pharmacyId": "2651036976",
+              "name": "Σ.Φ. ΚΟΥΛΑ ΑΝΑΣΤΑΣΙΑ - ΝΙΚΑΣ ΒΑΣΙΛΕΙΟΣ Ο.Ε.",
+              "address": "ΒΑΛΑΩΡΙΤΟΥ 33",
+              "locality": "Ιωάννινα",
+              "phone": "2651036976"
+            },
+            {
+              "pharmacyId": "2651090649",
+              "name": "ΤΣΕΦΑ ΕΛΕΟΝΩΡΑ",
+              "address": "ΙΩΑΝΝΙΝΩΝ 61, ΑΝΑΤΟΛΗ",
+              "locality": "Ιωάννινα",
+              "phone": "2651090649"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651076676",
+              "name": "Σ.Φ. ΚΟΣΙΝΑΣ ΧΡΗΣΤΟΣ ΚΟΣΙΝΑΣ ΑΝΤΩΝΙΟΣ ΚΑΙ ΚΟΣΙΝΑΣ ΒΑΣΙΛΕΙΟΣ ΟΕ",
+              "address": "21ης ΦΕΒΡΟΥΑΡΙΟΥ 186",
+              "locality": "Ιωάννινα",
+              "phone": "2651076676"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

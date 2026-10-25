@@ -7,7 +7,7 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T18:14:55.558Z"
+        "uploadedAt": "2026-10-25T09:15:00.750Z"
       },
       "sections": [
         {
@@ -137,26 +137,6 @@
         },
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721094978",
-              "name": "ΨΩΝΗΣ ΠΕΡ. ΣΠΥΡΙΔΩΝ",
-              "address": "ΕΥΑΓΓΕΛΙΣΤΡΙΑΣ 14",
-              "locality": "Καλαμάτα",
-              "phone": "2721094978"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
           "hours": {
             "from": "08:00",
@@ -172,6 +152,26 @@
               "address": "ΣΙΔ. ΣΤΑΘΜΟΥ & ΙΑΤΡΟΠΟΥΛΟΥ 12Α",
               "locality": "Καλαμάτα",
               "phone": "2721020752"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721094978",
+              "name": "ΨΩΝΗΣ ΠΕΡ. ΣΠΥΡΙΔΩΝ",
+              "address": "ΕΥΑΓΓΕΛΙΣΤΡΙΑΣ 14",
+              "locality": "Καλαμάτα",
+              "phone": "2721094978"
             }
           ]
         }

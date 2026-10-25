@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-31",
+  "groups": [
+    {
+      "id": "chania",
+      "name": "Χανιά",
+      "source": {
+        "url": "https://chania.efhmeries.gr/",
+        "uploadedAt": "2026-10-25T09:16:22.061Z"
+      },
+      "sections": [
+        {
+          "kind": "saturday-extra",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821041594",
+              "name": "Σ.Φ. Σ. ΣΩΜΑΚΗ - Ε. ΜΙΧΑΗΛΕΛΛΗ & ΣΙΑ Ο.Ε/SΟΜΑΚΙ ST.-MICHAILELLI E.",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 8/EL. VENIZELOU 8",
+              "locality": "Χανιά",
+              "phone": "2821041594"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821041594",
+              "name": "Σ.Φ. Σ. ΣΩΜΑΚΗ - Ε. ΜΙΧΑΗΛΕΛΛΗ & ΣΙΑ Ο.Ε/SΟΜΑΚΙ ST.-MICHAILELLI E.",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 8/EL. VENIZELOU 8",
+              "locality": "Χανιά",
+              "phone": "2821041594"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821601000",
+              "name": "ΒΑΜΒΟΥΚΑΣ ΤΑΣΟΣ/VΑΜVΟUΚΑS TASOS",
+              "address": "ΑΚΡΩΤΗΡΙΟΥ 57, ΕΝΑΝΤΙ ΠΡΑΤ. ΚΑΥΣΙΜΩΝ ΕΚΟ (ΒΛΗΤΕΣ)/ΑΚRΟΤΙRΙΟU 57/VLYTES",
+              "locality": "Σούδα",
+              "phone": "2821601000"
+            },
+            {
+              "pharmacyId": "2821073643",
+              "name": "ΓΟΥΛΕΑΚΗΣ ΘΕΜΙΣΤΟΚΛΗΣ/GΟULΕΑΚΙS THEMISTOKLIS",
+              "address": "ΚΙΣΣΑΜΟΥ 160/KISAMOU 160",
+              "locality": "Χανιά",
+              "phone": "2821073643"
+            },
+            {
+              "pharmacyId": "2821098982",
+              "name": "ΣΟΓΙΑΣ ΙΩΑΝΝΗΣ/SΟGΙΑS IOANNIS",
+              "address": "Σ. ΒΕΝΙΖΕΛΟΥ 46-ΜΟΥΡΝΙΕΣ-S. VENIZELOU 46-MOURNIES",
+              "locality": "Μουρνιές",
+              "phone": "2821098982"
+            },
+            {
+              "pharmacyId": "2821049777",
+              "name": "ΤΣΕΡΕΤΟΠΟΥΛΟΥ Ε. - ΧΑΤΖΗΑΘΑΝΑΣΙΟΥ Σ.",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 49 - ΚΟΥΝΟΥΠΙΔΙΑΝΑ/ΕL. VENIZELOU 90, KOUNOUPIDIANA",
+              "locality": "Ακρωτήρι",
+              "phone": "2821049777"
+            },
+            {
+              "pharmacyId": "2821033466",
+              "name": "ΦΑΝΟΥΡΓΙΑΚΗΣ ΒΑΣΙΛΗΣ & ΣΙΑ ΟΕ/FΑΝΟURGΙΑΚΙS VASILIS",
+              "address": "Π. Ε. Ο. ΧΑΝΙΩΝ-ΚΙΣΣΑΜΟΥ (ΔΙΠΛΑ ΣΕ ΒΙΒΛΙΟΠΩΛΕΙΟ ΠΟΠΗΘΕΟΔΩΡΑΚΗ)/ΚΙSΑΜΟU-DΑRΑΤSΟ",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821033466"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2823041160",
+              "name": "Σ.Φ. ΑΘΟΥΣΑΚΗ Ο.Ε./S.F. ATHOUSAKI O.E.",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "2823041160"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
+          "hours": {
+            "from": "08:30",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2822024080",
+              "name": "Σ.Φ. ΚΩΝΣΤΑΝΤΙΝΟΣ ΡΕΒΕΛΑΚΗΣ- ΙΩΑΝΝΗΣ ΡΕΒΕΛΑΚΗΣ Ο.Ε.",
+              "address": "ΟΜΟΓΕΝΩΝ ΑΜΕΡΙΚΗΣ 16/OMOGENON AMERIKIS 16",
+              "locality": "Δήμος Κισσάμου",
+              "phone": "2822024080"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -65,6 +65,27 @@
       }
     },
     {
+      "id": "2651021721",
+      "name": "ΓΚΑΡΑΛΑΝΗΣ ΜΙΧΑΗΛ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 25",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651021721",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "location": {
+        "lat": 39.6666389,
+        "lon": 20.8520701,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5059",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651021808",
       "name": "ΓΚΟΓΚΟΥ ΓΕΩΡΓΙΑ",
       "address": "ΑΓ. ΜΑΡΙΝΑΣ 5ΟΒ",
@@ -664,7 +685,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.6701128,
         "lon": 20.8469068,
@@ -1010,6 +1031,27 @@
       }
     },
     {
+      "id": "2651070110",
+      "name": "ΜΥΣΤΑΚΙΔΟΥ ΕΛΕΝΗ",
+      "address": "ΘΩΜΑ ΠΑΣΧΙΔΗ & ΒΑΡΝΑΛΗ ΓΩΝΙΑ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651070110",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "location": {
+        "lat": 39.6810309,
+        "lon": 20.8327321,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5061",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651070146",
       "name": "ΝΙΚΑΣ ΠΕΡΙΚΛΗΣ",
       "address": "ΚΟΡΑΗ 13",
@@ -1189,7 +1231,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.6544266,
         "lon": 20.8578553,
@@ -1294,7 +1336,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.6366493,
         "lon": 20.8637669,

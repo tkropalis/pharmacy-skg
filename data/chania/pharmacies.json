@@ -223,7 +223,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 35.5078029,
         "lon": 23.9790945,
@@ -328,7 +328,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 35.5142321,
         "lon": 24.0219848,
@@ -454,7 +454,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 35.5309311,
         "lon": 24.0752562,
@@ -921,6 +921,27 @@
         "lat": 35.5056774,
         "lon": 24.0035027,
         "ref": "https://chania.efhmeries.gr/Home/Details/13540",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821073643",
+      "name": "ΓΟΥΛΕΑΚΗΣ ΘΕΜΙΣΤΟΚΛΗΣ/GΟULΕΑΚΙS THEMISTOKLIS",
+      "address": "ΚΙΣΣΑΜΟΥ 160/KISAMOU 160",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821073643",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "location": {
+        "lat": 35.5092614,
+        "lon": 24.0085258,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13593",
         "source": "list",
         "precision": "exact"
       }
@@ -1399,7 +1420,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 35.5011511,
         "lon": 24.0214713,
@@ -1441,7 +1462,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 35.4991039,
         "lon": 24.0546775,
@@ -1546,7 +1567,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 35.4942057,
         "lon": 23.6538069,
@@ -1567,7 +1588,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 35.2294606,
         "lon": 23.6819128,

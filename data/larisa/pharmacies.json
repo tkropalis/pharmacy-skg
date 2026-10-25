@@ -13,7 +13,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.63407,
         "lon": 22.42231,
@@ -55,7 +55,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.6373188,
         "lon": 22.4235408,
@@ -181,7 +181,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.63743,
         "lon": 22.42281,
@@ -223,7 +223,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.63922,
         "lon": 22.42035,
@@ -244,7 +244,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.63607,
         "lon": 22.42231,
@@ -270,6 +270,27 @@
         "lat": 39.6301,
         "lon": 22.42137,
         "ref": "https://larisa.efhmeries.gr/Home/Details/23159",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410239560",
+      "name": "ΚΥΠΑΡΙΣΣΟΥ ΜΑΡΙΑ",
+      "address": "ΦΑΡΣΑΛΩΝ 89 (Πλησίον Στρατοπέδου Μπουγά)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410239560",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "location": {
+        "lat": 39.62283,
+        "lon": 22.42592,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23288",
         "source": "list",
         "precision": "exact"
       }
@@ -307,7 +328,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.63572,
         "lon": 22.41662,
@@ -391,7 +412,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.6298,
         "lon": 22.41704,
@@ -412,7 +433,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.6385663,
         "lon": 22.4199753,
@@ -496,7 +517,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.6395648,
         "lon": 22.4182384,
@@ -517,7 +538,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.6447327,
         "lon": 22.4101941,
@@ -664,7 +685,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.63714,
         "lon": 22.41382,
@@ -769,7 +790,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.638099,
         "lon": 22.414392,
@@ -916,7 +937,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.6493757,
         "lon": 22.4322606,
@@ -1021,7 +1042,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.64674,
         "lon": 22.42985,
@@ -1042,7 +1063,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.63209,
         "lon": 22.41939,
@@ -1189,7 +1210,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.639851,
         "lon": 22.420247,
@@ -1210,7 +1231,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.63846,
         "lon": 22.42117,
@@ -1315,7 +1336,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.63894,
         "lon": 22.41656,
@@ -1483,7 +1504,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.63628,
         "lon": 22.41533,
@@ -1588,7 +1609,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.63637,
         "lon": 22.41822,
@@ -1630,7 +1651,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.63766,
         "lon": 22.410602,
@@ -1651,7 +1672,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.6376885,
         "lon": 22.413038,
@@ -1714,7 +1735,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.64039,
         "lon": 22.41309,
@@ -1966,7 +1987,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.636441,
         "lon": 22.42747,
@@ -1987,7 +2008,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.62595,
         "lon": 22.42342,
@@ -2092,7 +2113,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.665178,
         "lon": 22.394285,
@@ -2638,7 +2659,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.62609,
         "lon": 22.39328,
@@ -2722,7 +2743,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.63454,
         "lon": 22.4183,
@@ -2743,7 +2764,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.63293,
         "lon": 22.418,
@@ -2764,7 +2785,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.63408,
         "lon": 22.40868,
@@ -2806,7 +2827,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.63536,
         "lon": 22.41893,
@@ -2890,7 +2911,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.6101,
         "lon": 22.43087,
@@ -2932,7 +2953,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.6335,
         "lon": 22.4133,
@@ -2953,7 +2974,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.563057,
         "lon": 22.464754,
@@ -2995,7 +3016,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.717364,
         "lon": 22.39587,
@@ -3268,7 +3289,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.293579,
         "lon": 22.383864,
@@ -3310,7 +3331,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.295637,
         "lon": 22.384559,
@@ -3625,7 +3646,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.738718,
         "lon": 22.285778,
@@ -3646,7 +3667,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.7393105,
         "lon": 22.2761796,
@@ -3835,7 +3856,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.746384,
         "lon": 22.36644,
@@ -3961,7 +3982,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.895688,
         "lon": 22.182392,
@@ -3982,7 +4003,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.8918836,
         "lon": 22.188285,
@@ -4066,7 +4087,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.895649,
         "lon": 22.187327,
@@ -4108,7 +4129,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.895126,
         "lon": 22.182629,
@@ -4129,7 +4150,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.893788,
         "lon": 22.1888346,
@@ -4276,7 +4297,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.7190695,
         "lon": 22.7586904,

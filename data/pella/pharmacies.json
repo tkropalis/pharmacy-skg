@@ -181,7 +181,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 40.8008376,
         "lon": 22.0495685,
@@ -454,7 +454,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 40.7680316,
         "lon": 22.1560749,
@@ -690,6 +690,27 @@
         "lat": 40.789788,
         "lon": 22.4072782,
         "ref": "https://pella.efhmeries.gr/Home/Details/4736",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2382024141",
+      "name": "ΚΟΥΤΣΟΚΩΣΤΑ ΙΩΑΝΝΑ",
+      "address": "ΑΦΩΝ ΠΑΠΑΪΩΑΝΝΟΥ & Δ.Μ. ΠΑΠΑΔΟΠΟΥΛΟΥ",
+      "locality": "Γιαννιτσά",
+      "postcode": null,
+      "phone": "2382024141",
+      "groupId": "pella",
+      "sources": [
+        "iteq-pella"
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "location": {
+        "lat": 40.7900774,
+        "lon": 22.4096411,
+        "ref": "https://pella.efhmeries.gr/Home/Details/4750",
         "source": "list",
         "precision": "exact"
       }
@@ -979,7 +1000,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 40.7869094,
         "lon": 22.4107639,
@@ -1084,7 +1105,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 40.6900509,
         "lon": 22.303817,
@@ -1273,7 +1294,7 @@
         "iteq-pella"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 40.9763006,
         "lon": 22.0611963,

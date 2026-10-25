@@ -296,6 +296,27 @@
       }
     },
     {
+      "id": "2551028396",
+      "name": "ΜΗΤΚΑΣ ΑΔΑΜΑΝΤΙΟΣ",
+      "address": "Ιωακ. Καβύρη 1 (πα/ρως ΟΤΕ)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551028396",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "location": {
+        "lat": 40.845123,
+        "lon": 25.8742535,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4097",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551028764",
       "name": "Σ.Φ. ΓΕΡΟΝΤΟΠΟΥΛΟΣ Ν. - ΓΕΡΟΝΤΟΠΟΥΛΟΣ Θ.",
       "address": "14ης Μαΐου 76",
@@ -580,7 +601,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 40.8458588,
         "lon": 25.8758803,
@@ -727,7 +748,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 41.5030094,
         "lon": 26.5316454,
@@ -774,6 +795,27 @@
         "lat": 41.4955525,
         "lon": 26.5339423,
         "ref": "https://evros.efhmeries.gr/Home/Details/4606",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2552023701",
+      "name": "ΠΑΠΑΝΔΡΕΟΥ ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 142",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552023701",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "location": {
+        "lat": 41.5031548,
+        "lon": 26.526982,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4879",
         "source": "list",
         "precision": "exact"
       }
@@ -853,7 +895,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 41.501659,
         "lon": 26.532421,
@@ -958,7 +1000,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 41.5002425,
         "lon": 26.5320953,
@@ -1042,7 +1084,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 41.3497643,
         "lon": 26.4941195,
@@ -1168,7 +1210,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 41.3526561,
         "lon": 26.503006,
@@ -1273,7 +1315,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 41.1917483,
         "lon": 26.3037554,
@@ -1294,7 +1336,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 41.0262152,
         "lon": 26.2954437,
@@ -1399,7 +1441,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 40.8896855,
         "lon": 26.1651715,

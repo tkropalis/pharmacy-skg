@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "ioannina",
-  "updatedAt": "2026-10-24T18:14:11.847Z",
-  "checkedAt": "2026-10-24T18:14:11.847Z",
+  "updatedAt": "2026-10-25T09:14:14.214Z",
+  "checkedAt": "2026-10-25T09:14:14.214Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-10-30"
+    "to": "2026-10-31"
   },
   "extendedHours": [],
   "sources": [

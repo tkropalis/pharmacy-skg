@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-31",
+  "groups": [
+    {
+      "id": "lasithi",
+      "name": "Λασίθι",
+      "source": {
+        "url": "https://lasithi.efhmeries.gr/",
+        "uploadedAt": "2026-10-25T09:14:48.464Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2842027633",
+              "name": "ΑΠΙΔΙΑΝΑΚΗ Γ. ΑΡΓΥΡΩ",
+              "address": "ΔΗΜΟΚΡΑΤΙΑΣ 24 / 24, DIMOKRATIAS STR.",
+              "locality": "Ιεράπετρα",
+              "phone": "2842027633"
+            },
+            {
+              "pharmacyId": "2841027162",
+              "name": "ΠΛΑΚΟΓΙΑΝΝΑΚΗΣ ΜΙΧΑΗΛ – ΠΛΑΚΟΓΙΑΝΝΑΚΗΣ ΓΕΩΡΓΙΟΣ Ο.Ε.Φ.Ε.Τ. (ΥΠΟΚΑΤΑΣΤΗΜΑ)",
+              "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 17 / 17, ELEFTHERIOU VENIZELOU SQ.",
+              "locality": "Άγιος Νικόλαος",
+              "phone": "2841027162"
+            },
+            {
+              "pharmacyId": "2843024455",
+              "name": "Σ.Φ. ΚΩΝΣΤΑΝΤΙΝΟΣ ΚΑΛΔΗΣ - ΗΛΙΑΣ ΚΑΛΔΗΣ - ΝΙΚΟΛΑΟΣ ΚΑΛΔΗΣ Ο.Ε.",
+              "address": "ΠΑΠΑΝΑΣΤΑΣΙΟΥ 10-12 / 10-12, PAPANASTASIOU STR.",
+              "locality": "Σητεία",
+              "phone": "2843024455"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2841041308",
+              "name": "Σ.Φ. ΔΕΣΠΟΙΝΑ ΤΣΑΝΙΚΛΙΔΟΥ - ΝΙΚΟΛΑΟΣ ΠΑΠΑΣΤΑΥΡΑΚΗΣ Ο.Ε.",
+              "address": "ΠΛΑΤΕΙΑ ΜΠΟΤΗ ΣΦΑΚΙΑΝΑΚΗ 15 / 15, MPOTI SFAKIANAKI SQ.",
+              "locality": "Ελούντα",
+              "phone": "2841041308"
+            },
+            {
+              "pharmacyId": "2841033533",
+              "name": "Σ.Φ. ΞΕΝΗ ΣΚΟΝΤΙΝΗ ΚΑΙ ΠΑΡΑΣΧΟΣ ΧΟΥΡΣΑΝΙΔΗΣ Ο.Ε.",
+              "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 3-5 / 3-5, ETHNIKIS ΑΝΤΙSΤΑSΕΟS STR.",
+              "locality": "Νεάπολη",
+              "phone": "2841033533"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -286,7 +286,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 38.468614,
         "lon": 23.600894,
@@ -349,7 +349,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 38.5135666,
         "lon": 23.6373025,
@@ -601,7 +601,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 38.3913492,
         "lon": 23.7944804,
@@ -690,6 +690,27 @@
         "lat": 38.4679058,
         "lon": 23.5988216,
         "ref": "https://evia.efhmeries.gr/Home/Details/9302",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221080343",
+      "name": "ΚΑΤΣΑΝΤΩΝΗΣ ΕΥΑΓΓΕΛΟΣ",
+      "address": "ΓΑΖΕΠΗ Η. 12",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221080343",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "location": {
+        "lat": 38.462774,
+        "lon": 23.596758,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9364",
         "source": "list",
         "precision": "exact"
       }
@@ -811,7 +832,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 38.4588618,
         "lon": 23.6113887,
@@ -853,7 +874,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 38.468676,
         "lon": 23.601998,
@@ -1021,7 +1042,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 38.4626874,
         "lon": 23.5927534,
@@ -1063,7 +1084,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 38.4634152,
         "lon": 23.5916951,
@@ -1168,7 +1189,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 38.0141849,
         "lon": 24.4183416,
@@ -1315,7 +1336,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 38.954759,
         "lon": 23.153936,

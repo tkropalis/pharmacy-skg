@@ -7,9 +7,63 @@
       "name": "Κορινθία",
       "source": {
         "url": "https://korinthia.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T18:14:30.955Z"
+        "uploadedAt": "2026-10-25T09:14:35.340Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741026680",
+              "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Ι. ΜΑΡΙΑΝΝΑ",
+              "address": "ΑΠ. ΠΑΥΛΟΥ 46",
+              "locality": "Κόρινθος",
+              "phone": "2741026680"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "10:00 ΕΩΣ 14:00",
+          "hours": {
+            "from": "10:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741039000",
+              "name": "ΓΚΙΛΙΤΣΗΣ ΝΙΚΟΛΑΟΣ-ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΑΘΙΚΙΑ",
+              "locality": "Αθίκια",
+              "phone": "2741039000"
+            },
+            {
+              "pharmacyId": "2741087397",
+              "name": "ΚΑΝΕΛΛΟΠΟΥΛΟΥ ΜΑΡΙΑ ΚΑΙ ΣΙΑ ΕΕ",
+              "address": "ΛΕΧΑΙΟ",
+              "locality": "Λέχαιο",
+              "phone": "2741087397"
+            },
+            {
+              "pharmacyId": "2741036008",
+              "name": "ΤΣΙΛΙΓΚΙΡΗ Α. ΑΓΓΕΛΙΚΗ",
+              "address": "ΕΞΑΜΙΛΙΑ",
+              "locality": "Εξαμίλια",
+              "phone": "2741036008"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 22:00 (ΠΡΟΑΙΡΕΤΙΚΗ ΜΕΣΗΜΒΡΙΝΗ ΔΙΑΚΟΠΗ)",
@@ -203,55 +257,21 @@
         },
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
+          "heading": "09:00 ΕΩΣ 13:00",
           "hours": {
-            "from": "08:00",
-            "to": "21:00",
+            "from": "09:00",
+            "to": "13:00",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2741026680",
-              "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Ι. ΜΑΡΙΑΝΝΑ",
-              "address": "ΑΠ. ΠΑΥΛΟΥ 46",
-              "locality": "Κόρινθος",
-              "phone": "2741026680"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "10:00 ΕΩΣ 14:00",
-          "hours": {
-            "from": "10:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741039000",
-              "name": "ΓΚΙΛΙΤΣΗΣ ΝΙΚΟΛΑΟΣ-ΚΩΝΣΤΑΝΤΙΝΟΣ",
-              "address": "ΑΘΙΚΙΑ",
-              "locality": "Αθίκια",
-              "phone": "2741039000"
-            },
-            {
-              "pharmacyId": "2741087397",
-              "name": "ΚΑΝΕΛΛΟΠΟΥΛΟΥ ΜΑΡΙΑ ΚΑΙ ΣΙΑ ΕΕ",
-              "address": "ΛΕΧΑΙΟ",
-              "locality": "Λέχαιο",
-              "phone": "2741087397"
-            },
-            {
-              "pharmacyId": "2741036008",
-              "name": "ΤΣΙΛΙΓΚΙΡΗ Α. ΑΓΓΕΛΙΚΗ",
-              "address": "ΕΞΑΜΙΛΙΑ",
-              "locality": "Εξαμίλια",
-              "phone": "2741036008"
+              "pharmacyId": "2741031655",
+              "name": "Σ.Φ.ΣΥΓΓΟΥΝΑ Α.-Α.&ΣΥΓΓΟΥΝΑ Χ. Ο.Ε.",
+              "address": "ΑΡΧΑΙΑ ΚΟΡΙΝΘΟΣ (4Ομ ΑΠΟ ΤΟ ΚΕΝΤΡΟ)",
+              "locality": "Αρχαία Κόρινθος",
+              "phone": "2741031655"
             }
           ]
         },
@@ -273,26 +293,6 @@
               "address": "ΒΕΛΟ",
               "locality": "Βέλο",
               "phone": "2742032220"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "09:00 ΕΩΣ 13:00",
-          "hours": {
-            "from": "09:00",
-            "to": "13:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741031655",
-              "name": "Σ.Φ.ΣΥΓΓΟΥΝΑ Α.-Α.&ΣΥΓΓΟΥΝΑ Χ. Ο.Ε.",
-              "address": "ΑΡΧΑΙΑ ΚΟΡΙΝΘΟΣ (4Ομ ΑΠΟ ΤΟ ΚΕΝΤΡΟ)",
-              "locality": "Αρχαία Κόρινθος",
-              "phone": "2741031655"
             }
           ]
         }

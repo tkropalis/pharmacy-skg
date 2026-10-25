@@ -76,7 +76,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-30",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 40.9372965,
         "lon": 24.4092286,
@@ -207,6 +207,27 @@
         "lat": 40.936916,
         "lon": 24.414314,
         "ref": "https://kavala.efhmeries.gr/Home/Details/3989",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510227610",
+      "name": "ΤΣΙΛΟΓΕΩΡΓΗΣ ΣΩΤΗΡΙΟΣ",
+      "address": "ΦΙΛ.ΕΤΑΙΡΕΙΑΣ 2Α",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510227610",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "location": {
+        "lat": 40.935895,
+        "lon": 24.408052,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3980",
         "source": "list",
         "precision": "exact"
       }

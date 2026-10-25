@@ -7,29 +7,9 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T18:14:12.475Z"
+        "uploadedAt": "2026-10-25T09:14:14.951Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510839181",
-              "name": "ΒΕΛΑΚΗ ΕΥΑ",
-              "address": "ΣΑΠΠΑΙΩΝ 26Α",
-              "locality": "Καβάλα",
-              "phone": "2510839181"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
@@ -47,6 +27,26 @@
               "address": "ΚΟΛΟΚΟΤΡΩΝΗ 81",
               "locality": "Καβάλα",
               "phone": "2510232271"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510839181",
+              "name": "ΒΕΛΑΚΗ ΕΥΑ",
+              "address": "ΣΑΠΠΑΙΩΝ 26Α",
+              "locality": "Καβάλα",
+              "phone": "2510839181"
             }
           ]
         }

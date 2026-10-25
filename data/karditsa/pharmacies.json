@@ -13,7 +13,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.3624525,
         "lon": 21.9201342,
@@ -39,6 +39,27 @@
         "lat": 39.3656798,
         "lon": 21.922804,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3776",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441020553",
+      "name": "Σ.Φ. ΕΥΘΥΜΙΟΥ ΕΛΕΝΗ - ΚΥΡΙΤΣΟΠΟΥΛΟΥ ΜΑΡΙΑ-ΑΦΡΟΔΙΤΗ Ο.Ε.",
+      "address": "ΥΨΗΛΑΝΤΟΥ 9",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441020553",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "location": {
+        "lat": 39.3646534,
+        "lon": 21.9220891,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3792",
         "source": "list",
         "precision": "exact"
       }

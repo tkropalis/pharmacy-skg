@@ -590,6 +590,27 @@
       }
     },
     {
+      "id": "2681075386",
+      "name": "ΠΑΠΑΓΕΩΡΓΙΟΥ",
+      "address": "ΣΚΟΥΦΑ 4",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681075386",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "location": {
+        "lat": 39.163182,
+        "lon": 20.989939,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2440",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681077007",
       "name": "ΒΟΥΤΟΥ ΙΩΑΝΝΑ",
       "address": "ΠΛΑΤΕΙΑ ΚΙΛΚΙΣ",
@@ -664,7 +685,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 39.160357,
         "lon": 21.015347,
