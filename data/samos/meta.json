@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "samos",
-  "updatedAt": "2026-10-25T09:16:02.175Z",
-  "checkedAt": "2026-10-25T19:09:26.093Z",
+  "updatedAt": "2026-10-26T10:16:38.184Z",
+  "checkedAt": "2026-10-26T10:16:38.184Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-10-31"
+    "to": "2026-11-01"
   },
   "extendedHours": [],
   "sources": [

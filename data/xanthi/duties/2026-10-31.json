@@ -7,29 +7,9 @@
       "name": "Ξάνθη",
       "source": {
         "url": "https://xanthi.efhmeries.gr/",
-        "uploadedAt": "2026-10-25T19:08:49.845Z"
+        "uploadedAt": "2026-10-26T10:16:00.959Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "20:00 ΕΩΣ 08:00 ΠΡΩΙ",
-          "hours": {
-            "from": "20:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2541062999",
-              "name": "Σ.Φ. ΠΕΤΡΑ - ΤΑΡΣΟΥΔΗΣ",
-              "address": "Π.ΓΡΗΓΟΡΙΟΥ Ε.-ΑΙΔΙΝΙΟΥ 38",
-              "locality": "Ξάνθη",
-              "phone": "2541062999"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -54,6 +34,26 @@
               "address": "ΗΡΟΔΟΤΟΥ 22",
               "locality": "Ξάνθη",
               "phone": "2541022590"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "20:00 ΕΩΣ 08:00 ΠΡΩΙ",
+          "hours": {
+            "from": "20:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2541062999",
+              "name": "Σ.Φ. ΠΕΤΡΑ - ΤΑΡΣΟΥΔΗΣ",
+              "address": "Π.ΓΡΗΓΟΡΙΟΥ Ε.-ΑΙΔΙΝΙΟΥ 38",
+              "locality": "Ξάνθη",
+              "phone": "2541062999"
             }
           ]
         }

@@ -9,6 +9,11 @@
     "lon": 21.765279,
     "ref": "https://trikala.efhmeries.gr/Home/Details/4132"
   },
+  "2431020962": {
+    "lat": 39.555476,
+    "lon": 21.76907,
+    "ref": "https://trikala.efhmeries.gr/Home/Details/4147"
+  },
   "2431021789": {
     "lat": 39.556726,
     "lon": 21.766263,
@@ -28,6 +33,16 @@
     "lat": 39.554947,
     "lon": 21.768546,
     "ref": "https://trikala.efhmeries.gr/Home/Details/4112"
+  },
+  "2431023000": {
+    "lat": 39.553886,
+    "lon": 21.766086,
+    "ref": "https://trikala.efhmeries.gr/Home/Details/4145"
+  },
+  "2431023456": {
+    "lat": 39.555622,
+    "lon": 21.766324,
+    "ref": "https://trikala.efhmeries.gr/Home/Details/4153"
   },
   "2431023767": {
     "lat": 39.557528,
@@ -63,6 +78,16 @@
     "lat": 39.555517,
     "lon": 21.769648,
     "ref": "https://trikala.efhmeries.gr/Home/Details/4107"
+  },
+  "2431027351": {
+    "lat": 39.553669,
+    "lon": 21.766922,
+    "ref": "https://trikala.efhmeries.gr/Home/Details/4151"
+  },
+  "2431027363": {
+    "lat": 39.554816,
+    "lon": 21.772087,
+    "ref": "https://trikala.efhmeries.gr/Home/Details/4152"
   },
   "2431027630": {
     "lat": 39.554706,
@@ -129,6 +154,11 @@
     "lon": 21.765279,
     "ref": "https://trikala.efhmeries.gr/Home/Details/4129"
   },
+  "2431036868": {
+    "lat": 39.554162,
+    "lon": 21.766385,
+    "ref": "https://trikala.efhmeries.gr/Home/Details/4148"
+  },
   "2431037470": {
     "lat": 39.5572119,
     "lon": 21.7704851,
@@ -159,10 +189,20 @@
     "lon": 21.762221,
     "ref": "https://trikala.efhmeries.gr/Home/Details/4103"
   },
+  "2431073736": {
+    "lat": 39.560329,
+    "lon": 21.769786,
+    "ref": "https://trikala.efhmeries.gr/Home/Details/4146"
+  },
   "2431074560": {
     "lat": 39.5474454,
     "lon": 21.771923,
     "ref": "https://trikala.efhmeries.gr/Home/Details/4121"
+  },
+  "2431075055": {
+    "lat": 39.5512757,
+    "lon": 21.7662421,
+    "ref": "https://trikala.efhmeries.gr/Home/Details/4154"
   },
   "2431076066": {
     "lat": 39.535533,

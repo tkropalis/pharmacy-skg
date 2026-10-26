@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-31",
+  "groups": [
+    {
+      "id": "magnesia",
+      "name": "Μαγνησία",
+      "source": {
+        "url": "https://magnesia.efhmeries.gr/",
+        "uploadedAt": "2026-10-26T10:15:31.645Z"
+      },
+      "sections": [
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "13:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421066000",
+              "name": "ΔΙΟΝΥΣΗΣ ΚΟΥΡΟΥΜΑΛΟΣ",
+              "address": "ΦΙΛΑΔΕΛΦΕΙΑΣ 15",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421066000"
+            },
+            {
+              "pharmacyId": "2421028740",
+              "name": "ΣΙΤΟΚΩΝΣΤΑΝΤΙΝΟΥ ΧΡ.- ΣΙΤΟΚΩΝΣΤΑΝΤΙΝΟΥ ΜΑΡ.",
+              "address": "ΚΑΣΣΑΒΕΤΗ 16- 28ης ΟΚΤΩΒΡΙΟΥ",
+              "locality": "Βόλος",
+              "phone": "2421028740"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421066000",
+              "name": "ΔΙΟΝΥΣΗΣ ΚΟΥΡΟΥΜΑΛΟΣ",
+              "address": "ΦΙΛΑΔΕΛΦΕΙΑΣ 15",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421066000"
+            },
+            {
+              "pharmacyId": "2421028740",
+              "name": "ΣΙΤΟΚΩΝΣΤΑΝΤΙΝΟΥ ΧΡ.- ΣΙΤΟΚΩΝΣΤΑΝΤΙΝΟΥ ΜΑΡ.",
+              "address": "ΚΑΣΣΑΒΕΤΗ 16- 28ης ΟΚΤΩΒΡΙΟΥ",
+              "locality": "Βόλος",
+              "phone": "2421028740"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421316828",
+              "name": "ΗΛΙΑΣ ΠΑΧΥΣ",
+              "address": "ΙΩΛΚΟΥ 183",
+              "locality": "Βόλος",
+              "phone": "2421316828"
+            },
+            {
+              "pharmacyId": "2421038774",
+              "name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΠΙΣΙΩΤΗΣ",
+              "address": "2ας ΝΟΕΜΒΡΙΟΥ 127",
+              "locality": "Βόλος",
+              "phone": "2421038774"
+            },
+            {
+              "pharmacyId": "2421077077",
+              "name": "ΜΠΑΛΔΙΜΙΤΣΗ ΦΩΤΕΙΝΗ",
+              "address": "ΛΑΡΙΣΗΣ 86",
+              "locality": "Βόλος",
+              "phone": "2421077077"
+            },
+            {
+              "pharmacyId": "2421061122",
+              "name": "ΟΛΓΑ ΚΟΠΑΝΟΥ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 153",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421061122"
+            },
+            {
+              "pharmacyId": "2421037950",
+              "name": "ΣΤΕΦΑΝΟΣ - ΑΓΓΕΛΟΣ ΠΑΝΤΣΑΣ",
+              "address": "ΣΠ. ΣΠΥΡΙΔΗ 5",
+              "locality": "Βόλος",
+              "phone": "2421037950"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

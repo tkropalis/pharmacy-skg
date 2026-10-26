@@ -443,6 +443,27 @@
       }
     },
     {
+      "id": "2681073040",
+      "name": "ΛΩΛΗ ΔΗΜΗΤΡΑ",
+      "address": "ΠΕΡΙΦΕΡΕΙΑΚΗ ΟΔΟΣ 67Α",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681073040",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 39.1618464,
+        "lon": 20.9807696,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2441",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681073149",
       "name": "ΣΚΑΝΔΑΛΗΣ ΗΛΙΑΣ ΕΕ",
       "address": "ΣΚΟΥΦΑ 150",
@@ -748,7 +769,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 39.070637,
         "lon": 21.018409,

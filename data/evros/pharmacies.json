@@ -128,6 +128,27 @@
       }
     },
     {
+      "id": "2551025779",
+      "name": "ΣΦΑΝΤΖΙΚΗ ΑΣΗΜΕΝΙΑ",
+      "address": "14ης Μαΐου 33",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551025779",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.8470319,
+        "lon": 25.8749455,
+        "ref": "https://evros.efhmeries.gr/Home/Details/3948",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551026214",
       "name": "ΓΑΛΑΖΙΟΥ ΑΣΠΑΣΙΑ",
       "address": "Κουτάβου 5 (περιοχή Αγ. Βασιλείου)",
@@ -181,7 +202,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 40.8459553,
         "lon": 25.8743428,
@@ -832,7 +853,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 41.5016584,
         "lon": 26.5334306,
@@ -1084,7 +1105,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 41.3497643,
         "lon": 26.4941195,
@@ -1315,7 +1336,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 41.1917483,
         "lon": 26.3037554,
@@ -1336,7 +1357,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 41.0262152,
         "lon": 26.2954437,
@@ -1441,7 +1462,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 40.8896855,
         "lon": 26.1651715,

@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2510221700",
+      "name": "ΕΜΜΑΝΟΥΗΛΙΔΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΕΡΥΘΡΟΥ ΣΤΑΥΡΟΥ 11",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510221700",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.9363158,
+        "lon": 24.4067609,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3983",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510222251",
       "name": "ΚΑΡΕΜΦΥΛΗ ΣΟΦΙΑ",
       "address": "ΔΟΙΡΑΝΗΣ 20",
@@ -223,7 +244,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-31",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 40.935895,
         "lon": 24.408052,
@@ -249,6 +270,27 @@
         "lat": 40.936409,
         "lon": 24.4089542,
         "ref": "https://kavala.efhmeries.gr/Home/Details/4003",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510228706",
+      "name": "Σ.Φ. ΡΑΚΙΤΖΗ ΑΝΑΣΤΑΣΙΑ - ΠΑΠΑΦΩΤΙΟΥ ΓΕΩΡΓΙΟΣ ΟΕ",
+      "address": "ΟΜΟΝΟΙΑΣ 70",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510228706",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.9382042,
+        "lon": 24.4113207,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/3982",
         "source": "list",
         "precision": "exact"
       }

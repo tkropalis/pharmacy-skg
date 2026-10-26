@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "groups": [
+    {
+      "id": "magnesia",
+      "name": "Μαγνησία",
+      "source": {
+        "url": "https://magnesia.efhmeries.gr/",
+        "uploadedAt": "2026-10-26T10:15:31.645Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "13:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421026459",
+              "name": "ΑΛΕΞΑΝΔΡΟΣ ΣΤΑΘΟΠΟΥΛΟΣ",
+              "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 45Α",
+              "locality": "Βόλος",
+              "phone": "2421026459"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421026459",
+              "name": "ΑΛΕΞΑΝΔΡΟΣ ΣΤΑΘΟΠΟΥΛΟΣ",
+              "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 45Α",
+              "locality": "Βόλος",
+              "phone": "2421026459"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421037570",
+              "name": "ΓΙΑΛΑΜΑ ΚΥΡΙΑΚΗ-ΝΑΣΤΟΥ ΡΟΖΑΛΙΑ",
+              "address": "ΙΑΣΟΝΟΣ 71- ΑΝΤΩΝΟΠΟΥΛΟΥ",
+              "locality": "Βόλος",
+              "phone": "2421037570"
+            },
+            {
+              "pharmacyId": "2421071520",
+              "name": "ΔΕΣΠΟΙΝΑ ΣΤΑΜΑΤΙΟΥ",
+              "address": "ΠΑΓΑΣΩΝ 103",
+              "locality": "Βόλος",
+              "phone": "2421071520"
+            },
+            {
+              "pharmacyId": "2421022835",
+              "name": "ΚΕΧΑΓΙΑ ΜΑΡΙΑ-ΚΕΧΑΓΙΑ ΙΩΑΝΝΑ",
+              "address": "ΑΓ. ΝΙΚΟΛΑΟΥ 33",
+              "locality": "Βόλος",
+              "phone": "2421022835"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421091915",
+              "name": "ΕΙΡΗΝΗ ΔΑΛΑΒΕΡΗ",
+              "address": "ΜΕΛΙΝΑΣ ΜΕΡΚΟΥΡΗ 57",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421091915"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

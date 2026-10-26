@@ -7,7 +7,7 @@
       "name": "Ηράκλειο",
       "source": {
         "url": "https://herakleion.efhmeries.gr/",
-        "uploadedAt": "2026-10-25T19:07:42.080Z"
+        "uploadedAt": "2026-10-26T10:14:28.105Z"
       },
       "sections": [
         {
@@ -73,6 +73,26 @@
           ]
         },
         {
+          "kind": "day",
+          "heading": "ΑΠΟ 09:00 ΕΩΣ 19:00",
+          "hours": {
+            "from": "09:00",
+            "to": "19:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2897061301",
+              "name": "ΑΛΕΞΗΣ Ι. ΑΠΟΣΤΟΛΗΣ",
+              "address": "ΜΟΧΟΣ",
+              "locality": "Σταλίδα, Μόχος, Γωνιές, Ποταμιές",
+              "phone": "2897061301"
+            }
+          ]
+        },
+        {
           "kind": "on-duty",
           "heading": "8:30 ΕΩΣ 8:30 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
@@ -89,26 +109,6 @@
               "address": "ΛΕΩΦ. ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 43",
               "locality": "Αμμουδάρα",
               "phone": "2810315040"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 21:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2892022172",
-              "name": "ΒΟΛΩΝΑΚΗΣ ΑΧΙΛΛΕΑΣ",
-              "address": "25ΗΣ ΜΑΡΤΙΟΥ 264",
-              "locality": "Μοίρες",
-              "phone": "2892022172"
             }
           ]
         },
@@ -228,22 +228,22 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "ΑΠΟ 09:00 ΕΩΣ 19:00",
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 21:00 ΕΩΣ 08:00",
           "hours": {
-            "from": "09:00",
-            "to": "19:00",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2897061301",
-              "name": "ΑΛΕΞΗΣ Ι. ΑΠΟΣΤΟΛΗΣ",
-              "address": "ΜΟΧΟΣ",
-              "locality": "Σταλίδα, Μόχος, Γωνιές, Ποταμιές",
-              "phone": "2897061301"
+              "pharmacyId": "2892022172",
+              "name": "ΒΟΛΩΝΑΚΗΣ ΑΧΙΛΛΕΑΣ",
+              "address": "25ΗΣ ΜΑΡΤΙΟΥ 264",
+              "locality": "Μοίρες",
+              "phone": "2892022172"
             }
           ]
         }

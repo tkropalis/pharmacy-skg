@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-29",
+  "groups": [
+    {
+      "id": "magnesia",
+      "name": "Μαγνησία",
+      "source": {
+        "url": "https://magnesia.efhmeries.gr/",
+        "uploadedAt": "2026-10-26T10:15:31.645Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421021773",
+              "name": "ΑΓΛΑΙΑ ΑΓΓΕΛΟΥΣΗ",
+              "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 17",
+              "locality": "Βόλος",
+              "phone": "2421021773"
+            },
+            {
+              "pharmacyId": "2421022677",
+              "name": "ΕΥΑΓΓΕΛΙΑ ΦΟΥΣΚΗ-ΜΑΡΙΝΟΥ",
+              "address": "ΣΠΥΡΙΔΗ 80",
+              "locality": "Βόλος",
+              "phone": "2421022677"
+            },
+            {
+              "pharmacyId": "2421023669",
+              "name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΜΑΤΣΙΟΛΗΣ",
+              "address": "2ας ΝΟΕΜΒΡΙΟΥ 76",
+              "locality": "Βόλος",
+              "phone": "2421023669"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "13:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421039659",
+              "name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΜΠΑΤΖΙΑΚΑΣ",
+              "address": "ΔΗΜΗΤΡΙΑΔΟΣ 233",
+              "locality": "Βόλος",
+              "phone": "2421039659"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421039659",
+              "name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΜΠΑΤΖΙΑΚΑΣ",
+              "address": "ΔΗΜΗΤΡΙΑΔΟΣ 233",
+              "locality": "Βόλος",
+              "phone": "2421039659"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421091604",
+              "name": "ΜΑΡΙΛΕΝΑ ΞΥΦΑΡΗ",
+              "address": "ΦΙΛΑΔΕΛΦΕΙΑΣ 47",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421091604"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

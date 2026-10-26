@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "groups": [
+    {
+      "id": "trikala",
+      "name": "Τρίκαλα",
+      "source": {
+        "url": "https://trikala.efhmeries.gr/",
+        "uploadedAt": "2026-10-26T10:16:45.178Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431073736",
+              "name": "ΚΑΜΙΝΙΩΤΗΣ ΣΟΛΩΝ",
+              "address": "ΚΟΝΔΥΛΗ ΓΕΩΡΓΙΟΥ 52",
+              "locality": "Τρίκαλα",
+              "phone": "2431073736"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431023000",
+              "name": "ΜΠΑΜΠΟΥΡΗ ΑΝΑΣΤΑΣΙΑ",
+              "address": "ΙΟΥΛ. ΑΔΑΜ 10",
+              "locality": "Τρίκαλα",
+              "phone": "2431023000"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431023000",
+              "name": "ΜΠΑΜΠΟΥΡΗ ΑΝΑΣΤΑΣΙΑ",
+              "address": "ΙΟΥΛ. ΑΔΑΜ 10",
+              "locality": "Τρίκαλα",
+              "phone": "2431023000"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "18:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "18:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431036868",
+              "name": "ΛΕΓΚΑ ΕΙΡΗΝΗ",
+              "address": "ΑΔΑΜ ΙΟΥΛΙΕΤΑΣ 2",
+              "locality": "Τρίκαλα",
+              "phone": "2431036868"
+            },
+            {
+              "pharmacyId": "2431020962",
+              "name": "ΜΑΚΡΗΣ ΚΟΣΜΑΣ",
+              "address": "ΤΣΙΤΣΑΝΗ 11 ΚΑΙ ΓΑΜΒΕΤΑ",
+              "locality": "Τρίκαλα",
+              "phone": "2431020962"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

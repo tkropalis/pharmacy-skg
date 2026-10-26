@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-01",
+  "groups": [
+    {
+      "id": "arta",
+      "name": "Άρτα",
+      "source": {
+        "url": "https://arta.efhmeries.gr/",
+        "uploadedAt": "2026-10-26T10:13:42.634Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2681073040",
+              "name": "ΛΩΛΗ ΔΗΜΗΤΡΑ",
+              "address": "ΠΕΡΙΦΕΡΕΙΑΚΗ ΟΔΟΣ 67Α",
+              "locality": "Άρτα",
+              "phone": "2681073040"
+            },
+            {
+              "pharmacyId": "2681087275",
+              "name": "ΠΑΠΑΝΙΚΟΛΑΟΥ ΚΩΝ/ΝΟΣ",
+              "address": "ΝΕΟΧΩΡΙ",
+              "locality": "Άρτα",
+              "phone": "2681087275"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

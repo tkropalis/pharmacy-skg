@@ -202,7 +202,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.9754627,
         "lon": 23.6284914,
@@ -370,7 +370,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.942057,
         "lon": 23.649186,
@@ -1462,7 +1462,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.9349313,
         "lon": 23.6442435,
@@ -1630,7 +1630,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.947569,
         "lon": 23.643648,
@@ -1966,7 +1966,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.9334455,
         "lon": 23.6371271,
@@ -2349,6 +2349,27 @@
         "lat": 37.9680704,
         "lon": 23.6219185,
         "ref": "https://piraeus.efhmeries.gr/Home/Details/39243",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2104313910",
+      "name": "ΚΟΥΒΑΡΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ε.Ε.",
+      "address": "ΥΨΗΛΑΝΤΟΥ 30",
+      "locality": "Κερατσίνι",
+      "postcode": null,
+      "phone": "2104313910",
+      "groupId": "piraeus",
+      "sources": [
+        "iteq-piraeus"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 37.9710715,
+        "lon": 23.6192041,
+        "ref": "https://piraeus.efhmeries.gr/Home/Details/43730",
         "source": "list",
         "precision": "exact"
       }
@@ -2848,7 +2869,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.9642922,
         "lon": 23.5669425,
@@ -3541,7 +3562,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.9387316,
         "lon": 23.6434257,
@@ -3772,7 +3793,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.9453725,
         "lon": 23.6230894,
@@ -3898,7 +3919,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.9638646,
         "lon": 23.6265154,
@@ -4738,7 +4759,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.9482049,
         "lon": 23.4889758,
@@ -4885,7 +4906,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.943881,
         "lon": 23.4833992,
@@ -5137,7 +5158,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.953717,
         "lon": 23.658229,
@@ -6187,7 +6208,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.9698016,
         "lon": 23.6525434,
@@ -6775,7 +6796,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.978676,
         "lon": 23.643645,
@@ -7090,7 +7111,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.974441,
         "lon": 23.652439,
@@ -7930,7 +7951,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.988752,
         "lon": 23.649205,
@@ -8098,7 +8119,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.9460317,
         "lon": 23.6812167,
@@ -8770,7 +8791,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.9576243,
         "lon": 23.6284539,
@@ -8896,7 +8917,7 @@
         "iteq-piraeus"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.496382,
         "lon": 23.448271,
