@@ -7,29 +7,9 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-10-26T10:16:45.178Z"
+        "uploadedAt": "2026-10-26T21:07:00.906Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 23:00",
-          "hours": {
-            "from": "08:00",
-            "to": "23:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431036868",
-              "name": "ΛΕΓΚΑ ΕΙΡΗΝΗ",
-              "address": "ΑΔΑΜ ΙΟΥΛΙΕΤΑΣ 2",
-              "locality": "Τρίκαλα",
-              "phone": "2431036868"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -67,6 +47,26 @@
               "address": "ΤΣΙΤΣΑΝΗ 11 ΚΑΙ ΓΑΜΒΕΤΑ",
               "locality": "Τρίκαλα",
               "phone": "2431020962"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431036868",
+              "name": "ΛΕΓΚΑ ΕΙΡΗΝΗ",
+              "address": "ΑΔΑΜ ΙΟΥΛΙΕΤΑΣ 2",
+              "locality": "Τρίκαλα",
+              "phone": "2431036868"
             }
           ]
         }

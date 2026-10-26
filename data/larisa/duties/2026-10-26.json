@@ -163,9 +163,29 @@
       "name": "Λάρισα",
       "source": {
         "url": "https://larisa.efhmeries.gr/",
-        "uploadedAt": "2026-10-20T19:19:49.306Z"
+        "uploadedAt": "2026-10-26T21:03:12.849Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "23:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410281830",
+              "name": "ΚΟΝΤΑΚΟΥ Θ. ΖΩΗ",
+              "address": "23ης ΟΚΤΩΒΡΙΟΥ 51 (Άγιος Κωνσταντίνος, έναντι ΕΛΤΑ)",
+              "locality": "Λάρισα",
+              "phone": "2410281830"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 08:00 ΕΩΣ 23:00",
@@ -218,26 +238,6 @@
               "address": "ΛΕΥΚΩΣΙΑΣ 12 (Πλατεία Αβέρωφ - πλησίον Φαρσάλων)",
               "locality": "Λάρισα",
               "phone": "2410660882"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "23:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2410281830",
-              "name": "ΚΟΝΤΑΚΟΥ Θ. ΖΩΗ",
-              "address": "23ης ΟΚΤΩΒΡΙΟΥ 51 (Άγιος Κωνσταντίνος, έναντι ΕΛΤΑ)",
-              "locality": "Λάρισα",
-              "phone": "2410281830"
             }
           ]
         }

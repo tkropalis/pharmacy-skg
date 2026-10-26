@@ -7,29 +7,9 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-10-26T10:14:51.230Z"
+        "uploadedAt": "2026-10-26T21:05:28.286Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510227610",
-              "name": "ΤΣΙΛΟΓΕΩΡΓΗΣ ΣΩΤΗΡΙΟΣ",
-              "address": "ΦΙΛ.ΕΤΑΙΡΕΙΑΣ 2Α",
-              "locality": "Καβάλα",
-              "phone": "2510227610"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΑΒΕΡΩΦ 2",
               "locality": "Καβάλα",
               "phone": "2510222798"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510227610",
+              "name": "ΤΣΙΛΟΓΕΩΡΓΗΣ ΣΩΤΗΡΙΟΣ",
+              "address": "ΦΙΛ.ΕΤΑΙΡΕΙΑΣ 2Α",
+              "locality": "Καβάλα",
+              "phone": "2510227610"
             }
           ]
         }

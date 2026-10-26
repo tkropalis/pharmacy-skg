@@ -7,50 +7,9 @@
       "name": "Μαγνησία",
       "source": {
         "url": "https://magnesia.efhmeries.gr/",
-        "uploadedAt": "2026-10-26T10:15:31.645Z"
+        "uploadedAt": "2026-10-26T21:06:05.261Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2421064816",
-              "name": "ΑΙΚΑΤΕΡΙΝΗ ΓΚΟΥΛΙΟΥ",
-              "address": "ΛΕΠΕΝΙΩΤΗ 6",
-              "locality": "Βόλος",
-              "phone": "2421064816"
-            },
-            {
-              "pharmacyId": "2421022835",
-              "name": "ΚΕΧΑΓΙΑ ΜΑΡΙΑ-ΚΕΧΑΓΙΑ ΙΩΑΝΝΑ",
-              "address": "ΑΓ. ΝΙΚΟΛΑΟΥ 33",
-              "locality": "Βόλος",
-              "phone": "2421022835"
-            },
-            {
-              "pharmacyId": "2421046874",
-              "name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΖΑΦΛΕΡΗΣ",
-              "address": "ΚΥΠΡΟΥ 5",
-              "locality": "Βόλος",
-              "phone": "2421046874"
-            },
-            {
-              "pharmacyId": "2421039587",
-              "name": "ΧΡΙΣΤΙΝΑ-ΧΡΥΣΑΝΘΗ ΖΟΛΩΤΑ",
-              "address": "ΠΟΛΥΜΕΡΗ 169",
-              "locality": "Βόλος",
-              "phone": "2421039587"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -108,6 +67,47 @@
               "address": "Κ.ΚΑΡΤΑΛΗ 172Ε",
               "locality": "Βόλος",
               "phone": "2421036356"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421064816",
+              "name": "ΑΙΚΑΤΕΡΙΝΗ ΓΚΟΥΛΙΟΥ",
+              "address": "ΛΕΠΕΝΙΩΤΗ 6",
+              "locality": "Βόλος",
+              "phone": "2421064816"
+            },
+            {
+              "pharmacyId": "2421022835",
+              "name": "ΚΕΧΑΓΙΑ ΜΑΡΙΑ-ΚΕΧΑΓΙΑ ΙΩΑΝΝΑ",
+              "address": "ΑΓ. ΝΙΚΟΛΑΟΥ 33",
+              "locality": "Βόλος",
+              "phone": "2421022835"
+            },
+            {
+              "pharmacyId": "2421046874",
+              "name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΖΑΦΛΕΡΗΣ",
+              "address": "ΚΥΠΡΟΥ 5",
+              "locality": "Βόλος",
+              "phone": "2421046874"
+            },
+            {
+              "pharmacyId": "2421039587",
+              "name": "ΧΡΙΣΤΙΝΑ-ΧΡΥΣΑΝΘΗ ΖΟΛΩΤΑ",
+              "address": "ΠΟΛΥΜΕΡΗ 169",
+              "locality": "Βόλος",
+              "phone": "2421039587"
             }
           ]
         }

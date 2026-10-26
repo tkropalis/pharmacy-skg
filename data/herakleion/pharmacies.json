@@ -1798,7 +1798,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-10-31",
       "location": {
         "lat": 35.3376538,
         "lon": 25.1264053,
@@ -2706,27 +2706,6 @@
         "lat": 35.3086553,
         "lon": 25.1376367,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57886",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
-      "id": "2810361212",
-      "name": "ΤΣΙΚΝΑΚΗΣ ΑΝΤ. ΜΙΧΑΗΛ",
-      "address": "ΕΘΝΟΜΑΡΤΥΡΩΝ & ΚΟΡΙΝΘΟΥ ΒΑΘΥΠΕΤΡΟΥ ΗΛΙΟΥΠΟΛΗ",
-      "locality": "Ηράκλειο",
-      "postcode": null,
-      "phone": "2810361212",
-      "groupId": "herakleion",
-      "sources": [
-        "iteq-herakleion"
-      ],
-      "firstSeen": "2026-10-31",
-      "lastSeen": "2026-10-31",
-      "location": {
-        "lat": 35.3175248,
-        "lon": 25.1358068,
-        "ref": "https://herakleion.efhmeries.gr/Home/Details/57871",
         "source": "list",
         "precision": "exact"
       }

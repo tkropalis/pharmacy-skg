@@ -7,9 +7,96 @@
       "name": "Ηράκλειο",
       "source": {
         "url": "https://herakleion.efhmeries.gr/",
-        "uploadedAt": "2026-10-26T10:14:28.105Z"
+        "uploadedAt": "2026-10-26T21:05:09.809Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 22:00 ΕΩΣ 08:30 ΠΡΩΙ",
+          "hours": {
+            "from": "22:00",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2897031900",
+              "name": "ΚΡΑΣΑΚΗ ΕΥΑΓΓΕΛΙΑ",
+              "address": "Λ. ΔΗΜΟΚΡΑΤΙΑΣ 113 (ΠΑΡΑΛΙΑΚΗ ΜΑΛΙΩΝ)",
+              "locality": "Μάλια",
+              "phone": "2897031900"
+            },
+            {
+              "pharmacyId": "2810256280",
+              "name": "ΧΑΜΑΛΑΚΗ ΧΡΥΣΟΥΛΑ",
+              "address": "Λ. ΙΚΑΡΟΥ 44 (ΔΙΠΛΑ McDonald’s, ΕΝΑΝΤΙ ΝΕΩΝ ΚΤΕΛ)",
+              "locality": "Ηράκλειο",
+              "phone": "2810256280"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "8:00 ΕΩΣ 8:00 (23:00-08:00 ΚΑΤΟΠΙΝ ΤΗΛΕΦΩΝΗΜΑΤΟΣ)",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2891022391",
+              "name": "ΛΟΥΛΑΚΗ-ΓΙΑΝΝΟΠΟΥΛΟΥ ΑΔΑΜΑΝΤΙΑ",
+              "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 1",
+              "locality": "Αρκαλοχώρι",
+              "phone": "2891022391"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "8:30 ΕΩΣ 8:30 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2810821440",
+              "name": "Σ.Φ. ΜΑΝΔΑΛΕΝΑΚΗ ΣΟΦΙΑ- ΜΑΝΔΑΛΕΝΑΚΗ ΠΟΛΥΜΝΙΑ ΟΕ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 250",
+              "locality": "Γάζι",
+              "phone": "2810821440"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 21:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2892024280",
+              "name": "ΧΟΥΣΤΟΥΛΑΚΗΣ Ρ. ΕΜΜΑΝΟΥΗΛ",
+              "address": "ΘΕΟΤΟΚΟΠΟΥΛΟΥ",
+              "locality": "Μοίρες",
+              "phone": "2892024280"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 08:30 ΕΩΣ 23:00",
@@ -114,26 +201,6 @@
           ]
         },
         {
-          "kind": "on-duty",
-          "heading": "8:00 ΕΩΣ 8:00 (23:00-08:00 ΚΑΤΟΠΙΝ ΤΗΛΕΦΩΝΗΜΑΤΟΣ)",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2891022391",
-              "name": "ΛΟΥΛΑΚΗ-ΓΙΑΝΝΟΠΟΥΛΟΥ ΑΔΑΜΑΝΤΙΑ",
-              "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 1",
-              "locality": "Αρκαλοχώρι",
-              "phone": "2891022391"
-            }
-          ]
-        },
-        {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 22:00",
           "hours": {
@@ -161,26 +228,6 @@
           ]
         },
         {
-          "kind": "on-duty",
-          "heading": "8:30 ΕΩΣ 8:30 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "08:30",
-            "to": "08:30",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2810821440",
-              "name": "Σ.Φ. ΜΑΝΔΑΛΕΝΑΚΗ ΣΟΦΙΑ- ΜΑΝΔΑΛΕΝΑΚΗ ΠΟΛΥΜΝΙΑ ΟΕ",
-              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 250",
-              "locality": "Γάζι",
-              "phone": "2810821440"
-            }
-          ]
-        },
-        {
           "kind": "day",
           "heading": "ΑΠΟ 09:00 ΕΩΣ 19:00",
           "hours": {
@@ -197,53 +244,6 @@
               "address": "ΑΓ. ΙΩΑΝΝΟΥ 103 ΣΤΑΛΙΔΑ",
               "locality": "Σταλίδα, Μόχος, Γωνιές, Ποταμιές",
               "phone": "2897032222"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 22:00 ΕΩΣ 08:30 ΠΡΩΙ",
-          "hours": {
-            "from": "22:00",
-            "to": "08:30",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2897031900",
-              "name": "ΚΡΑΣΑΚΗ ΕΥΑΓΓΕΛΙΑ",
-              "address": "Λ. ΔΗΜΟΚΡΑΤΙΑΣ 113 (ΠΑΡΑΛΙΑΚΗ ΜΑΛΙΩΝ)",
-              "locality": "Μάλια",
-              "phone": "2897031900"
-            },
-            {
-              "pharmacyId": "2810256280",
-              "name": "ΧΑΜΑΛΑΚΗ ΧΡΥΣΟΥΛΑ",
-              "address": "Λ. ΙΚΑΡΟΥ 44 (ΔΙΠΛΑ McDonald’s, ΕΝΑΝΤΙ ΝΕΩΝ ΚΤΕΛ)",
-              "locality": "Ηράκλειο",
-              "phone": "2810256280"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 21:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2892024280",
-              "name": "ΧΟΥΣΤΟΥΛΑΚΗΣ Ρ. ΕΜΜΑΝΟΥΗΛ",
-              "address": "ΘΕΟΤΟΚΟΠΟΥΛΟΥ",
-              "locality": "Μοίρες",
-              "phone": "2892024280"
             }
           ]
         }

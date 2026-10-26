@@ -7,7 +7,7 @@
       "name": "Αρκαδία",
       "source": {
         "url": "https://arkadia.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T08:14:04.564Z"
+        "uploadedAt": "2026-10-26T21:04:20.065Z"
       },
       "sections": [
         {
@@ -22,18 +22,18 @@
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2710242349",
-              "name": "ΑΘΑΝΑΣΙΑΔΟΥ Ε. ΑΝΑΣΤΑΣΙΑ",
-              "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 97",
-              "locality": "Τρίπολη",
-              "phone": "2710242349"
-            },
-            {
               "pharmacyId": "2791022626",
               "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ ΣΟΦΙΑ",
               "address": "ΣΤΑΘΟΠΟΥΛΟΥ 10",
               "locality": "Μεγαλόπολη",
               "phone": "2791022626"
+            },
+            {
+              "pharmacyId": "2710237979",
+              "name": "ΔΕΛΗ ΓΕΩΡΓΙΑ Ο.Ε.",
+              "address": "ΕΘΝΟΜΑΡΤΥΡΩΝ 25",
+              "locality": "Τρίπολη",
+              "phone": "2710237979"
             },
             {
               "pharmacyId": "2755023580",

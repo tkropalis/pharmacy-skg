@@ -7,7 +7,7 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-10-24T08:17:24.824Z"
+        "uploadedAt": "2026-10-26T21:07:13.321Z"
       },
       "sections": [
         {
@@ -47,6 +47,27 @@
               "address": "ΑΝΔΡΈΑ ΠΑΠΑΝΔΡΈΟΥ 47 Γ / ANDREA PAPANDREOU 47",
               "locality": "Χανιά",
               "phone": "2821072156"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2823041160",
+              "name": "Σ.Φ. ΑΘΟΥΣΑΚΗ Ο.Ε./S.F. ATHOUSAKI O.E.",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "2823041160"
             }
           ]
         },
@@ -95,27 +116,6 @@
               "address": "ΕΘΝ. ΒΕΝΙΖΕΛΟΥ 59,ΣΟΥΔΑ/ΕΤΗΝ. VENIZELOU 59-SOUDA",
               "locality": "Σούδα",
               "phone": "2821089179"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
-          "hours": {
-            "from": "08:15",
-            "to": "08:15",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2823041160",
-              "name": "Σ.Φ. ΑΘΟΥΣΑΚΗ Ο.Ε./S.F. ATHOUSAKI O.E.",
-              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
-              "locality": "Δήμος Καντάνου-Σελίνου",
-              "phone": "2823041160"
             }
           ]
         },

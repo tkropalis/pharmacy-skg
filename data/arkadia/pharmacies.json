@@ -454,7 +454,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-10-30",
       "location": {
         "lat": 37.5111574,
         "lon": 22.3705772,
@@ -564,27 +564,6 @@
         "lat": 37.5085669,
         "lon": 22.3749095,
         "ref": "https://arkadia.efhmeries.gr/Home/Details/5074",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
-      "id": "2710242349",
-      "name": "ΑΘΑΝΑΣΙΑΔΟΥ Ε. ΑΝΑΣΤΑΣΙΑ",
-      "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 97",
-      "locality": "Τρίπολη",
-      "postcode": null,
-      "phone": "2710242349",
-      "groupId": "arkadia",
-      "sources": [
-        "iteq-arkadia"
-      ],
-      "firstSeen": "2026-10-30",
-      "lastSeen": "2026-10-30",
-      "location": {
-        "lat": 37.5162565,
-        "lon": 22.3722188,
-        "ref": "https://arkadia.efhmeries.gr/Home/Details/5062",
         "source": "list",
         "precision": "exact"
       }

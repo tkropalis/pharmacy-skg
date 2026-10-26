@@ -7,29 +7,9 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-10-26T10:14:51.230Z"
+        "uploadedAt": "2026-10-26T21:05:28.286Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510223750",
-              "name": "ΤΟΥΛΗ ΚΩΝΣΤΑΝΤΙΝΑ",
-              "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 3ΟΑ",
-              "locality": "Καβάλα",
-              "phone": "2510223750"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΒΕΝΙΖΕΛΟΥ 28",
               "locality": "Καβάλα",
               "phone": "2510834141"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510223750",
+              "name": "ΤΟΥΛΗ ΚΩΝΣΤΑΝΤΙΝΑ",
+              "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 3ΟΑ",
+              "locality": "Καβάλα",
+              "phone": "2510223750"
             }
           ]
         }
