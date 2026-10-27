@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-02",
+  "groups": [
+    {
+      "id": "lasithi",
+      "name": "Λασίθι",
+      "source": {
+        "url": "https://lasithi.efhmeries.gr/",
+        "uploadedAt": "2026-10-27T20:47:51.910Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2841027555",
+              "name": "ΑΝΑΣΤΑΣΙΑ ΧΑΤΖΗΔΑΚΗ Ε.Ε.",
+              "address": "ΑΚΤΗ ΣΤΥΛΙΑΝΟΥ ΚΟΥΝΔΟΥΡΟΥ 14 / 14, ΑΚΤΙ STYLIANOU KOUNDOUROU STR.",
+              "locality": "Άγιος Νικόλαος",
+              "phone": "2841027555"
+            },
+            {
+              "pharmacyId": "2843022276",
+              "name": "Σ.Φ. ΓΕΩΡΓΙΟΣ ΜΠΑΓΟΡΔΑΚΗΣ ΚΑΙ ΟΔΥΣΣΕΑΣ ΜΠΑΓΟΡΔΑΚΗΣ Ο.Ε.",
+              "address": "ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 107 / 107, ELEFTHERIOU VENIZELOU STR.",
+              "locality": "Σητεία",
+              "phone": "2843022276"
+            },
+            {
+              "pharmacyId": "2842025544",
+              "name": "ΣΗΦΑΚΗΣ Γ. ΙΩΑΝΝΗΣ",
+              "address": "ΚΑΛΗΜΕΡΑΚΗ 11 / 11, KALIMERAKI STR.",
+              "locality": "Ιεράπετρα",
+              "phone": "2842025544"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2841033533",
+              "name": "Σ.Φ. ΞΕΝΗ ΣΚΟΝΤΙΝΗ ΚΑΙ ΠΑΡΑΣΧΟΣ ΧΟΥΡΣΑΝΙΔΗΣ Ο.Ε.",
+              "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 3-5 / 3-5, ETHNIKIS ΑΝΤΙSΤΑSΕΟS STR.",
+              "locality": "Νεάπολη",
+              "phone": "2841033533"
+            },
+            {
+              "pharmacyId": "2841044277",
+              "name": "ΦΑΡΜΑΚΕΙΟ Ε. ΤΑΒΛΑ- Κ. ΚΟΖΥΡΗ Ο.Ε.",
+              "address": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 9 / 9, ANDREA PAPANDREOU STR.",
+              "locality": "Ελούντα",
+              "phone": "2841044277"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

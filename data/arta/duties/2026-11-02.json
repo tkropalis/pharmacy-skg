@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-02",
+  "groups": [
+    {
+      "id": "arta",
+      "name": "Άρτα",
+      "source": {
+        "url": "https://arta.efhmeries.gr/",
+        "uploadedAt": "2026-10-27T20:46:06.909Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2681065202",
+              "name": "ΓΙΑΝΝΟΥΛΗΣ ΕΥΣΤΑΘΙΟΣ",
+              "address": "ΣΚΟΥΦΑ ΝΙΚΟΛΑΟΥ 3",
+              "locality": "Άρτα",
+              "phone": "2681065202"
+            },
+            {
+              "pharmacyId": "2681073149",
+              "name": "ΣΚΑΝΔΑΛΗΣ ΗΛΙΑΣ ΕΕ",
+              "address": "ΣΚΟΥΦΑ 150",
+              "locality": "Άρτα",
+              "phone": "2681073149"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

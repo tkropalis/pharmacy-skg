@@ -181,7 +181,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 35.512957,
         "lon": 23.967459,
@@ -286,7 +286,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 35.5598308,
         "lon": 24.0942292,
@@ -559,7 +559,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 35.5101965,
         "lon": 24.0354635,
@@ -979,7 +979,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 35.5164381,
         "lon": 24.0179193,
@@ -1084,7 +1084,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 35.487803,
         "lon": 24.0735652,
@@ -1152,6 +1152,27 @@
         "lat": 35.480999,
         "lon": 24.0175658,
         "ref": "https://chania.efhmeries.gr/Home/Details/13462",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2821090644",
+      "name": "ΑΘΟΥΣΑΚΗ ΣΟΦΙΑ/ΑΤΗΟUSΑΚΙ SOFIA",
+      "address": "ΑΚΤΗ ΚΑΝΑΡΗ 5,ΝΕΑ ΧΩΡΑ/ΑΚΤΙ KANARI 5",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821090644",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 35.5166702,
+        "lon": 24.0087372,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13604",
         "source": "list",
         "precision": "exact"
       }
@@ -1546,7 +1567,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 35.4940194,
         "lon": 23.6540401,
@@ -1609,7 +1630,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 35.2294606,
         "lon": 23.6819128,

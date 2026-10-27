@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-02",
+  "groups": [
+    {
+      "id": "drama",
+      "name": "Δράμα",
+      "source": {
+        "url": "https://drama.efhmeries.gr/",
+        "uploadedAt": "2026-10-27T20:46:20.122Z"
+      },
+      "sections": [
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521032766",
+              "name": "ΚΑΧΡΙΜΑΝΙΔΟΥ ΜΑΡΙΑ",
+              "address": "ΗΠΕΙΡΟΥ 1",
+              "locality": "Δράμα",
+              "phone": "2521032766"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521032535",
+              "name": "ΓΑΛΑΝΟΠΟΥΛΟΥ Λ. ΕΛΠΙΔΑ",
+              "address": "Θ. ΑΘΑΝΑΣΙΑΔΗ 45",
+              "locality": "Δράμα",
+              "phone": "2521032535"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521032233",
+              "name": "Σ.Φ. ΜΙΧΑΗΛΙΔΟΥ Μ. - ΚΛΕΪΔΗΣ Α. Ο.Ε.",
+              "address": "19ΗΣ ΜΑΪ́ΟΥ 71",
+              "locality": "Δράμα",
+              "phone": "2521032233"
+            },
+            {
+              "pharmacyId": "2521031514",
+              "name": "ΣΦ ΤΣΑΤΣΑΛΙΔΟΥ Β.-ΤΣΑΤΣΑΛΙΔΟΥ Χ.",
+              "address": "ΒΑΡΔΟΥΣΙΩΝ 16",
+              "locality": "Δράμα",
+              "phone": "2521031514"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

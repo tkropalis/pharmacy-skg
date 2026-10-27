@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-02",
+  "groups": [
+    {
+      "id": "chania",
+      "name": "Χανιά",
+      "source": {
+        "url": "https://chania.efhmeries.gr/",
+        "uploadedAt": "2026-10-27T20:49:13.935Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821090644",
+              "name": "ΑΘΟΥΣΑΚΗ ΣΟΦΙΑ/ΑΤΗΟUSΑΚΙ SOFIA",
+              "address": "ΑΚΤΗ ΚΑΝΑΡΗ 5,ΝΕΑ ΧΩΡΑ/ΑΚΤΙ KANARI 5",
+              "locality": "Χανιά",
+              "phone": "2821090644"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "6948462411",
+              "name": "ΔΑΜΟΡΑΚΗΣ ΕΥΤΥΧΗΣ/DΑΜΟRΑΚΙS EYTIXIS",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "6948462411"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821039644",
+              "name": "ΑΛΕΞΑΚΗ ΗΛΙΑΝΑ/ΑLΕΧΑΚΙ ILIANA",
+              "address": "ΟΔΟΣ ΧΩΡΑΦΑ-ΧΩΡΑΦΑΚΙΑ ΑΚΡΩΤΗΡΙ/CΗΟRΑFΑΚΙΑ-ΑΚRΟΤΙRΙ",
+              "locality": "Ακρωτήρι",
+              "phone": "2821039644"
+            },
+            {
+              "pharmacyId": "2821053565",
+              "name": "ΒΡΟΥΛΙΔΑΚΗ ΓΕΩΡΓΙΑ/VRΟULΙDΑΚΙ GEORGIA",
+              "address": "ΠΑΠΑΝΑΣΤΑΣΊΟΥ & ΕΜΜΑΝΟΥΉΛ ΜΟΥΝΤΆΚΗ (ΑΠΕΝΑΝΤΙ ΑΠΟ ΑΝΘΟΠΩΛΕΙΟ ΡΟΖ-ΜΩΒ)/ΡΑΡΑΝΑSΤΑSΙΟU & MOUNTAKI",
+              "locality": "Χανιά",
+              "phone": "2821053565"
+            },
+            {
+              "pharmacyId": "2821075505",
+              "name": "ΔΗΜΗΤΡΟΥΛΑΚΗΣ ΠΑΝΑΓΙΩΤΗΣ & ΣΙΑ/DΙΜΙΤRΟULΑΚΙS PANAGIOTIS & SIA",
+              "address": "ΠΛΑΤΕΙΑ ΕΛ. ΒΕΝΙΖΕΛΟΥ-ΜΟΥΡΝΙΕΣ/ΕL. VENIZELOU SQUARE-MOURNIES",
+              "locality": "Μουρνιές",
+              "phone": "2821075505"
+            },
+            {
+              "pharmacyId": "2821031110",
+              "name": "Σ.Φ. ΤΖΕΙΡΑΝΗ ΕΥΑ ΤΖΕΪΡΑΝΗΣ ΣΤΕΛΙΟΣ/ΤΖΕΙRΑΝΙ EVA-TZEIRANIS STELIOS",
+              "address": "ΚΑΛΑΜΑΚΙ (ΚΟΝΤΑ ΣΤΟ ΞΕΝΟΔΟΧΕΙΟ CORINA MARRE)/KALAMAKI-GALATAS",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821031110"
+            },
+            {
+              "pharmacyId": "2821089100",
+              "name": "ΣΙΣΚΑΚΗ Γ. ΜΑΡΙΕΛΝΤΑ/SΙSΚΑΚΙ MARIELDA",
+              "address": "ΕΘΝΑΡΧΟΥ ΒΕΝΙΖΕΛΟΥ 51 , ΣΟΥΔΑ/ΕΤΗΝ. VENIZELOU 53, SOUDA",
+              "locality": "Σούδα",
+              "phone": "2821089100"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
+          "hours": {
+            "from": "08:30",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2822022742",
+              "name": "Σ.Φ. ΦΑΡΑΓΓΙΤΑΚΗΣ Ι.ΦΑΡΑΓΓΙΤΑΚΗΣ ΕΜ./S.F. FARAGGITAKIS I. & FARAGGITAKIS E.",
+              "address": "ΟΜΟΓΕΝΩΝ ΑΜΕΡΙΚΗΣ 23,ΚΑΣΤΕΛΛΙ ΚΙΣΑΜΟΥ/ΟΜΟGΕΝΟΝ AMERIKIS 23",
+              "locality": "Δήμος Κισσάμου",
+              "phone": "2822022742"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

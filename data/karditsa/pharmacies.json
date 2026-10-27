@@ -149,6 +149,27 @@
       }
     },
     {
+      "id": "2441022026",
+      "name": "ΓΕΩΡΓΑΝΤΖΟΠΟΥΛΟΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΧΑΡΙΤΟΥ 22",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441022026",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.3666827,
+        "lon": 21.9243262,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3795",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2441022103",
       "name": "ΚΟΡΟΜΠΙΛΗ ΒΑΣΙΛΙΚΗ-ΠΑΝΑΓΙΩΤΑ",
       "address": "ΗΡ. ΠΟΛΥΤΕΧΝΕΙΟΥ 43",
@@ -207,6 +228,27 @@
         "lat": 39.362338,
         "lon": 21.9228827,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3786",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441024821",
+      "name": "ΚΕΧΑΓΙΑ ΕΛΕΝΗ",
+      "address": "ΜΠΛΑΤΣΟΥΚΑ 16",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441024821",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.3654979,
+        "lon": 21.9208616,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3796",
         "source": "list",
         "precision": "exact"
       }

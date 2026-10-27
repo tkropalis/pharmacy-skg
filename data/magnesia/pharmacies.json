@@ -748,7 +748,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.35609,
         "lon": 22.957056,
@@ -790,7 +790,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.36327,
         "lon": 22.949383,
@@ -832,7 +832,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.359479,
         "lon": 22.950653,
@@ -1178,6 +1178,27 @@
       }
     },
     {
+      "id": "2421040913",
+      "name": "ΒΑΣΙΛΕΙΟΣ ΜΠΙΡΛΙΡΑΚΗΣ",
+      "address": "ΙΩΛΚΟΥ 289(ΣΤΑΣΗ ΠΑΝΤΑΖΟΠΟΥΛΟΥ)",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421040913",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.376968,
+        "lon": 22.960819,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5535",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2421042822",
       "name": "ΑΠΟΣΤΟΛΟΣ ΓΕΡΟΒΑΣΙΛΗΣ-ΠΑΠΑΛΕΞΟΠΟΥΛΟΥ ΜΑΡΙΑ",
       "address": "Κ.ΚΑΡΤΑΛΗ-Γ.ΔΗΜΟΥ",
@@ -1462,7 +1483,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.3700709,
         "lon": 22.944181,
@@ -1903,7 +1924,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.361454,
         "lon": 22.946044,
@@ -2134,7 +2155,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.372967,
         "lon": 22.934177,

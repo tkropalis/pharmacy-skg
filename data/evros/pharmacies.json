@@ -401,6 +401,27 @@
       }
     },
     {
+      "id": "2551029367",
+      "name": "ΗΛΙΑΚΗ ΕΥΑΓΓΕΛΙΑ",
+      "address": "Βιζβίζη 7",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551029367",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 40.8481114,
+        "lon": 25.875465,
+        "ref": "https://evros.efhmeries.gr/Home/Details/3897",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551029987",
       "name": "ΧΡΙΣΤΟΔΟΥΛΟΥ ΧΡΥΣΑΝΘΗ",
       "address": "Δήμητρας 54 (έναντι EUROMEDICA)",
@@ -648,6 +669,27 @@
         "lat": 40.8464233,
         "lon": 25.8712075,
         "ref": "https://evros.efhmeries.gr/Home/Details/3896",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2551082280",
+      "name": "ΠΑΠΑΖΟΓΛΟΥ ΧΡΙΣΤΙΝΑ",
+      "address": "Κύπρου 20 (πλατεία Παλ. Δημαρχίας)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551082280",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 40.8449984,
+        "lon": 25.8761119,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4246",
         "source": "list",
         "precision": "exact"
       }
@@ -979,7 +1021,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 41.5034555,
         "lon": 26.5312193,
@@ -1084,7 +1126,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 41.3502204,
         "lon": 26.4935275,
@@ -1315,7 +1357,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 41.1904766,
         "lon": 26.3025729,
@@ -1399,7 +1441,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 41.025262,
         "lon": 26.2577482,
@@ -1483,7 +1525,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 40.8935681,
         "lon": 26.169281,

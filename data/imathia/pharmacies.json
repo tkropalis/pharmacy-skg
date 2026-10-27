@@ -118,11 +118,32 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 40.5250306,
         "lon": 22.204432,
         "ref": "https://imathia.efhmeries.gr/Home/Details/6172",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331023200",
+      "name": "ΜΑΖΑΡΑΚΗ ΔΗΜ. ΚΩΝΣΤΑΝΤΙΑ",
+      "address": "ΠΑΠΑΓΟΥ-ΔΙΠΛΑ ΣΤΟ ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331023200",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 40.5042033,
+        "lon": 22.2164373,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6255",
         "source": "list",
         "precision": "exact"
       }
@@ -181,7 +202,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 40.5254067,
         "lon": 22.204205,
@@ -349,7 +370,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 40.5244504,
         "lon": 22.2046723,
@@ -853,7 +874,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 40.5335731,
         "lon": 22.2062163,
@@ -874,7 +895,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 40.5506235,
         "lon": 22.248685,
@@ -1147,7 +1168,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 40.6298234,
         "lon": 22.0688401,
@@ -1294,7 +1315,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 40.6270335,
         "lon": 22.4388605,

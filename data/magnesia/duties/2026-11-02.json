@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-02",
+  "groups": [
+    {
+      "id": "magnesia",
+      "name": "Μαγνησία",
+      "source": {
+        "url": "https://magnesia.efhmeries.gr/",
+        "uploadedAt": "2026-10-27T20:47:59.136Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:00& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421061444",
+              "name": "ΑΝΑΣΤΑΣΙΟΣ ΤΣΙΛΟΓΛΟΥ",
+              "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 142",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421061444"
+            },
+            {
+              "pharmacyId": "2421034333",
+              "name": "ΕΥΑΓΓΕΛΙΑ ΝΑΣΙΚΑ",
+              "address": "Κ.ΚΑΡΤΑΛΗ-ΑΝΘ.ΓΑΖΗ",
+              "locality": "Βόλος",
+              "phone": "2421034333"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00 ΕΩΣ 14:00& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421061444",
+              "name": "ΑΝΑΣΤΑΣΙΟΣ ΤΣΙΛΟΓΛΟΥ",
+              "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 142",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421061444"
+            },
+            {
+              "pharmacyId": "2421034333",
+              "name": "ΕΥΑΓΓΕΛΙΑ ΝΑΣΙΚΑ",
+              "address": "Κ.ΚΑΡΤΑΛΗ-ΑΝΘ.ΓΑΖΗ",
+              "locality": "Βόλος",
+              "phone": "2421034333"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421066644",
+              "name": "ΒΑΣΙΛΕΙΟΣ ΜΕΙΚΟΠΟΥΛΟΣ",
+              "address": "ΛΕΩΦ. ΕΙΡΗΝΗΣ 104",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421066644"
+            },
+            {
+              "pharmacyId": "2421040913",
+              "name": "ΒΑΣΙΛΕΙΟΣ ΜΠΙΡΛΙΡΑΚΗΣ",
+              "address": "ΙΩΛΚΟΥ 289(ΣΤΑΣΗ ΠΑΝΤΑΖΟΠΟΥΛΟΥ)",
+              "locality": "Βόλος",
+              "phone": "2421040913"
+            },
+            {
+              "pharmacyId": "2421048012",
+              "name": "ΔΑΡΔΟΥΜΠΑ ΧΡΥΣΟΥΛΑ",
+              "address": "ΑΝΑΛΗΨΕΩΣ 42",
+              "locality": "Βόλος",
+              "phone": "2421048012"
+            },
+            {
+              "pharmacyId": "2421035598",
+              "name": "ΙΩΑΝΝΗΣ ΚΟΚΚΑΛΗΣ",
+              "address": "ΕΡΜΟΥ 231",
+              "locality": "Βόλος",
+              "phone": "2421035598"
+            },
+            {
+              "pharmacyId": "2421034304",
+              "name": "ΧΡΗΣΤΟΣ ΜΕΦΣΟΥΤ",
+              "address": "ΠΟΛΥΜΕΡΗ 56",
+              "locality": "Βόλος",
+              "phone": "2421034304"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

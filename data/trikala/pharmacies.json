@@ -44,6 +44,27 @@
       }
     },
     {
+      "id": "2431020388",
+      "name": "ΧΑΡΙΣΗΣ ΙΩΑΝΝΗΣ",
+      "address": "ΑΠΟΛΛΩΝΟΣ 9",
+      "locality": "Τρίκαλα",
+      "postcode": null,
+      "phone": "2431020388",
+      "groupId": "trikala",
+      "sources": [
+        "iteq-trikala"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.553862,
+        "lon": 21.768331,
+        "ref": "https://trikala.efhmeries.gr/Home/Details/4161",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2431020962",
       "name": "ΜΑΚΡΗΣ ΚΟΣΜΑΣ",
       "address": "ΤΣΙΤΣΑΝΗ 11 ΚΑΙ ΓΑΜΒΕΤΑ",
@@ -874,7 +895,7 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.535533,
         "lon": 21.789467,

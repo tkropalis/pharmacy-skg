@@ -13,7 +13,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 40.3018139,
         "lon": 21.7945459,
@@ -517,7 +517,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 40.301655,
         "lon": 21.7857476,
@@ -627,6 +627,27 @@
         "lat": 40.3029871,
         "lon": 21.785236,
         "ref": "https://kozani.efhmeries.gr/Home/Details/5692",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461037506",
+      "name": "ΑΝΔΡΕΑΔΗΣ ΕΛΕΥΘΕΡΙΟΣ",
+      "address": "ΤΡΑΝΤΑ ΙΩΑΝΝΗ 22",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461037506",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 40.2989386,
+        "lon": 21.7875164,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/5699",
         "source": "list",
         "precision": "exact"
       }
@@ -916,7 +937,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 40.5101034,
         "lon": 21.6731308,
@@ -1021,7 +1042,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 40.512248,
         "lon": 21.6769504,

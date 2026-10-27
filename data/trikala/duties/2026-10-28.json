@@ -7,9 +7,29 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-10-26T21:07:00.906Z"
+        "uploadedAt": "2026-10-27T20:48:59.660Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431039120",
+              "name": "ΚΕΛΕΠΟΥΡΗ ΠΕΝΝΥ",
+              "address": "ΑΠΟΛΛΩΝΟΣ 25",
+              "locality": "Τρίκαλα",
+              "phone": "2431039120"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -47,26 +67,6 @@
               "address": "ΚΟΝΔΥΛΗ ΓΕΩΡΓΙΟΥ 28",
               "locality": "Τρίκαλα",
               "phone": "2431037855"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 23:00",
-          "hours": {
-            "from": "08:00",
-            "to": "23:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431039120",
-              "name": "ΚΕΛΕΠΟΥΡΗ ΠΕΝΝΥ",
-              "address": "ΑΠΟΛΛΩΝΟΣ 25",
-              "locality": "Τρίκαλα",
-              "phone": "2431039120"
             }
           ]
         }

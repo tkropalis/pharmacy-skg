@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-02",
+  "groups": [
+    {
+      "id": "evros",
+      "name": "Έβρος",
+      "source": {
+        "url": "https://evros.efhmeries.gr/",
+        "uploadedAt": "2026-10-27T20:46:33.140Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552029084",
+              "name": "ΜΠΕΔΡΕΛΗΣ ΧΡΙΣΤΟΔΟΥΛΟΣ",
+              "address": "ΑΓ. ΘΕΟΔΩΡΩΝ 150",
+              "locality": "Ορεστιάδα",
+              "phone": "2552029084"
+            },
+            {
+              "pharmacyId": "2553022322",
+              "name": "ΠΑΤΣΟΥΡΙΔΗΣ ΠΑΡΑΣΚΕΥΑΣ",
+              "address": "ΒΑΣ. ΑΛΕΞΑΝΔΡΟΥ 24",
+              "locality": "Διδυμότειχο",
+              "phone": "2553022322"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551029367",
+              "name": "ΗΛΙΑΚΗ ΕΥΑΓΓΕΛΙΑ",
+              "address": "Βιζβίζη 7",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551029367"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2554023176",
+              "name": "ΑΛΑΤΖΙΑ ΟΛΓΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 93",
+              "locality": "Σουφλί",
+              "phone": "2554023176"
+            },
+            {
+              "pharmacyId": "2555024096",
+              "name": "ΚΑΨΙΔΟΥ ΘΕΟΔΩΡΑ",
+              "address": "ΔΗΜΟΚΡΙΤΟΥ 28",
+              "locality": "Φέρες",
+              "phone": "2555024096"
+            },
+            {
+              "pharmacyId": "2554042100",
+              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛΕΜΑΧΟΣ",
+              "address": "ΠΡΟΒΑΤΩΝΑΣ",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042100"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:30-22:00",
+          "hours": {
+            "from": "14:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551082280",
+              "name": "ΠΑΠΑΖΟΓΛΟΥ ΧΡΙΣΤΙΝΑ",
+              "address": "Κύπρου 20 (πλατεία Παλ. Δημαρχίας)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551082280"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

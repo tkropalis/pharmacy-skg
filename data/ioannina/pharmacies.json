@@ -307,7 +307,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.6695404,
         "lon": 20.8537284,
@@ -396,6 +396,27 @@
         "lat": 39.6819068,
         "lon": 20.8220502,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5005",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651030247",
+      "name": "ΑΓΓΕΛΗ ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "Μ.ΑΛΕΞΑΝΔΡΟΥ & ΒΟΡΕΙΟΥ ΗΠΕΙΡΟΥ 1",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651030247",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.6735431,
+        "lon": 20.8391993,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5067",
         "source": "list",
         "precision": "exact"
       }
@@ -1084,7 +1105,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.6634769,
         "lon": 20.8477191,
@@ -1404,6 +1425,27 @@
         "lat": 39.6366493,
         "lon": 20.8637669,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/4993",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651181270",
+      "name": "ΧΗΡΑ ΛΑΜΠΡΙΝΗ - ΕΡΑΤΩ",
+      "address": "ΑΡΧΙΕΠΙΣΚΟΠΟΥ ΜΑΚΑΡΙΟΥ 38",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651181270",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.6608316,
+        "lon": 20.8584127,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5069",
         "source": "list",
         "precision": "exact"
       }
