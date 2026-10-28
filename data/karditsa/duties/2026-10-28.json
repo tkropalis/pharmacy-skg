@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-10-28T10:40:34.659Z"
+        "uploadedAt": "2026-10-28T21:11:22.017Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441023597",
-              "name": "ΣΠΥΡΟΥ ΒΑΙΑ ΚΑΙ ΣΙΑ Ο.Ε.",
-              "address": "ΚΟΥΜΟΥΝΔΟΥΡΟΥ & ΑΒΕΡΩΦ",
-              "locality": "Καρδίτσα",
-              "phone": "2441023597"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "8 ΠΡΩΙ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "Α.ΠΑΠΑΝΔΡΕΟΥ 6",
               "locality": "Καρδίτσα",
               "phone": "2441020919"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441023597",
+              "name": "ΣΠΥΡΟΥ ΒΑΙΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+              "address": "ΚΟΥΜΟΥΝΔΟΥΡΟΥ & ΑΒΕΡΩΦ",
+              "locality": "Καρδίτσα",
+              "phone": "2441023597"
             }
           ]
         }

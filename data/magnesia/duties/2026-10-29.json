@@ -7,43 +7,9 @@
       "name": "Μαγνησία",
       "source": {
         "url": "https://magnesia.efhmeries.gr/",
-        "uploadedAt": "2026-10-28T10:41:06.554Z"
+        "uploadedAt": "2026-10-28T21:11:53.066Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2421021773",
-              "name": "ΑΓΛΑΙΑ ΑΓΓΕΛΟΥΣΗ",
-              "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 17",
-              "locality": "Βόλος",
-              "phone": "2421021773"
-            },
-            {
-              "pharmacyId": "2421022677",
-              "name": "ΕΥΑΓΓΕΛΙΑ ΦΟΥΣΚΗ-ΜΑΡΙΝΟΥ",
-              "address": "ΣΠΥΡΙΔΗ 80",
-              "locality": "Βόλος",
-              "phone": "2421022677"
-            },
-            {
-              "pharmacyId": "2421023669",
-              "name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΜΑΤΣΙΟΛΗΣ",
-              "address": "2ας ΝΟΕΜΒΡΙΟΥ 76",
-              "locality": "Βόλος",
-              "phone": "2421023669"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -101,6 +67,40 @@
               "address": "ΦΙΛΑΔΕΛΦΕΙΑΣ 47",
               "locality": "Νέα Ιωνία",
               "phone": "2421091604"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421021773",
+              "name": "ΑΓΛΑΙΑ ΑΓΓΕΛΟΥΣΗ",
+              "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 17",
+              "locality": "Βόλος",
+              "phone": "2421021773"
+            },
+            {
+              "pharmacyId": "2421022677",
+              "name": "ΕΥΑΓΓΕΛΙΑ ΦΟΥΣΚΗ-ΜΑΡΙΝΟΥ",
+              "address": "ΣΠΥΡΙΔΗ 80",
+              "locality": "Βόλος",
+              "phone": "2421022677"
+            },
+            {
+              "pharmacyId": "2421023669",
+              "name": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΜΑΤΣΙΟΛΗΣ",
+              "address": "2ας ΝΟΕΜΒΡΙΟΥ 76",
+              "locality": "Βόλος",
+              "phone": "2421023669"
             }
           ]
         }

@@ -7,9 +7,96 @@
       "name": "Ηράκλειο",
       "source": {
         "url": "https://herakleion.efhmeries.gr/",
-        "uploadedAt": "2026-10-28T10:40:08.343Z"
+        "uploadedAt": "2026-10-28T21:10:57.456Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 22:00 ΕΩΣ 08:30 ΠΡΩΙ",
+          "hours": {
+            "from": "22:00",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2810225567",
+              "name": "ΜΠΟΥΡΑΝΤΑ ΑΜΑΛΙΑ",
+              "address": "ΚΥΔΩΝΙΑΣ 10 ΕΥΘΕΙΑ ΚΑΤΩ ΑΠΟ TON OTE",
+              "locality": "Ηράκλειο",
+              "phone": "2810225567"
+            },
+            {
+              "pharmacyId": "2897031000",
+              "name": "Σ.Φ. ΜΠΕΛΙΒΑΝΗ ΚΑΛΛΙΟΠΗ - ΜΠΕΛΙΒΑΝΗ ΦΩΤΕΙΝΗ ΟΕ",
+              "address": "ΔΗΜΟΚΡΑΤΙΑΣ 123",
+              "locality": "Μάλια",
+              "phone": "2897031000"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "8:30 ΕΩΣ 8:30 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2810315040",
+              "name": "ΒΑΚΟΥΦΑΡΗ ΕΛΕΝΗ",
+              "address": "ΛΕΩΦ. ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 43",
+              "locality": "Αμμουδάρα",
+              "phone": "2810315040"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 21:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2892022172",
+              "name": "ΒΟΛΩΝΑΚΗΣ ΑΧΙΛΛΕΑΣ",
+              "address": "25ΗΣ ΜΑΡΤΙΟΥ 264",
+              "locality": "Μοίρες",
+              "phone": "2892022172"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "8:00 ΕΩΣ 8:00 (23:00-08:00 ΚΑΤΟΠΙΝ ΤΗΛΕΦΩΝΗΜΑΤΟΣ)",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2891022111",
+              "name": "ΓΙΩΤΑ ΓΕΩΡΓΙΑ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 151",
+              "locality": "Αρκαλοχώρι",
+              "phone": "2891022111"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 08:30 ΕΩΣ 23:00",
@@ -93,26 +180,6 @@
           ]
         },
         {
-          "kind": "on-duty",
-          "heading": "8:30 ΕΩΣ 8:30 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "08:30",
-            "to": "08:30",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2810315040",
-              "name": "ΒΑΚΟΥΦΑΡΗ ΕΛΕΝΗ",
-              "address": "ΛΕΩΦ. ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 43",
-              "locality": "Αμμουδάρα",
-              "phone": "2810315040"
-            }
-          ]
-        },
-        {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 22:00",
           "hours": {
@@ -136,26 +203,6 @@
               "address": "ΛΕΩΦ. ΚΟΚΚΙΝΟΥ ΠΥΡΓΟΥ 76",
               "locality": "Τυμπάκι",
               "phone": "2892051200"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "8:00 ΕΩΣ 8:00 (23:00-08:00 ΚΑΤΟΠΙΝ ΤΗΛΕΦΩΝΗΜΑΤΟΣ)",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2891022111",
-              "name": "ΓΙΩΤΑ ΓΕΩΡΓΙΑ",
-              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 151",
-              "locality": "Αρκαλοχώρι",
-              "phone": "2891022111"
             }
           ]
         },
@@ -197,53 +244,6 @@
               "address": "ΒΑΘΕΙΑΝΟΣ ΚΑΜΠΟΣ",
               "locality": "Καρτερός, Επισκοπή, Βαθειά, Κοκκίνη Χάνι, Γούρνες, Γούβες",
               "phone": "2810762325"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 22:00 ΕΩΣ 08:30 ΠΡΩΙ",
-          "hours": {
-            "from": "22:00",
-            "to": "08:30",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2810225567",
-              "name": "ΜΠΟΥΡΑΝΤΑ ΑΜΑΛΙΑ",
-              "address": "ΚΥΔΩΝΙΑΣ 10 ΕΥΘΕΙΑ ΚΑΤΩ ΑΠΟ TON OTE",
-              "locality": "Ηράκλειο",
-              "phone": "2810225567"
-            },
-            {
-              "pharmacyId": "2897031000",
-              "name": "Σ.Φ. ΜΠΕΛΙΒΑΝΗ ΚΑΛΛΙΟΠΗ - ΜΠΕΛΙΒΑΝΗ ΦΩΤΕΙΝΗ ΟΕ",
-              "address": "ΔΗΜΟΚΡΑΤΙΑΣ 123",
-              "locality": "Μάλια",
-              "phone": "2897031000"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 21:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2892022172",
-              "name": "ΒΟΛΩΝΑΚΗΣ ΑΧΙΛΛΕΑΣ",
-              "address": "25ΗΣ ΜΑΡΤΙΟΥ 264",
-              "locality": "Μοίρες",
-              "phone": "2892022172"
             }
           ]
         }
