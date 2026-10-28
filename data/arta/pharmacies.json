@@ -286,7 +286,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.046958,
         "lon": 21.032133,
@@ -375,6 +375,27 @@
         "lat": 39.1620531,
         "lon": 20.9868908,
         "ref": "https://arta.efhmeries.gr/Home/Details/2436",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681070824",
+      "name": "ΣΤΑΜΑΤΑΚΟΥ-ΓΑΛΑΝΗ",
+      "address": "ΓΡΑΙΚΟΥ ΜΑΞΙΜΟΥ - ΚΑΜΗΛΩΝ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681070824",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 39.1579518,
+        "lon": 20.9809685,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2443",
         "source": "list",
         "precision": "exact"
       }

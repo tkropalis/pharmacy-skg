@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-03",
+  "groups": [
+    {
+      "id": "arta",
+      "name": "Άρτα",
+      "source": {
+        "url": "https://arta.efhmeries.gr/",
+        "uploadedAt": "2026-10-28T10:39:22.238Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2681069012",
+              "name": "ΚΑΡΑΜΑΝΙΔΗΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΚΟΜΜΕΝΟ",
+              "locality": "Άρτα",
+              "phone": "2681069012"
+            },
+            {
+              "pharmacyId": "2681070824",
+              "name": "ΣΤΑΜΑΤΑΚΟΥ-ΓΑΛΑΝΗ",
+              "address": "ΓΡΑΙΚΟΥ ΜΑΞΙΜΟΥ - ΚΑΜΗΛΩΝ",
+              "locality": "Άρτα",
+              "phone": "2681070824"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -7,7 +7,7 @@
       "name": "Πιερία",
       "source": {
         "url": "https://pieria.efhmeries.gr/",
-        "uploadedAt": "2026-10-27T20:48:32.967Z"
+        "uploadedAt": "2026-10-28T10:41:38.478Z"
       },
       "sections": [
         {
@@ -88,6 +88,26 @@
         },
         {
           "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351035290",
+              "name": "ΒΡΑΚΟΠΟΥΛΟΥ ΓΕΩΡΓΙΑ",
+              "address": "ΛΕΩΝΊΔΑ ΙΑΣΩΝΙΔΗ 81",
+              "locality": "Κατερίνη",
+              "phone": "2351035290"
+            }
+          ]
+        },
+        {
+          "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:30 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
             "from": "08:00",
@@ -123,26 +143,6 @@
               "address": "Ι.ΤΣΙΚΟΠΟΥΛΟΥ & ΠΑΛ. ΚΑΤΑΦΥΓΙΟΥ ΓΩΝΙΑ",
               "locality": "Κατερίνη",
               "phone": "2351036476"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2351035290",
-              "name": "ΒΡΑΚΟΠΟΥΛΟΥ ΓΕΩΡΓΙΑ",
-              "address": "ΛΕΩΝΊΔΑ ΙΑΣΩΝΙΔΗ 81",
-              "locality": "Κατερίνη",
-              "phone": "2351035290"
             }
           ]
         }

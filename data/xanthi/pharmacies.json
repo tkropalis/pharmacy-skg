@@ -97,7 +97,7 @@
         "iteq-xanthi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 41.1410894,
         "lon": 24.8957674,
@@ -165,6 +165,27 @@
         "lat": 41.1365936,
         "lon": 24.88731,
         "ref": "https://xanthi.efhmeries.gr/Home/Details/3637",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2541024114",
+      "name": "ΣΩΤΗΡΟΠΟΥΛΟΥ ΠΑΝΑΓΙΩΤΑ",
+      "address": "ΛΕΟΝΑΡΔΟΠΟΥΛΟΥ 4",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541024114",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 41.1317786,
+        "lon": 24.8939616,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3677",
         "source": "list",
         "precision": "exact"
       }
@@ -349,7 +370,7 @@
         "iteq-xanthi"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 41.1398831,
         "lon": 24.8881043,

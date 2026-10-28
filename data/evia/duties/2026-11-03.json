@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-03",
+  "groups": [
+    {
+      "id": "evia",
+      "name": "Εύβοια",
+      "source": {
+        "url": "https://evia.efhmeries.gr/",
+        "uploadedAt": "2026-10-28T10:39:43.608Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2224023505",
+              "name": "ΒΕΛΙΣΣΑΡΑΚΟΣ ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "Ι. ΚΟΤΣΙΚΑ 1",
+              "locality": "Κάρυστος",
+              "phone": "2224023505"
+            },
+            {
+              "pharmacyId": "2229062585",
+              "name": "ΜΙΧΟΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΦΙΛ. ΜΕΝΕΔΗΜΟΥ 36",
+              "locality": "Ερέτρια",
+              "phone": "2229062585"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2226053570",
+              "name": "ΜΙΧΑΗΛ ΧΡΙΣΤΙΝΗ",
+              "address": "ΚΟΡΦΙΑΤΗ ΑΘ. 15",
+              "locality": "Ιστιαία",
+              "phone": "2226053570"
+            },
+            {
+              "pharmacyId": "2221044344",
+              "name": "Σ.Φ. ΛΑΛΑΝΙΤΗ - ΑΡΓΥΡΑΚΗΣ",
+              "address": "ΒΟΥΔΟΥΡΗ 7",
+              "locality": "Αρτάκη",
+              "phone": "2221044344"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

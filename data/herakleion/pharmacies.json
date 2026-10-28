@@ -1000,7 +1000,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 35.314327,
         "lon": 25.1483831,
@@ -1021,7 +1021,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 35.3366806,
         "lon": 25.1475977,
@@ -1105,7 +1105,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 35.3374094,
         "lon": 25.125267,
@@ -1504,7 +1504,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 35.3321217,
         "lon": 25.1230341,
@@ -1525,7 +1525,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 35.335111,
         "lon": 25.0894814,
@@ -1551,6 +1551,27 @@
         "lat": 35.307522,
         "lon": 25.0889695,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57966",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810281745",
+      "name": "ΒΕΚΡΑΚΗ ΜΑΡΙΑ",
+      "address": "ΧΑΡΙΛΑΟΥ ΤΡΙΚΟΥΠΗ 31 ΠΛ. ΚΥΠΡΟΥ, ΚΑΙΝΟΥΡΓ. ΠΟΡΤΑ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810281745",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 35.3339885,
+        "lon": 25.1360411,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/58053",
         "source": "list",
         "precision": "exact"
       }
@@ -2512,7 +2533,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 35.338822,
         "lon": 25.1592512,
@@ -2533,7 +2554,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 35.3305104,
         "lon": 25.207893,
@@ -2785,7 +2806,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 35.3293396,
         "lon": 25.1189293,
@@ -3142,7 +3163,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 35.3270459,
         "lon": 25.1284259,
@@ -3394,7 +3415,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 35.1426915,
         "lon": 25.2648432,
@@ -3982,7 +4003,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 35.3153174,
         "lon": 25.3937298,
@@ -4003,7 +4024,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 35.331734,
         "lon": 25.3452693,
@@ -4234,7 +4255,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 35.2926533,
         "lon": 25.4320195,
@@ -4255,7 +4276,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 35.2835724,
         "lon": 25.4643119,

@@ -370,7 +370,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 40.2740253,
         "lon": 22.5067457,
@@ -664,11 +664,32 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 40.3157962,
         "lon": 22.5820356,
         "ref": "https://pieria.efhmeries.gr/Home/Details/19831",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351046430",
+      "name": "ΟΙΚΟΝΟΜΟΥ ΧΡΗΣΤΟΣ",
+      "address": "ΔΟΡΥΛΑΙΟΥ 8",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351046430",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 40.2748993,
+        "lon": 22.504697,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23571",
         "source": "list",
         "precision": "exact"
       }
@@ -711,6 +732,27 @@
         "lat": 40.2723065,
         "lon": 22.5812906,
         "ref": "https://pieria.efhmeries.gr/Home/Details/24357",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351063310",
+      "name": "Σ.Φ ΧΑΤΖΑΡΑ ΠΕΡΣΕΦΟΝΗ - ΧΑΤΖΑΡΑ ΧΡΙΣΤΙΝΑ",
+      "address": "ΑΓΙΟΥ ΑΘΑΝΑΣΙΟΥ 1 ΚΑΙ Γ.ΣΕΠΤΕΜΒΡΙΟΥ ΓΩΝΙΑ",
+      "locality": "Καλλιθέα",
+      "postcode": null,
+      "phone": "2351063310",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 40.2752497,
+        "lon": 22.5768929,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/24371",
         "source": "list",
         "precision": "exact"
       }
@@ -790,7 +832,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 40.106084,
         "lon": 22.5085247,
@@ -811,7 +853,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 40.0583,
         "lon": 22.56359,
@@ -895,7 +937,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.9952223,
         "lon": 22.6179865,
@@ -1084,7 +1126,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 40.4945468,
         "lon": 22.5369608,
@@ -1147,7 +1189,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 40.4793808,
         "lon": 22.482706,

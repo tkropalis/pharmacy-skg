@@ -7,29 +7,9 @@
       "name": "Θεσπρωτία",
       "source": {
         "url": "https://thesprotia.efhmeries.gr/",
-        "uploadedAt": "2026-10-26T21:05:16.043Z"
+        "uploadedAt": "2026-10-28T10:40:15.121Z"
       },
       "sections": [
-        {
-          "kind": "on-duty",
-          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2665022155",
-              "name": "ΠΑΠΑΓΙΑΝΝΗ ΜΑΚΡΙΔΗ ΣΠΥΡΙΔΟΥΛΑ ΚΑΙ ΣΙΑ Ο.Ε.",
-              "address": "ΚΥΠΡΟΥ 16",
-              "locality": "Ηγουμενίτσα",
-              "phone": "2665022155"
-            }
-          ]
-        },
         {
           "kind": "saturday-extra",
           "heading": "08:00 ΕΩΣ 15:00",
@@ -54,6 +34,26 @@
               "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΕΩΣ 50",
               "locality": "Ηγουμενίτσα",
               "phone": "2665024540"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2665022155",
+              "name": "ΠΑΠΑΓΙΑΝΝΗ ΜΑΚΡΙΔΗ ΣΠΥΡΙΔΟΥΛΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+              "address": "ΚΥΠΡΟΥ 16",
+              "locality": "Ηγουμενίτσα",
+              "phone": "2665022155"
             }
           ]
         }

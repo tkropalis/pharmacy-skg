@@ -7,7 +7,7 @@
       "name": "Πέλλα",
       "source": {
         "url": "https://pella.efhmeries.gr/",
-        "uploadedAt": "2026-10-26T21:06:30.018Z"
+        "uploadedAt": "2026-10-28T10:41:32.065Z"
       },
       "sections": [
         {
@@ -52,6 +52,26 @@
           ]
         },
         {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382029030",
+              "name": "ΓΟΤΟΥΧΙΔΗΣ ΧΑΡΑΛΑΜΠΟΣ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 49 ΚΛΙΝΙΚΗ ΕΛΕΥΘΩ",
+              "locality": "Γιαννιτσά",
+              "phone": "2382029030"
+            }
+          ]
+        },
+        {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
           "hours": {
@@ -69,26 +89,6 @@
               "address": "ΑΙΣΧΥΛΟΥ 19",
               "locality": "Κρύα Βρύση",
               "phone": "2382062010"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2382029030",
-              "name": "ΓΟΤΟΥΧΙΔΗΣ ΧΑΡΑΛΑΜΠΟΣ",
-              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 49 ΚΛΙΝΙΚΗ ΕΛΕΥΘΩ",
-              "locality": "Γιαννιτσά",
-              "phone": "2382029030"
             }
           ]
         }

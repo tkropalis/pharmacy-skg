@@ -275,6 +275,27 @@
       }
     },
     {
+      "id": "2651024925",
+      "name": "ΒΕΡΜΠΗ ΑΓΓΕΛΙΚΗ",
+      "address": "ΖΩΣΙΜΑΔΩΝ 2 ΚΑΙ ΣΙΝΑ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651024925",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 39.6702998,
+        "lon": 20.8509182,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5071",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651025155",
       "name": "Σ.Φ. ΚΩΝΣΤΑΝΤΑΚΟΠΟΥΛΟΥ ΜΑΡΙΑ - ΜΠΑΡΜΠΟΥΤΗΣ ΓΕΩΡΓΙΟΣ",
       "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΗΣ 19, ΚΑΡΔΑΜΙΤΣΙΑ",
@@ -958,7 +979,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.6574932,
         "lon": 20.8502042,

@@ -7,9 +7,29 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-26T21:04:51.069Z"
+        "uploadedAt": "2026-10-28T10:39:49.710Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00-21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551029022",
+              "name": "Σ.Φ. ΠΟΥΡΝΑΡΑΣ ΤΡ.-ΣΑΛΟΝΙΚΙΔΟΥ Ε.",
+              "address": "Αίνου 27 (έναντι Δημ. Βιβλιοθήκης)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551029022"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "10:00-14:00 & 18:00-08:00",
@@ -109,26 +129,6 @@
               "address": "ΝΙΚΗΣ 33",
               "locality": "Τυχερό, Προβατώνας",
               "phone": "2554042020"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00-21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551029022",
-              "name": "Σ.Φ. ΠΟΥΡΝΑΡΑΣ ΤΡ.-ΣΑΛΟΝΙΚΙΔΟΥ Ε.",
-              "address": "Αίνου 27 (έναντι Δημ. Βιβλιοθήκης)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551029022"
             }
           ]
         }

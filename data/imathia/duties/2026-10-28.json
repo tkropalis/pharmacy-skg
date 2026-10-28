@@ -7,26 +7,26 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-10-27T20:46:47.411Z"
+        "uploadedAt": "2026-10-28T10:40:01.846Z"
       },
       "sections": [
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:30",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331027355",
-              "name": "Σ.Φ. ΜΟΥΡΤΖΙΛΑ Β. - ΜΟΥΡΤΖΙΛΑΣ Γ. ΟΕ",
-              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 20 - ΚΤΕΛ",
+              "pharmacyId": "2331024123",
+              "name": "ΜΑΣΟΥΡΑ ΑΛΕΞΑΝΔΡΑ & ΣΙΑ Ε.Ε.",
+              "address": "ΒΕΝΙΖΕΛΟΥ 26",
               "locality": "Βέροια",
-              "phone": "2331027355"
+              "phone": "2331024123"
             }
           ]
         },
@@ -80,26 +80,6 @@
         },
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:30",
-          "hours": {
-            "from": "08:00",
-            "to": "14:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2331024123",
-              "name": "ΜΑΣΟΥΡΑ ΑΛΕΞΑΝΔΡΑ & ΣΙΑ Ε.Ε.",
-              "address": "ΒΕΝΙΖΕΛΟΥ 26",
-              "locality": "Βέροια",
-              "phone": "2331024123"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
             "from": "14:30",
@@ -125,6 +105,26 @@
             "from": "19:00",
             "to": "21:00",
             "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331027355",
+              "name": "Σ.Φ. ΜΟΥΡΤΖΙΛΑ Β. - ΜΟΥΡΤΖΙΛΑΣ Γ. ΟΕ",
+              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 20 - ΚΤΕΛ",
+              "locality": "Βέροια",
+              "phone": "2331027355"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-03",
+  "groups": [
+    {
+      "id": "evros",
+      "name": "Έβρος",
+      "source": {
+        "url": "https://evros.efhmeries.gr/",
+        "uploadedAt": "2026-10-28T10:39:49.710Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552022456",
+              "name": "Σ.Φ ΚΑΛΛΙΝΑΚΗ Π-ΤΣΑΒΔΑΡΙΔΟΥ Δ",
+              "address": "ΕΥΡΙΠΙΔΟΥ 17",
+              "locality": "Ορεστιάδα",
+              "phone": "2552022456"
+            },
+            {
+              "pharmacyId": "2551031988",
+              "name": "ΤΡΕΜΜΑΣ ΒΑΣΙΛΕΙΟΣ",
+              "address": "Θράκης 10 (περιοχή Μουσικού Γυμνασίου)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551031988"
+            },
+            {
+              "pharmacyId": "2553023466",
+              "name": "ΤΣΕΚΟΥΡΑ ΗΡΩ",
+              "address": "ΠΛΑΤ. ΕΛΕΥΘΕΡΙΑΣ 1",
+              "locality": "Διδυμότειχο",
+              "phone": "2553023466"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2554022033",
+              "name": "ΚΥΡΙΑΚΟΥΔΗ ΑΝΝΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 157",
+              "locality": "Σουφλί",
+              "phone": "2554022033"
+            },
+            {
+              "pharmacyId": "2555024333",
+              "name": "ΜΑΛΑΚΗΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "ΟΡΦΕΩΣ 2",
+              "locality": "Φέρες",
+              "phone": "2555024333"
+            },
+            {
+              "pharmacyId": "2554042100",
+              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛΕΜΑΧΟΣ",
+              "address": "ΠΡΟΒΑΤΩΝΑΣ",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042100"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

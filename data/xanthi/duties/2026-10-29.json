@@ -7,29 +7,9 @@
       "name": "Ξάνθη",
       "source": {
         "url": "https://xanthi.efhmeries.gr/",
-        "uploadedAt": "2026-10-26T21:06:17.597Z"
+        "uploadedAt": "2026-10-28T10:41:18.975Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "20:00 ΕΩΣ 08:00 ΠΡΩΙ",
-          "hours": {
-            "from": "20:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2541078349",
-              "name": "ΧΟΧΟΛΗ ΒΑΣΙΛΙΚΗ",
-              "address": "28ης ΟΚΤΩΒΡΙΟΥ 201",
-              "locality": "Ξάνθη",
-              "phone": "2541078349"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -54,6 +34,26 @@
               "address": "28ης ΟΚΤΩΒΡΙΟΥ 71",
               "locality": "Ξάνθη",
               "phone": "2541026137"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "20:00 ΕΩΣ 08:00 ΠΡΩΙ",
+          "hours": {
+            "from": "20:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2541078349",
+              "name": "ΧΟΧΟΛΗ ΒΑΣΙΛΙΚΗ",
+              "address": "28ης ΟΚΤΩΒΡΙΟΥ 201",
+              "locality": "Ξάνθη",
+              "phone": "2541078349"
             }
           ]
         }

@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-10-26T21:05:34.413Z"
+        "uploadedAt": "2026-10-28T10:40:34.659Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "9 ΒΡΑΔΥ- 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441025576",
-              "name": "Σ/Φ ΕΛΕΝΗ ΟΙΚΟΝΟΜΟΥ - ΘΩΜΑΣ ΚΥΡΙΤΣΗΣ Ο.Ε",
-              "address": "ΙΕΖΕΚΙΗΛ 51",
-              "locality": "Καρδίτσα",
-              "phone": "2441025576"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
@@ -47,6 +27,26 @@
               "address": "ΧΑΡΙΤΟΥ 6",
               "locality": "Καρδίτσα",
               "phone": "2441070500"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "9 ΒΡΑΔΥ- 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441025576",
+              "name": "Σ/Φ ΕΛΕΝΗ ΟΙΚΟΝΟΜΟΥ - ΘΩΜΑΣ ΚΥΡΙΤΣΗΣ Ο.Ε",
+              "address": "ΙΕΖΕΚΙΗΛ 51",
+              "locality": "Καρδίτσα",
+              "phone": "2441025576"
             }
           ]
         }
