@@ -7,29 +7,9 @@
       "name": "Δράμα",
       "source": {
         "url": "https://drama.efhmeries.gr/",
-        "uploadedAt": "2026-10-28T21:10:26.903Z"
+        "uploadedAt": "2026-10-29T11:00:01.265Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2521037366",
-              "name": "ΛΑΖΑΡΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
-              "address": "ΕΜ. ΠΑΠΑ 12",
-              "locality": "Δράμα",
-              "phone": "2521037366"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -47,6 +27,26 @@
               "address": "ΔΗΜΟΚΡΙΤΟΥ & ΑΙΣΧΥΛΟΥ 11Α",
               "locality": "Δράμα",
               "phone": "2521047210"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521037366",
+              "name": "ΛΑΖΑΡΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΕΜ. ΠΑΠΑ 12",
+              "locality": "Δράμα",
+              "phone": "2521037366"
             }
           ]
         }

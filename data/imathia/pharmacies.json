@@ -286,7 +286,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.5276163,
         "lon": 22.2027065,
@@ -354,6 +354,27 @@
         "lat": 40.5195004,
         "lon": 22.200004,
         "ref": "https://imathia.efhmeries.gr/Home/Details/6168",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2331027507",
+      "name": "ΚΑΛΟΥΔΗΣ Κ. ΘΕΜΙΣΤΟΚΛΗΣ",
+      "address": "ΜΟΡΑΒΑ 3 - Έναντι ΙΚΑ",
+      "locality": "Βέροια",
+      "postcode": null,
+      "phone": "2331027507",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 40.5291408,
+        "lon": 22.2037712,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/6264",
         "source": "list",
         "precision": "exact"
       }
@@ -475,7 +496,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.5540487,
         "lon": 22.2537387,
@@ -559,7 +580,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.5250235,
         "lon": 22.202813,
@@ -1231,7 +1252,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.6275101,
         "lon": 22.0695492,
@@ -1525,7 +1546,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.621346,
         "lon": 22.4411258,

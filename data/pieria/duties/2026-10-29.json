@@ -7,7 +7,7 @@
       "name": "Πιερία",
       "source": {
         "url": "https://pieria.efhmeries.gr/",
-        "uploadedAt": "2026-10-28T21:12:23.846Z"
+        "uploadedAt": "2026-10-29T11:02:09.913Z"
       },
       "sections": [
         {
@@ -88,6 +88,26 @@
         },
         {
           "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351024525",
+              "name": "ΝΑΛΜΠΑΝΤΗ ΔΗΜΗΤΡΑ",
+              "address": "ΠΛ. ΕΛΕΥΘΕΡΙΑΣ 9",
+              "locality": "Κατερίνη",
+              "phone": "2351024525"
+            }
+          ]
+        },
+        {
+          "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:00 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
             "from": "08:00",
@@ -123,26 +143,6 @@
               "address": "ΖΑΛΌΓΓΟΥ 7",
               "locality": "Κατερίνη",
               "phone": "2351033864"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2351024525",
-              "name": "ΝΑΛΜΠΑΝΤΗ ΔΗΜΗΤΡΑ",
-              "address": "ΠΛ. ΕΛΕΥΘΕΡΙΑΣ 9",
-              "locality": "Κατερίνη",
-              "phone": "2351024525"
             }
           ]
         }

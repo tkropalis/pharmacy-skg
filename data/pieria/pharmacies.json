@@ -443,27 +443,6 @@
       }
     },
     {
-      "id": "2351035290",
-      "name": "ΒΡΑΚΟΠΟΥΛΟΥ ΓΕΩΡΓΙΑ",
-      "address": "ΛΕΩΝΊΔΑ ΙΑΣΩΝΙΔΗ 81",
-      "locality": "Κατερίνη",
-      "postcode": null,
-      "phone": "2351035290",
-      "groupId": "pieria",
-      "sources": [
-        "iteq-pieria"
-      ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
-      "location": {
-        "lat": 40.2704099,
-        "lon": 22.5292471,
-        "ref": "https://pieria.efhmeries.gr/Home/Details/23568",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2351035492",
       "name": "ΚΡΕΜΜΥΔΑ ΑΝΝΑ",
       "address": "Μ.ΑΛΕΞΑΝΔΡΟΥ 66",
@@ -559,7 +538,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 40.272738,
         "lon": 22.503578,
@@ -580,7 +559,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.2702495,
         "lon": 22.5121487,
@@ -601,7 +580,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.3148822,
         "lon": 22.5846429,
@@ -748,7 +727,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.2752497,
         "lon": 22.5768929,
@@ -811,7 +790,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.2742955,
         "lon": 22.4991094,
@@ -853,7 +832,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.0583,
         "lon": 22.56359,
@@ -937,7 +916,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.9952223,
         "lon": 22.6179865,
@@ -1063,7 +1042,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.104048,
         "lon": 22.5062317,
@@ -1126,7 +1105,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.4945468,
         "lon": 22.5369608,
@@ -1168,7 +1147,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.4795366,
         "lon": 22.4840158,

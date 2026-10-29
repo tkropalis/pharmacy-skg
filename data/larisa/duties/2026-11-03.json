@@ -163,29 +163,9 @@
       "name": "Λάρισα",
       "source": {
         "url": "https://larisa.efhmeries.gr/",
-        "uploadedAt": "2026-10-28T21:08:58.980Z"
+        "uploadedAt": "2026-10-29T10:56:03.153Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "23:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2410535620",
-              "name": "Σ.Φ. ΛΕΓΟΣ Φ. - ΛΕΓΟΥ Ε. Ο.Ε.",
-              "address": "ΑΣΚΛΗΠΙΟΥ 26 (Μεταξύ Πλατείας Ταχυδρομείου & Πατρόκλου)",
-              "locality": "Λάρισα",
-              "phone": "2410535620"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 08:00 ΕΩΣ 23:00",
@@ -238,6 +218,26 @@
               "address": "ΠΑΠΑΝΑΣΤΑΣΙΟΥ 94 (Πλησίον Αγ. Νικολάου)",
               "locality": "Λάρισα",
               "phone": "2413020559"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "23:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410535620",
+              "name": "Σ.Φ. ΛΕΓΟΣ Φ. - ΛΕΓΟΥ Ε. Ο.Ε.",
+              "address": "ΑΣΚΛΗΠΙΟΥ 26 (Μεταξύ Πλατείας Ταχυδρομείου & Πατρόκλου)",
+              "locality": "Λάρισα",
+              "phone": "2410535620"
             }
           ]
         }

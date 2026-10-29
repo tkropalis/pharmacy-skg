@@ -223,7 +223,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 41.1511993,
         "lon": 24.1470465,
@@ -727,7 +727,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 41.1500336,
         "lon": 24.1476403,
@@ -769,7 +769,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 41.1496635,
         "lon": 24.1455595,
@@ -900,6 +900,27 @@
         "lat": 41.1529787,
         "lon": 24.1254024,
         "ref": "https://drama.efhmeries.gr/Home/Details/3174",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521046711",
+      "name": "ΑΝΘΟΠΟΥΛΟΣ ΣΤΕΦΑΝΟΣ",
+      "address": "ΗΠΕΙΡΟΥ 22Α",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521046711",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 41.1455432,
+        "lon": 24.1480709,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3199",
         "source": "list",
         "precision": "exact"
       }

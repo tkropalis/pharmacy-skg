@@ -212,6 +212,27 @@
       }
     },
     {
+      "id": "2461026913",
+      "name": "ΦΑΣΝΑΚΗΣ ΣΤΑΥΡΟΣ",
+      "address": "ΧΑΡΙΣΗ ΠΑΥΛΟΥ 8",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461026913",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 40.3021314,
+        "lon": 21.7884118,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6474",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2461028007",
       "name": "ΤΖΙΩΝΑ ΠΑΡΑΣΚΕΥΗ",
       "address": "ΜΟΝΑΣΤΗΡΙΟΥ 40",
@@ -769,7 +790,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.2999642,
         "lon": 21.7913391,
@@ -832,7 +853,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.3073149,
         "lon": 21.7876898,
@@ -958,7 +979,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.5141091,
         "lon": 21.6762325,
@@ -1210,7 +1231,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.5132357,
         "lon": 21.6774632,

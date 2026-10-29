@@ -202,7 +202,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.102071,
         "lon": 21.083716,
@@ -711,6 +711,27 @@
         "lat": 39.1577938,
         "lon": 20.9818375,
         "ref": "https://arta.efhmeries.gr/Home/Details/2422",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681079901",
+      "name": "ΓΩΓΟΥ ΑΝΤΑ",
+      "address": "ΚΡΥΣΤΑΛΛΗ 3",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681079901",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 39.163356,
+        "lon": 20.990628,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2444",
         "source": "list",
         "precision": "exact"
       }

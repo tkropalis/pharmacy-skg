@@ -44,6 +44,27 @@
       }
     },
     {
+      "id": "2551023378",
+      "name": "ΚΑΖΑΚΟΥ ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "Λεωφ. Δημοκρατίας 355 (παραπλεύρως Παιδ. Σταθμού)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551023378",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 40.844458,
+        "lon": 25.872816,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4146",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551024266",
       "name": "ΔΙΑΜΑΝΤΙΔΟΥ ΑΝΝΑ",
       "address": "Ελ. Βενιζέλου 54 (όπισθεν ΟΤΕ)",
@@ -307,7 +328,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.8459625,
         "lon": 25.8745502,
@@ -1063,7 +1084,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 41.5002425,
         "lon": 26.5320953,
@@ -1252,7 +1273,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 41.3528428,
         "lon": 26.4958947,
@@ -1294,7 +1315,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 41.1947643,
         "lon": 26.3052864,
@@ -1441,7 +1462,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 41.025262,
         "lon": 26.2577482,
@@ -1483,7 +1504,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 40.8932822,
         "lon": 26.1698188,

@@ -7,9 +7,36 @@
       "name": "Κοζάνη",
       "source": {
         "url": "https://kozani.efhmeries.gr/",
-        "uploadedAt": "2026-10-28T21:11:28.355Z"
+        "uploadedAt": "2026-10-29T11:01:11.368Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2461033533",
+              "name": "ΚΑΡΑΘΑΝΑΣΗ ΘΕΟΔΩΡΑ",
+              "address": "ΕΙΡΗΝΗΣ 3",
+              "locality": "Κοζάνη",
+              "phone": "2461033533"
+            },
+            {
+              "pharmacyId": "2463022288",
+              "name": "ΜΗΓΚΟΥ ΧΑΡΙΚΛΕΙΑ",
+              "address": "ΒΑΣΙΛΙΣΣΗΣ ΣΟΦΙΑΣ 29 (Απέναντι από τα υποδήματα Migato)",
+              "locality": "Πτολεμαΐδα",
+              "phone": "2463022288"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "8:30 ΠΡΩΙ - 2:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -61,33 +88,6 @@
               "address": "ΑΔΑΜ. ΠΑΥΛΙΔΗ 6 (Έναντι ΤΑΞΙ κεντρου)",
               "locality": "Πτολεμαΐδα",
               "phone": "2463028776"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2461033533",
-              "name": "ΚΑΡΑΘΑΝΑΣΗ ΘΕΟΔΩΡΑ",
-              "address": "ΕΙΡΗΝΗΣ 3",
-              "locality": "Κοζάνη",
-              "phone": "2461033533"
-            },
-            {
-              "pharmacyId": "2463022288",
-              "name": "ΜΗΓΚΟΥ ΧΑΡΙΚΛΕΙΑ",
-              "address": "ΒΑΣΙΛΙΣΣΗΣ ΣΟΦΙΑΣ 29 (Απέναντι από τα υποδήματα Migato)",
-              "locality": "Πτολεμαΐδα",
-              "phone": "2463022288"
             }
           ]
         }

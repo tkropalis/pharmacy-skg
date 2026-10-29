@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-04",
+  "groups": [
+    {
+      "id": "evia",
+      "name": "Εύβοια",
+      "source": {
+        "url": "https://evia.efhmeries.gr/",
+        "uploadedAt": "2026-10-29T11:00:08.440Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221043211",
+              "name": "ΚΑΡΑΧΑΝΗΣ ΣΤΕΦΑΝΟΣ",
+              "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 94",
+              "locality": "Αρτάκη",
+              "phone": "2221043211"
+            },
+            {
+              "pharmacyId": "2226069398",
+              "name": "ΦΑΡΑΝΤΟΥ ΦΛΩΡΑ",
+              "address": "ΙΣΤΑΙΑ",
+              "locality": "Ιστιαία",
+              "phone": "2226069398"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2229063332",
+              "name": "ΜΑΝΕΤΑ ΜΑΡΙΑ",
+              "address": "ΛΕΩΦ.ΑΜΑΡ.ΑΡΤΕΜΙΔΟΣ 48 / ΟΙΚΙΑ: ΑΡΙΣΤΟΤΕΛΟΥΣ 1 - ΒΑΣΙΛΙΚΟ",
+              "locality": "Ερέτρια",
+              "phone": "2229063332"
+            },
+            {
+              "pharmacyId": "2224023543",
+              "name": "ΠΟΛΙΤΗΣ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΣΑΧΤΟΥΡΗ 80",
+              "locality": "Κάρυστος",
+              "phone": "2224023543"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221054954",
+              "name": "ΘΕΟΔΟΣΙΟΥ ΔΕΣΠΟΙΝΑ",
+              "address": "ΝΕΟΦΥΤΟΥ 27",
+              "locality": "Χαλκίδα",
+              "phone": "2221054954"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221041413",
+              "name": "ΜΠΡΟΚΑΛΑΚΗΣ ΙΩΣΗΦ",
+              "address": "5ο ΧΛΜ. ΧΑΛΚΙΔΑΣ-Ν. ΑΡΤΑΚΗΣ",
+              "locality": "Χαλκίδα",
+              "phone": "2221041413"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221020777",
+              "name": "Σ.Φ. ΠΑΠΑΔΟΠΟΥΛΟΥ ΔΗΜΗΤΡΑ & ΜΑΡΙΑ",
+              "address": "ΓΑΖΕΠΗ 46-ΝΟΣΟΚΟΜΕΙΟ",
+              "locality": "Χαλκίδα",
+              "phone": "2221020777"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

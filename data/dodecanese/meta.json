@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "dodecanese",
-  "updatedAt": "2026-10-28T21:10:25.840Z",
-  "checkedAt": "2026-10-28T21:10:25.840Z",
+  "updatedAt": "2026-10-29T11:00:00.523Z",
+  "checkedAt": "2026-10-29T11:00:00.523Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-11-03"
+    "to": "2026-11-04"
   },
   "extendedHours": [],
   "sources": [

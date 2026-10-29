@@ -7,29 +7,9 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-10-28T21:11:15.860Z"
+        "uploadedAt": "2026-10-29T11:00:59.230Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510834141",
-              "name": "ΓΕΩΡΓΙΑΔΟΥ ΓΕΩΡΓΙΑ-ΣΑΡΛΟΤ",
-              "address": "ΒΕΝΙΖΕΛΟΥ 28",
-              "locality": "Καβάλα",
-              "phone": "2510834141"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
@@ -47,6 +27,26 @@
               "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 3ΟΑ",
               "locality": "Καβάλα",
               "phone": "2510223750"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510834141",
+              "name": "ΓΕΩΡΓΙΑΔΟΥ ΓΕΩΡΓΙΑ-ΣΑΡΛΟΤ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 28",
+              "locality": "Καβάλα",
+              "phone": "2510834141"
             }
           ]
         }

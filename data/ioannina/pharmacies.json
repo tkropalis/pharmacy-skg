@@ -44,6 +44,27 @@
       }
     },
     {
+      "id": "2651020567",
+      "name": "ΚΑΛΙΑΜΟΥΡΗΣ ΚΩΝ/ΝΟΣ",
+      "address": "ΛΕΩΦ.ΓΡΑΜΜΟΥ 34",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651020567",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 39.6848051,
+        "lon": 20.8333995,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5073",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651020977",
       "name": "ΓΟΥΛΑΣ ΑΘΑΝΑΣΙΟΣ",
       "address": "28ης ΟΚΤΩΒΡΙΟΥ 8Β",
@@ -674,6 +695,27 @@
       }
     },
     {
+      "id": "2651034966",
+      "name": "Σ.Φ. ΦΙΛΙΟΣ ΙΩΑΝΝΗΣ - ΦΙΛΙΟΥ ΔΗΜΗΤΡΑ",
+      "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 5, ΑΝΕΞΑΡΤΗΣΙΑΣ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651034966",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 39.6702123,
+        "lon": 20.8525678,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5076",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651035088",
       "name": "ΜΠΟΒΙΛΑΣ ΒΑΣΙΛΕΙΟΣ & ΜΠΟΒΙΛΑΣ ΙΩΑΝΝΗΣ",
       "address": "ΚΑΛΛΑΡΗ 27 (ΚΟΥΡΜΑΝΙΟ)",
@@ -685,7 +727,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.6692749,
         "lon": 20.8564182,
@@ -1446,6 +1488,27 @@
         "lat": 39.6366493,
         "lon": 20.8637669,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/4993",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651094937",
+      "name": "ΦΕΡΕΝΤΙΝΟΥ ΈΦΗ",
+      "address": "ΚΑΛΠΑΚΙΟΥ 9",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651094937",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 39.6796725,
+        "lon": 20.8369179,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5075",
         "source": "list",
         "precision": "exact"
       }

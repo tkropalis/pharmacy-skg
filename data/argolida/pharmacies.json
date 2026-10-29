@@ -160,7 +160,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 37.5874845,
         "lon": 22.7447696,
@@ -223,7 +223,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-11-01",
       "location": {
         "lat": 37.6359828,
         "lon": 22.7285968,
@@ -307,7 +307,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 37.6341367,
         "lon": 22.7268611,
@@ -391,7 +391,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 37.6332897,
         "lon": 22.7286433,
@@ -517,7 +517,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-10-25",
       "location": {
         "lat": 37.5678957,
         "lon": 22.8070599,
@@ -538,7 +538,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 37.5691409,
         "lon": 22.8066643,
@@ -758,6 +758,27 @@
       }
     },
     {
+      "id": "2752028249",
+      "name": "ΚΑΤΣΟΥΛΑΚΟΥ ΑΡΙΣΤΕΑ",
+      "address": "ΚΟΥΝΤΟΥΡΙΩΤΗ 4",
+      "locality": "Ναύπλιο",
+      "postcode": null,
+      "phone": "2752028249",
+      "groupId": "argolida",
+      "sources": [
+        "iteq-argolida"
+      ],
+      "firstSeen": "2026-10-31",
+      "lastSeen": "2026-10-31",
+      "location": {
+        "lat": 37.5658312,
+        "lon": 22.80844,
+        "ref": "https://argolida.efhmeries.gr/Home/Details/20237",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2752028777",
       "name": "ΧΑΤΖΗΕΥΣΤΡΑΤΙΑΔΟΥ ΜΑΓΔΑ",
       "address": "ΣΙΔ. ΜΕΡΑΡΧΙΑΣ & ΑΙΓΙΟΥ 2",
@@ -832,7 +853,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 37.6377,
         "lon": 22.8041,
@@ -895,7 +916,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 37.5190545,
         "lon": 22.8588221,
@@ -916,7 +937,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 37.5729348,
         "lon": 22.8334331,
@@ -937,7 +958,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 37.6117776,
         "lon": 23.0395455,
@@ -1042,7 +1063,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 37.378969,
         "lon": 23.1599851,
@@ -1063,7 +1084,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 37.3870814,
         "lon": 23.2463689,
@@ -1126,7 +1147,7 @@
         "iteq-argolida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 37.327838,
         "lon": 23.1437319,

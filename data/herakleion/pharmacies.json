@@ -87,7 +87,7 @@
     },
     {
       "id": "2810213223",
-      "name": "Σ.Φ. ΣΑΜΟΘΡΑΚΗ ΑΜΕΡΙΣΣΑ - ΔΑΣΚΑΛΑΚΗ ΑΙΚΑΤΕΡΙΝΗ",
+      "name": "ΔΑΣΚΑΛΑΚΗ ΑΙΚΑΤΕΡΙΝΗ",
       "address": "Π. ΦΟΥΜΗ 29, ΣΤ.ΑΘΑΝΑΤΩΝ, ΠΑΤΕΛΕΣ (ΛΑΪΚΗ ΑΓΟΡΑ)",
       "locality": "Ηράκλειο",
       "postcode": null,
@@ -97,7 +97,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 35.3299225,
         "lon": 25.143283,
@@ -328,7 +328,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 35.3346882,
         "lon": 25.1399651,
@@ -517,7 +517,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 35.3372099,
         "lon": 25.1338057,
@@ -622,13 +622,13 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-11-04",
       "location": {
-        "lat": 35.33908,
-        "lon": 25.133284,
-        "source": "nominatim",
-        "precision": "locality",
-        "ref": "Ηράκλειο"
+        "lat": 35.339192,
+        "lon": 25.1533376,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/58063",
+        "source": "list",
+        "precision": "exact"
       }
     },
     {
@@ -1462,7 +1462,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 35.3355613,
         "lon": 25.0834003,
@@ -1546,11 +1546,32 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 35.307522,
         "lon": 25.0889695,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57966",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810281647",
+      "name": "ΣΤΑΜΑΤΑΚΗΣ ΜΙΧΑΗΛ ΤΟΥ ΓΕΩΡΓΙΟΥ",
+      "address": "ΛΕΩΦΟΡΟΣ ΠΑΝΑΣΤΑΣΙΟΥ 211",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810281647",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 35.3088576,
+        "lon": 25.1455312,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/58059",
         "source": "list",
         "precision": "exact"
       }
@@ -2638,7 +2659,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 35.3369751,
         "lon": 25.1310273,
@@ -2659,7 +2680,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 35.3381708,
         "lon": 25.129111,
@@ -2974,7 +2995,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 35.3251619,
         "lon": 25.2774059,
@@ -3415,7 +3436,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 35.1426915,
         "lon": 25.2648432,
@@ -4024,7 +4045,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 35.331734,
         "lon": 25.3452693,
@@ -4066,7 +4087,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 35.3141363,
         "lon": 25.3951863,
@@ -4297,7 +4318,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 35.2865171,
         "lon": 25.4614927,
@@ -4360,7 +4381,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 35.2632695,
         "lon": 25.4226697,

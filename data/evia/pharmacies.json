@@ -34,7 +34,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 38.4633594,
         "lon": 23.5986972,
@@ -76,7 +76,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 38.5143948,
         "lon": 23.6376784,
@@ -97,7 +97,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 38.4650711,
         "lon": 23.5935252,
@@ -254,6 +254,27 @@
       }
     },
     {
+      "id": "2221028288",
+      "name": "ΜΠΟΝΑΤΣΟΥ ΚΑΛΛΙΟΠΗ",
+      "address": "ΑΘ. ΔΙΑΚΟΥ & ΜΗΤΡ.ΝΙΚΟΛΑΟΥ",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221028288",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 38.471191,
+        "lon": 23.586052,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9374",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2221028599",
       "name": "ΚΑΝΔΥΛΗΣ ΣΤΕΛΙΟΣ",
       "address": "ΒΕΝΙΖΕΛΟΥ 10 - ΕΝΑΝΤΙ ΔΙΚΑΣΤΗΡΙΩΝ",
@@ -328,7 +349,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 38.4923664,
         "lon": 23.6335631,
@@ -391,7 +412,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 38.5130117,
         "lon": 23.6373585,
@@ -538,7 +559,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 38.4658133,
         "lon": 23.5976534,
@@ -559,7 +580,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 38.467508,
         "lon": 23.593994,
@@ -727,7 +748,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 38.469188,
         "lon": 23.6052,
@@ -1168,7 +1189,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 38.0139058,
         "lon": 24.4207056,
@@ -1357,7 +1378,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 38.9542,
         "lon": 23.149816,
@@ -1441,7 +1462,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 38.3921653,
         "lon": 23.7950923,
