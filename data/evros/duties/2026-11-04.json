@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-29T11:00:15.442Z"
+        "uploadedAt": "2026-10-29T21:13:08.133Z"
       },
       "sections": [
         {
@@ -34,6 +34,26 @@
               "address": "ΛΕΟΝΙΔΟΥ 61",
               "locality": "Διδυμότειχο",
               "phone": "2553024676"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551023378",
+              "name": "ΚΑΖΑΚΟΥ ΚΩΝΣΤΑΝΤΙΝΑ",
+              "address": "Λεωφ. Δημοκρατίας 355 (παραπλεύρως Παιδ. Σταθμού)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551023378"
             }
           ]
         },
@@ -89,26 +109,6 @@
               "address": "Ελ. Βενιζέλου 40 (παραπλεύρως ΚΤΕΛ)",
               "locality": "Αλεξανδρούπολη",
               "phone": "2551028337"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551023378",
-              "name": "ΚΑΖΑΚΟΥ ΚΩΝΣΤΑΝΤΙΝΑ",
-              "address": "Λεωφ. Δημοκρατίας 355 (παραπλεύρως Παιδ. Σταθμού)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551023378"
             }
           ]
         }
