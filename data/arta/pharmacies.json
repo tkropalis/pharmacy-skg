@@ -485,6 +485,27 @@
       }
     },
     {
+      "id": "2681073066",
+      "name": "ΣΠΥΡΟΥ ΕΥΑΓΓΕΛΟΣ",
+      "address": "ΒΑΣΙΛΕΩΣ ΠΥΡΡΟΥ 10",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681073066",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 39.160656,
+        "lon": 20.983019,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2445",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681073149",
       "name": "ΣΚΑΝΔΑΛΗΣ ΗΛΙΑΣ ΕΕ",
       "address": "ΣΚΟΥΦΑ 150",
@@ -832,7 +853,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.098553,
         "lon": 20.991002,

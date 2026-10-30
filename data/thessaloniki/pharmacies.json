@@ -201,11 +201,12 @@
       "name": "ΜΠΙΛΙΜΠΙΝΗ Ν. ΚΥΡΙΑΚΗ",
       "address": "ΑΝΔΡΙΑΝΟΥΠΟΛΕΩΣ 2",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54636",
       "phone": "2310201262",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-07-08",
       "lastSeen": "2026-09-13",
@@ -607,11 +608,12 @@
       "name": "ΤΣΑΡΟΥΧΑ ΕΛΕΝΗ & ΣΙΑ ΕΕ",
       "address": "Δ.ΓΟΥΝΑΡΗ 44 - ΚΑΜΑΡΑ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54621",
       "phone": "2310220040",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-09-19",
@@ -649,11 +651,12 @@
       "name": "ΦΡΟΥΖΑΚΗΣ ΦΟΙΒΟΣ",
       "address": "ΚΑΣΣΑΝΔΡΟΥ 77",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54633",
       "phone": "2310220100",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-11-04",
@@ -670,11 +673,12 @@
       "name": "ΝΤΑΙΛΙΑΝΗΣ Σ. ΕΥΘΥΜΙΟΣ",
       "address": "ΟΛΥΜΠΙΑΔΟΣ 84 - ΑΓ. ΣΟΦΙΑΣ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54633",
       "phone": "2310220654",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-11-01",
@@ -691,11 +695,12 @@
       "name": "ΔΕΛΗΓΙΑΝΝΗΣ ΝΙΚΟΛΑΟΣ & ΣΙΑ Ο.Ε.",
       "address": "ΕΡΜΟΥ 22",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54624",
       "phone": "2310220817",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-27",
       "lastSeen": "2026-10-29",
@@ -844,11 +849,12 @@
       "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΑΛΕΞΑΝΔΡΟΣ",
       "address": "ΕΓΝΑΤΙΑΣ 81Α",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54635",
       "phone": "2310222241",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-11-02",
@@ -887,11 +893,12 @@
       "name": "ΚΥΡΟΔΗΜΟΥ ΑΛΚΜΗΝΗ",
       "address": "ΙΩΝ. ΔΡΑΓΟΥΜΗ 18",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54626",
       "phone": "2310224888",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-07-14",
       "lastSeen": "2026-09-27",
@@ -908,11 +915,12 @@
       "name": "Σ.Φ. ΚΥΡΟΧΡΗΣΤΟΣ ΑΝΤΩΝΙΟΣ - ΚΑΡΑΛΙΩΤΗΣ ΤΡΙΑΝΤΑΦΥΛΛΟΣ ΟΕ",
       "address": "ΜΗΤΡΟΠΟΛΕΩΣ 133",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54621",
       "phone": "2310224919",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-10-29",
@@ -972,11 +980,12 @@
       "name": "ΖΑΧΟΣ ΓΕΩΡΓΙΟΣ",
       "address": "Λ. ΙΑΣΩΝΙΔΟΥ 3",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54635",
       "phone": "2310229209",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-11-01",
@@ -1037,11 +1046,12 @@
       "name": "ΑΝΔΡΕΟΥ Γ. ΕΙΡΗΝΗ",
       "address": "ΑΛ. ΣΒΩΛΟΥ 53- ΕΘΝ.ΑΜΥΝΗΣ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54621",
       "phone": "2310230512",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-07-01",
       "lastSeen": "2026-11-04",
@@ -1167,11 +1177,12 @@
       "name": "ΚΑΡΑΤΖΟΓΛΟΥ ΙΟΥΛΙΑ & ΣΙΑ Ο.Ε.",
       "address": "ΕΛΕΥΘ. ΒΕΝΙΖΕΛΟΥ 58",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54631",
       "phone": "2310233865",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-27",
       "lastSeen": "2026-10-27",
@@ -1209,11 +1220,12 @@
       "name": "ΛΙΒΑ Κ. ΕΙΡΗΝΗ",
       "address": "ΒΕΝΙΖΕΛΟΥ 68",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54631",
       "phone": "2310234398",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-05",
       "lastSeen": "2026-11-02",
@@ -1338,11 +1350,12 @@
       "name": "ΦΙΛΟΘΕΟΥ ΧΡΙΣΤΙΝΑ",
       "address": "ΑΛΕΞ. ΣΒΩΛΟΥ 24",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54622",
       "phone": "2310236590",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-10-05",
       "lastSeen": "2026-10-08",
@@ -1939,11 +1952,12 @@
       "name": "ΚΑΤΣΑΛΗ ΧΡΙΣΤΙΑΝΑ & ΣΙΑ Ο.Ε.",
       "address": "Π.Π.ΓΕΡΜΑΝΟΥ 6 - ΤΣΙΜΙΣΚΗ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54622",
       "phone": "2310268288",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-11-01",
@@ -1981,11 +1995,12 @@
       "name": "ΤΖΕΤΗ ΑΝΝΑ - ΜΑΡΙΑ",
       "address": "ΑΓΝΩΣΤΟΥ ΣΤΡΑΤΙΩΤΟΥ 4",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54631",
       "phone": "2310269213",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-11-02",
@@ -2045,11 +2060,12 @@
       "name": "ΤΣΙΝΟΠΟΥΛΟΣ ΘΕΟΔΩΡΟΣ",
       "address": "ΠΑΥΛΟΥ ΜΕΛΑ 22",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54622",
       "phone": "2310271214",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-24",
       "lastSeen": "2026-09-23",
@@ -2130,11 +2146,12 @@
       "name": "Σ.Φ. ΑΠΟΣΤΟΛΙΔΟΥ Ε. - ΤΣΙΚΟΥΡΙΑΔΟΥ Ε. Ο.Ε.",
       "address": "ΑΓΙΟΥ ΔΗΜΗΤΡΙΟΥ 57 - ΥΠΟΥΡΓΕΙΟ ΜΑ.ΘΡΑ.",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54632",
       "phone": "2310272430",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-10-25",
@@ -2305,11 +2322,12 @@
       "name": "ΟΣΙΠΙΔΗΣ ΑΝΔΡΕΑΣ & ΣΙΑ ΕΕ",
       "address": "ΕΓΝΑΤΙΑΣ 86",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54623",
       "phone": "2310277328",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-10-07",
@@ -2390,11 +2408,12 @@
       "name": "ΑΠΟΣΤΟΛΟΥ ΣΩΤΗΡΙΟΣ & ΣΙΑ Ο.Ε.",
       "address": "ΑΓΙΑΣ ΣΟΦΙΑΣ 35",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54623",
       "phone": "2310278544",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-05",
       "lastSeen": "2026-11-02",
@@ -2454,11 +2473,12 @@
       "name": "Σ.Φ. ΓΑΒΡΙΗΛΙΔΟΥ ΜΑΡΙΑ - ΓΑΒΡΙΗΛΙΔΟΥ ΕΛΛΗ ΟΕ",
       "address": "ΕΘΝ.ΑΜΥΝΗΣ 9",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54621",
       "phone": "2310280358",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-11-03",
@@ -2496,11 +2516,12 @@
       "name": "ΣΟΜΠΟΛΟΥ-ΠΟΛΥΖΩΙΔΟΥ ΑΙΚΑΤΕΡΙΝΗ",
       "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 11",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54624",
       "phone": "2310284413",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-10-24",
@@ -2583,11 +2604,12 @@
       "name": "Σ.Φ. ΝΙΚΟΛΑΪΔΟΥ ΕΥΜΟΡΦΙΑ - ΙΩΣΗΦΙΔΟΥ ΕΥΑΝΘΙΑ ΟΕ",
       "address": "25 ΜΑΡΤΙΟΥ 129",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54249",
       "phone": "2310300238",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-10-05",
@@ -2626,11 +2648,12 @@
       "name": "Σ.Φ. ΠΑΝΤΑΖΟΓΛΟΥ ΓΕΩΡΓΙΟΣ - ΚΑΡΑΓΙΑΝΝΙΔΗΣ ΠΑΝΤΕΛΗΣ Ο.Ε.",
       "address": "ΑΛΕΞ. ΠΑΠΑΝΑΣΤΑΣΙΟΥ 173",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54250",
       "phone": "2310301093",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-07",
       "lastSeen": "2026-11-04",
@@ -2691,11 +2714,12 @@
       "name": "ΞΑΝΘΟΠΟΥΛΟΣ ΧΡΗΣΤΟΣ & ΣΙΑ Ο.Ε.",
       "address": "Θ. ΝΑΤΣΙΝΑ 45 - ΧΑΡΙΛΑΟΥ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54249",
       "phone": "2310302964",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-10-30",
@@ -2712,11 +2736,12 @@
       "name": "ΓΚΑΝΑΣ ΜΙΧΑΗΛ",
       "address": "ΓΙΑΝΝΗ ΑΓΓΕΛΟΥ 16 & ΑΛΚΑΜΕΝΟΥΣ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54250",
       "phone": "2310303156",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-09-29",
@@ -2841,11 +2866,12 @@
       "name": "ΓΚΟΥΓΚΟΥΜΑΣ ΔΗΜΗΤΡΙΟΣ",
       "address": "ΓΥΜΝ. ΜΥΣΤΑΚΙΔΟΥ 28",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54250",
       "phone": "2310306908",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-10-25",
@@ -2862,11 +2888,12 @@
       "name": "Σ.Φ. ΠΑΠΑΔΕΛΗ ΣΟΦΙΑ - ΠΑΠΑΔΕΛΗΣ ΓΕΩΡΓΙΟΣ ΟΕ",
       "address": "25ΗΣ ΜΑΡΤΙΟΥ 99",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54249",
       "phone": "2310307140",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-09-19",
@@ -2904,11 +2931,12 @@
       "name": "ΚΑΡΛΙΩΤΗ ΕΛΕΝΗ-ΧΡΙΣΤΙΝΑ",
       "address": "ΛΑΡΙΣΑΣ 3",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54249",
       "phone": "2310307477",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-26",
       "lastSeen": "2026-10-24",
@@ -2947,11 +2975,12 @@
       "name": "Σ.Φ. ΠΑΥΛΙΔΗΣ ΠΑΡΑΣΚΕΥΑΣ - ΠΑΥΛΙΔΟΥ ΜΑΡΙΑ Ο.Ε.",
       "address": "ΓΙΑΝΝΗ ΧΑΛΚΙΔΗ 5 (ΠΡΩΗΝ ΚΩΝ/ΠΟΛΕΩΣ 101)",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54249",
       "phone": "2310308355",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-11-02",
@@ -2968,11 +2997,12 @@
       "name": "ΚΑΛΟΓΕΡΑΣ ΓΕΩΡΓΙΟΣ",
       "address": "ΜΥΣΤΑΚΙΔΟΥ 33-ΠΛΑΣΤΗΡΑ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54250",
       "phone": "2310309054",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-14",
       "lastSeen": "2026-10-25",
@@ -2989,11 +3019,12 @@
       "name": "ΓΙΑΝΝΟΠΟΥΛΟΥ ΝΙΚΗ",
       "address": "ΜΥΣΤΑΚΙΔΟΥ 20- ΠΛΑΣΤΗΡΑ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54250",
       "phone": "2310309100",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-11-01",
@@ -3031,11 +3062,12 @@
       "name": "ΠΑΠΟΥΤΣΗ ΒΑΣΙΛΙΚΗ",
       "address": "ΑΝΑΞΙΜΑΝΔΡΟΥ 84-86",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54250",
       "phone": "2310309755",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-10-31",
@@ -3116,11 +3148,12 @@
       "name": "ΚΑΡΑΒΑΣΙΛΗΣ ΒΑΣΙΛΕΙΟΣ",
       "address": "ΚΩΝ/ΝΟΥ ΚΑΡΑΜΑΝΛΗ 135",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54249",
       "phone": "2310311272",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-25",
       "lastSeen": "2026-09-23",
@@ -3224,11 +3257,12 @@
       "name": "ΔΑΥΙΔ ΚΩΝΣΤΑΝΤΙΝΟΣ",
       "address": "ΑΛ. ΠΑΠΑΝΑΣΤΑΣΙΟΥ 157",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54250",
       "phone": "2310311633",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-09-27",
@@ -3287,11 +3321,12 @@
       "name": "ΡΟΥΚΑ ΕΥΓΕΝΙΑ",
       "address": "ΚΩΝ/ΝΟΥ ΚΑΡΑΜΑΝΛΗ 167",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54249",
       "phone": "2310311946",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-09-26",
       "lastSeen": "2026-11-03",
@@ -3330,11 +3365,12 @@
       "name": "Σ.Φ. ΑΝΑΣΤΑΣΙΟΥ ΑΜΑΛΙΑ - ΜΠΟΥΣΜΠΟΥ ΟΛΥΜΠΙΑ Ο.Ε.",
       "address": "ΜΑΚΕΔΟΝΙΑΣ 131- ΜΑΡΑΣΛΗ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54248",
       "phone": "2310312863",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-10-29",
@@ -3351,11 +3387,12 @@
       "name": "ΚΑΡΑΒΙΩΤΗΣ ΗΛΙΑΣ",
       "address": "ΓΙΑΝΝΗ. ΑΓΓΕΛΟΥ 21",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54250",
       "phone": "2310312942",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-10-24",
@@ -3415,11 +3452,12 @@
       "name": "ΔΟΡΤΗ ΑΝΑΣΤΑΣΙΑ ΜΙΚΕ",
       "address": "ΑΝΑΞΙΜΑΝΔΡΟΥ 28 - Ν.ΠΛΑΣΤΗΡΑ 41",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54250",
       "phone": "2310316680",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-09-21",
@@ -3544,11 +3582,12 @@
       "name": "ΦΥΡΦΥΡΗ ΒΑΣΙΛΙΚΗ",
       "address": "ΔΕΛΦΩΝ 165 - ΤΖΑΒΕΛΑ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54248",
       "phone": "2310319356",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-09-16",
@@ -3587,11 +3626,12 @@
       "name": "ΤΕΝΕΚΕΤΖΗ ΒΑΣΙΛΕΙΑΝΝΑ ΕΛΕΝΗ - ΤΣΑΚΝΑΚΗ ΧΑΡΙΚΛΕΙΑ ΟΕ",
       "address": "ΠΑΠΑΝΑΣΤΑΣΙΟΥ 160 ΓΗΠΕΔΟ ΑΡΗ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54249",
       "phone": "2310320834",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-11-02",
@@ -3651,11 +3691,12 @@
       "name": "ΑΙΧΜΑΛΩΤΙΔΟΥ ΘΕΟΔΩΡΑ",
       "address": "ΠΡΟΦΗΤΗ ΗΛΙΑ 73",
       "locality": "Πυλαία",
-      "postcode": null,
+      "postcode": "55535",
       "phone": "2310323072",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-09-17",
@@ -3672,11 +3713,12 @@
       "name": "ΚΥΡΙΑΖΙΔΗΣ ΣΠΥΡΙΔΩΝ",
       "address": "ΔΡΟΜΟΣ ΠΡΟΣ ΠΑΝΟΡΑΜΑ -ΦΙΛΙΠΠΟΥ 50",
       "locality": "Πυλαία",
-      "postcode": null,
+      "postcode": "55535",
       "phone": "2310323148",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-09-23",
@@ -3842,11 +3884,12 @@
       "name": "ΚΟΥΛΙΚΑΣ ΔΗΜΗΤΡΙΟΣ",
       "address": "Ν. ΠΛΑΣΤΗΡΑ 15",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54250",
       "phone": "2310328393",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-11-02",
@@ -3906,11 +3949,12 @@
       "name": "ΝΤΑΓΚΑ ΣΟΦΙΑ & ΣΙΑ Ο.Ε.",
       "address": "ΥΔΡΑΣ 27",
       "locality": "Πανόραμα",
-      "postcode": null,
+      "postcode": "55236",
       "phone": "2310332890",
       "groupId": "panorama-pefka",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-09-16",
       "lastSeen": "2026-09-16",
@@ -3970,11 +4014,12 @@
       "name": "ΚΑΙΛΑΤΖΑΚΗ ΧΡΙΣΤΙΝΑ",
       "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 4",
       "locality": "Πανόραμα",
-      "postcode": null,
+      "postcode": "55236",
       "phone": "2310341010",
       "groupId": "panorama-pefka",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-19",
       "lastSeen": "2026-10-08",
@@ -4098,11 +4143,12 @@
       "name": "ΠΡΙΝΤΣΙΟΥ ΑΓΓΕΛΙΚΗ ΙΚΕ",
       "address": "ΚΟΜΝΗΝΩΝ 63",
       "locality": "Πανόραμα",
-      "postcode": null,
+      "postcode": "55236",
       "phone": "2310344206",
       "groupId": "panorama-pefka",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-07-25",
       "lastSeen": "2026-09-15",
@@ -4162,11 +4208,12 @@
       "name": "ΣΑΛΙΑΡΑ ΑΣΗΜΙΝΑ",
       "address": "ΧΟΡΤΙΑΤΗΣ",
       "locality": "Χορτιάτης",
-      "postcode": null,
+      "postcode": "57010",
       "phone": "2310349434",
       "groupId": "asvestochori",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-10-08",
@@ -4183,11 +4230,12 @@
       "name": "ΜΠΟΣΔΕΛΑΚΙΔΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
       "address": "ΜΑΡΤΥΡΩΝ 2ΑΣ ΣΕΠΤΕΜΒΡΙΟΥ 70",
       "locality": "Χορτιάτης",
-      "postcode": null,
+      "postcode": "57010",
       "phone": "2310349659",
       "groupId": "asvestochori",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-10-06",
@@ -4311,11 +4359,12 @@
       "name": "Σ.Φ. ΣΠΥΡΙΔΟΥ ΒΑΛΕΝΤΙΝΗ - ΣΠΥΡΙΔΟΥ ΕΥΑΝΘΙΑ & ΣΙΑ ΟΕ",
       "address": "Λ.ΠΑΠΑΝΙΚΟΛΑΟΥ 36-38-40",
       "locality": "Εξοχή",
-      "postcode": null,
+      "postcode": "57010",
       "phone": "2310357975",
       "groupId": "asvestochori",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-09-15",
@@ -4354,11 +4403,12 @@
       "name": "ΣΑΛΟΝΙΚΙΔΟΥ ΝΙΚΗ",
       "address": "ΔΗΜΟΚΡΑΤΙΑΣ 8",
       "locality": "Ασβεστοχώρι",
-      "postcode": null,
+      "postcode": "57010",
       "phone": "2310358201",
       "groupId": "asvestochori",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-10-05",
       "lastSeen": "2026-10-05",
@@ -4397,11 +4447,12 @@
       "name": "ΣΑΜΑΡΑ ΑΓΝΗ - ΑΝΤΩΝΟΠΟΥΛΟΥ ΦΩΤΕΙΝΗ Ο.Ε",
       "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΗΣ 23",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55133",
       "phone": "2310384005",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-11-03",
@@ -4527,11 +4578,12 @@
       "name": "ΤΡΙΚΟΙΛΗ ΜΑΡΙΑ-ΣΥΡΜΑΝΘΗ",
       "address": "ΤΡΑΠΕΖΟΥΝΤΟΣ 4",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55131",
       "phone": "2310410507",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-10-06",
@@ -4678,11 +4730,12 @@
       "name": "ΣΑΧΙΝΙΔΟΥ ΜΑΡΙΑ",
       "address": "ΑΡΓΥΡΟΥΠΟΛΕΩΣ 49",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55131",
       "phone": "2310412077",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-05",
       "lastSeen": "2026-11-02",
@@ -4807,11 +4860,12 @@
       "name": "ΦΑΡΜΑΚΕΙΟ ΣΙΔΗΡΟΠΟΥΛΟΥ ΑΛΜΠΕΡΟΛΑ ΑΛΕΞΑΝΔΡΑ",
       "address": "ΚΕΡΑΣΟΥΝΤΟΣ 11-ΤΑΚΗ ΟΙΚΟΝΟΜΙΔΗ 86",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55131",
       "phone": "2310414837",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-11-03",
@@ -4893,11 +4947,12 @@
       "name": "ΣΤΑΜΑΤΗ ΕΛΕΝΗ-ΕΛΕΥΘΕΡΙΑ",
       "address": "ΠΟΝΤΟΥ 42",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55131",
       "phone": "2310416244",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-19",
       "lastSeen": "2026-09-30",
@@ -4914,11 +4969,12 @@
       "name": "ΓΕΩΡΓΙΑΔΗΣ ΛΕΩΝΙΔΑΣ",
       "address": "ΚΑΠ. ΓΚΩΝΗ 24- ΒΛ.ΓΑΒΡΙΗΛΙΔΟΥ",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55131",
       "phone": "2310416658",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-10-24",
@@ -5063,11 +5119,12 @@
       "name": "ΚΑΡΑΓΙΑΝΝΗΣ ΜΙΧΑΗΛ - ΚΑΡΑΓΙΑΝΝΗΣ Κ. Ο.Ε.",
       "address": "ΚΟΤΥΩΡΩΝ 35 - ΜΕΤΑΜΟΡΦΩΣΕΩΣ",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55131",
       "phone": "2310422777",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-10-29",
@@ -5105,11 +5162,12 @@
       "name": "Σ.Φ. ΜΠΑΞΕΒΑΝΗ ΜΑΡΙΑ - ΜΠΑΞΕΒΑΝΗΣ ΒΑΣΙΛΕΙΟΣ Ο.Ε.",
       "address": "Θ. ΣΟΦΟΥΛΗ 57",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55131",
       "phone": "2310425050",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-11-02",
@@ -5296,11 +5354,12 @@
       "name": "ΟΙΚΟΝΟΜΙΔΟΥ ΟΥΡΑΝΙΑ",
       "address": "ΑΔΑΜΑΝΤΙΟΥ ΚΟΡΑΗ 34",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55132",
       "phone": "2310434461",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-10-25",
@@ -5402,11 +5461,12 @@
       "name": "ΚΑΠΑΝΙΔΗΣ ΜΑΞΙΜΟΣ",
       "address": "ΜΑΚΡΟΧΩΡΙΟΥ 1",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55132",
       "phone": "2310436323",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-09-30",
@@ -5444,11 +5504,12 @@
       "name": "ΞΑΝΘΟΣ ΑΘΑΝΑΣΙΟΣ Ε.Ε.",
       "address": "ΣΤΡ. ΣΑΡΑΦΗ 67",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55133",
       "phone": "2310438229",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-23",
       "lastSeen": "2026-09-21",
@@ -5465,11 +5526,12 @@
       "name": "ΑΚΡΙΤΑ ΑΝΑΣΤΑΣΙΑ",
       "address": "ΝΙΚ. ΠΛΑΣΤΗΡΑ 85",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55132",
       "phone": "2310438640",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-10-24",
@@ -6046,11 +6108,12 @@
       "name": "ΜΠΛΟΓΚΑ-ΤΟΜΠΟΥΛΙΔΟΥ ΜΑΡΙΑ",
       "address": "ΣΩΚΡΑΤΟΥΣ 22",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55134",
       "phone": "2310448303",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-11-02",
@@ -6088,11 +6151,12 @@
       "name": "ΚΑΡΑΓΙΑΝΝΙΔΗΣ ΠΑΝΤΕΛΗΣ",
       "address": "ΠΑΣΣΑΛΙΔΗ 61 - Μ. ΧΡΥΣΑΝΘΟΥ 15",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55132",
       "phone": "2310449700",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-27",
       "lastSeen": "2026-10-28",
@@ -6151,11 +6215,12 @@
       "name": "ΜΑΝΙΟΥ ΕΛΕΝΗ & ΣΙΑ Ο.Ε.",
       "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΗΣ 87",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55134",
       "phone": "2310452311",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-11-02",
@@ -6386,11 +6451,12 @@
       "name": "ΤΖΙΝΤΖΑΡΑΣ ΧΡΥΣΟΣΤΟΜΟΣ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "ΤΑΒΑΚΗ 49",
       "locality": "Θέρμη",
-      "postcode": null,
+      "postcode": "57001",
       "phone": "2310460103",
       "groupId": "thermi",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-07-25",
       "lastSeen": "2026-10-04",
@@ -6407,11 +6473,12 @@
       "name": "ΠΑΡΧΑΡΙΔΟΥ ΙΟΥΛΙΑ-ΕΛΕΝΗ",
       "address": "ΑΓ.ΑΘΑΝΑΣΙΟΥ 6- ΚΑΝΑΡΗ 10",
       "locality": "Νέα Ραιδεστός",
-      "postcode": null,
+      "postcode": "57001",
       "phone": "2310460208",
       "groupId": "thermi",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-10-08",
@@ -6428,11 +6495,12 @@
       "name": "ΓΕΩΡΓΑΚΑ ΕΛΕΥΘΕΡΙΑ",
       "address": "ΚΑΡΑΟΛΗ & ΔΗΜΗΤΡΙΟΥ 12",
       "locality": "Θέρμη",
-      "postcode": null,
+      "postcode": "57001",
       "phone": "2310460460",
       "groupId": "thermi",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-30",
       "lastSeen": "2026-09-15",
@@ -6449,11 +6517,12 @@
       "name": "ΖΟΥΡΝΑΤΖΗ ΕΥΘΥΜΙΑ-ΜΑΡΙΑ",
       "address": "ΠΛ. ΠΑΡΑΜΑΝΑΣ 36",
       "locality": "Θέρμη",
-      "postcode": null,
+      "postcode": "57001",
       "phone": "2310461544",
       "groupId": "thermi",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-09-12",
@@ -6470,11 +6539,12 @@
       "name": "Σ.Φ. ΚΥΡΙΑΚΙΔΗΣ ΕΥΑΓΓΕΛΟΣ - ΣΕΝΗ ΚΩΝΣΤΑΝΤΙΑ - ΚΑΝΙΟΥΡΑ ΑΝΘΟΥΛΑ Ο.Ε",
       "address": "ΒΕΝΙΖΕΛΟΥ 2",
       "locality": "Θέρμη",
-      "postcode": null,
+      "postcode": "57001",
       "phone": "2310461954",
       "groupId": "thermi",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-19",
       "lastSeen": "2026-07-26",
@@ -6534,11 +6604,12 @@
       "name": "ΡΑΤΖΙ ΜΠΑΜΙΝΤΕΛΕ - ΡΑΦΑΕΛ - ΟΛΑΓΙΓΟΥΟΛΑ & ΣΙΑ Ο.Ε.",
       "address": "Κ. ΧΑΨΑ 30",
       "locality": "Θέρμη",
-      "postcode": null,
+      "postcode": "57001",
       "phone": "2310463220",
       "groupId": "thermi",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-10-02",
@@ -6555,11 +6626,12 @@
       "name": "ΠΕΤΡΙΔΗ ΑΝΑΣΤΑΣΙΑ",
       "address": "ΚΑΡΑΟΛΗ & ΔΗΜΗΤΡΙΟΥ 17",
       "locality": "Θέρμη",
-      "postcode": null,
+      "postcode": "57001",
       "phone": "2310463396",
       "groupId": "thermi",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-10-07",
@@ -6598,11 +6670,12 @@
       "name": "ΔΙΟΝΥΣΙΑΔΟΥ ΜΑΡΙΑ Ο.Ε.",
       "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 8 - ΡΑΙΔΕΣΤΟΣ",
       "locality": "Νέα Ραιδεστός",
-      "postcode": null,
+      "postcode": "57001",
       "phone": "2310464005",
       "groupId": "thermi",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-10-05",
@@ -6727,11 +6800,12 @@
       "name": "ΦΑΝΟΥΛΑΣ ΣΠΥΡΙΔΩΝ",
       "address": "ΤΑΒΑΚΗ ΒΑΣΙΛΙΚΗΣ 34",
       "locality": "Θέρμη",
-      "postcode": null,
+      "postcode": "57001",
       "phone": "2310466575",
       "groupId": "thermi",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-06-22",
@@ -6963,11 +7037,12 @@
       "name": "Σ.Φ. ΠΑΠΑΔΟΠΟΥΛΟΥ ΡΟΔΗ - ΚΑΪΑΦΑΣ ΠΑΝΑΓΙΩΤΗΣ Ο.Ε.",
       "address": "ΚΟΜΝΗΝΩΝ 80",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55132",
       "phone": "2310481790",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-24",
       "lastSeen": "2026-11-01",
@@ -7048,11 +7123,12 @@
       "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΣΩΚΡΑΤΗΣ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "Ι. ΠΑΣΣΑΛΙΔΗ 33",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55132",
       "phone": "2310487150",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-04",
@@ -7350,11 +7426,12 @@
       "name": "ΤΣΑΚΗ ΜΑΡΙΑ",
       "address": "ΚΑΡΑΟΛΗ ΔΗΜΗΤΡΙΟΥ 22",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54630",
       "phone": "2310515365",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-11-02",
@@ -7371,11 +7448,12 @@
       "name": "ΚΑΡΠΟΥΖΑ ΜΑΡΙΑΝΘΗ",
       "address": "Γ.ΜΟΥΤΑΦΗ 8Δ",
       "locality": "Μενεμένη",
-      "postcode": null,
+      "postcode": "54628",
       "phone": "2310515526",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-11",
       "lastSeen": "2026-09-27",
@@ -7541,11 +7619,12 @@
       "name": "ΚΑΡΠΟΥΖΑ ΜΑΡΙΑΝΘΗ",
       "address": "ΜΟΝΑΣΤΗΡΙΟΥ 6",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54629",
       "phone": "2310522293",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-10-27",
@@ -7562,11 +7641,12 @@
       "name": "ΒΡΥΖΑΣ ΔΗΜΟΣ",
       "address": "ΑΓΙΟΥ ΔΗΜΗΤΡΙΟΥ 17",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54632",
       "phone": "2310523161",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-31",
@@ -7777,11 +7857,12 @@
       "name": "ΝΤΟΜΑΤΑ ΜΑΡΙΑ",
       "address": "ΑΓΙΟΥ ΓΕΩΡΓΙΟΥ 7",
       "locality": "Νεάπολη",
-      "postcode": null,
+      "postcode": "56727",
       "phone": "2310530950",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-10-24",
@@ -7970,11 +8051,12 @@
       "name": "ΧΙΤΖΟΣ ΔΗΜΗΤΡΙΟΣ",
       "address": "ΠΑΠΑΖΩΛΗ 4",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54630",
       "phone": "2310543149",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-10-06",
@@ -8033,11 +8115,12 @@
       "name": "ΚΟΝΤΟΥ ΔΗΜΗΤΡΙΟΣ",
       "address": "Ι.ΔΡΑΓΟΥΜΗ 69",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54630",
       "phone": "2310545713",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-11-04",
@@ -8098,11 +8181,12 @@
       "name": "ΣΥΝΟΔΙΝΟΣ ΜΕΝΕΛΑΟΣ-ΑΘΑΝΑΣΙΟΣ",
       "address": "ΠΟΛΥΤΕΧΝΕΙΟΥ 27-29",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54625",
       "phone": "2310552457",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-09-16",
       "lastSeen": "2026-11-02",
@@ -8292,11 +8376,12 @@
       "name": "ΠΑΣΟ ΚΩΝΣΤΑΝΤΙΝ",
       "address": "ΙΘΑΚΗΣ 83",
       "locality": "Εύοσμος",
-      "postcode": null,
+      "postcode": "56224",
       "phone": "2310588280",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-10-30",
@@ -8441,11 +8526,12 @@
       "name": "ΕΛΜΑΟΓΛΟΥ-ΛΑΖΑΡΙΔΟΥ ΑΡΕΤΗ",
       "address": "ΕΛΕΥΘΕΡΙΑΣ 35",
       "locality": "Εύοσμος",
-      "postcode": null,
+      "postcode": "56224",
       "phone": "2310604150",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-11-03",
@@ -8505,11 +8591,12 @@
       "name": "ΠΑΠΑΣΤΕΦΑΝΟΥ ΠΑΝΑΓΙΩΤΗΣ & ΣΙΑ Ο.Ε.",
       "address": "ΑΜΠΕΛΟΚΗΠΩΝ 34",
       "locality": "Σταυρούπολη",
-      "postcode": null,
+      "postcode": "56430",
       "phone": "2310606404",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-10-31",
@@ -8548,11 +8635,12 @@
       "name": "ΚΑΡΑΓΚΟΥΝΗΣ ΒΑΣΙΛΕΙΟΣ",
       "address": "ΚΟΛΟΚΟΤΡΩΝΗ 7-9 ΜΟΝΗ ΛΑΖΑΡΙΣΤΩΝ",
       "locality": "Σταυρούπολη",
-      "postcode": null,
+      "postcode": "56430",
       "phone": "2310607000",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-10-07",
@@ -8569,11 +8657,12 @@
       "name": "ΜΠΙΜΠΕΡΑ ΒΑΣΙΛΙΚΗ",
       "address": "ΚΟΝΤΟΣΟΓΛΟΥ 4 - AN. ΠΑΠΑΝΔΡΕΟΥ 212",
       "locality": "Συκιές",
-      "postcode": null,
+      "postcode": "56626",
       "phone": "2310607616",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-24",
       "lastSeen": "2026-10-27",
@@ -8889,11 +8978,12 @@
       "name": "ΚΑΤΟΣΤΑΡΑ ΠΑΝΑΓΙΩΤΑ",
       "address": "ΠΑΝ.ΤΣΑΛΔΑΡΗ 24",
       "locality": "Νεάπολη",
-      "postcode": null,
+      "postcode": "56728",
       "phone": "2310616816",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-04",
@@ -8952,11 +9042,12 @@
       "name": "ΜΑΡΟΥΛΙΔΟΥ ΜΑΡΙΑ",
       "address": "ΡΗΓΑ ΦΕΡΡΑΙΟΥ 138",
       "locality": "Συκιές",
-      "postcode": null,
+      "postcode": "56626",
       "phone": "2310618231",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-30",
       "lastSeen": "2026-10-28",
@@ -8973,11 +9064,12 @@
       "name": "Σ.Φ. ΙΩΑΝΝΙΔΟΥ ΧΡΥΣΟΥΛΑ - ΘΕΟΔΩΡΙΔΗΣ ΒΑΣΙΛΕΙΟΣ Ο.Ε.",
       "address": "ΑΝ. ΔΗΜΗΤΡΙΟΥ 26 ΕΝΑΝΤΙ ΕΚ/ΣΙΑΣ ΑΓ.ΔΗΜ.ΣΥΚΕΩΝ",
       "locality": "Συκιές",
-      "postcode": null,
+      "postcode": "56625",
       "phone": "2310618813",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-11-02",
@@ -9101,11 +9193,12 @@
       "name": "Σ.Φ. ΓΙΑΝΝΟΥΛΗΣ ΑΝΕΣΤΗΣ - ΓΙΑΝΝΟΥΛΗ ΑΝΔΡΟΝΙΚΗ Ο.Ε.",
       "address": "ΠΑΝ.ΦΑΝΕΡΩΜΕΝΗΣ 18",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54632",
       "phone": "2310621691",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-10-07",
@@ -9122,11 +9215,12 @@
       "name": "ΚΑΡΒΟΥΝΗΣ Α. - ΓΚΑΝΤΡΗΣ Α. & ΣΙΑ Ο.Ε.",
       "address": "ΕΛΕΥΘ. ΒΕΝΙΖΕΛΟΥ 51",
       "locality": "Νεάπολη",
-      "postcode": null,
+      "postcode": "56728",
       "phone": "2310622048",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-05",
       "lastSeen": "2026-11-02",
@@ -9271,11 +9365,12 @@
       "name": "ΣΑΡΡΗ ΑΛΚΜΗΝΗ",
       "address": "ΕΛ . ΒΕΝΙΖΕΛΟΥ 29",
       "locality": "Νεάπολη",
-      "postcode": null,
+      "postcode": "56728",
       "phone": "2310633719",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-07",
       "lastSeen": "2026-11-04",
@@ -9334,11 +9429,12 @@
       "name": "ΒΙΤΣΟΥΝΗ ΕΥΑΓΓΕΛΙΑ",
       "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 118 & ΤΡΑΝΟΥ ΓΩΝΙΑ",
       "locality": "Συκιές",
-      "postcode": null,
+      "postcode": "56626",
       "phone": "2310635041",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-25",
       "lastSeen": "2026-09-23",
@@ -9376,11 +9472,12 @@
       "name": "ΦΛΩΡΟΣ Γ. ΑΡΙΣΤΕΙΔΗΣ",
       "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 28",
       "locality": "Συκιές",
-      "postcode": null,
+      "postcode": "56625",
       "phone": "2310637813",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-12",
       "lastSeen": "2026-11-04",
@@ -9397,11 +9494,12 @@
       "name": "Σ.Φ. ΤΣΟΥΚΑΛΑΣ Ι. - ΝΤΑΟΥΤΖΑ ΤΣΟΥΚΑΛΑ Ι. ΟΕ",
       "address": "ΚΥΠΡΟΥ 28 & ΙΠΠΟΚΡΑΤΟΥΣ 23",
       "locality": "Συκιές",
-      "postcode": null,
+      "postcode": "56625",
       "phone": "2310638048",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-11-04",
@@ -9503,11 +9601,12 @@
       "name": "ΘΕΟΔΩΡΙΔΗΣ ΕΥΣΤΑΘΙΟΣ - ΚΟΥΤΛΗ ΧΡΙΣΤΙΝΑ Ο.Ε.",
       "address": "ΑΓΝΩΣΤΟΥ ΣΤΡΑΤΙΩΤΗ 41",
       "locality": "Πολίχνη",
-      "postcode": null,
+      "postcode": "56533",
       "phone": "2310642030",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-09-09",
@@ -9545,11 +9644,12 @@
       "name": "ΝΩΤΑΣ ΧΡΗΣΤΟΣ",
       "address": "ΑΓ.ΣΤΡΑΤΙΩΤΟΥ 73",
       "locality": "Πολίχνη",
-      "postcode": null,
+      "postcode": "56533",
       "phone": "2310650648",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-11-01",
@@ -9800,11 +9900,12 @@
       "name": "ΓΡΑΜΜΕΝΟΣ ΕΛΕΥΘΕΡΙΟΣ",
       "address": "ΔΗΜΗΤΡΙΟΥ ΜΥΤΑΡΑ 2",
       "locality": "Σταυρούπολη",
-      "postcode": null,
+      "postcode": "56430",
       "phone": "2310654994",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-11-02",
@@ -9907,11 +10008,12 @@
       "name": "ΚΟΚΚΙΝΙΔΗΣ ΣΑΒΒΑΣ ΚΑΙ ΣΙΑ Ε.Ε.",
       "address": "ΑΓ. ΠΑΝΤΕΛΕΗΜΟΝΟΣ 9",
       "locality": "Πολίχνη",
-      "postcode": null,
+      "postcode": "56533",
       "phone": "2310655591",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-29",
       "lastSeen": "2026-10-27",
@@ -10376,11 +10478,12 @@
       "name": "ΠΑΛΑΝΤΖΙΔΟΥ ΓΛΥΚΕΡΙΑ",
       "address": "ΜΑΥΡΟΜΙΧΑΛΗ 29",
       "locality": "Πολίχνη",
-      "postcode": null,
+      "postcode": "56533",
       "phone": "2310667870",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-11-03",
@@ -10482,11 +10585,12 @@
       "name": "ΤΣΟΥΜΑΤΙΔΗΣ ΓΕΩΡΓΙΟΣ",
       "address": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 133",
       "locality": "Νεάπολη",
-      "postcode": null,
+      "postcode": "56728",
       "phone": "2310672911",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-09-17",
@@ -10720,11 +10824,12 @@
       "name": "Σ.Φ. ΠΑΠΑΔΟΠΟΥΛΟΣ ΠΕΤΡΟΣ - ΜΥΛΩΝΑΣ ΔΗΜΗΤΡΙΟΣ ΟΕ",
       "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 17",
       "locality": "Φίλυρο",
-      "postcode": null,
+      "postcode": "57010",
       "phone": "2310677755",
       "groupId": "asvestochori",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-19",
       "lastSeen": "2026-10-07",
@@ -10741,11 +10846,12 @@
       "name": "ΚΕΧΑΓΙΑ ΑΣΠΑΣΙΑ",
       "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 24",
       "locality": "Φίλυρο",
-      "postcode": null,
+      "postcode": "57010",
       "phone": "2310678030",
       "groupId": "asvestochori",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-10-06",
@@ -10762,11 +10868,12 @@
       "name": "ΜΕΛΕΤΙΔΗΣ ΑΡΙΣΤΕΙΔΗΣ-ΘΕΟΔΩΡΟΣ",
       "address": "ΠΛΑΤΕΙΑ ΕΛΕΥΘΕΡΙΑΣ 1",
       "locality": "Φίλυρο",
-      "postcode": null,
+      "postcode": "57010",
       "phone": "2310678149",
       "groupId": "asvestochori",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-10-08",
@@ -10805,11 +10912,12 @@
       "name": "Σ.Φ. ΑΡΓΥΡΟΠΟΥΛΟΣ ΑΡΓΥΡΙΟΣ - ΒΟΥΓΙΟΥΚΛΗ-ΑΡΓΥΡΟΠΟΥΛΟΥ ΑΡΕΤΗ & ΣΙΑ Ο.Ε.",
       "address": "ΠΟΛΥΤΕΧΝΕΙΟΥ 39",
       "locality": "Ευκαρπία",
-      "postcode": null,
+      "postcode": "56429",
       "phone": "2310680284",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-11-04",
@@ -10912,11 +11020,12 @@
       "name": "ΣΠΥΡΙΔΟΠΟΥΛΟΥ ΜΑΡΙΑ ΕΕ",
       "address": "ΑΡΗ ΒΕΛΟΥΧΙΩΤΗ 17",
       "locality": "Σταυρούπολη",
-      "postcode": null,
+      "postcode": "56430",
       "phone": "2310684541",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-11-02",
@@ -11126,11 +11235,12 @@
       "name": "ΚΑΡΑΓΙΑΝΝΗ ΜΑΡΙΑ",
       "address": "ΚΟΜΝΗΝΩΝ 41Α",
       "locality": "Ωραιόκαστρο",
-      "postcode": null,
+      "postcode": "57013",
       "phone": "2310695365",
       "groupId": "oraiokastro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-09-16",
@@ -11511,11 +11621,12 @@
       "name": "ΓΕΡΕΜΠΑΚΑΝΗ Μ ΕΙΡΗΝΗ",
       "address": "ΝΥΜΦΑΙΟΥ 33",
       "locality": "Εύοσμος",
-      "postcode": null,
+      "postcode": "56224",
       "phone": "2310707288",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-05",
       "lastSeen": "2026-11-02",
@@ -11597,11 +11708,12 @@
       "name": "ΑΣΚΗΤΗ ΣΤΥΛΙΑΝΗ",
       "address": "ΠΕΡΙΚΛΕΟΥΣ 35",
       "locality": "Εύοσμος",
-      "postcode": null,
+      "postcode": "56224",
       "phone": "2310708959",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-05",
       "lastSeen": "2026-11-02",
@@ -11618,11 +11730,12 @@
       "name": "ΟΙΚΟΝΟΜΙΔΗΣ ΑΛ. ΙΩΑΝΝΗΣ",
       "address": "Κ. ΔΑΜΑΣΚΟΥ 72",
       "locality": "Νέα Μεσήμβρια",
-      "postcode": null,
+      "postcode": "57011",
       "phone": "2310713071",
       "groupId": "chalkidona",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-10-08",
@@ -11661,11 +11774,12 @@
       "name": "ΝΑΣΤΟΣ ΓΕΩΡΓΙΟΣ Ο.Ε.",
       "address": "ΚΥΡΙΑΚΟΥ ΔΑΜΑΣΚΟΥ 61",
       "locality": "Νέα Μεσήμβρια",
-      "postcode": null,
+      "postcode": "57011",
       "phone": "2310713308",
       "groupId": "chalkidona",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-10-06",
@@ -11898,11 +12012,12 @@
       "name": "ΔΙΑΒΑΤΗ Π. ΧΡΥΣΑΝΘΗ",
       "address": "ΕΛΕΥΘΕΡΙΑΣ 1 - ΑΜΠΕΛΩΝΩΝ",
       "locality": "Αμπελόκηποι",
-      "postcode": null,
+      "postcode": "56123",
       "phone": "2310732005",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-09-19",
@@ -12003,11 +12118,12 @@
       "name": "ΝΑΣΤΗΣ ΣΤΕΦΑΝΟΣ",
       "address": "ΘΩΜΑ ΧΑΤΖΙΚΟΥ 43",
       "locality": "Μενεμένη",
-      "postcode": null,
+      "postcode": "56122",
       "phone": "2310733543",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-09-30",
@@ -12174,11 +12290,12 @@
       "name": "ΛΑΔΑΣ ΙΩΑΝΝΗΣ & ΣΙΑ Ο.Ε.",
       "address": "ΑΓΙΑΣ ΠΑΡΑΣΚΕΥΗΣ 27",
       "locality": "Μενεμένη",
-      "postcode": null,
+      "postcode": "56122",
       "phone": "2310736090",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-10-25",
@@ -12260,11 +12377,12 @@
       "name": "ΜΠΑΡΜΠΑΣ ΧΡΗΣΤΟΣ",
       "address": "Ε.ΒΕΝΙΖΕΛΟΥ 99",
       "locality": "Αμπελόκηποι",
-      "postcode": null,
+      "postcode": "56121",
       "phone": "2310737601",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-31",
@@ -12346,11 +12464,12 @@
       "name": "ΖΙΟΥΤΑΣ ΕΥΑΓΓΕΛΟΣ & ΣΙΑ Ο.Ε.",
       "address": "ΦΙΛΙΠΠΟΥΠΟΛΕΩΣ 74",
       "locality": "Αμπελόκηποι",
-      "postcode": null,
+      "postcode": "56121",
       "phone": "2310742687",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-10-07",
@@ -12367,11 +12486,12 @@
       "name": "ΧΑΤΖΗΝΙΚΟΛΑΟΥ-ΜΑΓΕΙΡΟΣ ΙΩΑΝΝΗΣ & ΣΙΑ Ο.Ε.",
       "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 69",
       "locality": "Αμπελόκηποι",
-      "postcode": null,
+      "postcode": "56121",
       "phone": "2310744556",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-31",
@@ -12798,11 +12918,12 @@
       "name": "Σ.Φ. ΧΑΛΚΙΔΗΣ ΔΗΜΗΤΡΙΟΣ - ΧΑΛΚΙΔΟΥ ΠΑΡΘΕΝΟΠΗ & ΣΙΑ ΟΕ",
       "address": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 84",
       "locality": "Ελευθέριο-Κορδελιό",
-      "postcode": null,
+      "postcode": "56334",
       "phone": "2310760186",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-11-01",
@@ -12819,11 +12940,12 @@
       "name": "ΑΣΚΗΤΗ ΣΤΥΛΙΑΝΗ",
       "address": "ΚΟΣΜΑ ΑΙΤΩΛΟΥ 5",
       "locality": "Εύοσμος",
-      "postcode": null,
+      "postcode": "56224",
       "phone": "2310760506",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-11-04",
@@ -13014,11 +13136,12 @@
       "name": "ΑΛΕΙΦΤΗΡΑΣ ΧΑΡ. ΑΘΑΝΑΣΙΟΣ",
       "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΗΣ 7-9",
       "locality": "Εύοσμος",
-      "postcode": null,
+      "postcode": "56224",
       "phone": "2310765045",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-09-21",
@@ -13035,11 +13158,12 @@
       "name": "ΚΥΡΛΙΔΟΥ Α. ΕΥΓΕΝΙΑ",
       "address": "ΚΑΡΑΟΛΉ ΔΗΜΗΤΡΙΟΥ 14",
       "locality": "Εύοσμος",
-      "postcode": null,
+      "postcode": "56224",
       "phone": "2310765801",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-11-01",
@@ -13165,11 +13289,12 @@
       "name": "ΤΣΟΥΜΑΤΙΔΗΣ ΓΕΩΡΓΙΟΣ",
       "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 32",
       "locality": "Εύοσμος",
-      "postcode": null,
+      "postcode": "56224",
       "phone": "2310767984",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-07-22",
       "lastSeen": "2026-11-03",
@@ -13250,11 +13375,12 @@
       "name": "ΚΑΤΣΟΥΛΑΣ ΛΕΩΝΙΔΑΣ",
       "address": "Δ.ΚΑΡΑΟΛΗ 130",
       "locality": "Εύοσμος",
-      "postcode": null,
+      "postcode": "56224",
       "phone": "2310769049",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-31",
@@ -13293,11 +13419,12 @@
       "name": "ΗΛΙΑΚΗΣ ΘΕΟΔΩΡΟΣ",
       "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 11",
       "locality": "Εύοσμος",
-      "postcode": null,
+      "postcode": "56224",
       "phone": "2310770745",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-09-14",
@@ -13358,11 +13485,12 @@
       "name": "ΑΣΚΗΤΗ ΣΤΥΛΙΑΝΗ",
       "address": "ΜΑΚΕΔΟΝΙΑΣ 48",
       "locality": "Εύοσμος",
-      "postcode": null,
+      "postcode": "56225",
       "phone": "2310772774",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-10-07",
@@ -13421,11 +13549,12 @@
       "name": "ΓΟΥΝΑΡΗ ΠΑΓΩΝΑ",
       "address": "ΟΛΥΜΠΙΑΔΟΣ 103",
       "locality": "Εύοσμος",
-      "postcode": null,
+      "postcode": "56224",
       "phone": "2310776576",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-10-08",
@@ -14054,11 +14183,12 @@
       "name": "ΒΕΖΥΝΙΑΣ Φ. ΓΕΩΡΓΙΟΣ",
       "address": "ΠΕΤΡΟΥ ΣΥΝΔΙΚΑ 43",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54643",
       "phone": "2310810523",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-12",
       "lastSeen": "2026-11-04",
@@ -14139,11 +14269,12 @@
       "name": "ΜΑΝΤΖΟΠΟΥΛΟΣ ΕΜΜΑΝΟΥΗΛ",
       "address": "28ης ΟΚΤΩΒΡΙΟΥ 84 -ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ-ΚΑΡΑΜΑΝΛΗ-ΙΠΠΟΚΡΑΤΕΙΟ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54642",
       "phone": "2310811211",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-09-20",
@@ -14160,11 +14291,12 @@
       "name": "ΚΑΝΟΥΤΑΣ ΝΙΚΟΛΑΟΣ ΤΟΥ ΘΩΜΑ",
       "address": "ΜΑΡΚΟΥ ΜΠΟΤΣΑΡΗ 26",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54643",
       "phone": "2310811488",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-09-30",
@@ -14224,11 +14356,12 @@
       "name": "ΔΟΡΤΗ ΑΝΑΣΤΑΣΙΑ",
       "address": "ΑΛΕΞΑΝΔΡΟΥ ΣΥΜΕΩΝΙΔΗ 3 -ΘΕΑΓΕΝΕΙΟ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54639",
       "phone": "2310812815",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-10-07",
@@ -14266,11 +14399,12 @@
       "name": "ΧΑΛΒΑΤΖΟΓΛΟΥ ΜΙΧΑΕΛΑ",
       "address": "ΛΕΩΦ. Κ.ΚΑΡΑΜΑΝΛΗ 56-Α.ΠΑΠΑΝΑΣΤΑΣΙΟΥ 27 ΙΠΠΟΚΡΑΤΕΙΟ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54639",
       "phone": "2310813126",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-10-06",
@@ -14438,11 +14572,12 @@
       "name": "Σ.Φ. ΒΛΑΧΟΣ Δ. - ΣΤΑΜΟΒΛΑΣΗΣ Ι. Ο.Ε.",
       "address": "ΒΑΣ. ΟΛΓΑΣ 104",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54643",
       "phone": "2310815619",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-05",
       "lastSeen": "2026-11-02",
@@ -14609,11 +14744,12 @@
       "name": "ΡΑΪΜΟΝΤΟ ΑΛΕΞΑΝΔΡΟΣ ΕΕ",
       "address": "Κ. ΚΑΡΑΜΑΝΛΗ 118",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54248",
       "phone": "2310820374",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-10-24",
@@ -14843,11 +14979,12 @@
       "name": "ΠΑΠΑΧΡΗΣΤΟΥ ΑΝΑΣΤΑΣΙΑ",
       "address": "ΒΑΣ. ΟΛΓΑΣ 113",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54643",
       "phone": "2310824536",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-11-01",
@@ -15332,11 +15469,12 @@
       "name": "ΓΡΗΓΟΡΙΑΔΟΥ ΑΝΝΑ",
       "address": "ΚΩΝ/ΝΟΥ ΚΑΡΑΜΑΝΛΗ 22 & ΤΡΟΙΑΣ 7",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54639",
       "phone": "2310835020",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-07",
       "lastSeen": "2026-11-04",
@@ -15417,11 +15555,12 @@
       "name": "ΣΠΥΡΟΥ ΕΛΕΥΘΕΡΙΑ",
       "address": "ΑΛ. ΣΥΜΕΩΝΙΔΗ 24, ΘΕΑΓΕΝΕΙΟ-ΠΑΠΑΦΕΙΟ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54639",
       "phone": "2310836263",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-11-02",
@@ -15482,11 +15621,12 @@
       "name": "ΠΕΤΡΙΔΟΥ Δ. ΜΑΡΙΑ",
       "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 37",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54642",
       "phone": "2310836501",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-10-30",
@@ -15503,11 +15643,12 @@
       "name": "ΝΑΛΜΠΑΝΤΗ ΕΥΡΥΔΙΚΗ",
       "address": "ΛΕΩΦΟΡΟΣ ΚΑΡΑΜΑΝΛΗ 84 - ΚΑΝΑΡΗ 4",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54644",
       "phone": "2310837109",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-09-23",
@@ -15566,11 +15707,12 @@
       "name": "ΝΑΟΥΜ Π. ΒΑΣΙΛΙΚΗ",
       "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 70 -72",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54641",
       "phone": "2310839533",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-10-30",
@@ -15587,11 +15729,12 @@
       "name": "ΜΠΑΞΕΒΑΝΗΣ ΒΑΣΙΛΕΙΟΣ",
       "address": "25ΗΣ ΜΑΡΤΙΟΥ 55",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54248",
       "phone": "2310839876",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-10-06",
@@ -15672,11 +15815,12 @@
       "name": "ΑΝΔΡΕΟΥ ΔΗΜΗΤΡΑ",
       "address": "ΓΑΜΒΕΤΑ 120",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54644",
       "phone": "2310841741",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-11-04",
@@ -15714,11 +15858,12 @@
       "name": "ΠΑΝΤΑΖΙΕΒΙΤΣ ΙΩΑΝΝΗΣ",
       "address": "ΒΕΛΙΣΣΑΡΙΟΥ 6 - ΕΥΖΩΝΩΝ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54640",
       "phone": "2310842563",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-10-07",
@@ -15800,11 +15945,12 @@
       "name": "ΚΑΡΑΚΑΣΗ ΧΡΙΣΤΙΝΑ",
       "address": "ΒΑΣ. ΟΛΓΑΣ 81 - ΕΝΑΝΤΙ ΛΑΟΓΡΑΦΙΚΟΥ ΜΟΥΣΕΙΟΥ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54643",
       "phone": "2310847138",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-09-20",
@@ -15993,11 +16139,12 @@
       "name": "ΣΤΑΛΙΚΑ ΜΥΡΣΙΝΗ",
       "address": "ΧΑΛΚΙΔΙΚΗΣ 74- Π.ΣΥΝΔΙΚΑ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54248",
       "phone": "2310849745",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-11",
       "lastSeen": "2026-11-01",
@@ -16187,11 +16334,12 @@
       "name": "ΧΑΣΑΠΗΣ ΔΗΜΗΤΡΙΟΣ & ΣΙΑ ΟΕ",
       "address": "ΑΕΤΟΡΑΧΗΣ 25 - ΛΕΩΦ. ΣΤΡΑΤΟΥ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54640",
       "phone": "2310856525",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-09-26",
@@ -16252,11 +16400,12 @@
       "name": "ΔΙΑΒΑΣΤΗ ΑΝΝΑ",
       "address": "ΠΕΡΔΙΚΑ - ΛΙΤΟΧΩΡΟΥ 2",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54639",
       "phone": "2310863300",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-11-04",
@@ -16273,11 +16422,12 @@
       "name": "ΝΑΚΟΠΟΥΛΟΥ ΙΩΑΝΝΑ & ΣΙΑ ΕΕ",
       "address": "Λ. ΣΤΡΑΤΟΥ 21",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54639",
       "phone": "2310865544",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-10-25",
@@ -16337,11 +16487,12 @@
       "name": "ΤΣΑΝΑΚΤΣΙΔΟΥ ΕΛΕΝΗ",
       "address": "Π.ΣΥΝΔΙΚΑ 22",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54645",
       "phone": "2310865863",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-29",
       "lastSeen": "2026-11-04",
@@ -16508,11 +16659,12 @@
       "name": "Σ.Φ. ΦΑΡΑΩΝΗ-ΑΝΤΩΝΙΑΔΟΥ ΑΝΑΣΤΑΣΙΑ -ΦΑΡΑΩΝΗ ΒΙΡΓΙΝΙΑ ΟΕ",
       "address": "Κ.ΚΑΡΑΜΑΝΛΗ 43 (Ν.ΕΓΝΑΤΙΑ 181-ΙΠΠΟΚΡΑΤΕΙΟ)",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54639",
       "phone": "2310901501",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-11-04",
@@ -16764,11 +16916,12 @@
       "name": "Σ.Φ. ΤΣΟΥΚΑΛΑ ΒΑΣΙΛΙΚΗ - ΤΣΟΥΚΑΛΑΣ ΙΩΑΝΝΗΣ ΟΕ",
       "address": "ΒΙΖΥΗΣ 68",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54454",
       "phone": "2310911777",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-12",
       "lastSeen": "2026-09-20",
@@ -16980,11 +17133,12 @@
       "name": "ΖΑΜΠΕΡΗ ΑΙΚΑΤΕΡΙΝΗ & ΣΙΑ ΕΕ",
       "address": "ΓΡ. ΛΑΜΠΡΑΚΗ 120",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54351",
       "phone": "2310917280",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-31",
@@ -17086,11 +17240,12 @@
       "name": "ΛΑΖΟΣ ΒΑΣΙΛΕΙΟΣ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "ΓΡΗΓΟΡΙΟΥ ΛΑΜΠΡΑΚΗ 65",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54351",
       "phone": "2310917902",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-09-07",
@@ -17322,11 +17477,12 @@
       "name": "ΠΕΦΤΟΥΛΟΓΛΟΥ ΒΑΣΙΛΙΚΗ-ΧΑΡΟΥΛΑ",
       "address": "ΓΡ.ΛΑΜΠΡΑΚΗ 89",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54351",
       "phone": "2310922651",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-05",
       "lastSeen": "2026-11-04",
@@ -17472,11 +17628,12 @@
       "name": "ΔΙΑΜΑΝΤΙΔΟΥ ΖΑΦΕΙΡΙΑ & ΣΙΑ Ο.Ε.",
       "address": "ΜΑΡΚ. ΜΠΟΤΣΑΡΗ 146",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54453",
       "phone": "2310924086",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-11-02",
@@ -17578,11 +17735,12 @@
       "name": "ΤΣΟΚΑΝΟΣ ΒΑΣΙΛΕΙΟΣ ΚΑΙ ΣΙΑ ΕΕ",
       "address": "ΑΤΛΑΝΤΙΔΟΣ 35-37 ΕΝΑΝΤΙ ΔΗΜΗΤΡΙΩΝ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54454",
       "phone": "2310925797",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-31",
@@ -17706,11 +17864,12 @@
       "name": "ΓΚΟΦΗ ΦΕΒΡΩΝΙΑ",
       "address": "ΧΡ. ΠΕΡΡΑΙΒΟΥ 38",
       "locality": "Πυλαία",
-      "postcode": null,
+      "postcode": "54352",
       "phone": "2310927659",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-25",
@@ -17858,11 +18017,12 @@
       "name": "ΚΑΛΑΪΤΖΗ ΑΙΚΑΤΕΡΙΝΗ & ΣΙΑ Ο.Ε.",
       "address": "17ΗΣ ΝΟΕΜΒΡΙΟΥ 23",
       "locality": "Πυλαία",
-      "postcode": null,
+      "postcode": "54352",
       "phone": "2310930039",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-10-25",
@@ -17921,11 +18081,12 @@
       "name": "ΚΑΛΑΝΙΔΟΥ ΜΑΡΙΑ",
       "address": "ΑΓΙΑΣ ΜΑΡΙΝΗΣ 6",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54351",
       "phone": "2310931318",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-10",
       "lastSeen": "2026-10-08",
@@ -18135,11 +18296,12 @@
       "name": "ΒΑΛΑΡΟΥΤΣΟΥ ΧΡΥΣΗ & ΣΙΑ Ε.Ε.",
       "address": "17ΗΣ ΝΟΕΜΒΡΙΟΥ 69",
       "locality": "Πυλαία",
-      "postcode": null,
+      "postcode": "55534",
       "phone": "2310943377",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-11-02",
@@ -18243,11 +18405,12 @@
       "name": "ΖΑΧΑΡΗ ΛΑΜΠΡΙΝΗ",
       "address": "ΚΛΕΑΝΘΟΥΣ 26 (ΣΤΑΣΗ ΣΧΟΛΕΙΑ-Κ.ΤΟΥΜΠΑ)",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54453",
       "phone": "2310948108",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-09-30",
@@ -18307,11 +18470,12 @@
       "name": "ΜΑΡΙΝΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ",
       "address": "ΑΜΦΙΠΟΛΕΩΣ 11",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54454",
       "phone": "2310948510",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-05",
       "lastSeen": "2026-11-02",
@@ -18479,11 +18643,12 @@
       "name": "ΜΕΓΑΛΙΔΟΥ ΘΕΟΔΩΡΑ",
       "address": "Δ. ΓΟΥΝΑΡΗ 56",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54635",
       "phone": "2310960144",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-09-28",
@@ -18542,11 +18707,12 @@
       "name": "ΑΝΑΝΙΑΔΟΥ ΕΥΧΑΡΙΣ",
       "address": "ΑΝΩ ΤΖΟΥΜΑΓΙΑΣ 55 - ΛΑΜΠΡΑΚΗ ΙΚΑ ΤΟΥΜΠΑΣ",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54453",
       "phone": "2310989239",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-10-28",
@@ -18651,11 +18817,12 @@
       "name": "ΠΑΠΑΡΙΣΒΑ ΑΛΙΚΗ-ΔΕΣΠΟΙΝΑ",
       "address": "ΑΛΕΞ. ΠΑΠΑΝΑΣΤΑΣΙΟΥ 45 & ΥΜΗΤΤΟΥ 1 (ΣΤΑΣΗ ΙΠΠΟΚΡΑΤΕΙΟ)",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54453",
       "phone": "2311244544",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-05",
       "lastSeen": "2026-11-02",
@@ -18716,11 +18883,12 @@
       "name": "ΧΥΤΑ ΕΛΕΝΗ",
       "address": "ΔΗΜΟΚΡΑΤΙΑΣ 34",
       "locality": "Εύοσμος",
-      "postcode": null,
+      "postcode": "56226",
       "phone": "2311278506",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-09-30",
@@ -18737,11 +18905,12 @@
       "name": "ΣΙΜΟΠΟΥΛΟΥ ΖΑΦΕΙΡΩ & ΣΙΑ ΟΕ",
       "address": "ΓΡΗΓΟΡΙΟΥ ΛΑΜΠΡΑΚΗ 160",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54352",
       "phone": "2311300030",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-11-04",
@@ -18758,11 +18927,12 @@
       "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΕΛΕΝΗ",
       "address": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 57",
       "locality": "Ελευθέριο-Κορδελιό",
-      "postcode": null,
+      "postcode": "56334",
       "phone": "2311309293",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-10-30",
@@ -18779,11 +18949,12 @@
       "name": "ΑΠΟΣΤΟΛΟΥ Α. ΚΑΙ Γ. - ΣΙΔΕΡΑΣ Ν. Ο.Ε.",
       "address": "ΜΑΥΡΟΜΙΧΑΛΗ 107",
       "locality": "Πολίχνη",
-      "postcode": null,
+      "postcode": "56533",
       "phone": "2311546434",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-10-07",
       "lastSeen": "2026-10-07",
@@ -18844,11 +19015,12 @@
       "name": "ΒΑΡΒΑΤΖΙΚΗ ΑΝΝΑ",
       "address": "ΧΑΡΙΛΑΟΥ ΤΡΙΚΟΥΠΗ 22, ΕΞΟΔΟΣ ΠΑΝΟΡΑΜΑΤΟΣ",
       "locality": "Πυλαία",
-      "postcode": null,
+      "postcode": "55535",
       "phone": "2311826424",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-09-20",
@@ -18865,11 +19037,12 @@
       "name": "ΣΑΪΤΗ ΑΙΚΑΤΕΡΙΝΗ - ΓΙΑΝΝΟΠΟΥΛΟΣ ΑΛΕΞΑΝΔΡΟΣ Ο.Ε",
       "address": "ΒΑΣ. ΟΛΓΑΣ 132",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "55134",
       "phone": "2312001623",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-10-29",
@@ -18972,11 +19145,12 @@
       "name": "ΚΟΓΙΟΣ ΘΕΟΦΑΝΗΣ",
       "address": "ΑΓ. ΝΙΚΟΛΑΟΥ 16 ΘΕΡΜΗ",
       "locality": "Θέρμη",
-      "postcode": null,
+      "postcode": "57001",
       "phone": "2313041608",
       "groupId": "thermi",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-10-04",
@@ -19121,11 +19295,12 @@
       "name": "ΤΖΙΤΖΙΛΗ ΕΙΡΗΝΗ ΚΑΙ ΣΙΑ Ε.Ε.",
       "address": "ΜΕΓΑΛΟΥ ΑΛΕΞΑΝΔΡΟΥ 85",
       "locality": "Εύοσμος",
-      "postcode": null,
+      "postcode": "56224",
       "phone": "2313110650",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-09-20",
@@ -19164,11 +19339,12 @@
       "name": "ΦΥΛΑΚΗ ΑΓΓΕΛΙΚΗ",
       "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΗΣ 80",
       "locality": "Εύοσμος",
-      "postcode": null,
+      "postcode": "56224",
       "phone": "2314014809",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-10-29",
@@ -19207,11 +19383,12 @@
       "name": "ΠΑΠΑΓΕΩΡΓΙΟΥ ΕΛΕΝΗ & ΣΙΑ ΕΕ",
       "address": "ΚΟΜΝΗΝΩΝ 9",
       "locality": "Πανόραμα",
-      "postcode": null,
+      "postcode": "55236",
       "phone": "2314071200",
       "groupId": "panorama-pefka",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-10-02",
       "lastSeen": "2026-10-02",
@@ -19228,11 +19405,12 @@
       "name": "ΤΣΙΚΑ ΑΦΡΟΔΙΤΗ & ΣΙΑ ΟΕ",
       "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΗΣ 50",
       "locality": "Καλαμαριά",
-      "postcode": null,
+      "postcode": "55133",
       "phone": "2314071606",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-21",
       "lastSeen": "2026-09-30",
@@ -19249,11 +19427,12 @@
       "name": "ΓΚΑΝΤΡΗΣ ΑΘΑΝΑΣΙΟΣ",
       "address": "ΛΕΥΚΗΣ 1",
       "locality": "Εύοσμος",
-      "postcode": null,
+      "postcode": "56224",
       "phone": "2314071957",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-21",
       "lastSeen": "2026-09-19",
@@ -19421,11 +19600,12 @@
       "name": "ΕΥΘΥΜΙΑΔΟΥ ΔΕΣΠΟΙΝΑ-ΕΥΓΕΝΙΑ",
       "address": "Κ. ΚΑΡΑΜΑΝΛΗ 81 & ΣΟΥΡΜΕΝΩΝ 21",
       "locality": "Ελευθέριο-Κορδελιό",
-      "postcode": null,
+      "postcode": "56334",
       "phone": "2316014291",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-10-04",
@@ -19442,11 +19622,12 @@
       "name": "ΜΟΥΣΤΑΚΙΔΟΥ ΧΡΥΣΟΥΛΑ - ΜΟΥΣΤΑΚΙΔΗΣ Φ. Ο.Ε.",
       "address": "ΜΑΡΚΟΥ ΜΠΟΤΣΑΡΗ 109",
       "locality": "Θεσσαλονίκη",
-      "postcode": null,
+      "postcode": "54453",
       "phone": "2316016105",
       "groupId": "metro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-08-21",
@@ -19632,11 +19813,12 @@
       "name": "ΚΩΤΙΚΑ ΜΥΡΤΩ & ΣΙΑ Ο.Ε.",
       "address": "ΦΙΛΙΠΠΟΥ 9",
       "locality": "Κύμινα",
-      "postcode": null,
+      "postcode": "57300",
       "phone": "2391041419",
       "groupId": "delta",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-29",
       "lastSeen": "2026-10-05",
@@ -19716,11 +19898,12 @@
       "name": "ΣΙΑΡΙΝΟΥΔΗ ΑΙΚ. - ΜΠΟΥΤΣΑΛΗΣ ΔΗΜ. & ΣΙΑ ΟΕ",
       "address": "ΠΛΑΤΩΝΟΣ 54",
       "locality": "Κουφάλια",
-      "postcode": null,
+      "postcode": "57100",
       "phone": "2391051145",
       "groupId": "chalkidona",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-10-06",
@@ -19737,11 +19920,12 @@
       "name": "ΓΑΚΗ ΕΥΓΕΝΙΑ",
       "address": "ΦΙΛΙΠΠΟΥ 54",
       "locality": "Κουφάλια",
-      "postcode": null,
+      "postcode": "57100",
       "phone": "2391052034",
       "groupId": "chalkidona",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-10-04",
@@ -19884,11 +20068,12 @@
       "name": "ΚΟΥΛΟΥΡΗ ΔΩΡΟΘΕΑ & ΣΙΑ Ο.Ε.",
       "address": "ΡΩΜΑΝΟΥ 2ΟΑ & ΑΝΘΕΩΝ",
       "locality": "Περαία",
-      "postcode": null,
+      "postcode": "57019",
       "phone": "2392020000",
       "groupId": "thermaikos",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-10-05",
@@ -19948,11 +20133,12 @@
       "name": "ΚΑΖΑΚΟΣ ΙΩΑΝΝΗΣ",
       "address": "ΣΟΦΙΑΣ ΒΕΜΠΟ 13",
       "locality": "Περαία",
-      "postcode": null,
+      "postcode": "57019",
       "phone": "2392022833",
       "groupId": "thermaikos",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-27",
@@ -20054,11 +20240,12 @@
       "name": "ΓΚΑΛΑΠΗ ΘΕΟΔΩΡΑ",
       "address": "ΠΛ. ΕΛΕΥΘΕΡΙΑΣ 7",
       "locality": "Περαία",
-      "postcode": null,
+      "postcode": "57019",
       "phone": "2392028833",
       "groupId": "thermaikos",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-06-16",
@@ -20075,11 +20262,12 @@
       "name": "Σ.Φ. ΒΑΣΚΑΛΗ ΑΝΝΑ - ΛΟΥΙΖΟΥ ΔΗΜΗΤΡΑ",
       "address": "ΑΝΘΕΩΝ 36 & ΑΜΠΕΛΟΚΗΠΩΝ",
       "locality": "Περαία",
-      "postcode": null,
+      "postcode": "57019",
       "phone": "2392028851",
       "groupId": "thermaikos",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-09-13",
       "lastSeen": "2026-09-13",
@@ -20461,11 +20649,12 @@
       "name": "ΠΕΓΚΛΙΔΟΥ ΚΥΡΙΑΚΗ",
       "address": "ΛΕΩΦ. ΘΕΣΣΑΛΟΝΙΚΗΣ 24-26",
       "locality": "Αγία Τριάδα",
-      "postcode": null,
+      "postcode": "57019",
       "phone": "2392051924",
       "groupId": "thermaikos",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-28",
       "lastSeen": "2026-10-03",
@@ -20504,11 +20693,12 @@
       "name": "ΚΩΣΤΙΚΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
       "address": "ΜΕΓΑΛΟΥ ΑΛΕΞΑΝΔΡΟΥ 50",
       "locality": "Τρίλοφος",
-      "postcode": null,
+      "postcode": "57500",
       "phone": "2392062112",
       "groupId": "thermi",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-06-17",
@@ -20674,11 +20864,12 @@
       "name": "ΑΡΓΥΡΟΠΟΥΛΟΥ ΚΩΝΣΤΑΝΤΙΝΑ",
       "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 21",
       "locality": "Ταγαράδες",
-      "postcode": null,
+      "postcode": "57001",
       "phone": "2392070254",
       "groupId": "thermi",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-10-03",
       "lastSeen": "2026-10-03",
@@ -20717,11 +20908,12 @@
       "name": "ΜΑΜΜΟΥ ΑΝΑΣΤΑΣΙΑ",
       "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 15",
       "locality": "Νέο Ρύσιο",
-      "postcode": null,
+      "postcode": "57001",
       "phone": "2392073000",
       "groupId": "thermi",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-07-28",
       "lastSeen": "2026-10-05",
@@ -20738,11 +20930,12 @@
       "name": "ΑΠΟΣΤΟΛΙΔΟΥ ΘΩΜΑΗ",
       "address": "ΜΕΤΑΜΟΡΦΩΣΕΩΣ 19, ΑΝΩ ΠΕΡΑΙΑ",
       "locality": "Περαία",
-      "postcode": null,
+      "postcode": "57019",
       "phone": "2392075343",
       "groupId": "thermaikos",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-27",
       "lastSeen": "2026-07-24",
@@ -20759,11 +20952,12 @@
       "name": "ΜΑΥΡΟΒΟΥΝΙΩΤΗΣ - EXPERT PHARMACY ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.",
       "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ & ΕΙΡΗΝΗΣ 4",
       "locality": "Ν. Επιβάτες",
-      "postcode": null,
+      "postcode": "57019",
       "phone": "2392075484",
       "groupId": "thermaikos",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-10-04",
       "lastSeen": "2026-10-04",
@@ -20845,11 +21039,12 @@
       "name": "ΦΩΤΙΑΔΗΣ ΠΑΥΛΟΣ Ι.Κ.Ε.",
       "address": "ΑΝΘΕΩΝ 32Α",
       "locality": "Περαία",
-      "postcode": null,
+      "postcode": "57019",
       "phone": "2392181001",
       "groupId": "thermaikos",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-07-26",
@@ -20866,11 +21061,12 @@
       "name": "ΧΑΤΖΗΕΛΕΥΘΕΡΙΟΥ ΑΝΟΙΞΙΑ",
       "address": "ΖΑΓΚΛΙΒΕΡΙ",
       "locality": "Ζαγκλιβέρι",
-      "postcode": null,
+      "postcode": "57012",
       "phone": "2393031001",
       "groupId": "lagkadas",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-18",
       "lastSeen": "2026-10-06",
@@ -20887,11 +21083,12 @@
       "name": "ΦΕΙΔΑΝΤΣΗΣ ΘΩΜΑΣ",
       "address": "ΖΑΓΚΛΙΒΕΡΙ",
       "locality": "Ζαγκλιβέρι",
-      "postcode": null,
+      "postcode": "57012",
       "phone": "2393032172",
       "groupId": "lagkadas",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-10-07",
@@ -20951,11 +21148,12 @@
       "name": "ΜΙΧΑΗΛ ΑΝ. ΜΑΤΙΝΑ",
       "address": "ΑΧ. ΤΖΕΛΙΛΗ 42",
       "locality": "Λαγκαδάς",
-      "postcode": null,
+      "postcode": "57200",
       "phone": "2394022218",
       "groupId": "lagkadas",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-21",
       "lastSeen": "2026-06-21",
@@ -21100,11 +21298,12 @@
       "name": "ΚΑΡΑΤΖΙΑ ΛΑΜΠΡΙΝΗ",
       "address": "ΚΑΛΑΡΗ (ΠΕΡΙΟΧΗ ΑΓ.ΑΘΑΝΑΣΙΟΥ)",
       "locality": "Μελισσοχώρι",
-      "postcode": null,
+      "postcode": "57018",
       "phone": "2394031710",
       "groupId": "oraiokastro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-10-04",
@@ -21121,11 +21320,12 @@
       "name": "ΠΑΝΑΓΙΩΤΟΠΟΥΛΟΣ ΠΑΝΑΓΙΩΤΗΣ-ΕΜΜΑΝΟΥΗΛ",
       "address": "ΠΛΑΤΕΙΑ ΛΙΓΔΑ",
       "locality": "Μελισσοχώρι",
-      "postcode": null,
+      "postcode": "57018",
       "phone": "2394031900",
       "groupId": "oraiokastro",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-17",
       "lastSeen": "2026-10-06",
@@ -21375,11 +21575,12 @@
       "name": "ΣΥΜΕΩΝΙΔΟΥ ΠΑΝΑΓΙΩΤΑ",
       "address": "Γ. ΓΕΝΝΗΜΑΤΑ 10",
       "locality": "Σταυρός",
-      "postcode": null,
+      "postcode": "57014",
       "phone": "2397061915",
       "groupId": "volvi",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-07-25",
       "lastSeen": "2026-09-13",
@@ -21396,11 +21597,12 @@
       "name": "ΜΟΡΕΛΛΑΣ ΓΕΩΡΓΙΟΣ Ε.Ε.",
       "address": "ΣΤΑΥΡΟΣ",
       "locality": "Σταυρός",
-      "postcode": null,
+      "postcode": "57014",
       "phone": "2397065546",
       "groupId": "volvi",
       "sources": [
-        "fsth"
+        "fsth",
+        "pkm"
       ],
       "firstSeen": "2026-06-28",
       "lastSeen": "2026-10-05",
@@ -21476,6 +21678,27 @@
       }
     },
     {
+      "id": "x-08c9cb633b",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΕΛΕΝΗ",
+      "address": "ΜΙΑΟΥΛΗ 61",
+      "locality": "Πλαγιάρι",
+      "postcode": "57500",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.472024,
+        "lon": 22.957061,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΜΙΑΟΥΛΗ 61, Πλαγιάρι"
+      }
+    },
+    {
       "id": "x-0967cbb590",
       "name": "Σ.Φ. ΝΤΟΤΣΗΣ ΓΕΩΡΓΙΟΣ - ΝΤΟΤΣΗΣ ΙΩΑΝΝΗΣ ΟΕ",
       "address": "ΚΟΙΝΟΤΗΣ ΚΑΒΑΛΛΑΡΙΟΥ",
@@ -21497,6 +21720,27 @@
       }
     },
     {
+      "id": "x-115e5a1d52",
+      "name": "ΚΛΗΡ. ΝΙΚΟΠΟΥΛΟΣ ΒΕΝΕΔΙΚΤΟΣ Ο.Ε.",
+      "address": "ΛΥΜΠΕΡΗ ΠΑΥΛΙΔΑΚΗ - 25ης ΜΑΡΤΙΟΥ 1",
+      "locality": "Βαθύλακκος",
+      "postcode": "57011",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.768881,
+        "lon": 22.708241,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Βαθύλακκος"
+      }
+    },
+    {
       "id": "x-173aafdada",
       "name": "ΚΑΤΣΑΡΟΥ ΣΟΦΙΑ",
       "address": "Χ. ΤΡΙΚΟΥΠΗ 22",
@@ -21515,6 +21759,27 @@
         "source": "overture",
         "precision": "exact",
         "ref": "0a2cab70-2566-4a0b-a20c-5ff08ba2571e"
+      }
+    },
+    {
+      "id": "x-19645e9fb9",
+      "name": "ΓΡΗΓΟΡΙΑΔΗΣ ΑΡΤΕΜΙΟΣ",
+      "address": "ΑΛ. ΠΑΠΑΓΟΥ 111",
+      "locality": "Σταυρός",
+      "postcode": "57014",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.711322,
+        "lon": 22.994985,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Σταυρός"
       }
     },
     {
@@ -21581,6 +21846,27 @@
       }
     },
     {
+      "id": "x-32c2539913",
+      "name": "Σ.Φ. ΔΑΔΑΚΗ ΚΩΝΣΤΑΝΤΙΝΑ - ΔΑΔΑΚΗ ΘΑΛΕΙΑ ΟΕ",
+      "address": "ΚΩΝ/ΛΕΩΣ 30-ΠΑΡΑΣΚΕΥΟΠΟΥΛΟΥ",
+      "locality": "Θεσσαλονίκη",
+      "postcode": "54640",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.616279,
+        "lon": 22.95916,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "9ea9cc5d-f429-49e3-b77a-2685a7c67d4f"
+      }
+    },
+    {
       "id": "x-37a0f7b83b",
       "name": "ΤΣΙΛΙΦΙΚΑΣ Ι. & ΣΙΑ ΟΕ",
       "address": "Ο.Τ. 217 ΗΡΑΚΛΕΙΟ",
@@ -21599,6 +21885,48 @@
         "source": "overture",
         "precision": "exact",
         "ref": "d4afa46f-2a34-4769-bbfc-ebf5737f6334"
+      }
+    },
+    {
+      "id": "x-463b97e793",
+      "name": "ΣΚΟΥΛΙΑ Σ. ΔΑΝΑΗ",
+      "address": "Μ.ΜΠΟΤΣΑΡΗ 17-ΒΑΣ.ΟΛΓΑΣ",
+      "locality": "Θεσσαλονίκη",
+      "postcode": "54643",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.607038,
+        "lon": 22.954811,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "cc91481d-fbbb-423d-af4e-76f1bffa4a0e"
+      }
+    },
+    {
+      "id": "x-46899a0176",
+      "name": "ΚΑΡΑΠΑΛΕ ΒΑΡΒΑΡΑ-ΙΟΥΛΙΑ",
+      "address": "ΓΡΗΓΟΡΙΟΥ Ε' 42",
+      "locality": "Τριανδρία",
+      "postcode": "55337",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.621729,
+        "lon": 22.973313,
+        "source": "nominatim",
+        "precision": "exact",
+        "ref": "ΓΡΗΓΟΡΙΟΥ Ε' 42, Τριανδρία"
       }
     },
     {
@@ -21641,6 +21969,48 @@
         "source": "overture",
         "precision": "exact",
         "ref": "f8e21943-4ee2-4821-9e51-acfe35ed5641"
+      }
+    },
+    {
+      "id": "x-4dca6164fc",
+      "name": "ΒΟΓΙΑΤΖΗ ΜΑΡΙΑ",
+      "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ ΚΑΙ ΑΓ. ΝΙΚΟΛΑΟΥ",
+      "locality": "Αγγελοχώρι",
+      "postcode": "57004",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.497287,
+        "lon": 22.834561,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Αγγελοχώρι"
+      }
+    },
+    {
+      "id": "x-5184432420",
+      "name": "ΓΙΑΝΝΑΚΟΣ ΙΩΑΝΝΗΣ - ΜΟΥΡΑΤΙΔΟΥ ΘΕΟΦΑΝΗ Ι.Κ.Ε.",
+      "address": "ΠΑΣΑΛΙΔΗ ΙΩΑΝΝΗ 57",
+      "locality": "Καλαμαριά",
+      "postcode": "55132",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.583154,
+        "lon": 22.962039,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "703db344-5393-4210-93cf-7d9101270027"
       }
     },
     {
@@ -21707,6 +22077,27 @@
       }
     },
     {
+      "id": "x-75a82d4cda",
+      "name": "ΔΗΜΗΤΡΙΑΔΟΥ ΑΝ. ΣΤΥΛΙΑΝΗ",
+      "address": "Δ.Δ. ΝΥΜΦΟΠΕΤΡΑΣ",
+      "locality": "Νυμφόπετρα",
+      "postcode": "57200",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.693124,
+        "lon": 23.329618,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Νυμφόπετρα"
+      }
+    },
+    {
       "id": "x-75c4d59034",
       "name": "ΠΑΣΧΑΛΙΔΟΥ ΣΜΑΡΑΓΔΑ",
       "address": "ΑΓΙΩΝ ΑΝΑΡΓΥΡΩΝ",
@@ -21725,6 +22116,69 @@
         "source": "overture",
         "precision": "exact",
         "ref": "4f13e172-1756-4fef-b8be-5067c39ce241"
+      }
+    },
+    {
+      "id": "x-7a43ac3a41",
+      "name": "ΛΑΛΙΩΤΗ ΑΛΕΞΑΝΔΡΑ",
+      "address": "ΕΥΕΡΓΕΤΙΔΟΣ Φ. ΠΑΤΙΚΑ & ΑΝΩΝΥΜΟΥ",
+      "locality": "Βασιλικά",
+      "postcode": "57006",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.4824,
+        "lon": 23.13647,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "8a37517e-3d66-4be2-922e-77db58b9ce3b"
+      }
+    },
+    {
+      "id": "x-7b6f5b8491",
+      "name": "ΒΑΣΙΛΕΙΑΔΗΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΑΘΑΝ.ΔΙΑΚΟΥ 13Α",
+      "locality": "Σουρωτή",
+      "postcode": "57006",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.472985,
+        "lon": 23.091841,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Σουρωτή"
+      }
+    },
+    {
+      "id": "x-806e1369ec",
+      "name": "Σ.Φ. ΧΑΤΖΗ ΣΤΕΛΑ - ΧΑΤΖΗ-ΒΑΡΙΕΜΕΖΗ ΑΓΓΕΛΙΚΗ ΟΕ",
+      "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 12 ΠΕΝΤΑΛΟΦΟΣ",
+      "locality": "Πεντάλοφος",
+      "postcode": "54500",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.743424,
+        "lon": 22.853003,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πεντάλοφος"
       }
     },
     {
@@ -21771,6 +22225,27 @@
       }
     },
     {
+      "id": "x-88a652104c",
+      "name": "ΧΑΤΖΗΔΑΚΗ ΑΡΧΟΝΤΟΥΛΑ",
+      "address": "Λ. ΠΑΠΑΝΙΚΟΛΑΟΥ 29Α",
+      "locality": "Πεύκα",
+      "postcode": "57010",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.660624,
+        "lon": 22.980649,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "57c3e2eb-e1e4-476a-959d-47b579d2651d"
+      }
+    },
+    {
       "id": "x-8c27c40530",
       "name": "ΔΕΡΜΙΚΗ-ΓΚΑΝΑ ΦΩΤΕΙΝΗ Ο.Ε.",
       "address": "ΑΝΑΤΟΛΙΚΗΣ ΘΡΑΚΗΣ 14",
@@ -21813,6 +22288,27 @@
       }
     },
     {
+      "id": "x-af1fea5a5b",
+      "name": "ΔΗΜΟΠΟΥΛΟΥ ΓΕΩΡΓΙΑ",
+      "address": "Ν. ΑΠΟΛΛΩΝΙΑ",
+      "locality": "Νέα Απολλωνία",
+      "postcode": "57015",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.625736,
+        "lon": 23.440562,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Νέα Απολλωνία"
+      }
+    },
+    {
       "id": "x-b31465ff60",
       "name": "ΝΤΑΓΚΑΣ ΙΩΑΝΝΗΣ",
       "address": "ΚΩΝ.ΚΑΡΑΜΑΝΛΗ 21 (ΑΥΣΤΡΑΛΙΑΣ)",
@@ -21831,6 +22327,27 @@
         "source": "overture",
         "precision": "exact",
         "ref": "6c6102c6-4a37-41bb-b894-aceef32bda33"
+      }
+    },
+    {
+      "id": "x-b4c4f6515e",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΕΥΓΕΝΙΑ ΚΑΙ ΣΙΑ Ε.Ε.",
+      "address": "ΑΝΘΕΩΝ 29",
+      "locality": "Περαία",
+      "postcode": "57019",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.50645,
+        "lon": 22.9271,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "d1307675-9d45-4f8a-9bee-c9dffcd19e6a"
       }
     },
     {
@@ -21897,6 +22414,48 @@
       }
     },
     {
+      "id": "x-dddade8036",
+      "name": "ΚΑΛΟΥΠΤΣΗΣ ΕΥΣΤΡΑΤΙΟΣ",
+      "address": "ΕΓΝΑΤΙΑ - ΛΑΓΥΝΑ",
+      "locality": "Λαγυνά",
+      "postcode": "57200",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.723276,
+        "lon": 23.007053,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "651759b3-1573-460a-b9f8-449622173ac9"
+      }
+    },
+    {
+      "id": "x-dfd0ba83b2",
+      "name": "Σ.Φ. ΓΙΑΝΝΑΚΟΥΛΑ ΕΛΕΝΗ-ΖΙΓΚΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΘΕΣΣΑΛΟΝΙΚΗΣ",
+      "locality": "Ανατολικό",
+      "postcode": "57300",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.66316,
+        "lon": 22.711344,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Ανατολικό"
+      }
+    },
+    {
       "id": "x-e0d8819bcb",
       "name": "ΒΑΣΙΛΕΙΟΥ ΝΙΚΟΛΑΟΣ",
       "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 1",
@@ -21915,6 +22474,48 @@
         "source": "nominatim",
         "precision": "exact",
         "ref": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 1, Κολχικό"
+      }
+    },
+    {
+      "id": "x-ebba26b77a",
+      "name": "ΑΪΒΑΤΙΝΟΥ ΣΤΥΛΙΑΝΗ",
+      "address": "ΑΝΘΕΩΝ 19",
+      "locality": "Περαία",
+      "postcode": "57019",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.505669,
+        "lon": 22.922539,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΑΝΘΕΩΝ 19, Περαία"
+      }
+    },
+    {
+      "id": "x-edf2d804bf",
+      "name": "ΜΟΥΡΟΥΖΙΔΗ ΙΩΑΝ. ΙΦΙΓΕΝΕΙΑ",
+      "address": "ΒΑΣΙΛΙΚΑ",
+      "locality": "Βασιλικά",
+      "postcode": "57006",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.480087,
+        "lon": 23.136266,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Βασιλικά"
       }
     },
     {
@@ -21957,6 +22558,27 @@
         "source": "overture",
         "precision": "exact",
         "ref": "f1de5ff8-14cb-4ff5-b175-261a1ecca456"
+      }
+    },
+    {
+      "id": "x-f348f1d2a5",
+      "name": "ΟΥΖΟΥΝΟΓΛΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΠΑΝΟΡΑΜΑΤΟΣ-ΘΕΡΜΗΣ 25",
+      "locality": "Πανόραμα",
+      "postcode": "55236",
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "pkm"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 40.560461,
+        "lon": 23.022374,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΠΑΝΟΡΑΜΑΤΟΣ-ΘΕΡΜΗΣ 25, Πανόραμα"
       }
     },
     {

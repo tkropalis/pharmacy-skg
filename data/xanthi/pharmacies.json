@@ -44,6 +44,27 @@
       }
     },
     {
+      "id": "2541021721",
+      "name": "ΡΟΪΔΟΥ ΧΡΥΣΟΥΛΑ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΊΟΥ 142",
+      "locality": "Ξάνθη",
+      "postcode": null,
+      "phone": "2541021721",
+      "groupId": "xanthi",
+      "sources": [
+        "iteq-xanthi"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 41.1368927,
+        "lon": 24.8878392,
+        "ref": "https://xanthi.efhmeries.gr/Home/Details/3681",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2541022485",
       "name": "ΡΑΝΟΣ ΑΛΕΞΑΝΔΡΟΣ",
       "address": "40 ΕΚΚΛΗΣΙΩΝ 3",
@@ -118,7 +139,7 @@
         "iteq-xanthi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 41.1363689,
         "lon": 24.886035,
@@ -601,7 +622,7 @@
         "iteq-xanthi"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 41.1351998,
         "lon": 24.8852832,

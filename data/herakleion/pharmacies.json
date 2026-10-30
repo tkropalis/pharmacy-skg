@@ -307,7 +307,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 35.3305586,
         "lon": 25.1342859,
@@ -454,7 +454,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 35.3390665,
         "lon": 25.1584822,
@@ -1451,6 +1451,27 @@
       }
     },
     {
+      "id": "2810257934",
+      "name": "ΛΥΡΑΤΖΑΚΗ ΜΑΡΙΑΝΝΑ ΤΟΥ ΙΩΑΝΝΗ",
+      "address": "ΠΕΤΡΑΚΟΓΙΩΡΓΗ 40 ENANTI ΓΥΜΝΑΣΤΗΡΙΟΥ MY GYM - ΜΑΣΤΑΜΠΑΣ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810257934",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 35.3234387,
+        "lon": 25.1275736,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/58069",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810258125",
       "name": "Σ.Φ. ΤΣΑΓΚΑΡΑΚΗΣ ΕΥΑΓΓΕΛΟΣ - ΣΥΛΛΙΓΑΡΔΑΚΗ ΜΑΡΙΑ ΕΙΡΗΝΗ Ο.Ε.",
       "address": "ΛΕΩΦ. ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 127",
@@ -1672,7 +1693,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 35.3385055,
         "lon": 25.1328158,
@@ -1903,7 +1924,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 35.3361229,
         "lon": 25.1336924,
@@ -2239,7 +2260,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 35.3309361,
         "lon": 25.1273935,
@@ -2323,7 +2344,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 35.3349422,
         "lon": 25.1226682,
@@ -2953,7 +2974,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 35.3112215,
         "lon": 25.0914384,
@@ -2974,7 +2995,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 35.3306826,
         "lon": 25.2563374,
@@ -3126,6 +3147,27 @@
         "lat": 35.316295,
         "lon": 25.09264,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/54490",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810823150",
+      "name": "ΑΛΕΞΑΝΔΡΑΚΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ ΙΚΕ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 171",
+      "locality": "Γάζι",
+      "postcode": null,
+      "phone": "2810823150",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 35.3261811,
+        "lon": 25.0695725,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/54519",
         "source": "list",
         "precision": "exact"
       }
@@ -3436,7 +3478,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 35.1426915,
         "lon": 25.2648432,
@@ -4003,7 +4045,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 35.3179965,
         "lon": 25.3895652,
@@ -4045,7 +4087,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 35.331734,
         "lon": 25.3452693,
@@ -4234,7 +4276,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 35.2831684,
         "lon": 25.4628694,
@@ -4276,7 +4318,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 35.2926533,
         "lon": 25.4320195,

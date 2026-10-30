@@ -163,29 +163,9 @@
       "name": "Λάρισα",
       "source": {
         "url": "https://larisa.efhmeries.gr/",
-        "uploadedAt": "2026-10-29T21:12:12.786Z"
+        "uploadedAt": "2026-10-30T10:54:04.713Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "23:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2410288078",
-              "name": "ΚΟΥΤΣΟΥΚΗΣ Π. ΓΕΩΡΓΙΟΣ",
-              "address": "31ης ΑΥΓΟΥΣΤΟΥ 10 & ΟΓΛ (Πλατεία Αγ. Βελισαρίου)",
-              "locality": "Λάρισα",
-              "phone": "2410288078"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 08:00 ΕΩΣ 23:00",
@@ -231,6 +211,26 @@
               "address": "ΙΩΝ. ΔΡΑΓΟΥΜΗ 6 (Έναντι Δημαρχείου)",
               "locality": "Λάρισα",
               "phone": "2410532451"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "23:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410288078",
+              "name": "ΚΟΥΤΣΟΥΚΗΣ Π. ΓΕΩΡΓΙΟΣ",
+              "address": "31ης ΑΥΓΟΥΣΤΟΥ 10 & ΟΓΛ (Πλατεία Αγ. Βελισαρίου)",
+              "locality": "Λάρισα",
+              "phone": "2410288078"
             }
           ]
         }

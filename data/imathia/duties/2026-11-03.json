@@ -7,29 +7,9 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-10-29T21:13:20.753Z"
+        "uploadedAt": "2026-10-30T10:55:16.912Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2331071601",
-              "name": "ΚΑΛΑΜΠΑΛΙΚΑΣ ΙΩΑΝΝΗΣ ΤΟΥ ΕΥΑΓΓΕΛΟΥ",
-              "address": "ΒΕΝΙΖΕΛΟΥ 48 ΚΑΙ ΚΟΝΙΤΣΗ",
-              "locality": "Βέροια",
-              "phone": "2331071601"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "08:00 ΠΡΩΙ ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -95,6 +75,26 @@
               "address": "ΤΡΕΜΠΕΣΙΝΑΣ 20 - ΚΤΕΛ",
               "locality": "Βέροια",
               "phone": "2331027355"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331071601",
+              "name": "ΚΑΛΑΜΠΑΛΙΚΑΣ ΙΩΑΝΝΗΣ ΤΟΥ ΕΥΑΓΓΕΛΟΥ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 48 ΚΑΙ ΚΟΝΙΤΣΗ",
+              "locality": "Βέροια",
+              "phone": "2331071601"
             }
           ]
         }

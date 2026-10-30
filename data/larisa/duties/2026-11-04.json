@@ -163,29 +163,9 @@
       "name": "Λάρισα",
       "source": {
         "url": "https://larisa.efhmeries.gr/",
-        "uploadedAt": "2026-10-29T21:12:12.786Z"
+        "uploadedAt": "2026-10-30T10:54:04.713Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "23:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2410552426",
-              "name": "ΜΑΝΗ ΧΑΙΔΩ",
-              "address": "23ης ΟΚΤΩΒΡΙΟΥ 40 (παραπλεύρως Ξεν. Διόνυσος)",
-              "locality": "Λάρισα",
-              "phone": "2410552426"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 08:00 ΕΩΣ 23:00",
@@ -245,6 +225,26 @@
               "address": "ΑΝΘΙΜΟΥ ΓΑΖΗ 10",
               "locality": "Λάρισα",
               "phone": "2410535973"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "23:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410552426",
+              "name": "ΜΑΝΗ ΧΑΙΔΩ",
+              "address": "23ης ΟΚΤΩΒΡΙΟΥ 40 (παραπλεύρως Ξεν. Διόνυσος)",
+              "locality": "Λάρισα",
+              "phone": "2410552426"
             }
           ]
         }

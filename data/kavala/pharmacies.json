@@ -44,6 +44,27 @@
       }
     },
     {
+      "id": "2510222014",
+      "name": "ΤΣΙΡΚΙΝΙΔΟΥ ΣΟΦΙΑ",
+      "address": "ΦΙΛΙΚΗΣ ΕΤΑΙΡΕΙΑΣ 9",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510222014",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 40.935788,
+        "lon": 24.406849,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4017",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510222251",
       "name": "ΚΑΡΕΜΦΥΛΗ ΣΟΦΙΑ",
       "address": "ΔΟΙΡΑΝΗΣ 20",
@@ -139,7 +160,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 40.9368994,
         "lon": 24.4048512,
@@ -286,7 +307,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-11-01",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 40.9382042,
         "lon": 24.4113207,
@@ -454,7 +475,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 40.937377,
         "lon": 24.414484,
@@ -543,6 +564,27 @@
         "lat": 40.9370128,
         "lon": 24.4074583,
         "ref": "https://kavala.efhmeries.gr/Home/Details/3974",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510836640",
+      "name": "ΓΕΩΡΓΙΑΔΟΥ ΜΙΚΑΕΛΑ-ΒΑΣΙΛΙΚΗ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 38",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510836640",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 40.936873,
+        "lon": 24.404601,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4019",
         "source": "list",
         "precision": "exact"
       }

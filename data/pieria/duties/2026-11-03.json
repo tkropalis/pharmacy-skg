@@ -7,7 +7,7 @@
       "name": "Πιερία",
       "source": {
         "url": "https://pieria.efhmeries.gr/",
-        "uploadedAt": "2026-10-29T21:14:53.374Z"
+        "uploadedAt": "2026-10-30T10:56:56.832Z"
       },
       "sections": [
         {
@@ -88,6 +88,26 @@
         },
         {
           "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351046430",
+              "name": "ΟΙΚΟΝΟΜΟΥ ΧΡΗΣΤΟΣ",
+              "address": "ΔΟΡΥΛΑΙΟΥ 8",
+              "locality": "Κατερίνη",
+              "phone": "2351046430"
+            }
+          ]
+        },
+        {
+          "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:00 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
             "from": "08:00",
@@ -123,26 +143,6 @@
               "address": "ΖΑΛΟΓΓΟΥ 33",
               "locality": "Κατερίνη",
               "phone": "2351030867"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2351046430",
-              "name": "ΟΙΚΟΝΟΜΟΥ ΧΡΗΣΤΟΣ",
-              "address": "ΔΟΡΥΛΑΙΟΥ 8",
-              "locality": "Κατερίνη",
-              "phone": "2351046430"
             }
           ]
         }

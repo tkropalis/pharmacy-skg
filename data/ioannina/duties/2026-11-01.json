@@ -7,9 +7,36 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-29T21:13:39.218Z"
+        "uploadedAt": "2026-10-30T10:55:37.480Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651033130",
+              "name": "ΚΑΤΣΟΥΠΗΣ ΔΙΟΜΗΔΗΣ",
+              "address": "ΠΑΥΛΟΥ ΜΕΛΑ 32, ΠΡΩΗΝ ΙΚΑ",
+              "locality": "Ιωάννινα",
+              "phone": "2651033130"
+            },
+            {
+              "pharmacyId": "2651041355",
+              "name": "ΚΥΡΟΥΣΗ ΦΑΝΗ",
+              "address": "ΑΓ. ΚΟΣΜΑ 27 & ΡΙΖΑΡΗ",
+              "locality": "Ιωάννινα",
+              "phone": "2651041355"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 14:30& 18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,33 +74,6 @@
               "address": "ΧΑΡ.ΤΡΙΚΟΥΠΗ 10",
               "locality": "Ιωάννινα",
               "phone": "2651024288"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651033130",
-              "name": "ΚΑΤΣΟΥΠΗΣ ΔΙΟΜΗΔΗΣ",
-              "address": "ΠΑΥΛΟΥ ΜΕΛΑ 32, ΠΡΩΗΝ ΙΚΑ",
-              "locality": "Ιωάννινα",
-              "phone": "2651033130"
-            },
-            {
-              "pharmacyId": "2651041355",
-              "name": "ΚΥΡΟΥΣΗ ΦΑΝΗ",
-              "address": "ΑΓ. ΚΟΣΜΑ 27 & ΡΙΖΑΡΗ",
-              "locality": "Ιωάννινα",
-              "phone": "2651041355"
             }
           ]
         }

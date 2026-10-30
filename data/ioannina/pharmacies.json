@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
+      "id": "2651003516",
+      "name": "ΜΠΡΑΧΑΝΤΙΝΗΣ ΙΑΣΩΝ",
+      "address": "ΣΤΑΥΡΙΑΚΟΥ 8 & ΕΛΕΥΘΕΡΙΑΣ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651003516",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 39.6563027,
+        "lon": 20.8404604,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5078",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651020110",
       "name": "ΚΑΚΟΣΙΜΟΣ ΧΡΗΣΤΟΣ",
       "address": "ΘΩΜΑ ΠΑΣΧΙΔΗ 40",
@@ -748,7 +769,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.6616812,
         "lon": 20.8483341,

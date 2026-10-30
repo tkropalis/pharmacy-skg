@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "arta",
-  "updatedAt": "2026-10-29T10:59:54.285Z",
-  "checkedAt": "2026-10-29T21:12:48.895Z",
+  "updatedAt": "2026-10-30T10:54:44.151Z",
+  "checkedAt": "2026-10-30T10:54:44.151Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-11-04"
+    "to": "2026-11-05"
   },
   "extendedHours": [],
   "sources": [

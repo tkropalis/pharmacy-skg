@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-05",
+  "groups": [
+    {
+      "id": "evia",
+      "name": "Εύβοια",
+      "source": {
+        "url": "https://evia.efhmeries.gr/",
+        "uploadedAt": "2026-10-30T10:54:58.467Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221043724",
+              "name": "ΑΘΑΝΑΣΙΑΔΗ ΑΝΝΑ-ΝΑΤΑΛΙ",
+              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΕΩΣ 36",
+              "locality": "Αρτάκη",
+              "phone": "2221043724"
+            },
+            {
+              "pharmacyId": "2226053141",
+              "name": "ΛΙΑΠΟΔΗΜΗΤΡΗ ΠΑΝΑΓΙΩΤΑ",
+              "address": "ΠΛΗΣΙΟΝ ΚΤΕΛ",
+              "locality": "Ιστιαία",
+              "phone": "2226053141"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2229063332",
+              "name": "ΜΑΝΕΤΑ ΜΑΡΙΑ",
+              "address": "ΛΕΩΦ.ΑΜΑΡ.ΑΡΤΕΜΙΔΟΣ 48 / ΟΙΚΙΑ: ΑΡΙΣΤΟΤΕΛΟΥΣ 1 - ΒΑΣΙΛΙΚΟ",
+              "locality": "Ερέτρια",
+              "phone": "2229063332"
+            },
+            {
+              "pharmacyId": "2224023855",
+              "name": "ΣΙΑΣΑΚΟΣ ΕΛΕΥΘΕΡΙΟΣ",
+              "address": "ΣΑΧΤΟΥΡΗ 124",
+              "locality": "Κάρυστος",
+              "phone": "2224023855"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 17:30",
+          "hours": {
+            "from": "14:00",
+            "to": "17:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221021220",
+              "name": "ΛΙΟΠΥΡΗ ΑΘΑΝΑΣΙΑ",
+              "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 40",
+              "locality": "Χαλκίδα",
+              "phone": "2221021220"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221087225",
+              "name": "ΜΑΝΟΥΣΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΕΘΝΑΡΧΟΥ ΜΑΚΑΡΙΟΥ 43",
+              "locality": "Χαλκίδα",
+              "phone": "2221087225"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

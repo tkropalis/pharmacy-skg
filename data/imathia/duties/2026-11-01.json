@@ -7,26 +7,26 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-10-29T21:13:20.753Z"
+        "uploadedAt": "2026-10-30T10:55:16.912Z"
       },
       "sections": [
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:30",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331066755",
-              "name": "ΜΙΛΤΙΑΔΗΣ Κ ΝΙΚΟΛΑΪΔΗΣ",
-              "address": "ΚΑΡΑΤΑΣΟΥ 19 - Κοντά στο 6ο Δημοτικό σχολείο",
+              "pharmacyId": "2331062989",
+              "name": "Σ.Φ. ΚΑΛΑΪΤΖΙΔΗΣ Π. - ΚΑΛΑΪΤΖΙΔΗΣ Γ. Ο.Ε.",
+              "address": "ΗΡΑΣ 9 - κοντά στα ΚΤΕΛ",
               "locality": "Βέροια",
-              "phone": "2331066755"
+              "phone": "2331062989"
             }
           ]
         },
@@ -80,26 +80,6 @@
         },
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:30",
-          "hours": {
-            "from": "08:00",
-            "to": "14:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2331062989",
-              "name": "Σ.Φ. ΚΑΛΑΪΤΖΙΔΗΣ Π. - ΚΑΛΑΪΤΖΙΔΗΣ Γ. Ο.Ε.",
-              "address": "ΗΡΑΣ 9 - κοντά στα ΚΤΕΛ",
-              "locality": "Βέροια",
-              "phone": "2331062989"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
             "from": "14:30",
@@ -125,6 +105,26 @@
             "from": "19:00",
             "to": "21:00",
             "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331066755",
+              "name": "ΜΙΛΤΙΑΔΗΣ Κ ΝΙΚΟΛΑΪΔΗΣ",
+              "address": "ΚΑΡΑΤΑΣΟΥ 19 - Κοντά στο 6ο Δημοτικό σχολείο",
+              "locality": "Βέροια",
+              "phone": "2331066755"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],

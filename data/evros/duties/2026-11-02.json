@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-29T21:13:08.133Z"
+        "uploadedAt": "2026-10-30T10:55:04.836Z"
       },
       "sections": [
         {
@@ -34,26 +34,6 @@
               "address": "ΒΑΣ. ΑΛΕΞΑΝΔΡΟΥ 24",
               "locality": "Διδυμότειχο",
               "phone": "2553022322"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551029367",
-              "name": "ΗΛΙΑΚΗ ΕΥΑΓΓΕΛΙΑ",
-              "address": "Βιζβίζη 7",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551029367"
             }
           ]
         },
@@ -109,6 +89,26 @@
               "address": "Κύπρου 20 (πλατεία Παλ. Δημαρχίας)",
               "locality": "Αλεξανδρούπολη",
               "phone": "2551082280"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551029367",
+              "name": "ΗΛΙΑΚΗ ΕΥΑΓΓΕΛΙΑ",
+              "address": "Βιζβίζη 7",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551029367"
             }
           ]
         }

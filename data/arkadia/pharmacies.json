@@ -359,27 +359,6 @@
       }
     },
     {
-      "id": "2710234732",
-      "name": "ΚΑΡΚΟΥΛΗ ΜΑΡΙΑ",
-      "address": "ΕΡ. ΣΤΑΥΡΟΥ ΚΑΙ ΑΝΑΓΝΩΣΤΑΡΑ",
-      "locality": "Τρίπολη",
-      "postcode": null,
-      "phone": "2710234732",
-      "groupId": "arkadia",
-      "sources": [
-        "iteq-arkadia"
-      ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
-      "location": {
-        "lat": 37.5127045,
-        "lon": 22.3679173,
-        "ref": "https://arkadia.efhmeries.gr/Home/Details/5087",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2710235577",
       "name": "ΚΥΡΙΑΚΟΠΟΥΛΟΣ ΑΘΑΝΑΣΙΟΣ",
       "address": "ΝΙΚΗΤΑΡΑ 13",
@@ -517,7 +496,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 37.5114741,
         "lon": 22.3722054,
@@ -601,7 +580,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 37.4036411,
         "lon": 22.7228236,
@@ -706,7 +685,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 37.1677509,
         "lon": 22.8579221,
@@ -769,7 +748,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 37.4007063,
         "lon": 22.1355298,
@@ -811,7 +790,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 37.6845416,
         "lon": 22.2955302,
@@ -832,7 +811,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 37.7322838,
         "lon": 21.9594427,

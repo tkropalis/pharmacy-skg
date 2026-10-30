@@ -223,7 +223,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.362338,
         "lon": 21.9228827,
@@ -795,6 +795,27 @@
         "lat": 39.365487,
         "lon": 21.9221238,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3744",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441074126",
+      "name": "ΚΕΦΑΛΑ ΚΩΝΣΤΑΝΤΙΑ",
+      "address": "ΙΕΖΕΚΙΗΛ & ΧΑΡΙΤΟΥ",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441074126",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 39.3655301,
+        "lon": 21.9238109,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3802",
         "source": "list",
         "precision": "exact"
       }
