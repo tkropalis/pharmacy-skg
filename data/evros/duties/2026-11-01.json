@@ -7,29 +7,9 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-30T10:55:04.836Z"
+        "uploadedAt": "2026-10-30T20:51:41.398Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00-21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551027077",
-              "name": "ΜΥΡΜΙΛΙΑΓΚΟΣ ΝΙΚΟΛΑΟΣ",
-              "address": "Ελ. Βενιζέλου 46 (όπισθεν Δημαρχείου)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551027077"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "10:00-14:00 & 18:00-08:00",
@@ -129,6 +109,26 @@
               "address": "ΤΡΑΙΑΝΟΥΠΟΛΕΩΣ 3",
               "locality": "Φέρες",
               "phone": "2555022744"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00-21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551027077",
+              "name": "ΜΥΡΜΙΛΙΑΓΚΟΣ ΝΙΚΟΛΑΟΣ",
+              "address": "Ελ. Βενιζέλου 46 (όπισθεν Δημαρχείου)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551027077"
             }
           ]
         }

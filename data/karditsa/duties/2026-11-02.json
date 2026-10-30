@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-10-30T10:55:52.831Z"
+        "uploadedAt": "2026-10-30T20:52:24.720Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441024821",
-              "name": "ΚΕΧΑΓΙΑ ΕΛΕΝΗ",
-              "address": "ΜΠΛΑΤΣΟΥΚΑ 16",
-              "locality": "Καρδίτσα",
-              "phone": "2441024821"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ- 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΧΑΡΙΤΟΥ 22",
               "locality": "Καρδίτσα",
               "phone": "2441022026"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441024821",
+              "name": "ΚΕΧΑΓΙΑ ΕΛΕΝΗ",
+              "address": "ΜΠΛΑΤΣΟΥΚΑ 16",
+              "locality": "Καρδίτσα",
+              "phone": "2441024821"
             }
           ]
         }

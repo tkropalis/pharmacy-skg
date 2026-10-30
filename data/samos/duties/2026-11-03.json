@@ -7,9 +7,26 @@
       "name": "Σάμος",
       "source": {
         "url": "https://samos.efhmeries.gr/",
-        "uploadedAt": "2026-10-30T10:57:09.238Z"
+        "uploadedAt": "2026-10-30T20:53:39.814Z"
       },
       "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ*",
+          "hours": null,
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273022800",
+              "name": "ΚΙΛΟΥΚΙΩΤΟΥ ΑΛΕΞΑΝΔΡΑ",
+              "address": "ΠΡΟΣΦΥΓΙΚΑ",
+              "locality": "Άνω Βαθύ",
+              "phone": "2273022800"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
@@ -87,23 +104,6 @@
               "address": "ΧΑΤΖΗΓΙΑΝΝΗ",
               "locality": "Καρλόβασι",
               "phone": "2273032658"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "ΕΦΗΜΕΡΕΥΕΙ*",
-          "hours": null,
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2273022800",
-              "name": "ΚΙΛΟΥΚΙΩΤΟΥ ΑΛΕΞΑΝΔΡΑ",
-              "address": "ΠΡΟΣΦΥΓΙΚΑ",
-              "locality": "Άνω Βαθύ",
-              "phone": "2273022800"
             }
           ]
         }

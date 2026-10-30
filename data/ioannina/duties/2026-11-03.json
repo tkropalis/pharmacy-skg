@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-30T10:55:37.480Z"
+        "uploadedAt": "2026-10-30T20:52:12.433Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651045996",
-              "name": "Σ.Φ. ΤΣΑΚΟΥΜΗ ΜΑΡΙΑ- ΤΣΑΚΟΥΜΗ ΝΑΤΑΛΙΑ",
-              "address": "ΔΩΔΩΝΗΣ 52 & ΑΡΥΒΑ 1",
-              "locality": "Ιωάννινα",
-              "phone": "2651045996"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "ΖΩΣΙΜΑΔΩΝ 2 ΚΑΙ ΣΙΝΑ",
               "locality": "Ιωάννινα",
               "phone": "2651024925"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651045996",
+              "name": "Σ.Φ. ΤΣΑΚΟΥΜΗ ΜΑΡΙΑ- ΤΣΑΚΟΥΜΗ ΝΑΤΑΛΙΑ",
+              "address": "ΔΩΔΩΝΗΣ 52 & ΑΡΥΒΑ 1",
+              "locality": "Ιωάννινα",
+              "phone": "2651045996"
             }
           ]
         }
