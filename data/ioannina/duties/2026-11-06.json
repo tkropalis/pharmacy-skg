@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-10-31T10:27:34.914Z"
+        "uploadedAt": "2026-10-31T20:03:03.107Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651042722",
-              "name": "Σ.Φ. ΜΠΡΑΧΑΝΤΙΝΗΣ ΝΙΚΗΤΑΣ - ΟΥΕΡ ΜΑΛΒΙΝΑ",
-              "address": "3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ 23Α, ΑΝΑΤΟΛΗ",
-              "locality": "Ιωάννινα",
-              "phone": "2651042722"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 35",
               "locality": "Ιωάννινα",
               "phone": "2651045233"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651042722",
+              "name": "Σ.Φ. ΜΠΡΑΧΑΝΤΙΝΗΣ ΝΙΚΗΤΑΣ - ΟΥΕΡ ΜΑΛΒΙΝΑ",
+              "address": "3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ 23Α, ΑΝΑΤΟΛΗ",
+              "locality": "Ιωάννινα",
+              "phone": "2651042722"
             }
           ]
         }

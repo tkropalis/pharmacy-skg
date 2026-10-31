@@ -7,7 +7,7 @@
       "name": "Πιερία",
       "source": {
         "url": "https://pieria.efhmeries.gr/",
-        "uploadedAt": "2026-10-31T10:28:52.501Z"
+        "uploadedAt": "2026-10-31T20:04:17.766Z"
       },
       "sections": [
         {
@@ -88,26 +88,6 @@
         },
         {
           "kind": "day",
-          "heading": "8:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2351025789",
-              "name": "Σ.Φ. ΚΑΡΑΒΕΡΓΟΥ ΑΝΑΣΤΑΣΙΑ-ΚΑΡΑΒΕΡΓΟΥ ΑΙΚΑΤΕΡΙΝΗ",
-              "address": "ΕΙΡΗΝΗΣ 6",
-              "locality": "Κατερίνη",
-              "phone": "2351025789"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:00 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
             "from": "08:00",
@@ -143,6 +123,26 @@
               "address": "ΑΘ. ΔΙΑΚΟΥ 4",
               "locality": "Κατερίνη",
               "phone": "2351079423"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351025789",
+              "name": "Σ.Φ. ΚΑΡΑΒΕΡΓΟΥ ΑΝΑΣΤΑΣΙΑ-ΚΑΡΑΒΕΡΓΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΕΙΡΗΝΗΣ 6",
+              "locality": "Κατερίνη",
+              "phone": "2351025789"
             }
           ]
         }

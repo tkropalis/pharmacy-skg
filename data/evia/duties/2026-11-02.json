@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-10-31T10:26:56.135Z"
+        "uploadedAt": "2026-10-31T20:02:26.106Z"
       },
       "sections": [
         {
@@ -66,26 +66,6 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "17:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "17:30",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221081067",
-              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
-              "address": "ΧΑΪΝΑ 56",
-              "locality": "Χαλκίδα",
-              "phone": "2221081067"
-            }
-          ]
-        },
-        {
           "kind": "overnight",
           "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
@@ -102,6 +82,26 @@
               "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
               "locality": "Χαλκίδα",
               "phone": "2221022120"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221081067",
+              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΧΑΪΝΑ 56",
+              "locality": "Χαλκίδα",
+              "phone": "2221081067"
             }
           ]
         },

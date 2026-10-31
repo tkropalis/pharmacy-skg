@@ -7,50 +7,9 @@
       "name": "Πειραιάς",
       "source": {
         "url": "https://piraeus.efhmeries.gr/",
-        "uploadedAt": "2026-10-31T10:28:40.140Z"
+        "uploadedAt": "2026-10-31T20:04:05.352Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 20:00",
-          "hours": {
-            "from": "08:00",
-            "to": "20:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2104539329",
-              "name": "ΕΥΣΤΡΑΤΙΑΔΗ Ε.ΑΛΕΞΑΝΔΡΑ - ΚΛΑΙΡΗ",
-              "address": "ΣΚΟΥΖΕ 40 & ΚΟΥΝΤΟΥΡΙΩΤΟΥ",
-              "locality": "Πειραιάς, Πασαλιμάνι",
-              "phone": "2104539329"
-            },
-            {
-              "pharmacyId": "2104000781",
-              "name": "ΚΑΖΑΖΑΚΗΣ ΙΩΑΝΝΗΣ Ε.Ε.",
-              "address": "25ΗΣ ΜΑΡΤΙΟΥ 210",
-              "locality": "Κερατσίνι",
-              "phone": "2104000781"
-            },
-            {
-              "pharmacyId": "2104916700",
-              "name": "ΣΠΥΡΟΠΟΥΛΟΣ Ι. ΦΩΤΙΟΣ",
-              "address": "ΛΑΟΔΙΚΕΙΑΣ 111",
-              "locality": "Νίκαια",
-              "phone": "2104916700"
-            },
-            {
-              "pharmacyId": "2104410353",
-              "name": "ΨΑΡΙΑΝΟΥ ΜΑΡΙΑ",
-              "address": "ΜΑΚΕΔΟΝΙΑΣ 1",
-              "locality": "Πέραμα",
-              "phone": "2104410353"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 23:00",
@@ -286,22 +245,22 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 17:00",
+          "kind": "overnight",
+          "heading": "17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
-            "from": "08:00",
-            "to": "17:00",
-            "toNextDay": false
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2104658060",
-              "name": "ΓΑΛΑΝΗ ΦΙΛΙΤΣΑ",
-              "address": "Λ. ΦΑΝΕΡΩΜΕΝΗΣ 1",
+              "pharmacyId": "2104655711",
+              "name": "ΝΑΝΝΟΥ ΕΥΑΓΓΕΛΙΑ",
+              "address": "ΑΓ.ΝΙΚΟΛΑΟΥ 4 (Έναντι Εκκλησίας)",
               "locality": "Σαλαμίνα",
-              "phone": "2104658060"
+              "phone": "2104655711"
             }
           ]
         },
@@ -346,22 +305,63 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 20:00",
           "hours": {
-            "from": "17:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "08:00",
+            "to": "20:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2104655711",
-              "name": "ΝΑΝΝΟΥ ΕΥΑΓΓΕΛΙΑ",
-              "address": "ΑΓ.ΝΙΚΟΛΑΟΥ 4 (Έναντι Εκκλησίας)",
+              "pharmacyId": "2104539329",
+              "name": "ΕΥΣΤΡΑΤΙΑΔΗ Ε.ΑΛΕΞΑΝΔΡΑ - ΚΛΑΙΡΗ",
+              "address": "ΣΚΟΥΖΕ 40 & ΚΟΥΝΤΟΥΡΙΩΤΟΥ",
+              "locality": "Πειραιάς, Πασαλιμάνι",
+              "phone": "2104539329"
+            },
+            {
+              "pharmacyId": "2104000781",
+              "name": "ΚΑΖΑΖΑΚΗΣ ΙΩΑΝΝΗΣ Ε.Ε.",
+              "address": "25ΗΣ ΜΑΡΤΙΟΥ 210",
+              "locality": "Κερατσίνι",
+              "phone": "2104000781"
+            },
+            {
+              "pharmacyId": "2104916700",
+              "name": "ΣΠΥΡΟΠΟΥΛΟΣ Ι. ΦΩΤΙΟΣ",
+              "address": "ΛΑΟΔΙΚΕΙΑΣ 111",
+              "locality": "Νίκαια",
+              "phone": "2104916700"
+            },
+            {
+              "pharmacyId": "2104410353",
+              "name": "ΨΑΡΙΑΝΟΥ ΜΑΡΙΑ",
+              "address": "ΜΑΚΕΔΟΝΙΑΣ 1",
+              "locality": "Πέραμα",
+              "phone": "2104410353"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 17:00",
+          "hours": {
+            "from": "08:00",
+            "to": "17:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2104658060",
+              "name": "ΓΑΛΑΝΗ ΦΙΛΙΤΣΑ",
+              "address": "Λ. ΦΑΝΕΡΩΜΕΝΗΣ 1",
               "locality": "Σαλαμίνα",
-              "phone": "2104655711"
+              "phone": "2104658060"
             }
           ]
         }
