@@ -475,7 +475,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 40.937377,
         "lon": 24.414484,
@@ -669,6 +669,27 @@
         "lat": 40.930899,
         "lon": 24.383471,
         "ref": "https://kavala.efhmeries.gr/Home/Details/4005",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2516007071",
+      "name": "ΜΠΟΥΜΠΟΥΝΑ ΕΛΕΝΗ",
+      "address": "ΝΥΡΕΜΒΕΡΓΗΣ/ΑΜ. ΕΡ. ΣΤΑΥΡΟΥ 205",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2516007071",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 40.9433401,
+        "lon": 24.4231221,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4023",
         "source": "list",
         "precision": "exact"
       }

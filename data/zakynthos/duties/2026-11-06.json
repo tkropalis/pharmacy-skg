@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-06",
+  "groups": [
+    {
+      "id": "zakynthos",
+      "name": "Ζάκυνθος",
+      "source": {
+        "url": "https://zakynthos.efhmeries.gr/",
+        "uploadedAt": "2026-10-31T10:27:09.544Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2695045500",
+              "name": "ΒΟΥΛΤΣΟΥ ΜΑΡΙΑ (2)",
+              "address": "ΛΟΜΒΑΡΔΟΥ 30",
+              "locality": "Ζάκυνθος",
+              "phone": "2695045500"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

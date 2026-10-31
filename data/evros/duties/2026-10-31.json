@@ -7,9 +7,29 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-10-30T20:51:41.398Z"
+        "uploadedAt": "2026-10-31T10:27:03.374Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00-21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551080077",
+              "name": "ΠΑΠΑΔΗΜΗΤΡΙΟΥ ΒΑΣΙΛΙΚΗ",
+              "address": "14ης Μαΐου 8",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551080077"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "08:00-08:00",
@@ -34,81 +54,6 @@
               "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 44",
               "locality": "Ορεστιάδα",
               "phone": "2552022610"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551028396",
-              "name": "ΜΗΤΚΑΣ ΑΔΑΜΑΝΤΙΟΣ",
-              "address": "Ιωακ. Καβύρη 1 (πα/ρως ΟΤΕ)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551028396"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:00-08:00*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2554042020",
-              "name": "ΠΑΠΑΜΙΧΑΗΛ ΠΑΣΧΑΛΗΣ",
-              "address": "ΝΙΚΗΣ 33",
-              "locality": "Τυχερό, Προβατώνας",
-              "phone": "2554042020"
-            },
-            {
-              "pharmacyId": "2554024303",
-              "name": "ΡΟΚΚΑ ΘΕΟΔΩΡΑ",
-              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 88",
-              "locality": "Σουφλί",
-              "phone": "2554024303"
-            },
-            {
-              "pharmacyId": "2555022744",
-              "name": "ΧΑΤΖΗ ΔΗΜΗΤΡΑ",
-              "address": "ΤΡΑΙΑΝΟΥΠΟΛΕΩΣ 3",
-              "locality": "Φέρες",
-              "phone": "2555022744"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00-21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551080077",
-              "name": "ΠΑΠΑΔΗΜΗΤΡΙΟΥ ΒΑΣΙΛΙΚΗ",
-              "address": "14ης Μαΐου 8",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551080077"
             }
           ]
         },
@@ -163,6 +108,61 @@
               "address": "25ΗΣ ΜΑΪΟΥ 131",
               "locality": "Διδυμότειχο",
               "phone": "2553025115"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2554042020",
+              "name": "ΠΑΠΑΜΙΧΑΗΛ ΠΑΣΧΑΛΗΣ",
+              "address": "ΝΙΚΗΣ 33",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042020"
+            },
+            {
+              "pharmacyId": "2554024303",
+              "name": "ΡΟΚΚΑ ΘΕΟΔΩΡΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 88",
+              "locality": "Σουφλί",
+              "phone": "2554024303"
+            },
+            {
+              "pharmacyId": "2555022744",
+              "name": "ΧΑΤΖΗ ΔΗΜΗΤΡΑ",
+              "address": "ΤΡΑΙΑΝΟΥΠΟΛΕΩΣ 3",
+              "locality": "Φέρες",
+              "phone": "2555022744"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551028396",
+              "name": "ΜΗΤΚΑΣ ΑΔΑΜΑΝΤΙΟΣ",
+              "address": "Ιωακ. Καβύρη 1 (πα/ρως ΟΤΕ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551028396"
             }
           ]
         }

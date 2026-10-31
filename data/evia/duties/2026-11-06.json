@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-06",
+  "groups": [
+    {
+      "id": "evia",
+      "name": "Εύβοια",
+      "source": {
+        "url": "https://evia.efhmeries.gr/",
+        "uploadedAt": "2026-10-31T10:26:56.135Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221042721",
+              "name": "ΑΡΓΥΡΟΠΟΥΛΟΣ ΠΕΤΡΟΣ",
+              "address": "ΕΘ. ΑΝΤΙΣΤΑΣΕΩΣ 146",
+              "locality": "Αρτάκη",
+              "phone": "2221042721"
+            },
+            {
+              "pharmacyId": "2226055355",
+              "name": "ΤΖΗΜΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "25ης ΜΑΡΤΙΟΥ 46",
+              "locality": "Ιστιαία",
+              "phone": "2226055355"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2229060906",
+              "name": "Σ.Φ. ΚΕΧΡΗΣ - ΚΟΥΚΗ Ο.Ε.",
+              "address": "ΑΡΧΑΙΟΥ ΘΕΑΤΡΟΥ 76",
+              "locality": "Ερέτρια",
+              "phone": "2229060906"
+            },
+            {
+              "pharmacyId": "2224022217",
+              "name": "Σ.Φ. ΠΛΑΤΥΜΕΣΗΣ ΣΠΥΡΟΣ & ΖΩΗ",
+              "address": "Ι. ΚΟΤΣΙΚΑ 9",
+              "locality": "Κάρυστος",
+              "phone": "2224022217"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 17:30",
+          "hours": {
+            "from": "14:00",
+            "to": "17:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221085705",
+              "name": "Σ.Φ. Δ.ΧΑΝΤΖΗΣ-Ζ.ΧΑΝΤΖΗ Ο.Ε.",
+              "address": "ΧΑΪΝΑ 28",
+              "locality": "Χαλκίδα",
+              "phone": "2221085705"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221081233",
+              "name": "ΣΤΡΑΤΙΚΗΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΦΑΒΙΕΡΟΥ 14",
+              "locality": "Χαλκίδα",
+              "phone": "2221081233"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -160,7 +160,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 39.14338,
         "lon": 21.020815,
@@ -522,6 +522,27 @@
         "lat": 39.1602479,
         "lon": 20.9829211,
         "ref": "https://arta.efhmeries.gr/Home/Details/2421",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681073222",
+      "name": "ΓΙΑΝΝΑΚΗ ΑΜΑΛΙΑ",
+      "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 16",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681073222",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 39.1606389,
+        "lon": 20.9819984,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2446",
         "source": "list",
         "precision": "exact"
       }

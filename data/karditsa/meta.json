@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "karditsa",
-  "updatedAt": "2026-10-30T20:52:30.053Z",
-  "checkedAt": "2026-10-30T20:52:30.053Z",
+  "updatedAt": "2026-10-31T10:27:55.610Z",
+  "checkedAt": "2026-10-31T10:27:55.610Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-11-05"
+    "to": "2026-11-06"
   },
   "extendedHours": [],
   "sources": [

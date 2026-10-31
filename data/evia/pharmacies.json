@@ -391,7 +391,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 38.5152697,
         "lon": 23.6374886,
@@ -758,6 +758,27 @@
       }
     },
     {
+      "id": "2221081233",
+      "name": "ΣΤΡΑΤΙΚΗΣ ΚΩΝ/ΝΟΣ",
+      "address": "ΦΑΒΙΕΡΟΥ 14",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221081233",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 38.4620909,
+        "lon": 23.5936654,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9381",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2221082202",
       "name": "ΒΑΘΗΣ ΕΥΑΓΓΕΛΟΣ",
       "address": "ΦΑΒΙΕΡΟΥ 40 ΠΡΩΝ ΚΤΕΛ",
@@ -895,7 +916,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 38.468676,
         "lon": 23.601998,
@@ -1147,7 +1168,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 38.0143048,
         "lon": 24.4198213,
@@ -1336,7 +1357,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 38.952122,
         "lon": 23.153383,
@@ -1399,7 +1420,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 38.3946605,
         "lon": 23.7919147,
