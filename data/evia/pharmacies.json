@@ -65,6 +65,27 @@
       }
     },
     {
+      "id": "2221021740",
+      "name": "ΜΠΟΥΛΟΥΚΟΥ ΕΛΕΝΗ",
+      "address": "ΚΩΤΣΟΥ 41 ΕΝΤΟΣ ΕΡΓΑΤΙΚΟΥ ΚΕΝΤΡΟΥ",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221021740",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 38.461683,
+        "lon": 23.593743,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9385",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2221021850",
       "name": "ΤΣΟΜΩΚΟΥ ΚΩΝ/ΝΑ",
       "address": "ΒΕΝΙΖΕΛΟΥ 43 - ΔΙΠΛΑ ΑΤΤΙΚΑ BANK",
@@ -223,7 +244,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 38.471461,
         "lon": 23.64434,
@@ -286,7 +307,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 38.464357,
         "lon": 23.593086,
@@ -454,7 +475,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 38.5218832,
         "lon": 23.6329109,
@@ -632,6 +653,27 @@
       }
     },
     {
+      "id": "2221074492",
+      "name": "ΛΙΑΚΑΤΑ ΠΑΝΑΓΙΩΤΑ",
+      "address": "ΚΑΛΑΜΑ 37",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221074492",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 38.468099,
+        "lon": 23.581763,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9382",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2221076486",
       "name": "Σ.Φ. ΝΤΙΑΝΑ ΒΑΛΤΣΑΝΟΒΑ ΠΑΠΑΠΟΣΤΟΛΟΥ - ΜΑΡΤΙΝ ΠΑΠΑΠΟΣΤΟΛΟΥ ΟΕ",
       "address": "ΑΡΕΘΟΥΣΗΣ 217",
@@ -769,7 +811,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 38.4620909,
         "lon": 23.5936654,
@@ -1063,7 +1105,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 38.467017,
         "lon": 23.5975,
@@ -1252,7 +1294,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 38.0151615,
         "lon": 24.4189621,
@@ -1278,6 +1320,27 @@
         "lat": 38.954086,
         "lon": 23.150921,
         "ref": "https://evia.efhmeries.gr/Home/Details/8530",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2226052911",
+      "name": "ΚΟΚΚΙΝΟΖΗΣ ΜΙΧΑΗΛ",
+      "address": "25ης ΜΑΡΤΙΟΥ 14",
+      "locality": "Ιστιαία",
+      "postcode": null,
+      "phone": "2226052911",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 38.952665,
+        "lon": 23.151949,
+        "ref": "https://evia.efhmeries.gr/Home/Details/8633",
         "source": "list",
         "precision": "exact"
       }
@@ -1357,7 +1420,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 38.952122,
         "lon": 23.153383,
@@ -1420,7 +1483,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 38.3946605,
         "lon": 23.7919147,

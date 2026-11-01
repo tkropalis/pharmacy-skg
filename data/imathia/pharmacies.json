@@ -118,7 +118,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 40.5250306,
         "lon": 22.204432,
@@ -202,7 +202,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 40.5254067,
         "lon": 22.204205,
@@ -517,7 +517,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 40.5500249,
         "lon": 22.2439114,
@@ -664,7 +664,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 40.5287487,
         "lon": 22.2036954,
@@ -685,7 +685,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 40.517614,
         "lon": 22.2024058,
@@ -706,7 +706,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 40.5280736,
         "lon": 22.2032728,
@@ -1126,7 +1126,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 40.6310487,
         "lon": 22.0698803,
@@ -1194,6 +1194,27 @@
         "lat": 40.6298234,
         "lon": 22.0688401,
         "ref": "https://imathia.efhmeries.gr/Home/Details/5774",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2332027777",
+      "name": "ΚΑΤΗ ΣΟΦΙΑ",
+      "address": "ΖΑΦΕΙΡΑΚΗ 20",
+      "locality": "Νάουσα",
+      "postcode": null,
+      "phone": "2332027777",
+      "groupId": "imathia",
+      "sources": [
+        "iteq-imathia"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 40.6311951,
+        "lon": 22.0689141,
+        "ref": "https://imathia.efhmeries.gr/Home/Details/5799",
         "source": "list",
         "precision": "exact"
       }
@@ -1441,7 +1462,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 40.6276873,
         "lon": 22.4359143,
@@ -1588,7 +1609,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 40.6238404,
         "lon": 22.4402438,

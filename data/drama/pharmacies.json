@@ -107,6 +107,27 @@
       }
     },
     {
+      "id": "2521020844",
+      "name": "ΠΙΤΑΡΑΚΗ ΑΛ. ΙΩΝΗ - ΕΛΕΝΗ",
+      "address": "ΓΡΑΜΜΟΥ 12 (ΕΝΑΝΤΙ ΚΩΤΣΟΒΟΛΟΥ)",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521020844",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 41.1516143,
+        "lon": 24.1513309,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3208",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521021009",
       "name": "ΜΟΥΤΙΔΟΥ Θ. ΣΤΑΥΡΟΥΛΑ",
       "address": "ΑΡΜΕΝ 36",
@@ -601,7 +622,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 41.1494276,
         "lon": 24.1481823,

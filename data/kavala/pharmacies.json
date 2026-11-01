@@ -44,6 +44,27 @@
       }
     },
     {
+      "id": "2510221996",
+      "name": "ΑΝΤΩΝΙΑΔΟΥ ΘΕΟΔΩΡΑ",
+      "address": "ΜΗΤΡΟΠΟΛΕΩΣ 10",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510221996",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 40.935947,
+        "lon": 24.406994,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4025",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510222014",
       "name": "ΤΣΙΡΚΙΝΙΔΟΥ ΣΟΦΙΑ",
       "address": "ΦΙΛΙΚΗΣ ΕΤΑΙΡΕΙΑΣ 9",
@@ -685,7 +706,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 40.9433401,
         "lon": 24.4231221,

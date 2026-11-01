@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-07",
+  "groups": [
+    {
+      "id": "zakynthos",
+      "name": "Ζάκυνθος",
+      "source": {
+        "url": "https://zakynthos.efhmeries.gr/",
+        "uploadedAt": "2026-11-01T11:20:40.255Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2695026912",
+              "name": "ΠΑΡΑΣΚΕΥΗ ΘΕΟΔΟΣΗ & ΦΑΙΔΡΑ ΑΒΟΥΡΗ",
+              "address": "ΚΛΑΥΔΙΑΝΟΥ ΙΩΑΝΝΗ 28",
+              "locality": "Ζάκυνθος",
+              "phone": "2695026912"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

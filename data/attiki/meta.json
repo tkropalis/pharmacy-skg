@@ -1,19 +1,13 @@
 {
   "schemaVersion": 1,
   "city": "attiki",
-  "updatedAt": "2026-10-31T10:26:22.574Z",
-  "checkedAt": "2026-10-31T20:01:54.359Z",
+  "updatedAt": "2026-11-01T11:19:49.466Z",
+  "checkedAt": "2026-11-01T11:19:49.466Z",
   "duties": {
     "from": "2026-10-08",
-    "to": "2026-11-06"
+    "to": "2026-11-07"
   },
-  "extendedHours": [
-    {
-      "from": "2026-10-01",
-      "to": "2026-10-31",
-      "file": "extended-hours/2026-10-01_2026-10-31.json"
-    }
-  ],
+  "extendedHours": [],
   "sources": [
     {
       "id": "fsa",

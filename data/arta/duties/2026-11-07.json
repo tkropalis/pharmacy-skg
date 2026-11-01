@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-07",
+  "groups": [
+    {
+      "id": "arta",
+      "name": "Άρτα",
+      "source": {
+        "url": "https://arta.efhmeries.gr/",
+        "uploadedAt": "2026-11-01T11:20:02.519Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2681027328",
+              "name": "ΓΑΛΑΝΗ",
+              "address": "ΣΚΟΥΦΑ 110",
+              "locality": "Άρτα",
+              "phone": "2681027328"
+            },
+            {
+              "pharmacyId": "2681066271",
+              "name": "ΚΟΚΟΒΕ ΛΥΔΙΑ",
+              "address": "ΣΕΛΛΑΔΕΣ",
+              "locality": "Άρτα",
+              "phone": "2681066271"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

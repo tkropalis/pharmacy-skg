@@ -76,13 +76,13 @@
         "iteq-zakynthos"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-11-07",
       "location": {
-        "lat": 37.789138,
-        "lon": 20.79009,
-        "source": "nominatim",
-        "precision": "locality",
-        "ref": "Ζάκυνθος"
+        "lat": 37.784405,
+        "lon": 20.8978101,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4141",
+        "source": "list",
+        "precision": "exact"
       }
     },
     {

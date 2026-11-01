@@ -307,7 +307,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 36.4501389,
         "lon": 28.2183361,
@@ -832,7 +832,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 36.3642985,
         "lon": 28.0040931,
@@ -958,7 +958,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 36.3868569,
         "lon": 28.1364765,
@@ -1042,7 +1042,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 36.2942003,
         "lon": 28.1629734,
@@ -1063,7 +1063,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 36.2534492,
         "lon": 28.16348,
@@ -1089,6 +1089,27 @@
         "lat": 36.2583172,
         "lon": 28.1432471,
         "ref": "https://dodecanese.efhmeries.gr/Home/Details/29019",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241061881",
+      "name": "ΠΑΥΛΙΔΗΣ ΓΕΩΡΓΙΟΣ / PAVLIDIS GEORGIOS",
+      "address": "ΣΤΟΚΧΟΛΜΗΣ 2 / STOKCHOLMIS 2",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241061881",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 36.4246727,
+        "lon": 28.2207271,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29931",
         "source": "list",
         "precision": "exact"
       }
@@ -1210,7 +1231,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 36.388867,
         "lon": 28.2159916,
@@ -1336,7 +1357,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 36.4171142,
         "lon": 28.174137,
@@ -1635,6 +1656,27 @@
         "lat": 36.3585988,
         "lon": 28.2109246,
         "ref": "https://dodecanese.efhmeries.gr/Home/Details/29409",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2241085960",
+      "name": "ΚΑΝΤΑΡΤΖΗ ΓΕΩΡΓΙΑ / KANTARTZI GEORGIA",
+      "address": "ΚΑΛΥΘΙΕΣ / KALITHIES",
+      "locality": "Καλλιθέα",
+      "postcode": null,
+      "phone": "2241085960",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 36.3361493,
+        "lon": 28.1739314,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/30699",
         "source": "list",
         "precision": "exact"
       }
@@ -1966,7 +2008,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 36.8915064,
         "lon": 27.2877228,
@@ -2386,7 +2428,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 36.8035168,
         "lon": 27.0922692,
@@ -2449,7 +2491,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 36.8869572,
         "lon": 27.1843395,
@@ -2596,7 +2638,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 36.2147871,
         "lon": 28.1167611,
@@ -2680,7 +2722,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 36.1211165,
         "lon": 28.0598513,
@@ -2722,7 +2764,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 36.024355,
         "lon": 27.9274593,
@@ -2827,7 +2869,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 35.5082305,
         "lon": 27.2157383,
@@ -2932,7 +2974,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 36.2256667,
         "lon": 27.8592298,
@@ -2974,7 +3016,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 36.6154201,
         "lon": 27.837024,

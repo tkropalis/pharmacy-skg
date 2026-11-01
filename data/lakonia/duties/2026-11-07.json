@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-07",
+  "groups": [
+    {
+      "id": "lakonia",
+      "name": "Λακωνία",
+      "source": {
+        "url": "https://lakonia.efhmeries.gr/",
+        "uploadedAt": "2026-11-01T11:21:44.900Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2735041594",
+              "name": "ΑΓΗΣΙΛΑΟΣ ΡΟΥΜΠΗΣ ΚΑΙ ΥΙΟΣ ΟΕ",
+              "address": "ΒΛΑΧΙΩΤΗ",
+              "locality": "Βλαχιώτης",
+              "phone": "2735041594"
+            },
+            {
+              "pharmacyId": "2731035750",
+              "name": "ΚΑΨΑΣΚΗ ΜΑΡΙΑ",
+              "address": "ΞΗΡΟΚΑΜΠΙ",
+              "locality": "Ξηροκάμπι",
+              "phone": "2731035750"
+            },
+            {
+              "pharmacyId": "2733029510",
+              "name": "ΜΗΤΣΑΚΟΥ ΜΑΡΙΑ- ΝΕΦΕΛΗ – ΒΑΒΟΥΛΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ο.Ε.",
+              "address": "ΑΡΕΟΠΟΛΗ",
+              "locality": "Αρεόπολη",
+              "phone": "2733029510"
+            },
+            {
+              "pharmacyId": "2733022265",
+              "name": "ΠΑΝΑΓΙΩΤΑ - ΛΥΜΠΕΡΗ ΑΝΔΡΕΑΚΟΥ & ΣΙΑ Ο.Ε.",
+              "address": "ΓΥΘΕΙΟ",
+              "locality": "Γύθειο",
+              "phone": "2733022265"
+            },
+            {
+              "pharmacyId": "2731057757",
+              "name": "Σ.Φ. ΜΠΑΣΚΟΥΡΕΛΟΣ ΧΑΡΑΛΑΜΠΟΣ – ΜΠΑΣΚΟΥΡΕΛΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ο.Ε.",
+              "address": "ΚΑΣΤΟΡΙ",
+              "locality": "Καστόρειο",
+              "phone": "2731057757"
+            },
+            {
+              "pharmacyId": "2735023159",
+              "name": "Σ.Φ. ΠΑΠΑΔΗΜΗΤΡΙΟΥ ΣΟΥΣΣΑΝΑ - ΣΤΑΥΡΙΑΝΑΚΟΣ ΦΩΤΙΟΣ",
+              "address": "ΣΚΑΛΑ",
+              "locality": "Σκάλα",
+              "phone": "2735023159"
+            },
+            {
+              "pharmacyId": "2734022989",
+              "name": "ΨΑΡΡΑΚΗ ΧΡΥΣΟΥΛΑ &ΣΙΑ Ο.Ε.",
+              "address": "ΝΕΑΠΟΛΗ",
+              "locality": "Νεάπολη",
+              "phone": "2734022989"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2731029999",
+              "name": "ΦΑΡΜΑΚΕΙΟ ΠΕΡΙΚΛΗΣ ΤΖΑΝΕΤΑΚΗΣ & ΣΙΑ Ε.Ε.",
+              "address": "ΕΥΑΓΓΕΛΙΣΤΡΙΑΣ 65 (ΚΕΝΤΡΙΚΗ ΠΛΑΤΕΙΑ)",
+              "locality": "Σπάρτη",
+              "phone": "2731029999"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "20:30 ΕΩΣ 20:30 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "20:30",
+            "to": "20:30",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2732022329",
+              "name": "ΔΙΚΑΙΑΚΟΣ ΧΑΡΙΛΑΟΣ",
+              "address": "ΜΟΛΑΟΙ",
+              "locality": "Μολάοι",
+              "phone": "2732022329"
+            },
+            {
+              "pharmacyId": "2732082370",
+              "name": "ΠΑΝΑΓΙΩΤΗΣ ΒΛΑΧΑΚΗΣ ΚΑΙ ΣΙΑ Ε.Ε.",
+              "address": "ΑΣΩΠΟΣ",
+              "locality": "ΑΣΩΠΟΣ",
+              "phone": "2732082370"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "8:00 ΕΩΣ 14:15",
+          "hours": {
+            "from": "08:00",
+            "to": "14:15",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2731021950",
+              "name": "Σ.Φ. ΣΑΧΛΑ ΕΥΓΕΝΙΑ-ΚΥΡΙΑΚΟΥΛΙΑΣ ΓΕΩΡΓΙΟΣ Ο.Ε.",
+              "address": "ΛΥΚΟΥΡΓΟΥ 123",
+              "locality": "Σπάρτη",
+              "phone": "2731021950"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

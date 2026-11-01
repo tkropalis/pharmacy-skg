@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-07",
+  "groups": [
+    {
+      "id": "pella",
+      "name": "Πέλλα",
+      "source": {
+        "url": "https://pella.efhmeries.gr/",
+        "uploadedAt": "2026-11-01T11:22:23.397Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382025500",
+              "name": "ΔΑΝΤΣΑΚΗ ΡΟΔΗ",
+              "address": "ΜΠΑΦΡΑΣ 5",
+              "locality": "Γιαννιτσά",
+              "phone": "2382025500"
+            },
+            {
+              "pharmacyId": "2381089199",
+              "name": "ΔΗΜΗΤΡΙΑΔΟΥ ΑΛΕΞΑΝΔΡΑ",
+              "address": "ΣΑΦΡΑΜΠΟΛΕΩΣ 17",
+              "locality": "Σκύδρα",
+              "phone": "2381089199"
+            },
+            {
+              "pharmacyId": "2381023410",
+              "name": "Σ.Φ. ΑΓΓΕΛΟΥ ΜΑΡΙΑ-ΖΩΗ - ΑΓΓΕΛΟΥ ΑΓΓΕΛΟΣ",
+              "address": "ΕΓΝΑΤΙΑΣ 5",
+              "locality": "Έδεσσα",
+              "phone": "2381023410"
+            },
+            {
+              "pharmacyId": "2384023325",
+              "name": "ΣΑΠΟΥΝΤΖΗΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΠΑΥΛΟΥ ΜΕΛΑ 28",
+              "locality": "Αριδαία",
+              "phone": "2384023325"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382028229",
+              "name": "ΛΑΠΙΧΟΥ ΚΑΛΛΙΟΠΗ",
+              "address": "ΠΛΑΤΕΙΑ ΓΚΟΝΟΥ ΓΙΩΤΑ 2",
+              "locality": "Γιαννιτσά",
+              "phone": "2382028229"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382062100",
+              "name": "Σ.Φ. ΑΔΑΜΙΔΗΣ ΘΕΟΔΟΣΙΟΣ -ΑΔΑΜΙΔΟΥ ΜΑΡΘΑ",
+              "address": "ΒΑΣ. ΠΑΥΛΟΥ 77",
+              "locality": "Κρύα Βρύση",
+              "phone": "2382062100"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

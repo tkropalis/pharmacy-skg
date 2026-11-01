@@ -118,7 +118,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 35.3279167,
         "lon": 25.1386911,
@@ -496,7 +496,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 35.3363581,
         "lon": 25.1338825,
@@ -559,7 +559,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 35.3241638,
         "lon": 25.1437907,
@@ -1252,7 +1252,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 35.3341352,
         "lon": 25.1226065,
@@ -1840,11 +1840,32 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 35.3386517,
         "lon": 25.129787,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/57881",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810285419",
+      "name": "ΧΑΛΚΙΔΟΥ ΚΛΩΝΑΡΑ",
+      "address": "ΣΤΑΔΙΟΥ 88 ΝΕΑ ΑΛΙΚΑΡΝΑΣΣΟΣ",
+      "locality": "Νέα Αλικαρνασσός",
+      "postcode": null,
+      "phone": "2810285419",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 35.3397359,
+        "lon": 25.160207,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/58087",
         "source": "list",
         "precision": "exact"
       }
@@ -2155,7 +2176,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 35.3346428,
         "lon": 25.1161727,
@@ -2386,7 +2407,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 35.3257664,
         "lon": 25.1236248,
@@ -2911,7 +2932,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 35.3264826,
         "lon": 25.0705762,
@@ -3105,6 +3126,27 @@
         "lat": 35.2589745,
         "lon": 25.2373575,
         "ref": "https://herakleion.efhmeries.gr/Home/Details/59510",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2810781603",
+      "name": "ΣΑΛΤΑΡΗ ΚΩΝΣΤΑΝΤΙΝΑ (ΥΠΟΚΑΤΑΣΤΗΜΑ ΕΠΑΝΩ ΒΑΘΕΙΑ)",
+      "address": "ΕΠΑΝΩ ΒΑΘΕΙΑ",
+      "locality": "Καρτερός, Επισκοπή, Βαθειά, Κοκκίνη Χάνι, Γούρνες, Γούβες",
+      "postcode": null,
+      "phone": "2810781603",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 35.2844664,
+        "lon": 25.2407229,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/59442",
         "source": "list",
         "precision": "exact"
       }
@@ -3520,7 +3562,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 35.1470333,
         "lon": 25.2653989,
@@ -4087,7 +4129,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 35.3153174,
         "lon": 25.3937298,
@@ -4150,7 +4192,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 35.3141363,
         "lon": 25.3951863,
@@ -4192,7 +4234,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 35.331734,
         "lon": 25.3452693,
@@ -4234,7 +4276,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 35.2905044,
         "lon": 25.4606531,
@@ -4339,7 +4381,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 35.2926533,
         "lon": 25.4320195,
