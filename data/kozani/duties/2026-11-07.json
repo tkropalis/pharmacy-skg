@@ -7,9 +7,69 @@
       "name": "Κοζάνη",
       "source": {
         "url": "https://kozani.efhmeries.gr/",
-        "uploadedAt": "2026-11-01T11:21:29.424Z"
+        "uploadedAt": "2026-11-01T20:34:34.192Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "5:30 ΑΠΟΓΕΥΜΑ-8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2461039107",
+              "name": "ΑΝΔΡΕΑΔΟΥ ΑΛΕΞΑΝΔΡΑ",
+              "address": "ΠΛ. 28ης ΟΚΤΩΒΡΙΟΥ 14",
+              "locality": "Κοζάνη",
+              "phone": "2461039107"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "8:30 ΠΡΩΙ - 2:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2463024466",
+              "name": "ΒΕΛΟΝΑ ΜΑΡΙΑ",
+              "address": "ΦΙΛΙΠΠΟΥ 1 (Απέναντι από το Ξενοδοχείο Κωστής)",
+              "locality": "Πτολεμαΐδα",
+              "phone": "2463024466"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "8:30 ΠΡΩΙ - 2:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2463024466",
+              "name": "ΒΕΛΟΝΑ ΜΑΡΙΑ",
+              "address": "ΦΙΛΙΠΠΟΥ 1 (Απέναντι από το Ξενοδοχείο Κωστής)",
+              "locality": "Πτολεμαΐδα",
+              "phone": "2463024466"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
@@ -103,66 +163,6 @@
               "address": "ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ 16",
               "locality": "Πτολεμαΐδα",
               "phone": "2463023124"
-            }
-          ]
-        },
-        {
-          "kind": "saturday-extra",
-          "heading": "8:30 ΠΡΩΙ - 2:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:30",
-            "to": "14:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2463024466",
-              "name": "ΒΕΛΟΝΑ ΜΑΡΙΑ",
-              "address": "ΦΙΛΙΠΠΟΥ 1 (Απέναντι από το Ξενοδοχείο Κωστής)",
-              "locality": "Πτολεμαΐδα",
-              "phone": "2463024466"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "8:30 ΠΡΩΙ - 2:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2463024466",
-              "name": "ΒΕΛΟΝΑ ΜΑΡΙΑ",
-              "address": "ΦΙΛΙΠΠΟΥ 1 (Απέναντι από το Ξενοδοχείο Κωστής)",
-              "locality": "Πτολεμαΐδα",
-              "phone": "2463024466"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "5:30 ΑΠΟΓΕΥΜΑ-8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2461039107",
-              "name": "ΑΝΔΡΕΑΔΟΥ ΑΛΕΞΑΝΔΡΑ",
-              "address": "ΠΛ. 28ης ΟΚΤΩΒΡΙΟΥ 14",
-              "locality": "Κοζάνη",
-              "phone": "2461039107"
             }
           ]
         }
