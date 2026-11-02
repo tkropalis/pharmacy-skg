@@ -9,25 +9,43 @@ describe('REGULAR_HOURS', () => {
     for (const id of Object.keys(REGULAR_HOURS)) expect(known.has(id)).toBe(true);
   });
 
-  it("never lets a city's periods overlap or run backwards", () => {
+  it("never lets a city's periods overlap or run backwards, group by group", () => {
     for (const periods of Object.values(REGULAR_HOURS)) {
-      const sorted = [...periods].sort((a, b) => a.from.localeCompare(b.from));
-      sorted.forEach((period, i) => {
-        if (period.to !== null) expect(period.to >= period.from).toBe(true);
-        const next = sorted[i + 1];
-        if (next) expect(period.to !== null && period.to < next.from).toBe(true);
-      });
+      // The periods for one duty group (or for the whole area, where there are none).
+      const byGroup = new Map<string, typeof periods>();
+      for (const period of periods) {
+        for (const group of period.groups ?? ['']) {
+          byGroup.set(group, [...(byGroup.get(group) ?? []), period]);
+        }
+      }
+      for (const forGroup of byGroup.values()) {
+        const sorted = [...forGroup].sort((a, b) => a.from.localeCompare(b.from));
+        sorted.forEach((period, i) => {
+          if (period.to !== null) expect(period.to >= period.from).toBe(true);
+          const next = sorted[i + 1];
+          if (next) expect(period.to !== null && period.to < next.from).toBe(true);
+        });
+      }
     }
   });
 
-  it('keeps every range on a weekday, within 08:00 to 21:00 (the legal frame)', () => {
+  it("gives a whole-area period no group beside a group's own", () => {
+    for (const periods of Object.values(REGULAR_HOURS)) {
+      const whole = periods.filter((period) => period.groups === undefined);
+      const grouped = periods.filter((period) => period.groups !== undefined);
+      expect(whole.length === 0 || grouped.length === 0).toBe(true);
+    }
+  });
+
+  it('keeps every range on a weekday, within 07:30 to 21:00 (the legal frame)', () => {
     for (const periods of Object.values(REGULAR_HOURS)) {
       for (const period of periods) {
         expect(period.days[6]).toEqual([]);
         expect(period.days[7]).toEqual([]);
         for (const ranges of Object.values(period.days)) {
           for (const range of ranges) {
-            expect(range.from >= '08:00' && range.from < range.to && range.to <= '21:00').toBe(
+            // Amaliada's summer and Krestena start at 07:30, as Ilia's decision says.
+            expect(range.from >= '07:30' && range.from < range.to && range.to <= '21:00').toBe(
               true,
             );
           }
@@ -196,5 +214,97 @@ describe('hasRegularHours', () => {
     expect(hasRegularHours('thessaloniki', '2026-10-08')).toBe(true);
     expect(hasRegularHours('thessaloniki', '2030-01-01')).toBe(true);
     expect(hasRegularHours('larisa', '2026-10-08')).toBe(false);
+  });
+});
+
+describe('Ilia', () => {
+  // The decision ΨΛΖΩ7Λ6-2Υ0, community by community; the dates are 2026's.
+  const winter = '2026-11-03'; // a Tuesday
+  const summer = '2026-07-14'; // a Tuesday
+  const hours = (date: string, group: string) =>
+    regularRanges('ilia', date, group).map((range) => `${range.from}-${range.to}`);
+
+  it('has Pyrgos, Varda, Gastouni, Zacharo and Tragano open from 08:00 to 16:00, all year', () => {
+    for (const group of ['pyrgos', 'varda', 'gastouni', 'zacharo', 'tragano']) {
+      for (const date of ['2026-01-05', summer, winter, '2026-12-31']) {
+        expect(hours(date, group), `${group} ${date}`).toEqual(['08:00-16:00']);
+      }
+    }
+  });
+
+  it('has Amaliada open from 07:30 to 15:30 in July and August, and Krestena all year', () => {
+    expect(hours(summer, 'amaliada')).toEqual(['07:30-15:30']);
+    expect(hours('2026-06-30', 'amaliada')).toEqual(['08:00-16:00']);
+    expect(hours('2026-09-01', 'amaliada')).toEqual(['08:00-16:00']);
+    expect(hours(summer, 'krestena')).toEqual(['07:30-15:30']);
+    expect(hours(winter, 'krestena')).toEqual(['07:30-15:30']);
+  });
+
+  it('has Ancient Olympia open in the morning and the evening', () => {
+    expect(hours(winter, 'ancient-olympia')).toEqual(['08:30-13:30', '18:00-21:00']);
+  });
+
+  it('has Andravida and Lechaina long on Monday and Wednesday, with afternoons the other days', () => {
+    for (const group of ['andravida', 'lechaina']) {
+      expect(hours('2026-11-02', group), group).toEqual(['08:00-14:30']);
+      expect(hours(winter, group), group).toEqual(['08:00-14:00', '17:30-20:30']);
+      expect(hours('2026-11-04', group), group).toEqual(['08:00-14:30']);
+      expect(hours('2026-11-06', group), group).toEqual(['08:00-14:00', '17:30-20:30']);
+    }
+  });
+
+  it("has Vartholomio's afternoons on Monday, Tuesday and Thursday, later in the summer", () => {
+    expect(hours('2026-11-02', 'vartholomio')).toEqual(['08:00-14:00', '17:30-20:30']);
+    expect(hours('2026-11-04', 'vartholomio')).toEqual(['08:00-14:30']);
+    expect(hours('2026-11-05', 'vartholomio')).toEqual(['08:00-14:00', '17:30-20:30']);
+    expect(hours('2026-11-06', 'vartholomio')).toEqual(['08:00-14:30']);
+    expect(hours(summer, 'vartholomio')).toEqual(['08:00-14:00', '18:00-21:00']);
+    expect(hours('2026-07-15', 'vartholomio')).toEqual(['08:00-14:30']);
+  });
+
+  it("leaves Lechaina's summer out, where the decision's hours do not add up", () => {
+    expect(hours(summer, 'lechaina')).toEqual([]);
+    expect(hours('2026-06-30', 'lechaina')).toEqual(['08:00-14:00', '17:30-20:30']);
+    expect(hours('2026-09-01', 'lechaina')).toEqual(['08:00-14:00', '17:30-20:30']);
+  });
+
+  it('is closed at the weekend, and for a pharmacy of no known group', () => {
+    expect(hours('2026-11-07', 'pyrgos')).toEqual([]);
+    expect(hours('2026-11-08', 'pyrgos')).toEqual([]);
+    expect(regularRanges('ilia', winter)).toEqual([]);
+    expect(hours(winter, 'patras')).toEqual([]);
+  });
+
+  it('counts only while the decision is in force, from 1 Jan to 31 Dec 2026', () => {
+    expect(hasRegularHours('ilia', '2025-12-31')).toBe(false);
+    expect(hasRegularHours('ilia', '2026-01-01')).toBe(true);
+    expect(hasRegularHours('ilia', '2026-12-31')).toBe(true);
+    expect(hasRegularHours('ilia', '2027-01-01')).toBe(false);
+    expect(hours('2027-01-05', 'pyrgos')).toEqual([]);
+  });
+
+  it("has hours for every community on every weekday of the year but Lechaina's summer", () => {
+    const groups = [
+      'pyrgos',
+      'amaliada',
+      'andravida',
+      'ancient-olympia',
+      'vartholomio',
+      'gastouni',
+      'krestena',
+      'lechaina',
+      'tragano',
+      'varda',
+      'zacharo',
+    ];
+    for (let day = 0; day < 365; day++) {
+      const date = new Date(Date.UTC(2026, 0, 1 + day));
+      const iso = date.toISOString().slice(0, 10);
+      if (date.getUTCDay() === 0 || date.getUTCDay() === 6) continue;
+      for (const group of groups) {
+        const gap = group === 'lechaina' && iso >= '2026-07-01' && iso <= '2026-08-31';
+        expect(hours(iso, group).length > 0, `${group} ${iso}`).toBe(!gap);
+      }
+    }
   });
 });

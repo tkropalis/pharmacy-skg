@@ -12,6 +12,11 @@ export interface RegularHoursPeriod {
   readonly to: IsoDate | null;
   /** Ranges by ISO weekday; an empty list means closed. */
   readonly days: Readonly<Record<IsoWeekday, readonly TimeRange[]>>;
+  /**
+   * The duty groups this period is for, when the hours differ by place within the area (Ilia's
+   * communities); absent for the whole area.
+   */
+  readonly groups?: readonly string[];
   readonly source: string;
 }
 
@@ -154,12 +159,118 @@ const MAGNESIA_REGULAR: readonly RegularHoursPeriod[] = [
   },
 ];
 
+/**
+ * Ilia: the Region of Western Greece's decision ΨΛΖΩ7Λ6-2Υ0 of 16 Dec 2025, "Υποχρεωτικό ωράριο
+ * λειτουργίας Φαρμακείων Φαρμακευτικού Συλλόγου Ηλείας έτους 2026", with the association's
+ * consent (its letter 102/16-12-2025): the hours "per community, from 01-01-2026 to 31-12-2026",
+ * also on pages 3 to 6 of the duty table (ΡΣΦΞ7Λ6-2Κ3). They differ by community, and the
+ * communities are the towns of the duty table, so each period names the duty groups it is for. A
+ * decision's "ΧΕΙΜΕΡΙΝΟ" is 1 Jan to 30 Jun and 1 Sep to 31 Dec, its "ΘΕΡΙΝΟ" 1 Jul to 31 Aug, where
+ * it has two. Lechaina's summer table is left out, being read two ways: it prints 8:00 14:30 and
+ * 18:00 21:00 on Tuesday, Thursday and Friday, which is 9.5 hours, and 9,00 as the day's hours,
+ * as in its winter table (14:00). The decision runs out on 31 Dec 2026; the next is expected in
+ * December.
+ */
+const ILIA_DECISION = 'Περιφέρεια Δυτικής Ελλάδας, ΨΛΖΩ7Λ6-2Υ0 (16 Dec 2025)';
+const ILIA_WINTER = { from: '2026-01-01', to: '2026-06-30' } as const;
+const ILIA_AUTUMN = { from: '2026-09-01', to: '2026-12-31' } as const;
+const ILIA_SUMMER = { from: '2026-07-01', to: '2026-08-31' } as const;
+
+/** The same ranges Monday to Friday. */
+function weekdays(...ranges: readonly TimeRange[]): RegularHoursPeriod['days'] {
+  return { 1: ranges, 2: ranges, 3: ranges, 4: ranges, 5: ranges, 6: [], 7: [] };
+}
+
+/** Monday and Wednesday until 14:30, the other days until 14:00 and in the afternoon. */
+function ilia1430(afternoon: TimeRange): RegularHoursPeriod['days'] {
+  const long = [{ from: '08:00', to: '14:30' }];
+  const split = [{ from: '08:00', to: '14:00' }, afternoon];
+  return { 1: long, 2: split, 3: long, 4: split, 5: split, 6: [], 7: [] };
+}
+
+/** Monday, Tuesday and Thursday with an afternoon, Wednesday and Friday until 14:30. */
+function iliaVartholomio(afternoon: TimeRange): RegularHoursPeriod['days'] {
+  const long = [{ from: '08:00', to: '14:30' }];
+  const split = [{ from: '08:00', to: '14:00' }, afternoon];
+  return { 1: split, 2: split, 3: long, 4: split, 5: long, 6: [], 7: [] };
+}
+
+const ILIA_RUN = [{ from: '08:00', to: '16:00' }] as const;
+const ILIA_REGULAR: readonly RegularHoursPeriod[] = [
+  // 08:00 to 16:00 all year: Pyrgos, Varda, Gastouni, Zacharo and Tragano.
+  {
+    from: '2026-01-01',
+    to: '2026-12-31',
+    groups: ['pyrgos', 'varda', 'gastouni', 'zacharo', 'tragano'],
+    days: weekdays(...ILIA_RUN),
+    source: `${ILIA_DECISION}; 08:00–16:00, no seasons`,
+  },
+  {
+    ...ILIA_WINTER,
+    groups: ['amaliada'],
+    days: weekdays(...ILIA_RUN),
+    source: `${ILIA_DECISION}; Amaliada, winter`,
+  },
+  {
+    ...ILIA_AUTUMN,
+    groups: ['amaliada'],
+    days: weekdays(...ILIA_RUN),
+    source: `${ILIA_DECISION}; Amaliada, winter`,
+  },
+  {
+    ...ILIA_SUMMER,
+    groups: ['amaliada'],
+    days: weekdays({ from: '07:30', to: '15:30' }),
+    source: `${ILIA_DECISION}; Amaliada, summer`,
+  },
+  {
+    from: '2026-01-01',
+    to: '2026-12-31',
+    groups: ['krestena'],
+    days: weekdays({ from: '07:30', to: '15:30' }),
+    source: `${ILIA_DECISION}; Krestena, no seasons`,
+  },
+  {
+    from: '2026-01-01',
+    to: '2026-12-31',
+    groups: ['ancient-olympia'],
+    days: weekdays({ from: '08:30', to: '13:30' }, { from: '18:00', to: '21:00' }),
+    source: `${ILIA_DECISION}; Ancient Olympia, no seasons`,
+  },
+  {
+    from: '2026-01-01',
+    to: '2026-12-31',
+    groups: ['andravida'],
+    days: ilia1430({ from: '17:30', to: '20:30' }),
+    source: `${ILIA_DECISION}; Andravida, no seasons`,
+  },
+  ...[ILIA_WINTER, ILIA_AUTUMN].map((season): RegularHoursPeriod => ({
+    ...season,
+    groups: ['lechaina'],
+    days: ilia1430({ from: '17:30', to: '20:30' }),
+    source: `${ILIA_DECISION}; Lechaina, winter`,
+  })),
+  ...[ILIA_WINTER, ILIA_AUTUMN].map((season): RegularHoursPeriod => ({
+    ...season,
+    groups: ['vartholomio'],
+    days: iliaVartholomio({ from: '17:30', to: '20:30' }),
+    source: `${ILIA_DECISION}; Vartholomio, winter`,
+  })),
+  {
+    ...ILIA_SUMMER,
+    groups: ['vartholomio'],
+    days: iliaVartholomio({ from: '18:00', to: '21:00' }),
+    source: `${ILIA_DECISION}; Vartholomio, summer`,
+  },
+];
+
 /** Regular hours by city id. A city without an entry has none. */
 export const REGULAR_HOURS: Readonly<Record<string, readonly RegularHoursPeriod[]>> = {
   thessaloniki: THESSALONIKI_REGULAR,
   attiki: ATTICA_REGULAR,
   karditsa: KARDITSA_REGULAR,
   magnesia: MAGNESIA_REGULAR,
+  ilia: ILIA_REGULAR,
 };
 
 /**
@@ -174,10 +285,21 @@ export function hasRegularHours(cityId: string, date: IsoDate): boolean {
   );
 }
 
-/** The regular ranges on a date (ignoring holidays), or none outside every period. */
-export function regularRanges(cityId: string, date: IsoDate): readonly TimeRange[] {
+/**
+ * The regular ranges on a date (ignoring holidays), or none outside every period. Where a city's
+ * hours differ by duty group (Ilia), those of the pharmacy's `groupId`; a pharmacy of no known
+ * group has only the periods that are for the whole area.
+ */
+export function regularRanges(
+  cityId: string,
+  date: IsoDate,
+  groupId: string | null = null,
+): readonly TimeRange[] {
   const period = (REGULAR_HOURS[cityId] ?? []).find(
-    (p) => p.from <= date && (p.to === null || date <= p.to),
+    (p) =>
+      p.from <= date &&
+      (p.to === null || date <= p.to) &&
+      (p.groups === undefined || (groupId !== null && p.groups.includes(groupId))),
   );
   return period?.days[isoWeekday(date)] ?? [];
 }

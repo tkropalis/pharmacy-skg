@@ -102,13 +102,14 @@ export function regularHoursView(
   cityId: string,
   reference: IsoDate,
   seo: SeoStrings,
+  groupId: string | null = null,
 ): RegularHoursView {
   const byTimes = new Map<string, number[]>();
   const closed: number[] = [];
   for (let offset = 0; offset < 7; offset += 1) {
     const date = addDays(reference, offset);
     const weekday = isoWeekday(date);
-    const ranges = regularRanges(cityId, date);
+    const ranges = regularRanges(cityId, date, groupId);
     if (ranges.length === 0) {
       closed.push(weekday);
       continue;
