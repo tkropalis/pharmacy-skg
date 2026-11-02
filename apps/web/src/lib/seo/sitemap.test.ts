@@ -8,7 +8,14 @@ import {
   websiteJsonLd,
 } from './jsonld.ts';
 import { realModel } from './test-data.ts';
-import { renderRobots, renderSitemap, sitemapEntries } from './sitemap.ts';
+import {
+  entriesForSitemap,
+  renderRobots,
+  renderSitemap,
+  renderSitemapIndex,
+  sitemapEntries,
+  sitemapRefs,
+} from './sitemap.ts';
 import { directionsUrl } from './views.ts';
 
 const model = realModel('2026-10-05');
@@ -80,6 +87,49 @@ describe('renderSitemap', () => {
     const odd = renderSitemap([{ alternates: { el: '/a&b/', en: '/en/a<b/' } }], 'https://x.test');
     expect(odd).toContain('/a&amp;b/');
     expect(odd).toContain('/en/a%3Cb/');
+  });
+});
+
+describe('the sitemap per city', () => {
+  const refs = sitemapRefs(models);
+
+  it('has one sitemap for the pages of no city and one for each city', () => {
+    expect(refs.map((ref) => ref.name)).toEqual(['pages', 'thessaloniki', 'larisa']);
+    expect(refs[1]?.lastmod).toBe(model.updatedAt.slice(0, 10));
+  });
+
+  it('splits the pages between them with none lost and none twice', () => {
+    const parts = refs.map((ref) => entriesForSitemap(ref.name, models) ?? []);
+    const split = parts.flat().flatMap((entry) => Object.values(entry.alternates));
+    const whole = sitemapEntries(models).flatMap((entry) => Object.values(entry.alternates));
+    expect(split.sort()).toEqual(whole.sort());
+    expect(new Set(split).size).toBe(split.length);
+  });
+
+  it("keeps each city's pages in its own sitemap", () => {
+    const paths = (name: string) =>
+      (entriesForSitemap(name, models) ?? []).flatMap((entry) => Object.values(entry.alternates));
+    expect(paths('larisa')).toContain('/efimeries/larisa/2026-10-07/');
+    expect(paths('larisa')).not.toContain('/efimeries/thessaloniki/2026-10-05/');
+    expect(paths('thessaloniki')).toContain('/perioxi/thessaloniki/kalamaria/');
+    expect(paths('pages')).toEqual(
+      expect.arrayContaining(['/', '/en/', '/efimeries/', '/perioxi/']),
+    );
+    expect(paths('pages').some((p) => p.startsWith('/farmakeio/'))).toBe(false);
+  });
+
+  it('knows no other name', () => {
+    expect(entriesForSitemap('nowhere', models)).toBeNull();
+  });
+
+  it('is listed by an index with full addresses and dates', () => {
+    const xml = renderSitemapIndex(refs, 'https://example.test');
+    expect(xml.startsWith('<?xml version="1.0" encoding="UTF-8"?>')).toBe(true);
+    expect(xml).toContain('<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">');
+    expect(xml).toContain('<loc>https://example.test/sitemaps/pages.xml</loc>');
+    expect(xml).toContain('<loc>https://example.test/sitemaps/larisa.xml</loc>');
+    expect((xml.match(/<sitemap>/g) ?? []).length).toBe(3);
+    expect(xml).toContain(`<lastmod>${larisa.updatedAt.slice(0, 10)}</lastmod>`);
   });
 });
 

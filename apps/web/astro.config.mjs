@@ -27,9 +27,11 @@ export default defineConfig({
     routing: { prefixDefaultLocale: false },
   },
   build: {
-    // The stylesheets are small: inlined, they no longer block the first paint. (The CSP allows
-    // inline styles, not inline scripts.)
-    inlineStylesheets: 'always',
+    // Stylesheets are files, shared by every page and cached: inlined, they added about 17 KB to
+    // every one of the site's thousands of pages (docs/research-greece.md, Static pages), and
+    // none of it could be cached. The service worker precaches them, so the installed app does
+    // not wait for them either.
+    inlineStylesheets: 'never',
   },
   vite: {
     build: {

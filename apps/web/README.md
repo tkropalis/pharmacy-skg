@@ -14,7 +14,10 @@ pnpm e2e                                  # build with a fixed date, then run th
 
 ```
 api/report.ts              Vercel serverless function: problem report -> GitHub issue (D17)
-integrations/data.ts       publishes <repo>/data/<city>/ under /data/<city>/ (build and dev)
+integrations/data.ts       publishes <repo>/data/<city>/ under /data/<city>/ (build and dev), with the
+                           places, the medicine index and the national files (below)
+integrations/national-files.ts   reads data/ for the national index and each day's pharmacies on duty
+                           (lib/national.ts is the pure part); city-files.ts is what both share
 integrations/service-worker.ts   writes dist/sw.js from sw/sw.js with the precache list + version
 sw/sw.js                   the hand-written service worker (template)
 public/                    favicon, PNG icons, stale-check.js and theme.js (blocking head scripts: the
@@ -34,7 +37,8 @@ src/components/seo/       pharmacy, duty-date and area pages (thin; the logic is
 src/pages/<slug>/         one folder per parameterised route and locale (farmakeio, efimeries, perioxi,
                            en/pharmacy, en/duty, en/area), named after PARAM_ROUTES in i18n/routes.ts;
                            duty dates and areas sit under their city: efimeries/[city]/[date].astro
-src/pages/sitemap.xml.ts, robots.txt.ts   sitemap with hreflang alternates, and robots
+src/pages/sitemap.xml.ts, sitemaps/[name].xml.ts, robots.txt.ts   the sitemap index, one sitemap per city
+                           and one for the pages of no city (with hreflang alternates), and robots
 src/scripts/seo/          status now, open-now and today highlight, computed in the browser
 src/lib/pwa.ts            service worker registration, periodic sync, asking the worker to warm the offline data
 src/lib/connection.ts      online/offline state (html[data-offline]); install.ts the Install buttons; manifest.ts
@@ -53,6 +57,8 @@ src/lib/                   pure, tested logic: status-label, list, directions, i
                            favourites, map-style, map-data, map-layers (sources and layers: duty pins are never
                            clustered), pins, duties, format, geolocation (when to ask for the position),
                            memory (on the device: the last position, recent areas, pharmacies opened often)
+src/lib/status-clock.ts    when the statuses on screen are worked out again (the engine's nextStatusChange)
+src/lib/national.ts        the national index and each day's pharmacies on duty (types, builders, loaders)
 integrations/maplibre-worker.ts   publishes MapLibre's worker files under /_astro/maplibre-<version>/
 src/scripts/medicine-search.ts  the header's "Medicines" button: loads the search on the first press
 src/components/search/    the medicine search dialog (D24), lazy: MedicineSearch, mount, search.css
@@ -110,7 +116,20 @@ The build generates, for every city in `CITIES` (`site-data.ts`, one model per c
 - **Area slugs** come from the locality name by ELOT 743 transliteration (`lib/seo/translit.ts`). They depend only on the name, so they are stable across builds; the city segment keeps the same name in two cities apart.
 - **A city without regular hours** (Larissa): the pharmacy page says to call for the hours, and the live status says "Δεν εφημερεύει" rather than "Κλειστό" (`describeStatus`, `dutyOnly`).
 - **Service worker:** these pages and their index pages are not precached (`integrations/precache.ts`): the indexes carry the data, so precaching them would turn every data update into a new version. They are fetched when visited.
-- **Sitemap:** `/sitemap.xml` lists both locales with `xhtml:link` alternates. The report form and the 404 page are left out.
+- **Sitemap:** `/sitemap.xml` is an index of `/sitemaps/pages.xml` (the pages of no city) and `/sitemaps/<city>.xml` (that city's pages), each listing both locales with `xhtml:link` alternates, so one city's data update changes one file and no file nears the limit of 50,000 URLs. The report form, the data status page and the 404 page are left out.
+- **Stylesheets** are files (`build.inlineStylesheets: 'never'`), shared by every page and cached; the service worker precaches them with the shell. Inlined, they were about 17 KB of every page.
+
+## National files
+
+The build writes two files beside the cities' data, from `data/` (`integrations/national-files.ts`; in `astro dev` the same ones are served on request), so the map can learn about every area without loading each one. Nothing on screen reads them yet. They carry only officially published dates (decision D11).
+
+- **`/data/index.json`:** each area's bounds, centre, number of pharmacies, `updatedAt`, `checkedAt`, the range of its duty lists and the dates the site publishes (`lib/national.ts`, `loadNationalIndex`). A few KB.
+- **`/data/duty/<date>.json`:** that day's pharmacies on duty in every area that has a list: id, place (rounded to 5 decimals, `approximate` when only the locality is known) and the hours as printed, with `unknown` when a list prints none (`loadNationalDutyDay`, `onDutyAt`). From yesterday to two weeks ahead; a pharmacy without a location is left out.
+
+## Statuses and the map at scale
+
+- **When statuses are worked out.** The clock ticks every minute, but the rows, the map's pins and the coverage are made for one instant (`useStatusAt`, `lib/status-clock.ts`) that stays the same until the engine's `nextStatusChange(data, at)` says a status can differ: the next start or end of any opening, 30 minutes before an end ("closing soon"), a week before an opening starts (when "opens at" appears for a closed pharmacy), the start and end of on-call hours, local midnight and local 08:00. It is a safe bound, never later than the next midnight (the engine test steps through three days and checks that nothing changes before each bound). The words that count down ("closes in 12 minutes") are still made from the live clock by the row, so they move each minute.
+- **Pins.** The pharmacy sources have `promoteId: 'id'`. `changeSource` (`lib/map-data.ts`) compares what a source holds with what it should hold: nothing changed sends nothing (a new order, a new distance), a few changes go to `updateData` as a diff (a status, a choice taking its pin out), and most changed (another area) replaces the data. A diff the source cannot apply falls back to `setData`. Feature-state is not used: a pin's look is its `icon-image`, a layout property that feature-state cannot drive.
 
 ## Deploying
 

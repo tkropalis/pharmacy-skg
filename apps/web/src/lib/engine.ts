@@ -2,6 +2,7 @@
 export {
   coverage,
   distanceMetres,
+  nextStatusChange,
   openPharmacies,
   pharmacyStatus,
   publishedDuties,
