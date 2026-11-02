@@ -21,6 +21,7 @@ const creditLinks: Record<keyof typeof d.credits, string> = {
   pkm: 'https://www.pkm.gov.gr/',
   patt: 'https://www.patt.gov.gr/',
   fsaHours: 'https://fsa.gr/',
+  ionian: 'https://diavgeia.gov.gr/decision/view/9ΚΛΤ7ΛΕ-7Τ4',
   overture: 'https://overturemaps.org/',
   osm: 'https://www.openstreetmap.org/copyright',
   openFreeMap: 'https://openfreemap.org/',
@@ -46,12 +47,13 @@ const dutyCredits = CITIES.filter((city) => city.id !== 'thessaloniki').flatMap(
     },
   ];
 });
-// The areas whose usual hours are known beside the two the text above gives hours for: those
+// The areas whose usual hours are known beside the three the text above gives hours for: those
 // with a Region's decision in force today (core's regular-hours.ts), so the sentence follows the
-// data. Thessaloniki and Attica have their own paragraphs.
+// data. Thessaloniki, Attica and Corfu have their own paragraphs.
 const today = buildToday();
 const hoursAreas = CITIES.filter(
-  (city) => city.id !== 'thessaloniki' && city.id !== 'attiki' && hasRegularHours(city.id, today),
+  (city) =>
+    !['thessaloniki', 'attiki', 'corfu'].includes(city.id) && hasRegularHours(city.id, today),
 ).map((city) => city.name[locale]);
 const areasText = new Intl.ListFormat(locale, { style: 'long', type: 'conjunction' }).format(
   hoursAreas,

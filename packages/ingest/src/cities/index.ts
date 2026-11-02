@@ -1,4 +1,6 @@
+import { achaia } from './achaia.ts';
 import { attiki } from './attiki.ts';
+import { corfu } from './corfu.ts';
 import { cyclades } from './cyclades.ts';
 import { ilia } from './ilia.ts';
 import { ITEQ_PIPELINES } from './iteq-areas.ts';
@@ -15,6 +17,8 @@ export const PIPELINES: readonly CityPipeline[] = [
   larisa,
   attiki,
   ilia,
+  achaia,
+  corfu,
   cyclades,
   kilkis,
   ...ITEQ_PIPELINES,

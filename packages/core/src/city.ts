@@ -100,6 +100,42 @@ export const ILIA: City = {
 };
 
 /**
+ * The area of the Pharmaceutical Association of Achaia: Patras and the places around it that its
+ * duty site, efimeria.gr, lists (Dymi, Paralia, Vrachneika, Rio, Messatida, Kalavryta, Neos
+ * Erineos). The site shows only today's list (decision D26). The box is where those pharmacies
+ * are, with about 10 km. No regular-hours decision in force is known, so the app shows its
+ * pharmacies on duty and the longer hours the site lists.
+ */
+export const ACHAIA: City = {
+  id: 'achaia',
+  name: { el: 'Αχαΐα', en: 'Achaia' },
+  timeZone: GREECE_TIME_ZONE,
+  center: [21.7346, 38.2466], // Patras
+  bounds: [21.45, 37.95, 22.3, 38.38],
+  defaultGroupId: 'achaia',
+};
+
+/**
+ * The area of the Pharmaceutical Association of Corfu: the island and Paxos. Its duty page,
+ * farmakeu.static.otenet.gr, shows only today's list and prints no coordinates (decision D26).
+ * Its regular hours are the Region's (regular-hours.ts) and its longer hours the Region's
+ * bimonthly table, read from Diavgeia (decision D28). The island and Paxos are two boxes, so that the
+ * mainland across the strait (Igoumenitsa) stays Thesprotia's.
+ */
+export const CORFU: City = {
+  id: 'corfu',
+  name: { el: 'Κέρκυρα', en: 'Corfu' },
+  timeZone: GREECE_TIME_ZONE,
+  center: [19.9217, 39.6243], // Spianada
+  bounds: [19.5, 39.05, 20.25, 39.9],
+  regions: [
+    [19.5, 39.35, 20.15, 39.9],
+    [20.1, 39.05, 20.25, 39.3],
+  ],
+  defaultGroupId: 'corfu',
+};
+
+/**
  * The Cyclades, from the Pharmaceutical Association of the Cyclades' own site (fscyclades.gr):
  * the 8 islands whose towns it lists, replacing the earlier Tinos-only area from ITeQ's site
  * (2 Nov 2026). The islands are far apart, so there is one duty group per island, and the box
@@ -141,7 +177,7 @@ export const KILKIS: City = {
 /** The cities the app shows; the first is the default, the rest in Greek alphabetical order. */
 export const CITIES: readonly City[] = [
   THESSALONIKI,
-  ...[LARISA, ATTIKI, ILIA, CYCLADES, KILKIS, ...ITEQ_AREAS].sort((a, b) =>
+  ...[LARISA, ATTIKI, ILIA, ACHAIA, CORFU, CYCLADES, KILKIS, ...ITEQ_AREAS].sort((a, b) =>
     a.name.el.localeCompare(b.name.el, 'el'),
   ),
 ];
