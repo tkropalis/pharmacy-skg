@@ -6,6 +6,7 @@ import {
   type CycladesResult,
 } from '../cyclades/parse.ts';
 import { cyclades, readCycladesLists, type CycladesSource } from './cyclades.ts';
+import type { ListedLocation } from './pipeline.ts';
 
 const fixture = (name: string) =>
   readFileSync(new URL(`../../fixtures/fscyclades/${name}`, import.meta.url), 'utf8');
@@ -30,8 +31,9 @@ function fakeSource(
     const file = ANSWERS[place];
     const result = file
       ? parseCycladesResult(fixture(file))
-      : { date, place, duties: [] satisfies CycladesResult['duties'] };
-    return { ...result, date };
+      : { date, place, duties: [] satisfies CycladesResult['duties'], following: [] };
+    // As if the page listed no next days: every date is asked for.
+    return { ...result, date, following: [] };
   },
   places: string[] = PLACES,
 ): Fake {
@@ -52,7 +54,11 @@ function fakeSource(
   };
 }
 
-const read = (source: Fake, today = '2026-11-02') => readCycladesLists(source, today, () => {});
+const read = (
+  source: Fake,
+  listed: Parameters<typeof readCycladesLists>[3] = new Map(),
+  today = '2026-11-02',
+) => readCycladesLists(source, today, () => {}, listed);
 
 describe('readCycladesLists', () => {
   it('asks every place of the form for each of the next 7 days, and nothing else', async () => {
@@ -136,7 +142,12 @@ describe('readCycladesLists', () => {
     const source = fakeSource((date, place) =>
       place === 'Θήρα (Εμπορείο)' && date === '2026-11-03'
         ? new Error('HTTP 500')
-        : { ...parseCycladesResult(fixture('2026-11-02_santorini-fira.html')), date, place },
+        : {
+            ...parseCycladesResult(fixture('2026-11-02_santorini-fira.html')),
+            date,
+            place,
+            following: [],
+          },
     );
     const { items, failures } = await read(source);
     // On the 3rd Santorini is missing, though Fira was read: the list would say Emporio has no duty.
@@ -154,7 +165,7 @@ describe('readCycladesLists', () => {
     const source = fakeSource((date, place) =>
       place === 'Τήνος (Χώρα)'
         ? { ...parseCycladesResult(fixture('2026-11-02_tinos.html')), date: '2026-11-01' }
-        : { date, place, duties: [] },
+        : { date, place, duties: [], following: [] },
     );
     const { items, failures } = await read(source);
     expect(items).toEqual([]);
@@ -167,6 +178,7 @@ describe('readCycladesLists', () => {
       (date, place) => ({
         date,
         place,
+        following: [],
         duties: [
           {
             name: 'ΝΕΟ ΦΑΡΜΑΚΕΙΟ',
@@ -184,7 +196,10 @@ describe('readCycladesLists', () => {
   });
 
   it('reports a place on an island it does not know, and leaves it out', async () => {
-    const source = fakeSource((date, place) => ({ date, place, duties: [] }), ['Μήλος (Αδάμας)']);
+    const source = fakeSource(
+      (date, place) => ({ date, place, duties: [], following: [] }),
+      ['Μήλος (Αδάμας)'],
+    );
     const { items, failures } = await read(source);
     expect(items).toEqual([]);
     expect(failures).toEqual([
@@ -204,6 +219,7 @@ describe('readCycladesLists', () => {
       (date, place) => ({
         date,
         place,
+        following: [],
         duties: [
           place === 'Πάρος (Νάουσα)'
             ? duty('ΑΛΦΑ ΑΛΕΞΑΝΔΡΟΣ', 'Νάουσα')
@@ -218,6 +234,125 @@ describe('readCycladesLists', () => {
 
   it('refuses a page whose form offers no places', async () => {
     await expect(read(fakeSource(undefined, []))).rejects.toThrow('the form offers no places');
+  });
+});
+
+describe('readCycladesLists, one date in three', () => {
+  const TINOS = 'Τήνος (Χώρα)';
+  const day = (n: number) => `2026-11-${String(2 + n).padStart(2, '0')}`;
+  const pharmacy = (n: number) => ({
+    name: `ΦΑΡΜΑΚΕΙΟ ${n}`,
+    address: `ΟΔΟΣ ${n}`,
+    phone: `22830000${10 + n}`,
+  });
+
+  /** The page for places with a pharmacy a day: each answer lists the next two days. */
+  const rota =
+    (rotaPlaces: string[]) =>
+    (date: string, place: string): CycladesResult => {
+      if (!rotaPlaces.includes(place)) return { date, place, duties: [], following: [] };
+      const n = Number(date.slice(8)) - 2;
+      return {
+        date,
+        place,
+        duties: [{ ...pharmacy(n), location: { lat: 37.5, lon: 25.16 } }],
+        following: [1, 2].map((ahead) => ({ date: day(n + ahead), ...pharmacy(n + ahead) })),
+      };
+    };
+
+  /** What earlier runs stored: the coordinates of the pharmacies the listing names. */
+  const stored = new Map<string, ListedLocation>(
+    Array.from({ length: 12 }, (_, n): [string, ListedLocation] => [
+      pharmacy(n).phone,
+      { lat: 37.5, lon: 25.16, ref: 'https://www.fscyclades.gr/onduty-cyclades/' },
+    ]),
+  );
+  const askedFor = (source: Fake, place: string) =>
+    source.asked.filter((ask) => ask.endsWith(place)).map((ask) => ask.slice(0, 10));
+
+  it('asks a place for 3 of the 7 dates, and a place with no duty for all 7', async () => {
+    const source = fakeSource(rota([TINOS]), [TINOS, 'Σίφνος (Απολλωνία)']);
+    const { failures } = await read(source, stored);
+    expect(failures).toEqual([]);
+    expect(askedFor(source, TINOS)).toEqual(['2026-11-02', '2026-11-05', '2026-11-08']);
+    expect(askedFor(source, 'Σίφνος (Απολλωνία)')).toHaveLength(7);
+    expect(source.asked).toHaveLength(3 + 7);
+  });
+
+  it('makes a list for every day from the answers and what they list', async () => {
+    const { items } = await read(fakeSource(rota([TINOS]), [TINOS]), stored);
+    expect(items.map((item) => item.list.date)).toEqual(
+      Array.from({ length: 7 }, (_, n) => day(n)),
+    );
+    expect(items.map((item) => item.list.sections[0]?.entries[0]?.name)).toEqual(
+      Array.from({ length: 7 }, (_, n) => `ΦΑΡΜΑΚΕΙΟ ${n}`),
+    );
+    expect(items[1]?.list.sections[0]?.entries[0]).toMatchObject({
+      locality: 'Τήνος',
+      address: 'ΟΔΟΣ 1',
+      phone: '2283000011',
+    });
+  });
+
+  it('asks for every date when the listed pharmacies have no coordinates yet', async () => {
+    const source = fakeSource(rota([TINOS]), [TINOS]);
+    const { items } = await read(source);
+    expect(askedFor(source, TINOS)).toHaveLength(7);
+    expect(items).toHaveLength(7);
+  });
+
+  it('asks for the dates an answer does not list in order', async () => {
+    const skipping = (date: string, place: string): CycladesResult => {
+      const answer = rota([TINOS])(date, place);
+      // The next days are the 2nd and 3rd: a gap.
+      return {
+        ...answer,
+        following: answer.following.map((f, i) => ({
+          ...f,
+          date: day(Number(date.slice(8)) - 2 + 2 + i),
+        })),
+      };
+    };
+    const source = fakeSource(skipping, [TINOS]);
+    await read(source, stored);
+    expect(askedFor(source, TINOS)).toHaveLength(7);
+  });
+
+  it('asks for a date the answer lists only partly', async () => {
+    const short = (date: string, place: string): CycladesResult => {
+      const answer = rota([TINOS])(date, place);
+      return { ...answer, following: answer.following.slice(0, 1) };
+    };
+    const source = fakeSource(short, [TINOS]);
+    const { items } = await read(source, stored);
+    // Each answer covers its day and the next, so the dates are asked 02, 04, 06.
+    expect(askedFor(source, TINOS)).toEqual([
+      '2026-11-02',
+      '2026-11-04',
+      '2026-11-06',
+      '2026-11-08',
+    ]);
+    expect(items).toHaveLength(7);
+  });
+
+  it("publishes no day for an island when a place's date was not read, though the others were", async () => {
+    const PAROS = ['Πάρος (Νάουσα)', 'Πάρος (Παροικιά)'];
+    const base = rota(PAROS);
+    const source = fakeSource(
+      (date, place) =>
+        place === 'Πάρος (Παροικιά)' && date === day(3) ? new Error('HTTP 500') : base(date, place),
+      PAROS,
+    );
+    const { items, failures } = await read(source, stored);
+    // Parikia is asked 02, 05 (fails), 06: its 05 is the only date it lacks.
+    expect(askedFor(source, 'Πάρος (Παροικιά)')).toEqual([
+      '2026-11-02',
+      '2026-11-05',
+      '2026-11-06',
+    ]);
+    expect(items.map((item) => item.list.date)).toEqual([0, 1, 2, 4, 5, 6].map((n) => day(n)));
+    expect(failures).toHaveLength(1);
+    expect(failures[0]?.message).toContain('2026-11-05 Πάρος (Παροικιά)');
   });
 });
 

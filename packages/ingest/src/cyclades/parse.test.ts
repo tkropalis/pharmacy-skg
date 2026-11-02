@@ -42,13 +42,31 @@ describe('parseCycladesResult', () => {
           location: { lat: 37.53773267707573, lon: 25.161790148772035 },
         },
       ],
+      following: [
+        {
+          date: '2026-11-03',
+          name: 'ΑΠΕΡΓΗΣ ΕΜΜΑΝΟΥΗΛ ΚΑΙ ΣΙΑ ΟΕ',
+          address: 'Τριών Ιεραρχών 2',
+          phone: '2283022213',
+        },
+        {
+          date: '2026-11-04',
+          name: 'ΦΡΑΓΚΙΣΚΑ ΧΑΤΖΗΛΟΥΗ',
+          address: 'Αλαβάνου Ζανάκη 7',
+          phone: '2283023888',
+        },
+      ],
     });
   });
 
-  it('leaves out the next days, which the page lists below without coordinates', () => {
-    const { duties } = parseCycladesResult(fixture('2026-11-02_tinos.html'));
+  it('reads the next two days apart from the pharmacy on duty, with no coordinates', () => {
+    const { duties, following } = parseCycladesResult(fixture('2026-11-02_tinos.html'));
     expect(duties).toHaveLength(1);
-    expect(duties.map((duty) => duty.name).join()).not.toContain('ΑΠΕΡΓΗΣ');
+    expect(following.map((f) => f.date)).toEqual(['2026-11-03', '2026-11-04']);
+    expect(following[0]).not.toHaveProperty('location');
+    const mykonos = parseCycladesResult(fixture('2026-11-02_mykonos-chora.html'));
+    expect(mykonos.following.map((f) => f.date)).toEqual(['2026-11-03', '2026-11-04']);
+    expect(mykonos.following[1]?.phone).toBe('2289023900');
   });
 
   it('decodes the page text and keeps an address as printed', () => {
@@ -72,6 +90,7 @@ describe('parseCycladesResult', () => {
       date: '2026-11-02',
       place: 'Σίφνος (Απολλωνία)',
       duties: [],
+      following: [],
     });
   });
 
@@ -99,6 +118,7 @@ describe('parseCycladesResult', () => {
       date: null,
       place: null,
       duties: [],
+      following: [],
     });
   });
 });

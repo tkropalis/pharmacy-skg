@@ -2,7 +2,8 @@
  * The Cyclades, from the Pharmaceutical Association of the Cyclades' own duty page
  * (fscyclades.gr, cyclades/parse.ts). The form offers 13 places, each an island and a town
  * ("Πάρος (Νάουσα)"); the page answers one place and one day at a time, about six weeks ahead,
- * with the pharmacy on duty and its coordinates. The next 7 days are read, a request a second.
+ * with the pharmacy on duty and its coordinates, and lists the next two days too. The next 7
+ * days are read, a place asked for one date in three, a request a second.
  *
  * Each island is a duty group: the islands are far apart, each has its own rota, and a day's
  * list for an island is published only when every one of its places was read, so a request that
@@ -26,7 +27,7 @@ import { addDays, CYCLADES } from '@pharmacy-skg/core';
 import type { CycladesResult } from '../cyclades/parse.ts';
 import type { DutyList, DutySection } from '../fsth/parse.ts';
 import type { Warning } from '../registry/build.ts';
-import { nameSimilarity } from '../registry/names.ts';
+import { nameSimilarity, pharmacyId } from '../registry/names.ts';
 import type { Meta } from '../schema.ts';
 import { describeError } from '../sources/http.ts';
 import { CycladesClient } from '../sources/fscyclades.ts';
@@ -125,11 +126,16 @@ export interface CycladesSource {
   day(date: string, place: string): Promise<CycladesResult>;
 }
 
-/** The next 7 days' duty list of every island, with the coordinates the page gives. */
+/**
+ * The next 7 days' duty list of every island, with the coordinates the page gives. A place is
+ * asked for one date in three: an answer also lists the next two days.
+ */
 export async function readCycladesLists(
   client: CycladesSource,
   today: string,
   log: (message: string) => void,
+  /** Coordinates stored by earlier runs, by pharmacy id. */
+  listed: ReadonlyMap<string, ListedLocation> = new Map(),
 ): Promise<FetchedDutyLists> {
   const items: FetchedDutyList[] = [];
   const failures: Warning[] = [];
@@ -153,27 +159,75 @@ export async function readCycladesLists(
   // Who prints each phone: the pharmacy's id is its phone.
   const printedBy = new Map<string, Entry>();
 
-  for (const date of dates) {
-    const islands = new Map<
-      string,
-      { island: Island; complete: boolean; entries: Map<boolean, Entry[]> }
-    >();
-    for (const place of places) {
-      const island = islandOf(place);
-      if (!island) {
+  /** A printed pharmacy as an entry; null, and reported, when it is not a pharmacy we can id. */
+  const entryOf = (
+    duty: { name: string; address: string; phone: string },
+    date: string,
+    place: string,
+    island: Island,
+  ): Entry | null => {
+    if (!/^[26]\d{9}$/.test(duty.phone) || duty.name === '') {
+      failures.push({
+        code: 'unreadable-page',
+        message: `fscyclades.gr ${date} ${place}: "${duty.name}" with phone "${duty.phone}"`,
+      });
+      return null;
+    }
+    const entry: Entry = {
+      locality: island.name,
+      name: duty.name,
+      address: duty.address,
+      phone: WRONG_PHONES.has(`${place}|${duty.phone}`) ? '' : duty.phone,
+    };
+    if (entry.phone !== '') {
+      const other = printedBy.get(entry.phone);
+      if (other && nameSimilarity(other.name, entry.name) < 0.6) {
+        // The same words whichever is read first, so the day after reports nothing new.
+        const [a, b] = [other, entry].sort((x, y) => x.name.localeCompare(y.name, 'el'));
         report({
-          code: 'unknown-place',
-          message: `fscyclades.gr: "${place}" is on no known island`,
+          code: 'phone-clash',
+          message: `${a?.name} (${a?.address}) and ${b?.name} (${b?.address}) both print ${entry.phone}, which is the pharmacy's id`,
         });
-        continue;
       }
-      const read = islands.get(island.id) ?? { island, complete: true, entries: new Map() };
-      islands.set(island.id, read);
+      printedBy.set(entry.phone, entry);
+    }
+    return entry;
+  };
+
+  /** Whether the pharmacy's coordinates are known, from this run or from an earlier one. */
+  const located = (entry: Entry) =>
+    locations.has(locationKey(entry)) ||
+    listed.has(entry.phone !== '' ? entry.phone : pharmacyId(null, entry.name, entry.locality));
+
+  // Each place's pharmacies by date. A date missing from a place's map was not read for it.
+  const read = new Map<string, Map<string, Entry[]>>();
+  for (const place of places) {
+    const island = islandOf(place);
+    if (!island) {
+      report({
+        code: 'unknown-place',
+        message: `fscyclades.gr: "${place}" is on no known island`,
+      });
+      continue;
+    }
+    if (!(place in ON_CALL_PLACES)) {
+      report({
+        code: 'unknown-place',
+        message: `fscyclades.gr: "${place}" is new; read as on call until ON_CALL_PLACES says`,
+      });
+    }
+    const days = new Map<string, Entry[]>();
+    read.set(place, days);
+    // Each answer also lists the next two days, so a place is asked for one date in three. The
+    // days are taken from it only as far as it names them in order and every pharmacy has its
+    // coordinates (the listing gives none): the dates after that are asked for themselves.
+    for (let i = 0; i < dates.length;) {
+      const date = dates[i] ?? '';
+      i++;
       let result;
       try {
         result = await client.day(date, place);
       } catch (error) {
-        read.complete = false;
         failures.push({
           code: 'unreadable-page',
           message: `fscyclades.gr ${date} ${place}: ${describeError(error)}`,
@@ -181,48 +235,21 @@ export async function readCycladesLists(
         continue;
       }
       if (result.date !== date || result.place !== place) {
-        read.complete = false;
         failures.push({
           code: 'unreadable-page',
           message: `fscyclades.gr: asked for ${date} ${place}, got ${result.date ?? 'no date'} ${result.place ?? 'no place'}`,
         });
         continue;
       }
-      const onCall = ON_CALL_PLACES[place] ?? true;
-      if (!(place in ON_CALL_PLACES)) {
-        report({
-          code: 'unknown-place',
-          message: `fscyclades.gr: "${place}" is new; read as on call until ON_CALL_PLACES says`,
-        });
-      }
+      const entries: Entry[] = [];
+      let valid = true;
       for (const duty of result.duties) {
-        if (!/^[26]\d{9}$/.test(duty.phone) || duty.name === '') {
-          read.complete = false;
-          failures.push({
-            code: 'unreadable-page',
-            message: `fscyclades.gr ${date} ${place}: "${duty.name}" with phone "${duty.phone}"`,
-          });
+        const entry = entryOf(duty, date, place, island);
+        if (!entry) {
+          valid = false;
           continue;
         }
-        const entry: Entry = {
-          locality: island.name,
-          name: duty.name,
-          address: duty.address,
-          phone: WRONG_PHONES.has(`${place}|${duty.phone}`) ? '' : duty.phone,
-        };
-        if (entry.phone !== '') {
-          const other = printedBy.get(entry.phone);
-          if (other && nameSimilarity(other.name, entry.name) < 0.6) {
-            // The same words whichever is read first, so the day after reports nothing new.
-            const [a, b] = [other, entry].sort((x, y) => x.name.localeCompare(y.name, 'el'));
-            report({
-              code: 'phone-clash',
-              message: `${a?.name} (${a?.address}) and ${b?.name} (${b?.address}) both print ${entry.phone}, which is the pharmacy's id`,
-            });
-          }
-          printedBy.set(entry.phone, entry);
-        }
-        read.entries.set(onCall, [...(read.entries.get(onCall) ?? []), entry]);
+        entries.push(entry);
         const key = locationKey(entry);
         if (duty.location === null) {
           report({
@@ -233,6 +260,42 @@ export async function readCycladesLists(
           locations.set(key, { ...duty.location, ref: client.page });
         }
       }
+      if (!valid) continue;
+      days.set(date, entries);
+
+      const ahead = Math.min(2, dates.length - i);
+      if (ahead === 0 || entries.length === 0) continue;
+      const following: Entry[][] = [];
+      for (let k = 0; k < ahead; k++) {
+        const named = result.following.filter((f) => f.date === dates[i + k]);
+        const mapped = named.map((f) => entryOf(f, dates[i + k] ?? '', place, island));
+        if (mapped.length === 0 || mapped.some((entry) => entry === null || !located(entry))) {
+          break;
+        }
+        following.push(mapped as Entry[]);
+      }
+      following.forEach((day, k) => days.set(dates[i + k] ?? '', day));
+      i += following.length;
+    }
+  }
+
+  for (const date of dates) {
+    const islands = new Map<
+      string,
+      { island: Island; complete: boolean; entries: Map<boolean, Entry[]> }
+    >();
+    for (const place of places) {
+      const island = islandOf(place);
+      if (!island) continue;
+      const group = islands.get(island.id) ?? { island, complete: true, entries: new Map() };
+      islands.set(island.id, group);
+      const day = read.get(place)?.get(date);
+      if (!day) {
+        group.complete = false;
+        continue;
+      }
+      const onCall = ON_CALL_PLACES[place] ?? true;
+      if (day.length > 0) group.entries.set(onCall, [...(group.entries.get(onCall) ?? []), ...day]);
     }
     for (const { island, complete, entries } of islands.values()) {
       // A list from some of an island's places would say the others have no duty.
@@ -264,7 +327,8 @@ export const cyclades: CityPipeline = {
   sources: [FSC, OSM_CREDIT],
   sourceIds: { duty: FSC.id, extended: null },
 
-  fetchDutyLists: ({ today, log }) => readCycladesLists(new CycladesClient(), today, log),
+  fetchDutyLists: ({ today, log, listedLocations }) =>
+    readCycladesLists(new CycladesClient(), today, log, listedLocations),
 
   async fetchExtendedHours() {
     return { items: [], failures: [] };

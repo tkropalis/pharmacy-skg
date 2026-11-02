@@ -4,7 +4,7 @@
  * (YYYY-MM-DD) and `selected_location` (one of the form's options, "Τήνος (Χώρα)") returns the
  * whole page again with the answer below the form: the pharmacy on duty with its name, address,
  * phone, mobile and a map whose script holds its coordinates, then the next two days' pharmacies
- * (without coordinates, not read), or "Δεν βρέθηκαν φαρμακεία" when the place has no duty that
+ * (without coordinates), or "Δεν βρέθηκαν φαρμακεία" when the place has no duty that
  * day. The page states no hours: it says only that a duty lasts until 08:00 the next morning.
  * Read on 2 Nov 2026 (fixtures/fscyclades).
  */
@@ -20,6 +20,15 @@ export interface CycladesDuty {
   readonly location: { readonly lat: number; readonly lon: number } | null;
 }
 
+/** A pharmacy the answer lists for one of the next days: no coordinates. */
+export interface CycladesFollowing {
+  /** YYYY-MM-DD, from the date the page prints. */
+  readonly date: string;
+  readonly name: string;
+  readonly address: string;
+  readonly phone: string;
+}
+
 export interface CycladesResult {
   /** The date the answer is for (YYYY-MM-DD), as the page prints it. */
   readonly date: string | null;
@@ -27,6 +36,8 @@ export interface CycladesResult {
   readonly place: string | null;
   /** Empty when the place has no duty that day. */
   readonly duties: readonly CycladesDuty[];
+  /** The pharmacies listed for the next two days, in order; none when there is no duty that day. */
+  readonly following: readonly CycladesFollowing[];
 }
 
 function textOf(html: string): string {
@@ -89,9 +100,25 @@ export function parseCycladesResult(html: string): CycladesResult {
       location: coordinates(block),
     });
   }
+  const following: CycladesFollowing[] = [];
+  for (const part of html.split('<div class="next-pharmacy">').slice(1)) {
+    const block = part.split('</div>')[0] ?? '';
+    const title = /<h3[^>]*>([\s\S]*?)<\/h3>/.exec(block)?.[1] ?? '';
+    const date = isoDate(/(\d{1,2}\/\d{1,2}\/\d{4})/.exec(textOf(title))?.[1] ?? '');
+    const name = /<strong>([\s\S]*?)<\/strong>/.exec(title)?.[1];
+    const line = /<h4[^>]*>([\s\S]*?)<\/h4>/.exec(block)?.[1] ?? '';
+    if (date === null || name === undefined) continue;
+    following.push({
+      date,
+      name: cleanDisplay(textOf(name)),
+      address: cleanDisplay(field(line, 'Διεύθυνση:')),
+      phone: phoneOf(field(line, 'Τηλέφωνο:')),
+    });
+  }
   return {
     date: heading?.[1] ? isoDate(textOf(heading[1])) : null,
     place: heading?.[2] ? squash(decodeEntities(heading[2])) : null,
     duties,
+    following,
   };
 }
