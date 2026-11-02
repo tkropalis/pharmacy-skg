@@ -105,10 +105,10 @@ export const en: Dictionary = {
     description: 'When each area was last checked and which duty days are announced.',
     summary: 'Call before you go.',
     area: 'Area',
-    checked: 'Checked',
+    checked: 'Updated',
     duties: 'Duty days',
-    fresh: 'Up to date',
-    stale: 'Out of date',
+    fresh: 'Recent',
+    stale: 'Old',
     noDuties: 'None announced',
   },
 
