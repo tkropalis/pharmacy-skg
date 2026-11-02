@@ -52,6 +52,7 @@ const EXCLUDED = [
   /^data\//,
   /^404\.html$/,
   /^sitemap\.xml$/,
+  /^sitemaps\//,
   /^robots\.txt$/,
   /^og-image\.png$/,
   /\.map$/,

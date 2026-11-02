@@ -47,6 +47,8 @@ describe('precacheEntries', () => {
       file('_astro/maplibre-6.12.0/maplibre-gl-worker.mjs'),
       file('_astro/maplibre-6.12.0/maplibre-gl-shared.mjs'),
       file('sitemap.xml'),
+      file('sitemaps/thessaloniki.xml'),
+      file('sitemaps/pages.xml'),
       file('robots.txt'),
       file('og-image.png'),
       file('icons/icon-192.png'),
