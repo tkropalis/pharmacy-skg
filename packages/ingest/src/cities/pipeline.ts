@@ -68,15 +68,20 @@ export interface Fetched<T> {
 }
 
 /**
- * The key `FetchedDutyLists.locations` uses for a duty entry: its phone, or its name and place
- * when the list prints none (Achaia's lists print phones only for villages).
+ * The key of a pharmacy's coordinates in `FetchedDutyLists.locations`: the phone printed in the
+ * list, or for an entry the pipeline printed without one (the list gives it another pharmacy's
+ * number), its locality and name.
  */
-export function locationKey(entry: Pick<DutyEntry, 'phone' | 'name' | 'locality'>): string {
-  return entry.phone !== '' ? entry.phone : `${entry.name}|${entry.locality}`;
+export function locationKey(entry: {
+  readonly phone: string;
+  readonly locality: string;
+  readonly name: string;
+}): string {
+  return entry.phone !== '' ? entry.phone : `${entry.locality}|${entry.name}`;
 }
 
 export interface FetchedDutyLists extends Fetched<FetchedDutyList> {
-  /** New coordinates the source gives, by `locationKey` of the entry (its phone, normally). */
+  /** New coordinates the source gives, by `locationKey`. */
   readonly locations?: ReadonlyMap<string, ListedLocation>;
   /**
    * Extended hours the duty source itself gives in the same page (Achaia's), by file name; each
@@ -89,6 +94,8 @@ export interface FetchedDutyLists extends Fetched<FetchedDutyList> {
 
 /** How addresses in the city are geocoded (registry/geocode.ts). */
 export interface GeocodeArea {
+  /** The printed address as Nominatim knows its street (Kilkis prints "Μ. ΑΛΕΞΑΝΔΡΟΥ 98"). */
+  readonly expandAddress?: (address: string) => string;
   /** The place to ask for when searching a locality (default: its name). */
   readonly queryLocality?: (locality: string) => string;
   /** Whether a result belongs to the locality the list printed (default: always). */

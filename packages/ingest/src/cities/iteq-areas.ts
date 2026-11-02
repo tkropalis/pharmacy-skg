@@ -6,7 +6,8 @@
  *
  * Each is credited as its site names itself on 7 Oct 2026: the association where the site says
  * so, otherwise the site's own title. Left out: Rethymno, Rodopi and Kefalonia publish nothing,
- * and Attica's site (fsa-efimeries.gr) has its own format (cities/attiki.ts).
+ * Attica's site (fsa-efimeries.gr) has its own format (cities/attiki.ts), and the Cyclades site
+ * on this platform listed only Tinos: the association's own site replaced it (cities/cyclades.ts).
  */
 import type { City } from '@pharmacy-skg/core';
 import { ITEQ_AREAS } from '@pharmacy-skg/core';
@@ -57,8 +58,6 @@ const PUBLISHERS: Readonly<Record<string, Publisher>> = {
   },
   samos: { host: 'samos', el: 'Σάμου', en: 'Samos', association: false },
   thesprotia: { host: 'thesprotia', el: 'Θεσπρωτίας', en: 'Thesprotia', association: false },
-  // The Cyclades site lists only Tinos.
-  tinos: { host: 'cyclades', el: 'Κυκλάδων', en: 'the Cyclades', association: false },
   trikala: { host: 'trikala', el: 'Τρικάλων', en: 'Trikala', association: true },
   xanthi: { host: 'xanthi', el: 'Ξάνθης', en: 'Xanthi', association: true },
   zakynthos: { host: 'zakynthos', el: 'Ζακύνθου', en: 'Zakynthos', association: true },

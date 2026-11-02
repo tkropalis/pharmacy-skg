@@ -44,6 +44,22 @@ export const KNOWN_GROUPS: Readonly<Record<string, Readonly<Record<string, strin
     thermi: 'Δήμος Θέρμης',
     volvi: 'Δήμος Βόλβης',
   },
+  cyclades: {
+    andros: 'Άνδρος',
+    mykonos: 'Μύκονος',
+    naxos: 'Νάξος',
+    paros: 'Πάρος',
+    santorini: 'Σαντορίνη',
+    sifnos: 'Σίφνος',
+    syros: 'Σύρος',
+    tinos: 'Τήνος',
+  },
+  kilkis: {
+    axioupoli: 'Αξιούπολη',
+    goumenissa: 'Γουμένισσα',
+    kilkis: 'Κιλκίς',
+    polykastro: 'Πολύκαστρο',
+  },
   larisa: {
     agia: 'Αγιά',
     ampelonas: 'Αμπελώνας',

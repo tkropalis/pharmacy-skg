@@ -119,10 +119,49 @@ export const CORFU: City = {
   defaultGroupId: 'corfu',
 };
 
+/**
+ * The Cyclades, from the Pharmaceutical Association of the Cyclades' own site (fscyclades.gr):
+ * the 8 islands whose towns it lists, replacing the earlier Tinos-only area from ITeQ's site
+ * (2 Nov 2026). The islands are far apart, so there is one duty group per island, and the box
+ * takes in them all (Sifnos in the west, Santorini in the south-east, Andros in the north).
+ * It has no regular-hours decision, so the app shows only its pharmacies on duty (decision D26).
+ */
+export const CYCLADES: City = {
+  id: 'cyclades',
+  name: { el: 'Κυκλάδες', en: 'Cyclades' },
+  timeZone: GREECE_TIME_ZONE,
+  center: [24.9418, 37.4447], // Ermoupoli, the capital
+  bounds: [24.6, 36.25, 25.56, 37.98],
+  defaultGroupId: 'syros',
+};
+
+/**
+ * The Kilkis regional unit's four towns, from the Pharmaceutical Association of Kilkis' own site
+ * (fskilkis.gr). It has no regular-hours decision the app knows (Kilkis prints other afternoon
+ * hours than Thessaloniki's decision gives), so the app shows only its pharmacies on duty
+ * (decision D26). The boxes keep to the towns, so that the north-west of the Thessaloniki
+ * regional unit stays Thessaloniki's and Gevgelija across the border is not covered.
+ */
+export const KILKIS: City = {
+  id: 'kilkis',
+  name: { el: 'Κιλκίς', en: 'Kilkis' },
+  timeZone: GREECE_TIME_ZONE,
+  center: [22.8736, 40.9937], // 21is Iouniou
+  // Goumenissa in the west, Kilkis in the east, Evzonoi in the north.
+  bounds: [22.35, 40.85, 22.99, 41.1],
+  regions: [
+    // Goumenissa, Axioupoli and Polykastro.
+    [22.35, 40.85, 22.72, 41.1],
+    // Kilkis.
+    [22.78, 40.85, 22.99, 41.08],
+  ],
+  defaultGroupId: 'kilkis',
+};
+
 /** The cities the app shows; the first is the default, the rest in Greek alphabetical order. */
 export const CITIES: readonly City[] = [
   THESSALONIKI,
-  ...[LARISA, ATTIKI, ACHAIA, CORFU, ...ITEQ_AREAS].sort((a, b) =>
+  ...[LARISA, ATTIKI, ACHAIA, CORFU, CYCLADES, KILKIS, ...ITEQ_AREAS].sort((a, b) =>
     a.name.el.localeCompare(b.name.el, 'el'),
   ),
 ];
