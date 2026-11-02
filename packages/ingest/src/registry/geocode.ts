@@ -30,6 +30,7 @@ const ResultsSchema = z.array(
     lat: z.string(),
     lon: z.string(),
     addresstype: z.string().optional(),
+    category: z.string().optional(),
     type: z.string().optional(),
     display_name: z.string(),
   }),
@@ -129,7 +130,9 @@ export class Geocoder {
           lon: Number(first.lon),
           precision: EXACT_TYPES.has(type)
             ? 'exact'
-            : STREET_TYPES.has(type)
+            : // A street is "road" or "street", or the kind of road it is ("primary", "residential"):
+              // those answers have the category "highway".
+              STREET_TYPES.has(type) || first.category === 'highway'
               ? 'street'
               : 'locality',
           displayName: first.display_name,
@@ -173,7 +176,8 @@ export class Geocoder {
     locality: string,
     { cachedOnly = false } = {},
   ): Promise<(GeocodeHit & { query: string }) | null> {
-    const street = cleanAddress(this.area.expandAddress?.(address) ?? address);
+    const printed = cleanAddress(this.area.expandAddress?.(address) ?? address);
+    const street = this.area.streets ? this.area.streets.restore(printed) : printed;
     const place = this.area.queryLocality?.(locality) ?? locality;
     const queries = [street && /\d/.test(street) ? `${street}, ${place}` : null, place];
     for (const query of queries) {

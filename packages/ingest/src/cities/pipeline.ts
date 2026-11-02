@@ -100,6 +100,14 @@ export interface GeocodeArea {
   readonly queryLocality?: (locality: string) => string;
   /** Whether a result belongs to the locality the list printed (default: always). */
   readonly accepts?: (hit: Pick<GeocodeHit, 'displayName'>, locality: string) => boolean;
+  /**
+   * The list prints addresses in capitals without accents: the run reads the area's street names
+   * from OpenStreetMap once (data/<city>/inputs/streets.json) and restores the accents before
+   * asking Nominatim (registry/streets.ts).
+   */
+  readonly restoreStreets?: boolean;
+  /** Set by the run from the street names, for `restoreStreets`. */
+  readonly streets?: { restore(address: string): string };
 }
 
 /** What a plausible data set looks like for the city (validate.ts). */

@@ -15,11 +15,11 @@
       "firstSeen": "2026-11-08",
       "lastSeen": "2026-11-08",
       "location": {
-        "lat": 37.675629,
-        "lon": 21.430768,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "0085f330-4246-4dac-9291-8830be76f7bc"
+        "lat": 37.670294,
+        "lon": 21.439802,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "Κολοκοτρώνη 13, Πύργος"
       }
     },
     {
@@ -39,8 +39,8 @@
         "lat": 37.67329,
         "lon": 21.435118,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΠΕΤΡΟΠΟΥΛΟΥ 10, Πύργος"
+        "precision": "street",
+        "ref": "Τάκη Πετροπούλου 10, Πύργος"
       }
     },
     {
@@ -57,11 +57,11 @@
       "firstSeen": "2026-01-08",
       "lastSeen": "2026-01-08",
       "location": {
-        "lat": 37.672399,
-        "lon": 21.439073,
+        "lat": 37.672017,
+        "lon": 21.440201,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΕΡΜΟΥ 63, Πύργος"
+        "precision": "street",
+        "ref": "Ερμού 63, Πύργος"
       }
     },
     {
@@ -99,11 +99,11 @@
       "firstSeen": "2026-01-23",
       "lastSeen": "2026-01-23",
       "location": {
-        "lat": 37.670766,
-        "lon": 21.432014,
+        "lat": 37.672595,
+        "lon": 21.437125,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 1, Πύργος"
+        "precision": "street",
+        "ref": "28ης Οκτωβρίου 1, Πύργος"
       }
     },
     {
@@ -144,8 +144,8 @@
         "lat": 37.674841,
         "lon": 21.436847,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΘΕΜΙΣΤΟΚΛΕΟΥΣ 10, Πύργος"
+        "precision": "street",
+        "ref": "Θεμιστοκλέους 10, Πύργος"
       }
     },
     {
@@ -204,11 +204,11 @@
       "firstSeen": "2026-01-14",
       "lastSeen": "2026-01-14",
       "location": {
-        "lat": 37.673013,
-        "lon": 21.436268,
+        "lat": 37.671242,
+        "lon": 21.431281,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΜΑΝΩΛΟΠΟΥΛΟΥ 42, Πύργος"
+        "precision": "street",
+        "ref": "Μανωλοπούλου 42, Πύργος"
       }
     },
     {
@@ -246,11 +246,11 @@
       "firstSeen": "2026-11-05",
       "lastSeen": "2026-11-05",
       "location": {
-        "lat": 37.670685,
-        "lon": 21.429668,
+        "lat": 37.671242,
+        "lon": 21.431281,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΜΑΝΩΛΟΠΟΥΛΟΥ 1, Πύργος"
+        "precision": "street",
+        "ref": "Μανωλοπούλου 1, Πύργος"
       }
     },
     {
@@ -270,7 +270,7 @@
         "lat": 37.672399,
         "lon": 21.439073,
         "source": "nominatim",
-        "precision": "locality",
+        "precision": "street",
         "ref": "ΕΡΜΟΥ 122 -, Πύργος"
       }
     },
@@ -354,8 +354,8 @@
         "lat": 37.674061,
         "lon": 21.433378,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΚΟΚΚΙΝΟΥ 6, Πύργος"
+        "precision": "street",
+        "ref": "Δ. Κοκκίνου 6, Πύργος"
       }
     },
     {
@@ -417,8 +417,8 @@
         "lat": 37.672595,
         "lon": 21.437125,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "28ης ΟΚΤΩΒΡΙΟΥ, Πύργος"
+        "precision": "street",
+        "ref": "28ης Οκτωβρίου, Πύργος"
       }
     },
     {
@@ -438,8 +438,8 @@
         "lat": 37.672502,
         "lon": 21.44068,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΑΙΟΛΟΥ 11, Πύργος"
+        "precision": "street",
+        "ref": "Αιόλου 11, Πύργος"
       }
     },
     {
@@ -456,11 +456,11 @@
       "firstSeen": "2026-11-06",
       "lastSeen": "2026-11-06",
       "location": {
-        "lat": 37.671242,
-        "lon": 21.431281,
+        "lat": 37.673013,
+        "lon": 21.436268,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΜΑΝΩΛΟΠΟΥΛΟΥ 43, Πύργος"
+        "precision": "street",
+        "ref": "Μανωλοπούλου 43, Πύργος"
       }
     },
     {
@@ -480,8 +480,8 @@
         "lat": 37.674061,
         "lon": 21.433378,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΚΟΚΚΙΝΟΥ 25, Πύργος"
+        "precision": "street",
+        "ref": "Δ. Κοκκίνου 25, Πύργος"
       }
     },
     {
@@ -501,8 +501,8 @@
         "lat": 37.67114,
         "lon": 21.449047,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΟΛΥΜΠΙΩΝ 1, Πύργος"
+        "precision": "street",
+        "ref": "Ολυμπίων 1, Πύργος"
       }
     },
     {
@@ -543,8 +543,8 @@
         "lat": 37.672399,
         "lon": 21.439073,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΕΡΜΟΥ 78, Πύργος"
+        "precision": "street",
+        "ref": "Ερμού 78, Πύργος"
       }
     },
     {
@@ -585,8 +585,8 @@
         "lat": 37.670137,
         "lon": 21.429929,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΚΑΤΑΚΟΛΟΥ 53, Πύργος"
+        "precision": "street",
+        "ref": "Κατακόλου 53, Πύργος"
       }
     },
     {
@@ -624,11 +624,11 @@
       "firstSeen": "2026-01-20",
       "lastSeen": "2026-01-20",
       "location": {
-        "lat": 37.68854,
-        "lon": 21.437314,
+        "lat": 37.68157,
+        "lon": 21.439743,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΑΓ. ΓΕΩΡΓΙΟΥ 4, Πύργος"
+        "precision": "street",
+        "ref": "Αγίου Γεωργίου 4, Πύργος"
       }
     },
     {
@@ -648,8 +648,8 @@
         "lat": 37.670113,
         "lon": 21.432983,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΡΗΓΑ ΦΕΡΑΙΟΥ 46Α, Πύργος"
+        "precision": "street",
+        "ref": "Ρήγα Φεραίου 46Α, Πύργος"
       }
     },
     {
@@ -711,8 +711,8 @@
         "lat": 37.79992,
         "lon": 21.360731,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΞΥΔΙΑ 2, Αμαλιάδα"
+        "precision": "street",
+        "ref": "Ξυδιά 2, Αμαλιάδα"
       }
     },
     {
@@ -732,8 +732,8 @@
         "lat": 37.79575,
         "lon": 21.355549,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΚΑΛΑΒΡΥΤΩΝ 11, Αμαλιάδα"
+        "precision": "street",
+        "ref": "Καλαβρύτων 11, Αμαλιάδα"
       }
     },
     {
@@ -813,11 +813,11 @@
       "firstSeen": "2026-11-03",
       "lastSeen": "2026-11-03",
       "location": {
-        "lat": 37.797277,
-        "lon": 21.352355,
+        "lat": 37.793912,
+        "lon": 21.351774,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 8, Αμαλιάδα"
+        "precision": "street",
+        "ref": "Ελευθερίου Βενιζέλου 8, Αμαλιάδα"
       }
     },
     {
@@ -855,11 +855,11 @@
       "firstSeen": "2026-11-08",
       "lastSeen": "2026-11-08",
       "location": {
-        "lat": 37.797131,
-        "lon": 21.35145,
+        "lat": 37.796315,
+        "lon": 21.348742,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Αμαλιάδα"
+        "precision": "street",
+        "ref": "Φιλικής Εταιρείας 6, Αμαλιάδα"
       }
     },
     {
@@ -876,11 +876,11 @@
       "firstSeen": "2026-01-15",
       "lastSeen": "2026-01-15",
       "location": {
-        "lat": 37.79575,
-        "lon": 21.355549,
+        "lat": 37.796213,
+        "lon": 21.351268,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΚΑΛΑΒΡΥΤΩΝ 19, Αμαλιάδα"
+        "precision": "street",
+        "ref": "Καλαβρύτων 19, Αμαλιάδα"
       }
     },
     {
@@ -942,8 +942,8 @@
         "lat": 37.798626,
         "lon": 21.353246,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΔΕΛΗΓΙΑΝΝΗ 23, Αμαλιάδα"
+        "precision": "street",
+        "ref": "Δεληγιάννη 23, Αμαλιάδα"
       }
     },
     {
@@ -1002,11 +1002,11 @@
       "firstSeen": "2026-01-04",
       "lastSeen": "2026-01-04",
       "location": {
-        "lat": 37.797131,
-        "lon": 21.35145,
+        "lat": 37.794458,
+        "lon": 21.350343,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Αμαλιάδα"
+        "precision": "street",
+        "ref": "Ερμού 49, Αμαλιάδα"
       }
     },
     {
@@ -1023,11 +1023,11 @@
       "firstSeen": "2026-01-03",
       "lastSeen": "2026-01-03",
       "location": {
-        "lat": 37.797131,
-        "lon": 21.35145,
+        "lat": 37.796726,
+        "lon": 21.348097,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Αμαλιάδα"
+        "precision": "street",
+        "ref": "Κολοκοτρώνη 10, Αμαλιάδα"
       }
     },
     {
@@ -1128,11 +1128,11 @@
       "firstSeen": "2026-01-09",
       "lastSeen": "2026-01-09",
       "location": {
-        "lat": 37.850705,
-        "lon": 21.254242,
+        "lat": 37.856845,
+        "lon": 21.257968,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Γαστούνη"
+        "precision": "street",
+        "ref": "Γεωργίου Σισίνη 145, Γαστούνη"
       }
     },
     {
@@ -1149,11 +1149,11 @@
       "firstSeen": "2026-11-04",
       "lastSeen": "2026-11-05",
       "location": {
-        "lat": 37.850705,
-        "lon": 21.254242,
+        "lat": 37.863117,
+        "lon": 21.261847,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Γαστούνη"
+        "precision": "street",
+        "ref": "Γεωργίου Σισίνη 134, Γαστούνη"
       }
     },
     {
@@ -1275,11 +1275,11 @@
       "firstSeen": "2026-01-07",
       "lastSeen": "2026-01-07",
       "location": {
-        "lat": 37.907587,
-        "lon": 21.269662,
+        "lat": 37.905856,
+        "lon": 21.27069,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Ανδραβίδα"
+        "precision": "street",
+        "ref": "Νικολάου Γκουτζουρή 66, Ανδραβίδα"
       }
     },
     {
@@ -1338,11 +1338,11 @@
       "firstSeen": "2026-11-02",
       "lastSeen": "2026-11-03",
       "location": {
-        "lat": 37.907587,
-        "lon": 21.269662,
+        "lat": 37.905633,
+        "lon": 21.269274,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Ανδραβίδα"
+        "precision": "street",
+        "ref": "Νικολάου Γκουτζουρή 60, Ανδραβίδα"
       }
     },
     {
@@ -1358,7 +1358,13 @@
       ],
       "firstSeen": "2026-01-01",
       "lastSeen": "2026-01-01",
-      "location": null
+      "location": {
+        "lat": 37.898197,
+        "lon": 21.314026,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "Αρχαίας Ολυμπίας 23, Τραγανό"
+      }
     },
     {
       "id": "2623061303",
@@ -1377,8 +1383,8 @@
         "lat": 37.898197,
         "lon": 21.314026,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "ΑΡΧΑΙΑΣ ΟΛΥΜΠΙΑΣ 54, Τραγανό"
+        "precision": "street",
+        "ref": "Αρχαίας Ολυμπίας 54, Τραγανό"
       }
     },
     {
@@ -1394,7 +1400,13 @@
       ],
       "firstSeen": "2026-01-05",
       "lastSeen": "2026-01-05",
-      "location": null
+      "location": {
+        "lat": 37.899458,
+        "lon": 21.314654,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "Αρχαίας Ολυμπίας 75, Τραγανό"
+      }
     },
     {
       "id": "2623400058",
@@ -1410,11 +1422,11 @@
       "firstSeen": "2026-01-01",
       "lastSeen": "2026-01-01",
       "location": {
-        "lat": 37.850705,
-        "lon": 21.254242,
+        "lat": 37.848034,
+        "lon": 21.248836,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Γαστούνη"
+        "precision": "street",
+        "ref": "Κοιμήσεως Θεοτόκου 16, Γαστούνη"
       }
     },
     {

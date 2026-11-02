@@ -234,7 +234,8 @@ export function createIlia({ diavgeia, cache, readTable }: IliaDeps): CityPipeli
       return { items: [], failures: [] };
     },
 
-    geocoding: {},
+    // The table prints addresses in capitals without accents.
+    geocoding: { restoreStreets: true },
     // A town's list has one or two sections of a few pharmacies, never an empty one; the table
     // names about 80 pharmacies (2 Nov 2026).
     rules: {

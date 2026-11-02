@@ -24,6 +24,8 @@ export function cityPaths(city: string, dataRoot = DATA_ROOT) {
     listedLocations: join(root, 'inputs', 'listed-locations.json'),
     /** Every pharmacy a source names beyond the stored duty lists (cities/pipeline.ts, Roster). */
     roster: join(root, 'inputs', 'roster.json'),
+    /** The area's street names with their accents, from OpenStreetMap (registry/streets.ts). */
+    streets: join(root, 'inputs', 'streets.json'),
   };
 }
 
