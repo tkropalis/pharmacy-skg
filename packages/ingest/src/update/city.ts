@@ -24,6 +24,8 @@ import {
 } from '../registry/build.ts';
 import { describeError } from '../sources/http.ts';
 import { GeocodeCacheSchema, Geocoder } from '../registry/geocode.ts';
+import { StreetIndex, StreetsFileSchema } from '../registry/streets.ts';
+import { fetchStreetNames } from '../sources/overpass.ts';
 import { OverturePlaceSchema, OvertureIndex } from '../registry/overture.ts';
 import {
   DutyDaySchema,
@@ -96,6 +98,8 @@ export interface UpdateCityOptions {
   readonly logger: Logger;
   /** The time that goes into meta.json. */
   readonly now?: () => Date;
+  /** Reads an area's street names (sources/overpass.ts); a test replaces it. */
+  readonly fetchStreets?: (bounds: Bounds) => Promise<string[]>;
 }
 
 /**
@@ -111,6 +115,7 @@ export async function updateCity({
   offline,
   logger,
   now = () => new Date(),
+  fetchStreets = (bounds) => fetchStreetNames(bounds),
 }: UpdateCityOptions): Promise<boolean> {
   const { city } = pipeline;
   const log = (message: string) => logger.log(message);
@@ -280,11 +285,35 @@ export async function updateCity({
   const overture = new OvertureIndex(
     (await readJson(paths.overture, z.array(OverturePlaceSchema))) ?? [],
   );
+  // Street names with their accents, for a list that prints capitals without them: read from
+  // OpenStreetMap once, then kept (delete the file to read them again).
+  let streets: StreetIndex | undefined;
+  if (pipeline.geocoding.restoreStreets) {
+    let file = await readJson(paths.streets, StreetsFileSchema);
+    if (!file && !offline) {
+      try {
+        const names = await fetchStreets(city.bounds);
+        file = {
+          schemaVersion: 1,
+          source: 'OpenStreetMap, via Overpass (overpass.kumi.systems)',
+          fetchedAt: now().toISOString(),
+          names,
+        };
+        await writeIfChanged(paths.streets, toJson(file));
+        log(`streets: ${names.length} names read from OpenStreetMap`);
+      } catch (error) {
+        logger.error(
+          `error [streets] ${city.id}: not read, addresses stay as printed: ${describeError(error)}`,
+        );
+      }
+    }
+    if (file) streets = new StreetIndex(file.names);
+  }
   const geocoder = new Geocoder(
     (await readJson(paths.geocodeCache, GeocodeCacheSchema)) ?? {},
     !offline,
     city.bounds,
-    pipeline.geocoding,
+    streets ? { ...pipeline.geocoding, streets } : pipeline.geocoding,
   );
   const overrides =
     (await readJson(paths.overrides, z.record(z.string(), z.custom<Override>()))) ?? {};
