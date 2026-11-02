@@ -48,6 +48,7 @@ data/
 | Φαρμακευτικός Σύλλογος Λάρισας, via its duty site larisa.efhmeries.gr (ITeQ) | duty lists and locations for `larisa/` | public lists, attributed; read a page a second (decision D26) |
 | Φαρμακευτικός Σύλλογος Αχαΐας, via its duty site efimeria.gr (Silktech) | duty lists, locations and longer hours for `achaia/` | public lists, attributed; read with our own User-Agent, one request a run, with the owner's approval of 2 Nov 2026 (decision D28) |
 | Φαρμακευτικός Σύλλογος Κέρκυρας, via its own pages on farmakeu.static.otenet.gr | duty lists and members for `corfu/` | public lists, attributed; two requests a run at most (decision D28) |
+| Περιφέρεια Ιονίων Νήσων, via Diavgeia's open-data API | the extended-hours tables of Corfu (`corfu/extended-hours/`) and, in `packages/core`, its regular hours | public decisions; two requests a run (decision D28) |
 | Overture Maps Foundation (`inputs/overture-pharmacies.json`) | locations | CDLA-Permissive-2.0 |
 | OpenStreetMap contributors, via Nominatim (`inputs/geocode-cache.json`) | locations | ODbL; individual geocoding results, stored once per address |
 | Υπουργείο Υγείας (moh.gov.gr), price bulletins | medicine prices | public ministerial decisions |
