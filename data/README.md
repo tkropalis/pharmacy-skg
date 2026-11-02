@@ -14,7 +14,8 @@ data/
     extended-hours/<from>_<to>.json  the extended-hours list for one period (ΠΚΜ's, or ΦΣΑ's by month)
     overrides.json                manual fixes, keyed by pharmacy id (edit this one)
     inputs/                       pipeline inputs and caches, not read by the app
-    inputs/roster.json            Attica: every pharmacy its duty site names, beyond the stored days
+    inputs/roster.json            Attica, Ilia: every pharmacy the source names, beyond the stored days
+    inputs/duty-table.json        Ilia: the rows of the year's duty table (Diavgeia), by ADA and version
   medicines/
     medicines.json                official prices and ΕΟΦ shortages, national (one line per pack)
     inputs/moh-article-files.json the attachments of each ministry article read so far (a cache)
@@ -46,6 +47,7 @@ data/
 | Φαρμακευτικός Σύλλογος Θεσσαλονίκης (ΦΣΘ), via the copies re-hosted by thess.guide | duty lists | public lists, attributed (decisions D2, D20) |
 | Περιφέρεια Κεντρικής Μακεδονίας (ΠΚΜ) | extended hours | public announcements |
 | Φαρμακευτικός Σύλλογος Λάρισας, via its duty site larisa.efhmeries.gr (ITeQ) | duty lists and locations for `larisa/` | public lists, attributed; read a page a second (decision D26) |
+| Περιφέρεια Δυτικής Ελλάδας, via Diavgeia's open-data API (diavgeia.gov.gr) | duty lists and roster for `ilia/` (ΡΣΦΞ7Λ6-2Κ3); its regular hours are ΨΛΖΩ7Λ6-2Υ0 | official decisions; read a request a second, only through `luminapi/opendata` (decision D28) |
 | Overture Maps Foundation (`inputs/overture-pharmacies.json`) | locations | CDLA-Permissive-2.0 |
 | OpenStreetMap contributors, via Nominatim (`inputs/geocode-cache.json`) | locations | ODbL; individual geocoding results, stored once per address |
 | Υπουργείο Υγείας (moh.gov.gr), price bulletins | medicine prices | public ministerial decisions |
