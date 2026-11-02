@@ -264,10 +264,51 @@ const ILIA_REGULAR: readonly RegularHoursPeriod[] = [
   },
 ];
 
+/** Corfu's Monday to Friday: Wednesday a long morning, the other four a morning and an afternoon. */
+function corfuWeek(afternoon: TimeRange): RegularHoursPeriod['days'] {
+  const split: readonly TimeRange[] = [{ from: '08:30', to: '14:00' }, afternoon];
+  return {
+    1: split,
+    2: split,
+    3: [{ from: '08:30', to: '14:30' }],
+    4: split,
+    5: split,
+    6: [],
+    7: [],
+  };
+}
+
+/**
+ * Corfu (the regional unit), from the Region of the Ionian Islands' decisions, each at the
+ * association's request, on Diavgeia (decision D28): winter from 14 Sep 2026 9ΚΛΤ7ΛΕ-7Τ4 (22 Sep
+ * 2026), afternoons 17:30–20:30; summer from 30 Apr 2026 ΨΦΘ57ΛΕ-19Ο (4 May 2026), afternoons
+ * 18:00–21:00. Neither states an end, nor does any before it. Summer began on 30 Apr in 2025 and
+ * 2026 and winter on 15 Sep in 2024 and 2025: winter counts until 29 Apr 2027, the day before the
+ * next summer is expected, and the area shows only its duties again until a decision is added
+ * (decision D26). Wednesday's long morning is the 2026 decisions'; the winter of 2025 ended it at
+ * 14:00.
+ */
+const CORFU_REGULAR: readonly RegularHoursPeriod[] = [
+  {
+    from: '2026-04-30',
+    to: '2026-09-13',
+    days: corfuWeek({ from: '18:00', to: '21:00' }),
+    source: 'Περιφέρεια Ιονίων Νήσων, ΨΦΘ57ΛΕ-19Ο: summer from 30 Apr 2026',
+  },
+  {
+    from: '2026-09-14',
+    to: '2027-04-29',
+    days: corfuWeek({ from: '17:30', to: '20:30' }),
+    source:
+      'Περιφέρεια Ιονίων Νήσων, 9ΚΛΤ7ΛΕ-7Τ4: winter from 14 Sep 2026, until the day before the summer expected on 30 Apr',
+  },
+];
+
 /** Regular hours by city id. A city without an entry has none. */
 export const REGULAR_HOURS: Readonly<Record<string, readonly RegularHoursPeriod[]>> = {
   thessaloniki: THESSALONIKI_REGULAR,
   attiki: ATTICA_REGULAR,
+  corfu: CORFU_REGULAR,
   karditsa: KARDITSA_REGULAR,
   magnesia: MAGNESIA_REGULAR,
   ilia: ILIA_REGULAR,

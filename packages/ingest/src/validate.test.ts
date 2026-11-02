@@ -133,6 +133,27 @@ describe('validate', () => {
     });
   });
 
+  it("asks for tomorrow's list unless the source shows only today's", () => {
+    const data = { today: '2026-10-05', days: [day('2026-10-05')], pharmacies, extended: [] };
+    expect(validate(data, thessaloniki.rules).warnings).toContainEqual({
+      code: 'coverage',
+      message: 'latest duty list is for 2026-10-05',
+    });
+    const todayOnly = validate(data, { ...thessaloniki.rules, todayOnly: true });
+    expect(todayOnly.warnings.map((e) => e.message)).not.toContain(
+      'latest duty list is for 2026-10-05',
+    );
+    // Today's list itself is still required.
+    const none = validate(
+      { ...data, days: [day('2026-10-04')] },
+      { ...thessaloniki.rules, todayOnly: true },
+    );
+    expect(none.warnings).toContainEqual({
+      code: 'coverage',
+      message: 'no duty list for today, 2026-10-05',
+    });
+  });
+
   it('rejects an on-duty pharmacy without a location', () => {
     const report = validate(
       {
