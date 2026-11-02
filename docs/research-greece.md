@@ -221,7 +221,7 @@ Searched on Diavgeia on 2 Nov 2026 (the Regions' organisations 5007 and 5010, th
 | Area      | Decision in force on 2 Nov 2026                                                                                                                                 |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Karditsa  | ΨΞΡΤ7ΛΡ-0ΤΞ, 29 May 2026 (replaced ΡΩΟ27ΛΡ-ΕΑ2 of 27 Jun 2023). Added to the app.                                                                               |
-| Magnesia  | 9ΠΠΦ7ΛΡ-45Ρ, 3 Nov 2025, "for the period 2026-2027" (earlier: ΨΝΙΕ7ΛΡ-Η8Ο, 2024-2025; 65ΤΓ7ΛΡ-ΞΚ8, 2025-2026). Added to the app for 2026.                       |
+| Magnesia  | 9ΠΠΦ7ΛΡ-45Ρ, 3 Nov 2025, "for the period 2026-2027" (earlier: ΨΝΙΕ7ΛΡ-Η8Ο, 2024-2025; 65ΤΓ7ΛΡ-ΞΚ8, 2025-2026). Added to the app for 2026 and 2027.              |
 | Larissa   | None on Diavgeia: no hours decision since 2023 from the Larissa unit (82008), the Region's health directorate (82006) or in subject searches across the Region. |
 | Trikala   | ΨΥΘ27ΛΡ-6ΦΦ (16 Feb 2023) is "for the year 2023"; nothing since. Duty only.                                                                                     |
 | Chania    | None: no hours decision among the 63 the unit posted since 2023.                                                                                                |
@@ -232,13 +232,13 @@ Searched on Diavgeia on 2 Nov 2026 (the Regions' organisations 5007 and 5010, th
 - **Karditsa, ΨΞΡΤ7ΛΡ-0ΤΞ:** signed by the deputy head of the directorate "by order of the Regional Governor", at the association's proposal 183/27-5-2026.
   - Karditsa, Palamas, Sofades, Karditsomagoula, Agnantero, Proastio and the other communities: Mon, Wed, Fri 08:00-14:00 and 17:30-21:00 (summer) or 17:00-21:00 (winter); Tue, Thu 08:00-14:30.
   - Mouzaki: Mon to Fri 08:00-14:30, and Tue, Thu, Fri 17:30-21:00 (summer) or 17:00-21:00 (winter).
-  - No validity dates, no season dates, no holidays. The 2023 decision had the same shape and stood for three years.
+  - No validity dates, no season dates, no holidays. The 2023 decision had the same shape and stood for three years. The owner (2 Nov 2026): in force until replaced; winter from 1 Nov as in Attica; the return to summer is unknown, so from 1 Apr 2027 only the shared 17:30-21:00 counts.
 - **Magnesia, 9ΠΠΦ7ΛΡ-45Ρ:** at the Magnesia association's letters 12911, 12912 and 12913 of 24.10.2025, for Magnesia and the Sporades.
   - Volos regional unit (Volos, Nea Ionia, Nea Anchialos, Iolkos, Artemida, Portaria, Aisonia): Mon 08:00-14:00, Wed 08:00-13:30, Tue, Thu, Fri 08:00-13:30 and 17:00-21:00.
   - Agria: Mon, Wed, Fri 08:00-14:00 and 17:00-21:00; Tue, Thu 08:00-14:00.
   - Almyros, Rigas Feraios, Notio Pilio (Argalasti and Agios Georgios Nileias with their own hours) and Zagora-Mouresi have schedules of their own; the Sporades (Skiathos, Skopelos, Alonnisos) have winter and summer ones, open every day in summer. None of these is in the app's Magnesia box except Agria.
   - It forbids opening on 25 Mar, Good Friday, Easter Monday, 15 Aug, 25 and 26 Dec, 1 and 6 Jan, Clean Monday, 1 May, 28 Oct, Whit Monday and "the feast day of the town's patron saint", without a date for that. The national ones are already in the calendar.
-  - The "period 2026-2027" has no dates. The three decisions overlap (issued Dec 2023, Jan 2025 and Nov 2025), so a new one for 2027-2028 is likely this winter.
+  - The "period 2026-2027" has no dates. The owner (2 Nov 2026): read literally, 1 Jan 2026 to 31 Dec 2027, replaced if a newer decision comes. The three decisions overlap (issued Dec 2023, Jan 2025 and Nov 2025), so a new one for 2027-2028 is likely this winter.
 - **What the app uses:** the hours of the places where the area's pharmacies are (Karditsa town; Volos and Nea Ionia), because `regularRanges` has one table per area. Places in the decision that differ and have no pharmacy in the app's data (Mouzaki, Agria) are listed as open questions. The data only knows pharmacies that appeared on a duty list (Karditsa 44, Magnesia 130 of about 164 in Volos).
 
 ### Local holidays
