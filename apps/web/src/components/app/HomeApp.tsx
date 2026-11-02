@@ -1209,7 +1209,9 @@ export default function HomeApp({
               )}
               {originGroupMissing && originGroup !== null && (
                 <p className="callout danger" role="alert">
-                  {fill(text.time.groupsMissingOrigin, { group: groupList([originGroup], names) })}
+                  {fill(text.time.groupsMissingOrigin, {
+                    group: groupList([originGroup], names, locale),
+                  })}
                 </p>
               )}
               {missingGroups.length > 0 && !(originGroupMissing && missingGroups.length === 1) && (
@@ -1218,6 +1220,7 @@ export default function HomeApp({
                     groups: groupList(
                       missingGroups.filter((id) => id !== originGroup || !originGroupMissing),
                       names,
+                      locale,
                     ),
                   })}
                 </p>

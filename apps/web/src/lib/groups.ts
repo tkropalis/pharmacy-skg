@@ -1,5 +1,7 @@
 import type { CityData, Pharmacy } from '@pharmacy-skg/core';
 import { distanceMetres } from '@pharmacy-skg/core';
+import type { Locale } from '@pharmacy-skg/core';
+import { romanize } from './seo/translit.ts';
 
 /**
  * Each association publishes one duty list per group (in Thessaloniki: metro, Thermi, Lagkadas,
@@ -23,9 +25,46 @@ export function groupDisplayName(cityId: string, id: string, printed: string): s
   return DISPLAY_NAMES[cityId]?.[id] ?? printed;
 }
 
+/**
+ * The groups of the cities that have several, as their lists print them. The loaded duty days
+ * name only the groups that have a list on those days, and the warning "not announced yet for
+ * ..." is about the ones that do not, so without these it would show their ids. A test keeps
+ * this in step with data/.
+ */
+export const KNOWN_GROUPS: Readonly<Record<string, Readonly<Record<string, string>>>> = {
+  thessaloniki: {
+    metro: 'Πολεοδομικό Συγκρότημα Θεσσαλονίκης',
+    asvestochori: 'Ασβεστοχώρι/Εξοχή-Χορτιάτης-Φίλυρο',
+    chalkidona: 'Δήμος Χαλκηδόνας',
+    delta: 'Δήμος Δέλτα',
+    lagkadas: 'Δήμος Λαγκαδά',
+    oraiokastro: 'Δήμος Ωραιοκάστρου',
+    'panorama-pefka': 'Πανόραμα-Πεύκα',
+    thermaikos: 'Δήμος Θερμαϊκού',
+    thermi: 'Δήμος Θέρμης',
+    volvi: 'Δήμος Βόλβης',
+  },
+  larisa: {
+    agia: 'Αγιά',
+    ampelonas: 'Αμπελώνας',
+    elassona: 'Ελασσόνα',
+    falani: 'Φαλάνη',
+    farsala: 'Φάρσαλα',
+    giannouli: 'Γιάννουλη',
+    larisa: 'Λάρισα',
+    nikaia: 'Νίκαια',
+    tyrnavos: 'Τύρναβος',
+  },
+};
+
 /** Group id to its name, from every loaded duty day (the newest day wins). */
 export function groupNames(data: CityData): Map<string, string> {
-  const names = new Map<string, string>();
+  const names = new Map<string, string>(
+    Object.entries(KNOWN_GROUPS[data.city.id] ?? {}).map(([id, printed]) => [
+      id,
+      groupDisplayName(data.city.id, id, printed),
+    ]),
+  );
   for (const date of [...data.duties.keys()].sort()) {
     for (const group of data.duties.get(date)?.groups ?? []) {
       names.set(group.id, groupDisplayName(data.city.id, group.id, group.name));
@@ -34,9 +73,24 @@ export function groupNames(data: CityData): Map<string, string> {
   return names;
 }
 
-/** The names of some groups, in one text ("Δήμος Θέρμης, Δήμος Βόλβης"). */
-export function groupList(ids: readonly string[], names: ReadonlyMap<string, string>): string {
-  return ids.map((id) => names.get(id) ?? id).join(', ');
+/**
+ * The names of some groups, in one text in the language's own way: "Δήμος Θέρμης και Δήμος
+ * Βόλβης", "Dimos Thermis and Dimos Volvis" (the English names are the Greek ones in Latin
+ * letters, as on the area pages).
+ */
+export function groupList(
+  ids: readonly string[],
+  names: ReadonlyMap<string, string>,
+  locale: Locale,
+): string {
+  const shown = ids.map((id) => {
+    const name = names.get(id) ?? id;
+    return locale === 'en' ? romanize(name) : name;
+  });
+  return new Intl.ListFormat(locale === 'en' ? 'en-GB' : 'el-GR', {
+    style: 'long',
+    type: 'conjunction',
+  }).format(shown);
 }
 
 /** The group most of these pharmacies belong to, or null when none has one. */
