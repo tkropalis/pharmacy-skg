@@ -65,6 +65,7 @@ export const en: Dictionary = {
         paragraphs: [
           'We show only officially announced duty days. In Thessaloniki other pharmacies have the usual hours: Monday and Wednesday 08:00–14:30, Tuesday, Thursday and Friday 08:00–14:00 and 17:00–21:00. Some have longer hours, announced by the Region.',
           'In Attica the usual hours are Monday and Wednesday 08:00–14:30, Tuesday, Thursday and Friday 08:00–14:00 and 17:00–20:00 in winter, 17:30–20:30 in summer. Some have longer hours, announced by the Pharmaceutical Association of Attica.',
+          'We also know the usual hours for {areas}.',
           'In the other areas we do not know the usual hours yet, so we show only the pharmacies on duty.',
           'Some duties are on call: the pharmacist serves whoever phones. So call before you go.',
         ],

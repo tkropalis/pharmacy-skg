@@ -1,10 +1,11 @@
 ---
 import type { Locale } from '@pharmacy-skg/core';
-import { CITIES } from '@pharmacy-skg/core';
+import { CITIES, hasRegularHours } from '@pharmacy-skg/core';
 import { CONTACT_EMAIL, EMERGENCY_NUMBERS, REPO_URL } from '../../config.ts';
 import { telUrl } from '../../lib/directions.ts';
 import { localizedPath, t } from '../../i18n/index.ts';
 import { fill } from '../../lib/format.ts';
+import { buildToday } from '../../lib/build-today.ts';
 import { buildMetaFor } from '../../lib/meta.ts';
 
 interface Props {
@@ -45,6 +46,16 @@ const dutyCredits = CITIES.filter((city) => city.id !== 'thessaloniki').flatMap(
     },
   ];
 });
+// The areas whose usual hours are known beside the two the text above gives hours for: those
+// with a Region's decision in force today (core's regular-hours.ts), so the sentence follows the
+// data. Thessaloniki and Attica have their own paragraphs.
+const today = buildToday();
+const hoursAreas = CITIES.filter(
+  (city) => city.id !== 'thessaloniki' && city.id !== 'attiki' && hasRegularHours(city.id, today),
+).map((city) => city.name[locale]);
+const areasText = new Intl.ListFormat(locale, { style: 'long', type: 'conjunction' }).format(
+  hoursAreas,
+);
 const [first, ...otherCredits] = (Object.keys(d.credits) as (keyof typeof d.credits)[]).map(
   (id) => ({ text: d.credits[id], url: creditLinks[id] }),
 );
@@ -66,9 +77,16 @@ const allCredits = [
   {d.sections.map((section) => (
     <section>
       <h2>{section.heading}</h2>
-      {section.paragraphs.map((p) => (
-        <p>{fill(p, { cities: CITIES.map((city) => city.name[locale]).join(', ') })}</p>
-      ))}
+      {section.paragraphs
+        .filter((p) => hoursAreas.length > 0 || !p.includes('{areas}'))
+        .map((p) => (
+          <p>
+            {fill(p, {
+              cities: CITIES.map((city) => city.name[locale]).join(', '),
+              areas: areasText,
+            })}
+          </p>
+        ))}
     </section>
   ))}
 
