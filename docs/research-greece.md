@@ -214,6 +214,33 @@ Researched and built on 8 Oct 2026 (decision D27) [verified].
   - The hours are typed freely ("ΔΕΥ-ΠΑΡ 8πμ-9μμ", "8-2,30 5-8,30", "όμοια με τον Ιούλιο"). A strict reader reads about 85% of the cells; the rest are ambiguous or misspelt.
   - Some pharmacies list only what they add ("ΔΕΥ-ΠΕΜ 14:30-20:30"), others their whole day.
 
+### Thessaly and Crete
+
+Searched on Diavgeia on 2 Nov 2026 (the Regions' organisations 5007 and 5010, their public-health units, subjects and full text, 2023 to 2026) and read as PDFs [verified]. The API (`/luminapi/opendata/search.json`) takes `from_issue_date` and `to_issue_date` and answers only for a window of about six months, so a search over years has to go window by window.
+
+| Area      | Decision in force on 2 Nov 2026                                                                                                                                 |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Karditsa  | ΨΞΡΤ7ΛΡ-0ΤΞ, 29 May 2026 (replaced ΡΩΟ27ΛΡ-ΕΑ2 of 27 Jun 2023). Added to the app.                                                                               |
+| Magnesia  | 9ΠΠΦ7ΛΡ-45Ρ, 3 Nov 2025, "for the period 2026-2027" (earlier: ΨΝΙΕ7ΛΡ-Η8Ο, 2024-2025; 65ΤΓ7ΛΡ-ΞΚ8, 2025-2026). Added to the app for 2026.                       |
+| Larissa   | None on Diavgeia: no hours decision since 2023 from the Larissa unit (82008), the Region's health directorate (82006) or in subject searches across the Region. |
+| Trikala   | ΨΥΘ27ΛΡ-6ΦΦ (16 Feb 2023) is "for the year 2023"; nothing since. Duty only.                                                                                     |
+| Chania    | None: no hours decision among the 63 the unit posted since 2023.                                                                                                |
+| Heraklion | None for the unit. 9ΖΣΞ7ΛΚ-573 (15 Feb 2023) sets Moires 08:00-16:00 "until 2-7-2023", expired and one place. Duty approvals are per municipality.              |
+| Lasithi   | None. The unit posts only duty approvals (for example 9Α0Ο7ΛΚ-3ΕΡ, Sitia, 1 May to 31 Dec 2026).                                                                |
+| Rethymno  | A "mandatory minimum hours" decision is posted every few months (latest Ρ4ΗΓ7ΛΚ-ΒΨΖ, 22 Oct 2026). Rethymno is not an area of the app yet.                      |
+
+- **Karditsa, ΨΞΡΤ7ΛΡ-0ΤΞ:** signed by the deputy head of the directorate "by order of the Regional Governor", at the association's proposal 183/27-5-2026.
+  - Karditsa, Palamas, Sofades, Karditsomagoula, Agnantero, Proastio and the other communities: Mon, Wed, Fri 08:00-14:00 and 17:30-21:00 (summer) or 17:00-21:00 (winter); Tue, Thu 08:00-14:30.
+  - Mouzaki: Mon to Fri 08:00-14:30, and Tue, Thu, Fri 17:30-21:00 (summer) or 17:00-21:00 (winter).
+  - No validity dates, no season dates, no holidays. The 2023 decision had the same shape and stood for three years.
+- **Magnesia, 9ΠΠΦ7ΛΡ-45Ρ:** at the Magnesia association's letters 12911, 12912 and 12913 of 24.10.2025, for Magnesia and the Sporades.
+  - Volos regional unit (Volos, Nea Ionia, Nea Anchialos, Iolkos, Artemida, Portaria, Aisonia): Mon 08:00-14:00, Wed 08:00-13:30, Tue, Thu, Fri 08:00-13:30 and 17:00-21:00.
+  - Agria: Mon, Wed, Fri 08:00-14:00 and 17:00-21:00; Tue, Thu 08:00-14:00.
+  - Almyros, Rigas Feraios, Notio Pilio (Argalasti and Agios Georgios Nileias with their own hours) and Zagora-Mouresi have schedules of their own; the Sporades (Skiathos, Skopelos, Alonnisos) have winter and summer ones, open every day in summer. None of these is in the app's Magnesia box except Agria.
+  - It forbids opening on 25 Mar, Good Friday, Easter Monday, 15 Aug, 25 and 26 Dec, 1 and 6 Jan, Clean Monday, 1 May, 28 Oct, Whit Monday and "the feast day of the town's patron saint", without a date for that. The national ones are already in the calendar.
+  - The "period 2026-2027" has no dates. The three decisions overlap (issued Dec 2023, Jan 2025 and Nov 2025), so a new one for 2027-2028 is likely this winter.
+- **What the app uses:** the hours of the places where the area's pharmacies are (Karditsa town; Volos and Nea Ionia), because `regularRanges` has one table per area. Places in the decision that differ and have no pharmacy in the app's data (Mouzaki, Agria) are listed as open questions. The data only knows pharmacies that appeared on a duty list (Karditsa 44, Magnesia 130 of about 164 in Volos).
+
 ### Local holidays
 
 - Each town's patron-saint and liberation days, by law.
@@ -346,6 +373,7 @@ On a phone, the 11,000 case means long main-thread tasks every minute.
   - Opening hours: ΨΔ8Π7Λ7-ΚΒΨ (Attica), 9ΠΠΦ7ΛΡ-45Ρ (Magnesia and the Sporades), Ψ5Μ67ΛΛ-ΤΔΑ (Pella), 9ΘΧΟ7Λ9-ΕΗ5 (Ioannina), ΨΦΘ57ΛΕ-19Ο (Corfu), ΨΑΑΣ7ΛΕ-ΠΝΦ (Zakynthos), ΨΔ4Η7ΛΚ-ΜΥ9 (Rethymno).
   - Attica holiday on 14 Sep: 96ΒΙ7Λ7-ΧΛΣ.
   - Attica 2026–27 (13 May to 12 May), checked 8 Oct 2026: Central Athens ΨΔ8Π7Λ7-ΚΒΨ, North Athens Ψ1ΑΗ7Λ7-ΙΞ0 (amended 9ΛΤ07Λ7-149), West Athens Ψ3Δ17Λ7-8Δ0 (amended ΡΞΜΙ7Λ7-ΜΣΗ), West Attica ΡΩΡ47Λ7-ΠΞΡ (amended 96ΒΙ7Λ7-ΧΛΣ), all the same hours from the association's letter 1609/17.04.2026. South Athens and East Attica: nothing on Diavgeia for 2025 or 2026, searched by subject and by their directorates (78997, 80888). The seasons' dates are in none of them; the association's notice of 29 Oct 2024 (fsa.gr/6469-2) gives winter from 1 Nov.
+  - Thessaly 2026: Karditsa ΨΞΡΤ7ΛΡ-0ΤΞ, Magnesia and the Sporades 9ΠΠΦ7ΛΡ-45Ρ; see Thessaly and Crete above.
   - Annual duty tables: ΡΣΦΞ7Λ6-2Κ3 (Ilia).
 - **Laws:**
   - https://www.taxheaven.gr/law/4512/2018/arthro/257
