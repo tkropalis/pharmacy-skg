@@ -51,7 +51,11 @@ test.describe('a day whose file has only some area groups', () => {
     await page.goto('/');
     await waitForRows(page);
     // Without an origin: the missing groups are listed.
-    await expect(page.getByRole('note').filter({ hasText: 'Δήμος Θέρμης' })).toBeVisible();
+    const missing = page.getByRole('note').filter({ hasText: 'Δήμος Θέρμης' });
+    await expect(missing).toBeVisible();
+    // By their names, joined the Greek way, never by their ids.
+    await expect(missing).toContainText(' και Δήμος Βόλβης');
+    await expect(missing).not.toContainText(/asvestochori|chalkidona|lagkadas|volvi/);
 
     // With no origin, the row at the top of the list is the place control.
     await page
@@ -64,6 +68,15 @@ test.describe('a day whose file has only some area groups', () => {
     const alert = page.getByRole('alert').filter({ hasText: 'Δήμος Θέρμης' });
     await expect(alert).toContainText(/ακόμη/);
     await expect(alert).toHaveClass(/danger/);
+  });
+
+  test('names the groups in English too, joined the English way', async ({ page }) => {
+    await page.goto('/en/');
+    await waitForRows(page);
+    const missing = page.getByRole('note').filter({ hasText: 'Dimos Thermis' });
+    await expect(missing).toBeVisible();
+    await expect(missing).toContainText(' and Dimos Volvis.');
+    await expect(missing).not.toContainText(/asvestochori|chalkidona|lagkadas|volvi\b/);
   });
 
   test('marks the rows of pharmacies in an unpublished group', async ({ page }) => {

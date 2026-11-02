@@ -16,8 +16,6 @@ import { STATUS_LABELS } from './status-labels.ts';
 
 export const el = {
   localeName: 'Ελληνικά',
-  /** The two-letter label of the language switch on a phone (its accessible name is localeName). */
-  localeCode: 'ΕΛ',
   languageSwitcherLabel: 'Γλώσσα',
   skipToContent: 'Μετάβαση στο περιεχόμενο',
   /** The line under the name on the social-sharing image (scripts/generate-icons.ts). */
@@ -27,6 +25,14 @@ export const el = {
     available: 'Υπάρχει νέα έκδοση.',
     reload: 'Ανανέωση',
     dismiss: 'Κλείσιμο',
+  },
+
+  /** A long press on the installed app's icon (the manifest's shortcuts). */
+  shortcuts: {
+    open: 'Ανοιχτά τώρα',
+    duty: 'Εφημερεύοντα',
+    favourites: 'Αγαπημένα',
+    medicines: 'Φάρμακα',
   },
 
   stale: {
@@ -87,6 +93,8 @@ export const el = {
     /** One per area whose lists come straight from its own site, followed by the site's link. */
     dutyCredit: '{area}: {source},',
     creditsHeading: 'Πηγές',
+    /** The one link to the data status page. */
+    dataStatusLink: 'Κατάσταση δεδομένων',
     /** Each is followed by its link, labelled with the site's address. */
     credits: {
       fsth: 'Εφημερίες στη Θεσσαλονίκη: Φαρμακευτικός Σύλλογος Θεσσαλονίκης, μέσω',
@@ -107,6 +115,20 @@ export const el = {
     emergencyAmbulance: 'ΕΚΑΒ',
     emergencyOr: 'ή',
     emergencyPoison: 'Κέντρο Δηλητηριάσεων',
+  },
+
+  /** The data status page: a table of the areas (linked from the about page only). */
+  dataStatus: {
+    title: 'Κατάσταση δεδομένων',
+    description: 'Πότε ελέγχθηκε κάθε περιοχή και ποιες εφημερίες έχουν ανακοινωθεί.',
+    summary: 'Καλέστε πριν πάτε.',
+    area: 'Περιοχή',
+    checked: 'Ενημερώθηκε',
+    duties: 'Εφημερίες',
+    until: 'έως {date}',
+    fresh: 'Πρόσφατο',
+    stale: 'Παλιό',
+    noDuties: 'Δεν έχουν ανακοινωθεί',
   },
 
   privacy: {
@@ -283,6 +305,9 @@ export const el = {
       openNowNoScript: 'Χρειάζεται JavaScript.',
       closedNow: 'Κλειστό τώρα',
       notOnDutyNow: 'Δεν εφημερεύει τώρα',
+      /** After "Κλειστό τώρα," and "Δεν εφημερεύει τώρα," in an area's list. */
+      opensAt: 'ανοίγει {when}',
+      nextDuty: 'επόμενη εφημερία {when}',
       dutyNowSummary: 'Εφημερεύουν {open} από {total}.',
       dutyNowNone: 'Κανένα δεν εφημερεύει τώρα.',
       listHeading: 'Όλα τα φαρμακεία',

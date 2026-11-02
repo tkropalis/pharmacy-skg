@@ -133,3 +133,26 @@ export function describeStatus(
       : fill(s.opensAt, { when: whenText(status.nextOpen, now, locale, s, timeZone) });
   return make('closed', s.closed, `${next} ${tail}`);
 }
+
+/**
+ * A closed pharmacy in an area's list: "Κλειστό τώρα, ανοίγει αύριο στις 08:00". Where the
+ * city's regular hours are not known (`dutyOnly`, decision D26) it is "Δεν εφημερεύει τώρα,
+ * επόμενη εφημερία αύριο στις 08:00", and with no duty announced just "Δεν εφημερεύει τώρα":
+ * the next opening is only what the lists say, never a guess. While the day's lists are not
+ * published it says so instead of a time that may change.
+ */
+export function closedRowText(
+  status: Extract<PharmacyStatus, { state: 'closed' }>,
+  dutiesPublished: boolean,
+  now: Date,
+  locale: Locale,
+  d: Pick<Dictionary['seo'], 'area' | 'status'>,
+  timeZone = GREECE_TIME_ZONE,
+  dutyOnly = false,
+): string {
+  const closed = dutyOnly ? d.area.notOnDutyNow : d.area.closedNow;
+  if (!dutiesPublished) return `${closed}, ${d.status.unpublishedShort}`;
+  if (status.nextOpen === null) return closed;
+  const when = whenText(status.nextOpen, now, locale, d.status, timeZone);
+  return `${closed}, ${fill(dutyOnly ? d.area.nextDuty : d.area.opensAt, { when })}`;
+}

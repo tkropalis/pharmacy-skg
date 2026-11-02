@@ -14,8 +14,11 @@ import type { SeoModel } from './model.ts';
 import { alternatesFor, todayDutyDate } from './views.ts';
 import type { Alternates } from './views.ts';
 
-/** Pages left out of the sitemap: the problem report form has nothing to search for. */
-const EXCLUDED_ROUTES: readonly string[] = ['report'];
+/**
+ * Pages left out of the sitemap: the problem report form and the data status page have nothing
+ * to search for.
+ */
+const EXCLUDED_ROUTES: readonly string[] = ['report', 'status'];
 
 export interface SitemapEntry {
   /** The page in every locale. */

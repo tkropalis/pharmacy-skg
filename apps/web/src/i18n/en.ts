@@ -5,7 +5,6 @@ import type { Dictionary } from './index.ts';
 
 export const en: Dictionary = {
   localeName: 'English',
-  localeCode: 'EN',
   languageSwitcherLabel: 'Language',
   skipToContent: 'Skip to content',
   tagline: 'Free and ad-free',
@@ -14,6 +13,13 @@ export const en: Dictionary = {
     available: 'A new version is ready.',
     reload: 'Reload',
     dismiss: 'Close',
+  },
+
+  shortcuts: {
+    open: 'Open now',
+    duty: 'On duty',
+    favourites: 'Favourites',
+    medicines: 'Medicines',
   },
 
   stale: {
@@ -35,8 +41,9 @@ export const en: Dictionary = {
 
   home: {
     title: 'Open pharmacies near you',
-    documentTitle: 'On-duty and overnight pharmacies now',
-    description: 'Open, on-duty and overnight pharmacies right now, on a map. Free, no ads.',
+    documentTitle: 'On-duty and overnight pharmacies in Greece now',
+    description:
+      'Open, on-duty and overnight pharmacies in Greece right now, on a map. In English, free, no ads.',
     noScript: 'The map needs JavaScript.',
     dutyLink: 'Duty lists by day',
   },
@@ -72,6 +79,7 @@ export const en: Dictionary = {
     /** One per area whose lists come straight from its own site, followed by the site's link. */
     dutyCredit: '{area}: {source},',
     creditsHeading: 'Sources',
+    dataStatusLink: 'Data status',
     credits: {
       fsth: 'Duty lists in Thessaloniki: Pharmaceutical Association of Thessaloniki, via',
       pkm: 'Opening hours in Thessaloniki: Region of Central Macedonia.',
@@ -90,6 +98,19 @@ export const en: Dictionary = {
     emergencyAmbulance: 'Ambulance',
     emergencyOr: 'or',
     emergencyPoison: 'Poison Centre',
+  },
+
+  dataStatus: {
+    title: 'Data status',
+    description: 'When each area was last checked and which duty days are announced.',
+    summary: 'Call before you go.',
+    area: 'Area',
+    checked: 'Updated',
+    duties: 'Duty days',
+    until: 'until {date}',
+    fresh: 'Recent',
+    stale: 'Old',
+    noDuties: 'None announced',
   },
 
   privacy: {
@@ -263,6 +284,8 @@ export const en: Dictionary = {
       openNowNoScript: 'Needs JavaScript.',
       closedNow: 'Closed now',
       notOnDutyNow: 'Not on duty now',
+      opensAt: 'opens {when}',
+      nextDuty: 'next duty {when}',
       dutyNowSummary: '{open} of {total} on duty.',
       dutyNowNone: 'None on duty now.',
       listHeading: 'All pharmacies',

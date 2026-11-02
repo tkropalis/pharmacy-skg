@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { PharmacyStatus } from '@pharmacy-skg/core';
 import { t } from '../../i18n/index.ts';
-import { describeStatus, timeInCity, whenText } from './status-text.ts';
+import { closedRowText, describeStatus, timeInCity, whenText } from './status-text.ts';
 
 // 2026-10-05 12:00 in Athens (UTC+3 in October).
 const now = new Date('2026-10-05T09:00:00Z');
@@ -168,5 +168,52 @@ describe('describeStatus', () => {
     expect(result.short).toBe(t('el').status.dutyUnknown);
     expect(result.short).toBe(t('el').app.status.dutyUnknown);
     expect(result.text).toContain('Καλέστε πριν πάτε');
+  });
+});
+
+describe('closedRowText, for an area’s list', () => {
+  type Closed = Extract<PharmacyStatus, { state: 'closed' }>;
+  const closed = (nextOpen: string | null): Closed => ({
+    state: 'closed',
+    nextOpen: nextOpen === null ? null : new Date(nextOpen),
+    nextReasons: [],
+    nextRunReasons: [],
+  });
+  const text = (status: Closed, locale: 'el' | 'en', published = true, dutyOnly = false) =>
+    closedRowText(status, published, now, locale, t(locale).seo, 'Europe/Athens', dutyOnly);
+
+  it('says when it opens, naming the day when it is not today', () => {
+    expect(text(closed('2026-10-05T14:00:00Z'), 'el')).toBe(
+      'Κλειστό τώρα, ανοίγει σήμερα στις 17:00',
+    );
+    expect(text(closed('2026-10-06T05:00:00Z'), 'el')).toBe(
+      'Κλειστό τώρα, ανοίγει αύριο στις 08:00',
+    );
+    expect(text(closed('2026-10-06T05:00:00Z'), 'en')).toBe('Closed now, opens tomorrow at 08:00');
+    expect(text(closed('2026-10-08T05:00:00Z'), 'en')).toBe('Closed now, opens Thursday at 08:00');
+  });
+
+  it('says only "closed now" when no opening is known', () => {
+    expect(text(closed(null), 'el')).toBe('Κλειστό τώρα');
+    expect(text(closed(null), 'en')).toBe('Closed now');
+  });
+
+  it('where the regular hours are not known, gives the next published duty, or nothing', () => {
+    expect(text(closed('2026-10-06T05:00:00Z'), 'el', true, true)).toBe(
+      'Δεν εφημερεύει τώρα, επόμενη εφημερία αύριο στις 08:00',
+    );
+    expect(text(closed('2026-10-06T05:00:00Z'), 'en', true, true)).toBe(
+      'Not on duty now, next duty tomorrow at 08:00',
+    );
+    expect(text(closed(null), 'en', true, true)).toBe('Not on duty now');
+  });
+
+  it('does not offer a time while the day’s duty lists are not out', () => {
+    expect(text(closed('2026-10-06T05:00:00Z'), 'en', false)).toBe(
+      'Closed now, duty not announced yet',
+    );
+    expect(text(closed('2026-10-06T05:00:00Z'), 'el', false, true)).toBe(
+      'Δεν εφημερεύει τώρα, δεν ξέρουμε ακόμη αν εφημερεύει',
+    );
   });
 });

@@ -9,7 +9,7 @@ import type { Locale } from '@pharmacy-skg/core';
 import { DEFAULT_CITY_ID } from '../../config.ts';
 import { t } from '../../i18n/index.ts';
 import { fill } from '../../lib/seo/format.ts';
-import { describeStatus, timeInCity } from '../../lib/seo/status-text.ts';
+import { closedRowText, describeStatus, timeInCity } from '../../lib/seo/status-text.ts';
 import { loadNowData } from './now-data.ts';
 
 /**
@@ -57,12 +57,18 @@ async function show(root: HTMLElement): Promise<void> {
         dutyOnly,
       );
       if (state !== null) {
-        const closed = dutyOnly ? area.notOnDutyNow : area.closedNow;
-        state.textContent = isOpen
-          ? text.short
-          : dutiesPublished
-            ? closed
-            : `${closed}, ${labels.seo.status.unpublishedShort}`;
+        state.textContent =
+          status.state === 'closed'
+            ? closedRowText(
+                status,
+                dutiesPublished,
+                now,
+                locale,
+                labels.seo,
+                GREECE_TIME_ZONE,
+                dutyOnly,
+              )
+            : text.short;
       }
       if (isOpen) open.push(openItem(row, text.short));
     }

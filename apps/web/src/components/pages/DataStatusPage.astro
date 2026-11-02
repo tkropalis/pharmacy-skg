@@ -1,0 +1,136 @@
+---
+import { faCheck, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
+import type { Locale } from '@pharmacy-skg/core';
+import { CITIES } from '@pharmacy-skg/core';
+import { t } from '../../i18n/index.ts';
+import { statusRows } from '../../lib/data-status.ts';
+import { faSvg } from '../../lib/fa.ts';
+import { fill } from '../../lib/format.ts';
+import { buildMetaFor } from '../../lib/meta.ts';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const d = t(locale).dataStatus;
+// Read from data/<city>/meta.json at build time. Which rows are old is worked out again in the
+// browser (scripts/boot.ts), because the page itself can be older than the data it shows.
+const rows = statusRows(
+  CITIES.map((city) => ({ city, meta: buildMetaFor(city.id) })),
+  locale,
+  new Date(),
+);
+---
+
+<div class="container prose">
+  <h1>{d.title}</h1>
+  <p class="lead">{d.summary}</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">{d.area}</th>
+        <th scope="col">{d.checked}</th>
+        <th scope="col">{d.duties}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {rows.map((row) => (
+        <tr data-checked-at={row.checkedAt} data-fresh={row.fresh ? 'true' : 'false'}>
+          <th scope="row">{row.name}</th>
+          <td>
+            <time datetime={row.checkedAt}>{row.checkedText}</time>
+            {/* Both words are here; the row's data-fresh shows one (the other is display: none). */}
+            <span class="verdict current">
+              <span set:html={faSvg(faCheck, { size: 12 })} />
+              {d.fresh}
+            </span>
+            <span class="verdict old">
+              <span set:html={faSvg(faTriangleExclamation, { size: 12 })} />
+              {d.stale}
+            </span>
+          </td>
+          <td>{row.dutyUntil === null ? d.noDuties : fill(d.until, { date: row.dutyUntil })}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .lead {
+    font-weight: 600;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    line-height: 1.35;
+  }
+
+  th,
+  td {
+    padding: 0.75rem 0.5rem;
+    border-bottom: 1px solid var(--border);
+    text-align: start;
+    vertical-align: top;
+  }
+
+  thead th {
+    border-bottom-color: var(--border-strong);
+    color: var(--muted);
+    font-size: 0.8125rem;
+    font-weight: 650;
+  }
+
+  tbody th {
+    font-weight: 700;
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-inline-start: 0;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-inline-end: 0;
+  }
+
+  time,
+  td {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .verdict {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 0.125rem;
+    font-weight: 650;
+  }
+
+  .verdict :global(svg) {
+    flex: none;
+  }
+
+  .verdict.current {
+    color: var(--accent-ink);
+  }
+
+  .verdict.old {
+    color: var(--warn-fg);
+  }
+
+  tr[data-fresh='true'] .old,
+  tr[data-fresh='false'] .current {
+    display: none;
+  }
+
+  /* The time and its word share a cell: the word goes under the time on a narrow phone. */
+  td:nth-child(2) time {
+    display: block;
+  }
+</style>

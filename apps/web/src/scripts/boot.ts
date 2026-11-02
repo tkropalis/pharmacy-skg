@@ -4,7 +4,8 @@ import { markConnection, onConnectionChange } from '../lib/connection.ts';
 import { checkedAt, formatUpdatedAt, isStale } from '../lib/freshness.ts';
 import { setupInstall } from '../lib/install.ts';
 import { keepOfflineDataWarm, registerServiceWorker } from '../lib/pwa.ts';
-import { DATA_UPDATED_KEY, writeItem } from '../lib/storage.ts';
+import { clearShortcut } from '../lib/shortcuts.ts';
+import { DATA_UPDATED_KEY, LANG_KEY, writeItem } from '../lib/storage.ts';
 import { setupMedicineSearch } from './medicine-search.ts';
 import type { Locale } from '@pharmacy-skg/core';
 
@@ -33,11 +34,27 @@ async function refreshFreshness(): Promise<void> {
   }
 }
 
+/**
+ * The data status page's rows (DataStatusPage.astro) are built with the data, so on a page
+ * kept by the device for days they would still say "up to date": whether each is old is worked
+ * out again here, from when it was checked and the clock.
+ */
+function markStatusRows(): void {
+  const now = new Date();
+  for (const row of document.querySelectorAll<HTMLElement>('tr[data-checked-at]')) {
+    row.dataset['fresh'] = String(!isStale(row.dataset['checkedAt'], now));
+  }
+}
+
 markConnection();
 setupInstall();
 void refreshFreshness();
+markStatusRows();
 document.addEventListener('visibilitychange', () => {
-  if (document.visibilityState === 'visible') void refreshFreshness();
+  if (document.visibilityState === 'visible') {
+    void refreshFreshness();
+    markStatusRows();
+  }
 });
 onConnectionChange((online) => {
   if (online) void refreshFreshness();
@@ -73,6 +90,21 @@ function setupThemeChoice(): void {
 }
 
 setupThemeChoice();
+
+/**
+ * The language switch remembers what was chosen, so the Greek home opens in English for someone
+ * who chose it (public/lang.js). Only a tap on the switch counts, never the browser's language.
+ */
+function rememberLanguageChoice(): void {
+  document.querySelector('.switcher')?.addEventListener('click', (event) => {
+    const link = event.target instanceof Element ? event.target.closest('a[hreflang]') : null;
+    const choice = link?.getAttribute('hreflang');
+    if (choice === 'el' || choice === 'en') writeItem(LANG_KEY, choice);
+  });
+}
+
+rememberLanguageChoice();
 setupMedicineSearch();
+clearShortcut();
 registerServiceWorker();
 keepOfflineDataWarm();

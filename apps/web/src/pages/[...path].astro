@@ -2,6 +2,7 @@
 import type { GetStaticPaths } from 'astro';
 import type { Locale } from '@pharmacy-skg/core';
 import AboutPage from '../components/pages/AboutPage.astro';
+import DataStatusPage from '../components/pages/DataStatusPage.astro';
 import HomePage from '../components/pages/HomePage.astro';
 import PrivacyPage from '../components/pages/PrivacyPage.astro';
 import ReportPage from '../components/pages/ReportPage.astro';
@@ -32,6 +33,7 @@ const meta = {
   about: { title: d.about.title, description: d.about.description },
   privacy: { title: d.privacy.title, description: d.privacy.description },
   report: { title: d.report.title, description: d.report.description },
+  status: { title: d.dataStatus.title, description: d.dataStatus.description },
 }[route];
 const homeUrl = new URL(localizedPath(locale, 'home'), Astro.site ?? SITE_URL).href;
 ---
@@ -67,4 +69,5 @@ const homeUrl = new URL(localizedPath(locale, 'home'), Astro.site ?? SITE_URL).h
   {route === 'about' && <AboutPage locale={locale} />}
   {route === 'privacy' && <PrivacyPage locale={locale} />}
   {route === 'report' && <ReportPage locale={locale} />}
+  {route === 'status' && <DataStatusPage locale={locale} />}
 </Base>
