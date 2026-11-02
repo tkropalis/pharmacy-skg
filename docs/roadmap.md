@@ -24,7 +24,7 @@ Decisions D20–D22 adjust this milestone: duty PDFs come via thess.guide, hours
   - keep a manual overrides file;
   - reconstruct the rotation internally only (decision D11).
 - **`data/`:** a layout plus a JSON schema and validation. Counts must fall in expected ranges, and every on-duty pharmacy must have a location.
-- **Scheduled workflow:** runs twice a day on Europe/Athens time and commits data only when it changed and validation passes.
+- **Scheduled workflow:** runs twice a day on Europe/Athens time and commits data only when it changed and validation passes. A second workflow opens a `stale-data` issue when an area's data is over 36 hours old (decision "Stale data"), and CI runs nightly on master.
 
 **Done when** a week of scheduled runs matches the official ΦΣΘ lists.
 
