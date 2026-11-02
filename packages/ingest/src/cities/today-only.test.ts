@@ -249,7 +249,14 @@ describe('Corfu', () => {
 
   const run = (today: string, page = duties, logger = recorder()) =>
     updateCity({
-      pipeline: corfuPipeline(client(page)),
+      pipeline: corfuPipeline({
+        site: client(page),
+        diavgeia: () => ({
+          extendedDecisions: async () => [],
+          document: async () => new Uint8Array(),
+          requests: 0,
+        }),
+      }),
       paths: paths(),
       today,
       since: today,

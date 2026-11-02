@@ -276,7 +276,7 @@ Researched and built on 2 Nov 2026 (decision D28) [verified].
   - `members.php`: 117 rows, 104 different phones (partners have a row each), the address and phone in one cell, spelt freely ("ΤΗΛ.", "ΤΗΛ:", "THL.", "26610 20376", none).
   - The server sends its own certificate (Let's Encrypt) and no intermediate: Node fails with "unable to verify the first certificate", curl and browsers do not. Node 22.12 does not know the new root YR either.
   - **Regular hours:** the Region of the Ionian Islands, at the association's proposal each time: winter from 14 Sep 2026 9ΚΛΤ7ΛΕ-7Τ4 (22 Sep 2026): Mon, Tue, Thu and Fri 08:30–14:00 and 17:30–20:30, Wed 08:30–14:30. Summer from 30 Apr 2026 ΨΦΘ57ΛΕ-19Ο (4 May 2026): the same, with 18:00–21:00 for the afternoons. The year before: ΨΚ297ΛΕ-ΗΒ4 (summer 2025), Ρ8ΞΖ7ΛΕ-Λ7Α (winter 2025). None states an end.
-  - **Extended hours:** every two months the Region posts "ΠΙΝΑΚΑΣ ΕΝΤΑΞΗΣ ΦΑΡΜΑΚΟΠΟΙΩΝ ΤΟΥ ΦΣΚ ΣΤΟ ΔΙΕΥΡΥΜΕΝΟ ΩΡΑΡΙΟ", a PDF (the latest ΡΡ6Ζ7ΛΕ-ΤΔΖ of 30 Oct 2026, for November and December), with the hours of many pharmacies by name, in free text ("ΔΕΥΤΕΡΑ-ΠΑΡΑΣΚΕΥΗ 8:30-21:00", "ΤΕΤΑΡΤΗ 8:15-17:00", dated days). Not read yet.
+  - **Extended hours:** every two months the Region posts "ΠΙΝΑΚΑΣ ΕΝΤΑΞΗΣ ΦΑΡΜΑΚΟΠΟΙΩΝ ΤΟΥ ΦΣΚ ΣΤΟ ΔΙΕΥΡΥΜΕΝΟ ΩΡΑΡΙΟ", a PDF (the latest ΡΡ6Ζ7ΛΕ-ΤΔΖ of 30 Oct 2026, for November and December), with the hours of many pharmacies by name, in free text ("ΔΕΥΤΕΡΑ-ΠΑΡΑΣΚΕΥΗ 8:30-21:00", "ΤΕΤΑΡΤΗ 8:15-17:00", dated days). Read since 3 Nov 2026 (D28): 54 of the 62 rows with hours.
 
 ### Local holidays
 

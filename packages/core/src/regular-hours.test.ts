@@ -191,6 +191,31 @@ describe('areas whose Region has published nothing in force', () => {
   );
 });
 
+describe('Corfu', () => {
+  it('has the winter hours of the Region from 14 Sep 2026: a long Wednesday morning, afternoons 17:30–20:30', () => {
+    // Monday 2 Nov, Wednesday 4 Nov, Saturday 7 Nov 2026.
+    expect(regularRanges('corfu', '2026-11-02')).toEqual([
+      { from: '08:30', to: '14:00' },
+      { from: '17:30', to: '20:30' },
+    ]);
+    expect(regularRanges('corfu', '2026-11-04')).toEqual([{ from: '08:30', to: '14:30' }]);
+    expect(regularRanges('corfu', '2026-11-07')).toEqual([]);
+  });
+
+  it('had the summer hours before it, with afternoons 18:00–21:00', () => {
+    expect(regularRanges('corfu', '2026-09-11')).toEqual([
+      { from: '08:30', to: '14:00' },
+      { from: '18:00', to: '21:00' },
+    ]);
+    expect(hasRegularHours('corfu', '2026-04-29')).toBe(false);
+  });
+
+  it('counts the winter hours only until the day before the next summer is expected', () => {
+    expect(hasRegularHours('corfu', '2027-04-29')).toBe(true);
+    expect(hasRegularHours('corfu', '2027-04-30')).toBe(false);
+  });
+});
+
 describe('hasRegularHours', () => {
   it('is true for Thessaloniki, whose decision has no end, and false where none is known', () => {
     expect(hasRegularHours('thessaloniki', '2026-10-08')).toBe(true);
