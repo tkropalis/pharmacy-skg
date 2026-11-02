@@ -1,8 +1,14 @@
 import { describe, expect, it } from 'vitest';
+import { CITIES } from './city.ts';
 import { holidaysOn } from './holidays.ts';
 import { REGULAR_HOURS, hasRegularHours, regularRanges } from './regular-hours.ts';
 
 describe('REGULAR_HOURS', () => {
+  it('belongs to cities the app covers', () => {
+    const known = new Set(CITIES.map((city) => city.id));
+    for (const id of Object.keys(REGULAR_HOURS)) expect(known.has(id)).toBe(true);
+  });
+
   it("never lets a city's periods overlap or run backwards", () => {
     for (const periods of Object.values(REGULAR_HOURS)) {
       const sorted = [...periods].sort((a, b) => a.from.localeCompare(b.from));
@@ -72,6 +78,106 @@ describe('Attica', () => {
     expect(holidaysOn('attiki', '2026-09-14', 'attiki')).toHaveLength(1);
     expect(holidaysOn('piraeus', '2026-09-14', 'piraeus')).toEqual([]);
   });
+});
+
+describe('Karditsa', () => {
+  const morningAndAfternoon = [
+    { from: '08:00', to: '14:00' },
+    { from: '17:30', to: '21:00' },
+  ];
+  const longMorning = [{ from: '08:00', to: '14:30' }];
+  const cases: [string, string, { from: string; to: string }[]][] = [
+    // Monday 2 Nov 2026 to Sunday 8 Nov: Mon, Wed and Fri split, Tue and Thu until 14:30.
+    ['Monday', '2026-11-02', morningAndAfternoon],
+    ['Tuesday', '2026-11-03', longMorning],
+    ['Wednesday', '2026-11-04', morningAndAfternoon],
+    ['Thursday', '2026-11-05', longMorning],
+    ['Friday', '2026-11-06', morningAndAfternoon],
+    ['Saturday', '2026-11-07', []],
+    ['Sunday', '2026-11-08', []],
+    // The seasons have no dates, so summer and winter days are the same: the afternoon that
+    // both share, from 17:30.
+    ['Monday in July', '2026-07-06', morningAndAfternoon],
+    ['Monday in January', '2027-01-04', morningAndAfternoon],
+  ];
+  it.each(cases)('%s (%s)', (_name, date, expected) => {
+    expect(regularRanges('karditsa', date)).toEqual(expected);
+  });
+
+  it('knows its hours from the decision of 29 May 2026, which gives no end', () => {
+    expect(hasRegularHours('karditsa', '2026-05-28')).toBe(false);
+    expect(hasRegularHours('karditsa', '2026-05-29')).toBe(true);
+    expect(hasRegularHours('karditsa', '2030-01-01')).toBe(true);
+  });
+
+  it('closes on the national holidays, the decision naming no local one', () => {
+    expect(holidaysOn('karditsa', '2026-10-28', 'karditsa').map((h) => h.name.en)).toEqual([
+      'Ohi Day',
+    ]);
+    expect(holidaysOn('karditsa', '2026-10-26', 'karditsa')).toEqual([]);
+  });
+});
+
+describe('Magnesia', () => {
+  const split = [
+    { from: '08:00', to: '13:30' },
+    { from: '17:00', to: '21:00' },
+  ];
+  const cases: [string, string, { from: string; to: string }[]][] = [
+    // Monday 2 Nov 2026 to Sunday 8 Nov, the Volos regional unit.
+    ['Monday: a morning until 14:00 only', '2026-11-02', [{ from: '08:00', to: '14:00' }]],
+    ['Tuesday', '2026-11-03', split],
+    ['Wednesday: a morning until 13:30 only', '2026-11-04', [{ from: '08:00', to: '13:30' }]],
+    ['Thursday', '2026-11-05', split],
+    ['Friday', '2026-11-06', split],
+    ['Saturday', '2026-11-07', []],
+    ['Sunday', '2026-11-08', []],
+    // The decision has one schedule for the year, no seasons.
+    ['Tuesday in July', '2026-07-07', split],
+  ];
+  it.each(cases)('%s (%s)', (_name, date, expected) => {
+    expect(regularRanges('magnesia', date)).toEqual(expected);
+  });
+
+  it('counts the decision for 2026, the first year of "2026-2027", and not after', () => {
+    expect(hasRegularHours('magnesia', '2025-12-31')).toBe(false);
+    expect(hasRegularHours('magnesia', '2026-01-01')).toBe(true);
+    expect(hasRegularHours('magnesia', '2026-12-31')).toBe(true);
+    expect(hasRegularHours('magnesia', '2027-01-01')).toBe(false);
+    expect(regularRanges('magnesia', '2027-01-05')).toEqual([]);
+  });
+
+  it('keeps every holiday the decision lists, its patron saint having no date', () => {
+    // 25 Mar, Good Friday, Easter Monday, 15 Aug, 25 and 26 Dec, 1 Jan, 6 Jan, Clean Monday,
+    // 1 May, 28 Oct and Whit Monday of 2026 (Orthodox Easter was on 12 Apr).
+    const listed = [
+      '2026-03-25',
+      '2026-04-10',
+      '2026-04-13',
+      '2026-08-15',
+      '2026-12-25',
+      '2026-12-26',
+      '2026-01-01',
+      '2026-01-06',
+      '2026-02-23',
+      '2026-05-01',
+      '2026-10-28',
+      '2026-06-01',
+    ];
+    for (const date of listed) {
+      expect(holidaysOn('magnesia', date, 'magnesia'), date).not.toHaveLength(0);
+    }
+  });
+});
+
+describe('areas whose Region has published nothing in force', () => {
+  it.each(['larisa', 'trikala', 'chania', 'herakleion', 'lasithi'])(
+    '%s shows only its duties',
+    (id) => {
+      expect(hasRegularHours(id, '2026-11-02')).toBe(false);
+      expect(regularRanges(id, '2026-11-02')).toEqual([]);
+    },
+  );
 });
 
 describe('hasRegularHours', () => {
