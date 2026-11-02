@@ -20,6 +20,10 @@ const MORNING_AFTERNOON: readonly TimeRange[] = [
   { from: '17:00', to: '21:00' },
 ];
 const LONG_MORNING: readonly TimeRange[] = [{ from: '08:00', to: '14:30' }];
+const MAGNESIA_SPLIT: readonly TimeRange[] = [
+  { from: '08:00', to: '13:30' },
+  { from: '17:00', to: '21:00' },
+];
 
 /** Thessaloniki. There is no summer schedule: none is verified (decision D23). */
 const THESSALONIKI_REGULAR: readonly RegularHoursPeriod[] = [
@@ -80,10 +84,82 @@ const ATTICA_REGULAR: readonly RegularHoursPeriod[] = [
   },
 ];
 
+/** Karditsa's week: Mon, Wed and Fri with the given afternoon, Tue and Thu until 14:30. */
+function karditsaWeek(afternoon: TimeRange): RegularHoursPeriod['days'] {
+  const split: readonly TimeRange[] = [{ from: '08:00', to: '14:00' }, afternoon];
+  return { 1: split, 2: LONG_MORNING, 3: split, 4: LONG_MORNING, 5: split, 6: [], 7: [] };
+}
+
+const KARDITSA_DECISION =
+  'Περιφέρεια Θεσσαλίας, ΨΞΡΤ7ΛΡ-0ΤΞ (29 May 2026), Δημοτική Κοινότητα Καρδίτσας';
+
+/**
+ * Karditsa: the Region of Thessaly's decision ΨΞΡΤ7ΛΡ-0ΤΞ of 29 May 2026 for the regional unit,
+ * at the Karditsa association's proposal 183/27.5.2026. It gives no dates for its validity (it
+ * is in force from its issue until a new one replaces it, as the 2023 one was; the owner,
+ * 2 Nov 2026). The afternoon of Mon, Wed and Fri is 17:30–21:00 in summer and 17:00–21:00 in
+ * winter, with no dates in the decision: winter starts on 1 Nov, as in Attica (the owner,
+ * 2 Nov 2026), and the return to summer is not known, so from 1 Apr 2027 only the hours both
+ * share count, 17:30–21:00 (decision D26). The hours are those of the Karditsa community, which
+ * Palamas, Sofades, Karditsomagoula, Agnantero, Proastio and the other communities share: the
+ * area's pharmacies are in Karditsa. Mouzaki alone differs (Mon to Fri mornings until 14:30,
+ * afternoons on Tue, Thu and Fri) and lies outside the area's box.
+ */
+const KARDITSA_REGULAR: readonly RegularHoursPeriod[] = [
+  {
+    from: '2026-05-29',
+    to: '2026-10-31',
+    days: karditsaWeek({ from: '17:30', to: '21:00' }),
+    source: `${KARDITSA_DECISION}; summer afternoons`,
+  },
+  {
+    from: '2026-11-01',
+    to: '2027-03-31',
+    days: karditsaWeek({ from: '17:00', to: '21:00' }),
+    source: `${KARDITSA_DECISION}; winter afternoons from 1 Nov (the owner)`,
+  },
+  {
+    from: '2027-04-01',
+    to: null,
+    days: karditsaWeek({ from: '17:30', to: '21:00' }),
+    source: `${KARDITSA_DECISION}; the hours winter and summer share, the switch being unknown`,
+  },
+];
+
+/**
+ * Magnesia: the Region of Thessaly's decision 9ΠΠΦ7ΛΡ-45Ρ of 3 Nov 2025 for Magnesia and the
+ * Sporades "for the period 2026–2027", approved at the Magnesia association's request (letters
+ * 12911 to 12913 of 24.10.2025). It gives no dates: "2026-2027" is read literally, 1 Jan 2026 to
+ * 31 Dec 2027, and a newer decision replaces it if one comes (the owner, 2 Nov 2026). The
+ * hours are those of the Volos regional unit (Volos, Nea Ionia, Nea Anchialos, Iolkos, Artemida,
+ * Portaria, Aisonia), where the area's pharmacies are. Agria alone of the places in the area's
+ * box differs (Mon, Wed and Fri also in the afternoon, Tue and Thu until 14:00). No seasons.
+ */
+const MAGNESIA_REGULAR: readonly RegularHoursPeriod[] = [
+  {
+    from: '2026-01-01',
+    to: '2027-12-31',
+    days: {
+      1: [{ from: '08:00', to: '14:00' }],
+      2: MAGNESIA_SPLIT,
+      3: [{ from: '08:00', to: '13:30' }],
+      4: MAGNESIA_SPLIT,
+      5: MAGNESIA_SPLIT,
+      6: [],
+      7: [],
+    },
+    source:
+      'Περιφέρεια Θεσσαλίας, 9ΠΠΦ7ΛΡ-45Ρ (3 Nov 2025), "2026-2027", Δ.Ε. Βόλου, Ν. Ιωνίας κ.ά.; ' +
+      'counted from 1 Jan 2026 to 31 Dec 2027',
+  },
+];
+
 /** Regular hours by city id. A city without an entry has none. */
 export const REGULAR_HOURS: Readonly<Record<string, readonly RegularHoursPeriod[]>> = {
   thessaloniki: THESSALONIKI_REGULAR,
   attiki: ATTICA_REGULAR,
+  karditsa: KARDITSA_REGULAR,
+  magnesia: MAGNESIA_REGULAR,
 };
 
 /**

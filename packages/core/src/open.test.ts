@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { ITEQ_AREAS } from './areas.ts';
 import { ATTIKI, LARISA, THESSALONIKI } from './city.ts';
 import type {
   DutyDay,
@@ -243,6 +244,126 @@ describe('regular hours in Attica', () => {
     ['14 Sep is a holiday', '2026-09-14', '10:00', 'closed, next 2026-09-15 08:00'],
   ];
   it.each(cases)('%s', (_name, date, time, expected) => {
+    expect(describeStatus(status(data, 'a', at(date, time)))).toBe(expected);
+  });
+});
+
+describe('regular hours in Karditsa and Magnesia', () => {
+  const area = (id: string, locality: string): CityData => {
+    const found = ITEQ_AREAS.find((c) => c.id === id);
+    if (!found) throw new Error(`no area ${id}`);
+    return { ...city([pharmacy('a', { groupId: id, locality })]), city: found };
+  };
+  const karditsa = area('karditsa', 'Καρδίτσα');
+  const magnesia = area('magnesia', 'Βόλος');
+  const cases: [string, CityData, string, string, string][] = [
+    [
+      'Karditsa Monday 13:59 is open',
+      karditsa,
+      '2026-11-02',
+      '13:59',
+      'open until 2026-11-02 14:00',
+    ],
+    [
+      'Karditsa Monday 14:00 closes until 17:00 in winter',
+      karditsa,
+      '2026-11-02',
+      '14:00',
+      'closed, next 2026-11-02 17:00',
+    ],
+    [
+      'Karditsa Monday 17:00 is open in winter, from 1 Nov',
+      karditsa,
+      '2026-11-02',
+      '17:00',
+      'open until 2026-11-02 21:00',
+    ],
+    [
+      'Karditsa Friday 30 Oct 17:00 is not open yet in summer',
+      karditsa,
+      '2026-10-30',
+      '17:00',
+      'closed, next 2026-10-30 17:30',
+    ],
+    [
+      'Karditsa Friday 2 Apr 2027 17:00 is not open: only the shared hours count',
+      karditsa,
+      '2027-04-02',
+      '17:00',
+      'closed, next 2027-04-02 17:30',
+    ],
+    [
+      'Karditsa Tuesday 14:29 is open',
+      karditsa,
+      '2026-11-03',
+      '14:29',
+      'open until 2026-11-03 14:30',
+    ],
+    [
+      'Karditsa Tuesday has no afternoon',
+      karditsa,
+      '2026-11-03',
+      '18:00',
+      'closed, next 2026-11-04 08:00',
+    ],
+    [
+      'Karditsa Saturday is closed',
+      karditsa,
+      '2026-11-07',
+      '10:00',
+      'closed, next 2026-11-09 08:00',
+    ],
+    [
+      'Karditsa 28 Oct is a holiday',
+      karditsa,
+      '2026-10-28',
+      '10:00',
+      'closed, next 2026-10-29 08:00',
+    ],
+    [
+      'Magnesia Monday 13:59 is open',
+      magnesia,
+      '2026-11-02',
+      '13:59',
+      'open until 2026-11-02 14:00',
+    ],
+    [
+      'Magnesia Monday has no afternoon',
+      magnesia,
+      '2026-11-02',
+      '18:00',
+      'closed, next 2026-11-03 08:00',
+    ],
+    [
+      'Magnesia Wednesday closes at 13:30',
+      magnesia,
+      '2026-11-04',
+      '13:30',
+      'closed, next 2026-11-05 08:00',
+    ],
+    [
+      'Magnesia Tuesday 18:00 is open',
+      magnesia,
+      '2026-11-03',
+      '18:00',
+      'open until 2026-11-03 21:00',
+    ],
+    [
+      'Magnesia Tuesday 13:30 closes until 17:00',
+      magnesia,
+      '2026-11-03',
+      '13:30',
+      'closed, next 2026-11-03 17:00',
+    ],
+    [
+      'Magnesia 28 Oct is a holiday',
+      magnesia,
+      '2026-10-28',
+      '10:00',
+      'closed, next 2026-10-29 08:00',
+    ],
+  ];
+  it.each(cases)('%s', (_name, data, date, time, expected) => {
     expect(describeStatus(status(data, 'a', at(date, time)))).toBe(expected);
   });
 });
