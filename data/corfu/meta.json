@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "city": "corfu",
+  "updatedAt": "2026-11-02T17:53:20.587Z",
+  "checkedAt": "2026-11-02T17:53:20.587Z",
+  "duties": {
+    "from": "2026-11-02",
+    "to": "2026-11-02"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "farmakeu",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Κέρκυρας",
+        "en": "Pharmaceutical Association of Corfu"
+      },
+      "url": "https://farmakeu.static.otenet.gr/",
+      "note": "Duty lists and members, from farmakeu.static.otenet.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}
