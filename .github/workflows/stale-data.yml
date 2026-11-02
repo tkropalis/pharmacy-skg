@@ -1,0 +1,64 @@
+name: Stale data
+
+# A red "Update data" run is easy to stop noticing when it stays red for days (22 Oct to 2 Nov 2026:
+# the ministry's site refused GitHub's runners, and fsa.gr was down for a week). This workflow
+# looks at the result instead of the run: it lists every area whose data/<area>/meta.json
+# `checkedAt` is more than 36 hours old, the point where the app shows its stale-data banner
+# (docs/decisions.md, "Stale data"), and keeps ONE open issue labelled `stale-data` current:
+# created when areas are stale, edited when the list changes, closed with a comment when none are.
+# The list comes from packages/ingest/src/cli/freshness.ts.
+#
+# The run is after the morning data update (06:20 Athens time; GitHub starts scheduled runs hours
+# late), so an area that missed yesterday evening's and this morning's runs is not yet stale
+# here, and one that missed a day and a half is.
+on:
+  schedule:
+    - cron: '0 10 * * *'
+      timezone: Europe/Athens
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: stale-data
+  cancel-in-progress: false
+
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GH_REPO: ${{ github.repository }}
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: List the stale areas
+        run: pnpm --filter @pharmacy-skg/ingest run freshness --body-file "$RUNNER_TEMP/stale-data.md"
+      - name: Keep the stale-data issue current
+        run: |
+          body="$RUNNER_TEMP/stale-data.md"
+          number=$(gh issue list --label stale-data --state open --json number --jq '.[0].number // empty')
+          if [ -f "$body" ]; then
+            if [ -z "$number" ]; then
+              gh label create stale-data --color d93f0b --description 'Some areas have not been updated for over 36 hours' || true
+              gh issue create --label stale-data --title 'Stale data: some areas have not been updated' --body-file "$body"
+            elif [ "$(gh issue view "$number" --json body --jq .body | tr -d '\r')" != "$(cat "$body")" ]; then
+              gh issue edit "$number" --body-file "$body"
+              echo "Updated issue #$number."
+            else
+              echo "Issue #$number is current."
+            fi
+          elif [ -n "$number" ]; then
+            gh issue close "$number" --comment 'Every area was checked within the last 36 hours. Closing.'
+          else
+            echo "Nothing is stale and no issue is open."
+          fi

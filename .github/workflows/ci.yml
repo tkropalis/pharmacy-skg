@@ -4,6 +4,12 @@ on:
   push:
     branches: [master]
   pull_request:
+  # Commits made with the workflow token (the data updates) do not start a run, and some unit tests
+  # read the live data/ (they broke unseen on 1 Nov 2026). A nightly run tests master against the
+  # fresh data, after "Rebuild after midnight" (00:05) and the evening data update.
+  schedule:
+    - cron: '30 3 * * *'
+      timezone: Europe/Athens
 
 permissions:
   contents: read
@@ -20,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v5
       - uses: actions/setup-node@v5
         with:
           node-version-file: .nvmrc
@@ -37,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v5
       - uses: actions/setup-node@v5
         with:
           node-version-file: .nvmrc
