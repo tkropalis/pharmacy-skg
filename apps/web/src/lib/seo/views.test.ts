@@ -95,7 +95,8 @@ describe('pharmacyPageProps', () => {
     const page = pharmacyPageProps(model, 'el', id, ORIGIN);
     expect(page?.extendedHours.length).toBeGreaterThan(0);
     const [first] = page?.extendedHours ?? [];
-    expect(first?.periodText).toBe('Από 1 Σεπτεμβρίου 2026 έως 31 Οκτωβρίου 2026');
+    // Whichever two months the data holds now.
+    expect(first?.periodText).toMatch(/^Από 1 \p{L}+ \d{4} έως 3[01] \p{L}+ \d{4}$/u);
     expect(first?.announcementUrl).toMatch(/^https:\/\/www\.pkm\.gov\.gr\//);
     expect(first?.scheduleText.length).toBeGreaterThan(0);
   });
