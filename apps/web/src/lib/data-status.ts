@@ -15,8 +15,11 @@ export interface StatusRow {
   readonly checkedAt: string;
   /** "1 Νοε 22:32" in the city's time zone. */
   readonly checkedText: string;
-  /** "7 Οκτ–7 Νοε", or null when no duty days are published. */
-  readonly dutyText: string | null;
+  /**
+   * The last duty day the lists cover ("7 Νοε"), or null when none is published: how far ahead
+   * they go, which is what a reader needs (meta.json's `from` includes history that is kept).
+   */
+  readonly dutyUntil: string | null;
   readonly fresh: boolean;
 }
 
@@ -51,10 +54,13 @@ function calendarDate(date: IsoDate, locale: Locale, withYear: boolean): string 
   }).format(new Date(Date.UTC(y ?? 1970, (m ?? 1) - 1, d ?? 1)));
 }
 
-/** "7 Οκτ–7 Νοε" (an unspaced en dash), with the years only when the range crosses one. */
-export function dutyRangeText(from: IsoDate, to: IsoDate, locale: Locale): string {
-  const crossesYear = from.slice(0, 4) !== to.slice(0, 4);
-  return `${calendarDate(from, locale, crossesYear)}–${calendarDate(to, locale, crossesYear)}`;
+/** "7 Νοε" / "7 Nov", with the year only when it is not the current one. */
+export function dutyUntilDate(date: IsoDate, locale: Locale, now: Date): string {
+  const year = new Intl.DateTimeFormat('en-CA', {
+    timeZone: GREECE_TIME_ZONE,
+    year: 'numeric',
+  }).format(now);
+  return calendarDate(date, locale, date.slice(0, 4) !== year);
 }
 
 /** Every covered area, in the order given, with its row. */
@@ -70,8 +76,7 @@ export function statusRows(
       name: city.name[locale],
       checkedAt: checked,
       checkedText: formatChecked(checked, locale, city.timeZone),
-      dutyText:
-        meta.duties === null ? null : dutyRangeText(meta.duties.from, meta.duties.to, locale),
+      dutyUntil: meta.duties === null ? null : dutyUntilDate(meta.duties.to, locale, now),
       fresh: !isStale(checked, now),
     };
   });

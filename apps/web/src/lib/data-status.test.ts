@@ -1,7 +1,7 @@
 import { CITIES, LARISA, THESSALONIKI } from '@pharmacy-skg/core';
 import type { Meta } from '@pharmacy-skg/core';
 import { describe, expect, it } from 'vitest';
-import { dutyRangeText, formatChecked, statusRows } from './data-status.ts';
+import { dutyUntilDate, formatChecked, statusRows } from './data-status.ts';
 
 const meta = (overrides: Partial<Meta>): Meta => ({
   schemaVersion: 1,
@@ -28,14 +28,16 @@ describe('formatChecked', () => {
   });
 });
 
-describe('dutyRangeText', () => {
-  it('joins the dates with an unspaced en dash', () => {
-    expect(dutyRangeText('2026-10-07', '2026-11-07', 'el')).toBe('7 Οκτ–7 Νοε');
-    expect(dutyRangeText('2026-10-07', '2026-11-07', 'en')).toBe('7 Oct–7 Nov');
+describe('dutyUntilDate', () => {
+  const now = new Date('2026-11-02T08:00:00Z');
+
+  it('is the last day, short, in each language', () => {
+    expect(dutyUntilDate('2026-11-07', 'el', now)).toBe('7 Νοε');
+    expect(dutyUntilDate('2026-11-07', 'en', now)).toBe('7 Nov');
   });
 
-  it('adds the years only when the range crosses one', () => {
-    expect(dutyRangeText('2026-12-20', '2027-01-03', 'en')).toBe('20 Dec 2026–3 Jan 2027');
+  it('adds the year only when it is not the current one', () => {
+    expect(dutyUntilDate('2027-01-03', 'en', now)).toBe('3 Jan 2027');
   });
 });
 
@@ -52,7 +54,7 @@ describe('statusRows', () => {
     expect(rows[0]).toMatchObject({
       name: 'Thessaloniki',
       checkedText: '1 Nov 22:32',
-      dutyText: '7 Oct–7 Nov',
+      dutyUntil: '7 Nov',
     });
     expect(statusRows(entries, 'el', now)[1]?.name).toBe('Λάρισα');
   });
@@ -65,6 +67,6 @@ describe('statusRows', () => {
   it('falls back to the last change when no check was recorded, and has no duty days to show', () => {
     const row = statusRows(entries, 'en', now)[2];
     expect(row?.checkedAt).toBe('2026-11-01T11:19:30.227Z');
-    expect(row?.dutyText).toBeNull();
+    expect(row?.dutyUntil).toBeNull();
   });
 });

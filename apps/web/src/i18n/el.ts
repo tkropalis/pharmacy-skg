@@ -125,6 +125,7 @@ export const el = {
     area: 'Περιοχή',
     checked: 'Ενημερώθηκε',
     duties: 'Εφημερίες',
+    until: 'έως {date}',
     fresh: 'Πρόσφατο',
     stale: 'Παλιό',
     noDuties: 'Δεν έχουν ανακοινωθεί',

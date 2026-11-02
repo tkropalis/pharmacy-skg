@@ -3,7 +3,7 @@ import { CITIES, LOCALES } from '@pharmacy-skg/core';
 import type { Meta } from '@pharmacy-skg/core';
 import { t } from '../src/i18n/index.ts';
 import { localizedPath } from '../src/i18n/routes.ts';
-import { dutyRangeText, formatChecked } from '../src/lib/data-status.ts';
+import { dutyUntilDate, formatChecked } from '../src/lib/data-status.ts';
 import { SITE_URL } from './constants.ts';
 import { expect, test } from './support.ts';
 
@@ -40,10 +40,11 @@ for (const locale of LOCALES) {
         await expect(row.locator('time')).toHaveText(formatChecked(checked, locale, city.timeZone));
         await expect(row.locator('time')).toHaveAttribute('datetime', checked);
         await expect(row.locator('td').nth(1)).toBeVisible();
+        // How far ahead the lists go, not where the kept history starts.
         const duties =
           meta.duties === null
             ? d.noDuties
-            : dutyRangeText(meta.duties.from, meta.duties.to, locale);
+            : d.until.replace('{date}', dutyUntilDate(meta.duties.to, locale, new Date()));
         await expect(row.locator('td').nth(1)).toHaveText(duties);
       }
       expect(consoleErrors).toEqual([]);

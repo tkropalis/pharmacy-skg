@@ -107,6 +107,7 @@ export const en: Dictionary = {
     area: 'Area',
     checked: 'Updated',
     duties: 'Duty days',
+    until: 'until {date}',
     fresh: 'Recent',
     stale: 'Old',
     noDuties: 'None announced',

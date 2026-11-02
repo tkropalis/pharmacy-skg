@@ -5,6 +5,7 @@ import { CITIES } from '@pharmacy-skg/core';
 import { t } from '../../i18n/index.ts';
 import { statusRows } from '../../lib/data-status.ts';
 import { faSvg } from '../../lib/fa.ts';
+import { fill } from '../../lib/format.ts';
 import { buildMetaFor } from '../../lib/meta.ts';
 
 interface Props {
@@ -50,7 +51,7 @@ const rows = statusRows(
               {d.stale}
             </span>
           </td>
-          <td>{row.dutyText ?? d.noDuties}</td>
+          <td>{row.dutyUntil === null ? d.noDuties : fill(d.until, { date: row.dutyUntil })}</td>
         </tr>
       ))}
     </tbody>
