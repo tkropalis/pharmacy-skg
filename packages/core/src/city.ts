@@ -102,8 +102,8 @@ export const ACHAIA: City = {
 /**
  * The area of the Pharmaceutical Association of Corfu: the island and Paxos. Its duty page,
  * farmakeu.static.otenet.gr, shows only today's list and prints no coordinates (decision D26).
- * The Region's regular hours are known, but not the longer hours it lists every two months, so
- * the app shows only the pharmacies on duty. The island and Paxos are two boxes, so that the
+ * Its regular hours are the Region's (regular-hours.ts) and its longer hours the Region's
+ * bimonthly table, read from Diavgeia (decision D28). The island and Paxos are two boxes, so that the
  * mainland across the strait (Igoumenitsa) stays Thesprotia's.
  */
 export const CORFU: City = {

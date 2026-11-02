@@ -6,23 +6,36 @@
  * (as Attica keeps one, decision D27) read once a week, and every pharmacy is placed by its
  * phone in Overture's pharmacies or by its address with Nominatim (decision D22).
  *
- * The Region's regular hours for Corfu are on Diavgeia (decision D26) but its longer hours, which
- * it lists every two months in PDF tables, are not read yet, so the app shows only the
- * pharmacies on duty.
+ * The Region's regular hours for Corfu are on Diavgeia (core/regular-hours.ts, decision D26) and
+ * so are the longer hours some pharmacies keep, in a PDF table every two months: found by
+ * search on each run, read strictly (corfu/extended.ts) and matched to the members.
  */
 import { CORFU } from '@pharmacy-skg/core';
+import { readCorfuExtended, readCorfuTable } from '../corfu/extended.ts';
 import { corfuPlace } from '../corfu/places.ts';
 import type { CorfuDuties, CorfuPharmacy } from '../corfu/parse.ts';
 import type { DutyEntry, DutyList, DutySection } from '../fsth/parse.ts';
 import { iteqDuties, type IteqDuty } from '../iteq/heading.ts';
+import { extractPages, type PdfPage } from '../pdf.ts';
 import type { Warning } from '../registry/build.ts';
-import type { Meta } from '../schema.ts';
+import { ExtendedHoursSchema, SCHEMA_VERSION, type ExtendedHours, type Meta } from '../schema.ts';
 import { CORFU_ORIGIN, CorfuClient } from '../sources/corfu.ts';
+import { CorfuDiavgeia } from '../sources/corfu-diavgeia.ts';
 import { describeError } from '../sources/http.ts';
 import { squash } from '../text.ts';
 import { addDays } from '../time.ts';
 import { OSM_CREDIT } from './iteq.ts';
 import type { CityPipeline, FetchedDutyLists, Roster, RosterEntry } from './pipeline.ts';
+
+const IONIAN: Meta['sources'][number] = {
+  id: 'ionian',
+  name: { el: 'Περιφέρεια Ιονίων Νήσων', en: 'Region of the Ionian Islands' },
+  url: 'https://diavgeia.gov.gr/decision/view/9ΚΛΤ7ΛΕ-7Τ4',
+  note: 'Regular opening hours (packages/core/src/regular-hours.ts) and the extended-hours tables, from Diavgeia',
+};
+
+/** Fewest pharmacies a table of this size gives; fewer means the reader or the layout broke. */
+const MIN_EXTENDED = 15;
 
 const FARMAKEU: Meta['sources'][number] = {
   id: 'farmakeu',
@@ -150,13 +163,27 @@ export function corfuRoster(
   };
 }
 
-export function corfuPipeline(
-  open: () => Pick<CorfuClient, 'duties' | 'members' | 'requests'> = () => new CorfuClient(),
-): CityPipeline {
+export interface CorfuSources {
+  readonly site: () => Pick<CorfuClient, 'duties' | 'members' | 'requests'>;
+  readonly diavgeia: () => Pick<CorfuDiavgeia, 'extendedDecisions' | 'document' | 'requests'>;
+  /** The PDF's pages (replaced in tests). */
+  readonly pages: (bytes: Uint8Array) => Promise<PdfPage[]>;
+}
+
+const REAL: CorfuSources = {
+  site: () => new CorfuClient(),
+  diavgeia: () => new CorfuDiavgeia(),
+  pages: extractPages,
+};
+
+export function corfuPipeline(sources: Partial<CorfuSources> = {}): CityPipeline {
+  const open = sources.site ?? REAL.site;
+  const diavgeia = sources.diavgeia ?? REAL.diavgeia;
+  const pagesOf = sources.pages ?? REAL.pages;
   return {
     city: CORFU,
-    sources: [FARMAKEU, OSM_CREDIT],
-    sourceIds: { duty: FARMAKEU.id, extended: null },
+    sources: [FARMAKEU, IONIAN, OSM_CREDIT],
+    sourceIds: { duty: FARMAKEU.id, extended: IONIAN.id },
 
     async fetchDutyLists({ today, roster: stored, log }): Promise<FetchedDutyLists> {
       const client = open();
@@ -210,8 +237,64 @@ export function corfuPipeline(
       return { items, failures, ...(roster ? { roster } : {}) };
     },
 
-    async fetchExtendedHours() {
-      return { items: [], failures: [] };
+    async fetchExtendedHours({ today, extendedFiles, roster, log }) {
+      const items: (readonly [string, ExtendedHours])[] = [];
+      const failures: Warning[] = [];
+      if (!roster || roster.entries.length === 0) {
+        failures.push({
+          code: 'no-roster',
+          message: 'Diavgeia: no members to match the tables to',
+        });
+        return { items, failures };
+      }
+      const client = diavgeia();
+      const decisions = await client.extendedDecisions(today);
+      if (decisions.length === 0) {
+        failures.push({
+          code: 'no-extended-decision',
+          message: 'Diavgeia: no table of extended hours for a period that is not over',
+        });
+      }
+      for (const decision of decisions) {
+        const file = `${decision.period.from}_${decision.period.to}.json`;
+        // The table is read once: a later posting has another ADA.
+        if (extendedFiles.get(file)?.source.url === decision.url) continue;
+        const rows = readCorfuTable(await pagesOf(await client.document(decision.ada)));
+        const read = readCorfuExtended(rows, roster.entries, decision.period);
+        failures.push(...read.failures);
+        log(
+          `  ${decision.ada} ${decision.period.from.slice(0, 7)}: ${rows.length} rows, ` +
+            `${read.withHours} with hours, ${read.entries.length} read, ` +
+            `${read.failures.length} left out (${client.requests} requests)`,
+        );
+        // A table that gives far fewer pharmacies than the month before is a reader or a layout
+        // that broke: the stored lists stay, and the run fails (update/city.ts).
+        if (read.entries.length < MIN_EXTENDED) {
+          throw new Error(
+            `${decision.ada}: only ${read.entries.length} of ${read.withHours} rows with hours read`,
+          );
+        }
+        items.push([
+          file,
+          ExtendedHoursSchema.parse({
+            schemaVersion: SCHEMA_VERSION,
+            period: decision.period,
+            title: decision.subject,
+            announcementUrl: decision.url,
+            source: { url: decision.url, uploadedAt: decision.postedAt },
+            entries: read.entries.map(({ member, hours }) => ({
+              pharmacyId: '',
+              name: member.name,
+              address: member.address,
+              postcode: '',
+              area: member.locality,
+              schedule: hours.schedule,
+              scheduleText: hours.text,
+            })),
+          }),
+        ]);
+      }
+      return { items, failures };
     },
 
     geocoding: {},
@@ -221,6 +304,7 @@ export function corfuPipeline(
       sectionRange: () => [1, 30],
       pharmacies: [50, 250],
       todayOnly: true,
+      // A table that gives too few is refused in fetchExtendedHours, which keeps the stored one.
       minExtendedEntries: null,
     },
   };

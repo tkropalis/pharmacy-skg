@@ -126,6 +126,29 @@ describe('corfuDutyList', () => {
   });
 });
 
+describe('the same day in the evening', () => {
+  const evening = parseCorfuDuties(fixture('2026-11-02_phduties_evening.html'));
+
+  it('adds the night blocks to the day block, under the same date', () => {
+    expect(evening.date).toBe('2026-11-02');
+    expect(evening.blocks.map((block) => [block.heading, block.pharmacies.length])).toEqual([
+      ['ΔΙΗΜΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 8:00 ΕΩΣ ΤΙΣ 21:00', 5],
+      ['ΔΙΑΝΥΚΤΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 21:00 ΕΩΣ ΤΙΣ 22:00', 1],
+      ['ΔΙΑΝΥΚΤΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 21:00 ΕΩΣ ΤΙΣ 8:00 ΤΟ ΠΡΩΙ ΤΗΣ ΕΠΟΜΕΝΗΣ', 4],
+    ]);
+  });
+
+  it('reads the night as ending the next morning', () => {
+    const { list, warnings } = corfuDutyList(evening);
+    expect(warnings).toEqual([]);
+    expect(list?.sections.map((s) => [s.hours?.from, s.hours?.to, s.hours?.toNextDay])).toEqual([
+      ['08:00', '21:00', false],
+      ['21:00', '22:00', false],
+      ['21:00', '08:00', true],
+    ]);
+  });
+});
+
 describe('parseCorfuMembers', () => {
   it('reads the 117 rows of the members page, each with a valid phone', () => {
     expect(members).toHaveLength(117);
