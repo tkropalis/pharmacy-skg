@@ -1,23 +1,16 @@
-import { cp, mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import { cp, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { AstroIntegration } from 'astro';
-import { CITIES, encodeMedicineIndex } from '@pharmacy-skg/core';
-import type { MedicinesFile, Meta, Pharmacies } from '@pharmacy-skg/core';
+import { encodeMedicineIndex } from '@pharmacy-skg/core';
+import type { MedicinesFile } from '@pharmacy-skg/core';
 import { buildToday } from '../src/lib/build-today.ts';
+import { NATIONAL_INDEX_PATH, nationalDutyDateOf } from '../src/lib/national.ts';
 import { buildLocalities, PLACES_PATH } from '../src/lib/places.ts';
 import type { NationalPlace } from '../src/lib/places.ts';
-import {
-  isExtendedHoursPath,
-  isPublishedPath,
-  selectDutyFiles,
-  withPublishedDates,
-} from './data-files.ts';
-
-/** <repo>/data/, which lives outside apps/web (Vercel: "include files outside root"). */
-const DATA_ROOT = fileURLToPath(new URL('../../../data/', import.meta.url));
-
-const CITY_IDS = CITIES.map((city) => city.id);
+import { CITY_IDS, DATA_ROOT, publishedMeta, readPharmacies } from './city-files.ts';
+import { isExtendedHoursPath, isPublishedPath } from './data-files.ts';
+import { nationalDutyBody, nationalDutyFiles, nationalIndexBody } from './national-files.ts';
 
 /** Where the app reads the medicine index (lib/medicine-index.ts). */
 export const MEDICINE_INDEX_PATH = 'medicines/index.json';
@@ -37,10 +30,7 @@ async function medicineIndex(): Promise<string> {
 async function nationalPlaces(): Promise<string> {
   const places: NationalPlace[] = [];
   for (const cityId of CITY_IDS) {
-    const { pharmacies } = JSON.parse(
-      await readFile(`${DATA_ROOT}${cityId}/pharmacies.json`, 'utf8'),
-    ) as Pharmacies;
-    for (const locality of buildLocalities(pharmacies)) {
+    for (const locality of buildLocalities(await readPharmacies(cityId))) {
       places.push({
         name: locality.name,
         cityId,
@@ -53,20 +43,15 @@ async function nationalPlaces(): Promise<string> {
   return JSON.stringify(places);
 }
 
-/** A city's meta.json as published, with the dates of the duty files the build publishes. */
-async function publishedMeta(
-  cityId: string,
-  today: string,
-): Promise<{ meta: Meta; duties: string[] }> {
-  const source = `${DATA_ROOT}${cityId}/`;
-  const meta = JSON.parse(await readFile(`${source}meta.json`, 'utf8')) as Meta;
-  const duties = selectDutyFiles(await readdir(`${source}duties`), today);
-  return { meta: withPublishedDates(meta, duties), duties };
+/** The national files: the index of every area, and a day's pharmacies on duty in all of them. */
+function isNationalPath(path: string): boolean {
+  return path === NATIONAL_INDEX_PATH || nationalDutyDateOf(path) !== null;
 }
 
 /**
  * Publishes data/<city>/ under /data/<city>/: in the build output, and through a small
  * middleware in `astro dev`. Only the files the app reads are published (see isPublishedPath).
+ * The national files (src/lib/national.ts) are written beside them.
  */
 export function dataIntegration(): AstroIntegration {
   return {
@@ -78,6 +63,27 @@ export function dataIntegration(): AstroIntegration {
           if (path === MEDICINE_INDEX_PATH || path === PLACES_PATH) {
             (path === PLACES_PATH ? nationalPlaces() : medicineIndex()).then(
               (body) => {
+                res.setHeader('Content-Type', 'application/json');
+                res.setHeader('Cache-Control', 'no-cache');
+                res.end(body);
+              },
+              (error: unknown) => next(error),
+            );
+            return;
+          }
+          if (isNationalPath(path)) {
+            const today = buildToday();
+            const national: Promise<string | null> =
+              path === NATIONAL_INDEX_PATH
+                ? nationalIndexBody(today)
+                : nationalDutyBody(path, today);
+            national.then(
+              (body) => {
+                if (body === null) {
+                  res.statusCode = 404;
+                  res.end();
+                  return;
+                }
                 res.setHeader('Content-Type', 'application/json');
                 res.setHeader('Cache-Control', 'no-cache');
                 res.end(body);
@@ -141,6 +147,20 @@ export function dataIntegration(): AstroIntegration {
         const places = await nationalPlaces();
         await writeFile(fileURLToPath(new URL(`data/${PLACES_PATH}`, dir)), places);
         logger.info(`places: published ${Math.round(places.length / 1024)} KB`);
+
+        const nationalIndex = await nationalIndexBody(today);
+        await writeFile(fileURLToPath(new URL(`data/${NATIONAL_INDEX_PATH}`, dir)), nationalIndex);
+        let nationalBytes = nationalIndex.length;
+        const dutyFiles = await nationalDutyFiles(today);
+        for (const [path, body] of dutyFiles) {
+          const target = fileURLToPath(new URL(`data/${path}`, dir));
+          await mkdir(dirname(target), { recursive: true });
+          await writeFile(target, body);
+          nationalBytes += body.length;
+        }
+        logger.info(
+          `national: published the index and ${dutyFiles.length} days of pharmacies on duty (${Math.round(nationalBytes / 1024)} KB)`,
+        );
       },
     },
   };
