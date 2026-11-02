@@ -1,13 +1,19 @@
 {
   "schemaVersion": 1,
   "city": "corfu",
-  "updatedAt": "2026-11-02T17:53:20.587Z",
-  "checkedAt": "2026-11-02T17:53:20.587Z",
+  "updatedAt": "2026-11-02T18:08:17.575Z",
+  "checkedAt": "2026-11-02T18:08:17.575Z",
   "duties": {
     "from": "2026-11-02",
     "to": "2026-11-02"
   },
-  "extendedHours": [],
+  "extendedHours": [
+    {
+      "from": "2026-11-01",
+      "to": "2026-12-31",
+      "file": "extended-hours/2026-11-01_2026-12-31.json"
+    }
+  ],
   "sources": [
     {
       "id": "farmakeu",
@@ -17,6 +23,15 @@
       },
       "url": "https://farmakeu.static.otenet.gr/",
       "note": "Duty lists and members, from farmakeu.static.otenet.gr"
+    },
+    {
+      "id": "ionian",
+      "name": {
+        "el": "Περιφέρεια Ιονίων Νήσων",
+        "en": "Region of the Ionian Islands"
+      },
+      "url": "https://diavgeia.gov.gr/decision/view/9ΚΛΤ7ΛΕ-7Τ4",
+      "note": "Regular opening hours (packages/core/src/regular-hours.ts) and the extended-hours tables, from Diavgeia"
     },
     {
       "id": "osm",
