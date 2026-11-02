@@ -206,7 +206,8 @@ export async function buildRegistry(
         for (const entry of section.entries) {
           const draft = drafts.get(entry.pharmacyId);
           const phone = normalizePhone(entry.phone);
-          if (!phone) {
+          // A list that prints no phone at all (Achaia's, for the town) is not a typo.
+          if (!phone && entry.phone.trim() !== '') {
             warnings.push({
               code: 'invalid-phone',
               message: `${day.date} ${group.id}: "${entry.phone}" for ${entry.name}`,

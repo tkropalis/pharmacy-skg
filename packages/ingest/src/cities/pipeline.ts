@@ -67,9 +67,22 @@ export interface Fetched<T> {
   readonly failures: readonly Warning[];
 }
 
+/**
+ * The key `FetchedDutyLists.locations` uses for a duty entry: its phone, or its name and place
+ * when the list prints none (Achaia's lists print phones only for villages).
+ */
+export function locationKey(entry: Pick<DutyEntry, 'phone' | 'name' | 'locality'>): string {
+  return entry.phone !== '' ? entry.phone : `${entry.name}|${entry.locality}`;
+}
+
 export interface FetchedDutyLists extends Fetched<FetchedDutyList> {
-  /** New coordinates the source gives, by the phone printed in the list. */
+  /** New coordinates the source gives, by `locationKey` of the entry (its phone, normally). */
   readonly locations?: ReadonlyMap<string, ListedLocation>;
+  /**
+   * Extended hours the duty source itself gives in the same page (Achaia's), by file name; each
+   * replaces the stored file of that name.
+   */
+  readonly extendedHours?: Fetched<readonly [file: string, list: ExtendedHours]>;
   /** The updated roster, for a source that names more pharmacies than the stored lists. */
   readonly roster?: Roster;
 }
@@ -89,6 +102,12 @@ export interface ValidationRules {
   /** Expected entries in a section; a count outside means the parser or the source broke. */
   readonly sectionRange: (groupId: string, kind: DutyKind) => readonly [number, number];
   readonly pharmacies: readonly [number, number];
+  /**
+   * The source shows only today's duty list (Achaia's, Corfu's): each run stores the list under
+   * the page's own date and keeps the earlier days. Tomorrow's list is not expected, and a list
+   * identical to the day before's is not taken for today's (update/city.ts).
+   */
+  readonly todayOnly?: boolean;
   /** Fewest entries an extended-hours list may have; null when the city publishes none. */
   readonly minExtendedEntries: number | null;
 }

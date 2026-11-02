@@ -8,7 +8,14 @@
 import { join } from 'node:path';
 import type { Bounds } from '@pharmacy-skg/core';
 import { z } from 'zod';
-import type { CityPipeline, FetchContext, ListedLocation, Roster } from '../cities/pipeline.ts';
+import {
+  locationKey,
+  type CityPipeline,
+  type FetchContext,
+  type ListedLocation,
+  type Roster,
+} from '../cities/pipeline.ts';
+import { addDays } from '../time.ts';
 import {
   buildRegistry,
   dutyEntryId,
@@ -177,7 +184,7 @@ export async function updateCity({
         notes: [...section.notes],
         entries: section.entries.map((entry) => {
           const pharmacyId = dutyEntryId(entry, known);
-          const location = duties.locations?.get(entry.phone);
+          const location = duties.locations?.get(locationKey(entry));
           if (location) listed.set(pharmacyId, location);
           return { pharmacyId, ...entry };
         }),
@@ -190,6 +197,18 @@ export async function updateCity({
     };
     const existing = day.groups.find((g) => g.id === group.id);
     if (existing && existing.source.uploadedAt > group.source.uploadedAt) continue;
+    // A source that shows only today's list, left unchanged by its association, shows
+    // yesterday's under today's date. A list identical to the day before's is not today's.
+    if (pipeline.rules.todayOnly === true) {
+      const before = days.get(addDays(list.date, -1))?.groups.find((g) => g.id === group.id);
+      if (before && JSON.stringify(before.sections) === JSON.stringify(group.sections)) {
+        parseFailures.push({
+          code: 'repeated-list',
+          message: `${list.date} ${group.id}: the same list as ${addDays(list.date, -1)}, not taken for today's (${source.url})`,
+        });
+        continue;
+      }
+    }
     // A page read afresh on every run (ITeQ) gives the same list most times: keep the stored
     // one, and its time, so nothing is written. (A re-uploaded PDF has its own URL and still
     // replaces the old one.)
@@ -222,6 +241,9 @@ export async function updateCity({
   // read keeps the stored lists and must not hold back the duty lists: fsa.gr, out of reach
   // from 22 to 28 Oct 2026, kept Attica's duties from being updated for a week. The run fails.
   let extendedRead = true;
+  // The duty source's own page may carry them (Achaia's), read with the lists.
+  parseFailures.push(...(duties.extendedHours?.failures ?? []));
+  for (const [file, list] of duties.extendedHours?.items ?? []) extendedFiles.set(file, list);
   try {
     const extended = await pipeline.fetchExtendedHours({
       ...context,
