@@ -28,6 +28,13 @@ describe('map sources', () => {
       expect(SOURCE_OPTIONS[key]['cluster'], key).toBeUndefined();
     }
   });
+
+  it('know a pin by its pharmacy id, so that changes can be sent as a diff', () => {
+    for (const key of ['clustered', 'duty', 'closed'] as const) {
+      expect(SOURCE_OPTIONS[key]['promoteId'], key).toBe('id');
+    }
+    expect(SOURCE_OPTIONS.origin['promoteId']).toBeUndefined();
+  });
 });
 
 describe.each([false, true])('map layers (dark: %s)', (dark) => {
