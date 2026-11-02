@@ -67,8 +67,21 @@ export interface Fetched<T> {
   readonly failures: readonly Warning[];
 }
 
+/**
+ * The key of a pharmacy's coordinates in `FetchedDutyLists.locations`: the phone printed in the
+ * list, or for an entry the pipeline printed without one (the list gives it another pharmacy's
+ * number), its locality and name.
+ */
+export function locationKey(entry: {
+  readonly phone: string;
+  readonly locality: string;
+  readonly name: string;
+}): string {
+  return entry.phone !== '' ? entry.phone : `${entry.locality}|${entry.name}`;
+}
+
 export interface FetchedDutyLists extends Fetched<FetchedDutyList> {
-  /** New coordinates the source gives, by the phone printed in the list. */
+  /** New coordinates the source gives, by `locationKey`. */
   readonly locations?: ReadonlyMap<string, ListedLocation>;
   /** The updated roster, for a source that names more pharmacies than the stored lists. */
   readonly roster?: Roster;
@@ -76,6 +89,8 @@ export interface FetchedDutyLists extends Fetched<FetchedDutyList> {
 
 /** How addresses in the city are geocoded (registry/geocode.ts). */
 export interface GeocodeArea {
+  /** The printed address as Nominatim knows its street (Kilkis prints "Μ. ΑΛΕΞΑΝΔΡΟΥ 98"). */
+  readonly expandAddress?: (address: string) => string;
   /** The place to ask for when searching a locality (default: its name). */
   readonly queryLocality?: (locality: string) => string;
   /** Whether a result belongs to the locality the list printed (default: always). */

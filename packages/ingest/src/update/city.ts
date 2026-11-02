@@ -8,7 +8,13 @@
 import { join } from 'node:path';
 import type { Bounds } from '@pharmacy-skg/core';
 import { z } from 'zod';
-import type { CityPipeline, FetchContext, ListedLocation, Roster } from '../cities/pipeline.ts';
+import {
+  locationKey,
+  type CityPipeline,
+  type FetchContext,
+  type ListedLocation,
+  type Roster,
+} from '../cities/pipeline.ts';
 import {
   buildRegistry,
   dutyEntryId,
@@ -177,7 +183,7 @@ export async function updateCity({
         notes: [...section.notes],
         entries: section.entries.map((entry) => {
           const pharmacyId = dutyEntryId(entry, known);
-          const location = duties.locations?.get(entry.phone);
+          const location = duties.locations?.get(locationKey(entry));
           if (location) listed.set(pharmacyId, location);
           return { pharmacyId, ...entry };
         }),

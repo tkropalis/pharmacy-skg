@@ -173,7 +173,7 @@ export class Geocoder {
     locality: string,
     { cachedOnly = false } = {},
   ): Promise<(GeocodeHit & { query: string }) | null> {
-    const street = cleanAddress(address);
+    const street = cleanAddress(this.area.expandAddress?.(address) ?? address);
     const place = this.area.queryLocality?.(locality) ?? locality;
     const queries = [street && /\d/.test(street) ? `${street}, ${place}` : null, place];
     for (const query of queries) {

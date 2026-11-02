@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-07",
+  "groups": [
+    {
+      "id": "andros",
+      "name": "Άνδρος",
+      "source": {
+        "url": "https://www.fscyclades.gr/onduty-cyclades/",
+        "uploadedAt": "2026-11-02T10:59:47.750Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "Εφημερεύον φαρμακείο",
+          "hours": null,
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2282062058",
+              "name": "ΓΑΡΥΦΑΛΛΟΣ ΧΡΗΣΤΟΣ",
+              "address": "Όρμος Κορθίου",
+              "locality": "Άνδρος",
+              "phone": "2282062058"
+            },
+            {
+              "pharmacyId": "2282023203",
+              "name": "ΔΙΑΠΟΥΛΗ ΑΡΙΣΤΟΤΕΛΗ ΚΑΙ ΣΙΑ ΟΕ",
+              "address": "Γεωργίου Εμπειρίκου 14 - Χώρα",
+              "locality": "Άνδρος",
+              "phone": "2282023203"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mykonos",
+      "name": "Μύκονος",
+      "source": {
+        "url": "https://www.fscyclades.gr/onduty-cyclades/",
+        "uploadedAt": "2026-11-02T10:59:47.750Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "Εφημερεύον φαρμακείο",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2289023151",
+              "name": "Ν. ΚΟΥΣΑΘΑΝΑΣ Γ. ΚΟΥΣΑΘΑΝΑΣ ΚΑΙ ΣΙΑ ΟΕ",
+              "address": "Μητροπόλεως 10",
+              "locality": "Μύκονος",
+              "phone": "2289023151"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "naxos",
+      "name": "Νάξος",
+      "source": {
+        "url": "https://www.fscyclades.gr/onduty-cyclades/",
+        "uploadedAt": "2026-11-02T10:59:47.750Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "Εφημερεύον φαρμακείο",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2285024477",
+              "name": "ΙΣΠΑΝΟΠΟΥΛΟΣ ΕΜΜΑΝΟΥΗΛ",
+              "address": "Έναντι Νοσοκομείου - Χώρα",
+              "locality": "Νάξος",
+              "phone": "2285024477"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paros",
+      "name": "Πάρος",
+      "source": {
+        "url": "https://www.fscyclades.gr/onduty-cyclades/",
+        "uploadedAt": "2026-11-02T10:59:47.750Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "Εφημερεύον φαρμακείο",
+          "hours": null,
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2284055152",
+              "name": "ΑΤΤΑΡΤ ΦΙΛΙΠΠΟΣ ΕΕ",
+              "address": "Νάουσα Πάρου",
+              "locality": "Πάρος",
+              "phone": "2284055152"
+            },
+            {
+              "pharmacyId": "2284021282",
+              "name": "ΓΡΑΒΑΡΗΣ ΙΩΑΝΝΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+              "address": "Εντός Παλαιάς Αγοράς Παροικιάς",
+              "locality": "Πάρος",
+              "phone": "2284021282"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "santorini",
+      "name": "Σαντορίνη",
+      "source": {
+        "url": "https://www.fscyclades.gr/onduty-cyclades/",
+        "uploadedAt": "2026-11-02T10:59:47.750Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "Εφημερεύον φαρμακείο",
+          "hours": null,
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2286082699",
+              "name": "ΧΑΡΑΛΑΜΠΟΠΟΥΛΟΥ ΟΥΡΑΝΙΑ",
+              "address": "Περίσσα",
+              "locality": "Σαντορίνη",
+              "phone": "2286082699"
+            },
+            {
+              "pharmacyId": "2286032566",
+              "name": "ΜΕΝΤΑΣ ΑΘΑΝΑΣΙΟΣ Σ.",
+              "address": "Μεσαριά (Κέντρο)",
+              "locality": "Σαντορίνη",
+              "phone": "2286032566"
+            },
+            {
+              "pharmacyId": "2282022700",
+              "name": "ΠΟΛΙΤΗ ΦΑΙΔΡΑ ΙΚΕ",
+              "address": "Φηρά - παραπλεύρως Alpha bank - Κεντρική Πλατεία",
+              "locality": "Σαντορίνη",
+              "phone": "2282022700"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "syros",
+      "name": "Σύρος",
+      "source": {
+        "url": "https://www.fscyclades.gr/onduty-cyclades/",
+        "uploadedAt": "2026-11-02T10:59:47.750Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "Εφημερεύον φαρμακείο",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2281088198",
+              "name": "Ε. ΑΡΜΑΚΟΛΑ - Λ. & Μ. ΡΟΥΣΣΟΣ ΟΕ (Πiraiki)",
+              "address": "Ηρ. Πολυτεχνείου 32",
+              "locality": "Σύρος",
+              "phone": "2281088198"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tinos",
+      "name": "Τήνος",
+      "source": {
+        "url": "https://www.fscyclades.gr/onduty-cyclades/",
+        "uploadedAt": "2026-11-02T10:59:47.750Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "Εφημερεύον φαρμακείο",
+          "hours": null,
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2283022400",
+              "name": "ΕΙΡΗΝΗ ΦΑΝΕΡΟΥ ΕΕ",
+              "address": "Πλατεία Ελευθερίας & Αλαβάνου Ζαννάκη",
+              "locality": "Τήνος",
+              "phone": "2283022400"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
