@@ -117,8 +117,15 @@ test('the about page links to the status page once, and nothing else does', asyn
     }
   }
   // Not in the sitemap, and not in the home screen's sheet once it has loaded.
-  const sitemap = await (await request.get('/sitemap.xml')).text();
-  for (const locale of LOCALES) {
-    expect(sitemap).not.toContain(localizedPath(locale, 'status'));
+  // /sitemap.xml lists the sitemaps (one for the pages of no city, one per city): read them all.
+  const index = await (await request.get('/sitemap.xml')).text();
+  const sitemapUrls = [...index.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1] ?? '');
+  expect(sitemapUrls.length).toBeGreaterThan(1);
+  for (const url of sitemapUrls) {
+    const sitemap = await (await request.get(new URL(url).pathname)).text();
+    expect(sitemap).toContain('<urlset');
+    for (const locale of LOCALES) {
+      expect(sitemap).not.toContain(localizedPath(locale, 'status'));
+    }
   }
 });

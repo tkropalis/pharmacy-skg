@@ -26,11 +26,23 @@ export const CLUSTER_RADIUS = 40;
 /** From this zoom on every pharmacy is drawn on its own. */
 export const CLUSTER_MAX_ZOOM = 13;
 
-/** Source options (the data is set later). */
+/** The property of a pin that holds its pharmacy's id, which is also its feature id. */
+export const PIN_ID_PROPERTY = 'id';
+
+/**
+ * Source options (the data is set later). The pharmacy sources take a feature's id from its `id`
+ * property (`promoteId`), so a change to the pins is sent as a diff to `updateData`
+ * (map-data.ts, changeSource) instead of replacing the whole data. The origin is one point.
+ */
 export const SOURCE_OPTIONS: Readonly<Record<keyof typeof SOURCES, Record<string, unknown>>> = {
-  clustered: { cluster: true, clusterRadius: CLUSTER_RADIUS, clusterMaxZoom: CLUSTER_MAX_ZOOM },
-  duty: {},
-  closed: {},
+  clustered: {
+    cluster: true,
+    clusterRadius: CLUSTER_RADIUS,
+    clusterMaxZoom: CLUSTER_MAX_ZOOM,
+    promoteId: PIN_ID_PROPERTY,
+  },
+  duty: { promoteId: PIN_ID_PROPERTY },
+  closed: { promoteId: PIN_ID_PROPERTY },
   origin: {},
 };
 
