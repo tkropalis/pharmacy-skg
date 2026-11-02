@@ -63,6 +63,7 @@ function unescapeJs(body: string): string {
 
 const DutySchema = z.object({
   duty_name: z.string(),
+  /** 1 before the shift starts, 0 once it has (seen at 12:25 and 19:53 on 2 Nov 2026): not read. */
   duty_status: z.number(),
   start_time: z.number().int().nullable(),
   end_time: z.number().int().nullable(),
@@ -105,10 +106,8 @@ export interface EfimeriaPharmacy {
   readonly townKey: string;
   readonly lat: number;
   readonly lon: number;
-  /** Duties in the order of the site's ids, inactive ones left out. */
+  /** Duties in the order of the site's ids. */
   readonly windows: readonly EfimeriaWindow[];
-  /** Duties the site lists with a status other than 1, which are not read. */
-  readonly inactive: number;
 }
 
 export interface EfimeriaExtendedGroup {
@@ -156,12 +155,7 @@ function parseFeatures(html: string): EfimeriaPharmacy[] {
     const feature = FeatureSchema.parse(raw);
     const p = feature.properties;
     const windows: EfimeriaWindow[] = [];
-    let inactive = 0;
     for (const duty of Object.values(p.duties)) {
-      if (duty.duty_status !== 1) {
-        inactive++;
-        continue;
-      }
       const pairs = [
         [duty.start_time, duty.end_time],
         [duty.start_time2 ?? null, duty.end_time2 ?? null],
@@ -184,7 +178,6 @@ function parseFeatures(html: string): EfimeriaPharmacy[] {
       lat,
       lon,
       windows,
-      inactive,
     };
   });
 }

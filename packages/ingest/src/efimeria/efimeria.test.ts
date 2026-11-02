@@ -76,7 +76,6 @@ describe('parseEfimeriaPage', () => {
       expect(pharmacy.lon).toBeGreaterThan(21.4);
       expect(pharmacy.lon).toBeLessThan(22.3);
       expect(pharmacy.windows.length).toBeGreaterThan(0);
-      expect(pharmacy.inactive).toBe(0);
     }
   });
 
@@ -126,6 +125,16 @@ describe('parseEfimeriaPage', () => {
         }));
       expect(sorted(view.extended)).toEqual(sorted(all.extended));
     }
+  });
+});
+
+describe('the same day in the evening', () => {
+  it('lists the same 16 pharmacies: the site flags a shift 0 once it has started, which is not read', () => {
+    const evening = parseEfimeriaPage(fixture('2026-11-02_All_evening.html'));
+    expect(evening.time).toBe('19:53:31');
+    expect(evening.pharmacies.map((p) => [p.id, p.windows])).toEqual(
+      all.pharmacies.map((p) => [p.id, p.windows]),
+    );
   });
 });
 
@@ -202,19 +211,6 @@ describe('efimeriaDutyList', () => {
     const result = efimeriaDutyList(page, group);
     expect(result.list).toBeNull();
     expect(result.warnings.map((w) => w.code)).toEqual(['unwritable-window']);
-  });
-
-  it('does not read a duty the site gives another status than 1', () => {
-    const page: EfimeriaPage = {
-      ...all,
-      pharmacies: [
-        {
-          ...(all.pharmacies[0] as EfimeriaPage['pharmacies'][number]),
-          inactive: 1,
-        },
-      ],
-    };
-    expect(efimeriaDutyList(page, group).warnings.map((w) => w.code)).toEqual(['inactive-duty']);
   });
 });
 

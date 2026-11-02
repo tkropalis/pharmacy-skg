@@ -71,8 +71,7 @@ type MutableSection = DutySection & { entries: DutyEntry[] };
 
 /**
  * The area's duty list for the page's date: one section per distinct window, the pharmacies in
- * the page's order. Windows the site gives with another status than 1, and windows that cannot
- * be written, are reported and left out.
+ * the page's order. Windows that cannot be written are reported and left out.
  */
 export function efimeriaDutyList(
   page: EfimeriaPage,
@@ -82,12 +81,6 @@ export function efimeriaDutyList(
   const sections = new Map<string, MutableSection>();
   for (const pharmacy of page.pharmacies) {
     const where = `${page.date} ${pharmacy.id} ${pharmacy.name}`;
-    if (pharmacy.inactive > 0) {
-      warnings.push({
-        code: 'inactive-duty',
-        message: `${where}: ${pharmacy.inactive} duties with a status other than 1 were not read`,
-      });
-    }
     for (const window of mergeWindows(pharmacy)) {
       const length = window.toSec - window.fromSec;
       if (window.fromSec < 0 || window.fromSec >= DAY || length <= 0 || length > DAY) {
