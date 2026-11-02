@@ -71,6 +71,19 @@ export const KNOWN_GROUPS: Readonly<Record<string, Readonly<Record<string, strin
     nikaia: 'Νίκαια',
     tyrnavos: 'Τύρναβος',
   },
+  ilia: {
+    amaliada: 'Αμαλιάδα',
+    andravida: 'Ανδραβίδα',
+    'ancient-olympia': 'Αρχαία Ολυμπία',
+    varda: 'Βάρδα',
+    vartholomio: 'Βαρθολομιό',
+    gastouni: 'Γαστούνη',
+    zacharo: 'Ζαχάρω',
+    krestena: 'Κρέστενα',
+    lechaina: 'Λεχαινά',
+    pyrgos: 'Πύργος',
+    tragano: 'Τραγανό',
+  },
 };
 
 /** Group id to its name, from every loaded duty day (the newest day wins). */

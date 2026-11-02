@@ -263,12 +263,12 @@ function dateOf(ms: number, timeZone: string): IsoDate {
 const regularSpans = new Map<string, readonly (readonly [number, number])[]>();
 
 /** The regular hours of a date as absolute spans (holidays are the caller's business). */
-function regularOn(cityId: string, date: IsoDate, timeZone: string) {
-  const key = `${cityId}|${timeZone}|${date}`;
+function regularOn(cityId: string, date: IsoDate, timeZone: string, groupId: string | null) {
+  const key = `${cityId}|${timeZone}|${date}|${groupId ?? ''}`;
   let found = regularSpans.get(key);
   if (!found) {
     if (regularSpans.size > 5000) regularSpans.clear();
-    found = spansOf(date, regularRanges(cityId, date), timeZone);
+    found = spansOf(date, regularRanges(cityId, date, groupId), timeZone);
     regularSpans.set(key, found);
   }
   return found;
@@ -318,7 +318,7 @@ function rawForDate(data: CityData, index: Index, pharmacy: Pharmacy, date: IsoD
       out.push({ start, end, reason: EXTENDED });
     }
   } else if (!holiday) {
-    for (const [start, end] of regularOn(data.city.id, date, timeZone)) {
+    for (const [start, end] of regularOn(data.city.id, date, timeZone, pharmacy.groupId)) {
       out.push({ start, end, reason: REGULAR });
     }
   }

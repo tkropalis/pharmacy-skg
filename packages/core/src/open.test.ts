@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { ITEQ_AREAS } from './areas.ts';
-import { ATTIKI, LARISA, THESSALONIKI } from './city.ts';
+import { ATTIKI, ILIA, LARISA, THESSALONIKI } from './city.ts';
 import type {
   DutyDay,
   DutyKind,
@@ -1552,6 +1552,42 @@ describe('distanceMetres', () => {
     expect(distanceMetres({ lat: 40, lon: 22 }, { lat: 41, lon: 22 })).toBeCloseTo(111_195, -2);
     // Athens to Thessaloniki is about 303 km.
     expect(distanceMetres({ lat: 37.9838, lon: 23.7275 }, a)).toBeCloseTo(303_000, -4);
+  });
+});
+
+describe('regular hours in Ilia, by duty group', () => {
+  const data: CityData = {
+    ...city([
+      pharmacy('p', { groupId: 'pyrgos', locality: 'Πύργος' }),
+      pharmacy('o', { groupId: 'ancient-olympia', locality: 'Αρχαία Ολυμπία' }),
+    ]),
+    city: ILIA,
+  };
+  const cases: [string, string, string, string, string][] = [
+    [
+      'Pyrgos is open through the afternoon',
+      'p',
+      '2026-11-03',
+      '15:59',
+      'open until 2026-11-03 16:00',
+    ],
+    ['Pyrgos closes at 16:00', 'p', '2026-11-03', '16:00', 'closed, next 2026-11-04 08:00'],
+    [
+      'Ancient Olympia is closed at 15:00',
+      'o',
+      '2026-11-03',
+      '15:00',
+      'closed, next 2026-11-03 18:00',
+    ],
+    ['Ancient Olympia opens at 18:00', 'o', '2026-11-03', '18:00', 'open until 2026-11-03 21:00'],
+  ];
+  it.each(cases)('%s', (_name, id, date, time, expected) => {
+    expect(describeStatus(status(data, id, at(date, time)))).toBe(expected);
+  });
+
+  it('never opens a pharmacy of no known group by the regular hours', () => {
+    const lost: CityData = { ...data, pharmacies: [pharmacy('x', { groupId: null })] };
+    expect(describeStatus(status(lost, 'x', at('2026-11-03', '10:00')))).toBe('closed, next null');
   });
 });
 

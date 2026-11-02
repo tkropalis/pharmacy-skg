@@ -1,0 +1,771 @@
+{
+  "sweptAt": "2025-12-16",
+  "readThrough": "2026-12-31",
+  "entries": [
+    {
+      "groupId": "varda",
+      "date": "2026-01-01",
+      "locality": "Βάρδα",
+      "name": "ΛΕΥΚΑΔΙΤΗ Σ. ΓΕΩΡΓΙΑ",
+      "address": "",
+      "phone": "",
+      "location": null
+    },
+    {
+      "groupId": "varda",
+      "date": "2026-01-03",
+      "locality": "Βάρδα",
+      "name": "ΜΑΡΚΟΥ ΑΝΝΑ - ΘΕΩΝΗ",
+      "address": "",
+      "phone": "",
+      "location": null
+    },
+    {
+      "groupId": "varda",
+      "date": "2026-01-02",
+      "locality": "Βάρδα",
+      "name": "ΜΑΡΚΟΥ ΧΡΙΣΤΙΑΝΑ",
+      "address": "",
+      "phone": "",
+      "location": null
+    },
+    {
+      "groupId": "varda",
+      "date": "2026-01-04",
+      "locality": "Βάρδα",
+      "name": "ΣΠΥΡΟΠΟΥΛΟΣ ΙΩΑΝΝΗΣ",
+      "address": "",
+      "phone": "",
+      "location": null
+    },
+    {
+      "groupId": "varda",
+      "date": "2026-01-05",
+      "locality": "Βάρδα",
+      "name": "ΧΟΥΝΤΡΑ ΔΗΜΗΤΡΑ",
+      "address": "",
+      "phone": "",
+      "location": null
+    },
+    {
+      "groupId": "varda",
+      "date": "2026-01-06",
+      "locality": "Βάρδα",
+      "name": "ΧΟΥΝΤΡΑ ΘΕΟΔΩΡΑ",
+      "address": "",
+      "phone": "",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-06",
+      "locality": "Πύργος",
+      "name": "ΠΑΝΑΓΟΠΟΥΛΟΥ ΚΛΕΟΝΙΚΗ",
+      "address": "ΚΟΛΟΚΟΤΡΩΝΗ 13",
+      "phone": "2621021966",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-14",
+      "locality": "Πύργος",
+      "name": "ΣΓΑΝΤΖΗ ΑΝΤΩΝΙΑ (ΠΡΩΗΝ ΒΑΣΙΛΟΠΟΥΛΟΣ)",
+      "address": "ΠΕΤΡΟΠΟΥΛΟΥ 10",
+      "phone": "2621022212",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-08",
+      "locality": "Πύργος",
+      "name": "ΝΙΚΟΛΟΠΟΥΛΟΥ ΝΙΚΗ",
+      "address": "ΕΡΜΟΥ 63",
+      "phone": "2621022532",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-05",
+      "locality": "Πύργος",
+      "name": "ΑΔΑΟΥ ΔΙΟΝΥΣΙΑ",
+      "address": "ΠΑΤΡΩΝ 8",
+      "phone": "2621022616",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-23",
+      "locality": "Πύργος",
+      "name": "ΝΙΚΟΛΟΠΟΥΛΟΥ ΤΡΙΑΝΤΑΦΥΛΛΙΑ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 1",
+      "phone": "2621022630",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-04",
+      "locality": "Πύργος",
+      "name": "ΠΑΝΑΓΟΠΟΥΛΟΥ",
+      "address": "ΕΡΥΘΡΟΥ ΣΤΑΥΡΟΥ 5 ΘΕΟΔΩΡΑ",
+      "phone": "2621022875",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-08",
+      "locality": "Πύργος",
+      "name": "ΜΙΧΑΛΟΠΟΥΛΟΥ ΕΥΓΕΝΙΑ",
+      "address": "ΘΕΜΙΣΤΟΚΛΕΟΥΣ 10",
+      "phone": "2621025412",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-09",
+      "locality": "Πύργος",
+      "name": "ΚΑΚΟΓΙΑΝΝΟΥ ΜΑΡΙΑ ΙΩΑΝΝΑ",
+      "address": "ΓΕΡΜΑΝΟΥ 16",
+      "phone": "2621025865",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-13",
+      "locality": "Πύργος",
+      "name": "ΜΠΑΧΟΥΡΟΥ ΘΕΟΔΩΡΑ",
+      "address": "ΜΑΝΩΛΟΠΟΥΛΟΥ 5",
+      "phone": "2621026000",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-14",
+      "locality": "Πύργος",
+      "name": "ΣΓΑΝΤΖΗ ΑΝΤΩΝΙΑ",
+      "address": "ΜΑΝΩΛΟΠΟΥΛΟΥ 42",
+      "phone": "2621026165",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-02",
+      "locality": "Πύργος",
+      "name": "ΔΑΝΙΚΑ ΕΙΡΗΝΗ",
+      "address": "28ης ΟΚΤΩΒΡΙΟΥ 11",
+      "phone": "2621026295",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-03",
+      "locality": "Πύργος",
+      "name": "ΔΗΜΗΤΡΗΣ ΚΟΡΚΟΛΗΣ -ΕΛΕΝΗ ΚΟΡΚΟΛΗ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΜΑΝΩΛΟΠΟΥΛΟΥ 1",
+      "phone": "2621026800",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-07",
+      "locality": "Πύργος",
+      "name": "ΣΑΜΠΑΛΟΣ ΔΗΜΗΤΡΙΟΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "ΕΡΜΟΥ 122 -",
+      "phone": "2621026900",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-09",
+      "locality": "Πύργος",
+      "name": "ΜΙΧΑΗΛ ΓΕΩΡΓΙΑ",
+      "address": "ΠΑΤΡΩΝ & ΜΑΝΩΛΟΠΟΥΛΟΥ 2",
+      "phone": "2621026901",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-02",
+      "locality": "Πύργος",
+      "name": "ΔΑΝΙΚΑΣ ΧΡΗΣΤΟΣ",
+      "address": "ΠΑΤΡΩΝ 18",
+      "phone": "2621027179",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-12",
+      "locality": "Πύργος",
+      "name": "ΛΑΤΤΑ Π. ΝΙΚΟΛΕΤΤΑ",
+      "address": "ΜΗΤΡΟΠΟΛΙΤΗ ΑΝΤΩΝΙΟΥ (ΠΑΤΡΩΝ 42)",
+      "phone": "2621027706",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-16",
+      "locality": "Πύργος",
+      "name": "ΚΑΡΑΜΑΝΗΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΚΟΚΚΙΝΟΥ 6",
+      "phone": "2621028166",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-13",
+      "locality": "Πύργος",
+      "name": "ΜΙΧΑΛΟΠΟΥΛΟΥ ΑΛΕΞΑΝΔΡΑ",
+      "address": "ΜΑΝΩΛΟΠΟΥΛΟΥ 20",
+      "phone": "2621028282",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-01",
+      "locality": "Πύργος",
+      "name": "Σ.Φ. ΜΑΡΙΑΣ ΤΕΡΖΗ & ΒΑΣΙΛΙΚΗΣ ΖΩΧΙΟΥ",
+      "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 6",
+      "phone": "2621028945",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-07",
+      "locality": "Πύργος",
+      "name": "ΤΣΙΑΤΑ ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "28ης ΟΚΤΩΒΡΙΟΥ & ΧΡΥΣΑΝΘΑΚΟΠΟΥ",
+      "phone": "2621029279",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-15",
+      "locality": "Πύργος",
+      "name": "ΛΙΑΡΟΜΜΑΤΗ ΑΠΟΣΤΟΛΙΑ",
+      "address": "ΑΙΟΛΟΥ 11",
+      "phone": "2621029656",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-04",
+      "locality": "Πύργος",
+      "name": "ΚΟΖΥΡΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΜΑΝΩΛΟΠΟΥΛΟΥ 43",
+      "phone": "2621030122",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-06",
+      "locality": "Πύργος",
+      "name": "ΣΠΥΡΟΠΟΥΛΟΣ ΦΩΤΙΟΣ",
+      "address": "ΚΟΚΚΙΝΟΥ 25",
+      "phone": "2621030408",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-10",
+      "locality": "Πύργος",
+      "name": "ΚΟΖΥΡΗΣ ΛΥΜΠΕΡΗΣ",
+      "address": "ΟΛΥΜΠΙΩΝ 1",
+      "phone": "2621030630",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-05",
+      "locality": "Πύργος",
+      "name": "Σ.Φ. ΑΥΓΕΡΙΝΟΠΟΥΛΟΥ -ΔΙΟΝΥΣΟΠΟΥΛΟΥ",
+      "address": "28ης ΟΚΤΩΒΡΙΟΥ 21",
+      "phone": "2621033181",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-01",
+      "locality": "Πύργος",
+      "name": "ΚΑΡΑΛΗ ΑΓΓΕΛΙΚΗ (ΠΡΩΗΝ ΚΑΠΕΝΗΣ ΝΙΚΟΛΑΟΣ)",
+      "address": "ΕΡΜΟΥ 78",
+      "phone": "2621034285",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-03",
+      "locality": "Πύργος",
+      "name": "ΒΑΡΔΑΜΙΔΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΕΡΜΟΥ 2",
+      "phone": "2621034655",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-15",
+      "locality": "Πύργος",
+      "name": "ΠΑΝΑΓΙΩΤΟΠΟΥΛΟΥ ΣΠΥΡΟΥΛΑ",
+      "address": "ΚΑΤΑΚΟΛΟΥ 53",
+      "phone": "2621036258",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-20",
+      "locality": "Πύργος",
+      "name": "ΣΑΡΓΙΑΝΟΥ ΑΝΝΑ",
+      "address": "ΜΑΝΩΛΟΠΟΥΛΟΥ 55",
+      "phone": "2621037408",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-20",
+      "locality": "Πύργος",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΕΥΓΕΝΙΑ",
+      "address": "ΑΓ. ΓΕΩΡΓΙΟΥ 4",
+      "phone": "2621039938",
+      "location": null
+    },
+    {
+      "groupId": "pyrgos",
+      "date": "2026-01-12",
+      "locality": "Πύργος",
+      "name": "ΣΤΥΛΙΑΝΙΔΗ ΕΛΙΣΣΑΒΕΤ",
+      "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 46Α",
+      "phone": "2621061535",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-08",
+      "locality": "Αμαλιάδα",
+      "name": "ΧΡΙΣΤΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΕΥΑΓΓΕΛΙΣΤΡΙΑΣ 125Α",
+      "phone": "2622020095",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-15",
+      "locality": "Αμαλιάδα",
+      "name": "ΣΤΑΥΛΙΩΤΗ ΧΑΡΙΚΛΕΙΑ",
+      "address": "ΚΑΛΑΒΡΥΤΩΝ 36",
+      "phone": "2622021141",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-02",
+      "locality": "Αμαλιάδα",
+      "name": "ΧΡΙΣΤΟΦΙΔΗ ΑΓΓΕΛΙΚΗ",
+      "address": "ΞΥΔΙΑ 2",
+      "phone": "2622021543",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-05",
+      "locality": "Αμαλιάδα",
+      "name": "ΚΑΡΡΑΣ ΑΝΤΩΝΙΟΣ",
+      "address": "ΚΑΛΑΒΡΥΤΩΝ 11",
+      "phone": "2622022070",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-01",
+      "locality": "Αμαλιάδα",
+      "name": "ΓΙΑΝΝΑΚΟΠΟΥΛΟΣ ΠΕΤΡΟΣ",
+      "address": "ΚΑΛΑΒΡΥΤΩΝ 19",
+      "phone": "2622022244",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-08",
+      "locality": "Αμαλιάδα",
+      "name": "ΜΠΟΥΣΔΟΥΚΟΥ ΕΛΕΝΑ",
+      "address": "ΑΡΧΑΙΑΣ ΗΛΙΔΟΣ 7",
+      "phone": "2622022260",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-07",
+      "locality": "Αμαλιάδα",
+      "name": "ΤΖΟΥΛΕΚΗ ΓΕΩΡΓΙΑ",
+      "address": "ΕΥΑΓΓΕΛΙΣΤΡΙΑΣ 127",
+      "phone": "2622022945",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-07",
+      "locality": "Αμαλιάδα",
+      "name": "ΞΕΡΑ ΜΕΛΙΤΣΟΠΟΥΛΟΥ -ΠΑΡΑΣΚΕΥΗ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 8",
+      "phone": "2622023046",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-10",
+      "locality": "Αμαλιάδα",
+      "name": "ΛΑΒΔΑ ΙΩΑΝΝΑ",
+      "address": "ΠΥΡΡΩΝΟΣ 2",
+      "phone": "2622023061",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-01",
+      "locality": "Αμαλιάδα",
+      "name": "ΤΡΑΓΟΥΣΤΗΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΦΙΛ. ΕΤΑΙΡΕΙΑΣ 6",
+      "phone": "2622023912",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-15",
+      "locality": "Αμαλιάδα",
+      "name": "Σ.Φ. ΚΩΝΣΤΑΝΤΙΝΟΥ ΜΑΝΙΑΤΗ ΠΑΝΑΓΙΩΤΑ ΜΑΝΙΑΤΗ ΟΕ",
+      "address": "ΚΑΛΑΒΡΥΤΩΝ 19",
+      "phone": "2622024077",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-05",
+      "locality": "Αμαλιάδα",
+      "name": "ΤΣΑΓΑΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 14",
+      "phone": "2622024880",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-10",
+      "locality": "Αμαλιάδα",
+      "name": "ΠΑΠΑΓΕΩΡΓΙΟΥ ΤΡΙΣΕΥΓΕΝΗ",
+      "address": "ΕΡΜΟΥ 13",
+      "phone": "2622027216",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-09",
+      "locality": "Αμαλιάδα",
+      "name": "ΚΟΡΚΟΛΗ ΕΛΕΝΗ",
+      "address": "ΔΕΛΗΓΙΑΝΝΗ 23",
+      "phone": "2622027465",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-02",
+      "locality": "Αμαλιάδα",
+      "name": "Σ.Φ. ΒΛΑΓΚΟΥΛΗΣ ΠΕΤΡΟΣ ΒΛΑΓΚΟΥΛΗ ΙΩΑΝΝΑ & ΣΙΑ Ο.Ε.",
+      "address": "ΑΡΧΑΙΑΣ ΗΛΙΔΟΣ 15",
+      "phone": "2622027979",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-03",
+      "locality": "Αμαλιάδα",
+      "name": "ΓΕΩΡΓΟΥΛΙΑΣ ΑΝΑΣΤΑΣΙΟΣ",
+      "address": "ΠΛ. ΕΛΕΥΘΕΡΙΑΣ",
+      "phone": "2622028598",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-04",
+      "locality": "Αμαλιάδα",
+      "name": "Σ.Φ. ΑΙΚΑΤΕΡΙΝΗΣ ΑΝΔ ΠΑΝΑΓΟΠΟΥΛΟΥ ΝΙΚΗΣ ΙΩΑΝ ΜΠΑΦΗ ΟΕ",
+      "address": "ΕΡΜΟΥ 49",
+      "phone": "2622028920",
+      "location": null
+    },
+    {
+      "groupId": "amaliada",
+      "date": "2026-01-03",
+      "locality": "Αμαλιάδα",
+      "name": "ΛΙΩΣΗ ΑΛΙΚΗ",
+      "address": "ΚΟΛΟΚΟΤΡΩΝΗ 10",
+      "phone": "2622029394",
+      "location": null
+    },
+    {
+      "groupId": "lechaina",
+      "date": "2026-01-01",
+      "locality": "Λεχαινά",
+      "name": "ΛΙΒΑΔΑΣ ΣΠΥΡΙΔΩΝ - ΣΑΡΑΝΤΗΣ",
+      "address": "ΠΡΑΝΤΟΥΝΑ 10",
+      "phone": "2623022204",
+      "location": null
+    },
+    {
+      "groupId": "lechaina",
+      "date": "2026-01-03",
+      "locality": "Λεχαινά",
+      "name": "ΛΕΥΚΑΔΙΤΗ Δ. ΓΕΩΡΓΙΑ",
+      "address": "ΠΑΠΑΦΛΕΣΣΑ 6",
+      "phone": "2623022686",
+      "location": null
+    },
+    {
+      "groupId": "lechaina",
+      "date": "2026-01-03",
+      "locality": "Λεχαινά",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΝΕΟΦΥΤΟΣ",
+      "address": "ΨΥΧΟΓΙΟΥ 19",
+      "phone": "2623022742",
+      "location": null
+    },
+    {
+      "groupId": "gastouni",
+      "date": "2026-01-07",
+      "locality": "Γαστούνη",
+      "name": "ΓΙΑΤΡΑ ΝΙΚΗ",
+      "address": "ΓΕΩΡ. ΣΙΣΙΝΗ 71",
+      "phone": "2623032223",
+      "location": null
+    },
+    {
+      "groupId": "gastouni",
+      "date": "2026-01-09",
+      "locality": "Γαστούνη",
+      "name": "ΤΣΟΥΚΑΛΑ ΑΦΡΟΔΙΤΗ",
+      "address": "ΓΕΩΡ. ΣΙΣΙΝΗ 145",
+      "phone": "2623032584",
+      "location": null
+    },
+    {
+      "groupId": "gastouni",
+      "date": "2026-01-04",
+      "locality": "Γαστούνη",
+      "name": "ΠΑΡΙΣΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "Γ.ΣΙΣΙΝΗ 134",
+      "phone": "2623033003",
+      "location": null
+    },
+    {
+      "groupId": "gastouni",
+      "date": "2026-02-06",
+      "locality": "Γαστούνη",
+      "name": "ΚΑΜΠΙΤΣΗ ΡΟΥΣΣΑ",
+      "address": "ΑΡΧΑΙΑΣ ΗΛΙΔΟΣ 7",
+      "phone": "2623034200",
+      "location": null
+    },
+    {
+      "groupId": "vartholomio",
+      "date": "2026-01-05",
+      "locality": "Βαρθολομιό",
+      "name": "Σ.Φ. ΜΑΚΡΥΔΗΜΑ ΧΑΡΑΛΑΜΠΙΑ ΚΑΙ ΣΔΟΥΓΑΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 28",
+      "phone": "2623041241",
+      "location": null
+    },
+    {
+      "groupId": "vartholomio",
+      "date": "2026-01-02",
+      "locality": "Βαρθολομιό",
+      "name": "ΚΟΚΚΩΝΗ ΖΩΗ",
+      "address": "ΒΟΥΡΤΣΗ ΚΑΙ ΜΕΛΙΝΑΣ ΜΕΡΚΟΥΡΗ",
+      "phone": "2623041495",
+      "location": null
+    },
+    {
+      "groupId": "vartholomio",
+      "date": "2026-01-01",
+      "locality": "Βαρθολομιό",
+      "name": "ΠΑΡΙΣΗ ΙΩΑΝΝΑ",
+      "address": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 13",
+      "phone": "2623041521",
+      "location": null
+    },
+    {
+      "groupId": "vartholomio",
+      "date": "2026-01-07",
+      "locality": "Βαρθολομιό",
+      "name": "ΜΑΝΙΑΚΟΥΡΑ ΙΦΙΓΕΝΕΙΑ",
+      "address": "Μ. ΜΕΡΚΟΥΡΗ 11",
+      "phone": "2623043890",
+      "location": null
+    },
+    {
+      "groupId": "andravida",
+      "date": "2026-01-07",
+      "locality": "Ανδραβίδα",
+      "name": "ΠΑΠΑΝΑΣΤΑΣΟΠΟΥΛΟΥ ΜΑΡΙΑ",
+      "address": "ΝΙΚ. ΓΚΟΥΤΖΟΥΡΗ 66",
+      "phone": "2623054202",
+      "location": null
+    },
+    {
+      "groupId": "andravida",
+      "date": "2026-01-02",
+      "locality": "Ανδραβίδα",
+      "name": "ΧΑΝΤΖΗ ΚΩΝ/ΝΑ",
+      "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ, ΑΓΙΟΥ ΚΩΝΣΤΑΝΤΙΝΟΥ",
+      "phone": "2623054444",
+      "location": null
+    },
+    {
+      "groupId": "andravida",
+      "date": "2026-01-05",
+      "locality": "Ανδραβίδα",
+      "name": "ΚΟΡΟΜΗΛΑΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΠΑΝΑΓΙΟΥ ΠΑΥΛΟΥ 47",
+      "phone": "2623054714",
+      "location": null
+    },
+    {
+      "groupId": "andravida",
+      "date": "2026-01-01",
+      "locality": "Ανδραβίδα",
+      "name": "ΒΛΑΓΚΟΥΛΗΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΝΙΚ. ΓΚΟΥΤΖΟΥΡΗ 60",
+      "phone": "2623055080",
+      "location": null
+    },
+    {
+      "groupId": "tragano",
+      "date": "2026-01-01",
+      "locality": "Τραγανό",
+      "name": "ΜΠΑΚΕΛΑΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΑΡΧΑΙΑΣ ΟΛΥΜΠΙΑΣ 23",
+      "phone": "2623061231",
+      "location": null
+    },
+    {
+      "groupId": "tragano",
+      "date": "2026-01-12",
+      "locality": "Τραγανό",
+      "name": "ΜΠΑΚΟΠΟΥΛΟΥ ΑΡΤΕΜΙΣ",
+      "address": "ΑΡΧΑΙΑΣ ΟΛΥΜΠΙΑΣ 54",
+      "phone": "2623061303",
+      "location": null
+    },
+    {
+      "groupId": "tragano",
+      "date": "2026-01-05",
+      "locality": "Τραγανό",
+      "name": "ΑΡΛΕΤΗ ΕΥΦΡΟΣΥΝΗ",
+      "address": "ΑΡΧΑΙΑΣ ΟΛΥΜΠΙΑΣ 75",
+      "phone": "2623061525",
+      "location": null
+    },
+    {
+      "groupId": "gastouni",
+      "date": "2026-01-01",
+      "locality": "Γαστούνη",
+      "name": "ΜΑΝΙΑΝΗ ΛΑΜΠΡΙΝΗ",
+      "address": "ΚΟΙΜΗΣΕΩΣ ΘΕΟΤΟΚΟΥ 16",
+      "phone": "2623400058",
+      "location": null
+    },
+    {
+      "groupId": "ancient-olympia",
+      "date": "2026-01-05",
+      "locality": "Αρχαία Ολυμπία",
+      "name": "ΠΑΠΑΒΑΣΙΛΕΙΟΥ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΚΟΝΔΥΛΗ ΠΡΑΞΙΤΕΛΗ 60",
+      "phone": "2624022000",
+      "location": null
+    },
+    {
+      "groupId": "ancient-olympia",
+      "date": "2026-01-01",
+      "locality": "Αρχαία Ολυμπία",
+      "name": "Σ.Φ. ΜΙΤΕΒΑ ΙΒΑΝΚΑ ΚΑΙ ΠΟΛΙΤΗΣ ΓΙΑΝΝΗΣ Ο.Ε.",
+      "address": "ΤΣΟΥΡΕΚΑ 2",
+      "phone": "2624023306",
+      "location": null
+    },
+    {
+      "groupId": "krestena",
+      "date": "2026-01-09",
+      "locality": "Κρέστενα",
+      "name": "ΜΑΡΑΓΚΟΥ ΕΛΕΝΗ",
+      "address": "ΞΕΝΟΦΩΝΤΟΣ 119",
+      "phone": "2625022133",
+      "location": null
+    },
+    {
+      "groupId": "krestena",
+      "date": "2026-01-01",
+      "locality": "Κρέστενα",
+      "name": "ΠΑΠΑΓΡΗΓΟΡΙΟΥ ΓΕΩΡΓΙΟΣ",
+      "address": "ΞΕΝΟΦΩΝΤΟΣ 69",
+      "phone": "2625022765",
+      "location": null
+    },
+    {
+      "groupId": "krestena",
+      "date": "2026-01-05",
+      "locality": "Κρέστενα",
+      "name": "ΣΠΥΡΙΔΗΣ ΑΡΓΥΡΟΣ",
+      "address": "ΚΡΕΤΣΕΝΑ",
+      "phone": "2625022806",
+      "location": null
+    },
+    {
+      "groupId": "krestena",
+      "date": "2026-01-07",
+      "locality": "Κρέστενα",
+      "name": "ΧΕΙΜΩΝΑΣ ΔΙΟΝΥΣΙΟΣ",
+      "address": "ΠΕΡΙΦΕΡΕΙΑΚΗ ΟΔΟΣ",
+      "phone": "2625024005",
+      "location": null
+    },
+    {
+      "groupId": "krestena",
+      "date": "2026-01-02",
+      "locality": "Κρέστενα",
+      "name": "ΣΚΟΥΦΗΣ ΧΡΗΣΤΟΣ",
+      "address": "ΞΕΝΟΦΩΝΤΟΣ 7",
+      "phone": "2625024131",
+      "location": null
+    },
+    {
+      "groupId": "zacharo",
+      "date": "2026-01-01",
+      "locality": "Ζαχάρω",
+      "name": "ΤΖΑΜΑΛΗΣ ΧΡΗΣΤΟΣ",
+      "address": "ΑΡΗΝΗΣ 5",
+      "phone": "2625031209",
+      "location": null
+    },
+    {
+      "groupId": "zacharo",
+      "date": "2026-01-05",
+      "locality": "Ζαχάρω",
+      "name": "ΤΕΡΖΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΕΡΜΟΥ 9",
+      "phone": "2625032300",
+      "location": null
+    },
+    {
+      "groupId": "zacharo",
+      "date": "2026-01-07",
+      "locality": "Ζαχάρω",
+      "name": "Σ.Φ. ΡΗΓΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ -ΡΗΓΟΠΟΥΛΟΣ",
+      "address": "ΕΡΜΟΥ",
+      "phone": "2625033175",
+      "location": null
+    },
+    {
+      "groupId": "zacharo",
+      "date": "2026-01-02",
+      "locality": "Ζαχάρω",
+      "name": "ΚΑΡΑΧΑΛΙΟΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΕΘΝ. ΟΔΟΣ ΠΥΡΓΟΥ -ΚΥΠΑΡΙΣΣΙΑΣ",
+      "phone": "2625036166",
+      "location": null
+    }
+  ]
+}

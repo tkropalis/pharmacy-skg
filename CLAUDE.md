@@ -56,6 +56,7 @@ The owner reviews the app on an iPhone; every change is judged on a phone first.
   - `www.thess.guide` (ΦΣΘ PDFs, decision D20), `www.pkm.gov.gr`, `nominatim.openstreetmap.org`
   - `*.efhmeries.gr` (ITeQ's duty sites, one per area, all on one server: the pipeline asks one page a second)
   - `fsa-efimeries.gr` (Attica's duty site, also ITeQ's: about eight requests a run, every offered date once a week, one a second) and `fsa.gr` (its extended-hours tables), decision D27
+  - `diavgeia.gov.gr` (Ilia's duty table and its amendments: about nine requests a run, one a second, through `luminapi/opendata` only; the PDF only when the decision is new), decision D29
   - `www.efimeria.gr` (Achaia's duty site, one request a run) and `farmakeu.static.otenet.gr` (Corfu's, two at most), decision D28. The owner approved efimeria.gr on 2 Nov 2026 with our own User-Agent only: never one that looks like an AI crawler's (its robots.txt names them), and stop if they object. Corfu's server leaves out its intermediate certificate; `sources/lets-encrypt.ts` supplies it. `diavgeia.gov.gr` (the Region's extended-hours tables for Corfu, two requests a run, through the open-data API only: its robots.txt disallows `/doc/` and `luminapi/api/`).
   - `www.moh.gov.gr` (price bulletins) and `www.eof.gr` (shortage list), decision D24
   - `tiles.openfreemap.org`; for Overture refreshes, `overturemaps-us-west-2.s3.amazonaws.com`

@@ -214,7 +214,7 @@ export function pharmacyPageProps(
   }
 
   const regularHours = hasRegularHours(model.cityId, model.today)
-    ? regularHoursView(model.cityId, model.today, seo)
+    ? regularHoursView(model.cityId, model.today, seo, pharmacy.groupId)
     : null;
   const area = model.areaByLocality.get(pharmacy.locality);
   const url = new URL(path(locale), siteOrigin).href;

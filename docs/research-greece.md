@@ -261,6 +261,27 @@ Searched on Diavgeia on 2 Nov 2026 (the Regions' organisations 5007 and 5010, th
   - The "period 2026-2027" has no dates. The owner (2 Nov 2026): read literally, 1 Jan 2026 to 31 Dec 2027, replaced if a newer decision comes. The three decisions overlap (issued Dec 2023, Jan 2025 and Nov 2025), so a new one for 2027-2028 is likely this winter.
 - **What the app uses:** the hours of the places where the area's pharmacies are (Karditsa town; Volos and Nea Ionia), because `regularRanges` has one table per area. Places in the decision that differ and have no pharmacy in the app's data (Mouzaki, Agria) are listed as open questions. The data only knows pharmacies that appeared on a duty list (Karditsa 44, Magnesia 130 of about 164 in Volos).
 
+### Ilia
+
+Researched and built on 2 Nov 2026 (decision D29) [verified]. Both decisions are the Region of Western Greece's (Diavgeia organisation 5004), from the public health directorate of the Ilia regional unit (unit 78414), issued on 16 Dec 2025 and signed by the deputy governor of Ilia, with the pharmacists' association's consent (its letters 102 and 103 of 16-12-2025).
+
+- **Duty table, ΡΣΦΞ7Λ6-2Κ3:** "Διημερεύσεις – Διανυκτερεύσεις φαρμακείων της Περιφερειακής Ενότητας Ηλείας έτους 2026", a 5 MB PDF of 212 pages with a text layer.
+  - Pages 1 and 2 are the decision, pages 3 to 6 the regular hours, from page 7 a table for each of eleven towns: Amaliada, Andravida, Ancient Olympia, Varda, Vartholomio, Gastouni, Zacharo, Krestena, Lechaina, Pyrgos and Tragano. The decision names the same eleven.
+  - 4,845 rows, a duty each, every town on every day of 2026 (Amaliada and Pyrgos have a night and a day pharmacy, Lechaina a second day pharmacy on 50 days, the others one pharmacy a day). 79 phones and, for Varda, six pharmacists named.
+  - Row: date and weekday, hours ("08:00-17:00", "08:00-14:30 & 17:30-08:00", "08:00-08:00*"), name, address, phone, "Διανυκτερεύει" Ναι or Όχι. The small towns have one pharmacy on duty round the clock, with a "*" the table never explains. Varda's table is another: date, weekday, a "ΝΑΙ" for a holiday, the pharmacist, "ΔΙΑΝΥΚΤΕΡΕΥΣΗ", the area; no phone, no address, no hours.
+  - A web page printed to PDF: cells wrap onto four lines, the columns move from page to page, a row cut at the end of a page has its hours and flag at the foot of the page and the rest at the top of the next (or the other way round), a row can be printed twice or as one line of text, and the table's header falls in the middle of a row. `ilia/table.ts` reads these; its tests use real pages (`fixtures/ilia/`).
+  - The year's table comes in December (the 2025 table, 6Ρ5Φ7Λ6-Ε70, on 24 Dec 2024), so the 2027 table is expected within weeks.
+- **Regular hours, ΨΛΖΩ7Λ6-2Υ0:** "Υποχρεωτικό ωράριο λειτουργίας Φαρμακείων Φαρμακευτικού Συλλόγου Ηλείας έτους 2026", 6 pages, "per community, from 01-01-2026 to 31-12-2026", 40 hours a week each, a straight 08:00–16:00 in most.
+  - Pyrgos, Varda, Gastouni, Zacharo, Tragano: Mon to Fri 08:00–16:00. Amaliada the same, 07:30–15:30 from 1 Jul to 31 Aug. Krestena 07:30–15:30. Ancient Olympia 08:30–13:30 and 18:00–21:00.
+  - Andravida and Lechaina (winter): Mon, Wed 08:00–14:30; Tue, Thu, Fri 08:00–14:00 and 17:30–20:30. Vartholomio: Mon, Tue, Thu 08:00–14:00 and 17:30–20:30 (18:00–21:00 in summer), Wed, Fri 08:00–14:30, "afternoon closed".
+  - Not used: Lechaina's summer table, whose Tuesday, Thursday and Friday read 8:00–14:30 and 18:00–21:00 (9.5 hours) under "9,00". It covers July and August only, which are over.
+  - The decision ends on 31 Dec 2026. Nothing on Diavgeia yet for 2027.
+- **Decisions that amend the table:** the unit posts "Προσωρινή απαλλαγή από εφημερία – διανυκτέρευση" (a pharmacist excused for months) and "άδεια προσωρινού κλεισίματος Φαρμακείου" (a pharmacy closed for days). Each is a two-page PDF whose decision is an image; the search finds them by subject.
+  - Exemptions read on 2 Nov 2026: ΡΛΩ97Λ6-Ω7Κ and 9ΦΝΖ7Λ6-9ΡΨ (Kampitsi, Gastouni, to 30 Nov 2025 and 30 Jan 2026); Ψ7857Λ6-3ΞΞ (15 Dec 2025: Vlachou in Varda, Papakonstantinou, Panagopoulou until 30 Jun and Maniatis in Amaliada, Karnachoriti in Gastouni, the year); 9ΤΝΗ7Λ6-710 (6 Feb 2026: Liosi, Kolokotroni 10, Amaliada, to 31 Dec; Bafi, Ermou 49, to 31 Jul); ΨΦΦΡ7Λ6-ΔΥΛ (12 Jun 2026: Kypriotis, Chalkiopoulou 3, Gastouni, to "31-11-2026"); ΡΘ1Ξ7Λ6-ΟΞΑ (1 Jul 2026: Tsiklira, Ermou 9, and Panagopoulou, Ermou 49, Amaliada, to 31 Dec).
+  - The table of 16 Dec 2025 already leaves out the pharmacists of the decision of 15 Dec. Only Liosi's is a pharmacy that has the table's duties (7 Nov, 19 Nov, 27 Nov and others to 31 Dec), and the app leaves them out. Ermou 49 is a partnership (Panagopoulou and Bafi): both are excused from 6 Feb to 31 Jul, only Panagopoulou after, so the pharmacy serves again from 1 Aug. Maniatis ("Καλαβρύτων 18") is not applied: the table has a partnership "Σ.Φ. ΚΩΝΣΤΑΝΤΙΝΟΥ ΜΑΝΙΑΤΗ ΠΑΝΑΓΙΩΤΑ ΜΑΝΙΑΤΗ ΟΕ" at Καλαβρύτων 19, which may be the same pharmacy or not.
+  - Closures read: Karali, Ermou 78, Pyrgos, 9 to 12 Oct 2026 (ΨΣ8Η7Λ6-Η6Ζ); Giatra, Sisini 71, Gastouni, 18 to 22 May (Ρ03Η7Λ6-ΩΧΥ). Days long, so the run lists only a closure posted in the last 14 days.
+- **Places (first run, 2 Nov 2026):** the table has no coordinates. 38 Overture pharmacies lie in the area's box and 31 of the 85 are placed by them (by phone, or by name and street). Nominatim finds only the town for the other 52, 31 of them in Pyrgos, because the table prints streets in capitals without accents ("ΜΑΝΩΛΟΠΟΥΛΟΥ 43"), which it does not match to OpenStreetMap's names; those pharmacies sit at their town's centre. Nominatim also answered 429 for an hour, so two Tragano pharmacies wait for the next run.
+
 ### Achaia and Corfu
 
 Researched and built on 2 Nov 2026 (decision D28) [verified].
@@ -411,7 +432,7 @@ On a phone, the 11,000 case means long main-thread tasks every minute.
   - Attica holiday on 14 Sep: 96ΒΙ7Λ7-ΧΛΣ.
   - Attica 2026–27 (13 May to 12 May), checked 8 Oct 2026: Central Athens ΨΔ8Π7Λ7-ΚΒΨ, North Athens Ψ1ΑΗ7Λ7-ΙΞ0 (amended 9ΛΤ07Λ7-149), West Athens Ψ3Δ17Λ7-8Δ0 (amended ΡΞΜΙ7Λ7-ΜΣΗ), West Attica ΡΩΡ47Λ7-ΠΞΡ (amended 96ΒΙ7Λ7-ΧΛΣ), all the same hours from the association's letter 1609/17.04.2026. South Athens and East Attica: nothing on Diavgeia for 2025 or 2026, searched by subject and by their directorates (78997, 80888). The seasons' dates are in none of them; the association's notice of 29 Oct 2024 (fsa.gr/6469-2) gives winter from 1 Nov.
   - Thessaly 2026: Karditsa ΨΞΡΤ7ΛΡ-0ΤΞ, Magnesia and the Sporades 9ΠΠΦ7ΛΡ-45Ρ; see Thessaly and Crete above.
-  - Annual duty tables: ΡΣΦΞ7Λ6-2Κ3 (Ilia).
+  - Ilia 2026: duty table ΡΣΦΞ7Λ6-2Κ3, regular hours ΨΛΖΩ7Λ6-2Υ0; see Ilia above.
 - **Laws:**
   - https://www.taxheaven.gr/law/4512/2018/arthro/257
   - https://www.taxheaven.gr/law/4613/2019/arthro/26

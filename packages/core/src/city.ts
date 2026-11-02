@@ -84,6 +84,22 @@ export const ATTIKI: City = {
 };
 
 /**
+ * The Ilia regional unit (Pyrgos, Amaliada, Ancient Olympia), whose pharmacists' association has
+ * no duty site: the Region of Western Greece posts the year's duty table and the regular hours as
+ * Diavgeia decisions (decision D26). Each of the table's eleven towns is a duty group.
+ */
+export const ILIA: City = {
+  id: 'ilia',
+  name: { el: 'Ηλεία', en: 'Ilia' },
+  timeZone: GREECE_TIME_ZONE,
+  center: [21.4412, 37.6754], // Pyrgos
+  // Vartholomio and Gastouni to the north-west, Lechaina to the north, Zacharo to the south and
+  // Ancient Olympia and Tragano to the east, with about 10 km.
+  bounds: [21.05, 37.38, 21.8, 38.05],
+  defaultGroupId: 'pyrgos',
+};
+
+/**
  * The area of the Pharmaceutical Association of Achaia: Patras and the places around it that its
  * duty site, efimeria.gr, lists (Dymi, Paralia, Vrachneika, Rio, Messatida, Kalavryta, Neos
  * Erineos). The site shows only today's list (decision D26). The box is where those pharmacies
@@ -161,7 +177,7 @@ export const KILKIS: City = {
 /** The cities the app shows; the first is the default, the rest in Greek alphabetical order. */
 export const CITIES: readonly City[] = [
   THESSALONIKI,
-  ...[LARISA, ATTIKI, ACHAIA, CORFU, CYCLADES, KILKIS, ...ITEQ_AREAS].sort((a, b) =>
+  ...[LARISA, ATTIKI, ILIA, ACHAIA, CORFU, CYCLADES, KILKIS, ...ITEQ_AREAS].sort((a, b) =>
     a.name.el.localeCompare(b.name.el, 'el'),
   ),
 ];
