@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "city": "achaia",
+  "updatedAt": "2026-11-02T17:54:13.778Z",
+  "checkedAt": "2026-11-02T17:54:13.778Z",
+  "duties": {
+    "from": "2026-11-02",
+    "to": "2026-11-02"
+  },
+  "extendedHours": [
+    {
+      "from": "2026-11-02",
+      "to": "2026-11-09",
+      "file": "extended-hours/efimeria.json"
+    }
+  ],
+  "sources": [
+    {
+      "id": "efimeria",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Αχαΐας",
+        "en": "Pharmaceutical Association of Achaia"
+      },
+      "url": "https://www.efimeria.gr/",
+      "note": "Duty lists and longer hours, from efimeria.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

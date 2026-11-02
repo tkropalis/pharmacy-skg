@@ -1,0 +1,572 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2341020865",
+      "name": "ΚΑΡΙΠΙΔΟΥ ΧΡΙΣΤΙΝΑ & ΣΙΑ Ο.Ε.",
+      "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 21",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341020865",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 40.994823,
+        "lon": 22.872297,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "d00cda05-5dea-413e-b8c9-c6ea8050d067"
+      }
+    },
+    {
+      "id": "2341022333",
+      "name": "ΚΑΛΠΟΥΡΤΖΗ ΕΙΡΗΝΗ & ΣΙΑ Ο.Ε.",
+      "address": "21 ΙΟΥΝΙΟΥ 30",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341022333",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 40.993875,
+        "lon": 22.873572,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "86c4e560-5502-4a4f-9bdb-a59640257cab"
+      }
+    },
+    {
+      "id": "2341022995",
+      "name": "Σ.Φ. ΧΑΛΙΤΣΙΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ & ΧΡΗΣΤΟΣ Ο.Ε",
+      "address": "21 ΙΟΥΝΙΟΥ 100",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341022995",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 40.993825,
+        "lon": 22.875206,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "cf421eb1-8032-48f7-845d-1de056a296d2"
+      }
+    },
+    {
+      "id": "2341023242",
+      "name": "Σ.Φ. ΠΑΤΣΑΚΙΔΗΣ ΝΙΚΟΛΑΟΣ - ΠΑΤΣΑΚΙΔΗΣ ΚΩΝΣΤ. Ο.Ε.",
+      "address": "21 ΙΟΥΝΙΟΥ 180",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341023242",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 40.996094,
+        "lon": 22.878292,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "00106814-e995-4fa1-9d7b-e42cfaae5dbc"
+      }
+    },
+    {
+      "id": "2341023601",
+      "name": "ΗΛΙΑΔΗΣ ΠΑΝΑΓΙΩΤΗΣ & ΣΙΑ ΟΕ",
+      "address": "ΥΨΗΛΑΝΤΟΥ 25 (ΠΥΛΗ ΝΟΣΟΚ.)",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341023601",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 40.988996,
+        "lon": 22.867254,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΥΨΗΛΑΝΤΟΥ 25, Κιλκίς"
+      }
+    },
+    {
+      "id": "2341024340",
+      "name": "ΛΙΑΡΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "21 ΙΟΥΝΙΟΥ 122",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341024340",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 40.994575,
+        "lon": 22.87586,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "fe090898-81da-4775-9ca0-259c1dd3cb7d"
+      }
+    },
+    {
+      "id": "2341024400",
+      "name": "Σ.Φ. ΑΓΑΘΟΠΟΥΛΟΣ ΔΗΜΗΤΡΙΟΣ & ΕΙΡ. ΕΛ. Ο.Ε.",
+      "address": "21 ΙΟΥΝΙΟΥ 97",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341024400",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 40.993252,
+        "lon": 22.874128,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "253efbc6-5342-4fc8-87ce-859618361edd"
+      }
+    },
+    {
+      "id": "2341024569",
+      "name": "ΔΡΕΠΑΝΙΔΟΥ ΑΓΑΠΗ",
+      "address": "Γ.ΚΑΠΕΤΑ 15",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341024569",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 40.994995,
+        "lon": 22.881421,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Καπετά 15, Κιλκίς"
+      }
+    },
+    {
+      "id": "2341024837",
+      "name": "Σ.Φ.ΝΙΚΟΠΟΛΙΤΙΔΗΣ ΣΑΒΒΑΣ - ΝΙΚΟΠΟΛΙΤΙΔΟΥ ΤΑΜΑΡΑ ΟΕ",
+      "address": "ΘΕΣΣΑΛΟΝΙΚΗΣ 23",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341024837",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 40.99241,
+        "lon": 22.87579,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "e04e7d05-7be2-46e6-ab35-985d8541147e"
+      }
+    },
+    {
+      "id": "2341028130",
+      "name": "ΙΩΣΗΦΙΔΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "21 ΙΟΥΝΙΟΥ 74",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341028130",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 40.983655,
+        "lon": 22.863948,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "21ης Ιουνίου 74, Κιλκίς"
+      }
+    },
+    {
+      "id": "2341028777",
+      "name": "ΖΙΟΥΤΑ ΓΕΩΡΓΙΑ-ΧΡΙΣΤΙΑΝΑ & ΣΙΑ Ο.Ε.",
+      "address": "21 ΙΟΥΝΙΟΥ 211",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341028777",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 40.993587,
+        "lon": 22.874146,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κιλκίς"
+      }
+    },
+    {
+      "id": "2341028890",
+      "name": "ΧΑΙΝΕΛΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΣΟΛΩΝΟΣ 7(ΟΠΙΣΘΕΝ ΚΤΕΛ)",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341028890",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 40.993425,
+        "lon": 22.873421,
+        "source": "nominatim",
+        "precision": "exact",
+        "ref": "ΣΟΛΩΝΟΣ 7, Κιλκίς"
+      }
+    },
+    {
+      "id": "2341029529",
+      "name": "ΣΤΡΑΤΙΝΑΚΗ ΣΟΦΙΑ",
+      "address": "21 ΙΟΥΝΙΟΥ 87",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341029529",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 40.993587,
+        "lon": 22.874146,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κιλκίς"
+      }
+    },
+    {
+      "id": "2341029949",
+      "name": "Σ.Φ. ΓΕΩΡΓΙΑΔΟΥ ΚΥΡ. - ΚΑΤΣΙΑΝΟΣ ΚΩΝ. Ο.Ε.",
+      "address": "21 ΙΟΥΝΙΟΥ 62",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341029949",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 40.991799,
+        "lon": 22.872086,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "a6d15b1e-b760-415e-9faa-a0c6b2167a81"
+      }
+    },
+    {
+      "id": "2343022000",
+      "name": "Σ. Φ. ΤΟΠΟΥΖΙΔΗ ΓΕΩΡΓΙΟΥ & ΚΩΝΣΤΑΝΤΙΝΟΥ Ο.Ε.",
+      "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 118",
+      "locality": "Πολύκαστρο",
+      "postcode": null,
+      "phone": "2343022000",
+      "groupId": "polykastro",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 40.994942,
+        "lon": 22.571178,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "8d69b5ab-2327-4102-9cde-a68172c3a6ae"
+      }
+    },
+    {
+      "id": "2343022264",
+      "name": "ΣΑΡΑΝΤΟΠΟΥΛΟΣ ΣΑΒΒΑΣ",
+      "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 98",
+      "locality": "Πολύκαστρο",
+      "postcode": null,
+      "phone": "2343022264",
+      "groupId": "polykastro",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 40.993285,
+        "lon": 22.573432,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Μεγάλου Αλεξάνδρου 98, Πολύκαστρο"
+      }
+    },
+    {
+      "id": "2343022452",
+      "name": "ΧΑΤΖΗΞΕΝΙΤΙΔΗΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 75",
+      "locality": "Πολύκαστρο",
+      "postcode": null,
+      "phone": "2343022452",
+      "groupId": "polykastro",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 40.998507,
+        "lon": 22.569727,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "02f09eeb-79f3-43db-be3a-127d2ed4fe65"
+      }
+    },
+    {
+      "id": "2343022479",
+      "name": "ΖΑΡΑΛΗ ΑΣΗΜΙΝΑ",
+      "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 129",
+      "locality": "Πολύκαστρο",
+      "postcode": null,
+      "phone": "2343022479",
+      "groupId": "polykastro",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 40.993564,
+        "lon": 22.573161,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "52ece03a-1550-439a-9d23-569b68abc1a4"
+      }
+    },
+    {
+      "id": "2343022896",
+      "name": "ΑΡΚΟΥΔΑΣ ΣΤΕΡΓΙΟΣ",
+      "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 126",
+      "locality": "Πολύκαστρο",
+      "postcode": null,
+      "phone": "2343022896",
+      "groupId": "polykastro",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 40.994532,
+        "lon": 22.571712,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "3d5c78e6-37b5-4793-921e-f39978f2a9de"
+      }
+    },
+    {
+      "id": "2343023826",
+      "name": "ΑΡΚΟΥΔΑ ΧΑΡΙΚΛΕΙΑ",
+      "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 35",
+      "locality": "Πολύκαστρο",
+      "postcode": null,
+      "phone": "2343023826",
+      "groupId": "polykastro",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 40.994587,
+        "lon": 22.572102,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πολύκαστρο"
+      }
+    },
+    {
+      "id": "2343031263",
+      "name": "ΣΑΒΒΙΔΟΥ ΣΤΑΥΡΟΥΛΑ",
+      "address": "ΠΛ. ΕΛΕΥΘΕΡΙΑΣ 21",
+      "locality": "Αξιούπολη",
+      "postcode": null,
+      "phone": "2343031263",
+      "groupId": "axioupoli",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 40.98555,
+        "lon": 22.542284,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Αξιούπολη"
+      }
+    },
+    {
+      "id": "2343031831",
+      "name": "ΣΚΟΥΤΑ ΠΑΝΑΓΙΩΤΑ",
+      "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 31",
+      "locality": "Αξιούπολη",
+      "postcode": null,
+      "phone": "2343031831",
+      "groupId": "axioupoli",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 40.98555,
+        "lon": 22.542284,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Αξιούπολη"
+      }
+    },
+    {
+      "id": "2343032585",
+      "name": "ΤΟΠΟΥΖΙΔΟΥ ΝΑΤΑΛΙΑ",
+      "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 1",
+      "locality": "Αξιούπολη",
+      "postcode": null,
+      "phone": "2343032585",
+      "groupId": "axioupoli",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 41.00156,
+        "lon": 22.56729,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "9a2d1a96-c314-4050-8ad5-cd991c95910d"
+      }
+    },
+    {
+      "id": "2343041484",
+      "name": "ΛΑΣΠΙΑ ΜΑΡΙΑ",
+      "address": "ΜΕΓΑΛΟΥ ΑΛΕΞΑΝΔΡΟΥ 1",
+      "locality": "Γουμένισσα",
+      "postcode": null,
+      "phone": "2343041484",
+      "groupId": "goumenissa",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 40.945677,
+        "lon": 22.450244,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "868dc74b-40bd-45d7-bb8e-d12c4fa35492"
+      }
+    },
+    {
+      "id": "2343042176",
+      "name": "ΒΑΛΤΑΚΗ ΚΛΕΙΩ",
+      "address": "ΙΩΝΟΣ ΔΡΑΓΟΥΜΗ 54",
+      "locality": "Γουμένισσα",
+      "postcode": null,
+      "phone": "2343042176",
+      "groupId": "goumenissa",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 40.946644,
+        "lon": 22.451941,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Γουμένισσα"
+      }
+    },
+    {
+      "id": "2343042700",
+      "name": "ΝΟΥΛΑ ΔΕΣΠΟΙΝΑ",
+      "address": "ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 19",
+      "locality": "Γουμένισσα",
+      "postcode": null,
+      "phone": "2343042700",
+      "groupId": "goumenissa",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 40.946525,
+        "lon": 22.452094,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "1ec0d4ea-19ef-4033-a0a7-da2f1799430f"
+      }
+    },
+    {
+      "id": "6944246376",
+      "name": "ΝΟΥΛΑ ΝΙΚ. ΔΕΣΠΟΙΝΑ Ο.Ε.",
+      "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 56",
+      "locality": "Αξιούπολη",
+      "postcode": null,
+      "phone": "6944246376",
+      "groupId": "axioupoli",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 40.98555,
+        "lon": 22.542284,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Αξιούπολη"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "city": "cyclades",
+  "updatedAt": "2026-11-02T11:01:19.597Z",
+  "checkedAt": "2026-11-02T11:01:19.597Z",
+  "duties": {
+    "from": "2026-11-02",
+    "to": "2026-11-08"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "fsc",
+      "name": {
+        "el": "Φαρμακευτικός Σύλλογος Κυκλάδων",
+        "en": "Pharmaceutical Association of the Cyclades"
+      },
+      "url": "https://www.fscyclades.gr/onduty-cyclades/",
+      "note": "Duty lists, from fscyclades.gr"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

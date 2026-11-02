@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-02",
+  "groups": [
+    {
+      "id": "achaia",
+      "name": "Αχαΐα",
+      "source": {
+        "url": "https://www.efimeria.gr/All",
+        "uploadedAt": "2026-11-02T17:54:13.754Z"
+      },
+      "sections": [
+        {
+          "kind": "overnight",
+          "heading": "14:30-08:30",
+          "hours": {
+            "from": "14:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2693023100",
+              "name": "ΤΟΥΜΠΟΥΛΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΑΓΙΟΥ ΙΩΑΝΝΟΥ ΠΡΟΔΡΟΜΟΥ 93 (ΚΑΤΩ ΑΧΑΪΑ)",
+              "locality": "Δύμη",
+              "phone": "2693023100"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:30 - 21:00 μμ",
+          "hours": {
+            "from": "14:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "x-b221e6e261",
+              "name": "ΘΕΟΔΩΡΑΚΟΠΟΥΛΟΥ ΔΗΜΗΤΡΑ",
+              "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 44-46 & ΠΕΝΤΕ ΠΗΓΑΔΙΩΝ 2",
+              "locality": "Πάτρα",
+              "phone": ""
+            },
+            {
+              "pharmacyId": "x-1d4f1e0a40",
+              "name": "ΚΑΛΗΜΕΡΗ ΘΕΑΝΩ",
+              "address": "ΑΚΤΗ ΔΥΜΑΙΩΝ 149Α",
+              "locality": "Πάτρα",
+              "phone": ""
+            },
+            {
+              "pharmacyId": "x-7eaffbed64",
+              "name": "ΚΑΝΕΛΛΟΠΟΥΛΟΥ ΕΙΡΗΝΗ-ΔΗΜΗΤΡΑ",
+              "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 24",
+              "locality": "Πάτρα",
+              "phone": ""
+            },
+            {
+              "pharmacyId": "x-e0db099b1b",
+              "name": "ΚΟΜΝΗΝΟΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΚΑΡΑΪΣΚΑKΗ 132 - ΓΕΡΟΚΩΣΤΟΠΟΥΛΟΥ",
+              "locality": "Πάτρα",
+              "phone": ""
+            },
+            {
+              "pharmacyId": "x-e6ae0dc4ec",
+              "name": "ΠΑΠΑΘΑΝΑΣΗΣ ΔΑΜΙΑΝΟΣ",
+              "address": "Ν.Ε.Ο. ΑΘΗΝΩΝ – ΠΑΤΡΩΝ ΚΑΙ ΑΜΕΡΙΚΗΣ (ΕΝΤΟΣ ΑΒ)",
+              "locality": "Πάτρα",
+              "phone": ""
+            },
+            {
+              "pharmacyId": "x-270cc34f3c",
+              "name": "ΣΤΑΥΡΟΠΟΥΛΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΕΓΛΥΚΑΔΟΣ 92 ΣΥΝΟΡΑ ΕΝΑΝΤΙ ΣΧΟΛ. ΣΥΓΚΡΟΤ",
+              "locality": "Πάτρα",
+              "phone": ""
+            },
+            {
+              "pharmacyId": "x-b6de6e99fc",
+              "name": "ΦΕΤΙΝΙΔΟΥ ΧΡΥΣΑΝΘΗ",
+              "address": "ΑΛΕΞΑΝΔΡΟΥ ΥΨΗΛΑΝΤΟΥ 213",
+              "locality": "Πάτρα",
+              "phone": ""
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:30-21:00",
+          "hours": {
+            "from": "14:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2610670324",
+              "name": "ΡΑΥΤΟΠΟΥΛΟΥ ΑΣΠΑΣΙΑ",
+              "address": "Π.Ε.Ο. ΠΑΤΡΩΝ ΠΥΡΓΟΥ 690 (ΘΕΣΗ ΚΑΜΙΝΙΑ)",
+              "locality": "Βραχνέικα",
+              "phone": "2610670324"
+            },
+            {
+              "pharmacyId": "2691031403",
+              "name": "ΔΑΚΟΡΩΝΙΑΣ ΒΑΣΙΛΕΙΟΣ",
+              "address": "ΚΑΜΑΡΕΣ",
+              "locality": "Νέος Ερινεός",
+              "phone": "2691031403"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:30-22:30",
+          "hours": {
+            "from": "14:30",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2610524492",
+              "name": "ΧΡΟΝΟΠΟΥΛΟΥ ΟΛΓΑ",
+              "address": "25ης ΜΑΡΤΙΟΥ 2 - ΠΑΡΑΛΙΑ ΠΑΤΡΩΝ",
+              "locality": "Παραλία Πατρών",
+              "phone": "2610524492"
+            },
+            {
+              "pharmacyId": "2610911416",
+              "name": "ΓΟΥΛΑ ΒΑΣΙΛΙΚΗ",
+              "address": "ΑΘΗΝΩΝ 47 - ΡΙΟ (ΕΝΑΝΤΙ ΕΚΚΛΗΣΙΑΣ ΑΓ. ΓΕΩΡΓΙΟΥ)",
+              "locality": "Ρίο",
+              "phone": "2610911416"
+            },
+            {
+              "pharmacyId": "2610526096",
+              "name": "ΚΟΥΤΡΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΔΗΜΟΚΡΑΤΙΑΣ 202 ΟΒΡΥΑ",
+              "locality": "Μεσσάτιδα",
+              "phone": "2610526096"
+            },
+            {
+              "pharmacyId": "2692022506",
+              "name": "ΦΡΑΝΤΣΕΣΚΟΥ ΑΝ.",
+              "address": "ΠΑΝΟΥ ΠΟΛΚΑ 5",
+              "locality": "Καλάβρυτα",
+              "phone": "2692022506"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 μμ - 02:00 πμ",
+          "hours": {
+            "from": "21:00",
+            "to": "02:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "x-677724b724",
+              "name": "ΜΠΑΡΟΥΣΗ ΑΝΝΑ",
+              "address": "ΚΟΡΙΝΘΟΥ 334 - ΓΕΝΝΑΔΙΟΥ",
+              "locality": "Πάτρα",
+              "phone": ""
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 μμ - 02:00 πμ + 02:00 - 08:30",
+          "hours": {
+            "from": "21:00",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "x-f8dc36ace2",
+              "name": "ΜΠΑΡΔΟΥΤΣΟΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΓΟΥΝΑΡΗ 203 & Κ. ΠΑΛΑΙΟΛΟΓΟΥ",
+              "locality": "Πάτρα",
+              "phone": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

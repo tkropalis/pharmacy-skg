@@ -67,15 +67,35 @@ export interface Fetched<T> {
   readonly failures: readonly Warning[];
 }
 
+/**
+ * The key of a pharmacy's coordinates in `FetchedDutyLists.locations`: the phone printed in the
+ * list, or for an entry the pipeline printed without one (the list gives it another pharmacy's
+ * number), its locality and name.
+ */
+export function locationKey(entry: {
+  readonly phone: string;
+  readonly locality: string;
+  readonly name: string;
+}): string {
+  return entry.phone !== '' ? entry.phone : `${entry.locality}|${entry.name}`;
+}
+
 export interface FetchedDutyLists extends Fetched<FetchedDutyList> {
-  /** New coordinates the source gives, by the phone printed in the list. */
+  /** New coordinates the source gives, by `locationKey`. */
   readonly locations?: ReadonlyMap<string, ListedLocation>;
+  /**
+   * Extended hours the duty source itself gives in the same page (Achaia's), by file name; each
+   * replaces the stored file of that name.
+   */
+  readonly extendedHours?: Fetched<readonly [file: string, list: ExtendedHours]>;
   /** The updated roster, for a source that names more pharmacies than the stored lists. */
   readonly roster?: Roster;
 }
 
 /** How addresses in the city are geocoded (registry/geocode.ts). */
 export interface GeocodeArea {
+  /** The printed address as Nominatim knows its street (Kilkis prints "Μ. ΑΛΕΞΑΝΔΡΟΥ 98"). */
+  readonly expandAddress?: (address: string) => string;
   /** The place to ask for when searching a locality (default: its name). */
   readonly queryLocality?: (locality: string) => string;
   /** Whether a result belongs to the locality the list printed (default: always). */
@@ -89,6 +109,12 @@ export interface ValidationRules {
   /** Expected entries in a section; a count outside means the parser or the source broke. */
   readonly sectionRange: (groupId: string, kind: DutyKind) => readonly [number, number];
   readonly pharmacies: readonly [number, number];
+  /**
+   * The source shows only today's duty list (Achaia's, Corfu's): each run stores the list under
+   * the page's own date and keeps the earlier days. Tomorrow's list is not expected, and a list
+   * identical to the day before's is not taken for today's (update/city.ts).
+   */
+  readonly todayOnly?: boolean;
   /** Fewest entries an extended-hours list may have; null when the city publishes none. */
   readonly minExtendedEntries: number | null;
 }
