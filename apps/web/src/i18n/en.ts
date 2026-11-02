@@ -283,6 +283,8 @@ export const en: Dictionary = {
       unpublished: 'The day’s duty lists are not announced yet.',
       unpublishedShort: 'duty not announced yet',
       loadFailed: 'Not all duty days loaded, so this may change.',
+      opensAt: 'opens {when}',
+      nextDuty: 'next duty {when}',
       whenToday: 'today at {time}',
       whenTomorrow: 'tomorrow at {time}',
       whenWeekday: '{weekday} at {time}',

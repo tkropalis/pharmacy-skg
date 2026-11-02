@@ -304,6 +304,9 @@ export const el = {
       unpublishedShort: 'δεν ξέρουμε ακόμη αν εφημερεύει',
       loadFailed: 'Δεν φόρτωσαν όλες οι εφημερίες, οπότε αυτό μπορεί να αλλάξει.',
       whenToday: 'σήμερα στις {time}',
+      /** After "Κλειστό τώρα," and "Δεν εφημερεύει τώρα," in an area's list. */
+      opensAt: 'ανοίγει {when}',
+      nextDuty: 'επόμενη εφημερία {when}',
       whenTomorrow: 'αύριο στις {time}',
       whenWeekday: '{weekday} στις {time}',
       whenDate: '{date} στις {time}',
