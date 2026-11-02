@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "city": "ilia",
+  "updatedAt": "2026-11-02T11:30:52.654Z",
+  "checkedAt": "2026-11-02T11:30:52.654Z",
+  "duties": {
+    "from": "2026-11-02",
+    "to": "2026-11-08"
+  },
+  "extendedHours": [],
+  "sources": [
+    {
+      "id": "pde",
+      "name": {
+        "el": "Περιφέρεια Δυτικής Ελλάδας",
+        "en": "Region of Western Greece"
+      },
+      "url": "https://diavgeia.gov.gr/",
+      "note": "Duty table ΡΣΦΞ7Λ6-2Κ3 and regular hours ΨΛΖΩ7Λ6-2Υ0, 2026 (diavgeia.gov.gr)"
+    },
+    {
+      "id": "osm",
+      "name": {
+        "el": "Συντελεστές OpenStreetMap",
+        "en": "OpenStreetMap contributors"
+      },
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Geocoding via Nominatim, ODbL, where the list gives no coordinates"
+    }
+  ]
+}

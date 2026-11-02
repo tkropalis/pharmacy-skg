@@ -1,0 +1,1778 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2621021966",
+      "name": "ΠΑΝΑΓΟΠΟΥΛΟΥ ΚΛΕΟΝΙΚΗ",
+      "address": "ΚΟΛΟΚΟΤΡΩΝΗ 13",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621021966",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.675629,
+        "lon": 21.430768,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "0085f330-4246-4dac-9291-8830be76f7bc"
+      }
+    },
+    {
+      "id": "2621022212",
+      "name": "ΣΓΑΝΤΖΗ ΑΝΤΩΝΙΑ (ΠΡΩΗΝ ΒΑΣΙΛΟΠΟΥΛΟΣ)",
+      "address": "ΠΕΤΡΟΠΟΥΛΟΥ 10",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621022212",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-14",
+      "lastSeen": "2026-01-14",
+      "location": {
+        "lat": 37.67329,
+        "lon": 21.435118,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΠΕΤΡΟΠΟΥΛΟΥ 10, Πύργος"
+      }
+    },
+    {
+      "id": "2621022532",
+      "name": "ΝΙΚΟΛΟΠΟΥΛΟΥ ΝΙΚΗ",
+      "address": "ΕΡΜΟΥ 63",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621022532",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-08",
+      "lastSeen": "2026-01-08",
+      "location": {
+        "lat": 37.672399,
+        "lon": 21.439073,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΕΡΜΟΥ 63, Πύργος"
+      }
+    },
+    {
+      "id": "2621022616",
+      "name": "ΑΔΑΟΥ ΔΙΟΝΥΣΙΑ",
+      "address": "ΠΑΤΡΩΝ 8",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621022616",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 37.672959,
+        "lon": 21.438343,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "8b3ba3a7-d679-4cef-863c-671c3228605a"
+      }
+    },
+    {
+      "id": "2621022630",
+      "name": "ΝΙΚΟΛΟΠΟΥΛΟΥ ΤΡΙΑΝΤΑΦΥΛΛΙΑ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 1",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621022630",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-23",
+      "lastSeen": "2026-01-23",
+      "location": {
+        "lat": 37.670766,
+        "lon": 21.432014,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 1, Πύργος"
+      }
+    },
+    {
+      "id": "2621022875",
+      "name": "ΠΑΝΑΓΟΠΟΥΛΟΥ",
+      "address": "ΕΡΥΘΡΟΥ ΣΤΑΥΡΟΥ 5 ΘΕΟΔΩΡΑ",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621022875",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 37.675629,
+        "lon": 21.430768,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "0085f330-4246-4dac-9291-8830be76f7bc"
+      }
+    },
+    {
+      "id": "2621025412",
+      "name": "ΜΙΧΑΛΟΠΟΥΛΟΥ ΕΥΓΕΝΙΑ",
+      "address": "ΘΕΜΙΣΤΟΚΛΕΟΥΣ 10",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621025412",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-08",
+      "lastSeen": "2026-01-08",
+      "location": {
+        "lat": 37.674841,
+        "lon": 21.436847,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΘΕΜΙΣΤΟΚΛΕΟΥΣ 10, Πύργος"
+      }
+    },
+    {
+      "id": "2621025865",
+      "name": "ΚΑΚΟΓΙΑΝΝΟΥ ΜΑΡΙΑ ΙΩΑΝΝΑ",
+      "address": "ΓΕΡΜΑΝΟΥ 16",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621025865",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-09",
+      "lastSeen": "2026-01-09",
+      "location": {
+        "lat": 37.673138,
+        "lon": 21.440603,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "f292386c-6241-4071-8dbf-e69f76770680"
+      }
+    },
+    {
+      "id": "2621026000",
+      "name": "ΜΠΑΧΟΥΡΟΥ ΘΕΟΔΩΡΑ",
+      "address": "ΜΑΝΩΛΟΠΟΥΛΟΥ 5",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621026000",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 37.675629,
+        "lon": 21.430768,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "0085f330-4246-4dac-9291-8830be76f7bc"
+      }
+    },
+    {
+      "id": "2621026165",
+      "name": "ΣΓΑΝΤΖΗ ΑΝΤΩΝΙΑ",
+      "address": "ΜΑΝΩΛΟΠΟΥΛΟΥ 42",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621026165",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-14",
+      "lastSeen": "2026-01-14",
+      "location": {
+        "lat": 37.673013,
+        "lon": 21.436268,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΜΑΝΩΛΟΠΟΥΛΟΥ 42, Πύργος"
+      }
+    },
+    {
+      "id": "2621026295",
+      "name": "ΔΑΝΙΚΑ ΕΙΡΗΝΗ",
+      "address": "28ης ΟΚΤΩΒΡΙΟΥ 11",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621026295",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 37.672367,
+        "lon": 21.436829,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "c88d3f76-eb4d-45e6-a4eb-97f1fe4ee942"
+      }
+    },
+    {
+      "id": "2621026800",
+      "name": "ΔΗΜΗΤΡΗΣ ΚΟΡΚΟΛΗΣ -ΕΛΕΝΗ ΚΟΡΚΟΛΗ ΚΑΙ ΣΙΑ Ο.Ε.",
+      "address": "ΜΑΝΩΛΟΠΟΥΛΟΥ 1",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621026800",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 37.670685,
+        "lon": 21.429668,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΜΑΝΩΛΟΠΟΥΛΟΥ 1, Πύργος"
+      }
+    },
+    {
+      "id": "2621026900",
+      "name": "ΣΑΜΠΑΛΟΣ ΔΗΜΗΤΡΙΟΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "ΕΡΜΟΥ 122 -",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621026900",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-07",
+      "lastSeen": "2026-01-07",
+      "location": {
+        "lat": 37.672399,
+        "lon": 21.439073,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΕΡΜΟΥ 122 -, Πύργος"
+      }
+    },
+    {
+      "id": "2621026901",
+      "name": "ΜΙΧΑΗΛ ΓΕΩΡΓΙΑ",
+      "address": "ΠΑΤΡΩΝ & ΜΑΝΩΛΟΠΟΥΛΟΥ 2",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621026901",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-09",
+      "lastSeen": "2026-01-09",
+      "location": {
+        "lat": 37.67221,
+        "lon": 21.439212,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πύργος"
+      }
+    },
+    {
+      "id": "2621027179",
+      "name": "ΔΑΝΙΚΑΣ ΧΡΗΣΤΟΣ",
+      "address": "ΠΑΤΡΩΝ 18",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621027179",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 37.672367,
+        "lon": 21.436829,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "c88d3f76-eb4d-45e6-a4eb-97f1fe4ee942"
+      }
+    },
+    {
+      "id": "2621027706",
+      "name": "ΛΑΤΤΑ Π. ΝΙΚΟΛΕΤΤΑ",
+      "address": "ΜΗΤΡΟΠΟΛΙΤΗ ΑΝΤΩΝΙΟΥ (ΠΑΤΡΩΝ 42)",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621027706",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-01-12",
+      "location": {
+        "lat": 37.67506,
+        "lon": 21.43484,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "cb11c3a6-02e1-48d1-bcf9-b9877ab96499"
+      }
+    },
+    {
+      "id": "2621028166",
+      "name": "ΚΑΡΑΜΑΝΗΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΚΟΚΚΙΝΟΥ 6",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621028166",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-16",
+      "lastSeen": "2026-01-16",
+      "location": {
+        "lat": 37.674061,
+        "lon": 21.433378,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΚΟΚΚΙΝΟΥ 6, Πύργος"
+      }
+    },
+    {
+      "id": "2621028282",
+      "name": "ΜΙΧΑΛΟΠΟΥΛΟΥ ΑΛΕΞΑΝΔΡΑ",
+      "address": "ΜΑΝΩΛΟΠΟΥΛΟΥ 20",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621028282",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 37.675629,
+        "lon": 21.430768,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "0085f330-4246-4dac-9291-8830be76f7bc"
+      }
+    },
+    {
+      "id": "2621028945",
+      "name": "Σ.Φ. ΜΑΡΙΑΣ ΤΕΡΖΗ & ΒΑΣΙΛΙΚΗΣ ΖΩΧΙΟΥ",
+      "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 6",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621028945",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 37.674304,
+        "lon": 21.436214,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "10c0a053-10b5-464b-9b6e-4c384d661f7a"
+      }
+    },
+    {
+      "id": "2621029279",
+      "name": "ΤΣΙΑΤΑ ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "28ης ΟΚΤΩΒΡΙΟΥ & ΧΡΥΣΑΝΘΑΚΟΠΟΥ",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621029279",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-07",
+      "lastSeen": "2026-01-07",
+      "location": {
+        "lat": 37.672595,
+        "lon": 21.437125,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "28ης ΟΚΤΩΒΡΙΟΥ, Πύργος"
+      }
+    },
+    {
+      "id": "2621029656",
+      "name": "ΛΙΑΡΟΜΜΑΤΗ ΑΠΟΣΤΟΛΙΑ",
+      "address": "ΑΙΟΛΟΥ 11",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621029656",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-15",
+      "lastSeen": "2026-01-15",
+      "location": {
+        "lat": 37.672502,
+        "lon": 21.44068,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΑΙΟΛΟΥ 11, Πύργος"
+      }
+    },
+    {
+      "id": "2621030122",
+      "name": "ΚΟΖΥΡΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΜΑΝΩΛΟΠΟΥΛΟΥ 43",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621030122",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 37.671242,
+        "lon": 21.431281,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΜΑΝΩΛΟΠΟΥΛΟΥ 43, Πύργος"
+      }
+    },
+    {
+      "id": "2621030408",
+      "name": "ΣΠΥΡΟΠΟΥΛΟΣ ΦΩΤΙΟΣ",
+      "address": "ΚΟΚΚΙΝΟΥ 25",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621030408",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.674061,
+        "lon": 21.433378,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΚΟΚΚΙΝΟΥ 25, Πύργος"
+      }
+    },
+    {
+      "id": "2621030630",
+      "name": "ΚΟΖΥΡΗΣ ΛΥΜΠΕΡΗΣ",
+      "address": "ΟΛΥΜΠΙΩΝ 1",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621030630",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-10",
+      "lastSeen": "2026-01-10",
+      "location": {
+        "lat": 37.67114,
+        "lon": 21.449047,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΟΛΥΜΠΙΩΝ 1, Πύργος"
+      }
+    },
+    {
+      "id": "2621033181",
+      "name": "Σ.Φ. ΑΥΓΕΡΙΝΟΠΟΥΛΟΥ -ΔΙΟΝΥΣΟΠΟΥΛΟΥ",
+      "address": "28ης ΟΚΤΩΒΡΙΟΥ 21",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621033181",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 37.671918,
+        "lon": 21.435043,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "e2e09843-4729-40b4-a8fd-0da808a3a11f"
+      }
+    },
+    {
+      "id": "2621034285",
+      "name": "ΚΑΡΑΛΗ ΑΓΓΕΛΙΚΗ (ΠΡΩΗΝ ΚΑΠΕΝΗΣ ΝΙΚΟΛΑΟΣ)",
+      "address": "ΕΡΜΟΥ 78",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621034285",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 37.672399,
+        "lon": 21.439073,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΕΡΜΟΥ 78, Πύργος"
+      }
+    },
+    {
+      "id": "2621034655",
+      "name": "ΒΑΡΔΑΜΙΔΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΕΡΜΟΥ 2",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621034655",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 37.67249,
+        "lon": 21.43867,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "e0f3d7d4-9800-4314-9597-b84051400a3f"
+      }
+    },
+    {
+      "id": "2621036258",
+      "name": "ΠΑΝΑΓΙΩΤΟΠΟΥΛΟΥ ΣΠΥΡΟΥΛΑ",
+      "address": "ΚΑΤΑΚΟΛΟΥ 53",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621036258",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-15",
+      "lastSeen": "2026-01-15",
+      "location": {
+        "lat": 37.670137,
+        "lon": 21.429929,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΚΑΤΑΚΟΛΟΥ 53, Πύργος"
+      }
+    },
+    {
+      "id": "2621037408",
+      "name": "ΣΑΡΓΙΑΝΟΥ ΑΝΝΑ",
+      "address": "ΜΑΝΩΛΟΠΟΥΛΟΥ 55",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621037408",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-20",
+      "lastSeen": "2026-01-20",
+      "location": {
+        "lat": 37.670647,
+        "lon": 21.430034,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "5e5c330c-6462-493a-8e53-ba1631e1ba6d"
+      }
+    },
+    {
+      "id": "2621039938",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΕΥΓΕΝΙΑ",
+      "address": "ΑΓ. ΓΕΩΡΓΙΟΥ 4",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621039938",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-20",
+      "lastSeen": "2026-01-20",
+      "location": {
+        "lat": 37.68854,
+        "lon": 21.437314,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΑΓ. ΓΕΩΡΓΙΟΥ 4, Πύργος"
+      }
+    },
+    {
+      "id": "2621061535",
+      "name": "ΣΤΥΛΙΑΝΙΔΗ ΕΛΙΣΣΑΒΕΤ",
+      "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 46Α",
+      "locality": "Πύργος",
+      "postcode": null,
+      "phone": "2621061535",
+      "groupId": "pyrgos",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-01-12",
+      "location": {
+        "lat": 37.670113,
+        "lon": 21.432983,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΡΗΓΑ ΦΕΡΑΙΟΥ 46Α, Πύργος"
+      }
+    },
+    {
+      "id": "2622020095",
+      "name": "ΧΡΙΣΤΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΕΥΑΓΓΕΛΙΣΤΡΙΑΣ 125Α",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622020095",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 37.791703,
+        "lon": 21.35594,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "b7fb49d2-8f17-4322-a5e2-5c87857fdad9"
+      }
+    },
+    {
+      "id": "2622021141",
+      "name": "ΣΤΑΥΛΙΩΤΗ ΧΑΡΙΚΛΕΙΑ",
+      "address": "ΚΑΛΑΒΡΥΤΩΝ 36",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622021141",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-15",
+      "lastSeen": "2026-01-15",
+      "location": {
+        "lat": 37.795871,
+        "lon": 21.353277,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "89641e39-9538-4244-bbda-cc81169cb6af"
+      }
+    },
+    {
+      "id": "2622021543",
+      "name": "ΧΡΙΣΤΟΦΙΔΗ ΑΓΓΕΛΙΚΗ",
+      "address": "ΞΥΔΙΑ 2",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622021543",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 37.79992,
+        "lon": 21.360731,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΞΥΔΙΑ 2, Αμαλιάδα"
+      }
+    },
+    {
+      "id": "2622022070",
+      "name": "ΚΑΡΡΑΣ ΑΝΤΩΝΙΟΣ",
+      "address": "ΚΑΛΑΒΡΥΤΩΝ 11",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622022070",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 37.79575,
+        "lon": 21.355549,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΚΑΛΑΒΡΥΤΩΝ 11, Αμαλιάδα"
+      }
+    },
+    {
+      "id": "2622022244",
+      "name": "ΓΙΑΝΝΑΚΟΠΟΥΛΟΣ ΠΕΤΡΟΣ",
+      "address": "ΚΑΛΑΒΡΥΤΩΝ 19",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622022244",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.797677,
+        "lon": 21.350464,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "08ff8a62-78dd-4a2c-9683-3a9e40b69332"
+      }
+    },
+    {
+      "id": "2622022260",
+      "name": "ΜΠΟΥΣΔΟΥΚΟΥ ΕΛΕΝΑ",
+      "address": "ΑΡΧΑΙΑΣ ΗΛΙΔΟΣ 7",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622022260",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 37.79761,
+        "lon": 21.350579,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "83b60324-9131-4a22-8147-1f8c592c36f2"
+      }
+    },
+    {
+      "id": "2622022945",
+      "name": "ΤΖΟΥΛΕΚΗ ΓΕΩΡΓΙΑ",
+      "address": "ΕΥΑΓΓΕΛΙΣΤΡΙΑΣ 127",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622022945",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 37.791577,
+        "lon": 21.356152,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "433275b9-27dc-4722-82c8-f0e44dd5f077"
+      }
+    },
+    {
+      "id": "2622023046",
+      "name": "ΞΕΡΑ ΜΕΛΙΤΣΟΠΟΥΛΟΥ -ΠΑΡΑΣΚΕΥΗ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 8",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622023046",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 37.797277,
+        "lon": 21.352355,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 8, Αμαλιάδα"
+      }
+    },
+    {
+      "id": "2622023061",
+      "name": "ΛΑΒΔΑ ΙΩΑΝΝΑ",
+      "address": "ΠΥΡΡΩΝΟΣ 2",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622023061",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 37.797677,
+        "lon": 21.350464,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "08ff8a62-78dd-4a2c-9683-3a9e40b69332"
+      }
+    },
+    {
+      "id": "2622023912",
+      "name": "ΤΡΑΓΟΥΣΤΗΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΦΙΛ. ΕΤΑΙΡΕΙΑΣ 6",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622023912",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.797131,
+        "lon": 21.35145,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Αμαλιάδα"
+      }
+    },
+    {
+      "id": "2622024077",
+      "name": "Σ.Φ. ΚΩΝΣΤΑΝΤΙΝΟΥ ΜΑΝΙΑΤΗ ΠΑΝΑΓΙΩΤΑ ΜΑΝΙΑΤΗ ΟΕ",
+      "address": "ΚΑΛΑΒΡΥΤΩΝ 19",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622024077",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-15",
+      "lastSeen": "2026-01-15",
+      "location": {
+        "lat": 37.79575,
+        "lon": 21.355549,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΚΑΛΑΒΡΥΤΩΝ 19, Αμαλιάδα"
+      }
+    },
+    {
+      "id": "2622024880",
+      "name": "ΤΣΑΓΑΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 14",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622024880",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-05",
+      "lastSeen": "2026-01-05",
+      "location": {
+        "lat": 37.79727,
+        "lon": 21.34962,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "c90ac6bc-188f-45f1-b9c8-456b6687f33e"
+      }
+    },
+    {
+      "id": "2622027216",
+      "name": "ΠΑΠΑΓΕΩΡΓΙΟΥ ΤΡΙΣΕΥΓΕΝΗ",
+      "address": "ΕΡΜΟΥ 13",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622027216",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 37.795334,
+        "lon": 21.35067,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "3636c7f7-d78b-4f26-9706-b8d2bb18b7ac"
+      }
+    },
+    {
+      "id": "2622027465",
+      "name": "ΚΟΡΚΟΛΗ ΕΛΕΝΗ",
+      "address": "ΔΕΛΗΓΙΑΝΝΗ 23",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622027465",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 37.798626,
+        "lon": 21.353246,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΔΕΛΗΓΙΑΝΝΗ 23, Αμαλιάδα"
+      }
+    },
+    {
+      "id": "2622027979",
+      "name": "Σ.Φ. ΒΛΑΓΚΟΥΛΗΣ ΠΕΤΡΟΣ ΒΛΑΓΚΟΥΛΗ ΙΩΑΝΝΑ & ΣΙΑ Ο.Ε.",
+      "address": "ΑΡΧΑΙΑΣ ΗΛΙΔΟΣ 15",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622027979",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 37.797677,
+        "lon": 21.350464,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "08ff8a62-78dd-4a2c-9683-3a9e40b69332"
+      }
+    },
+    {
+      "id": "2622028598",
+      "name": "ΓΕΩΡΓΟΥΛΙΑΣ ΑΝΑΣΤΑΣΙΟΣ",
+      "address": "ΠΛ. ΕΛΕΥΘΕΡΙΑΣ",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622028598",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 37.797131,
+        "lon": 21.35145,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Αμαλιάδα"
+      }
+    },
+    {
+      "id": "2622028920",
+      "name": "Σ.Φ. ΑΙΚΑΤΕΡΙΝΗΣ ΑΝΔ ΠΑΝΑΓΟΠΟΥΛΟΥ ΝΙΚΗΣ ΙΩΑΝ ΜΠΑΦΗ ΟΕ",
+      "address": "ΕΡΜΟΥ 49",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622028920",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-04",
+      "lastSeen": "2026-01-04",
+      "location": {
+        "lat": 37.797131,
+        "lon": 21.35145,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Αμαλιάδα"
+      }
+    },
+    {
+      "id": "2622029394",
+      "name": "ΛΙΩΣΗ ΑΛΙΚΗ",
+      "address": "ΚΟΛΟΚΟΤΡΩΝΗ 10",
+      "locality": "Αμαλιάδα",
+      "postcode": null,
+      "phone": "2622029394",
+      "groupId": "amaliada",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-03",
+      "lastSeen": "2026-01-03",
+      "location": {
+        "lat": 37.797131,
+        "lon": 21.35145,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Αμαλιάδα"
+      }
+    },
+    {
+      "id": "2623022204",
+      "name": "ΛΙΒΑΔΑΣ ΣΠΥΡΙΔΩΝ - ΣΑΡΑΝΤΗΣ",
+      "address": "ΠΡΑΝΤΟΥΝΑ 10",
+      "locality": "Λεχαινά",
+      "postcode": null,
+      "phone": "2623022204",
+      "groupId": "lechaina",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 37.937391,
+        "lon": 21.26332,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Λεχαινά"
+      }
+    },
+    {
+      "id": "2623022686",
+      "name": "ΛΕΥΚΑΔΙΤΗ Δ. ΓΕΩΡΓΙΑ",
+      "address": "ΠΑΠΑΦΛΕΣΣΑ 6",
+      "locality": "Λεχαινά",
+      "postcode": null,
+      "phone": "2623022686",
+      "groupId": "lechaina",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 37.938296,
+        "lon": 21.262616,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "46935c34-cfb3-40af-982c-c776ac90bb1c"
+      }
+    },
+    {
+      "id": "2623022742",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΝΕΟΦΥΤΟΣ",
+      "address": "ΨΥΧΟΓΙΟΥ 19",
+      "locality": "Λεχαινά",
+      "postcode": null,
+      "phone": "2623022742",
+      "groupId": "lechaina",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.937391,
+        "lon": 21.26332,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Λεχαινά"
+      }
+    },
+    {
+      "id": "2623032223",
+      "name": "ΓΙΑΤΡΑ ΝΙΚΗ",
+      "address": "ΓΕΩΡ. ΣΙΣΙΝΗ 71",
+      "locality": "Γαστούνη",
+      "postcode": null,
+      "phone": "2623032223",
+      "groupId": "gastouni",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.852938,
+        "lon": 21.255119,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "709a6b7d-a012-4349-a566-f7407c92c6cb"
+      }
+    },
+    {
+      "id": "2623032584",
+      "name": "ΤΣΟΥΚΑΛΑ ΑΦΡΟΔΙΤΗ",
+      "address": "ΓΕΩΡ. ΣΙΣΙΝΗ 145",
+      "locality": "Γαστούνη",
+      "postcode": null,
+      "phone": "2623032584",
+      "groupId": "gastouni",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-09",
+      "lastSeen": "2026-01-09",
+      "location": {
+        "lat": 37.850705,
+        "lon": 21.254242,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Γαστούνη"
+      }
+    },
+    {
+      "id": "2623033003",
+      "name": "ΠΑΡΙΣΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "Γ.ΣΙΣΙΝΗ 134",
+      "locality": "Γαστούνη",
+      "postcode": null,
+      "phone": "2623033003",
+      "groupId": "gastouni",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 37.850705,
+        "lon": 21.254242,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Γαστούνη"
+      }
+    },
+    {
+      "id": "2623034200",
+      "name": "ΚΑΜΠΙΤΣΗ ΡΟΥΣΣΑ",
+      "address": "ΑΡΧΑΙΑΣ ΗΛΙΔΟΣ 7",
+      "locality": "Γαστούνη",
+      "postcode": null,
+      "phone": "2623034200",
+      "groupId": "gastouni",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 37.850705,
+        "lon": 21.254242,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Γαστούνη"
+      }
+    },
+    {
+      "id": "2623041241",
+      "name": "Σ.Φ. ΜΑΚΡΥΔΗΜΑ ΧΑΡΑΛΑΜΠΙΑ ΚΑΙ ΣΔΟΥΓΑΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 28",
+      "locality": "Βαρθολομιό",
+      "postcode": null,
+      "phone": "2623041241",
+      "groupId": "vartholomio",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 37.861045,
+        "lon": 21.20875,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Βαρθολομιό"
+      }
+    },
+    {
+      "id": "2623041495",
+      "name": "ΚΟΚΚΩΝΗ ΖΩΗ",
+      "address": "ΒΟΥΡΤΣΗ ΚΑΙ ΜΕΛΙΝΑΣ ΜΕΡΚΟΥΡΗ",
+      "locality": "Βαρθολομιό",
+      "postcode": null,
+      "phone": "2623041495",
+      "groupId": "vartholomio",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 37.861045,
+        "lon": 21.20875,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Βαρθολομιό"
+      }
+    },
+    {
+      "id": "2623041521",
+      "name": "ΠΑΡΙΣΗ ΙΩΑΝΝΑ",
+      "address": "ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 13",
+      "locality": "Βαρθολομιό",
+      "postcode": null,
+      "phone": "2623041521",
+      "groupId": "vartholomio",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-01",
+      "lastSeen": "2026-01-01",
+      "location": {
+        "lat": 37.861045,
+        "lon": 21.20875,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Βαρθολομιό"
+      }
+    },
+    {
+      "id": "2623043890",
+      "name": "ΜΑΝΙΑΚΟΥΡΑ ΙΦΙΓΕΝΕΙΑ",
+      "address": "Μ. ΜΕΡΚΟΥΡΗ 11",
+      "locality": "Βαρθολομιό",
+      "postcode": null,
+      "phone": "2623043890",
+      "groupId": "vartholomio",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.861045,
+        "lon": 21.20875,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Βαρθολομιό"
+      }
+    },
+    {
+      "id": "2623054202",
+      "name": "ΠΑΠΑΝΑΣΤΑΣΟΠΟΥΛΟΥ ΜΑΡΙΑ",
+      "address": "ΝΙΚ. ΓΚΟΥΤΖΟΥΡΗ 66",
+      "locality": "Ανδραβίδα",
+      "postcode": null,
+      "phone": "2623054202",
+      "groupId": "andravida",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-07",
+      "lastSeen": "2026-01-07",
+      "location": {
+        "lat": 37.907587,
+        "lon": 21.269662,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Ανδραβίδα"
+      }
+    },
+    {
+      "id": "2623054444",
+      "name": "ΧΑΝΤΖΗ ΚΩΝ/ΝΑ",
+      "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ, ΑΓΙΟΥ ΚΩΝΣΤΑΝΤΙΝΟΥ",
+      "locality": "Ανδραβίδα",
+      "postcode": null,
+      "phone": "2623054444",
+      "groupId": "andravida",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 37.907587,
+        "lon": 21.269662,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Ανδραβίδα"
+      }
+    },
+    {
+      "id": "2623054714",
+      "name": "ΚΟΡΟΜΗΛΑΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΠΑΝΑΓΙΟΥ ΠΑΥΛΟΥ 47",
+      "locality": "Ανδραβίδα",
+      "postcode": null,
+      "phone": "2623054714",
+      "groupId": "andravida",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.907587,
+        "lon": 21.269662,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Ανδραβίδα"
+      }
+    },
+    {
+      "id": "2623055080",
+      "name": "ΒΛΑΓΚΟΥΛΗΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΝΙΚ. ΓΚΟΥΤΖΟΥΡΗ 60",
+      "locality": "Ανδραβίδα",
+      "postcode": null,
+      "phone": "2623055080",
+      "groupId": "andravida",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 37.907587,
+        "lon": 21.269662,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Ανδραβίδα"
+      }
+    },
+    {
+      "id": "2623061231",
+      "name": "ΜΠΑΚΕΛΑΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΑΡΧΑΙΑΣ ΟΛΥΜΠΙΑΣ 23",
+      "locality": "Τραγανό",
+      "postcode": null,
+      "phone": "2623061231",
+      "groupId": "tragano",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-01",
+      "lastSeen": "2026-01-01",
+      "location": null
+    },
+    {
+      "id": "2623061303",
+      "name": "ΜΠΑΚΟΠΟΥΛΟΥ ΑΡΤΕΜΙΣ",
+      "address": "ΑΡΧΑΙΑΣ ΟΛΥΜΠΙΑΣ 54",
+      "locality": "Τραγανό",
+      "postcode": null,
+      "phone": "2623061303",
+      "groupId": "tragano",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.898197,
+        "lon": 21.314026,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΑΡΧΑΙΑΣ ΟΛΥΜΠΙΑΣ 54, Τραγανό"
+      }
+    },
+    {
+      "id": "2623061525",
+      "name": "ΑΡΛΕΤΗ ΕΥΦΡΟΣΥΝΗ",
+      "address": "ΑΡΧΑΙΑΣ ΟΛΥΜΠΙΑΣ 75",
+      "locality": "Τραγανό",
+      "postcode": null,
+      "phone": "2623061525",
+      "groupId": "tragano",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-05",
+      "lastSeen": "2026-01-05",
+      "location": null
+    },
+    {
+      "id": "2623400058",
+      "name": "ΜΑΝΙΑΝΗ ΛΑΜΠΡΙΝΗ",
+      "address": "ΚΟΙΜΗΣΕΩΣ ΘΕΟΤΟΚΟΥ 16",
+      "locality": "Γαστούνη",
+      "postcode": null,
+      "phone": "2623400058",
+      "groupId": "gastouni",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-01",
+      "lastSeen": "2026-01-01",
+      "location": {
+        "lat": 37.850705,
+        "lon": 21.254242,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Γαστούνη"
+      }
+    },
+    {
+      "id": "2624022000",
+      "name": "ΠΑΠΑΒΑΣΙΛΕΙΟΥ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΚΟΝΔΥΛΗ ΠΡΑΞΙΤΕΛΗ 60",
+      "locality": "Αρχαία Ολυμπία",
+      "postcode": null,
+      "phone": "2624022000",
+      "groupId": "ancient-olympia",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-05",
+      "lastSeen": "2026-01-05",
+      "location": {
+        "lat": 37.645256,
+        "lon": 21.625563,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "e478e668-26b1-4843-8538-4eac5af3e13c"
+      }
+    },
+    {
+      "id": "2624023306",
+      "name": "Σ.Φ. ΜΙΤΕΒΑ ΙΒΑΝΚΑ ΚΑΙ ΠΟΛΙΤΗΣ ΓΙΑΝΝΗΣ Ο.Ε.",
+      "address": "ΤΣΟΥΡΕΚΑ 2",
+      "locality": "Αρχαία Ολυμπία",
+      "postcode": null,
+      "phone": "2624023306",
+      "groupId": "ancient-olympia",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.645635,
+        "lon": 21.62579,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "e1ec23af-08d2-4198-83e8-7ec50f3cb913"
+      }
+    },
+    {
+      "id": "2625022133",
+      "name": "ΜΑΡΑΓΚΟΥ ΕΛΕΝΗ",
+      "address": "ΞΕΝΟΦΩΝΤΟΣ 119",
+      "locality": "Κρέστενα",
+      "postcode": null,
+      "phone": "2625022133",
+      "groupId": "krestena",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-09",
+      "lastSeen": "2026-01-09",
+      "location": {
+        "lat": 37.592349,
+        "lon": 21.62122,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κρέστενα"
+      }
+    },
+    {
+      "id": "2625022765",
+      "name": "ΠΑΠΑΓΡΗΓΟΡΙΟΥ ΓΕΩΡΓΙΟΣ",
+      "address": "ΞΕΝΟΦΩΝΤΟΣ 69",
+      "locality": "Κρέστενα",
+      "postcode": null,
+      "phone": "2625022765",
+      "groupId": "krestena",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-01",
+      "lastSeen": "2026-01-01",
+      "location": {
+        "lat": 37.59215,
+        "lon": 21.62002,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "d66aa101-b6f2-4b24-aff8-63aed89b77ce"
+      }
+    },
+    {
+      "id": "2625022806",
+      "name": "ΣΠΥΡΙΔΗΣ ΑΡΓΥΡΟΣ",
+      "address": "ΚΡΕΤΣΕΝΑ",
+      "locality": "Κρέστενα",
+      "postcode": null,
+      "phone": "2625022806",
+      "groupId": "krestena",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 37.592349,
+        "lon": 21.62122,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κρέστενα"
+      }
+    },
+    {
+      "id": "2625024005",
+      "name": "ΧΕΙΜΩΝΑΣ ΔΙΟΝΥΣΙΟΣ",
+      "address": "ΠΕΡΙΦΕΡΕΙΑΚΗ ΟΔΟΣ",
+      "locality": "Κρέστενα",
+      "postcode": null,
+      "phone": "2625024005",
+      "groupId": "krestena",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.589492,
+        "lon": 21.616108,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "71d7811a-a8df-4de9-9db0-f68daeeaafc9"
+      }
+    },
+    {
+      "id": "2625024131",
+      "name": "ΣΚΟΥΦΗΣ ΧΡΗΣΤΟΣ",
+      "address": "ΞΕΝΟΦΩΝΤΟΣ 7",
+      "locality": "Κρέστενα",
+      "postcode": null,
+      "phone": "2625024131",
+      "groupId": "krestena",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 37.592349,
+        "lon": 21.62122,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κρέστενα"
+      }
+    },
+    {
+      "id": "2625031209",
+      "name": "ΤΖΑΜΑΛΗΣ ΧΡΗΣΤΟΣ",
+      "address": "ΑΡΗΝΗΣ 5",
+      "locality": "Ζαχάρω",
+      "postcode": null,
+      "phone": "2625031209",
+      "groupId": "zacharo",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 37.483638,
+        "lon": 21.647917,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Ζαχάρω"
+      }
+    },
+    {
+      "id": "2625032300",
+      "name": "ΤΕΡΖΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΕΡΜΟΥ 9",
+      "locality": "Ζαχάρω",
+      "postcode": null,
+      "phone": "2625032300",
+      "groupId": "zacharo",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.483638,
+        "lon": 21.647917,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Ζαχάρω"
+      }
+    },
+    {
+      "id": "2625033175",
+      "name": "Σ.Φ. ΡΗΓΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ -ΡΗΓΟΠΟΥΛΟΣ",
+      "address": "ΕΡΜΟΥ",
+      "locality": "Ζαχάρω",
+      "postcode": null,
+      "phone": "2625033175",
+      "groupId": "zacharo",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-01-07",
+      "lastSeen": "2026-01-07",
+      "location": {
+        "lat": 37.483638,
+        "lon": 21.647917,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Ζαχάρω"
+      }
+    },
+    {
+      "id": "2625036166",
+      "name": "ΚΑΡΑΧΑΛΙΟΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΕΘΝ. ΟΔΟΣ ΠΥΡΓΟΥ -ΚΥΠΑΡΙΣΣΙΑΣ",
+      "locality": "Ζαχάρω",
+      "postcode": null,
+      "phone": "2625036166",
+      "groupId": "zacharo",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 37.483638,
+        "lon": 21.647917,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Ζαχάρω"
+      }
+    },
+    {
+      "id": "x-33ae1e154d",
+      "name": "ΜΑΡΚΟΥ ΑΝΝΑ - ΘΕΩΝΗ",
+      "address": "",
+      "locality": "Βάρδα",
+      "postcode": null,
+      "phone": null,
+      "groupId": "varda",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 38.031,
+        "lon": 21.363637,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Βάρδα"
+      }
+    },
+    {
+      "id": "x-47aabe6cab",
+      "name": "ΜΑΡΚΟΥ ΧΡΙΣΤΙΑΝΑ",
+      "address": "",
+      "locality": "Βάρδα",
+      "postcode": null,
+      "phone": null,
+      "groupId": "varda",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 38.031,
+        "lon": 21.363637,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Βάρδα"
+      }
+    },
+    {
+      "id": "x-533c87b77c",
+      "name": "ΧΟΥΝΤΡΑ ΘΕΟΔΩΡΑ",
+      "address": "",
+      "locality": "Βάρδα",
+      "postcode": null,
+      "phone": null,
+      "groupId": "varda",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 38.030818,
+        "lon": 21.364194,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "3c670c20-e6c1-49ec-a190-91bc622dd1d0"
+      }
+    },
+    {
+      "id": "x-566ae5ea6a",
+      "name": "ΛΕΥΚΑΔΙΤΗ Σ. ΓΕΩΡΓΙΑ",
+      "address": "",
+      "locality": "Βάρδα",
+      "postcode": null,
+      "phone": null,
+      "groupId": "varda",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 38.030097,
+        "lon": 21.363298,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "ee3e2f02-f624-45f3-b554-c3572383888e"
+      }
+    },
+    {
+      "id": "x-a7a378c793",
+      "name": "ΣΠΥΡΟΠΟΥΛΟΣ ΙΩΑΝΝΗΣ",
+      "address": "",
+      "locality": "Βάρδα",
+      "postcode": null,
+      "phone": null,
+      "groupId": "varda",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 38.031,
+        "lon": 21.363637,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Βάρδα"
+      }
+    },
+    {
+      "id": "x-db31e5f870",
+      "name": "ΧΟΥΝΤΡΑ ΔΗΜΗΤΡΑ",
+      "address": "",
+      "locality": "Βάρδα",
+      "postcode": null,
+      "phone": null,
+      "groupId": "varda",
+      "sources": [
+        "pde"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 38.030818,
+        "lon": 21.364194,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "3c670c20-e6c1-49ec-a190-91bc622dd1d0"
+      }
+    }
+  ]
+}
