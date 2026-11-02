@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This is a free, ad-free PWA that shows which pharmacies are open in Greece, area by area (Thessaloniki, Attica and the areas on ITeQ's duty platform so far, decision D26), including on-duty (εφημερεύοντα) and overnight (διανυκτερεύοντα) ones.
+This is a free, ad-free PWA that shows which pharmacies are open in Greece, area by area (Thessaloniki, Attica, the Cyclades and Kilkis, and the areas on ITeQ's duty platform so far, decision D26), including on-duty (εφημερεύοντα) and overnight (διανυκτερεύοντα) ones.
 
 Before changing behaviour, read [docs/decisions.md](docs/decisions.md). Before any UI or copy change, also read [docs/PRODUCT.md](docs/PRODUCT.md) (who it is for, the principles) and [docs/DESIGN.md](docs/DESIGN.md) (the design system, banned patterns, the review checklist and how to verify). For sources and the opening-hours rules, see [docs/research.md](docs/research.md); for milestones, [docs/roadmap.md](docs/roadmap.md).
 

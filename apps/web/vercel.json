@@ -3,6 +3,28 @@
   "framework": "astro",
   "trailingSlash": true,
   "rewrites": [{ "source": "/api/report/", "destination": "/api/report" }],
+  "redirects": [
+    {
+      "source": "/efimeries/tinos/:rest*",
+      "destination": "/efimeries/cyclades/:rest*",
+      "permanent": true
+    },
+    {
+      "source": "/perioxi/tinos/:rest*",
+      "destination": "/perioxi/cyclades/:rest*",
+      "permanent": true
+    },
+    {
+      "source": "/en/duty/tinos/:rest*",
+      "destination": "/en/duty/cyclades/:rest*",
+      "permanent": true
+    },
+    {
+      "source": "/en/area/tinos/:rest*",
+      "destination": "/en/area/cyclades/:rest*",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

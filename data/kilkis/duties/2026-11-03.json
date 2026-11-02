@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-03",
+  "groups": [
+    {
+      "id": "axioupoli",
+      "name": "Αξιούπολη",
+      "source": {
+        "url": "https://www.fskilkis.gr/efimeries/65-axioupoli/194-efimereuonta-famakeia-axioupolis-noemvriou",
+        "uploadedAt": "2026-11-02T10:56:42.235Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "Εφημερεύοντα φαρμακεία",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2343031263",
+              "name": "ΣΑΒΒΙΔΟΥ ΣΤΑΥΡΟΥΛΑ",
+              "address": "ΠΛ. ΕΛΕΥΘΕΡΙΑΣ 21",
+              "locality": "Αξιούπολη",
+              "phone": "2343031263"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "goumenissa",
+      "name": "Γουμένισσα",
+      "source": {
+        "url": "https://www.fskilkis.gr/efimeries/66-goumenissa/96-efimereuonta-famakeia-goumenissas-noemvriou",
+        "uploadedAt": "2026-11-02T10:56:42.235Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "Εφημερεύοντα φαρμακεία",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2343041484",
+              "name": "ΛΑΣΠΙΑ ΜΑΡΙΑ",
+              "address": "ΜΕΓΑΛΟΥ ΑΛΕΞΑΝΔΡΟΥ 1",
+              "locality": "Γουμένισσα",
+              "phone": "2343041484"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kilkis",
+      "name": "Κιλκίς",
+      "source": {
+        "url": "https://www.fskilkis.gr/efimeries/63-kilkis/111-efimereuonta-famakeia-kilkis-noemvriou",
+        "uploadedAt": "2026-11-02T10:56:42.235Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "Από 08:00 έως 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2341029949",
+              "name": "Σ.Φ. ΓΕΩΡΓΙΑΔΟΥ ΚΥΡ. - ΚΑΤΣΙΑΝΟΣ ΚΩΝ. Ο.Ε.",
+              "address": "21 ΙΟΥΝΙΟΥ 62",
+              "locality": "Κιλκίς",
+              "phone": "2341029949"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "Από 17:30 έως 08:00 της επομένης",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2341022995",
+              "name": "Σ.Φ. ΧΑΛΙΤΣΙΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ & ΧΡΗΣΤΟΣ Ο.Ε",
+              "address": "21 ΙΟΥΝΙΟΥ 100",
+              "locality": "Κιλκίς",
+              "phone": "2341022995"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polykastro",
+      "name": "Πολύκαστρο",
+      "source": {
+        "url": "https://www.fskilkis.gr/efimeries/64-polykastro/105-efimereuonta-famakeia-polykastrou-noemvriou",
+        "uploadedAt": "2026-11-02T10:56:42.235Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "Εφημερεύοντα φαρμακεία",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2343023826",
+              "name": "ΑΡΚΟΥΔΑ ΧΑΡΙΚΛΕΙΑ",
+              "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 35",
+              "locality": "Πολύκαστρο",
+              "phone": "2343023826"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

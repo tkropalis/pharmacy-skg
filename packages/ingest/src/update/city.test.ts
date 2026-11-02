@@ -3,11 +3,12 @@ import { tmpdir } from 'node:os';
 import { join, relative } from 'node:path';
 import { LARISA } from '@pharmacy-skg/core';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
-import type {
-  CityPipeline,
-  FetchContext,
-  FetchedDutyLists,
-  ListedLocation,
+import {
+  locationKey,
+  type CityPipeline,
+  type FetchContext,
+  type FetchedDutyLists,
+  type ListedLocation,
 } from '../cities/pipeline.ts';
 import type { DutyEntry, DutyList } from '../fsth/parse.ts';
 import {
@@ -226,6 +227,32 @@ describe('updateCity', () => {
     const second = await readJson(paths.meta, MetaSchema);
     expect(second?.updatedAt).toBe(NOW.toISOString());
     expect(second?.checkedAt).toBe(later.toISOString());
+  });
+
+  it('places an entry printed without a phone by the coordinates the list gave for its locality and name', async () => {
+    const unphoned: DutyEntry = { ...FIRST, phone: '', name: 'ΦΑΡΜΑΚΕΙΟ ΔΕΥΤΕΡΟ' };
+    const fetchDutyLists: CityPipeline['fetchDutyLists'] = async () => ({
+      items: [
+        {
+          list: dutyList(TODAY, [FIRST, unphoned]),
+          source: { url: 'https://example.gr/list.pdf', uploadedAt: '2026-11-02T06:00:00.000Z' },
+        },
+      ],
+      failures: [],
+      locations: new Map([
+        [FIRST.phone, LOCATION],
+        [locationKey(unphoned), { lat: 39.7, lon: 22.5, ref: 'https://example.gr/details/2' }],
+      ]),
+    });
+
+    expect(await run({ logger: recorder(), pipeline: pipeline({ fetchDutyLists }) })).toBe(true);
+    const pharmacies = (await readJson(paths.pharmacies, PharmaciesSchema))?.pharmacies ?? [];
+    expect(pharmacies).toHaveLength(2);
+    const second = pharmacies.find((p) => p.name === unphoned.name);
+    // An id from its name, not the first pharmacy's; the coordinates are the list's.
+    expect(second?.id).toMatch(/^x-/);
+    expect(second?.phone).toBeNull();
+    expect(second?.location).toMatchObject({ lat: 39.7, lon: 22.5, source: 'list' });
   });
 
   it('keeps the stored extended hours and writes the duty lists when the extended hours cannot be read', async () => {

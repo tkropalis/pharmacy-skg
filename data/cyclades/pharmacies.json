@@ -1,0 +1,740 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2281080037",
+      "name": "ΜΑΡΙΑΝΘΗ ΠΙΤΣΙΚΑΚΗ",
+      "address": "Γεωρ. Παπανδρέου 1",
+      "locality": "Σύρος",
+      "postcode": null,
+      "phone": "2281080037",
+      "groupId": "syros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.43799789143058,
+        "lon": 24.93540548479467,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2281082220",
+      "name": "ΙΩΑΝΝΗΣ ΡΟΥΣΣΟΣ & ΣΙΑ ΟΕ",
+      "address": "Εθνικής Αντιστάσεως 42",
+      "locality": "Σύρος",
+      "postcode": null,
+      "phone": "2281082220",
+      "groupId": "syros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 37.44267946149357,
+        "lon": 24.942380486962946,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2281082785",
+      "name": "ΡΟΥΣΣΟΣ ΜΑΡΙΟΣ & ΣΙΑ ΟΕ",
+      "address": "Πρωτοπαπαδάκη 23",
+      "locality": "Σύρος",
+      "postcode": null,
+      "phone": "2281082785",
+      "groupId": "syros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 37.443933951424555,
+        "lon": 24.94383233662507,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2281083545",
+      "name": "ΔΑΣΚΟΥ ΜΑΡΙΑ - ΣΑΜΑΡΙΤΑ",
+      "address": "Αλέκου Παναγούλη 14",
+      "locality": "Σύρος",
+      "postcode": null,
+      "phone": "2281083545",
+      "groupId": "syros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 37.43958397104196,
+        "lon": 24.939047841017594,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2281087823",
+      "name": "ΠΑΠΑΔΑΤΟΣ ΣΠ. ΣΤΕΦΑΝΟΣ",
+      "address": "Χίου 35 - Πλ. Μιαούλη",
+      "locality": "Σύρος",
+      "postcode": null,
+      "phone": "2281087823",
+      "groupId": "syros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 37.4447714063599,
+        "lon": 24.94193337879678,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2281088198",
+      "name": "Ε. ΑΡΜΑΚΟΛΑ - Λ. & Μ. ΡΟΥΣΣΟΣ ΟΕ (Πiraiki)",
+      "address": "Ηρ. Πολυτεχνείου 32",
+      "locality": "Σύρος",
+      "postcode": null,
+      "phone": "2281088198",
+      "groupId": "syros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 37.43518412835399,
+        "lon": 24.935652957746676,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2281400313",
+      "name": "ΛΕΟΝΤΑΡΙΤΗΣ ΕΥΑΓΓΕΛΟΣ",
+      "address": "Γεωργ. Παπανδρέου 8",
+      "locality": "Σύρος",
+      "postcode": null,
+      "phone": "2281400313",
+      "groupId": "syros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 37.43797819165542,
+        "lon": 24.93501991726209,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2282022220",
+      "name": "ΒΕΝΕΤΙΚΗ ΜΑΡΙΑ Ι.",
+      "address": "Χώρα",
+      "locality": "Άνδρος",
+      "postcode": null,
+      "phone": "2282022220",
+      "groupId": "andros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 37.836984669514,
+        "lon": 24.937045143193494,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2282022700",
+      "name": "ΠΟΛΙΤΗ ΦΑΙΔΡΑ ΙΚΕ",
+      "address": "Φηρά - παραπλεύρως Alpha bank - Κεντρική Πλατεία",
+      "locality": "Σαντορίνη",
+      "postcode": null,
+      "phone": "2282022700",
+      "groupId": "santorini",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 36.418172151877855,
+        "lon": 25.432503867176955,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2282023203",
+      "name": "ΔΙΑΠΟΥΛΗ ΑΡΙΣΤΟΤΕΛΗ ΚΑΙ ΣΙΑ ΟΕ",
+      "address": "Γεωργίου Εμπειρίκου 14 - Χώρα",
+      "locality": "Άνδρος",
+      "postcode": null,
+      "phone": "2282023203",
+      "groupId": "andros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.83657382739901,
+        "lon": 24.936061071451853,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2282062058",
+      "name": "ΓΑΡΥΦΑΛΛΟΣ ΧΡΗΣΤΟΣ",
+      "address": "Όρμος Κορθίου",
+      "locality": "Άνδρος",
+      "postcode": null,
+      "phone": "2282062058",
+      "groupId": "andros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.77438497498452,
+        "lon": 24.950768700394732,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2283022213",
+      "name": "ΑΠΕΡΓΗΣ ΕΜΜΑΝΟΥΗΛ ΚΑΙ ΣΙΑ ΟΕ",
+      "address": "Τριών Ιεραρχών 2",
+      "locality": "Τήνος",
+      "postcode": null,
+      "phone": "2283022213",
+      "groupId": "tinos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 37.537061386048485,
+        "lon": 25.163093276060373,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2283022272",
+      "name": "ΕΥΔΟΚΙΑ ΚΡΙΚΕΛΛΗ ΜΙΧΑΗΛ ΒΑΡΣΑΛΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+      "address": "Πλατεία Παντανάσσης 21",
+      "locality": "Τήνος",
+      "postcode": null,
+      "phone": "2283022272",
+      "groupId": "tinos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.53773267707573,
+        "lon": 25.161790148772035,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2283022400",
+      "name": "ΕΙΡΗΝΗ ΦΑΝΕΡΟΥ ΕΕ",
+      "address": "Πλατεία Ελευθερίας & Αλαβάνου Ζαννάκη",
+      "locality": "Τήνος",
+      "postcode": null,
+      "phone": "2283022400",
+      "groupId": "tinos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 37.536320505361495,
+        "lon": 25.16385634641465,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2283022500",
+      "name": "ΚΩΣΤΑ ΕΥΦΡΟΣΥΝΗ",
+      "address": "Αλαβάνου Κωνσταντίνου 8",
+      "locality": "Τήνος",
+      "postcode": null,
+      "phone": "2283022500",
+      "groupId": "tinos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 37.53593963054182,
+        "lon": 25.16490178660125,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2283023888",
+      "name": "ΦΡΑΓΚΙΣΚΑ ΧΑΤΖΗΛΟΥΗ",
+      "address": "Αλαβάνου Ζανάκη 7",
+      "locality": "Τήνος",
+      "postcode": null,
+      "phone": "2283023888",
+      "groupId": "tinos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 37.536888800203485,
+        "lon": 25.164631089877048,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2284021282",
+      "name": "ΓΡΑΒΑΡΗΣ ΙΩΑΝΝΗΣ ΚΑΙ ΣΙΑ ΟΕ",
+      "address": "Εντός Παλαιάς Αγοράς Παροικιάς",
+      "locality": "Πάρος",
+      "postcode": null,
+      "phone": "2284021282",
+      "groupId": "paros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 37.08453567867565,
+        "lon": 25.149502409456712,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2284021388",
+      "name": "ΤΣΙΜΠΙΔΗΣ Σ - ΒΙΓΛΑ Α ΟΕ",
+      "address": "Βίντσι",
+      "locality": "Πάρος",
+      "postcode": null,
+      "phone": "2284021388",
+      "groupId": "paros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 37.086589874236054,
+        "lon": 25.152600090456417,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2284021449",
+      "name": "ΤΣΙΟΤΣΙΟΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "Κεντρική Διασταύρωση Παροικιάς",
+      "locality": "Πάρος",
+      "postcode": null,
+      "phone": "2284021449",
+      "groupId": "paros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 37.09023806600708,
+        "lon": 25.15435668731159,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2284022202",
+      "name": "ΣΚΙΑΔΑ Π. ΧΡΥΣΟΥΛΑ ΟΕ",
+      "address": "Παροικιά & Πλατεία Μαυρογένη Νικολάου 6",
+      "locality": "Πάρος",
+      "postcode": null,
+      "phone": "2284022202",
+      "groupId": "paros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 37.082556395453665,
+        "lon": 25.146574609015694,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2284022223",
+      "name": "ΘΩΜΑ-ΚΟΝΤΟΥ ΕΙΡΗΝΗ",
+      "address": "Δημ. Αλιπράντη (Όπισθεν Κέντρου Υγείας Παροικιάς)",
+      "locality": "Πάρος",
+      "postcode": null,
+      "phone": "2284022223",
+      "groupId": "paros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.08609434768848,
+        "lon": 25.15167401511933,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2284055152",
+      "name": "ΑΤΤΑΡΤ ΦΙΛΙΠΠΟΣ ΕΕ",
+      "address": "Νάουσα Πάρου",
+      "locality": "Πάρος",
+      "postcode": null,
+      "phone": "2284055152",
+      "groupId": "paros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.11988704620989,
+        "lon": 25.231962803693364,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2285022241",
+      "name": "ΔΕΛΛΑΡΟΚΑ ΚΑΛΛΙΟΠΗ ΚΑΙ ΣΙΑ ΟΕ",
+      "address": "Πλατεία Μανδηλαρά - Χώρα",
+      "locality": "Νάξος",
+      "postcode": null,
+      "phone": "2285022241",
+      "groupId": "naxos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.10697280991224,
+        "lon": 25.37508666517151,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2285022761",
+      "name": "Σ. Φ. ΑΝΝΑΣ ΖΑΦΕΙΡΗ ΙΩΑΝΝΗ ΑΝΤΩΝΙΟΥ ΟΕ",
+      "address": "Παπαβασιλείου - Χώρα",
+      "locality": "Νάξος",
+      "postcode": null,
+      "phone": "2285022761",
+      "groupId": "naxos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 37.10349260745514,
+        "lon": 25.375716024664758,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2285024477",
+      "name": "ΙΣΠΑΝΟΠΟΥΛΟΣ ΕΜΜΑΝΟΥΗΛ",
+      "address": "Έναντι Νοσοκομείου - Χώρα",
+      "locality": "Νάξος",
+      "postcode": null,
+      "phone": "2285024477",
+      "groupId": "naxos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 37.1021717147171,
+        "lon": 25.380169344359576,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2285024960",
+      "name": "ΣΚΑΡΚΟΥ ΜΑΡΙΑ",
+      "address": "Περιοχή Έλλη",
+      "locality": "Νάξος",
+      "postcode": null,
+      "phone": "2285024960",
+      "groupId": "naxos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 37.10128943027131,
+        "lon": 25.381706054318833,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2285026666",
+      "name": "Σ. Φ. ΜΑΡΓΑΡΙΤΗΣ ΕΜΜΑΝΟΥΗΛ & ΜΑΡΓΑΡΙΤΗΣ ΜΙΧΑΗΛ & ΣΙΑ ΟΕ",
+      "address": "Χώρα",
+      "locality": "Νάξος",
+      "postcode": null,
+      "phone": "2285026666",
+      "groupId": "naxos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 37.10352013686085,
+        "lon": 25.377242235792167,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2286032566",
+      "name": "ΜΕΝΤΑΣ ΑΘΑΝΑΣΙΟΣ Σ.",
+      "address": "Μεσαριά (Κέντρο)",
+      "locality": "Σαντορίνη",
+      "postcode": null,
+      "phone": "2286032566",
+      "groupId": "santorini",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 36.40011179526279,
+        "lon": 25.451240218435483,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2286082699",
+      "name": "ΧΑΡΑΛΑΜΠΟΠΟΥΛΟΥ ΟΥΡΑΝΙΑ",
+      "address": "Περίσσα",
+      "locality": "Σαντορίνη",
+      "postcode": null,
+      "phone": "2286082699",
+      "groupId": "santorini",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 36.4147721405273,
+        "lon": 25.433050556020255,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2289023151",
+      "name": "Ν. ΚΟΥΣΑΘΑΝΑΣ Γ. ΚΟΥΣΑΘΑΝΑΣ ΚΑΙ ΣΙΑ ΟΕ",
+      "address": "Μητροπόλεως 10",
+      "locality": "Μύκονος",
+      "postcode": null,
+      "phone": "2289023151",
+      "groupId": "mykonos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 37.44533058298622,
+        "lon": 25.32717668585407,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2289023250",
+      "name": "ΚΟΥΚΟΥΖΕΛΗΣ ΔΗΜΗΤΡΙΟΣ ΟΕ",
+      "address": "Νέα Περιφερειακή Οδός",
+      "locality": "Μύκονος",
+      "postcode": null,
+      "phone": "2289023250",
+      "groupId": "mykonos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "location": {
+        "lat": 37.44218219472563,
+        "lon": 25.335465164335623,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2289023770",
+      "name": "ΘΕΟΧΑΡΗΣ Ι ΔΑΣΟΥΡΑ Φ Ε ΟΕ",
+      "address": "Χώρα & Ζουγανέλη Φλώρου 19",
+      "locality": "Μύκονος",
+      "postcode": null,
+      "phone": "2289023770",
+      "groupId": "mykonos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-03",
+      "location": {
+        "lat": 37.44664993121274,
+        "lon": 25.329208095360237,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2289023800",
+      "name": "ΚΟΥΚΟΥΖΕΛΗ - ΠΕΤΡΟΠΟΥΛΟΥ ΆΝΝΑ & ΣΙΑ ΟΕ",
+      "address": "Αργύραινα",
+      "locality": "Μύκονος",
+      "postcode": null,
+      "phone": "2289023800",
+      "groupId": "mykonos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 37.44624839044356,
+        "lon": 25.336439771082087,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2289023900",
+      "name": "ΚΟΝΤΟΓΙΩΡΓΗ ΧΡΗΣΤΟΥ ΚΑΙ ΣΙΑ ΕΕ",
+      "address": "Δραφάκι",
+      "locality": "Μύκονος",
+      "postcode": null,
+      "phone": "2289023900",
+      "groupId": "mykonos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
+      "location": {
+        "lat": 37.436964307518025,
+        "lon": 25.33613149625276,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2289078706",
+      "name": "ΠΑΠΑΝΙΚΟΛΑΟΥ ΝΙΚΟΛΑΟΣ",
+      "address": "Ορνός",
+      "locality": "Μύκονος",
+      "postcode": null,
+      "phone": "2289078706",
+      "groupId": "mykonos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 37.439175406308244,
+        "lon": 25.33343415049123,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    }
+  ]
+}
