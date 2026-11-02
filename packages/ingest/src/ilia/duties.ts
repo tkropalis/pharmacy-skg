@@ -9,7 +9,7 @@
  * is read as on call, the way the ITeQ lists read theirs: the app says "call first" and never
  * "open" (its meaning is not stated in the table; docs/research-greece.md).
  */
-import type { DutyKind, TimeWindow } from '@pharmacy-skg/core';
+import { isoWeekday, type DutyKind, type TimeWindow } from '@pharmacy-skg/core';
 import type { DutyEntry, DutyList, DutySection } from '../fsth/parse.ts';
 import type { RosterEntry } from '../cities/pipeline.ts';
 import type { Warning } from '../registry/build.ts';
@@ -88,10 +88,16 @@ interface DutyWindow {
 const WINDOW = /^(\d\d:\d\d)-(\d\d:\d\d)(\*?)$/;
 
 /**
- * The duties a row's hours state, one per window; null when the hours contradict the night
- * column (a row marked "Ναι" with nothing that ends the next morning, or the reverse).
+ * The duties a row's hours state on `date`, one per window; null when the hours contradict the
+ * night column (a row marked "Ναι" with nothing that ends the next morning, or the reverse). A
+ * window that ends by early afternoon on a Saturday is the Saturday-morning rota's, as in the
+ * ITeQ lists (iteq/heading.ts).
  */
-export function dutyWindows(hours: string | null, overnight: boolean): DutyWindow[] | null {
+export function dutyWindows(
+  hours: string | null,
+  overnight: boolean,
+  date: string,
+): DutyWindow[] | null {
   // Varda's rows state no hours: an overnight duty, shown as on duty with its hours not stated.
   if (hours === null) return overnight ? [] : null;
   const windows: DutyWindow[] = [];
@@ -103,7 +109,13 @@ export function dutyWindows(hours: string | null, overnight: boolean): DutyWindo
     windows.push({
       hours: { from, to, toNextDay },
       // A window into the next morning that starts in the morning is round the clock.
-      kind: toNextDay ? (from < '12:00' ? 'on-duty' : 'overnight') : 'day',
+      kind: toNextDay
+        ? from < '12:00'
+          ? 'on-duty'
+          : 'overnight'
+        : isoWeekday(date) === 6 && from < '12:00' && to <= '15:00'
+          ? 'saturday-extra'
+          : 'day',
       onCall: star === '*',
     });
   }
@@ -154,7 +166,7 @@ export function iliaDutyLists(
       warnings.push({ code: 'unknown-town', message: `${row.date}: "${row.town}"` });
       continue;
     }
-    const windows = dutyWindows(row.hours, row.overnight);
+    const windows = dutyWindows(row.hours, row.overnight, row.date);
     const entry = entryOf(row, town, byPhone);
     if (!windows || !entry) {
       warnings.push({

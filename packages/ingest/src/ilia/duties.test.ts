@@ -22,30 +22,41 @@ function table(name: string): Table {
 
 describe('dutyWindows', () => {
   it('reads each window, and the night column decides night duty', () => {
-    expect(dutyWindows('08:00-17:00', false)).toEqual([
+    expect(dutyWindows('08:00-17:00', false, '2026-01-01')).toEqual([
       { hours: { from: '08:00', to: '17:00', toNextDay: false }, kind: 'day', onCall: false },
     ]);
-    expect(dutyWindows('08:00-14:30 & 17:30-08:00', true)).toEqual([
+    expect(dutyWindows('08:00-14:30 & 17:30-08:00', true, '2026-01-02')).toEqual([
       { hours: { from: '08:00', to: '14:30', toNextDay: false }, kind: 'day', onCall: false },
       { hours: { from: '17:30', to: '08:00', toNextDay: true }, kind: 'overnight', onCall: false },
     ]);
   });
 
+  it("reads a Saturday morning's window as the Saturday rota's, as the ITeQ lists do", () => {
+    // 3 Jan 2026 is a Saturday: the night pharmacy's morning window, and a day pharmacy to 14:00.
+    expect(
+      dutyWindows('08:00-14:30 & 18:00-08:00', true, '2026-01-03')?.map((w) => w.kind),
+    ).toEqual(['saturday-extra', 'overnight']);
+    expect(dutyWindows('08:00-14:00', false, '2026-03-14')?.[0]?.kind).toBe('saturday-extra');
+    // Later than 15:00, or on another day, it is a day duty.
+    expect(dutyWindows('08:00-17:30', false, '2026-01-03')?.[0]?.kind).toBe('day');
+    expect(dutyWindows('08:00-14:00', false, '2026-03-13')?.[0]?.kind).toBe('day');
+  });
+
   it('reads a window from morning to morning as round the clock, and "*" as on call', () => {
-    expect(dutyWindows('08:00-08:00*', true)).toEqual([
+    expect(dutyWindows('08:00-08:00*', true, '2026-01-26')).toEqual([
       { hours: { from: '08:00', to: '08:00', toNextDay: true }, kind: 'on-duty', onCall: true },
     ]);
   });
 
   it('gives a row without hours (Varda) one overnight duty with no hours stated', () => {
-    expect(dutyWindows(null, true)).toEqual([]);
+    expect(dutyWindows(null, true, '2026-01-01')).toEqual([]);
   });
 
   it('refuses a row that contradicts its night column', () => {
-    expect(dutyWindows('08:00-17:00', true)).toBeNull();
-    expect(dutyWindows('17:00-08:00', false)).toBeNull();
-    expect(dutyWindows('8-5', false)).toBeNull();
-    expect(dutyWindows(null, false)).toBeNull();
+    expect(dutyWindows('08:00-17:00', true, '2026-01-01')).toBeNull();
+    expect(dutyWindows('17:00-08:00', false, '2026-01-01')).toBeNull();
+    expect(dutyWindows('8-5', false, '2026-01-01')).toBeNull();
+    expect(dutyWindows(null, false, '2026-01-01')).toBeNull();
   });
 });
 
