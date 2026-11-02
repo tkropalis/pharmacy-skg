@@ -2,6 +2,7 @@ import type { Locale } from '@pharmacy-skg/core';
 import { APP_NAME, APP_SHORT_NAME, THEME_COLORS } from '../config.ts';
 import { localePrefix, localizedPath } from '../i18n/routes.ts';
 import { t } from '../i18n/index.ts';
+import { SHORTCUTS, shortcutUrl } from './shortcuts.ts';
 
 /** Where a locale's pages link their manifest: '/manifest.webmanifest', '/en/manifest.webmanifest'. */
 export function manifestPath(locale: Locale): string {
@@ -30,6 +31,12 @@ export function webManifest(locale: Locale): Record<string, unknown> {
     background_color: THEME_COLORS.light,
     categories: ['health', 'medical', 'utilities'],
     prefer_related_applications: false,
+    // What a long press on the icon offers: the choices the home screen already has.
+    shortcuts: SHORTCUTS.map((shortcut) => ({
+      name: t(locale).shortcuts[shortcut],
+      url: shortcutUrl(locale, shortcut),
+      icons: [{ src: `/icons/shortcut-${shortcut}.png`, sizes: '192x192', type: 'image/png' }],
+    })),
     icons: [
       { src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
       { src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },

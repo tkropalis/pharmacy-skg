@@ -27,6 +27,14 @@ export const el = {
     available: 'Υπάρχει νέα έκδοση.',
     reload: 'Ανανέωση',
     dismiss: 'Κλείσιμο',
+  /** A long press on the installed app's icon (the manifest's shortcuts). */
+  shortcuts: {
+    open: 'Ανοιχτά τώρα',
+    duty: 'Εφημερεύοντα',
+    favourites: 'Αγαπημένα',
+    medicines: 'Φάρμακα',
+  },
+
   },
 
   stale: {

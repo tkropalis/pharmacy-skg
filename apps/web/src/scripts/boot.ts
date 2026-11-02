@@ -4,7 +4,8 @@ import { markConnection, onConnectionChange } from '../lib/connection.ts';
 import { checkedAt, formatUpdatedAt, isStale } from '../lib/freshness.ts';
 import { setupInstall } from '../lib/install.ts';
 import { keepOfflineDataWarm, registerServiceWorker } from '../lib/pwa.ts';
-import { DATA_UPDATED_KEY, writeItem } from '../lib/storage.ts';
+import { clearShortcut } from '../lib/shortcuts.ts';
+import { DATA_UPDATED_KEY, LANG_KEY, writeItem } from '../lib/storage.ts';
 import { setupMedicineSearch } from './medicine-search.ts';
 import type { Locale } from '@pharmacy-skg/core';
 
@@ -76,3 +77,4 @@ setupThemeChoice();
 setupMedicineSearch();
 registerServiceWorker();
 keepOfflineDataWarm();
+clearShortcut();

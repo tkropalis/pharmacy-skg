@@ -15,6 +15,13 @@ export const en: Dictionary = {
     reload: 'Reload',
     dismiss: 'Close',
   },
+  shortcuts: {
+    open: 'Open now',
+    duty: 'On duty',
+    favourites: 'Favourites',
+    medicines: 'Medicines',
+  },
+
 
   stale: {
     title: 'This information may be out of date.',

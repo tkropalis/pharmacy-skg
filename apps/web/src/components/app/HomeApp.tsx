@@ -36,6 +36,7 @@ import { buildLocalities, loadNationalPlaces, PLACES_PATH } from '../../lib/plac
 import type { NationalPlace } from '../../lib/places.ts';
 import { rememberCity } from '../../lib/home-city.ts';
 import type { Locality } from '../../lib/places.ts';
+import { openedWith } from '../../lib/shortcuts.ts';
 import { describeStatus } from '../../lib/status-label.ts';
 import { AREA_KEY, FILTER_KEY, LOCATION_KEY, readItem, writeItem } from '../../lib/storage.ts';
 import {
@@ -186,7 +187,8 @@ export default function HomeApp({
   const reducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)');
   const dark = useNightLook();
 
-  const [tab, setTab] = useState<Tab>('open');
+  // A shortcut on the installed icon opens the list on that choice (lib/shortcuts.ts).
+  const [tab, setTab] = useState<Tab>(openedWith === 'favourites' ? 'favourites' : 'open');
   const [timeMode, setTimeMode] = useState<TimeMode>({ kind: 'now' });
   const [origin, setOrigin] = useState<OriginState | null>(() =>
     initialOrigin(text.origin.lastHere, pinnedCity.current),
@@ -199,9 +201,13 @@ export default function HomeApp({
   const [visits, setVisits] = useState(loadVisits);
   // The options (location, time, filters) start closed, so the first pharmacy is on screen.
   const [controlsOpen, setControlsOpen] = useState(false);
-  const [dutyFilter, setDutyFilter] = useState<ListFilter>(() =>
-    readItem(FILTER_KEY) === 'duty' ? 'duty' : 'all',
-  );
+  const [dutyFilter, setDutyFilter] = useState<ListFilter>(() => {
+    // "Open now" and "On duty" are the two options of the list filter; a shortcut chooses one
+    // for this visit without changing the one remembered.
+    if (openedWith === 'duty') return 'duty';
+    if (openedWith === 'open') return 'all';
+    return readItem(FILTER_KEY) === 'duty' ? 'duty' : 'all';
+  });
   // The chosen pharmacy (its marker on the map) and the open row; on a phone, a choice made on
   // the map lowers the sheet to a card (`peek`) and the size before it is restored after.
   const [selectedId, setSelectedId] = useState<string | null>(null);

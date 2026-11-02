@@ -7,8 +7,11 @@
  */
 import { mkdir, readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
+import { faClock, faHouseMedical, faPills, faStar } from '@fortawesome/free-solid-svg-icons';
+import type { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import sharp from 'sharp';
 import { APP_NAME } from '../src/config.ts';
+import { faPath } from '../src/lib/fa.ts';
 import { el } from '../src/i18n/el.ts';
 import { en } from '../src/i18n/en.ts';
 
@@ -46,6 +49,35 @@ await render(favicon, 192, `${publicDir}icons/icon-192.png`);
 await render(favicon, 512, `${publicDir}icons/icon-512.png`);
 await render(fullBleed(), 512, `${publicDir}icons/icon-maskable-512.png`);
 await render(fullBleed(), 180, `${publicDir}apple-touch-icon.png`);
+
+/**
+ * The icons of the home-screen shortcuts (the manifest's `shortcuts`, src/lib/manifest.ts): the
+ * Font Awesome glyph of each choice in white on the app icon's green, full-bleed, because the
+ * phone cuts its own shape. The glyph stays inside the middle half.
+ */
+const SHORTCUT_ICONS = {
+  open: faClock,
+  duty: faHouseMedical,
+  favourites: faStar,
+  medicines: faPills,
+} as const;
+
+function shortcutIcon(icon: IconDefinition): Buffer {
+  const { width, height, d } = faPath(icon);
+  const scale = 16 / Math.max(width, height);
+  const x = 16 - (width * scale) / 2;
+  const y = 16 - (height * scale) / 2;
+  return Buffer.from(
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">` +
+      `<rect width="32" height="32" fill="${GREEN}"/>` +
+      `<path transform="translate(${x} ${y}) scale(${scale})" d="${d}" fill="#fff"/>` +
+      `</svg>`,
+  );
+}
+
+for (const [name, icon] of Object.entries(SHORTCUT_ICONS)) {
+  await render(shortcutIcon(icon), 192, `${publicDir}icons/shortcut-${name}.png`);
+}
 
 const OG_WIDTH = 1200;
 const OG_HEIGHT = 630;
