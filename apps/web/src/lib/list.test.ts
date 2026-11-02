@@ -175,9 +175,17 @@ describe('pinCollection', () => {
 
 describe('coverage', () => {
   it('reports published duty lists and extended hours', () => {
-    expect(coverage(data, night)).toMatchObject({ duties: true, extendedHours: true });
-    expect(coverage(data, new Date('2026-12-01T10:00:00Z')).duties).toBe(false);
-    expect(coverage(data, new Date('2026-12-01T10:00:00Z')).extendedHours).toBe(false);
+    expect(coverage(data, night).duties).toBe(true);
+    const extendedFrom = data.extendedHours.map((list) => list.period.from).sort()[0];
+    expect(coverage(data, new Date(`${extendedFrom}T10:00:00Z`)).extendedHours).toBe(true);
+    // The day after the last published list, whichever the data holds now (the extended hours
+    // run two months ahead, past any fixed date).
+    const last = [...data.duties.keys(), ...data.extendedHours.map((list) => list.period.to)]
+      .sort()
+      .at(-1);
+    const after = new Date(`${last}T10:00:00Z`);
+    after.setUTCDate(after.getUTCDate() + 1);
+    expect(coverage(data, after)).toMatchObject({ duties: false, extendedHours: false });
   });
   it('uses yesterday’s list before 08:00 and today’s afterwards', () => {
     const lastDay = [...data.duties.keys()].sort().at(-1) ?? '';

@@ -59,19 +59,31 @@ export function assembleMedicines(
     }
   }
 
-  let unmatchedShortages = 0;
-  for (const entry of shortages) {
-    const medicine = byBarcode.get(entry.barcode);
-    if (!medicine) {
-      unmatchedShortages++;
-      continue;
-    }
-    const shortage: Shortage = { from: entry.from, to: entry.to, reason: entry.reason };
-    byBarcode.set(entry.barcode, { ...medicine, shortage });
-  }
-
-  const medicines = [...byBarcode.values()].sort(
+  const sorted = [...byBarcode.values()].sort(
     (a, b) => byName.compare(a.name, b.name) || a.barcode.localeCompare(b.barcode),
   );
-  return { medicines, unmatchedShortages, warnings };
+  return { ...attachShortages(sorted, shortages), warnings };
+}
+
+/**
+ * Puts the list's shortages on the packs it names by barcode, replacing any earlier ones, and
+ * counts the entries without a priced pack. The stored prices take a new list this way when the
+ * bulletins cannot be read (cli/medicines.ts).
+ */
+export function attachShortages(
+  medicines: readonly MedicinePrice[],
+  shortages: readonly ShortageEntry[],
+): { medicines: MedicinePrice[]; unmatchedShortages: number } {
+  const byBarcode = new Map(shortages.map((entry) => [entry.barcode, entry]));
+  const priced = new Set(medicines.map((m) => m.barcode));
+  return {
+    medicines: medicines.map((medicine) => {
+      const entry = byBarcode.get(medicine.barcode);
+      const shortage: Shortage | null = entry
+        ? { from: entry.from, to: entry.to, reason: entry.reason }
+        : null;
+      return { ...medicine, shortage };
+    }),
+    unmatchedShortages: shortages.filter((entry) => !priced.has(entry.barcode)).length,
+  };
 }

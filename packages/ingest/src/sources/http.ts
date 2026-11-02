@@ -3,6 +3,20 @@
 export const USER_AGENT =
   'Mozilla/5.0 (compatible; pharmacy-skg/0.1; +https://github.com/tkropalis/pharmacy-skg)';
 
+/**
+ * An error with what caused it: fetch reports a site it cannot reach as "TypeError: fetch failed"
+ * and puts the reason (DNS, refused, reset, timeout) only in `cause`.
+ */
+export function describeError(error: unknown): string {
+  const parts = [String(error)];
+  let cause = (error as { cause?: unknown } | null)?.cause;
+  for (let depth = 0; cause && depth < 3; depth++) {
+    parts.push(String(cause));
+    cause = (cause as { cause?: unknown }).cause;
+  }
+  return parts.join(': ');
+}
+
 async function request(url: string, accept: string): Promise<Response> {
   let lastError: unknown;
   for (let attempt = 0; attempt < 3; attempt++) {

@@ -15,7 +15,7 @@ import { placeName } from '../iteq/places.ts';
 import { extractPages } from '../pdf.ts';
 import type { Warning } from '../registry/build.ts';
 import { ExtendedHoursSchema, SCHEMA_VERSION, type ExtendedHours, type Meta } from '../schema.ts';
-import { getBytes } from '../sources/http.ts';
+import { describeError, getBytes } from '../sources/http.ts';
 import { FsaClient, listFsaExtendedHours } from '../sources/fsa.ts';
 import { OSM_CREDIT } from './iteq.ts';
 import type {
@@ -84,7 +84,7 @@ export const attiki: CityPipeline = {
         unread++;
         failures.push({
           code: 'unreadable-page',
-          message: `fsa-efimeries.gr ${date}: ${String(error)}`,
+          message: `fsa-efimeries.gr ${date}: ${describeError(error)}`,
         });
         continue;
       }
