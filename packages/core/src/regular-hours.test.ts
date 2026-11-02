@@ -81,24 +81,30 @@ describe('Attica', () => {
 });
 
 describe('Karditsa', () => {
-  const morningAndAfternoon = [
+  const afternoon = (from: string) => [
     { from: '08:00', to: '14:00' },
-    { from: '17:30', to: '21:00' },
+    { from, to: '21:00' },
   ];
   const longMorning = [{ from: '08:00', to: '14:30' }];
   const cases: [string, string, { from: string; to: string }[]][] = [
-    // Monday 2 Nov 2026 to Sunday 8 Nov: Mon, Wed and Fri split, Tue and Thu until 14:30.
-    ['Monday', '2026-11-02', morningAndAfternoon],
+    // Monday 2 Nov 2026 to Sunday 8 Nov, in winter: Mon, Wed and Fri split, Tue and Thu to 14:30.
+    ['Monday', '2026-11-02', afternoon('17:00')],
     ['Tuesday', '2026-11-03', longMorning],
-    ['Wednesday', '2026-11-04', morningAndAfternoon],
+    ['Wednesday', '2026-11-04', afternoon('17:00')],
     ['Thursday', '2026-11-05', longMorning],
-    ['Friday', '2026-11-06', morningAndAfternoon],
+    ['Friday', '2026-11-06', afternoon('17:00')],
     ['Saturday', '2026-11-07', []],
     ['Sunday', '2026-11-08', []],
-    // The seasons have no dates, so summer and winter days are the same: the afternoon that
-    // both share, from 17:30.
-    ['Monday in July', '2026-07-06', morningAndAfternoon],
-    ['Monday in January', '2027-01-04', morningAndAfternoon],
+    // Summer afternoons until 31 Oct, winter ones from 1 Nov (Saturday 31 Oct is closed; Fri 30).
+    ['Friday 30 Oct, summer', '2026-10-30', afternoon('17:30')],
+    ['Monday 2 Nov, winter', '2026-11-02', afternoon('17:00')],
+    ['Monday in July, summer', '2026-07-06', afternoon('17:30')],
+    ['Monday in January, winter', '2027-01-04', afternoon('17:00')],
+    // The return to summer is unknown: from 1 Apr 2027 only the hours both seasons share.
+    ['Wednesday 31 Mar 2027, winter', '2027-03-31', afternoon('17:00')],
+    ['Thursday 1 Apr 2027, shared', '2027-04-01', longMorning],
+    ['Friday 2 Apr 2027, shared', '2027-04-02', afternoon('17:30')],
+    ['Monday in July 2027, shared', '2027-07-05', afternoon('17:30')],
   ];
   it.each(cases)('%s (%s)', (_name, date, expected) => {
     expect(regularRanges('karditsa', date)).toEqual(expected);
@@ -139,12 +145,17 @@ describe('Magnesia', () => {
     expect(regularRanges('magnesia', date)).toEqual(expected);
   });
 
-  it('counts the decision for 2026, the first year of "2026-2027", and not after', () => {
+  it('counts the decision for 2026 and 2027, "2026-2027" read literally, and not after', () => {
     expect(hasRegularHours('magnesia', '2025-12-31')).toBe(false);
     expect(hasRegularHours('magnesia', '2026-01-01')).toBe(true);
-    expect(hasRegularHours('magnesia', '2026-12-31')).toBe(true);
-    expect(hasRegularHours('magnesia', '2027-01-01')).toBe(false);
-    expect(regularRanges('magnesia', '2027-01-05')).toEqual([]);
+    expect(hasRegularHours('magnesia', '2027-01-01')).toBe(true);
+    expect(hasRegularHours('magnesia', '2027-12-31')).toBe(true);
+    expect(hasRegularHours('magnesia', '2028-01-01')).toBe(false);
+    expect(regularRanges('magnesia', '2027-01-05')).toEqual([
+      { from: '08:00', to: '13:30' },
+      { from: '17:00', to: '21:00' },
+    ]);
+    expect(regularRanges('magnesia', '2028-01-04')).toEqual([]);
   });
 
   it('keeps every holiday the decision lists, its patron saint having no date', () => {
