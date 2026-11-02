@@ -23,8 +23,7 @@ const others = LOCALES.filter((l) => l !== locale);
       <li>
         <a href={paths[other]} lang={other} hreflang={other} aria-label={t(other).localeName}>
           <span class="pill" aria-hidden="true">
-            <span class="code">{t(other).localeCode}</span>
-            <span class="full">{t(other).localeName}</span>
+            {t(other).localeName}
           </span>
         </a>
       </li>
@@ -33,9 +32,10 @@ const others = LOCALES.filter((l) => l !== locale);
 </nav>
 
 <!--
-  A phone shows a two-letter code ("EN", "ΕΛ"); the link's accessible name is the language's
-  own name, which contains the visible text (WCAG 2.5.3). The link keeps a 44x44 px target
-  while the visible pill is slimmer, so the header bar stays low.
+  The language's own name in full, on a phone too ("English", "Ελληνικά"): a visitor who does not
+  read Greek looks for a word, and a two-letter code in small grey type was easy to miss. The
+  link's accessible name is the same name (WCAG 2.5.3). The link keeps a 44x44 px target while
+  the visible pill is slimmer, so the header bar stays low.
 -->
 <style>
   .switcher {
@@ -71,14 +71,9 @@ const others = LOCALES.filter((l) => l !== locale);
     border: 1px solid var(--border);
     border-radius: 999px;
     background: var(--surface);
-    color: var(--muted);
+    color: var(--fg);
     font-weight: 650;
-    font-size: 0.75rem;
-    letter-spacing: 0.04em;
-  }
-
-  .full {
-    display: none;
+    font-size: 0.8125rem;
   }
 
   a:hover .pill {
@@ -86,20 +81,10 @@ const others = LOCALES.filter((l) => l !== locale);
   }
 
   @media (min-width: 40rem) {
-    .code {
-      display: none;
-    }
-
-    .full {
-      display: inline;
-    }
-
     .pill {
       min-height: 2.25rem;
       padding-inline: 0.875rem;
-      color: var(--fg);
       font-size: 0.875rem;
-      letter-spacing: 0;
     }
   }
 </style>

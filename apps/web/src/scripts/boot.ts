@@ -90,7 +90,21 @@ function setupThemeChoice(): void {
 }
 
 setupThemeChoice();
+
+/**
+ * The language switch remembers what was chosen, so the Greek home opens in English for someone
+ * who chose it (public/lang.js). Only a tap on the switch counts, never the browser's language.
+ */
+function rememberLanguageChoice(): void {
+  document.querySelector('.switcher')?.addEventListener('click', (event) => {
+    const link = event.target instanceof Element ? event.target.closest('a[hreflang]') : null;
+    const choice = link?.getAttribute('hreflang');
+    if (choice === 'el' || choice === 'en') writeItem(LANG_KEY, choice);
+  });
+}
+
+rememberLanguageChoice();
 setupMedicineSearch();
+clearShortcut();
 registerServiceWorker();
 keepOfflineDataWarm();
-clearShortcut();

@@ -59,6 +59,7 @@ const analytics = import.meta.env.PROD && process.env.VERCEL === '1';
     <!-- Before the first paint, so it already has the night look's colours (theme.js). -->
     <script is:inline src="/theme.js"></script>
     <script is:inline src="/stale-check.js"></script>
+    {route === 'home' && <script is:inline src="/lang.js"></script>}
     <link rel="manifest" href={manifestPath(locale)} />
     <!-- The name under the icon on an iPhone's Home Screen (otherwise the long page title). -->
     <meta name="apple-mobile-web-app-title" content={APP_SHORT_NAME[locale]} />

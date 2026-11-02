@@ -85,9 +85,8 @@ test.describe('the home screen is an app viewport', () => {
 test.describe('the language switch', () => {
   for (const locale of LOCALES) {
     const other = locale === 'el' ? 'en' : 'el';
-    test(`on a phone it is a 44 px "${t(other).localeCode}" with the language's own name (${locale})`, async ({
+    test(`it is a 44 px link with the language's own name, in full on a phone too (${locale})`, async ({
       page,
-      isMobile,
     }) => {
       await page.goto(HOME[locale]);
       const link = page.locator('nav.switcher a');
@@ -97,7 +96,7 @@ test.describe('the language switch', () => {
       const box = await link.boundingBox();
       expect(box?.width ?? 0).toBeGreaterThanOrEqual(43.5);
       expect(box?.height ?? 0).toBeGreaterThanOrEqual(43.5);
-      await expect(link).toContainText(isMobile ? t(other).localeCode : t(other).localeName);
+      await expect(link).toHaveText(t(other).localeName);
     });
   }
 });

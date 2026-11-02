@@ -5,7 +5,6 @@ import type { Dictionary } from './index.ts';
 
 export const en: Dictionary = {
   localeName: 'English',
-  localeCode: 'EN',
   languageSwitcherLabel: 'Language',
   skipToContent: 'Skip to content',
   tagline: 'Free and ad-free',
@@ -15,13 +14,13 @@ export const en: Dictionary = {
     reload: 'Reload',
     dismiss: 'Close',
   },
+
   shortcuts: {
     open: 'Open now',
     duty: 'On duty',
     favourites: 'Favourites',
     medicines: 'Medicines',
   },
-
 
   stale: {
     title: 'This information may be out of date.',
@@ -42,8 +41,9 @@ export const en: Dictionary = {
 
   home: {
     title: 'Open pharmacies near you',
-    documentTitle: 'On-duty and overnight pharmacies now',
-    description: 'Open, on-duty and overnight pharmacies right now, on a map. Free, no ads.',
+    documentTitle: 'On-duty and overnight pharmacies in Greece now',
+    description:
+      'Open, on-duty and overnight pharmacies in Greece right now, on a map. In English, free, no ads.',
     noScript: 'The map needs JavaScript.',
     dutyLink: 'Duty lists by day',
   },
@@ -283,6 +283,8 @@ export const en: Dictionary = {
       openNowNoScript: 'Needs JavaScript.',
       closedNow: 'Closed now',
       notOnDutyNow: 'Not on duty now',
+      opensAt: 'opens {when}',
+      nextDuty: 'next duty {when}',
       dutyNowSummary: '{open} of {total} on duty.',
       dutyNowNone: 'None on duty now.',
       listHeading: 'All pharmacies',
@@ -303,8 +305,6 @@ export const en: Dictionary = {
       unpublished: 'The day’s duty lists are not announced yet.',
       unpublishedShort: 'duty not announced yet',
       loadFailed: 'Not all duty days loaded, so this may change.',
-      opensAt: 'opens {when}',
-      nextDuty: 'next duty {when}',
       whenToday: 'today at {time}',
       whenTomorrow: 'tomorrow at {time}',
       whenWeekday: '{weekday} at {time}',

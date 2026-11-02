@@ -52,3 +52,9 @@ export const LOCATION_KEY = 'pharmacy-skg:location';
 export const FILTER_KEY = 'pharmacy-skg:filter';
 /** The maps app last chosen for directions ('google', 'apple' or 'waze'). */
 export const MAPS_KEY = 'pharmacy-skg:maps';
+/**
+ * The language chosen with the language switch ('el' or 'en'), so the Greek home opens in
+ * English for someone who chose English (public/lang.js reads it). Never set by the browser's
+ * language.
+ */
+export const LANG_KEY = 'pharmacy-skg:lang';
