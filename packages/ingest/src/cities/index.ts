@@ -1,7 +1,9 @@
 import { attiki } from './attiki.ts';
+import { cyclades } from './cyclades.ts';
 import { ilia } from './ilia.ts';
 import { ITEQ_PIPELINES } from './iteq-areas.ts';
 import type { CityPipeline } from './pipeline.ts';
+import { kilkis } from './kilkis.ts';
 import { larisa } from './larisa.ts';
 import { thessaloniki } from './thessaloniki.ts';
 
@@ -13,5 +15,7 @@ export const PIPELINES: readonly CityPipeline[] = [
   larisa,
   attiki,
   ilia,
+  cyclades,
+  kilkis,
   ...ITEQ_PIPELINES,
 ];
