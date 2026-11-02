@@ -50,7 +50,9 @@ const analytics = import.meta.env.PROD && process.env.VERCEL === '1';
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    {(alternates === null || route === 'report') && <meta name="robots" content="noindex" />}
+    {(alternates === null || route === 'report' || route === 'status') && (
+      <meta name="robots" content="noindex" />
+    )}
 
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content={THEME_COLORS.light} />

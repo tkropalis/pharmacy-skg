@@ -23,6 +23,7 @@ const PAGES: Record<string, (locale: Locale) => string> = {
   about: (locale) => localizedPath(locale, 'about'),
   privacy: (locale) => localizedPath(locale, 'privacy'),
   report: (locale) => localizedPath(locale, 'report'),
+  status: (locale) => localizedPath(locale, 'status'),
 };
 
 for (const scheme of ['light', 'dark'] as const) {

@@ -9,6 +9,8 @@ export const ROUTES = {
   about: { el: 'plirofories', en: 'about' },
   privacy: { el: 'aporrito', en: 'privacy' },
   report: { el: 'anafora', en: 'report' },
+  /** Linked from the about page only; not in the sitemap, and not indexed. */
+  status: { el: 'katastasi-dedomenon', en: 'data-status' },
 } as const satisfies Record<string, Record<Locale, string>>;
 
 export type RouteKey = keyof typeof ROUTES;

@@ -34,11 +34,27 @@ async function refreshFreshness(): Promise<void> {
   }
 }
 
+/**
+ * The data status page's rows (DataStatusPage.astro) are built with the data, so on a page
+ * kept by the device for days they would still say "up to date": whether each is old is worked
+ * out again here, from when it was checked and the clock.
+ */
+function markStatusRows(): void {
+  const now = new Date();
+  for (const row of document.querySelectorAll<HTMLElement>('tr[data-checked-at]')) {
+    row.dataset['fresh'] = String(!isStale(row.dataset['checkedAt'], now));
+  }
+}
+
 markConnection();
 setupInstall();
 void refreshFreshness();
+markStatusRows();
 document.addEventListener('visibilitychange', () => {
-  if (document.visibilityState === 'visible') void refreshFreshness();
+  if (document.visibilityState === 'visible') {
+    void refreshFreshness();
+    markStatusRows();
+  }
 });
 onConnectionChange((online) => {
   if (online) void refreshFreshness();

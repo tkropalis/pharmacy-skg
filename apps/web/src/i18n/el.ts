@@ -93,6 +93,8 @@ export const el = {
       button: 'Εγκατάσταση',
     },
     /** One per area whose lists come straight from its own site, followed by the site's link. */
+    /** The one link to the data status page. */
+    dataStatusLink: 'Κατάσταση δεδομένων',
     dutyCredit: '{area}: {source},',
     creditsHeading: 'Πηγές',
     /** Each is followed by its link, labelled with the site's address. */
@@ -115,6 +117,19 @@ export const el = {
     emergencyAmbulance: 'ΕΚΑΒ',
     emergencyOr: 'ή',
     emergencyPoison: 'Κέντρο Δηλητηριάσεων',
+  /** The data status page: a table of the areas (linked from the about page only). */
+  dataStatus: {
+    title: 'Κατάσταση δεδομένων',
+    description: 'Πότε ελέγχθηκε κάθε περιοχή και ποιες εφημερίες έχουν ανακοινωθεί.',
+    summary: 'Καλέστε πριν πάτε.',
+    area: 'Περιοχή',
+    checked: 'Ελέγχθηκε',
+    duties: 'Εφημερίες',
+    fresh: 'Ενημερωμένο',
+    stale: 'Παλιό',
+    noDuties: 'Δεν έχουν ανακοινωθεί',
+  },
+
   },
 
   privacy: {

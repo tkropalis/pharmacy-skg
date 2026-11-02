@@ -79,6 +79,7 @@ export const en: Dictionary = {
     /** One per area whose lists come straight from its own site, followed by the site's link. */
     dutyCredit: '{area}: {source},',
     creditsHeading: 'Sources',
+    dataStatusLink: 'Data status',
     credits: {
       fsth: 'Duty lists in Thessaloniki: Pharmaceutical Association of Thessaloniki, via',
       pkm: 'Opening hours in Thessaloniki: Region of Central Macedonia.',
@@ -97,6 +98,18 @@ export const en: Dictionary = {
     emergencyAmbulance: 'Ambulance',
     emergencyOr: 'or',
     emergencyPoison: 'Poison Centre',
+  },
+
+  dataStatus: {
+    title: 'Data status',
+    description: 'When each area was last checked and which duty days are announced.',
+    summary: 'Call before you go.',
+    area: 'Area',
+    checked: 'Checked',
+    duties: 'Duty days',
+    fresh: 'Up to date',
+    stale: 'Out of date',
+    noDuties: 'None announced',
   },
 
   privacy: {
