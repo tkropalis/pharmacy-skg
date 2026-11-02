@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-03",
+  "groups": [
+    {
+      "id": "trikala",
+      "name": "Τρίκαλα",
+      "source": {
+        "url": "https://trikala.efhmeries.gr/",
+        "uploadedAt": "2026-11-02T12:34:17.253Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431033564",
+              "name": "ΚΕΜΑΝΙΔΗΣ ΒΑΙΛΕΙΟΣ",
+              "address": "ΙΠΠΟΚΡΑΤΟΥΣ 26",
+              "locality": "Τρίκαλα",
+              "phone": "2431033564"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "18:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "18:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431073736",
+              "name": "ΚΑΜΙΝΙΩΤΗΣ ΣΟΛΩΝ",
+              "address": "ΚΟΝΔΥΛΗ ΓΕΩΡΓΙΟΥ 52",
+              "locality": "Τρίκαλα",
+              "phone": "2431073736"
+            },
+            {
+              "pharmacyId": "2431023000",
+              "name": "ΜΠΑΜΠΟΥΡΗ ΑΝΑΣΤΑΣΙΑ",
+              "address": "ΙΟΥΛ. ΑΔΑΜ 10",
+              "locality": "Τρίκαλα",
+              "phone": "2431023000"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431026350",
+              "name": "ΣΑΠΟΥΝΑ ΧΡΙΣΤΙΝΑ",
+              "address": "ΣΤΡΑΤΗΓΟΥ ΣΑΡΑΦΗ 4",
+              "locality": "Τρίκαλα",
+              "phone": "2431026350"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431026350",
+              "name": "ΣΑΠΟΥΝΑ ΧΡΙΣΤΙΝΑ",
+              "address": "ΣΤΡΑΤΗΓΟΥ ΣΑΡΑΦΗ 4",
+              "locality": "Τρίκαλα",
+              "phone": "2431026350"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

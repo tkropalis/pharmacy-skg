@@ -7,29 +7,9 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-01T20:33:38.532Z"
+        "uploadedAt": "2026-11-02T12:31:51.579Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221054954",
-              "name": "ΘΕΟΔΟΣΙΟΥ ΔΕΣΠΟΙΝΑ",
-              "address": "ΝΕΟΦΥΤΟΥ 27",
-              "locality": "Χαλκίδα",
-              "phone": "2221054954"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -87,26 +67,6 @@
         },
         {
           "kind": "day",
-          "heading": "17:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "17:30",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221041413",
-              "name": "ΜΠΡΟΚΑΛΑΚΗΣ ΙΩΣΗΦ",
-              "address": "5ο ΧΛΜ. ΧΑΛΚΙΔΑΣ-Ν. ΑΡΤΑΚΗΣ",
-              "locality": "Χαλκίδα",
-              "phone": "2221041413"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "14:00 ΕΩΣ 21:00",
           "hours": {
             "from": "14:00",
@@ -122,6 +82,46 @@
               "address": "ΓΑΖΕΠΗ 46-ΝΟΣΟΚΟΜΕΙΟ",
               "locality": "Χαλκίδα",
               "phone": "2221020777"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221054954",
+              "name": "ΘΕΟΔΟΣΙΟΥ ΔΕΣΠΟΙΝΑ",
+              "address": "ΝΕΟΦΥΤΟΥ 27",
+              "locality": "Χαλκίδα",
+              "phone": "2221054954"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221041413",
+              "name": "ΜΠΡΟΚΑΛΑΚΗΣ ΙΩΣΗΦ",
+              "address": "5ο ΧΛΜ. ΧΑΛΚΙΔΑΣ-Ν. ΑΡΤΑΚΗΣ",
+              "locality": "Χαλκίδα",
+              "phone": "2221041413"
             }
           ]
         }

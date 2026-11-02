@@ -34,7 +34,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 36.3413317,
         "lon": 28.198454,
@@ -832,7 +832,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 36.3642985,
         "lon": 28.0040931,
@@ -1178,6 +1178,27 @@
       }
     },
     {
+      "id": "2241067567",
+      "name": "ΦΟΥΤΟΥΛΗΣ ΝΙΚΟΛΑΟΣ / FOUTOULIS NIKOLAOS",
+      "address": "ΑΘΗΝΩΝ 11 / ATHINON 11",
+      "locality": "Ρόδος",
+      "postcode": null,
+      "phone": "2241067567",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 36.4241443,
+        "lon": 28.2091897,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/29933",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2241067830",
       "name": "ΔΙΑΚΟΓΕΩΡΓΙΟΥ Α. ΚΩΝΣΤΑΝΤΙΝΟΣ / DIAKOGEORGIOY A. KONSTANTINOS",
       "address": "Π. ΜΕΛΑ 74 / P.MELA 74",
@@ -1189,7 +1210,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 36.4425183,
         "lon": 28.218669,
@@ -1252,7 +1273,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 36.3890386,
         "lon": 28.214573,
@@ -1777,7 +1798,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 36.2256314,
         "lon": 27.8592134,
@@ -1840,7 +1861,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 36.4108314,
         "lon": 28.118549,
@@ -2113,7 +2134,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 36.8901121,
         "lon": 27.2903769,
@@ -2365,7 +2386,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 36.8763847,
         "lon": 27.2069582,
@@ -2407,7 +2428,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 36.8044737,
         "lon": 27.0956379,
@@ -2617,7 +2638,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 36.2143827,
         "lon": 28.116279,
@@ -2785,7 +2806,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 36.0934975,
         "lon": 28.0169723,
@@ -2806,7 +2827,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 36.054353,
         "lon": 27.9705901,
@@ -2890,7 +2911,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 35.5073286,
         "lon": 27.2109979,
@@ -2953,7 +2974,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 36.2269188,
         "lon": 27.8561477,
@@ -2995,7 +3016,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 36.6158401,
         "lon": 27.8355787,

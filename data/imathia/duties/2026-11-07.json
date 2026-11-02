@@ -7,26 +7,26 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-11-01T20:33:57.438Z"
+        "uploadedAt": "2026-11-02T12:32:10.096Z"
       },
       "sections": [
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "14:30",
+            "to": "21:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331023132",
-              "name": "ΜΑΣΟΥΡΑ ΑΙΚΑΤΕΡΙΝΗ & ΣΙΑ Ε.Ε.",
-              "address": "ΒΕΝΙΖΕΛΟΥ 22",
+              "pharmacyId": "2331065931",
+              "name": "ΚΟΥΡΚΟΥΤΑ ΑΘΑΝ. ΝΙΚΟΛΕΤΑ",
+              "address": "ΠΙΝΔΟΥ 15 ΚΑΙ ΚΑΡΑΤΑΣΟΥ",
               "locality": "Βέροια",
-              "phone": "2331023132"
+              "phone": "2331065931"
             }
           ]
         },
@@ -97,18 +97,11 @@
               "phone": "2331064102"
             },
             {
-              "pharmacyId": "2332027777",
-              "name": "ΚΑΤΗ ΣΟΦΙΑ",
-              "address": "ΖΑΦΕΙΡΑΚΗ 20",
-              "locality": "Νάουσα",
-              "phone": "2332027777"
-            },
-            {
-              "pharmacyId": "2331024123",
-              "name": "ΜΑΣΟΥΡΑ ΑΛΕΞΑΝΔΡΑ & ΣΙΑ Ε.Ε.",
-              "address": "ΒΕΝΙΖΕΛΟΥ 26",
+              "pharmacyId": "2331071601",
+              "name": "ΚΑΛΑΜΠΑΛΙΚΑΣ ΙΩΑΝΝΗΣ ΤΟΥ ΕΥΑΓΓΕΛΟΥ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 48 ΚΑΙ ΚΟΝΙΤΣΗ",
               "locality": "Βέροια",
-              "phone": "2331024123"
+              "phone": "2331071601"
             },
             {
               "pharmacyId": "2333025666",
@@ -116,6 +109,13 @@
               "address": "ΝΑΟΥΣΗΣ 12",
               "locality": "Αλεξάνδρεια",
               "phone": "2333025666"
+            },
+            {
+              "pharmacyId": "2332022831",
+              "name": "ΠΟΥΤΟΥΡΗ Α. ΔΕΣΠΟΙΝΑ",
+              "address": "ΠΛ.ΔΙΟΙΚΗΤΗΡΙΟΥ 1",
+              "locality": "Νάουσα",
+              "phone": "2332022831"
             },
             {
               "pharmacyId": "2331065770",
@@ -128,9 +128,9 @@
         },
         {
           "kind": "day",
-          "heading": "14:30 ΕΩΣ 21:00",
+          "heading": "19:00 ΕΩΣ 21:00",
           "hours": {
-            "from": "14:30",
+            "from": "19:00",
             "to": "21:00",
             "toNextDay": false
           },
@@ -138,21 +138,21 @@
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331065931",
-              "name": "ΚΟΥΡΚΟΥΤΑ ΑΘΑΝ. ΝΙΚΟΛΕΤΑ",
-              "address": "ΠΙΝΔΟΥ 15 ΚΑΙ ΚΑΡΑΤΑΣΟΥ",
+              "pharmacyId": "2331023132",
+              "name": "ΜΑΣΟΥΡΑ ΑΙΚΑΤΕΡΙΝΗ & ΣΙΑ Ε.Ε.",
+              "address": "ΒΕΝΙΖΕΛΟΥ 22",
               "locality": "Βέροια",
-              "phone": "2331065931"
+              "phone": "2331023132"
             }
           ]
         },
         {
-          "kind": "day",
-          "heading": "19:00 ΕΩΣ 21:00",
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
-            "from": "19:00",
-            "to": "21:00",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],

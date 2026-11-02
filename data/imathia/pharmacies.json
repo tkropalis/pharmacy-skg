@@ -160,7 +160,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 40.5283932,
         "lon": 22.2085606,
@@ -202,7 +202,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 40.5254067,
         "lon": 22.204205,
@@ -244,7 +244,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 40.5255362,
         "lon": 22.2041513,
@@ -517,7 +517,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 40.5500249,
         "lon": 22.2439114,
@@ -622,7 +622,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 40.5266924,
         "lon": 22.2052137,
@@ -811,7 +811,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 40.5272051,
         "lon": 22.2033525,
@@ -958,7 +958,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 40.6331765,
         "lon": 22.0712714,
@@ -1063,7 +1063,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 40.6290104,
         "lon": 22.0683474,
@@ -1194,27 +1194,6 @@
         "lat": 40.6298234,
         "lon": 22.0688401,
         "ref": "https://imathia.efhmeries.gr/Home/Details/5774",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
-      "id": "2332027777",
-      "name": "ΚΑΤΗ ΣΟΦΙΑ",
-      "address": "ΖΑΦΕΙΡΑΚΗ 20",
-      "locality": "Νάουσα",
-      "postcode": null,
-      "phone": "2332027777",
-      "groupId": "imathia",
-      "sources": [
-        "iteq-imathia"
-      ],
-      "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-07",
-      "location": {
-        "lat": 40.6311951,
-        "lon": 22.0689141,
-        "ref": "https://imathia.efhmeries.gr/Home/Details/5799",
         "source": "list",
         "precision": "exact"
       }
@@ -1546,7 +1525,7 @@
         "iteq-imathia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 40.6275043,
         "lon": 22.4339659,

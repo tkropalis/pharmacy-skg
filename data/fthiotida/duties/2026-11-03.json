@@ -7,46 +7,26 @@
       "name": "Φθιώτιδα",
       "source": {
         "url": "https://fthiotida.efhmeries.gr/",
-        "uploadedAt": "2026-11-01T20:36:00.876Z"
+        "uploadedAt": "2026-11-02T12:34:35.623Z"
       },
       "sections": [
         {
           "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "heading": "08:00 ΕΩΣ 22:00",
           "hours": {
             "from": "08:00",
-            "to": "14:00",
+            "to": "22:00",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2231033618",
-              "name": "ΜΙΧΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
-              "address": "ΠΑΠΑΚΥΡΙΑΖΗ 34",
+              "pharmacyId": "2231022386",
+              "name": "ΒΕΛΙΟΥ ΔΕΣΠΟΙΝΑ",
+              "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 2",
               "locality": "Λαμία",
-              "phone": "2231033618"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231033618",
-              "name": "ΜΙΧΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
-              "address": "ΠΑΠΑΚΥΡΙΑΖΗ 34",
-              "locality": "Λαμία",
-              "phone": "2231033618"
+              "phone": "2231022386"
             }
           ]
         },
@@ -101,26 +81,6 @@
         },
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 22:00",
-          "hours": {
-            "from": "08:00",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231022386",
-              "name": "ΒΕΛΙΟΥ ΔΕΣΠΟΙΝΑ",
-              "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 2",
-              "locality": "Λαμία",
-              "phone": "2231022386"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00*",
           "hours": {
             "from": "08:00",
@@ -144,6 +104,46 @@
               "address": "ΜΑΚΡΑΚΩΜΗ",
               "locality": "Μακρακώμη",
               "phone": "2236022766"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231033618",
+              "name": "ΜΙΧΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΠΑΠΑΚΥΡΙΑΖΗ 34",
+              "locality": "Λαμία",
+              "phone": "2231033618"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231033618",
+              "name": "ΜΙΧΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΠΑΠΑΚΥΡΙΑΖΗ 34",
+              "locality": "Λαμία",
+              "phone": "2231033618"
             }
           ]
         }

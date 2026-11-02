@@ -307,7 +307,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 39.0622243,
         "lon": 21.0530725,
@@ -690,6 +690,27 @@
         "lat": 39.163182,
         "lon": 20.989939,
         "ref": "https://arta.efhmeries.gr/Home/Details/2440",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681075511",
+      "name": "ΠΕΤΣΑΣ",
+      "address": "ΣΚΟΥΦΑ 151",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681075511",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 39.1604808,
+        "lon": 20.9836292,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2448",
         "source": "list",
         "precision": "exact"
       }

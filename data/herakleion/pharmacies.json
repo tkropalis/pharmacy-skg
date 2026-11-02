@@ -223,7 +223,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 35.336241,
         "lon": 25.1343269,
@@ -538,7 +538,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 35.3372877,
         "lon": 25.1600453,
@@ -1147,7 +1147,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 35.33091,
         "lon": 25.12015,
@@ -1714,7 +1714,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 35.3374427,
         "lon": 25.1301255,
@@ -2207,6 +2207,27 @@
       }
     },
     {
+      "id": "2810315051",
+      "name": "Σ.Φ. ΤΣΙΚΑΝΔΗΛΑΚΗ ΣΤΕΦΑΝΙΑ - ΤΣΙΚΑΝΔΗΛΑΚΗΣ ΙΩΑΝΝΗΣ Ο.Ε.",
+      "address": "ΜΕΝ.ΠΑΡΛΑΜΑ 34-ΓΙΟΦΥΡΟ ΓΙΑ ΡΕΘΥΜΝΟ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810315051",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 35.3244259,
+        "lon": 25.1037355,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/57916",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810315655",
       "name": "Σ.Φ. ΣΦΑΚΙΑΝΑΚΗ ΕΙΡΗΝΗ - ΜΑΥΡΟΥΔΗΣ ΕΥΑΓΓΕΛΟΣ Ο.Ε.",
       "address": "ΕΟΚ 28 ΜΑΣΤΑΜΠΑΣ (ΔΙΠΛΑ ΣΤΟ SUPER MARKET BAZAAR)",
@@ -2333,6 +2354,27 @@
       }
     },
     {
+      "id": "2810317958",
+      "name": "ΔΟΥΛΟΥΦΑΚΗΣ ΔΗΜ. &ΣΙΑ Ο.Ε.",
+      "address": "ΑΤΛΑΝΤΙΔΟΣ 22 ΠΛΗΣΙΟΝ ΠΑΝΑΓΙΤΣΑΣ ΜΑΣΤΑΜΠΑ",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810317958",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 35.3254116,
+        "lon": 25.1274476,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/58093",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810318327",
       "name": "ΣΤΥΛΙΑΝΑΚΗ ΚΩΝ. ΜΑΡΙΑ",
       "address": "ΓΕΩΡ. ΓΕΝΝΗΜΑΤΑ 77",
@@ -2344,7 +2386,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 35.3286719,
         "lon": 25.089222,
@@ -2428,7 +2470,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 35.310896,
         "lon": 25.1499714,
@@ -2575,7 +2617,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 35.3318441,
         "lon": 25.1405807,
@@ -3142,7 +3184,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 35.2844664,
         "lon": 25.2407229,
@@ -3562,7 +3604,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 35.1470333,
         "lon": 25.2653989,
@@ -4171,7 +4213,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 35.3173984,
         "lon": 25.3904446,
@@ -4234,7 +4276,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 35.331734,
         "lon": 25.3452693,
@@ -4276,7 +4318,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 35.2905044,
         "lon": 25.4606531,
@@ -4381,7 +4423,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 35.2926533,
         "lon": 25.4320195,
@@ -4444,7 +4486,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 35.3294452,
         "lon": 25.313214,

@@ -76,7 +76,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 39.363786,
         "lon": 22.944248,
@@ -97,7 +97,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 39.360173,
         "lon": 22.949618,
@@ -118,7 +118,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 39.3706585,
         "lon": 22.9441251,
@@ -265,7 +265,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.360802,
         "lon": 22.947979,
@@ -307,7 +307,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 39.361887,
         "lon": 22.946314,
@@ -391,7 +391,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.359786,
         "lon": 22.946819,
@@ -412,7 +412,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.360422,
         "lon": 22.947342,
@@ -643,7 +643,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.362606,
         "lon": 22.948676,
@@ -685,7 +685,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.359744,
         "lon": 22.94995,
@@ -874,7 +874,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.366032,
         "lon": 22.95185,
@@ -979,7 +979,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.376893,
         "lon": 22.92332,
@@ -1073,6 +1073,27 @@
       }
     },
     {
+      "id": "2421038909",
+      "name": "ΓΕΩΡΓΙΟΣ ΚΑΤΣΙΟΠΟΥΛΟΣ",
+      "address": "Τ.ΟΙΚΟΝΟΜΑΚΗ 32 Β- Κ.ΚΑΡΤΑΛΗ",
+      "locality": "Βόλος",
+      "postcode": null,
+      "phone": "2421038909",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 39.362301,
+        "lon": 22.948384,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5575",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2421039448",
       "name": "ΑΘΑΝΑΣΙΟΣ ΤΣΟΥΜΠΕΚΟΣ",
       "address": "ΔΗΜΗΤΡΙΑΔΟΣ 88",
@@ -1084,7 +1105,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 39.360713,
         "lon": 22.946075,
@@ -1168,7 +1189,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 39.379554,
         "lon": 22.958581,
@@ -1294,7 +1315,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 39.36123,
         "lon": 22.965596,
@@ -1378,7 +1399,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 39.365328,
         "lon": 22.952725,
@@ -1399,7 +1420,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 39.362398,
         "lon": 22.945794,
@@ -1504,7 +1525,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 39.3731686,
         "lon": 22.9489266,
@@ -1588,7 +1609,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.375689,
         "lon": 22.959118,
@@ -1609,7 +1630,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.362263,
         "lon": 22.9581296,
@@ -1630,7 +1651,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.359521,
         "lon": 22.963579,
@@ -1693,7 +1714,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 39.360598,
         "lon": 22.956867,
@@ -1735,7 +1756,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 39.363429,
         "lon": 22.956283,
@@ -1756,7 +1777,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.361905,
         "lon": 22.953438,
@@ -1819,13 +1840,34 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 39.370597,
         "lon": 22.935664,
         "ref": "https://magnesia.efhmeries.gr/Home/Details/5377",
         "source": "list",
         "precision": "exact"
+      }
+    },
+    {
+      "id": "2421060306",
+      "name": "ΠΑΝΤΕΛΗΣ ΝΤΟΚΟΥΖΗΣ",
+      "address": "ΜΑΙΑΝΔΡΟΥ 36",
+      "locality": "Νέα Ιωνία",
+      "postcode": null,
+      "phone": "2421060306",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
+      "location": {
+        "lat": 39.372326,
+        "lon": 22.928483,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΜΑΙΑΝΔΡΟΥ 36, Νέα Ιωνία"
       }
     },
     {
@@ -1840,7 +1882,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.373969,
         "lon": 22.93224,
@@ -2018,6 +2060,27 @@
       }
     },
     {
+      "id": "2421064130",
+      "name": "ΑΣΠΑΣΙΑ ΤΣΑΛΑΒΟΥ",
+      "address": "ΧΙΟΥ 61(ΒΑΜΒΑΚΟΥΡΓΕΙΑ)",
+      "locality": "Νέα Ιωνία",
+      "postcode": null,
+      "phone": "2421064130",
+      "groupId": "magnesia",
+      "sources": [
+        "iteq-magnesia"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "location": {
+        "lat": 39.377358,
+        "lon": 22.922143,
+        "ref": "https://magnesia.efhmeries.gr/Home/Details/5559",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2421064343",
       "name": "ΜΑΡΙΑ ΣΩΤΗΡΟΠΟΥΛΟΥ",
       "address": "ΜΑΙΑΝΔΡΟΥ 116",
@@ -2029,7 +2092,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.372232,
         "lon": 22.928265,
@@ -2050,7 +2113,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 39.37253,
         "lon": 22.922831,
@@ -2197,7 +2260,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 39.374156,
         "lon": 22.938984,
@@ -2218,7 +2281,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.362044,
         "lon": 22.927289,
@@ -2260,7 +2323,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.375704,
         "lon": 22.926183,
@@ -2302,7 +2365,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.371014,
         "lon": 22.949606,
@@ -2344,7 +2407,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 39.361534,
         "lon": 22.932667,
@@ -2407,7 +2470,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 39.359441,
         "lon": 22.947595,
@@ -2512,7 +2575,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 39.3746679,
         "lon": 22.9339529,
@@ -2596,7 +2659,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.324911,
         "lon": 22.926349,
@@ -2680,7 +2743,7 @@
         "iteq-magnesia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-11",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.3627673,
         "lon": 22.9530526,

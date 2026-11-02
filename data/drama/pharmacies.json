@@ -527,6 +527,27 @@
       }
     },
     {
+      "id": "2521031122",
+      "name": "ΠΑΠΑΔΗΜΑ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΦΙΛΙΠΠΟΥ 14",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521031122",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 41.1478155,
+        "lon": 24.1512536,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3210",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521031232",
       "name": "ΦΑΝΤΗ ΒΑΣΙΛΙΚΗ ΚΑΙ ΣΙΑ ΟΕ",
       "address": "ΚΟΛΟΚΟΤΡΩΝΗ 11",
@@ -963,6 +984,27 @@
         "lat": 41.142452,
         "lon": 24.148391,
         "ref": "https://drama.efhmeries.gr/Home/Details/3151",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521047776",
+      "name": "ΒΑΣΣΙΟΥ ΜΑΡΙΑ",
+      "address": "Β. ΟΛΓΑΣ 56, ΝΕΑ ΑΜΙΣΣΟΣ",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521047776",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 41.1299965,
+        "lon": 24.1200813,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3209",
         "source": "list",
         "precision": "exact"
       }

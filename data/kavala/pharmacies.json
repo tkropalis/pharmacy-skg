@@ -55,7 +55,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 40.935947,
         "lon": 24.406994,
@@ -144,6 +144,48 @@
         "lat": 40.9372965,
         "lon": 24.4092286,
         "ref": "https://kavala.efhmeries.gr/Home/Details/3978",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510223156",
+      "name": "ΚΑΛΦΟΠΟΥΛΟΥ ΕΡΜΙΟΝΗ",
+      "address": "ΟΜΟΝΟΙΑΣ 73",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510223156",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 40.9379125,
+        "lon": 24.4117284,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4027",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510223597",
+      "name": "ΛΙΤΣΗ ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 33",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510223597",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08",
+      "location": {
+        "lat": 40.9369885,
+        "lon": 24.4098079,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4028",
         "source": "list",
         "precision": "exact"
       }

@@ -34,7 +34,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 40.3025761,
         "lon": 21.7997195,
@@ -517,7 +517,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 40.301114,
         "lon": 21.7872883,
@@ -1042,7 +1042,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 40.5132163,
         "lon": 21.6789042,
@@ -1063,7 +1063,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 40.5135273,
         "lon": 21.6768451,
@@ -1283,27 +1283,6 @@
       }
     },
     {
-      "id": "2463025620",
-      "name": "ΔΕΛΗΓΙΑΝΝΙΔΟΥ ΡΟΥΛΑ",
-      "address": "ΝΟΣΟΚΟΜΕΙΟΥ 15 (Απέναντι από τον Χονδροματίδη)",
-      "locality": "Πτολεμαΐδα",
-      "postcode": null,
-      "phone": "2463025620",
-      "groupId": "kozani",
-      "sources": [
-        "iteq-kozani"
-      ],
-      "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-07",
-      "location": {
-        "lat": 40.5144568,
-        "lon": 21.6778966,
-        "ref": "https://kozani.efhmeries.gr/Home/Details/7271",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2463026144",
       "name": "ΑΣΙΑΝΟΣ ΙΩΑΚΕΙΜ",
       "address": "25ΗΣ ΜΑΡΤΙΟΥ 65 (Απέναντι από το βιβλιοπωλείο ΑΣΙΑΝΟΣ)",
@@ -1399,7 +1378,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 40.5126475,
         "lon": 21.6774642,

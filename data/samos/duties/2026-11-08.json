@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-08",
+  "groups": [
+    {
+      "id": "samos",
+      "name": "Σάμος",
+      "source": {
+        "url": "https://samos.efhmeries.gr/",
+        "uploadedAt": "2026-11-02T12:34:05.063Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ*",
+          "hours": null,
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273023929",
+              "name": "ΦΙΛΙΑΚΟΣ ΕΜΜΑΝΟΥΗΛ",
+              "address": "ΠΑΝΑΓΙΑ",
+              "locality": "Άνω Βαθύ",
+              "phone": "2273023929"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "9 ΠΡΩΙ - 1:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
+          "hours": {
+            "from": "09:00",
+            "to": "13:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273032658",
+              "name": "ΚΑΛΗΣΠΕΡΗ ΣΕΒΑΣΤΗ",
+              "address": "ΧΑΤΖΗΓΙΑΝΝΗ",
+              "locality": "Καρλόβασι",
+              "phone": "2273032658"
+            },
+            {
+              "pharmacyId": "2273027487",
+              "name": "ΣΠΥΡΟΥ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "Κ. ΣΤΑΜΑΤΗ 28",
+              "locality": "Βαθύ",
+              "phone": "2273027487"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "9 ΠΡΩΙ - 1:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
+          "hours": {
+            "from": "17:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273032658",
+              "name": "ΚΑΛΗΣΠΕΡΗ ΣΕΒΑΣΤΗ",
+              "address": "ΧΑΤΖΗΓΙΑΝΝΗ",
+              "locality": "Καρλόβασι",
+              "phone": "2273032658"
+            },
+            {
+              "pharmacyId": "2273027487",
+              "name": "ΣΠΥΡΟΥ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "Κ. ΣΤΑΜΑΤΗ 28",
+              "locality": "Βαθύ",
+              "phone": "2273027487"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-08",
+  "groups": [
+    {
+      "id": "arta",
+      "name": "Άρτα",
+      "source": {
+        "url": "https://arta.efhmeries.gr/",
+        "uploadedAt": "2026-11-02T12:31:28.543Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2681075511",
+              "name": "ΠΕΤΣΑΣ",
+              "address": "ΣΚΟΥΦΑ 151",
+              "locality": "Άρτα",
+              "phone": "2681075511"
+            },
+            {
+              "pharmacyId": "2681069346",
+              "name": "ΠΛΕΥΡΗ ΟΛΓΑ",
+              "address": "ΣΥΚΙΕΣ",
+              "locality": "Άρτα",
+              "phone": "2681069346"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
