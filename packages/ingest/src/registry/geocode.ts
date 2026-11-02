@@ -6,7 +6,7 @@
 import { z } from 'zod';
 import type { Bounds } from '@pharmacy-skg/core';
 import type { GeocodeArea } from '../cities/pipeline.ts';
-import { USER_AGENT, describeError } from '../sources/http.ts';
+import { HttpClient, describeError } from '../sources/http.ts';
 import { squash } from '../text.ts';
 
 const ENDPOINT = 'https://nominatim.openstreetmap.org/search';
@@ -58,8 +58,6 @@ const EXACT_TYPES = new Set(['building', 'house', 'place', 'amenity', 'shop', 'h
 const STREET_TYPES = new Set(['road', 'street', 'square']);
 
 export class Geocoder {
-  private lastRequest = 0;
-  requests = 0;
   /** Why online lookups stopped during this run, if they did. */
   stopped: string | null = null;
 
@@ -69,12 +67,14 @@ export class Geocoder {
   private readonly budget: number;
   private readonly bounds: Bounds;
   private readonly area: GeocodeArea;
+  private readonly http: HttpClient;
 
   /**
    * Searches only inside `bounds` (the city's), so that e.g. "Αμπελόκηποι" in Thessaloniki does
    * not resolve to Athens, with the city's locality rules (`area`). With `online` false, only
    * cached results are used. `budget` caps the requests per run; Nominatim's usage policy
-   * forbids bulk geocoding.
+   * forbids bulk geocoding. Its requests go through `http`: one at a time, a little over a
+   * second apart (the policy's limit is one a second), one retry a minute after a failure.
    */
   constructor(
     cache: GeocodeCache,
@@ -82,12 +82,24 @@ export class Geocoder {
     bounds: Bounds,
     area: GeocodeArea = {},
     budget = 150,
+    http = new HttpClient({
+      pauseMs: 1100,
+      attempts: 2,
+      timeoutMs: 30_000,
+      backoffMs: () => 60_000,
+    }),
   ) {
     this.cache = cache;
     this.online = online;
     this.bounds = bounds;
     this.area = area;
     this.budget = budget;
+    this.http = http;
+  }
+
+  /** Requests made to Nominatim, retries included. */
+  get requests(): number {
+    return this.http.requests;
   }
 
   private readonly used = new Set<string>();
@@ -143,25 +155,13 @@ export class Geocoder {
       limit: '1',
       'accept-language': 'el',
     });
-    for (let attempt = 0; attempt < 2; attempt++) {
-      const wait = this.lastRequest + (attempt === 0 ? 1100 : 60_000) - Date.now();
-      if (wait > 0) await new Promise((resolve) => setTimeout(resolve, wait));
-      this.lastRequest = Date.now();
-      this.requests++;
-      try {
-        const response = await fetch(`${ENDPOINT}?${params}`, {
-          headers: { 'User-Agent': USER_AGENT },
-          signal: AbortSignal.timeout(30_000),
-        });
-        if (response.ok) return { json: await response.json() };
-        this.stopped = `Nominatim HTTP ${response.status}`;
-        if (response.status !== 429 && response.status < 500) break;
-      } catch (error) {
-        this.stopped = `Nominatim: ${describeError(error)}`;
-      }
+    try {
+      return { json: await this.http.json(`${ENDPOINT}?${params}`) };
+    } catch (error) {
+      this.stopped = `Nominatim: ${describeError(error)}`;
+      this.online = false;
+      return null;
     }
-    this.online = false;
-    return null;
   }
 
   /**

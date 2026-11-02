@@ -5,9 +5,12 @@ import type { z } from 'zod';
 
 export const REPO_ROOT = fileURLToPath(new URL('../../../', import.meta.url));
 
+/** Where the published data lives: data/ in the repository. */
+export const DATA_ROOT = join(REPO_ROOT, 'data');
+
 /** Paths of a city's data directory. Published files are read by the app; the rest are pipeline inputs and caches. */
-export function cityPaths(city: string) {
-  const root = join(REPO_ROOT, 'data', city);
+export function cityPaths(city: string, dataRoot = DATA_ROOT) {
+  const root = join(dataRoot, city);
   return {
     root,
     meta: join(root, 'meta.json'),
@@ -24,15 +27,19 @@ export function cityPaths(city: string) {
   };
 }
 
+export type CityPaths = ReturnType<typeof cityPaths>;
+
 /** Paths of the medicine data, which is national, not per city. */
-export function medicinesPaths() {
-  const root = join(REPO_ROOT, 'data', 'medicines');
+export function medicinesPaths(dataRoot = DATA_ROOT) {
+  const root = join(dataRoot, 'medicines');
   return {
     root,
     medicines: join(root, 'medicines.json'),
     articleFiles: join(root, 'inputs', 'moh-article-files.json'),
   };
 }
+
+export type MedicinesPaths = ReturnType<typeof medicinesPaths>;
 
 export async function readJson<T extends z.ZodType>(
   path: string,

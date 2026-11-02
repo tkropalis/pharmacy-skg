@@ -68,7 +68,7 @@ export function assembleMedicines(
 /**
  * Puts the list's shortages on the packs it names by barcode, replacing any earlier ones, and
  * counts the entries without a priced pack. The stored prices take a new list this way when the
- * bulletins cannot be read (cli/medicines.ts).
+ * bulletins cannot be read (update/medicines.ts).
  */
 export function attachShortages(
   medicines: readonly MedicinePrice[],
