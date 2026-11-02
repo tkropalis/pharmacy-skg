@@ -55,7 +55,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 40.993825,
         "lon": 22.875206,
@@ -225,11 +225,32 @@
       "firstSeen": "2026-11-04",
       "lastSeen": "2026-11-04",
       "location": {
-        "lat": 40.993587,
-        "lon": 22.874146,
+        "lat": 40.983655,
+        "lon": 22.863948,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Κιλκίς"
+        "precision": "street",
+        "ref": "21ης Ιουνίου 211, Κιλκίς"
+      }
+    },
+    {
+      "id": "2341028828",
+      "name": "Σ.Φ. ΣΑΒΒΙΔΟΥ ΑΛ. ΚΥΡ. & ΣΑΒΒΙΔΟΥ ΑΙΚ. Ο.Ε.",
+      "address": "ΝΟΣΟΚΟΜΕΙΟΥ 4",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341028828",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-09",
+      "lastSeen": "2026-11-09",
+      "location": {
+        "lat": 40.990086,
+        "lon": 22.868872,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΝΟΣΟΚΟΜΕΙΟΥ 4, Κιλκίς"
       }
     },
     {
@@ -267,11 +288,11 @@
       "firstSeen": "2026-11-02",
       "lastSeen": "2026-11-02",
       "location": {
-        "lat": 40.993587,
-        "lon": 22.874146,
+        "lat": 40.992482,
+        "lon": 22.873334,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Κιλκίς"
+        "precision": "exact",
+        "ref": "21ης Ιουνίου 87, Κιλκίς"
       }
     },
     {
@@ -412,13 +433,13 @@
         "fsk"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-09",
       "location": {
-        "lat": 40.994587,
-        "lon": 22.572102,
+        "lat": 40.993285,
+        "lon": 22.573432,
         "source": "nominatim",
-        "precision": "locality",
-        "ref": "Πολύκαστρο"
+        "precision": "street",
+        "ref": "Μεγάλου Αλεξάνδρου 35, Πολύκαστρο"
       }
     },
     {
@@ -475,7 +496,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 41.00156,
         "lon": 22.56729,
@@ -496,7 +517,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 40.945677,
         "lon": 22.450244,

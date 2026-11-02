@@ -7,9 +7,69 @@
       "name": "Μαγνησία",
       "source": {
         "url": "https://magnesia.efhmeries.gr/",
-        "uploadedAt": "2026-11-02T12:33:16.598Z"
+        "uploadedAt": "2026-11-02T23:39:43.218Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "13:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421032942",
+              "name": "ΔΗΜΗΤΡΙΟΣ ΔΑΛΑΚΙΑΡΗΣ",
+              "address": "Κ.ΚΑΡΤΑΛΗ 123 - ΓΑΛΛΙΑΣ",
+              "locality": "Βόλος",
+              "phone": "2421032942"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421032942",
+              "name": "ΔΗΜΗΤΡΙΟΣ ΔΑΛΑΚΙΑΡΗΣ",
+              "address": "Κ.ΚΑΡΤΑΛΗ 123 - ΓΑΛΛΙΑΣ",
+              "locality": "Βόλος",
+              "phone": "2421032942"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421064343",
+              "name": "ΜΑΡΙΑ ΣΩΤΗΡΟΠΟΥΛΟΥ",
+              "address": "ΜΑΙΑΝΔΡΟΥ 116",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421064343"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -48,66 +108,6 @@
               "address": "ΙΑΣΟΝΟΣ 80",
               "locality": "Βόλος",
               "phone": "2421025458"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2421064343",
-              "name": "ΜΑΡΙΑ ΣΩΤΗΡΟΠΟΥΛΟΥ",
-              "address": "ΜΑΙΑΝΔΡΟΥ 116",
-              "locality": "Νέα Ιωνία",
-              "phone": "2421064343"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "13:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2421032942",
-              "name": "ΔΗΜΗΤΡΙΟΣ ΔΑΛΑΚΙΑΡΗΣ",
-              "address": "Κ.ΚΑΡΤΑΛΗ 123 - ΓΑΛΛΙΑΣ",
-              "locality": "Βόλος",
-              "phone": "2421032942"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2421032942",
-              "name": "ΔΗΜΗΤΡΙΟΣ ΔΑΛΑΚΙΑΡΗΣ",
-              "address": "Κ.ΚΑΡΤΑΛΗ 123 - ΓΑΛΛΙΑΣ",
-              "locality": "Βόλος",
-              "phone": "2421032942"
             }
           ]
         }

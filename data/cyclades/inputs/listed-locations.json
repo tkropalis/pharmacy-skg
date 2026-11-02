@@ -25,8 +25,8 @@
     "ref": "https://www.fscyclades.gr/onduty-cyclades/"
   },
   "2281088198": {
-    "lat": 37.43518412835399,
-    "lon": 24.935652957746676,
+    "lat": 37.439696275397594,
+    "lon": 24.938802333228328,
     "ref": "https://www.fscyclades.gr/onduty-cyclades/"
   },
   "2281400313": {
@@ -104,6 +104,11 @@
     "lon": 25.15167401511933,
     "ref": "https://www.fscyclades.gr/onduty-cyclades/"
   },
+  "2284051550": {
+    "lat": 37.1238598570389,
+    "lon": 25.237984175388636,
+    "ref": "https://www.fscyclades.gr/onduty-cyclades/"
+  },
   "2284055152": {
     "lat": 37.11988704620989,
     "lon": 25.231962803693364,
@@ -124,6 +129,11 @@
     "lon": 25.380169344359576,
     "ref": "https://www.fscyclades.gr/onduty-cyclades/"
   },
+  "2285024500": {
+    "lat": 37.10189224920978,
+    "lon": 25.37627949788566,
+    "ref": "https://www.fscyclades.gr/onduty-cyclades/"
+  },
   "2285024960": {
     "lat": 37.10128943027131,
     "lon": 25.381706054318833,
@@ -134,9 +144,19 @@
     "lon": 25.377242235792167,
     "ref": "https://www.fscyclades.gr/onduty-cyclades/"
   },
+  "2286024501": {
+    "lat": 36.414615264109855,
+    "lon": 25.433110507467926,
+    "ref": "https://www.fscyclades.gr/onduty-cyclades/"
+  },
   "2286032566": {
     "lat": 36.40011179526279,
     "lon": 25.451240218435483,
+    "ref": "https://www.fscyclades.gr/onduty-cyclades/"
+  },
+  "2286081762": {
+    "lat": 36.35687569115748,
+    "lon": 25.44397099937292,
     "ref": "https://www.fscyclades.gr/onduty-cyclades/"
   },
   "2286082699": {
@@ -169,9 +189,19 @@
     "lon": 25.33613149625276,
     "ref": "https://www.fscyclades.gr/onduty-cyclades/"
   },
+  "2289077359": {
+    "lat": 37.425976603764624,
+    "lon": 25.324033640248285,
+    "ref": "https://www.fscyclades.gr/onduty-cyclades/"
+  },
   "2289078706": {
     "lat": 37.439175406308244,
     "lon": 25.33343415049123,
+    "ref": "https://www.fscyclades.gr/onduty-cyclades/"
+  },
+  "x-3bf8a0f68e": {
+    "lat": 37.773009113025395,
+    "lon": 24.95107518215745,
     "ref": "https://www.fscyclades.gr/onduty-cyclades/"
   }
 }

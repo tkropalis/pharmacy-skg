@@ -224,9 +224,29 @@
       "name": "Λάρισα",
       "source": {
         "url": "https://larisa.efhmeries.gr/",
-        "uploadedAt": "2026-11-01T11:19:30.987Z"
+        "uploadedAt": "2026-11-02T23:36:22.722Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "23:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410252563",
+              "name": "ΝΙΚΟΛΑΟΥ ΑΝΔΡΕΑΣ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 138 (Περιοχή Αγ. Αχιλλείου)",
+              "locality": "Λάρισα",
+              "phone": "2410252563"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 08:00 ΕΩΣ 23:00",
@@ -474,26 +494,6 @@
               "address": "ΚΟΥΜΟΥΝΔΟΥΡΟΥ 22 (Πλησίον πρώην Νομαρχίας)",
               "locality": "Λάρισα",
               "phone": "2410535514"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "23:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2410252563",
-              "name": "ΝΙΚΟΛΑΟΥ ΑΝΔΡΕΑΣ",
-              "address": "ΒΕΝΙΖΕΛΟΥ 138 (Περιοχή Αγ. Αχιλλείου)",
-              "locality": "Λάρισα",
-              "phone": "2410252563"
             }
           ]
         }

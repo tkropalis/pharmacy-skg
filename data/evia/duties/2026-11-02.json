@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-02T12:31:51.579Z"
+        "uploadedAt": "2026-11-02T23:38:22.678Z"
       },
       "sections": [
         {
@@ -66,22 +66,22 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "14:00 ΕΩΣ 21:00",
+          "kind": "overnight",
+          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
-            "from": "14:00",
-            "to": "21:00",
-            "toNextDay": false
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2221021850",
-              "name": "ΤΣΟΜΩΚΟΥ ΚΩΝ/ΝΑ",
-              "address": "ΒΕΝΙΖΕΛΟΥ 43 - ΔΙΠΛΑ ΑΤΤΙΚΑ BANK",
+              "pharmacyId": "2221022120",
+              "name": "ΚΥΛΕΡΤΖΗΣ ΧΡΗΣΤΟΣ",
+              "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
               "locality": "Χαλκίδα",
-              "phone": "2221021850"
+              "phone": "2221022120"
             }
           ]
         },
@@ -106,22 +106,22 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 21:00",
           "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "14:00",
+            "to": "21:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2221022120",
-              "name": "ΚΥΛΕΡΤΖΗΣ ΧΡΗΣΤΟΣ",
-              "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
+              "pharmacyId": "2221021850",
+              "name": "ΤΣΟΜΩΚΟΥ ΚΩΝ/ΝΑ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 43 - ΔΙΠΛΑ ΑΤΤΙΚΑ BANK",
               "locality": "Χαλκίδα",
-              "phone": "2221022120"
+              "phone": "2221021850"
             }
           ]
         }
