@@ -11,10 +11,10 @@ data/
     meta.json                     last check, last change, coverage and source credits
     pharmacies.json               every pharmacy in an official list, with its location
     duties/<YYYY-MM-DD>.json      officially published duty lists for one day, per area group
-    extended-hours/<from>_<to>.json  the extended-hours list for one period (ΠΚΜ's, or ΦΣΑ's by month)
+    extended-hours/<from>_<to>.json  the extended-hours list for one period (ΠΚΜ's, or ΦΣΑ's by month); efimeria.json for Achaia
     overrides.json                manual fixes, keyed by pharmacy id (edit this one)
     inputs/                       pipeline inputs and caches, not read by the app
-    inputs/roster.json            Attica: every pharmacy its duty site names, beyond the stored days
+    inputs/roster.json            Attica: every pharmacy its duty site names; Corfu: every member of the association
   medicines/
     medicines.json                official prices and ΕΟΦ shortages, national (one line per pack)
     inputs/moh-article-files.json the attachments of each ministry article read so far (a cache)
@@ -46,6 +46,9 @@ data/
 | Φαρμακευτικός Σύλλογος Θεσσαλονίκης (ΦΣΘ), via the copies re-hosted by thess.guide | duty lists | public lists, attributed (decisions D2, D20) |
 | Περιφέρεια Κεντρικής Μακεδονίας (ΠΚΜ) | extended hours | public announcements |
 | Φαρμακευτικός Σύλλογος Λάρισας, via its duty site larisa.efhmeries.gr (ITeQ) | duty lists and locations for `larisa/` | public lists, attributed; read a page a second (decision D26) |
+| Φαρμακευτικός Σύλλογος Αχαΐας, via its duty site efimeria.gr (Silktech) | duty lists, locations and longer hours for `achaia/` | public lists, attributed; read with our own User-Agent, one request a run, with the owner's approval of 2 Nov 2026 (decision D28) |
+| Φαρμακευτικός Σύλλογος Κέρκυρας, via its own pages on farmakeu.static.otenet.gr | duty lists and members for `corfu/` | public lists, attributed; two requests a run at most (decision D28) |
+| Περιφέρεια Ιονίων Νήσων, via Diavgeia's open-data API | the extended-hours tables of Corfu (`corfu/extended-hours/`) and, in `packages/core`, its regular hours | public decisions; two requests a run (decision D28) |
 | Overture Maps Foundation (`inputs/overture-pharmacies.json`) | locations | CDLA-Permissive-2.0 |
 | OpenStreetMap contributors, via Nominatim (`inputs/geocode-cache.json`) | locations | ODbL; individual geocoding results, stored once per address |
 | Υπουργείο Υγείας (moh.gov.gr), price bulletins | medicine prices | public ministerial decisions |

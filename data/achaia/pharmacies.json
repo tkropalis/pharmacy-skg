@@ -1,0 +1,1391 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2610524492",
+      "name": "ΧΡΟΝΟΠΟΥΛΟΥ ΟΛΓΑ",
+      "address": "25ης ΜΑΡΤΙΟΥ 2 - ΠΑΡΑΛΙΑ ΠΑΤΡΩΝ",
+      "locality": "Παραλία Πατρών",
+      "postcode": null,
+      "phone": "2610524492",
+      "groupId": "achaia",
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.2030692,
+        "lon": 21.7057935,
+        "ref": "https://www.efimeria.gr/All",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2610526096",
+      "name": "ΚΟΥΤΡΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΔΗΜΟΚΡΑΤΙΑΣ 202 ΟΒΡΥΑ",
+      "locality": "Μεσσάτιδα",
+      "postcode": null,
+      "phone": "2610526096",
+      "groupId": "achaia",
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.1917691,
+        "lon": 21.7321464,
+        "ref": "https://www.efimeria.gr/All",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2610670324",
+      "name": "ΡΑΥΤΟΠΟΥΛΟΥ ΑΣΠΑΣΙΑ",
+      "address": "Π.Ε.Ο. ΠΑΤΡΩΝ ΠΥΡΓΟΥ 690 (ΘΕΣΗ ΚΑΜΙΝΙΑ)",
+      "locality": "Βραχνέικα",
+      "postcode": null,
+      "phone": "2610670324",
+      "groupId": "achaia",
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.1484397,
+        "lon": 21.6217405,
+        "ref": "https://www.efimeria.gr/All",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2610911416",
+      "name": "ΓΟΥΛΑ ΒΑΣΙΛΙΚΗ",
+      "address": "ΑΘΗΝΩΝ 47 - ΡΙΟ (ΕΝΑΝΤΙ ΕΚΚΛΗΣΙΑΣ ΑΓ. ΓΕΩΡΓΙΟΥ)",
+      "locality": "Ρίο",
+      "postcode": null,
+      "phone": "2610911416",
+      "groupId": "achaia",
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.2946617,
+        "lon": 21.7873399,
+        "ref": "https://www.efimeria.gr/All",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2691031403",
+      "name": "ΔΑΚΟΡΩΝΙΑΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΚΑΜΑΡΕΣ",
+      "locality": "Νέος Ερινεός",
+      "postcode": null,
+      "phone": "2691031403",
+      "groupId": "achaia",
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.29810472,
+        "lon": 21.99648544,
+        "ref": "https://www.efimeria.gr/All",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2692022506",
+      "name": "ΦΡΑΝΤΣΕΣΚΟΥ ΑΝ.",
+      "address": "ΠΑΝΟΥ ΠΟΛΚΑ 5",
+      "locality": "Καλάβρυτα",
+      "postcode": null,
+      "phone": "2692022506",
+      "groupId": "achaia",
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.0324951,
+        "lon": 22.1088433,
+        "ref": "https://www.efimeria.gr/All",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2693023100",
+      "name": "ΤΟΥΜΠΟΥΛΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΑΓΙΟΥ ΙΩΑΝΝΟΥ ΠΡΟΔΡΟΜΟΥ 93 (ΚΑΤΩ ΑΧΑΪΑ)",
+      "locality": "Δύμη",
+      "postcode": null,
+      "phone": "2693023100",
+      "groupId": "achaia",
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.144239,
+        "lon": 21.552634,
+        "ref": "https://www.efimeria.gr/All",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "x-030beeae23",
+      "name": "ΒΙΤΣΟΣ ΧΡΗΣΤΟΣ (Υπ. Φαρμακοποιός)",
+      "address": "ΓΕΩΡΓΙΟΥ ΠΑΠΑΝΔΡΕΟΥ 44 - 48, ΠΛΗΣΙΟΝ ΝΟΣΟΚΟΜΕΙΟΥ ΑΓ.ΑΝΔΡΕΑ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.247036,
+        "lon": 21.737347,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "0f954cf8-b4a9-4f50-87f5-447dbde8ee14"
+      }
+    },
+    {
+      "id": "x-032282b1de",
+      "name": "ΤΖΟΥΒΑΛΗΣ ΑΣΗΜΑΚΗΣ",
+      "address": "ΙΩΝΙΑΣ 88 - ΠΟΝΤΟΥ ΠΡΟΣΦΥΓΙΚΑ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.232291,
+        "lon": 21.740676,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΙΩΝΙΑΣ 88, Πάτρα"
+      }
+    },
+    {
+      "id": "x-0412f418f2",
+      "name": "ΞΙΦΑΡΑ-ΚΑΡΑΝΤΩΝΗ ΑΡΧΟΝΤΟΥΛΑ",
+      "address": "ΠΑΠΑΦΛΕΣΣΑ & ΚΟΡΙΝΘΟΥ 336",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.242031,
+        "lon": 21.73151,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "af7c8bcf-0f4b-4bc5-affd-3f5b6195feb2"
+      }
+    },
+    {
+      "id": "x-074c30e3f9",
+      "name": "ΚΑΡΟΥΣΟΥ ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΕΛΛ. ΣΤΡΑΤΙΩΤΟΥ 4 - ΦΑΒΙΕΡΟΥ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.246242,
+        "lon": 21.735085,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πάτρα"
+      }
+    },
+    {
+      "id": "x-07c478c9c9",
+      "name": "ΠΛΙΑΚΟΥΡΑ ΑΛΕΞΑΝΔΡΑ",
+      "address": "ΕΛΛ. ΣΤΡΑΤΙΩΤΗ - ΛΕΥΚΩΣΙΑΣ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.253161,
+        "lon": 21.74013,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "116a56f2-2bd4-4806-a090-7afdaddc28dc"
+      }
+    },
+    {
+      "id": "x-09a70b9509",
+      "name": "ΣΚΟΝΔΡΑ ΜΥΡΣΙΝΗ",
+      "address": "ΓΟΥΝΑΡΗ 37 - ΚΑΝΑΚΑΡΗ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.243534,
+        "lon": 21.733548,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "335dba2b-cb73-4faf-a71f-f0dc44fc233b"
+      }
+    },
+    {
+      "id": "x-0cb5ffc5db",
+      "name": "ΜΑΛΑΜΗΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "Α. ΠΑΠΑΝΑΣΤΑΣΙΟΥ 118 - ΓΟΡΓΟΠΟΤΑΜΟΥ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.246242,
+        "lon": 21.735085,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πάτρα"
+      }
+    },
+    {
+      "id": "x-1d4f1e0a40",
+      "name": "ΚΑΛΗΜΕΡΗ ΘΕΑΝΩ",
+      "address": "ΑΚΤΗ ΔΥΜΑΙΩΝ 149Α",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": "achaia",
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.2100584,
+        "lon": 21.7145815,
+        "ref": "https://www.efimeria.gr/All",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "x-270cc34f3c",
+      "name": "ΣΤΑΥΡΟΠΟΥΛΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΕΓΛΥΚΑΔΟΣ 92 ΣΥΝΟΡΑ ΕΝΑΝΤΙ ΣΧΟΛ. ΣΥΓΚΡΟΤ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": "achaia",
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.2341724,
+        "lon": 21.7538716,
+        "ref": "https://www.efimeria.gr/All",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "x-2becc0b31a",
+      "name": "ΠΑΠΑΪΩΑΝΝΟΥ ΧΑΡΙΚΛΕΙΑ",
+      "address": "ΑΝΘΕΙΑΣ 217 ΖΑΡΟΥΧΛΕΪΚΑ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.246242,
+        "lon": 21.735085,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πάτρα"
+      }
+    },
+    {
+      "id": "x-3047ccf4e1",
+      "name": "ΚΟΜΝΗΝΟΥ ΕΛΕΝΗ",
+      "address": "ΙΩΝΙΑΣ 6",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.240128,
+        "lon": 21.728712,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "3a3b6ae9-c1b0-42c9-96f7-b6e3343f13c6"
+      }
+    },
+    {
+      "id": "x-3403ed66db",
+      "name": "ΕΣΚΕΪΦ ΤΖΑΜΑΛ",
+      "address": "ΚΟΛΟΚΟΤΡΩΝΗ 36-38",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.248367,
+        "lon": 21.73765,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΚΟΛΟΚΟΤΡΩΝΗ 36-38, Πάτρα"
+      }
+    },
+    {
+      "id": "x-3676d93c6a",
+      "name": "Σ.Φ. ΓΙΑΜΑ Α. - ΒΑΣΙΛΟΠΟΥΛΟΣ Κ. - ΒΑΣΙΛΟΠΟΥΛΟΣ Γ. Ο.Ε.",
+      "address": "ΑΓ. ΙΩΑΝΝΗ ΠΡΑΤΣΙΚΑ 90",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.246242,
+        "lon": 21.735085,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πάτρα"
+      }
+    },
+    {
+      "id": "x-390940c816",
+      "name": "ΠΑΠΑΘΑΝΑΣΟΠΟΥΛΟΣ ΣΤΕΦΑΝΟΣ",
+      "address": "ΜΑΙΖΩΝΟΣ 52 - ΑΓ. ΝΙΚΟΛΑΟΥ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.248263,
+        "lon": 21.736792,
+        "source": "nominatim",
+        "precision": "exact",
+        "ref": "ΜΑΙΖΩΝΟΣ 52, Πάτρα"
+      }
+    },
+    {
+      "id": "x-3d85a8b23b",
+      "name": "ΚΑΡΑΚΑΣΗ ΔΗΜΗΤΡΑ",
+      "address": "ΓΟΥΝΑΡΗ 35 (παραπ. ΕΤΕ) & ΚΑΝΑΚΑΡΗ 184 (ΑΠΟ ΣΤΟΑ)",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.24594,
+        "lon": 21.730574,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΓΟΥΝΑΡΗ 35, Πάτρα"
+      }
+    },
+    {
+      "id": "x-3e93357356",
+      "name": "Σ.Φ. ΠΡΑΠΑΣ ΧΡΗΣΤΟΣ - ΠΡΑΠΑ ΙΩΑΝΝΑ Ο.Ε.",
+      "address": "ΓΟΥΝΑΡΗ 189 - ΒΟΤΣΑΡΗ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.247036,
+        "lon": 21.737347,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "0f954cf8-b4a9-4f50-87f5-447dbde8ee14"
+      }
+    },
+    {
+      "id": "x-64c339e579",
+      "name": "Σ.Φ. ΑΘΑΝΑΣΟΠΟΥΛΟΥ ΑΓΓΕΛΟΠΟΥΛΟΥ - ΑΘΑΝΑΣΟΠΟΥΛΟΣ Ο.Ε.",
+      "address": "ΑΓ. ΙΩΑΝΝΗ ΠΡΑΤΣΙΚΑ 58",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.246242,
+        "lon": 21.735085,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πάτρα"
+      }
+    },
+    {
+      "id": "x-6556bd521a",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΓΙΑΝΝΙΤΣΩΝ 4 - ΑΘΗΝΩΝ (ΕΝΑΝΤΙ ΙΚΑ)",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.255631,
+        "lon": 21.739061,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "111fd427-d682-4164-872a-b3851b7b478b"
+      }
+    },
+    {
+      "id": "x-677724b724",
+      "name": "ΜΠΑΡΟΥΣΗ ΑΝΝΑ",
+      "address": "ΚΟΡΙΝΘΟΥ 334 - ΓΕΝΝΑΔΙΟΥ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": "achaia",
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.2411136,
+        "lon": 21.7291384,
+        "ref": "https://www.efimeria.gr/All",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "x-77aaab9d95",
+      "name": "ΣΚΑΡΛΑΤΟΣ ΙΩΑΝΝΗΣ",
+      "address": "Γ. ΠΑΠΑΝΔΡΕΟΥ 61 (ΚΑΛΑΒΡΥΤΩΝ ΠΡΟΣ ΑΚΡΩΤΗΡΙΟΥ)",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.232836,
+        "lon": 21.744739,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "ef4853ee-faaf-4b29-b8ee-37cbf4d522b2"
+      }
+    },
+    {
+      "id": "x-7eaffbed64",
+      "name": "ΚΑΝΕΛΛΟΠΟΥΛΟΥ ΕΙΡΗΝΗ-ΔΗΜΗΤΡΑ",
+      "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 24",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": "achaia",
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.2504562,
+        "lon": 21.7383278,
+        "ref": "https://www.efimeria.gr/All",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "x-80171fe637",
+      "name": "ΔΗΜΟΠΟΥΛΟΣ ΓΕΩΡ. ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΝΟΤΑΡΑ 133 ΑΓΥΙΑ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.263602,
+        "lon": 21.743808,
+        "source": "nominatim",
+        "precision": "exact",
+        "ref": "ΝΟΤΑΡΑ 133 ΑΓΥΙΑ, Πάτρα"
+      }
+    },
+    {
+      "id": "x-85c17c9c22",
+      "name": "Σ.Φ. ΚΟΥΡΛΑΜΠΑΣ ΠΕΦΑΝΗΣ Σ. - ΠΕΦΑΝΗ ΑΝΤΙΜΗΣΙΑΡΗ Κ. & ΣΙΑ Ο.Ε.",
+      "address": "ΠΛ. ΓΕΩΡΓΙΟΥ - ΓΕΡΟΚΩΣΤΟΠΟΥΛΟΥ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.246242,
+        "lon": 21.735085,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πάτρα"
+      }
+    },
+    {
+      "id": "x-8fef70cc34",
+      "name": "ΣΚΡΕΤΑΣ ΣΩΤΗΡΙΟΣ",
+      "address": "ΠΛ. ΥΨΗΛΩΝ ΑΛΩΝΙΩΝ 10",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.246242,
+        "lon": 21.735085,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πάτρα"
+      }
+    },
+    {
+      "id": "x-9dcbdfa7dd",
+      "name": "ΜΑΝΤΕΛΗΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 59 - ΡΑΔΙΝΟΥ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.249431,
+        "lon": 21.737204,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΡΗΓΑ ΦΕΡΑΙΟΥ 59, Πάτρα"
+      }
+    },
+    {
+      "id": "x-a20294dc5f",
+      "name": "ΚΟΛΙΟΥ ΑΓΓΕΛΙΚΗ",
+      "address": "ΜΑΙΖΩΝΟΣ 94 & ΠΛΑΤΕΙΑ ΓΕΩΡΓΙΟΥ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.24622,
+        "lon": 21.734228,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "6bc1337b-c276-432e-9761-bc0ce16cf732"
+      }
+    },
+    {
+      "id": "x-a2cef06bf6",
+      "name": "ΛΟΥΚΑΣ ΛΕΩΝΙΔΑΣ",
+      "address": "ΑΓ. ΑΝΔΡΕΟΥ 151 - ΓΟΥΝΑΡΗ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.246936,
+        "lon": 21.732564,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΑΓ. ΑΝΔΡΕΟΥ 151, Πάτρα"
+      }
+    },
+    {
+      "id": "x-a44b2e6561",
+      "name": "Σ.Φ. ΝΤΖΕΛΒΕ ΡΟΥΜΠΙΝΑ ΜΑΡΙΑ - ΚΑΠΝΙΣΗ ΑΓΓΕΛΙΚΗ Ο.Ε.",
+      "address": "ΚΟΡΙΝΘΟΥ 206 - ΚΟΛΟΚΟΤΡΩΝΗ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.24622,
+        "lon": 21.734228,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "6bc1337b-c276-432e-9761-bc0ce16cf732"
+      }
+    },
+    {
+      "id": "x-a883cf4a05",
+      "name": "ΤΕΚΟΣ ΑΠΟΣΤΟΛΟΣ",
+      "address": "ΜΕΙΛΙΧΟΥ 171 Κ. ΣΥΧΑΙΝΑ ΕΝΑΝΤΙ ΟΛΥΜΠΙΟΥ ΘΕΡ/ΡΙΟΥ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.246242,
+        "lon": 21.735085,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πάτρα"
+      }
+    },
+    {
+      "id": "x-af9d74ce65",
+      "name": "ΚΩΣΤΗ ΠΑΝΩΡΑΙΑ",
+      "address": "ΓΕΡΟΚΩΣΤΟΠΟΥΛΟΥ 26 - ΚΑΝΑΚΑΡΗ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.244698,
+        "lon": 21.737036,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΓΕΡΟΚΩΣΤΟΠΟΥΛΟΥ 26, Πάτρα"
+      }
+    },
+    {
+      "id": "x-b221e6e261",
+      "name": "ΘΕΟΔΩΡΑΚΟΠΟΥΛΟΥ ΔΗΜΗΤΡΑ",
+      "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 44-46 & ΠΕΝΤΕ ΠΗΓΑΔΙΩΝ 2",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": "achaia",
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.25943089,
+        "lon": 21.73868,
+        "ref": "https://www.efimeria.gr/All",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "x-b6de6e99fc",
+      "name": "ΦΕΤΙΝΙΔΟΥ ΧΡΥΣΑΝΘΗ",
+      "address": "ΑΛΕΞΑΝΔΡΟΥ ΥΨΗΛΑΝΤΟΥ 213",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": "achaia",
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.2430464,
+        "lon": 21.7346056,
+        "ref": "https://www.efimeria.gr/All",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "x-bc4dde1d16",
+      "name": "ΓΙΩΤΟΠΟΥΛΟΥ ΓΑΡΥΦΑΛΛΙΑ",
+      "address": "ΓΟΥΝΑΡΗ 113 - ΣΩΤΗΡΙΑΔΟΥ (ΕΝΑΝΤΙ ΠΑΛ. ΛΟΥΤΡΩΝ)",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.238667,
+        "lon": 21.744076,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΓΟΥΝΑΡΗ 113, Πάτρα"
+      }
+    },
+    {
+      "id": "x-c2b25341fb",
+      "name": "Σ.Φ. ΜΟΥΡΤΖΗΣ ΔΗΜΗΤΡΙΟΣ - ΜΟΥΡΤΖΗΣ ΛΕΟΝΑΡΔΟΣ & ΣΙΑ Ο.Ε.",
+      "address": "ΠΑΤΡΩΝ ΚΛΑΟΥΣ 36 - ΛΑΓΓΟΥΡΑ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.256195,
+        "lon": 21.747384,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "86c16288-c069-43bb-9d58-c14ed9b71cfb"
+      }
+    },
+    {
+      "id": "x-c561398e00",
+      "name": "ΚΑΡΑΜΠΕΤΣΟΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΚΟΡΙΝΘΟΥ 73 & ΚΙΛΚΙΣ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.253654,
+        "lon": 21.744505,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "55353972-a4bc-46be-9a07-bf90086d0d59"
+      }
+    },
+    {
+      "id": "x-c9d5e21b1d",
+      "name": "ΓΚΑΒΕΡΑΣ ΚΩΝ/ΝΟΣ",
+      "address": "ΗΡ. ΠΟΛΥΤΕΧΝΕΙΟΥ - ΚΥΠΡΟΥ 2",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.26035,
+        "lon": 21.7391,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "e2af163a-ea7e-41aa-8a17-354787d8fc53"
+      }
+    },
+    {
+      "id": "x-cb6d6273b8",
+      "name": "ΚΟΚΟΒΙΚΑ ΠΑΡΑΣΚΕΥΗ",
+      "address": "ΘΕΟΤΟΚΟΠΟΥΛΟΥ 31 ΜΠΕΓΟΥΛΑΚΙ - ΠΛΗΣΙΟΝ ΤΕΙ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.246242,
+        "lon": 21.735085,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πάτρα"
+      }
+    },
+    {
+      "id": "x-cc7a6e94ac",
+      "name": "ΛΙΑΝΟΥ ΜΑΡΙΝΑ",
+      "address": "ΑΓ. ΑΝΔΡΕΟΥ 40 & ΑΓ. ΝΙΚΟΛΑΟΥ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.24869,
+        "lon": 21.73466,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "48a314f3-6244-4331-b502-1fe233d6b81c"
+      }
+    },
+    {
+      "id": "x-cc977021ef",
+      "name": "ΜΑΚΡΥΓΕΝΗΣ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΠΕΛΟΠΟΣ 42 - ΛΑΓΓΟΥΡΑ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.255631,
+        "lon": 21.739061,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "111fd427-d682-4164-872a-b3851b7b478b"
+      }
+    },
+    {
+      "id": "x-cecb13bbbb",
+      "name": "ΡΟΥΜΠΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΜΑΙΖΩΝΟΣ 139 - ΠΑΝΤΑΝΑΣΣΗΣ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.245338,
+        "lon": 21.733435,
+        "source": "nominatim",
+        "precision": "exact",
+        "ref": "ΜΑΙΖΩΝΟΣ 139, Πάτρα"
+      }
+    },
+    {
+      "id": "x-cf42d14f2a",
+      "name": "Σ.Φ. ΣΟΦΙΑΝΟΠΟΥΛΟΣ Α. - ΒΟΥΤΥΡΑΚΗ Μ. Ο.Ε.",
+      "address": "ΠΛ. ΥΨΗΛΩΝ ΑΛΩΝΙΩΝ 16",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.240532,
+        "lon": 21.735634,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "83ec4c32-b109-493c-a9c2-f9eaa3945e45"
+      }
+    },
+    {
+      "id": "x-cfa1a80756",
+      "name": "ΚΟΤΣΙΡΙΛΟΥ Δ. - ΒΑΣΙΛΟΠΟΥΛΟΥ Γ. - ΜΙΧΑΛΟΠΟΥΛΟΥ Γ. Ο.Ε.",
+      "address": "ΕΡΜΟΥ 38 - Ρ. ΦΕΡΑΙΟΥ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.246924,
+        "lon": 21.73581,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΕΡΜΟΥ 38, Πάτρα"
+      }
+    },
+    {
+      "id": "x-cfcac5eb4c",
+      "name": "ΚΑΛΗΜΕΡΗ ΜΑΡΙΑ",
+      "address": "ΚΟΡΙΝΘΟΥ 351 - ΤΣΑΜΑΔΟΥ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.243181,
+        "lon": 21.741636,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "d4d6a51c-7afb-430e-a119-47b1b446c6e7"
+      }
+    },
+    {
+      "id": "x-d23dcb8eed",
+      "name": "ΚΟΛΥΡΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 36 & ΑΡΑΤΟΥ - ΠΛ.ΟΛΓΑΣ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.244798,
+        "lon": 21.736242,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "d7519d6a-2b36-46fa-8411-4713f76fd951"
+      }
+    },
+    {
+      "id": "x-d563a981c4",
+      "name": "ΑΓΑΛΟΠΟΥΛΟΥ ΠΑΝΑΓΙΩΤΑ (Υπ.Φαρμακοποιός)",
+      "address": "ΓΛΑΥΚΟΥ 9, ΠΕΡΙΒΟΛΑ (ΕΝΤΟΣ ΣΤΟΑΣ PATRA MALL)",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.209315,
+        "lon": 21.763537,
+        "source": "nominatim",
+        "precision": "exact",
+        "ref": "ΓΛΑΥΚΟΥ 9, Πάτρα"
+      }
+    },
+    {
+      "id": "x-dfe5617093",
+      "name": "ΜΙΧΑΛΟΠΟΥΛΟΥ ΓΕΩΡΓΙΑ",
+      "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 105 - ΠΑΤΡΕΩΣ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.24708,
+        "lon": 21.734185,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΡΗΓΑ ΦΕΡΑΙΟΥ 105, Πάτρα"
+      }
+    },
+    {
+      "id": "x-e0db099b1b",
+      "name": "ΚΟΜΝΗΝΟΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΚΑΡΑΪΣΚΑKΗ 132 - ΓΕΡΟΚΩΣΤΟΠΟΥΛΟΥ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": "achaia",
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.2447984,
+        "lon": 21.7362716,
+        "ref": "https://www.efimeria.gr/All",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "x-e1b15a35f0",
+      "name": "Σ.Φ. ΔΙΑΜΑΝΤΟΠΟΥΛΟΥ ΠΗΝΕΛΟΠΗ - ΣΕΡΕΤΗ ΚΩΝΣΤΑΝΤΙΝΑ Ο.Ε.",
+      "address": "ΓΟΥΝΑΡΗ 45 - ΚΑΡΑΪΣΚΑΚΗ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.243116,
+        "lon": 21.733944,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "6c6aa63b-758c-48bf-ac8d-f233bb5f274f"
+      }
+    },
+    {
+      "id": "x-e451a7575b",
+      "name": "ΠΑΣΛΗ ΕΛΙΣΣΑΒΕΤ",
+      "address": "ΚΙΛΚΙΣ 41 & ΑΓ. ΣΟΦΙΑΣ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.258867,
+        "lon": 21.743299,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΚΙΛΚΙΣ 41, Πάτρα"
+      }
+    },
+    {
+      "id": "x-e4cb951690",
+      "name": "ΣΚΛΙΑΣ ΘΕΟΔΩΡΟΣ",
+      "address": "ΚΟΡΙΝΘΟΥ 127 ΠΛ. ΠΥΡΟΣΒΕΣΤΙΟΥ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.246242,
+        "lon": 21.735085,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πάτρα"
+      }
+    },
+    {
+      "id": "x-e6ae0dc4ec",
+      "name": "ΠΑΠΑΘΑΝΑΣΗΣ ΔΑΜΙΑΝΟΣ",
+      "address": "Ν.Ε.Ο. ΑΘΗΝΩΝ – ΠΑΤΡΩΝ ΚΑΙ ΑΜΕΡΙΚΗΣ (ΕΝΤΟΣ ΑΒ)",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": "achaia",
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.26151627,
+        "lon": 21.7495931,
+        "ref": "https://www.efimeria.gr/All",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "x-e74ef18f89",
+      "name": "ΚΑΤΣΙΝΑ ΕΛΕΝΗ",
+      "address": "ΚΟΡΙΝΘΟΥ 309 - ΒΟΤΣΗ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.244712,
+        "lon": 21.733813,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "f75d5324-fb3a-487d-af7c-56c3bf4fffda"
+      }
+    },
+    {
+      "id": "x-eb517d8d68",
+      "name": "ΠΡΟΣΕΛΕΝΤΗΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΚΟΡΙΝΘΟΥ 34 - ΜΕΤΑ ΤΗΝ ΚΙΛΚΙΣ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.244763,
+        "lon": 21.733829,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΚΟΡΙΝΘΟΥ 34, Πάτρα"
+      }
+    },
+    {
+      "id": "x-edb0296cc1",
+      "name": "ΡΑΓΓΟΥ ΜΑΡΙΑ",
+      "address": "ΑΝΘΕΙΑΣ 83 ΠΛΗΣΙΟΝ ΕΡΓ. ΚΑΤΟΙΚΙΩΝ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.243181,
+        "lon": 21.741636,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "d4d6a51c-7afb-430e-a119-47b1b446c6e7"
+      }
+    },
+    {
+      "id": "x-eec2fd96e9",
+      "name": "Σ.Φ. ΜΑΥΡΟΕΙΔΗΣ ΒΑΣΙΛΕΙΟΣ - ΜΑΥΡΟΕΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΚΑΛΑΒΡΥΤΩΝ 28 & ΦΩΚΑΙΑΣ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.256195,
+        "lon": 21.747384,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "86c16288-c069-43bb-9d58-c14ed9b71cfb"
+      }
+    },
+    {
+      "id": "x-f8dc36ace2",
+      "name": "ΜΠΑΡΔΟΥΤΣΟΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΓΟΥΝΑΡΗ 203 & Κ. ΠΑΛΑΙΟΛΟΓΟΥ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": "achaia",
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.2390955,
+        "lon": 21.7432569,
+        "ref": "https://www.efimeria.gr/All",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "x-f9023d53d0",
+      "name": "ΜΟΥΣΤΑΚΗ ΔΙΟΝΥΣΙΑ",
+      "address": "ΚΟΡΙΝΘΟΥ 435 - Γ. ΟΛΥΜΠΙΟΥ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.239516,
+        "lon": 21.728615,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "0dbabf5b-4098-444b-a13c-9b80d65848ad"
+      }
+    },
+    {
+      "id": "x-fbb2bad21d",
+      "name": "ΣΠΥΡΟΠΟΥΛΟΥ ΤΑΤΙΑΝΗ",
+      "address": "12ου ΣΥΝΤΑΓΜΑΤΟΣ 94 ΣΥΝΟΡΑ",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.246242,
+        "lon": 21.735085,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πάτρα"
+      }
+    },
+    {
+      "id": "x-fd90304b15",
+      "name": "ΜΠΟΝΑΣ ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 46",
+      "locality": "Πάτρα",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "efimeria"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 38.25411,
+        "lon": 21.742262,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 46, Πάτρα"
+      }
+    }
+  ]
+}

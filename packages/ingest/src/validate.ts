@@ -110,7 +110,8 @@ export function validate(data: DataSet, rules: ValidationRules): Report {
     .at(-1);
   if (!data.days.some((day) => day.date === data.today))
     warn('coverage', `no duty list for today, ${data.today}`);
-  else if (!latest || latest < tomorrow)
+  // A source that shows only today's list publishes nothing for tomorrow: not a gap.
+  else if (rules.todayOnly !== true && (!latest || latest < tomorrow))
     warn('coverage', `latest duty list is for ${latest ?? 'no date'}`);
 
   const count = data.pharmacies.length;

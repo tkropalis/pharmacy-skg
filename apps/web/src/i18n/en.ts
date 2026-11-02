@@ -65,6 +65,7 @@ export const en: Dictionary = {
         paragraphs: [
           'We show only officially announced duty days. In Thessaloniki other pharmacies have the usual hours: Monday and Wednesday 08:00–14:30, Tuesday, Thursday and Friday 08:00–14:00 and 17:00–21:00. Some have longer hours, announced by the Region.',
           'In Attica the usual hours are Monday and Wednesday 08:00–14:30, Tuesday, Thursday and Friday 08:00–14:00 and 17:00–20:00 in winter, 17:30–20:30 in summer. Some have longer hours, announced by the Pharmaceutical Association of Attica.',
+          'In Corfu the usual hours are Monday, Tuesday, Thursday and Friday 08:30–14:00 and 17:30–20:30 in winter, 18:00–21:00 in summer, Wednesday 08:30–14:30. Some have longer hours, announced by the Region of the Ionian Islands.',
           'In the other areas we do not know the usual hours yet, so we show only the pharmacies on duty.',
           'Some duties are on call: the pharmacist serves whoever phones. So call before you go.',
         ],
@@ -85,6 +86,7 @@ export const en: Dictionary = {
       pkm: 'Opening hours in Thessaloniki: Region of Central Macedonia.',
       patt: 'Opening hours in Attica: Region of Attica.',
       fsaHours: 'Longer hours in Attica: Pharmaceutical Association of Attica.',
+      ionian: 'Opening hours in Corfu: Region of the Ionian Islands.',
       overture: 'Pharmacy locations: Overture Maps Foundation, CDLA-Permissive-2.0.',
       osm: 'Map and addresses: © OpenStreetMap contributors, ODbL.',
       openFreeMap: 'Map tiles: OpenFreeMap.',

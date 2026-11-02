@@ -1,0 +1,942 @@
+{
+  "sweptAt": "2026-11-02",
+  "readThrough": "2026-11-02",
+  "entries": [
+    {
+      "locality": "Κανάλια",
+      "name": "ΚΑΛΟΥΔΗ ΕΛΕΝΗ",
+      "address": "ΤΡΙΑ ΓΕΦΥΡΙΑ/ΚΑΝΑΛΙΑ",
+      "phone": "2661020376",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΚΑΖΙΑΝΗ ΕΛΕΝΗ",
+      "address": "ΑΛΕΞΑΝΔΡΟΥ ΠΑΝΑΓΟΥΛΗ 31 (ΚΑΘΟΛΙΚΕΣ ΚΑΛΟΓΡΙΕΣ)",
+      "phone": "2661020703",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΚΟΣΚΙΝΑΣ ΝΙΚΟΣ - ΚΟΣΚΙΝΑΣ ΣΠΥΡΟΣ",
+      "address": "ΙΟΥΛΙΑΣ ΑΝΔΡΕΑΔΗ 11 (ΠΛΑΤΥΤΕΡΑ)",
+      "phone": "2661020970",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΔΕΣΥΛΛΑΣ ΓΕΡΑΣΙΜΟΣ-ΣΤΕΦΑΝΟΣ",
+      "address": "ΠΑΝΟΥ ΖΑΦΕΙΡΟΠΟΥΛΟΥ 17-19",
+      "phone": "2661021033",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΚΑΡΥΔΗΣ ΑΝΤΩΝΗΣ",
+      "address": "ΜΗΤΡΟΠΟΛΙΤΟΥ ΜΕΘΟΔΙΟΥ 16",
+      "phone": "2661022140",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΝΙΚΟΚΑΒΟΥΡΑ ΙΩΑΝΝΑ - ΧΟΝΔΡΟΓΙΑΝΝΗ ΜΑΡΙΑ",
+      "address": "ΕΘΝΙΚΗ ΠΑΛΑΙΟΚΑΣΤΡΙΤΣΑΣ 25 (ΣΟΛΑΡΙ)",
+      "phone": "2661022335",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΚΟΣΚΙΝΑΣ ΓΙΩΡΓΟΣ",
+      "address": "ΜΗΤ. ΜΕΘΟΔΙΟΥ 3 (ΣΑΡΟΚΟ)",
+      "phone": "2661023678",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Πέραμα",
+      "name": "ΜΑΜΑΛΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΠΕΡΑΜΑ",
+      "phone": "2661023740",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΠΑΛΗΚΥΡΑΣ ΧΑΡΑΛΑΜΠΟΣ",
+      "address": "ΕΘΝΙΚΗ ΠΑΛΑΙΟΚΑΣΤΡΙΤΣΑΣ 80 (ΣΟΛΑΡΙ)",
+      "phone": "2661024197",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΚΑΒΒΑΔΑ ΚΛΑΙΡΗ",
+      "address": "ΕΥΓΕΝΙΟΥ ΒΟΥΛΓΑΡΕΩΣ 66 (ΕΘΝ. ΤΡΑΠΕΖΑ)",
+      "phone": "2661025378",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΚΟΥΛΟΥΡΗ ΑΜΑΛΙΑ",
+      "address": "ΠΛ. ΓΕΩΡΓΙΟΥ ΘΕΟΤΟΚΗ 2 & ΜΗΤΡ. ΜΕΘΟΔΙΟΥ 2 (ΣΑΡΟΚΟ)",
+      "phone": "2661025738",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΠΑΓΚΡΑΤΗ ΕΛΕΝΗ",
+      "address": "ΜΗΤΡΟΠΟΛΙΤΟΥ ΜΕΘΟΔΙΟΥ 6 (ΣΑΡΟΚΟ)",
+      "phone": "2661025882",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΝΙΚΗΦΟΡΟΥ ΑΓΓΕΛΙΚΗ",
+      "address": "ΙΟΥΛΙΑΣ ΑΝΔΡΕΑΔΗ 4 (ΕΝΑΝΤΙ ΠΡΩΗΝ ΝΟΣΟΚΟΜΕΙΟΥ)",
+      "phone": "2661026066",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Βρυώνη",
+      "name": "ΒΑΛΜΑ ΧΡΙΣΤΙΝΑ",
+      "address": "ΔΙΑΣΤΑΥΡΩΣΗ ΒΡΥΩΝΗ",
+      "phone": "2661027627",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κανάλια",
+      "name": "ΣΚΟΡΔΙΛΗ ΕΛΕΥΘΕΡΙΑ",
+      "address": "ΚΑΝΑΛΙΑ",
+      "phone": "2661027993",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΚΟΥΡΗ ΜΑΡΙΝΑ - ΤΡΙΒΥΖΑΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΕΥΓ. ΒΟΥΛΓΑΡΕΩΣ 73",
+      "phone": "2661030100",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΜΟΥΖΑΚΙΤΗΣ ΜΙΧΑΛΗΣ",
+      "address": "ΜΑΝΤΖΑΡΟΥ 4 (ΕΝΑΝΤΙ ΜΑΓΝΗΤΙΚΗΣ ΤΟΜΟΓΡΑΦΙΑΣ)",
+      "phone": "2661030235",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΠΑΠΑΓΕΩΡΓΙΟΥ ΣΟΦΙΑ",
+      "address": "ΠΛ. ΓΕΩΡΓΙΟΥ ΘΕΟΤΟΚΗ 34 (ΣΑΡΟΚΟ)",
+      "phone": "2661030245",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΜΠΟΥΖΟΥΚΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΣΤΑΜΑΤΙΟΥ ΔΕΣΥΛΛΑ 16 (ΛΑΪΚΗ ΑΓΟΡΑ)",
+      "phone": "2661031622",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΕΡΤΣΟΣ ΣΠΥΡΙΔΩΝΑΣ-ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΜΙΛΤΙΑΔΟΥ ΜΑΡΓΑΡΙΤΗ 8",
+      "phone": "2661031992",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΜΠΟΥΖΟΥΚΗΣ ΗΛΙΑΣ",
+      "address": "ΣΑΜΑΡΑ 7-9 (ΠΕΖΟΔΡΟΜΟΣ)",
+      "phone": "2661032080",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΓΡΙΜΜΑ ΜΑΡΙΑ - ΜΥΡΙΛΛΑΣ ΠΕΤΡΟΣ",
+      "address": "ΠΛ. ΓΕΩΡΓΙΟΥ ΘΕΟΤΟΚΗ 29 (ΣΑΡΟΚΟ)",
+      "phone": "2661033221",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΒΑΡΕΛΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΑΛΚΙΝΟΟΥ 84 (ΓΑΡΙΤΣΑ - ΑΓΙΑ ΤΡΙΑΔΑ)",
+      "phone": "2661034373",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΑΡΜΕΝΙΑΚΟΥ ΕΙΡΗΝΗ - ΝΑΝΟΥ ΜΑΡΙΑ-ΑΝΝΑ",
+      "address": "ΙΩΑΝΝΟΥ ΘΕΟΤΟΚΗ 72 (ΜΕΤΑ ΤΟ ΙΟΝΙΟ ΠΑΝ/ΜΙΟ)",
+      "phone": "2661035177",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΠΑΝΑΡΕΤΟΥ ΜΑΡΙΑ",
+      "address": "ΠΟΛΥΧΡΟΝΙΟΥ ΚΩΝΣΤΑΝΤΑ 26 (ΛΥΚΕΙΑ)",
+      "phone": "2661035997",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΓΡΙΜΜΑΣ ΑΛΕΞΗΣ",
+      "address": "ΓΕΡΑΣΙΜΟΥ ΜΑΡΚΟΡΑ 17B (ΛΑΪΚΗ ΑΓΟΡΑ)",
+      "phone": "2661036118",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΛΑΣΚΑΡΙΣ ΣΠΥΡΟΣ",
+      "address": "ΠΟΛΥΧΡΟΝΙΟΥ ΚΩΝΣΤΑΝΤΑ 18 (ΣΑΡΟΚΟ)",
+      "phone": "2661036122",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΒΛΑΣΣΗ ΜΑΝΤΩ - ΣΑΜΟΪΛΗ-ΒΛΑΣΣΗ ΚΑΤΕΡΙΝΑ",
+      "address": "ΣΑΜΑΡΑ 3 (ΕΡΓΑΤΙΚΟ ΚΕΝΤΡΟ)",
+      "phone": "2661036501",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Βρυώνη",
+      "name": "ΚΟΝΤΟΓΕΩΡΓΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΔΙΑΣΤΑΥΡΩΣΗ ΒΡΥΩΝΗ",
+      "phone": "2661037133",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΤΣΙΡΙΓΓΑΚΗΣ ΧΡΗΣΤΟΣ",
+      "address": "ΠΛ. ΓΕΩΡΓΙΟΥ ΘΕΟΤΟΚΗ 9 (ΣΑΡΟΚΟ)",
+      "phone": "2661037872",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΚΟΣΚΙΝΑ ΟΜΟΡΦΙΑ",
+      "address": "ΓΕΩΡΓΙΟΥ ΘΕΟΤΟΚΗ 28 (ΕΝΑΝΤΙ MARKS & SPENCER)",
+      "phone": "2661038826",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΣΚΙΑΔΟΠΟΥΛΟΣ ΔΙΟΝΥΣΙΟΣ",
+      "address": "ΓΕΩΡΓΙΟΥ ΘΕΟΤΟΚΗ 56 (ΣΑΡΟΚΟ)",
+      "phone": "2661039048",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κανάλια",
+      "name": "ΝΙΩΤΗΣ ΠΑΡΑΣΚΕΥΑΣ",
+      "address": "ΚΑΝΑΛΙΑ",
+      "phone": "2661039264",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΛΕΠΕΣΗ ΝΙΚΟΛΙΝΑ - ΠΑΝΔΗ ΧΡΙΣΤΙΝΑ",
+      "address": "ΣΟΛΩΜΟΥ 2 (ΣΠΗΛΙΑ)",
+      "phone": "2661039281",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΛΑΣΚΑΡΙΣ ΓΕΡΑΣΙΜΟΣ - ΜΑΡΤΖΟΥΚΟΥ ΑΜΑΛΙΑ",
+      "address": "ΙΩΑΝΝΟΥ ΘΕΟΤΟΚΗ 100 (ΙΚΑ - ΣΤΑΘ. ΥΠΕΡ/ΩΝ)",
+      "phone": "2661039305",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΜΠΟΪΚΟΥ ΕΦΗ",
+      "address": "ΙΩΑΝΝΟΥ ΘΕΟΤΟΚΗ 21Α (ΣΑΡΟΚΟ)",
+      "phone": "2661039720",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΠΟΛΕΝΤΑ ΧΡΙΣΤΙΝΑ",
+      "address": "Δ. ΚΟΛΛΑ 7 ΠΛ. ΔΗΜΑΡΧΕΙΟΥ",
+      "phone": "2661039858",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΤΕΚΤΩΝ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΜΗΤΡΟΠΟΛΙΤΟΥ ΜΕΘΟΔΙΟΥ 7",
+      "phone": "2661039887",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΡΑΡΑΚΟΣ ΠΕΡΙΚΛΗΣ - ΡΑΡΑΚΟΣ ΠΕΤΡΟΣ",
+      "address": "ΕΥΑΓ. ΝΑΠΟΛΕΟΝΤΟΣ 52 (ΠΛΑΤΥΤΕΡΑ)",
+      "phone": "2661040127",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΣΟΥΛΟΥ ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΑΛΚΙΝΟΟΥ 42 (ΓΑΡΙΤΣΑ)",
+      "phone": "2661040758",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΡΑΡΑΚΟΥ ΣΠΥΡΙΔΟΥΛΑ",
+      "address": "ΙΑΚΩΒΟΥ ΠΟΛΥΛΑ 17 (ΠΕΖΟΔΡΟΜΟΣ)",
+      "phone": "2661040949",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΚΑΒΒΑΔΙΑΣ ΔΙΟΜΗΔΗΣ",
+      "address": "ΓΕΡ. ΛΥΧΝΟΥ 2 & Π. ΚΩΝΣΤΑΝΤΑ",
+      "phone": "2661043339",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Τρίστρατο",
+      "name": "ΜΕΤΑΛΛΗΝΟΣ ΜΙΧΑΛΗΣ",
+      "address": "ΤΡΙΣΤΡΑΤΟ ΚΟΥΛΙΝΕΣ",
+      "phone": "2661043581",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Βρυώνη",
+      "name": "ΤΖΩΡΑ ΑΓΓΕΛΙΚΗ",
+      "address": "ΒΡΥΩΝΗ",
+      "phone": "2661044678",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΜΟΥΡΜΟΥΡΗ ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΓΡ. ΜΑΡΑΣΛΗ 36",
+      "phone": "2661044783",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΜΕΡΙΑΝΟΥ ΧΡΙΣΤΙΑΝΑ",
+      "address": "ΓΚΥΛΦΟΡΔ 35 (ΠΛΑΤΥ ΚΑΝΤΟΥΝΙ - ΠΟΡΤΑ ΡΕΜΟΥΝΤΑ)",
+      "phone": "2661045565",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Βύρος",
+      "name": "ΜΑΝΤΕΛΟΥ ΠΑΝΑΓΙΩΤΑ",
+      "address": "4ο ΧΛΜ ΕΘΝΙΚΗΣ ΛΕΥΚΙΜΗΣ - ΒΥΡΟΣ",
+      "phone": "2661046607",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Αλεπού",
+      "name": "ΜΑΡΑΜΠΟΣ ΜΑΡΚΟΣ",
+      "address": "ΑΛΕΠΟΥ",
+      "phone": "2661047610",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Αλεπού",
+      "name": "ΡΟΥΣΣΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΑΛΕΠΟΥ",
+      "phone": "2661049217",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΒΑΒΒΑ ΜΑΡΙΑ",
+      "address": "ΕΘΝΙΚΗ ΠΑΛΑΙΟΚΑΣΤΡΙΤΣΑΣ 5 (ΕΝΑΝΤΙ ΠΟΛΥΚΛΙΝΙΚΗΣ)",
+      "phone": "2661049661",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κομπίτσι",
+      "name": "ΒΡΑΧΩΡΙΤΗ ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "ΚΟΜΠΙΤΣΙ",
+      "phone": "2661052336",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Άγιος Ιωάννης",
+      "name": "ΝΙΑΚΑ ΖΩΗ",
+      "address": "ΑΓ. ΙΩΑΝΝΗΣ (ΠΑΡΕΛΙΩΝ)",
+      "phone": "2661052612",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κομπίτσι",
+      "name": "ΚΟΥΡΗ ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "ΚΟΜΠΙΤΣΙ -ΤΡΙΚΛΙΝΟ",
+      "phone": "2661052781",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κάτω Γαρούνα",
+      "name": "ΓΚΙΚΑΣ ΗΛΙΑΣ",
+      "address": "ΚΑΤΩ ΓΑΡΟΥΝΑ",
+      "phone": "2661053650",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Σιναράδες",
+      "name": "ΠΙΘΑΜΙΤΣΗΣ ΣΠΥΡΙΔΩΝΑΣ-ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΣΙΝΑΡΑΔΕΣ",
+      "phone": "2661054565",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Μηλιά",
+      "name": "ΔΗΜΟΥΛΗ ΦΩΤΕΙΝΗ",
+      "address": "ΜΗΛΙΑ ΚΥΝΟΠΙΑΣΤΩΝ",
+      "phone": "2661057401",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Αλεπού",
+      "name": "ΑΓΑΘΟΣ ΙΩΑΝΝΗΣ - ΑΓΑΘΟΥ ΕΛΕΝΗ",
+      "address": "ΑΛΕΠΟΥ (ENANTI Super market Diellas)",
+      "phone": "2661058290",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Τρίκλινο",
+      "name": "ΓΙΑΝΝΑΡΟΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΤΡΙΚΛΙΝΟ - ΚΟΜΠΙΤΣΙ",
+      "phone": "2661058700",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Μπενίτσες",
+      "name": "ΚΟΝΤΟΣΤΑΝΟΥ ΜΑΡΙΑ",
+      "address": "ΜΠΕΝΙΤΣΕΣ",
+      "phone": "2661071161",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Άγιος Ματθαίος",
+      "name": "ΡΑΛΛΗΣ ΧΡΗΣΤΟΣ",
+      "address": "ΑΓΙΟΣ ΜΑΤΘΑΙΟΣ",
+      "phone": "2661075402",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Μωραΐτικα",
+      "name": "ΜΑΝΤΟΣ ΜΙΧΑΗΛ",
+      "address": "ΜΩΡΑΪΤΙΚΑ",
+      "phone": "2661075673",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Χλωμοτιανά",
+      "name": "ΤΣΙΡΚΑ ΜΑΓΔΑΛΗΝΗ",
+      "address": "ΧΛΩΜΟΤΙΑΝΑ (ΜΕΣΟΓΓΗ)",
+      "phone": "2661076256",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΠΟΛΕΝΤΑΣ ΚΟΣΜΑΣ",
+      "address": "ΔΟΝΑΤΟΥ ΔΗΜΟΥΛΙΤΣΑ 20 - ΠΛ. ΨΥΧΙΑΤΡΕΙΟΥ",
+      "phone": "2661080619",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Βρυώνη",
+      "name": "ΡΙΖΟΣ ΔΗΜΗΤΡΗΣ",
+      "address": "ΒΡΥΩΝΗ",
+      "phone": "2661080646",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κέρκυρα",
+      "name": "ΚΑΒΒΑΔΙΑ ΑΝΔΡΟΜΑΧΗ",
+      "address": "ΕΘΝ. ΟΔΟΣ ΓΥΡΟΥ ΑΧΙΛΛΕΙΟΥ 68 (ΔΙΠΛΑ ΣΤΟ SM DIELLAS)",
+      "phone": "2661086099",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Τζαβρός",
+      "name": "ΒΡΕΤΤΟΥ ΧΡΙΣΤΙΝΑ",
+      "address": "ΕΘΝΙΚΗ ΠΑΛΑΙΟΚΑΣΤΡΙΤΣΑΣ - ΤΖΑΒΡΟΣ",
+      "phone": "2661090052",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κοντόκαλι",
+      "name": "ΑΛΕΞΑΚΗ ΑΝΝΥ",
+      "address": "ΚΟΝΤΟΚΑΛΙ",
+      "phone": "2661091700",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κοντόκαλι",
+      "name": "ΜΠΑΛΑΣΚΑ ΡΟΖΙΝΑ-ΒΑΡΒΑΡΑ",
+      "address": "ΚΟΝΤΟΚΑΛΙ (ΔΙΠΛΑ ΑΠΟ ΤΟΝ ΑΒ ΒΑΣΙΛΟΠΟΥΛΟ)",
+      "phone": "2661091964",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Δασιά",
+      "name": "ΚΑΖΙΑΝΗΣ ΠΕΤΡΟΣ",
+      "address": "ΕΝΑΝΤΙ ΞΕΝΟΔΟΧΕΙΟΥ ΙΚΟΣ ΔΑΣΙΑ",
+      "phone": "2661093129",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Άγιος Μάρκος",
+      "name": "ΧΗΝΑ ΑΓΓΕΛΑ",
+      "address": "ΑΓ. ΜΑΡΚΟΣ (ΠΥΡΓΙ)",
+      "phone": "2661093520",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κεφαλόβρυσο",
+      "name": "ΒΛΑΧΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΚΕΦΑΛΟΒΡΥΣΟ - ΚΟΚΚΙΝΙ (ΔΙΠΛΑ ΣΤΟ ΒΕΝΖΙΝΑΔΙΚΟ EKO)",
+      "phone": "2661094888",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Πελεκάς",
+      "name": "ΤΖΑΦΕΣΤΑ ΣΤΕΛΛΑ",
+      "address": "ΠΕΛΕΚΑΣ (ΘΕΣΗ ΧΕΛΑΝΕΣ)",
+      "phone": "2661095555",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Άνω Πύργι",
+      "name": "ΚΑΡΡΑΣ ΒΑΣΙΛΗΣ",
+      "address": "ΑΝΩ ΠΥΡΓΙ - ΔΙΠΛΑ ΣΤΟ ΒΕΝΖΙΝΑΔΙΚΟ REVOIL",
+      "phone": "2661097177",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κοντόκαλι",
+      "name": "ΜΠΛΙΑΝΤΣΗΣ ΧΡΗΣΤΟΣ",
+      "address": "ΚΟΝΤΟΚΑΛΙ",
+      "phone": "2661099123",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Γούβια",
+      "name": "ΚΑΝΝΟΝΕ-ΠΑΝΔΗ ΠΑΟΛΑ - ΠΑΝΔΗ ΑΛΕΞΑΝΔΡΑ - ΠΑΝΔΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΓΟΥΒΙΑ",
+      "phone": "2661099411",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Άγιοι Θεόδωροι",
+      "name": "ΚΟΥΡΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΑΓΙΟΙ ΘΕΟΔΩΡΟΙ",
+      "phone": "2662022540",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Λευκίμμη",
+      "name": "ΣΤΑΜΑΤΑΚΟΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "ΛΕΥΚΙΜΜΗ",
+      "phone": "2662022649",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Περιβόλι",
+      "name": "ΓΑΣΤΕΡΑΤΟΥ ΔΗΜΗΤΡΑ",
+      "address": "ΠΕΡΙΦΕΡΕΙΑΚΗ ΟΔΟΣ ΠΕΡΙΒΟΛΙΟΥ",
+      "phone": "2662023160",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Ρίγγλαδες",
+      "name": "ΒΑΡΕΛΗΣ ΒΑΣΙΛΕΙΟΣ-ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΡΙΓΓΛΑΔΕΣ",
+      "phone": "2662024143",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Παξοί",
+      "name": "ΚΑΓΚΑ ΜΑΡΙΑ",
+      "address": "ΠΑΞΟΙ - ΜΑΓΑΖΙΑ (ΘΕΣΗ ΠΛΑΤΑΝΟΣ)",
+      "phone": "2662031509",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Παξοί",
+      "name": "ΤΡΥΦΩΝΑΣ ΑΝΔΡΕΑΣ",
+      "address": "ΠΑΞΟΙ",
+      "phone": "2662032200",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Λάκκα",
+      "name": "ΔΗΜΗΤΡΙΑΔΗΣ ΗΛΙΑΣ",
+      "address": "ΛΑΚΚΑ ΠΑΞΩΝ",
+      "phone": "2662033018",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Αργυράδες",
+      "name": "ΠΑΝΑΓΟΥ ΗΛΙΑΝΑ",
+      "address": "ΑΡΓΥΡΑΔΕΣ",
+      "phone": "2662051109",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Πετρίτη",
+      "name": "ΚΟΥΠΠΑΡΗ ΗΛΙΑΝΑ",
+      "address": "ΠΕΤΡΙΤΗ",
+      "phone": "2662051814",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Χλωμός",
+      "name": "ΜΠΑΡΔΗ ΙΩΑΝΝΑ",
+      "address": "ΛΙΝΙΑ ΧΛΩΜΟΥ",
+      "phone": "2662052368",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Σκριπερό",
+      "name": "ΣΤΑΣΙΝΟΠΟΥΛΟΣ ΜΑΡΙΟΣ",
+      "address": "ΣΚΡΙΠΕΡΟ (ΔΙΠΛΑ ΣΤΟ ΒΕΝΖ/ΚΟ SHELL)",
+      "phone": "2663022666",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Σιδάρι",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΣΙΔΑΡΙ",
+      "phone": "2663029500",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Άγραφοι",
+      "name": "ΒΡΑΔΗ ΑΛΕΞΑΝΔΡΑ",
+      "address": "ΑΓΡΑΦΟΙ (ΘΕΣΗ ΑΓΚΩΝΑΡΙ)",
+      "phone": "2663031199",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Καρουσάδες",
+      "name": "ΡΟΥΤΣΑΚΟΣ ΝΙΚΗΤΑΣ",
+      "address": "ΚΑΡΟΥΣΑΔΕΣ",
+      "phone": "2663031355",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Γαρδελάδες",
+      "name": "ΜΠΕΡΝΧΑΡΝΤ-ΡΩΜΑΙΟΥ ΛΙΝΤΑ",
+      "address": "ΕΘΝ. ΠΑΛΑΙΟΚΑΣΤΡΙΤΣΑΣ 183 - ΓΑΡΔΕΛΑΔΕΣ",
+      "phone": "2663041111",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Δουκάδες",
+      "name": "ΚΟΥΡΤΕΛΕΣΗ ΝΑΤΑΣΑ",
+      "address": "ΕΘΝ. ΠΑΛΑΙΟΚΑΣΤΡΙΤΣΑΣ (ΔΟΥΚΑΔΕΣ)",
+      "phone": "2663041141",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Λιαπάδες",
+      "name": "ΠΑΝΔΗ ΝΙΚΟΛΕΤΤΑ",
+      "address": "ΛΙΑΠΑΔΕΣ",
+      "phone": "2663041592",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Αρίλλας",
+      "name": "ΜΟΥΤΣΙΟΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΑΡΙΛΛΑΣ",
+      "phone": "2663051013",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Αχαράβη",
+      "name": "ΒΑΡΕΛΗ ΑΘΗΝΑ",
+      "address": "ΑΧΑΡΑΒΗ",
+      "phone": "2663063140",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Ρόδα",
+      "name": "ΚΟΥΣΤΑΣ ΜΑΡΙΟΣ",
+      "address": "ΡΟΔΑ",
+      "phone": "2663063144",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Αχαράβη",
+      "name": "ΚΟΝΤΟΥ ΜΑΡΙΛΕΝΑ",
+      "address": "ΑΧΑΡΑΒΗ",
+      "phone": "2663063561",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Αχαράβη",
+      "name": "ΚΑΤΣΩΡΑ ΑΦΡΟΔΙΤΗ",
+      "address": "ΑΧΑΡΑΒΗ",
+      "phone": "2663064754",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Άγρος",
+      "name": "ΒΑΛΣΑΜΗ ΕΛΕΥΘΕΡΙΑ",
+      "address": "ΑΓΡΟΣ",
+      "phone": "2663071241",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Άγιος Αθανάσιος",
+      "name": "ΟΡΦΑΝΟΣ ΙΩΑΝΝΗΣ",
+      "address": "ΑΓΙΟΣ ΑΘΑΝΑΣΙΟΣ",
+      "phone": "2663071990",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Χωρεπίσκοποι",
+      "name": "ΜΑΣΤΟΡΑ ΜΑΡΙΑ-ΙΩΑΝΝΑ",
+      "address": "ΧΩΡΕΠΙΣΚΟΠΟΙ",
+      "phone": "2663072517",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Κασσιώπη",
+      "name": "ΨΩΜΑΔΕΛΗ ΑΛΕΞΑΝΔΡΑ",
+      "address": "ΚΑΣΣΙΩΠΗ",
+      "phone": "2663081432",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Αυλιώτες",
+      "name": "ΚΑΪΑΦΑΣ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΑΥΛΙΩΤΕΣ",
+      "phone": "2663095133",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Σιδάρι",
+      "name": "ΑΛΕΞΟΠΟΥΛΟΥ ΧΡΙΣΤΙΝΑ - ΠΑΝΔΗ ΒΑΣΙΛΙΚΗ",
+      "address": "ΣΙΔΑΡΙ",
+      "phone": "2663095400",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    },
+    {
+      "locality": "Περουλάδες",
+      "name": "ΚΑΛΟΥΔΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΕΠΑΡΧ. ΟΔΟΣ ΠΕΡΟΥΛΑΔΩΝ - ΣΙΔΑΡΙΟΥ",
+      "phone": "2663095525",
+      "groupId": "corfu",
+      "date": "2026-11-02",
+      "location": null
+    }
+  ]
+}
