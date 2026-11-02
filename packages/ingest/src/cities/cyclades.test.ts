@@ -240,8 +240,23 @@ describe('readCycladesLists', () => {
 describe('readCycladesLists, one date in three', () => {
   const TINOS = 'Τήνος (Χώρα)';
   const day = (n: number) => `2026-11-${String(2 + n).padStart(2, '0')}`;
+  // Names with a distinctive word each, as real ones have: two of them are never one pharmacy.
+  const SURNAMES = [
+    'ΑΝΤΩΝΙΟΥ',
+    'ΒΑΡΒΑΡΗΣ',
+    'ΓΕΩΡΓΙΟΥ',
+    'ΔΗΜΟΥ',
+    'ΕΥΘΥΜΙΟΥ',
+    'ΖΑΦΕΙΡΗΣ',
+    'ΗΛΙΟΥ',
+    'ΘΕΟΔΩΡΟΥ',
+    'ΙΩΑΝΝΟΥ',
+    'ΚΑΡΑΜΠΑΣ',
+    'ΛΕΩΝΙΔΑΣ',
+    'ΜΑΝΩΛΗΣ',
+  ];
   const pharmacy = (n: number) => ({
-    name: `ΦΑΡΜΑΚΕΙΟ ${n}`,
+    name: SURNAMES[n] ?? '',
     address: `ΟΔΟΣ ${n}`,
     phone: `22830000${10 + n}`,
   });
@@ -285,7 +300,7 @@ describe('readCycladesLists, one date in three', () => {
       Array.from({ length: 7 }, (_, n) => day(n)),
     );
     expect(items.map((item) => item.list.sections[0]?.entries[0]?.name)).toEqual(
-      Array.from({ length: 7 }, (_, n) => `ΦΑΡΜΑΚΕΙΟ ${n}`),
+      Array.from({ length: 7 }, (_, n) => SURNAMES[n]),
     );
     expect(items[1]?.list.sections[0]?.entries[0]).toMatchObject({
       locality: 'Τήνος',
