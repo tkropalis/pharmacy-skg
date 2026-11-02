@@ -741,6 +741,64 @@ export function openPharmacies(
   });
 }
 
+/**
+ * The first instant after `after` at which any pharmacy's status (or `dutiesPublished`, or the
+ * coverage of the day) can differ from what it is at `after`: until then the answers of
+ * `pharmacyStatus`, `openPharmacies` and `coverage` stay the same, so a screen can keep what it
+ * worked out and recompute only when the clock reaches this instant.
+ *
+ * It is a safe bound, not an exact one: the next local midnight and 08:00 (a new day, a new duty
+ * day), and for every opening that starts or ends in sight, its start, its end, the moment it
+ * becomes "closing soon" (30 minutes before its end), and the moment its start comes within the
+ * look-ahead of 7 days (when a closed pharmacy gets a "next open"). On-call hours start and end
+ * here too, as they are not openings. Never later than the next local midnight.
+ */
+export function nextStatusChange(data: CityData, after: Date): Date {
+  const index = indexOf(data);
+  const timeZone = data.city.timeZone;
+  const t = after.getTime();
+  let best = Infinity;
+  const consider = (ms: number) => {
+    if (ms > t && ms < best) best = ms;
+  };
+
+  const today = dateOf(t, timeZone);
+  for (const date of [today, addDays(today, 1)]) {
+    consider(instant(date, '00:00', timeZone));
+    consider(instant(date, '08:00', timeZone));
+  }
+
+  // From yesterday (a duty can run past midnight) to the day a look-ahead from `best` reaches.
+  const first = addDays(today, -1);
+  const last = dateOf(best + HORIZON_DAYS * DAY_MS, timeZone);
+  const raw: Raw[] = [];
+  for (const pharmacy of data.pharmacies) {
+    for (let date = first; date <= last; date = addDays(date, 1)) {
+      rawForDate(data, index, pharmacy, date, raw);
+    }
+  }
+  for (const { start, end } of raw) {
+    if (end <= start) continue;
+    consider(start);
+    consider(end);
+    consider(end - CLOSING_SOON_MS);
+    // The look-ahead sees an opening once `at + 7 days` is past its start.
+    consider(start - HORIZON_DAYS * DAY_MS + 1);
+  }
+
+  for (const date of [first, today, addDays(today, 1)]) {
+    for (const group of data.duties.get(date)?.groups ?? []) {
+      for (const { hours, onCall } of group.sections) {
+        if (onCall !== true || hours === null) continue;
+        consider(instant(date, hours.from, timeZone));
+        consider(instant(hours.toNextDay ? addDays(date, 1) : date, hours.to, timeZone));
+      }
+    }
+  }
+
+  return new Date(best);
+}
+
 /** Every published duty section listing the pharmacy on or after `fromDate`, in date order. */
 export function publishedDuties(
   data: CityData,

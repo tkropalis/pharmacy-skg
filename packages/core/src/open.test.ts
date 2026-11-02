@@ -16,6 +16,7 @@ import type {
 import {
   coverage,
   distanceMetres,
+  nextStatusChange,
   openIntervals,
   openPharmacies,
   pharmacyStatus,
@@ -1551,5 +1552,117 @@ describe('distanceMetres', () => {
     expect(distanceMetres({ lat: 40, lon: 22 }, { lat: 41, lon: 22 })).toBeCloseTo(111_195, -2);
     // Athens to Thessaloniki is about 303 km.
     expect(distanceMetres({ lat: 37.9838, lon: 23.7275 }, a)).toBeCloseTo(303_000, -4);
+  });
+});
+
+describe('nextStatusChange', () => {
+  it('names the closing-soon moment, the closing and the new day in turn', () => {
+    const data = city([pharmacy('a')]);
+    // Monday is 08:00–14:30: the "closing soon" flag turns on at 14:00, the pharmacy closes at
+    // 14:30, and nothing else happens before the new day.
+    expect(local(nextStatusChange(data, at(MONDAY, '10:00')))).toBe('2026-10-05 14:00');
+    expect(local(nextStatusChange(data, at(MONDAY, '14:00')))).toBe('2026-10-05 14:30');
+    expect(local(nextStatusChange(data, at(MONDAY, '14:30')))).toBe('2026-10-06 00:00');
+    expect(local(nextStatusChange(data, at(TUESDAY, '00:00')))).toBe('2026-10-06 08:00');
+  });
+
+  it('is after the instant asked about and within a day (and an hour) of it', () => {
+    const data = city([pharmacy('a')]);
+    for (const [date, time] of [
+      [MONDAY, '00:00'],
+      [MONDAY, '07:59'],
+      [MONDAY, '23:59'],
+      ['2026-10-25', '03:30'], // the clocks go back
+      ['2026-03-29', '02:30'], // the clocks go forward
+    ] as const) {
+      const from = at(date, time);
+      const next = nextStatusChange(data, from);
+      expect(next.getTime(), `${date} ${time}`).toBeGreaterThan(from.getTime());
+      expect(next.getTime() - from.getTime(), `${date} ${time}`).toBeLessThanOrEqual(
+        25 * 3_600_000,
+      );
+    }
+  });
+
+  it('sees on-call hours, which are not openings', () => {
+    const onCall: DutySection = {
+      ...section('on-duty', win('21:00', '21:00'), ['c'], {
+        heading: '21:00 ΕΩΣ 21:00 ΕΠΟΜΕΝΗΣ*',
+      }),
+      onCall: true,
+    };
+    const data: CityData = {
+      ...city([pharmacy('c', { groupId: 'lakonia' })], [day(MONDAY, { lakonia: [onCall] })]),
+      city: LARISA,
+    };
+    expect(local(nextStatusChange(data, at(MONDAY, '10:00')))).toBe('2026-10-05 21:00');
+    expect(local(nextStatusChange(data, at(MONDAY, '21:00')))).toBe('2026-10-06 00:00');
+    expect(local(nextStatusChange(data, at(TUESDAY, '12:00')))).toBe('2026-10-06 21:00');
+  });
+
+  it('leaves every pharmacy and the coverage as they are until then', () => {
+    // A regular pharmacy, a night duty with an afternoon extra, a duty with no hours, an on-call
+    // duty, an extended-hours pharmacy and one with a dated schedule, over three days, one of
+    // which has no published list.
+    const afternoon: ExtraHours = {
+      weekdays: [1, 2],
+      from: '14:00',
+      to: '17:00',
+      exceptHolidays: false,
+    };
+    const onCall: DutySection = {
+      ...section('on-duty', win('20:00', '20:00'), ['d'], {
+        heading: '20:00 ΕΩΣ 20:00 ΕΠΟΜΕΝΗΣ*',
+      }),
+      onCall: true,
+    };
+    const data = city(
+      [
+        pharmacy('a'),
+        pharmacy('b', { groupId: 'thermi' }),
+        pharmacy('c', { groupId: 'thermi' }),
+        pharmacy('d', { groupId: 'thermi' }),
+        pharmacy('e'),
+        pharmacy('f'),
+      ],
+      [
+        day(MONDAY, {
+          metro: [],
+          thermi: [
+            section('overnight', win('21:00', '08:30'), ['b'], { extraHours: [afternoon] }),
+            section('on-duty', null, ['c']),
+            onCall,
+          ],
+        }),
+        day(TUESDAY, { metro: [], thermi: [section('day', win('09:00', '22:00'), ['b'])] }),
+      ],
+      [
+        extended(
+          ['2026-10-01', '2026-10-31'],
+          [
+            ['e', weekly({ '1': [range('09:00', '23:00')], '3': [range('10:00', '00:00')] })],
+            ['f', dated({ [TUESDAY]: [range('12:00', '13:00'), range('18:00', '19:30')] })],
+          ],
+        ),
+      ],
+    );
+    const ids = data.pharmacies.map((p) => p.id);
+    const snapshot = (when: Date) => ids.map((id) => pharmacyStatus(data, id, when));
+
+    let from = at(MONDAY, '00:00');
+    const end = at('2026-10-08', '00:00');
+    let steps = 0;
+    while (from.getTime() < end.getTime()) {
+      const next = nextStatusChange(data, from);
+      expect(next.getTime()).toBeGreaterThan(from.getTime());
+      const before = new Date(next.getTime() - 1);
+      expect(snapshot(before), `${local(from)} to ${local(next)}`).toEqual(snapshot(from));
+      expect(coverage(data, before)).toEqual(coverage(data, from));
+      from = next;
+      steps += 1;
+    }
+    // Many boundaries (every opening and closing), but nowhere near one a minute.
+    expect(steps).toBeGreaterThan(10);
+    expect(steps).toBeLessThan(1000);
   });
 });
