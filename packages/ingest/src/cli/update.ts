@@ -1,7 +1,8 @@
 /**
  * Fetches the official lists, rebuilds data/<city>/ for every covered city (cities/index.ts),
  * validates it and writes only what changed. A city whose data fails validation is left as it
- * was; the others are still written, and the command exits non-zero.
+ * was; the others are still written, and the command exits non-zero. So it does when a city's
+ * extended-hours site cannot be read, after writing that city's duty lists.
  *
  *   node src/cli/update.ts [--city ID ...] [--since YYYY-MM-DD] [--offline]
  *
@@ -22,6 +23,7 @@ import {
   type Override,
   type Warning,
 } from '../registry/build.ts';
+import { describeError } from '../sources/http.ts';
 import { GeocodeCacheSchema, Geocoder } from '../registry/geocode.ts';
 import { OverturePlaceSchema, OvertureIndex } from '../registry/overture.ts';
 import {
@@ -107,13 +109,17 @@ for (const pipeline of chosen) {
   try {
     if (!(await updateCity(pipeline))) failed++;
   } catch (error) {
-    console.error(`${pipeline.city.id}: ${String(error)}`);
+    console.error(`${pipeline.city.id}: ${describeError(error)}`);
     failed++;
   }
 }
 if (failed > 0) process.exit(1);
 
-/** Updates one city's data. Returns false, writing nothing but the geocoding cache, if it fails validation. */
+/**
+ * Updates one city's data. Returns false, writing nothing but the geocoding cache, if it fails
+ * validation; and false, having written what it read, if nothing covers today or the extended
+ * hours could not be read.
+ */
 async function updateCity(pipeline: CityPipeline): Promise<boolean> {
   const { city } = pipeline;
   const paths = cityPaths(city.id);
@@ -227,13 +233,23 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
 
   // --- Extended hours ---------------------------------------------------------------
 
-  // With this run's roster: the first run reads it before any is stored.
-  const extended = await pipeline.fetchExtendedHours({
-    ...context,
-    roster: duties.roster ?? context.roster,
-  });
-  parseFailures.push(...extended.failures);
-  for (const [file, list] of extended.items) extendedFiles.set(file, list);
+  // With this run's roster: the first run reads it before any is stored. A site that cannot be
+  // read keeps the stored lists and must not hold back the duty lists: fsa.gr, out of reach
+  // from 22 to 28 Oct 2026, kept Attica's duties from being updated for a week. The run fails.
+  let extendedRead = true;
+  try {
+    const extended = await pipeline.fetchExtendedHours({
+      ...context,
+      roster: duties.roster ?? context.roster,
+    });
+    parseFailures.push(...extended.failures);
+    for (const [file, list] of extended.items) extendedFiles.set(file, list);
+  } catch (error) {
+    extendedRead = false;
+    console.error(
+      `error [extended-hours] ${city.id}: not read, the stored lists were kept: ${describeError(error)}`,
+    );
+  }
 
   // Pharmacies from the duty lists, to match extended-hours entries against.
   const dutyPharmacies = new Map<string, { id: string; name: string; address: string }>();
@@ -399,7 +415,7 @@ async function updateCity(pipeline: CityPipeline): Promise<boolean> {
   MetaSchema.parse(meta);
   await writeIfChanged(paths.meta, toJson(meta));
   log(changed ? `${city.id}: data updated.` : `${city.id}: no changes.`);
-  return coversToday;
+  return coversToday && extendedRead;
 }
 
 function sortKeys<T extends Record<string, unknown>>(record: T): T {

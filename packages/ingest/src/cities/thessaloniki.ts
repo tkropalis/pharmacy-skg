@@ -12,7 +12,7 @@ import { parseExtendedHours } from '../pkm/parse.ts';
 import type { Warning } from '../registry/build.ts';
 import type { GeocodeHit } from '../registry/geocode.ts';
 import { ExtendedHoursSchema, SCHEMA_VERSION, type ExtendedHours } from '../schema.ts';
-import { getBytes } from '../sources/http.ts';
+import { describeError, getBytes } from '../sources/http.ts';
 import { listExtendedHours, type ExtendedHoursLink } from '../sources/pkm.ts';
 import { listDutyPdfs } from '../sources/thessguide.ts';
 import { readFirstSheet } from '../xlsx.ts';
@@ -99,7 +99,7 @@ export const thessaloniki: CityPipeline = {
       } catch (error) {
         // Report and carry on: validation fails the run if this leaves today's or tomorrow's
         // lists incomplete.
-        failures.push({ code: 'unreadable-pdf', message: `${link.url}: ${String(error)}` });
+        failures.push({ code: 'unreadable-pdf', message: `${link.url}: ${describeError(error)}` });
       }
     }
     log(`  parsed ${items.length} new or updated PDFs`);

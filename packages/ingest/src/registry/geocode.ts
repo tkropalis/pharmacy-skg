@@ -6,7 +6,7 @@
 import { z } from 'zod';
 import type { Bounds } from '@pharmacy-skg/core';
 import type { GeocodeArea } from '../cities/pipeline.ts';
-import { USER_AGENT } from '../sources/http.ts';
+import { USER_AGENT, describeError } from '../sources/http.ts';
 import { squash } from '../text.ts';
 
 const ENDPOINT = 'https://nominatim.openstreetmap.org/search';
@@ -157,7 +157,7 @@ export class Geocoder {
         this.stopped = `Nominatim HTTP ${response.status}`;
         if (response.status !== 429 && response.status < 500) break;
       } catch (error) {
-        this.stopped = `Nominatim: ${String(error)}`;
+        this.stopped = `Nominatim: ${describeError(error)}`;
       }
     }
     this.online = false;

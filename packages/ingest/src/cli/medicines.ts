@@ -1,7 +1,8 @@
 /**
  * Rebuilds data/medicines/medicines.json from the Ministry of Health's price bulletins and ΕΟΦ's
  * limited-availability list, validates it and writes it only if it changed. Exits non-zero,
- * writing nothing, if validation fails.
+ * writing nothing, if validation fails. When the ministry's site cannot be read, the stored
+ * prices stay, ΕΟΦ's list is still applied to them, and it exits non-zero.
  *
  *   node src/cli/medicines.ts [--force]
  *
@@ -12,7 +13,7 @@
 import { readFile } from 'node:fs/promises';
 import { parseArgs } from 'node:util';
 import type { PriceBulletin } from '@pharmacy-skg/core';
-import { assembleMedicines, type PriceTable } from '../medicines/assemble.ts';
+import { assembleMedicines, attachShortages, type PriceTable } from '../medicines/assemble.ts';
 import {
   OTC_BASE,
   PRESCRIPTION_BASE,
@@ -27,7 +28,7 @@ import { validateMedicines } from '../medicines/validate.ts';
 import { extractTextItems } from '../pdf.ts';
 import { MedicinesSchema, SCHEMA_VERSION, type Medicines } from '../schema.ts';
 import { findShortageList } from '../sources/eof.ts';
-import { getBytes } from '../sources/http.ts';
+import { describeError, getBytes } from '../sources/http.ts';
 import {
   OTC_LISTING,
   PRESCRIPTION_LISTING,
@@ -115,7 +116,17 @@ async function planBulletins(): Promise<{ articleId: number; bulletin: PriceBull
 const isZip = (bytes: Uint8Array) =>
   bytes[0] === 0x50 && bytes[1] === 0x4b && bytes[2] === 0x03 && bytes[3] === 0x04;
 
-let planned = await planBulletins();
+// The ministry's site turned GitHub's runners away (HTTP 421) from 22 Oct 2026 while ΕΟΦ's
+// answered: a failure there must not keep the shortage list from being updated.
+let planned: Awaited<ReturnType<typeof planBulletins>>;
+try {
+  planned = await planBulletins();
+} catch (error) {
+  if (!previous) throw error;
+  console.error(`error [bulletins] not read, the stored prices were kept: ${describeError(error)}`);
+  await refreshShortages(previous);
+  process.exit(1);
+}
 let bulletins = planned.map(({ bulletin }) => bulletin);
 const shortageLink = await findShortageList();
 log(shortageLink ? `ΕΟΦ: ${shortageLink.title}` : 'ΕΟΦ: no limited-availability list found');
@@ -158,12 +169,10 @@ for (const bulletin of bulletins) {
   rowWarnings.push(...warnings.map((w) => `${bulletin.id}: ${w.message}`));
   tables.push({ bulletin, rows });
 }
-let shortages: ShortageEntry[] = [];
-if (shortageLink) {
-  shortages = parseShortageList(await extractTextItems(await getBytes(shortageLink.fileUrl)));
-}
-
+const shortages = await readShortages(shortageLink);
 const assembled = assembleMedicines(tables, shortages);
+for (const message of rowWarnings) log(`warning [price-row-skipped] ${message}`);
+for (const w of assembled.warnings) log(`warning [${w.code}] ${w.message}`);
 const file: Medicines = {
   schemaVersion: SCHEMA_VERSION,
   updatedAt: previous?.updatedAt ?? new Date().toISOString(),
@@ -171,30 +180,55 @@ const file: Medicines = {
   shortageList: shortageLink,
   medicines: assembled.medicines,
 };
-const report = validateMedicines(file, shortages.length);
-for (const message of rowWarnings) log(`warning [price-row-skipped] ${message}`);
-for (const w of [...assembled.warnings, ...report.warnings])
-  log(`warning [${w.code}] ${w.message}`);
-log(
-  `${assembled.medicines.length} packs (${assembled.medicines.filter((m) => m.otc).length} non-prescription), ` +
-    `${shortages.length} on the shortage list (${assembled.unmatchedShortages} without a price)`,
-);
-for (const e of report.errors) console.error(`error [${e.code}] ${e.message}`);
-if (report.errors.length > 0) {
-  console.error(`Validation failed with ${report.errors.length} errors; nothing was written.`);
-  process.exit(1);
+if (!(await publish(file, shortages.length, assembled.unmatchedShortages))) process.exit(1);
+
+async function readShortages(link: Medicines['shortageList']): Promise<ShortageEntry[]> {
+  return link ? parseShortageList(await extractTextItems(await getBytes(link.fileUrl))) : [];
 }
 
-// updatedAt moves only when what is published changed.
-const onDisk = await readFile(paths.medicines, 'utf8').catch(() => null);
-const changed = previous === undefined || onDisk !== medicinesJson(file);
-if (changed) {
-  await writeIfChanged(
-    paths.medicines,
-    medicinesJson({ ...file, updatedAt: new Date().toISOString() }),
+/** The stored prices with ΕΟΦ's current list, for a run that could not read the bulletins. */
+async function refreshShortages(stored: Medicines): Promise<void> {
+  const link = await findShortageList();
+  log(link ? `ΕΟΦ: ${link.title}` : 'ΕΟΦ: no limited-availability list found');
+  if (stored.shortageList?.fileUrl === link?.fileUrl && !args.force) {
+    log('No new shortage list. No changes.');
+    return;
+  }
+  const shortages = await readShortages(link);
+  const attached = attachShortages(stored.medicines, shortages);
+  await publish(
+    { ...stored, shortageList: link, medicines: attached.medicines },
+    shortages.length,
+    attached.unmatchedShortages,
   );
 }
-log(changed ? 'Medicines updated.' : 'No changes.');
+
+/** Validates the file and writes it if it changed. Returns false, writing nothing, if invalid. */
+async function publish(file: Medicines, shortageEntries: number, unmatched: number) {
+  const report = validateMedicines(file, shortageEntries);
+  for (const w of report.warnings) log(`warning [${w.code}] ${w.message}`);
+  log(
+    `${file.medicines.length} packs (${file.medicines.filter((m) => m.otc).length} non-prescription), ` +
+      `${shortageEntries} on the shortage list (${unmatched} without a price)`,
+  );
+  for (const e of report.errors) console.error(`error [${e.code}] ${e.message}`);
+  if (report.errors.length > 0) {
+    console.error(`Validation failed with ${report.errors.length} errors; nothing was written.`);
+    return false;
+  }
+
+  // updatedAt moves only when what is published changed.
+  const onDisk = await readFile(paths.medicines, 'utf8').catch(() => null);
+  const changed = previous === undefined || onDisk !== medicinesJson(file);
+  if (changed) {
+    await writeIfChanged(
+      paths.medicines,
+      medicinesJson({ ...file, updatedAt: new Date().toISOString() }),
+    );
+  }
+  log(changed ? 'Medicines updated.' : 'No changes.');
+  return true;
+}
 
 /** Pretty JSON, but one line per medicine: about 9,000 of them. */
 function medicinesJson(value: Medicines): string {

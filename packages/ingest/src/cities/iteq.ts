@@ -8,6 +8,7 @@ import { iteqDutyLists, type IteqGrouping, type IteqSector } from '../iteq/lists
 import type { IteqCard } from '../iteq/parse.ts';
 import type { Warning } from '../registry/build.ts';
 import type { Meta } from '../schema.ts';
+import { describeError } from '../sources/http.ts';
 import { IteqClient } from '../sources/iteq.ts';
 import type {
   CityPipeline,
@@ -67,7 +68,7 @@ export function iteqPipeline(area: IteqArea): CityPipeline {
           } catch (error) {
             failures.push({
               code: 'unreadable-page',
-              message: `${area.host} ${date}: ${String(error)}`,
+              message: `${area.host} ${date}: ${describeError(error)}`,
             });
             continue;
           }
@@ -105,7 +106,7 @@ export function iteqPipeline(area: IteqArea): CityPipeline {
             });
           }
         } catch (error) {
-          failures.push({ code: 'unreadable-page', message: `${ref}: ${String(error)}` });
+          failures.push({ code: 'unreadable-page', message: `${ref}: ${describeError(error)}` });
         }
       }
       log(

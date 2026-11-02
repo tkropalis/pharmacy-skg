@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 import { describe, expect, it } from 'vitest';
 import type { PriceBulletin } from '@pharmacy-skg/core';
 import { readFirstSheet } from '../xlsx.ts';
-import { assembleMedicines, type PriceTable } from './assemble.ts';
+import { assembleMedicines, attachShortages, type PriceTable } from './assemble.ts';
 import { parsePriceTable, type PriceRow } from './price-table.ts';
 
 function bulletin(id: string, kind: PriceBulletin['kind'] = 'prescription'): PriceBulletin {
@@ -109,5 +109,29 @@ describe('assembleMedicines', () => {
       });
     }
     expect(medicines.filter((m) => m.otc)).toHaveLength(otc.rows.length);
+  });
+});
+
+describe('attachShortages', () => {
+  it('puts a new list on stored prices, replacing the old shortages', () => {
+    const stored = assembleMedicines(
+      [
+        {
+          bulletin: bulletin('base'),
+          rows: [row({}), row({ barcode: '2800000000002', name: 'Y' })],
+        },
+      ],
+      [{ barcode: '2800000000001', from: '2026-09-01', to: null, reason: 'Παλιά' }],
+    ).medicines;
+    const result = attachShortages(stored, [
+      { barcode: '2800000000002', from: '2026-10-30', to: null, reason: 'Αυξημένη ζήτηση' },
+      { barcode: '2809000000001', from: '2026-10-30', to: null, reason: '' },
+    ]);
+    expect(result.medicines.map((m) => [m.barcode, m.shortage?.reason ?? null])).toEqual([
+      ['2800000000001', null],
+      ['2800000000002', 'Αυξημένη ζήτηση'],
+    ]);
+    expect(result.medicines.map((m) => m.price)).toEqual(stored.map((m) => m.price));
+    expect(result.unmatchedShortages).toBe(1);
   });
 });
