@@ -70,7 +70,7 @@ export const attiki: CityPipeline = {
       (date) => date <= last || sweep || stored === null || date > stored.readThrough,
     );
     // The time of this reading: of two readings of the same list, the later wins, and one whose
-    // content did not change changes nothing (cli/update.ts).
+    // content did not change changes nothing (update/city.ts).
     const uploadedAt = new Date().toISOString();
     const grouping = { kind: 'area', id: ATTIKI.defaultGroupId, name: ATTIKI.name.el } as const;
     const named = new Map<string, RosterEntry>();

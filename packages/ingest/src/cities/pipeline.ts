@@ -1,7 +1,7 @@
 /**
  * What the update command needs to know about one covered city (one pharmacists' association):
  * where its duty lists and extended hours come from, how its addresses are geocoded and what its
- * data should look like. Everything else in cli/update.ts is the same for every city.
+ * data should look like. Everything else in update/city.ts is the same for every city.
  */
 import type { City, DutyKind } from '@pharmacy-skg/core';
 import type { DutyEntry, DutyList } from '../fsth/parse.ts';

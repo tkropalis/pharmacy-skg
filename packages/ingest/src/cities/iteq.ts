@@ -57,7 +57,7 @@ export function iteqPipeline(area: IteqArea): CityPipeline {
       const cards = new Map<string, IteqCard>();
       const home = await client.home();
       // The time of this reading: of two readings of the same list, the later wins, and one
-      // whose content did not change changes nothing (cli/update.ts).
+      // whose content did not change changes nothing (update/city.ts).
       const uploadedAt = new Date().toISOString();
 
       for (const date of home.dates) {
