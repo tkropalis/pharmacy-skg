@@ -23,6 +23,12 @@ describe('homeCity', () => {
     expect(homeCity(storageWith({ [LAST_POSITION_KEY]: position(39.639, 22.419) })).id).toBe(
       'larisa',
     );
+    expect(homeCity(storageWith({ [LAST_POSITION_KEY]: position(38.2466, 21.7346) })).id).toBe(
+      'achaia',
+    );
+    expect(homeCity(storageWith({ [LAST_POSITION_KEY]: position(39.6243, 19.9217) })).id).toBe(
+      'corfu',
+    );
   });
 
   it('prefers the city shown last over the position', () => {
@@ -33,8 +39,8 @@ describe('homeCity', () => {
   });
 
   it('falls back to the default area elsewhere, without a position or with an unknown city', () => {
-    // Patra: no area covers it yet.
-    expect(homeCity(storageWith({ [LAST_POSITION_KEY]: position(38.2466, 21.7346) })).id).toBe(
+    // Agrinio: no area covers it yet.
+    expect(homeCity(storageWith({ [LAST_POSITION_KEY]: position(38.6218, 21.4078) })).id).toBe(
       'thessaloniki',
     );
     // Athens is Attica's.
