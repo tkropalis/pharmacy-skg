@@ -1221,14 +1221,12 @@ export default function HomeApp({
                   })}
                 </p>
               )}
-              {missingGroups.length > 0 && !(originGroupMissing && missingGroups.length === 1) && (
+              {/* Only without a position or an area: with one, the other groups' lists are not
+                  the person's concern (Thessaloniki's suburbs had none for weeks, decisions.md). */}
+              {missingGroups.length > 0 && originGroup === null && (
                 <p className="callout" role="note">
                   {fill(text.time.groupsMissing, {
-                    groups: groupList(
-                      missingGroups.filter((id) => id !== originGroup || !originGroupMissing),
-                      names,
-                      locale,
-                    ),
+                    groups: groupList(missingGroups, names, locale),
                   })}
                 </p>
               )}
