@@ -5,7 +5,7 @@
  * second; no bot challenge is involved (docs/research-greece.md, section 2).
  */
 import { parseIteqDetails, parseIteqPage, type IteqPage } from '../iteq/parse.ts';
-import { USER_AGENT } from './http.ts';
+import { HttpClient, type HttpTransport } from './http.ts';
 
 const PAUSE_MS = 1000;
 
@@ -13,48 +13,37 @@ export class IteqClient {
   readonly origin: string;
   private readonly cookies = new Map<string, string>();
   private token: string | null = null;
-  private lastRequest = 0;
-  requests = 0;
+  private readonly http: HttpClient;
 
-  constructor(host: string) {
+  constructor(host: string, transport: HttpTransport = {}) {
     this.origin = `https://${host}`;
-  }
-
-  private async request(path: string, body?: URLSearchParams): Promise<string> {
-    const wait = this.lastRequest + PAUSE_MS - Date.now();
-    if (wait > 0) await new Promise((resolve) => setTimeout(resolve, wait));
-    let lastError: unknown;
-    for (let attempt = 0; attempt < 3; attempt++) {
-      if (attempt > 0) await new Promise((resolve) => setTimeout(resolve, 2000 * 2 ** attempt));
-      this.lastRequest = Date.now();
-      this.requests++;
-      try {
-        const response = await fetch(`${this.origin}${path}`, {
-          method: body ? 'POST' : 'GET',
-          headers: {
-            'User-Agent': USER_AGENT,
-            Accept: 'text/html',
-            ...(this.cookies.size > 0
-              ? { Cookie: [...this.cookies].map(([k, v]) => `${k}=${v}`).join('; ') }
-              : {}),
-            ...(body ? { 'Content-Type': 'application/x-www-form-urlencoded' } : {}),
-          },
-          ...(body ? { body } : {}),
-          signal: AbortSignal.timeout(60_000),
-        });
+    this.http = new HttpClient({
+      ...transport,
+      pauseMs: PAUSE_MS,
+      headers: (): Record<string, string> =>
+        this.cookies.size > 0
+          ? { Cookie: [...this.cookies].map(([k, v]) => `${k}=${v}`).join('; ') }
+          : {},
+      onResponse: (response) => {
         for (const cookie of response.headers.getSetCookie()) {
           const [pair = ''] = cookie.split(';');
           const at = pair.indexOf('=');
           if (at > 0) this.cookies.set(pair.slice(0, at).trim(), pair.slice(at + 1).trim());
         }
-        if (response.ok) return await response.text();
-        lastError = new Error(`HTTP ${response.status} for ${this.origin}${path}`);
-        if (response.status < 500 && response.status !== 429) break;
-      } catch (error) {
-        lastError = error;
-      }
-    }
-    throw lastError;
+      },
+    });
+  }
+
+  /** Requests made, retries included. */
+  get requests(): number {
+    return this.http.requests;
+  }
+
+  private request(path: string, form?: URLSearchParams): Promise<string> {
+    return this.http.text(`${this.origin}${path}`, {
+      accept: 'text/html',
+      ...(form ? { form } : {}),
+    });
   }
 
   /** Today's page, with the dates on offer. */

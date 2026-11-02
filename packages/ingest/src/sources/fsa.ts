@@ -7,42 +7,29 @@ import { z } from 'zod';
 import { parseFsaCards, parseFsaDates, type FsaCard } from '../iteq/fsa.ts';
 import { decodeEntities } from '../iteq/parse.ts';
 import { squash } from '../text.ts';
-import { USER_AGENT, getJson } from './http.ts';
+import { HttpClient, getJson, type HttpTransport } from './http.ts';
 
 const PAUSE_MS = 1000;
 
 export class FsaClient {
   readonly origin = 'https://fsa-efimeries.gr';
-  private lastRequest = 0;
-  requests = 0;
+  private readonly http: HttpClient;
 
-  private async request(path: string, body?: URLSearchParams): Promise<string> {
-    const wait = this.lastRequest + PAUSE_MS - Date.now();
-    if (wait > 0) await new Promise((resolve) => setTimeout(resolve, wait));
-    let lastError: unknown;
-    for (let attempt = 0; attempt < 3; attempt++) {
-      if (attempt > 0) await new Promise((resolve) => setTimeout(resolve, 2000 * 2 ** attempt));
-      this.lastRequest = Date.now();
-      this.requests++;
-      try {
-        const response = await fetch(`${this.origin}${path}`, {
-          method: body ? 'POST' : 'GET',
-          headers: {
-            'User-Agent': USER_AGENT,
-            Accept: 'text/html',
-            ...(body ? { 'Content-Type': 'application/x-www-form-urlencoded' } : {}),
-          },
-          ...(body ? { body } : {}),
-          signal: AbortSignal.timeout(60_000),
-        });
-        if (response.ok) return await response.text();
-        lastError = new Error(`HTTP ${response.status} for ${this.origin}${path}`);
-        if (response.status < 500 && response.status !== 429) break;
-      } catch (error) {
-        lastError = error;
-      }
-    }
-    throw lastError;
+  /** `transport` is what a test replaces: the network and the clock. */
+  constructor(transport: HttpTransport = {}) {
+    this.http = new HttpClient({ ...transport, pauseMs: PAUSE_MS });
+  }
+
+  /** Requests made, retries included. */
+  get requests(): number {
+    return this.http.requests;
+  }
+
+  private request(path: string, form?: URLSearchParams): Promise<string> {
+    return this.http.text(`${this.origin}${path}`, {
+      accept: 'text/html',
+      ...(form ? { form } : {}),
+    });
   }
 
   /** The dates the site offers, from today. */
