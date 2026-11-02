@@ -96,6 +96,21 @@ describe('cityAt', () => {
     expect(at(39.5062, 20.2668)).toBe('thesprotia'); // Igoumenitsa
   });
 
+  it('finds the islands of the Cyclades and the towns of Kilkis', () => {
+    const at = (lat: number, lon: number) => cityAt({ lat, lon })?.id;
+    expect(at(37.4448, 24.9425)).toBe('cyclades'); // Ermoupoli
+    expect(at(37.1036, 25.3766)).toBe('cyclades'); // Naxos
+    expect(at(36.4182, 25.4325)).toBe('cyclades'); // Fira
+    expect(at(36.9747, 24.7197)).toBe('cyclades'); // Apollonia, Sifnos
+    expect(at(37.8369, 24.937)).toBe('cyclades'); // Chora, Andros
+    expect(at(38.0, 24.42)).toBe('evia'); // Karystos, next to Andros
+    expect(at(40.9937, 22.8736)).toBe('kilkis');
+    expect(at(41.0016, 22.5764)).toBe('kilkis'); // Polykastro
+    expect(at(40.9456, 22.4562)).toBe('kilkis'); // Goumenissa
+    expect(at(40.7494, 23.0683)).toBe('thessaloniki'); // Λαγκαδάς, south of Kilkis's boxes
+    expect(at(40.6, 22.7)).toBe('thessaloniki'); // Chalastra
+  });
+
   it.each([
     ['Thiva', 38.325, 23.319],
     ['Oinofyta', 38.312, 23.637],
@@ -110,8 +125,6 @@ describe('cityAt', () => {
     ['Florina', 40.782, 21.4098],
     ['Chios', 38.368, 26.1358],
     ['Mytilene', 39.1047, 26.5551],
-    ['Naxos', 37.1036, 25.3766],
-    ['Ermoupoli', 37.4448, 24.9425],
   ])('finds none in %s, which is not covered', (_, lat, lon) => {
     expect(cityAt({ lat, lon })).toBeUndefined();
   });
