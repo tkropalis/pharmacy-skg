@@ -1,0 +1,2177 @@
+{
+  "schemaVersion": 1,
+  "pharmacies": [
+    {
+      "id": "2661020376",
+      "name": "ΚΑΛΟΥΔΗ ΕΛΕΝΗ",
+      "address": "ΤΡΙΑ ΓΕΦΥΡΙΑ/ΚΑΝΑΛΙΑ",
+      "locality": "Κανάλια",
+      "postcode": null,
+      "phone": "2661020376",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.616049,
+        "lon": 19.895864,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "17fa7158-6ae9-4ef5-bd34-388907691900"
+      }
+    },
+    {
+      "id": "2661020703",
+      "name": "ΚΑΖΙΑΝΗ ΕΛΕΝΗ",
+      "address": "ΑΛΕΞΑΝΔΡΟΥ ΠΑΝΑΓΟΥΛΗ 31 (ΚΑΘΟΛΙΚΕΣ ΚΑΛΟΓΡΙΕΣ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661020703",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.621735,
+        "lon": 19.918091,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "515c4e61-ef6f-455b-9598-048190b51e2a"
+      }
+    },
+    {
+      "id": "2661020970",
+      "name": "ΚΟΣΚΙΝΑΣ ΝΙΚΟΣ - ΚΟΣΚΙΝΑΣ ΣΠΥΡΟΣ",
+      "address": "ΙΟΥΛΙΑΣ ΑΝΔΡΕΑΔΗ 11 (ΠΛΑΤΥΤΕΡΑ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661020970",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.622091,
+        "lon": 19.911732,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "d82fbc2e-908f-4026-a512-46ca42f1c6e4"
+      }
+    },
+    {
+      "id": "2661021033",
+      "name": "ΔΕΣΥΛΛΑΣ ΓΕΡΑΣΙΜΟΣ-ΣΤΕΦΑΝΟΣ",
+      "address": "ΠΑΝΟΥ ΖΑΦΕΙΡΟΠΟΥΛΟΥ 17-19",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661021033",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.591337,
+        "lon": 19.859619,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661022140",
+      "name": "ΚΑΡΥΔΗΣ ΑΝΤΩΝΗΣ",
+      "address": "ΜΗΤΡΟΠΟΛΙΤΟΥ ΜΕΘΟΔΙΟΥ 16",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661022140",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.620909,
+        "lon": 19.917753,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΜΗΤΡΟΠΟΛΙΤΟΥ ΜΕΘΟΔΙΟΥ 16, Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661022335",
+      "name": "ΝΙΚΟΚΑΒΟΥΡΑ ΙΩΑΝΝΑ - ΧΟΝΔΡΟΓΙΑΝΝΗ ΜΑΡΙΑ",
+      "address": "ΕΘΝΙΚΗ ΠΑΛΑΙΟΚΑΣΤΡΙΤΣΑΣ 25 (ΣΟΛΑΡΙ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661022335",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.675779,
+        "lon": 19.708449,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "aced7e6d-695c-4bb5-8b29-eafe8715f0dc"
+      }
+    },
+    {
+      "id": "2661023678",
+      "name": "ΚΟΣΚΙΝΑΣ ΓΙΩΡΓΟΣ",
+      "address": "ΜΗΤ. ΜΕΘΟΔΙΟΥ 3 (ΣΑΡΟΚΟ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661023678",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.621163,
+        "lon": 19.918152,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "064ec1fc-3f6f-498c-bb51-7589fccaf2c7"
+      }
+    },
+    {
+      "id": "2661023740",
+      "name": "ΜΑΜΑΛΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΠΕΡΑΜΑ",
+      "locality": "Πέραμα",
+      "postcode": null,
+      "phone": "2661023740",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.579768,
+        "lon": 19.912828,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πέραμα"
+      }
+    },
+    {
+      "id": "2661024197",
+      "name": "ΠΑΛΗΚΥΡΑΣ ΧΑΡΑΛΑΜΠΟΣ",
+      "address": "ΕΘΝΙΚΗ ΠΑΛΑΙΟΚΑΣΤΡΙΤΣΑΣ 80 (ΣΟΛΑΡΙ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661024197",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.591337,
+        "lon": 19.859619,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661025378",
+      "name": "ΚΑΒΒΑΔΑ ΚΛΑΙΡΗ",
+      "address": "ΕΥΓΕΝΙΟΥ ΒΟΥΛΓΑΡΕΩΣ 66 (ΕΘΝ. ΤΡΑΠΕΖΑ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661025378",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.623675,
+        "lon": 19.921004,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "b340ca3c-c072-4b1a-a2b8-e0f567c94913"
+      }
+    },
+    {
+      "id": "2661025738",
+      "name": "ΚΟΥΛΟΥΡΗ ΑΜΑΛΙΑ",
+      "address": "ΠΛ. ΓΕΩΡΓΙΟΥ ΘΕΟΤΟΚΗ 2 & ΜΗΤΡ. ΜΕΘΟΔΙΟΥ 2 (ΣΑΡΟΚΟ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661025738",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.621396,
+        "lon": 19.918147,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "f4c615cd-496c-43f6-afdb-9c8309d581f8"
+      }
+    },
+    {
+      "id": "2661025882",
+      "name": "ΠΑΓΚΡΑΤΗ ΕΛΕΝΗ",
+      "address": "ΜΗΤΡΟΠΟΛΙΤΟΥ ΜΕΘΟΔΙΟΥ 6 (ΣΑΡΟΚΟ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661025882",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.621735,
+        "lon": 19.918091,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "515c4e61-ef6f-455b-9598-048190b51e2a"
+      }
+    },
+    {
+      "id": "2661026066",
+      "name": "ΝΙΚΗΦΟΡΟΥ ΑΓΓΕΛΙΚΗ",
+      "address": "ΙΟΥΛΙΑΣ ΑΝΔΡΕΑΔΗ 4 (ΕΝΑΝΤΙ ΠΡΩΗΝ ΝΟΣΟΚΟΜΕΙΟΥ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661026066",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.621793,
+        "lon": 19.912418,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΙΟΥΛΙΑΣ ΑΝΔΡΕΑΔΗ 4, Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661027627",
+      "name": "ΒΑΛΜΑ ΧΡΙΣΤΙΝΑ",
+      "address": "ΔΙΑΣΤΑΥΡΩΣΗ ΒΡΥΩΝΗ",
+      "locality": "Βρυώνη",
+      "postcode": null,
+      "phone": "2661027627",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.590543,
+        "lon": 19.893387,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "d557180e-8a61-4ee1-84ac-a686e21ab2b0"
+      }
+    },
+    {
+      "id": "2661027993",
+      "name": "ΣΚΟΡΔΙΛΗ ΕΛΕΥΘΕΡΙΑ",
+      "address": "ΚΑΝΑΛΙΑ",
+      "locality": "Κανάλια",
+      "postcode": null,
+      "phone": "2661027993",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.608965,
+        "lon": 19.893417,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κανάλια"
+      }
+    },
+    {
+      "id": "2661030100",
+      "name": "ΚΟΥΡΗ ΜΑΡΙΝΑ - ΤΡΙΒΥΖΑΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΕΥΓ. ΒΟΥΛΓΑΡΕΩΣ 73",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661030100",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.623091,
+        "lon": 19.921094,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΕΥΓ. ΒΟΥΛΓΑΡΕΩΣ 73, Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661030235",
+      "name": "ΜΟΥΖΑΚΙΤΗΣ ΜΙΧΑΛΗΣ",
+      "address": "ΜΑΝΤΖΑΡΟΥ 4 (ΕΝΑΝΤΙ ΜΑΓΝΗΤΙΚΗΣ ΤΟΜΟΓΡΑΦΙΑΣ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661030235",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.621482,
+        "lon": 19.919939,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΜΑΝΤΖΑΡΟΥ 4, Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661030245",
+      "name": "ΠΑΠΑΓΕΩΡΓΙΟΥ ΣΟΦΙΑ",
+      "address": "ΠΛ. ΓΕΩΡΓΙΟΥ ΘΕΟΤΟΚΗ 34 (ΣΑΡΟΚΟ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661030245",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.621773,
+        "lon": 19.918033,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΠΛ. ΓΕΩΡΓΙΟΥ ΘΕΟΤΟΚΗ 34, Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661031622",
+      "name": "ΜΠΟΥΖΟΥΚΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΣΤΑΜΑΤΙΟΥ ΔΕΣΥΛΛΑ 16 (ΛΑΪΚΗ ΑΓΟΡΑ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661031622",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.622632,
+        "lon": 19.9192,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "f69c7d4a-2c65-48ba-bde6-f8e6763bc02e"
+      }
+    },
+    {
+      "id": "2661031992",
+      "name": "ΕΡΤΣΟΣ ΣΠΥΡΙΔΩΝΑΣ-ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΜΙΛΤΙΑΔΟΥ ΜΑΡΓΑΡΙΤΗ 8",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661031992",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.591337,
+        "lon": 19.859619,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661032080",
+      "name": "ΜΠΟΥΖΟΥΚΗΣ ΗΛΙΑΣ",
+      "address": "ΣΑΜΑΡΑ 7-9 (ΠΕΖΟΔΡΟΜΟΣ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661032080",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.621692,
+        "lon": 19.920105,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΣΑΜΑΡΑ 7-9, Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661033221",
+      "name": "ΓΡΙΜΜΑ ΜΑΡΙΑ - ΜΥΡΙΛΛΑΣ ΠΕΤΡΟΣ",
+      "address": "ΠΛ. ΓΕΩΡΓΙΟΥ ΘΕΟΤΟΚΗ 29 (ΣΑΡΟΚΟ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661033221",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.621191,
+        "lon": 19.919064,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "adc46174-4769-4500-beaa-9761ab462465"
+      }
+    },
+    {
+      "id": "2661034373",
+      "name": "ΒΑΡΕΛΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΑΛΚΙΝΟΟΥ 84 (ΓΑΡΙΤΣΑ - ΑΓΙΑ ΤΡΙΑΔΑ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661034373",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.615094,
+        "lon": 19.919162,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΑΛΚΙΝΟΟΥ 84, Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661035177",
+      "name": "ΑΡΜΕΝΙΑΚΟΥ ΕΙΡΗΝΗ - ΝΑΝΟΥ ΜΑΡΙΑ-ΑΝΝΑ",
+      "address": "ΙΩΑΝΝΟΥ ΘΕΟΤΟΚΗ 72 (ΜΕΤΑ ΤΟ ΙΟΝΙΟ ΠΑΝ/ΜΙΟ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661035177",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.623773,
+        "lon": 19.914685,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "5656be82-1f2f-4456-8579-c4489876b010"
+      }
+    },
+    {
+      "id": "2661035997",
+      "name": "ΠΑΝΑΡΕΤΟΥ ΜΑΡΙΑ",
+      "address": "ΠΟΛΥΧΡΟΝΙΟΥ ΚΩΝΣΤΑΝΤΑ 26 (ΛΥΚΕΙΑ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661035997",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.621512,
+        "lon": 19.914473,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "de2134e8-63ba-42f7-9814-903aa3519da9"
+      }
+    },
+    {
+      "id": "2661036118",
+      "name": "ΓΡΙΜΜΑΣ ΑΛΕΞΗΣ",
+      "address": "ΓΕΡΑΣΙΜΟΥ ΜΑΡΚΟΡΑ 17B (ΛΑΪΚΗ ΑΓΟΡΑ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661036118",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.591337,
+        "lon": 19.859619,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661036122",
+      "name": "ΛΑΣΚΑΡΙΣ ΣΠΥΡΟΣ",
+      "address": "ΠΟΛΥΧΡΟΝΙΟΥ ΚΩΝΣΤΑΝΤΑ 18 (ΣΑΡΟΚΟ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661036122",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.591337,
+        "lon": 19.859619,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661036501",
+      "name": "ΒΛΑΣΣΗ ΜΑΝΤΩ - ΣΑΜΟΪΛΗ-ΒΛΑΣΣΗ ΚΑΤΕΡΙΝΑ",
+      "address": "ΣΑΜΑΡΑ 3 (ΕΡΓΑΤΙΚΟ ΚΕΝΤΡΟ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661036501",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.621357,
+        "lon": 19.919644,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΣΑΜΑΡΑ 3, Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661037133",
+      "name": "ΚΟΝΤΟΓΕΩΡΓΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΔΙΑΣΤΑΥΡΩΣΗ ΒΡΥΩΝΗ",
+      "locality": "Βρυώνη",
+      "postcode": null,
+      "phone": "2661037133",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.592469,
+        "lon": 19.892833,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Βρυώνη"
+      }
+    },
+    {
+      "id": "2661037872",
+      "name": "ΤΣΙΡΙΓΓΑΚΗΣ ΧΡΗΣΤΟΣ",
+      "address": "ΠΛ. ΓΕΩΡΓΙΟΥ ΘΕΟΤΟΚΗ 9 (ΣΑΡΟΚΟ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661037872",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.621988,
+        "lon": 19.918429,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "c3fd0540-23fc-4b31-9424-e1b1de10f210"
+      }
+    },
+    {
+      "id": "2661038826",
+      "name": "ΚΟΣΚΙΝΑ ΟΜΟΡΦΙΑ",
+      "address": "ΓΕΩΡΓΙΟΥ ΘΕΟΤΟΚΗ 28 (ΕΝΑΝΤΙ MARKS & SPENCER)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661038826",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.62271,
+        "lon": 19.919973,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "5d41fc43-72e8-41f3-9601-40e5ba344d66"
+      }
+    },
+    {
+      "id": "2661039048",
+      "name": "ΣΚΙΑΔΟΠΟΥΛΟΣ ΔΙΟΝΥΣΙΟΣ",
+      "address": "ΓΕΩΡΓΙΟΥ ΘΕΟΤΟΚΗ 56 (ΣΑΡΟΚΟ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661039048",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.621888,
+        "lon": 19.919016,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "4c4f84e0-482a-4145-b9c8-30ec4284346e"
+      }
+    },
+    {
+      "id": "2661039264",
+      "name": "ΝΙΩΤΗΣ ΠΑΡΑΣΚΕΥΑΣ",
+      "address": "ΚΑΝΑΛΙΑ",
+      "locality": "Κανάλια",
+      "postcode": null,
+      "phone": "2661039264",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.608965,
+        "lon": 19.893417,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κανάλια"
+      }
+    },
+    {
+      "id": "2661039281",
+      "name": "ΛΕΠΕΣΗ ΝΙΚΟΛΙΝΑ - ΠΑΝΔΗ ΧΡΙΣΤΙΝΑ",
+      "address": "ΣΟΛΩΜΟΥ 2 (ΣΠΗΛΙΑ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661039281",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.625218,
+        "lon": 19.919412,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "629880f2-613a-4d6e-a75e-b1798e1f3402"
+      }
+    },
+    {
+      "id": "2661039305",
+      "name": "ΛΑΣΚΑΡΙΣ ΓΕΡΑΣΙΜΟΣ - ΜΑΡΤΖΟΥΚΟΥ ΑΜΑΛΙΑ",
+      "address": "ΙΩΑΝΝΟΥ ΘΕΟΤΟΚΗ 100 (ΙΚΑ - ΣΤΑΘ. ΥΠΕΡ/ΩΝ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661039305",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.624936,
+        "lon": 19.912459,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΙΩΑΝΝΟΥ ΘΕΟΤΟΚΗ 100, Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661039720",
+      "name": "ΜΠΟΪΚΟΥ ΕΦΗ",
+      "address": "ΙΩΑΝΝΟΥ ΘΕΟΤΟΚΗ 21Α (ΣΑΡΟΚΟ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661039720",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.624936,
+        "lon": 19.912459,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΙΩΑΝΝΟΥ ΘΕΟΤΟΚΗ 21Α, Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661039858",
+      "name": "ΠΟΛΕΝΤΑ ΧΡΙΣΤΙΝΑ",
+      "address": "Δ. ΚΟΛΛΑ 7 ΠΛ. ΔΗΜΑΡΧΕΙΟΥ",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661039858",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.591337,
+        "lon": 19.859619,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661039887",
+      "name": "ΤΕΚΤΩΝ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΜΗΤΡΟΠΟΛΙΤΟΥ ΜΕΘΟΔΙΟΥ 7",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661039887",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.620909,
+        "lon": 19.917753,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΜΗΤΡΟΠΟΛΙΤΟΥ ΜΕΘΟΔΙΟΥ 7, Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661040127",
+      "name": "ΡΑΡΑΚΟΣ ΠΕΡΙΚΛΗΣ - ΡΑΡΑΚΟΣ ΠΕΤΡΟΣ",
+      "address": "ΕΥΑΓ. ΝΑΠΟΛΕΟΝΤΟΣ 52 (ΠΛΑΤΥΤΕΡΑ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661040127",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.591337,
+        "lon": 19.859619,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661040758",
+      "name": "ΣΟΥΛΟΥ ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΑΛΚΙΝΟΟΥ 42 (ΓΑΡΙΤΣΑ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661040758",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.612773,
+        "lon": 19.919274,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΑΛΚΙΝΟΟΥ 42, Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661040949",
+      "name": "ΡΑΡΑΚΟΥ ΣΠΥΡΙΔΟΥΛΑ",
+      "address": "ΙΑΚΩΒΟΥ ΠΟΛΥΛΑ 17 (ΠΕΖΟΔΡΟΜΟΣ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661040949",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.591337,
+        "lon": 19.859619,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661043339",
+      "name": "ΚΑΒΒΑΔΙΑΣ ΔΙΟΜΗΔΗΣ",
+      "address": "ΓΕΡ. ΛΥΧΝΟΥ 2 & Π. ΚΩΝΣΤΑΝΤΑ",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661043339",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.591337,
+        "lon": 19.859619,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661043581",
+      "name": "ΜΕΤΑΛΛΗΝΟΣ ΜΙΧΑΛΗΣ",
+      "address": "ΤΡΙΣΤΡΑΤΟ ΚΟΥΛΙΝΕΣ",
+      "locality": "Τρίστρατο",
+      "postcode": null,
+      "phone": "2661043581",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.630037,
+        "lon": 19.771924,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Τρίστρατο"
+      }
+    },
+    {
+      "id": "2661044678",
+      "name": "ΤΖΩΡΑ ΑΓΓΕΛΙΚΗ",
+      "address": "ΒΡΥΩΝΗ",
+      "locality": "Βρυώνη",
+      "postcode": null,
+      "phone": "2661044678",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.592469,
+        "lon": 19.892833,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Βρυώνη"
+      }
+    },
+    {
+      "id": "2661044783",
+      "name": "ΜΟΥΡΜΟΥΡΗ ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΓΡ. ΜΑΡΑΣΛΗ 36",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661044783",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.61994,
+        "lon": 19.91824,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "8c53a831-e8b5-4b93-8dc3-1e5c18b54945"
+      }
+    },
+    {
+      "id": "2661045565",
+      "name": "ΜΕΡΙΑΝΟΥ ΧΡΙΣΤΙΑΝΑ",
+      "address": "ΓΚΥΛΦΟΡΔ 35 (ΠΛΑΤΥ ΚΑΝΤΟΥΝΙ - ΠΟΡΤΑ ΡΕΜΟΥΝΤΑ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661045565",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.623039,
+        "lon": 19.922715,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "ΓΚΥΛΦΟΡΔ 35, Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661046607",
+      "name": "ΜΑΝΤΕΛΟΥ ΠΑΝΑΓΙΩΤΑ",
+      "address": "4ο ΧΛΜ ΕΘΝΙΚΗΣ ΛΕΥΚΙΜΗΣ - ΒΥΡΟΣ",
+      "locality": "Βύρος",
+      "postcode": null,
+      "phone": "2661046607",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": null
+    },
+    {
+      "id": "2661047610",
+      "name": "ΜΑΡΑΜΠΟΣ ΜΑΡΚΟΣ",
+      "address": "ΑΛΕΠΟΥ",
+      "locality": "Αλεπού",
+      "postcode": null,
+      "phone": "2661047610",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.607736,
+        "lon": 19.896711,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "fc5d4bf1-16f2-475d-a109-5f0aacedbc5d"
+      }
+    },
+    {
+      "id": "2661049217",
+      "name": "ΡΟΥΣΣΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΑΛΕΠΟΥ",
+      "locality": "Αλεπού",
+      "postcode": null,
+      "phone": "2661049217",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.616792,
+        "lon": 19.895287,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Αλεπού"
+      }
+    },
+    {
+      "id": "2661049661",
+      "name": "ΒΑΒΒΑ ΜΑΡΙΑ",
+      "address": "ΕΘΝΙΚΗ ΠΑΛΑΙΟΚΑΣΤΡΙΤΣΑΣ 5 (ΕΝΑΝΤΙ ΠΟΛΥΚΛΙΝΙΚΗΣ)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661049661",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.591337,
+        "lon": 19.859619,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661052336",
+      "name": "ΒΡΑΧΩΡΙΤΗ ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "ΚΟΜΠΙΤΣΙ",
+      "locality": "Κομπίτσι",
+      "postcode": null,
+      "phone": "2661052336",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.60196,
+        "lon": 19.86603,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "d35a85a7-8f62-4f4c-b12c-8c7e1df1bd14"
+      }
+    },
+    {
+      "id": "2661052612",
+      "name": "ΝΙΑΚΑ ΖΩΗ",
+      "address": "ΑΓ. ΙΩΑΝΝΗΣ (ΠΑΡΕΛΙΩΝ)",
+      "locality": "Άγιος Ιωάννης",
+      "postcode": null,
+      "phone": "2661052612",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.615959,
+        "lon": 19.848286,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Άγιος Ιωάννης"
+      }
+    },
+    {
+      "id": "2661052781",
+      "name": "ΚΟΥΡΗ ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "ΚΟΜΠΙΤΣΙ -ΤΡΙΚΛΙΝΟ",
+      "locality": "Κομπίτσι",
+      "postcode": null,
+      "phone": "2661052781",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.60196,
+        "lon": 19.86603,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "d35a85a7-8f62-4f4c-b12c-8c7e1df1bd14"
+      }
+    },
+    {
+      "id": "2661053650",
+      "name": "ΓΚΙΚΑΣ ΗΛΙΑΣ",
+      "address": "ΚΑΤΩ ΓΑΡΟΥΝΑ",
+      "locality": "Κάτω Γαρούνα",
+      "postcode": null,
+      "phone": "2661053650",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.539064,
+        "lon": 19.864683,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κάτω Γαρούνα"
+      }
+    },
+    {
+      "id": "2661054565",
+      "name": "ΠΙΘΑΜΙΤΣΗΣ ΣΠΥΡΙΔΩΝΑΣ-ΒΑΣΙΛΕΙΟΣ",
+      "address": "ΣΙΝΑΡΑΔΕΣ",
+      "locality": "Σιναράδες",
+      "postcode": null,
+      "phone": "2661054565",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.567032,
+        "lon": 19.847642,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Σιναράδες"
+      }
+    },
+    {
+      "id": "2661057401",
+      "name": "ΔΗΜΟΥΛΗ ΦΩΤΕΙΝΗ",
+      "address": "ΜΗΛΙΑ ΚΥΝΟΠΙΑΣΤΩΝ",
+      "locality": "Μηλιά",
+      "postcode": null,
+      "phone": "2661057401",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.566849,
+        "lon": 19.886601,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Μηλιά"
+      }
+    },
+    {
+      "id": "2661058290",
+      "name": "ΑΓΑΘΟΣ ΙΩΑΝΝΗΣ - ΑΓΑΘΟΥ ΕΛΕΝΗ",
+      "address": "ΑΛΕΠΟΥ (ENANTI Super market Diellas)",
+      "locality": "Αλεπού",
+      "postcode": null,
+      "phone": "2661058290",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.616049,
+        "lon": 19.895864,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "17fa7158-6ae9-4ef5-bd34-388907691900"
+      }
+    },
+    {
+      "id": "2661058700",
+      "name": "ΓΙΑΝΝΑΡΟΣ ΑΘΑΝΑΣΙΟΣ",
+      "address": "ΤΡΙΚΛΙΝΟ - ΚΟΜΠΙΤΣΙ",
+      "locality": "Τρίκλινο",
+      "postcode": null,
+      "phone": "2661058700",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.608159,
+        "lon": 19.863318,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Τρίκλινο"
+      }
+    },
+    {
+      "id": "2661071161",
+      "name": "ΚΟΝΤΟΣΤΑΝΟΥ ΜΑΡΙΑ",
+      "address": "ΜΠΕΝΙΤΣΕΣ",
+      "locality": "Μπενίτσες",
+      "postcode": null,
+      "phone": "2661071161",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.544017,
+        "lon": 19.913324,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Μπενίτσες"
+      }
+    },
+    {
+      "id": "2661075402",
+      "name": "ΡΑΛΛΗΣ ΧΡΗΣΤΟΣ",
+      "address": "ΑΓΙΟΣ ΜΑΤΘΑΙΟΣ",
+      "locality": "Άγιος Ματθαίος",
+      "postcode": null,
+      "phone": "2661075402",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.492537,
+        "lon": 19.877331,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "fa95bb8b-a7aa-4b71-bcf8-333c3bd50107"
+      }
+    },
+    {
+      "id": "2661075673",
+      "name": "ΜΑΝΤΟΣ ΜΙΧΑΗΛ",
+      "address": "ΜΩΡΑΪΤΙΚΑ",
+      "locality": "Μωραΐτικα",
+      "postcode": null,
+      "phone": "2661075673",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.485759,
+        "lon": 19.925582,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Μωραΐτικα"
+      }
+    },
+    {
+      "id": "2661076256",
+      "name": "ΤΣΙΡΚΑ ΜΑΓΔΑΛΗΝΗ",
+      "address": "ΧΛΩΜΟΤΙΑΝΑ (ΜΕΣΟΓΓΗ)",
+      "locality": "Χλωμοτιανά",
+      "postcode": null,
+      "phone": "2661076256",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": null
+    },
+    {
+      "id": "2661080619",
+      "name": "ΠΟΛΕΝΤΑΣ ΚΟΣΜΑΣ",
+      "address": "ΔΟΝΑΤΟΥ ΔΗΜΟΥΛΙΤΣΑ 20 - ΠΛ. ΨΥΧΙΑΤΡΕΙΟΥ",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661080619",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.621402,
+        "lon": 19.916677,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "f4f07be2-cbd8-4280-963e-85ad337661ed"
+      }
+    },
+    {
+      "id": "2661080646",
+      "name": "ΡΙΖΟΣ ΔΗΜΗΤΡΗΣ",
+      "address": "ΒΡΥΩΝΗ",
+      "locality": "Βρυώνη",
+      "postcode": null,
+      "phone": "2661080646",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.592469,
+        "lon": 19.892833,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Βρυώνη"
+      }
+    },
+    {
+      "id": "2661086099",
+      "name": "ΚΑΒΒΑΔΙΑ ΑΝΔΡΟΜΑΧΗ",
+      "address": "ΕΘΝ. ΟΔΟΣ ΓΥΡΟΥ ΑΧΙΛΛΕΙΟΥ 68 (ΔΙΠΛΑ ΣΤΟ SM DIELLAS)",
+      "locality": "Κέρκυρα",
+      "postcode": null,
+      "phone": "2661086099",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.591337,
+        "lon": 19.859619,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κέρκυρα"
+      }
+    },
+    {
+      "id": "2661090052",
+      "name": "ΒΡΕΤΤΟΥ ΧΡΙΣΤΙΝΑ",
+      "address": "ΕΘΝΙΚΗ ΠΑΛΑΙΟΚΑΣΤΡΙΤΣΑΣ - ΤΖΑΒΡΟΣ",
+      "locality": "Τζαβρός",
+      "postcode": null,
+      "phone": "2661090052",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.661149,
+        "lon": 19.838318,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "e0fb9f97-331e-4c82-ae83-30d0d33ecb97"
+      }
+    },
+    {
+      "id": "2661091700",
+      "name": "ΑΛΕΞΑΚΗ ΑΝΝΥ",
+      "address": "ΚΟΝΤΟΚΑΛΙ",
+      "locality": "Κοντόκαλι",
+      "postcode": null,
+      "phone": "2661091700",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.644574,
+        "lon": 19.853075,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κοντόκαλι"
+      }
+    },
+    {
+      "id": "2661091964",
+      "name": "ΜΠΑΛΑΣΚΑ ΡΟΖΙΝΑ-ΒΑΡΒΑΡΑ",
+      "address": "ΚΟΝΤΟΚΑΛΙ (ΔΙΠΛΑ ΑΠΟ ΤΟΝ ΑΒ ΒΑΣΙΛΟΠΟΥΛΟ)",
+      "locality": "Κοντόκαλι",
+      "postcode": null,
+      "phone": "2661091964",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.644574,
+        "lon": 19.853075,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κοντόκαλι"
+      }
+    },
+    {
+      "id": "2661093129",
+      "name": "ΚΑΖΙΑΝΗΣ ΠΕΤΡΟΣ",
+      "address": "ΕΝΑΝΤΙ ΞΕΝΟΔΟΧΕΙΟΥ ΙΚΟΣ ΔΑΣΙΑ",
+      "locality": "Δασιά",
+      "postcode": null,
+      "phone": "2661093129",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.677778,
+        "lon": 19.838739,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "085e1def-ecd1-4a8d-8d1e-017bb20fb8eb"
+      }
+    },
+    {
+      "id": "2661093520",
+      "name": "ΧΗΝΑ ΑΓΓΕΛΑ",
+      "address": "ΑΓ. ΜΑΡΚΟΣ (ΠΥΡΓΙ)",
+      "locality": "Άγιος Μάρκος",
+      "postcode": null,
+      "phone": "2661093520",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.710135,
+        "lon": 19.824257,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Άγιος Μάρκος"
+      }
+    },
+    {
+      "id": "2661094888",
+      "name": "ΒΛΑΧΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+      "address": "ΚΕΦΑΛΟΒΡΥΣΟ - ΚΟΚΚΙΝΙ (ΔΙΠΛΑ ΣΤΟ ΒΕΝΖΙΝΑΔΙΚΟ EKO)",
+      "locality": "Κεφαλόβρυσο",
+      "postcode": null,
+      "phone": "2661094888",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.617149,
+        "lon": 19.81935,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "bb2940d2-5973-4eb1-a8e6-bef9b0511a47"
+      }
+    },
+    {
+      "id": "2661095555",
+      "name": "ΤΖΑΦΕΣΤΑ ΣΤΕΛΛΑ",
+      "address": "ΠΕΛΕΚΑΣ (ΘΕΣΗ ΧΕΛΑΝΕΣ)",
+      "locality": "Πελεκάς",
+      "postcode": null,
+      "phone": "2661095555",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.592494,
+        "lon": 19.822496,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πελεκάς"
+      }
+    },
+    {
+      "id": "2661097177",
+      "name": "ΚΑΡΡΑΣ ΒΑΣΙΛΗΣ",
+      "address": "ΑΝΩ ΠΥΡΓΙ - ΔΙΠΛΑ ΣΤΟ ΒΕΝΖΙΝΑΔΙΚΟ REVOIL",
+      "locality": "Άνω Πύργι",
+      "postcode": null,
+      "phone": "2661097177",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.708009,
+        "lon": 19.844048,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Άνω Πύργι"
+      }
+    },
+    {
+      "id": "2661099123",
+      "name": "ΜΠΛΙΑΝΤΣΗΣ ΧΡΗΣΤΟΣ",
+      "address": "ΚΟΝΤΟΚΑΛΙ",
+      "locality": "Κοντόκαλι",
+      "postcode": null,
+      "phone": "2661099123",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.644574,
+        "lon": 19.853075,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κοντόκαλι"
+      }
+    },
+    {
+      "id": "2661099411",
+      "name": "ΚΑΝΝΟΝΕ-ΠΑΝΔΗ ΠΑΟΛΑ - ΠΑΝΔΗ ΑΛΕΞΑΝΔΡΑ - ΠΑΝΔΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΓΟΥΒΙΑ",
+      "locality": "Γούβια",
+      "postcode": null,
+      "phone": "2661099411",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.655333,
+        "lon": 19.840279,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "1657535e-28b4-42e6-adf8-29a56edd8503"
+      }
+    },
+    {
+      "id": "2662022540",
+      "name": "ΚΟΥΡΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΑΓΙΟΙ ΘΕΟΔΩΡΟΙ",
+      "locality": "Άγιοι Θεόδωροι",
+      "postcode": null,
+      "phone": "2662022540",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.423719,
+        "lon": 20.072083,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Άγιοι Θεόδωροι"
+      }
+    },
+    {
+      "id": "2662022649",
+      "name": "ΣΤΑΜΑΤΑΚΟΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "ΛΕΥΚΙΜΜΗ",
+      "locality": "Λευκίμμη",
+      "postcode": null,
+      "phone": "2662022649",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.422623,
+        "lon": 20.062111,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "0f323239-1ff0-4aa9-a70f-bafe0fb6ce76"
+      }
+    },
+    {
+      "id": "2662023160",
+      "name": "ΓΑΣΤΕΡΑΤΟΥ ΔΗΜΗΤΡΑ",
+      "address": "ΠΕΡΙΦΕΡΕΙΑΚΗ ΟΔΟΣ ΠΕΡΙΒΟΛΙΟΥ",
+      "locality": "Περιβόλι",
+      "postcode": null,
+      "phone": "2662023160",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.415563,
+        "lon": 20.019657,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "adffc58e-dab1-456e-ac60-52ed037ae65c"
+      }
+    },
+    {
+      "id": "2662024143",
+      "name": "ΒΑΡΕΛΗΣ ΒΑΣΙΛΕΙΟΣ-ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΡΙΓΓΛΑΔΕΣ",
+      "locality": "Ρίγγλαδες",
+      "postcode": null,
+      "phone": "2662024143",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.424107,
+        "lon": 20.062832,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Ρίγγλαδες"
+      }
+    },
+    {
+      "id": "2662031509",
+      "name": "ΚΑΓΚΑ ΜΑΡΙΑ",
+      "address": "ΠΑΞΟΙ - ΜΑΓΑΖΙΑ (ΘΕΣΗ ΠΛΑΤΑΝΟΣ)",
+      "locality": "Παξοί",
+      "postcode": null,
+      "phone": "2662031509",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.621191,
+        "lon": 19.919064,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "adc46174-4769-4500-beaa-9761ab462465"
+      }
+    },
+    {
+      "id": "2662032200",
+      "name": "ΤΡΥΦΩΝΑΣ ΑΝΔΡΕΑΣ",
+      "address": "ΠΑΞΟΙ",
+      "locality": "Παξοί",
+      "postcode": null,
+      "phone": "2662032200",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.622698,
+        "lon": 19.924885,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Παξοί"
+      }
+    },
+    {
+      "id": "2662033018",
+      "name": "ΔΗΜΗΤΡΙΑΔΗΣ ΗΛΙΑΣ",
+      "address": "ΛΑΚΚΑ ΠΑΞΩΝ",
+      "locality": "Λάκκα",
+      "postcode": null,
+      "phone": "2662033018",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.23303,
+        "lon": 20.13719,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "49ceac0b-e451-4436-9eb1-20ff923079a9"
+      }
+    },
+    {
+      "id": "2662051109",
+      "name": "ΠΑΝΑΓΟΥ ΗΛΙΑΝΑ",
+      "address": "ΑΡΓΥΡΑΔΕΣ",
+      "locality": "Αργυράδες",
+      "postcode": null,
+      "phone": "2662051109",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.435335,
+        "lon": 19.977262,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Αργυράδες"
+      }
+    },
+    {
+      "id": "2662051814",
+      "name": "ΚΟΥΠΠΑΡΗ ΗΛΙΑΝΑ",
+      "address": "ΠΕΤΡΙΤΗ",
+      "locality": "Πετρίτη",
+      "postcode": null,
+      "phone": "2662051814",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.453991,
+        "lon": 19.999237,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Πετρίτη"
+      }
+    },
+    {
+      "id": "2662052368",
+      "name": "ΜΠΑΡΔΗ ΙΩΑΝΝΑ",
+      "address": "ΛΙΝΙΑ ΧΛΩΜΟΥ",
+      "locality": "Χλωμός",
+      "postcode": null,
+      "phone": "2662052368",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.443549,
+        "lon": 19.941824,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "a0e29566-db73-45f1-94d2-52cec8099d19"
+      }
+    },
+    {
+      "id": "2663022666",
+      "name": "ΣΤΑΣΙΝΟΠΟΥΛΟΣ ΜΑΡΙΟΣ",
+      "address": "ΣΚΡΙΠΕΡΟ (ΔΙΠΛΑ ΣΤΟ ΒΕΝΖ/ΚΟ SHELL)",
+      "locality": "Σκριπερό",
+      "postcode": null,
+      "phone": "2663022666",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.700211,
+        "lon": 19.77474,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Σκριπερό"
+      }
+    },
+    {
+      "id": "2663029500",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΣΙΔΑΡΙ",
+      "locality": "Σιδάρι",
+      "postcode": null,
+      "phone": "2663029500",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.792821,
+        "lon": 19.701729,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Σιδάρι"
+      }
+    },
+    {
+      "id": "2663031199",
+      "name": "ΒΡΑΔΗ ΑΛΕΞΑΝΔΡΑ",
+      "address": "ΑΓΡΑΦΟΙ (ΘΕΣΗ ΑΓΚΩΝΑΡΙ)",
+      "locality": "Άγραφοι",
+      "postcode": null,
+      "phone": "2663031199",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.766641,
+        "lon": 19.743047,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Άγραφοι"
+      }
+    },
+    {
+      "id": "2663031355",
+      "name": "ΡΟΥΤΣΑΚΟΣ ΝΙΚΗΤΑΣ",
+      "address": "ΚΑΡΟΥΣΑΔΕΣ",
+      "locality": "Καρουσάδες",
+      "postcode": null,
+      "phone": "2663031355",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.78113,
+        "lon": 19.744972,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Καρουσάδες"
+      }
+    },
+    {
+      "id": "2663041111",
+      "name": "ΜΠΕΡΝΧΑΡΝΤ-ΡΩΜΑΙΟΥ ΛΙΝΤΑ",
+      "address": "ΕΘΝ. ΠΑΛΑΙΟΚΑΣΤΡΙΤΣΑΣ 183 - ΓΑΡΔΕΛΑΔΕΣ",
+      "locality": "Γαρδελάδες",
+      "postcode": null,
+      "phone": "2663041111",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.679639,
+        "lon": 19.744302,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Γαρδελάδες"
+      }
+    },
+    {
+      "id": "2663041141",
+      "name": "ΚΟΥΡΤΕΛΕΣΗ ΝΑΤΑΣΑ",
+      "address": "ΕΘΝ. ΠΑΛΑΙΟΚΑΣΤΡΙΤΣΑΣ (ΔΟΥΚΑΔΕΣ)",
+      "locality": "Δουκάδες",
+      "postcode": null,
+      "phone": "2663041141",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.688996,
+        "lon": 19.739982,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Δουκάδες"
+      }
+    },
+    {
+      "id": "2663041592",
+      "name": "ΠΑΝΔΗ ΝΙΚΟΛΕΤΤΑ",
+      "address": "ΛΙΑΠΑΔΕΣ",
+      "locality": "Λιαπάδες",
+      "postcode": null,
+      "phone": "2663041592",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.669142,
+        "lon": 19.740371,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Λιαπάδες"
+      }
+    },
+    {
+      "id": "2663051013",
+      "name": "ΜΟΥΤΣΙΟΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΑΡΙΛΛΑΣ",
+      "locality": "Αρίλλας",
+      "postcode": null,
+      "phone": "2663051013",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.744237,
+        "lon": 19.649756,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Αρίλλας"
+      }
+    },
+    {
+      "id": "2663063140",
+      "name": "ΒΑΡΕΛΗ ΑΘΗΝΑ",
+      "address": "ΑΧΑΡΑΒΗ",
+      "locality": "Αχαράβη",
+      "postcode": null,
+      "phone": "2663063140",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.790929,
+        "lon": 19.81425,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "8cee5801-292f-40eb-b047-6a5568f7deb6"
+      }
+    },
+    {
+      "id": "2663063144",
+      "name": "ΚΟΥΣΤΑΣ ΜΑΡΙΟΣ",
+      "address": "ΡΟΔΑ",
+      "locality": "Ρόδα",
+      "postcode": null,
+      "phone": "2663063144",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.78627,
+        "lon": 19.76696,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "36564260-4973-48f3-84ee-d48e494dd245"
+      }
+    },
+    {
+      "id": "2663063561",
+      "name": "ΚΟΝΤΟΥ ΜΑΡΙΛΕΝΑ",
+      "address": "ΑΧΑΡΑΒΗ",
+      "locality": "Αχαράβη",
+      "postcode": null,
+      "phone": "2663063561",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.791421,
+        "lon": 19.815429,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "e602478a-8bf9-4469-8064-da94576ab540"
+      }
+    },
+    {
+      "id": "2663064754",
+      "name": "ΚΑΤΣΩΡΑ ΑΦΡΟΔΙΤΗ",
+      "address": "ΑΧΑΡΑΒΗ",
+      "locality": "Αχαράβη",
+      "postcode": null,
+      "phone": "2663064754",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.793759,
+        "lon": 19.819378,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Αχαράβη"
+      }
+    },
+    {
+      "id": "2663071241",
+      "name": "ΒΑΛΣΑΜΗ ΕΛΕΥΘΕΡΙΑ",
+      "address": "ΑΓΡΟΣ",
+      "locality": "Άγρος",
+      "postcode": null,
+      "phone": "2663071241",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.721106,
+        "lon": 19.724685,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Άγρος"
+      }
+    },
+    {
+      "id": "2663071990",
+      "name": "ΟΡΦΑΝΟΣ ΙΩΑΝΝΗΣ",
+      "address": "ΑΓΙΟΣ ΑΘΑΝΑΣΙΟΣ",
+      "locality": "Άγιος Αθανάσιος",
+      "postcode": null,
+      "phone": "2663071990",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.724438,
+        "lon": 19.721507,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "bcf832e9-fc7f-4988-997c-f94337811237"
+      }
+    },
+    {
+      "id": "2663072517",
+      "name": "ΜΑΣΤΟΡΑ ΜΑΡΙΑ-ΙΩΑΝΝΑ",
+      "address": "ΧΩΡΕΠΙΣΚΟΠΟΙ",
+      "locality": "Χωρεπίσκοποι",
+      "postcode": null,
+      "phone": "2663072517",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.722163,
+        "lon": 19.7418,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Χωρεπίσκοποι"
+      }
+    },
+    {
+      "id": "2663081432",
+      "name": "ΨΩΜΑΔΕΛΗ ΑΛΕΞΑΝΔΡΑ",
+      "address": "ΚΑΣΣΙΩΠΗ",
+      "locality": "Κασσιώπη",
+      "postcode": null,
+      "phone": "2663081432",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.788665,
+        "lon": 19.919637,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "bb777e9f-db57-40b6-98a2-07749002b855"
+      }
+    },
+    {
+      "id": "2663095133",
+      "name": "ΚΑΪΑΦΑΣ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΑΥΛΙΩΤΕΣ",
+      "locality": "Αυλιώτες",
+      "postcode": null,
+      "phone": "2663095133",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.777023,
+        "lon": 19.661845,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Αυλιώτες"
+      }
+    },
+    {
+      "id": "2663095400",
+      "name": "ΑΛΕΞΟΠΟΥΛΟΥ ΧΡΙΣΤΙΝΑ - ΠΑΝΔΗ ΒΑΣΙΛΙΚΗ",
+      "address": "ΣΙΔΑΡΙ",
+      "locality": "Σιδάρι",
+      "postcode": null,
+      "phone": "2663095400",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.792821,
+        "lon": 19.701729,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Σιδάρι"
+      }
+    },
+    {
+      "id": "2663095525",
+      "name": "ΚΑΛΟΥΔΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΕΠΑΡΧ. ΟΔΟΣ ΠΕΡΟΥΛΑΔΩΝ - ΣΙΔΑΡΙΟΥ",
+      "locality": "Περουλάδες",
+      "postcode": null,
+      "phone": "2663095525",
+      "groupId": "corfu",
+      "sources": [
+        "farmakeu"
+      ],
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
+      "location": {
+        "lat": 39.787909,
+        "lon": 19.672667,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Περουλάδες"
+      }
+    }
+  ]
+}

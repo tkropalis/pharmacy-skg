@@ -1,5 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
+import { CorfuClient } from './corfu.ts';
+import { EfimeriaClient } from './efimeria.ts';
 import { FsaClient } from './fsa.ts';
 import { USER_AGENT } from './http.ts';
 import { IteqClient } from './iteq.ts';
@@ -113,5 +115,38 @@ describe('FsaClient', () => {
     await expect(new FsaClient(t).dates()).rejects.toThrow(
       'HTTP 403 Forbidden for https://fsa-efimeries.gr/ (server: Apache): Forbidden by firewall',
     );
+  });
+});
+
+describe('EfimeriaClient', () => {
+  it('reads /All, once, with the project User-Agent and none that looks like an AI crawler', async () => {
+    const t = transport([new Response(fixture('efimeria/2026-11-02_All.html'))]);
+    const client = new EfimeriaClient(t);
+    const page = await client.page();
+    expect(page.date).toBe('2026-11-02');
+    expect(page.pharmacies).toHaveLength(16);
+    expect(client.requests).toBe(1);
+    expect(t.calls[0]?.url).toBe('https://www.efimeria.gr/All');
+    expect(t.calls[0]?.init.headers).toEqual({ 'User-Agent': USER_AGENT, Accept: 'text/html' });
+    // Its robots.txt disallows these by name (decision D28).
+    expect(USER_AGENT).not.toMatch(/claude|anthropic|gptbot|ccbot|bytespider|google-extended/i);
+  });
+});
+
+describe('CorfuClient', () => {
+  it('reads the duty page and the members page', async () => {
+    const t = transport([
+      new Response(fixture('corfu/2026-11-02_phduties.html')),
+      new Response(fixture('corfu/2026-11-02_members.html')),
+    ]);
+    const client = new CorfuClient(t);
+    expect((await client.duties()).date).toBe('2026-11-02');
+    expect(await client.members()).toHaveLength(117);
+    expect(client.requests).toBe(2);
+    expect(t.calls.map((call) => call.url)).toEqual([
+      'https://farmakeu.static.otenet.gr/phduties.php',
+      'https://farmakeu.static.otenet.gr/members.php',
+    ]);
+    expect(t.calls[0]?.init.headers).toEqual({ 'User-Agent': USER_AGENT, Accept: 'text/html' });
   });
 });
