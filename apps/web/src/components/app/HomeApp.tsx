@@ -73,6 +73,7 @@ import { useFavourites } from './use-favourites.ts';
 import { useMapStart } from './use-map-start.ts';
 import { useMediaQuery, useNow } from './use-now.ts';
 import { useOnline } from './use-online.ts';
+import { useStatusAt } from './use-status-at.ts';
 import { useNightLook } from './use-theme.ts';
 import './app.css';
 
@@ -250,6 +251,10 @@ export default function HomeApp({
   // Where the city's regular hours on that day are not known, only pharmacies on duty are shown
   // (D26).
   const dutyOnly = !hasRegularHours(city.id, atDate);
+  // The statuses (the rows, the map's pins, the coverage) are worked out for this instant, which
+  // stays the same until the engine says one of them can change; the words that count down are
+  // made from `at`.
+  const statusAt = useStatusAt(data, at);
 
   // --- Data for the chosen moment -------------------------------------------------
 
@@ -393,11 +398,13 @@ export default function HomeApp({
 
   const built = useMemo(
     () =>
-      data ? buildRows(data, at, originPoint, showClosed && !dutyOnly) : { rows: [], openCount: 0 },
-    [data, at, originPoint, showClosed, dutyOnly],
+      data
+        ? buildRows(data, statusAt, originPoint, showClosed && !dutyOnly)
+        : { rows: [], openCount: 0 },
+    [data, statusAt, originPoint, showClosed, dutyOnly],
   );
   const result = useMemo(() => applyListFilter(built, dutyFilter), [built, dutyFilter]);
-  const covered = useMemo(() => (data ? coverage(data, at) : null), [data, at]);
+  const covered = useMemo(() => (data ? coverage(data, statusAt) : null), [data, statusAt]);
 
   // The duty list that applies to the chosen moment is being fetched right now: the list must
   // not say "none open" or "not published" yet, and nothing is announced. A date that has
@@ -424,9 +431,9 @@ export default function HomeApp({
       !dutyLoading &&
       result.rows.length === 0 &&
       result.active === 'all'
-        ? nextToOpen(data, at, originPoint, NEXT_COUNT)
+        ? nextToOpen(data, statusAt, originPoint, NEXT_COUNT)
         : [],
-    [data, dutyLoading, result, at, originPoint],
+    [data, dutyLoading, result, statusAt, originPoint],
   );
   const listRows = result.rows.length > 0 ? result.rows : nextRows;
 
@@ -928,11 +935,11 @@ export default function HomeApp({
       .filter((favourite) => favourite.cityId === city.id)
       .map(({ id }) => ({
         id,
-        row: rowFor(data, id, at, originPoint),
+        row: rowFor(data, id, statusAt, originPoint),
         // From yesterday: a duty that started yesterday evening may still be running.
         duties: upcomingDuties(publishedDuties(data, id, addDays(today, -1)), now, TIME_ZONE),
       }));
-  }, [data, favourites.favourites, city.id, at, originPoint, today, now]);
+  }, [data, favourites.favourites, city.id, statusAt, originPoint, today, now]);
   // Favourites saved in other cities: one button per city, which switches to it.
   const favouritesElsewhere = useMemo(
     () =>
@@ -963,10 +970,10 @@ export default function HomeApp({
   const frequentRows = useMemo(() => {
     if (!data) return [];
     return frequentPharmacies(visits, favourites.ids).flatMap((id) => {
-      const row = rowFor(data, id, at, originPoint);
+      const row = rowFor(data, id, statusAt, originPoint);
       return row === null ? [] : [row];
     });
-  }, [data, visits, favourites.ids, at, originPoint]);
+  }, [data, visits, favourites.ids, statusAt, originPoint]);
 
   // A call or directions straight from a row counts as opening that pharmacy.
   useEffect(() => {

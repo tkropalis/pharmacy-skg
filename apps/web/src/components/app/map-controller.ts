@@ -37,7 +37,7 @@ import {
   SOURCE_OPTIONS,
   pinLayers,
 } from '../../lib/map-layers.ts';
-import { pinCollection, splitPins } from '../../lib/map-data.ts';
+import { changeSource, indexPins, pinCollection, splitPins } from '../../lib/map-data.ts';
 import type { PinCollection, PinFeature } from '../../lib/map-data.ts';
 import { PIN_SIZE, pinImageName, pinSvg, selectedPinSvg } from '../../lib/pins.ts';
 
@@ -115,6 +115,7 @@ export const CITY_ZOOM = 12;
 const NEAREST_SHOWN = 4;
 const NEAREST_MAX_ZOOM = 16;
 const EMPTY: PinCollection = { type: 'FeatureCollection', features: [] };
+const NO_PINS: ReadonlyMap<string, PinFeature> = new Map();
 const STYLE_TIMEOUT_MS = 20_000;
 /** Camera moves: short, and slowing down at the end (ease-out-quart). */
 const MOVE_MS = 450;
@@ -376,6 +377,31 @@ export async function createMapController(
   const observer = new ResizeObserver(() => map.resize());
   observer.observe(container);
 
+  /** What each pin source holds now, by pharmacy id, to send only what changed. */
+  const inSource = new Map<string, ReadonlyMap<string, PinFeature>>();
+
+  /**
+   * Brings a pin source to `features`: a diff for `updateData` when a few pins changed (a
+   * minute's change of status, a choice made or let go), the whole data when most did (another
+   * city), nothing when none did (a new order of the rows, a new distance).
+   */
+  function sync(id: string, features: readonly PinFeature[]) {
+    const next = indexPins(features);
+    const change = changeSource(inSource.get(id) ?? NO_PINS, next);
+    if (change === null) return;
+    inSource.set(id, next);
+    const target = source(id);
+    if (target === undefined) return;
+    const replace = () =>
+      void target.setData({ type: 'FeatureCollection', features: [...next.values()] } as never);
+    if (change.type === 'replace') {
+      replace();
+      return;
+    }
+    // A diff the source cannot apply (it is best effort) falls back to the data itself.
+    target.updateData(change.diff as never).catch(replace);
+  }
+
   /** The three pin sources, without the chosen pharmacy (its marker stands in for it). */
   function draw() {
     const shown =
@@ -386,11 +412,9 @@ export async function createMapController(
             features: collection.features.filter((f) => f.properties.id !== selection?.id),
           };
     const { duty, clustered, closed } = splitPins(shown);
-    const set = (id: string, features: unknown[]) =>
-      source(id)?.setData({ type: 'FeatureCollection', features } as never);
-    set(SOURCES.clustered, clustered);
-    set(SOURCES.duty, duty);
-    set(SOURCES.closed, closed);
+    sync(SOURCES.clustered, clustered);
+    sync(SOURCES.duty, duty);
+    sync(SOURCES.closed, closed);
     // What is on the map, for the browser tests (the canvas cannot be read).
     const all = splitPins(collection);
     container.dataset['dutyPins'] = String(all.duty.length);
