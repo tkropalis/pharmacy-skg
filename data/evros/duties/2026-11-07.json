@@ -7,9 +7,29 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-11-02T23:38:28.838Z"
+        "uploadedAt": "2026-11-03T12:01:32.490Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00-21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551031479",
+              "name": "ΧΑΤΖΗΚΥΡΙΑΚΟΥ-ΜΟΥΡΟΥΚΗ ΕΥΑΝΘΙΑ",
+              "address": "Εθ. Αντιστάσεως 49",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551031479"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "08:00-08:00",
@@ -38,22 +58,22 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
+          "kind": "saturday-extra",
+          "heading": "08:00-14:30",
           "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2551027127",
-              "name": "ΤΕΡΖΗΣ ΑΝΑΣΤΑΣΙΟΣ",
-              "address": "Λ. Δημοκρατίας 48 (περιοχή Σκλαβενίτη)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551027127"
+              "pharmacyId": "2553024243",
+              "name": "ΤΡΙΑΝΤΑΦΥΛΛΙΔΟΥ ΕΛΕΝΗ",
+              "address": "25ης ΜΑΪΟΥ 113",
+              "locality": "Διδυμότειχο",
+              "phone": "2553024243"
             }
           ]
         },
@@ -93,22 +113,22 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "08:00-21:00",
+          "kind": "overnight",
+          "heading": "18:00-08:00",
           "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2551031479",
-              "name": "ΧΑΤΖΗΚΥΡΙΑΚΟΥ-ΜΟΥΡΟΥΚΗ ΕΥΑΝΘΙΑ",
-              "address": "Εθ. Αντιστάσεως 49",
+              "pharmacyId": "2551027127",
+              "name": "ΤΕΡΖΗΣ ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "Λ. Δημοκρατίας 48 (περιοχή Σκλαβενίτη)",
               "locality": "Αλεξανδρούπολη",
-              "phone": "2551031479"
+              "phone": "2551027127"
             }
           ]
         },
@@ -143,26 +163,6 @@
               "address": "Β. ΚΩΝΣΤΑΝΤΙΝΟΥ 127",
               "locality": "Ορεστιάδα",
               "phone": "2552022643"
-            }
-          ]
-        },
-        {
-          "kind": "saturday-extra",
-          "heading": "08:00-14:30",
-          "hours": {
-            "from": "08:00",
-            "to": "14:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2553024243",
-              "name": "ΤΡΙΑΝΤΑΦΥΛΛΙΔΟΥ ΕΛΕΝΗ",
-              "address": "25ης ΜΑΪΟΥ 113",
-              "locality": "Διδυμότειχο",
-              "phone": "2553024243"
             }
           ]
         }

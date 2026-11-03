@@ -475,7 +475,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 39.664887,
         "lon": 20.8463432,
@@ -522,6 +522,27 @@
         "lat": 39.6735431,
         "lon": 20.8391993,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5067",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651030356",
+      "name": "Σ.Φ. ΓΚΟΥΝΤΑ ΜΠΕΝΕΚΟΥ ΓΕΩΡΓΙΑ - ΓΕΙΤΟΝΑ ΠΑΥΛΙΝΑ",
+      "address": "ΚΑ' ΦΕΒΡΟΥΑΡΙΟΥ 169",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651030356",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-09",
+      "lastSeen": "2026-11-09",
+      "location": {
+        "lat": 39.6551817,
+        "lon": 20.8575556,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5092",
         "source": "list",
         "precision": "exact"
       }
@@ -601,7 +622,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 39.6611051,
         "lon": 20.8523374,
@@ -1420,7 +1441,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 39.662234,
         "lon": 20.8568069,

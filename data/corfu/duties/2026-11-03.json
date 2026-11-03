@@ -7,16 +7,16 @@
       "name": "Κέρκυρα",
       "source": {
         "url": "https://farmakeu.static.otenet.gr/phduties.php",
-        "uploadedAt": "2026-11-02T23:36:49.764Z"
+        "uploadedAt": "2026-11-03T11:59:54.924Z"
       },
       "sections": [
         {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 21:00 (ΤΗΣ ΠΡΟΗΓΟΥΜΕΝΗΣ) ΕΩΣ ΤΙΣ 8:00",
+          "kind": "day",
+          "heading": "ΔΙΗΜΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 8:00 ΕΩΣ ΤΙΣ 21:00",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
@@ -29,25 +29,32 @@
               "phone": "2661031992"
             },
             {
-              "pharmacyId": "2663071241",
-              "name": "ΒΑΛΣΑΜΗ ΕΛΕΥΘΕΡΙΑ",
-              "address": "ΑΓΡΟΣ",
-              "locality": "Άγρος",
-              "phone": "2663071241"
+              "pharmacyId": "2661099411",
+              "name": "ΠΑΝΔΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΓΟΥΒΙΑ",
+              "locality": "Γούβια",
+              "phone": "2661099411"
             },
             {
-              "pharmacyId": "2662023160",
-              "name": "ΓΑΣΤΕΡΑΤΟΥ ΔΗΜΗΤΡΑ",
-              "address": "ΠΕΡΙΦΕΡΕΙΑΚΗ ΟΔΟΣ ΠΕΡΙΒΟΛΙΟΥ",
-              "locality": "Περιβόλι",
-              "phone": "2662023160"
+              "pharmacyId": "2661075402",
+              "name": "ΡΑΛΛΗΣ ΧΡΗΣΤΟΣ",
+              "address": "ΑΓΙΟΣ ΜΑΤΘΑΙΟΣ",
+              "locality": "Άγιος Ματθαίος",
+              "phone": "2661075402"
             },
             {
-              "pharmacyId": "2662022649",
-              "name": "ΣΤΑΜΑΤΑΚΟΣ ΑΛΕΞΑΝΔΡΟΣ",
-              "address": "ΛΕΥΚΙΜΜΗ",
-              "locality": "Λευκίμμη",
-              "phone": "2662022649"
+              "pharmacyId": "2662024143",
+              "name": "ΒΑΡΕΛΗΣ ΒΑΣΙΛΕΙΟΣ-ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΡΙΓΓΛΑΔΕΣ",
+              "locality": "Ρίγγλαδες",
+              "phone": "2662024143"
+            },
+            {
+              "pharmacyId": "2663095400",
+              "name": "ΠΑΝΔΗ ΒΑΣΙΛΙΚΗ",
+              "address": "ΣΙΔΑΡΙ",
+              "locality": "Σιδάρι",
+              "phone": "2663095400"
             }
           ]
         }

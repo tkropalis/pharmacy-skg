@@ -7,9 +7,29 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-11-02T23:40:32.714Z"
+        "uploadedAt": "2026-11-03T12:03:39.698Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431023888",
+              "name": "ΡΙΖΟΥ ΚΩΝΣΤΑΝΤΙΝΑ",
+              "address": "ΚΟΛΟΚΟΤΡΩΝΗ ΘΕΟΔΩΡΟΥ 26",
+              "locality": "Τρίκαλα",
+              "phone": "2431023888"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -47,26 +67,6 @@
               "address": "ΑΠΟΛΛΩΝΟΣ 15",
               "locality": "Τρίκαλα",
               "phone": "2431031053"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 23:00",
-          "hours": {
-            "from": "08:00",
-            "to": "23:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431023888",
-              "name": "ΡΙΖΟΥ ΚΩΝΣΤΑΝΤΙΝΑ",
-              "address": "ΚΟΛΟΚΟΤΡΩΝΗ ΘΕΟΔΩΡΟΥ 26",
-              "locality": "Τρίκαλα",
-              "phone": "2431023888"
             }
           ]
         }

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-09",
+  "groups": [
+    {
+      "id": "magnesia",
+      "name": "Μαγνησία",
+      "source": {
+        "url": "https://magnesia.efhmeries.gr/",
+        "uploadedAt": "2026-11-03T12:02:49.791Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421029947",
+              "name": "ΓΕΩΡΓΙΑ ΤΣΑΤΣΟΥ",
+              "address": "Κ. ΚΑΡΤΑΛΗ 102",
+              "locality": "Βόλος",
+              "phone": "2421029947"
+            },
+            {
+              "pharmacyId": "2421025713",
+              "name": "ΕΡΙΦΥΛΗ ΡΟΥΣΣΟΥ",
+              "address": "ΔΗΜΗΤΡΙΑΔΟΣ 229",
+              "locality": "Βόλος",
+              "phone": "2421025713"
+            },
+            {
+              "pharmacyId": "2421078708",
+              "name": "ΚΑΤΕΡΙΝΑ ΚΛΙΜΑ",
+              "address": "ΟΡΜΙΝΙΟΥ 66",
+              "locality": "Βόλος",
+              "phone": "2421078708"
+            },
+            {
+              "pharmacyId": "2421061116",
+              "name": "ΠΟΛΥΧΡΟΝΗΣ ΒΥΖΙΩΤΗΣ",
+              "address": "ΜΑΙΑΝΔΡΟΥ 103",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421061116"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:00& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421080781",
+              "name": "ΕΥΘΥΜΙΑ ΠΑΠΑΙΩΑΝΝΟΥ",
+              "address": "ΜΠΟΤΣΑΡΗ 36",
+              "locality": "Βόλος",
+              "phone": "2421080781"
+            },
+            {
+              "pharmacyId": "2421064004",
+              "name": "ΦΩΤΕΙΝΗ ΜΠΑΛΔΙΜΤΣΗ",
+              "address": "ΦΥΤΟΚΟΥ 12",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421064004"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00 ΕΩΣ 14:00& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421080781",
+              "name": "ΕΥΘΥΜΙΑ ΠΑΠΑΙΩΑΝΝΟΥ",
+              "address": "ΜΠΟΤΣΑΡΗ 36",
+              "locality": "Βόλος",
+              "phone": "2421080781"
+            },
+            {
+              "pharmacyId": "2421064004",
+              "name": "ΦΩΤΕΙΝΗ ΜΠΑΛΔΙΜΤΣΗ",
+              "address": "ΦΥΤΟΚΟΥ 12",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421064004"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

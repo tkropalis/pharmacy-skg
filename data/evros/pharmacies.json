@@ -13,7 +13,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 40.8502059,
         "lon": 25.873319,
@@ -580,13 +580,13 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-11-09",
       "location": {
-        "lat": 40.845666,
-        "lon": 25.877881,
-        "source": "nominatim",
-        "precision": "locality",
-        "ref": "Αλεξανδρούπολη"
+        "lat": 40.8478855,
+        "lon": 25.8773197,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4247",
+        "source": "list",
+        "precision": "exact"
       }
     },
     {
@@ -811,7 +811,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 41.4961317,
         "lon": 26.5342729,
@@ -1189,7 +1189,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 41.3497643,
         "lon": 26.4941195,
@@ -1357,7 +1357,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 41.1924991,
         "lon": 26.304174,
@@ -1462,7 +1462,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 41.0273977,
         "lon": 26.2963052,
@@ -1525,7 +1525,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 40.8932822,
         "lon": 26.1698188,

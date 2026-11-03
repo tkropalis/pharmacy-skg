@@ -496,7 +496,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 41.152201,
         "lon": 24.141134,
@@ -580,7 +580,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 41.1521205,
         "lon": 24.1461361,
@@ -832,7 +832,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 41.149961,
         "lon": 24.148425,
@@ -858,6 +858,27 @@
         "lat": 41.15099,
         "lon": 24.148686,
         "ref": "https://drama.efhmeries.gr/Home/Details/3135",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521039098",
+      "name": "ΑΤΜΑΤΖΙΔΗΣ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΓΟΥΝΑΡΗ & ΠΕΡΔΙΚΑ 2",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521039098",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-11-09",
+      "lastSeen": "2026-11-09",
+      "location": {
+        "lat": 41.152175,
+        "lon": 24.139617,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3211",
         "source": "list",
         "precision": "exact"
       }

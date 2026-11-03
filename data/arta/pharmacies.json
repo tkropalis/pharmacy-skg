@@ -611,6 +611,27 @@
       }
     },
     {
+      "id": "2681074445",
+      "name": "ΕΥΣΤΑΘΙΟΥ ΔΗΜΟΣΘΕΝΗΣ",
+      "address": "ΠΛΑΤΕΙΑ ΚΙΛΚΙΣ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681074445",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-09",
+      "lastSeen": "2026-11-09",
+      "location": {
+        "lat": 39.1632759,
+        "lon": 20.9851849,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2449",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681074927",
       "name": "ΓΕΙΤΟΝΑΣ",
       "address": "ΠΡΙΟΒΟΛΟΥ 1",
@@ -937,7 +958,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 39.268112,
         "lon": 21.27949,

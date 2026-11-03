@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-09",
+  "groups": [
+    {
+      "id": "xanthi",
+      "name": "Ξάνθη",
+      "source": {
+        "url": "https://xanthi.efhmeries.gr/",
+        "uploadedAt": "2026-11-03T12:03:02.032Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2541302534",
+              "name": "ΣΑΠΟΥΝΙΔΗΣ ΙΩΑΚΕΙΜ",
+              "address": "ΛΕΩΦΟΡΟΥ ΣΤΡΑΤΟΥ 58-60",
+              "locality": "Ξάνθη",
+              "phone": "2541302534"
+            },
+            {
+              "pharmacyId": "2541083399",
+              "name": "ΣΤΡΑΤΟΓΙΑΝΝΑΚΟΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΑΝΔΡ. ΔΗΜΗΤΡΙΟΥ 63",
+              "locality": "Ξάνθη",
+              "phone": "2541083399"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "20:00 ΕΩΣ 08:00 ΠΡΩΙ",
+          "hours": {
+            "from": "20:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2541022605",
+              "name": "ΙΩΑΝΝΙΔΗΣ ΒΑΣΙΛΕΙΟΣ",
+              "address": "40 ΕΚΚΛΗΣΙΩΝ 2Β",
+              "locality": "Ξάνθη",
+              "phone": "2541022605"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

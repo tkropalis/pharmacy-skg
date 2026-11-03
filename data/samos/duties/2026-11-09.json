@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-09",
+  "groups": [
+    {
+      "id": "samos",
+      "name": "Σάμος",
+      "source": {
+        "url": "https://samos.efhmeries.gr/",
+        "uploadedAt": "2026-11-03T12:03:33.422Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΕΦΗΜΕΡΕΥΕΙ*",
+          "hours": null,
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273022800",
+              "name": "ΚΙΛΟΥΚΙΩΤΟΥ ΑΛΕΞΑΝΔΡΑ",
+              "address": "ΠΡΟΣΦΥΓΙΚΑ",
+              "locality": "Άνω Βαθύ",
+              "phone": "2273022800"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273028002",
+              "name": "ΝΙΤΣΟΛΑΣ ΑΝΔΡΕΑΣ",
+              "address": "ΠΛΑΤΕΙΑ ΑΓ. ΝΙΚΟΛΑΟΥ",
+              "locality": "Βαθύ",
+              "phone": "2273028002"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
+          "hours": {
+            "from": "17:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273028002",
+              "name": "ΝΙΤΣΟΛΑΣ ΑΝΔΡΕΑΣ",
+              "address": "ΠΛΑΤΕΙΑ ΑΓ. ΝΙΚΟΛΑΟΥ",
+              "locality": "Βαθύ",
+              "phone": "2273028002"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "9 ΠΡΩΙ - 1:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
+          "hours": {
+            "from": "09:00",
+            "to": "13:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273032646",
+              "name": "ΦΩΤΙΟΥ - ΜΥΛΩΝΑ ΜΑΡΙΑ",
+              "address": "Ν. ΒΛΙΑΜΟΥ",
+              "locality": "Καρλόβασι",
+              "phone": "2273032646"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "9 ΠΡΩΙ - 1:30 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
+          "hours": {
+            "from": "17:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273032646",
+              "name": "ΦΩΤΙΟΥ - ΜΥΛΩΝΑ ΜΑΡΙΑ",
+              "address": "Ν. ΒΛΙΑΜΟΥ",
+              "locality": "Καρλόβασι",
+              "phone": "2273032646"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

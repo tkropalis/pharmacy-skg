@@ -1276,8 +1276,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.492537,
         "lon": 19.877331,
@@ -1587,18 +1587,17 @@
     },
     {
       "id": "2661099411",
-      "name": "ΚΑΝΝΟΝΕ-ΠΑΝΔΗ ΠΑΟΛΑ - ΠΑΝΔΗ ΑΛΕΞΑΝΔΡΑ - ΠΑΝΔΗΣ ΓΕΩΡΓΙΟΣ",
+      "name": "ΠΑΝΔΗΣ ΓΕΩΡΓΙΟΣ",
       "address": "ΓΟΥΒΙΑ",
       "locality": "Γούβια",
       "postcode": null,
       "phone": "2661099411",
       "groupId": "corfu",
       "sources": [
-        "farmakeu",
-        "ionian"
+        "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.655333,
         "lon": 19.840279,
@@ -1640,7 +1639,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.422623,
         "lon": 20.062111,
@@ -1661,7 +1660,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.415563,
         "lon": 20.019657,
@@ -1681,8 +1680,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.424107,
         "lon": 20.062832,
@@ -2089,7 +2088,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.721106,
         "lon": 19.724685,
@@ -2185,18 +2184,17 @@
     },
     {
       "id": "2663095400",
-      "name": "ΑΛΕΞΟΠΟΥΛΟΥ ΧΡΙΣΤΙΝΑ - ΠΑΝΔΗ ΒΑΣΙΛΙΚΗ",
+      "name": "ΠΑΝΔΗ ΒΑΣΙΛΙΚΗ",
       "address": "ΣΙΔΑΡΙ",
       "locality": "Σιδάρι",
       "postcode": null,
       "phone": "2663095400",
       "groupId": "corfu",
       "sources": [
-        "farmakeu",
-        "ionian"
+        "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.792821,
         "lon": 19.701729,
@@ -2224,6 +2222,48 @@
         "source": "nominatim",
         "precision": "locality",
         "ref": "Περουλάδες"
+      }
+    },
+    {
+      "id": "x-01e9228b5d",
+      "name": "ΚΑΝΝΟΝΕ-ΠΑΝΔΗ ΠΑΟΛΑ - ΠΑΝΔΗ ΑΛΕΞΑΝΔΡΑ - ΠΑΝΔΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΓΟΥΒΙΑ",
+      "locality": "Γούβια",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "ionian"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 39.655333,
+        "lon": 19.840279,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "1657535e-28b4-42e6-adf8-29a56edd8503"
+      }
+    },
+    {
+      "id": "x-303a820e88",
+      "name": "ΑΛΕΞΟΠΟΥΛΟΥ ΧΡΙΣΤΙΝΑ - ΠΑΝΔΗ ΒΑΣΙΛΙΚΗ",
+      "address": "ΣΙΔΑΡΙ",
+      "locality": "Σιδάρι",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "ionian"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 39.792821,
+        "lon": 19.701729,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Σιδάρι"
       }
     },
     {

@@ -7,9 +7,97 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-11-01T11:23:08.253Z"
+        "uploadedAt": "2026-11-03T12:03:54.620Z"
       },
       "sections": [
+        {
+          "kind": "saturday-extra",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821043737",
+              "name": "ΝΤΑΟΥΚΑΚΗ ΜΑΡΙΑ/ΝΤΑΟUΚΑΚΙ MARY",
+              "address": "ΤΖΑΝΑΚΑΚΗ 30/TZANAKAKI 30",
+              "locality": "Χανιά",
+              "phone": "2821043737"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821043737",
+              "name": "ΝΤΑΟΥΚΑΚΗ ΜΑΡΙΑ/ΝΤΑΟUΚΑΚΙ MARY",
+              "address": "ΤΖΑΝΑΚΑΚΗ 30/TZANAKAKI 30",
+              "locality": "Χανιά",
+              "phone": "2821043737"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821020750",
+              "name": "ΚΑΜΑΡΙΑΝΑΚΗΣ ΧΡΗΣΤΟΣ/ΚΑΜΑRΙΑΝΑΚΙS CHRISTOS",
+              "address": "ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 37,ΕΝΑΝΤΙ ΙΝΚΑ,ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΑΚΡΩΤΗΡΙΟΥ/ΕL. VENIZELOU 37",
+              "locality": "Ακρωτήρι",
+              "phone": "2821020750"
+            },
+            {
+              "pharmacyId": "2821093288",
+              "name": "ΚΝΙΘΑΚΗΣ ΓΕΩΡΓΙΟΣ/ΚΝΙΤΗΑΚΙS GEORGE",
+              "address": "ΑΝ.ΓΟΓΟΝΗ 51/AN. GOGONI 51",
+              "locality": "Μουρνιές",
+              "phone": "2821093288"
+            },
+            {
+              "pharmacyId": "2821089179",
+              "name": "ΝΙΚΗΦΟΡΑΚΗΣ ΜΙΧΑΗΛ/ΝΙΚΙFΟRΑΚΙS MICHAEL",
+              "address": "ΕΘΝ. ΒΕΝΙΖΕΛΟΥ 59,ΣΟΥΔΑ/ΕΤΗΝ. VENIZELOU 59-SOUDA",
+              "locality": "Σούδα",
+              "phone": "2821089179"
+            },
+            {
+              "pharmacyId": "2821090775",
+              "name": "Σ.Φ. ΤΑΓΚΑ ΛΑΜΠΡΙΝΗ ΤΖΑΝΑΚΗΣ ΠΑΥΛΟΣ/ΤΑGΚΑ-ΤΖΑΝΑΚΙS",
+              "address": "ΠΛΑΤΕΙΑ 1866 48/1866 SQUARE 48",
+              "locality": "Χανιά",
+              "phone": "2821090775"
+            },
+            {
+              "pharmacyId": "2821033466",
+              "name": "ΦΑΝΟΥΡΓΙΑΚΗΣ ΒΑΣΙΛΗΣ & ΣΙΑ ΟΕ/FΑΝΟURGΙΑΚΙS VASILIS",
+              "address": "Π. Ε. Ο. ΧΑΝΙΩΝ-ΚΙΣΣΑΜΟΥ (ΔΙΠΛΑ ΣΕ ΒΙΒΛΙΟΠΩΛΕΙΟ ΠΟΠΗΘΕΟΔΩΡΑΚΗ)/ΚΙSΑΜΟU-DΑRΑΤSΟ",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821033466"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",

@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-09",
+  "groups": [
+    {
+      "id": "evros",
+      "name": "Έβρος",
+      "source": {
+        "url": "https://evros.efhmeries.gr/",
+        "uploadedAt": "2026-11-03T12:01:32.490Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2553022922",
+              "name": "ΓΙΟΥΡΤΣΟΓΛΟΥ ΧΡΗΣΤΟΣ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 9",
+              "locality": "Διδυμότειχο",
+              "phone": "2553022922"
+            },
+            {
+              "pharmacyId": "2552022456",
+              "name": "Σ.Φ ΚΑΛΛΙΝΑΚΗ Π-ΤΣΑΒΔΑΡΙΔΟΥ Δ",
+              "address": "ΕΥΡΙΠΙΔΟΥ 17",
+              "locality": "Ορεστιάδα",
+              "phone": "2552022456"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2554022033",
+              "name": "ΚΥΡΙΑΚΟΥΔΗ ΑΝΝΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 157",
+              "locality": "Σουφλί",
+              "phone": "2554022033"
+            },
+            {
+              "pharmacyId": "2555022273",
+              "name": "ΜΠΟΥΡΟΥΛΙΤΗ ΑΝΑΣΤΑΣΙΑ",
+              "address": "ΔΗΜΟΚΡΙΤΟΥ 17",
+              "locality": "Φέρες",
+              "phone": "2555022273"
+            },
+            {
+              "pharmacyId": "2554042042",
+              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛ. & ΟΛΓΑ",
+              "address": "ΝΙΚΗΣ 19",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042042"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:30-22:00",
+          "hours": {
+            "from": "14:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551036511",
+              "name": "ΤΣΟΛΑΚΗ ΑΡΧΟΝΤΙΑ",
+              "address": "Διον. Σολωμού 15 (δρόμος ΔΕΥΑΑ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551036511"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551020667",
+              "name": "Σ.Φ. ΚΑΪΣΑΣ Γ.-ΚΑΪΣΑ Χ.",
+              "address": "14ης Μαΐου 88 (έναντι ΚΕΠ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551020667"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -307,7 +307,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 40.2980838,
         "lon": 21.7850839,
@@ -433,7 +433,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 40.3042722,
         "lon": 21.7845547,
@@ -543,6 +543,27 @@
         "lat": 40.2977716,
         "lon": 21.7868661,
         "ref": "https://kozani.efhmeries.gr/Home/Details/6016",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461034223",
+      "name": "ΑΣΒΕΣΤΑΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΑΡΙΣΤΟΦΑΝΟΥΣ 5",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461034223",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-11-09",
+      "lastSeen": "2026-11-09",
+      "location": {
+        "lat": 40.2980046,
+        "lon": 21.7925566,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6276",
         "source": "list",
         "precision": "exact"
       }
@@ -1147,7 +1168,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 40.5113848,
         "lon": 21.6798764,
@@ -1315,7 +1336,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 40.5125784,
         "lon": 21.6791469,
