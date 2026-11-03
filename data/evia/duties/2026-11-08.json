@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-03T12:01:26.129Z"
+        "uploadedAt": "2026-11-03T16:28:45.138Z"
       },
       "sections": [
         {
@@ -59,33 +59,6 @@
           ]
         },
         {
-          "kind": "on-duty",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2226052911",
-              "name": "ΚΟΚΚΙΝΟΖΗΣ ΜΙΧΑΗΛ",
-              "address": "25ης ΜΑΡΤΙΟΥ 14",
-              "locality": "Ιστιαία",
-              "phone": "2226052911"
-            },
-            {
-              "pharmacyId": "2221044344",
-              "name": "Σ.Φ. ΛΑΛΑΝΙΤΗ - ΑΡΓΥΡΑΚΗΣ",
-              "address": "ΒΟΥΔΟΥΡΗ 7",
-              "locality": "Αρτάκη",
-              "phone": "2221044344"
-            }
-          ]
-        },
-        {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
           "hours": {
@@ -122,6 +95,33 @@
               "address": "ΒΕΝΙΖΕΛΟΥ 10 - ΕΝΑΝΤΙ ΔΙΚΑΣΤΗΡΙΩΝ",
               "locality": "Χαλκίδα",
               "phone": "2221028599"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2226052911",
+              "name": "ΚΟΚΚΙΝΟΖΗΣ ΜΙΧΑΗΛ",
+              "address": "25ης ΜΑΡΤΙΟΥ 14",
+              "locality": "Ιστιαία",
+              "phone": "2226052911"
+            },
+            {
+              "pharmacyId": "2221044344",
+              "name": "Σ.Φ. ΛΑΛΑΝΙΤΗ - ΑΡΓΥΡΑΚΗΣ",
+              "address": "ΒΟΥΔΟΥΡΗ 7",
+              "locality": "Αρτάκη",
+              "phone": "2221044344"
             }
           ]
         },

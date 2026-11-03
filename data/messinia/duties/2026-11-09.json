@@ -7,7 +7,7 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-11-03T12:02:56.005Z"
+        "uploadedAt": "2026-11-03T16:30:11.868Z"
       },
       "sections": [
         {
@@ -122,6 +122,26 @@
           ]
         },
         {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721095521",
+              "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Κ. ΣΤΑΥΡΟΥΛΑ",
+              "address": "ΦΑΡΩΝ 186",
+              "locality": "Καλαμάτα",
+              "phone": "2721095521"
+            }
+          ]
+        },
+        {
           "kind": "on-duty",
           "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
@@ -152,26 +172,6 @@
               "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ",
               "locality": "Φιλιατρά",
               "phone": "2761032940"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721095521",
-              "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Κ. ΣΤΑΥΡΟΥΛΑ",
-              "address": "ΦΑΡΩΝ 186",
-              "locality": "Καλαμάτα",
-              "phone": "2721095521"
             }
           ]
         }

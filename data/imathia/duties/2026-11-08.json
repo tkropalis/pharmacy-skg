@@ -7,26 +7,26 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-11-03T12:01:45.939Z"
+        "uploadedAt": "2026-11-03T16:29:03.721Z"
       },
       "sections": [
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:30",
+          "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
-            "from": "08:00",
-            "to": "14:30",
+            "from": "14:30",
+            "to": "21:00",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331023360",
-              "name": "ΠΑΠΑΡΗ ΧΡ. ΟΛΥΜΠΙΑ",
-              "address": "Λ. ΣΤΡΑΤΟΥ 27 -Έναντι Σκλαβενίτη",
+              "pharmacyId": "2331025130",
+              "name": "ΚΑΛΟΚΥΡΗ ΕΛΙΣΑΒΕΤ",
+              "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 28",
               "locality": "Βέροια",
-              "phone": "2331023360"
+              "phone": "2331025130"
             }
           ]
         },
@@ -80,21 +80,21 @@
         },
         {
           "kind": "day",
-          "heading": "14:30 ΕΩΣ 21:00",
+          "heading": "08:00 ΕΩΣ 14:30",
           "hours": {
-            "from": "14:30",
-            "to": "21:00",
+            "from": "08:00",
+            "to": "14:30",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331025130",
-              "name": "ΚΑΛΟΚΥΡΗ ΕΛΙΣΑΒΕΤ",
-              "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 28",
+              "pharmacyId": "2331023360",
+              "name": "ΠΑΠΑΡΗ ΧΡ. ΟΛΥΜΠΙΑ",
+              "address": "Λ. ΣΤΡΑΤΟΥ 27 -Έναντι Σκλαβενίτη",
               "locality": "Βέροια",
-              "phone": "2331025130"
+              "phone": "2331023360"
             }
           ]
         },

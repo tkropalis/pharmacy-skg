@@ -7,7 +7,7 @@
       "name": "Πειραιάς",
       "source": {
         "url": "https://piraeus.efhmeries.gr/",
-        "uploadedAt": "2026-11-03T12:03:08.271Z"
+        "uploadedAt": "2026-11-03T16:30:24.260Z"
       },
       "sections": [
         {
@@ -55,66 +55,6 @@
               "address": "ΛΕΩΦ. ΧΑΤΖΗΚΥΡΙΑΚΟΥ 14 & ΚΑΝΑΡΗ 5-7 (έναντι πάρκου σκύλων)",
               "locality": "ΠΕΙΡΑΙΑΣ-ΒΡΥΩΝΗ",
               "phone": "2104286560"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 17:00",
-          "hours": {
-            "from": "08:00",
-            "to": "17:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2104653493",
-              "name": "ΔΙΓΕΝΑΚΗΣ ΠΕΤΡΟΣ",
-              "address": "Λ. ΣΑΛΑΜΙΝΟΣ 276",
-              "locality": "Σαλαμίνα",
-              "phone": "2104653493"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 23:00",
-          "hours": {
-            "from": "08:00",
-            "to": "23:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2104411228",
-              "name": "ΣΤΕΝΟΥ ΓΕΩΡΓΙΑ",
-              "address": "ΛΕΩΦ. ΕΙΡΗΝΗΣ 93",
-              "locality": "Πέραμα",
-              "phone": "2104411228"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2298042181",
-              "name": "ΑΝΑΣΤΑΣΙΑΔΗΣ Κ. ΓΕΩΡΓΙΟΣ",
-              "address": "25ΗΣ ΜΑΡΤΙΟΥ",
-              "locality": "Γαλατάς",
-              "phone": "2298042181"
             }
           ]
         },
@@ -369,6 +309,66 @@
               "address": "ΛΕΩΦ.ΑΓΓΕΛΟΥ ΣΙΚΕΛΙΑΝΟΥ & Λ. ΑΙΑΝΤΕΙΟΥ 1 (Διχάλα Αιαντείου)",
               "locality": "Σαλαμίνα",
               "phone": "2104660218"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2104411228",
+              "name": "ΣΤΕΝΟΥ ΓΕΩΡΓΙΑ",
+              "address": "ΛΕΩΦ. ΕΙΡΗΝΗΣ 93",
+              "locality": "Πέραμα",
+              "phone": "2104411228"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2298042181",
+              "name": "ΑΝΑΣΤΑΣΙΑΔΗΣ Κ. ΓΕΩΡΓΙΟΣ",
+              "address": "25ΗΣ ΜΑΡΤΙΟΥ",
+              "locality": "Γαλατάς",
+              "phone": "2298042181"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 17:00",
+          "hours": {
+            "from": "08:00",
+            "to": "17:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2104653493",
+              "name": "ΔΙΓΕΝΑΚΗΣ ΠΕΤΡΟΣ",
+              "address": "Λ. ΣΑΛΑΜΙΝΟΣ 276",
+              "locality": "Σαλαμίνα",
+              "phone": "2104653493"
             }
           ]
         }

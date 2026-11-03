@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-03T12:01:26.129Z"
+        "uploadedAt": "2026-11-03T16:28:45.138Z"
       },
       "sections": [
         {
@@ -27,6 +27,26 @@
               "address": "ΓΑΖΕΠΗ 83",
               "locality": "Χαλκίδα",
               "phone": "2221600237"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221088935",
+              "name": "ΚΩΣΤΗ ΙΩΑΝΝΑ",
+              "address": "ΙΣΑΪΟΥ 14",
+              "locality": "Χαλκίδα",
+              "phone": "2221088935"
             }
           ]
         },
@@ -82,26 +102,6 @@
               "address": "ΣΑΧΤΟΥΡΗ 80",
               "locality": "Κάρυστος",
               "phone": "2224023543"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "17:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "17:30",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221088935",
-              "name": "ΚΩΣΤΗ ΙΩΑΝΝΑ",
-              "address": "ΙΣΑΪΟΥ 14",
-              "locality": "Χαλκίδα",
-              "phone": "2221088935"
             }
           ]
         },

@@ -7,29 +7,9 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-11-03T12:03:39.698Z"
+        "uploadedAt": "2026-11-03T16:30:55.696Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 23:00",
-          "hours": {
-            "from": "08:00",
-            "to": "23:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431027671",
-              "name": "ΣΧΟΙΝΑ ΜΙΡΕΛΛΑ",
-              "address": "ΤΣΙΤΣΑΝΗ ΒΑΣΙΛΗ 6",
-              "locality": "Τρίκαλα",
-              "phone": "2431027671"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "18:00 ΕΩΣ 21:00",
@@ -94,6 +74,26 @@
               "address": "ΠΥΛΗΣ 79Β",
               "locality": "Τρίκαλα",
               "phone": "2431075740"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431027671",
+              "name": "ΣΧΟΙΝΑ ΜΙΡΕΛΛΑ",
+              "address": "ΤΣΙΤΣΑΝΗ ΒΑΣΙΛΗ 6",
+              "locality": "Τρίκαλα",
+              "phone": "2431027671"
             }
           ]
         }

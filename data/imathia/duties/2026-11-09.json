@@ -7,9 +7,36 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-11-03T12:01:45.939Z"
+        "uploadedAt": "2026-11-03T16:29:03.721Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "14:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2331029101",
+              "name": "ΑΥΓΕΡΟΠΟΥΛΟΥ ΠΑΝΑΓΙΩΤΑ",
+              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 26 - 6ο Δημοτικό σχολείο",
+              "locality": "Βέροια",
+              "phone": "2331029101"
+            },
+            {
+              "pharmacyId": "2331029551",
+              "name": "ΠΑΠΑΓΕΩΓΙΟΥ Ι. ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "ΜΗΤΡΟΠΟΛΕΩΣ 38",
+              "locality": "Βέροια",
+              "phone": "2331029551"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "08:00 ΠΡΩΙ ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -55,33 +82,6 @@
               "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 180-ΜΑΚΡΟΧΩΡΙ",
               "locality": "Μακροχώρι",
               "phone": "2331041833"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "14:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "14:30",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2331029101",
-              "name": "ΑΥΓΕΡΟΠΟΥΛΟΥ ΠΑΝΑΓΙΩΤΑ",
-              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 26 - 6ο Δημοτικό σχολείο",
-              "locality": "Βέροια",
-              "phone": "2331029101"
-            },
-            {
-              "pharmacyId": "2331029551",
-              "name": "ΠΑΠΑΓΕΩΓΙΟΥ Ι. ΑΝΑΣΤΑΣΙΟΣ",
-              "address": "ΜΗΤΡΟΠΟΛΕΩΣ 38",
-              "locality": "Βέροια",
-              "phone": "2331029551"
             }
           ]
         },

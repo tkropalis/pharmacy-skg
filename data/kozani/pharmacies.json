@@ -464,27 +464,6 @@
       }
     },
     {
-      "id": "2461031996",
-      "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΕΥΣΑΪΑ",
-      "address": "ΜΕΛΑ ΠΑΥΛΟΥ 44",
-      "locality": "Κοζάνη",
-      "postcode": null,
-      "phone": "2461031996",
-      "groupId": "kozani",
-      "sources": [
-        "iteq-kozani"
-      ],
-      "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-07",
-      "location": {
-        "lat": 40.3044624,
-        "lon": 21.7891432,
-        "ref": "https://kozani.efhmeries.gr/Home/Details/6298",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2461033529",
       "name": "ΜΑΤΙΑΚΗ ΗΛΙΑΝΑ",
       "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 2",
@@ -496,7 +475,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 40.3005753,
         "lon": 21.7893697,
