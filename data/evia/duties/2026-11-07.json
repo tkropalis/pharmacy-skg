@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-03T16:28:45.138Z"
+        "uploadedAt": "2026-11-03T21:50:51.064Z"
       },
       "sections": [
         {
@@ -35,66 +35,6 @@
               "address": "ΑΡΧΑΙΟΥ ΘΕΑΤΡΟΥ 76",
               "locality": "Ερέτρια",
               "phone": "2229060906"
-            }
-          ]
-        },
-        {
-          "kind": "saturday-extra",
-          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221025704",
-              "name": "ΚΟΖΙΩΝΑ ΟΥΡΑΝΙΑ",
-              "address": "ΑΝ. ΜΑΡΓΑΡΙΤΗ 154",
-              "locality": "Χαλκίδα",
-              "phone": "2221025704"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "17:30",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221025704",
-              "name": "ΚΟΖΙΩΝΑ ΟΥΡΑΝΙΑ",
-              "address": "ΑΝ. ΜΑΡΓΑΡΙΤΗ 154",
-              "locality": "Χαλκίδα",
-              "phone": "2221025704"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221074492",
-              "name": "ΛΙΑΚΑΤΑ ΠΑΝΑΓΙΩΤΑ",
-              "address": "ΚΑΛΑΜΑ 37",
-              "locality": "Χαλκίδα",
-              "phone": "2221074492"
             }
           ]
         },
@@ -203,6 +143,66 @@
               "address": "ΚΩΤΣΟΥ 41 ΕΝΤΟΣ ΕΡΓΑΤΙΚΟΥ ΚΕΝΤΡΟΥ",
               "locality": "Χαλκίδα",
               "phone": "2221021740"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221025704",
+              "name": "ΚΟΖΙΩΝΑ ΟΥΡΑΝΙΑ",
+              "address": "ΑΝ. ΜΑΡΓΑΡΙΤΗ 154",
+              "locality": "Χαλκίδα",
+              "phone": "2221025704"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221025704",
+              "name": "ΚΟΖΙΩΝΑ ΟΥΡΑΝΙΑ",
+              "address": "ΑΝ. ΜΑΡΓΑΡΙΤΗ 154",
+              "locality": "Χαλκίδα",
+              "phone": "2221025704"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221074492",
+              "name": "ΛΙΑΚΑΤΑ ΠΑΝΑΓΙΩΤΑ",
+              "address": "ΚΑΛΑΜΑ 37",
+              "locality": "Χαλκίδα",
+              "phone": "2221074492"
             }
           ]
         }

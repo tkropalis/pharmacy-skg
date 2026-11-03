@@ -7,36 +7,9 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-11-03T16:30:55.696Z"
+        "uploadedAt": "2026-11-03T21:53:00.876Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "18:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "18:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431027363",
-              "name": "ΑΘΑΝΑΣΙΟΥ ΕΛΕΝΗ",
-              "address": "ΤΣΙΤΣΑΝΗ 22",
-              "locality": "Τρίκαλα",
-              "phone": "2431027363"
-            },
-            {
-              "pharmacyId": "2431027351",
-              "name": "ΜΠΕΛΛΟΣ ΓΕΩΡΓΙΟΣ",
-              "address": "ΑΣΚΛΗΠΙΟΥ 5",
-              "locality": "Τρίκαλα",
-              "phone": "2431027351"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -74,6 +47,33 @@
               "address": "ΠΥΛΗΣ 79Β",
               "locality": "Τρίκαλα",
               "phone": "2431075740"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "18:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "18:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431027363",
+              "name": "ΑΘΑΝΑΣΙΟΥ ΕΛΕΝΗ",
+              "address": "ΤΣΙΤΣΑΝΗ 22",
+              "locality": "Τρίκαλα",
+              "phone": "2431027363"
+            },
+            {
+              "pharmacyId": "2431027351",
+              "name": "ΜΠΕΛΛΟΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΑΣΚΛΗΠΙΟΥ 5",
+              "locality": "Τρίκαλα",
+              "phone": "2431027351"
             }
           ]
         },

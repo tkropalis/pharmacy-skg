@@ -7,33 +7,26 @@
       "name": "Κέρκυρα",
       "source": {
         "url": "https://farmakeu.static.otenet.gr/phduties.php",
-        "uploadedAt": "2026-11-03T11:59:54.924Z"
+        "uploadedAt": "2026-11-03T21:49:23.831Z"
       },
       "sections": [
         {
-          "kind": "day",
-          "heading": "ΔΙΗΜΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 8:00 ΕΩΣ ΤΙΣ 21:00",
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 21:00 ΕΩΣ ΤΙΣ 8:00 ΤΟ ΠΡΩΙ ΤΗΣ ΕΠΟΜΕΝΗΣ",
           "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2661031992",
-              "name": "ΕΡΤΣΟΣ ΣΠΥΡΙΔΩΝΑΣ-ΠΑΝΑΓΙΩΤΗΣ",
-              "address": "ΜΙΛΤΙΑΔΟΥ ΜΑΡΓΑΡΙΤΗ 8",
+              "pharmacyId": "2661020970",
+              "name": "ΚΟΣΚΙΝΑΣ ΣΠΥΡΟΣ",
+              "address": "ΙΟΥΛΙΑΣ ΑΝΔΡΕΑΔΗ 11 (ΠΛΑΤΥΤΕΡΑ)",
               "locality": "Κέρκυρα",
-              "phone": "2661031992"
-            },
-            {
-              "pharmacyId": "2661099411",
-              "name": "ΠΑΝΔΗΣ ΓΕΩΡΓΙΟΣ",
-              "address": "ΓΟΥΒΙΑ",
-              "locality": "Γούβια",
-              "phone": "2661099411"
+              "phone": "2661020970"
             },
             {
               "pharmacyId": "2661075402",

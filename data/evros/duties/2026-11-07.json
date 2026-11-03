@@ -7,29 +7,9 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-11-03T16:28:51.357Z"
+        "uploadedAt": "2026-11-03T21:50:57.058Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00-21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551031479",
-              "name": "ΧΑΤΖΗΚΥΡΙΑΚΟΥ-ΜΟΥΡΟΥΚΗ ΕΥΑΝΘΙΑ",
-              "address": "Εθ. Αντιστάσεως 49",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551031479"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "08:00-08:00",
@@ -109,6 +89,26 @@
               "address": "ΠΡΟΒΑΤΩΝΑΣ",
               "locality": "Τυχερό, Προβατώνας",
               "phone": "2554042100"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00-21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551031479",
+              "name": "ΧΑΤΖΗΚΥΡΙΑΚΟΥ-ΜΟΥΡΟΥΚΗ ΕΥΑΝΘΙΑ",
+              "address": "Εθ. Αντιστάσεως 49",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551031479"
             }
           ]
         },

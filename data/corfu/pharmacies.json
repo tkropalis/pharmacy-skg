@@ -46,7 +46,7 @@
     },
     {
       "id": "2661020970",
-      "name": "ΚΟΣΚΙΝΑΣ ΝΙΚΟΣ - ΚΟΣΚΙΝΑΣ ΣΠΥΡΟΣ",
+      "name": "ΚΟΣΚΙΝΑΣ ΣΠΥΡΟΣ",
       "address": "ΙΟΥΛΙΑΣ ΑΝΔΡΕΑΔΗ 11 (ΠΛΑΤΥΤΕΡΑ)",
       "locality": "Κέρκυρα",
       "postcode": null,
@@ -56,8 +56,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-03",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.622091,
         "lon": 19.911732,
@@ -422,7 +422,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.591337,
         "lon": 19.859619,
@@ -1587,17 +1587,18 @@
     },
     {
       "id": "2661099411",
-      "name": "ΠΑΝΔΗΣ ΓΕΩΡΓΙΟΣ",
+      "name": "ΚΑΝΝΟΝΕ-ΠΑΝΔΗ ΠΑΟΛΑ - ΠΑΝΔΗ ΑΛΕΞΑΝΔΡΑ - ΠΑΝΔΗΣ ΓΕΩΡΓΙΟΣ",
       "address": "ΓΟΥΒΙΑ",
       "locality": "Γούβια",
       "postcode": null,
       "phone": "2661099411",
       "groupId": "corfu",
       "sources": [
-        "farmakeu"
+        "farmakeu",
+        "ionian"
       ],
-      "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-03",
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.655333,
         "lon": 19.840279,
@@ -2222,27 +2223,6 @@
         "source": "nominatim",
         "precision": "locality",
         "ref": "Περουλάδες"
-      }
-    },
-    {
-      "id": "x-01e9228b5d",
-      "name": "ΚΑΝΝΟΝΕ-ΠΑΝΔΗ ΠΑΟΛΑ - ΠΑΝΔΗ ΑΛΕΞΑΝΔΡΑ - ΠΑΝΔΗΣ ΓΕΩΡΓΙΟΣ",
-      "address": "ΓΟΥΒΙΑ",
-      "locality": "Γούβια",
-      "postcode": null,
-      "phone": null,
-      "groupId": null,
-      "sources": [
-        "ionian"
-      ],
-      "firstSeen": "2026-11-01",
-      "lastSeen": "2026-11-01",
-      "location": {
-        "lat": 39.655333,
-        "lon": 19.840279,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "1657535e-28b4-42e6-adf8-29a56edd8503"
       }
     },
     {
