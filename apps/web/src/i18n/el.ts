@@ -313,18 +313,11 @@ export const el = {
       pageDescriptionOne:
         'Το φαρμακείο της περιοχής {area}: διεύθυνση, τηλέφωνο, αν είναι ανοιχτό σήμερα και οι επίσημες εφημερίες.',
       h1: 'Φαρμακεία: {area}',
-      openNowHeading: 'Ανοιχτά τώρα',
-      openNowSummary: '{open} από {total}.',
-      openNowNone: 'Κανένα ανοιχτό.',
-      openNowError: 'Δεν φόρτωσε. Καλέστε πριν πάτε.',
-      openNowNoScript: 'Χρειάζεται JavaScript.',
       closedNow: 'Κλειστό τώρα',
       notOnDutyNow: 'Δεν εφημερεύει τώρα',
       /** After "Κλειστό τώρα," and "Δεν εφημερεύει τώρα," in an area's list. */
       opensAt: 'ανοίγει {when}',
       nextDuty: 'επόμενη εφημερία {when}',
-      dutyNowSummary: 'Εφημερεύουν {open} από {total}.',
-      dutyNowNone: 'Κανένα δεν εφημερεύει τώρα.',
       listHeading: 'Όλα τα φαρμακεία',
       dutyHeading: 'Εφημερίες',
       dutyNone: 'Δεν έχουν ανακοινωθεί εφημερίες.',

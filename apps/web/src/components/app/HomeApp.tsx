@@ -38,6 +38,7 @@ import { rememberCity } from '../../lib/home-city.ts';
 import type { Locality } from '../../lib/places.ts';
 import { openedWith } from '../../lib/shortcuts.ts';
 import { describeStatus } from '../../lib/status-label.ts';
+import { romanizeLocality } from '../../lib/seo/translit.ts';
 import { AREA_KEY, FILTER_KEY, LOCATION_KEY, readItem, writeItem } from '../../lib/storage.ts';
 import {
   forgetPosition,
@@ -109,6 +110,12 @@ interface HomeAppProps {
   readonly pageCity?: boolean;
   /** A pharmacy's page linked here: this one is chosen on the map once the data is in. */
   readonly initialPharmacy?: string | null;
+  /**
+   * An area's page: the list and the map start from this locality of initialCity, as if it had
+   * been chosen. It is not saved, because arriving from a search is not a choice, and the
+   * position is not asked for by itself, because the page is about this place.
+   */
+  readonly initialArea?: string | null;
   readonly locale: Locale;
   readonly text: Dictionary['app'];
   readonly title: string;
@@ -131,11 +138,11 @@ function clock(parts: { minutes: number }): string {
  * The state before the data is ready: "finding your location" when the position will be asked
  * for by itself (so the nearby card does not flash up first), "unsupported" without geolocation.
  */
-function initialGeo(): GeoState {
+function initialGeo(pageArea: boolean): GeoState {
   if (!('geolocation' in navigator)) return 'unsupported';
   const decision = autoLocateDecision({
     dismissed: readItem(LOCATION_KEY) === 'off',
-    areaChosen: readItem(AREA_KEY) !== null,
+    areaChosen: pageArea || readItem(AREA_KEY) !== null,
     permission: 'unknown',
     remembered: loadPosition() !== null,
   });
@@ -177,6 +184,7 @@ export default function HomeApp({
   initialCity,
   pageCity = false,
   initialPharmacy = null,
+  initialArea = null,
   locale,
   text,
   title,
@@ -195,10 +203,10 @@ export default function HomeApp({
   const [tab, setTab] = useState<Tab>(openedWith === 'favourites' ? 'favourites' : 'open');
   const [timeMode, setTimeMode] = useState<TimeMode>({ kind: 'now' });
   const [origin, setOrigin] = useState<OriginState | null>(() =>
-    initialOrigin(text.origin.lastHere, pinnedCity.current),
+    initialArea === null ? initialOrigin(text.origin.lastHere, pinnedCity.current) : null,
   );
   const [originNonce, setOriginNonce] = useState(0);
-  const [geo, setGeo] = useState<GeoState>(initialGeo);
+  const [geo, setGeo] = useState<GeoState>(() => initialGeo(initialArea !== null));
   const [showClosed, setShowClosed] = useState(false);
   // The pharmacies opened most, on the device only. Read when the favourites tab opens, so its
   // order does not change under the person while they use it.
@@ -332,6 +340,7 @@ export default function HomeApp({
     return [...localities, ...others, ...elsewhere].sort((a, b) => greek.compare(a.name, b.name));
   }, [localities, city.id, nationalPlaces, locale]);
   const restoredArea = useRef(false);
+  const pageArea = useRef(initialArea);
 
   /** Shows another covered city, and opens on it next time. */
   const switchCity = useCallback(
@@ -372,7 +381,8 @@ export default function HomeApp({
   useEffect(() => {
     if (restoredArea.current || localities.length === 0) return;
     restoredArea.current = true;
-    const saved = readItem(AREA_KEY);
+    const saved = pageArea.current ?? readItem(AREA_KEY);
+    pageArea.current = null;
     const found = saved === null ? undefined : localities.find((l) => l.name === saved);
     if (found) {
       setOrigin({ kind: 'area', lat: found.lat, lon: found.lon, label: found.name });
@@ -759,7 +769,7 @@ export default function HomeApp({
       const decision = autoLocateDecision({
         dismissed: readItem(LOCATION_KEY) === 'off',
         // Read when the permission has come back: the saved area may have been restored since.
-        areaChosen: readItem(AREA_KEY) !== null,
+        areaChosen: initialArea !== null || readItem(AREA_KEY) !== null,
         permission,
         remembered: loadPosition() !== null,
       });
@@ -915,7 +925,9 @@ export default function HomeApp({
                   ? text.origin.myLocation
                   : origin.kind === 'last'
                     ? text.origin.lastLocation
-                    : fill(text.origin.areaName, { name: origin.label })
+                    : fill(text.origin.areaName, {
+                        name: locale === 'en' ? romanizeLocality(origin.label) : origin.label,
+                      })
             }
             when={showWhen}
             locating={origin === null}
