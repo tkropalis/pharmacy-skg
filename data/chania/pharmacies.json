@@ -181,7 +181,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 35.512957,
         "lon": 23.967459,
@@ -622,7 +622,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 35.5162027,
         "lon": 24.0211462,
@@ -874,7 +874,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 35.5278698,
         "lon": 24.0776645,
@@ -1577,6 +1577,27 @@
       }
     },
     {
+      "id": "2821601417",
+      "name": "Σ.Φ. ΑΡΩΝΗ ΜΑΡΙΑ - ΝΙΚΗΦΟΡΑΚΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ Ο.Ε.",
+      "address": "ΧΑΛΕΠΑ 23",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821601417",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
+      "location": {
+        "lat": 35.5187719,
+        "lon": 24.0407425,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13649",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2821601496",
       "name": "ΜΑΝΔΡΑΜΠΑΖΑΚΗ ΜΑΡΙΑ/ΜΑΝDRΑΜΒΑΖΑΚΙ MARY",
       "address": "ΑΝ. ΓΟΓΟΝΗ 137/AN. GOGONI 137",
@@ -1588,7 +1609,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 35.5039301,
         "lon": 24.0132363,
@@ -1630,7 +1651,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 35.4944211,
         "lon": 23.6539618,
@@ -1693,7 +1714,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 35.2294606,
         "lon": 23.6819128,

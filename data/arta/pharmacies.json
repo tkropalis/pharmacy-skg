@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2681022088",
+      "name": "ΓΕΩΡΓΙΟΥ ΑΣΠΑ-ΜΑΡΙΑ",
+      "address": "ΓΡΑΙΚΟΥ ΜΑΞΙΜΟΥ 29",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681022088",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
+      "location": {
+        "lat": 39.1596739,
+        "lon": 20.9813547,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2450",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681022879",
       "name": "ΣΥΝΓΚΙΡΙΔΗΣ-ΤΣΙΚΑ",
       "address": "ΟΡΛΑΝΔΟΥ 2 ΕΝΑΝΤΙ ΠΑΛΑΙΟΥ ΝΟΣΟΚΟΜΕΙΟΥ",
@@ -853,7 +874,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 39.167183,
         "lon": 21.034827,

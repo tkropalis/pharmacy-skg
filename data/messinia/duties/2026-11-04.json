@@ -7,7 +7,7 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-11-03T16:30:11.868Z"
+        "uploadedAt": "2026-11-04T12:22:43.273Z"
       },
       "sections": [
         {
@@ -137,26 +137,6 @@
         },
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721022223",
-              "name": "ΜΑΤΘΙΟΠΟΥΛΟΣ ΝΙΚΟΛΑΟΣ (ΥΠΟΚ/ΜΑ)",
-              "address": "ΠΑΥΣΑΝΙΟΥ 4",
-              "locality": "Καλαμάτα",
-              "phone": "2721022223"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "08:00 ΕΩΣ 20:30",
           "hours": {
             "from": "08:00",
@@ -172,6 +152,26 @@
               "address": "ΑΓΙΑ ΣΙΩΝ ΒΕΡΓΑΣ",
               "locality": "Καλαμάτα",
               "phone": "2721064550"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721022223",
+              "name": "ΜΑΤΘΙΟΠΟΥΛΟΣ ΝΙΚΟΛΑΟΣ (ΥΠΟΚ/ΜΑ)",
+              "address": "ΠΑΥΣΑΝΙΟΥ 4",
+              "locality": "Καλαμάτα",
+              "phone": "2721022223"
             }
           ]
         }

@@ -7,7 +7,7 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-11-03T21:53:13.255Z"
+        "uploadedAt": "2026-11-04T12:25:50.719Z"
       },
       "sections": [
         {
@@ -47,27 +47,6 @@
               "address": "ΚΙΣΣΑΜΟΥ 160/KISAMOU 160",
               "locality": "Χανιά",
               "phone": "2821073643"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
-          "hours": {
-            "from": "08:15",
-            "to": "08:15",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "6948462411",
-              "name": "ΔΑΜΟΡΑΚΗΣ ΕΥΤΥΧΗΣ/DΑΜΟRΑΚΙS EYTIXIS",
-              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
-              "locality": "Δήμος Καντάνου-Σελίνου",
-              "phone": "6948462411"
             }
           ]
         },
@@ -116,6 +95,27 @@
               "address": "ΜΟΥΣΟΥΡΩΝ 29/MOUSOURON 17",
               "locality": "Χανιά",
               "phone": "2821058158"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "6948462411",
+              "name": "ΔΑΜΟΡΑΚΗΣ ΕΥΤΥΧΗΣ/DΑΜΟRΑΚΙS EYTIXIS",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "6948462411"
             }
           ]
         },

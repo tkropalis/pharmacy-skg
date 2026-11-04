@@ -475,7 +475,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 40.93508,
         "lon": 24.397128,
@@ -648,6 +648,27 @@
         "lat": 40.936873,
         "lon": 24.404601,
         "ref": "https://kavala.efhmeries.gr/Home/Details/4019",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510836902",
+      "name": "ΣΑΚΑΛΑΚΗ ΑΝΑΣΤΑΣΙΑ",
+      "address": "ΕΡ. ΣΤΑΥΡΟΥ 1",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510836902",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
+      "location": {
+        "lat": 40.9363806,
+        "lon": 24.4087672,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4032",
         "source": "list",
         "precision": "exact"
       }

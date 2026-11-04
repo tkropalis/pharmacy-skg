@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "2281086600",
+      "name": "ΠΟΛΥΞΕΝΗ ΚΟΚΚΑΛΗ ΕΕ",
+      "address": "Σταματίου Πρωίου 14",
+      "locality": "Σύρος",
+      "postcode": null,
+      "phone": "2281086600",
+      "groupId": "syros",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
+      "location": {
+        "lat": 37.44379923561439,
+        "lon": 24.94255624141753,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2281087823",
       "name": "ΠΑΠΑΔΑΤΟΣ ΣΠ. ΣΤΕΦΑΝΟΣ",
       "address": "Χίου 35 - Πλ. Μιαούλη",
@@ -120,8 +141,8 @@
       "firstSeen": "2026-11-07",
       "lastSeen": "2026-11-09",
       "location": {
-        "lat": 37.439696275397594,
-        "lon": 24.938802333228328,
+        "lat": 37.43518412835399,
+        "lon": 24.935652957746676,
         "ref": "https://www.fscyclades.gr/onduty-cyclades/",
         "source": "list",
         "precision": "exact"
@@ -160,7 +181,7 @@
         "fsc"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 37.836984669514,
         "lon": 24.937045143193494,
@@ -328,7 +349,7 @@
         "fsc"
       ],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 37.536888800203485,
         "lon": 25.164631089877048,
@@ -349,7 +370,7 @@
         "fsc"
       ],
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 37.08453567867565,
         "lon": 25.149502409456712,
@@ -454,7 +475,7 @@
         "fsc"
       ],
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 37.1238598570389,
         "lon": 25.237984175388636,
@@ -521,6 +542,27 @@
       "location": {
         "lat": 37.10349260745514,
         "lon": 25.375716024664758,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2285023183",
+      "name": "ΚΑΒΟΥΡΑ - ΜΑΡΟΥΛΗ ΓΕΩΡΓΙΑ",
+      "address": "Πρωτοπαπαδάκη - Χώρα",
+      "locality": "Νάξος",
+      "postcode": null,
+      "phone": "2285023183",
+      "groupId": "naxos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
+      "location": {
+        "lat": 37.10448435204913,
+        "lon": 25.375693688539172,
         "ref": "https://www.fscyclades.gr/onduty-cyclades/",
         "source": "list",
         "precision": "exact"
@@ -622,7 +664,7 @@
         "fsc"
       ],
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.414615264109855,
         "lon": 25.433110507467926,
@@ -643,7 +685,7 @@
         "fsc"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.40011179526279,
         "lon": 25.451240218435483,
@@ -664,7 +706,7 @@
         "fsc"
       ],
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.35687569115748,
         "lon": 25.44397099937292,
@@ -800,6 +842,27 @@
       }
     },
     {
+      "id": "2289024188",
+      "name": "ΔΑΚΤΥΛΙΔΗ ΚΑΛΛΙΟΠΗ",
+      "address": "Αγίου Αρτεμίου 57",
+      "locality": "Μύκονος",
+      "postcode": null,
+      "phone": "2289024188",
+      "groupId": "mykonos",
+      "sources": [
+        "fsc"
+      ],
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
+      "location": {
+        "lat": 37.44366349459412,
+        "lon": 25.32817091182045,
+        "ref": "https://www.fscyclades.gr/onduty-cyclades/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2289077359",
       "name": "ΔΑΚΤΥΛΙΔΗ ΑΓΓΕΛΙΚΗ ΚΑΙ ΣΙΑ ΕΕ",
       "address": "Ορνός",
@@ -853,7 +916,7 @@
         "fsc"
       ],
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 37.773009113025395,
         "lon": 24.95107518215745,

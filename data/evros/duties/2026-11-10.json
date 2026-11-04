@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "groups": [
+    {
+      "id": "evros",
+      "name": "Έβρος",
+      "source": {
+        "url": "https://evros.efhmeries.gr/",
+        "uploadedAt": "2026-11-04T12:18:12.649Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552022582",
+              "name": "ΑΛΒΑΝΟΥΔΗ ΝΕΡΑΝΤΖΙΑ",
+              "address": "ΚΩΝ/ΠΟΛΕΩΣ 201",
+              "locality": "Ορεστιάδα",
+              "phone": "2552022582"
+            },
+            {
+              "pharmacyId": "2551024266",
+              "name": "ΔΙΑΜΑΝΤΙΔΟΥ ΑΝΝΑ",
+              "address": "Ελ. Βενιζέλου 54 (όπισθεν ΟΤΕ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551024266"
+            },
+            {
+              "pharmacyId": "2553023544",
+              "name": "ΠΑΡΑΣΚΕΥΟΠΟΥΛΟΣ ΙΩΑΝΝΗΣ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 101",
+              "locality": "Διδυμότειχο",
+              "phone": "2553023544"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2554022013",
+              "name": "ΜΠΑΜΙΔΟΥ ΚΟΡΤΕΣΣΑ ΤΟΥ ΠΑΝΑΓΙΩΤΗ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 211",
+              "locality": "Σουφλί",
+              "phone": "2554022013"
+            },
+            {
+              "pharmacyId": "2554042042",
+              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛ. & ΟΛΓΑ",
+              "address": "ΝΙΚΗΣ 19",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042042"
+            },
+            {
+              "pharmacyId": "2555022744",
+              "name": "ΧΑΤΖΗ ΔΗΜΗΤΡΑ",
+              "address": "ΤΡΑΙΑΝΟΥΠΟΛΕΩΣ 3",
+              "locality": "Φέρες",
+              "phone": "2555022744"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

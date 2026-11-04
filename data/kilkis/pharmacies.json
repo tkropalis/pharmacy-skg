@@ -76,7 +76,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 40.996094,
         "lon": 22.878292,
@@ -104,6 +104,27 @@
         "source": "nominatim",
         "precision": "locality",
         "ref": "ΥΨΗΛΑΝΤΟΥ 25, Κιλκίς"
+      }
+    },
+    {
+      "id": "2341023924",
+      "name": "Σ.Φ.ΠΑΝΑΓΙΩΤΙΔΟΥ ΑΙΚ. - ΦΡΑΓΓΙΔΟΥ ΝΙΚΟΛ. Ο.Ε.",
+      "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 11",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341023924",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
+      "location": {
+        "lat": 40.995182,
+        "lon": 22.875324,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "5cd71a0c-04ce-4b46-88c6-2eb55b791d4f"
       }
     },
     {
@@ -391,7 +412,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 40.993564,
         "lon": 22.573161,
@@ -475,7 +496,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 40.98555,
         "lon": 22.542284,
@@ -538,7 +559,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 40.946644,
         "lon": 22.451941,

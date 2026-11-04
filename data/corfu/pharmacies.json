@@ -57,7 +57,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.622091,
         "lon": 19.911732,
@@ -422,7 +422,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.591337,
         "lon": 19.859619,
@@ -1288,7 +1288,7 @@
     },
     {
       "id": "2661075673",
-      "name": "ΜΑΝΤΟΣ ΜΙΧΑΗΛ",
+      "name": "ΤΡΙΒΥΖΑΣ ΝΙΚΟΛΑΟΣ (ΜΑΝΤΟΣ ΜΙΧΑΗΛ)",
       "address": "ΜΩΡΑΪΤΙΚΑ",
       "locality": "Μωραΐτικα",
       "postcode": null,
@@ -1297,8 +1297,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.485759,
         "lon": 19.925582,
@@ -1423,8 +1423,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.644574,
         "lon": 19.853075,
@@ -1640,7 +1640,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.422623,
         "lon": 20.062111,
@@ -1842,7 +1842,7 @@
     },
     {
       "id": "2663029500",
-      "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΔΗΜΗΤΡΙΟΣ",
+      "name": "ΠΚ (ΠΑΠΑΔΟΠΟΥΛΟΣ ΔΗΜΗΤΡΙΟΣ)",
       "address": "ΣΙΔΑΡΙ",
       "locality": "Σιδάρι",
       "postcode": null,
@@ -1851,8 +1851,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.792821,
         "lon": 19.701729,
@@ -2023,8 +2023,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04",
       "location": {
         "lat": 39.78627,
         "lon": 19.76696,

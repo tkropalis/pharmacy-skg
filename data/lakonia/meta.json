@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "lakonia",
-  "updatedAt": "2026-11-03T12:02:42.335Z",
-  "checkedAt": "2026-11-03T21:52:04.395Z",
+  "updatedAt": "2026-11-04T12:21:46.382Z",
+  "checkedAt": "2026-11-04T12:21:46.382Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-11-09"
+    "to": "2026-11-10"
   },
   "extendedHours": [],
   "sources": [

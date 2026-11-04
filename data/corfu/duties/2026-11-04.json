@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-04",
+  "groups": [
+    {
+      "id": "corfu",
+      "name": "Κέρκυρα",
+      "source": {
+        "url": "https://farmakeu.static.otenet.gr/phduties.php",
+        "uploadedAt": "2026-11-04T12:14:42.246Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΗΜΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 8:00 ΕΩΣ ΤΙΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2661031992",
+              "name": "ΕΡΤΣΟΣ ΣΠΥΡΙΔΩΝΑΣ-ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΜΙΛΤΙΑΔΟΥ ΜΑΡΓΑΡΙΤΗ 8",
+              "locality": "Κέρκυρα",
+              "phone": "2661031992"
+            },
+            {
+              "pharmacyId": "2661020970",
+              "name": "ΚΟΣΚΙΝΑΣ ΣΠΥΡΟΣ",
+              "address": "ΙΟΥΛΙΑΣ ΑΝΔΡΕΑΔΗ 11 (ΠΛΑΤΥΤΕΡΑ)",
+              "locality": "Κέρκυρα",
+              "phone": "2661020970"
+            },
+            {
+              "pharmacyId": "2661091700",
+              "name": "ΑΛΕΞΑΚΗ ΑΝΝΥ",
+              "address": "ΚΟΝΤΟΚΑΛΙ",
+              "locality": "Κοντόκαλι",
+              "phone": "2661091700"
+            },
+            {
+              "pharmacyId": "2661075673",
+              "name": "ΤΡΙΒΥΖΑΣ ΝΙΚΟΛΑΟΣ (ΜΑΝΤΟΣ ΜΙΧΑΗΛ)",
+              "address": "ΜΩΡΑΪΤΙΚΑ",
+              "locality": "Μωραΐτικα",
+              "phone": "2661075673"
+            },
+            {
+              "pharmacyId": "2663063144",
+              "name": "ΚΟΥΣΤΑΣ ΜΑΡΙΟΣ",
+              "address": "ΡΟΔΑ",
+              "locality": "Ρόδα",
+              "phone": "2663063144"
+            },
+            {
+              "pharmacyId": "2662022649",
+              "name": "ΣΤΑΜΑΤΑΚΟΣ ΑΛΕΞΑΝΔΡΟΣ",
+              "address": "ΛΕΥΚΙΜΜΗ",
+              "locality": "Λευκίμμη",
+              "phone": "2662022649"
+            },
+            {
+              "pharmacyId": "2663029500",
+              "name": "ΠΚ (ΠΑΠΑΔΟΠΟΥΛΟΣ ΔΗΜΗΤΡΙΟΣ)",
+              "address": "ΣΙΔΑΡΙ",
+              "locality": "Σιδάρι",
+              "phone": "2663029500"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

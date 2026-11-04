@@ -13,7 +13,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 38.46902,
         "lon": 23.60364,
@@ -391,7 +391,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 38.5135666,
         "lon": 23.6373025,
@@ -816,6 +816,27 @@
         "lat": 38.4620909,
         "lon": 23.5936654,
         "ref": "https://evia.efhmeries.gr/Home/Details/9381",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2221081880",
+      "name": "Σ.Φ. ΛΙΟΣΗ Β. & ΘΕΟΔΩΡΟΠΟΥΛΟΥ Δ. Ο.Ε.",
+      "address": "ΑΡΕΘΟΥΣΗΣ & ΠΗΛΙΚΑ",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221081880",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
+      "location": {
+        "lat": 38.461928,
+        "lon": 23.600719,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9395",
         "source": "list",
         "precision": "exact"
       }
@@ -1273,7 +1294,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 38.0141849,
         "lon": 24.4183416,
@@ -1462,7 +1483,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 38.9542,
         "lon": 23.149816,
@@ -1525,7 +1546,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 38.3927513,
         "lon": 23.7922033,

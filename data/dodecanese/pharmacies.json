@@ -328,7 +328,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.4475714,
         "lon": 28.2252964,
@@ -874,7 +874,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.3546982,
         "lon": 27.9850619,
@@ -1000,7 +1000,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.2951904,
         "lon": 28.1624606,
@@ -1084,7 +1084,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.2583172,
         "lon": 28.1432471,
@@ -1273,7 +1273,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.3890386,
         "lon": 28.214573,
@@ -1525,7 +1525,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.4229668,
         "lon": 28.2266532,
@@ -1693,7 +1693,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.3361493,
         "lon": 28.1739314,
@@ -1777,7 +1777,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.4109796,
         "lon": 28.1209552,
@@ -1924,7 +1924,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.4179602,
         "lon": 28.1769707,
@@ -2333,6 +2333,27 @@
       }
     },
     {
+      "id": "2242030222",
+      "name": "ΚΑΣΣΑΝΗ ΣΤΑΥΡΟΥΛΑ / KASSANI STAYROYLA",
+      "address": "ΑΣΚΛΗΠΙΟΥ 41 / ASKLIPIOU 41",
+      "locality": "Κως",
+      "postcode": null,
+      "phone": "2242030222",
+      "groupId": "dodecanese",
+      "sources": [
+        "iteq-dodecanese"
+      ],
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
+      "location": {
+        "lat": 36.88436,
+        "lon": 27.2712,
+        "ref": "https://dodecanese.efhmeries.gr/Home/Details/30332",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2242041642",
       "name": "ΧΑΤΖΗΠΑΝΤΣΟΥ ΕΛΕΝΗ / CHATZIPANTSOU ELENI",
       "address": "ΠΥΛΙ / PYLI",
@@ -2491,7 +2512,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.8766199,
         "lon": 27.20516,
@@ -2533,7 +2554,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.7445146,
         "lon": 26.9591755,
@@ -2575,7 +2596,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.8917947,
         "lon": 27.2912769,
@@ -2680,7 +2701,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.2150927,
         "lon": 28.1172433,
@@ -2764,7 +2785,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.0527267,
         "lon": 27.9688626,
@@ -2806,7 +2827,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.0934975,
         "lon": 28.0169723,
@@ -2953,7 +2974,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 35.5075007,
         "lon": 27.2123783,
@@ -2974,7 +2995,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.2269188,
         "lon": 27.8561477,
@@ -3016,7 +3037,7 @@
         "iteq-dodecanese"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 36.6158401,
         "lon": 27.8355787,

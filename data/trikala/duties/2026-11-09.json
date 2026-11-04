@@ -7,9 +7,29 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-11-03T21:53:00.876Z"
+        "uploadedAt": "2026-11-04T12:25:08.021Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431074336",
+              "name": "ΛΕΚΚΑ ΕΥΑΓΓΕΛΙΑ",
+              "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 35",
+              "locality": "Τρίκαλα",
+              "phone": "2431074336"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -47,26 +67,6 @@
               "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 89",
               "locality": "Τρίκαλα",
               "phone": "2431032067"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 23:00",
-          "hours": {
-            "from": "08:00",
-            "to": "23:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431074336",
-              "name": "ΛΕΚΚΑ ΕΥΑΓΓΕΛΙΑ",
-              "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 35",
-              "locality": "Τρίκαλα",
-              "phone": "2431074336"
             }
           ]
         }

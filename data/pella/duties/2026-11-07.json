@@ -7,7 +7,7 @@
       "name": "Πέλλα",
       "source": {
         "url": "https://pella.efhmeries.gr/",
-        "uploadedAt": "2026-11-03T21:52:36.256Z"
+        "uploadedAt": "2026-11-04T12:23:45.423Z"
       },
       "sections": [
         {
@@ -52,6 +52,26 @@
           ]
         },
         {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382028229",
+              "name": "ΛΑΠΙΧΟΥ ΚΑΛΛΙΟΠΗ",
+              "address": "ΠΛΑΤΕΙΑ ΓΚΟΝΟΥ ΓΙΩΤΑ 2",
+              "locality": "Γιαννιτσά",
+              "phone": "2382028229"
+            }
+          ]
+        },
+        {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
           "hours": {
@@ -69,26 +89,6 @@
               "address": "ΒΑΣ. ΠΑΥΛΟΥ 77",
               "locality": "Κρύα Βρύση",
               "phone": "2382062100"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2382028229",
-              "name": "ΛΑΠΙΧΟΥ ΚΑΛΛΙΟΠΗ",
-              "address": "ΠΛΑΤΕΙΑ ΓΚΟΝΟΥ ΓΙΩΤΑ 2",
-              "locality": "Γιαννιτσά",
-              "phone": "2382028229"
             }
           ]
         }
