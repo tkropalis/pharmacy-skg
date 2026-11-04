@@ -15,6 +15,7 @@ import { fill, formatDistance } from '../../lib/format.ts';
 import type { Row } from '../../lib/list.ts';
 import { displayName, placeLine } from '../../lib/names.ts';
 import { pinSvg } from '../../lib/pins.ts';
+import { sharePharmacy } from '../../lib/share.ts';
 import { describeStatus } from '../../lib/status-label.ts';
 import { MAPS_KEY, readItem, writeItem } from '../../lib/storage.ts';
 import { ClosedReport } from './ClosedReport.tsx';
@@ -45,40 +46,6 @@ export interface PharmacyRowProps {
   readonly onToggleFavourite: (id: string, name: string) => void;
   readonly onMessage: (message: string) => void;
   readonly children?: ReactNode;
-}
-
-/** An absolute link to the pharmacy's own page, for sharing. */
-function pageUrl(locale: Locale, id: string): string {
-  return new URL(pharmacyPath(locale, id), window.location.origin).href;
-}
-
-async function share(
-  locale: Locale,
-  text: Text,
-  name: string,
-  address: string,
-  id: string,
-): Promise<string | null> {
-  const url = pageUrl(locale, id);
-  if (typeof navigator.share === 'function') {
-    try {
-      await navigator.share({
-        title: name,
-        text: fill(text.row.shareText, { name, address }),
-        url,
-      });
-      return null;
-    } catch (error) {
-      // Closing the share sheet is not an error.
-      if (error instanceof DOMException && error.name === 'AbortError') return null;
-    }
-  }
-  try {
-    await navigator.clipboard.writeText(url);
-    return text.row.copied;
-  } catch {
-    return text.row.copyFailed;
-  }
 }
 
 /** The maps app the one-tap button opens (the last one chosen, or the device's own). */
@@ -247,7 +214,7 @@ function PharmacyRowView({
               className="row-action"
               aria-label={fill(text.row.shareLabel, { name })}
               onClick={() => {
-                void share(locale, text, name, pharmacy.address, pharmacy.id).then(
+                void sharePharmacy(locale, text.row, name, pharmacy.address, pharmacy.id).then(
                   (message) => message !== null && onMessage(message),
                 );
               }}

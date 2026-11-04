@@ -4,6 +4,7 @@ import type { Locale } from '@pharmacy-skg/core';
 import HomeApp from '../components/app/HomeApp.tsx';
 import { prefetchCityData } from '../components/app/use-city-data.ts';
 import type { Dictionary } from '../i18n/index.ts';
+import { openedOn } from '../lib/deep-link.ts';
 import { homeCity } from '../lib/home-city.ts';
 
 /**
@@ -13,8 +14,9 @@ import { homeCity } from '../lib/home-city.ts';
  */
 const root = document.getElementById('app');
 if (root !== null) {
-  // A city's page for today names its city; the home screen opens on the person's own.
-  const pageCity = root.dataset.city === undefined ? undefined : cityById(root.dataset.city);
+  // A city's page for today names its city, and so does a link from a pharmacy's page; the home
+  // screen opens on the person's own.
+  const pageCity = cityById(root.dataset.city ?? openedOn?.cityId ?? '');
   const city = pageCity ?? homeCity();
   // The requests leave now, not after React has rendered once and run its effects.
   prefetchCityData(city.id);
@@ -24,6 +26,7 @@ if (root !== null) {
     <HomeApp
       initialCity={city}
       pageCity={pageCity !== undefined}
+      initialPharmacy={pageCity === undefined ? null : (openedOn?.pharmacyId ?? null)}
       locale={locale}
       text={text}
       title={root.dataset.title ?? ''}

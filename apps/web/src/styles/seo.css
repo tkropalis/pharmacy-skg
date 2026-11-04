@@ -4,8 +4,16 @@
   padding-block: 1.5rem 2.5rem;
 }
 
+/* The status is on its way: the box keeps its place, so what is under it does not jump. */
+@media (scripting: enabled) {
+  .seo-status[data-pharmacy-status]:empty {
+    display: block;
+    min-height: 5.75rem;
+  }
+}
+
 .seo-page h1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .seo-page h2 {
@@ -62,8 +70,24 @@
   display: none;
 }
 
+.seo-status > p {
+  margin-bottom: 0.125rem;
+}
+
 .seo-status > :last-child {
   margin-bottom: 0;
+}
+
+/* The word led by the map's marker, as in the list. */
+.seo-status-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.seo-mark {
+  display: inline-flex;
+  flex: none;
 }
 
 /* The area page's open pharmacies, listed inside the status box. */
@@ -138,6 +162,326 @@
 .seo-list li[data-open='true'] .state {
   font-weight: 700;
   color: var(--accent);
+}
+
+/* A pharmacy's page: under the name, its place; on English pages, both as they are in Greek. */
+.seo-place {
+  margin: 0 0 0.25rem;
+  overflow-wrap: anywhere;
+}
+
+.seo-native {
+  margin: 0 0 0.25rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  overflow-wrap: anywhere;
+}
+
+.seo-place + .seo-native,
+.seo-place:has(+ section) {
+  margin-bottom: 1rem;
+}
+
+.seo-page .seo-actions .button {
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 3rem;
+  padding-inline: 1.125rem;
+  white-space: nowrap;
+}
+
+.seo-actions li {
+  flex: 1 1 auto;
+}
+
+/* Quiet, and only once they work. */
+.seo-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: -0.5rem 0 var(--space);
+}
+
+.seo-tools[hidden] {
+  display: none;
+}
+
+.seo-tool {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  min-height: 2.75rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent-ink);
+  font: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity var(--dur-1) var(--ease-out);
+}
+
+.seo-tool:active {
+  opacity: 0.6;
+}
+
+/*
+ * The place, at the top of the page: edge to edge, fading into the page so the name reads as
+ * part of it. The mask needs no colour, so it works in both looks. Its height follows the screen:
+ * on a small phone Call must stay on the first screen. Hidden when there is no map to show.
+ */
+.seo-hero {
+  position: relative;
+  height: clamp(10rem, 30svh, 18rem);
+  overflow: hidden;
+  background: var(--soft);
+  mask-image: linear-gradient(to bottom, black 58%, transparent 100%);
+}
+
+.seo-hero + .seo-page {
+  position: relative;
+  margin-top: -1.25rem;
+  padding-top: 0;
+}
+
+.seo-hero[data-state='failed'] {
+  display: none;
+}
+
+.seo-hero[data-state='failed'] + .seo-page {
+  margin-top: 0;
+  padding-top: 1.5rem;
+}
+
+@media (scripting: none) {
+  .seo-hero {
+    display: none;
+  }
+
+  .seo-hero + .seo-page {
+    margin-top: 0;
+    padding-top: 1.5rem;
+  }
+}
+
+/* Two classes: MapLibre's own stylesheet, added later, sets a position on this element. */
+.seo-hero .seo-map-canvas {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity var(--dur-3) var(--ease-out);
+}
+
+.seo-hero[data-state='ready'] .seo-map-canvas {
+  opacity: 1;
+}
+
+.seo-map-link {
+  position: absolute;
+  inset-block-start: 0.625rem;
+  inset-inline-end: max(var(--space), var(--safe-r));
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--fg);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* The whole picture is the link; the hero clips what is outside it. */
+.seo-map-link::after {
+  content: '';
+  position: absolute;
+  inset: -100vh -100vw;
+}
+
+.seo-map-credit {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: max(0.25rem, var(--safe-l));
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  color: var(--fg);
+  font-size: 0.75rem;
+}
+
+.seo-map-credit summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  opacity: 0.55;
+  list-style: none;
+  cursor: pointer;
+}
+
+.seo-map-credit summary::-webkit-details-marker {
+  display: none;
+}
+
+.seo-map-credit[open] summary {
+  opacity: 1;
+}
+
+/* On a phone the open credit needs the top of the map; the link is back when it closes. */
+@media (max-width: 40rem) {
+  .seo-hero:has(.seo-map-credit[open]) .seo-map-link {
+    visibility: hidden;
+  }
+}
+
+.seo-map-credit p {
+  margin: 0;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.375rem;
+  background: var(--surface);
+}
+
+.seo-map-credit a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.seo-map-credit a:hover {
+  text-decoration: underline;
+}
+
+/* The nearest ones: plain rows, each with its call button at hand. */
+.seo-near {
+  margin: 0 0 var(--space);
+  padding: 0;
+  list-style: none;
+}
+
+.seo-near > li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.625rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.seo-near > li:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.seo-near-text {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 0.125rem;
+  min-width: 0;
+}
+
+.seo-near .name {
+  font-weight: 700;
+}
+
+.seo-near .state {
+  font-size: 0.875rem;
+}
+
+.seo-near .state:empty {
+  display: none;
+}
+
+.seo-near .sub {
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+.seo-call {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 2.875rem;
+  height: 2.875rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+/* The coming days, today first. */
+.seo-week {
+  margin: 0 0 var(--space);
+  padding: 0;
+  list-style: none;
+  font-variant-numeric: tabular-nums;
+}
+
+.seo-week[hidden] {
+  display: none;
+}
+
+.seo-week li {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: 0.75rem;
+  padding: 0.5rem 0.625rem;
+  border-radius: 0.5rem;
+}
+
+.seo-week li[data-today='true'] {
+  background: var(--soft);
+  font-weight: 700;
+}
+
+.seo-week li[data-none='true'] .hours {
+  color: var(--muted);
+}
+
+.seo-week .hours {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.seo-week .duty {
+  color: var(--accent-ink);
+  font-size: 0.875rem;
+  font-weight: 650;
+}
+
+.seo-more {
+  margin: 0 0 var(--space);
+  padding: 0;
+  list-style: none;
+}
+
+.seo-more li {
+  border-bottom: 1px solid var(--border);
+}
+
+.seo-more li:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.seo-more a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 2.75rem;
+  padding-block: 0.5rem;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.seo-more svg {
+  flex: none;
+  color: var(--muted);
 }
 
 /* A duty-date page's area groups: a plain heading under a hairline, no boxes. */

@@ -155,38 +155,50 @@
   background-size: 14px;
 }
 
-/* The credit takes the app's colours, by day and at night (MapLibre's are white and black). */
+/*
+ * The map's credit: a small faint icon on a 44px target, as on a pharmacy's page (.seo-map-credit),
+ * that opens on a tap or a mouse over it, in the app's colours by day and at night. MapLibre's
+ * own is a white 24px button.
+ */
 .hs .map .maplibregl-ctrl-attrib {
-  background: color-mix(in srgb, var(--surface) 88%, transparent);
   color: var(--fg);
   font-size: 0.75rem;
 }
 
-/*
- * The attribution is a 44px toggle on a phone (collapsed) and a 44px-tall row of links beside
- * the map. MapLibre's own sizes are 24px.
- */
+.hs .map .maplibregl-ctrl-attrib.maplibregl-compact {
+  min-height: 44px;
+  margin: 0;
+  padding: 0 44px 0 0;
+  border-radius: 0.375rem;
+  background: none;
+  box-shadow: none;
+}
+
 .hs .map .maplibregl-ctrl-attrib-button {
   width: 44px;
   height: 44px;
-  border-radius: 22px;
+  border-radius: 0;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 14px;
+  opacity: 0.55;
+}
+
+.hs .map .maplibregl-compact-show .maplibregl-ctrl-attrib-button {
   background-color: var(--surface);
-  background-size: 16px;
-  box-shadow: var(--shadow);
+  opacity: 1;
 }
 
-.hs .map .maplibregl-ctrl-attrib.maplibregl-compact {
-  min-height: 40px;
-  padding: 2px 44px 2px 0;
-  border-radius: 22px;
-  background: var(--surface);
-  box-shadow: 0 1px 4px rgb(0 0 0 / 0.22);
-}
-
+/* Open, it stays clear of the zoom buttons on a phone: the words wrap. */
 .hs .map .maplibregl-ctrl-attrib.maplibregl-compact-show {
-  padding: 2px 8px 2px 44px;
+  max-width: calc(100vw - 4.5rem);
+  padding: 0 0.5rem 0 44px;
+  background: var(--surface);
+}
+
+.hs .map .maplibregl-ctrl-bottom-right > .maplibregl-ctrl-attrib.maplibregl-compact-show {
+  padding: 0 44px 0 0.5rem;
 }
 
 .hs .map .maplibregl-ctrl-attrib-inner {

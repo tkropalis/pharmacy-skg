@@ -21,7 +21,11 @@ export function telHref(phone: string | null): string | null {
  * `openingHoursSpecification`: the regular hours are replaced by duty and extended-hours
  * entries and by holidays, so a fixed specification could be wrong on any given day.
  */
-export function pharmacyJsonLd(pharmacy: Pharmacy, url: string): Record<string, unknown> {
+export function pharmacyJsonLd(
+  pharmacy: Pharmacy,
+  url: string,
+  extra: { readonly mapUrl: string; readonly alternateName?: string | undefined },
+): Record<string, unknown> {
   const telephone = phoneToE164(pharmacy.phone);
   const precise =
     pharmacy.location !== null &&
@@ -30,7 +34,9 @@ export function pharmacyJsonLd(pharmacy: Pharmacy, url: string): Record<string, 
     '@context': 'https://schema.org',
     '@type': 'Pharmacy',
     name: pharmacy.name,
+    ...(extra.alternateName === undefined ? {} : { alternateName: extra.alternateName }),
     url,
+    hasMap: extra.mapUrl,
     address: {
       '@type': 'PostalAddress',
       streetAddress: pharmacy.address,

@@ -128,7 +128,7 @@ test.describe('touch targets and focus', () => {
     await page.goto('/');
     await waitForRows(page);
     await waitForMap(page);
-    // On a phone the credit is collapsed behind a toggle: open it to measure the links too.
+    // The credit is collapsed behind a toggle: open it to measure the links too.
     const toggle = page.locator('summary.maplibregl-ctrl-attrib-button');
     if (await toggle.isVisible()) await toggle.click();
     const targets = page.locator(

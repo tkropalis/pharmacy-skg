@@ -1,7 +1,19 @@
 ---
+import {
+  faArrowRight,
+  faCircleInfo,
+  faDiamondTurnRight,
+  faMapLocationDot,
+  faPhone,
+  faShareNodes,
+} from '@fortawesome/free-solid-svg-icons';
+import { faStar } from '@fortawesome/free-regular-svg-icons';
 import type { Locale } from '@pharmacy-skg/core';
 import { SITE_URL } from '../../config.ts';
 import { t } from '../../i18n/index.ts';
+import { pharmacyMapUrl } from '../../lib/deep-link.ts';
+import { faSvg } from '../../lib/fa.ts';
+import { fill } from '../../lib/seo/format.ts';
 import { loadSeoModel } from '../../lib/seo/site-data.ts';
 import { pharmacyPageProps } from '../../lib/seo/views.ts';
 import PharmacyDutyList from './PharmacyDutyList.astro';
@@ -21,10 +33,13 @@ if (page === null) throw new Error(`No pharmacy with id ${id}`);
 
 const d = t(locale);
 const seo = d.seo.pharmacy;
+const row = d.app.row;
+const crumbs = page.breadcrumbs;
 ---
 
 <!--
-  The name, then whether it is open now, then how to reach it, its hours and its duty days.
+  What a person arriving from a search came for, in order: is it open, call, how to get there.
+  Then what to do when it is closed: the map and the nearest open ones. Then the hours and duties.
   The sources are on the about page and the data's age is in the footer.
 -->
 <SeoLayout
@@ -32,13 +47,74 @@ const seo = d.seo.pharmacy;
   jsonLd={page.jsonLd}
   updated={{ at: page.updatedAt, text: page.updatedAtText }}
 >
+  {page.map !== null && (
+    <section
+      slot="hero"
+      class="seo-hero"
+      aria-label={seo.mapHeading}
+      data-pharmacy-map
+      data-lat={page.map.lat}
+      data-lon={page.map.lon}
+      data-approximate={page.map.approximate ? 'true' : undefined}
+    >
+      <div class="seo-map-canvas" data-map-canvas aria-hidden="true"></div>
+      <a class="seo-map-link" href={page.mapPath}>
+        <Fragment set:html={faSvg(faMapLocationDot)} />
+        {seo.mapOpen}
+      </a>
+      {/* The licences ask for this; one tap away, as on the home screen's map. */}
+      <details class="seo-map-credit">
+        <summary aria-label={seo.mapCredits}>
+          <Fragment set:html={faSvg(faCircleInfo, { size: 14 })} />
+        </summary>
+        <p>
+          <a href="https://openfreemap.org" rel="noopener">
+            OpenFreeMap
+          </a>{' '}
+          <a href="https://www.openmaptiles.org/" rel="noopener">
+            © OpenMapTiles
+          </a>{' '}
+          <a href="https://www.openstreetmap.org/copyright" rel="noopener">
+            © OpenStreetMap
+          </a>
+        </p>
+      </details>
+    </section>
+  )}
+
+  <nav class="seo-breadcrumb" aria-label={d.seo.breadcrumbLabel}>
+    <ol>
+      {crumbs.slice(0, -1).map((crumb) => (
+        <li>
+          <a href={crumb.path}>{crumb.name}</a>
+        </li>
+      ))}
+    </ol>
+  </nav>
+
   <h1>{page.name}</h1>
+  {page.nativeName !== null && (
+    <p class="seo-native" lang="el">
+      {page.nativeName}
+    </p>
+  )}
+  <p class="seo-place">
+    {page.address}, {page.localityLabel}
+    {page.postcode !== null && <> {page.postcode}</>}
+  </p>
+  {page.nativeAddress !== null && (
+    <p class="seo-native" lang="el">
+      {page.nativeAddress}
+    </p>
+  )}
+  {page.map === null && <p class="seo-native">{row.noLocation}</p>}
+  {page.map?.approximate === true && <p class="seo-native">{row.approximate}</p>}
 
   <section aria-labelledby="status-heading">
     <h2 id="status-heading" class="sr-only">
       {seo.statusHeading}
     </h2>
-    <!-- Worked out in the browser (scripts/seo/pharmacy-status.ts); empty without JavaScript. -->
+    <!-- Worked out in the browser (scripts/seo/pharmacy-page.ts); empty without JavaScript. -->
     <div
       class="seo-status"
       role="status"
@@ -46,82 +122,121 @@ const seo = d.seo.pharmacy;
       data-pharmacy-status
       data-pharmacy-id={page.id}
       data-city={model.cityId}
+      data-name={page.shortName}
+      data-address={page.address}
     ></div>
   </section>
 
-  <section aria-labelledby="contact-heading">
-    <h2 id="contact-heading">{seo.contactHeading}</h2>
-    <dl class="seo-facts">
-      <dt>{seo.addressLabel}</dt>
-      <dd>
-        {page.address}, {page.localityLabel}
-        {page.postcode !== null && <> {page.postcode}</>}
-      </dd>
-      <dt>{seo.areaLabel}</dt>
-      <dd>
-        {page.areaPagePath !== null ? (
-          <a href={page.areaPagePath}>{page.localityLabel}</a>
-        ) : (
-          page.localityLabel
-        )}
-      </dd>
-    </dl>
-    <ul class="seo-actions">
-      {page.callText !== null && page.phoneHref !== null && (
-        <li>
-          <a class="button" href={page.phoneHref}>
-            {page.callText}
-          </a>
-        </li>
-      )}
+  <ul class="seo-actions">
+    {page.callText !== null && page.phoneHref !== null && (
       <li>
-        <a class="button secondary" href={page.directionsUrl} rel="noopener">
-          {seo.directions}
+        <a class="button" href={page.phoneHref}>
+          <Fragment set:html={faSvg(faPhone)} />
+          {page.callText}
         </a>
       </li>
-    </ul>
-    {page.callText === null && <p class="seo-meta">{seo.noPhone}</p>}
-  </section>
+    )}
+    <li>
+      <a
+        class="button secondary"
+        href={page.directionsUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-directions
+      >
+        <Fragment set:html={faSvg(faDiamondTurnRight)} />
+        {seo.directions}
+      </a>
+    </li>
+  </ul>
+  {page.callText === null && <p class="seo-meta">{seo.noPhone}</p>}
 
-  <section aria-labelledby="hours-heading">
-    <h2 id="hours-heading">{seo.hoursHeading}</h2>
-    <h3>{seo.regularLabel}</h3>
-    {page.regularHours === null ? (
-      <p>{seo.regularUnknown}</p>
-    ) : (
-      <ul class="seo-hours">
-        {page.regularHours.groups.map((group) => (
-          <li>
-            {group.days} {group.times}
+  <!-- Both work on the device only (scripts/seo/pharmacy-page.ts), so they start hidden. -->
+  <div class="seo-tools" data-pharmacy-tools hidden>
+    <button type="button" class="seo-tool" data-favourite>
+      <Fragment set:html={faSvg(faStar)} />
+      <span>{row.favourite}</span>
+    </button>
+    <button
+      type="button"
+      class="seo-tool"
+      data-share
+      aria-label={fill(row.shareLabel, { name: page.shortName })}
+    >
+      <Fragment set:html={faSvg(faShareNodes)} />
+      <span>{row.share}</span>
+    </button>
+    <p class="sr-only" role="status" data-tool-message></p>
+  </div>
+
+  {page.nearby.length > 0 && (
+    <section aria-labelledby="near-heading">
+      <h2 id="near-heading" data-near-heading>
+        {seo.nearHeading}
+      </h2>
+      <ul class="seo-near" data-near-list>
+        {page.nearby.map((near) => (
+          <li data-pharmacy-id={near.id}>
+            <div class="seo-near-text">
+              <a class="name" href={near.path}>
+                {near.name}
+              </a>
+              <span class="state" data-state></span>
+              <span class="sub">
+                {near.distanceText !== null && `${near.distanceText} · `}
+                {near.place}
+              </span>
+            </div>
+            {near.phoneHref !== null && (
+              <a class="seo-call" href={near.phoneHref} aria-label={near.callLabel}>
+                <Fragment set:html={faSvg(faPhone)} />
+              </a>
+            )}
           </li>
         ))}
       </ul>
-    )}
-    {page.regularClosedText !== null && <p class="seo-meta">{page.regularClosedText}</p>}
-    {page.extendedHours.length > 0 && (
-      <>
-        <h3>{seo.extendedHeading}</h3>
-        {page.extendedHours.map((entry) => (
-          <>
-            {/* As published: one line per day. */}
-            <ul class="seo-hours">
-              {entry.scheduleText
-                .split('\n')
-                .filter((line) => line.trim() !== '')
-                .map((line) => (
-                  <li>{line.trim()}</li>
+    </section>
+  )}
+
+  <section aria-labelledby="hours-heading">
+    <h2 id="hours-heading">{seo.hoursHeading}</h2>
+    <!-- The coming days, from the engine, replace the general hours below. -->
+    <ol class="seo-week" data-week hidden></ol>
+    <div data-hours-static>
+      <h3>{seo.regularLabel}</h3>
+      {page.regularHours === null ? (
+        <p>{seo.regularUnknown}</p>
+      ) : (
+        <ul class="seo-hours">
+          {page.regularHours.groups.map((group) => (
+            <li>
+              {group.days} {group.times}
+            </li>
+          ))}
+        </ul>
+      )}
+      {page.regularClosedText !== null && <p class="seo-meta">{page.regularClosedText}</p>}
+      {page.extendedHours.length > 0 && (
+        <>
+          <h3>{seo.extendedHeading}</h3>
+          {page.extendedHours.map((entry) => (
+            <>
+              <ul class="seo-hours">
+                {entry.lines.map((line) => (
+                  <li>{line}</li>
                 ))}
-            </ul>
-            <p class="seo-meta">
-              {entry.periodText}.{' '}
-              <a href={entry.announcementUrl} rel="noopener">
-                {seo.extendedAnnouncement}
-              </a>
-            </p>
-          </>
-        ))}
-      </>
-    )}
+              </ul>
+              <p class="seo-meta">
+                {entry.periodText}.{' '}
+                <a href={entry.announcementUrl} rel="noopener">
+                  {seo.extendedAnnouncement}
+                </a>
+              </p>
+            </>
+          ))}
+        </>
+      )}
+    </div>
   </section>
 
   <section aria-labelledby="duty-heading">
@@ -141,11 +256,39 @@ const seo = d.seo.pharmacy;
     {page.upcomingDuties.length === 0 && page.recentDuties.length === 0 && <p>{seo.dutyNone}</p>}
   </section>
 
-  <p>
-    <a href={page.reportPath}>{seo.reportLink}</a>
-  </p>
+  <section aria-labelledby="more-heading">
+    <h2 id="more-heading">{seo.moreHeading}</h2>
+    <ul class="seo-more">
+      <li>
+        <a href={pharmacyMapUrl(locale, model.cityId)}>
+          {seo.moreOnMap}
+          <Fragment set:html={faSvg(faArrowRight, { size: 14 })} />
+        </a>
+      </li>
+      {page.areaPagePath !== null && (
+        <li>
+          <a href={page.areaPagePath}>
+            {fill(seo.moreArea, { area: page.localityLabel })}
+            <Fragment set:html={faSvg(faArrowRight, { size: 14 })} />
+          </a>
+        </li>
+      )}
+      <li>
+        <a href={page.cityDutyPath}>
+          {fill(seo.moreDuty, { city: page.cityLabel })}
+          <Fragment set:html={faSvg(faArrowRight, { size: 14 })} />
+        </a>
+      </li>
+      <li>
+        <a href={page.reportPath}>
+          {seo.reportLink}
+          <Fragment set:html={faSvg(faArrowRight, { size: 14 })} />
+        </a>
+      </li>
+    </ul>
+  </section>
 </SeoLayout>
 
 <script>
-  import '../../scripts/seo/pharmacy-status.ts';
+  import '../../scripts/seo/pharmacy-page.ts';
 </script>

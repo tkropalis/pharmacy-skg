@@ -98,7 +98,7 @@ describe('pharmacyPageProps', () => {
     // Whichever two months the data holds now.
     expect(first?.periodText).toMatch(/^Από 1 \p{L}+ \d{4} έως 3[01] \p{L}+ \d{4}$/u);
     expect(first?.announcementUrl).toMatch(/^https:\/\/www\.pkm\.gov\.gr\//);
-    expect(first?.scheduleText.length).toBeGreaterThan(0);
+    expect(first?.lines.length).toBeGreaterThan(0);
   });
 
   it('splits duties into upcoming (from today) and the last 14 days, newest recent first', () => {
@@ -136,11 +136,36 @@ describe('pharmacyPageProps', () => {
 
   it('emits valid Pharmacy JSON-LD without opening hours', () => {
     const page = pharmacyPageProps(model, 'el', id, ORIGIN);
-    const data = JSON.parse(page?.jsonLd ?? '') as Record<string, unknown>;
-    expect(data['@type']).toBe('Pharmacy');
-    expect(data['url']).toBe(`${ORIGIN}/farmakeio/${id}/`);
+    const [data, crumbs] = JSON.parse(page?.jsonLd ?? '') as Record<string, unknown>[];
+    expect(data?.['@type']).toBe('Pharmacy');
+    expect(data?.['url']).toBe(`${ORIGIN}/farmakeio/${id}/`);
+    expect(data?.['hasMap']).toMatch(/^https:\/\/www\.google\.com\/maps\//);
     expect(data).not.toHaveProperty('openingHoursSpecification');
-    expect(JSON.stringify(data)).not.toContain('<');
+    expect(crumbs?.['@type']).toBe('BreadcrumbList');
+    expect(page?.jsonLd).not.toContain('<');
+  });
+
+  it('writes an English page in Latin letters and keeps the Greek for the sign', () => {
+    const page = pharmacyPageProps(model, 'en', id, ORIGIN);
+    const greek = model.pharmacyById.get(id);
+    expect(page?.name).toMatch(/^[\p{Script=Latin}\d\s.&()-]+$/u);
+    expect(page?.address).not.toMatch(/\p{Script=Greek}/u);
+    expect(page?.nativeName).toBe(greek?.name);
+    expect(page?.nativeAddress).toBe(greek?.address);
+    expect(page?.meta.title).not.toMatch(/\p{Script=Greek}/u);
+    for (const line of page?.extendedHours.flatMap((e) => e.lines) ?? []) {
+      expect(line).not.toMatch(/\p{Script=Greek}/u);
+    }
+    expect(pharmacyPageProps(model, 'el', id, ORIGIN)?.nativeName).toBeNull();
+  });
+
+  it('lists its nearest pharmacies, linked and with their distance', () => {
+    const page = pharmacyPageProps(model, 'el', id, ORIGIN);
+    expect(page?.nearby).toHaveLength(4);
+    const [first] = page?.nearby ?? [];
+    expect(first?.id).not.toBe(id);
+    expect(first?.path).toBe(`/farmakeio/${first?.id}/`);
+    expect(first?.distanceText).toMatch(/\d (μ|χλμ)$/);
   });
 
   it('has a page for every pharmacy', () => {

@@ -107,6 +107,8 @@ interface HomeAppProps {
    * for the position, or choosing another city, still does.
    */
   readonly pageCity?: boolean;
+  /** A pharmacy's page linked here: this one is chosen on the map once the data is in. */
+  readonly initialPharmacy?: string | null;
   readonly locale: Locale;
   readonly text: Dictionary['app'];
   readonly title: string;
@@ -174,6 +176,7 @@ function chosenInstant(mode: TimeMode): Date | null {
 export default function HomeApp({
   initialCity,
   pageCity = false,
+  initialPharmacy = null,
   locale,
   text,
   title,
@@ -539,6 +542,17 @@ export default function HomeApp({
     },
     [wide, peek, sheetSize, clearSelection, focusOn],
   );
+
+  // Opened from a pharmacy's page: that pharmacy is the chosen one, open or closed.
+  const linkedPharmacy = useRef(initialPharmacy);
+  useEffect(() => {
+    const id = linkedPharmacy.current;
+    if (id === null || data === null) return;
+    linkedPharmacy.current = null;
+    if (!data.pharmacies.some((pharmacy) => pharmacy.id === id)) return;
+    setShowClosed(true);
+    onMapSelect(id);
+  }, [data, onMapSelect]);
 
   useLayoutEffect(() => {
     const pending = peekFocus.current;
