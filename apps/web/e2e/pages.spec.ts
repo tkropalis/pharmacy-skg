@@ -77,11 +77,16 @@ test('an English pharmacy page is readable without Greek and keeps the Greek for
   await expect(page.locator('.seo-native[lang="el"]').first()).toContainText('ΚΟΥΡΤΙΔΗΣ');
 });
 
-test('the map on a pharmacy page opens the big map on that pharmacy', async ({ page }) => {
+test('the map on a pharmacy page opens the big map on that pharmacy', async ({
+  page,
+  isMobile,
+}) => {
   await page.goto(pharmacyPath('el', PHARMACY_ID));
   await page.locator('.seo-map-link').click();
   await expect(page).toHaveURL(/\/$/);
-  await expect(page.locator('.peek')).toContainText('ΚΟΥΡΤΙΔΗΣ ΓΕΩΡΓΙΟΣ');
+  // A phone lowers the sheet to the pharmacy's card; a wide screen opens its row in the list.
+  const chosen = isMobile ? '.peek' : `#row-${PHARMACY_ID}[data-open]`;
+  await expect(page.locator(chosen)).toContainText('ΚΟΥΡΤΙΔΗΣ ΓΕΩΡΓΙΟΣ');
 });
 
 test('the duty-date page marks the fixed date as today', async ({ page }) => {
