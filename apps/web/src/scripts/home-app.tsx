@@ -27,6 +27,7 @@ if (root !== null) {
       initialCity={city}
       pageCity={pageCity !== undefined}
       initialPharmacy={pageCity === undefined ? null : (openedOn?.pharmacyId ?? null)}
+      initialArea={root.dataset.area ?? null}
       locale={locale}
       text={text}
       title={root.dataset.title ?? ''}

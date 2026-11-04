@@ -12,11 +12,13 @@ interface Props {
    * in the slot (that day's lists) stands in for it until it has loaded.
    */
   cityId?: string;
+  /** An area's page (AreaPage): the app starts from this locality of the city. */
+  area?: string;
   /** The app's heading, for screen readers; the home screen's by default. */
   title?: string;
 }
 
-const { locale, cityId, title } = Astro.props;
+const { locale, cityId, area, title } = Astro.props;
 const d = t(locale).home;
 const app = t(locale).app;
 // The home page carries nothing that depends on the date or on the data (a rebuild must not
@@ -38,6 +40,7 @@ const dutyHref = dutyIndexPath(locale);
   aria-label={app.regionLabel}
   data-locale={locale}
   data-city={cityId}
+  data-area={area}
   data-title={title ?? d.title}
   data-text={JSON.stringify(app)}
 >

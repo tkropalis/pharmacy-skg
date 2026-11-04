@@ -1,6 +1,7 @@
 import { LOCALES } from '@pharmacy-skg/core';
 import type { Locale } from '@pharmacy-skg/core';
 import { areaPath, dutyPath, pharmacyPath } from '../src/i18n/routes.ts';
+import { AREA_KEY } from '../src/lib/storage.ts';
 import { CITY_ID, AREA_SLUG, DUTY_DATE, PHARMACY_ID, SITE_URL } from './constants.ts';
 import { expect, test } from './support.ts';
 
@@ -87,6 +88,25 @@ test('the map on a pharmacy page opens the big map on that pharmacy', async ({
   // A phone lowers the sheet to the pharmacy's card; a wide screen opens its row in the list.
   const chosen = isMobile ? '.peek' : `#row-${PHARMACY_ID}[data-open]`;
   await expect(page.locator(chosen)).toContainText('ΚΟΥΡΤΙΔΗΣ ΓΕΩΡΓΙΟΣ');
+});
+
+test('an area page is the app, opened on that area', async ({ page }) => {
+  await page.goto(areaPath('el', CITY_ID, AREA_SLUG));
+  await expect(page.locator('.status-line')).toContainText('Κοντά σε: Καλαμαριά');
+  await expect(page.locator('.seo-page')).toHaveCount(0);
+  // Arriving from a search is not a choice: the person's own area stays as it was.
+  expect(await page.evaluate((key) => localStorage.getItem(key), AREA_KEY)).toBeNull();
+});
+
+test('an English area page names the area in English', async ({ page }) => {
+  await page.goto(areaPath('en', CITY_ID, AREA_SLUG));
+  await expect(page.locator('.status-line')).toContainText('Near: Kalamaria');
+});
+
+test('an area page keeps its lists for search engines', async ({ request }) => {
+  const html = await (await request.get(areaPath('el', CITY_ID, AREA_SLUG))).text();
+  expect(html).toContain('<h1>Φαρμακεία: Καλαμαριά</h1>');
+  expect(html).toMatch(/href="\/farmakeio\/\d+\/"/);
 });
 
 test('the duty-date page marks the fixed date as today', async ({ page }) => {

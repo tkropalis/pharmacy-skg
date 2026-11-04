@@ -2,10 +2,13 @@
 import type { Locale } from '@pharmacy-skg/core';
 import { SITE_URL } from '../../config.ts';
 import { t } from '../../i18n/index.ts';
+import Base from '../../layouts/Base.astro';
+import { cityDataUrl } from '../../lib/data.ts';
 import { breadcrumbJsonLd, jsonLdScript } from '../../lib/seo/jsonld.ts';
 import { loadSeoModel } from '../../lib/seo/site-data.ts';
 import { areaPageProps } from '../../lib/seo/views.ts';
-import SeoLayout from './SeoLayout.astro';
+import HomePage from '../pages/HomePage.astro';
+import '../../styles/seo.css';
 
 interface Props {
   locale: Locale;
@@ -23,86 +26,94 @@ const d = t(locale);
 const seo = d.seo.area;
 ---
 
-<SeoLayout
-  meta={page.meta}
-  jsonLd={jsonLdScript(breadcrumbJsonLd(page.breadcrumbs, origin))}
-  updated={{ at: page.updatedAt, text: page.updatedAtText }}
+<!--
+  An area's page ('/perioxi/kilkis/polykastro/'), where people arrive from a search: the app
+  itself, opened on this area as if it had been chosen, like a city's page for today
+  (DutyTodayPage). Until it has loaded (and for search engines and browsers without JavaScript)
+  the page is the area's published duties and its pharmacies.
+-->
+<Base
+  locale={locale}
+  route={null}
+  title={page.meta.title}
+  description={page.meta.description}
+  alternates={page.meta.alternates}
+  app
 >
-  <nav class="seo-breadcrumb" aria-label={d.seo.breadcrumbLabel}>
-    <ol>
-      <li>
-        <a href={page.indexPath}>{seo.allAreas}</a>
-      </li>
-      <li aria-current="page">{page.label}</li>
-    </ol>
-  </nav>
-
-  <h1>{page.h1}</h1>
-
-  <section aria-labelledby="open-heading">
-    <h2 id="open-heading">{seo.openNowHeading}</h2>
-    <!-- Worked out in the browser (scripts/seo/area-status.ts): the open pharmacies by name. -->
-    <div
-      class="seo-status"
-      role="status"
-      aria-live="polite"
-      data-area-status
-      data-city={model.cityId}
-    >
-      <p>{seo.openNowNoScript}</p>
-    </div>
-  </section>
-
-  <section aria-labelledby="duty-heading">
-    <h2 id="duty-heading">{seo.dutyHeading}</h2>
-    {page.dutyDays.length === 0 ? (
-      <p>{seo.dutyNone}</p>
-    ) : (
-      <ul class="seo-list">
-        {page.dutyDays.map((day) => (
-          <li data-duty-date={day.date} data-today-label={d.seo.todayBadge}>
-            <span class="name">
-              <a href={day.pagePath}>{day.dateLabel}</a>
-            </span>
-            {day.items.map((item) => (
-              <span class="sub">
-                {item.pharmacyPath !== null ? (
-                  <a href={item.pharmacyPath}>{item.pharmacyName}</a>
-                ) : (
-                  item.pharmacyName
-                )}
-                {' · '}
-                {item.kindLabel}
-              </span>
-            ))}
+  <script
+    slot="head"
+    type="application/ld+json"
+    is:inline
+    set:html={jsonLdScript(breadcrumbJsonLd(page.breadcrumbs, origin))}
+  />
+  {['meta.json', 'pharmacies.json'].map((file) => (
+    <link
+      slot="head"
+      rel="preload"
+      as="fetch"
+      href={cityDataUrl(cityId, file)}
+      crossorigin="anonymous"
+    />
+  ))}
+  <HomePage locale={locale} cityId={cityId} area={page.locality} title={page.h1}>
+    <div class="container seo-page">
+      <nav class="seo-breadcrumb" aria-label={d.seo.breadcrumbLabel}>
+        <ol>
+          <li>
+            <a href={page.indexPath}>{seo.allAreas}</a>
           </li>
-        ))}
-      </ul>
-    )}
-  </section>
+          <li aria-current="page">{page.label}</li>
+        </ol>
+      </nav>
 
-  <section aria-labelledby="list-heading">
-    <h2 id="list-heading">{seo.listHeading}</h2>
-    <ul class="seo-list">
-      {page.pharmacies.map((pharmacy) => (
-        <li data-pharmacy-id={pharmacy.id}>
-          <span class="name">
-            <a href={pharmacy.path}>{pharmacy.name}</a>
-          </span>
-          <span class="sub">{pharmacy.address}</span>
-          {pharmacy.phoneHref !== null && (
-            <span class="sub">
-              <a href={pharmacy.phoneHref}>{pharmacy.phone}</a>
-            </span>
-          )}
-          <span class="sub state" data-state></span>
-        </li>
-      ))}
-    </ul>
-  </section>
-</SeoLayout>
+      <h1>{page.h1}</h1>
 
-<script>
-  import '../../scripts/seo/area-status.ts';
-  import '../../scripts/seo/today.ts';
-</script>
+      <section aria-labelledby="duty-heading">
+        <h2 id="duty-heading">{seo.dutyHeading}</h2>
+        {page.dutyDays.length === 0 ? (
+          <p>{seo.dutyNone}</p>
+        ) : (
+          <ul class="seo-list">
+            {page.dutyDays.map((day) => (
+              <li>
+                <span class="name">
+                  <a href={day.pagePath}>{day.dateLabel}</a>
+                </span>
+                {day.items.map((item) => (
+                  <span class="sub">
+                    {item.pharmacyPath !== null ? (
+                      <a href={item.pharmacyPath}>{item.pharmacyName}</a>
+                    ) : (
+                      item.pharmacyName
+                    )}
+                    {' · '}
+                    {item.kindLabel}
+                  </span>
+                ))}
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+
+      <section aria-labelledby="list-heading">
+        <h2 id="list-heading">{seo.listHeading}</h2>
+        <ul class="seo-list">
+          {page.pharmacies.map((pharmacy) => (
+            <li>
+              <span class="name">
+                <a href={pharmacy.path}>{pharmacy.name}</a>
+              </span>
+              <span class="sub">{pharmacy.address}</span>
+              {pharmacy.phoneHref !== null && (
+                <span class="sub">
+                  <a href={pharmacy.phoneHref}>{pharmacy.phone}</a>
+                </span>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
+  </HomePage>
+</Base>

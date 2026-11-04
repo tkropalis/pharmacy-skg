@@ -589,8 +589,6 @@ export interface AreaPageProps {
   readonly pharmacies: readonly AreaPharmacyView[];
   readonly dutyDays: readonly AreaDutyDayView[];
   readonly indexPath: string;
-  readonly updatedAt: string;
-  readonly updatedAtText: string;
 }
 
 function countText(count: number, locale: Locale): string {
@@ -663,8 +661,6 @@ export function areaPageProps(model: SeoModel, locale: Locale, slug: string): Ar
     })),
     dutyDays,
     indexPath: areaIndexPath(locale),
-    updatedAt: model.updatedAt,
-    updatedAtText: formatUpdatedAt(model.updatedAt, locale),
   };
 }
 
