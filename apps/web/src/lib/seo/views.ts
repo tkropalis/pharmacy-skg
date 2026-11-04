@@ -22,12 +22,17 @@ import {
   formatLongDate,
   formatShortDate,
   regularHoursView,
+  scheduleLines,
   windowText,
 } from './format.ts';
 import type { RegularHoursView } from './format.ts';
+import { pharmacyMapUrl } from '../deep-link.ts';
 import { formatPhone } from '../format.ts';
 import { groupDisplayName } from '../groups.ts';
-import { jsonLdScript, pharmacyJsonLd, telHref } from './jsonld.ts';
+import { displayName } from '../names.ts';
+import { breadcrumbJsonLd, jsonLdScript, pharmacyJsonLd, telHref } from './jsonld.ts';
+import { latinOrGreek, nearbyView, nearestPharmacies } from './nearby.ts';
+import type { NearbyView } from './nearby.ts';
 import { RECENT_DUTY_DAYS } from './model.ts';
 import type { AreaInfo, DutyListing, SeoModel } from './model.ts';
 import { romanize, romanizeLocality } from './translit.ts';
@@ -124,14 +129,30 @@ export interface PharmacyDutyView {
 
 export interface ExtendedHoursView {
   readonly periodText: string;
-  readonly scheduleText: string;
+  /** In the page's language, one line per set of days. */
+  readonly lines: readonly string[];
   readonly announcementUrl: string;
+}
+
+/** The pharmacy's place on the map, or null when it has none. */
+export interface PharmacyMapView {
+  readonly lat: number;
+  readonly lon: number;
+  /** Only the locality is known: the marker is dashed and the page says so. */
+  readonly approximate: boolean;
 }
 
 export interface PharmacyPageProps {
   readonly meta: PageMeta;
   readonly id: string;
+  readonly cityId: string;
+  /** The heading: the registered name, or in Latin letters on an English page. */
   readonly name: string;
+  /** The name to use in labels, without its legal form, in the page's alphabet. */
+  readonly shortName: string;
+  /** English pages keep the Greek name and address: they are what is on the sign. */
+  readonly nativeName: string | null;
+  readonly nativeAddress: string | null;
   readonly address: string;
   readonly locality: string;
   readonly postcode: string | null;
@@ -141,6 +162,14 @@ export interface PharmacyPageProps {
   readonly localityLabel: string;
   readonly areaPagePath: string | null;
   readonly directionsUrl: string;
+  readonly map: PharmacyMapView | null;
+  /** The home screen with this pharmacy chosen on the big map. */
+  readonly mapPath: string;
+  /** The nearest pharmacies; the browser puts the ones open now in their place. */
+  readonly nearby: readonly NearbyView[];
+  readonly cityDutyPath: string;
+  readonly cityLabel: string;
+  readonly breadcrumbs: readonly Crumb[];
   /** Null where the city's regular hours are not known (decision D26): call for the hours. */
   readonly regularHours: RegularHoursView | null;
   readonly regularClosedText: string | null;
@@ -208,7 +237,7 @@ export function pharmacyPageProps(
         from: formatDate(file.period.from, locale),
         to: formatDate(file.period.to, locale),
       }),
-      scheduleText: entry.scheduleText,
+      lines: scheduleLines(entry.schedule, locale, seo),
       announcementUrl: file.announcementUrl,
     });
   }
@@ -218,24 +247,34 @@ export function pharmacyPageProps(
     : null;
   const area = model.areaByLocality.get(pharmacy.locality);
   const url = new URL(path(locale), siteOrigin).href;
+  const latin = locale === 'en';
+  const name = latin ? latinOrGreek(displayName(pharmacy.name), locale) : pharmacy.name;
+  const address = latinOrGreek(pharmacy.address, locale);
+  const localityLabel = areaLabel(pharmacy.locality, locale);
+  const city = cityName(model.cityId, locale);
+  const directions = directionsUrl(pharmacy);
+  const location = pharmacy.location;
+  const areaCrumbPath = area === undefined ? null : areaPath(locale, model.cityId, area.slug);
+  const breadcrumbs: Crumb[] = [
+    { name: seo.area.allAreas, path: areaIndexPath(locale) },
+    ...(areaCrumbPath === null ? [] : [{ name: localityLabel, path: areaCrumbPath }]),
+    { name, path: path(locale) },
+  ];
 
   return {
     meta: meta(
       locale,
-      fill(seo.pharmacy.title, {
-        name: pharmacy.name,
-        locality: areaLabel(pharmacy.locality, locale),
-      }),
-      fill(seo.pharmacy.description, {
-        name: pharmacy.name,
-        address: pharmacy.address,
-        locality: areaLabel(pharmacy.locality, locale),
-      }),
+      fill(seo.pharmacy.title, { name, locality: localityLabel }),
+      fill(seo.pharmacy.description, { name, address, locality: localityLabel }),
       path,
     ),
     id,
-    name: pharmacy.name,
-    address: pharmacy.address,
+    cityId: model.cityId,
+    name,
+    shortName: latinOrGreek(displayName(pharmacy.name), locale),
+    nativeName: latin ? pharmacy.name : null,
+    nativeAddress: latin ? pharmacy.address : null,
+    address,
     locality: pharmacy.locality,
     postcode: pharmacy.postcode,
     callText:
@@ -243,9 +282,24 @@ export function pharmacyPageProps(
         ? null
         : fill(seo.pharmacy.call, { phone: formatPhone(pharmacy.phone) }),
     phoneHref: telHref(pharmacy.phone),
-    localityLabel: areaLabel(pharmacy.locality, locale),
-    areaPagePath: area === undefined ? null : areaPath(locale, model.cityId, area.slug),
-    directionsUrl: directionsUrl(pharmacy),
+    localityLabel,
+    areaPagePath: areaCrumbPath,
+    directionsUrl: directions,
+    map:
+      location === null
+        ? null
+        : {
+            lat: location.lat,
+            lon: location.lon,
+            approximate: location.precision === 'locality',
+          },
+    mapPath: pharmacyMapUrl(locale, model.cityId, id),
+    nearby: nearestPharmacies(model.pharmacies, pharmacy).map((near) =>
+      nearbyView(near.pharmacy, near.distance, locale, city, d.app.row),
+    ),
+    cityDutyPath: dutyCityPath(locale, model.cityId),
+    cityLabel: city,
+    breadcrumbs,
     regularHours,
     regularClosedText:
       regularHours === null || regularHours.closedDays === ''
@@ -257,7 +311,13 @@ export function pharmacyPageProps(
     reportPath: `${localizedPath(locale, 'report')}?pharmacy=${encodeURIComponent(id)}`,
     updatedAt: model.updatedAt,
     updatedAtText: formatUpdatedAt(model.updatedAt, locale),
-    jsonLd: jsonLdScript(pharmacyJsonLd(pharmacy, url)),
+    jsonLd: jsonLdScript([
+      pharmacyJsonLd(pharmacy, url, {
+        mapUrl: directions,
+        alternateName: latin ? name : undefined,
+      }),
+      breadcrumbJsonLd(breadcrumbs, siteOrigin),
+    ]),
   };
 }
 

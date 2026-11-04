@@ -57,6 +57,38 @@ test('the pharmacy page works out its status in the browser from the fixed clock
   await expect(page.locator('[data-pharmacy-status]')).toContainText(/Εφημερεύει|Κλειστό τώρα/);
 });
 
+test('the pharmacy page answers what to do when it is closed', async ({ page }) => {
+  await page.goto(pharmacyPath('el', PHARMACY_ID));
+  // Neighbours are in the page itself; the ones open now take their place.
+  await expect(page.locator('[data-near-heading]')).toHaveText('Ανοιχτά τώρα κοντά');
+  await expect(page.locator('[data-near-list] > li')).toHaveCount(4);
+  await expect(page.locator('[data-near-list] > li').first()).toContainText(/Εφημερεύει/);
+  // The coming days replace the general hours, today first.
+  await expect(page.locator('[data-week] > li')).toHaveCount(7);
+  await expect(page.locator('[data-week] > li').first()).toContainText('Σήμερα');
+  await expect(page.locator('[data-hours-static]')).toBeHidden();
+});
+
+test('an English pharmacy page is readable without Greek and keeps the Greek for the sign', async ({
+  page,
+}) => {
+  await page.goto(pharmacyPath('en', PHARMACY_ID));
+  await expect(page.locator('h1')).toHaveText('Kourtidis Georgios');
+  await expect(page.locator('.seo-native[lang="el"]').first()).toContainText('ΚΟΥΡΤΙΔΗΣ');
+});
+
+test('the map on a pharmacy page opens the big map on that pharmacy', async ({
+  page,
+  isMobile,
+}) => {
+  await page.goto(pharmacyPath('el', PHARMACY_ID));
+  await page.locator('.seo-map-link').click();
+  await expect(page).toHaveURL(/\/$/);
+  // A phone lowers the sheet to the pharmacy's card; a wide screen opens its row in the list.
+  const chosen = isMobile ? '.peek' : `#row-${PHARMACY_ID}[data-open]`;
+  await expect(page.locator(chosen)).toContainText('ΚΟΥΡΤΙΔΗΣ ΓΕΩΡΓΙΟΣ');
+});
+
 test('the duty-date page marks the fixed date as today', async ({ page }) => {
   await page.goto(dutyPath('en', CITY_ID, DUTY_DATE));
   await expect(page.locator('h1')).toContainText(/today/i);

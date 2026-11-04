@@ -195,22 +195,23 @@ describe('websiteJsonLd', () => {
 describe('pharmacyJsonLd', () => {
   const base = model.pharmacies[0];
   if (base === undefined) throw new Error('no pharmacies');
+  const extra = { mapUrl: 'https://maps.test/' };
 
   it('adds coordinates only for exact or street precision', () => {
     const at = (precision: 'exact' | 'street' | 'locality') => ({
       ...base,
       location: { lat: 40.6, lon: 22.9, source: 'override' as const, precision },
     });
-    expect(pharmacyJsonLd(at('exact'), 'https://x.test/p/')).toHaveProperty('geo');
-    expect(pharmacyJsonLd(at('street'), 'https://x.test/p/')).toHaveProperty('geo');
-    expect(pharmacyJsonLd(at('locality'), 'https://x.test/p/')).not.toHaveProperty('geo');
-    expect(pharmacyJsonLd({ ...base, location: null }, 'https://x.test/p/')).not.toHaveProperty(
-      'geo',
-    );
+    expect(pharmacyJsonLd(at('exact'), 'https://x.test/p/', extra)).toHaveProperty('geo');
+    expect(pharmacyJsonLd(at('street'), 'https://x.test/p/', extra)).toHaveProperty('geo');
+    expect(pharmacyJsonLd(at('locality'), 'https://x.test/p/', extra)).not.toHaveProperty('geo');
+    expect(
+      pharmacyJsonLd({ ...base, location: null }, 'https://x.test/p/', extra),
+    ).not.toHaveProperty('geo');
   });
 
   it('never emits opening hours', () => {
-    expect(pharmacyJsonLd(base, 'https://x.test/p/')).not.toHaveProperty(
+    expect(pharmacyJsonLd(base, 'https://x.test/p/', extra)).not.toHaveProperty(
       'openingHoursSpecification',
     );
   });

@@ -1,4 +1,11 @@
-import type { ExtraHours, IsoDate, Locale, TimeRange, TimeWindow } from '@pharmacy-skg/core';
+import type {
+  ExtraHours,
+  IsoDate,
+  Locale,
+  Schedule,
+  TimeRange,
+  TimeWindow,
+} from '@pharmacy-skg/core';
 import { addDays, isoWeekday, regularRanges } from '@pharmacy-skg/core';
 import type { Dictionary } from '../../i18n/index.ts';
 
@@ -124,4 +131,26 @@ export function regularHoursView(
   const closedDays = weekdaysText(closed, seo);
   const line = groups.map((g) => `${g.days} ${g.times}`).join(' · ');
   return { groups, closedDays, text: `${seo.pharmacy.regularLabel}: ${line}` };
+}
+
+/**
+ * An extended-hours schedule as lines in the page's language, from its structured form: the
+ * printed text is Greek, whatever the page's language. Weekdays with the same hours share a line.
+ */
+export function scheduleLines(schedule: Schedule, locale: Locale, seo: SeoStrings): string[] {
+  if (schedule.type === 'dates') {
+    return Object.entries(schedule.dates)
+      .sort(([a], [b]) => (a < b ? -1 : 1))
+      .filter(([, ranges]) => ranges.length > 0)
+      .map(([date, ranges]) => `${formatShortDate(date, locale)} ${rangesText(ranges)}`);
+  }
+  const byTimes = new Map<string, number[]>();
+  for (const [day, ranges] of Object.entries(schedule.days)) {
+    if (ranges.length === 0) continue;
+    const key = rangesText(ranges);
+    byTimes.set(key, [...(byTimes.get(key) ?? []), Number(day)]);
+  }
+  return [...byTimes.entries()]
+    .sort(([, a], [, b]) => Math.min(...a) - Math.min(...b))
+    .map(([times, days]) => `${weekdaysText(days, seo)} ${times}`);
 }

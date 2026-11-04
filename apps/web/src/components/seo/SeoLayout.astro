@@ -31,6 +31,7 @@ const d = t(locale);
   {jsonLd !== undefined && (
     <script slot="head" type="application/ld+json" is:inline set:html={jsonLd} />
   )}
+  <slot name="hero" />
   <div class="container seo-page">
     <slot />
     {updated !== undefined && (

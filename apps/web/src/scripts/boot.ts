@@ -1,4 +1,5 @@
 import { loadMeta } from '../lib/data.ts';
+import { clearPharmacyLink } from '../lib/deep-link.ts';
 import { homeCity } from '../lib/home-city.ts';
 import { markConnection, onConnectionChange } from '../lib/connection.ts';
 import { checkedAt, formatUpdatedAt, isStale } from '../lib/freshness.ts';
@@ -106,5 +107,6 @@ function rememberLanguageChoice(): void {
 rememberLanguageChoice();
 setupMedicineSearch();
 clearShortcut();
+clearPharmacyLink();
 registerServiceWorker();
 keepOfflineDataWarm();
