@@ -7,29 +7,9 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-11-04T12:22:43.273Z"
+        "uploadedAt": "2026-11-04T21:59:36.163Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 20:30",
-          "hours": {
-            "from": "08:00",
-            "to": "20:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721086622",
-              "name": "ΑΓΓΕΛΟΠΟΥΛΟΣ Ε. ΑΛΕΞΑΝΔΡΟΣ Ο.Ε.",
-              "address": "ΠΟΛΥΧΑΡΟΥΣ 4",
-              "locality": "Καλαμάτα",
-              "phone": "2721086622"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
@@ -122,6 +102,26 @@
           ]
         },
         {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721095521",
+              "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Κ. ΣΤΑΥΡΟΥΛΑ",
+              "address": "ΦΑΡΩΝ 186",
+              "locality": "Καλαμάτα",
+              "phone": "2721095521"
+            }
+          ]
+        },
+        {
           "kind": "on-duty",
           "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
@@ -157,21 +157,21 @@
         },
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "heading": "08:00 ΕΩΣ 20:30",
           "hours": {
             "from": "08:00",
-            "to": "14:00",
+            "to": "20:30",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2721095521",
-              "name": "ΑΝΑΣΤΑΣΟΠΟΥΛΟΥ Κ. ΣΤΑΥΡΟΥΛΑ",
-              "address": "ΦΑΡΩΝ 186",
+              "pharmacyId": "2721086622",
+              "name": "ΑΓΓΕΛΟΠΟΥΛΟΣ Ε. ΑΛΕΞΑΝΔΡΟΣ Ο.Ε.",
+              "address": "ΠΟΛΥΧΑΡΟΥΣ 4",
               "locality": "Καλαμάτα",
-              "phone": "2721095521"
+              "phone": "2721086622"
             }
           ]
         }

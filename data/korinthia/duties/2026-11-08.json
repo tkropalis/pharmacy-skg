@@ -7,88 +7,67 @@
       "name": "Κορινθία",
       "source": {
         "url": "https://korinthia.efhmeries.gr/",
-        "uploadedAt": "2026-11-04T12:21:20.249Z"
+        "uploadedAt": "2026-11-04T21:59:11.253Z"
       },
       "sections": [
         {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
+          "kind": "overnight",
+          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
           "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741042109",
-              "name": "ΚΟΡΚΑΡΗΣ ΝΙΚΟΛΑΟΣ",
-              "address": "ΠΑΤΡΩΝ 83",
-              "locality": "Κόρινθος",
-              "phone": "2741042109"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 22:00 (ΠΡΟΑΙΡΕΤΙΚΗ ΜΕΣΗΜΒΡΙΝΗ ΔΙΑΚΟΠΗ)",
-          "hours": {
-            "from": "08:00",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741033604",
-              "name": "ΓΚΕΛΗ ΜΑΡΙΑ & ΣΙΑ Ο.Ε.",
-              "address": "ΛΟΥΤΡΑ ΩΡ.ΕΛΕΝΗΣ",
-              "locality": "Λουτρά Ωραίας Ελένης",
-              "phone": "2741033604"
-            },
-            {
-              "pharmacyId": "2741053700",
-              "name": "ΚΑΛΠΑΞΗΣ ΑΝΔΡΕΑΣ",
-              "address": "ΒΡΑΧΑΤΙ",
-              "locality": "Βραχάτι",
-              "phone": "2741053700"
-            },
-            {
-              "pharmacyId": "2742033488",
-              "name": "ΚΑΡΑΜΑΝΕΑΣ ΕΥΣΤΡΑΤΙΟΣ",
-              "address": "ΒΕΛΟ",
-              "locality": "Βέλο",
-              "phone": "2742033488"
-            },
-            {
-              "pharmacyId": "2741775315",
-              "name": "ΠΑΠΑΔΗΜΗΤΡΙΟΥ ΟΛΥΜΠΙΑ-ΜΑΡΙΑ",
-              "address": "ΕΟ ΙΣΘΜΟΥ ΑΡΧΑΙΑΣ ΕΠΙΔΑΥΡΟΥ",
-              "locality": "Ίσθμια",
-              "phone": "2741775315"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 22:00*",
-          "hours": {
-            "from": "08:00",
-            "to": "22:00",
-            "toNextDay": false
+            "from": "22:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "onCall": true,
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2741062647",
-              "name": "ΚΟΝΤΟΥΛΗΣ ΙΩΑΝΝΗΣ και ΣΙΑ ΟΕ",
-              "address": "ΑΓ. ΘΕΟΔΩΡΟΙ",
-              "locality": "Άγιοι Θεόδωροι",
-              "phone": "2741062647"
+              "pharmacyId": "2741053700",
+              "name": "ΚΑΛΠΑΞΗΣ ΑΝΔΡΕΑΣ",
+              "address": "ΒΡΑΧΑΤΙ",
+              "locality": "Βραχάτι",
+              "phone": "2741053700"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741027965",
+              "name": "ΔΕΔΕ ΣΩΤΗΡΙΟΥ &ΣΙΑ ΟΕ",
+              "address": "ΚΟΛΟΚΟΤΡΩΝΗ 24",
+              "locality": "Κόρινθος",
+              "phone": "2741027965"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741027965",
+              "name": "ΔΕΔΕ ΣΩΤΗΡΙΟΥ &ΣΙΑ ΟΕ",
+              "address": "ΚΟΛΟΚΟΤΡΩΝΗ 24",
+              "locality": "Κόρινθος",
+              "phone": "2741027965"
             }
           ]
         },
@@ -163,21 +142,21 @@
         },
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 20:30 (ΠΡΟΑΙΡΕΤΙΚΗ ΜΕΣΗΜΒΡΙΝΗ ΔΙΑΚΟΠΗ)",
+          "heading": "08:00 ΕΩΣ 21:00",
           "hours": {
             "from": "08:00",
-            "to": "20:30",
+            "to": "21:00",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2741088100",
-              "name": "ΦΑΡΜΑΚΕΙΟ ΧΡΙΣΤΙΝΑΣ ΚΟΡΚΑ ΚΑΙ ΣΙΑ Ο.Ε.",
-              "address": "ΑΣΣΟΣ",
-              "locality": "Άσσος",
-              "phone": "2741088100"
+              "pharmacyId": "2741042109",
+              "name": "ΚΟΡΚΑΡΗΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΠΑΤΡΩΝ 83",
+              "locality": "Κόρινθος",
+              "phone": "2741042109"
             }
           ]
         },
@@ -216,63 +195,64 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "22:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
-          "hours": {
-            "from": "22:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741053700",
-              "name": "ΚΑΛΠΑΞΗΣ ΑΝΔΡΕΑΣ",
-              "address": "ΒΡΑΧΑΤΙ",
-              "locality": "Βραχάτι",
-              "phone": "2741053700"
-            }
-          ]
-        },
-        {
           "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "heading": "08:00 ΕΩΣ 22:00 (ΠΡΟΑΙΡΕΤΙΚΗ ΜΕΣΗΜΒΡΙΝΗ ΔΙΑΚΟΠΗ)",
           "hours": {
             "from": "08:00",
-            "to": "14:00",
+            "to": "22:00",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2741027965",
-              "name": "ΔΕΔΕ ΣΩΤΗΡΙΟΥ &ΣΙΑ ΟΕ",
-              "address": "ΚΟΛΟΚΟΤΡΩΝΗ 24",
-              "locality": "Κόρινθος",
-              "phone": "2741027965"
+              "pharmacyId": "2741033604",
+              "name": "ΓΚΕΛΗ ΜΑΡΙΑ & ΣΙΑ Ο.Ε.",
+              "address": "ΛΟΥΤΡΑ ΩΡ.ΕΛΕΝΗΣ",
+              "locality": "Λουτρά Ωραίας Ελένης",
+              "phone": "2741033604"
+            },
+            {
+              "pharmacyId": "2741053700",
+              "name": "ΚΑΛΠΑΞΗΣ ΑΝΔΡΕΑΣ",
+              "address": "ΒΡΑΧΑΤΙ",
+              "locality": "Βραχάτι",
+              "phone": "2741053700"
+            },
+            {
+              "pharmacyId": "2742033488",
+              "name": "ΚΑΡΑΜΑΝΕΑΣ ΕΥΣΤΡΑΤΙΟΣ",
+              "address": "ΒΕΛΟ",
+              "locality": "Βέλο",
+              "phone": "2742033488"
+            },
+            {
+              "pharmacyId": "2741775315",
+              "name": "ΠΑΠΑΔΗΜΗΤΡΙΟΥ ΟΛΥΜΠΙΑ-ΜΑΡΙΑ",
+              "address": "ΕΟ ΙΣΘΜΟΥ ΑΡΧΑΙΑΣ ΕΠΙΔΑΥΡΟΥ",
+              "locality": "Ίσθμια",
+              "phone": "2741775315"
             }
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 22:00*",
           "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "08:00",
+            "to": "22:00",
+            "toNextDay": false
           },
+          "onCall": true,
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2741027965",
-              "name": "ΔΕΔΕ ΣΩΤΗΡΙΟΥ &ΣΙΑ ΟΕ",
-              "address": "ΚΟΛΟΚΟΤΡΩΝΗ 24",
-              "locality": "Κόρινθος",
-              "phone": "2741027965"
+              "pharmacyId": "2741062647",
+              "name": "ΚΟΝΤΟΥΛΗΣ ΙΩΑΝΝΗΣ και ΣΙΑ ΟΕ",
+              "address": "ΑΓ. ΘΕΟΔΩΡΟΙ",
+              "locality": "Άγιοι Θεόδωροι",
+              "phone": "2741062647"
             }
           ]
         },
@@ -293,6 +273,26 @@
               "address": "ΑΡΧΑΙΑ ΚΟΡΙΝΘΟΣ (4Ομ ΑΠΟ ΤΟ ΚΕΝΤΡΟ)",
               "locality": "Αρχαία Κόρινθος",
               "phone": "2741031655"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 20:30 (ΠΡΟΑΙΡΕΤΙΚΗ ΜΕΣΗΜΒΡΙΝΗ ΔΙΑΚΟΠΗ)",
+          "hours": {
+            "from": "08:00",
+            "to": "20:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741088100",
+              "name": "ΦΑΡΜΑΚΕΙΟ ΧΡΙΣΤΙΝΑΣ ΚΟΡΚΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+              "address": "ΑΣΣΟΣ",
+              "locality": "Άσσος",
+              "phone": "2741088100"
             }
           ]
         }

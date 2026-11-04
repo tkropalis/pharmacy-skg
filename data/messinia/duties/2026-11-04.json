@@ -7,7 +7,7 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-11-04T12:22:43.273Z"
+        "uploadedAt": "2026-11-04T21:59:36.163Z"
       },
       "sections": [
         {
@@ -137,26 +137,6 @@
         },
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 20:30",
-          "hours": {
-            "from": "08:00",
-            "to": "20:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721064550",
-              "name": "Σ.Φ. ΣΤΑΥΡΟΠΟΥΛΟΣ ΣΤ. - ΜΟΥΤΕΒΕΛΗΣ ΚΩΝ. Ο.Ε.",
-              "address": "ΑΓΙΑ ΣΙΩΝ ΒΕΡΓΑΣ",
-              "locality": "Καλαμάτα",
-              "phone": "2721064550"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
             "from": "08:00",
@@ -172,6 +152,26 @@
               "address": "ΠΑΥΣΑΝΙΟΥ 4",
               "locality": "Καλαμάτα",
               "phone": "2721022223"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 20:30",
+          "hours": {
+            "from": "08:00",
+            "to": "20:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721064550",
+              "name": "Σ.Φ. ΣΤΑΥΡΟΠΟΥΛΟΣ ΣΤ. - ΜΟΥΤΕΒΕΛΗΣ ΚΩΝ. Ο.Ε.",
+              "address": "ΑΓΙΑ ΣΙΩΝ ΒΕΡΓΑΣ",
+              "locality": "Καλαμάτα",
+              "phone": "2721064550"
             }
           ]
         }
