@@ -107,6 +107,27 @@
       }
     },
     {
+      "id": "2221021853",
+      "name": "ΚΙΑΠΕΚΟΥ ΚΥΡΙΑΚΗ",
+      "address": "ΑΜΦΙΔΑΜΑΝΤΟΣ 70 & ΑΘ.ΔΙΑΚΟΥ-ΠΛΑΤΕΙΑ ΚΑΝΗΘΟΥ",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221021853",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 38.4703271,
+        "lon": 23.586014,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9339",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2221022120",
       "name": "ΚΥΛΕΡΤΖΗΣ ΧΡΗΣΤΟΣ",
       "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
@@ -223,7 +244,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 38.462983,
         "lon": 23.593651,
@@ -328,7 +349,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 38.468614,
         "lon": 23.600894,
@@ -538,7 +559,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 38.5127647,
         "lon": 23.6373757,
@@ -1231,7 +1252,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 38.0143048,
         "lon": 24.4198213,
@@ -1378,7 +1399,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 38.956778,
         "lon": 23.152573,
@@ -1504,7 +1525,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 38.3946605,
         "lon": 23.7919147,

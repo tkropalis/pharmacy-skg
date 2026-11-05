@@ -244,7 +244,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 37.513319,
         "lon": 22.3733156,
@@ -454,7 +454,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 37.5111574,
         "lon": 22.3705772,
@@ -496,7 +496,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 37.5114741,
         "lon": 22.3722054,
@@ -569,27 +569,6 @@
       }
     },
     {
-      "id": "2710242349",
-      "name": "ΑΘΑΝΑΣΙΑΔΟΥ Ε. ΑΝΑΣΤΑΣΙΑ",
-      "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 97",
-      "locality": "Τρίπολη",
-      "postcode": null,
-      "phone": "2710242349",
-      "groupId": "arkadia",
-      "sources": [
-        "iteq-arkadia"
-      ],
-      "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-07",
-      "location": {
-        "lat": 37.5162565,
-        "lon": 22.3722188,
-        "ref": "https://arkadia.efhmeries.gr/Home/Details/5062",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2755022112",
       "name": "ΓΑΪΤΑΝΗΣ ΑΝΔΡΕΑΣ",
       "address": "ΑΣΤΡΟΣ",
@@ -622,7 +601,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 37.4040532,
         "lon": 22.7231501,
@@ -664,7 +643,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 37.1674292,
         "lon": 22.858743,
@@ -727,7 +706,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 37.4017572,
         "lon": 22.1361722,
@@ -811,7 +790,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 37.6845416,
         "lon": 22.2955302,
@@ -874,7 +853,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 37.7322838,
         "lon": 21.9594427,

@@ -191,6 +191,27 @@
       }
     },
     {
+      "id": "2810220777",
+      "name": "ΚΑΒΟΥΣΑΝΟΥ Ε. ΑΡΤΕΜΙΣ Ε.Ε.",
+      "address": "ΑΓΙΟΥ MHNA 9 ΔΙΠΛΑ ΣΤΟ IKA ΑΓ. MHNA",
+      "locality": "Ηράκλειο",
+      "postcode": null,
+      "phone": "2810220777",
+      "groupId": "herakleion",
+      "sources": [
+        "iteq-herakleion"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 35.3380661,
+        "lon": 25.1299376,
+        "ref": "https://herakleion.efhmeries.gr/Home/Details/58113",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2810221084",
       "name": "ΑΓΓΕΛΙΔΑΚΗ ΜΑΡΙΑ-ΝΑΤΑΛΙΑ",
       "address": "ΑΓ. MHNA 40 ENANTI ΑΓΙΟΥ MHNA",
@@ -412,7 +433,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.3375999,
         "lon": 25.1328422,
@@ -853,7 +874,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.3250304,
         "lon": 25.1360402,
@@ -916,7 +937,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.330256,
         "lon": 25.1365563,
@@ -1021,7 +1042,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.3366806,
         "lon": 25.1475977,
@@ -1126,7 +1147,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.3344566,
         "lon": 25.1180665,
@@ -1189,7 +1210,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.3381446,
         "lon": 25.1209329,
@@ -1231,7 +1252,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.3299207,
         "lon": 25.1223774,
@@ -3079,7 +3100,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.3306826,
         "lon": 25.2563374,
@@ -3247,7 +3268,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.316295,
         "lon": 25.09264,
@@ -4150,7 +4171,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.3179965,
         "lon": 25.3895652,
@@ -4171,7 +4192,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.3153174,
         "lon": 25.3937298,
@@ -4276,7 +4297,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.331734,
         "lon": 25.3452693,
@@ -4339,7 +4360,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.2837755,
         "lon": 25.4631057,
@@ -4423,7 +4444,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.2926533,
         "lon": 25.4320195,
@@ -4570,7 +4591,7 @@
         "iteq-herakleion"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.147913,
         "lon": 25.2653693,

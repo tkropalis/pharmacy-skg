@@ -7,70 +7,9 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-11-04T22:00:31.917Z"
+        "uploadedAt": "2026-11-05T12:35:00.383Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
-          "hours": {
-            "from": "08:30",
-            "to": "14:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2821097711",
-              "name": "ΑΔΙΚΗΜΕΝΑΚΗ ΜΑΡΙΛΕΝΑ & ΣΙΑ/ΑDΙΚΙΜΕΝΑΚΙ MARILENA & SIA",
-              "address": "ΚΥΔΩΝΙΑΣ 50/KIDONIAS 50",
-              "locality": "Χανιά",
-              "phone": "2821097711"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:30",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2821097711",
-              "name": "ΑΔΙΚΗΜΕΝΑΚΗ ΜΑΡΙΛΕΝΑ & ΣΙΑ/ΑDΙΚΙΜΕΝΑΚΙ MARILENA & SIA",
-              "address": "ΚΥΔΩΝΙΑΣ 50/KIDONIAS 50",
-              "locality": "Χανιά",
-              "phone": "2821097711"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
-          "hours": {
-            "from": "08:15",
-            "to": "08:15",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "6948462411",
-              "name": "ΔΑΜΟΡΑΚΗΣ ΕΥΤΥΧΗΣ/DΑΜΟRΑΚΙS EYTIXIS",
-              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
-              "locality": "Δήμος Καντάνου-Σελίνου",
-              "phone": "6948462411"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
@@ -113,6 +52,27 @@
           ]
         },
         {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "6948462411",
+              "name": "ΔΑΜΟΡΑΚΗΣ ΕΥΤΥΧΗΣ/DΑΜΟRΑΚΙS EYTIXIS",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "6948462411"
+            }
+          ]
+        },
+        {
           "kind": "day",
           "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
           "hours": {
@@ -129,6 +89,46 @@
               "address": "ΚΑΣΤΕΛΙ ΠΛΑΤΕΙΑ ΕΛ. ΒΕΝΙΖΕΛΟΥ (ΔΙΠΛΑ ΑΠΟ ΤΗΝ ΕΘΝ. ΤΡΑΠΕΖΑ)/ΚΑSΤΕLΙ PLATIA EL. VENIZELOU",
               "locality": "Δήμος Κισσάμου",
               "phone": "2822022451"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821097711",
+              "name": "ΑΔΙΚΗΜΕΝΑΚΗ ΜΑΡΙΛΕΝΑ & ΣΙΑ/ΑDΙΚΙΜΕΝΑΚΙ MARILENA & SIA",
+              "address": "ΚΥΔΩΝΙΑΣ 50/KIDONIAS 50",
+              "locality": "Χανιά",
+              "phone": "2821097711"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821097711",
+              "name": "ΑΔΙΚΗΜΕΝΑΚΗ ΜΑΡΙΛΕΝΑ & ΣΙΑ/ΑDΙΚΙΜΕΝΑΚΙ MARILENA & SIA",
+              "address": "ΚΥΔΩΝΙΑΣ 50/KIDONIAS 50",
+              "locality": "Χανιά",
+              "phone": "2821097711"
             }
           ]
         }

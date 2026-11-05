@@ -734,7 +734,7 @@
     },
     {
       "id": "2661039305",
-      "name": "ΛΑΣΚΑΡΙΣ ΓΕΡΑΣΙΜΟΣ - ΜΑΡΤΖΟΥΚΟΥ ΑΜΑΛΙΑ",
+      "name": "ΛΑΣΚΑΡΙΣ ΓΕΡΑΣΙΜΟΣ",
       "address": "ΙΩΑΝΝΟΥ ΘΕΟΤΟΚΗ 100 (ΙΚΑ - ΣΤΑΘ. ΥΠΕΡ/ΩΝ)",
       "locality": "Κέρκυρα",
       "postcode": null,
@@ -744,8 +744,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.624936,
         "lon": 19.912459,
@@ -1587,18 +1587,17 @@
     },
     {
       "id": "2661099411",
-      "name": "ΚΑΝΝΟΝΕ-ΠΑΝΔΗ ΠΑΟΛΑ - ΠΑΝΔΗ ΑΛΕΞΑΝΔΡΑ - ΠΑΝΔΗΣ ΓΕΩΡΓΙΟΣ",
+      "name": "ΚΑΝΝΟΝΕ-ΠΑΝΔΗ ΠΑΟΛΑ",
       "address": "ΓΟΥΒΙΑ",
       "locality": "Γούβια",
       "postcode": null,
       "phone": "2661099411",
       "groupId": "corfu",
       "sources": [
-        "farmakeu",
-        "ionian"
+        "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.655333,
         "lon": 19.840279,
@@ -1640,7 +1639,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.422623,
         "lon": 20.062111,
@@ -1809,8 +1808,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.443549,
         "lon": 19.941824,
@@ -2001,8 +2000,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.790929,
         "lon": 19.81425,
@@ -2223,6 +2222,27 @@
         "source": "nominatim",
         "precision": "locality",
         "ref": "Περουλάδες"
+      }
+    },
+    {
+      "id": "x-01e9228b5d",
+      "name": "ΚΑΝΝΟΝΕ-ΠΑΝΔΗ ΠΑΟΛΑ - ΠΑΝΔΗ ΑΛΕΞΑΝΔΡΑ - ΠΑΝΔΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΓΟΥΒΙΑ",
+      "locality": "Γούβια",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "ionian"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 39.655333,
+        "lon": 19.840279,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "1657535e-28b4-42e6-adf8-29a56edd8503"
       }
     },
     {

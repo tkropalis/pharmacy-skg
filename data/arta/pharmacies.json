@@ -65,6 +65,27 @@
       }
     },
     {
+      "id": "2681026114",
+      "name": "ΚΟΖΑΝΤΟΥ",
+      "address": "ΕΝΑΝΤΙ ΚΤΕΛ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681026114",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 39.159253,
+        "lon": 20.995208,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2451",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681027317",
       "name": "ΣΙΝΤΕΛΕ ΚΩΝΣΤΑΝΤΙΝΑ",
       "address": "ΠΥΡΡΟΥ 27",
@@ -265,7 +286,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 39.180431,
         "lon": 21.189088,

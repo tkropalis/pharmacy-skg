@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
+      "id": "2695023411",
+      "name": "ΜΑΝΟΥΚΑΣ ΑΛΕΞΑΝΔΡΟΣ",
+      "address": "ΕΥΓΕΝΙΔΟΥ 8",
+      "locality": "Ζάκυνθος",
+      "postcode": null,
+      "phone": "2695023411",
+      "groupId": "zakynthos",
+      "sources": [
+        "iteq-zakynthos"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 37.7824778,
+        "lon": 20.8962466,
+        "ref": "https://zakynthos.efhmeries.gr/Home/Details/4210",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2695023762",
       "name": "ΒΕΝΕΤΣΑΝΟΣ ΑΛΕΞΑΝΔΡΟΣ",
       "address": "ΤΖΟΥΛΑΤΗ 5",

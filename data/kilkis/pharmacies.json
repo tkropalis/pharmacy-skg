@@ -328,13 +328,34 @@
         "fsk"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 40.991799,
         "lon": 22.872086,
         "source": "overture",
         "precision": "exact",
         "ref": "a6d15b1e-b760-415e-9faa-a0c6b2167a81"
+      }
+    },
+    {
+      "id": "2341103050",
+      "name": "ΑΓΤΖΙΔΗΣ ΑΝΔΡΕΑΣ",
+      "address": "21 ΙΟΥΝΙΟΥ 283",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341103050",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 41.004204,
+        "lon": 22.880739,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "21ης Ιουνίου 283, Κιλκίς"
       }
     },
     {
@@ -433,7 +454,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 40.994532,
         "lon": 22.571712,
@@ -475,7 +496,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 40.98555,
         "lon": 22.542284,
@@ -580,7 +601,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 40.946525,
         "lon": 22.452094,

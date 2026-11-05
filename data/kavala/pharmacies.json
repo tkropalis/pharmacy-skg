@@ -464,6 +464,27 @@
       }
     },
     {
+      "id": "2510247173",
+      "name": "ΔΟΥΚΟΥΡΗ ΠΑΝΑΓΙΩΤΑ Ν.",
+      "address": "7ΗΣ ΜΕΡΑΡΧΙΑΣ 90",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510247173",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 40.94021,
+        "lon": 24.393193,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4034",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510250371",
       "name": "ΚΟΥΡΤΣΟΠΟΥΛΟΥ Α. - ΑΔΑΜΟΠΟΥΛΟΥ Ε.",
       "address": "ΧΡΥΣΟΣΤΟΜΟΥ ΣΜΥΡΝΗΣ 18Β",
@@ -664,7 +685,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-11-10",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 40.9363806,
         "lon": 24.4087672,

@@ -170,6 +170,27 @@
       }
     },
     {
+      "id": "2651022329",
+      "name": "ΜΟΥΛΙΑ ΜΑΡΙΑ",
+      "address": "ΒΗΛΑΡΑ 84",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651022329",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 39.6744511,
+        "lon": 20.8404167,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5096",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651022848",
       "name": "Σ.Φ. ΓΚΑΤΖΙΑΝΗΣ ΕΜΜΑΝΟΥΗΛ - ΝΤΑΣΗΣ ΧΡΙΣΤΟΔΟΥΛΟΣ",
       "address": "Μ. ΑΓΓΕΛΟΥ 2",
@@ -354,6 +375,27 @@
         "lat": 39.6795136,
         "lon": 20.8205647,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5001",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651025485",
+      "name": "ΖΥΓΟΥΡΗ ΜΑΡΙΑ",
+      "address": "ΧΑΡΙΛΑΟΥ ΤΡΙΚΟΥΠΗ 2",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651025485",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 39.6677783,
+        "lon": 20.8527314,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5095",
         "source": "list",
         "precision": "exact"
       }
@@ -1178,6 +1220,27 @@
       }
     },
     {
+      "id": "2651065410",
+      "name": "ΛΑΜΠΡΟΥ ΜΑΡΙΑ",
+      "address": "3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ 1, ΑΝΑΤΟΛΗ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651065410",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 39.6425384,
+        "lon": 20.8660331,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5098",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651066310",
       "name": "ΧΡΥΣΑΝΘΟΠΟΥΛΟΣ ΜΙΛΤΙΑΔΗΣ",
       "address": "3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ 55, ΑΝΑΤΟΛΗ",
@@ -1231,7 +1294,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 39.6605902,
         "lon": 20.846732,

@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "cyclades",
-  "updatedAt": "2026-11-04T12:15:32.390Z",
-  "checkedAt": "2026-11-04T21:57:32.420Z",
+  "updatedAt": "2026-11-05T12:31:50.776Z",
+  "checkedAt": "2026-11-05T12:31:50.776Z",
   "duties": {
     "from": "2026-11-02",
-    "to": "2026-11-10"
+    "to": "2026-11-11"
   },
   "extendedHours": [],
   "sources": [

@@ -265,7 +265,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 41.1517799,
         "lon": 24.1476031,
@@ -286,7 +286,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 41.1512613,
         "lon": 24.1464372,
@@ -396,6 +396,27 @@
         "lat": 41.150828,
         "lon": 24.1476356,
         "ref": "https://drama.efhmeries.gr/Home/Details/3143",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521025965",
+      "name": "ΧΑΤΖΗΓΡΗΓΟΡΙΟΥ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΒΕΡΓΙΝΑΣ 112",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521025965",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 41.148138,
+        "lon": 24.149464,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3220",
         "source": "list",
         "precision": "exact"
       }
@@ -580,7 +601,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 41.1521205,
         "lon": 24.1461361,

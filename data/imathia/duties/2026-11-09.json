@@ -7,26 +7,33 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-11-04T21:58:28.204Z"
+        "uploadedAt": "2026-11-05T12:32:49.739Z"
       },
       "sections": [
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "14:30",
+            "to": "21:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331071601",
-              "name": "ΚΑΛΑΜΠΑΛΙΚΑΣ ΙΩΑΝΝΗΣ ΤΟΥ ΕΥΑΓΓΕΛΟΥ",
-              "address": "ΒΕΝΙΖΕΛΟΥ 48 ΚΑΙ ΚΟΝΙΤΣΗ",
+              "pharmacyId": "2331029101",
+              "name": "ΑΥΓΕΡΟΠΟΥΛΟΥ ΠΑΝΑΓΙΩΤΑ",
+              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 26 - 6ο Δημοτικό σχολείο",
               "locality": "Βέροια",
-              "phone": "2331071601"
+              "phone": "2331029101"
+            },
+            {
+              "pharmacyId": "2331029551",
+              "name": "ΠΑΠΑΓΕΩΓΙΟΥ Ι. ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "ΜΗΤΡΟΠΟΛΕΩΣ 38",
+              "locality": "Βέροια",
+              "phone": "2331029551"
             }
           ]
         },
@@ -80,9 +87,9 @@
         },
         {
           "kind": "day",
-          "heading": "14:30 ΕΩΣ 21:00",
+          "heading": "19:00 ΕΩΣ 21:00",
           "hours": {
-            "from": "14:30",
+            "from": "19:00",
             "to": "21:00",
             "toNextDay": false
           },
@@ -90,28 +97,21 @@
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331029101",
-              "name": "ΑΥΓΕΡΟΠΟΥΛΟΥ ΠΑΝΑΓΙΩΤΑ",
-              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 26 - 6ο Δημοτικό σχολείο",
+              "pharmacyId": "2331071601",
+              "name": "ΚΑΛΑΜΠΑΛΙΚΑΣ ΙΩΑΝΝΗΣ ΤΟΥ ΕΥΑΓΓΕΛΟΥ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 48 ΚΑΙ ΚΟΝΙΤΣΗ",
               "locality": "Βέροια",
-              "phone": "2331029101"
-            },
-            {
-              "pharmacyId": "2331029551",
-              "name": "ΠΑΠΑΓΕΩΓΙΟΥ Ι. ΑΝΑΣΤΑΣΙΟΣ",
-              "address": "ΜΗΤΡΟΠΟΛΕΩΣ 38",
-              "locality": "Βέροια",
-              "phone": "2331029551"
+              "phone": "2331071601"
             }
           ]
         },
         {
-          "kind": "day",
-          "heading": "19:00 ΕΩΣ 21:00",
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
-            "from": "19:00",
-            "to": "21:00",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],

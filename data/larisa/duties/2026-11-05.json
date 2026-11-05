@@ -163,29 +163,9 @@
       "name": "Λάρισα",
       "source": {
         "url": "https://larisa.efhmeries.gr/",
-        "uploadedAt": "2026-11-04T21:55:47.956Z"
+        "uploadedAt": "2026-11-05T12:26:58.422Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "23:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2410550948",
-              "name": "ΜΕΤΑΞΙΩΤΗΣ ΔΗΜΗΤΡΙΟΣ",
-              "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 157-159 (Διασταύρωση Υψηλάντου)",
-              "locality": "Λάρισα",
-              "phone": "2410550948"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 08:00 ΕΩΣ 23:00",
@@ -245,6 +225,26 @@
               "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ & 28ης ΟΚΤΩΒΡΙΟΥ",
               "locality": "Λάρισα",
               "phone": "2410553862"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "23:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410550948",
+              "name": "ΜΕΤΑΞΙΩΤΗΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 157-159 (Διασταύρωση Υψηλάντου)",
+              "locality": "Λάρισα",
+              "phone": "2410550948"
             }
           ]
         }

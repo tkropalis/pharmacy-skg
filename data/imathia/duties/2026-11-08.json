@@ -7,26 +7,26 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-11-04T21:58:28.204Z"
+        "uploadedAt": "2026-11-05T12:32:49.739Z"
       },
       "sections": [
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "14:30",
+            "to": "21:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331062989",
-              "name": "Σ.Φ. ΚΑΛΑΪΤΖΙΔΗΣ Π. - ΚΑΛΑΪΤΖΙΔΗΣ Γ. Ο.Ε.",
-              "address": "ΗΡΑΣ 9 - κοντά στα ΚΤΕΛ",
+              "pharmacyId": "2331025130",
+              "name": "ΚΑΛΟΚΥΡΗ ΕΛΙΣΑΒΕΤ",
+              "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 28",
               "locality": "Βέροια",
-              "phone": "2331062989"
+              "phone": "2331025130"
             }
           ]
         },
@@ -100,9 +100,9 @@
         },
         {
           "kind": "day",
-          "heading": "14:30 ΕΩΣ 21:00",
+          "heading": "19:00 ΕΩΣ 21:00",
           "hours": {
-            "from": "14:30",
+            "from": "19:00",
             "to": "21:00",
             "toNextDay": false
           },
@@ -110,21 +110,21 @@
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331025130",
-              "name": "ΚΑΛΟΚΥΡΗ ΕΛΙΣΑΒΕΤ",
-              "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 28",
+              "pharmacyId": "2331062989",
+              "name": "Σ.Φ. ΚΑΛΑΪΤΖΙΔΗΣ Π. - ΚΑΛΑΪΤΖΙΔΗΣ Γ. Ο.Ε.",
+              "address": "ΗΡΑΣ 9 - κοντά στα ΚΤΕΛ",
               "locality": "Βέροια",
-              "phone": "2331025130"
+              "phone": "2331062989"
             }
           ]
         },
         {
-          "kind": "day",
-          "heading": "19:00 ΕΩΣ 21:00",
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
-            "from": "19:00",
-            "to": "21:00",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
