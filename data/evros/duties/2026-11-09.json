@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-11-05T12:32:36.558Z"
+        "uploadedAt": "2026-11-05T22:06:08.720Z"
       },
       "sections": [
         {
@@ -38,22 +38,22 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "14:30-22:00",
+          "kind": "overnight",
+          "heading": "18:00-08:00",
           "hours": {
-            "from": "14:30",
-            "to": "22:00",
-            "toNextDay": false
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2551036511",
-              "name": "ΤΣΟΛΑΚΗ ΑΡΧΟΝΤΙΑ",
-              "address": "Διον. Σολωμού 15 (δρόμος ΔΕΥΑΑ)",
+              "pharmacyId": "2551020667",
+              "name": "Σ.Φ. ΚΑΪΣΑΣ Γ.-ΚΑΪΣΑ Χ.",
+              "address": "14ης Μαΐου 88 (έναντι ΚΕΠ)",
               "locality": "Αλεξανδρούπολη",
-              "phone": "2551036511"
+              "phone": "2551020667"
             }
           ]
         },
@@ -93,22 +93,22 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
+          "kind": "day",
+          "heading": "14:30-22:00",
           "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "14:30",
+            "to": "22:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2551020667",
-              "name": "Σ.Φ. ΚΑΪΣΑΣ Γ.-ΚΑΪΣΑ Χ.",
-              "address": "14ης Μαΐου 88 (έναντι ΚΕΠ)",
+              "pharmacyId": "2551036511",
+              "name": "ΤΣΟΛΑΚΗ ΑΡΧΟΝΤΙΑ",
+              "address": "Διον. Σολωμού 15 (δρόμος ΔΕΥΑΑ)",
               "locality": "Αλεξανδρούπολη",
-              "phone": "2551020667"
+              "phone": "2551036511"
             }
           ]
         }

@@ -7,29 +7,9 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-05T12:32:30.166Z"
+        "uploadedAt": "2026-11-05T22:06:02.717Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "14:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "14:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221600237",
-              "name": "ΚΟΝΤΟΥ ΒΑΣΙΛΙΚΗ",
-              "address": "ΓΑΖΕΠΗ 83",
-              "locality": "Χαλκίδα",
-              "phone": "2221600237"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -86,26 +66,6 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "17:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "17:30",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221088935",
-              "name": "ΚΩΣΤΗ ΙΩΑΝΝΑ",
-              "address": "ΙΣΑΪΟΥ 14",
-              "locality": "Χαλκίδα",
-              "phone": "2221088935"
-            }
-          ]
-        },
-        {
           "kind": "overnight",
           "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
@@ -122,6 +82,46 @@
               "address": "ΣΤΎΡΩΝ 5",
               "locality": "Χαλκίδα",
               "phone": "2221085106"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221600237",
+              "name": "ΚΟΝΤΟΥ ΒΑΣΙΛΙΚΗ",
+              "address": "ΓΑΖΕΠΗ 83",
+              "locality": "Χαλκίδα",
+              "phone": "2221600237"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221088935",
+              "name": "ΚΩΣΤΗ ΙΩΑΝΝΑ",
+              "address": "ΙΣΑΪΟΥ 14",
+              "locality": "Χαλκίδα",
+              "phone": "2221088935"
             }
           ]
         }

@@ -7,26 +7,46 @@
       "name": "Φθιώτιδα",
       "source": {
         "url": "https://fthiotida.efhmeries.gr/",
-        "uploadedAt": "2026-11-05T12:34:53.084Z"
+        "uploadedAt": "2026-11-05T22:08:19.359Z"
       },
       "sections": [
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 22:00",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
             "from": "08:00",
-            "to": "22:00",
+            "to": "14:00",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2231031220",
-              "name": "Σ.Φ. ΑΛΤΑΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ & ΝΙΚΗ",
-              "address": "ΘΕΡΜΟΠΥΛΩΝ 67",
+              "pharmacyId": "2231031381",
+              "name": "ΜΠΛΟΥΝΑ ΜΑΡΙΑ",
+              "address": "ΚΟΛΟΚΟΤΡΏΝΗ 16",
               "locality": "Λαμία",
-              "phone": "2231031220"
+              "phone": "2231031381"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231031381",
+              "name": "ΜΠΛΟΥΝΑ ΜΑΡΙΑ",
+              "address": "ΚΟΛΟΚΟΤΡΏΝΗ 16",
+              "locality": "Λαμία",
+              "phone": "2231031381"
             }
           ]
         },
@@ -76,6 +96,33 @@
               "address": "ΘΕΡΜΟΠΥΛΩΝ 2",
               "locality": "Μώλος",
               "phone": "2235051444"
+            },
+            {
+              "pharmacyId": "2236044188",
+              "name": "ΠΟΛΥΖΟΥ ΔΗΜΗΤΡΑ",
+              "address": "ΚΡΙΚΟΥ 18",
+              "locality": "Σπερχειάδα",
+              "phone": "2236044188"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:00",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231031220",
+              "name": "Σ.Φ. ΑΛΤΑΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ & ΝΙΚΗ",
+              "address": "ΘΕΡΜΟΠΥΛΩΝ 67",
+              "locality": "Λαμία",
+              "phone": "2231031220"
             }
           ]
         },
@@ -104,46 +151,6 @@
               "address": "ΜΑΚΡΑΚΩΜΗ",
               "locality": "Μακρακώμη",
               "phone": "2236022766"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231031381",
-              "name": "ΜΠΛΟΥΝΑ ΜΑΡΙΑ",
-              "address": "ΚΟΛΟΚΟΤΡΏΝΗ 16",
-              "locality": "Λαμία",
-              "phone": "2231031381"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231031381",
-              "name": "ΜΠΛΟΥΝΑ ΜΑΡΙΑ",
-              "address": "ΚΟΛΟΚΟΤΡΏΝΗ 16",
-              "locality": "Λαμία",
-              "phone": "2231031381"
             }
           ]
         }

@@ -7,26 +7,26 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-11-05T12:32:49.739Z"
+        "uploadedAt": "2026-11-05T22:06:21.076Z"
       },
       "sections": [
         {
-          "kind": "day",
-          "heading": "13:30 ΕΩΣ 17:30",
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
-            "from": "13:30",
-            "to": "17:30",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331027355",
-              "name": "Σ.Φ. ΜΟΥΡΤΖΙΛΑ Β. - ΜΟΥΡΤΖΙΛΑΣ Γ. ΟΕ",
-              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 20 - ΚΤΕΛ",
+              "pharmacyId": "2331062163",
+              "name": "ΖΕΡΗΣ ΓΕΩΡΓΙΟΣ & ΣΙΑ Ο.Ε.",
+              "address": "ΚΟΝΙΤΣΗΣ 15 ΚΑΙ ΕΜΜ.ΖΑΧΟΥ - περ. ΚΤΕΛ",
               "locality": "Βέροια",
-              "phone": "2331027355"
+              "phone": "2331062163"
             }
           ]
         },
@@ -79,22 +79,22 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "13:30 ΕΩΣ 17:30",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "13:30",
+            "to": "17:30",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331062163",
-              "name": "ΖΕΡΗΣ ΓΕΩΡΓΙΟΣ & ΣΙΑ Ο.Ε.",
-              "address": "ΚΟΝΙΤΣΗΣ 15 ΚΑΙ ΕΜΜ.ΖΑΧΟΥ - περ. ΚΤΕΛ",
+              "pharmacyId": "2331027355",
+              "name": "Σ.Φ. ΜΟΥΡΤΖΙΛΑ Β. - ΜΟΥΡΤΖΙΛΑΣ Γ. ΟΕ",
+              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 20 - ΚΤΕΛ",
               "locality": "Βέροια",
-              "phone": "2331062163"
+              "phone": "2331027355"
             }
           ]
         }

@@ -1220,6 +1220,69 @@
       }
     },
     {
+      "id": "2236043243",
+      "name": "ΑΡΓΥΡΟΥ ΓΟΥΒΑΛΑ ΟΕ.",
+      "address": "ΣΠΕΡΧΕΙΑΔΑ",
+      "locality": "Σπερχειάδα",
+      "postcode": null,
+      "phone": "2236043243",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-10",
+      "location": {
+        "lat": 38.9048673,
+        "lon": 22.1251891,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/12172",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2236043303",
+      "name": "ΛΑΜΠΡΑΚΟΠΟΥΛΟΣ ΧΑΡΙΛΑΟΣ",
+      "address": "ΚΡΙΚΟΥ 9",
+      "locality": "Σπερχειάδα",
+      "postcode": null,
+      "phone": "2236043303",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-11-09",
+      "lastSeen": "2026-11-09",
+      "location": {
+        "lat": 38.9060074,
+        "lon": 22.1252072,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/12192",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2236044188",
+      "name": "ΠΟΛΥΖΟΥ ΔΗΜΗΤΡΑ",
+      "address": "ΚΡΙΚΟΥ 18",
+      "locality": "Σπερχειάδα",
+      "postcode": null,
+      "phone": "2236044188",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 38.9062134,
+        "lon": 22.1255801,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/12156",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2238022600",
       "name": "ΠΑΝΩΡΗ ΕΛΕΝΗ",
       "address": "ΜΗΤΡΟΠΟΛΕΩΣ 2",
