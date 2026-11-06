@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-21T19:24:14.381Z",
+  "updatedAt": "2026-11-06T21:37:17.202Z",
   "bulletins": [
     {
       "id": "14046/30656",
@@ -343,6 +343,15 @@
       "articleUrl": "https://www.moh.gov.gr/articles/times-farmakwn/deltia-timwn/14872-deltio-timwn-newn-genoshmwn-farmakwn-anthrwpinhs-xrhshs-aygoystoyoy-2026",
       "fileName": "Πίνακας Νέων Γενοσήμων Αυγούστου 2026.xlsx",
       "fileUrl": "https://www.moh.gov.gr/articles/times-farmakwn/deltia-timwn/14872-deltio-timwn-newn-genoshmwn-farmakwn-anthrwpinhs-xrhshs-aygoystoyoy-2026?fdl=31973"
+    },
+    {
+      "id": "14930/32042",
+      "kind": "prescription",
+      "title": "Συμπληρωματικό Δελτίο Τιμών Φαρμάκων Ανθρώπινης Χρήσης, κατόπιν αιτήματος μείωσης τιμής",
+      "date": "2026-11-06",
+      "articleUrl": "https://www.moh.gov.gr/articles/times-farmakwn/deltia-timwn/14930-symplhrwmatiko-deltio-timwn-farmakwn-anthrwpinhs-xrhshs-katopin-aithmatos-meiwshs-timhs",
+      "fileName": "Πίνακας οικ. μείωσης XYDALBA.xlsx",
+      "fileUrl": "https://www.moh.gov.gr/articles/times-farmakwn/deltia-timwn/14930-symplhrwmatiko-deltio-timwn-farmakwn-anthrwpinhs-xrhshs-katopin-aithmatos-meiwshs-timhs?fdl=32042"
     },
     {
       "id": "13661/29735",
@@ -9871,7 +9880,7 @@
     {"barcode":"2802525303011","name":"XOZAL ORAL.SOL 0,5MG/ML BOTTLE x 200 ML","atc":"R06AE09","substance":"LEVOCETIRIZINE DIHYDROCHLORIDE","company":"UCB A.E.","price":5.48,"otc":false,"notReimbursed":false,"bulletin":"14818/31884","shortage":null},
     {"barcode":"2803057802010","name":"XTANDI F.C.TAB 40MG/TAB BTx112 δισκία σε BLISTERS (PVC/PCTFE/ALU)","atc":"L02BB04","substance":"ENZALUTAMIDE","company":"ASTELLAS PHARMA EUROPE B.V., LEIDEN, NETHERLANDS","price":2600.63,"otc":false,"notReimbursed":false,"bulletin":"14818/31884","shortage":null},
     {"barcode":"2803114101025","name":"XULTOPHY IN.SO.PF.P (100U+3,6MG)/ML BTx 3 PF.PEN x 3ML","atc":"A10AE56","substance":"INSULIN, LIRAGLUTIDE","company":"NOVO NORDISK A/S, BAGSVAERD, DENMARK","price":128.93,"otc":false,"notReimbursed":false,"bulletin":"14818/31884","shortage":null},
-    {"barcode":"2803120801018","name":"XYDALBA PD.C.SO.IN 500MG/VIAL BTx1 VIAL","atc":"J01XA04","substance":"DALBAVANCIN","company":"ABBVIE DEUTSCHLAND GMBH & CO KG, LUDWIGSHAFEN, GERMANY","price":823.64,"otc":false,"notReimbursed":false,"bulletin":"14818/31884","shortage":null},
+    {"barcode":"2803120801018","name":"XYDALBA PD.C.SO.IN 500MG/VIAL BTx1 VIAL","atc":"J01XA04","substance":"DALBAVANCIN","company":"ABBVIE DEUTSCHLAND GMBH & CO KG, LUDWIGSHAFEN, GERMANY","price":547.94,"otc":false,"notReimbursed":false,"bulletin":"14930/32042","shortage":null},
     {"barcode":"2802725601016","name":"XYLANAL GEL.EXT.US 5% W/W BT x 1 TUB x 30 G","atc":"D06AX12","substance":"AMIKACIN","company":"ΝΕΣΤΟΡΑΣ ΒΛΑΧΟΣ Ι.Κ.Ε. Δ.Τ. EPSILON HEALTH","price":4.27,"otc":false,"notReimbursed":true,"bulletin":"14818/31884","shortage":null},
     {"barcode":"2800057004017","name":"XYLOCAINE GEL.EXT.US 2% W/W TUBx30G","atc":"N01BB02","substance":"LIDOCAINE","company":"ASPEN PHARMA TRADING LIMITED, IRELAND","price":5.79,"otc":false,"notReimbursed":false,"bulletin":"14818/31884","shortage":{"from":"2026-04-17","to":"2026-11-04","reason":"Προβλήματα στην παραγωγική διαδικασία"}},
     {"barcode":"2800057007018","name":"XYLOCAINE SPR 10% W/V FLx50ML(500 DOSES)","atc":"N01BB02","substance":"LIDOCAINE","company":"ASPEN PHARMA TRADING LIMITED, IRELAND","price":10.36,"otc":false,"notReimbursed":false,"bulletin":"14818/31884","shortage":null},

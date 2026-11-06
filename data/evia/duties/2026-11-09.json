@@ -7,26 +7,26 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-06T12:12:12.984Z"
+        "uploadedAt": "2026-11-06T21:34:15.945Z"
       },
       "sections": [
         {
-          "kind": "day",
-          "heading": "14:00 ΕΩΣ 21:00",
+          "kind": "overnight",
+          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
-            "from": "14:00",
-            "to": "21:00",
-            "toNextDay": false
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2221600237",
-              "name": "ΚΟΝΤΟΥ ΒΑΣΙΛΙΚΗ",
-              "address": "ΓΑΖΕΠΗ 83",
+              "pharmacyId": "2221088935",
+              "name": "ΚΩΣΤΗ ΙΩΑΝΝΑ",
+              "address": "ΙΣΑΪΟΥ 14",
               "locality": "Χαλκίδα",
-              "phone": "2221600237"
+              "phone": "2221088935"
             }
           ]
         },
@@ -87,9 +87,9 @@
         },
         {
           "kind": "day",
-          "heading": "17:30 ΕΩΣ 21:00",
+          "heading": "14:00 ΕΩΣ 21:00",
           "hours": {
-            "from": "17:30",
+            "from": "14:00",
             "to": "21:00",
             "toNextDay": false
           },
@@ -97,21 +97,21 @@
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2221088935",
-              "name": "ΚΩΣΤΗ ΙΩΑΝΝΑ",
-              "address": "ΙΣΑΪΟΥ 14",
+              "pharmacyId": "2221600237",
+              "name": "ΚΟΝΤΟΥ ΒΑΣΙΛΙΚΗ",
+              "address": "ΓΑΖΕΠΗ 83",
               "locality": "Χαλκίδα",
-              "phone": "2221088935"
+              "phone": "2221600237"
             }
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
           "hours": {
             "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
+            "to": "21:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],

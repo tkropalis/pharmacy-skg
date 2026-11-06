@@ -7,26 +7,26 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-11-06T12:12:31.496Z"
+        "uploadedAt": "2026-11-06T21:34:34.617Z"
       },
       "sections": [
         {
-          "kind": "day",
-          "heading": "13:30 ΕΩΣ 17:30",
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
-            "from": "13:30",
-            "to": "17:30",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331060064",
-              "name": "ΠΑΠΑΡΗ ΟΛΥΜΠΙΑ ΥΠΟΚ/ΣΜΑ",
-              "address": "ΕΛΗΑΣ 4",
+              "pharmacyId": "2331060279",
+              "name": "ΤΕΡΜΕΝΤΖΗ & ΣΙΑ Ο.Ε.",
+              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ ΚΑΙ ΕΔΕΣΣΗΣ",
               "locality": "Βέροια",
-              "phone": "2331060064"
+              "phone": "2331060279"
             }
           ]
         },
@@ -79,22 +79,22 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "13:30 ΕΩΣ 17:30",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "13:30",
+            "to": "17:30",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331060279",
-              "name": "ΤΕΡΜΕΝΤΖΗ & ΣΙΑ Ο.Ε.",
-              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ ΚΑΙ ΕΔΕΣΣΗΣ",
+              "pharmacyId": "2331060064",
+              "name": "ΠΑΠΑΡΗ ΟΛΥΜΠΙΑ ΥΠΟΚ/ΣΜΑ",
+              "address": "ΕΛΗΑΣ 4",
               "locality": "Βέροια",
-              "phone": "2331060279"
+              "phone": "2331060064"
             }
           ]
         }

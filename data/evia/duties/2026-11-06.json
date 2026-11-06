@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-06T12:12:12.984Z"
+        "uploadedAt": "2026-11-06T21:34:15.945Z"
       },
       "sections": [
         {
@@ -34,26 +34,6 @@
               "address": "25ης ΜΑΡΤΙΟΥ 46",
               "locality": "Ιστιαία",
               "phone": "2226055355"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "14:00 ΕΩΣ 17:30",
-          "hours": {
-            "from": "14:00",
-            "to": "17:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221085705",
-              "name": "Σ.Φ. Δ.ΧΑΝΤΖΗΣ-Ζ.ΧΑΝΤΖΗ Ο.Ε.",
-              "address": "ΧΑΪΝΑ 28",
-              "locality": "Χαλκίδα",
-              "phone": "2221085705"
             }
           ]
         },
@@ -102,6 +82,26 @@
               "address": "ΦΑΒΙΕΡΟΥ 14",
               "locality": "Χαλκίδα",
               "phone": "2221081233"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 17:30",
+          "hours": {
+            "from": "14:00",
+            "to": "17:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221085705",
+              "name": "Σ.Φ. Δ.ΧΑΝΤΖΗΣ-Ζ.ΧΑΝΤΖΗ Ο.Ε.",
+              "address": "ΧΑΪΝΑ 28",
+              "locality": "Χαλκίδα",
+              "phone": "2221085705"
             }
           ]
         }
