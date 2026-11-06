@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-11-05T22:06:51.986Z"
+        "uploadedAt": "2026-11-06T12:13:03.379Z"
       },
       "sections": [
-        {
-          "kind": "on-duty",
-          "heading": "8 ΠΡΩΙ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441020522",
-              "name": "ΝΤΙ-ΤΖΙΑΜΜΑΡΙΝΟ ΟΣΚΑΡ",
-              "address": "ΙΕΖΕΚΙΗΛ 37",
-              "locality": "Καρδίτσα",
-              "phone": "2441020522"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
@@ -47,6 +27,26 @@
               "address": "ΠΛΑΣΤΗΡΑ 12",
               "locality": "Καρδίτσα",
               "phone": "2441076190"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "8 ΠΡΩΙ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441020522",
+              "name": "ΝΤΙ-ΤΖΙΑΜΜΑΡΙΝΟ ΟΣΚΑΡ",
+              "address": "ΙΕΖΕΚΙΗΛ 37",
+              "locality": "Καρδίτσα",
+              "phone": "2441020522"
             }
           ]
         }

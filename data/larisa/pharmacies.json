@@ -307,7 +307,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.63628,
         "lon": 22.41714,
@@ -475,7 +475,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-11",
+      "lastSeen": "2026-10-17",
       "location": {
         "lat": 39.63559,
         "lon": 22.41532,
@@ -832,7 +832,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.6391,
         "lon": 22.41322,
@@ -1063,7 +1063,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.63209,
         "lon": 22.41939,
@@ -1152,6 +1152,27 @@
         "lat": 39.63717,
         "lon": 22.42,
         "ref": "https://larisa.efhmeries.gr/Home/Details/24233",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2410287439",
+      "name": "ΖΑΡΟΓΙΑΝΝΗΣ ΜΑΡΙΟΣ",
+      "address": "ΚΟΡΑΗ 21 & ΛΑΜΠΡΟΥ ΚΑΤΣΩΝΗ (Έναντι κιν/φου Βικτωρία)",
+      "locality": "Λάρισα",
+      "postcode": null,
+      "phone": "2410287439",
+      "groupId": "larisa",
+      "sources": [
+        "fsl"
+      ],
+      "firstSeen": "2026-11-12",
+      "lastSeen": "2026-11-12",
+      "location": {
+        "lat": 39.6373215,
+        "lon": 22.4215517,
+        "ref": "https://larisa.efhmeries.gr/Home/Details/23404",
         "source": "list",
         "precision": "exact"
       }
@@ -1514,27 +1535,6 @@
       }
     },
     {
-      "id": "2410534888",
-      "name": "ΛΑΠΟΥΣΗ ΒΑΣΙΛΙΚΗ",
-      "address": "31ης ΑΥΓΟΥΣΤΟΥ 27 (Πλησίον Γενικού Νοσοκομείου - έναντι 6ου Δημ. Σχολείου Λάρισας)",
-      "locality": "Λάρισα",
-      "postcode": null,
-      "phone": "2410534888",
-      "groupId": "larisa",
-      "sources": [
-        "fsl"
-      ],
-      "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-07",
-      "location": {
-        "lat": 39.64128,
-        "lon": 22.42214,
-        "ref": "https://larisa.efhmeries.gr/Home/Details/23147",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2410535062",
       "name": "ΖΑΡΚΙΝΟΥ Β. ΦΑΝΗ",
       "address": "ΚΑΡΑΘΑΝΟΥ 59-61",
@@ -1609,7 +1609,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 39.63581,
         "lon": 22.41437,
@@ -1630,7 +1630,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.63637,
         "lon": 22.41822,
@@ -1735,7 +1735,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 39.63632,
         "lon": 22.41651,
@@ -2071,7 +2071,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-10-13",
       "location": {
         "lat": 39.63585,
         "lon": 22.42148,
@@ -2323,7 +2323,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.63355,
         "lon": 22.41032,
@@ -2701,7 +2701,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-08",
       "location": {
         "lat": 39.63539,
         "lon": 22.41618,
@@ -2911,7 +2911,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.62606,
         "lon": 22.39798,
@@ -3016,7 +3016,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-11",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.563057,
         "lon": 22.464754,
@@ -3100,7 +3100,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-11",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.723169,
         "lon": 22.396167,
@@ -3184,7 +3184,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.6665575,
         "lon": 22.390773,
@@ -3352,7 +3352,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.293248,
         "lon": 22.38237,
@@ -3814,7 +3814,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.737851,
         "lon": 22.288704,
@@ -3940,7 +3940,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.745199,
         "lon": 22.363246,
@@ -4129,7 +4129,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.895649,
         "lon": 22.187327,
@@ -4318,7 +4318,7 @@
         "fsl"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.715748,
         "lon": 22.75908,

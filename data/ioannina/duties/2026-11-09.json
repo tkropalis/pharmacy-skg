@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-11-05T22:06:39.624Z"
+        "uploadedAt": "2026-11-06T12:12:50.204Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651027870",
-              "name": "ΣΤΑΥΡΟΠΟΥΛΟΣ ΣΤΑΥΡΟΣ",
-              "address": "ΣΠ. ΛΑΜΠΡΟΥ 27",
-              "locality": "Ιωάννινα",
-              "phone": "2651027870"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -61,6 +41,26 @@
               "address": "ΚΑ' ΦΕΒΡΟΥΑΡΙΟΥ 169",
               "locality": "Ιωάννινα",
               "phone": "2651030356"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651027870",
+              "name": "ΣΤΑΥΡΟΠΟΥΛΟΣ ΣΤΑΥΡΟΣ",
+              "address": "ΣΠ. ΛΑΜΠΡΟΥ 27",
+              "locality": "Ιωάννινα",
+              "phone": "2651027870"
             }
           ]
         }

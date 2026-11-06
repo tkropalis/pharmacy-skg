@@ -7,46 +7,26 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-11-05T22:06:08.720Z"
+        "uploadedAt": "2026-11-06T12:12:19.230Z"
       },
       "sections": [
         {
           "kind": "day",
-          "heading": "10:00-14:00 & 18:00-08:00",
+          "heading": "08:00-21:00",
           "hours": {
-            "from": "10:00",
-            "to": "14:00",
+            "from": "08:00",
+            "to": "21:00",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2551026478",
-              "name": "Σ.Φ. ΜΠΟΛΙΑΚΗΣ Σ. - ΑΘΑΝΑΣΙΑΔΟΥ Ε.",
-              "address": "14ης Μαΐου 53",
+              "pharmacyId": "2551029022",
+              "name": "Σ.Φ. ΠΟΥΡΝΑΡΑΣ ΤΡ.-ΣΑΛΟΝΙΚΙΔΟΥ Ε.",
+              "address": "Αίνου 27 (έναντι Δημ. Βιβλιοθήκης)",
               "locality": "Αλεξανδρούπολη",
-              "phone": "2551026478"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "10:00-14:00 & 18:00-08:00",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551026478",
-              "name": "Σ.Φ. ΜΠΟΛΙΑΚΗΣ Σ. - ΑΘΑΝΑΣΙΑΔΟΥ Ε.",
-              "address": "14ης Μαΐου 53",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551026478"
+              "phone": "2551029022"
             }
           ]
         },
@@ -114,21 +94,41 @@
         },
         {
           "kind": "day",
-          "heading": "08:00-21:00",
+          "heading": "10:00-14:00 & 18:00-08:00",
           "hours": {
-            "from": "08:00",
-            "to": "21:00",
+            "from": "10:00",
+            "to": "14:00",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2551029022",
-              "name": "Σ.Φ. ΠΟΥΡΝΑΡΑΣ ΤΡ.-ΣΑΛΟΝΙΚΙΔΟΥ Ε.",
-              "address": "Αίνου 27 (έναντι Δημ. Βιβλιοθήκης)",
+              "pharmacyId": "2551026478",
+              "name": "Σ.Φ. ΜΠΟΛΙΑΚΗΣ Σ. - ΑΘΑΝΑΣΙΑΔΟΥ Ε.",
+              "address": "14ης Μαΐου 53",
               "locality": "Αλεξανδρούπολη",
-              "phone": "2551029022"
+              "phone": "2551026478"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "10:00-14:00 & 18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551026478",
+              "name": "Σ.Φ. ΜΠΟΛΙΑΚΗΣ Σ. - ΑΘΑΝΑΣΙΑΔΟΥ Ε.",
+              "address": "14ης Μαΐου 53",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551026478"
             }
           ]
         }

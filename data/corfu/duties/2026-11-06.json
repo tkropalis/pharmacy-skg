@@ -7,40 +7,47 @@
       "name": "Κέρκυρα",
       "source": {
         "url": "https://farmakeu.static.otenet.gr/phduties.php",
-        "uploadedAt": "2026-11-05T22:05:23.797Z"
+        "uploadedAt": "2026-11-06T12:11:32.977Z"
       },
       "sections": [
         {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 21:00 (ΤΗΣ ΠΡΟΗΓΟΥΜΕΝΗΣ) ΕΩΣ ΤΙΣ 8:00",
+          "kind": "day",
+          "heading": "ΔΙΗΜΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 8:00 ΕΩΣ ΤΙΣ 21:00",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2661031992",
-              "name": "ΕΡΤΣΟΣ ΣΠΥΡΙΔΩΝΑΣ-ΠΑΝΑΓΙΩΤΗΣ",
-              "address": "ΜΙΛΤΙΑΔΟΥ ΜΑΡΓΑΡΙΤΗ 8",
+              "pharmacyId": "2661026066",
+              "name": "ΝΙΚΗΦΟΡΟΥ ΑΓΓΕΛΙΚΗ",
+              "address": "ΙΟΥΛΙΑΣ ΑΝΔΡΕΑΔΗ 4 (ΕΝΑΝΤΙ ΠΡΩΗΝ ΝΟΣΟΚΟΜΕΙΟΥ)",
               "locality": "Κέρκυρα",
-              "phone": "2661031992"
+              "phone": "2661026066"
             },
             {
-              "pharmacyId": "2662052368",
-              "name": "ΜΠΑΡΔΗ ΙΩΑΝΝΑ",
-              "address": "ΛΙΝΙΑ ΧΛΩΜΟΥ",
-              "locality": "Χλωμός",
-              "phone": "2662052368"
+              "pharmacyId": "2661058290",
+              "name": "ΑΓΑΘΟΥ ΕΛΕΝΗ",
+              "address": "ΑΛΕΠΟΥ (ENANTI Super market Diellas)",
+              "locality": "Αλεπού",
+              "phone": "2661058290"
             },
             {
-              "pharmacyId": "2663063140",
-              "name": "ΒΑΡΕΛΗ ΑΘΗΝΑ",
-              "address": "ΑΧΑΡΑΒΗ",
-              "locality": "Αχαράβη",
-              "phone": "2663063140"
+              "pharmacyId": "2662051814",
+              "name": "ΚΟΥΠΠΑΡΗ ΗΛΙΑΝΑ",
+              "address": "ΠΕΤΡΙΤΗ",
+              "locality": "Πετρίτη",
+              "phone": "2662051814"
+            },
+            {
+              "pharmacyId": "2663051013",
+              "name": "ΜΟΥΤΣΙΟΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΑΡΙΛΛΑΣ",
+              "locality": "Αρίλλας",
+              "phone": "2663051013"
             },
             {
               "pharmacyId": "2662022649",

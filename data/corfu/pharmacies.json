@@ -269,8 +269,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 39.621793,
         "lon": 19.912418,
@@ -422,7 +422,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.591337,
         "lon": 19.859619,
@@ -1202,18 +1202,17 @@
     },
     {
       "id": "2661058290",
-      "name": "ΑΓΑΘΟΣ ΙΩΑΝΝΗΣ - ΑΓΑΘΟΥ ΕΛΕΝΗ",
+      "name": "ΑΓΑΘΟΥ ΕΛΕΝΗ",
       "address": "ΑΛΕΠΟΥ (ENANTI Super market Diellas)",
       "locality": "Αλεπού",
       "postcode": null,
       "phone": "2661058290",
       "groupId": "corfu",
       "sources": [
-        "farmakeu",
-        "ionian"
+        "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 39.616049,
         "lon": 19.895864,
@@ -1787,8 +1786,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 39.453991,
         "lon": 19.999237,
@@ -1809,7 +1808,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.443549,
         "lon": 19.941824,
@@ -1978,8 +1977,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 39.744237,
         "lon": 19.649756,
@@ -2001,7 +2000,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.790929,
         "lon": 19.81425,
@@ -2264,6 +2263,27 @@
         "source": "nominatim",
         "precision": "locality",
         "ref": "Σιδάρι"
+      }
+    },
+    {
+      "id": "x-81739eff07",
+      "name": "ΑΓΑΘΟΣ ΙΩΑΝΝΗΣ - ΑΓΑΘΟΥ ΕΛΕΝΗ",
+      "address": "ΑΛΕΠΟΥ (ENANTI Super market Diellas)",
+      "locality": "Αλεπού",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "ionian"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 39.616049,
+        "lon": 19.895864,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "17fa7158-6ae9-4ef5-bd34-388907691900"
       }
     },
     {

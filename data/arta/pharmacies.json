@@ -611,6 +611,27 @@
       }
     },
     {
+      "id": "2681073813",
+      "name": "ΔΙΑΜΑΝΤΗΣ ΙΩΑΝΝΗΣ",
+      "address": "ΧΑΪΚΑΛΗ 18",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681073813",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-12",
+      "lastSeen": "2026-11-12",
+      "location": {
+        "lat": 39.1640995,
+        "lon": 20.9877813,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2452",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681074102",
       "name": "ΣΑΠΡΙΚΗ ΒΑΣΙΛΙΚΗ",
       "address": "ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ 125",
@@ -979,7 +1000,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.0828391,
         "lon": 21.0168457,

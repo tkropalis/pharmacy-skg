@@ -149,6 +149,27 @@
       }
     },
     {
+      "id": "2510222860",
+      "name": "ΔΗΜΗΤΡΑΚΟΥΔΗ ΣΑΠΦΩ",
+      "address": "ΟΜΟΝΟΙΑΣ 125",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510222860",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-12",
+      "lastSeen": "2026-11-12",
+      "location": {
+        "lat": 40.9394361,
+        "lon": 24.4084132,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4036",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510223156",
       "name": "ΚΑΛΦΟΠΟΥΛΟΥ ΕΡΜΙΟΝΗ",
       "address": "ΟΜΟΝΟΙΑΣ 73",
@@ -475,7 +496,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-11-11",
-      "lastSeen": "2026-11-11",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 40.94021,
         "lon": 24.393193,
