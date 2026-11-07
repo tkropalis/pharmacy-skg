@@ -454,7 +454,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 35.5309311,
         "lon": 24.0752562,
@@ -475,7 +475,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 35.5145614,
         "lon": 24.0308471,
@@ -769,7 +769,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 35.5174627,
         "lon": 23.9361317,
@@ -1094,6 +1094,27 @@
       }
     },
     {
+      "id": "2821086009",
+      "name": "Σ.Φ. ΜΙΧΑΗΛΕΛΛΗΣ Ν. ΜΙΧΑΗΛΕΛΛΗΣ Χ./ΜΙCΗΑΙLΕLLΙS N.-MICHAILLELIS C.",
+      "address": "Α.ΠΑΠΑΝΔΡΕΟΥ 105/A.PAPANDREOU 105",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821086009",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-13",
+      "location": {
+        "lat": 35.510664,
+        "lon": 24.029347,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13666",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2821086400",
       "name": "ΑΔΟΝΤΑΚΗ ΕΛΕΝΗ/ΑDΟΝΤΑΚΙ HELEN",
       "address": "ΑΓΙΟΥ ΕΛΕΥΘΕΡΙΟΥ 25,ΜΟΥΡΝΙΕΣ/ΑGΙΟU ELEFTHERIOU 25-MOURNIES",
@@ -1336,7 +1357,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 35.5040946,
         "lon": 24.020972,
@@ -1672,7 +1693,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 35.4940194,
         "lon": 23.6540401,
@@ -1714,7 +1735,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 35.2294606,
         "lon": 23.6819128,

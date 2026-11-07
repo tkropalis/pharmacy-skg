@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "ilia",
-  "updatedAt": "2026-11-05T22:05:22.056Z",
-  "checkedAt": "2026-11-06T21:33:34.740Z",
+  "updatedAt": "2026-11-07T11:08:10.045Z",
+  "checkedAt": "2026-11-07T11:08:10.045Z",
   "duties": {
     "from": "2026-11-02",
-    "to": "2026-11-12"
+    "to": "2026-11-13"
   },
   "extendedHours": [],
   "sources": [

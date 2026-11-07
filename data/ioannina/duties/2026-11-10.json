@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-11-06T21:34:53.485Z"
+        "uploadedAt": "2026-11-07T11:09:27.560Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651049296",
-              "name": "ΓΕΩΡΓΙΑΔΗΣ ΓΕΩΡΓΙΟΣ",
-              "address": "ΔΩΔΩΝΗΣ 45- 47",
-              "locality": "Ιωάννινα",
-              "phone": "2651049296"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -47,6 +27,26 @@
               "address": "ΧΑΡ. ΤΡΙΚΟΥΠΗ 7",
               "locality": "Ιωάννινα",
               "phone": "2651400832"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651049296",
+              "name": "ΓΕΩΡΓΙΑΔΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΔΩΔΩΝΗΣ 45- 47",
+              "locality": "Ιωάννινα",
+              "phone": "2651049296"
             }
           ]
         }

@@ -307,7 +307,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 39.247688,
         "lon": 21.161423,
@@ -795,6 +795,27 @@
         "lat": 39.1604808,
         "lon": 20.9836292,
         "ref": "https://arta.efhmeries.gr/Home/Details/2448",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681076330",
+      "name": "ΠΑΠΑΓΕΩΡΓΑΚΗ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΤΖΑΒΕΛΛΑ 16 & ΜΑΚΡΥΓΙΑΝΝΗ 41",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681076330",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-13",
+      "location": {
+        "lat": 39.1638414,
+        "lon": 20.986502,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2453",
         "source": "list",
         "precision": "exact"
       }

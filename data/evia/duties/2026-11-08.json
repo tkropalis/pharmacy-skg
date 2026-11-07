@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-06T21:34:15.945Z"
+        "uploadedAt": "2026-11-07T11:08:49.827Z"
       },
       "sections": [
         {
@@ -35,6 +35,66 @@
               "address": "ΑΡΧΑΙΟΥ ΘΕΑΤΡΟΥ 76",
               "locality": "Ερέτρια",
               "phone": "2229060906"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221088902",
+              "name": "ΓΕΩΡΓΟΥΣΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΑΒΑΝΤΩΝ 53",
+              "locality": "Χαλκίδα",
+              "phone": "2221088902"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221028599",
+              "name": "ΚΑΝΔΥΛΗΣ ΣΤΕΛΙΟΣ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 10 - ΕΝΑΝΤΙ ΔΙΚΑΣΤΗΡΙΩΝ",
+              "locality": "Χαλκίδα",
+              "phone": "2221028599"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221028599",
+              "name": "ΚΑΝΔΥΛΗΣ ΣΤΕΛΙΟΣ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 10 - ΕΝΑΝΤΙ ΔΙΚΑΣΤΗΡΙΩΝ",
+              "locality": "Χαλκίδα",
+              "phone": "2221028599"
             }
           ]
         },
@@ -102,66 +162,6 @@
               "address": "ΚΩΤΣΟΥ 41 ΕΝΤΟΣ ΕΡΓΑΤΙΚΟΥ ΚΕΝΤΡΟΥ",
               "locality": "Χαλκίδα",
               "phone": "2221021740"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221088902",
-              "name": "ΓΕΩΡΓΟΥΣΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
-              "address": "ΑΒΑΝΤΩΝ 53",
-              "locality": "Χαλκίδα",
-              "phone": "2221088902"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221028599",
-              "name": "ΚΑΝΔΥΛΗΣ ΣΤΕΛΙΟΣ",
-              "address": "ΒΕΝΙΖΕΛΟΥ 10 - ΕΝΑΝΤΙ ΔΙΚΑΣΤΗΡΙΩΝ",
-              "locality": "Χαλκίδα",
-              "phone": "2221028599"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "17:30",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221028599",
-              "name": "ΚΑΝΔΥΛΗΣ ΣΤΕΛΙΟΣ",
-              "address": "ΒΕΝΙΖΕΛΟΥ 10 - ΕΝΑΝΤΙ ΔΙΚΑΣΤΗΡΙΩΝ",
-              "locality": "Χαλκίδα",
-              "phone": "2221028599"
             }
           ]
         }

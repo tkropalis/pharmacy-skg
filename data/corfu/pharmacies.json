@@ -13,8 +13,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 39.616049,
         "lon": 19.895864,
@@ -422,7 +422,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 39.591337,
         "lon": 19.859619,
@@ -808,8 +808,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 39.620909,
         "lon": 19.917753,
@@ -1681,7 +1681,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 39.424107,
         "lon": 20.062832,
@@ -1765,8 +1765,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 39.435335,
         "lon": 19.977262,
@@ -2151,8 +2151,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 39.788665,
         "lon": 19.919637,
@@ -2184,7 +2184,7 @@
     },
     {
       "id": "2663095400",
-      "name": "ΠΑΝΔΗ ΒΑΣΙΛΙΚΗ",
+      "name": "ΑΛΕΞΟΠΟΥΛΟΥ ΧΡΙΣΤΙΝΑ",
       "address": "ΣΙΔΑΡΙ",
       "locality": "Σιδάρι",
       "postcode": null,
@@ -2194,7 +2194,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 39.792821,
         "lon": 19.701729,

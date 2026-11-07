@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "piraeus",
-  "updatedAt": "2026-11-06T21:36:01.051Z",
-  "checkedAt": "2026-11-06T21:36:01.051Z",
+  "updatedAt": "2026-11-07T11:10:35.749Z",
+  "checkedAt": "2026-11-07T11:10:35.749Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-11-12"
+    "to": "2026-11-13"
   },
   "extendedHours": [],
   "sources": [
