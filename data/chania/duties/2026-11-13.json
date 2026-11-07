@@ -7,7 +7,7 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-11-07T11:11:14.279Z"
+        "uploadedAt": "2026-11-07T20:19:30.608Z"
       },
       "sections": [
         {
@@ -27,47 +27,6 @@
               "address": "ΗΡ.ΠΟΛΥΤΕΧΝΕΙΟΥ 14/HER. POLYTECHNIOU 14",
               "locality": "Χανιά",
               "phone": "2821051618"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
-          "hours": {
-            "from": "08:30",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2821093288",
-              "name": "ΚΝΙΘΑΚΗΣ ΓΕΩΡΓΙΟΣ/ΚΝΙΤΗΑΚΙS GEORGE",
-              "address": "ΑΝ.ΓΟΓΟΝΗ 51/AN. GOGONI 51",
-              "locality": "Μουρνιές",
-              "phone": "2821093288"
-            },
-            {
-              "pharmacyId": "2821086009",
-              "name": "Σ.Φ. ΜΙΧΑΗΛΕΛΛΗΣ Ν. ΜΙΧΑΗΛΕΛΛΗΣ Χ./ΜΙCΗΑΙLΕLLΙS N.-MICHAILLELIS C.",
-              "address": "Α.ΠΑΠΑΝΔΡΕΟΥ 105/A.PAPANDREOU 105",
-              "locality": "Χανιά",
-              "phone": "2821086009"
-            },
-            {
-              "pharmacyId": "2821060078",
-              "name": "Σ.Φ. ΜΠΟΤΩΝΑΚΗΣ Ι.-ΚΑΤΑΚΗΣ Π./S.F. MPOTONAKIS I-KATAKIS P.",
-              "address": "ΑΓΙΑ ΜΑΡΙΝΑ ΠΛΑΤΑΝΙΑΣ ΧΑΝΙΑ (ΔΙΠΛΑ ΣΕ ARTEMIS BEACH BAR)/AGIA MARINA",
-              "locality": "Νέα Κυδωνία",
-              "phone": "2821060078"
-            },
-            {
-              "pharmacyId": "2821049777",
-              "name": "ΤΣΕΡΕΤΟΠΟΥΛΟΥ Ε. - ΧΑΤΖΗΑΘΑΝΑΣΙΟΥ Σ.",
-              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 49 - ΚΟΥΝΟΥΠΙΔΙΑΝΑ/ΕL. VENIZELOU 90, KOUNOUPIDIANA",
-              "locality": "Ακρωτήρι",
-              "phone": "2821049777"
             }
           ]
         },
@@ -109,6 +68,47 @@
               "address": "ΟΜΟΓΕΝΩΝ ΑΜΕΡΙΚΗΣ 23,ΚΑΣΤΕΛΛΙ ΚΙΣΑΜΟΥ/ΟΜΟGΕΝΟΝ AMERIKIS 23",
               "locality": "Δήμος Κισσάμου",
               "phone": "2822022742"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821093288",
+              "name": "ΚΝΙΘΑΚΗΣ ΓΕΩΡΓΙΟΣ/ΚΝΙΤΗΑΚΙS GEORGE",
+              "address": "ΑΝ.ΓΟΓΟΝΗ 51/AN. GOGONI 51",
+              "locality": "Μουρνιές",
+              "phone": "2821093288"
+            },
+            {
+              "pharmacyId": "2821086009",
+              "name": "Σ.Φ. ΜΙΧΑΗΛΕΛΛΗΣ Ν. ΜΙΧΑΗΛΕΛΛΗΣ Χ./ΜΙCΗΑΙLΕLLΙS N.-MICHAILLELIS C.",
+              "address": "Α.ΠΑΠΑΝΔΡΕΟΥ 105/A.PAPANDREOU 105",
+              "locality": "Χανιά",
+              "phone": "2821086009"
+            },
+            {
+              "pharmacyId": "2821060078",
+              "name": "Σ.Φ. ΜΠΟΤΩΝΑΚΗΣ Ι.-ΚΑΤΑΚΗΣ Π./S.F. MPOTONAKIS I-KATAKIS P.",
+              "address": "ΑΓΙΑ ΜΑΡΙΝΑ ΠΛΑΤΑΝΙΑΣ ΧΑΝΙΑ (ΔΙΠΛΑ ΣΕ ARTEMIS BEACH BAR)/AGIA MARINA",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821060078"
+            },
+            {
+              "pharmacyId": "2821049777",
+              "name": "ΤΣΕΡΕΤΟΠΟΥΛΟΥ Ε. - ΧΑΤΖΗΑΘΑΝΑΣΙΟΥ Σ.",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 49 - ΚΟΥΝΟΥΠΙΔΙΑΝΑ/ΕL. VENIZELOU 90, KOUNOUPIDIANA",
+              "locality": "Ακρωτήρι",
+              "phone": "2821049777"
             }
           ]
         }

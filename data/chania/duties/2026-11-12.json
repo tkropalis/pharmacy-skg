@@ -7,7 +7,7 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-11-07T11:11:14.279Z"
+        "uploadedAt": "2026-11-07T20:19:30.608Z"
       },
       "sections": [
         {
@@ -27,47 +27,6 @@
               "address": "ΚΥΔΩΝΙΑΣ 27/KYDONIAS 27",
               "locality": "Χανιά",
               "phone": "2821002891"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
-          "hours": {
-            "from": "08:30",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2821063771",
-              "name": "ΑΛΕΞΑΚΗ ΣΜΑΡΑΓΔΗ",
-              "address": "ΣΤΕΡΝΕΣ & 11 ΕΚΤΕΛΕΣΘΕΝΤΩΝ",
-              "locality": "Ακρωτήρι",
-              "phone": "2821063771"
-            },
-            {
-              "pharmacyId": "2821075505",
-              "name": "ΔΗΜΗΤΡΟΥΛΑΚΗΣ ΠΑΝΑΓΙΩΤΗΣ & ΣΙΑ/DΙΜΙΤRΟULΑΚΙS PANAGIOTIS & SIA",
-              "address": "ΠΛΑΤΕΙΑ ΕΛ. ΒΕΝΙΖΕΛΟΥ-ΜΟΥΡΝΙΕΣ/ΕL. VENIZELOU SQUARE-MOURNIES",
-              "locality": "Μουρνιές",
-              "phone": "2821075505"
-            },
-            {
-              "pharmacyId": "2821034431",
-              "name": "ΙΟΡΔΑΝΙΔΟΥ ΑΝΑΣΤΑΣΙΑ",
-              "address": "ΓΑΛΑΤΑΣ (ΕΝΑΝΤΙ ΔΗΜΟΤΙΚΟΥ ΠΑΙΔΙΚΟΥ ΣΤΑΘΜΟΥ ΓΑΛΑΤΑ)",
-              "locality": "Νέα Κυδωνία",
-              "phone": "2821034431"
-            },
-            {
-              "pharmacyId": "2821074525",
-              "name": "ΚΥΝΗΓΑΚΗ ΕΥΓΕΝΙΑ/ΚΙΝΙGΑΚΙ EVGENIA",
-              "address": "ΚΙΣΣΑΜΟΥ 85/KISAMOU 85",
-              "locality": "Χανιά",
-              "phone": "2821074525"
             }
           ]
         },
@@ -109,6 +68,47 @@
               "address": "ΚΑΣΤΕΛΙ ΠΛΑΤΕΙΑ ΕΛ. ΒΕΝΙΖΕΛΟΥ (ΔΙΠΛΑ ΑΠΟ ΤΗΝ ΕΘΝ. ΤΡΑΠΕΖΑ)/ΚΑSΤΕLΙ PLATIA EL. VENIZELOU",
               "locality": "Δήμος Κισσάμου",
               "phone": "2822022451"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821063771",
+              "name": "ΑΛΕΞΑΚΗ ΣΜΑΡΑΓΔΗ",
+              "address": "ΣΤΕΡΝΕΣ & 11 ΕΚΤΕΛΕΣΘΕΝΤΩΝ",
+              "locality": "Ακρωτήρι",
+              "phone": "2821063771"
+            },
+            {
+              "pharmacyId": "2821075505",
+              "name": "ΔΗΜΗΤΡΟΥΛΑΚΗΣ ΠΑΝΑΓΙΩΤΗΣ & ΣΙΑ/DΙΜΙΤRΟULΑΚΙS PANAGIOTIS & SIA",
+              "address": "ΠΛΑΤΕΙΑ ΕΛ. ΒΕΝΙΖΕΛΟΥ-ΜΟΥΡΝΙΕΣ/ΕL. VENIZELOU SQUARE-MOURNIES",
+              "locality": "Μουρνιές",
+              "phone": "2821075505"
+            },
+            {
+              "pharmacyId": "2821034431",
+              "name": "ΙΟΡΔΑΝΙΔΟΥ ΑΝΑΣΤΑΣΙΑ",
+              "address": "ΓΑΛΑΤΑΣ (ΕΝΑΝΤΙ ΔΗΜΟΤΙΚΟΥ ΠΑΙΔΙΚΟΥ ΣΤΑΘΜΟΥ ΓΑΛΑΤΑ)",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821034431"
+            },
+            {
+              "pharmacyId": "2821074525",
+              "name": "ΚΥΝΗΓΑΚΗ ΕΥΓΕΝΙΑ/ΚΙΝΙGΑΚΙ EVGENIA",
+              "address": "ΚΙΣΣΑΜΟΥ 85/KISAMOU 85",
+              "locality": "Χανιά",
+              "phone": "2821074525"
             }
           ]
         }

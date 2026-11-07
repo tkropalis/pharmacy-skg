@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-07T11:08:49.827Z"
+        "uploadedAt": "2026-11-07T20:17:07.759Z"
       },
       "sections": [
         {
@@ -41,6 +41,26 @@
               "address": "ΙΣΤΑΙΑ",
               "locality": "Ιστιαία",
               "phone": "2226069398"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221081880",
+              "name": "Σ.Φ. ΛΙΟΣΗ Β. & ΘΕΟΔΩΡΟΠΟΥΛΟΥ Δ. Ο.Ε.",
+              "address": "ΑΡΕΘΟΥΣΗΣ & ΠΗΛΙΚΑ",
+              "locality": "Χαλκίδα",
+              "phone": "2221081880"
             }
           ]
         },
@@ -82,26 +102,6 @@
               "address": "ΧΑΪΝΑ 37",
               "locality": "Χαλκίδα",
               "phone": "2221020042"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221081880",
-              "name": "Σ.Φ. ΛΙΟΣΗ Β. & ΘΕΟΔΩΡΟΠΟΥΛΟΥ Δ. Ο.Ε.",
-              "address": "ΑΡΕΘΟΥΣΗΣ & ΠΗΛΙΚΑ",
-              "locality": "Χαλκίδα",
-              "phone": "2221081880"
             }
           ]
         }

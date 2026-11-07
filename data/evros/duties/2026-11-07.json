@@ -7,29 +7,9 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-11-07T11:08:55.955Z"
+        "uploadedAt": "2026-11-07T20:17:14.125Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00-21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551031479",
-              "name": "ΧΑΤΖΗΚΥΡΙΑΚΟΥ-ΜΟΥΡΟΥΚΗ ΕΥΑΝΘΙΑ",
-              "address": "Εθ. Αντιστάσεως 49",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551031479"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "08:00-08:00",
@@ -54,6 +34,81 @@
               "address": "ΒΑΣ. ΑΛΕΞΑΝΔΡΟΥ 24",
               "locality": "Διδυμότειχο",
               "phone": "2553022322"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551027127",
+              "name": "ΤΕΡΖΗΣ ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "Λ. Δημοκρατίας 48 (περιοχή Σκλαβενίτη)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551027127"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2555024096",
+              "name": "ΚΑΨΙΔΟΥ ΘΕΟΔΩΡΑ",
+              "address": "ΔΗΜΟΚΡΙΤΟΥ 28",
+              "locality": "Φέρες",
+              "phone": "2555024096"
+            },
+            {
+              "pharmacyId": "2554022232",
+              "name": "ΠΙΤΙΑΚΟΥΔΗΣ ΣΩΤΗΡΙΟΣ - ΜΠΑΜΙΔΟΥ ΚΟΡΤΕΣΣΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 158",
+              "locality": "Σουφλί",
+              "phone": "2554022232"
+            },
+            {
+              "pharmacyId": "2554042100",
+              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛΕΜΑΧΟΣ",
+              "address": "ΠΡΟΒΑΤΩΝΑΣ",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042100"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00-21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551031479",
+              "name": "ΧΑΤΖΗΚΥΡΙΑΚΟΥ-ΜΟΥΡΟΥΚΗ ΕΥΑΝΘΙΑ",
+              "address": "Εθ. Αντιστάσεως 49",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551031479"
             }
           ]
         },
@@ -108,61 +163,6 @@
               "address": "25ης ΜΑΪΟΥ 113",
               "locality": "Διδυμότειχο",
               "phone": "2553024243"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "08:00-08:00*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2555024096",
-              "name": "ΚΑΨΙΔΟΥ ΘΕΟΔΩΡΑ",
-              "address": "ΔΗΜΟΚΡΙΤΟΥ 28",
-              "locality": "Φέρες",
-              "phone": "2555024096"
-            },
-            {
-              "pharmacyId": "2554022232",
-              "name": "ΠΙΤΙΑΚΟΥΔΗΣ ΣΩΤΗΡΙΟΣ - ΜΠΑΜΙΔΟΥ ΚΟΡΤΕΣΣΑ",
-              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 158",
-              "locality": "Σουφλί",
-              "phone": "2554022232"
-            },
-            {
-              "pharmacyId": "2554042100",
-              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛΕΜΑΧΟΣ",
-              "address": "ΠΡΟΒΑΤΩΝΑΣ",
-              "locality": "Τυχερό, Προβατώνας",
-              "phone": "2554042100"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551027127",
-              "name": "ΤΕΡΖΗΣ ΑΝΑΣΤΑΣΙΟΣ",
-              "address": "Λ. Δημοκρατίας 48 (περιοχή Σκλαβενίτη)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551027127"
             }
           ]
         }

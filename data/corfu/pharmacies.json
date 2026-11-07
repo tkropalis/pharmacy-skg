@@ -13,8 +13,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-07",
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.616049,
         "lon": 19.895864,
@@ -808,8 +808,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-07",
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.620909,
         "lon": 19.917753,
@@ -2184,7 +2184,7 @@
     },
     {
       "id": "2663095400",
-      "name": "ΑΛΕΞΟΠΟΥΛΟΥ ΧΡΙΣΤΙΝΑ",
+      "name": "ΠΑΝΔΗ ΒΑΣΙΛΙΚΗ",
       "address": "ΣΙΔΑΡΙ",
       "locality": "Σιδάρι",
       "postcode": null,
@@ -2194,7 +2194,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.792821,
         "lon": 19.701729,

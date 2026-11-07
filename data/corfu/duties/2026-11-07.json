@@ -7,40 +7,26 @@
       "name": "Κέρκυρα",
       "source": {
         "url": "https://farmakeu.static.otenet.gr/phduties.php",
-        "uploadedAt": "2026-11-07T11:08:11.416Z"
+        "uploadedAt": "2026-11-07T20:16:28.954Z"
       },
       "sections": [
         {
-          "kind": "day",
-          "heading": "ΔΙΗΜΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 8:00 ΕΩΣ ΤΙΣ 21:00",
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 21:00 ΕΩΣ ΤΙΣ 8:00 ΤΟ ΠΡΩΙ ΤΗΣ ΕΠΟΜΕΝΗΣ",
           "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
-            {
-              "pharmacyId": "2661039887",
-              "name": "ΤΕΚΤΩΝ ΚΩΝΣΤΑΝΤΙΝΟΣ",
-              "address": "ΜΗΤΡΟΠΟΛΙΤΟΥ ΜΕΘΟΔΙΟΥ 7",
-              "locality": "Κέρκυρα",
-              "phone": "2661039887"
-            },
             {
               "pharmacyId": "2661031992",
               "name": "ΕΡΤΣΟΣ ΣΠΥΡΙΔΩΝΑΣ-ΠΑΝΑΓΙΩΤΗΣ",
               "address": "ΜΙΛΤΙΑΔΟΥ ΜΑΡΓΑΡΙΤΗ 8",
               "locality": "Κέρκυρα",
               "phone": "2661031992"
-            },
-            {
-              "pharmacyId": "2661020376",
-              "name": "ΚΑΛΟΥΔΗ ΕΛΕΝΗ",
-              "address": "ΤΡΙΑ ΓΕΦΥΡΙΑ/ΚΑΝΑΛΙΑ",
-              "locality": "Κανάλια",
-              "phone": "2661020376"
             },
             {
               "pharmacyId": "2663081432",
@@ -62,13 +48,6 @@
               "address": "ΡΙΓΓΛΑΔΕΣ",
               "locality": "Ρίγγλαδες",
               "phone": "2662024143"
-            },
-            {
-              "pharmacyId": "2663095400",
-              "name": "ΑΛΕΞΟΠΟΥΛΟΥ ΧΡΙΣΤΙΝΑ",
-              "address": "ΣΙΔΑΡΙ",
-              "locality": "Σιδάρι",
-              "phone": "2663095400"
             }
           ]
         }
