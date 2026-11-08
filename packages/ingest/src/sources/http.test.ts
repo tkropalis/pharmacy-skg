@@ -1,5 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { HttpClient, USER_AGENT, describeError, describeResponse } from './http.ts';
+import {
+  BlockedError,
+  HttpClient,
+  USER_AGENT,
+  describeError,
+  describeResponse,
+  isBlocked,
+} from './http.ts';
 
 describe('describeError', () => {
   it('adds what fetch puts only in the cause', () => {
@@ -161,6 +168,40 @@ describe('HttpClient', () => {
     );
     expect(client.requests).toBe(1);
     expect(sleeps).toEqual([]);
+  });
+
+  it('reports a bot challenge as blocked and never asks again, even with a 503', async () => {
+    // What efimeria.gr answered GitHub's runners on 8 Nov 2026, the page cut short.
+    const challenge = (status: number) =>
+      new Response(
+        '<!DOCTYPE html><html><head><title>Just a moment...</title></head><body>' +
+          '<noscript>Enable JavaScript and cookies to continue</noscript></body></html>',
+        {
+          status,
+          headers: {
+            server: 'cloudflare',
+            'cf-ray': 'a57757b22c6712c5-IAD',
+            'cf-mitigated': 'challenge',
+          },
+        },
+      );
+    for (const status of [403, 503]) {
+      const { client, sleeps } = fake([challenge(status), new Response('never asked')]);
+      const failure = await client.fetch('https://www.efimeria.gr/All').catch((e: unknown) => e);
+      expect(failure).toBeInstanceOf(BlockedError);
+      expect(isBlocked(new Error('read failed', { cause: failure }))).toBe(true);
+      expect(String(failure)).toContain(
+        '(server: cloudflare; cf-ray: a57757b22c6712c5-IAD; cf-mitigated: challenge): Just a moment... Enable JavaScript and cookies to continue',
+      );
+      expect(client.requests).toBe(1);
+      expect(sleeps).toEqual([]);
+    }
+  });
+
+  it('does not take a plain 403 for a challenge', async () => {
+    const { client } = fake([new Response('Access denied', { status: 403 })]);
+    const failure = await client.fetch('https://a.gr/').catch((e: unknown) => e);
+    expect(isBlocked(failure)).toBe(false);
   });
 
   it('tries again a body that fails half-way with text, not with fetch', async () => {
