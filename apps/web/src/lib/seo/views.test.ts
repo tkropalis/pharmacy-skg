@@ -214,6 +214,10 @@ describe('dutyPageProps', () => {
     expect(metroOnly?.missingGroups).toContain('Δήμος Θέρμης');
     expect(metroOnly?.missingGroups).toHaveLength(9);
     expect(metroOnly?.missingGroups).not.toContain('Θεσσαλονίκη');
+    // By name in both languages, never by id, even for a group no loaded day has a list for.
+    const en = dutyPageProps(model, 'en', '2026-10-01')?.missingGroups ?? [];
+    expect(en).toContain('Dimos Thermis');
+    expect(en.join(' ')).not.toMatch(/asvestochori|chalkidona|lagkadas|volvi\b/u);
   });
 
   it('has no previous link on the first date and no next link on the last', () => {
@@ -237,6 +241,47 @@ describe('dutyPageProps', () => {
     }
     const linked = page?.groups.flatMap((g) => g.sections.flatMap((s) => s.entries)) ?? [];
     expect(linked.every((e) => e.pagePath === `/farmakeio/${e.pharmacyId}/`)).toBe(true);
+  });
+
+  it('sets the date apart from the rest of the heading, and gives short dates to the days around', () => {
+    const el = dutyPageProps(model, 'el', '2026-10-05');
+    expect(el?.h1Lead).toBe('Εφημερεύοντα φαρμακεία, Θεσσαλονίκη');
+    expect(`${el?.h1Lead}, ${el?.dateLabel}`).toBe(el?.h1);
+    expect(el?.prev?.shortLabel).toBe('Κυρ 4 Οκτ');
+    expect(dutyPageProps(model, 'en', '2026-10-05')?.next?.shortLabel).toBe('Tue 6 Oct');
+  });
+
+  it('lists the rows as the home screen does: short names, area first, sorted by area, a Call label', () => {
+    const page = dutyPageProps(model, 'el', '2026-10-05');
+    for (const group of page?.groups ?? []) {
+      for (const section of group.sections) {
+        const areas = section.entries.map((e) => e.place.split(' · ')[0] ?? '');
+        for (const entry of section.entries) {
+          expect(entry.name).not.toMatch(/\b(Ο\.?Ε|Ε\.?Ε|ΙΚΕ)\.?$/u);
+          expect(entry.callLabel).toBe(t('el').app.row.callLabel.replace('{name}', entry.name));
+        }
+        // The rows without an area of their own (the city itself) come first, then by area.
+        const named = areas.filter((_, i) => section.entries[i]?.place.includes(' · '));
+        expect(named).toEqual([...named].sort(new Intl.Collator('el').compare));
+      }
+    }
+    const rows = page?.groups.flatMap((g) => g.sections.flatMap((s) => s.entries)) ?? [];
+    expect(rows.some((e) => e.location !== null)).toBe(true);
+    // The city's own name is not repeated on every row.
+    expect(rows.some((e) => e.place.startsWith('Θεσσαλονίκη · '))).toBe(false);
+  });
+
+  it('writes the names and places in Latin letters on English pages', () => {
+    const rows =
+      dutyPageProps(model, 'en', '2026-10-05')?.groups.flatMap((g) =>
+        g.sections.flatMap((s) => s.entries),
+      ) ?? [];
+    expect(rows.length).toBeGreaterThan(0);
+    for (const entry of rows) {
+      expect(entry.name).not.toMatch(/[Α-Ωα-ω]/u);
+      expect(entry.place).not.toMatch(/[Α-Ωα-ω]/u);
+      expect(entry.callLabel).toBe(t('en').app.row.callLabel.replace('{name}', entry.name));
+    }
   });
 });
 

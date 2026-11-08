@@ -12,5 +12,5 @@ for (const element of document.querySelectorAll<HTMLElement>('[data-duty-date]')
   const badge = document.createElement('span');
   badge.className = 'seo-badge';
   badge.textContent = element.dataset['todayLabel'] ?? '';
-  element.append(badge);
+  element.append(' ', badge);
 }

@@ -298,6 +298,10 @@ export const el = {
       nextDay: 'την επομένη',
       extraHoursLabel: 'Επίσης:',
       exceptHolidays: 'εκτός αργιών',
+      /** Beside the hours of a list whose duty is running now. */
+      onDutyNow: 'Εφημερεύουν τώρα',
+      /** On today's page: the home screen, nearest first. */
+      nearestNow: 'Τα πιο κοντινά ανοιχτά τώρα',
     },
 
     area: {

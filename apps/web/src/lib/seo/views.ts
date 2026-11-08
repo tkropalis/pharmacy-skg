@@ -28,8 +28,9 @@ import {
 import type { RegularHoursView } from './format.ts';
 import { pharmacyMapUrl } from '../deep-link.ts';
 import { formatPhone } from '../format.ts';
-import { groupDisplayName } from '../groups.ts';
+import { KNOWN_GROUPS, groupDisplayName } from '../groups.ts';
 import { displayName } from '../names.ts';
+import { stripAccents } from '../places.ts';
 import { breadcrumbJsonLd, jsonLdScript, pharmacyJsonLd, telHref } from './jsonld.ts';
 import { latinOrGreek, nearbyView, nearestPharmacies } from './nearby.ts';
 import type { NearbyView } from './nearby.ts';
@@ -325,19 +326,26 @@ export function pharmacyPageProps(
 
 export interface DutyEntryView {
   readonly pharmacyId: string;
+  /** Without its legal form, in Latin letters on English pages. */
   readonly name: string;
-  readonly address: string;
-  readonly locality: string;
+  /** "Αγία Βαρβάρα · Π.ΠΑΤΡΩΝ ΓΕΡΜΑΝΟΥ 80": the area first, since the rows are sorted by it. */
+  readonly place: string;
   /** "2310 023026" */
   readonly phone: string;
   readonly phoneHref: string | null;
+  /** "Κλήση: {name}" */
+  readonly callLabel: string;
   /** The pharmacy's page, or null when the registry does not know the id. */
   readonly pagePath: string | null;
+  /** For the map at the top; null when its position is not known. */
+  readonly location: { readonly lat: number; readonly lon: number } | null;
 }
 
 export interface DutySectionView {
   readonly kindLabel: string;
   readonly hoursText: string;
+  /** "08:00", "23:00" and whether it ends the next day, for marking the lists on duty now. */
+  readonly window: { readonly from: string; readonly to: string; readonly nextDay: boolean } | null;
   readonly extraHours: readonly string[];
   readonly notes: readonly string[];
   readonly entries: readonly DutyEntryView[];
@@ -354,6 +362,8 @@ export interface DutyGroupView {
 export interface DutyNeighbour {
   readonly date: string;
   readonly label: string;
+  /** "Σάβ 7 Νοε" */
+  readonly shortLabel: string;
   readonly path: string;
 }
 
@@ -363,11 +373,15 @@ export interface DutyPageProps {
   readonly date: string;
   readonly dateLabel: string;
   readonly h1: string;
+  /** The h1 without its date, which the page sets on a line of its own; null if it does not end with it. */
+  readonly h1Lead: string | null;
   /** The duty index, the city's page for today and, on a dated page, the date. */
   readonly breadcrumbs: readonly Crumb[];
   readonly prev: DutyNeighbour | null;
   readonly next: DutyNeighbour | null;
   readonly groups: readonly DutyGroupView[];
+  /** The home screen opened on the city. */
+  readonly mapPath: string;
   /** Names of the area groups with no list in this day's file (each group has its own PDF). */
   readonly missingGroups: readonly string[];
   readonly indexPath: string;
@@ -377,21 +391,67 @@ export interface DutyPageProps {
 
 function neighbour(cityId: string, date: string | undefined, locale: Locale): DutyNeighbour | null {
   if (date === undefined) return null;
-  return { date, label: formatLongDate(date, locale), path: dutyPath(locale, cityId, date) };
+  return {
+    date,
+    label: formatLongDate(date, locale),
+    shortLabel: formatShortDate(date, locale),
+    path: dutyPath(locale, cityId, date),
+  };
 }
 
 /**
  * The groups that exist (seen in any loaded day, or on a pharmacy) but are not in this day's
  * file, by name; a group never seen in a list falls back to its id.
  */
-function missingGroupNames(model: SeoModel, present: readonly string[]): string[] {
+function missingGroupNames(model: SeoModel, present: readonly string[], locale: Locale): string[] {
   const known = new Set<string>(model.groupNames.keys());
   for (const pharmacy of model.pharmacies)
     if (pharmacy.groupId !== null) known.add(pharmacy.groupId);
+  const printed = KNOWN_GROUPS[model.cityId] ?? {};
   return [...known]
     .filter((id) => !present.includes(id))
-    .map((id) => model.groupNames.get(id) ?? id)
+    .map((id) => {
+      const name =
+        model.groupNames.get(id) ?? groupDisplayName(model.cityId, id, printed[id] ?? id);
+      return locale === 'en' ? romanize(name) : name;
+    })
     .sort((a, b) => greek.compare(a, b));
+}
+
+/**
+ * A row of a day's list, as on the home screen: the name without its legal form, the area before
+ * the street, a Call button. Sorted by area, so someone looking for theirs finds it by reading
+ * down the left edge.
+ */
+function dutyEntryView(
+  model: SeoModel,
+  entry: { pharmacyId: string; name: string; address: string; locality: string; phone: string },
+  locale: Locale,
+  city: string,
+): { view: DutyEntryView; sortKey: string } {
+  const name = latinOrGreek(displayName(entry.name), locale);
+  const locality = locale === 'en' ? romanizeLocality(entry.locality) : entry.locality;
+  const address = latinOrGreek(entry.address, locale);
+  const same = (a: string, b: string) => stripAccents(a).trim() === stripAccents(b).trim();
+  const area = locality === city || locality === '' ? '' : locality;
+  const place = area === '' || same(area, address) ? address : `${area} · ${address}`;
+  const pharmacy = model.pharmacyById.get(entry.pharmacyId);
+  return {
+    sortKey: area,
+    view: {
+      pharmacyId: entry.pharmacyId,
+      name,
+      place,
+      phone: formatPhone(entry.phone),
+      phoneHref: telHref(entry.phone),
+      callLabel: fill(t(locale).app.row.callLabel, { name }),
+      pagePath: pharmacy === undefined ? null : pharmacyPath(locale, entry.pharmacyId),
+      location:
+        pharmacy?.location == null
+          ? null
+          : { lat: pharmacy.location.lat, lon: pharmacy.location.lon },
+    },
+  };
 }
 
 export function dutyPageProps(model: SeoModel, locale: Locale, date: string): DutyPageProps | null {
@@ -413,17 +473,16 @@ export function dutyPageProps(model: SeoModel, locale: Locale, date: string): Du
       hoursText: windowText(section.hours, seo),
       extraHours: section.extraHours.map((extra) => extraHoursText(extra, seo)),
       notes: sectionNotes(section),
-      entries: section.entries.map((entry): DutyEntryView => ({
-        pharmacyId: entry.pharmacyId,
-        name: entry.name,
-        address: entry.address,
-        locality: entry.locality,
-        phone: formatPhone(entry.phone),
-        phoneHref: telHref(entry.phone),
-        pagePath: model.pharmacyById.has(entry.pharmacyId)
-          ? pharmacyPath(locale, entry.pharmacyId)
-          : null,
-      })),
+      window:
+        section.hours === null
+          ? null
+          : { from: section.hours.from, to: section.hours.to, nextDay: section.hours.toNextDay },
+      entries: section.entries
+        .map((entry) => dutyEntryView(model, entry, locale, city))
+        .sort(
+          (a, b) => greek.compare(a.sortKey, b.sortKey) || greek.compare(a.view.name, b.view.name),
+        )
+        .map((entry) => entry.view),
     })),
   }));
 
@@ -442,6 +501,9 @@ export function dutyPageProps(model: SeoModel, locale: Locale, date: string): Du
     date,
     dateLabel,
     h1: title,
+    h1Lead: title.endsWith(dateLabel)
+      ? title.slice(0, -dateLabel.length).replace(/[\s,]+$/u, '')
+      : null,
     breadcrumbs: [
       { name: seo.footerDuty, path: dutyIndexPath(locale) },
       { name: city, path: dutyCityPath(locale, model.cityId) },
@@ -450,9 +512,11 @@ export function dutyPageProps(model: SeoModel, locale: Locale, date: string): Du
     prev: neighbour(model.cityId, model.publishedDates[position - 1], locale),
     next: neighbour(model.cityId, model.publishedDates[position + 1], locale),
     groups,
+    mapPath: pharmacyMapUrl(locale, model.cityId),
     missingGroups: missingGroupNames(
       model,
       day.groups.map((g) => g.id),
+      locale,
     ),
     indexPath: dutyIndexPath(locale),
     updatedAt: model.updatedAt,
