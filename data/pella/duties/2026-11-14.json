@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-14",
+  "groups": [
+    {
+      "id": "pella",
+      "name": "Πέλλα",
+      "source": {
+        "url": "https://pella.efhmeries.gr/",
+        "uploadedAt": "2026-11-08T20:37:18.261Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2384022300",
+              "name": "ΑΓΟΡΑΣΤΟΥ ΧΡΙΣΤΙΝΑ",
+              "address": "ΑΘ. ΔΙΑΚΟΥ 18",
+              "locality": "Αριδαία",
+              "phone": "2384022300"
+            },
+            {
+              "pharmacyId": "2381089221",
+              "name": "ΝΑΤΣΚΟΥ ΦΩΤΕΙΝΗ",
+              "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 33",
+              "locality": "Σκύδρα",
+              "phone": "2381089221"
+            },
+            {
+              "pharmacyId": "2381026158",
+              "name": "ΠΕΤΡΙΔΗΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "Γ. ΠΕΤΣΟΥ 2-4",
+              "locality": "Έδεσσα",
+              "phone": "2381026158"
+            },
+            {
+              "pharmacyId": "2382023881",
+              "name": "ΣΙΓΚΟΥΔΗ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΖΑΜΙΔΗ 3 (ΟΠΙΣΘΕΝ GOODY'S)",
+              "locality": "Γιαννιτσά",
+              "phone": "2382023881"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382062120",
+              "name": "ΝΑΥΡΟΖΙΔΗΣ ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "ΒΑΣ. ΠΑΥΛΟΥ 32",
+              "locality": "Κρύα Βρύση",
+              "phone": "2382062120"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382083233",
+              "name": "Σ.Φ. ΜΑΜΑΓΚΙΝΙΔΟΥ ΕΜΜΑΝΟΥΕΛΑ - ΚΥΡΙΑΚΙΔΗΣ ΕΥΑΓΓΕΛΟΣ",
+              "address": "ΜΠΑΦΡΑΣ 18",
+              "locality": "Γιαννιτσά",
+              "phone": "2382083233"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

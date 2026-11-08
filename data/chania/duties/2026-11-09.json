@@ -7,7 +7,7 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-11-07T20:19:30.608Z"
+        "uploadedAt": "2026-11-08T20:37:55.667Z"
       },
       "sections": [
         {
@@ -73,26 +73,6 @@
         },
         {
           "kind": "day",
-          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
-          "hours": {
-            "from": "08:30",
-            "to": "22:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2822022451",
-              "name": "Σ.Φ. ΚΑΤΑΚΗΣ ΠΑΝΤΕΛΗΣ-ΚΑΤΑΚΗ ΕΥΤΥΧΙΑ/S.F. KATAKIS PANTELIS-KATAKI EYTIXIA",
-              "address": "ΚΑΣΤΕΛΙ ΠΛΑΤΕΙΑ ΕΛ. ΒΕΝΙΖΕΛΟΥ (ΔΙΠΛΑ ΑΠΟ ΤΗΝ ΕΘΝ. ΤΡΑΠΕΖΑ)/ΚΑSΤΕLΙ PLATIA EL. VENIZELOU",
-              "locality": "Δήμος Κισσάμου",
-              "phone": "2822022451"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
           "hours": {
             "from": "08:30",
@@ -136,6 +116,26 @@
               "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ 1 ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΑΚΡΩΤΗΡΙΟΥ/ΑRΙSΤΟΤΕLΟUS 1-KOUNOUPIDIANA",
               "locality": "Ακρωτήρι",
               "phone": "2821069791"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
+          "hours": {
+            "from": "08:30",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2822022451",
+              "name": "Σ.Φ. ΚΑΤΑΚΗΣ ΠΑΝΤΕΛΗΣ-ΚΑΤΑΚΗ ΕΥΤΥΧΙΑ/S.F. KATAKIS PANTELIS-KATAKI EYTIXIA",
+              "address": "ΚΑΣΤΕΛΙ ΠΛΑΤΕΙΑ ΕΛ. ΒΕΝΙΖΕΛΟΥ (ΔΙΠΛΑ ΑΠΟ ΤΗΝ ΕΘΝ. ΤΡΑΠΕΖΑ)/ΚΑSΤΕLΙ PLATIA EL. VENIZELOU",
+              "locality": "Δήμος Κισσάμου",
+              "phone": "2822022451"
             }
           ]
         }

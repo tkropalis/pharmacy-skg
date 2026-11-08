@@ -244,7 +244,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-11-11",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 37.513319,
         "lon": 22.3733156,
@@ -349,11 +349,32 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 37.5079161,
         "lon": 22.37146,
         "ref": "https://arkadia.efhmeries.gr/Home/Details/5050",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710234732",
+      "name": "ΚΑΡΚΟΥΛΗ ΜΑΡΙΑ",
+      "address": "ΕΡ. ΣΤΑΥΡΟΥ ΚΑΙ ΑΝΑΓΝΩΣΤΑΡΑ",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710234732",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "location": {
+        "lat": 37.5127045,
+        "lon": 22.3679173,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5087",
         "source": "list",
         "precision": "exact"
       }
@@ -391,7 +412,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 37.5103519,
         "lon": 22.3729014,
@@ -433,7 +454,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 37.5101494,
         "lon": 22.3749398,
@@ -454,7 +475,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-11",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 37.5111574,
         "lon": 22.3705772,
@@ -580,7 +601,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-13",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 37.4036411,
         "lon": 22.7228236,
@@ -685,7 +706,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-13",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 37.1677509,
         "lon": 22.8579221,
@@ -727,7 +748,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 37.4014368,
         "lon": 22.136571,
@@ -790,7 +811,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-13",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 37.6845416,
         "lon": 22.2955302,
@@ -832,7 +853,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-13",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 37.7322838,
         "lon": 21.9594427,

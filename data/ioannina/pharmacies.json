@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
+      "id": "2651002414",
+      "name": "ΜΑΚΡΗ ΧΡΙΣΤΙΝΑ",
+      "address": "ΝΙΑΡΧΟΥ & ΔΗΛΟΥ 1",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651002414",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "location": {
+        "lat": 39.6394427,
+        "lon": 20.8483648,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5106",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651003516",
       "name": "ΜΠΡΑΧΑΝΤΙΝΗΣ ΙΑΣΩΝ",
       "address": "ΣΤΑΥΡΙΑΚΟΥ 8 & ΕΛΕΥΘΕΡΙΑΣ",
@@ -328,7 +349,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.6732026,
         "lon": 20.848735,
@@ -459,6 +480,27 @@
         "lat": 39.6704543,
         "lon": 20.8505056,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5081",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651027088",
+      "name": "ΜΗΤΣΙΟΥ ΧΡΥΣΟΥΛΑ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 2ΟΒ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651027088",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "location": {
+        "lat": 39.6673609,
+        "lon": 20.8518152,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5103",
         "source": "list",
         "precision": "exact"
       }
@@ -1063,7 +1105,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.6404736,
         "lon": 20.8681534,
@@ -1147,7 +1189,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.6574932,
         "lon": 20.8502042,

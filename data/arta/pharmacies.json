@@ -695,6 +695,27 @@
       }
     },
     {
+      "id": "2681074484",
+      "name": "ΤΣΙΑΝΑΚΑΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΣΚΟΥΦΑ 22",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681074484",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "location": {
+        "lat": 39.162494,
+        "lon": 20.9884787,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2454",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681074927",
       "name": "ΓΕΙΤΟΝΑΣ",
       "address": "ΠΡΙΟΒΟΛΟΥ 1",
@@ -937,7 +958,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.167183,
         "lon": 21.034827,
