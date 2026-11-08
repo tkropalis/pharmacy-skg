@@ -19,6 +19,7 @@ import {
   type Meta,
 } from '../schema.ts';
 import { cityPaths, readJson, toJson, writeIfChanged, type CityPaths } from '../store.ts';
+import { BlockedError } from '../sources/http.ts';
 import type { Logger } from './logger.ts';
 import { updateCity, type UpdateCityOptions } from './city.ts';
 import { runUpdate } from './run.ts';
@@ -437,6 +438,41 @@ describe('runUpdate', () => {
     expect(logger.errors).toEqual(['larisa: TypeError: fetch failed: Error: ECONNRESET']);
     expect(await readJson(cityPaths('second', root).meta, MetaSchema)).toBeDefined();
     expect(await readJson(cityPaths('larisa', root).meta, MetaSchema)).toBeUndefined();
+  });
+
+  it('reports a city whose site blocks the run as a warning, keeping its data, and exits 0', async () => {
+    const logger = recorder();
+    const warnings: string[] = [];
+    const blocked = pipeline({
+      fetchDutyLists: async () => {
+        throw new BlockedError(
+          'HTTP 403 Forbidden for https://www.efimeria.gr/All (server: cloudflare; cf-mitigated: challenge): Just a moment...',
+        );
+      },
+    });
+    const code = await runUpdate({
+      ...options(logger, [blocked, second()]),
+      logger: { ...logger, warn: (m: string) => void warnings.push(m) },
+    });
+    expect(code).toBe(0);
+    expect(warnings).toEqual([
+      'warning [blocked] larisa: its site answers this network with a bot challenge; the stored data is kept and goes stale: BlockedError: HTTP 403 Forbidden for https://www.efimeria.gr/All (server: cloudflare; cf-mitigated: challenge): Just a moment...',
+    ]);
+    expect(logger.errors).toEqual([]);
+    expect(await readJson(cityPaths('larisa', root).meta, MetaSchema)).toBeUndefined();
+    expect(await readJson(cityPaths('second', root).meta, MetaSchema)).toBeDefined();
+  });
+
+  it('still exits 1 for a city that fails when another is only blocked', async () => {
+    const logger = recorder();
+    const blocked = pipeline({
+      fetchDutyLists: async () => {
+        throw new Error('read failed', { cause: new BlockedError('HTTP 403 Forbidden') });
+      },
+    });
+    const quiet = second({ fetchDutyLists: async () => published(TOMORROW) });
+    expect(await runUpdate(options(logger, [blocked, quiet]))).toBe(1);
+    expect(logger.errors[0]).toMatch(/^warning \[blocked\] larisa: /);
   });
 
   it('exits 1 when a city could not be fully updated, and runs only the chosen cities', async () => {

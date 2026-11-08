@@ -77,6 +77,26 @@ export async function describeResponse(response: Response, url: string): Promise
   );
 }
 
+/**
+ * A site that answered with a bot challenge (Cloudflare's `cf-mitigated: challenge`). It refuses
+ * the network the run is on, not the request: efimeria.gr has answered GitHub's runners so since
+ * 2 Nov 2026 and fscyclades.gr since 5 Nov, while both answer 200 from Greece. Asking again does
+ * not help, and getting past a challenge is not ours to do (CLAUDE.md), so it is not retried.
+ */
+export class BlockedError extends Error {
+  override readonly name = 'BlockedError';
+}
+
+/** Whether an error, or one it was caused by, is a bot challenge (`BlockedError`). */
+export function isBlocked(error: unknown): boolean {
+  let current = error;
+  for (let depth = 0; current && depth < 4; depth++) {
+    if (current instanceof BlockedError) return true;
+    current = (current as { cause?: unknown }).cause;
+  }
+  return false;
+}
+
 export interface HttpClientOptions {
   /**
    * The least time between the starts of two requests, and with it one request at a time. A site
@@ -206,6 +226,10 @@ export class HttpClient {
         });
         this.onResponse(response);
         if (response.ok) return await read(response);
+        if (response.headers.get('cf-mitigated') === 'challenge') {
+          lastError = new BlockedError(await describeResponse(response, url));
+          break;
+        }
         lastError = new Error(await describeResponse(response, url));
         if (response.status < 500 && response.status !== 429) break;
       } catch (error) {
