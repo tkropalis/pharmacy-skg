@@ -1,0 +1,447 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-14",
+  "groups": [
+    {
+      "id": "amaliada",
+      "name": "Αμαλιάδα",
+      "source": {
+        "url": "https://diavgeia.gov.gr/decision/view/ΡΣΦΞ7Λ6-2Κ3",
+        "uploadedAt": "2025-12-16T12:43:57.736Z"
+      },
+      "sections": [
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00-14:30 & 17:30-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2622020095",
+              "name": "ΧΡΙΣΤΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΕΥΑΓΓΕΛΙΣΤΡΙΑΣ 125Α",
+              "locality": "Αμαλιάδα",
+              "phone": "2622020095"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00-17:30",
+          "hours": {
+            "from": "08:00",
+            "to": "17:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2622022260",
+              "name": "ΜΠΟΥΣΔΟΥΚΟΥ ΕΛΕΝΑ",
+              "address": "ΑΡΧΑΙΑΣ ΗΛΙΔΟΣ 7",
+              "locality": "Αμαλιάδα",
+              "phone": "2622022260"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00-14:30 & 17:30-08:00",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2622020095",
+              "name": "ΧΡΙΣΤΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΕΥΑΓΓΕΛΙΣΤΡΙΑΣ 125Α",
+              "locality": "Αμαλιάδα",
+              "phone": "2622020095"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ancient-olympia",
+      "name": "Αρχαία Ολυμπία",
+      "source": {
+        "url": "https://diavgeia.gov.gr/decision/view/ΡΣΦΞ7Λ6-2Κ3",
+        "uploadedAt": "2025-12-16T12:43:57.736Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2624022000",
+              "name": "ΠΑΠΑΒΑΣΙΛΕΙΟΥ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΚΟΝΔΥΛΗ ΠΡΑΞΙΤΕΛΗ 60",
+              "locality": "Αρχαία Ολυμπία",
+              "phone": "2624022000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "andravida",
+      "name": "Ανδραβίδα",
+      "source": {
+        "url": "https://diavgeia.gov.gr/decision/view/ΡΣΦΞ7Λ6-2Κ3",
+        "uploadedAt": "2025-12-16T12:43:57.736Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2623054444",
+              "name": "ΧΑΝΤΖΗ ΚΩΝ/ΝΑ",
+              "address": "ΕΘΝ. ΑΝΤΙΣΤΑΣΗΣ, ΑΓΙΟΥ ΚΩΝΣΤΑΝΤΙΝΟΥ",
+              "locality": "Ανδραβίδα",
+              "phone": "2623054444"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gastouni",
+      "name": "Γαστούνη",
+      "source": {
+        "url": "https://diavgeia.gov.gr/decision/view/ΡΣΦΞ7Λ6-2Κ3",
+        "uploadedAt": "2025-12-16T12:43:57.736Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2623034200",
+              "name": "ΚΑΜΠΙΤΣΗ ΡΟΥΣΣΑ",
+              "address": "ΑΡΧΑΙΑΣ ΗΛΙΔΟΣ 7",
+              "locality": "Γαστούνη",
+              "phone": "2623034200"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "krestena",
+      "name": "Κρέστενα",
+      "source": {
+        "url": "https://diavgeia.gov.gr/decision/view/ΡΣΦΞ7Λ6-2Κ3",
+        "uploadedAt": "2025-12-16T12:43:57.736Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2625024131",
+              "name": "ΣΚΟΥΦΗΣ ΧΡΗΣΤΟΣ",
+              "address": "ΞΕΝΟΦΩΝΤΟΣ 7",
+              "locality": "Κρέστενα",
+              "phone": "2625024131"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lechaina",
+      "name": "Λεχαινά",
+      "source": {
+        "url": "https://diavgeia.gov.gr/decision/view/ΡΣΦΞ7Λ6-2Κ3",
+        "uploadedAt": "2025-12-16T12:43:57.736Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2623022204",
+              "name": "ΛΙΒΑΔΑΣ ΣΠΥΡΙΔΩΝ - ΣΑΡΑΝΤΗΣ",
+              "address": "ΠΡΑΝΤΟΥΝΑ 10",
+              "locality": "Λεχαινά",
+              "phone": "2623022204"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00-14:00",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2623022686",
+              "name": "ΛΕΥΚΑΔΙΤΗ Δ. ΓΕΩΡΓΙΑ",
+              "address": "ΠΑΠΑΦΛΕΣΣΑ 6",
+              "locality": "Λεχαινά",
+              "phone": "2623022686"
+            },
+            {
+              "pharmacyId": "2623022742",
+              "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΝΕΟΦΥΤΟΣ",
+              "address": "ΨΥΧΟΓΙΟΥ 19",
+              "locality": "Λεχαινά",
+              "phone": "2623022742"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pyrgos",
+      "name": "Πύργος",
+      "source": {
+        "url": "https://diavgeia.gov.gr/decision/view/ΡΣΦΞ7Λ6-2Κ3",
+        "uploadedAt": "2025-12-16T12:43:57.736Z"
+      },
+      "sections": [
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00-14:30 & 18:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2621061535",
+              "name": "ΣΤΥΛΙΑΝΙΔΗ ΕΛΙΣΣΑΒΕΤ",
+              "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 46Α",
+              "locality": "Πύργος",
+              "phone": "2621061535"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00-18:00",
+          "hours": {
+            "from": "08:00",
+            "to": "18:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2621027706",
+              "name": "ΛΑΤΤΑ Π. ΝΙΚΟΛΕΤΤΑ",
+              "address": "ΜΗΤΡΟΠΟΛΙΤΗ ΑΝΤΩΝΙΟΥ (ΠΑΤΡΩΝ 42)",
+              "locality": "Πύργος",
+              "phone": "2621027706"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00-14:30 & 18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2621061535",
+              "name": "ΣΤΥΛΙΑΝΙΔΗ ΕΛΙΣΣΑΒΕΤ",
+              "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 46Α",
+              "locality": "Πύργος",
+              "phone": "2621061535"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tragano",
+      "name": "Τραγανό",
+      "source": {
+        "url": "https://diavgeia.gov.gr/decision/view/ΡΣΦΞ7Λ6-2Κ3",
+        "uploadedAt": "2025-12-16T12:43:57.736Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2623061231",
+              "name": "ΜΠΑΚΕΛΑΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "ΑΡΧΑΙΑΣ ΟΛΥΜΠΙΑΣ 23",
+              "locality": "Τραγανό",
+              "phone": "2623061231"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "varda",
+      "name": "Βάρδα",
+      "source": {
+        "url": "https://diavgeia.gov.gr/decision/view/ΡΣΦΞ7Λ6-2Κ3",
+        "uploadedAt": "2025-12-16T12:43:57.736Z"
+      },
+      "sections": [
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΣΗ",
+          "hours": null,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "x-533c87b77c",
+              "name": "ΧΟΥΝΤΡΑ ΘΕΟΔΩΡΑ",
+              "address": "",
+              "locality": "Βάρδα",
+              "phone": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vartholomio",
+      "name": "Βαρθολομιό",
+      "source": {
+        "url": "https://diavgeia.gov.gr/decision/view/ΡΣΦΞ7Λ6-2Κ3",
+        "uploadedAt": "2025-12-16T12:43:57.736Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2623041495",
+              "name": "ΚΟΚΚΩΝΗ ΖΩΗ",
+              "address": "ΒΟΥΡΤΣΗ ΚΑΙ ΜΕΛΙΝΑΣ ΜΕΡΚΟΥΡΗ",
+              "locality": "Βαρθολομιό",
+              "phone": "2623041495"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zacharo",
+      "name": "Ζαχάρω",
+      "source": {
+        "url": "https://diavgeia.gov.gr/decision/view/ΡΣΦΞ7Λ6-2Κ3",
+        "uploadedAt": "2025-12-16T12:43:57.736Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2625036166",
+              "name": "ΚΑΡΑΧΑΛΙΟΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΕΘΝ. ΟΔΟΣ ΠΥΡΓΟΥ -ΚΥΠΑΡΙΣΣΙΑΣ",
+              "locality": "Ζαχάρω",
+              "phone": "2625036166"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
