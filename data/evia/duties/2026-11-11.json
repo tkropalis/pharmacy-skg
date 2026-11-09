@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-09T07:05:46.810Z"
+        "uploadedAt": "2026-11-09T12:58:11.086Z"
       },
       "sections": [
         {
@@ -38,6 +38,26 @@
           ]
         },
         {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221021853",
+              "name": "ΚΙΑΠΕΚΟΥ ΚΥΡΙΑΚΗ",
+              "address": "ΑΜΦΙΔΑΜΑΝΤΟΣ 70 & ΑΘ.ΔΙΑΚΟΥ-ΠΛΑΤΕΙΑ ΚΑΝΗΘΟΥ",
+              "locality": "Χαλκίδα",
+              "phone": "2221021853"
+            }
+          ]
+        },
+        {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
           "hours": {
@@ -62,26 +82,6 @@
               "address": "Ι. ΚΟΤΣΙΚΑ 9",
               "locality": "Κάρυστος",
               "phone": "2224022217"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "14:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "14:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221021853",
-              "name": "ΚΙΑΠΕΚΟΥ ΚΥΡΙΑΚΗ",
-              "address": "ΑΜΦΙΔΑΜΑΝΤΟΣ 70 & ΑΘ.ΔΙΑΚΟΥ-ΠΛΑΤΕΙΑ ΚΑΝΗΘΟΥ",
-              "locality": "Χαλκίδα",
-              "phone": "2221021853"
             }
           ]
         },

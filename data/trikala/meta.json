@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "trikala",
-  "updatedAt": "2026-11-07T11:11:06.516Z",
-  "checkedAt": "2026-11-09T07:08:06.023Z",
+  "updatedAt": "2026-11-09T13:00:32.920Z",
+  "checkedAt": "2026-11-09T13:00:32.920Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-11-09"
+    "to": "2026-11-15"
   },
   "extendedHours": [],
   "sources": [

@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-11-09T07:05:52.886Z"
+        "uploadedAt": "2026-11-09T12:58:17.473Z"
       },
       "sections": [
         {
@@ -34,6 +34,26 @@
               "address": "ΕΥΡΙΠΙΔΟΥ 17",
               "locality": "Ορεστιάδα",
               "phone": "2552022456"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:30-22:00",
+          "hours": {
+            "from": "14:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551036511",
+              "name": "ΤΣΟΛΑΚΗ ΑΡΧΟΝΤΙΑ",
+              "address": "Διον. Σολωμού 15 (δρόμος ΔΕΥΑΑ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551036511"
             }
           ]
         },
@@ -69,26 +89,6 @@
               "address": "ΝΙΚΗΣ 19",
               "locality": "Τυχερό, Προβατώνας",
               "phone": "2554042042"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "14:30-22:00",
-          "hours": {
-            "from": "14:30",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551036511",
-              "name": "ΤΣΟΛΑΚΗ ΑΡΧΟΝΤΙΑ",
-              "address": "Διον. Σολωμού 15 (δρόμος ΔΕΥΑΑ)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551036511"
             }
           ]
         },

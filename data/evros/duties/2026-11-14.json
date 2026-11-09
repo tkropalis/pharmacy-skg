@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-11-09T07:05:52.886Z"
+        "uploadedAt": "2026-11-09T12:58:17.473Z"
       },
       "sections": [
         {
@@ -54,60 +54,6 @@
               "address": "25ΗΣ ΜΑΪΟΥ 131",
               "locality": "Διδυμότειχο",
               "phone": "2553025115"
-            }
-          ]
-        },
-        {
-          "kind": "saturday-extra",
-          "heading": "08:30-14:00",
-          "hours": {
-            "from": "08:30",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2552027049",
-              "name": "ΚΟΥΚΛΑΤΖΗ ΣΜΑΡΩ",
-              "address": "Β. ΚΩΝΣΤΑΝΤΙΝΟΥ 52",
-              "locality": "Ορεστιάδα",
-              "phone": "2552027049"
-            },
-            {
-              "pharmacyId": "2552022769",
-              "name": "ΜΕΛΑΣ ΕΜΜΑΝΟΥΗΛ",
-              "address": "ΕΥΡΥΠΙΔΟΥ 12",
-              "locality": "Ορεστιάδα",
-              "phone": "2552022769"
-            },
-            {
-              "pharmacyId": "2552025800",
-              "name": "Σ.Φ. ΤΣΙΑΤΣΙΟΥ Δ. - ΓΚΕΝΤΣΙΔΗΣ Γ.",
-              "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 189",
-              "locality": "Ορεστιάδα",
-              "phone": "2552025800"
-            }
-          ]
-        },
-        {
-          "kind": "saturday-extra",
-          "heading": "08:00-14:30",
-          "hours": {
-            "from": "08:00",
-            "to": "14:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2553022922",
-              "name": "ΓΙΟΥΡΤΣΟΓΛΟΥ ΧΡΗΣΤΟΣ",
-              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 9",
-              "locality": "Διδυμότειχο",
-              "phone": "2553022922"
             }
           ]
         },
@@ -163,6 +109,60 @@
               "address": "Ποιμενίδη & Παλαμά γωνία",
               "locality": "Αλεξανδρούπολη",
               "phone": "2551083833"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:30-14:00",
+          "hours": {
+            "from": "08:30",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552027049",
+              "name": "ΚΟΥΚΛΑΤΖΗ ΣΜΑΡΩ",
+              "address": "Β. ΚΩΝΣΤΑΝΤΙΝΟΥ 52",
+              "locality": "Ορεστιάδα",
+              "phone": "2552027049"
+            },
+            {
+              "pharmacyId": "2552022769",
+              "name": "ΜΕΛΑΣ ΕΜΜΑΝΟΥΗΛ",
+              "address": "ΕΥΡΥΠΙΔΟΥ 12",
+              "locality": "Ορεστιάδα",
+              "phone": "2552022769"
+            },
+            {
+              "pharmacyId": "2552025800",
+              "name": "Σ.Φ. ΤΣΙΑΤΣΙΟΥ Δ. - ΓΚΕΝΤΣΙΔΗΣ Γ.",
+              "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 189",
+              "locality": "Ορεστιάδα",
+              "phone": "2552025800"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00-14:30",
+          "hours": {
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2553022922",
+              "name": "ΓΙΟΥΡΤΣΟΓΛΟΥ ΧΡΗΣΤΟΣ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 9",
+              "locality": "Διδυμότειχο",
+              "phone": "2553022922"
             }
           ]
         }

@@ -7,9 +7,29 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-09T07:05:46.810Z"
+        "uploadedAt": "2026-11-09T12:58:11.086Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221600237",
+              "name": "ΚΟΝΤΟΥ ΒΑΣΙΛΙΚΗ",
+              "address": "ΓΑΖΕΠΗ 83",
+              "locality": "Χαλκίδα",
+              "phone": "2221600237"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -62,26 +82,6 @@
               "address": "ΣΑΧΤΟΥΡΗ 80",
               "locality": "Κάρυστος",
               "phone": "2224023543"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "14:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "14:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221600237",
-              "name": "ΚΟΝΤΟΥ ΒΑΣΙΛΙΚΗ",
-              "address": "ΓΑΖΕΠΗ 83",
-              "locality": "Χαλκίδα",
-              "phone": "2221600237"
             }
           ]
         },
