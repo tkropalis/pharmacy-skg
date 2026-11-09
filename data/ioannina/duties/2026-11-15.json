@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-15",
+  "groups": [
+    {
+      "id": "ioannina",
+      "name": "Ιωάννινα",
+      "source": {
+        "url": "https://ioannina.efhmeries.gr/",
+        "uploadedAt": "2026-11-09T07:06:25.695Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651115878",
+              "name": "ΜΑΚΡΗ ΧΡΙΣΤΙΝΑ (2)",
+              "address": "ΛΕΩΦ. ΔΟΜΠΟΛΗ 35",
+              "locality": "Ιωάννινα",
+              "phone": "2651115878"
+            },
+            {
+              "pharmacyId": "2651066310",
+              "name": "ΧΡΥΣΑΝΘΟΠΟΥΛΟΣ ΜΙΛΤΙΑΔΗΣ",
+              "address": "3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ 55, ΑΝΑΤΟΛΗ",
+              "locality": "Ιωάννινα",
+              "phone": "2651066310"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:30& 18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651071537",
+              "name": "ΔΟΓΟΡΙΤΗΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΚΕΝΤΡΙΚΗ ΠΛΑΤΕΙΑ 10",
+              "locality": "Ιωάννινα",
+              "phone": "2651071537"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00 ΕΩΣ 14:30& 18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651071537",
+              "name": "ΔΟΓΟΡΙΤΗΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΚΕΝΤΡΙΚΗ ΠΛΑΤΕΙΑ 10",
+              "locality": "Ιωάννινα",
+              "phone": "2651071537"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

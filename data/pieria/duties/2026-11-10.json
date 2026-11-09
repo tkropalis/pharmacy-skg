@@ -7,7 +7,7 @@
       "name": "Πιερία",
       "source": {
         "url": "https://pieria.efhmeries.gr/",
-        "uploadedAt": "2026-11-07T20:18:59.602Z"
+        "uploadedAt": "2026-11-09T07:07:42.009Z"
       },
       "sections": [
         {
@@ -88,6 +88,26 @@
         },
         {
           "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351026969",
+              "name": "Σ.Φ. ΣΥΜΕΩΝΙΔΟΥ ΕΥΑΝΘΙΑ -ΛΕΝΑΣ ΒΑΣΙΛΕΙΟΣ",
+              "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 50",
+              "locality": "Κατερίνη",
+              "phone": "2351026969"
+            }
+          ]
+        },
+        {
+          "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:00 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
             "from": "08:00",
@@ -123,26 +143,6 @@
               "address": "16ΗΣ ΟΚΤΩΒΡΙΟΥ 2",
               "locality": "Κατερίνη",
               "phone": "2351028018"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2351026969",
-              "name": "Σ.Φ. ΣΥΜΕΩΝΙΔΟΥ ΕΥΑΝΘΙΑ -ΛΕΝΑΣ ΒΑΣΙΛΕΙΟΣ",
-              "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 50",
-              "locality": "Κατερίνη",
-              "phone": "2351026969"
             }
           ]
         }

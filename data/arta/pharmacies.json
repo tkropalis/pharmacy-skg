@@ -380,6 +380,27 @@
       }
     },
     {
+      "id": "2681070145",
+      "name": "ΠΑΠΑΔΗΜΗΤΡΙΟΥ ΒΙΚΤΩΡΙΑ",
+      "address": "ΑΓΙΑΣ ΣΟΦΙΑΣ ΚΑΙ ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681070145",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-15",
+      "lastSeen": "2026-11-15",
+      "location": {
+        "lat": 39.161421,
+        "lon": 20.98761,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2455",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681070330",
       "name": "ΖΟΡΜΠΑ ΦΡΕΙΔΕΡΙΚΗ",
       "address": "ΓΡΑΙΚΟΥ ΜΑΞΙΜΟΥ 16",
@@ -979,7 +1000,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 39.070637,
         "lon": 21.018409,

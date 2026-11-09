@@ -1294,7 +1294,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 39.6366007,
         "lon": 20.8713763,
@@ -1483,7 +1483,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 39.6656295,
         "lon": 20.853602,
@@ -1698,6 +1698,27 @@
         "lat": 39.6796725,
         "lon": 20.8369179,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5075",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651115878",
+      "name": "ΜΑΚΡΗ ΧΡΙΣΤΙΝΑ (2)",
+      "address": "ΛΕΩΦ. ΔΟΜΠΟΛΗ 35",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651115878",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-15",
+      "lastSeen": "2026-11-15",
+      "location": {
+        "lat": 39.654567,
+        "lon": 20.846963,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5109",
         "source": "list",
         "precision": "exact"
       }

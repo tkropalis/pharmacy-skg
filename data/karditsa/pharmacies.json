@@ -13,7 +13,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 39.3624525,
         "lon": 21.9201342,
@@ -165,6 +165,27 @@
         "lat": 39.3666827,
         "lon": 21.9243262,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3795",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441022078",
+      "name": "ΚΑΝΤΑΡΤΖΗ ΧΡΥΣΟΥΛΑ",
+      "address": "ΚΟΥΜΟΥΝΔΟΥΡΟΥ 9",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441022078",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-11-15",
+      "lastSeen": "2026-11-15",
+      "location": {
+        "lat": 39.363792,
+        "lon": 21.9233517,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3821",
         "source": "list",
         "precision": "exact"
       }

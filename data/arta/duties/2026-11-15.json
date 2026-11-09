@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-15",
+  "groups": [
+    {
+      "id": "arta",
+      "name": "Άρτα",
+      "source": {
+        "url": "https://arta.efhmeries.gr/",
+        "uploadedAt": "2026-11-09T07:05:27.203Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2681070145",
+              "name": "ΠΑΠΑΔΗΜΗΤΡΙΟΥ ΒΙΚΤΩΡΙΑ",
+              "address": "ΑΓΙΑΣ ΣΟΦΙΑΣ ΚΑΙ ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ",
+              "locality": "Άρτα",
+              "phone": "2681070145"
+            },
+            {
+              "pharmacyId": "2681087115",
+              "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΜΕΛΠΟΜΕΝΗ",
+              "address": "ΝΕΟΧΩΡΙ",
+              "locality": "Άρτα",
+              "phone": "2681087115"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -464,6 +464,27 @@
       }
     },
     {
+      "id": "2551031295",
+      "name": "ΚΑΡΑΓΙΑΝΝΟΠΟΥΛΟΣ - ΤΖΑΜΠΕΡ ΧΡΗΣΤΟΣ",
+      "address": "Μαζαράκη 2 (γωνία Λ. Δημοκρατίας)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551031295",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-15",
+      "lastSeen": "2026-11-15",
+      "location": {
+        "lat": 40.845833,
+        "lon": 25.8765974,
+        "ref": "https://evros.efhmeries.gr/Home/Details/3950",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551031479",
       "name": "ΧΑΤΖΗΚΥΡΙΑΚΟΥ-ΜΟΥΡΟΥΚΗ ΕΥΑΝΘΙΑ",
       "address": "Εθ. Αντιστάσεως 49",
@@ -559,7 +580,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 40.8467201,
         "lon": 25.8787177,
@@ -832,7 +853,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 41.4961317,
         "lon": 26.5342729,
@@ -1336,7 +1357,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 41.3526561,
         "lon": 26.503006,
@@ -1420,7 +1441,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 41.1904766,
         "lon": 26.3025729,
@@ -1483,7 +1504,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 41.0273977,
         "lon": 26.2963052,
@@ -1546,7 +1567,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 40.8932822,
         "lon": 26.1698188,

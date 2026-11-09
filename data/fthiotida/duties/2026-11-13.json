@@ -7,9 +7,29 @@
       "name": "Φθιώτιδα",
       "source": {
         "url": "https://fthiotida.efhmeries.gr/",
-        "uploadedAt": "2026-11-07T20:19:24.347Z"
+        "uploadedAt": "2026-11-09T07:08:06.756Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:00",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231022400",
+              "name": "ΛΙΑΓΚΟΥ ΜΑΡΙΑ",
+              "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 38",
+              "locality": "Λαμία",
+              "phone": "2231022400"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -103,26 +123,6 @@
               "address": "ΛΑΜΙΑΣ 7",
               "locality": "Στυλίδα",
               "phone": "2238023928"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 22:00",
-          "hours": {
-            "from": "08:00",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231022400",
-              "name": "ΛΙΑΓΚΟΥ ΜΑΡΙΑ",
-              "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 38",
-              "locality": "Λαμία",
-              "phone": "2231022400"
             }
           ]
         },

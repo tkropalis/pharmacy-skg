@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-11-07T20:17:14.125Z"
+        "uploadedAt": "2026-11-09T07:05:52.886Z"
       },
       "sections": [
         {
@@ -34,26 +34,6 @@
               "address": "ΕΥΡΙΠΙΔΟΥ 17",
               "locality": "Ορεστιάδα",
               "phone": "2552022456"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551020667",
-              "name": "Σ.Φ. ΚΑΪΣΑΣ Γ.-ΚΑΪΣΑ Χ.",
-              "address": "14ης Μαΐου 88 (έναντι ΚΕΠ)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551020667"
             }
           ]
         },
@@ -109,6 +89,26 @@
               "address": "Διον. Σολωμού 15 (δρόμος ΔΕΥΑΑ)",
               "locality": "Αλεξανδρούπολη",
               "phone": "2551036511"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551020667",
+              "name": "Σ.Φ. ΚΑΪΣΑΣ Γ.-ΚΑΪΣΑ Χ.",
+              "address": "14ης Μαΐου 88 (έναντι ΚΕΠ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551020667"
             }
           ]
         }
