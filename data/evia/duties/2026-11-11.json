@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-10T12:44:53.426Z"
+        "uploadedAt": "2026-11-10T21:51:07.650Z"
       },
       "sections": [
         {
@@ -34,26 +34,6 @@
               "address": "ΠΛΗΣΙΟΝ ΚΤΕΛ",
               "locality": "Ιστιαία",
               "phone": "2226053141"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "14:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "14:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221021853",
-              "name": "ΚΙΑΠΕΚΟΥ ΚΥΡΙΑΚΗ",
-              "address": "ΑΜΦΙΔΑΜΑΝΤΟΣ 70 & ΑΘ.ΔΙΑΚΟΥ-ΠΛΑΤΕΙΑ ΚΑΝΗΘΟΥ",
-              "locality": "Χαλκίδα",
-              "phone": "2221021853"
             }
           ]
         },
@@ -86,26 +66,6 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "17:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "17:30",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221025655",
-              "name": "ΣΙΑΦΑΚΑ ΔΗΜΗΤΡΑ",
-              "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 22",
-              "locality": "Χαλκίδα",
-              "phone": "2221025655"
-            }
-          ]
-        },
-        {
           "kind": "overnight",
           "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
@@ -122,6 +82,46 @@
               "address": "ΚΑΤΣΙΚΟΓΙΑΝΝΗ 35",
               "locality": "Χαλκίδα",
               "phone": "2221029509"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221021853",
+              "name": "ΚΙΑΠΕΚΟΥ ΚΥΡΙΑΚΗ",
+              "address": "ΑΜΦΙΔΑΜΑΝΤΟΣ 70 & ΑΘ.ΔΙΑΚΟΥ-ΠΛΑΤΕΙΑ ΚΑΝΗΘΟΥ",
+              "locality": "Χαλκίδα",
+              "phone": "2221021853"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221025655",
+              "name": "ΣΙΑΦΑΚΑ ΔΗΜΗΤΡΑ",
+              "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 22",
+              "locality": "Χαλκίδα",
+              "phone": "2221025655"
             }
           ]
         }

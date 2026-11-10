@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-10T12:44:53.426Z"
+        "uploadedAt": "2026-11-10T21:51:07.650Z"
       },
       "sections": [
         {
@@ -34,26 +34,6 @@
               "address": "ΙΣΤΑΙΑ",
               "locality": "Ιστιαία",
               "phone": "2226069398"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "14:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "14:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221082278",
-              "name": "ΜΕΤΑΞΩΤΟΣ ΣΩΤΗΡΙΟΣ",
-              "address": "ΤΣΙΡΙΓΩΤΗ 5 - ΠΛΑΤΕΙΑ ΑΓ.ΝΙΚΟΛΑΟΥ",
-              "locality": "Χαλκίδα",
-              "phone": "2221082278"
             }
           ]
         },
@@ -86,26 +66,6 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "17:30 ΕΩΣ 21:00",
-          "hours": {
-            "from": "17:30",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221088494",
-              "name": "Σ.Φ. ΖΑΦΕΙΡΗ ΑΣΗΜΕΝΙΑ - ΚΥΡΑΝΑΣ ΙΩΑΝΝΗΣ",
-              "address": "ΛΗΛΑΝΤΙΩΝ 217 ΚΑΙ ΣΑΛΑΜΙΝΟΣ",
-              "locality": "Χαλκίδα",
-              "phone": "2221088494"
-            }
-          ]
-        },
-        {
           "kind": "overnight",
           "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
@@ -122,6 +82,46 @@
               "address": "ΓΑΖΕΠΗ 46-ΝΟΣΟΚΟΜΕΙΟ",
               "locality": "Χαλκίδα",
               "phone": "2221020777"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221082278",
+              "name": "ΜΕΤΑΞΩΤΟΣ ΣΩΤΗΡΙΟΣ",
+              "address": "ΤΣΙΡΙΓΩΤΗ 5 - ΠΛΑΤΕΙΑ ΑΓ.ΝΙΚΟΛΑΟΥ",
+              "locality": "Χαλκίδα",
+              "phone": "2221082278"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221088494",
+              "name": "Σ.Φ. ΖΑΦΕΙΡΗ ΑΣΗΜΕΝΙΑ - ΚΥΡΑΝΑΣ ΙΩΑΝΝΗΣ",
+              "address": "ΛΗΛΑΝΤΙΩΝ 217 ΚΑΙ ΣΑΛΑΜΙΝΟΣ",
+              "locality": "Χαλκίδα",
+              "phone": "2221088494"
             }
           ]
         }

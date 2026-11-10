@@ -7,33 +7,26 @@
       "name": "Κέρκυρα",
       "source": {
         "url": "https://farmakeu.static.otenet.gr/phduties.php",
-        "uploadedAt": "2026-11-10T12:44:14.975Z"
+        "uploadedAt": "2026-11-10T21:50:29.232Z"
       },
       "sections": [
         {
-          "kind": "day",
-          "heading": "ΔΙΗΜΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 8:00 ΕΩΣ ΤΙΣ 21:00",
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 21:00 ΕΩΣ ΤΙΣ 8:00 ΤΟ ΠΡΩΙ ΤΗΣ ΕΠΟΜΕΝΗΣ",
           "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2661039048",
-              "name": "ΣΚΙΑΔΟΠΟΥΛΟΣ ΔΙΟΝΥΣΙΟΣ",
-              "address": "ΓΕΩΡΓΙΟΥ ΘΕΟΤΟΚΗ 56 (ΣΑΡΟΚΟ)",
+              "pharmacyId": "2661043339",
+              "name": "ΚΑΒΒΑΔΙΑΣ ΔΙΟΜΗΔΗΣ",
+              "address": "ΓΕΡ. ΛΥΧΝΟΥ 2 & Π. ΚΩΝΣΤΑΝΤΑ",
               "locality": "Κέρκυρα",
-              "phone": "2661039048"
-            },
-            {
-              "pharmacyId": "2661037133",
-              "name": "ΚΟΝΤΟΓΕΩΡΓΗΣ ΓΕΩΡΓΙΟΣ",
-              "address": "ΔΙΑΣΤΑΥΡΩΣΗ ΒΡΥΩΝΗ",
-              "locality": "Βρυώνη",
-              "phone": "2661037133"
+              "phone": "2661043339"
             },
             {
               "pharmacyId": "2661075673",
