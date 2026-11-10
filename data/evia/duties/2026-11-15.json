@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-09T12:58:11.086Z"
+        "uploadedAt": "2026-11-10T00:18:26.704Z"
       },
       "sections": [
         {
@@ -34,54 +34,6 @@
               "address": "ΜΕΤΑΞΑ ΙΩΑΝΝΟΥ 4",
               "locality": "Ιστιαία",
               "phone": "2226056148"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221023274",
-              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
-              "address": "ΚΩΤΣΟΥ 3-5",
-              "locality": "Χαλκίδα",
-              "phone": "2221023274"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2229062585",
-              "name": "ΜΙΧΟΣ ΔΗΜΗΤΡΙΟΣ",
-              "address": "ΦΙΛ. ΜΕΝΕΔΗΜΟΥ 36",
-              "locality": "Ερέτρια",
-              "phone": "2229062585"
-            },
-            {
-              "pharmacyId": "2224023855",
-              "name": "ΣΙΑΣΑΚΟΣ ΕΛΕΥΘΕΡΙΟΣ",
-              "address": "ΣΑΧΤΟΥΡΗ 124",
-              "locality": "Κάρυστος",
-              "phone": "2224023855"
             }
           ]
         },
@@ -122,6 +74,54 @@
               "address": "ΝΕΟΦΥΤΟΥ 10",
               "locality": "Χαλκίδα",
               "phone": "2221077929"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2229062585",
+              "name": "ΜΙΧΟΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΦΙΛ. ΜΕΝΕΔΗΜΟΥ 36",
+              "locality": "Ερέτρια",
+              "phone": "2229062585"
+            },
+            {
+              "pharmacyId": "2224023855",
+              "name": "ΣΙΑΣΑΚΟΣ ΕΛΕΥΘΕΡΙΟΣ",
+              "address": "ΣΑΧΤΟΥΡΗ 124",
+              "locality": "Κάρυστος",
+              "phone": "2224023855"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221023274",
+              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΚΩΤΣΟΥ 3-5",
+              "locality": "Χαλκίδα",
+              "phone": "2221023274"
             }
           ]
         },

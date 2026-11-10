@@ -7,9 +7,49 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-11-09T13:00:24.646Z"
+        "uploadedAt": "2026-11-10T00:20:36.227Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431026644",
+              "name": "ΤΡΙΓΩΝΗΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΣΤΡΑΤΗΓΟΥ ΣΑΡΑΦΗ 21",
+              "locality": "Τρίκαλα",
+              "phone": "2431026644"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431026644",
+              "name": "ΤΡΙΓΩΝΗΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΣΤΡΑΤΗΓΟΥ ΣΑΡΑΦΗ 21",
+              "locality": "Τρίκαλα",
+              "phone": "2431026644"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 23:00",
@@ -54,46 +94,6 @@
               "address": "ΑΠΟΛΛΩΝΟΣ 6",
               "locality": "Τρίκαλα",
               "phone": "2431031333"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431026644",
-              "name": "ΤΡΙΓΩΝΗΣ ΝΙΚΟΛΑΟΣ",
-              "address": "ΣΤΡΑΤΗΓΟΥ ΣΑΡΑΦΗ 21",
-              "locality": "Τρίκαλα",
-              "phone": "2431026644"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431026644",
-              "name": "ΤΡΙΓΩΝΗΣ ΝΙΚΟΛΑΟΣ",
-              "address": "ΣΤΡΑΤΗΓΟΥ ΣΑΡΑΦΗ 21",
-              "locality": "Τρίκαλα",
-              "phone": "2431026644"
             }
           ]
         }

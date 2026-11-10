@@ -7,29 +7,9 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-11-09T07:06:32.764Z"
+        "uploadedAt": "2026-11-10T00:19:09.756Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510250371",
-              "name": "ΚΟΥΡΤΣΟΠΟΥΛΟΥ Α. - ΑΔΑΜΟΠΟΥΛΟΥ Ε.",
-              "address": "ΧΡΥΣΟΣΤΟΜΟΥ ΣΜΥΡΝΗΣ 18Β",
-              "locality": "Καβάλα",
-              "phone": "2510250371"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΟΜΟΝΟΙΑΣ 73",
               "locality": "Καβάλα",
               "phone": "2510223156"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510250371",
+              "name": "ΚΟΥΡΤΣΟΠΟΥΛΟΥ Α. - ΑΔΑΜΟΠΟΥΛΟΥ Ε.",
+              "address": "ΧΡΥΣΟΣΤΟΜΟΥ ΣΜΥΡΝΗΣ 18Β",
+              "locality": "Καβάλα",
+              "phone": "2510250371"
             }
           ]
         }

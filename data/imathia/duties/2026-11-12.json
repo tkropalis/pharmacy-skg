@@ -7,26 +7,26 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-11-09T12:58:30.035Z"
+        "uploadedAt": "2026-11-10T00:18:45.237Z"
       },
       "sections": [
         {
-          "kind": "day",
-          "heading": "13:30 ΕΩΣ 17:30",
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
-            "from": "13:30",
-            "to": "17:30",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331020200",
-              "name": "ΜΕΛΙΟΠΟΥΛΟΣ Δ. ΣΠΥΡΙΔΩΝ",
-              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 34",
+              "pharmacyId": "2331023023",
+              "name": "ΓΚΡΕΖΙΟΥ ΔΗΜΗΤΡΑ",
+              "address": "ΠΙΝΔΟΥ 11 - κάτω από τα αστικά",
               "locality": "Βέροια",
-              "phone": "2331020200"
+              "phone": "2331023023"
             }
           ]
         },
@@ -79,22 +79,22 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "13:30 ΕΩΣ 17:30",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "13:30",
+            "to": "17:30",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331023023",
-              "name": "ΓΚΡΕΖΙΟΥ ΔΗΜΗΤΡΑ",
-              "address": "ΠΙΝΔΟΥ 11 - κάτω από τα αστικά",
+              "pharmacyId": "2331020200",
+              "name": "ΜΕΛΙΟΠΟΥΛΟΣ Δ. ΣΠΥΡΙΔΩΝ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 34",
               "locality": "Βέροια",
-              "phone": "2331023023"
+              "phone": "2331020200"
             }
           ]
         }

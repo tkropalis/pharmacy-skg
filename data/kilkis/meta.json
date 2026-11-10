@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "kilkis",
-  "updatedAt": "2026-11-09T07:05:13.684Z",
-  "checkedAt": "2026-11-09T12:57:37.887Z",
+  "updatedAt": "2026-11-10T00:17:54.692Z",
+  "checkedAt": "2026-11-10T00:17:54.692Z",
   "duties": {
     "from": "2026-11-02",
-    "to": "2026-11-15"
+    "to": "2026-11-16"
   },
   "extendedHours": [],
   "sources": [

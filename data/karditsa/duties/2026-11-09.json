@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-11-09T07:06:39.138Z"
+        "uploadedAt": "2026-11-10T00:19:15.927Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441304534",
-              "name": "ΜΑΡΙΑΝΝΑ ΛΕΜΑ",
-              "address": "Ν.ΠΛΑΣΤΗΡΑ 26",
-              "locality": "Καρδίτσα",
-              "phone": "2441304534"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ- 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "Μ.ΑΛΕΞΑΝΔΡΟΥ & ΑΒΕΡΩΦ",
               "locality": "Καρδίτσα",
               "phone": "2441024993"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441304534",
+              "name": "ΜΑΡΙΑΝΝΑ ΛΕΜΑ",
+              "address": "Ν.ΠΛΑΣΤΗΡΑ 26",
+              "locality": "Καρδίτσα",
+              "phone": "2441304534"
             }
           ]
         }
