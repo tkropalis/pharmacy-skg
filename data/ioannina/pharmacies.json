@@ -328,7 +328,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 39.6652581,
         "lon": 20.8519567,
@@ -1052,6 +1052,27 @@
       }
     },
     {
+      "id": "2651040370",
+      "name": "ΣΕΚΚΑ ΑΛΕΞΑΝΔΡΑ – ΣΕΒΑΣΤΗ",
+      "address": "ΚΕΝΑΝ ΜΕΣΣΑΡΕ & ΕΥΡΙΠΙΔΗ ΓΩΝΙΑ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651040370",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-16",
+      "lastSeen": "2026-11-16",
+      "location": {
+        "lat": 39.6525388,
+        "lon": 20.8487308,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5111",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651040452",
       "name": "ΒΑΣΙΛΕΙΟΥ ΕΙΡΗΝΗ",
       "address": "ΔΩΔΩΝΗΣ 109",
@@ -1147,7 +1168,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 39.660488,
         "lon": 20.8490362,
@@ -1462,7 +1483,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 39.6671373,
         "lon": 20.8498576,

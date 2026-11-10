@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "2551024442",
+      "name": "ΓΚΟΤΣΙΔΗΣ ΧΡΗΣΤΟΣ-ΣΤΑΥΡΟΣ",
+      "address": "14ης Μαΐου 56 (παραπλεύρως ΕΦΚΑ)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551024442",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-16",
+      "lastSeen": "2026-11-16",
+      "location": {
+        "lat": 40.8483969,
+        "lon": 25.874416,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4248",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551024463",
       "name": "Σ.Φ. ΓΚΑΪΝΤΑΤΖΗΣ Β. - ΓΚΑΪΝΤΑΤΖΗ Ε.",
       "address": "14ης Μαΐου & Παλαιολόγου",
@@ -685,7 +706,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 40.8462422,
         "lon": 25.8732309,
@@ -1021,7 +1042,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-11",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 41.5025546,
         "lon": 26.5322197,
@@ -1315,7 +1336,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 41.3502494,
         "lon": 26.4959924,
@@ -1378,7 +1399,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 41.1947643,
         "lon": 26.3052864,
@@ -1483,7 +1504,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 41.0262152,
         "lon": 26.2954437,
@@ -1546,7 +1567,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-11",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 40.8942408,
         "lon": 26.1722017,

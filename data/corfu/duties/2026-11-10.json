@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-10",
+  "groups": [
+    {
+      "id": "corfu",
+      "name": "Κέρκυρα",
+      "source": {
+        "url": "https://farmakeu.static.otenet.gr/phduties.php",
+        "uploadedAt": "2026-11-10T12:44:14.975Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΗΜΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 8:00 ΕΩΣ ΤΙΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2661039048",
+              "name": "ΣΚΙΑΔΟΠΟΥΛΟΣ ΔΙΟΝΥΣΙΟΣ",
+              "address": "ΓΕΩΡΓΙΟΥ ΘΕΟΤΟΚΗ 56 (ΣΑΡΟΚΟ)",
+              "locality": "Κέρκυρα",
+              "phone": "2661039048"
+            },
+            {
+              "pharmacyId": "2661037133",
+              "name": "ΚΟΝΤΟΓΕΩΡΓΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΔΙΑΣΤΑΥΡΩΣΗ ΒΡΥΩΝΗ",
+              "locality": "Βρυώνη",
+              "phone": "2661037133"
+            },
+            {
+              "pharmacyId": "2661075673",
+              "name": "ΤΡΙΒΥΖΑΣ ΝΙΚΟΛΑΟΣ (ΜΑΝΤΟΣ ΜΙΧΑΗΛ)",
+              "address": "ΜΩΡΑΪΤΙΚΑ",
+              "locality": "Μωραΐτικα",
+              "phone": "2661075673"
+            },
+            {
+              "pharmacyId": "2663072517",
+              "name": "ΜΑΣΤΟΡΑ ΜΑΡΙΑ-ΙΩΑΝΝΑ",
+              "address": "ΧΩΡΕΠΙΣΚΟΠΟΙ",
+              "locality": "Χωρεπίσκοποι",
+              "phone": "2663072517"
+            },
+            {
+              "pharmacyId": "2662022649",
+              "name": "ΣΤΑΜΑΤΑΚΟΣ ΑΛΕΞΑΝΔΡΟΣ",
+              "address": "ΛΕΥΚΙΜΜΗ",
+              "locality": "Λευκίμμη",
+              "phone": "2662022649"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -7,26 +7,33 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-11-10T00:18:45.237Z"
+        "uploadedAt": "2026-11-10T12:45:12.787Z"
       },
       "sections": [
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "14:30",
+            "to": "21:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331023416",
-              "name": "ΠΙΣΚΙΛΙΔΗΣ ΙΟΡΔ. ΙΩΑΝΝΗΣ ΥΠ/ΜΑ",
-              "address": "ΜΗΤΡΟΠΟΛΕΩΣ 20",
+              "pharmacyId": "2331071601",
+              "name": "ΚΑΛΑΜΠΑΛΙΚΑΣ ΙΩΑΝΝΗΣ ΤΟΥ ΕΥΑΓΓΕΛΟΥ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 48 ΚΑΙ ΚΟΝΙΤΣΗ",
               "locality": "Βέροια",
-              "phone": "2331023416"
+              "phone": "2331071601"
+            },
+            {
+              "pharmacyId": "2331027355",
+              "name": "Σ.Φ. ΜΟΥΡΤΖΙΛΑ Β. - ΜΟΥΡΤΖΙΛΑΣ Γ. ΟΕ",
+              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 20 - ΚΤΕΛ",
+              "locality": "Βέροια",
+              "phone": "2331027355"
             }
           ]
         },
@@ -80,9 +87,9 @@
         },
         {
           "kind": "day",
-          "heading": "14:30 ΕΩΣ 21:00",
+          "heading": "19:00 ΕΩΣ 21:00",
           "hours": {
-            "from": "14:30",
+            "from": "19:00",
             "to": "21:00",
             "toNextDay": false
           },
@@ -90,28 +97,21 @@
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331071601",
-              "name": "ΚΑΛΑΜΠΑΛΙΚΑΣ ΙΩΑΝΝΗΣ ΤΟΥ ΕΥΑΓΓΕΛΟΥ",
-              "address": "ΒΕΝΙΖΕΛΟΥ 48 ΚΑΙ ΚΟΝΙΤΣΗ",
+              "pharmacyId": "2331023416",
+              "name": "ΠΙΣΚΙΛΙΔΗΣ ΙΟΡΔ. ΙΩΑΝΝΗΣ ΥΠ/ΜΑ",
+              "address": "ΜΗΤΡΟΠΟΛΕΩΣ 20",
               "locality": "Βέροια",
-              "phone": "2331071601"
-            },
-            {
-              "pharmacyId": "2331027355",
-              "name": "Σ.Φ. ΜΟΥΡΤΖΙΛΑ Β. - ΜΟΥΡΤΖΙΛΑΣ Γ. ΟΕ",
-              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 20 - ΚΤΕΛ",
-              "locality": "Βέροια",
-              "phone": "2331027355"
+              "phone": "2331023416"
             }
           ]
         },
         {
-          "kind": "day",
-          "heading": "19:00 ΕΩΣ 21:00",
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
-            "from": "19:00",
-            "to": "21:00",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],

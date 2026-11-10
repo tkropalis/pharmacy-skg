@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "2431021345",
+      "name": "ΤΣΙΠΟΥΛΑΚΟΣ ΚΩΝ/ΝΟΣ",
+      "address": "ΚΕΝΤΡΙΚΗ ΠΛΑΤΕΙΑ",
+      "locality": "Τρίκαλα",
+      "postcode": null,
+      "phone": "2431021345",
+      "groupId": "trikala",
+      "sources": [
+        "iteq-trikala"
+      ],
+      "firstSeen": "2026-11-16",
+      "lastSeen": "2026-11-16",
+      "location": {
+        "lat": 39.555761,
+        "lon": 21.769161,
+        "ref": "https://trikala.efhmeries.gr/Home/Details/4198",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2431021789",
       "name": "Σ.Φ. ΚΟΥΡΣΟΒΙΤΗ ΕΒΙΤΑ - ΣΑΡΓΙΩΤΗΣ ΚΩΝ/ΝΟΣ Ο.Ε.",
       "address": "25ΗΣ ΜΑΡΤΙΟΥ 12",
@@ -1126,7 +1147,7 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 39.5510887,
         "lon": 21.7691061,

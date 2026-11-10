@@ -7,26 +7,26 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-11-10T00:18:45.237Z"
+        "uploadedAt": "2026-11-10T12:45:12.787Z"
       },
       "sections": [
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "14:30",
+            "to": "21:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331023200",
-              "name": "ΜΑΖΑΡΑΚΗ ΔΗΜ. ΚΩΝΣΤΑΝΤΙΑ",
-              "address": "ΠΑΠΑΓΟΥ-ΔΙΠΛΑ ΣΤΟ ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ",
+              "pharmacyId": "2331063620",
+              "name": "ΧΑΤΖΗΓΕΩΡΓΙΟΥ ΑΝΔ. ΓΕΩΡΓΙΟΣ",
+              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 6 - ΚΤΕΛ - ΑΣΤΙΚΑ",
               "locality": "Βέροια",
-              "phone": "2331023200"
+              "phone": "2331063620"
             }
           ]
         },
@@ -128,9 +128,9 @@
         },
         {
           "kind": "day",
-          "heading": "14:30 ΕΩΣ 21:00",
+          "heading": "19:00 ΕΩΣ 21:00",
           "hours": {
-            "from": "14:30",
+            "from": "19:00",
             "to": "21:00",
             "toNextDay": false
           },
@@ -138,21 +138,21 @@
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331063620",
-              "name": "ΧΑΤΖΗΓΕΩΡΓΙΟΥ ΑΝΔ. ΓΕΩΡΓΙΟΣ",
-              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 6 - ΚΤΕΛ - ΑΣΤΙΚΑ",
+              "pharmacyId": "2331023200",
+              "name": "ΜΑΖΑΡΑΚΗ ΔΗΜ. ΚΩΝΣΤΑΝΤΙΑ",
+              "address": "ΠΑΠΑΓΟΥ-ΔΙΠΛΑ ΣΤΟ ΓΕΝ. ΝΟΣΟΚΟΜΕΙΟ",
               "locality": "Βέροια",
-              "phone": "2331063620"
+              "phone": "2331023200"
             }
           ]
         },
         {
-          "kind": "day",
-          "heading": "19:00 ΕΩΣ 21:00",
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
-            "from": "19:00",
-            "to": "21:00",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
