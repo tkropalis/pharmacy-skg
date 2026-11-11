@@ -62,8 +62,14 @@ test('the pharmacy page answers what to do when it is closed', async ({ page }) 
   await page.goto(pharmacyPath('el', PHARMACY_ID));
   // Neighbours are in the page itself; the ones open now take their place.
   await expect(page.locator('[data-near-heading]')).toHaveText('Ανοιχτά τώρα κοντά');
-  await expect(page.locator('[data-near-list] > li')).toHaveCount(4);
+  await expect(page.locator('[data-near-list] > li')).toHaveCount(3);
   await expect(page.locator('[data-near-list] > li').first()).toContainText(/Εφημερεύει/);
+  // One button into the app, on this pharmacy.
+  await expect(page.locator('[data-app-link]')).toHaveText('Όλα τα ανοιχτά στον χάρτη');
+  await expect(page.locator('[data-app-link]')).toHaveAttribute(
+    'href',
+    `/?city=${CITY_ID}&pharmacy=${PHARMACY_ID}`,
+  );
   // The coming days replace the general hours, today first.
   await expect(page.locator('[data-week] > li')).toHaveCount(7);
   await expect(page.locator('[data-week] > li').first()).toContainText('Σήμερα');

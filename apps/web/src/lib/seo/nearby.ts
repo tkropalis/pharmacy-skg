@@ -8,7 +8,7 @@ import { telHref } from './jsonld.ts';
 import { romanize, romanizeLocality } from './translit.ts';
 
 /** How many neighbours a pharmacy's page lists. */
-export const NEARBY_COUNT = 4;
+export const NEARBY_COUNT = 3;
 
 export interface NearbyEntry {
   readonly pharmacy: Pharmacy;
