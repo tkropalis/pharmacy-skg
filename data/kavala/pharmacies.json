@@ -149,6 +149,27 @@
       }
     },
     {
+      "id": "2510222860",
+      "name": "ΔΗΜΗΤΡΑΚΟΥΔΗ ΣΑΠΦΩ",
+      "address": "ΟΜΟΝΟΙΑΣ 125",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510222860",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-12",
+      "lastSeen": "2026-11-13",
+      "location": {
+        "lat": 40.9394361,
+        "lon": 24.4084132,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4036",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510223156",
       "name": "ΚΑΛΦΟΠΟΥΛΟΥ ΕΡΜΙΟΝΗ",
       "address": "ΟΜΟΝΟΙΑΣ 73",
@@ -181,7 +202,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-11-08",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.9369885,
         "lon": 24.4098079,
@@ -265,7 +286,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 40.9369156,
         "lon": 24.4096345,
@@ -464,6 +485,27 @@
       }
     },
     {
+      "id": "2510247173",
+      "name": "ΔΟΥΚΟΥΡΗ ΠΑΝΑΓΙΩΤΑ Ν.",
+      "address": "7ΗΣ ΜΕΡΑΡΧΙΑΣ 90",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510247173",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-12",
+      "location": {
+        "lat": 40.94021,
+        "lon": 24.393193,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4034",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510250371",
       "name": "ΚΟΥΡΤΣΟΠΟΥΛΟΥ Α. - ΑΔΑΜΟΠΟΥΛΟΥ Ε.",
       "address": "ΧΡΥΣΟΣΤΟΜΟΥ ΣΜΥΡΝΗΣ 18Β",
@@ -538,7 +580,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 40.937377,
         "lon": 24.414484,
@@ -601,7 +643,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 40.9361699,
         "lon": 24.4141638,
@@ -622,7 +664,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 40.9370128,
         "lon": 24.4074583,
@@ -664,7 +706,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-11-10",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 40.9363806,
         "lon": 24.4087672,
@@ -690,6 +732,27 @@
         "lat": 40.935779,
         "lon": 24.413224,
         "ref": "https://kavala.efhmeries.gr/Home/Details/3991",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510838146",
+      "name": "ΤΡΙΑΝΤΑΦΥΛΛΟΥ ΜΑΡΙΑ",
+      "address": "ΑΙΑΝΤΟΣ 5",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510838146",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-16",
+      "lastSeen": "2026-11-17",
+      "location": {
+        "lat": 40.9386581,
+        "lon": 24.4103229,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4045",
         "source": "list",
         "precision": "exact"
       }

@@ -1,8 +1,14 @@
 ---
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {
+  faChevronLeft,
+  faChevronRight,
+  faLocationArrow,
+  faPhone,
+} from '@fortawesome/free-solid-svg-icons';
 import type { Locale } from '@pharmacy-skg/core';
 import { faSvg } from '../../lib/fa.ts';
 import { t } from '../../i18n/index.ts';
+import { pinSvg } from '../../lib/pins.ts';
 import { fill } from '../../lib/seo/format.ts';
 import type { DutyPageProps } from '../../lib/seo/views.ts';
 import '../../styles/seo.css';
@@ -15,103 +21,145 @@ interface Props {
 const { locale, page } = Astro.props;
 const d = t(locale);
 const seo = d.seo.duty;
+const single = page.groups.length === 1;
+// "Δήμος Θέρμης και Δήμος Βόλβης", as on the home screen (lib/groups.ts, groupList).
+const missing = new Intl.ListFormat(locale === 'en' ? 'en-GB' : 'el-GR', {
+  style: 'long',
+  type: 'conjunction',
+}).format(page.missingGroups);
 ---
 
 <!--
-  One day's published lists, one per area group: a plain heading with a hairline above it, then
-  each kind of duty with its hours on one line and its pharmacies. On a dated page
-  (DutyDatePage) and as the content of a city's page for today before the app replaces it
-  (DutyTodayPage).
+  One day's published lists, for someone who searched for them: the day and the way to the days
+  around it, then each list as plain rows with a Call button each, as on the home screen. The
+  browser marks today and the lists on duty now, and on today's page offers the nearest open ones
+  (scripts/seo/duty-page.ts). On a dated page (DutyDatePage) and as the content of a city's page
+  for today before the app replaces it (DutyTodayPage).
 -->
-<nav class="seo-breadcrumb" aria-label={d.seo.breadcrumbLabel}>
-  <ol>
-    {page.breadcrumbs.map((crumb, index) =>
-      index < page.breadcrumbs.length - 1 ? (
+<div class="seo-day" data-duty-page data-date={page.date}>
+  <nav class="seo-breadcrumb" aria-label={d.seo.breadcrumbLabel}>
+    <ol>
+      {page.breadcrumbs.slice(0, -1).map((crumb) => (
         <li>
           <a href={crumb.path}>{crumb.name}</a>
         </li>
-      ) : (
-        <li aria-current="page">{crumb.name}</li>
-      ),
+      ))}
+    </ol>
+  </nav>
+
+  <h1 class="seo-day-title">
+    {page.h1Lead === null ? (
+      <span data-duty-date={page.date} data-today-label={d.seo.todayBadge}>
+        {page.h1}
+      </span>
+    ) : (
+      <>
+        {page.h1Lead}
+        <span class="sr-only">, </span>
+        <span class="seo-day-date" data-duty-date={page.date} data-today-label={d.seo.todayBadge}>
+          {page.dateLabel}
+        </span>
+      </>
     )}
-  </ol>
-</nav>
+  </h1>
 
-<h1 data-duty-date={page.date} data-today-label={d.seo.todayBadge}>
-  {page.h1}
-</h1>
+  {(page.prev !== null || page.next !== null) && (
+    <nav class="seo-days" aria-label={seo.pagerLabel}>
+      {page.prev !== null ? (
+        <a class="seo-day-step" href={page.prev.path} rel="prev">
+          <Fragment set:html={faSvg(faChevronLeft, { size: 14 })} />
+          <span>
+            {page.prev.shortLabel}
+            <span class="sr-only">, {seo.prev}</span>
+          </span>
+        </a>
+      ) : (
+        <span></span>
+      )}
+      {page.next !== null && (
+        <a class="seo-day-step next" href={page.next.path} rel="next">
+          <span>
+            {page.next.shortLabel}
+            <span class="sr-only">, {seo.next}</span>
+          </span>
+          <Fragment set:html={faSvg(faChevronRight, { size: 14 })} />
+        </a>
+      )}
+    </nav>
+  )}
 
-{page.missingGroups.length > 0 && (
-  <p class="callout" role="note">
-    {fill(seo.missingGroups, { groups: page.missingGroups.join(', ') })}
+  <p class="seo-day-cta" data-today-only hidden>
+    <a class="button" href={page.mapPath}>
+      <Fragment set:html={faSvg(faLocationArrow)} />
+      {seo.nearestNow}
+    </a>
   </p>
-)}
 
-{/* The list of all dates is the breadcrumb's first link. */}
-<nav class="seo-pager" aria-label={seo.pagerLabel}>
-  {page.prev !== null ? (
-    <a href={page.prev.path} rel="prev">
-      <Fragment set:html={faSvg(faArrowLeft, { size: 14 })} />
-      <span>
-        <span class="sr-only">{seo.prev}: </span>
-        {page.prev.label}
-      </span>
-    </a>
-  ) : (
-    <span></span>
-  )}
-  {page.next !== null && (
-    <a href={page.next.path} rel="next" class="next">
-      <span>
-        <span class="sr-only">{seo.next}: </span>
-        {page.next.label}
-      </span>
-      <Fragment set:html={faSvg(faArrowRight, { size: 14 })} />
-    </a>
-  )}
-</nav>
-
-{page.groups.map((group) => (
-  <section class="seo-group" aria-labelledby={`group-${group.id}`}>
-    <h2 id={`group-${group.id}`}>{group.name}</h2>
-    <p class="seo-meta">
-      <a href={group.sourceUrl} rel="noopener">
-        {seo.sourceLink}
-      </a>
+  {page.missingGroups.length > 0 && (
+    <p class="callout" role="note">
+      {fill(seo.missingGroups, { groups: missing })}
     </p>
-    {group.sections.map((section) => (
-      <div class="seo-section">
-        <h3>{section.kindLabel}</h3>
-        <p class="seo-meta">
-          {seo.hoursLabel} {section.hoursText}
+  )}
+
+  {page.groups.map((group) => (
+    <section class="seo-group" aria-labelledby={`group-${group.id}`}>
+      {/* A single group is the city itself: its name would repeat the heading above. */}
+      <h2 id={`group-${group.id}`} class={single ? 'sr-only' : undefined}>
+        {group.name}
+      </h2>
+      {group.sections.map((section, index) => (
+        <section
+          class="seo-section"
+          aria-labelledby={`list-${group.id}-${index}`}
+          data-from={section.window?.from}
+          data-to={section.window?.to}
+          data-next-day={section.window?.nextDay ? 'true' : undefined}
+        >
+          <div class="seo-section-head">
+            <h3 id={`list-${group.id}-${index}`}>{section.kindLabel}</h3>
+            <p class="seo-section-hours">{section.hoursText}</p>
+          </div>
+          <p class="seo-now" data-now hidden>
+            <span class="seo-mark" aria-hidden="true" set:html={pinSvg('duty', { size: 16 })} />
+            {seo.onDutyNow}
+          </p>
           {section.extraHours.map((extra) => (
-            <>
-              {' · '}
+            <p class="seo-meta">
               {seo.extraHoursLabel} {extra}
-            </>
+            </p>
           ))}
-        </p>
-        {section.notes.map((note) => (
-          <p class="seo-meta">{note}</p>
-        ))}
-        <ul class="seo-list">
-          {section.entries.map((entry) => (
-            <li>
-              <span class="name">
-                {entry.pagePath !== null ? <a href={entry.pagePath}>{entry.name}</a> : entry.name}
-              </span>
-              <span class="sub">
-                {entry.address}, {entry.locality}
-              </span>
-              {entry.phoneHref !== null && (
-                <span class="sub">
-                  <a href={entry.phoneHref}>{entry.phone}</a>
-                </span>
-              )}
-            </li>
+          {section.notes.map((note) => (
+            <p class="seo-meta">{note}</p>
           ))}
-        </ul>
-      </div>
-    ))}
-  </section>
-))}
+          <ul class="seo-near seo-duty-rows">
+            {section.entries.map((entry) => (
+              <li data-lat={entry.location?.lat} data-lon={entry.location?.lon}>
+                <div class="seo-near-text">
+                  {entry.pagePath !== null ? (
+                    <a class="name" href={entry.pagePath}>
+                      {entry.name}
+                    </a>
+                  ) : (
+                    <span class="name">{entry.name}</span>
+                  )}
+                  <span class="sub">{entry.place}</span>
+                  {entry.phone !== '' && <span class="sub phone">{entry.phone}</span>}
+                </div>
+                {entry.phoneHref !== null && (
+                  <a class="seo-call" href={entry.phoneHref} aria-label={entry.callLabel}>
+                    <Fragment set:html={faSvg(faPhone)} />
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+      <p class="seo-source">
+        <a href={group.sourceUrl} rel="noopener">
+          {seo.sourceLink}
+        </a>
+      </p>
+    </section>
+  ))}
+</div>

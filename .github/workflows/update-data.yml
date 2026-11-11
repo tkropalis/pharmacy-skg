@@ -35,7 +35,8 @@ jobs:
       - run: pnpm install --frozen-lockfile
       # Each area writes its files as soon as it passes; one that fails (a site down, as ITeQ's
       # server was on 8 Oct 2026) keeps its old data. The others are still committed below, and
-      # the run is marked failed at the end.
+      # the run is marked failed at the end. An area whose site answers with a bot challenge is
+      # only a warning: it goes stale, and the Stale data workflow's issue lists it.
       - name: Fetch, validate and write
         id: update
         continue-on-error: true
@@ -43,12 +44,17 @@ jobs:
         env:
           SINCE: ${{ inputs.since }}
       # A failure here must not hold back the duty lists: they are still committed, and the run
-      # is marked failed at the end.
+      # is marked failed at the end. The ministry's site not answering GitHub's runners is a
+      # warning, not a failure: the prices keep their checkedAt and the Stale data workflow lists
+      # them after 36 hours.
       - name: Medicine prices and shortages
         id: medicines
         continue-on-error: true
         run: pnpm --filter @pharmacy-skg/ingest run medicines
+      # Only master's data is published. A manual run on another branch tests the pipeline and
+      # leaves its data out of that branch.
       - name: Commit if changed
+        if: github.ref == 'refs/heads/master'
         run: |
           if [ -z "$(git status --porcelain data/)" ]; then
             echo "No changes."
@@ -67,5 +73,5 @@ jobs:
       - name: Report a failed medicines update
         if: ${{ !cancelled() && steps.medicines.outcome == 'failure' }}
         run: |
-          echo "::error::The medicines update failed or kept the stored prices; see its step. Any other data was still committed."
+          echo "::error::The medicines update failed; see its step. Any other data was still committed."
           exit 1

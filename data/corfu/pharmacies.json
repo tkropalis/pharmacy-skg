@@ -57,7 +57,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.622091,
         "lon": 19.911732,
@@ -399,8 +399,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 39.622632,
         "lon": 19.9192,
@@ -422,7 +422,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 39.591337,
         "lon": 19.859619,
@@ -734,7 +734,7 @@
     },
     {
       "id": "2661039305",
-      "name": "ΛΑΣΚΑΡΙΣ ΓΕΡΑΣΙΜΟΣ - ΜΑΡΤΖΟΥΚΟΥ ΑΜΑΛΙΑ",
+      "name": "ΛΑΣΚΑΡΙΣ ΓΕΡΑΣΙΜΟΣ",
       "address": "ΙΩΑΝΝΟΥ ΘΕΟΤΟΚΗ 100 (ΙΚΑ - ΣΤΑΘ. ΥΠΕΡ/ΩΝ)",
       "locality": "Κέρκυρα",
       "postcode": null,
@@ -744,8 +744,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.624936,
         "lon": 19.912459,
@@ -893,8 +893,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 39.591337,
         "lon": 19.859619,
@@ -1039,8 +1039,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 39.616792,
         "lon": 19.895287,
@@ -1298,7 +1298,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 39.485759,
         "lon": 19.925582,
@@ -1423,8 +1423,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-04",
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.644574,
         "lon": 19.853075,
@@ -1565,15 +1565,14 @@
     },
     {
       "id": "2661099123",
-      "name": "ΜΠΛΙΑΝΤΣΗΣ ΧΡΗΣΤΟΣ",
+      "name": "ΜΠΛΙΑΝΤΣΗ ΕΛΕΝΗ - ΜΠΛΙΑΝΤΣΗΣ ΧΡΗΣΤΟΣ",
       "address": "ΚΟΝΤΟΚΑΛΙ",
       "locality": "Κοντόκαλι",
       "postcode": null,
       "phone": "2661099123",
       "groupId": "corfu",
       "sources": [
-        "farmakeu",
-        "ionian"
+        "farmakeu"
       ],
       "firstSeen": "2026-11-02",
       "lastSeen": "2026-11-02",
@@ -1587,18 +1586,17 @@
     },
     {
       "id": "2661099411",
-      "name": "ΚΑΝΝΟΝΕ-ΠΑΝΔΗ ΠΑΟΛΑ - ΠΑΝΔΗ ΑΛΕΞΑΝΔΡΑ - ΠΑΝΔΗΣ ΓΕΩΡΓΙΟΣ",
+      "name": "ΚΑΝΝΟΝΕ-ΠΑΝΔΗ ΠΑΟΛΑ",
       "address": "ΓΟΥΒΙΑ",
       "locality": "Γούβια",
       "postcode": null,
       "phone": "2661099411",
       "groupId": "corfu",
       "sources": [
-        "farmakeu",
-        "ionian"
+        "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.655333,
         "lon": 19.840279,
@@ -1640,7 +1638,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 39.422623,
         "lon": 20.062111,
@@ -1682,7 +1680,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 39.424107,
         "lon": 20.062832,
@@ -1766,8 +1764,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 39.435335,
         "lon": 19.977262,
@@ -1788,8 +1786,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
       "location": {
         "lat": 39.453991,
         "lon": 19.999237,
@@ -1809,8 +1807,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.443549,
         "lon": 19.941824,
@@ -1979,8 +1977,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 39.744237,
         "lon": 19.649756,
@@ -2001,8 +1999,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
       "location": {
         "lat": 39.790929,
         "lon": 19.81425,
@@ -2023,8 +2021,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-04",
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.78627,
         "lon": 19.76696,
@@ -2045,8 +2043,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 39.791421,
         "lon": 19.815429,
@@ -2130,8 +2128,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 39.722163,
         "lon": 19.7418,
@@ -2152,8 +2150,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07",
       "location": {
         "lat": 39.788665,
         "lon": 19.919637,
@@ -2223,6 +2221,48 @@
         "source": "nominatim",
         "precision": "locality",
         "ref": "Περουλάδες"
+      }
+    },
+    {
+      "id": "x-01e9228b5d",
+      "name": "ΚΑΝΝΟΝΕ-ΠΑΝΔΗ ΠΑΟΛΑ - ΠΑΝΔΗ ΑΛΕΞΑΝΔΡΑ - ΠΑΝΔΗΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΓΟΥΒΙΑ",
+      "locality": "Γούβια",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "ionian"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 39.655333,
+        "lon": 19.840279,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "1657535e-28b4-42e6-adf8-29a56edd8503"
+      }
+    },
+    {
+      "id": "x-2343cac3a2",
+      "name": "ΜΠΛΙΑΝΤΣΗΣ ΧΡΗΣΤΟΣ",
+      "address": "ΚΟΝΤΟΚΑΛΙ",
+      "locality": "Κοντόκαλι",
+      "postcode": null,
+      "phone": null,
+      "groupId": null,
+      "sources": [
+        "ionian"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01",
+      "location": {
+        "lat": 39.644574,
+        "lon": 19.853075,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κοντόκαλι"
       }
     },
     {

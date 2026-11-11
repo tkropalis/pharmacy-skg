@@ -13,7 +13,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 41.15103,
         "lon": 24.147467,
@@ -97,7 +97,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 41.153586,
         "lon": 24.145689,
@@ -265,7 +265,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 41.1517799,
         "lon": 24.1476031,
@@ -286,7 +286,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 41.1512613,
         "lon": 24.1464372,
@@ -349,7 +349,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 41.1508052,
         "lon": 24.1481389,
@@ -391,11 +391,32 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 41.150828,
         "lon": 24.1476356,
         "ref": "https://drama.efhmeries.gr/Home/Details/3143",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521025965",
+      "name": "ΧΑΤΖΗΓΡΗΓΟΡΙΟΥ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "ΒΕΡΓΙΝΑΣ 112",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521025965",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 41.148138,
+        "lon": 24.149464,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3220",
         "source": "list",
         "precision": "exact"
       }
@@ -454,11 +475,32 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 41.1519129,
         "lon": 24.1474817,
         "ref": "https://drama.efhmeries.gr/Home/Details/3149",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521027600",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΠΤΟΛΕΜΑΙΩΝ 4Α",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521027600",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-11-17",
+      "lastSeen": "2026-11-17",
+      "location": {
+        "lat": 41.1510302,
+        "lon": 24.1474673,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3233",
         "source": "list",
         "precision": "exact"
       }
@@ -559,7 +601,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 41.1488332,
         "lon": 24.145371,
@@ -580,7 +622,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 41.1521205,
         "lon": 24.1461361,
@@ -622,7 +664,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 41.1490682,
         "lon": 24.1445446,
@@ -706,7 +748,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 41.1498446,
         "lon": 24.147329,
@@ -748,7 +790,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-30",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 41.150592,
         "lon": 24.14933,
@@ -790,7 +832,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 41.1480127,
         "lon": 24.1472882,
@@ -937,7 +979,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 41.1498074,
         "lon": 24.1477504,
@@ -1042,7 +1084,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 41.1528508,
         "lon": 24.1559206,

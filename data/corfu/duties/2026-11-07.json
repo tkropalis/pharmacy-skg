@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-07",
+  "groups": [
+    {
+      "id": "corfu",
+      "name": "Κέρκυρα",
+      "source": {
+        "url": "https://farmakeu.static.otenet.gr/phduties.php",
+        "uploadedAt": "2026-11-07T20:16:28.954Z"
+      },
+      "sections": [
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 21:00 ΕΩΣ ΤΙΣ 8:00 ΤΟ ΠΡΩΙ ΤΗΣ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2661031992",
+              "name": "ΕΡΤΣΟΣ ΣΠΥΡΙΔΩΝΑΣ-ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΜΙΛΤΙΑΔΟΥ ΜΑΡΓΑΡΙΤΗ 8",
+              "locality": "Κέρκυρα",
+              "phone": "2661031992"
+            },
+            {
+              "pharmacyId": "2663081432",
+              "name": "ΨΩΜΑΔΕΛΗ ΑΛΕΞΑΝΔΡΑ",
+              "address": "ΚΑΣΣΙΩΠΗ",
+              "locality": "Κασσιώπη",
+              "phone": "2663081432"
+            },
+            {
+              "pharmacyId": "2662051109",
+              "name": "ΠΑΝΑΓΟΥ ΗΛΙΑΝΑ",
+              "address": "ΑΡΓΥΡΑΔΕΣ",
+              "locality": "Αργυράδες",
+              "phone": "2662051109"
+            },
+            {
+              "pharmacyId": "2662024143",
+              "name": "ΒΑΡΕΛΗΣ ΒΑΣΙΛΕΙΟΣ-ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΡΙΓΓΛΑΔΕΣ",
+              "locality": "Ρίγγλαδες",
+              "phone": "2662024143"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

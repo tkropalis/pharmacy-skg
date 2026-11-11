@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "groups": [
+    {
+      "id": "fthiotida",
+      "name": "Φθιώτιδα",
+      "source": {
+        "url": "https://fthiotida.efhmeries.gr/",
+        "uploadedAt": "2026-11-11T11:58:44.609Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:00",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231028835",
+              "name": "ΠΑΠΟΥΤΣΑ ΚΑΛΛΙΟΠΗ",
+              "address": "ΣΑΤΩΒΡΙΑΝΔΟΥ 4",
+              "locality": "Λαμία",
+              "phone": "2231028835"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231031731",
+              "name": "ΓΙΑΝΝΕΛΗ ΦΩΤΕΙΝΗ",
+              "address": "ΒΥΡΩΝΟΣ 30",
+              "locality": "Λαμία",
+              "phone": "2231031731"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231031731",
+              "name": "ΓΙΑΝΝΕΛΗ ΦΩΤΕΙΝΗ",
+              "address": "ΒΥΡΩΝΟΣ 30",
+              "locality": "Λαμία",
+              "phone": "2231031731"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2236043243",
+              "name": "ΑΡΓΥΡΟΥ ΓΟΥΒΑΛΑ ΟΕ.",
+              "address": "ΣΠΕΡΧΕΙΑΔΑ",
+              "locality": "Σπερχειάδα",
+              "phone": "2236043243"
+            },
+            {
+              "pharmacyId": "2235022255",
+              "name": "ΓΚΑΡΑΓΚΑΝΗΣ ΗΛΙΑΣ",
+              "address": "ΑΓ. ΠΑΝΤΕΛΕΗΜΟΝΟΣ 2 (ΤΗΛΕΦΩΝΑ ΕΞΥΠΗΡΕΤΗΣΗΣ ΒΛ. ΔΙΠΛΑ ΠΙΝΑΚΑ)",
+              "locality": "Καμένα Βούρλα",
+              "phone": "2235022255"
+            },
+            {
+              "pharmacyId": "2233031315",
+              "name": "ΚΩΛΕΤΗΣ ΒΥΡΩΝ",
+              "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΗΣ 31",
+              "locality": "Λιβανάτες",
+              "phone": "2233031315"
+            },
+            {
+              "pharmacyId": "2235051444",
+              "name": "ΠΙΣΛΗ ΓΕΩΡΓΙΑ",
+              "address": "ΘΕΡΜΟΠΥΛΩΝ 2",
+              "locality": "Μώλος",
+              "phone": "2235051444"
+            },
+            {
+              "pharmacyId": "2238023928",
+              "name": "Σ.Φ. ΓΚΛΕΤΣΟΣ ΑΘΑΝΑΣΙΟΣ & ΒΙΚΥ",
+              "address": "ΛΑΜΙΑΣ 7",
+              "locality": "Στυλίδα",
+              "phone": "2238023928"
+            },
+            {
+              "pharmacyId": "2233080005",
+              "name": "ΤΣΑΜΠΑΣ ΕΥΑΓΓΕΛΟΣ",
+              "address": "ΕΘΝ.ΑΝΤΙΣΤΑΣΕΩΣ 60",
+              "locality": "Αταλάντη",
+              "phone": "2233080005"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2235031770",
+              "name": "ΚΩΛΕΤΗΣ ΒΥΡΩΝ",
+              "address": "ΑΓΙΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "locality": "Άγιος Κωνσταντίνος",
+              "phone": "2235031770"
+            },
+            {
+              "pharmacyId": "2236022384",
+              "name": "ΛΑΜΠΡΑΚΟΠΟΥΛΟΣ ΧΑΡΙΛΑΟΣ",
+              "address": "ΠΛ.ΔΗΜΟΚΡΑΤΙΑΣ 3",
+              "locality": "Μακρακώμη",
+              "phone": "2236022384"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-05",
+  "groups": [
+    {
+      "id": "corfu",
+      "name": "Κέρκυρα",
+      "source": {
+        "url": "https://farmakeu.static.otenet.gr/phduties.php",
+        "uploadedAt": "2026-11-05T12:31:01.511Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΗΜΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 8:00 ΕΩΣ ΤΙΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2661039305",
+              "name": "ΛΑΣΚΑΡΙΣ ΓΕΡΑΣΙΜΟΣ",
+              "address": "ΙΩΑΝΝΟΥ ΘΕΟΤΟΚΗ 100 (ΙΚΑ - ΣΤΑΘ. ΥΠΕΡ/ΩΝ)",
+              "locality": "Κέρκυρα",
+              "phone": "2661039305"
+            },
+            {
+              "pharmacyId": "2661099411",
+              "name": "ΚΑΝΝΟΝΕ-ΠΑΝΔΗ ΠΑΟΛΑ",
+              "address": "ΓΟΥΒΙΑ",
+              "locality": "Γούβια",
+              "phone": "2661099411"
+            },
+            {
+              "pharmacyId": "2662052368",
+              "name": "ΜΠΑΡΔΗ ΙΩΑΝΝΑ",
+              "address": "ΛΙΝΙΑ ΧΛΩΜΟΥ",
+              "locality": "Χλωμός",
+              "phone": "2662052368"
+            },
+            {
+              "pharmacyId": "2663063140",
+              "name": "ΒΑΡΕΛΗ ΑΘΗΝΑ",
+              "address": "ΑΧΑΡΑΒΗ",
+              "locality": "Αχαράβη",
+              "phone": "2663063140"
+            },
+            {
+              "pharmacyId": "2662022649",
+              "name": "ΣΤΑΜΑΤΑΚΟΣ ΑΛΕΞΑΝΔΡΟΣ",
+              "address": "ΛΕΥΚΙΜΜΗ",
+              "locality": "Λευκίμμη",
+              "phone": "2662022649"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

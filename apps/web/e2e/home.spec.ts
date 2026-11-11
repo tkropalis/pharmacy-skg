@@ -74,7 +74,10 @@ for (const locale of LOCALES) {
       await expect(option).toHaveCount(1);
       await option.click();
 
-      await expect(page.locator('.origin-chip')).toContainText('Καλαμαριά');
+      // English pages spell the chosen area in English (decisions.md, An area's page).
+      await expect(page.locator('.origin-chip')).toContainText(
+        locale === 'en' ? 'Kalamaria' : 'Καλαμαριά',
+      );
       await expect(page.locator('ol.rows > li.row .row-distance').first()).toBeVisible();
       await expect(page.locator('ol.rows > li.row').first()).toBeVisible();
     });

@@ -13,7 +13,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.5040092,
         "lon": 24.0087278,
@@ -55,7 +55,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 35.512431,
         "lon": 24.019428,
@@ -244,7 +244,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 35.497636,
         "lon": 23.963017,
@@ -391,7 +391,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.5068073,
         "lon": 23.9880296,
@@ -454,7 +454,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 35.5309311,
         "lon": 24.0752562,
@@ -475,7 +475,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 35.5145614,
         "lon": 24.0308471,
@@ -748,7 +748,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.5127563,
         "lon": 24.0223904,
@@ -769,7 +769,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 35.5174627,
         "lon": 23.9361317,
@@ -811,7 +811,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.5155989,
         "lon": 24.1076107,
@@ -832,7 +832,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 35.5108564,
         "lon": 24.1453609,
@@ -1000,7 +1000,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 35.5105676,
         "lon": 24.0104622,
@@ -1021,7 +1021,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 35.5164381,
         "lon": 24.0179193,
@@ -1094,6 +1094,27 @@
       }
     },
     {
+      "id": "2821086009",
+      "name": "Σ.Φ. ΜΙΧΑΗΛΕΛΛΗΣ Ν. ΜΙΧΑΗΛΕΛΛΗΣ Χ./ΜΙCΗΑΙLΕLLΙS N.-MICHAILLELIS C.",
+      "address": "Α.ΠΑΠΑΝΔΡΕΟΥ 105/A.PAPANDREOU 105",
+      "locality": "Χανιά",
+      "postcode": null,
+      "phone": "2821086009",
+      "groupId": "chania",
+      "sources": [
+        "iteq-chania"
+      ],
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-13",
+      "location": {
+        "lat": 35.510664,
+        "lon": 24.029347,
+        "ref": "https://chania.efhmeries.gr/Home/Details/13666",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2821086400",
       "name": "ΑΔΟΝΤΑΚΗ ΕΛΕΝΗ/ΑDΟΝΤΑΚΙ HELEN",
       "address": "ΑΓΙΟΥ ΕΛΕΥΘΕΡΙΟΥ 25,ΜΟΥΡΝΙΕΣ/ΑGΙΟU ELEFTHERIOU 25-MOURNIES",
@@ -1147,7 +1168,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.487803,
         "lon": 24.0735652,
@@ -1336,7 +1357,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 35.5040946,
         "lon": 24.020972,
@@ -1420,7 +1441,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.5089801,
         "lon": 24.0269311,
@@ -1651,7 +1672,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 35.4944211,
         "lon": 23.6539618,
@@ -1672,7 +1693,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 35.4940194,
         "lon": 23.6540401,
@@ -1693,7 +1714,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 35.4942057,
         "lon": 23.6538069,
@@ -1714,7 +1735,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 35.2294606,
         "lon": 23.6819128,
@@ -1735,7 +1756,7 @@
         "iteq-chania"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 35.2294606,
         "lon": 23.6819128,

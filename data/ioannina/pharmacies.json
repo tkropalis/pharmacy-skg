@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
+      "id": "2651002414",
+      "name": "ΜΑΚΡΗ ΧΡΙΣΤΙΝΑ",
+      "address": "ΝΙΑΡΧΟΥ & ΔΗΛΟΥ 1",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651002414",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "location": {
+        "lat": 39.6394427,
+        "lon": 20.8483648,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5106",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651003516",
       "name": "ΜΠΡΑΧΑΝΤΙΝΗΣ ΙΑΣΩΝ",
       "address": "ΣΤΑΥΡΙΑΚΟΥ 8 & ΕΛΕΥΘΕΡΙΑΣ",
@@ -170,6 +191,27 @@
       }
     },
     {
+      "id": "2651022329",
+      "name": "Σ.Φ. ΜΟΥΛΙΑ ΜΑΡΙΑ-ΒΕΡΓΩΝΗ ΒΙΚΤΩΡΙΑ",
+      "address": "ΒΗΛΑΡΑ 87 & ΒΟΡ.ΗΠΕΙΡΟΥ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651022329",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 39.6744511,
+        "lon": 20.8404167,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5096",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651022848",
       "name": "Σ.Φ. ΓΚΑΤΖΙΑΝΗΣ ΕΜΜΑΝΟΥΗΛ - ΝΤΑΣΗΣ ΧΡΙΣΤΟΔΟΥΛΟΣ",
       "address": "Μ. ΑΓΓΕΛΟΥ 2",
@@ -265,7 +307,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-11-01",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 39.6669537,
         "lon": 20.85152,
@@ -286,7 +328,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 39.6652581,
         "lon": 20.8519567,
@@ -307,7 +349,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.6732026,
         "lon": 20.848735,
@@ -354,6 +396,27 @@
         "lat": 39.6795136,
         "lon": 20.8205647,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5001",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651025485",
+      "name": "ΖΥΓΟΥΡΗ ΜΑΡΙΑ",
+      "address": "ΧΑΡΙΛΑΟΥ ΤΡΙΚΟΥΠΗ 2",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651025485",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 39.6677783,
+        "lon": 20.8527314,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5095",
         "source": "list",
         "precision": "exact"
       }
@@ -417,6 +480,27 @@
         "lat": 39.6704543,
         "lon": 20.8505056,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5081",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651027088",
+      "name": "ΜΗΤΣΙΟΥ ΧΡΥΣΟΥΛΑ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 2ΟΒ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651027088",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "location": {
+        "lat": 39.6673609,
+        "lon": 20.8518152,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5103",
         "source": "list",
         "precision": "exact"
       }
@@ -853,7 +937,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 39.6535308,
         "lon": 20.8611685,
@@ -895,7 +979,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.6701128,
         "lon": 20.8469068,
@@ -968,6 +1052,27 @@
       }
     },
     {
+      "id": "2651040370",
+      "name": "ΣΕΚΚΑ ΑΛΕΞΑΝΔΡΑ – ΣΕΒΑΣΤΗ",
+      "address": "ΚΕΝΑΝ ΜΕΣΣΑΡΕ & ΕΥΡΙΠΙΔΗ ΓΩΝΙΑ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651040370",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-16",
+      "lastSeen": "2026-11-16",
+      "location": {
+        "lat": 39.6525388,
+        "lon": 20.8487308,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5111",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651040452",
       "name": "ΒΑΣΙΛΕΙΟΥ ΕΙΡΗΝΗ",
       "address": "ΔΩΔΩΝΗΣ 109",
@@ -1021,7 +1126,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.6404736,
         "lon": 20.8681534,
@@ -1063,7 +1168,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 39.660488,
         "lon": 20.8490362,
@@ -1084,7 +1189,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 39.6595074,
         "lon": 20.8507267,
@@ -1105,7 +1210,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.6574932,
         "lon": 20.8502042,
@@ -1178,6 +1283,27 @@
       }
     },
     {
+      "id": "2651065410",
+      "name": "ΛΑΜΠΡΟΥ ΜΑΡΙΑ",
+      "address": "3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ 1, ΑΝΑΤΟΛΗ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651065410",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 39.6425384,
+        "lon": 20.8660331,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5098",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651066310",
       "name": "ΧΡΥΣΑΝΘΟΠΟΥΛΟΣ ΜΙΛΤΙΑΔΗΣ",
       "address": "3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ 55, ΑΝΑΤΟΛΗ",
@@ -1189,7 +1315,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 39.6366007,
         "lon": 20.8713763,
@@ -1231,7 +1357,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 39.6605902,
         "lon": 20.846732,
@@ -1336,7 +1462,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 39.6661017,
         "lon": 20.8456713,
@@ -1357,7 +1483,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 39.6671373,
         "lon": 20.8498576,
@@ -1378,7 +1504,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 39.6656295,
         "lon": 20.853602,
@@ -1420,7 +1546,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.6727603,
         "lon": 20.8429394,
@@ -1593,6 +1719,27 @@
         "lat": 39.6796725,
         "lon": 20.8369179,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5075",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651115878",
+      "name": "ΜΑΚΡΗ ΧΡΙΣΤΙΝΑ (2)",
+      "address": "ΛΕΩΦ. ΔΟΜΠΟΛΗ 35",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651115878",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-15",
+      "lastSeen": "2026-11-15",
+      "location": {
+        "lat": 39.654567,
+        "lon": 20.846963,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5109",
         "source": "list",
         "precision": "exact"
       }

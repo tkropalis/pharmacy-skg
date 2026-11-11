@@ -7,36 +7,9 @@
       "name": "Ξάνθη",
       "source": {
         "url": "https://xanthi.efhmeries.gr/",
-        "uploadedAt": "2026-11-04T12:23:03.990Z"
+        "uploadedAt": "2026-11-10T00:19:59.274Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2541302534",
-              "name": "ΣΑΠΟΥΝΙΔΗΣ ΙΩΑΚΕΙΜ",
-              "address": "ΛΕΩΦΟΡΟΥ ΣΤΡΑΤΟΥ 58-60",
-              "locality": "Ξάνθη",
-              "phone": "2541302534"
-            },
-            {
-              "pharmacyId": "2541083399",
-              "name": "ΣΤΡΑΤΟΓΙΑΝΝΑΚΟΣ ΝΙΚΟΛΑΟΣ",
-              "address": "ΑΝΔΡ. ΔΗΜΗΤΡΙΟΥ 63",
-              "locality": "Ξάνθη",
-              "phone": "2541083399"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "20:00 ΕΩΣ 08:00 ΠΡΩΙ",
@@ -54,6 +27,33 @@
               "address": "40 ΕΚΚΛΗΣΙΩΝ 2Β",
               "locality": "Ξάνθη",
               "phone": "2541022605"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2541302534",
+              "name": "ΣΑΠΟΥΝΙΔΗΣ ΙΩΑΚΕΙΜ",
+              "address": "ΛΕΩΦ. ΣΤΡΑΤΟΥ 58-60",
+              "locality": "Ξάνθη",
+              "phone": "2541302534"
+            },
+            {
+              "pharmacyId": "2541083399",
+              "name": "ΣΤΡΑΤΟΓΙΑΝΝΑΚΟΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΑΝΔΡ. ΔΗΜΗΤΡΙΟΥ 63",
+              "locality": "Ξάνθη",
+              "phone": "2541083399"
             }
           ]
         }

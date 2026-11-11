@@ -13,7 +13,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 39.3624525,
         "lon": 21.9201342,
@@ -118,7 +118,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.3655624,
         "lon": 21.9251685,
@@ -139,7 +139,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 39.3672531,
         "lon": 21.918125,
@@ -165,6 +165,27 @@
         "lat": 39.3666827,
         "lon": 21.9243262,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3795",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441022078",
+      "name": "ΚΑΝΤΑΡΤΖΗ ΧΡΥΣΟΥΛΑ",
+      "address": "ΚΟΥΜΟΥΝΔΟΥΡΟΥ 9",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441022078",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-11-15",
+      "lastSeen": "2026-11-15",
+      "location": {
+        "lat": 39.363792,
+        "lon": 21.9233517,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3821",
         "source": "list",
         "precision": "exact"
       }
@@ -202,7 +223,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 39.3607545,
         "lon": 21.9260789,
@@ -223,7 +244,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.362338,
         "lon": 21.9228827,
@@ -265,7 +286,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 39.3650649,
         "lon": 21.9256769,
@@ -286,7 +307,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-11-01",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 39.3642009,
         "lon": 21.9251646,
@@ -349,7 +370,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.362352,
         "lon": 21.9225945,
@@ -370,7 +391,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 39.3658077,
         "lon": 21.9220252,
@@ -459,6 +480,27 @@
         "lat": 39.3608463,
         "lon": 21.9223129,
         "ref": "https://karditsa.efhmeries.gr/Home/Details/3798",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2441026265",
+      "name": "ΚΑΡΑΜΑΓΚΙΟΛΑΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΧΑΡΙΤΟΥ 14",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441026265",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-11-12",
+      "lastSeen": "2026-11-12",
+      "location": {
+        "lat": 39.3663058,
+        "lon": 21.9242796,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3816",
         "source": "list",
         "precision": "exact"
       }
@@ -601,7 +643,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 39.3630985,
         "lon": 21.9235097,
@@ -622,7 +664,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 39.3657725,
         "lon": 21.9196242,
@@ -727,7 +769,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 39.3636366,
         "lon": 21.9239331,

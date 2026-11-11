@@ -1,5 +1,14 @@
 import { describe, expect, it } from 'vitest';
-import { HttpClient, USER_AGENT, describeError, describeResponse } from './http.ts';
+import {
+  BlockedError,
+  HttpClient,
+  USER_AGENT,
+  describeError,
+  describeResponse,
+  HttpStatusError,
+  isBlocked,
+  isUnreachable,
+} from './http.ts';
 
 describe('describeError', () => {
   it('adds what fetch puts only in the cause', () => {
@@ -163,6 +172,40 @@ describe('HttpClient', () => {
     expect(sleeps).toEqual([]);
   });
 
+  it('reports a bot challenge as blocked and never asks again, even with a 503', async () => {
+    // What efimeria.gr answered GitHub's runners on 8 Nov 2026, the page cut short.
+    const challenge = (status: number) =>
+      new Response(
+        '<!DOCTYPE html><html><head><title>Just a moment...</title></head><body>' +
+          '<noscript>Enable JavaScript and cookies to continue</noscript></body></html>',
+        {
+          status,
+          headers: {
+            server: 'cloudflare',
+            'cf-ray': 'a57757b22c6712c5-IAD',
+            'cf-mitigated': 'challenge',
+          },
+        },
+      );
+    for (const status of [403, 503]) {
+      const { client, sleeps } = fake([challenge(status), new Response('never asked')]);
+      const failure = await client.fetch('https://www.efimeria.gr/All').catch((e: unknown) => e);
+      expect(failure).toBeInstanceOf(BlockedError);
+      expect(isBlocked(new Error('read failed', { cause: failure }))).toBe(true);
+      expect(String(failure)).toContain(
+        '(server: cloudflare; cf-ray: a57757b22c6712c5-IAD; cf-mitigated: challenge): Just a moment... Enable JavaScript and cookies to continue',
+      );
+      expect(client.requests).toBe(1);
+      expect(sleeps).toEqual([]);
+    }
+  });
+
+  it('does not take a plain 403 for a challenge', async () => {
+    const { client } = fake([new Response('Access denied', { status: 403 })]);
+    const failure = await client.fetch('https://a.gr/').catch((e: unknown) => e);
+    expect(isBlocked(failure)).toBe(false);
+  });
+
   it('tries again a body that fails half-way with text, not with fetch', async () => {
     const broken = () =>
       new Response(
@@ -243,5 +286,29 @@ describe('HttpClient', () => {
     const next = client.text('https://a.gr/2');
     await expect(failed).rejects.toThrow('HTTP 404');
     expect(await next).toBe('next');
+  });
+});
+
+describe('isUnreachable', () => {
+  it.each([
+    ['a bot challenge', new BlockedError('HTTP 403 Forbidden')],
+    ['a timeout', new DOMException('The operation was aborted due to timeout', 'TimeoutError')],
+    ['a failed connection', new TypeError('fetch failed', { cause: new Error('ECONNRESET') })],
+    ['a 421', new HttpStatusError(421, 'HTTP 421 Misdirected Request')],
+    ['a 429', new HttpStatusError(429, 'HTTP 429 Too Many Requests')],
+    ['a 503', new HttpStatusError(503, 'HTTP 503 Service Unavailable')],
+    ['one of them as a cause', new Error('read failed', { cause: new HttpStatusError(502, 'x') })],
+  ])('is true for %s', (_, error) => {
+    expect(isUnreachable(error)).toBe(true);
+  });
+
+  it.each([
+    ['a 404', new HttpStatusError(404, 'HTTP 404 Not Found')],
+    ['a 403 that is no challenge', new HttpStatusError(403, 'HTTP 403 Forbidden')],
+    ['a page that does not parse', new Error('No yearly revision found')],
+    ['another TypeError', new TypeError('x is not a function')],
+    ['nothing', undefined],
+  ])('is false for %s', (_, error) => {
+    expect(isUnreachable(error)).toBe(false);
   });
 });

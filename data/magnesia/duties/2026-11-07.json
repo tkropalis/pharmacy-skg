@@ -7,57 +7,9 @@
       "name": "Μαγνησία",
       "source": {
         "url": "https://magnesia.efhmeries.gr/",
-        "uploadedAt": "2026-11-04T12:22:22.581Z"
+        "uploadedAt": "2026-11-06T21:35:36.986Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2421064440",
-              "name": "ΔΗΜΗΤΡΙΟΣ ΘΕΟΧΑΡΗΣ",
-              "address": "ΜΥΤΙΛΗΝΗΣ 16",
-              "locality": "Νέα Ιωνία",
-              "phone": "2421064440"
-            },
-            {
-              "pharmacyId": "2421023714",
-              "name": "ΕΙΡΗΝΗ ΣΤΕΡΓΙΟΥ",
-              "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 15",
-              "locality": "Βόλος",
-              "phone": "2421023714"
-            },
-            {
-              "pharmacyId": "2421071515",
-              "name": "ΕΛΕΝΗ ΚΟΝΤΟΠΑΝΑΓΙΩΤΗ",
-              "address": "Α. ΖΑΧΟΥ 83",
-              "locality": "Βόλος",
-              "phone": "2421071515"
-            },
-            {
-              "pharmacyId": "2421076100",
-              "name": "ΦΑΝΗ ΖΑΧΑΡΙΟΥ",
-              "address": "ΙΑΣΟΝΟΣ 103-107",
-              "locality": "Βόλος",
-              "phone": "2421076100"
-            },
-            {
-              "pharmacyId": "2421043839",
-              "name": "ΧΡΥΣΟΣΤΟΜΟΣ ΤΣΕΡΓΑΣ",
-              "address": "ΟΡΜΥΝΙΟΥ 40",
-              "locality": "Βόλος",
-              "phone": "2421043839"
-            }
-          ]
-        },
         {
           "kind": "saturday-extra",
           "heading": "08:00 ΕΩΣ 13:30& 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -109,6 +61,54 @@
               "address": "ΜΑΙΑΝΔΡΟΥ 36",
               "locality": "Νέα Ιωνία",
               "phone": "2421060306"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2421064440",
+              "name": "ΔΗΜΗΤΡΙΟΣ ΘΕΟΧΑΡΗΣ",
+              "address": "ΜΥΤΙΛΗΝΗΣ 16",
+              "locality": "Νέα Ιωνία",
+              "phone": "2421064440"
+            },
+            {
+              "pharmacyId": "2421023714",
+              "name": "ΕΙΡΗΝΗ ΣΤΕΡΓΙΟΥ",
+              "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 15",
+              "locality": "Βόλος",
+              "phone": "2421023714"
+            },
+            {
+              "pharmacyId": "2421071515",
+              "name": "ΕΛΕΝΗ ΚΟΝΤΟΠΑΝΑΓΙΩΤΗ",
+              "address": "Α. ΖΑΧΟΥ 83",
+              "locality": "Βόλος",
+              "phone": "2421071515"
+            },
+            {
+              "pharmacyId": "2421076100",
+              "name": "ΦΑΝΗ ΖΑΧΑΡΙΟΥ",
+              "address": "ΙΑΣΟΝΟΣ 103-107",
+              "locality": "Βόλος",
+              "phone": "2421076100"
+            },
+            {
+              "pharmacyId": "2421043839",
+              "name": "ΧΡΥΣΟΣΤΟΜΟΣ ΤΣΕΡΓΑΣ",
+              "address": "ΟΡΜΥΝΙΟΥ 40",
+              "locality": "Βόλος",
+              "phone": "2421043839"
             }
           ]
         }

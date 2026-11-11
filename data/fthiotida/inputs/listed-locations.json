@@ -19,6 +19,11 @@
     "lon": 22.4332221,
     "ref": "https://fthiotida.efhmeries.gr/Home/Details/11823"
   },
+  "2231022400": {
+    "lat": 38.9002581,
+    "lon": 22.4389777,
+    "ref": "https://fthiotida.efhmeries.gr/Home/Details/11844"
+  },
   "2231024872": {
     "lat": 38.8995457,
     "lon": 22.4325215,
@@ -68,6 +73,11 @@
     "lat": 38.8989813,
     "lon": 22.4339659,
     "ref": "https://fthiotida.efhmeries.gr/Home/Details/11784"
+  },
+  "2231031220": {
+    "lat": 38.8955323,
+    "lon": 22.4435584,
+    "ref": "https://fthiotida.efhmeries.gr/Home/Details/11840"
   },
   "2231031381": {
     "lat": 38.9008904,
@@ -283,6 +293,21 @@
     "lat": 38.9418095,
     "lon": 22.1163153,
     "ref": "https://fthiotida.efhmeries.gr/Home/Details/10174"
+  },
+  "2236043243": {
+    "lat": 38.9048673,
+    "lon": 22.1251891,
+    "ref": "https://fthiotida.efhmeries.gr/Home/Details/12172"
+  },
+  "2236043303": {
+    "lat": 38.9060074,
+    "lon": 22.1252072,
+    "ref": "https://fthiotida.efhmeries.gr/Home/Details/12192"
+  },
+  "2236044188": {
+    "lat": 38.9062134,
+    "lon": 22.1255801,
+    "ref": "https://fthiotida.efhmeries.gr/Home/Details/12156"
   },
   "2238022600": {
     "lat": 38.9143171,

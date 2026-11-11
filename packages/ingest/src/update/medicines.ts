@@ -1,8 +1,16 @@
 /**
  * Rebuilds data/medicines/medicines.json from the Ministry of Health's price bulletins and ΕΟΦ's
  * limited-availability list, validates it and writes it only if it changed. Fails, writing
- * nothing, if validation fails. When the ministry's site cannot be read, the stored prices stay,
- * ΕΟΦ's list is still applied to them, and it fails.
+ * nothing, if validation fails. When the ministry's site cannot be read, the stored prices stay
+ * and ΕΟΦ's list is still applied to them. If the site did not answer this network
+ * (`isUnreachable`), that is a warning and not a failure: a run cannot fix it, and one that stays
+ * red for it hides the failures it can (the last three runs to 11 Nov 2026). Any other error
+ * there fails.
+ *
+ * data/medicines/meta.json holds `checkedAt`, the last time the bulletins were read, written by
+ * every run that read them whether or not anything changed. A run that could not read them
+ * leaves it, so the Stale data workflow lists `medicines` after 36 hours (docs/decisions.md,
+ * "Stale data").
  *
  * The bulletins and the list are downloaded only when the set of them changed since the last
  * run (or with `force`). Each article's attachments are cached in data/medicines/inputs/, as
@@ -28,7 +36,7 @@ import type { ShortageEntry } from '../medicines/shortages.ts';
 import { validateMedicines } from '../medicines/validate.ts';
 import { MedicinesSchema, SCHEMA_VERSION, type Medicines } from '../schema.ts';
 import type { ShortageListLink } from '../sources/eof.ts';
-import { describeError } from '../sources/http.ts';
+import { describeError, isUnreachable } from '../sources/http.ts';
 import {
   OTC_LISTING,
   PRESCRIPTION_LISTING,
@@ -65,6 +73,10 @@ export interface UpdateMedicinesOptions {
   readonly now?: () => Date;
 }
 
+const MedicinesMetaSchema = z.object({ checkedAt: z.string() });
+
+type MedicinesMeta = z.infer<typeof MedicinesMetaSchema>;
+
 const FileCacheSchema = z.record(
   z.string(),
   z.array(z.object({ id: z.number(), name: z.string(), url: z.string() })),
@@ -91,9 +103,9 @@ function bulletinOf(
 }
 
 /**
- * Returns the exit code: 0 when the file is current (written or not), 1 when it is not (it
- * failed validation, or the ministry's site could not be read). Anything else that goes wrong
- * is thrown.
+ * Returns the exit code: 0 when the file is current (written or not) or the ministry's site did
+ * not answer this network, 1 when it failed validation or the bulletins could not be read for
+ * another reason. Anything else that goes wrong is thrown.
  */
 export async function updateMedicines({
   sources,
@@ -160,16 +172,16 @@ export async function updateMedicines({
   }
 
   /** The stored prices with ΕΟΦ's current list, for a run that could not read the bulletins. */
-  async function refreshShortages(stored: Medicines): Promise<void> {
+  async function refreshShortages(stored: Medicines): Promise<boolean> {
     const link = await sources.findShortageList();
     log(link ? `ΕΟΦ: ${link.title}` : 'ΕΟΦ: no limited-availability list found');
     if (stored.shortageList?.fileUrl === link?.fileUrl && !force) {
       log('No new shortage list. No changes.');
-      return;
+      return true;
     }
     const shortages = await readShortages(link);
     const attached = attachShortages(stored.medicines, shortages);
-    await publish(
+    return publish(
       { ...stored, shortageList: link, medicines: attached.medicines },
       shortages.length,
       attached.unmatchedShortages,
@@ -203,6 +215,10 @@ export async function updateMedicines({
     return true;
   }
 
+  /** The bulletins were read just now. */
+  const checked = () =>
+    writeIfChanged(paths.meta, toJson({ checkedAt: now().toISOString() } satisfies MedicinesMeta));
+
   // The ministry's site turned GitHub's runners away (HTTP 421) from 22 Oct 2026 while ΕΟΦ's
   // answered: a failure there must not keep the shortage list from being updated.
   let planned: Awaited<ReturnType<typeof planBulletins>>;
@@ -210,11 +226,25 @@ export async function updateMedicines({
     planned = await planBulletins();
   } catch (error) {
     if (!previous) throw error;
-    logger.error(
-      `error [bulletins] not read, the stored prices were kept: ${describeError(error)}`,
-    );
-    await refreshShortages(previous);
-    return 1;
+    const unreachable = isUnreachable(error);
+    if (unreachable) {
+      (logger.warn ?? logger.error)(
+        `warning [unreachable] the ministry's site does not answer this network; the stored prices are kept and go stale: ${describeError(error)}`,
+      );
+      // Prices stored before meta.json existed were last read when they last changed.
+      if (!(await readJson(paths.meta, MedicinesMetaSchema))) {
+        await writeIfChanged(
+          paths.meta,
+          toJson({ checkedAt: previous.updatedAt } satisfies MedicinesMeta),
+        );
+      }
+    } else {
+      logger.error(
+        `error [bulletins] not read, the stored prices were kept: ${describeError(error)}`,
+      );
+    }
+    const applied = await refreshShortages(previous);
+    return unreachable && applied ? 0 : 1;
   }
   let bulletins = planned.map(({ bulletin }) => bulletin);
   const shortageLink = await sources.findShortageList();
@@ -226,6 +256,7 @@ export async function updateMedicines({
     previous.shortageList?.fileUrl === shortageLink?.fileUrl;
   if (unchanged && !force) {
     log('No new bulletins or shortage list. No changes.');
+    await checked();
     return 0;
   }
 
@@ -269,7 +300,9 @@ export async function updateMedicines({
     shortageList: shortageLink,
     medicines: assembled.medicines,
   };
-  return (await publish(file, shortages.length, assembled.unmatchedShortages)) ? 0 : 1;
+  if (!(await publish(file, shortages.length, assembled.unmatchedShortages))) return 1;
+  await checked();
+  return 0;
 }
 
 /** Pretty JSON, but one line per medicine: about 9,000 of them. */

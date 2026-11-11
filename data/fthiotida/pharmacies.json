@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "2231022400",
+      "name": "ΛΙΑΓΚΟΥ ΜΑΡΙΑ",
+      "address": "ΚΑΠΟΔΙΣΤΡΙΟΥ 38",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231022400",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-17",
+      "location": {
+        "lat": 38.9002581,
+        "lon": 22.4389777,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11844",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2231024872",
       "name": "ΧΑΝΤΖΗΣ ΔΗΜΗΤΡΙΟΣ",
       "address": "ΒΥΡΩΝΟΣ ΚΑΙ ΚΑΡΑΓΙΑΝΝΟΠΟΥΛΟΥ 11",
@@ -223,7 +244,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 38.8989625,
         "lon": 22.4340591,
@@ -296,6 +317,27 @@
       }
     },
     {
+      "id": "2231031220",
+      "name": "Σ.Φ. ΑΛΤΑΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ & ΝΙΚΗ",
+      "address": "ΘΕΡΜΟΠΥΛΩΝ 67",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231031220",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 38.8955323,
+        "lon": 22.4435584,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11840",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2231031381",
       "name": "ΜΠΛΟΥΝΑ ΜΑΡΙΑ",
       "address": "ΚΟΛΟΚΟΤΡΏΝΗ 16",
@@ -307,7 +349,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 38.9008904,
         "lon": 22.4337331,
@@ -328,7 +370,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 38.8986308,
         "lon": 22.4323868,
@@ -370,7 +412,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 38.8979801,
         "lon": 22.4333124,
@@ -412,7 +454,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 38.9006458,
         "lon": 22.4334071,
@@ -538,7 +580,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 38.8887395,
         "lon": 22.4633697,
@@ -622,7 +664,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 38.8879736,
         "lon": 22.4385805,
@@ -643,7 +685,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 38.8928026,
         "lon": 22.426679,
@@ -748,7 +790,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 38.9014462,
         "lon": 22.4335574,
@@ -790,7 +832,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 38.886153,
         "lon": 22.4669416,
@@ -811,7 +853,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 38.653995,
         "lon": 22.9991831,
@@ -832,7 +874,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 38.6540422,
         "lon": 22.998775,
@@ -853,7 +895,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 38.6535798,
         "lon": 23.000694,
@@ -874,7 +916,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 38.6519636,
         "lon": 23.0046221,
@@ -895,7 +937,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 38.6541266,
         "lon": 23.0008583,
@@ -937,7 +979,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 38.710956,
         "lon": 23.0490466,
@@ -958,7 +1000,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 38.7101372,
         "lon": 23.0533038,
@@ -979,7 +1021,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 38.6551803,
         "lon": 22.9978894,
@@ -1000,7 +1042,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 38.7785901,
         "lon": 22.7843158,
@@ -1042,7 +1084,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 38.7793312,
         "lon": 22.7869897,
@@ -1063,7 +1105,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 38.7599237,
         "lon": 22.8577998,
@@ -1084,7 +1126,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 38.7579434,
         "lon": 22.856005,
@@ -1105,7 +1147,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 38.8092056,
         "lon": 22.6447967,
@@ -1126,7 +1168,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 38.809628,
         "lon": 22.6448618,
@@ -1147,7 +1189,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 38.9422852,
         "lon": 22.1167605,
@@ -1168,7 +1210,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 38.9416767,
         "lon": 22.1157712,
@@ -1189,11 +1231,74 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 38.9418095,
         "lon": 22.1163153,
         "ref": "https://fthiotida.efhmeries.gr/Home/Details/10174",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2236043243",
+      "name": "ΑΡΓΥΡΟΥ ΓΟΥΒΑΛΑ ΟΕ.",
+      "address": "ΣΠΕΡΧΕΙΑΔΑ",
+      "locality": "Σπερχειάδα",
+      "postcode": null,
+      "phone": "2236043243",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-12",
+      "location": {
+        "lat": 38.9048673,
+        "lon": 22.1251891,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/12172",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2236043303",
+      "name": "ΛΑΜΠΡΑΚΟΠΟΥΛΟΣ ΧΑΡΙΛΑΟΣ",
+      "address": "ΚΡΙΚΟΥ 9",
+      "locality": "Σπερχειάδα",
+      "postcode": null,
+      "phone": "2236043303",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-11-09",
+      "lastSeen": "2026-11-17",
+      "location": {
+        "lat": 38.9060074,
+        "lon": 22.1252072,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/12192",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2236044188",
+      "name": "ΠΟΛΥΖΟΥ ΔΗΜΗΤΡΑ",
+      "address": "ΚΡΙΚΟΥ 18",
+      "locality": "Σπερχειάδα",
+      "postcode": null,
+      "phone": "2236044188",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-16",
+      "location": {
+        "lat": 38.9062134,
+        "lon": 22.1255801,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/12156",
         "source": "list",
         "precision": "exact"
       }
@@ -1210,7 +1315,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 38.9143171,
         "lon": 22.616397,
@@ -1252,7 +1357,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 38.9135166,
         "lon": 22.6099063,
@@ -1273,7 +1378,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 38.9142072,
         "lon": 22.6152805,

@@ -1,5 +1,6 @@
 import { LOCALES } from '@pharmacy-skg/core';
 import type { Locale } from '@pharmacy-skg/core';
+import { t } from '../src/i18n/index.ts';
 import { areaPath, dutyPath, pharmacyPath } from '../src/i18n/routes.ts';
 import { AREA_KEY } from '../src/lib/storage.ts';
 import { CITY_ID, AREA_SLUG, DUTY_DATE, PHARMACY_ID, SITE_URL } from './constants.ts';
@@ -118,4 +119,24 @@ test('an area page keeps its lists for search engines', async ({ request }) => {
 test('the duty-date page marks the fixed date as today', async ({ page }) => {
   await page.goto(dutyPath('en', CITY_ID, DUTY_DATE));
   await expect(page.locator('h1')).toContainText(/today/i);
+});
+
+test('the duty-date page for today leads to the nearest open, marks the lists on duty now and has Call buttons', async ({
+  page,
+}) => {
+  // Monday 22:30: the day list (08:00–21:00) is over, the night lists are on.
+  const duty = t('el').seo.duty;
+  await page.goto(dutyPath('el', CITY_ID, DUTY_DATE));
+  const nearest = page.getByRole('link', { name: duty.nearestNow });
+  await expect(nearest).toBeVisible();
+  await expect(nearest).toHaveAttribute('href', `/?city=${CITY_ID}`);
+  const day = page.locator('.seo-section').filter({ hasText: '08:00–21:00' }).first();
+  await expect(day.getByText(duty.onDutyNow)).toBeHidden();
+  const night = page.locator('.seo-section').filter({ hasText: '21:00–00:00' }).first();
+  await expect(night.getByText(duty.onDutyNow)).toBeVisible();
+  await expect(night.getByRole('link', { name: /^Κλήση: / }).first()).toBeVisible();
+  // Another day has no button to the nearest: it is for planning ahead.
+  await page.getByRole('link', { name: /Προηγούμενη μέρα/ }).click();
+  await expect(page.locator('h1')).not.toContainText('Σήμερα');
+  await expect(page.getByRole('link', { name: duty.nearestNow })).toBeHidden();
 });

@@ -34,7 +34,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 40.2719228,
         "lon": 22.5087818,
@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "2351025691",
+      "name": "ΠΟΛΥΧΡΟΝΙΑΔΟΥ ΕΥΦΡΟΣΥΝΗ",
+      "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 27",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351025691",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-11-16",
+      "lastSeen": "2026-11-16",
+      "location": {
+        "lat": 40.2713068,
+        "lon": 22.5061923,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23593",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2351025789",
       "name": "Σ.Φ. ΚΑΡΑΒΕΡΓΟΥ ΑΝΑΣΤΑΣΙΑ-ΚΑΡΑΒΕΡΓΟΥ ΑΙΚΑΤΕΡΙΝΗ",
       "address": "ΕΙΡΗΝΗΣ 6",
@@ -118,7 +139,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 40.269586,
         "lon": 22.5087641,
@@ -139,7 +160,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 40.2722363,
         "lon": 22.5081659,
@@ -202,7 +223,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 40.2714846,
         "lon": 22.5043245,
@@ -223,7 +244,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.270588,
         "lon": 22.5118676,
@@ -244,7 +265,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-10-28",
       "location": {
         "lat": 40.2718426,
         "lon": 22.5081426,
@@ -307,7 +328,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 40.273145,
         "lon": 22.5077812,
@@ -391,7 +412,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-10",
       "location": {
         "lat": 40.2722572,
         "lon": 22.5045722,
@@ -475,7 +496,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 40.2737382,
         "lon": 22.5185851,
@@ -538,7 +559,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 40.2708012,
         "lon": 22.5069292,
@@ -580,7 +601,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.272738,
         "lon": 22.503578,
@@ -622,7 +643,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 40.3148822,
         "lon": 22.5846429,
@@ -643,7 +664,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 40.3146883,
         "lon": 22.5872503,
@@ -664,7 +685,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.3150825,
         "lon": 22.5838514,
@@ -685,7 +706,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 40.3157962,
         "lon": 22.5820356,
@@ -790,7 +811,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 40.2627329,
         "lon": 22.5020042,
@@ -811,7 +832,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.267728,
         "lon": 22.5968873,
@@ -832,7 +853,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 40.2742955,
         "lon": 22.4991094,
@@ -853,7 +874,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 40.106084,
         "lon": 22.5085247,
@@ -895,7 +916,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 40.0580605,
         "lon": 22.5615413,
@@ -937,7 +958,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.0588965,
         "lon": 22.5606957,
@@ -979,7 +1000,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 39.9919599,
         "lon": 22.6244695,
@@ -1000,7 +1021,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.0030004,
         "lon": 22.5944624,
@@ -1021,7 +1042,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 40.1030592,
         "lon": 22.5014766,
@@ -1042,7 +1063,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 40.1024391,
         "lon": 22.5016686,
@@ -1063,7 +1084,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 40.1043166,
         "lon": 22.5012641,
@@ -1084,7 +1105,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 40.104048,
         "lon": 22.5062317,
@@ -1105,7 +1126,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.1016061,
         "lon": 22.5002437,
@@ -1126,7 +1147,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 40.4994548,
         "lon": 22.5422727,
@@ -1168,7 +1189,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.495222,
         "lon": 22.537137,
@@ -1231,7 +1252,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.478824,
         "lon": 22.4858967,

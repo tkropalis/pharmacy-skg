@@ -477,61 +477,179 @@
   min-height: 2.75rem;
 }
 
-/* A duty-date page's area groups: a plain heading under a hairline, no boxes. */
-.seo-group {
-  margin-top: 2rem;
-  padding-top: 0.25rem;
+/*
+ * A day's lists. The day leads, with the days around it as two buttons; each list's kind and
+ * hours stay at the top of the screen while its rows scroll under them, so a long list never
+ * loses its hours. Rows are the pharmacy page's nearest rows: name, place, phone, Call.
+ */
+.seo-day-title {
+  margin-bottom: 0.75rem;
+}
+
+.seo-day-date {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 1.125rem;
+  font-weight: 650;
+}
+
+.seo-days {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 0 0 var(--space);
+}
+
+.seo-day-step {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.375rem 1rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  color: var(--fg);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  text-decoration: none;
+  transition: background-color var(--dur-1) var(--ease-out);
+}
+
+.seo-day-step svg {
+  flex: none;
+  color: var(--muted);
+}
+
+.seo-day-step.next {
+  justify-self: end;
+}
+
+.seo-day-step:hover {
+  background: var(--soft);
+}
+
+.seo-day-step:active {
+  opacity: 0.6;
+}
+
+.seo-day-cta {
+  margin: 0 0 var(--space);
+}
+
+.seo-day-cta[hidden] {
+  display: none;
+}
+
+.seo-page .seo-day-cta .button {
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 3rem;
+}
+
+/* Several groups: each starts under a hairline. One group is the city, and its name is hidden. */
+.seo-group + .seo-group {
+  margin-top: 2.5rem;
   border-top: 1px solid var(--border);
 }
 
 .seo-group > h2 {
-  margin-top: 0.75rem;
+  margin: 1.5rem 0 0;
 }
 
 .seo-section {
-  margin: 0 0 1rem;
+  margin: 1.5rem 0 0;
 }
 
-.seo-section h3 {
-  margin-top: 1rem;
+.seo-section-head {
+  position: sticky;
+  top: 0;
+  /* Above the rows, whose text is positioned for its link (DESIGN.md, Stacking). */
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0 1rem;
+  padding: 0.75rem 0 0.5rem;
+  background: var(--bg);
 }
 
-/* Previous and next day: two halves of one row, the dates only (the words are for screen readers). */
-.seo-pager {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin: 0 0 var(--space);
+.seo-section-head h3 {
+  margin: 0;
+  font-size: 1.0625rem;
 }
 
-.seo-pager a {
+.seo-section-hours {
+  margin: 0;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+/* As the home screen's status label: a rounded rectangle led by the duty marker, never a pill. */
+.seo-now {
   display: inline-flex;
   align-items: center;
   gap: 0.375rem;
-  min-height: 2.75rem;
-  font-weight: 600;
+  margin: 0 0 0.625rem;
+  padding: 0.125rem 0.5rem 0.125rem 0.375rem;
+  border-radius: 0.375rem;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.seo-now[hidden] {
+  display: none;
+}
+
+.seo-section > .seo-meta {
+  margin: 0 0 0.5rem;
+}
+
+.seo-duty-rows .seo-near-text {
+  position: relative;
+}
+
+.seo-duty-rows .name {
+  color: var(--fg);
   text-decoration: none;
 }
 
-.seo-pager a:hover span {
+/* The name's link covers the row's text, so the target is the whole row but its Call button. */
+.seo-duty-rows a.name::after {
+  content: '';
+  position: absolute;
+  inset: -0.625rem 0;
+}
+
+.seo-duty-rows a.name:hover {
   text-decoration: underline;
 }
 
-.seo-pager .next {
-  justify-content: flex-end;
-  text-align: end;
+.seo-duty-rows .phone {
+  font-variant-numeric: tabular-nums;
 }
 
+.seo-source {
+  margin: 0.75rem 0 0;
+  font-size: 0.875rem;
+}
+
+/* Today, beside the date: a label, not a button. */
 .seo-badge {
   display: inline-block;
   margin-inline-start: 0.5rem;
-  padding: 0 0.625rem;
-  border: 2px solid var(--accent);
-  border-radius: 999px;
-  color: var(--accent);
-  font-size: 0.875rem;
+  padding: 0.0625rem 0.5rem;
+  border-radius: 0.375rem;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  font-size: 0.8125rem;
   font-weight: 700;
-  vertical-align: middle;
+  letter-spacing: 0;
+  vertical-align: 0.15em;
 }
 
 .seo-meta {

@@ -77,6 +77,57 @@ export async function describeResponse(response: Response, url: string): Promise
   );
 }
 
+/**
+ * A site that answered with a bot challenge (Cloudflare's `cf-mitigated: challenge`). It refuses
+ * the network the run is on, not the request: efimeria.gr has answered GitHub's runners so since
+ * 2 Nov 2026 and fscyclades.gr since 5 Nov, while both answer 200 from Greece. Asking again does
+ * not help, and getting past a challenge is not ours to do (CLAUDE.md), so it is not retried.
+ */
+export class BlockedError extends Error {
+  override readonly name = 'BlockedError';
+}
+
+/** Whether an error, or one it was caused by, is a bot challenge (`BlockedError`). */
+export function isBlocked(error: unknown): boolean {
+  let current = error;
+  for (let depth = 0; current && depth < 4; depth++) {
+    if (current instanceof BlockedError) return true;
+    current = (current as { cause?: unknown }).cause;
+  }
+  return false;
+}
+
+/** A response that is not OK and not a bot challenge. Its message is `describeResponse`'s line. */
+export class HttpStatusError extends Error {
+  readonly status: number;
+  constructor(status: number, message: string) {
+    super(message);
+    this.status = status;
+  }
+}
+
+/**
+ * Whether an error, or one it was caused by, says the site did not answer this network: a bot
+ * challenge, a timeout, a connection that failed, or a status a server gives for itself rather
+ * than for the request (421, 429, 5xx). www.moh.gov.gr answered GitHub's runners with 421 from
+ * 22 Oct 2026, then with nothing at all from 10 Nov, while answering 200 from Greece. A 404 or
+ * a page that no longer parses is not this: the request or the reader has to change.
+ */
+export function isUnreachable(error: unknown): boolean {
+  let current = error;
+  for (let depth = 0; current && depth < 4; depth++) {
+    if (current instanceof BlockedError) return true;
+    if (current instanceof HttpStatusError) {
+      return current.status === 421 || current.status === 429 || current.status >= 500;
+    }
+    const { name, message } = current as { name?: unknown; message?: unknown };
+    if (name === 'TimeoutError' || name === 'AbortError') return true;
+    if (name === 'TypeError' && message === 'fetch failed') return true;
+    current = (current as { cause?: unknown }).cause;
+  }
+  return false;
+}
+
 export interface HttpClientOptions {
   /**
    * The least time between the starts of two requests, and with it one request at a time. A site
@@ -206,7 +257,11 @@ export class HttpClient {
         });
         this.onResponse(response);
         if (response.ok) return await read(response);
-        lastError = new Error(await describeResponse(response, url));
+        if (response.headers.get('cf-mitigated') === 'challenge') {
+          lastError = new BlockedError(await describeResponse(response, url));
+          break;
+        }
+        lastError = new HttpStatusError(response.status, await describeResponse(response, url));
         if (response.status < 500 && response.status !== 429) break;
       } catch (error) {
         lastError = error;

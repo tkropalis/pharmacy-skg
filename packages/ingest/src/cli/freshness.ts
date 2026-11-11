@@ -16,7 +16,10 @@ const flag = args.indexOf('--body-file');
 const bodyFile = flag === -1 ? undefined : args[flag + 1];
 if (flag !== -1 && !bodyFile) throw new Error('--body-file needs a path');
 
-/** Every data/<area>/meta.json. A folder without one (medicines, schema) is not an area. */
+/**
+ * Every data/<area>/meta.json, and data/medicines/meta.json with them (when the price bulletins
+ * were last read). A folder without one (schema) is skipped.
+ */
 async function readAreas(): Promise<AreaMeta[]> {
   const dataDir = join(REPO_ROOT, 'data');
   const folders = (await readdir(dataDir, { withFileTypes: true }))

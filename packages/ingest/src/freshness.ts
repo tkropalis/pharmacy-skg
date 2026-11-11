@@ -3,6 +3,12 @@ import { GREECE_TIME_ZONE } from '@pharmacy-skg/core';
 /** The app shows its stale-data banner after this long (docs/decisions.md, "Stale data"). */
 export const STALE_AFTER_HOURS = 36;
 
+/**
+ * data/medicines/meta.json has a `checkedAt` too (the last time the ministry's price bulletins
+ * were read, update/medicines.ts), so it is listed with the areas.
+ */
+export const MEDICINES = 'medicines';
+
 /** What an area's meta.json says about when its sources were last read. */
 export interface AreaMeta {
   /** The folder name under data/. */
@@ -73,6 +79,12 @@ export function issueBody(stale: readonly StaleArea[], total: number, workflowUr
     '| --- | --- |',
     ...rows,
     '',
+    ...(stale.some(({ area }) => area === MEDICINES)
+      ? [
+          `\`${MEDICINES}\` is the medicine prices, not an area: the ministry's bulletins have not been read since then.`,
+          '',
+        ]
+      : []),
     `Check the latest [Update data runs](${workflowUrl}) for the cause. This issue is kept current by the Stale data workflow and closes by itself when every area is fresh.`,
   ].join('\n');
 }

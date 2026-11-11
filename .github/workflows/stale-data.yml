@@ -6,6 +6,8 @@ name: Stale data
 # `checkedAt` is more than 36 hours old, the point where the app shows its stale-data banner
 # (docs/decisions.md, "Stale data"), and keeps ONE open issue labelled `stale-data` current:
 # created when areas are stale, edited when the list changes, closed with a comment when none are.
+# data/medicines/meta.json is listed with the areas: its `checkedAt` is the last time the ministry's
+# price bulletins were read (its site has not answered GitHub's runners since 10 Nov 2026).
 # The list comes from packages/ingest/src/cli/freshness.ts.
 #
 # The run is after the morning data update (06:20 Athens time; GitHub starts scheduled runs hours

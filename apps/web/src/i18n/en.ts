@@ -272,6 +272,8 @@ export const en: Dictionary = {
       nextDay: 'next day',
       extraHoursLabel: 'Also:',
       exceptHolidays: 'not on public holidays',
+      onDutyNow: 'On duty now',
+      nearestNow: 'Nearest open now',
     },
 
     area: {

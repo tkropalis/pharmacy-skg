@@ -65,6 +65,27 @@
       }
     },
     {
+      "id": "2681026114",
+      "name": "ΚΟΖΑΝΤΟΥ",
+      "address": "ΕΝΑΝΤΙ ΚΤΕΛ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681026114",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 39.159253,
+        "lon": 20.995208,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2451",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681027317",
       "name": "ΣΙΝΤΕΛΕ ΚΩΝΣΤΑΝΤΙΝΑ",
       "address": "ΠΥΡΡΟΥ 27",
@@ -265,7 +286,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 39.180431,
         "lon": 21.189088,
@@ -286,7 +307,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 39.247688,
         "lon": 21.161423,
@@ -354,6 +375,27 @@
         "lat": 39.163756,
         "lon": 20.98599,
         "ref": "https://arta.efhmeries.gr/Home/Details/2439",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681070145",
+      "name": "ΠΑΠΑΔΗΜΗΤΡΙΟΥ ΒΙΚΤΩΡΙΑ",
+      "address": "ΑΓΙΑΣ ΣΟΦΙΑΣ ΚΑΙ ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681070145",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-15",
+      "lastSeen": "2026-11-15",
+      "location": {
+        "lat": 39.161421,
+        "lon": 20.98761,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2455",
         "source": "list",
         "precision": "exact"
       }
@@ -454,7 +496,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 39.1617619,
         "lon": 20.9837472,
@@ -590,6 +632,27 @@
       }
     },
     {
+      "id": "2681073813",
+      "name": "ΔΙΑΜΑΝΤΗΣ ΙΩΑΝΝΗΣ",
+      "address": "ΧΑΪΚΑΛΗ 18",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681073813",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-12",
+      "lastSeen": "2026-11-12",
+      "location": {
+        "lat": 39.1640995,
+        "lon": 20.9877813,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2452",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681074102",
       "name": "ΣΑΠΡΙΚΗ ΒΑΣΙΛΙΚΗ",
       "address": "ΒΑΣΙΛΕΩΣ ΚΩΝΣΤΑΝΤΙΝΟΥ 125",
@@ -648,6 +711,27 @@
         "lat": 39.1632759,
         "lon": 20.9851849,
         "ref": "https://arta.efhmeries.gr/Home/Details/2449",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2681074484",
+      "name": "ΤΣΙΑΝΑΚΑΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΣΚΟΥΦΑ 22",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681074484",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "location": {
+        "lat": 39.162494,
+        "lon": 20.9884787,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2454",
         "source": "list",
         "precision": "exact"
       }
@@ -758,6 +842,27 @@
       }
     },
     {
+      "id": "2681076330",
+      "name": "ΠΑΠΑΓΕΩΡΓΑΚΗ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΤΖΑΒΕΛΛΑ 16 & ΜΑΚΡΥΓΙΑΝΝΗ 41",
+      "locality": "Άρτα",
+      "postcode": null,
+      "phone": "2681076330",
+      "groupId": "arta",
+      "sources": [
+        "iteq-arta"
+      ],
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-13",
+      "location": {
+        "lat": 39.1638414,
+        "lon": 20.986502,
+        "ref": "https://arta.efhmeries.gr/Home/Details/2453",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2681077007",
       "name": "ΒΟΥΤΟΥ ΙΩΑΝΝΑ",
       "address": "ΠΛΑΤΕΙΑ ΚΙΛΚΙΣ",
@@ -853,7 +958,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 39.160357,
         "lon": 21.015347,
@@ -874,7 +979,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.167183,
         "lon": 21.034827,
@@ -895,7 +1000,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 39.070637,
         "lon": 21.018409,
@@ -916,7 +1021,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 39.070637,
         "lon": 21.018409,
@@ -958,7 +1063,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 39.0828391,
         "lon": 21.0168457,

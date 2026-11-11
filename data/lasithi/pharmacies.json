@@ -55,7 +55,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 35.1890715,
         "lon": 25.7174678,
@@ -97,7 +97,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 35.1942753,
         "lon": 25.7128263,
@@ -139,7 +139,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 35.1892405,
         "lon": 25.7174072,
@@ -160,7 +160,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 35.1936364,
         "lon": 25.7177521,
@@ -181,7 +181,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 35.1895469,
         "lon": 25.717248,
@@ -202,7 +202,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.1887795,
         "lon": 25.7170791,
@@ -223,7 +223,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 35.2557733,
         "lon": 25.6064703,
@@ -244,7 +244,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 35.2562283,
         "lon": 25.6066956,
@@ -265,7 +265,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 35.2549894,
         "lon": 25.6082335,
@@ -286,7 +286,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 35.256118,
         "lon": 25.6063828,
@@ -307,7 +307,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 35.2617867,
         "lon": 25.7226428,
@@ -328,7 +328,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 35.2614561,
         "lon": 25.7239692,
@@ -370,7 +370,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 35.0103087,
         "lon": 25.7407374,
@@ -412,7 +412,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 35.0093446,
         "lon": 25.7397987,
@@ -475,11 +475,32 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 35.0127047,
         "lon": 25.7423407,
         "ref": "https://lasithi.efhmeries.gr/Home/Details/4673",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2842023638",
+      "name": "ΦΑΡΜΑΚΕΙΟ ΔΕΣΠΟΙΝΑΣ ΑΡΩΝΗ & ΣΙΑ Ο.Ε.",
+      "address": "ΠΛΑΤΕΙΑ ΠΛΑΣΤΗΡΑ 3 & ΛΑΣΘΕΝΟΥΣ 25-23 / 3, N. PLASTIRA SQ.",
+      "locality": "Ιεράπετρα",
+      "postcode": null,
+      "phone": "2842023638",
+      "groupId": "lasithi",
+      "sources": [
+        "iteq-lasithi"
+      ],
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-13",
+      "location": {
+        "lat": 35.0115501,
+        "lon": 25.7412927,
+        "ref": "https://lasithi.efhmeries.gr/Home/Details/4671",
         "source": "list",
         "precision": "exact"
       }
@@ -580,7 +601,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 35.0087953,
         "lon": 25.7391825,
@@ -622,7 +643,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-30",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 35.0130196,
         "lon": 25.7432653,
@@ -664,7 +685,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 35.0100841,
         "lon": 25.7403897,
@@ -706,7 +727,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 35.2075877,
         "lon": 26.1060533,
@@ -769,7 +790,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 35.2056639,
         "lon": 26.1048292,
@@ -790,7 +811,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 35.2051441,
         "lon": 26.0966064,
@@ -811,7 +832,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 35.2061844,
         "lon": 26.1040802,
@@ -832,7 +853,7 @@
         "iteq-lasithi"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 35.2069673,
         "lon": 26.1053981,

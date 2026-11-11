@@ -1,5 +1,6 @@
 ---
 import Analytics from '@vercel/analytics/astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
 import type { Locale } from '@pharmacy-skg/core';
 import SiteFooter from '../components/SiteFooter.astro';
 import SiteHeader from '../components/SiteHeader.astro';
@@ -97,6 +98,7 @@ const analytics = import.meta.env.PROD && process.env.VERCEL === '1';
     <meta name="twitter:image" content={absolute('/og-image.png')} />
 
     {analytics && <Analytics />}
+    {analytics && <SpeedInsights />}
     <slot name="head" />
   </head>
   <body

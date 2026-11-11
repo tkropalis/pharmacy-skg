@@ -13,7 +13,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.994823,
         "lon": 22.872297,
@@ -34,7 +34,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 40.993875,
         "lon": 22.873572,
@@ -55,13 +55,55 @@
         "fsk"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 40.993825,
         "lon": 22.875206,
         "source": "overture",
         "precision": "exact",
         "ref": "cf421eb1-8032-48f7-845d-1de056a296d2"
+      }
+    },
+    {
+      "id": "2341023040",
+      "name": "Σ.Φ. ΣΠΥΡΙΔΗΣ Δ. - ΒΑΛΑΣΙΔΟΥ ΙΣ. Ο.Ε.",
+      "address": "21 ΙΟΥΝΙΟΥ 137",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341023040",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-13",
+      "lastSeen": "2026-11-13",
+      "location": {
+        "lat": 40.993795,
+        "lon": 22.874932,
+        "source": "nominatim",
+        "precision": "exact",
+        "ref": "21ης Ιουνίου 137, Κιλκίς"
+      }
+    },
+    {
+      "id": "2341023115",
+      "name": "ΓΕΩΡΓΙΑΔΗΣ ΑΛΚΙΒΙΑΔΗΣ",
+      "address": "ΓΙΑΛ-ΣΑΛ (ΕΝΑΝΤΙ ΙΚΑ)",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341023115",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-12",
+      "lastSeen": "2026-11-12",
+      "location": {
+        "lat": 40.993587,
+        "lon": 22.874146,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κιλκίς"
       }
     },
     {
@@ -139,7 +181,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 40.994575,
         "lon": 22.87586,
@@ -160,7 +202,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 40.993252,
         "lon": 22.874128,
@@ -191,6 +233,27 @@
       }
     },
     {
+      "id": "2341024777",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΛΟΥΙΖΑ-ΜΑΡΙΑ.",
+      "address": "21 ΙΟΥΝΙΟΥ 105",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341024777",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-17",
+      "lastSeen": "2026-11-17",
+      "location": {
+        "lat": 40.994095,
+        "lon": 22.875435,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "c1894951-140b-4b98-ad31-6cefc01e2584"
+      }
+    },
+    {
       "id": "2341024837",
       "name": "Σ.Φ.ΝΙΚΟΠΟΛΙΤΙΔΗΣ ΣΑΒΒΑΣ - ΝΙΚΟΠΟΛΙΤΙΔΟΥ ΤΑΜΑΡΑ ΟΕ",
       "address": "ΘΕΣΣΑΛΟΝΙΚΗΣ 23",
@@ -202,7 +265,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 40.99241,
         "lon": 22.87579,
@@ -223,7 +286,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 40.983655,
         "lon": 22.863948,
@@ -265,7 +328,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 40.990086,
         "lon": 22.868872,
@@ -328,13 +391,55 @@
         "fsk"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 40.991799,
         "lon": 22.872086,
         "source": "overture",
         "precision": "exact",
         "ref": "a6d15b1e-b760-415e-9faa-a0c6b2167a81"
+      }
+    },
+    {
+      "id": "2341103050",
+      "name": "ΑΓΤΖΙΔΗΣ ΑΝΔΡΕΑΣ",
+      "address": "21 ΙΟΥΝΙΟΥ 283",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341103050",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-11",
+      "lastSeen": "2026-11-11",
+      "location": {
+        "lat": 41.004204,
+        "lon": 22.880739,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "21ης Ιουνίου 283, Κιλκίς"
+      }
+    },
+    {
+      "id": "2341301423",
+      "name": "ΑΝΔΡΙΑΝΙΔΟΥ ΜΑΡΙΑ",
+      "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 41",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341301423",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "location": {
+        "lat": 40.996593,
+        "lon": 22.871602,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "3e65369f-7ec5-4403-8677-136c0b4ad0fa"
       }
     },
     {
@@ -349,7 +454,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 40.994942,
         "lon": 22.571178,
@@ -370,7 +475,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 40.993285,
         "lon": 22.573432,
@@ -391,7 +496,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.998507,
         "lon": 22.569727,
@@ -433,7 +538,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 40.994532,
         "lon": 22.571712,
@@ -454,7 +559,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 40.993285,
         "lon": 22.573432,
@@ -475,7 +580,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 40.98555,
         "lon": 22.542284,
@@ -496,7 +601,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 40.98555,
         "lon": 22.542284,
@@ -517,7 +622,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 41.00156,
         "lon": 22.56729,
@@ -538,7 +643,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 40.945677,
         "lon": 22.450244,
@@ -559,7 +664,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 40.946644,
         "lon": 22.451941,
@@ -580,7 +685,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.946525,
         "lon": 22.452094,
@@ -601,7 +706,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 40.98555,
         "lon": 22.542284,

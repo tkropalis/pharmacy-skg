@@ -86,6 +86,27 @@
       }
     },
     {
+      "id": "2551024442",
+      "name": "ΓΚΟΤΣΙΔΗΣ ΧΡΗΣΤΟΣ-ΣΤΑΥΡΟΣ",
+      "address": "14ης Μαΐου 56 (παραπλεύρως ΕΦΚΑ)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551024442",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-16",
+      "lastSeen": "2026-11-16",
+      "location": {
+        "lat": 40.8483969,
+        "lon": 25.874416,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4248",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551024463",
       "name": "Σ.Φ. ΓΚΑΪΝΤΑΤΖΗΣ Β. - ΓΚΑΪΝΤΑΤΖΗ Ε.",
       "address": "14ης Μαΐου & Παλαιολόγου",
@@ -97,7 +118,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 40.8466292,
         "lon": 25.8751441,
@@ -160,7 +181,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-11-01",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 40.8470319,
         "lon": 25.8749455,
@@ -181,7 +202,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 40.8494053,
         "lon": 25.8592314,
@@ -265,7 +286,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 40.8481538,
         "lon": 25.8734091,
@@ -464,6 +485,27 @@
       }
     },
     {
+      "id": "2551031295",
+      "name": "ΚΑΡΑΓΙΑΝΝΟΠΟΥΛΟΣ - ΤΖΑΜΠΕΡ ΧΡΗΣΤΟΣ",
+      "address": "Μαζαράκη 2 (γωνία Λ. Δημοκρατίας)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551031295",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-15",
+      "lastSeen": "2026-11-15",
+      "location": {
+        "lat": 40.845833,
+        "lon": 25.8765974,
+        "ref": "https://evros.efhmeries.gr/Home/Details/3950",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551031479",
       "name": "ΧΑΤΖΗΚΥΡΙΑΚΟΥ-ΜΟΥΡΟΥΚΗ ΕΥΑΝΘΙΑ",
       "address": "Εθ. Αντιστάσεως 49",
@@ -559,7 +601,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 40.8467201,
         "lon": 25.8787177,
@@ -580,7 +622,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.8478855,
         "lon": 25.8773197,
@@ -643,7 +685,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 40.8457007,
         "lon": 25.8780988,
@@ -664,7 +706,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 40.8462422,
         "lon": 25.8732309,
@@ -758,6 +800,27 @@
       }
     },
     {
+      "id": "2551083833",
+      "name": "ΠΑΡΗ ΔΟΜΝΑ",
+      "address": "Ποιμενίδη & Παλαμά γωνία",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551083833",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
+      "location": {
+        "lat": 40.8543318,
+        "lon": 25.8915338,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4099",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551400229",
       "name": "Σ.Φ. ΓΟΥΣΗ Μ.Ε.-ΓΡΗΓΟΡΙΟΥ Σ.",
       "address": "Εθν. Αντιστάσεως 146 (πλησίον S/M Μασούτη & AB)",
@@ -811,7 +874,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 41.4961317,
         "lon": 26.5342729,
@@ -853,7 +916,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 41.5030094,
         "lon": 26.5316454,
@@ -895,7 +958,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-28",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 41.4955525,
         "lon": 26.5339423,
@@ -937,7 +1000,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 41.5016584,
         "lon": 26.5334306,
@@ -958,7 +1021,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 41.503015,
         "lon": 26.53014,
@@ -979,7 +1042,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 41.5025546,
         "lon": 26.5322197,
@@ -1000,7 +1063,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 41.501659,
         "lon": 26.532421,
@@ -1021,7 +1084,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 41.5029464,
         "lon": 26.5314121,
@@ -1147,7 +1210,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 41.5029918,
         "lon": 26.5320188,
@@ -1189,7 +1252,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 41.3497643,
         "lon": 26.4941195,
@@ -1210,7 +1273,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-12",
       "location": {
         "lat": 41.3497126,
         "lon": 26.4936993,
@@ -1252,7 +1315,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 41.3525558,
         "lon": 26.5026007,
@@ -1273,7 +1336,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 41.3502494,
         "lon": 26.4959924,
@@ -1294,7 +1357,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 41.3528428,
         "lon": 26.4958947,
@@ -1315,7 +1378,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 41.3526561,
         "lon": 26.503006,
@@ -1336,7 +1399,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 41.1947643,
         "lon": 26.3052864,
@@ -1378,7 +1441,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 41.1936141,
         "lon": 26.3050735,
@@ -1399,7 +1462,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 41.1904766,
         "lon": 26.3025729,
@@ -1420,7 +1483,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 41.1917483,
         "lon": 26.3037554,
@@ -1441,7 +1504,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 41.0262152,
         "lon": 26.2954437,
@@ -1462,7 +1525,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 41.0273977,
         "lon": 26.2963052,
@@ -1504,7 +1567,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 40.8942408,
         "lon": 26.1722017,
@@ -1525,7 +1588,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-15",
       "location": {
         "lat": 40.8932822,
         "lon": 26.1698188,
@@ -1567,7 +1630,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.8935681,
         "lon": 26.169281,
@@ -1588,7 +1651,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 40.8951274,
         "lon": 26.1698018,
