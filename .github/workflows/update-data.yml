@@ -44,7 +44,9 @@ jobs:
         env:
           SINCE: ${{ inputs.since }}
       # A failure here must not hold back the duty lists: they are still committed, and the run
-      # is marked failed at the end.
+      # is marked failed at the end. The ministry's site not answering GitHub's runners is a
+      # warning, not a failure: the prices keep their checkedAt and the Stale data workflow lists
+      # them after 36 hours.
       - name: Medicine prices and shortages
         id: medicines
         continue-on-error: true
@@ -71,5 +73,5 @@ jobs:
       - name: Report a failed medicines update
         if: ${{ !cancelled() && steps.medicines.outcome == 'failure' }}
         run: |
-          echo "::error::The medicines update failed or kept the stored prices; see its step. Any other data was still committed."
+          echo "::error::The medicines update failed; see its step. Any other data was still committed."
           exit 1

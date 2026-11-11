@@ -75,6 +75,13 @@ describe('issueBody', () => {
     expect(body).toContain('| `larisa` | no valid date in meta.json |');
   });
 
+  it('says what medicines is, only when it is listed', () => {
+    const note = '`medicines` is the medicine prices, not an area';
+    expect(body).not.toContain(note);
+    const withPrices = staleAreas([area('medicines', '2026-10-22T03:41:00.000Z')], now);
+    expect(issueBody(withPrices, 33, url)).toContain(note);
+  });
+
   it('links the workflow and does not change from day to day', () => {
     expect(body).toContain(`(${url})`);
     const later = new Date(now.getTime() + 86_400_000);
