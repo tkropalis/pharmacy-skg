@@ -7,12 +7,15 @@ import { attachShortages } from '../medicines/assemble.ts';
 import type { ShortageEntry } from '../medicines/shortages.ts';
 import { MedicinesSchema, SCHEMA_VERSION, type Medicines } from '../schema.ts';
 import type { ShortageListLink } from '../sources/eof.ts';
+import { HttpStatusError } from '../sources/http.ts';
 import { PRESCRIPTION_LISTING, type MohArticleLink } from '../sources/moh.ts';
-import { medicinesPaths, readJson, writeIfChanged, type MedicinesPaths } from '../store.ts';
+import { medicinesPaths, readJson, toJson, writeIfChanged, type MedicinesPaths } from '../store.ts';
 import type { Logger } from './logger.ts';
 import { updateMedicines, type MedicinesSources } from './medicines.ts';
 
 const BEFORE = '2026-10-20T08:00:00.000Z';
+/** The last time the bulletins were read, in a meta.json a test seeds. */
+const CHECKED = '2026-11-01T08:00:00.000Z';
 const NOW = new Date('2026-11-02T08:00:00.000Z');
 
 let root: string;
@@ -27,10 +30,18 @@ afterEach(async () => {
   await rm(root, { recursive: true, force: true });
 });
 
-function recorder(): Logger & { logs: string[]; errors: string[] } {
+function recorder(): Logger & { logs: string[]; errors: string[]; warnings: string[] } {
   const logs: string[] = [];
   const errors: string[] = [];
-  return { logs, errors, log: (m) => void logs.push(m), error: (m) => void errors.push(m) };
+  const warnings: string[] = [];
+  return {
+    logs,
+    errors,
+    warnings,
+    log: (m) => void logs.push(m),
+    error: (m) => void errors.push(m),
+    warn: (m) => void warnings.push(m),
+  };
 }
 
 const barcode = (n: number) => String(5_000_000_000_000 + n);
@@ -142,7 +153,8 @@ function ministryRefuses(overrides: Partial<MedicinesSources> = {}): {
   const sources: MedicinesSources = {
     listArticles: async (listing) => {
       calls.push(`listArticles ${listing}`);
-      throw new Error(
+      throw new HttpStatusError(
+        421,
         'HTTP 421 Misdirected Request for https://www.moh.gov.gr/articles/times-farmakwn (server: nginx)',
       );
     },
@@ -168,21 +180,23 @@ function ministryRefuses(overrides: Partial<MedicinesSources> = {}): {
 const run = (sources: MedicinesSources, logger: Logger, force = false) =>
   updateMedicines({ sources, paths, force, logger, now: () => NOW });
 
-describe('updateMedicines when the ministry cannot be read', () => {
-  it('keeps the stored prices, applies the current shortage list and fails', async () => {
+describe('updateMedicines when the ministry does not answer', () => {
+  it('keeps the stored prices, applies the current shortage list and warns', async () => {
     const before = await seed();
     const logger = recorder();
     const { sources, calls } = ministryRefuses();
 
-    expect(await run(sources, logger)).toBe(1);
+    expect(await run(sources, logger)).toBe(0);
 
     expect(calls).toEqual([
       `listArticles ${PRESCRIPTION_LISTING}`,
       'findShortageList',
       `readShortageList ${NEW_LIST.fileUrl}`,
     ]);
-    expect(logger.errors).toEqual([
-      'error [bulletins] not read, the stored prices were kept: Error: HTTP 421 Misdirected Request ' +
+    expect(logger.errors).toEqual([]);
+    expect(logger.warnings).toEqual([
+      "warning [unreachable] the ministry's site does not answer this network; the stored prices " +
+        'are kept and go stale: Error: HTTP 421 Misdirected Request ' +
         'for https://www.moh.gov.gr/articles/times-farmakwn (server: nginx)',
     ]);
     const after = await readJson(paths.medicines, MedicinesSchema);
@@ -205,32 +219,88 @@ describe('updateMedicines when the ministry cannot be read', () => {
     expect(logger.logs).toContain('Medicines updated.');
   });
 
-  it('writes nothing when the shortage list is the one already applied', async () => {
+  it('changes no prices when the shortage list is the one already applied', async () => {
     await seed({ ...stored(), shortageList: NEW_LIST });
+    await writeIfChanged(paths.meta, toJson({ checkedAt: CHECKED }));
     const files = await snapshot(root);
     const logger = recorder();
     const { sources, calls } = ministryRefuses();
 
-    expect(await run(sources, logger)).toBe(1);
+    expect(await run(sources, logger)).toBe(0);
 
+    // meta.json too: the bulletins were not read, so their checkedAt stays and goes stale.
     expect(await snapshot(root)).toEqual(files);
     expect(calls).toEqual([`listArticles ${PRESCRIPTION_LISTING}`, 'findShortageList']);
     expect(logger.logs).toContain('No new shortage list. No changes.');
-    expect(logger.errors).toHaveLength(1);
-    expect(logger.errors[0]).toContain('error [bulletins] not read, the stored prices were kept');
+    expect(logger.errors).toEqual([]);
+    expect(logger.warnings).toHaveLength(1);
+  });
+
+  it('dates prices stored before meta.json existed by their last change', async () => {
+    await seed({ ...stored(), shortageList: NEW_LIST });
+    const { sources } = ministryRefuses();
+
+    expect(await run(sources, recorder())).toBe(0);
+
+    expect(JSON.parse(await readFile(paths.meta, 'utf8'))).toEqual({ checkedAt: BEFORE });
+  });
+
+  it.each([
+    ['a timeout', new DOMException('The operation was aborted due to timeout', 'TimeoutError')],
+    ['a connection that failed', new TypeError('fetch failed', { cause: new Error('ECONNRESET') })],
+    [
+      'a 503',
+      new HttpStatusError(503, 'HTTP 503 Service Unavailable for https://www.moh.gov.gr/x'),
+    ],
+  ])('warns for %s', async (_, error) => {
+    await seed({ ...stored(), shortageList: NEW_LIST });
+    const logger = recorder();
+    const { sources } = ministryRefuses({
+      listArticles: async () => {
+        throw error;
+      },
+    });
+    expect(await run(sources, logger)).toBe(0);
+    expect(logger.errors).toEqual([]);
+    expect(logger.warnings).toHaveLength(1);
+  });
+
+  it.each([
+    [
+      'a page that is gone',
+      new HttpStatusError(404, 'HTTP 404 Not Found for https://www.moh.gov.gr/x'),
+    ],
+    ['a listing that no longer parses', new Error('No yearly revision found in the listing')],
+  ])('fails for %s, still applying the shortage list', async (_, error) => {
+    await seed();
+    const logger = recorder();
+    const { sources, calls } = ministryRefuses({
+      listArticles: async () => {
+        throw error;
+      },
+    });
+    expect(await run(sources, logger)).toBe(1);
+    expect(logger.warnings).toEqual([]);
+    expect(logger.errors).toEqual([
+      `error [bulletins] not read, the stored prices were kept: ${String(error)}`,
+    ]);
+    expect(calls).toContain(`readShortageList ${NEW_LIST.fileUrl}`);
+    expect(logger.logs).toContain('Medicines updated.');
+    await expect(readFile(paths.meta, 'utf8')).rejects.toThrow('ENOENT');
   });
 
   it('applies the list again with force', async () => {
     await seed({ ...stored(), shortageList: NEW_LIST });
     const logger = recorder();
     const { sources, calls } = ministryRefuses();
-    expect(await run(sources, logger, true)).toBe(1);
+    expect(await run(sources, logger, true)).toBe(0);
     expect(calls).toContain(`readShortageList ${NEW_LIST.fileUrl}`);
     expect(logger.logs).toContain('Medicines updated.');
   });
 
   it('writes nothing when the new shortage list fails validation', async () => {
     await seed();
+    await writeIfChanged(paths.meta, toJson({ checkedAt: CHECKED }));
     const files = await snapshot(root);
     const logger = recorder();
     // Five packs on a list that should have at least twenty: a misread, not a short month.
@@ -294,11 +364,15 @@ describe('updateMedicines when the ministry can be read', () => {
     expect(downloads).toEqual([]);
     expect(logger.errors).toEqual([]);
     expect(await readFile(paths.medicines, 'utf8')).toBe(onDisk);
-    // Only the cache of article attachments is new.
+    // Only the cache of article attachments and the time of this check are new.
     expect(Object.keys(await snapshot(root)).sort()).toEqual([
       'medicines/inputs/moh-article-files.json',
       'medicines/medicines.json',
+      'medicines/meta.json',
     ]);
+    expect(JSON.parse(await readFile(paths.meta, 'utf8'))).toEqual({
+      checkedAt: NOW.toISOString(),
+    });
   });
 
   it('downloads and rebuilds when the shortage list is new', async () => {

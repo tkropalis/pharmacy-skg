@@ -37,6 +37,8 @@ export function medicinesPaths(dataRoot = DATA_ROOT) {
   return {
     root,
     medicines: join(root, 'medicines.json'),
+    /** When the ministry's bulletins were last read: `{ checkedAt }`, as an area's meta.json. */
+    meta: join(root, 'meta.json'),
     articleFiles: join(root, 'inputs', 'moh-article-files.json'),
   };
 }

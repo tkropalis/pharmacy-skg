@@ -5,7 +5,9 @@ import {
   USER_AGENT,
   describeError,
   describeResponse,
+  HttpStatusError,
   isBlocked,
+  isUnreachable,
 } from './http.ts';
 
 describe('describeError', () => {
@@ -284,5 +286,29 @@ describe('HttpClient', () => {
     const next = client.text('https://a.gr/2');
     await expect(failed).rejects.toThrow('HTTP 404');
     expect(await next).toBe('next');
+  });
+});
+
+describe('isUnreachable', () => {
+  it.each([
+    ['a bot challenge', new BlockedError('HTTP 403 Forbidden')],
+    ['a timeout', new DOMException('The operation was aborted due to timeout', 'TimeoutError')],
+    ['a failed connection', new TypeError('fetch failed', { cause: new Error('ECONNRESET') })],
+    ['a 421', new HttpStatusError(421, 'HTTP 421 Misdirected Request')],
+    ['a 429', new HttpStatusError(429, 'HTTP 429 Too Many Requests')],
+    ['a 503', new HttpStatusError(503, 'HTTP 503 Service Unavailable')],
+    ['one of them as a cause', new Error('read failed', { cause: new HttpStatusError(502, 'x') })],
+  ])('is true for %s', (_, error) => {
+    expect(isUnreachable(error)).toBe(true);
+  });
+
+  it.each([
+    ['a 404', new HttpStatusError(404, 'HTTP 404 Not Found')],
+    ['a 403 that is no challenge', new HttpStatusError(403, 'HTTP 403 Forbidden')],
+    ['a page that does not parse', new Error('No yearly revision found')],
+    ['another TypeError', new TypeError('x is not a function')],
+    ['nothing', undefined],
+  ])('is false for %s', (_, error) => {
+    expect(isUnreachable(error)).toBe(false);
   });
 });

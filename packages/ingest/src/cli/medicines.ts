@@ -2,8 +2,8 @@
  * Rebuilds data/medicines/medicines.json from the Ministry of Health's price bulletins and ΕΟΦ's
  * limited-availability list, validates it and writes it only if it changed. Exits non-zero,
  * writing nothing, if validation fails. When the ministry's site cannot be read, the stored
- * prices stay, ΕΟΦ's list is still applied to them, and it exits non-zero. The work is in
- * update/medicines.ts.
+ * prices stay and ΕΟΦ's list is still applied to them; it exits non-zero unless the site simply
+ * did not answer this network, which is a warning. The work is in update/medicines.ts.
  *
  *   node src/cli/medicines.ts [--force]
  *
