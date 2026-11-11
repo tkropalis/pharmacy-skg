@@ -1,5 +1,4 @@
-import { faPhone, faStar as faStarSolid } from '@fortawesome/free-solid-svg-icons';
-import { faStar } from '@fortawesome/free-regular-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import {
   GREECE_TIME_ZONE,
   cityById,
@@ -13,16 +12,13 @@ import { DEFAULT_CITY_ID } from '../../config.ts';
 import { t } from '../../i18n/index.ts';
 import { directionsTarget, directionsUrl, preferredDirectionsApp } from '../../lib/directions.ts';
 import { faSvg } from '../../lib/fa.ts';
-import { loadFavourites, saveFavourites, toggleFavourite } from '../../lib/favourites.ts';
 import { pinKindOf } from '../../lib/list.ts';
 import { openCreditOnHover } from '../../lib/map-credit.ts';
 import { recordVisit } from '../../lib/memory.ts';
 import { pinSvg } from '../../lib/pins.ts';
-import { fill } from '../../lib/seo/format.ts';
 import { NEARBY_COUNT, nearbyView } from '../../lib/seo/nearby.ts';
-import { closedRowText, describeStatus, timeInCity } from '../../lib/seo/status-text.ts';
+import { closedRowText, describeStatus } from '../../lib/seo/status-text.ts';
 import { weekHours } from '../../lib/seo/week-hours.ts';
-import { sharePharmacy } from '../../lib/share.ts';
 import { MAPS_KEY, readItem } from '../../lib/storage.ts';
 import { loadNowData } from './now-data.ts';
 import type { MapPin } from './pharmacy-map.ts';
@@ -54,8 +50,19 @@ function statusLine(text: string, kind: ReturnType<typeof pinKindOf>): HTMLEleme
   return strong;
 }
 
-function showStatus(root: HTMLElement, data: CityData, id: string, now: Date, failed: boolean) {
+/**
+ * One line that answers, and at most one under it: when it opens. "Call before you go" is in the
+ * page's footer, and a day's list that is not announced yet is not mentioned (the owner). Returns whether the pharmacy is shut for certain.
+ */
+function showStatus(
+  root: HTMLElement,
+  data: CityData,
+  id: string,
+  now: Date,
+  failed: boolean,
+): boolean {
   const { status, dutiesPublished } = pharmacyStatus(data, id, now);
+  const dutyOnly = !hasRegularHours(data.city.id, zonedDate(now, GREECE_TIME_ZONE));
   const text = describeStatus(
     status,
     dutiesPublished,
@@ -63,15 +70,32 @@ function showStatus(root: HTMLElement, data: CityData, id: string, now: Date, fa
     locale,
     labels,
     GREECE_TIME_ZONE,
-    !hasRegularHours(data.city.id, zonedDate(now, GREECE_TIME_ZONE)),
+    dutyOnly,
   );
+  const closed = status.state === 'closed';
   const headline = element('p');
   headline.append(statusLine(text.short, pinKindOf(status)));
-  const computed = fill(labels.seo.status.computedAt, { time: timeInCity(now, locale) });
-  const note = failed ? ` ${labels.seo.status.loadFailed}` : '';
-  const detail = element('p', undefined, `${text.detail}${note} ${computed}`);
+  const detail = [
+    text.ahead,
+    // Not on duty says nothing about its own hours, which are not known here (decision D26).
+    closed && dutyOnly ? labels.seo.pharmacy.regularUnknown : '',
+    failed ? labels.seo.status.loadFailed : '',
+  ]
+    .filter(Boolean)
+    .join(' ');
   root.dataset['tone'] = text.tone;
-  root.replaceChildren(headline, detail);
+  root.replaceChildren(headline, ...(detail === '' ? [] : [element('p', undefined, detail)]));
+  return closed && !dutyOnly;
+}
+
+/**
+ * Calling a closed pharmacy helps nobody: the button into the app turns green and Call steps
+ * back. Where only duties are known the pharmacy may well be open, so Call keeps leading.
+ */
+function showLead(closed: boolean): void {
+  if (!closed) return;
+  document.querySelector('[data-call]')?.classList.add('secondary');
+  document.querySelector('[data-app-link]')?.classList.remove('secondary');
 }
 
 function nearRow(
@@ -133,15 +157,8 @@ function showNearby(data: CityData, pharmacy: Pharmacy, now: Date): MapPin[] {
       if (state === null) continue;
       const text =
         status.state === 'closed'
-          ? closedRowText(
-              status,
-              dutiesPublished,
-              now,
-              locale,
-              labels.seo,
-              GREECE_TIME_ZONE,
-              dutyOnly,
-            )
+          ? // Only when it opens, as in the status line: nothing about lists not announced yet.
+            closedRowText(status, true, now, locale, labels.seo, GREECE_TIME_ZONE, dutyOnly)
           : describe(status, dutiesPublished).short;
       state.replaceChildren(statusLine(text, pinKindOf(status)));
     }
@@ -184,8 +201,15 @@ function showWeek(data: CityData, id: string, now: Date): void {
   if (list === null) return;
   const week = weekHours(data, id, now, locale, labels);
   const days = week.filter((day) => !day.unknown);
-  // Nothing known for any day: the general hours say to call.
-  if (days.length === 0) return;
+  if (days.length === 0) {
+    // Nothing known for any day. Where only duties are known the status line already says
+    // "call for the hours", so the section would only repeat it.
+    if (!hasRegularHours(data.city.id, zonedDate(now, GREECE_TIME_ZONE))) {
+      const section = list.closest('section');
+      if (section !== null) section.hidden = true;
+    }
+    return;
+  }
   list.replaceChildren(
     ...days.map((day) => {
       const item = element('li');
@@ -216,50 +240,6 @@ function showDirections(pharmacy: Pharmacy): void {
     navigator.maxTouchPoints,
   );
   link.href = directionsUrl(app, directionsTarget(pharmacy));
-}
-
-function setupTools(root: HTMLElement, cityId: string, id: string): void {
-  const tools = document.querySelector<HTMLElement>('[data-pharmacy-tools]');
-  const favourite = tools?.querySelector<HTMLButtonElement>('[data-favourite]');
-  const share = tools?.querySelector<HTMLButtonElement>('[data-share]');
-  const message = tools?.querySelector<HTMLElement>('[data-tool-message]');
-  if (!tools || !favourite || !share || !message) return;
-  const row = labels.app.row;
-  const name = root.dataset['name'] ?? '';
-  const address = root.dataset['address'] ?? '';
-
-  const showFavourite = () => {
-    const saved = loadFavourites().some((f) => f.id === id);
-    favourite.dataset['saved'] = saved ? 'true' : 'false';
-    favourite.setAttribute(
-      'aria-label',
-      fill(saved ? row.favouriteSavedLabel : row.favouriteLabel, { name }),
-    );
-    favourite.innerHTML = faSvg(saved ? faStarSolid : faStar);
-    favourite.append(element('span', undefined, saved ? row.favouriteSaved : row.favourite));
-    return saved;
-  };
-  showFavourite();
-  favourite.addEventListener('click', () => {
-    saveFavourites(toggleFavourite(loadFavourites(), { id, cityId }));
-    message.textContent = fill(showFavourite() ? row.favouriteAdded : row.favouriteRemoved, {
-      name,
-    });
-  });
-
-  const shareLabel = share.querySelector('span');
-  share.addEventListener('click', () => {
-    void sharePharmacy(locale, row, name, address, id).then((result) => {
-      if (result === null) return;
-      message.textContent = result;
-      if (shareLabel === null) return;
-      shareLabel.textContent = result;
-      setTimeout(() => {
-        shareLabel.textContent = row.share;
-      }, 2500);
-    });
-  });
-  tools.hidden = false;
 }
 
 /** The map, once it is near the screen: the library is large, and the page must not wait for it. */
@@ -322,7 +302,7 @@ async function show(root: HTMLElement, id: string): Promise<void> {
     const now = new Date();
     const { data, failedDates } = await loadNowData(cityId, now);
     const pharmacy = data.pharmacies.find((p) => p.id === id);
-    showStatus(root, data, id, now, failedDates.length > 0);
+    showLead(showStatus(root, data, id, now, failedDates.length > 0));
     giveKind(pinKindOf(pharmacyStatus(data, id, now).status));
     if (pharmacy === undefined) {
       givePins([]);
@@ -342,7 +322,6 @@ const root = document.querySelector<HTMLElement>('[data-pharmacy-status]');
 if (root !== null) {
   const id = root.dataset['pharmacyId'] ?? '';
   void show(root, id);
-  setupTools(root, root.dataset['city'] ?? DEFAULT_CITY_ID, id);
   // Opening a pharmacy's page counts towards "you open often" (on the device only).
   if (id) recordVisit(id, Date.now());
 }

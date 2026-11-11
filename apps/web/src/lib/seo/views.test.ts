@@ -101,23 +101,16 @@ describe('pharmacyPageProps', () => {
     expect(first?.lines.length).toBeGreaterThan(0);
   });
 
-  it('splits duties into upcoming (from today) and the last 14 days, newest recent first', () => {
+  it('lists only the duties from today on', () => {
     const page = pharmacyPageProps(model, 'el', id, ORIGIN);
     for (const duty of page?.upcomingDuties ?? []) expect(duty.date >= '2026-10-05').toBe(true);
-    const recent = page?.recentDuties ?? [];
-    for (const duty of recent) {
-      expect(duty.date < '2026-10-05').toBe(true);
-      expect(duty.date >= '2026-09-21').toBe(true);
-    }
-    const dates = recent.map((d) => d.date);
-    expect(dates).toEqual([...dates].sort().reverse());
     expect(page?.upcomingDuties.length).toBeGreaterThan(0);
   });
 
   it('words each duty in plain words on one line, with only the extra hours of that date', () => {
     const page = pharmacyPageProps(model, 'el', id, ORIGIN);
     const kinds = Object.values(t('el').app.status.kinds);
-    for (const duty of [...(page?.upcomingDuties ?? []), ...(page?.recentDuties ?? [])]) {
+    for (const duty of page?.upcomingDuties ?? []) {
       expect(kinds).toContain(duty.kindLabel);
       expect(duty.dateLabel).toMatch(/^\S{3} \d{1,2} \S+$/);
       for (const extra of duty.extraHours) expect(extra).toMatch(/^\d\d:\d\d–\d\d:\d\d$/);
@@ -126,7 +119,7 @@ describe('pharmacyPageProps', () => {
 
   it('links a duty to its date page only when that page exists', () => {
     const page = pharmacyPageProps(model, 'en', id, ORIGIN);
-    for (const duty of [...(page?.upcomingDuties ?? []), ...(page?.recentDuties ?? [])]) {
+    for (const duty of page?.upcomingDuties ?? []) {
       expect(duty.pagePath !== null).toBe(model.publishedDates.includes(duty.date));
       if (duty.pagePath !== null) {
         expect(duty.pagePath).toBe(`/en/duty/thessaloniki/${duty.date}/`);
@@ -161,7 +154,7 @@ describe('pharmacyPageProps', () => {
 
   it('lists its nearest pharmacies, linked and with their distance', () => {
     const page = pharmacyPageProps(model, 'el', id, ORIGIN);
-    expect(page?.nearby).toHaveLength(4);
+    expect(page?.nearby).toHaveLength(3);
     const [first] = page?.nearby ?? [];
     expect(first?.id).not.toBe(id);
     expect(first?.path).toBe(`/farmakeio/${first?.id}/`);

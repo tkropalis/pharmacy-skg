@@ -1,19 +1,14 @@
 ---
 import {
-  faArrowRight,
   faCircleInfo,
   faDiamondTurnRight,
   faMapLocationDot,
   faPhone,
-  faShareNodes,
 } from '@fortawesome/free-solid-svg-icons';
-import { faStar } from '@fortawesome/free-regular-svg-icons';
 import type { Locale } from '@pharmacy-skg/core';
 import { SITE_URL } from '../../config.ts';
 import { t } from '../../i18n/index.ts';
-import { pharmacyMapUrl } from '../../lib/deep-link.ts';
 import { faSvg } from '../../lib/fa.ts';
-import { fill } from '../../lib/seo/format.ts';
 import { loadSeoModel } from '../../lib/seo/site-data.ts';
 import { pharmacyPageProps } from '../../lib/seo/views.ts';
 import PharmacyDutyList from './PharmacyDutyList.astro';
@@ -34,13 +29,22 @@ if (page === null) throw new Error(`No pharmacy with id ${id}`);
 const d = t(locale);
 const seo = d.seo.pharmacy;
 const row = d.app.row;
-const crumbs = page.breadcrumbs;
+// The name people say leads; the registered one follows only where it differs. On an English
+// page the Greek name and address share one line: they are what is on the sign.
+const under =
+  page.nativeName !== null
+    ? [page.nativeName, page.nativeAddress].filter(Boolean).join(', ')
+    : page.name !== page.shortName
+      ? page.name
+      : null;
+// Where the regular hours are not known (decision D26) the app shows who is on duty.
+const dutyOnly = page.regularHours === null;
 ---
 
 <!--
   What a person arriving from a search came for, in order: is it open, call, how to get there.
-  Then what to do when it is closed: the map and the nearest open ones. Then the hours and duties.
-  The sources are on the about page and the data's age is in the footer.
+  Then what to do when it is closed: the nearest open ones and one button into the app. Then the
+  hours. Nothing else: the sources are on the about page and the data's age is in the footer.
 -->
 <SeoLayout
   meta={page.meta}
@@ -82,29 +86,19 @@ const crumbs = page.breadcrumbs;
     </section>
   )}
 
-  <nav class="seo-breadcrumb" aria-label={d.seo.breadcrumbLabel}>
-    <ol>
-      {crumbs.slice(0, -1).map((crumb) => (
-        <li>
-          <a href={crumb.path}>{crumb.name}</a>
-        </li>
-      ))}
-    </ol>
-  </nav>
-
-  <h1>{page.name}</h1>
-  {page.nativeName !== null && (
-    <p class="seo-native" lang="el">
-      {page.nativeName}
-    </p>
-  )}
+  <h1>{page.shortName}</h1>
   <p class="seo-place">
-    {page.address}, {page.localityLabel}
+    {page.address},{' '}
+    {page.areaPagePath === null ? (
+      page.localityLabel
+    ) : (
+      <a href={page.areaPagePath}>{page.localityLabel}</a>
+    )}
     {page.postcode !== null && <> {page.postcode}</>}
   </p>
-  {page.nativeAddress !== null && (
-    <p class="seo-native" lang="el">
-      {page.nativeAddress}
+  {under !== null && (
+    <p class="seo-native" lang={page.nativeName !== null ? 'el' : undefined}>
+      {under}
     </p>
   )}
   {page.map === null && <p class="seo-native">{row.noLocation}</p>}
@@ -116,21 +110,19 @@ const crumbs = page.breadcrumbs;
     </h2>
     <!-- Worked out in the browser (scripts/seo/pharmacy-page.ts); empty without JavaScript. -->
     <div
-      class="seo-status"
+      class="seo-now"
       role="status"
       aria-live="polite"
       data-pharmacy-status
       data-pharmacy-id={page.id}
       data-city={model.cityId}
-      data-name={page.shortName}
-      data-address={page.address}
     ></div>
   </section>
 
   <ul class="seo-actions">
     {page.callText !== null && page.phoneHref !== null && (
       <li>
-        <a class="button" href={page.phoneHref}>
+        <a class="button" href={page.phoneHref} data-call>
           <Fragment set:html={faSvg(faPhone)} />
           {page.callText}
         </a>
@@ -150,24 +142,6 @@ const crumbs = page.breadcrumbs;
     </li>
   </ul>
   {page.callText === null && <p class="seo-meta">{seo.noPhone}</p>}
-
-  <!-- Both work on the device only (scripts/seo/pharmacy-page.ts), so they start hidden. -->
-  <div class="seo-tools" data-pharmacy-tools hidden>
-    <button type="button" class="seo-tool" data-favourite>
-      <Fragment set:html={faSvg(faStar)} />
-      <span>{row.favourite}</span>
-    </button>
-    <button
-      type="button"
-      class="seo-tool"
-      data-share
-      aria-label={fill(row.shareLabel, { name: page.shortName })}
-    >
-      <Fragment set:html={faSvg(faShareNodes)} />
-      <span>{row.share}</span>
-    </button>
-    <p class="sr-only" role="status" data-tool-message></p>
-  </div>
 
   {page.nearby.length > 0 && (
     <section aria-labelledby="near-heading">
@@ -197,6 +171,14 @@ const crumbs = page.breadcrumbs;
       </ul>
     </section>
   )}
+
+  <!-- The way into the app: green when this pharmacy is closed, quiet while Call leads. -->
+  <p class="seo-app">
+    <a class="button secondary" href={page.mapPath} data-app-link>
+      <Fragment set:html={faSvg(faMapLocationDot)} />
+      {dutyOnly ? seo.nearDutyCta : seo.nearCta}
+    </a>
+  </p>
 
   <section aria-labelledby="hours-heading">
     <h2 id="hours-heading">{seo.hoursHeading}</h2>
@@ -239,54 +221,16 @@ const crumbs = page.breadcrumbs;
     </div>
   </section>
 
-  <section aria-labelledby="duty-heading">
-    <h2 id="duty-heading">{seo.dutyHeading}</h2>
-    {page.upcomingDuties.length > 0 && (
-      <>
-        <h3>{seo.dutyUpcoming}</h3>
-        <PharmacyDutyList locale={locale} items={page.upcomingDuties} />
-      </>
-    )}
-    {page.recentDuties.length > 0 && (
-      <>
-        <h3>{seo.dutyRecent}</h3>
-        <PharmacyDutyList locale={locale} items={page.recentDuties} />
-      </>
-    )}
-    {page.upcomingDuties.length === 0 && page.recentDuties.length === 0 && <p>{seo.dutyNone}</p>}
-  </section>
+  {page.upcomingDuties.length > 0 && (
+    <section aria-labelledby="duty-heading">
+      <h2 id="duty-heading">{seo.dutyHeading}</h2>
+      <PharmacyDutyList locale={locale} items={page.upcomingDuties} />
+    </section>
+  )}
 
-  <section aria-labelledby="more-heading">
-    <h2 id="more-heading">{seo.moreHeading}</h2>
-    <ul class="seo-more">
-      <li>
-        <a href={pharmacyMapUrl(locale, model.cityId)}>
-          {seo.moreOnMap}
-          <Fragment set:html={faSvg(faArrowRight, { size: 14 })} />
-        </a>
-      </li>
-      {page.areaPagePath !== null && (
-        <li>
-          <a href={page.areaPagePath}>
-            {fill(seo.moreArea, { area: page.localityLabel })}
-            <Fragment set:html={faSvg(faArrowRight, { size: 14 })} />
-          </a>
-        </li>
-      )}
-      <li>
-        <a href={page.cityDutyPath}>
-          {fill(seo.moreDuty, { city: page.cityLabel })}
-          <Fragment set:html={faSvg(faArrowRight, { size: 14 })} />
-        </a>
-      </li>
-      <li>
-        <a href={page.reportPath}>
-          {seo.reportLink}
-          <Fragment set:html={faSvg(faArrowRight, { size: 14 })} />
-        </a>
-      </li>
-    </ul>
-  </section>
+  <p class="seo-report">
+    <a href={page.reportPath}>{seo.reportLink}</a>
+  </p>
 </SeoLayout>
 
 <script>

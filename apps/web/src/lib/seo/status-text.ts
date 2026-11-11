@@ -20,6 +20,11 @@ export interface StatusText {
   readonly short: string;
   /** What follows the headline: notes, the next opening and the "call before you go" line. */
   readonly detail: string;
+  /**
+   * Only what comes next ("Ανοίγει αύριο στις 08:00."), for a pharmacy's page: no "call before
+   * you go" (its footer says it) and nothing about what is not known. Empty when nothing is next.
+   */
+  readonly ahead: string;
   /** Headline and detail as one paragraph. */
   readonly text: string;
 }
@@ -95,14 +100,18 @@ export function describeStatus(
   dutyOnly = false,
 ): StatusText {
   const s = d.seo.status;
-  const tail = [dutiesPublished ? '' : s.unpublished, s.callFirst].filter(Boolean).join(' ');
-
-  const make = (tone: StatusTone, short: string, detail: string): StatusText => ({
-    tone,
-    short,
-    detail,
-    text: `${short}${/[.!]$/.test(short) ? '' : '.'} ${detail}`,
-  });
+  const make = (tone: StatusTone, short: string, next = '', ahead = next): StatusText => {
+    const detail = [next, dutiesPublished ? '' : s.unpublished, s.callFirst]
+      .filter(Boolean)
+      .join(' ');
+    return {
+      tone,
+      short,
+      detail,
+      ahead,
+      text: `${short}${/[.!]$/.test(short) ? '' : '.'} ${detail}`,
+    };
+  };
 
   if (status.state === 'open') {
     const label = fill(s.openUntil, {
@@ -112,26 +121,26 @@ export function describeStatus(
         ? d.status.midnight
         : untilText(status.until, now, locale, s, timeZone),
     });
-    return make('open', status.closingSoon ? `${label}, ${s.closingSoon}` : label, tail);
+    return make('open', status.closingSoon ? `${label}, ${s.closingSoon}` : label);
   }
 
   if (status.state === 'duty-hours-unknown') {
     // The same words as the home screen's label, whose last words are "call first".
-    return make('duty-unknown', status.duty.onCall ? d.status.onCall : d.status.dutyUnknown, tail);
+    return make('duty-unknown', status.duty.onCall ? d.status.onCall : d.status.dutyUnknown);
   }
 
   if (dutyOnly) {
     const next =
       status.nextOpen === null
         ? ''
-        : `${fill(s.dutyAt, { when: whenText(status.nextOpen, now, locale, s, timeZone) })} `;
-    return make('closed', s.notOnDuty, `${next}${tail}`);
+        : fill(s.dutyAt, { when: whenText(status.nextOpen, now, locale, s, timeZone) });
+    return make('closed', s.notOnDuty, next);
   }
   const next =
     status.nextOpen === null
       ? s.noNextOpen
       : fill(s.opensAt, { when: whenText(status.nextOpen, now, locale, s, timeZone) });
-  return make('closed', s.closed, `${next} ${tail}`);
+  return make('closed', s.closed, next, status.nextOpen === null ? '' : next);
 }
 
 /**

@@ -34,10 +34,8 @@ import { stripAccents } from '../places.ts';
 import { breadcrumbJsonLd, jsonLdScript, pharmacyJsonLd, telHref } from './jsonld.ts';
 import { latinOrGreek, nearbyView, nearestPharmacies } from './nearby.ts';
 import type { NearbyView } from './nearby.ts';
-import { RECENT_DUTY_DAYS } from './model.ts';
 import type { AreaInfo, DutyListing, SeoModel } from './model.ts';
 import { romanize, romanizeLocality } from './translit.ts';
-import { addDays } from '../dates.ts';
 
 export type Alternates = Record<Locale, string>;
 
@@ -147,9 +145,9 @@ export interface PharmacyPageProps {
   readonly meta: PageMeta;
   readonly id: string;
   readonly cityId: string;
-  /** The heading: the registered name, or in Latin letters on an English page. */
+  /** The registered name (the title and the search engines), in Latin letters on an English page. */
   readonly name: string;
-  /** The name to use in labels, without its legal form, in the page's alphabet. */
+  /** The heading and the labels: the name without its legal form, in the page's alphabet. */
   readonly shortName: string;
   /** English pages keep the Greek name and address: they are what is on the sign. */
   readonly nativeName: string | null;
@@ -168,15 +166,12 @@ export interface PharmacyPageProps {
   readonly mapPath: string;
   /** The nearest pharmacies; the browser puts the ones open now in their place. */
   readonly nearby: readonly NearbyView[];
-  readonly cityDutyPath: string;
-  readonly cityLabel: string;
   readonly breadcrumbs: readonly Crumb[];
   /** Null where the city's regular hours are not known (decision D26): call for the hours. */
   readonly regularHours: RegularHoursView | null;
   readonly regularClosedText: string | null;
   readonly extendedHours: readonly ExtendedHoursView[];
   readonly upcomingDuties: readonly PharmacyDutyView[];
-  readonly recentDuties: readonly PharmacyDutyView[];
   readonly reportPath: string;
   readonly updatedAt: string;
   readonly updatedAtText: string;
@@ -224,9 +219,7 @@ export function pharmacyPageProps(
   const path = (l: Locale) => pharmacyPath(l, id);
 
   const listings = model.listingsByPharmacy.get(id) ?? [];
-  const recentFrom = addDays(model.today, -RECENT_DUTY_DAYS);
   const upcoming = listings.filter((l) => l.date >= model.today);
-  const recent = listings.filter((l) => l.date < model.today && l.date >= recentFrom).reverse();
 
   const extendedHours: ExtendedHoursView[] = [];
   for (const file of model.extendedHours) {
@@ -298,8 +291,6 @@ export function pharmacyPageProps(
     nearby: nearestPharmacies(model.pharmacies, pharmacy).map((near) =>
       nearbyView(near.pharmacy, near.distance, locale, city, d.app.row),
     ),
-    cityDutyPath: dutyCityPath(locale, model.cityId),
-    cityLabel: city,
     breadcrumbs,
     regularHours,
     regularClosedText:
@@ -308,7 +299,6 @@ export function pharmacyPageProps(
         : fill(seo.pharmacy.regularClosed, { days: regularHours.closedDays }),
     extendedHours,
     upcomingDuties: upcoming.map((l) => dutyView(model, locale, l)),
-    recentDuties: recent.map((l) => dutyView(model, locale, l)),
     reportPath: `${localizedPath(locale, 'report')}?pharmacy=${encodeURIComponent(id)}`,
     updatedAt: model.updatedAt,
     updatedAtText: formatUpdatedAt(model.updatedAt, locale),
