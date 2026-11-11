@@ -7,49 +7,9 @@
       "name": "Σάμος",
       "source": {
         "url": "https://samos.efhmeries.gr/",
-        "uploadedAt": "2026-11-11T11:58:32.229Z"
+        "uploadedAt": "2026-11-11T22:50:38.639Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2273028002",
-              "name": "ΝΙΤΣΟΛΑΣ ΑΝΔΡΕΑΣ",
-              "address": "ΠΛΑΤΕΙΑ ΑΓ. ΝΙΚΟΛΑΟΥ",
-              "locality": "Βαθύ",
-              "phone": "2273028002"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
-          "hours": {
-            "from": "17:30",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2273028002",
-              "name": "ΝΙΤΣΟΛΑΣ ΑΝΔΡΕΑΣ",
-              "address": "ΠΛΑΤΕΙΑ ΑΓ. ΝΙΚΟΛΑΟΥ",
-              "locality": "Βαθύ",
-              "phone": "2273028002"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "ΕΦΗΜΕΡΕΥΕΙ*",
@@ -104,6 +64,46 @@
               "address": "ΧΑΤΖΗΓΙΑΝΝΗ",
               "locality": "Καρλόβασι",
               "phone": "2273032658"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273028002",
+              "name": "ΝΙΤΣΟΛΑΣ ΑΝΔΡΕΑΣ",
+              "address": "ΠΛΑΤΕΙΑ ΑΓ. ΝΙΚΟΛΑΟΥ",
+              "locality": "Βαθύ",
+              "phone": "2273028002"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
+          "hours": {
+            "from": "17:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273028002",
+              "name": "ΝΙΤΣΟΛΑΣ ΑΝΔΡΕΑΣ",
+              "address": "ΠΛΑΤΕΙΑ ΑΓ. ΝΙΚΟΛΑΟΥ",
+              "locality": "Βαθύ",
+              "phone": "2273028002"
             }
           ]
         }

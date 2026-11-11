@@ -44,6 +44,27 @@
       }
     },
     {
+      "id": "2341022822",
+      "name": "ΙΩΑΝΝΙΔΟΥ ΝΙΚΟΛΕΤΑ",
+      "address": "21 ΙΟΥΝΙΟΥ 57",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341022822",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "location": {
+        "lat": 40.991242,
+        "lon": 22.871119,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "4dad8437-08ae-4c7a-b6cd-994c0f850af8"
+      }
+    },
+    {
       "id": "2341022995",
       "name": "Σ.Φ. ΧΑΛΙΤΣΙΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ & ΧΡΗΣΤΟΣ Ο.Ε",
       "address": "21 ΙΟΥΝΙΟΥ 100",
@@ -160,7 +181,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-10",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 40.995182,
         "lon": 22.875324,
@@ -517,7 +538,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 40.993564,
         "lon": 22.573161,
@@ -601,7 +622,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-15",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 40.98555,
         "lon": 22.542284,
@@ -643,7 +664,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 40.945677,
         "lon": 22.450244,

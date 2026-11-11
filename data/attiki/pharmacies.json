@@ -292,7 +292,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.0145287,
         "lon": 23.7310257,
@@ -3419,7 +3419,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.0994478,
         "lon": 23.7402846,
@@ -4771,7 +4771,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.0244599,
         "lon": 23.7337905,
@@ -5332,7 +5332,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-21",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.0274737,
         "lon": 23.7018967,
@@ -7742,7 +7742,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-10-20",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.0456989,
         "lon": 23.7660496,
@@ -9512,7 +9512,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.0144316,
         "lon": 23.7500689,
@@ -10675,7 +10675,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-11-01",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.9828621,
         "lon": 23.7305033,
@@ -12044,27 +12044,6 @@
       }
     },
     {
-      "id": "2103470225",
-      "name": "ΒΕΣΕΛΟΒΑ ΙΡΙΝΑ (ΦΑΛΑΓΓΑΣ ΧΡΗΣΤΟΣ) ΚΑΙ ΣΙΑ Ο.Ε.",
-      "address": "ΓΡ.ΛΑΜΠΡΑΚΗ 26",
-      "locality": "Ταύρος",
-      "postcode": null,
-      "phone": "2103470225",
-      "groupId": "attiki",
-      "sources": [
-        "fsa"
-      ],
-      "firstSeen": "2027-01-10",
-      "lastSeen": "2027-01-10",
-      "location": {
-        "lat": 37.9668597,
-        "lon": 23.6997628,
-        "ref": "https://fsa-efimeries.gr/",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2103470250",
       "name": "ΜΠΟΡΜΠΑΝΤΩΝΑΚΗ ΕΥΑΓΓΕΛΙΑ ΚΑΙ ΣΙΑ Ο.Ε.",
       "address": "ΠΑΝΔΩΡΟΥ 18-ΑΙΟΛΙΔΟΣ",
@@ -12463,7 +12442,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-11-08",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.9803693,
         "lon": 23.7369007,
@@ -13479,7 +13458,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.039955,
         "lon": 23.6872202,
@@ -15733,8 +15712,8 @@
       "sources": [
         "fsa"
       ],
-      "firstSeen": "2026-11-13",
-      "lastSeen": "2026-11-13",
+      "firstSeen": "2027-02-03",
+      "lastSeen": "2027-02-03",
       "location": {
         "lat": 37.9840117,
         "lon": 23.7266567,
@@ -17439,7 +17418,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.0738925,
         "lon": 23.5004257,
@@ -17656,7 +17635,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.0480054,
         "lon": 23.5392206,
@@ -17698,8 +17677,8 @@
         "fsa",
         "fsa-hours"
       ],
-      "firstSeen": "2026-11-14",
-      "lastSeen": "2026-11-14",
+      "firstSeen": "2026-12-06",
+      "lastSeen": "2026-12-06",
       "location": {
         "lat": 38.0600391,
         "lon": 23.5899171,
@@ -19248,7 +19227,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.0083331,
         "lon": 23.6965118,
@@ -21712,8 +21691,8 @@
       "sources": [
         "fsa"
       ],
-      "firstSeen": "2026-11-22",
-      "lastSeen": "2026-11-22",
+      "firstSeen": "2027-01-06",
+      "lastSeen": "2027-01-06",
       "location": {
         "lat": 38.0058233,
         "lon": 23.6621159,
@@ -22514,8 +22493,8 @@
         "fsa",
         "fsa-hours"
       ],
-      "firstSeen": "2026-12-24",
-      "lastSeen": "2026-12-24",
+      "firstSeen": "2026-11-22",
+      "lastSeen": "2026-11-22",
       "location": {
         "lat": 37.993799,
         "lon": 23.6720727,
@@ -22840,7 +22819,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.0123608,
         "lon": 23.8202049,
@@ -24117,7 +24096,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-11-17",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.9846124,
         "lon": 23.8512317,
@@ -24274,27 +24253,6 @@
       "location": {
         "lat": 38.0115011,
         "lon": 23.8549376,
-        "ref": "https://fsa-efimeries.gr/",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
-      "id": "2106047333",
-      "name": "ΚΑΤΣΕΛΗ ΧΡΥΣΟΥΛΑ",
-      "address": "Μιαούλη 21, Γέρακας 153 44, Ελλάδα",
-      "locality": "Γέρακας",
-      "postcode": null,
-      "phone": "2106047333",
-      "groupId": "attiki",
-      "sources": [
-        "fsa"
-      ],
-      "firstSeen": "2026-11-12",
-      "lastSeen": "2026-11-12",
-      "location": {
-        "lat": 38.0122915,
-        "lon": 23.8479976,
         "ref": "https://fsa-efimeries.gr/",
         "source": "list",
         "precision": "exact"
@@ -25656,7 +25614,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.091967,
         "lon": 23.8036976,
@@ -25914,7 +25872,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-10-12",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.1084637,
         "lon": 23.861093,
@@ -27872,8 +27830,8 @@
         "fsa",
         "fsa-hours"
       ],
-      "firstSeen": "2026-12-14",
-      "lastSeen": "2026-12-14",
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 38.0042221,
         "lon": 23.7942867,
@@ -29625,7 +29583,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-11-17",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.8950533,
         "lon": 23.8788741,
@@ -29711,7 +29669,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.977935,
         "lon": 23.9032483,
@@ -30037,7 +29995,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-13",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.9563009,
         "lon": 23.8581421,
@@ -30103,7 +30061,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.9871174,
         "lon": 23.850379,
@@ -30211,7 +30169,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-16",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.0036431,
         "lon": 23.8777443,
@@ -31153,7 +31111,7 @@
     },
     {
       "id": "2106800223",
-      "name": "ΦΑΝΤΙΔΟΥ ΚΩΝΣΤΑΝΤΙΝΑ - ΠΑΠΑΓΕΩΡΓΙΟΥ ΚΩΝΣΤΑΝΤΙΝΑ ΜΑΡΙΝΑ",
+      "name": "ΠΑΠΑΓΕΩΡΓΙΟΥ ΚΩΝΣΤΑΝΤΙΝΑ ΜΑΡΙΝΑ",
       "address": "ΑΓ.ΠΑΡΑΣΚΕΥΗΣ 58",
       "locality": "Χαλάνδρι",
       "postcode": null,
@@ -33575,8 +33533,8 @@
         "fsa",
         "fsa-hours"
       ],
-      "firstSeen": "2026-11-19",
-      "lastSeen": "2026-11-19",
+      "firstSeen": "2027-01-06",
+      "lastSeen": "2027-01-06",
       "location": {
         "lat": 38.0011047,
         "lon": 23.7616142,
@@ -34485,7 +34443,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.9768453,
         "lon": 23.7466158,
@@ -36037,7 +35995,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.9652517,
         "lon": 23.7491243,
@@ -36124,7 +36082,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.9567485,
         "lon": 23.7637374,
@@ -38471,7 +38429,7 @@
         "fsa"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.9795982,
         "lon": 23.7639906,
@@ -40092,7 +40050,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.0551994,
         "lon": 23.8056982,
@@ -41872,8 +41830,8 @@
         "fsa",
         "fsa-hours"
       ],
-      "firstSeen": "2026-12-06",
-      "lastSeen": "2026-12-06",
+      "firstSeen": "2027-03-30",
+      "lastSeen": "2027-03-30",
       "location": {
         "lat": 38.08803,
         "lon": 23.811412,
@@ -42203,6 +42161,27 @@
       "location": {
         "lat": 38.0840455,
         "lon": 23.7373276,
+        "ref": "https://fsa-efimeries.gr/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2108088777",
+      "name": "ΚΙΡΚΙΜΠΟΛΑΚΗ ΦΛΩΡΑ",
+      "address": "ΑΛΩΝΙΩΝ 15",
+      "locality": "Κηφισιά",
+      "postcode": null,
+      "phone": "2108088777",
+      "groupId": "attiki",
+      "sources": [
+        "fsa"
+      ],
+      "firstSeen": "2026-12-06",
+      "lastSeen": "2026-12-06",
+      "location": {
+        "lat": 38.0702634,
+        "lon": 23.8159049,
         "ref": "https://fsa-efimeries.gr/",
         "source": "list",
         "precision": "exact"
@@ -44987,7 +44966,7 @@
     },
     {
       "id": "2108647172",
-      "name": "ΒΑΛΕΝΤΗ ΕΥΑΓΓΕΛΙΑ - ΜΠΑΛΑΓΙΑΝΝΗΣ ΙΩΑΝΝΗΣ",
+      "name": "ΜΠΑΛΑΓΙΑΝΝΗΣ ΙΩΑΝΝΗΣ",
       "address": "ΧΡΕΜΩΝΙΔΟΥ 27 - 33, 11633 ΑΘΗΝΑ",
       "locality": "Αθήνα",
       "postcode": null,
@@ -45619,8 +45598,8 @@
       "sources": [
         "fsa"
       ],
-      "firstSeen": "2026-11-14",
-      "lastSeen": "2026-11-14",
+      "firstSeen": "2027-01-10",
+      "lastSeen": "2027-01-10",
       "location": {
         "lat": 37.9995546,
         "lon": 23.7299689,
@@ -45901,8 +45880,8 @@
         "fsa",
         "fsa-hours"
       ],
-      "firstSeen": "2026-11-19",
-      "lastSeen": "2026-11-19",
+      "firstSeen": "2026-12-17",
+      "lastSeen": "2026-12-17",
       "location": {
         "lat": 37.9959758,
         "lon": 23.7326031,
@@ -46673,8 +46652,8 @@
         "fsa",
         "fsa-hours"
       ],
-      "firstSeen": "2026-12-09",
-      "lastSeen": "2026-12-09",
+      "firstSeen": "2026-11-19",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 37.8606583,
         "lon": 23.7557259,
@@ -47043,8 +47022,8 @@
         "fsa",
         "fsa-hours"
       ],
-      "firstSeen": "2026-11-19",
-      "lastSeen": "2026-11-19",
+      "firstSeen": "2027-01-15",
+      "lastSeen": "2027-01-15",
       "location": {
         "lat": 37.8519998,
         "lon": 23.7558604,
@@ -47305,7 +47284,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.8272075,
         "lon": 23.8036872,
@@ -49329,7 +49308,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-17",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.9455861,
         "lon": 23.7185596,
@@ -50824,8 +50803,8 @@
         "fsa",
         "fsa-hours"
       ],
-      "firstSeen": "2026-12-08",
-      "lastSeen": "2026-12-08",
+      "firstSeen": "2026-11-27",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 37.9506254,
         "lon": 23.6932933,
@@ -51158,7 +51137,7 @@
     },
     {
       "id": "2109427096",
-      "name": "ΒΕΡΟΝΙΚΗ ΕΛΙΣΣΑΒΕΤ - ΜΑΓΚΟΥΛΙΑ ΜΙΚΕ",
+      "name": "ΜΑΓΚΟΥΛΙΑ ΜΙΚΕ",
       "address": "ΑΡΑΠΑΚΗ 78 & ΑΓ.ΒΑΡΒΑΡΑΣ 2, 17676 ΚΑΛΛΙΘΕΑ",
       "locality": "Καλλιθέα",
       "postcode": null,
@@ -53833,8 +53812,8 @@
         "fsa",
         "fsa-hours"
       ],
-      "firstSeen": "2026-11-26",
-      "lastSeen": "2026-11-26",
+      "firstSeen": "2026-12-19",
+      "lastSeen": "2026-12-19",
       "location": {
         "lat": 37.874077,
         "lon": 23.7643595,
@@ -53943,7 +53922,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.8927379,
         "lon": 23.7614738,
@@ -55278,8 +55257,8 @@
       "sources": [
         "fsa"
       ],
-      "firstSeen": "2026-11-18",
-      "lastSeen": "2026-11-18",
+      "firstSeen": "2027-03-25",
+      "lastSeen": "2027-03-25",
       "location": {
         "lat": 37.9344589,
         "lon": 23.7421031,
@@ -57187,27 +57166,6 @@
       }
     },
     {
-      "id": "2109819422",
-      "name": "ΚΑΛΟΓΕΡΑΣ ΑΛΕΞΑΝΔΡΟΣ",
-      "address": "ΑΓ.ΑΛΕΞΑΝΔΡΟΥ 72",
-      "locality": "Παλαιό Φάληρο",
-      "postcode": null,
-      "phone": "2109819422",
-      "groupId": "attiki",
-      "sources": [
-        "fsa"
-      ],
-      "firstSeen": "2027-01-07",
-      "lastSeen": "2027-01-07",
-      "location": {
-        "lat": 37.9309486,
-        "lon": 23.6957011,
-        "ref": "https://fsa-efimeries.gr/",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2109820436",
       "name": "ΡΟΚΟΣ ΕΥΑΓΓΕΛΟΣ-ΠΑΠΑΣΤΑΜΑΤΗ ΑΙΚΑΤΕΡΙΝΗ Ο.Ε.",
       "address": "ΙΩΝΙΑΣ 152 ΚΑΙ ΘΕΟΜΗΤΟΡΟΣ",
@@ -57651,8 +57609,8 @@
       "sources": [
         "fsa"
       ],
-      "firstSeen": "2026-11-14",
-      "lastSeen": "2026-11-14",
+      "firstSeen": "2027-03-23",
+      "lastSeen": "2027-03-23",
       "location": {
         "lat": 37.9314013,
         "lon": 23.6938161,
@@ -58840,8 +58798,8 @@
       "sources": [
         "fsa"
       ],
-      "firstSeen": "2026-11-15",
-      "lastSeen": "2026-11-15",
+      "firstSeen": "2027-03-09",
+      "lastSeen": "2027-03-09",
       "location": {
         "lat": 37.9116365,
         "lon": 23.7508162,
@@ -59510,8 +59468,8 @@
       "sources": [
         "fsa"
       ],
-      "firstSeen": "2026-12-30",
-      "lastSeen": "2026-12-30",
+      "firstSeen": "2026-12-25",
+      "lastSeen": "2026-12-25",
       "location": {
         "lat": 37.9380811,
         "lon": 23.7614909,
@@ -59660,8 +59618,8 @@
       "sources": [
         "fsa"
       ],
-      "firstSeen": "2027-01-15",
-      "lastSeen": "2027-01-15",
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.9275533,
         "lon": 23.7553776,
@@ -60812,7 +60770,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.0167375,
         "lon": 23.8604457,
@@ -63045,7 +63003,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.9926351,
         "lon": 23.7620146,
@@ -63520,7 +63478,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.7355619,
         "lon": 23.9502376,
@@ -63606,7 +63564,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.8181743,
         "lon": 23.8424174,
@@ -63778,7 +63736,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-13",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.7155985,
         "lon": 24.0540557,
@@ -63950,7 +63908,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.0220753,
         "lon": 24.0068724,
@@ -64297,7 +64255,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.1571325,
         "lon": 23.9594679,
@@ -64319,7 +64277,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-29",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.0186293,
         "lon": 23.9802657,
@@ -64492,7 +64450,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.9768731,
         "lon": 24.0085054,
@@ -65121,7 +65079,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-11-15",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.3210181,
         "lon": 23.7915431,
@@ -65250,7 +65208,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-15",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 38.2160932,
         "lon": 23.8774644,
@@ -65462,8 +65420,8 @@
       "sources": [
         "fsa"
       ],
-      "firstSeen": "2026-11-15",
-      "lastSeen": "2026-11-15",
+      "firstSeen": "2026-12-14",
+      "lastSeen": "2026-12-14",
       "location": {
         "lat": 37.999086,
         "lon": 23.3335516,
@@ -66131,7 +66089,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.8877519,
         "lon": 23.9297418,
@@ -66368,7 +66326,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.8758074,
         "lon": 23.9297676,
@@ -66411,7 +66369,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.8092871,
         "lon": 23.9743875,
@@ -66497,7 +66455,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-13",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 37.8350688,
         "lon": 23.9253862,
