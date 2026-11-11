@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "messinia",
-  "updatedAt": "2026-11-10T21:52:39.507Z",
-  "checkedAt": "2026-11-10T21:52:39.507Z",
+  "updatedAt": "2026-11-11T11:58:00.455Z",
+  "checkedAt": "2026-11-11T11:58:00.455Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-11-16"
+    "to": "2026-11-17"
   },
   "extendedHours": [],
   "sources": [

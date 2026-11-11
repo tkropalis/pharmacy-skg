@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-17",
+  "groups": [
+    {
+      "id": "pieria",
+      "name": "Πιερία",
+      "source": {
+        "url": "https://pieria.efhmeries.gr/",
+        "uploadedAt": "2026-11-11T11:58:19.860Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2352032285",
+              "name": "ΓΚΕΜΑΛΜΑΣ ΜΙΧΑΗΛ",
+              "address": "ΒΑΣ. ΣΟΦΙΑΣ 22",
+              "locality": "Λεπτοκαρυά",
+              "phone": "2352032285"
+            },
+            {
+              "pharmacyId": "2352043297",
+              "name": "ΛΑΓΟΘΑΝΑΣΗ ΕΛΕΝΗ",
+              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 2",
+              "locality": "Νέος Παντελεήμονας",
+              "phone": "2352043297"
+            },
+            {
+              "pharmacyId": "2353031937",
+              "name": "ΜΑΚΡΙΔΟΥ ΣΟΦΙΑ",
+              "address": "ΑΓΙΟΥ ΔΗΜΗΤΡΙΟΥ & ΠΑΥΣΙΛΙΠΟΥ",
+              "locality": "Κολινδρός",
+              "phone": "2353031937"
+            },
+            {
+              "pharmacyId": "2353022855",
+              "name": "ΠΑΡΑΛΥΚΙΔΗΣ ΠΑΣΧΑΛΗΣ",
+              "address": "ΑΚΡΟΠΟΛΕΩΣ & ΛΥΚΟΥΡΓΟΥ",
+              "locality": "Αιγίνιο",
+              "phone": "2353022855"
+            },
+            {
+              "pharmacyId": "2351041883",
+              "name": "Σ.Φ ΜΑΚΡΥΓΙΩΡΓΟΣ ΓΙΩΡΓΟΣ-ΜΑΚΡΥΓΙΩΡΓΟΣ ΘΩΜΑΣ",
+              "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 70",
+              "locality": "Κορινός",
+              "phone": "2351041883"
+            },
+            {
+              "pharmacyId": "2351063966",
+              "name": "ΧΑΪΛΑΤΖΙΔΟΥ ΧΡΙΣΤΙΝΑ",
+              "address": "ΝΙΚΗΣ 6",
+              "locality": "Παραλία",
+              "phone": "2351063966"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2352301789",
+              "name": "ΙΕΡΕΜΙΑΔΟΥ ΣΟΦΙΑ",
+              "address": "ΒΑΣ. ΚΩΝΣΤΑΝΤΙΝΟΥ 56",
+              "locality": "Λιτόχωρο",
+              "phone": "2352301789"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351038927",
+              "name": "ΚΑΣΤΑΝΑΡΑ ΠΑΡΑΣΚΕΥΗ",
+              "address": "ΣΑΡΑΝΤΑΠΟΡΟΥ 19",
+              "locality": "Κατερίνη",
+              "phone": "2351038927"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:00 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351027910",
+              "name": "ΚΩΝΣΤΑΝΤΙΝΙΔΟΥ ΟΛΓΑ",
+              "address": "ΕΙΡΗΝΗΣ 33",
+              "locality": "Κατερίνη",
+              "phone": "2351027910"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 - 14:00 & 17:30 - 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351027910",
+              "name": "ΚΩΝΣΤΑΝΤΙΝΙΔΟΥ ΟΛΓΑ",
+              "address": "ΕΙΡΗΝΗΣ 33",
+              "locality": "Κατερίνη",
+              "phone": "2351027910"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

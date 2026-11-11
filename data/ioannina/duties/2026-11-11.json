@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-11-10T21:51:44.475Z"
+        "uploadedAt": "2026-11-11T11:57:04.399Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651065410",
-              "name": "ΛΑΜΠΡΟΥ ΜΑΡΙΑ",
-              "address": "3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ 1, ΑΝΑΤΟΛΗ",
-              "locality": "Ιωάννινα",
-              "phone": "2651065410"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -61,6 +41,26 @@
               "address": "ΒΗΛΑΡΑ 87 & ΒΟΡ.ΗΠΕΙΡΟΥ",
               "locality": "Ιωάννινα",
               "phone": "2651022329"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651065410",
+              "name": "ΛΑΜΠΡΟΥ ΜΑΡΙΑ",
+              "address": "3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ 1, ΑΝΑΤΟΛΗ",
+              "locality": "Ιωάννινα",
+              "phone": "2651065410"
             }
           ]
         }

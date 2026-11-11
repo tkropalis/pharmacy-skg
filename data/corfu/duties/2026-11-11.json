@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-11",
+  "groups": [
+    {
+      "id": "corfu",
+      "name": "Κέρκυρα",
+      "source": {
+        "url": "https://farmakeu.static.otenet.gr/phduties.php",
+        "uploadedAt": "2026-11-11T11:55:47.494Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΗΜΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 8:00 ΕΩΣ ΤΙΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2661031622",
+              "name": "ΜΠΟΥΖΟΥΚΗΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΣΤΑΜΑΤΙΟΥ ΔΕΣΥΛΛΑ 16 (ΛΑΪΚΗ ΑΓΟΡΑ)",
+              "locality": "Κέρκυρα",
+              "phone": "2661031622"
+            },
+            {
+              "pharmacyId": "2661031992",
+              "name": "ΕΡΤΣΟΣ ΣΠΥΡΙΔΩΝΑΣ-ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΜΙΛΤΙΑΔΟΥ ΜΑΡΓΑΡΙΤΗ 8",
+              "locality": "Κέρκυρα",
+              "phone": "2661031992"
+            },
+            {
+              "pharmacyId": "2661049217",
+              "name": "ΡΟΥΣΣΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΑΛΕΠΟΥ",
+              "locality": "Αλεπού",
+              "phone": "2661049217"
+            },
+            {
+              "pharmacyId": "2663063561",
+              "name": "ΚΟΝΤΟΥ ΜΑΡΙΛΕΝΑ",
+              "address": "ΑΧΑΡΑΒΗ",
+              "locality": "Αχαράβη",
+              "phone": "2663063561"
+            },
+            {
+              "pharmacyId": "2662051109",
+              "name": "ΠΑΝΑΓΟΥ ΗΛΙΑΝΑ",
+              "address": "ΑΡΓΥΡΑΔΕΣ",
+              "locality": "Αργυράδες",
+              "phone": "2662051109"
+            },
+            {
+              "pharmacyId": "2663051013",
+              "name": "ΜΟΥΤΣΙΟΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΑΡΙΛΛΑΣ",
+              "locality": "Αρίλλας",
+              "phone": "2663051013"
+            },
+            {
+              "pharmacyId": "2662024143",
+              "name": "ΒΑΡΕΛΗΣ ΒΑΣΙΛΕΙΟΣ-ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΡΙΓΓΛΑΔΕΣ",
+              "locality": "Ρίγγλαδες",
+              "phone": "2662024143"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

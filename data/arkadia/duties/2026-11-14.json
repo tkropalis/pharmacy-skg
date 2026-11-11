@@ -7,7 +7,7 @@
       "name": "Αρκαδία",
       "source": {
         "url": "https://arkadia.efhmeries.gr/",
-        "uploadedAt": "2026-11-09T12:57:45.445Z"
+        "uploadedAt": "2026-11-11T11:56:01.151Z"
       },
       "sections": [
         {
@@ -96,13 +96,6 @@
               "address": "ΠΑΤΡΙΑΡΧΟΥ ΓΡΗΓΟΡΙΟΥ Ε 9",
               "locality": "Τρίπολη",
               "phone": "2710237773"
-            },
-            {
-              "pharmacyId": "2710234540",
-              "name": "ΤΣΙΒΕΡΙΩΤΗ ΧΡΙΣΤΙΝΑ",
-              "address": "ΚΟΡΑΗ 15 ΚΑΙ ΜΑΝΤΖΑΡΗ",
-              "locality": "Τρίπολη",
-              "phone": "2710234540"
             }
           ]
         }

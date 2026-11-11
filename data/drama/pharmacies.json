@@ -475,11 +475,32 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 41.1519129,
         "lon": 24.1474817,
         "ref": "https://drama.efhmeries.gr/Home/Details/3149",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2521027600",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΠΤΟΛΕΜΑΙΩΝ 4Α",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521027600",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-11-17",
+      "lastSeen": "2026-11-17",
+      "location": {
+        "lat": 41.1510302,
+        "lon": 24.1474673,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3233",
         "source": "list",
         "precision": "exact"
       }

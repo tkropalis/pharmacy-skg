@@ -13,7 +13,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.994823,
         "lon": 22.872297,
@@ -230,6 +230,27 @@
         "source": "nominatim",
         "precision": "locality",
         "ref": "Καπετά 15, Κιλκίς"
+      }
+    },
+    {
+      "id": "2341024777",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΛΟΥΙΖΑ-ΜΑΡΙΑ.",
+      "address": "21 ΙΟΥΝΙΟΥ 105",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341024777",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-17",
+      "lastSeen": "2026-11-17",
+      "location": {
+        "lat": 40.994095,
+        "lon": 22.875435,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "c1894951-140b-4b98-ad31-6cefc01e2584"
       }
     },
     {
@@ -475,7 +496,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.998507,
         "lon": 22.569727,
@@ -601,7 +622,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-13",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 41.00156,
         "lon": 22.56729,
@@ -664,7 +685,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-15",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 40.946525,
         "lon": 22.452094,
