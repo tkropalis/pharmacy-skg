@@ -7,7 +7,7 @@
       "name": "Δράμα",
       "source": {
         "url": "https://drama.efhmeries.gr/",
-        "uploadedAt": "2026-11-12T12:50:27.165Z"
+        "uploadedAt": "2026-11-12T15:37:36.680Z"
       },
       "sections": [
         {
@@ -27,26 +27,6 @@
               "address": "ΒΕΡΓΙΝΑΣ 26",
               "locality": "Δράμα",
               "phone": "2521045445"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2521031514",
-              "name": "ΣΦ ΤΣΑΤΣΑΛΙΔΟΥ Β.-ΤΣΑΤΣΑΛΙΔΟΥ Χ.",
-              "address": "ΒΑΡΔΟΥΣΙΩΝ 16",
-              "locality": "Δράμα",
-              "phone": "2521031514"
             }
           ]
         },
@@ -74,6 +54,26 @@
               "address": "Γ. ΠΑΠΑΝΔΡΕΟΥ 36",
               "locality": "Δράμα",
               "phone": "2521036314"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521031514",
+              "name": "ΣΦ ΤΣΑΤΣΑΛΙΔΟΥ Β.-ΤΣΑΤΣΑΛΙΔΟΥ Χ.",
+              "address": "ΒΑΡΔΟΥΣΙΩΝ 16",
+              "locality": "Δράμα",
+              "phone": "2521031514"
             }
           ]
         }

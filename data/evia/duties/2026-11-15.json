@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-12T12:50:34.451Z"
+        "uploadedAt": "2026-11-12T15:37:43.065Z"
       },
       "sections": [
         {
@@ -54,34 +54,6 @@
               "address": "ΚΩΤΣΟΥ 3-5",
               "locality": "Χαλκίδα",
               "phone": "2221023274"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2229062585",
-              "name": "ΜΙΧΟΣ ΔΗΜΗΤΡΙΟΣ",
-              "address": "ΦΙΛ. ΜΕΝΕΔΗΜΟΥ 36",
-              "locality": "Ερέτρια",
-              "phone": "2229062585"
-            },
-            {
-              "pharmacyId": "2224023855",
-              "name": "ΣΙΑΣΑΚΟΣ ΕΛΕΥΘΕΡΙΟΣ",
-              "address": "ΣΑΧΤΟΥΡΗ 124",
-              "locality": "Κάρυστος",
-              "phone": "2224023855"
             }
           ]
         },
@@ -162,6 +134,34 @@
               "address": "ΕΥΒΟΙΑΣ 49 ΠΛΗΣΙΟΝ ΤΕΧΝΙΚΟΥ ΛΥΚΕΙΟΥ",
               "locality": "Χαλκίδα",
               "phone": "2221087998"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2229062585",
+              "name": "ΜΙΧΟΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΦΙΛ. ΜΕΝΕΔΗΜΟΥ 36",
+              "locality": "Ερέτρια",
+              "phone": "2229062585"
+            },
+            {
+              "pharmacyId": "2224023855",
+              "name": "ΣΙΑΣΑΚΟΣ ΕΛΕΥΘΕΡΙΟΣ",
+              "address": "ΣΑΧΤΟΥΡΗ 124",
+              "locality": "Κάρυστος",
+              "phone": "2224023855"
             }
           ]
         }

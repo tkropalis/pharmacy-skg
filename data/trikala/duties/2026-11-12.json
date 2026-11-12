@@ -7,7 +7,7 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-11-12T12:52:50.449Z"
+        "uploadedAt": "2026-11-12T15:39:52.576Z"
       },
       "sections": [
         {
@@ -27,33 +27,6 @@
               "address": "ΓΕΩΡΓΙΟΥ ΚΟΝΔΥΛΗ 24",
               "locality": "Τρίκαλα",
               "phone": "2431032657"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "18:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "18:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431031615",
-              "name": "ΠΑΠΠΑΣ ΑΝΕΣΤΗΣ",
-              "address": "ΒΑΣ. ΤΣΙΤΣΑΝΗ 29",
-              "locality": "Τρίκαλα",
-              "phone": "2431031615"
-            },
-            {
-              "pharmacyId": "2431031333",
-              "name": "ΣΟΥΛΕΜΕΤΣΗ ΑΝΑΣΤΑΣΙΑ",
-              "address": "ΑΠΟΛΛΩΝΟΣ 6",
-              "locality": "Τρίκαλα",
-              "phone": "2431031333"
             }
           ]
         },
@@ -94,6 +67,33 @@
               "address": "ΣΤΡΑΤΗΓΟΥ ΣΑΡΑΦΗ 21",
               "locality": "Τρίκαλα",
               "phone": "2431026644"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "18:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "18:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431031615",
+              "name": "ΠΑΠΠΑΣ ΑΝΕΣΤΗΣ",
+              "address": "ΒΑΣ. ΤΣΙΤΣΑΝΗ 29",
+              "locality": "Τρίκαλα",
+              "phone": "2431031615"
+            },
+            {
+              "pharmacyId": "2431031333",
+              "name": "ΣΟΥΛΕΜΕΤΣΗ ΑΝΑΣΤΑΣΙΑ",
+              "address": "ΑΠΟΛΛΩΝΟΣ 6",
+              "locality": "Τρίκαλα",
+              "phone": "2431031333"
             }
           ]
         }

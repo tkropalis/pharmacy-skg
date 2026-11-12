@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-12T12:50:34.451Z"
+        "uploadedAt": "2026-11-12T15:37:43.065Z"
       },
       "sections": [
         {
@@ -35,26 +35,6 @@
               "address": "ΑΡΧΑΙΟΥ ΘΕΑΤΡΟΥ 76",
               "locality": "Ερέτρια",
               "phone": "2229060906"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "14:00 ΕΩΣ 17:30",
-          "hours": {
-            "from": "14:00",
-            "to": "17:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221088061",
-              "name": "Σ.Φ. ΡΗΓΑΣ ΧΡΗΣΤΟΣ ΡΗΓΑ ΣΩΤΗΡΙΑ ΟΕ",
-              "address": "ΑΝΑΠΑΥΣΕΩΣ 30",
-              "locality": "Χαλκίδα",
-              "phone": "2221088061"
             }
           ]
         },
@@ -102,6 +82,26 @@
               "address": "ΒΕΝΙΖΕΛΟΥ 10 - ΕΝΑΝΤΙ ΔΙΚΑΣΤΗΡΙΩΝ",
               "locality": "Χαλκίδα",
               "phone": "2221028599"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 17:30",
+          "hours": {
+            "from": "14:00",
+            "to": "17:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221088061",
+              "name": "Σ.Φ. ΡΗΓΑΣ ΧΡΗΣΤΟΣ ΡΗΓΑ ΣΩΤΗΡΙΑ ΟΕ",
+              "address": "ΑΝΑΠΑΥΣΕΩΣ 30",
+              "locality": "Χαλκίδα",
+              "phone": "2221088061"
             }
           ]
         }
