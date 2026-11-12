@@ -1,9 +1,9 @@
 /**
  * Fetches the official lists, rebuilds data/<city>/ for every covered city (cities/index.ts),
  * validates it and writes only what changed. A city whose data fails validation is left as it
- * was; the others are still written, and the command exits non-zero. So it does when a city's
- * extended-hours site cannot be read, after writing that city's duty lists. The work is in
- * update/city.ts and update/run.ts.
+ * was; the others are still written, and the command exits non-zero. A city whose source does
+ * not answer this network, or has published nothing for today, is a warning and does not. The
+ * work is in update/city.ts and update/run.ts.
  *
  *   node src/cli/update.ts [--city ID ...] [--since YYYY-MM-DD] [--offline]
  *
