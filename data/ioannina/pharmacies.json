@@ -181,7 +181,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-09",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 39.6611041,
         "lon": 20.8545562,
@@ -606,6 +606,27 @@
         "lat": 39.6735431,
         "lon": 20.8391993,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5067",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651030311",
+      "name": "ΜΑΝΤΖΑΡΑΣ ΘΕΟΔΩΡΟΣ",
+      "address": "ΜΑΚΡΥΓΙΑΝΝΗ 33",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651030311",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "location": {
+        "lat": 39.6804623,
+        "lon": 20.8287881,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5117",
         "source": "list",
         "precision": "exact"
       }
@@ -1672,11 +1693,32 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 39.662295,
         "lon": 20.8380645,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/4997",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651085545",
+      "name": "ΑΒΡΑΜΙΩΤΗΣ ΔΙΟΝΥΣΙΟΣ",
+      "address": "25ΗΣ ΜΑΡΤΙΟΥ 32, ΣΤΑΥΡΑΚΙ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651085545",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "location": {
+        "lat": 39.6549295,
+        "lon": 20.8186685,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5119",
         "source": "list",
         "precision": "exact"
       }

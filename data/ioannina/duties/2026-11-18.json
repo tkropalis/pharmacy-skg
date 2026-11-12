@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-18",
+  "groups": [
+    {
+      "id": "ioannina",
+      "name": "Ιωάννινα",
+      "source": {
+        "url": "https://ioannina.efhmeries.gr/",
+        "uploadedAt": "2026-11-12T12:51:12.645Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651030311",
+              "name": "ΜΑΝΤΖΑΡΑΣ ΘΕΟΔΩΡΟΣ",
+              "address": "ΜΑΚΡΥΓΙΑΝΝΗ 33",
+              "locality": "Ιωάννινα",
+              "phone": "2651030311"
+            },
+            {
+              "pharmacyId": "2651022100",
+              "name": "ΠΑΠΑΜΙΧΑΗΛ ΓΕΩΡΓΙΟΣ",
+              "address": "ΠΛΑΤΕΙΑ ΛΑΜΠΡΟΥ ΤΖΑΒΕΛΛΑ 1, ΤΖΑΜΙ ΚΑΛΟΥΤΣΙΑΝΗΣ",
+              "locality": "Ιωάννινα",
+              "phone": "2651022100"
+            },
+            {
+              "pharmacyId": "2651085508",
+              "name": "ΣΔΡΑΛΑΓΚΑΣ ΣΤΑΥΡΟΣ",
+              "address": "ΚΑΠΕΤΑΝ ΚΛΕΙΔΗ 15",
+              "locality": "Ιωάννινα",
+              "phone": "2651085508"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651085545",
+              "name": "ΑΒΡΑΜΙΩΤΗΣ ΔΙΟΝΥΣΙΟΣ",
+              "address": "25ΗΣ ΜΑΡΤΙΟΥ 32, ΣΤΑΥΡΑΚΙ",
+              "locality": "Ιωάννινα",
+              "phone": "2651085545"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

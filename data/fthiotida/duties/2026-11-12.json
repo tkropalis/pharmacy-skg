@@ -7,46 +7,26 @@
       "name": "Φθιώτιδα",
       "source": {
         "url": "https://fthiotida.efhmeries.gr/",
-        "uploadedAt": "2026-11-11T22:50:51.099Z"
+        "uploadedAt": "2026-11-12T12:52:56.712Z"
       },
       "sections": [
         {
           "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "heading": "08:00 ΕΩΣ 22:00",
           "hours": {
             "from": "08:00",
-            "to": "14:00",
+            "to": "22:00",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2231031731",
-              "name": "ΓΙΑΝΝΕΛΗ ΦΩΤΕΙΝΗ",
-              "address": "ΒΥΡΩΝΟΣ 30",
+              "pharmacyId": "2231028835",
+              "name": "ΠΑΠΟΥΤΣΑ ΚΑΛΛΙΟΠΗ",
+              "address": "ΣΑΤΩΒΡΙΑΝΔΟΥ 4",
               "locality": "Λαμία",
-              "phone": "2231031731"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231031731",
-              "name": "ΓΙΑΝΝΕΛΗ ΦΩΤΕΙΝΗ",
-              "address": "ΒΥΡΩΝΟΣ 30",
-              "locality": "Λαμία",
-              "phone": "2231031731"
+              "phone": "2231028835"
             }
           ]
         },
@@ -108,26 +88,6 @@
         },
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 22:00",
-          "hours": {
-            "from": "08:00",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231028835",
-              "name": "ΠΑΠΟΥΤΣΑ ΚΑΛΛΙΟΠΗ",
-              "address": "ΣΑΤΩΒΡΙΑΝΔΟΥ 4",
-              "locality": "Λαμία",
-              "phone": "2231028835"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00*",
           "hours": {
             "from": "08:00",
@@ -151,6 +111,46 @@
               "address": "ΠΛ.ΔΗΜΟΚΡΑΤΙΑΣ 3",
               "locality": "Μακρακώμη",
               "phone": "2236022384"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231031731",
+              "name": "ΓΙΑΝΝΕΛΗ ΦΩΤΕΙΝΗ",
+              "address": "ΒΥΡΩΝΟΣ 30",
+              "locality": "Λαμία",
+              "phone": "2231031731"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231031731",
+              "name": "ΓΙΑΝΝΕΛΗ ΦΩΤΕΙΝΗ",
+              "address": "ΒΥΡΩΝΟΣ 30",
+              "locality": "Λαμία",
+              "phone": "2231031731"
             }
           ]
         }

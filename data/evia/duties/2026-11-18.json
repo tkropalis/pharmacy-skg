@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-18",
+  "groups": [
+    {
+      "id": "evia",
+      "name": "Εύβοια",
+      "source": {
+        "url": "https://evia.efhmeries.gr/",
+        "uploadedAt": "2026-11-12T12:50:34.451Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2224023505",
+              "name": "ΒΕΛΙΣΣΑΡΑΚΟΣ ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "Ι. ΚΟΤΣΙΚΑ 1",
+              "locality": "Κάρυστος",
+              "phone": "2224023505"
+            },
+            {
+              "pharmacyId": "2221064600",
+              "name": "ΝΙΦΟΡΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΑΜΑΡΥΣΙΑΣ ΑΡΤΕΜΙΔΟΣ ΚΑΙ ΑΠΟΣΤΟΛΗ",
+              "locality": "Ερέτρια",
+              "phone": "2221064600"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221077961",
+              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
+              "address": "ΑΒΑΝΤΩΝ 81",
+              "locality": "Χαλκίδα",
+              "phone": "2221077961"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221044344",
+              "name": "Σ.Φ. ΛΑΛΑΝΙΤΗ - ΑΡΓΥΡΑΚΗΣ",
+              "address": "ΒΟΥΔΟΥΡΗ 7",
+              "locality": "Αρτάκη",
+              "phone": "2221044344"
+            },
+            {
+              "pharmacyId": "2226055355",
+              "name": "ΤΖΗΜΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "25ης ΜΑΡΤΙΟΥ 46",
+              "locality": "Ιστιαία",
+              "phone": "2226055355"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221077007",
+              "name": "ΜΠΑΪΜΠΑΚΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΧΑΪΝΑ 72",
+              "locality": "Χαλκίδα",
+              "phone": "2221077007"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221087414",
+              "name": "Σ.Φ. ΒΡΑΚΑ ΜΑΡΙΑ - ΒΑΡΟΥΧΑΚΗΣ ΑΝΤΩΝΙΟΣ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 30 & ΦΙΛΩΝΟΣ 7-ΕΝΑΝΤΙ ΑΡΧ. ΜΟΥΣΕΙΟΥ",
+              "locality": "Χαλκίδα",
+              "phone": "2221087414"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

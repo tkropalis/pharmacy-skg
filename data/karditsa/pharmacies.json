@@ -275,6 +275,27 @@
       }
     },
     {
+      "id": "2441024834",
+      "name": "ΑΛΕΞΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ",
+      "address": "ΚΟΥΜΟΥΝΔΟΥΡΟΥ 36",
+      "locality": "Καρδίτσα",
+      "postcode": null,
+      "phone": "2441024834",
+      "groupId": "karditsa",
+      "sources": [
+        "iteq-karditsa"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "location": {
+        "lat": 39.3629293,
+        "lon": 21.9229564,
+        "ref": "https://karditsa.efhmeries.gr/Home/Details/3769",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2441024844",
       "name": "ΓΟΥΓΟΥΛΑ ΤΡΙΑΝΤΑΦΥΛΛΙΑ",
       "address": "ΙΕΖΕΚΙΗΛ 9",
@@ -475,7 +496,7 @@
         "iteq-karditsa"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 39.3608463,
         "lon": 21.9223129,

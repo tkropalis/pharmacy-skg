@@ -65,6 +65,27 @@
       }
     },
     {
+      "id": "2521020502",
+      "name": "ΤΖΙΓΕΡΗ ΕΛΙΣΑΒΕΤ",
+      "address": "ΛΑΜΠΡΙΑΝΙΔΟΥ ΛΑΜΠΡΟΥ 14",
+      "locality": "Δράμα",
+      "postcode": null,
+      "phone": "2521020502",
+      "groupId": "drama",
+      "sources": [
+        "iteq-drama"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "location": {
+        "lat": 41.1511826,
+        "lon": 24.1470163,
+        "ref": "https://drama.efhmeries.gr/Home/Details/3237",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2521020550",
       "name": "ΖΑΒΕΡΔΑ ΧΑΡΑ-ΓΙΑΝΝΑΚΗ Ο.Ε.",
       "address": "ΛΕΩΦ. ΣΤΡΑΤΟΎ 2",
@@ -811,7 +832,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 41.1500336,
         "lon": 24.1476403,
@@ -895,7 +916,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 41.15099,
         "lon": 24.148686,
@@ -958,7 +979,7 @@
         "iteq-drama"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-10-13",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 41.1494561,
         "lon": 24.1485122,

@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-11T22:48:34.708Z"
+        "uploadedAt": "2026-11-12T12:50:34.451Z"
       },
       "sections": [
         {
@@ -34,6 +34,88 @@
               "address": "ΠΛΗΣΙΟΝ Κ.Υ. ΙΣΤΙΑΙΑΣ",
               "locality": "Ιστιαία",
               "phone": "2226053155"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2229062585",
+              "name": "ΜΙΧΟΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΦΙΛ. ΜΕΝΕΔΗΜΟΥ 36",
+              "locality": "Ερέτρια",
+              "phone": "2229062585"
+            },
+            {
+              "pharmacyId": "2224023543",
+              "name": "ΠΟΛΙΤΗΣ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΣΑΧΤΟΥΡΗ 80",
+              "locality": "Κάρυστος",
+              "phone": "2224023543"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221082969",
+              "name": "ΦΩΤΙΑΔΗ ΕΥΑΓΓΕΛΙΑ",
+              "address": "ΑΡΕΘΟΥΣΗΣ 12",
+              "locality": "Χαλκίδα",
+              "phone": "2221082969"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 14:00",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221023274",
+              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΚΩΤΣΟΥ 3-5",
+              "locality": "Χαλκίδα",
+              "phone": "2221023274"
+            },
+            {
+              "pharmacyId": "2221077929",
+              "name": "ΚΟΥΚΗ ΜΑΡΙΑΝΘΗ",
+              "address": "ΝΕΟΦΥΤΟΥ 10",
+              "locality": "Χαλκίδα",
+              "phone": "2221077929"
+            },
+            {
+              "pharmacyId": "2221087998",
+              "name": "ΚΡΗΤΙΚΑΚΗ ΜΑΡΙΑ",
+              "address": "ΕΥΒΟΙΑΣ 49 ΠΛΗΣΙΟΝ ΤΕΧΝΙΚΟΥ ΛΥΚΕΙΟΥ",
+              "locality": "Χαλκίδα",
+              "phone": "2221087998"
             }
           ]
         },
@@ -78,68 +160,6 @@
           ]
         },
         {
-          "kind": "on-duty",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2229062585",
-              "name": "ΜΙΧΟΣ ΔΗΜΗΤΡΙΟΣ",
-              "address": "ΦΙΛ. ΜΕΝΕΔΗΜΟΥ 36",
-              "locality": "Ερέτρια",
-              "phone": "2229062585"
-            },
-            {
-              "pharmacyId": "2224023543",
-              "name": "ΠΟΛΙΤΗΣ ΠΑΝΑΓΙΩΤΗΣ",
-              "address": "ΣΑΧΤΟΥΡΗ 80",
-              "locality": "Κάρυστος",
-              "phone": "2224023543"
-            }
-          ]
-        },
-        {
-          "kind": "saturday-extra",
-          "heading": "08:00 ΕΩΣ 14:00",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221023274",
-              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
-              "address": "ΚΩΤΣΟΥ 3-5",
-              "locality": "Χαλκίδα",
-              "phone": "2221023274"
-            },
-            {
-              "pharmacyId": "2221077929",
-              "name": "ΚΟΥΚΗ ΜΑΡΙΑΝΘΗ",
-              "address": "ΝΕΟΦΥΤΟΥ 10",
-              "locality": "Χαλκίδα",
-              "phone": "2221077929"
-            },
-            {
-              "pharmacyId": "2221087998",
-              "name": "ΚΡΗΤΙΚΑΚΗ ΜΑΡΙΑ",
-              "address": "ΕΥΒΟΙΑΣ 49 ΠΛΗΣΙΟΝ ΤΕΧΝΙΚΟΥ ΛΥΚΕΙΟΥ",
-              "locality": "Χαλκίδα",
-              "phone": "2221087998"
-            }
-          ]
-        },
-        {
           "kind": "saturday-extra",
           "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
           "hours": {
@@ -176,26 +196,6 @@
               "address": "ΚΗΡΕΩΣ 11Β",
               "locality": "Χαλκίδα",
               "phone": "2221085586"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221082969",
-              "name": "ΦΩΤΙΑΔΗ ΕΥΑΓΓΕΛΙΑ",
-              "address": "ΑΡΕΘΟΥΣΗΣ 12",
-              "locality": "Χαλκίδα",
-              "phone": "2221082969"
             }
           ]
         }

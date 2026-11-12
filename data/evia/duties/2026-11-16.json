@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-11T22:48:34.708Z"
+        "uploadedAt": "2026-11-12T12:50:34.451Z"
       },
       "sections": [
         {
@@ -34,6 +34,26 @@
               "address": "ΙΣΤΑΙΑ",
               "locality": "Ιστιαία",
               "phone": "2226069398"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221082278",
+              "name": "ΜΕΤΑΞΩΤΟΣ ΣΩΤΗΡΙΟΣ",
+              "address": "ΤΣΙΡΙΓΩΤΗ 5 - ΠΛΑΤΕΙΑ ΑΓ.ΝΙΚΟΛΑΟΥ",
+              "locality": "Χαλκίδα",
+              "phone": "2221082278"
             }
           ]
         },
@@ -66,46 +86,6 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221020777",
-              "name": "Σ.Φ. ΠΑΠΑΔΟΠΟΥΛΟΥ ΔΗΜΗΤΡΑ & ΜΑΡΙΑ",
-              "address": "ΓΑΖΕΠΗ 46-ΝΟΣΟΚΟΜΕΙΟ",
-              "locality": "Χαλκίδα",
-              "phone": "2221020777"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "14:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "14:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221082278",
-              "name": "ΜΕΤΑΞΩΤΟΣ ΣΩΤΗΡΙΟΣ",
-              "address": "ΤΣΙΡΙΓΩΤΗ 5 - ΠΛΑΤΕΙΑ ΑΓ.ΝΙΚΟΛΑΟΥ",
-              "locality": "Χαλκίδα",
-              "phone": "2221082278"
-            }
-          ]
-        },
-        {
           "kind": "day",
           "heading": "17:30 ΕΩΣ 21:00",
           "hours": {
@@ -122,6 +102,26 @@
               "address": "ΛΗΛΑΝΤΙΩΝ 217 ΚΑΙ ΣΑΛΑΜΙΝΟΣ",
               "locality": "Χαλκίδα",
               "phone": "2221088494"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221020777",
+              "name": "Σ.Φ. ΠΑΠΑΔΟΠΟΥΛΟΥ ΔΗΜΗΤΡΑ & ΜΑΡΙΑ",
+              "address": "ΓΑΖΕΠΗ 46-ΝΟΣΟΚΟΜΕΙΟ",
+              "locality": "Χαλκίδα",
+              "phone": "2221020777"
             }
           ]
         }

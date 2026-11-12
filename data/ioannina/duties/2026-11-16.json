@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-11-11T22:49:11.484Z"
+        "uploadedAt": "2026-11-12T12:51:12.645Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651040370",
-              "name": "ΣΕΚΚΑ ΑΛΕΞΑΝΔΡΑ – ΣΕΒΑΣΤΗ",
-              "address": "ΚΕΝΑΝ ΜΕΣΣΑΡΕ & ΕΥΡΙΠΙΔΗ ΓΩΝΙΑ",
-              "locality": "Ιωάννινα",
-              "phone": "2651040370"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -61,6 +41,26 @@
               "address": "Φ. ΤΖΑΒΕΛΛΑ & ΟΠΛ. ΠΟΥΤΕΤΣΗ 24",
               "locality": "Ιωάννινα",
               "phone": "2651070991"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651040370",
+              "name": "ΣΕΚΚΑ ΑΛΕΞΑΝΔΡΑ – ΣΕΒΑΣΤΗ",
+              "address": "ΚΕΝΑΝ ΜΕΣΣΑΡΕ & ΕΥΡΙΠΙΔΗ ΓΩΝΙΑ",
+              "locality": "Ιωάννινα",
+              "phone": "2651040370"
             }
           ]
         }
