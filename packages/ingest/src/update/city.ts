@@ -23,7 +23,7 @@ import {
   type Override,
   type Warning,
 } from '../registry/build.ts';
-import { describeError } from '../sources/http.ts';
+import { describeError, isUnreachable } from '../sources/http.ts';
 import { GeocodeCacheSchema, Geocoder } from '../registry/geocode.ts';
 import { StreetIndex, StreetsFileSchema } from '../registry/streets.ts';
 import { fetchStreetNames } from '../sources/overpass.ts';
@@ -104,9 +104,19 @@ export interface UpdateCityOptions {
 }
 
 /**
- * Updates one city's data. Returns false, writing nothing but the geocoding cache, if it fails
- * validation; and false, having written what it read, if nothing covers today or the extended
- * hours could not be read. Anything else a fetcher throws is the caller's to report.
+ * How a city's update ended. `failed` is for what a change here has to fix: data that does not
+ * validate, a list that was fetched and could not be read. `waiting` is for what only the source
+ * can: it has published nothing for today, or its extended-hours site does not answer this
+ * network. A waiting city wrote what it read; the Stale data workflow reports it once its
+ * `checkedAt` is 36 hours old (docs/decisions.md, "Stale data").
+ */
+export type CityOutcome = 'current' | 'waiting' | 'failed';
+
+/**
+ * Updates one city's data. Returns `failed`, writing nothing but the geocoding cache, if it
+ * fails validation; `failed` or `waiting` (see `CityOutcome`), having written what it read, if
+ * nothing covers today or the extended hours could not be read. Anything else a fetcher throws
+ * is the caller's to report.
  */
 export async function updateCity({
   pipeline,
@@ -117,7 +127,7 @@ export async function updateCity({
   logger,
   now = () => new Date(),
   fetchStreets = (bounds) => fetchStreetNames(bounds),
-}: UpdateCityOptions): Promise<boolean> {
+}: UpdateCityOptions): Promise<CityOutcome> {
   const { city } = pipeline;
   const log = (message: string) => logger.log(message);
 
@@ -156,6 +166,9 @@ export async function updateCity({
 
   const duties = await pipeline.fetchDutyLists(context);
   const parseFailures: Warning[] = [...duties.failures];
+  // A list that was there and was not read (a page or a PDF the reader could not follow, counts
+  // out of range) is ours to fix; one that was not there is the source's to publish.
+  let unread = duties.failures.some((failure) => failure.code.startsWith('unreadable'));
 
   // Oldest uploads first, so a later re-upload of the same day and group wins.
   const fetched = [...duties.items].sort((a, b) =>
@@ -170,6 +183,7 @@ export async function updateCity({
       pipeline.rules,
     );
     if (implausible) {
+      if (list.date === today) unread = true;
       parseFailures.push({
         code: 'count',
         message: `${list.date} ${implausible}: not published (${source.url})`,
@@ -244,23 +258,31 @@ export async function updateCity({
 
   // With this run's roster: the first run reads it before any is stored. A site that cannot be
   // read keeps the stored lists and must not hold back the duty lists: fsa.gr, out of reach
-  // from 22 to 28 Oct 2026, kept Attica's duties from being updated for a week. The run fails.
-  let extendedRead = true;
+  // from 22 to 28 Oct 2026, kept Attica's duties from being updated for a week. A site that
+  // does not answer this network is a warning; any other error fails the run.
+  let extended: CityOutcome = 'current';
   // The duty source's own page may carry them (Achaia's), read with the lists.
   parseFailures.push(...(duties.extendedHours?.failures ?? []));
   for (const [file, list] of duties.extendedHours?.items ?? []) extendedFiles.set(file, list);
   try {
-    const extended = await pipeline.fetchExtendedHours({
+    const fetchedHours = await pipeline.fetchExtendedHours({
       ...context,
       roster: duties.roster ?? context.roster,
     });
-    parseFailures.push(...extended.failures);
-    for (const [file, list] of extended.items) extendedFiles.set(file, list);
+    parseFailures.push(...fetchedHours.failures);
+    for (const [file, list] of fetchedHours.items) extendedFiles.set(file, list);
   } catch (error) {
-    extendedRead = false;
-    logger.error(
-      `error [extended-hours] ${city.id}: not read, the stored lists were kept: ${describeError(error)}`,
-    );
+    if (isUnreachable(error)) {
+      extended = 'waiting';
+      (logger.warn ?? logger.error)(
+        `warning [extended-hours] ${city.id}: its site does not answer this network; the stored lists were kept: ${describeError(error)}`,
+      );
+    } else {
+      extended = 'failed';
+      logger.error(
+        `error [extended-hours] ${city.id}: not read, the stored lists were kept: ${describeError(error)}`,
+      );
+    }
   }
 
   // Pharmacies from the duty lists, to match extended-hours entries against.
@@ -403,12 +425,23 @@ export async function updateCity({
     logger.error(
       `${city.id}: validation failed with ${report.errors.length} errors; nothing was written.`,
     );
-    return false;
+    return 'failed';
   }
-  // The source has published nothing for today: write what there is, but do not count the data as
-  // checked, so the app's stale-data banner shows once it is old and the run fails.
+  // Nothing covers today: write what there is, but do not count the data as checked, so the
+  // app's stale-data banner shows once it is old. The run fails only if a list was there and was
+  // not read. A source that has published nothing is a warning: no run can fix it, and thess.guide
+  // posting a week late kept every run red (12 Nov 2026).
   const coversToday = sortedDays.some((day) => day.date === today);
-  if (!coversToday) logger.error(`error [coverage] ${city.id}: no duty list for today, ${today}`);
+  let coverage: CityOutcome = 'current';
+  if (!coversToday && unread) {
+    coverage = 'failed';
+    logger.error(`error [coverage] ${city.id}: no duty list for today, ${today}`);
+  } else if (!coversToday) {
+    coverage = 'waiting';
+    (logger.warn ?? logger.error)(
+      `warning [coverage] ${city.id}: no duty list for today, ${today}: its source has published none; the stored data is kept and goes stale`,
+    );
+  }
 
   let changed = false;
   for (const day of sortedDays) {
@@ -451,7 +484,8 @@ export async function updateCity({
   MetaSchema.parse(meta);
   await writeIfChanged(paths.meta, toJson(meta));
   log(changed ? `${city.id}: data updated.` : `${city.id}: no changes.`);
-  return coversToday && extendedRead;
+  if (coverage === 'failed' || extended === 'failed') return 'failed';
+  return coverage === 'waiting' || extended === 'waiting' ? 'waiting' : 'current';
 }
 
 function sortKeys<T extends Record<string, unknown>>(record: T): T {

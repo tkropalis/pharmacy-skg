@@ -190,7 +190,7 @@ describe('updateCity', () => {
     };
     await seedExtended();
 
-    expect(await run({ logger, pipeline: pipeline({ fetchExtendedHours }) })).toBe(true);
+    expect(await run({ logger, pipeline: pipeline({ fetchExtendedHours }) })).toBe('current');
     expect(logger.errors).toEqual([]);
     expect(logger.logs).toContain('larisa: data updated.');
     expect(context?.today).toBe(TODAY);
@@ -223,7 +223,7 @@ describe('updateCity', () => {
     // The same lists again, an hour later: the data is checked, not changed.
     const again = recorder();
     const later = new Date(NOW.getTime() + 3_600_000);
-    expect(await run({ logger: again, now: () => later })).toBe(true);
+    expect(await run({ logger: again, now: () => later })).toBe('current');
     expect(again.logs).toContain('larisa: no changes.');
     const second = await readJson(paths.meta, MetaSchema);
     expect(second?.updatedAt).toBe(NOW.toISOString());
@@ -246,7 +246,9 @@ describe('updateCity', () => {
       ]),
     });
 
-    expect(await run({ logger: recorder(), pipeline: pipeline({ fetchDutyLists }) })).toBe(true);
+    expect(await run({ logger: recorder(), pipeline: pipeline({ fetchDutyLists }) })).toBe(
+      'current',
+    );
     const pharmacies = (await readJson(paths.pharmacies, PharmaciesSchema))?.pharmacies ?? [];
     expect(pharmacies).toHaveLength(2);
     const second = pharmacies.find((p) => p.name === unphoned.name);
@@ -266,10 +268,10 @@ describe('updateCity', () => {
       },
     });
 
-    expect(await run({ logger, pipeline: unreachable })).toBe(false);
+    expect(await run({ logger, pipeline: unreachable })).toBe('waiting');
 
     expect(logger.errors).toEqual([
-      'error [extended-hours] larisa: not read, the stored lists were kept: ' +
+      'warning [extended-hours] larisa: its site does not answer this network; the stored lists were kept: ' +
         'TypeError: fetch failed: Error: getaddrinfo ENOTFOUND fsa.gr',
     ]);
     // The duty lists went through...
@@ -287,14 +289,30 @@ describe('updateCity', () => {
     expect(meta?.duties).toEqual({ from: TODAY, to: TODAY });
   });
 
-  it('writes what it read but keeps checkedAt when no list covers today, and fails', async () => {
+  it('fails when the extended hours were reached and could not be read', async () => {
+    await seedExtended();
+    const logger = recorder();
+    const unread = pipeline({
+      fetchExtendedHours: async () => {
+        throw new Error('no table on the page');
+      },
+    });
+    expect(await run({ logger, pipeline: unread })).toBe('failed');
+    expect(logger.errors).toEqual([
+      'error [extended-hours] larisa: not read, the stored lists were kept: Error: no table on the page',
+    ]);
+  });
+
+  it('writes what it read but keeps checkedAt when no list covers today, and waits', async () => {
     const before = await seedMeta();
     const logger = recorder();
     const quiet = pipeline({ fetchDutyLists: async () => published(TOMORROW) });
 
-    expect(await run({ logger, pipeline: quiet })).toBe(false);
+    expect(await run({ logger, pipeline: quiet })).toBe('waiting');
 
-    expect(logger.errors).toEqual([`error [coverage] larisa: no duty list for today, ${TODAY}`]);
+    expect(logger.errors).toEqual([
+      `warning [coverage] larisa: no duty list for today, ${TODAY}: its source has published none; the stored data is kept and goes stale`,
+    ]);
     const files = await snapshot(root);
     expect(files[`larisa/duties/${TOMORROW}.json`]).toBeDefined();
     expect(files['larisa/pharmacies.json']).toBeDefined();
@@ -310,7 +328,7 @@ describe('updateCity', () => {
     const old = { ...before, checkedAt: undefined };
     await writeIfChanged(paths.meta, toJson(old));
     const quiet = pipeline({ fetchDutyLists: async () => published(TOMORROW) });
-    expect(await run({ logger: recorder(), pipeline: quiet })).toBe(false);
+    expect(await run({ logger: recorder(), pipeline: quiet })).toBe('waiting');
     expect((await readJson(paths.meta, MetaSchema))?.checkedAt).toBe(before.updatedAt);
   });
 
@@ -322,7 +340,7 @@ describe('updateCity', () => {
     // No coordinates anywhere, and offline: the pharmacy cannot be placed.
     const unlocated = pipeline({ fetchDutyLists: async () => published(TODAY, false) });
 
-    expect(await run({ logger, pipeline: unlocated })).toBe(false);
+    expect(await run({ logger, pipeline: unlocated })).toBe('failed');
 
     expect(logger.errors).toEqual([
       `error [no-location] ${TODAY} g: ${FIRST.phone} ${FIRST.name}, ${FIRST.address}`,
@@ -359,7 +377,7 @@ describe('updateCity', () => {
       rules: { ...pipeline().rules, pharmacies: [1, 1] },
     });
 
-    expect(await run({ logger, pipeline: tooMany })).toBe(false);
+    expect(await run({ logger, pipeline: tooMany })).toBe('failed');
 
     expect(logger.errors).toEqual([
       'error [count] 2 pharmacies, expected 1–1',
@@ -384,7 +402,7 @@ describe('updateCity', () => {
       rules: { ...pipeline().rules, sectionRange: () => [2, 10], pharmacies: [0, 10] },
     });
     // The only list has one entry where two are expected: it is left out, and so is today.
-    expect(await run({ logger, pipeline: strict })).toBe(false);
+    expect(await run({ logger, pipeline: strict })).toBe('failed');
     expect(logger.logs).toContain(
       `warning [count] ${TODAY} g day: 1 entries, expected 2–10: not published (https://example.gr/list.pdf)`,
     );
@@ -427,15 +445,45 @@ describe('runUpdate', () => {
     expect(fetched).toBe(false);
   });
 
-  it('reports a city that throws and still updates the others, exiting 1', async () => {
+  it('reports a city whose site does not answer as a warning, keeping its data, and exits 0', async () => {
     const logger = recorder();
-    const broken = pipeline({
+    const warnings: string[] = [];
+    const down = pipeline({
       fetchDutyLists: async () => {
         throw new TypeError('fetch failed', { cause: new Error('ECONNRESET') });
       },
     });
+    const code = await runUpdate({
+      ...options(logger, [down, second()]),
+      logger: { ...logger, warn: (m: string) => void warnings.push(m) },
+    });
+    expect(code).toBe(0);
+    expect(warnings).toEqual([
+      'warning [unreachable] larisa: its site does not answer this network; the stored data is kept and goes stale: TypeError: fetch failed: Error: ECONNRESET',
+    ]);
+    expect(logger.errors).toEqual([]);
+    expect(await readJson(cityPaths('second', root).meta, MetaSchema)).toBeDefined();
+    expect(await readJson(cityPaths('larisa', root).meta, MetaSchema)).toBeUndefined();
+  });
+
+  it('exits 0 when a source has published nothing for today', async () => {
+    const logger = recorder();
+    const quiet = second({ fetchDutyLists: async () => published(TOMORROW) });
+    expect(await runUpdate(options(logger, [pipeline(), quiet]))).toBe(0);
+    expect(logger.errors).toEqual([
+      `warning [coverage] second: no duty list for today, ${TODAY}: its source has published none; the stored data is kept and goes stale`,
+    ]);
+  });
+
+  it('reports a city that throws and still updates the others, exiting 1', async () => {
+    const logger = recorder();
+    const broken = pipeline({
+      fetchDutyLists: async () => {
+        throw new Error('no table on the page');
+      },
+    });
     expect(await runUpdate(options(logger, [broken, second()]))).toBe(1);
-    expect(logger.errors).toEqual(['larisa: TypeError: fetch failed: Error: ECONNRESET']);
+    expect(logger.errors).toEqual(['larisa: Error: no table on the page']);
     expect(await readJson(cityPaths('second', root).meta, MetaSchema)).toBeDefined();
     expect(await readJson(cityPaths('larisa', root).meta, MetaSchema)).toBeUndefined();
   });
@@ -470,15 +518,21 @@ describe('runUpdate', () => {
         throw new Error('read failed', { cause: new BlockedError('HTTP 403 Forbidden') });
       },
     });
-    const quiet = second({ fetchDutyLists: async () => published(TOMORROW) });
-    expect(await runUpdate(options(logger, [blocked, quiet]))).toBe(1);
+    const broken = second({
+      fetchDutyLists: async () => {
+        throw new Error('no table on the page');
+      },
+    });
+    expect(await runUpdate(options(logger, [blocked, broken]))).toBe(1);
     expect(logger.errors[0]).toMatch(/^warning \[blocked\] larisa: /);
   });
 
-  it('exits 1 when a city could not be fully updated, and runs only the chosen cities', async () => {
+  it('exits 1 when a city fails validation, and runs only the chosen cities', async () => {
     const logger = recorder();
-    const quiet = second({ fetchDutyLists: async () => published(TOMORROW) });
-    expect(await runUpdate(options(logger, [pipeline(), quiet], ['second']))).toBe(1);
+    const strict = second({
+      rules: { ...pipeline().rules, sectionRange: () => [2, 10], pharmacies: [0, 10] },
+    });
+    expect(await runUpdate(options(logger, [pipeline(), strict], ['second']))).toBe(1);
     expect(logger.logs.filter((m) => m.startsWith('---'))).toEqual(['--- second']);
     expect(await readJson(cityPaths('larisa', root).meta, MetaSchema)).toBeUndefined();
   });

@@ -79,7 +79,7 @@ describe('Achaia', () => {
   it('stores today under the page date, with the coordinates and the longer hours', async () => {
     const { ok, logger } = await run(monday, '2026-11-02');
     expect(logger.errors).toEqual([]);
-    expect(ok).toBe(true);
+    expect(ok).toBe('current');
     expect(await days(paths())).toEqual(['2026-11-02.json']);
 
     const day = await readJson(join(paths().duties, '2026-11-02.json'), DutyDaySchema);
@@ -134,7 +134,7 @@ describe('Achaia', () => {
   it("adds the next day's list and keeps the day before", async () => {
     await run(monday, '2026-11-02');
     const { ok } = await run(pageOn('2026-11-03'), '2026-11-03');
-    expect(ok).toBe(true);
+    expect(ok).toBe('current');
     expect(await days(paths())).toEqual(['2026-11-02.json', '2026-11-03.json']);
     const meta = await readJson(paths().meta, MetaSchema);
     expect(meta?.duties).toEqual({ from: '2026-11-02', to: '2026-11-03' });
@@ -149,7 +149,7 @@ describe('Achaia', () => {
   it("does not take yesterday's list for today's: the same list under a new date is refused", async () => {
     await run(monday, '2026-11-02');
     const { ok, logger } = await run(pageOn('2026-11-03', false), '2026-11-03');
-    expect(ok).toBe(false);
+    expect(ok).toBe('waiting');
     expect(logger.errors.join('\n')).toMatch(/no duty list for today, 2026-11-03/);
     expect(logger.logs.join('\n')).toMatch(
       /repeated-list\] 2026-11-03 achaia: the same list as 2026-11-02/,
@@ -173,7 +173,7 @@ describe('Achaia', () => {
       logger,
       now: () => later,
     });
-    expect(ok).toBe(false);
+    expect(ok).toBe('waiting');
     expect(logger.logs.join('\n')).toMatch(
       /\[page-date\] efimeria.gr shows 2026-11-02 12:25:21 on 2026-11-03/,
     );
@@ -192,7 +192,7 @@ describe('Achaia', () => {
       logger,
       now: () => NOON,
     });
-    expect(ok).toBe(false);
+    expect(ok).toBe('failed');
     expect(await days(paths())).toEqual([]);
     expect(logger.logs.join('\n')).toMatch(/\[page-date\] efimeria.gr shows 2026-12-25/);
   });
@@ -273,7 +273,7 @@ describe('Corfu', () => {
   it('stores today and every member, the pharmacies on duty placed by their phones', async () => {
     const { ok, logger } = await run('2026-11-02');
     expect(logger.errors).toEqual([]);
-    expect(ok).toBe(true);
+    expect(ok).toBe('current');
     expect(await days(paths())).toEqual(['2026-11-02.json']);
 
     const registry = await readJson(paths().pharmacies, PharmaciesSchema);
@@ -302,7 +302,7 @@ describe('Corfu', () => {
   it("does not take yesterday's list for today's", async () => {
     await run('2026-11-02');
     const { ok, logger } = await run('2026-11-03', { ...duties, date: '2026-11-03' });
-    expect(ok).toBe(false);
+    expect(ok).toBe('waiting');
     expect(logger.logs.join('\n')).toMatch(
       /repeated-list\] 2026-11-03 corfu: the same list as 2026-11-02/,
     );
@@ -322,7 +322,7 @@ describe('Corfu', () => {
       ],
     };
     const { ok } = await run('2026-11-03', other);
-    expect(ok).toBe(true);
+    expect(ok).toBe('current');
     expect(await days(paths())).toEqual(['2026-11-02.json', '2026-11-03.json']);
     expect((await readJson(paths().meta, MetaSchema))?.duties).toEqual({
       from: '2026-11-02',

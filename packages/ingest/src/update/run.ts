@@ -1,17 +1,20 @@
 /**
  * The update command, without its process: runs `updateCity` for each chosen pipeline, reports
- * a city that throws and goes on with the next. Returns the exit code: 0 when every city is
- * current, 1 when one failed (validation, a source gone quiet, an extended-hours site that
- * could not be read, an error), 2 for a city id that is not covered.
+ * a city that throws and goes on with the next. Returns the exit code: 0 when no city failed,
+ * 1 when one did (validation, a list that could not be read, an error that is not the
+ * network's), 2 for a city id that is not covered.
  *
- * A city whose site answers with a bot challenge (`BlockedError`) is reported as blocked and
- * does not fail the run: it keeps its data and its `checkedAt`, so the app shows the stale-data
- * banner after 36 hours and the Stale data workflow lists it in its issue (docs/decisions.md,
- * "Stale data"). A run cannot fix a block, and one that stays red for it every twelve hours
- * hides the failures it can (Achaia and the Cyclades, from 2 and 5 Nov 2026).
+ * The run fails only for what a change here can fix. A city whose source does not answer this
+ * network (`isUnreachable`: a bot challenge, a timeout, a failed connection, a 421, 429 or 5xx)
+ * or has published nothing for today is a warning: it keeps its data and its `checkedAt`, so
+ * the app shows the stale-data banner after 36 hours and the Stale data workflow lists it in
+ * its issue (docs/decisions.md, "Stale data"). With some forty sites read from GitHub's
+ * runners, one of them was out of reach or late on every run from 30 Oct to 12 Nov 2026, each
+ * time another (the ministry, efimeria.gr, ITeQ's server, Corfu, thess.guide), and a run that is
+ * always red hides the failures it can fix.
  */
 import type { CityPipeline } from '../cities/pipeline.ts';
-import { describeError, isBlocked } from '../sources/http.ts';
+import { describeError, isBlocked, isUnreachable } from '../sources/http.ts';
 import { cityPaths, type CityPaths } from '../store.ts';
 import { updateCity } from './city.ts';
 import type { Logger } from './logger.ts';
@@ -49,7 +52,7 @@ export async function runUpdate({
   for (const pipeline of chosen) {
     logger.log(`--- ${pipeline.city.id}`);
     try {
-      const done = await updateCity({
+      const outcome = await updateCity({
         pipeline,
         paths: pathsFor(pipeline.city.id),
         today,
@@ -58,11 +61,17 @@ export async function runUpdate({
         logger,
         ...(now ? { now } : {}),
       });
-      if (!done) failed++;
+      if (outcome === 'failed') failed++;
     } catch (error) {
       if (isBlocked(error)) {
         (logger.warn ?? logger.error)(
           `warning [blocked] ${pipeline.city.id}: its site answers this network with a bot challenge; the stored data is kept and goes stale: ${describeError(error)}`,
+        );
+        continue;
+      }
+      if (isUnreachable(error)) {
+        (logger.warn ?? logger.error)(
+          `warning [unreachable] ${pipeline.city.id}: its site does not answer this network; the stored data is kept and goes stale: ${describeError(error)}`,
         );
         continue;
       }

@@ -33,10 +33,11 @@ jobs:
           node-version-file: .nvmrc
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      # Each area writes its files as soon as it passes; one that fails (a site down, as ITeQ's
-      # server was on 8 Oct 2026) keeps its old data. The others are still committed below, and
-      # the run is marked failed at the end. An area whose site answers with a bot challenge is
-      # only a warning: it goes stale, and the Stale data workflow's issue lists it.
+      # Each area writes its files as soon as it passes; one that fails (data that does not
+      # validate, a list that could not be read) keeps its old data. The others are still
+      # committed below, and the run is marked failed at the end. An area whose site does not
+      # answer this network, or has published nothing for today, is only a warning: it goes
+      # stale, and the Stale data workflow's issue lists it.
       - name: Fetch, validate and write
         id: update
         continue-on-error: true
@@ -68,7 +69,7 @@ jobs:
       - name: Report a failed area
         if: steps.update.outcome == 'failure'
         run: |
-          echo "::error::Some areas or their extended hours failed and kept their old data; see the update step. The rest was committed."
+          echo "::error::Some areas failed validation or could not be read and kept their old data; see the update step. The rest was committed."
           exit 1
       - name: Report a failed medicines update
         if: ${{ !cancelled() && steps.medicines.outcome == 'failure' }}
