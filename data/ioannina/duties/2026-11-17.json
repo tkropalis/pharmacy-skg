@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-11-12T12:51:12.645Z"
+        "uploadedAt": "2026-11-12T22:18:36.781Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651024288",
-              "name": "ΖΑΜΠΙΡΑΣ ΠΑΥΛΟΣ",
-              "address": "ΧΑΡ.ΤΡΙΚΟΥΠΗ 10",
-              "locality": "Ιωάννινα",
-              "phone": "2651024288"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "Σ. ΛΑΜΠΡΟΥ 38",
               "locality": "Ιωάννινα",
               "phone": "2651070704"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651024288",
+              "name": "ΖΑΜΠΙΡΑΣ ΠΑΥΛΟΣ",
+              "address": "ΧΑΡ.ΤΡΙΚΟΥΠΗ 10",
+              "locality": "Ιωάννινα",
+              "phone": "2651024288"
             }
           ]
         }

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-13",
+  "groups": [
+    {
+      "id": "corfu",
+      "name": "Κέρκυρα",
+      "source": {
+        "url": "https://farmakeu.static.otenet.gr/phduties.php",
+        "uploadedAt": "2026-11-12T22:17:19.507Z"
+      },
+      "sections": [
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 21:00 (ΤΗΣ ΠΡΟΗΓΟΥΜΕΝΗΣ) ΕΩΣ ΤΙΣ 8:00",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2661031992",
+              "name": "ΕΡΤΣΟΣ ΣΠΥΡΙΔΩΝΑΣ-ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΜΙΛΤΙΑΔΟΥ ΜΑΡΓΑΡΙΤΗ 8",
+              "locality": "Κέρκυρα",
+              "phone": "2661031992"
+            },
+            {
+              "pharmacyId": "2662051814",
+              "name": "ΚΟΥΠΠΑΡΗ ΗΛΙΑΝΑ",
+              "address": "ΠΕΤΡΙΤΗ",
+              "locality": "Πετρίτη",
+              "phone": "2662051814"
+            },
+            {
+              "pharmacyId": "2662022540",
+              "name": "ΚΟΥΡΗΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΑΓΙΟΙ ΘΕΟΔΩΡΟΙ",
+              "locality": "Άγιοι Θεόδωροι",
+              "phone": "2662022540"
+            },
+            {
+              "pharmacyId": "2663029500",
+              "name": "ΠΚ (ΠΑΠΑΔΟΠΟΥΛΟΣ ΔΗΜΗΤΡΙΟΣ)",
+              "address": "ΣΙΔΑΡΙ",
+              "locality": "Σιδάρι",
+              "phone": "2663029500"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

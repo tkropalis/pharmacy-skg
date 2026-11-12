@@ -7,33 +7,26 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-11-12T12:50:52.936Z"
+        "uploadedAt": "2026-11-12T22:18:18.196Z"
       },
       "sections": [
         {
-          "kind": "day",
-          "heading": "14:30 ΕΩΣ 21:00",
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
-            "from": "14:30",
-            "to": "21:00",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331027507",
-              "name": "ΚΑΛΟΥΔΗΣ Κ. ΘΕΜΙΣΤΟΚΛΗΣ",
-              "address": "ΜΟΡΑΒΑ 3 - Έναντι ΙΚΑ",
+              "pharmacyId": "2331075180",
+              "name": "ΦΥΤΟΠΟΥΛΟΣ ΚΩΝ. ΓΕΩΡΓΙΟΣ",
+              "address": "ΠΑΥΣΑΝΙΟΥ 3 - απέναντι από μαρκετ Γαλαξίας",
               "locality": "Βέροια",
-              "phone": "2331027507"
-            },
-            {
-              "pharmacyId": "2331022080",
-              "name": "Μ. ΝΟΥΛΑ & ΣΙΑ ΟΕ",
-              "address": "ΒΕΝΙΖΕΛΟΥ 35",
-              "locality": "Βέροια",
-              "phone": "2331022080"
+              "phone": "2331075180"
             }
           ]
         },
@@ -87,9 +80,9 @@
         },
         {
           "kind": "day",
-          "heading": "19:00 ΕΩΣ 21:00",
+          "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
-            "from": "19:00",
+            "from": "14:30",
             "to": "21:00",
             "toNextDay": false
           },
@@ -97,21 +90,28 @@
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331075180",
-              "name": "ΦΥΤΟΠΟΥΛΟΣ ΚΩΝ. ΓΕΩΡΓΙΟΣ",
-              "address": "ΠΑΥΣΑΝΙΟΥ 3 - απέναντι από μαρκετ Γαλαξίας",
+              "pharmacyId": "2331027507",
+              "name": "ΚΑΛΟΥΔΗΣ Κ. ΘΕΜΙΣΤΟΚΛΗΣ",
+              "address": "ΜΟΡΑΒΑ 3 - Έναντι ΙΚΑ",
               "locality": "Βέροια",
-              "phone": "2331075180"
+              "phone": "2331027507"
+            },
+            {
+              "pharmacyId": "2331022080",
+              "name": "Μ. ΝΟΥΛΑ & ΣΙΑ ΟΕ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 35",
+              "locality": "Βέροια",
+              "phone": "2331022080"
             }
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "19:00 ΕΩΣ 21:00",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "19:00",
+            "to": "21:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
