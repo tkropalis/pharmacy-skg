@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-11-13T09:25:37.646Z"
+        "uploadedAt": "2026-11-13T22:01:53.279Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651045900",
-              "name": "ΑΝΔΡΙΚΟΥ ΚΑΛΕΣΟΓΛΟΥ ΕΛΕΝΗ",
-              "address": "ΔΩΔΩΝΗΣ 26",
-              "locality": "Ιωάννινα",
-              "phone": "2651045900"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "ΣΤΡΑΤΗΓΟΥ ΒΟΓΙΑΝΟΥ 16 - ΒΟΤΑΝΙΚΟΣ",
               "locality": "Ιωάννινα",
               "phone": "2651035390"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651045900",
+              "name": "ΑΝΔΡΙΚΟΥ ΚΑΛΕΣΟΓΛΟΥ ΕΛΕΝΗ",
+              "address": "ΔΩΔΩΝΗΣ 26",
+              "locality": "Ιωάννινα",
+              "phone": "2651045900"
             }
           ]
         }

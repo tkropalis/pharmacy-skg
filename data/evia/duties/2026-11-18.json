@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-13T12:18:42.071Z"
+        "uploadedAt": "2026-11-13T22:01:16.469Z"
       },
       "sections": [
         {
@@ -39,22 +39,22 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "14:00 ΕΩΣ 21:00",
+          "kind": "overnight",
+          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
-            "from": "14:00",
-            "to": "21:00",
-            "toNextDay": false
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2221077961",
-              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
-              "address": "ΑΒΑΝΤΩΝ 81",
+              "pharmacyId": "2221087414",
+              "name": "Σ.Φ. ΒΡΑΚΑ ΜΑΡΙΑ - ΒΑΡΟΥΧΑΚΗΣ ΑΝΤΩΝΙΟΣ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 30 & ΦΙΛΩΝΟΣ 7-ΕΝΑΝΤΙ ΑΡΧ. ΜΟΥΣΕΙΟΥ",
               "locality": "Χαλκίδα",
-              "phone": "2221077961"
+              "phone": "2221087414"
             }
           ]
         },
@@ -87,6 +87,26 @@
         },
         {
           "kind": "day",
+          "heading": "14:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "14:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221077961",
+              "name": "ΚΟΡΚΟΝΙΚΗΤΑ ΜΑΡΙΑ",
+              "address": "ΑΒΑΝΤΩΝ 81",
+              "locality": "Χαλκίδα",
+              "phone": "2221077961"
+            }
+          ]
+        },
+        {
+          "kind": "day",
           "heading": "17:30 ΕΩΣ 21:00",
           "hours": {
             "from": "17:30",
@@ -102,26 +122,6 @@
               "address": "ΧΑΪΝΑ 72",
               "locality": "Χαλκίδα",
               "phone": "2221077007"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221087414",
-              "name": "Σ.Φ. ΒΡΑΚΑ ΜΑΡΙΑ - ΒΑΡΟΥΧΑΚΗΣ ΑΝΤΩΝΙΟΣ",
-              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 30 & ΦΙΛΩΝΟΣ 7-ΕΝΑΝΤΙ ΑΡΧ. ΜΟΥΣΕΙΟΥ",
-              "locality": "Χαλκίδα",
-              "phone": "2221087414"
             }
           ]
         }

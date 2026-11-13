@@ -7,26 +7,46 @@
       "name": "Φθιώτιδα",
       "source": {
         "url": "https://fthiotida.efhmeries.gr/",
-        "uploadedAt": "2026-11-13T12:20:57.325Z"
+        "uploadedAt": "2026-11-13T22:03:31.588Z"
       },
       "sections": [
         {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 22:00",
+          "kind": "saturday-extra",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
             "from": "08:00",
-            "to": "22:00",
+            "to": "14:00",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2231031731",
-              "name": "ΓΙΑΝΝΕΛΗ ΦΩΤΕΙΝΗ",
-              "address": "ΒΥΡΩΝΟΣ 30",
+              "pharmacyId": "2231045496",
+              "name": "ΑΝΤΩΝΙΟΥ ΙΩΑΝΝΑ",
+              "address": "ΠΑΠΑΘΑΝΑΣΙΟΥ 3",
               "locality": "Λαμία",
-              "phone": "2231031731"
+              "phone": "2231045496"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231045496",
+              "name": "ΑΝΤΩΝΙΟΥ ΙΩΑΝΝΑ",
+              "address": "ΠΑΠΑΘΑΝΑΣΙΟΥ 3",
+              "locality": "Λαμία",
+              "phone": "2231045496"
             }
           ]
         },
@@ -88,6 +108,26 @@
         },
         {
           "kind": "day",
+          "heading": "08:00 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:00",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2231031731",
+              "name": "ΓΙΑΝΝΕΛΗ ΦΩΤΕΙΝΗ",
+              "address": "ΒΥΡΩΝΟΣ 30",
+              "locality": "Λαμία",
+              "phone": "2231031731"
+            }
+          ]
+        },
+        {
+          "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00*",
           "hours": {
             "from": "08:00",
@@ -111,46 +151,6 @@
               "address": "ΜΑΚΡΑΚΩΜΗ",
               "locality": "Μακρακώμη",
               "phone": "2236022766"
-            }
-          ]
-        },
-        {
-          "kind": "saturday-extra",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231045496",
-              "name": "ΑΝΤΩΝΙΟΥ ΙΩΑΝΝΑ",
-              "address": "ΠΑΠΑΘΑΝΑΣΙΟΥ 3",
-              "locality": "Λαμία",
-              "phone": "2231045496"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2231045496",
-              "name": "ΑΝΤΩΝΙΟΥ ΙΩΑΝΝΑ",
-              "address": "ΠΑΠΑΘΑΝΑΣΙΟΥ 3",
-              "locality": "Λαμία",
-              "phone": "2231045496"
             }
           ]
         }

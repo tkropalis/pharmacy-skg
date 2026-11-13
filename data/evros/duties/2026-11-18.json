@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-11-13T09:25:06.774Z"
+        "uploadedAt": "2026-11-13T22:01:22.709Z"
       },
       "sections": [
         {
@@ -34,6 +34,26 @@
               "address": "ΒΕΝΙΖΕΛΟΥ 101",
               "locality": "Διδυμότειχο",
               "phone": "2553023544"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551400229",
+              "name": "Σ.Φ. ΓΟΥΣΗ Μ.Ε.-ΓΡΗΓΟΡΙΟΥ Σ.",
+              "address": "Εθν. Αντιστάσεως 146 (πλησίον S/M Μασούτη & AB)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551400229"
             }
           ]
         },
@@ -89,26 +109,6 @@
               "address": "Ηροδότου & Προκόπη 14 (προς Παλαγία)",
               "locality": "Αλεξανδρούπολη",
               "phone": "2551083638"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551400229",
-              "name": "Σ.Φ. ΓΟΥΣΗ Μ.Ε.-ΓΡΗΓΟΡΙΟΥ Σ.",
-              "address": "Εθν. Αντιστάσεως 146 (πλησίον S/M Μασούτη & AB)",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551400229"
             }
           ]
         }

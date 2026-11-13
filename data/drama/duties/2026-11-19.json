@@ -7,29 +7,9 @@
       "name": "Δράμα",
       "source": {
         "url": "https://drama.efhmeries.gr/",
-        "uploadedAt": "2026-11-13T09:24:53.606Z"
+        "uploadedAt": "2026-11-13T22:01:10.121Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2521022606",
-              "name": "ΓΙΑΚΟΥΜΗ ΧΡΥΣΑΝΘΟΠΟΥΛΟΥ ΣΤΕΛΛΑ ΚΑΙ ΣΙΑ Ο.Ε.",
-              "address": "ΛΑΜΠΡΙΑΝΙΔΟΥ ΛΑΜΠΡΟΥ 20",
-              "locality": "Δράμα",
-              "phone": "2521022606"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "ΛΕΩΦ. ΣΤΡΑΤΟΎ 2",
               "locality": "Δράμα",
               "phone": "2521020550"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521022606",
+              "name": "ΓΙΑΚΟΥΜΗ ΧΡΥΣΑΝΘΟΠΟΥΛΟΥ ΣΤΕΛΛΑ ΚΑΙ ΣΙΑ Ο.Ε.",
+              "address": "ΛΑΜΠΡΙΑΝΙΔΟΥ ΛΑΜΠΡΟΥ 20",
+              "locality": "Δράμα",
+              "phone": "2521022606"
             }
           ]
         }

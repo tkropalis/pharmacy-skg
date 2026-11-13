@@ -7,29 +7,9 @@
       "name": "Δράμα",
       "source": {
         "url": "https://drama.efhmeries.gr/",
-        "uploadedAt": "2026-11-13T09:24:53.606Z"
+        "uploadedAt": "2026-11-13T22:01:10.121Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2521036333",
-              "name": "Σ.Φ. ΖΑΧΑΡΙΑΔΟΥ Δ.-ΜΑΝΤΙΟΥ Β. ΟΕ",
-              "address": "ΓΕΩΡ. ΠΑΠΑΝΔΡΕΟΥ 2",
-              "locality": "Δράμα",
-              "phone": "2521036333"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "ΒΕΡΓΙΝΑΣ 51",
               "locality": "Δράμα",
               "phone": "2521039715"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521036333",
+              "name": "Σ.Φ. ΖΑΧΑΡΙΑΔΟΥ Δ.-ΜΑΝΤΙΟΥ Β. ΟΕ",
+              "address": "ΓΕΩΡ. ΠΑΠΑΝΔΡΕΟΥ 2",
+              "locality": "Δράμα",
+              "phone": "2521036333"
             }
           ]
         },

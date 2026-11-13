@@ -7,9 +7,96 @@
       "name": "Ηράκλειο",
       "source": {
         "url": "https://herakleion.efhmeries.gr/",
-        "uploadedAt": "2026-11-13T09:25:25.350Z"
+        "uploadedAt": "2026-11-13T22:01:40.817Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 22:00 ΕΩΣ 08:30 ΠΡΩΙ",
+          "hours": {
+            "from": "22:00",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2810312001",
+              "name": "ΛΑΦΝΟΥΝ ΑΧΜ. ΑΛΕΞΗΣ",
+              "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 135 McDONALDS & ΚΤΕΛ",
+              "locality": "Ηράκλειο",
+              "phone": "2810312001"
+            },
+            {
+              "pharmacyId": "2897023196",
+              "name": "Σ.Φ. ΘΕΟΔΩΡΙΔΗΣ ΙΟΡΔΑΝΗΣ & ΘΕΟΔΩΡΙΔΗ ΒΑΣΙΛΙΚΗ Ο.Ε.",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 16",
+              "locality": "Λιμένας Χερσονήσου",
+              "phone": "2897023196"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "8:00 ΕΩΣ 8:00 (23:00-08:00 ΚΑΤΟΠΙΝ ΤΗΛΕΦΩΝΗΜΑΤΟΣ)",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2891022111",
+              "name": "ΓΙΩΤΑ ΓΕΩΡΓΙΑ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 151",
+              "locality": "Αρκαλοχώρι",
+              "phone": "2891022111"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 21:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2892023937",
+              "name": "ΠΑΠΑΔΑΚΗ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 71",
+              "locality": "Μοίρες",
+              "phone": "2892023937"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "8:30 ΕΩΣ 8:30 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2810821555",
+              "name": "ΧΑΤΖΗΝΙΚΟΛΑ - ΒΑΚΗ Μ. ΑΝΘΟΥΛΑ",
+              "address": "ΛΕΩΦ. ΠΑΝΕΠΙΣΤΗΜΙΟΥ 69",
+              "locality": "Άγιοι Θεόδωροι",
+              "phone": "2810821555"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 08:30 ΕΩΣ 23:00",
@@ -93,26 +180,6 @@
           ]
         },
         {
-          "kind": "on-duty",
-          "heading": "8:00 ΕΩΣ 8:00 (23:00-08:00 ΚΑΤΟΠΙΝ ΤΗΛΕΦΩΝΗΜΑΤΟΣ)",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2891022111",
-              "name": "ΓΙΩΤΑ ΓΕΩΡΓΙΑ",
-              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 151",
-              "locality": "Αρκαλοχώρι",
-              "phone": "2891022111"
-            }
-          ]
-        },
-        {
           "kind": "day",
           "heading": "08:30 ΕΩΣ 22:00",
           "hours": {
@@ -164,73 +231,6 @@
               "address": "ΛΕΩΦ. ΚΟΚΚΙΝΟΥ ΠΥΡΓΟΥ 156",
               "locality": "Τυμπάκι",
               "phone": "2892053136"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "8:30 ΕΩΣ 8:30 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "08:30",
-            "to": "08:30",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2810821555",
-              "name": "ΧΑΤΖΗΝΙΚΟΛΑ - ΒΑΚΗ Μ. ΑΝΘΟΥΛΑ",
-              "address": "ΛΕΩΦ. ΠΑΝΕΠΙΣΤΗΜΙΟΥ 69",
-              "locality": "Άγιοι Θεόδωροι",
-              "phone": "2810821555"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 22:00 ΕΩΣ 08:30 ΠΡΩΙ",
-          "hours": {
-            "from": "22:00",
-            "to": "08:30",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2810312001",
-              "name": "ΛΑΦΝΟΥΝ ΑΧΜ. ΑΛΕΞΗΣ",
-              "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 135 McDONALDS & ΚΤΕΛ",
-              "locality": "Ηράκλειο",
-              "phone": "2810312001"
-            },
-            {
-              "pharmacyId": "2897023196",
-              "name": "Σ.Φ. ΘΕΟΔΩΡΙΔΗΣ ΙΟΡΔΑΝΗΣ & ΘΕΟΔΩΡΙΔΗ ΒΑΣΙΛΙΚΗ Ο.Ε.",
-              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 16",
-              "locality": "Λιμένας Χερσονήσου",
-              "phone": "2897023196"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 21:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2892023937",
-              "name": "ΠΑΠΑΔΑΚΗ ΑΙΚΑΤΕΡΙΝΗ",
-              "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 71",
-              "locality": "Μοίρες",
-              "phone": "2892023937"
             }
           ]
         }
