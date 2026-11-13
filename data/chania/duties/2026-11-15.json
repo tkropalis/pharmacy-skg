@@ -7,9 +7,97 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-11-09T07:08:13.125Z"
+        "uploadedAt": "2026-11-13T12:21:03.590Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821058158",
+              "name": "ΦΙΡΜΠΑΣ ΣΤΕΛΙΟΣ/FΙRΜΒΑS STELIOS",
+              "address": "ΜΟΥΣΟΥΡΩΝ 29/MOUSOURON 17",
+              "locality": "Χανιά",
+              "phone": "2821058158"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821058158",
+              "name": "ΦΙΡΜΠΑΣ ΣΤΕΛΙΟΣ/FΙRΜΒΑS STELIOS",
+              "address": "ΜΟΥΣΟΥΡΩΝ 29/MOUSOURON 17",
+              "locality": "Χανιά",
+              "phone": "2821058158"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821039644",
+              "name": "ΑΛΕΞΑΚΗ ΗΛΙΑΝΑ/ΑLΕΧΑΚΙ ILIANA",
+              "address": "ΟΔΟΣ ΧΩΡΑΦΑ-ΧΩΡΑΦΑΚΙΑ ΑΚΡΩΤΗΡΙ/CΗΟRΑFΑΚΙΑ-ΑΚRΟΤΙRΙ",
+              "locality": "Ακρωτήρι",
+              "phone": "2821039644"
+            },
+            {
+              "pharmacyId": "2821093717",
+              "name": "ΒΕΡΓΑΝΕΛΑΚΗ ΜΑΡΩ/VΕRGΑΝΕLΑΚΙ MARO",
+              "address": "ΠΛΑΤΕΙΑ 1866 37/1866 SQUARE 37",
+              "locality": "Χανιά",
+              "phone": "2821093717"
+            },
+            {
+              "pharmacyId": "2821089179",
+              "name": "ΝΙΚΗΦΟΡΑΚΗΣ ΜΙΧΑΗΛ/ΝΙΚΙFΟRΑΚΙS MICHAEL",
+              "address": "ΕΘΝ. ΒΕΝΙΖΕΛΟΥ 59,ΣΟΥΔΑ/ΕΤΗΝ. VENIZELOU 59-SOUDA",
+              "locality": "Σούδα",
+              "phone": "2821089179"
+            },
+            {
+              "pharmacyId": "2821031110",
+              "name": "Σ.Φ. ΤΖΕΙΡΑΝΗ ΕΥΑ ΤΖΕΪΡΑΝΗΣ ΣΤΕΛΙΟΣ/ΤΖΕΙRΑΝΙ EVA-TZEIRANIS STELIOS",
+              "address": "ΚΑΛΑΜΑΚΙ (ΚΟΝΤΑ ΣΤΟ ΞΕΝΟΔΟΧΕΙΟ CORINA MARRE)/KALAMAKI-GALATAS",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821031110"
+            },
+            {
+              "pharmacyId": "2821098982",
+              "name": "ΣΟΓΙΑΣ ΙΩΑΝΝΗΣ/SΟGΙΑS IOANNIS",
+              "address": "Σ. ΒΕΝΙΖΕΛΟΥ 46-ΜΟΥΡΝΙΕΣ-S. VENIZELOU 46-MOURNIES",
+              "locality": "Μουρνιές",
+              "phone": "2821098982"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",

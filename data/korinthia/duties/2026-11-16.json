@@ -7,7 +7,7 @@
       "name": "Κορινθία",
       "source": {
         "url": "https://korinthia.efhmeries.gr/",
-        "uploadedAt": "2026-11-13T09:26:04.550Z"
+        "uploadedAt": "2026-11-13T12:19:43.599Z"
       },
       "sections": [
         {
@@ -153,46 +153,6 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741028033",
-              "name": "Σ.Φ. Ε. ΜΑΥΡΑΓΑΝΗ - Σ. ΜΑΥΡΑΓΑΝΗ Ο.Ε.",
-              "address": "ΚΟΛΙΑΤΣΟΥ 35",
-              "locality": "Κόρινθος",
-              "phone": "2741028033"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2741028033",
-              "name": "Σ.Φ. Ε. ΜΑΥΡΑΓΑΝΗ - Σ. ΜΑΥΡΑΓΑΝΗ Ο.Ε.",
-              "address": "ΚΟΛΙΑΤΣΟΥ 35",
-              "locality": "Κόρινθος",
-              "phone": "2741028033"
-            }
-          ]
-        },
-        {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
           "hours": {
@@ -279,6 +239,46 @@
               "address": "ΒΕΛΟ",
               "locality": "Βέλο",
               "phone": "2742034488"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741028033",
+              "name": "Σ.Φ. Ε. ΜΑΥΡΑΓΑΝΗ - Σ. ΜΑΥΡΑΓΑΝΗ Ο.Ε.",
+              "address": "ΚΟΛΙΑΤΣΟΥ 35",
+              "locality": "Κόρινθος",
+              "phone": "2741028033"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2741028033",
+              "name": "Σ.Φ. Ε. ΜΑΥΡΑΓΑΝΗ - Σ. ΜΑΥΡΑΓΑΝΗ Ο.Ε.",
+              "address": "ΚΟΛΙΑΤΣΟΥ 35",
+              "locality": "Κόρινθος",
+              "phone": "2741028033"
             }
           ]
         }

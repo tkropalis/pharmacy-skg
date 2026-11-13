@@ -7,9 +7,97 @@
       "name": "Χανιά",
       "source": {
         "url": "https://chania.efhmeries.gr/",
-        "uploadedAt": "2026-11-08T20:37:55.667Z"
+        "uploadedAt": "2026-11-13T12:21:03.590Z"
       },
       "sections": [
+        {
+          "kind": "saturday-extra",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821090644",
+              "name": "ΑΘΟΥΣΑΚΗ ΣΟΦΙΑ/ΑΤΗΟUSΑΚΙ SOFIA",
+              "address": "ΑΚΤΗ ΚΑΝΑΡΗ 5,ΝΕΑ ΧΩΡΑ/ΑΚΤΙ KANARI 5",
+              "locality": "Χανιά",
+              "phone": "2821090644"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821090644",
+              "name": "ΑΘΟΥΣΑΚΗ ΣΟΦΙΑ/ΑΤΗΟUSΑΚΙ SOFIA",
+              "address": "ΑΚΤΗ ΚΑΝΑΡΗ 5,ΝΕΑ ΧΩΡΑ/ΑΚΤΙ KANARI 5",
+              "locality": "Χανιά",
+              "phone": "2821090644"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821070691",
+              "name": "ΚΥΠΡΑΙΟΥ ΜΑΡΙΑ/ΚΥΡRΑΙΟU MARY",
+              "address": "ΧΡΥΣΟΠΗΓΗΣ 16/CHRYSOPIGIS 16",
+              "locality": "Σούδα",
+              "phone": "2821070691"
+            },
+            {
+              "pharmacyId": "2821093480",
+              "name": "ΜΠΟΤΩΝΑΚΗ ΑΛΕΞΑΝΔΡΑ",
+              "address": "ΒΑΜΒΑΚΟΠΟΥΛΟ",
+              "locality": "ΒΑΜΒΑΚΟΠΟΥΛΟ",
+              "phone": "2821093480"
+            },
+            {
+              "pharmacyId": "2821056265",
+              "name": "Σ.Φ. ΑΡΧΟΝΤΑΚΗΣ ΙΩΑΝΝΗΣ & ΑΡΧΟΝΤΑΚΗΣ ΓΕΩΡΓΙΟΣ/ΑRCΗΟΝΤΑΚΙS I.& G. O.E.",
+              "address": "ΚΙΣΣΑΜΟΥ 184/KISAMOU 184",
+              "locality": "Χανιά",
+              "phone": "2821056265"
+            },
+            {
+              "pharmacyId": "2821033466",
+              "name": "ΦΑΝΟΥΡΓΙΑΚΗΣ ΒΑΣΙΛΗΣ & ΣΙΑ ΟΕ/FΑΝΟURGΙΑΚΙS VASILIS",
+              "address": "Π. Ε. Ο. ΧΑΝΙΩΝ-ΚΙΣΣΑΜΟΥ (ΔΙΠΛΑ ΣΕ ΒΙΒΛΙΟΠΩΛΕΙΟ ΠΟΠΗΘΕΟΔΩΡΑΚΗ)/ΚΙSΑΜΟU-DΑRΑΤSΟ",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821033466"
+            },
+            {
+              "pharmacyId": "2821063152",
+              "name": "ΨΑΡΟΥΔΑΚΗ ΑΦΡΟΔΙΤΗ/ΡSΑRΟUDΑΚΙ AFRODITIE",
+              "address": "ΑΡΩΝΙ ΑΚΡΩΤΗΡΙΟΥ (ΚΟΝΤΑ ΣΕ ΣΥΝΕΡΓΕΙΟ ΑΥΤΟΚΙΝΗΤΩΝ ΦΑΣΟΥΛΗΣ)/ΑRΟΝΙ-ΑΚRΟΤΙRΙ",
+              "locality": "Ακρωτήρι",
+              "phone": "2821063152"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
