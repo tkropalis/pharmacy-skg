@@ -7,9 +7,29 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-11-12T22:18:05.681Z"
+        "uploadedAt": "2026-11-13T09:25:06.774Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00-21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551035897",
+              "name": "ΙΩΑΝΝΙΔΟΥ ΣΤΑΥΡΟΥΛΑ",
+              "address": "Λ. Δημοκρατίας 190",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551035897"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "10:00-14:00 & 18:00-08:00",
@@ -109,26 +129,6 @@
               "address": "ΝΙΚΗΣ 19",
               "locality": "Τυχερό, Προβατώνας",
               "phone": "2554042042"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00-21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2551035897",
-              "name": "ΙΩΑΝΝΙΔΟΥ ΣΤΑΥΡΟΥΛΑ",
-              "address": "Λ. Δημοκρατίας 190",
-              "locality": "Αλεξανδρούπολη",
-              "phone": "2551035897"
             }
           ]
         }

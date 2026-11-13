@@ -317,6 +317,27 @@
       }
     },
     {
+      "id": "2351029054",
+      "name": "ΚΑΖΑΝΤΖΟΓΛΟΥ ΕΛΕΝΗ",
+      "address": "ΒΟΤΣΗ 3",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351029054",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-11-19",
+      "lastSeen": "2026-11-19",
+      "location": {
+        "lat": 40.2716486,
+        "lon": 22.5098975,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23598",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2351029128",
       "name": "ΤΟΛΙΟΣ ΞΕΝΟΦΩΝ",
       "address": "ΠΛ. ΔΗΜΑΡΧΕΙΟΥ 10",
@@ -706,7 +727,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-13",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 40.3157962,
         "lon": 22.5820356,
@@ -727,7 +748,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 40.2748993,
         "lon": 22.504697,
@@ -832,7 +853,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-11-18",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 40.267728,
         "lon": 22.5968873,
@@ -958,7 +979,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-18",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 40.0588965,
         "lon": 22.5606957,
@@ -1021,7 +1042,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-18",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 40.0030004,
         "lon": 22.5944624,
@@ -1105,7 +1126,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-11-11",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 40.104048,
         "lon": 22.5062317,
@@ -1189,7 +1210,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-18",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 40.495222,
         "lon": 22.537137,
@@ -1231,7 +1252,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-18",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 40.4793808,
         "lon": 22.482706,

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-19",
+  "groups": [
+    {
+      "id": "evia",
+      "name": "Εύβοια",
+      "source": {
+        "url": "https://evia.efhmeries.gr/",
+        "uploadedAt": "2026-11-13T09:24:59.780Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2226052911",
+              "name": "ΚΟΚΚΙΝΟΖΗΣ ΜΙΧΑΗΛ",
+              "address": "25ης ΜΑΡΤΙΟΥ 14",
+              "locality": "Ιστιαία",
+              "phone": "2226052911"
+            },
+            {
+              "pharmacyId": "2221044062",
+              "name": "ΜΗΤΑΦΗ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΛΕΩΦ ΤΣΙΜΕΝΙΔΟΥ 12",
+              "locality": "Αρτάκη",
+              "phone": "2221044062"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221064600",
+              "name": "ΝΙΦΟΡΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΑΜΑΡΥΣΙΑΣ ΑΡΤΕΜΙΔΟΣ ΚΑΙ ΑΠΟΣΤΟΛΗ",
+              "locality": "Ερέτρια",
+              "phone": "2221064600"
+            },
+            {
+              "pharmacyId": "2224023543",
+              "name": "ΠΟΛΙΤΗΣ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΣΑΧΤΟΥΡΗ 80",
+              "locality": "Κάρυστος",
+              "phone": "2224023543"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 17:30",
+          "hours": {
+            "from": "14:00",
+            "to": "17:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221085616",
+              "name": "ΤΣΑΤΣΟΥΛΗ ΤΑΝΙΑ",
+              "address": "ΑΝΤΙΓΟΝΟΥ 23 - ΠΛΑΤΕΙΑ ΑΛΩΝΑΚΙΟΥ",
+              "locality": "Χαλκίδα",
+              "phone": "2221085616"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221029509",
+              "name": "ΧΑΜΗΣ ΗΛΙΑΣ",
+              "address": "ΚΑΤΣΙΚΟΓΙΑΝΝΗ 35",
+              "locality": "Χαλκίδα",
+              "phone": "2221029509"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

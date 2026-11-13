@@ -349,7 +349,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-11",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 38.468614,
         "lon": 23.600894,
@@ -517,7 +517,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 38.5161637,
         "lon": 23.63651,
@@ -664,7 +664,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-18",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 38.3913492,
         "lon": 23.7944804,
@@ -989,6 +989,27 @@
       }
     },
     {
+      "id": "2221085616",
+      "name": "ΤΣΑΤΣΟΥΛΗ ΤΑΝΙΑ",
+      "address": "ΑΝΤΙΓΟΝΟΥ 23 - ΠΛΑΤΕΙΑ ΑΛΩΝΑΚΙΟΥ",
+      "locality": "Χαλκίδα",
+      "postcode": null,
+      "phone": "2221085616",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-11-19",
+      "lastSeen": "2026-11-19",
+      "location": {
+        "lat": 38.457471,
+        "lon": 23.601606,
+        "ref": "https://evia.efhmeries.gr/Home/Details/9420",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2221085705",
       "name": "Σ.Φ. Δ.ΧΑΝΤΖΗΣ-Ζ.ΧΑΝΤΖΗ Ο.Ε.",
       "address": "ΧΑΪΝΑ 28",
@@ -1294,7 +1315,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 38.0139058,
         "lon": 24.4207056,
@@ -1378,7 +1399,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-13",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 38.952665,
         "lon": 23.151949,

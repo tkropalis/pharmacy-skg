@@ -223,7 +223,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 39.6647611,
         "lon": 20.8521335,
@@ -1068,6 +1068,27 @@
         "lat": 39.668227,
         "lon": 20.856176,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5030",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651039988",
+      "name": "ΠΕΤΣΙΟΥ ΣΟΦΙΑ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 59Β",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651039988",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-19",
+      "lastSeen": "2026-11-19",
+      "location": {
+        "lat": 39.6688111,
+        "lon": 20.850002,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5122",
         "source": "list",
         "precision": "exact"
       }

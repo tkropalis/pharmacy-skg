@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "pella",
-  "updatedAt": "2026-11-12T12:52:31.053Z",
-  "checkedAt": "2026-11-12T22:19:50.616Z",
+  "updatedAt": "2026-11-13T09:26:53.453Z",
+  "checkedAt": "2026-11-13T09:26:53.453Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-11-18"
+    "to": "2026-11-19"
   },
   "extendedHours": [],
   "sources": [

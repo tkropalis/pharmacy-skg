@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-19",
+  "groups": [
+    {
+      "id": "evros",
+      "name": "Έβρος",
+      "source": {
+        "url": "https://evros.efhmeries.gr/",
+        "uploadedAt": "2026-11-13T09:25:06.774Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552029084",
+              "name": "ΜΠΕΔΡΕΛΗΣ ΧΡΙΣΤΟΔΟΥΛΟΣ",
+              "address": "ΑΓ. ΘΕΟΔΩΡΩΝ 150",
+              "locality": "Ορεστιάδα",
+              "phone": "2552029084"
+            },
+            {
+              "pharmacyId": "2551080077",
+              "name": "ΠΑΠΑΔΗΜΗΤΡΙΟΥ ΒΑΣΙΛΙΚΗ",
+              "address": "14ης Μαΐου 8",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551080077"
+            },
+            {
+              "pharmacyId": "2553025115",
+              "name": "Σ.Φ. ΒΑΦΕΙΑΔΗΣ Π. - ΒΑΦΕΙΑΔΟΥ Κ.",
+              "address": "25ΗΣ ΜΑΪΟΥ 131",
+              "locality": "Διδυμότειχο",
+              "phone": "2553025115"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2555022273",
+              "name": "ΜΠΟΥΡΟΥΛΙΤΗ ΑΝΑΣΤΑΣΙΑ",
+              "address": "ΔΗΜΟΚΡΙΤΟΥ 17",
+              "locality": "Φέρες",
+              "phone": "2555022273"
+            },
+            {
+              "pharmacyId": "2554042020",
+              "name": "ΠΑΠΑΜΙΧΑΗΛ ΠΑΣΧΑΛΗΣ",
+              "address": "ΝΙΚΗΣ 33",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042020"
+            },
+            {
+              "pharmacyId": "2554024303",
+              "name": "ΡΟΚΚΑ ΘΕΟΔΩΡΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 88",
+              "locality": "Σουφλί",
+              "phone": "2554024303"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

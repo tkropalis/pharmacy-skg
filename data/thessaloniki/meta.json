@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "thessaloniki",
-  "updatedAt": "2026-11-05T12:26:57.472Z",
-  "checkedAt": "2026-11-11T11:55:12.863Z",
+  "updatedAt": "2026-11-13T09:23:45.146Z",
+  "checkedAt": "2026-11-13T09:23:45.146Z",
   "duties": {
     "from": "2026-06-04",
-    "to": "2026-11-11"
+    "to": "2026-11-19"
   },
   "extendedHours": [
     {
