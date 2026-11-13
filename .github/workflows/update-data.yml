@@ -26,7 +26,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
+      # The branch tip, not the commit that triggered the run: a re-run reuses that commit, and a
+      # scheduled run can wait in the queue while other data commits land (13 Nov 2026).
       - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
       - uses: pnpm/action-setup@v5
       - uses: actions/setup-node@v5
         with:
@@ -65,7 +69,18 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/
           git commit -m "data: update $(TZ=Europe/Athens date +%Y-%m-%d)"
-          git push
+          # Another data commit may have landed while this run fetched. Replay this one on top;
+          # where both changed a file, this run's data, fetched later, wins.
+          for attempt in 1 2 3; do
+            git fetch origin "$GITHUB_REF_NAME"
+            if git rebase -X theirs "origin/$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep 10
+          done
+          echo "::error::Could not push the data commit after three tries."
+          exit 1
       - name: Report a failed area
         if: steps.update.outcome == 'failure'
         run: |
