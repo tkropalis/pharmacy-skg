@@ -7,9 +7,43 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-13T22:01:16.469Z"
+        "uploadedAt": "2026-11-14T11:34:37.776Z"
       },
       "sections": [
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 14:00",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221023274",
+              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΚΩΤΣΟΥ 3-5",
+              "locality": "Χαλκίδα",
+              "phone": "2221023274"
+            },
+            {
+              "pharmacyId": "2221077929",
+              "name": "ΚΟΥΚΗ ΜΑΡΙΑΝΘΗ",
+              "address": "ΝΕΟΦΥΤΟΥ 10",
+              "locality": "Χαλκίδα",
+              "phone": "2221077929"
+            },
+            {
+              "pharmacyId": "2221087998",
+              "name": "ΚΡΗΤΙΚΑΚΗ ΜΑΡΙΑ",
+              "address": "ΕΥΒΟΙΑΣ 49 ΠΛΗΣΙΟΝ ΤΕΧΝΙΚΟΥ ΛΥΚΕΙΟΥ",
+              "locality": "Χαλκίδα",
+              "phone": "2221087998"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -102,40 +136,6 @@
               "address": "ΣΑΧΤΟΥΡΗ 80",
               "locality": "Κάρυστος",
               "phone": "2224023543"
-            }
-          ]
-        },
-        {
-          "kind": "saturday-extra",
-          "heading": "08:00 ΕΩΣ 14:00",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221023274",
-              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
-              "address": "ΚΩΤΣΟΥ 3-5",
-              "locality": "Χαλκίδα",
-              "phone": "2221023274"
-            },
-            {
-              "pharmacyId": "2221077929",
-              "name": "ΚΟΥΚΗ ΜΑΡΙΑΝΘΗ",
-              "address": "ΝΕΟΦΥΤΟΥ 10",
-              "locality": "Χαλκίδα",
-              "phone": "2221077929"
-            },
-            {
-              "pharmacyId": "2221087998",
-              "name": "ΚΡΗΤΙΚΑΚΗ ΜΑΡΙΑ",
-              "address": "ΕΥΒΟΙΑΣ 49 ΠΛΗΣΙΟΝ ΤΕΧΝΙΚΟΥ ΛΥΚΕΙΟΥ",
-              "locality": "Χαλκίδα",
-              "phone": "2221087998"
             }
           ]
         },

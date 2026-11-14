@@ -7,7 +7,7 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-11-13T22:02:42.542Z"
+        "uploadedAt": "2026-11-14T11:36:07.459Z"
       },
       "sections": [
         {
@@ -122,6 +122,26 @@
           ]
         },
         {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 20:30",
+          "hours": {
+            "from": "08:00",
+            "to": "20:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721084040",
+              "name": "ΚΑΡΑΜΠΕΛΑΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΛΕΪΚΑ",
+              "locality": "Καλαμάτα",
+              "phone": "2721084040"
+            }
+          ]
+        },
+        {
           "kind": "on-duty",
           "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
@@ -152,26 +172,6 @@
               "address": "ΟΘΩΝΟΣ & ΑΜΑΛΙΑΣ",
               "locality": "Φιλιατρά",
               "phone": "2761033560"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 20:30",
-          "hours": {
-            "from": "08:00",
-            "to": "20:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721084040",
-              "name": "ΚΑΡΑΜΠΕΛΑΣ ΝΙΚΟΛΑΟΣ",
-              "address": "ΛΕΪΚΑ",
-              "locality": "Καλαμάτα",
-              "phone": "2721084040"
             }
           ]
         }

@@ -76,7 +76,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 39.6684978,
         "lon": 20.8506054,
@@ -1383,6 +1383,27 @@
         "lat": 39.6593741,
         "lon": 20.8448018,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/4989",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651067031",
+      "name": "ΜΗΤΡΙΚΑΣ ΔΗΜΗΤΡΙΟΣ",
+      "address": "ΣΤΑΥΡΟΥ ΝΙΑΡΧΟΥ 9",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651067031",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "location": {
+        "lat": 39.6447132,
+        "lon": 20.8484914,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5124",
         "source": "list",
         "precision": "exact"
       }

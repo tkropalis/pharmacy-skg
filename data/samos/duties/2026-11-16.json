@@ -7,9 +7,49 @@
       "name": "Σάμος",
       "source": {
         "url": "https://samos.efhmeries.gr/",
-        "uploadedAt": "2026-11-13T12:20:45.289Z"
+        "uploadedAt": "2026-11-14T11:36:44.671Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273027487",
+              "name": "ΣΠΥΡΟΥ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "Κ. ΣΤΑΜΑΤΗ 28",
+              "locality": "Βαθύ",
+              "phone": "2273027487"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
+          "hours": {
+            "from": "17:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273027487",
+              "name": "ΣΠΥΡΟΥ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "Κ. ΣΤΑΜΑΤΗ 28",
+              "locality": "Βαθύ",
+              "phone": "2273027487"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "ΕΦΗΜΕΡΕΥΕΙ*",
@@ -64,46 +104,6 @@
               "address": "Ι. ΖΑΙΜΗ",
               "locality": "Καρλόβασι",
               "phone": "2273030700"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2273027487",
-              "name": "ΣΠΥΡΟΥ ΠΑΝΑΓΙΩΤΗΣ",
-              "address": "Κ. ΣΤΑΜΑΤΗ 28",
-              "locality": "Βαθύ",
-              "phone": "2273027487"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
-          "hours": {
-            "from": "17:30",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2273027487",
-              "name": "ΣΠΥΡΟΥ ΠΑΝΑΓΙΩΤΗΣ",
-              "address": "Κ. ΣΤΑΜΑΤΗ 28",
-              "locality": "Βαθύ",
-              "phone": "2273027487"
             }
           ]
         }

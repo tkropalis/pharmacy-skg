@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-20",
+  "groups": [
+    {
+      "id": "chania",
+      "name": "Χανιά",
+      "source": {
+        "url": "https://chania.efhmeries.gr/",
+        "uploadedAt": "2026-11-14T11:37:03.205Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821093013",
+              "name": "ΜΑΡΙΝΑΚΗ ΜΑΡΙΑ/ΜΑRΙΝΑΚΙ MARY",
+              "address": "ΚΡΙΑΡΙ 1 ΠΛ.ΚΟΤΖΑΜΠΑΣΗ/ΚRΙΑRΙ 1 & KARAISKAKI",
+              "locality": "Χανιά",
+              "phone": "2821093013"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821093013",
+              "name": "ΜΑΡΙΝΑΚΗ ΜΑΡΙΑ/ΜΑRΙΝΑΚΙ MARY",
+              "address": "ΚΡΙΑΡΙ 1 ΠΛ.ΚΟΤΖΑΜΠΑΣΗ/ΚRΙΑRΙ 1 & KARAISKAKI",
+              "locality": "Χανιά",
+              "phone": "2821093013"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821097711",
+              "name": "ΑΔΙΚΗΜΕΝΑΚΗ ΜΑΡΙΛΕΝΑ & ΣΙΑ/ΑDΙΚΙΜΕΝΑΚΙ MARILENA & SIA",
+              "address": "ΚΥΔΩΝΙΑΣ 50/KIDONIAS 50",
+              "locality": "Χανιά",
+              "phone": "2821097711"
+            },
+            {
+              "pharmacyId": "2821020750",
+              "name": "ΚΑΜΑΡΙΑΝΑΚΗΣ ΧΡΗΣΤΟΣ/ΚΑΜΑRΙΑΝΑΚΙS CHRISTOS",
+              "address": "ΕΛΕΥΘΕΡΙΟΥ ΒΕΝΙΖΕΛΟΥ 37,ΕΝΑΝΤΙ ΙΝΚΑ,ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΑΚΡΩΤΗΡΙΟΥ/ΕL. VENIZELOU 37",
+              "locality": "Ακρωτήρι",
+              "phone": "2821020750"
+            },
+            {
+              "pharmacyId": "2821002080",
+              "name": "ΜΑΣΤΟΡΑΚΗ ΕΛΕΝΗ/ΜΑSΤΟRΑΚΙ HELEN",
+              "address": "ΑΝ. ΓΟΓΟΝΗ 169/AN. GOGONI 169",
+              "locality": "Μουρνιές",
+              "phone": "2821002080"
+            },
+            {
+              "pharmacyId": "2821031110",
+              "name": "Σ.Φ. ΤΖΕΙΡΑΝΗ ΕΥΑ ΤΖΕΪΡΑΝΗΣ ΣΤΕΛΙΟΣ/ΤΖΕΙRΑΝΙ EVA-TZEIRANIS STELIOS",
+              "address": "ΚΑΛΑΜΑΚΙ (ΚΟΝΤΑ ΣΤΟ ΞΕΝΟΔΟΧΕΙΟ CORINA MARRE)/KALAMAKI-GALATAS",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821031110"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "6948462411",
+              "name": "ΔΑΜΟΡΑΚΗΣ ΕΥΤΥΧΗΣ/DΑΜΟRΑΚΙS EYTIXIS",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "6948462411"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
+          "hours": {
+            "from": "08:30",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2822022182",
+              "name": "ΜΑΖΟΚΟΠΑΚΗΣ ΙΩΑΝΝΗΣ/ΜΑΖΟΚΟΡΑΚΙS IOANNIS",
+              "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 143 ΚΑΣΤΕΛΙ/ΙRΟΟΝ POLITEXNIOU 143 KASTELI",
+              "locality": "Δήμος Κισσάμου",
+              "phone": "2822022182"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

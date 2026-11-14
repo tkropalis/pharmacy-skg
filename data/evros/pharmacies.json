@@ -191,6 +191,27 @@
       }
     },
     {
+      "id": "2551026204",
+      "name": "ΦΡΑΓΚΟΥΛΗ ΑΝΑΣΤΑΣΙΑ",
+      "address": "14ης Μαΐου 16",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551026204",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "location": {
+        "lat": 40.8461656,
+        "lon": 25.87572,
+        "ref": "https://evros.efhmeries.gr/Home/Details/3999",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551026214",
       "name": "ΓΑΛΑΖΙΟΥ ΑΣΠΑΣΙΑ",
       "address": "Κουτάβου 5 (περιοχή Αγ. Βασιλείου)",
@@ -1042,7 +1063,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-16",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 41.5025546,
         "lon": 26.5322197,
@@ -1294,7 +1315,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-18",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 41.3502885,
         "lon": 26.4962599,
@@ -1462,7 +1483,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-15",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 41.1904766,
         "lon": 26.3025729,
@@ -1504,7 +1525,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-19",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 41.0262152,
         "lon": 26.2954437,
@@ -1609,7 +1630,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 40.8896855,
         "lon": 26.1651715,

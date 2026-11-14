@@ -163,29 +163,9 @@
       "name": "Λάρισα",
       "source": {
         "url": "https://larisa.efhmeries.gr/",
-        "uploadedAt": "2026-11-13T22:00:10.067Z"
+        "uploadedAt": "2026-11-14T11:33:29.036Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "23:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2410626916",
-              "name": "ΜΠΑΚΑΛΗ ΜΑΡΙΛΕΝΑ",
-              "address": "ΜΑΝΔΗΛΑΡΑ 14 (Νομαρχία, πίσω από το Γερμανό)",
-              "locality": "Λάρισα",
-              "phone": "2410626916"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 08:00 ΕΩΣ 23:00",
@@ -245,6 +225,26 @@
               "address": "ΓΕΩΡΓΙΑΔΟΥ 30 (πλησίον Γενικού Νοσοκομείου)",
               "locality": "Λάρισα",
               "phone": "2410251231"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 23:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "23:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2410626916",
+              "name": "ΜΠΑΚΑΛΗ ΜΑΡΙΛΕΝΑ",
+              "address": "ΜΑΝΔΗΛΑΡΑ 14 (Νομαρχία, πίσω από το Γερμανό)",
+              "locality": "Λάρισα",
+              "phone": "2410626916"
             }
           ]
         }

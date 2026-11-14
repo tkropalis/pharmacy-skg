@@ -412,7 +412,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 38.5135666,
         "lon": 23.6373025,
@@ -790,7 +790,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-31",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 38.462774,
         "lon": 23.596758,
@@ -1231,7 +1231,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 38.4634152,
         "lon": 23.5916951,
@@ -1336,7 +1336,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-15",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 38.0141849,
         "lon": 24.4183416,
@@ -1362,6 +1362,27 @@
         "lat": 38.0151615,
         "lon": 24.4189621,
         "ref": "https://evia.efhmeries.gr/Home/Details/7421",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2226052255",
+      "name": "ΚΛΗΡΟΝΟΜΙΚΟ ΦΑΡΜΑΚΕΙΟ ΒΟΓΙΑΤΖΟΓΛΟΥ Ο.Ε.",
+      "address": "8ης ΜΑΪΟΥ 1",
+      "locality": "Ιστιαία",
+      "postcode": null,
+      "phone": "2226052255",
+      "groupId": "evia",
+      "sources": [
+        "iteq-evia"
+      ],
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "location": {
+        "lat": 38.953651,
+        "lon": 23.150381,
+        "ref": "https://evia.efhmeries.gr/Home/Details/8612",
         "source": "list",
         "precision": "exact"
       }
@@ -1609,7 +1630,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 38.3921653,
         "lon": 23.7950923,

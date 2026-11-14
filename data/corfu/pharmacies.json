@@ -57,7 +57,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-03",
       "location": {
         "lat": 39.622091,
         "lon": 19.911732,
@@ -325,7 +325,7 @@
     },
     {
       "id": "2661030100",
-      "name": "ΚΟΥΡΗ ΜΑΡΙΝΑ - ΤΡΙΒΥΖΑΣ ΝΙΚΟΛΑΟΣ",
+      "name": "ΤΡΙΒΥΖΑΣ ΝΙΚΟΛΑΟΣ",
       "address": "ΕΥΓ. ΒΟΥΛΓΑΡΕΩΣ 73",
       "locality": "Κέρκυρα",
       "postcode": null,
@@ -335,8 +335,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.623091,
         "lon": 19.921094,
@@ -497,7 +497,7 @@
     },
     {
       "id": "2661035177",
-      "name": "ΑΡΜΕΝΙΑΚΟΥ ΕΙΡΗΝΗ - ΝΑΝΟΥ ΜΑΡΙΑ-ΑΝΝΑ",
+      "name": "ΝΑΝΟΥ ΜΑΡΙΑ-ΑΝΝΑ",
       "address": "ΙΩΑΝΝΟΥ ΘΕΟΤΟΚΗ 72 (ΜΕΤΑ ΤΟ ΙΟΝΙΟ ΠΑΝ/ΜΙΟ)",
       "locality": "Κέρκυρα",
       "postcode": null,
@@ -507,8 +507,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.623773,
         "lon": 19.914685,
@@ -1125,8 +1125,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.60196,
         "lon": 19.86603,
@@ -1297,7 +1297,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.485759,
         "lon": 19.925582,
@@ -1616,7 +1616,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-12",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.423719,
         "lon": 20.072083,
@@ -1679,7 +1679,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-11",
       "location": {
         "lat": 39.424107,
         "lon": 20.062832,
@@ -1786,7 +1786,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 39.453991,
         "lon": 19.999237,
@@ -1977,7 +1977,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-13",
       "location": {
         "lat": 39.744237,
         "lon": 19.649756,
@@ -2064,8 +2064,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-14",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.793759,
         "lon": 19.819378,
@@ -2128,7 +2128,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-10",
-      "lastSeen": "2026-11-10",
+      "lastSeen": "2026-11-14",
       "location": {
         "lat": 39.722163,
         "lon": 19.7418,

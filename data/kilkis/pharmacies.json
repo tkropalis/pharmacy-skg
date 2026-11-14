@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2341022271",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΑΠΟΣΤΟΛΟΣ",
+      "address": "Γ. ΚΑΠΕΤΑ 23",
+      "locality": "Κιλκίς",
+      "postcode": null,
+      "phone": "2341022271",
+      "groupId": "kilkis",
+      "sources": [
+        "fsk"
+      ],
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "location": {
+        "lat": 40.995144,
+        "lon": 22.878715,
+        "source": "overture",
+        "precision": "exact",
+        "ref": "dae300bb-ecb3-4c8d-8865-5b0ff34a369c"
+      }
+    },
+    {
       "id": "2341022333",
       "name": "ΚΑΛΠΟΥΡΤΖΗ ΕΙΡΗΝΗ & ΣΙΑ Ο.Ε.",
       "address": "21 ΙΟΥΝΙΟΥ 30",
@@ -76,7 +97,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 40.993825,
         "lon": 22.875206,
@@ -475,7 +496,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-16",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 40.994942,
         "lon": 22.571178,
@@ -706,7 +727,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-17",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 40.946525,
         "lon": 22.452094,
@@ -727,7 +748,7 @@
         "fsk"
       ],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-16",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 40.98555,
         "lon": 22.542284,
