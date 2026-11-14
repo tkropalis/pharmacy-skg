@@ -7,49 +7,9 @@
       "name": "Σάμος",
       "source": {
         "url": "https://samos.efhmeries.gr/",
-        "uploadedAt": "2026-11-14T11:36:44.671Z"
+        "uploadedAt": "2026-11-14T20:49:43.947Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2273023686",
-              "name": "ΚΩΝΣΤΑΝΤΑΚΗΣ ΓΕΩΡΓΙΟΣ",
-              "address": "Θ. ΣΟΦΟΥΛΗ 107",
-              "locality": "Βαθύ",
-              "phone": "2273023686"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
-          "hours": {
-            "from": "17:30",
-            "to": "22:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2273023686",
-              "name": "ΚΩΝΣΤΑΝΤΑΚΗΣ ΓΕΩΡΓΙΟΣ",
-              "address": "Θ. ΣΟΦΟΥΛΗ 107",
-              "locality": "Βαθύ",
-              "phone": "2273023686"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "ΕΦΗΜΕΡΕΥΕΙ*",
@@ -104,6 +64,46 @@
               "address": "Ι. ΖΑΙΜΗ",
               "locality": "Καρλόβασι",
               "phone": "2273030700"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273023686",
+              "name": "ΚΩΝΣΤΑΝΤΑΚΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "Θ. ΣΟΦΟΥΛΗ 107",
+              "locality": "Βαθύ",
+              "phone": "2273023686"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 2 ΜΕΣΗΜΕΡΙ & 5:30 ΑΠΟΓΕΥΜΑ - 10 ΒΡΑΔΥ",
+          "hours": {
+            "from": "17:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2273023686",
+              "name": "ΚΩΝΣΤΑΝΤΑΚΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "Θ. ΣΟΦΟΥΛΗ 107",
+              "locality": "Βαθύ",
+              "phone": "2273023686"
             }
           ]
         }

@@ -7,7 +7,7 @@
       "name": "Ηράκλειο",
       "source": {
         "url": "https://herakleion.efhmeries.gr/",
-        "uploadedAt": "2026-11-14T11:35:04.529Z"
+        "uploadedAt": "2026-11-14T20:48:03.725Z"
       },
       "sections": [
         {
@@ -73,22 +73,29 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "ΑΠΟ 09:00 ΕΩΣ 19:00",
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 22:00 ΕΩΣ 08:30 ΠΡΩΙ",
           "hours": {
-            "from": "09:00",
-            "to": "19:00",
-            "toNextDay": false
+            "from": "22:00",
+            "to": "08:30",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2897061301",
-              "name": "ΑΛΕΞΗΣ Ι. ΑΠΟΣΤΟΛΗΣ",
-              "address": "ΜΟΧΟΣ",
+              "pharmacyId": "2810210976",
+              "name": "ΤΣΑΠΑΡΙΔΟΥ ΜΑΡΙΑ Ε.Ε.",
+              "address": "ΠΑΠΑΝΑΣΤΑΣΙΟΥ 131, ENANTI ΣΑΒΟΪΔΑΚΗ",
+              "locality": "Ηράκλειο",
+              "phone": "2810210976"
+            },
+            {
+              "pharmacyId": "2897032222",
+              "name": "ΧΟΝΔΡΟΣ ΣΤ. ΧΡΗΣΤΟΣ",
+              "address": "ΑΓ. ΙΩΑΝΝΟΥ 103 ΣΤΑΛΙΔΑ",
               "locality": "Σταλίδα, Μόχος, Γωνιές, Ποταμιές",
-              "phone": "2897061301"
+              "phone": "2897032222"
             }
           ]
         },
@@ -109,6 +116,66 @@
               "address": "ΛΕΩΦ. ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 71",
               "locality": "Αμμουδάρα",
               "phone": "2810262600"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "8:00 ΕΩΣ 8:00 (23:00-08:00 ΚΑΤΟΠΙΝ ΤΗΛΕΦΩΝΗΜΑΤΟΣ)",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2891022391",
+              "name": "ΛΟΥΛΑΚΗ-ΓΙΑΝΝΟΠΟΥΛΟΥ ΑΔΑΜΑΝΤΙΑ",
+              "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 1",
+              "locality": "Αρκαλοχώρι",
+              "phone": "2891022391"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 21:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2892501569",
+              "name": "ΤΣΟΥΒΑΛΑΣ ΕΥΑΓΓΕΛΟΣ",
+              "address": "ΠΕΤΡΟΚΕΦΑΛΙ",
+              "locality": "ΠΕΤΡΟΚΕΦΑΛΙ",
+              "phone": "2892501569"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 09:00 ΕΩΣ 19:00",
+          "hours": {
+            "from": "09:00",
+            "to": "19:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2897061301",
+              "name": "ΑΛΕΞΗΣ Ι. ΑΠΟΣΤΟΛΗΣ",
+              "address": "ΜΟΧΟΣ",
+              "locality": "Σταλίδα, Μόχος, Γωνιές, Ποταμιές",
+              "phone": "2897061301"
             }
           ]
         },
@@ -164,73 +231,6 @@
               "address": "ΤΥΜΠΑΚΙ",
               "locality": "Τυμπάκι",
               "phone": "2892051215"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "8:00 ΕΩΣ 8:00 (23:00-08:00 ΚΑΤΟΠΙΝ ΤΗΛΕΦΩΝΗΜΑΤΟΣ)",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2891022391",
-              "name": "ΛΟΥΛΑΚΗ-ΓΙΑΝΝΟΠΟΥΛΟΥ ΑΔΑΜΑΝΤΙΑ",
-              "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 1",
-              "locality": "Αρκαλοχώρι",
-              "phone": "2891022391"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 22:00 ΕΩΣ 08:30 ΠΡΩΙ",
-          "hours": {
-            "from": "22:00",
-            "to": "08:30",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2810210976",
-              "name": "ΤΣΑΠΑΡΙΔΟΥ ΜΑΡΙΑ Ε.Ε.",
-              "address": "ΠΑΠΑΝΑΣΤΑΣΙΟΥ 131, ENANTI ΣΑΒΟΪΔΑΚΗ",
-              "locality": "Ηράκλειο",
-              "phone": "2810210976"
-            },
-            {
-              "pharmacyId": "2897032222",
-              "name": "ΧΟΝΔΡΟΣ ΣΤ. ΧΡΗΣΤΟΣ",
-              "address": "ΑΓ. ΙΩΑΝΝΟΥ 103 ΣΤΑΛΙΔΑ",
-              "locality": "Σταλίδα, Μόχος, Γωνιές, Ποταμιές",
-              "phone": "2897032222"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 21:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2892501569",
-              "name": "ΤΣΟΥΒΑΛΑΣ ΕΥΑΓΓΕΛΟΣ",
-              "address": "ΠΕΤΡΟΚΕΦΑΛΙ",
-              "locality": "ΠΕΤΡΟΚΕΦΑΛΙ",
-              "phone": "2892501569"
             }
           ]
         }
