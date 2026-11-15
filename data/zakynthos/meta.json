@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "zakynthos",
-  "updatedAt": "2026-11-14T11:34:57.570Z",
-  "checkedAt": "2026-11-14T20:47:56.589Z",
+  "updatedAt": "2026-11-15T12:00:49.575Z",
+  "checkedAt": "2026-11-15T12:00:49.575Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-11-20"
+    "to": "2026-11-21"
   },
   "extendedHours": [],
   "sources": [

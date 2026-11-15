@@ -517,7 +517,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-21",
       "location": {
         "lat": 39.667476,
         "lon": 20.8517295,
@@ -559,7 +559,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-21",
       "location": {
         "lat": 39.664887,
         "lon": 20.8463432,
@@ -706,7 +706,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-10-15",
+      "lastSeen": "2026-11-21",
       "location": {
         "lat": 39.6650288,
         "lon": 20.8537466,
@@ -895,7 +895,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-21",
       "location": {
         "lat": 39.6702123,
         "lon": 20.8525678,
@@ -1425,6 +1425,27 @@
         "lat": 39.6605902,
         "lon": 20.846732,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/4996",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651067833",
+      "name": "ΤΑΓΚΑ ΑΝΔΡΟΜΑΧΗ",
+      "address": "ΙΩΑΝΝΙΝΩΝ 25, ΑΝΑΤΟΛΗ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651067833",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "location": {
+        "lat": 39.6397351,
+        "lon": 20.8637904,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5127",
         "source": "list",
         "precision": "exact"
       }

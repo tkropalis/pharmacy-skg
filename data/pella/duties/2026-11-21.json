@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-21",
+  "groups": [
+    {
+      "id": "pella",
+      "name": "Πέλλα",
+      "source": {
+        "url": "https://pella.efhmeries.gr/",
+        "uploadedAt": "2026-11-15T12:02:19.253Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382024555",
+              "name": "ΒΑΡΕΛΑΣ ΜΙΧΑΗΛ",
+              "address": "Π. ΜΕΛΑ 5",
+              "locality": "Γιαννιτσά",
+              "phone": "2382024555"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382026979",
+              "name": "ΜΑΝΘΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΚΟΛΟΚΟΤΡΩΝΗ 11 ΛΑΪΚΗ ΑΓΟΡΑ",
+              "locality": "Γιαννιτσά",
+              "phone": "2382026979"
+            },
+            {
+              "pharmacyId": "2381089333",
+              "name": "ΜΠΟΥΝΤΩΝΑΣ ΕΜΜΑΝΟΥΗΛ",
+              "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 30",
+              "locality": "Σκύδρα",
+              "phone": "2381089333"
+            },
+            {
+              "pharmacyId": "2384022908",
+              "name": "Σ.Φ. ΚΟΤΙΔΟΥ ΕΥΑ - ΠΛΑΤΗΣ ΒΑΣΙΛΕΙΟΣ",
+              "address": "ΜΙΑΟΥΛΗ 21",
+              "locality": "Αριδαία",
+              "phone": "2384022908"
+            },
+            {
+              "pharmacyId": "2381024191",
+              "name": "ΤΡΥΨΙΑΝΗ ΕΙΡΗΝΗ",
+              "address": "ΑΛΜΩΠΙΑΣ 1",
+              "locality": "Έδεσσα",
+              "phone": "2381024191"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382062120",
+              "name": "ΝΑΥΡΟΖΙΔΗΣ ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "ΒΑΣ. ΠΑΥΛΟΥ 32",
+              "locality": "Κρύα Βρύση",
+              "phone": "2382062120"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
