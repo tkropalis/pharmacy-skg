@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-11-15T12:01:09.842Z"
+        "uploadedAt": "2026-11-15T21:06:16.252Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651067031",
-              "name": "ΜΗΤΡΙΚΑΣ ΔΗΜΗΤΡΙΟΣ",
-              "address": "ΣΤΑΥΡΟΥ ΝΙΑΡΧΟΥ 9",
-              "locality": "Ιωάννινα",
-              "phone": "2651067031"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "28ΗΣ ΟΚΤΩΒΡΊΟΥ 34",
               "locality": "Ιωάννινα",
               "phone": "2651020320"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651067031",
+              "name": "ΜΗΤΡΙΚΑΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΣΤΑΥΡΟΥ ΝΙΑΡΧΟΥ 9",
+              "locality": "Ιωάννινα",
+              "phone": "2651067031"
             }
           ]
         }
