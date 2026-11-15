@@ -1,5 +1,5 @@
 /**
- * Rules for asking for the device position by itself when the home screen opens, and for
+ * Rules for using the device position when the home screen opens without asking for it, and for
  * following it while the page is visible. The last position is kept on the device, rounded
  * (memory.ts), so a later visit can start from it; it never leaves the device.
  */
@@ -18,7 +18,7 @@ export async function geolocationPermission(): Promise<PermissionResult> {
 }
 
 export type AutoLocate =
-  /** Ask for the position now (the browser shows its own prompt on the first visit). */
+  /** Read the position now: the browser has the permission granted, so it shows no prompt. */
   | 'locate'
   /**
    * Start from the remembered position and do not ask: the browser would prompt again (Safari
@@ -28,7 +28,11 @@ export type AutoLocate =
   | 'remembered'
   /** The browser has the permission blocked: do not ask, say how to allow it. */
   | 'denied'
-  /** Do not ask: the person chose an area, or turned the request off. */
+  /**
+   * Do not ask: the person chose an area or turned the request off, or the browser would show
+   * its prompt. A prompt on arrival, before the person has seen what it is for, is refused by
+   * cautious people; the list's first row asks "Πού βρίσκεστε;" and a tap there asks.
+   */
   | 'skip';
 
 export interface AutoLocateInput {
@@ -42,18 +46,18 @@ export interface AutoLocateInput {
 }
 
 /**
- * Whether to ask for the position when the data is ready. Skipped when the person chose an
+ * Whether to read the position when the data is ready. Skipped when the person chose an
  * area or dismissed the position; when the Permissions API says `denied` it is not asked
- * either, and the nearby card explains how to allow it. When the browser has the permission
- * granted, asking shows no prompt, so the position is refreshed by itself. Otherwise a
- * remembered position is used instead of asking (the prompt would come back on every visit),
- * and only a first visit asks.
+ * either, and the nearby card points to the area picker. When the browser has the permission
+ * granted, asking shows no prompt, so the position is refreshed by itself. Otherwise the app
+ * never asks by itself: a remembered position is used where there is one, and the nearby card
+ * asks where there is none.
  */
 export function autoLocateDecision(input: AutoLocateInput): AutoLocate {
   if (input.areaChosen || input.dismissed) return 'skip';
   if (input.permission === 'denied') return 'denied';
   if (input.permission === 'granted') return 'locate';
-  return input.remembered ? 'remembered' : 'locate';
+  return input.remembered ? 'remembered' : 'skip';
 }
 
 /** A move smaller than this does not re-sort the list while following the position. */

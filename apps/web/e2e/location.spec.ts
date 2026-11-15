@@ -126,17 +126,26 @@ test.describe('with the location allowed (a returning visitor)', () => {
 test.describe('when the location is not given', () => {
   test.use({ permissions: [] });
 
-  test('the nearby card with the area picker leads the list, with a hint to allow it', async ({
+  test('the nearby card asks where the person is; a refusal points to the area picker', async ({
     page,
   }) => {
+    await spyOnGeolocation(page);
     await page.goto('/');
     await waitForRows(page);
     const card = page.locator('.nearby');
     await expect(card).toBeVisible();
-    await expect(card.getByRole('heading', { name: text.nearby.title })).toBeVisible();
-    await expect(card.getByRole('button', { name: text.origin.useLocation })).toBeVisible();
-    await expect(card.getByRole('status')).toContainText(text.origin.deniedShort);
-    await expect(card.getByRole('status')).toContainText(/Ρυθμίσεις|ρυθμίσεις/);
+    await expect(card.getByRole('heading', { name: text.origin.heading })).toBeVisible();
+    // A first visit does not ask by itself: the browser's prompt waits for a tap.
+    expect((await calls(page)).current).toBe(0);
+    await expect(card.getByRole('status')).toHaveCount(0);
+    const locate = card.getByRole('button', { name: text.origin.useLocation });
+    const area = card.getByRole('button', { name: text.origin.areaLabel, exact: true });
+    await expect(locate).toHaveClass(/\bprimary\b/);
+    await locate.click();
+    await expect(card.getByRole('status')).toContainText(text.origin.denied);
+    // Refused: the area picker is now the main button.
+    await expect(area).toHaveClass(/\bprimary\b/);
+    await expect(locate).not.toHaveClass(/\bprimary\b/);
     // The card comes before the first row.
     const cardBox = await card.boundingBox();
     const rowBox = await page.locator('ol.rows > li.row').first().boundingBox();
@@ -190,7 +199,7 @@ test.describe('when the browser has the permission blocked', () => {
     expect((await calls(page)).current).toBe(0);
     const card = page.locator('.nearby');
     await expect(card).toBeVisible();
-    await expect(card.getByRole('status')).toContainText(text.origin.deniedShort);
+    await expect(card.getByRole('status')).toContainText(text.origin.denied);
   });
 });
 

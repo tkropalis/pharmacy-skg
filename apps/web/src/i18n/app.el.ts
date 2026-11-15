@@ -46,19 +46,16 @@ export const appEl = {
     dutyOnly: 'Εδώ φαίνονται μόνο τα φαρμακεία που εφημερεύουν.',
   },
 
-  nearby: {
-    title: 'Κοντά σας',
-  },
-
   origin: {
     heading: 'Πού βρίσκεστε;',
     summary: 'Επιλογές',
     useLocation: 'Η τοποθεσία μου',
     locating: 'Εντοπισμός…',
     deniedShort: 'Η τοποθεσία δεν επιτρέπεται.',
+    /** In the list, where the area picker is beside it. */
+    denied: 'Η τοποθεσία δεν επιτρέπεται. Διαλέξτε περιοχή.',
     unavailable: 'Δεν βρέθηκε η τοποθεσία σας. Διαλέξτε περιοχή.',
     deniedHelpIos: 'Ρυθμίσεις › Εφαρμογές › Safari › Τοποθεσία.',
-    deniedHelpOther: 'Αλλάξτε το στις ρυθμίσεις.',
     uncovered: 'Η περιοχή σας δεν καλύπτεται ακόμα.',
     myLocation: 'Κοντά μου',
     here: 'Η τοποθεσία σας',
