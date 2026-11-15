@@ -129,7 +129,8 @@ test.describe('when the location is not given', () => {
   test('the nearby card asks where the person is; a refusal points to the area picker', async ({
     page,
   }) => {
-    await spyOnGeolocation(page);
+    // A first visit: the browser would ask (without this, the test browser reports "denied").
+    await spyOnGeolocation(page, { permission: 'prompt' });
     await page.goto('/');
     await waitForRows(page);
     const card = page.locator('.nearby');
