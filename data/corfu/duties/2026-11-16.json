@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-16",
+  "groups": [
+    {
+      "id": "corfu",
+      "name": "Κέρκυρα",
+      "source": {
+        "url": "https://farmakeu.static.otenet.gr/phduties.php",
+        "uploadedAt": "2026-11-16T12:50:46.270Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΗΜΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 8:00 ΕΩΣ ΤΙΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2661031992",
+              "name": "ΕΡΤΣΟΣ ΣΠΥΡΙΔΩΝΑΣ-ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΜΙΛΤΙΑΔΟΥ ΜΑΡΓΑΡΙΤΗ 8",
+              "locality": "Κέρκυρα",
+              "phone": "2661031992"
+            },
+            {
+              "pharmacyId": "2661039264",
+              "name": "ΠΚ (ΝΙΩΤΗΣ ΠΑΡΑΣΚΕΥΑΣ)",
+              "address": "ΚΑΝΑΛΙΑ",
+              "locality": "Κανάλια",
+              "phone": "2661039264"
+            },
+            {
+              "pharmacyId": "2663063144",
+              "name": "ΚΟΥΣΤΑΣ ΜΑΡΙΟΣ",
+              "address": "ΡΟΔΑ",
+              "locality": "Ρόδα",
+              "phone": "2663063144"
+            },
+            {
+              "pharmacyId": "2662023160",
+              "name": "ΓΑΣΤΕΡΑΤΟΥ ΔΗΜΗΤΡΑ",
+              "address": "ΠΕΡΙΦΕΡΕΙΑΚΗ ΟΔΟΣ ΠΕΡΙΒΟΛΙΟΥ",
+              "locality": "Περιβόλι",
+              "phone": "2662023160"
+            },
+            {
+              "pharmacyId": "2662022540",
+              "name": "ΚΟΥΡΗΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΑΓΙΟΙ ΘΕΟΔΩΡΟΙ",
+              "locality": "Άγιοι Θεόδωροι",
+              "phone": "2662022540"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

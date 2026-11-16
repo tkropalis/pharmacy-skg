@@ -422,7 +422,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-15",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 39.591337,
         "lon": 19.859619,
@@ -691,7 +691,7 @@
     },
     {
       "id": "2661039264",
-      "name": "ΝΙΩΤΗΣ ΠΑΡΑΣΚΕΥΑΣ",
+      "name": "ΠΚ (ΝΙΩΤΗΣ ΠΑΡΑΣΚΕΥΑΣ)",
       "address": "ΚΑΝΑΛΙΑ",
       "locality": "Κανάλια",
       "postcode": null,
@@ -700,8 +700,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-16",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 39.608965,
         "lon": 19.893417,
@@ -1616,7 +1616,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-12",
-      "lastSeen": "2026-11-15",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 39.423719,
         "lon": 20.072083,
@@ -1658,7 +1658,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-15",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 39.415563,
         "lon": 20.019657,
@@ -2020,8 +2020,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-16",
+      "lastSeen": "2026-11-16",
       "location": {
         "lat": 39.78627,
         "lon": 19.76696,

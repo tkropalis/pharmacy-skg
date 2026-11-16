@@ -328,7 +328,7 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 39.554162,
         "lon": 21.766385,
@@ -538,7 +538,7 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 39.554706,
         "lon": 21.772772,
@@ -559,7 +559,7 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 39.555276,
         "lon": 21.769953,
@@ -580,7 +580,7 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-22",
       "location": {
         "lat": 39.556133,
         "lon": 21.76984,
@@ -601,7 +601,7 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-22",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 39.552177,
         "lon": 21.766236,
@@ -706,7 +706,7 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-10-14",
+      "lastSeen": "2026-11-22",
       "location": {
         "lat": 39.555177,
         "lon": 21.766575,
@@ -790,7 +790,7 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 39.556133,
         "lon": 21.76984,
@@ -916,7 +916,7 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 39.55179,
         "lon": 21.766316,
@@ -1052,6 +1052,27 @@
       }
     },
     {
+      "id": "2431063833",
+      "name": "ΧΑΪΔΟΣ ΙΩΑΝΝΗΣ",
+      "address": "ΑΣΚΛΗΠΙΟΥ 36",
+      "locality": "Τρίκαλα",
+      "postcode": null,
+      "phone": "2431063833",
+      "groupId": "trikala",
+      "sources": [
+        "iteq-trikala"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "location": {
+        "lat": 39.551681,
+        "lon": 21.766004,
+        "ref": "https://trikala.efhmeries.gr/Home/Details/4204",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2431070065",
       "name": "ΚΟΛΩΝΑ ΑΝΑΣΤΑΣΙΑ",
       "address": "ΣΑΡΑΦΗ 22",
@@ -1073,6 +1094,27 @@
       }
     },
     {
+      "id": "2431070669",
+      "name": "ΣΙΜΟΡΕΛΗΣ ΒΑΣΙΛΗΣ",
+      "address": "ΓΕΩΡΓΙΟΥ ΚΟΝΔΥΛΗ 6",
+      "locality": "Τρίκαλα",
+      "postcode": null,
+      "phone": "2431070669",
+      "groupId": "trikala",
+      "sources": [
+        "iteq-trikala"
+      ],
+      "firstSeen": "2026-11-18",
+      "lastSeen": "2026-11-18",
+      "location": {
+        "lat": 39.557298,
+        "lon": 21.768513,
+        "ref": "https://trikala.efhmeries.gr/Home/Details/4203",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2431073071",
       "name": "ΣΑΡΑΝΤΗΣ ΓΕΩΡΓΙΟΣ",
       "address": "ΒΕΝΙΖΕΛΟΥ ΕΛΕΥΘΕΡΙΟΥ 15",
@@ -1084,7 +1126,7 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-21",
       "location": {
         "lat": 39.553548,
         "lon": 21.771325,
@@ -1105,7 +1147,7 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-16",
+      "lastSeen": "2026-11-21",
       "location": {
         "lat": 39.553399,
         "lon": 21.762221,
@@ -1210,7 +1252,7 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-17",
       "location": {
         "lat": 39.541048,
         "lon": 21.757215,
@@ -1294,7 +1336,7 @@
         "iteq-trikala"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-10-08",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 39.556912,
         "lon": 21.765166,

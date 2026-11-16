@@ -65,6 +65,27 @@
       }
     },
     {
+      "id": "2551023421",
+      "name": "ΜΑΜΑΤΑ ΒΑΣΙΛΙΚΗ",
+      "address": "Νικομήδειας & Φιλιππίδη 22 (έναντι Αγ. Ελευθερίου)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551023421",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-22",
+      "lastSeen": "2026-11-22",
+      "location": {
+        "lat": 40.8482406,
+        "lon": 25.8798143,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4300",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551024266",
       "name": "ΔΙΑΜΑΝΤΙΔΟΥ ΑΝΝΑ",
       "address": "Ελ. Βενιζέλου 54 (όπισθεν ΟΤΕ)",
@@ -842,6 +863,27 @@
       }
     },
     {
+      "id": "2551084110",
+      "name": "ΑΠΟΣΤΟΛΟΥ ΙΩΑΝΝΗΣ",
+      "address": "Πατριάρχου Κυρίλλου 113 (γεφ. Καλλιθέας-Παπαν/σίου)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551084110",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-22",
+      "lastSeen": "2026-11-22",
+      "location": {
+        "lat": 40.8482468,
+        "lon": 25.8667932,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4244",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551400229",
       "name": "Σ.Φ. ΓΟΥΣΗ Μ.Ε.-ΓΡΗΓΟΡΙΟΥ Σ.",
       "address": "Εθν. Αντιστάσεως 146 (πλησίον S/M Μασούτη & AB)",
@@ -1189,7 +1231,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-22",
       "location": {
         "lat": 41.5002425,
         "lon": 26.5320953,
@@ -1294,7 +1336,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-21",
+      "lastSeen": "2026-11-22",
       "location": {
         "lat": 41.3497126,
         "lon": 26.4936993,
@@ -1441,7 +1483,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-21",
+      "lastSeen": "2026-11-22",
       "location": {
         "lat": 41.1924991,
         "lon": 26.304174,
@@ -1525,7 +1567,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-21",
+      "lastSeen": "2026-11-22",
       "location": {
         "lat": 41.0262152,
         "lon": 26.2954437,
@@ -1588,7 +1630,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-21",
+      "lastSeen": "2026-11-22",
       "location": {
         "lat": 40.8942408,
         "lon": 26.1722017,
