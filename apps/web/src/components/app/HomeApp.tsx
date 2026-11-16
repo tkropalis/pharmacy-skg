@@ -135,18 +135,11 @@ function clock(parts: { minutes: number }): string {
 }
 
 /**
- * The state before the data is ready: "finding your location" when the position will be asked
- * for by itself (so the nearby card does not flash up first), "unsupported" without geolocation.
+ * The state before the data is ready: the position is only read by itself where the browser
+ * shows no prompt, which is known once the Permissions API has answered.
  */
-function initialGeo(pageArea: boolean): GeoState {
-  if (!('geolocation' in navigator)) return 'unsupported';
-  const decision = autoLocateDecision({
-    dismissed: readItem(LOCATION_KEY) === 'off',
-    areaChosen: pageArea || readItem(AREA_KEY) !== null,
-    permission: 'unknown',
-    remembered: loadPosition() !== null,
-  });
-  return decision === 'locate' ? 'locating' : 'idle';
+function initialGeo(): GeoState {
+  return 'geolocation' in navigator ? 'idle' : 'unsupported';
 }
 
 /**
@@ -206,7 +199,7 @@ export default function HomeApp({
     initialArea === null ? initialOrigin(text.origin.lastHere, pinnedCity.current) : null,
   );
   const [originNonce, setOriginNonce] = useState(0);
-  const [geo, setGeo] = useState<GeoState>(() => initialGeo(initialArea !== null));
+  const [geo, setGeo] = useState<GeoState>(() => initialGeo());
   const [showClosed, setShowClosed] = useState(false);
   // The pharmacies opened most, on the device only. Read when the favourites tab opens, so its
   // order does not change under the person while they use it.
@@ -758,8 +751,8 @@ export default function HomeApp({
     }
   }, [controlsOpen]);
 
-  // Ask for the position by itself once the data is ready (the browser asks the person first),
-  // unless they chose an area, turned the request off, or the browser has it blocked.
+  // Read the position by itself once the data is ready, only where the browser shows no prompt
+  // (the permission is granted) and the person did not choose an area or turn it off.
   const autoLocated = useRef(false);
   const dataReady = ready !== null;
   useEffect(() => {

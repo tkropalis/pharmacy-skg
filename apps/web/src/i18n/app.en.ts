@@ -39,19 +39,15 @@ export const appEn: Dictionary['app'] = {
     dutyOnly: 'Only pharmacies on duty are shown here.',
   },
 
-  nearby: {
-    title: 'Near you',
-  },
-
   origin: {
     heading: 'Where are you?',
     summary: 'Options',
     useLocation: 'My location',
     locating: 'Locating…',
     deniedShort: 'Location not allowed.',
+    denied: 'Location not allowed. Choose an area.',
     unavailable: 'Your location could not be found. Choose an area.',
     deniedHelpIos: 'Settings › Apps › Safari › Location.',
-    deniedHelpOther: 'Change it in settings.',
     uncovered: 'Your area is not covered yet.',
     myLocation: 'Near me',
     here: 'Your location',

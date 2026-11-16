@@ -60,16 +60,23 @@ export function OriginControls({
   const [pickerOpen, setPickerOpen] = useState(false);
   const card = variant === 'card';
   const locating = geo === 'locating';
+  // The position did not come: the area picker is the way on, so it becomes the main button.
+  const failed = geo === 'denied' || geo === 'unavailable' || geo === 'unsupported';
   const geoMessage =
     geo === 'denied'
-      ? text.origin.deniedShort
+      ? text.origin.denied
       : geo === 'unavailable' || geo === 'unsupported'
         ? text.origin.unavailable
         : null;
 
   const buttons = (
     <div className="control-row">
-      <button type="button" className="action primary" disabled={locating} onClick={onUseLocation}>
+      <button
+        type="button"
+        className={failed ? 'action' : 'action primary'}
+        disabled={locating}
+        onClick={onUseLocation}
+      >
         <span className={locating ? 'spin' : undefined}>
           <Icon name="locate" />
         </span>
@@ -77,7 +84,7 @@ export function OriginControls({
       </button>
       <button
         type="button"
-        className="action"
+        className={failed ? 'action primary' : 'action'}
         aria-haspopup="dialog"
         onClick={() => setPickerOpen(true)}
       >
@@ -93,9 +100,7 @@ export function OriginControls({
       {geoMessage !== null && (
         <p className="notice" role="status">
           {geoMessage}
-          {geo === 'denied' && (
-            <> {isIos() ? text.origin.deniedHelpIos : text.origin.deniedHelpOther}</>
-          )}
+          {geo === 'denied' && isIos() && <> {text.origin.deniedHelpIos}</>}
         </p>
       )}
       {uncovered && <p className="notice">{text.origin.uncovered}</p>}
@@ -198,8 +203,8 @@ export function NearbyCard({ text, open, onToggleControls, ...rest }: NearbyCard
   const id = useId();
   return (
     <section className="nearby" aria-labelledby={id}>
-      <h2 id={id} className="sr-only">
-        {text.nearby.title}
+      <h2 id={id} className="control-title">
+        {text.origin.heading}
       </h2>
       <OriginControls
         text={text}

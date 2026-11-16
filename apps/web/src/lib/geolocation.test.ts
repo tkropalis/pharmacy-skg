@@ -9,10 +9,13 @@ const base = {
 } as const;
 
 describe('autoLocateDecision', () => {
-  it('asks on a first visit and when the permission is already granted or unknown', () => {
-    expect(autoLocateDecision(base)).toBe('locate');
+  it('reads the position by itself only when the permission is already granted', () => {
     expect(autoLocateDecision({ ...base, permission: 'granted' })).toBe('locate');
-    expect(autoLocateDecision({ ...base, permission: 'unknown' })).toBe('locate');
+  });
+
+  it('does not ask on a first visit, where the browser would show its prompt', () => {
+    expect(autoLocateDecision(base)).toBe('skip');
+    expect(autoLocateDecision({ ...base, permission: 'unknown' })).toBe('skip');
   });
 
   it('does not ask when the browser has the permission denied', () => {
