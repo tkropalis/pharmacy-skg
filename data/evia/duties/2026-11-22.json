@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-17T00:18:15.997Z"
+        "uploadedAt": "2026-11-17T13:32:54.115Z"
       },
       "sections": [
         {
@@ -35,6 +35,53 @@
               "address": "ΛΕΩΦ.ΑΜΑΡ.ΑΡΤΕΜΙΔΟΣ 48 / ΟΙΚΙΑ: ΑΡΙΣΤΟΤΕΛΟΥΣ 1 - ΒΑΣΙΛΙΚΟ",
               "locality": "Ερέτρια",
               "phone": "2229063332"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221028288",
+              "name": "ΜΠΟΝΑΤΣΟΥ ΚΑΛΛΙΟΠΗ",
+              "address": "ΑΘ. ΔΙΑΚΟΥ & ΜΗΤΡ.ΝΙΚΟΛΑΟΥ",
+              "locality": "Χαλκίδα",
+              "phone": "2221028288"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2226069398",
+              "name": "ΦΑΡΑΝΤΟΥ ΦΛΩΡΑ",
+              "address": "ΙΣΤΑΙΑ",
+              "locality": "Ιστιαία",
+              "phone": "2226069398"
+            },
+            {
+              "pharmacyId": "2221044680",
+              "name": "ΧΑΛΒΑΤΖΗ ΜΑΡΙΑ",
+              "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 77",
+              "locality": "Αρτάκη",
+              "phone": "2221044680"
             }
           ]
         },
@@ -75,53 +122,6 @@
               "address": "ΒΕΛΙΣΣΑΡΙΟΥ 13 ΚΑΙ ΣΙΩΚΟΥ",
               "locality": "Χαλκίδα",
               "phone": "2221083605"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2226069398",
-              "name": "ΦΑΡΑΝΤΟΥ ΦΛΩΡΑ",
-              "address": "ΙΣΤΑΙΑ",
-              "locality": "Ιστιαία",
-              "phone": "2226069398"
-            },
-            {
-              "pharmacyId": "2221044680",
-              "name": "ΧΑΛΒΑΤΖΗ ΜΑΡΙΑ",
-              "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 77",
-              "locality": "Αρτάκη",
-              "phone": "2221044680"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221028288",
-              "name": "ΜΠΟΝΑΤΣΟΥ ΚΑΛΛΙΟΠΗ",
-              "address": "ΑΘ. ΔΙΑΚΟΥ & ΜΗΤΡ.ΝΙΚΟΛΑΟΥ",
-              "locality": "Χαλκίδα",
-              "phone": "2221028288"
             }
           ]
         },

@@ -265,7 +265,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 39.6634511,
         "lon": 20.8486347,
@@ -454,7 +454,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-29",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-21",
       "location": {
         "lat": 39.6695404,
         "lon": 20.8537284,
@@ -748,7 +748,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-20",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 39.6677773,
         "lon": 20.8527274,
@@ -895,7 +895,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-21",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 39.6702123,
         "lon": 20.8525678,
@@ -986,6 +986,27 @@
         "ref": "https://ioannina.efhmeries.gr/Home/Details/4999",
         "source": "list",
         "precision": "exact"
+      }
+    },
+    {
+      "id": "2651035641",
+      "name": "ΜΗΤΡΙΚΑΣ ΔΗΜΗΤΡΙΟΣ (2)",
+      "address": "ΔΩΔΩΝΗΣ 161",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651035641",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-22",
+      "lastSeen": "2026-11-22",
+      "location": {
+        "lat": 39.637879,
+        "lon": 20.854568,
+        "source": "nominatim",
+        "precision": "street",
+        "ref": "ΔΩΔΩΝΗΣ 161, Ιωάννινα"
       }
     },
     {
@@ -1703,27 +1724,6 @@
       }
     },
     {
-      "id": "2651079106",
-      "name": "ΙΩΑΝΝΟΥ ΚΩΝ/ΝΟΣ",
-      "address": "ΓΕΡΑΚΑΡΗ 1 & ΣΑΚΕΛΛΑΡΙΟΥ",
-      "locality": "Ιωάννινα",
-      "postcode": null,
-      "phone": "2651079106",
-      "groupId": "ioannina",
-      "sources": [
-        "iteq-ioannina"
-      ],
-      "firstSeen": "2026-11-22",
-      "lastSeen": "2026-11-22",
-      "location": {
-        "lat": 39.6650211,
-        "lon": 20.8477079,
-        "ref": "https://ioannina.efhmeries.gr/Home/Details/5130",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2651079570",
       "name": "ΘΕΟΔΩΡΗ ΔΗΜΗΤΡΑ",
       "address": "Π.ΜΑΥΡΟΓΙΑΝΝΗ 58",
@@ -1819,7 +1819,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-10-31",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 39.6366493,
         "lon": 20.8637669,

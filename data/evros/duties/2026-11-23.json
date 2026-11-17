@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-23",
+  "groups": [
+    {
+      "id": "evros",
+      "name": "Έβρος",
+      "source": {
+        "url": "https://evros.efhmeries.gr/",
+        "uploadedAt": "2026-11-17T13:33:00.137Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2553024676",
+              "name": "ΜΑΧΜΟΥΡΙΔΟΥ ΑΓΑΠΗ",
+              "address": "ΛΕΟΝΙΔΟΥ 61",
+              "locality": "Διδυμότειχο",
+              "phone": "2553024676"
+            },
+            {
+              "pharmacyId": "2552022643",
+              "name": "ΤΕΠΕΝΗΣ ΑΠΟΣΤΟΛΟΣ",
+              "address": "Β. ΚΩΝΣΤΑΝΤΙΝΟΥ 127",
+              "locality": "Ορεστιάδα",
+              "phone": "2552022643"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:30-22:00",
+          "hours": {
+            "from": "14:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551039445",
+              "name": "ΘΕΟΔΟΣΙΟΥ Ν.-ΦΡΑΓΚΟΥΛΗ Α.",
+              "address": "Λ. Μάκρης 32, Νέα Χιλή",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551039445"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2555024333",
+              "name": "ΜΑΛΑΚΗΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "ΟΡΦΕΩΣ 2",
+              "locality": "Φέρες",
+              "phone": "2555024333"
+            },
+            {
+              "pharmacyId": "2554024303",
+              "name": "ΡΟΚΚΑ ΘΕΟΔΩΡΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 88",
+              "locality": "Σουφλί",
+              "phone": "2554024303"
+            },
+            {
+              "pharmacyId": "2554042100",
+              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛΕΜΑΧΟΣ",
+              "address": "ΠΡΟΒΑΤΩΝΑΣ",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042100"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551027917",
+              "name": "ΜΑΧΑΙΡΙΔΗΣ ΣΠΥΡΟΣ",
+              "address": "Δήμητρας 46 (έναντι Παλ. Νοσοκομείου)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551027917"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

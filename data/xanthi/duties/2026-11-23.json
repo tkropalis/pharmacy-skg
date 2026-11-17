@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-23",
+  "groups": [
+    {
+      "id": "xanthi",
+      "name": "Ξάνθη",
+      "source": {
+        "url": "https://xanthi.efhmeries.gr/",
+        "uploadedAt": "2026-11-17T13:34:30.995Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2541026137",
+              "name": "ΦΩΤΙΑΔΗΣ ΠΟΛΥΚΑΡΠΟΣ",
+              "address": "28ης ΟΚΤΩΒΡΙΟΥ 71",
+              "locality": "Ξάνθη",
+              "phone": "2541026137"
+            },
+            {
+              "pharmacyId": "2541045007",
+              "name": "ΧΑΦΟΥΖ ΡΑΪΧΑΝ",
+              "address": "ΠΑΝΑΓΗ ΤΣΑΛΔΑΡΗ 27",
+              "locality": "Ξάνθη",
+              "phone": "2541045007"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "20:00 ΕΩΣ 08:00 ΠΡΩΙ",
+          "hours": {
+            "from": "20:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2541026588",
+              "name": "ΖΟΥΓΡΗ ΖΩΗ",
+              "address": "28ης ΟΚΤΩΒΡΙΟΥ 177",
+              "locality": "Ξάνθη",
+              "phone": "2541026588"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

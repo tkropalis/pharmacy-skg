@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-23",
+  "groups": [
+    {
+      "id": "chania",
+      "name": "Χανιά",
+      "source": {
+        "url": "https://chania.efhmeries.gr/",
+        "uploadedAt": "2026-11-17T13:35:22.653Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821601000",
+              "name": "ΒΑΜΒΟΥΚΑΣ ΤΑΣΟΣ/VΑΜVΟUΚΑS TASOS",
+              "address": "ΑΚΡΩΤΗΡΙΟΥ 57, ΕΝΑΝΤΙ ΠΡΑΤ. ΚΑΥΣΙΜΩΝ ΕΚΟ (ΒΛΗΤΕΣ)/ΑΚRΟΤΙRΙΟU 57/VLYTES",
+              "locality": "Σούδα",
+              "phone": "2821601000"
+            },
+            {
+              "pharmacyId": "2821053565",
+              "name": "ΒΡΟΥΛΙΔΑΚΗ ΓΕΩΡΓΙΑ/VRΟULΙDΑΚΙ GEORGIA",
+              "address": "ΠΑΠΑΝΑΣΤΑΣΊΟΥ & ΕΜΜΑΝΟΥΉΛ ΜΟΥΝΤΆΚΗ (ΑΠΕΝΑΝΤΙ ΑΠΟ ΑΝΘΟΠΩΛΕΙΟ ΡΟΖ-ΜΩΒ)/ΡΑΡΑΝΑSΤΑSΙΟU & MOUNTAKI",
+              "locality": "Χανιά",
+              "phone": "2821053565"
+            },
+            {
+              "pharmacyId": "2821078288",
+              "name": "ΚΟΥΛΟΥΡΙΔΑΚΗΣ ΙΩΑΝΝΗΣ/ΚΟULΟURΙDΑΚΙS IOANNIS",
+              "address": "ΑΓΥΙΑ (ΠΑΡΑΠΛΕΥΡΩΣ \"ΚΑΦΕ - ΚΑΠΑΚΙ\")/ΑGΥΙΑ",
+              "locality": "Μουρνιές",
+              "phone": "2821078288"
+            },
+            {
+              "pharmacyId": "2821069539",
+              "name": "ΜΟΝΟΤΡΑΚΗ ΓΕΩΡΓΙΑ/ΜΟΝΟΤRΑΚΙ GEORGIA",
+              "address": "ΑΡΙΣΤΟΤΕΛΟΥΣ & ΚΟΡΑΗ ΚΟΥΝΟΥΠΙΔΙΑΝΑ ΑΚΡΩΤΗΡΙΟΥ/ΑRΙSΤΟΤΕLΟUS & KORAI",
+              "locality": "Ακρωτήρι",
+              "phone": "2821069539"
+            },
+            {
+              "pharmacyId": "2821060078",
+              "name": "Σ.Φ. ΜΠΟΤΩΝΑΚΗΣ Ι.-ΚΑΤΑΚΗΣ Π./S.F. MPOTONAKIS I-KATAKIS P.",
+              "address": "ΑΓΙΑ ΜΑΡΙΝΑ ΠΛΑΤΑΝΙΑΣ ΧΑΝΙΑ (ΔΙΠΛΑ ΣΕ ARTEMIS BEACH BAR)/AGIA MARINA",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821060078"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2823041160",
+              "name": "Σ.Φ. ΑΘΟΥΣΑΚΗ Ο.Ε./S.F. ATHOUSAKI O.E.",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "2823041160"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
+          "hours": {
+            "from": "08:30",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2822022182",
+              "name": "ΜΑΖΟΚΟΠΑΚΗΣ ΙΩΑΝΝΗΣ/ΜΑΖΟΚΟΡΑΚΙS IOANNIS",
+              "address": "ΗΡΩΩΝ ΠΟΛΥΤΕΧΝΕΙΟΥ 143 ΚΑΣΤΕΛΙ/ΙRΟΟΝ POLITEXNIOU 143 KASTELI",
+              "locality": "Δήμος Κισσάμου",
+              "phone": "2822022182"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821043737",
+              "name": "ΝΤΑΟΥΚΑΚΗ ΜΑΡΙΑ/ΝΤΑΟUΚΑΚΙ MARY",
+              "address": "ΤΖΑΝΑΚΑΚΗ 30/TZANAKAKI 30",
+              "locality": "Χανιά",
+              "phone": "2821043737"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 14:30 & 17:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821043737",
+              "name": "ΝΤΑΟΥΚΑΚΗ ΜΑΡΙΑ/ΝΤΑΟUΚΑΚΙ MARY",
+              "address": "ΤΖΑΝΑΚΑΚΗ 30/TZANAKAKI 30",
+              "locality": "Χανιά",
+              "phone": "2821043737"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

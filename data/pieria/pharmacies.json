@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "pharmacies": [
     {
+      "id": "2351020544",
+      "name": "ΔΗΜΟΥ ΙΩΑΝΝΑ",
+      "address": "Ν.ΔΙΚΑ & 19ΗΣ ΜΑΙΟΥ",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351020544",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "location": {
+        "lat": 40.2743283,
+        "lon": 22.5143605,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23604",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2351021415",
       "name": "ΚΑΤΣΑΜΑΓΚΑ ΕΙΡΗΝΗ",
       "address": "ΖΑΛΟΓΓΟΥ 1",
@@ -39,6 +60,27 @@
         "lat": 40.2719228,
         "lon": 22.5087818,
         "ref": "https://pieria.efhmeries.gr/Home/Details/23555",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2351021535",
+      "name": "Σ.Φ. ΠΑΧΥΓΙΑΝΝΑΚΗΣ ΕΜΜΑΝΟΥΗΛ-ΠΑΧΥΓΙΑΝΝΑΚΗΣ ΝΙΚΟΛΑΟΣ",
+      "address": "ΕΠ. ΜΑΚΑΡΙΟΥ ΚΙΤΡΟΥΣ 45Α (ΠΑΡΚΟ)",
+      "locality": "Κατερίνη",
+      "postcode": null,
+      "phone": "2351021535",
+      "groupId": "pieria",
+      "sources": [
+        "iteq-pieria"
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "location": {
+        "lat": 40.2692395,
+        "lon": 22.4987834,
+        "ref": "https://pieria.efhmeries.gr/Home/Details/23605",
         "source": "list",
         "precision": "exact"
       }
@@ -727,7 +769,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-17",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 40.3150825,
         "lon": 22.5838514,
@@ -874,7 +916,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-11-22",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 40.267728,
         "lon": 22.5968873,
@@ -979,7 +1021,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 40.0590353,
         "lon": 22.5621882,
@@ -1021,7 +1063,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 39.9952223,
         "lon": 22.6179865,
@@ -1084,7 +1126,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-18",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 40.1030592,
         "lon": 22.5014766,
@@ -1210,7 +1252,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 40.4945468,
         "lon": 22.5369608,
@@ -1273,7 +1315,7 @@
         "iteq-pieria"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-22",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 40.4793808,
         "lon": 22.482706,

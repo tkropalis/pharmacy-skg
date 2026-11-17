@@ -265,7 +265,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-11-22",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 40.9368994,
         "lon": 24.4048512,
@@ -711,6 +711,27 @@
         "lat": 40.9370128,
         "lon": 24.4074583,
         "ref": "https://kavala.efhmeries.gr/Home/Details/3974",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510834679",
+      "name": "ΚΩΝΣΤΑΝΤΙΝΙΔΟΥ ΛΙΑΝΑ",
+      "address": "ΓΑΛΛΙΚΗΣ ΔΗΜΟΚΡΑΤΙΑΣ 103",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510834679",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "location": {
+        "lat": 40.940469,
+        "lon": 24.417946,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4060",
         "source": "list",
         "precision": "exact"
       }

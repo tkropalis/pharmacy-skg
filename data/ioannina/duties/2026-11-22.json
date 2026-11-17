@@ -7,49 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-11-17T00:18:52.863Z"
+        "uploadedAt": "2026-11-17T13:33:32.937Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:30& 18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651079106",
-              "name": "ΙΩΑΝΝΟΥ ΚΩΝ/ΝΟΣ",
-              "address": "ΓΕΡΑΚΑΡΗ 1 & ΣΑΚΕΛΛΑΡΙΟΥ",
-              "locality": "Ιωάννινα",
-              "phone": "2651079106"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "08:00 ΕΩΣ 14:30& 18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651079106",
-              "name": "ΙΩΑΝΝΟΥ ΚΩΝ/ΝΟΣ",
-              "address": "ΓΕΡΑΚΑΡΗ 1 & ΣΑΚΕΛΛΑΡΙΟΥ",
-              "locality": "Ιωάννινα",
-              "phone": "2651079106"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -74,6 +34,46 @@
               "address": "ΚΑΛΠΑΚΙΟΥ 9",
               "locality": "Ιωάννινα",
               "phone": "2651094937"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:30& 18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651035641",
+              "name": "ΜΗΤΡΙΚΑΣ ΔΗΜΗΤΡΙΟΣ (2)",
+              "address": "ΔΩΔΩΝΗΣ 161",
+              "locality": "Ιωάννινα",
+              "phone": "2651035641"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00 ΕΩΣ 14:30& 18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651035641",
+              "name": "ΜΗΤΡΙΚΑΣ ΔΗΜΗΤΡΙΟΣ (2)",
+              "address": "ΔΩΔΩΝΗΣ 161",
+              "locality": "Ιωάννινα",
+              "phone": "2651035641"
             }
           ]
         }

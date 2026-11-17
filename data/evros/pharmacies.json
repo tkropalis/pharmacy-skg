@@ -349,7 +349,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 40.85038,
         "lon": 25.8656259,
@@ -716,6 +716,27 @@
       }
     },
     {
+      "id": "2551039445",
+      "name": "ΘΕΟΔΟΣΙΟΥ Ν.-ΦΡΑΓΚΟΥΛΗ Α.",
+      "address": "Λ. Μάκρης 32, Νέα Χιλή",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551039445",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-23",
+      "lastSeen": "2026-11-23",
+      "location": {
+        "lat": 40.8520675,
+        "lon": 25.8294481,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4249",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551053261",
       "name": "ΠΙΤΙΑΚΟΥΔΗΣ ΣΩΤΗΡΙΟΣ",
       "address": "Πλ. Ελευθερίας 24 (Παλιά πλατεία Αστικών)",
@@ -1000,7 +1021,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 41.5034239,
         "lon": 26.5270369,
@@ -1420,7 +1441,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-13",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 41.3528428,
         "lon": 26.4958947,
@@ -1546,7 +1567,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-19",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 41.1917483,
         "lon": 26.3037554,
@@ -1609,7 +1630,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 41.025262,
         "lon": 26.2577482,
@@ -1714,7 +1735,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-18",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 40.8951274,
         "lon": 26.1698018,
