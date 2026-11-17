@@ -7,29 +7,9 @@
       "name": "Πιερία",
       "source": {
         "url": "https://pieria.efhmeries.gr/",
-        "uploadedAt": "2026-11-16T12:53:21.634Z"
+        "uploadedAt": "2026-11-17T00:20:06.887Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 20:30",
-          "hours": {
-            "from": "08:00",
-            "to": "20:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2351079423",
-              "name": "Σ.Φ. ΑΛΚΙΒΙΑΔΗΣ & ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΡΙΑΝΤΑΦΥΛΛΟΠΟΥΛΟΣ Ο.Ε.",
-              "address": "ΑΘ. ΔΙΑΚΟΥ 4",
-              "locality": "Κατερίνη",
-              "phone": "2351079423"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
@@ -143,6 +123,26 @@
               "address": "ΕΙΡΗΝΗΣ 6",
               "locality": "Κατερίνη",
               "phone": "2351025789"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 20:30",
+          "hours": {
+            "from": "08:00",
+            "to": "20:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351079423",
+              "name": "Σ.Φ. ΑΛΚΙΒΙΑΔΗΣ & ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΡΙΑΝΤΑΦΥΛΛΟΠΟΥΛΟΣ Ο.Ε.",
+              "address": "ΑΘ. ΔΙΑΚΟΥ 4",
+              "locality": "Κατερίνη",
+              "phone": "2351079423"
             }
           ]
         }

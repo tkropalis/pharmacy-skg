@@ -7,29 +7,9 @@
       "name": "Πέλλα",
       "source": {
         "url": "https://pella.efhmeries.gr/",
-        "uploadedAt": "2026-11-16T12:53:15.603Z"
+        "uploadedAt": "2026-11-17T00:20:00.445Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2382024555",
-              "name": "ΒΑΡΕΛΑΣ ΜΙΧΑΗΛ",
-              "address": "Π. ΜΕΛΑ 5",
-              "locality": "Γιαννιτσά",
-              "phone": "2382024555"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ",
@@ -89,6 +69,26 @@
               "address": "ΒΑΣ. ΠΑΥΛΟΥ 32",
               "locality": "Κρύα Βρύση",
               "phone": "2382062120"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382024555",
+              "name": "ΒΑΡΕΛΑΣ ΜΙΧΑΗΛ",
+              "address": "Π. ΜΕΛΑ 5",
+              "locality": "Γιαννιτσά",
+              "phone": "2382024555"
             }
           ]
         }
