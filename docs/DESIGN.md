@@ -115,6 +115,8 @@ Light by default. The footer's "Εμφάνιση" control offers light, dark and
 
 Font Awesome Free only (credited on the about page), drawn as inline SVG from the icon's path: `components/app/icons.tsx` in React, `lib/fa.ts` (`faSvg`) in Astro and on the map. Icons are decorative: every button has visible text or an accessible name. Do not put icons in tinted tiles or circles as decoration. The one exception is out of our hands: the four home-screen shortcut icons (`public/icons/shortcut-*.png`, made by `scripts/generate-icons.ts`) are a white Font Awesome glyph on the app icon's green, full-bleed, because the phone cuts its own shape.
 
+**The share image** (`public/og-image.png`, 1200×630, made by `scripts/generate-og-image.ts` in a browser so it is set in Manrope): the dark look, the app icon, the name in Greek and English and the tagline on the left; on the right, central Athens at night from the data, every pharmacy a small grey square and the ones on duty through the night the large green marker. No place names, no counts that go stale. Render it again when the name or tagline changes.
+
 ## Copy
 
 Greek first; every string exists in Greek and English (`apps/web/src/i18n/`, `el.ts` defines the shape). The rules are in [decisions.md](decisions.md), Defaults, "Plain words": as few words as possible, one sentence per warning, one word for one thing (with the list of canonical terms), "Label: {name}" accessible names, no abbreviations, parentheses, em dashes or exclamation marks. Status words and duty kinds are defined once (`i18n/status-labels.ts`). `i18n.test.ts` fails on ΦΣΘ, ΠΚΜ, ΕΟΦ, ΦΠΑ, ΜΗΣΥΦΑ, em dashes and exclamation marks in any UI string.

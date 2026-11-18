@@ -6,7 +6,8 @@ The web app: Astro 7 (static output) with React 19 for interactive parts, instal
 pnpm --filter @pharmacy-skg/web dev       # dev server; /data/** is served from <repo>/data
 pnpm --filter @pharmacy-skg/web build     # static site in dist/
 pnpm --filter @pharmacy-skg/web preview   # serve dist/
-pnpm --filter @pharmacy-skg/web icons     # re-render the PNG icons and the Open Graph image from public/favicon.svg
+pnpm --filter @pharmacy-skg/web icons     # re-render the PNG icons from public/favicon.svg
+pnpm --filter @pharmacy-skg/web og-image  # re-render the share image in Chrome (or PW_CHROMIUM_PATH)
 pnpm e2e                                  # build with a fixed date, then run the browser tests
 ```
 
@@ -22,7 +23,8 @@ integrations/service-worker.ts   writes dist/sw.js from sw/sw.js with the precac
 sw/sw.js                   the hand-written service worker (template)
 public/                    favicon, PNG icons, stale-check.js and theme.js (blocking head scripts: the
                            stale banner, and light / dark / auto before the first paint)
-scripts/generate-icons.ts  icon and Open Graph image generator (sharp); the PNGs are committed
+scripts/generate-icons.ts  icon generator (sharp); the PNGs are committed
+scripts/generate-og-image.ts  share image generator (a browser, for Manrope); the PNG is committed
 playwright.config.ts, e2e/ browser tests (see "Browser tests")
 src/config.ts              app name (one constant), theme colours, emergency numbers
 src/i18n/                  typed dictionaries (el.ts defines the shape, en.ts must match), routes, t()
