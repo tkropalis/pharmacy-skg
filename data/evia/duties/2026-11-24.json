@@ -7,9 +7,29 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-18T13:09:13.608Z"
+        "uploadedAt": "2026-11-18T23:02:17.447Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221081067",
+              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΧΑΪΝΑ 56",
+              "locality": "Χαλκίδα",
+              "phone": "2221081067"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -34,26 +54,6 @@
               "address": "25ης ΜΑΡΤΙΟΥ 46",
               "locality": "Ιστιαία",
               "phone": "2226055355"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "14:00 ΕΩΣ 17:30",
-          "hours": {
-            "from": "14:00",
-            "to": "17:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221087225",
-              "name": "ΜΑΝΟΥΣΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
-              "address": "ΕΘΝΑΡΧΟΥ ΜΑΚΑΡΙΟΥ 43",
-              "locality": "Χαλκίδα",
-              "phone": "2221087225"
             }
           ]
         },
@@ -86,22 +86,22 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "kind": "day",
+          "heading": "14:00 ΕΩΣ 17:30",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "14:00",
+            "to": "17:30",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2221081067",
-              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
-              "address": "ΧΑΪΝΑ 56",
+              "pharmacyId": "2221087225",
+              "name": "ΜΑΝΟΥΣΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΕΘΝΑΡΧΟΥ ΜΑΚΑΡΙΟΥ 43",
               "locality": "Χαλκίδα",
-              "phone": "2221081067"
+              "phone": "2221087225"
             }
           ]
         }

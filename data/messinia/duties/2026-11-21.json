@@ -7,7 +7,7 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-11-18T13:10:42.987Z"
+        "uploadedAt": "2026-11-18T23:03:43.455Z"
       },
       "sections": [
         {
@@ -136,26 +136,6 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 20:30",
-          "hours": {
-            "from": "08:00",
-            "to": "20:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721022275",
-              "name": "ΧΑΝΤΖΟΣ ΒΑΣΙΛΕΙΟΣ & ΣΙΑ Ο.Ε.",
-              "address": "ΚΑΝΑΡΗ 21",
-              "locality": "Καλαμάτα",
-              "phone": "2721022275"
-            }
-          ]
-        },
-        {
           "kind": "saturday-extra",
           "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
@@ -172,6 +152,26 @@
               "address": "ΦΑΡΩΝ 55",
               "locality": "Καλαμάτα",
               "phone": "2721021736"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 20:30",
+          "hours": {
+            "from": "08:00",
+            "to": "20:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721022275",
+              "name": "ΧΑΝΤΖΟΣ ΒΑΣΙΛΕΙΟΣ & ΣΙΑ Ο.Ε.",
+              "address": "ΚΑΝΑΡΗ 21",
+              "locality": "Καλαμάτα",
+              "phone": "2721022275"
             }
           ]
         }
