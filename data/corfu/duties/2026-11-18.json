@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-18",
+  "groups": [
+    {
+      "id": "corfu",
+      "name": "Κέρκυρα",
+      "source": {
+        "url": "https://farmakeu.static.otenet.gr/phduties.php",
+        "uploadedAt": "2026-11-18T13:08:35.458Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΗΜΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 8:00 ΕΩΣ ΤΙΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2661040949",
+              "name": "ΡΑΡΑΚΟΥ ΣΠΥΡΙΔΟΥΛΑ",
+              "address": "ΙΑΚΩΒΟΥ ΠΟΛΥΛΑ 17 (ΠΕΖΟΔΡΟΜΟΣ)",
+              "locality": "Κέρκυρα",
+              "phone": "2661040949"
+            },
+            {
+              "pharmacyId": "2661031992",
+              "name": "ΕΡΤΣΟΣ ΣΠΥΡΙΔΩΝΑΣ-ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΜΙΛΤΙΑΔΟΥ ΜΑΡΓΑΡΙΤΗ 8",
+              "locality": "Κέρκυρα",
+              "phone": "2661031992"
+            },
+            {
+              "pharmacyId": "2661052781",
+              "name": "ΚΟΥΡΗ ΚΩΝΣΤΑΝΤΙΝΑ",
+              "address": "ΚΟΜΠΙΤΣΙ -ΤΡΙΚΛΙΝΟ",
+              "locality": "Κομπίτσι",
+              "phone": "2661052781"
+            },
+            {
+              "pharmacyId": "2662051814",
+              "name": "ΚΟΥΠΠΑΡΗ ΗΛΙΑΝΑ",
+              "address": "ΠΕΤΡΙΤΗ",
+              "locality": "Πετρίτη",
+              "phone": "2662051814"
+            },
+            {
+              "pharmacyId": "2663064754",
+              "name": "ΚΑΤΣΩΡΑ ΑΦΡΟΔΙΤΗ",
+              "address": "ΑΧΑΡΑΒΗ",
+              "locality": "Αχαράβη",
+              "phone": "2663064754"
+            },
+            {
+              "pharmacyId": "2662022540",
+              "name": "ΚΟΥΡΗΣ ΝΙΚΟΛΑΟΣ",
+              "address": "ΑΓΙΟΙ ΘΕΟΔΩΡΟΙ",
+              "locality": "Άγιοι Θεόδωροι",
+              "phone": "2662022540"
+            },
+            {
+              "pharmacyId": "2663095400",
+              "name": "ΑΛΕΞΟΠΟΥΛΟΥ ΧΡΙΣΤΙΝΑ",
+              "address": "ΣΙΔΑΡΙ",
+              "locality": "Σιδάρι",
+              "phone": "2663095400"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

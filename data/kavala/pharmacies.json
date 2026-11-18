@@ -527,6 +527,27 @@
       }
     },
     {
+      "id": "2510247644",
+      "name": "ΠΑΡΧΑΡΙΔΗΣ ΕΛΕΥΘΕΡΙΟΣ",
+      "address": "ΣΟΦ. ΒΕΝΙΖΕΛΟΥ 19",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510247644",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-24",
+      "lastSeen": "2026-11-24",
+      "location": {
+        "lat": 40.9266021,
+        "lon": 24.3876221,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4062",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510250371",
       "name": "ΚΟΥΡΤΣΟΠΟΥΛΟΥ Α. - ΑΔΑΜΟΠΟΥΛΟΥ Ε.",
       "address": "ΧΡΥΣΟΣΤΟΜΟΥ ΣΜΥΡΝΗΣ 18Β",
@@ -727,7 +748,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-11-23",
-      "lastSeen": "2026-11-23",
+      "lastSeen": "2026-11-24",
       "location": {
         "lat": 40.940469,
         "lon": 24.417946,

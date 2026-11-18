@@ -433,7 +433,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-11-08",
-      "lastSeen": "2026-11-08",
+      "lastSeen": "2026-11-24",
       "location": {
         "lat": 39.6659242,
         "lon": 20.8532251,
@@ -1000,13 +1000,13 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-11-22",
-      "lastSeen": "2026-11-22",
+      "lastSeen": "2026-11-24",
       "location": {
-        "lat": 39.637879,
-        "lon": 20.854568,
-        "source": "nominatim",
-        "precision": "street",
-        "ref": "ΔΩΔΩΝΗΣ 161, Ιωάννινα"
+        "lat": 39.650216,
+        "lon": 20.847409,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5138",
+        "source": "list",
+        "precision": "exact"
       }
     },
     {
