@@ -1,19 +1,14 @@
 /**
- * Renders the PWA icons from public/favicon.svg and the 1200x630 Open Graph image (the preview
- * when a link is shared). Run `pnpm --filter @pharmacy-skg/web icons` after changing the
- * favicon, the app name (src/config.ts) or the wording below, and commit the PNGs it writes
- * to public/. The text is rendered with the fonts of the machine that runs it, so the result
- * is committed rather than built.
+ * Renders the PWA icons from public/favicon.svg. Run `pnpm --filter @pharmacy-skg/web icons`
+ * after changing the favicon and commit the PNGs it writes to public/. The Open Graph image (the
+ * preview when a link is shared) has its own script, scripts/generate-og-image.ts.
  */
 import { mkdir, readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { faClock, faHouseMedical, faPills, faStar } from '@fortawesome/free-solid-svg-icons';
 import type { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import sharp from 'sharp';
-import { APP_NAME } from '../src/config.ts';
 import { faPath } from '../src/lib/fa.ts';
-import { el } from '../src/i18n/el.ts';
-import { en } from '../src/i18n/en.ts';
 
 const publicDir = fileURLToPath(new URL('../public/', import.meta.url));
 const favicon = await readFile(`${publicDir}favicon.svg`);
@@ -78,35 +73,3 @@ function shortcutIcon(icon: IconDefinition): Buffer {
 for (const [name, icon] of Object.entries(SHORTCUT_ICONS)) {
   await render(shortcutIcon(icon), 192, `${publicDir}icons/shortcut-${name}.png`);
 }
-
-const OG_WIDTH = 1200;
-const OG_HEIGHT = 630;
-
-function escapeXml(text: string): string {
-  return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-}
-
-/** Greek title (the default locale) with the English name and the promise below it. */
-function openGraphImage(): Buffer {
-  const [greekA = '', greekB = ''] = APP_NAME.el.split(/ (?=[^ ]+$)/);
-  const text = (y: number, size: number, weight: number, fill: string, value: string) =>
-    `<text x="400" y="${y}" font-family="DejaVu Sans, Noto Sans, Arial, sans-serif" ` +
-    `font-size="${size}" font-weight="${weight}" fill="${fill}">${escapeXml(value)}</text>`;
-  return Buffer.from(
-    `<svg xmlns="http://www.w3.org/2000/svg" width="${OG_WIDTH}" height="${OG_HEIGHT}" viewBox="0 0 ${OG_WIDTH} ${OG_HEIGHT}">` +
-      `<rect width="${OG_WIDTH}" height="${OG_HEIGHT}" fill="#0d1512"/>` +
-      `<rect x="0" y="${OG_HEIGHT - 16}" width="${OG_WIDTH}" height="16" fill="${GREEN}"/>` +
-      `<g transform="translate(80 175) scale(8)">` +
-      `<rect width="32" height="32" rx="6" fill="${GREEN}"/><path d="${CROSS_PATH}" fill="#fff"/></g>` +
-      text(250, 70, 700, '#ffffff', greekA) +
-      text(335, 70, 700, '#ffffff', greekB) +
-      text(425, 40, 400, '#a7bbb1', APP_NAME.en) +
-      text(500, 27, 400, '#3ccf7f', `${el.tagline} · ${en.tagline}`) +
-      `</svg>`,
-  );
-}
-
-await sharp(openGraphImage(), { density: 96 })
-  .png({ compressionLevel: 9 })
-  .toFile(`${publicDir}og-image.png`);
-console.log('wrote public/og-image.png');

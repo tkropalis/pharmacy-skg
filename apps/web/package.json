@@ -9,6 +9,7 @@
     "preview": "astro preview",
     "typecheck": "astro check",
     "icons": "node scripts/generate-icons.ts",
+    "og-image": "node scripts/generate-og-image.ts",
     "e2e": "node e2e/run.ts"
   },
   "dependencies": {
