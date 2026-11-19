@@ -7,7 +7,7 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-11-18T23:03:43.455Z"
+        "uploadedAt": "2026-11-19T13:22:19.886Z"
       },
       "sections": [
         {
@@ -136,26 +136,6 @@
           ]
         },
         {
-          "kind": "saturday-extra",
-          "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721021736",
-              "name": "Σ.Φ. ΒΑΣΙΛΟΓΙΑΝΝΑΚΟΠΟΥΛΟΥ ΕΛΕΝΗ - ΠΑΠΑΔΟΠΟΥΛΟΥ ΜΑΡΙΑ-ΟΛΓΑ Ο.Ε.",
-              "address": "ΦΑΡΩΝ 55",
-              "locality": "Καλαμάτα",
-              "phone": "2721021736"
-            }
-          ]
-        },
-        {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 20:30",
           "hours": {
@@ -172,6 +152,26 @@
               "address": "ΚΑΝΑΡΗ 21",
               "locality": "Καλαμάτα",
               "phone": "2721022275"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721021736",
+              "name": "Σ.Φ. ΒΑΣΙΛΟΓΙΑΝΝΑΚΟΠΟΥΛΟΥ ΕΛΕΝΗ - ΠΑΠΑΔΟΠΟΥΛΟΥ ΜΑΡΙΑ-ΟΛΓΑ Ο.Ε.",
+              "address": "ΦΑΡΩΝ 55",
+              "locality": "Καλαμάτα",
+              "phone": "2721021736"
             }
           ]
         }

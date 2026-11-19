@@ -874,7 +874,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-11-14",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 40.8543318,
         "lon": 25.8915338,
@@ -900,6 +900,27 @@
         "lat": 40.8482468,
         "lon": 25.8667932,
         "ref": "https://evros.efhmeries.gr/Home/Details/4244",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2551111900",
+      "name": "ΓΡΑΜΜΕΝΙΔΗΣ ΑΝΔΡΕΑΣ",
+      "address": "Αγ. Γεωργίου, Παλαγία",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551111900",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-25",
+      "lastSeen": "2026-11-25",
+      "location": {
+        "lat": 40.8854842,
+        "lon": 25.8714688,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4399",
         "source": "list",
         "precision": "exact"
       }
@@ -1168,7 +1189,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 41.5029464,
         "lon": 26.5314121,
@@ -1399,7 +1420,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-17",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 41.3525558,
         "lon": 26.5026007,
@@ -1546,7 +1567,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-20",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 41.1904766,
         "lon": 26.3025729,
@@ -1630,7 +1651,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-24",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 41.025262,
         "lon": 26.2577482,
@@ -1693,7 +1714,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-20",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 40.8896855,
         "lon": 26.1651715,

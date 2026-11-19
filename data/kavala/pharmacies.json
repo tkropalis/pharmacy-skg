@@ -296,6 +296,27 @@
       }
     },
     {
+      "id": "2510224517",
+      "name": "ΜΑΝΤΖΟΥΡΑΝΗ ΙΑΣΜΗ",
+      "address": "ΟΜΟΝΟΙΑΣ 94",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510224517",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-25",
+      "lastSeen": "2026-11-25",
+      "location": {
+        "lat": 40.9388202,
+        "lon": 24.409529,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4064",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510225182",
       "name": "ΚΥΡΙΑΖΙΔΟΥ ΚΥΡΙΑΚΗ",
       "address": "ΒΕΝΙΖΕΛΟΥ 35",
@@ -538,7 +559,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-11-24",
-      "lastSeen": "2026-11-24",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 40.9266021,
         "lon": 24.3876221,

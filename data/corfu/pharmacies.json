@@ -1276,7 +1276,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-03",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 39.492537,
         "lon": 19.877331,
@@ -1466,8 +1466,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-19",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 39.677778,
         "lon": 19.838739,
@@ -1616,7 +1616,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-12",
-      "lastSeen": "2026-11-19",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 39.423719,
         "lon": 20.072083,
@@ -1637,7 +1637,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-13",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 39.422623,
         "lon": 20.062111,
@@ -1786,7 +1786,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-19",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 39.453991,
         "lon": 19.999237,
@@ -2192,7 +2192,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-19",
+      "lastSeen": "2026-11-18",
       "location": {
         "lat": 39.792821,
         "lon": 19.701729,
@@ -2203,7 +2203,7 @@
     },
     {
       "id": "2663095525",
-      "name": "ΚΑΛΟΥΔΗΣ ΝΙΚΟΛΑΟΣ",
+      "name": "ΚΑΤΣΩΡΑ ΑΦΡΟΔΙΤΗ (ΚΑΛΟΥΔΗΣ ΝΙΚΟΛΑΟΣ)",
       "address": "ΕΠΑΡΧ. ΟΔΟΣ ΠΕΡΟΥΛΑΔΩΝ - ΣΙΔΑΡΙΟΥ",
       "locality": "Περουλάδες",
       "postcode": null,
@@ -2212,8 +2212,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-19",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 39.787909,
         "lon": 19.672667,

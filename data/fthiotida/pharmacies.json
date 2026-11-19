@@ -821,6 +821,27 @@
       }
     },
     {
+      "id": "2231062004",
+      "name": "ΚΟΥΤΡΑΣ ΠΑΝΑΓΙΩΤΗΣ",
+      "address": "Ε.Ο. ΛΑΜΙΑΣ-ΚΑΡΠΕΝΗΣΙΟΥ",
+      "locality": "Λαμία",
+      "postcode": null,
+      "phone": "2231062004",
+      "groupId": "fthiotida",
+      "sources": [
+        "iteq-fthiotida"
+      ],
+      "firstSeen": "2026-11-25",
+      "lastSeen": "2026-11-25",
+      "location": {
+        "lat": 38.892766,
+        "lon": 22.3773647,
+        "ref": "https://fthiotida.efhmeries.gr/Home/Details/11868",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2231308268",
       "name": "ΚΑΤΣΙΜΑΝΗ ΕΛΕΝΗ",
       "address": "ΚΥΠΡΟΥ 108",
@@ -832,7 +853,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-10-27",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 38.8945115,
         "lon": 22.4289513,
@@ -958,7 +979,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-11-17",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 38.6541266,
         "lon": 23.0008583,
@@ -979,7 +1000,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-24",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 38.7104122,
         "lon": 23.0488276,
@@ -1084,7 +1105,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-24",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 38.7779111,
         "lon": 22.7844951,
@@ -1126,7 +1147,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-24",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 38.7599237,
         "lon": 22.8577998,
@@ -1189,7 +1210,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-24",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 38.809628,
         "lon": 22.6448618,
@@ -1210,7 +1231,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-16",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 38.9422852,
         "lon": 22.1167605,
@@ -1294,7 +1315,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-19",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 38.9060074,
         "lon": 22.1252072,
@@ -1399,7 +1420,7 @@
         "iteq-fthiotida"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-24",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 38.9142072,
         "lon": 22.6152805,

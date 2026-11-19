@@ -34,7 +34,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-16",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 38.4633594,
         "lon": 23.5986972,
@@ -475,7 +475,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-15",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 38.5092856,
         "lon": 23.6366008,
@@ -958,7 +958,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-19",
       "location": {
         "lat": 38.4588618,
         "lon": 23.6113887,
@@ -989,27 +989,6 @@
       }
     },
     {
-      "id": "2221085616",
-      "name": "ΤΣΑΤΣΟΥΛΗ ΤΑΝΙΑ",
-      "address": "ΑΝΤΙΓΟΝΟΥ 23 - ΠΛΑΤΕΙΑ ΑΛΩΝΑΚΙΟΥ",
-      "locality": "Χαλκίδα",
-      "postcode": null,
-      "phone": "2221085616",
-      "groupId": "evia",
-      "sources": [
-        "iteq-evia"
-      ],
-      "firstSeen": "2026-11-19",
-      "lastSeen": "2026-11-19",
-      "location": {
-        "lat": 38.457471,
-        "lon": 23.601606,
-        "ref": "https://evia.efhmeries.gr/Home/Details/9420",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2221085705",
       "name": "Σ.Φ. Δ.ΧΑΝΤΖΗΣ-Ζ.ΧΑΝΤΖΗ Ο.Ε.",
       "address": "ΧΑΪΝΑ 28",
@@ -1021,7 +1000,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-11-06",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 38.468676,
         "lon": 23.601998,
@@ -1042,7 +1021,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 38.4619229,
         "lon": 23.5939765,
@@ -1336,7 +1315,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-20",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 38.0141849,
         "lon": 24.4183416,
@@ -1420,7 +1399,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-19",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 38.952665,
         "lon": 23.151949,
@@ -1630,7 +1609,7 @@
         "iteq-evia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-22",
+      "lastSeen": "2026-11-25",
       "location": {
         "lat": 38.3921653,
         "lon": 23.7950923,

@@ -7,49 +7,9 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-18T23:02:17.447Z"
+        "uploadedAt": "2026-11-19T13:20:50.946Z"
       },
       "sections": [
-        {
-          "kind": "saturday-extra",
-          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221081067",
-              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
-              "address": "ΧΑΪΝΑ 56",
-              "locality": "Χαλκίδα",
-              "phone": "2221081067"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221081067",
-              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
-              "address": "ΧΑΪΝΑ 56",
-              "locality": "Χαλκίδα",
-              "phone": "2221081067"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -74,6 +34,26 @@
               "address": "ΙΣΤΑΙΑ",
               "locality": "Ιστιαία",
               "phone": "2226069398"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221022120",
+              "name": "ΚΥΛΕΡΤΖΗΣ ΧΡΗΣΤΟΣ",
+              "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
+              "locality": "Χαλκίδα",
+              "phone": "2221022120"
             }
           ]
         },
@@ -140,22 +120,42 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
             "from": "08:00",
-            "to": "21:00",
+            "to": "14:00",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2221022120",
-              "name": "ΚΥΛΕΡΤΖΗΣ ΧΡΗΣΤΟΣ",
-              "address": "ΕΡΜΟΥ 17 - ΠΛΗΣΙΟΝ ΕΛΤΑ",
+              "pharmacyId": "2221081067",
+              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΧΑΪΝΑ 56",
               "locality": "Χαλκίδα",
-              "phone": "2221022120"
+              "phone": "2221081067"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221081067",
+              "name": "ΖΩΓΡΑΦΟΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΧΑΪΝΑ 56",
+              "locality": "Χαλκίδα",
+              "phone": "2221081067"
             }
           ]
         },
