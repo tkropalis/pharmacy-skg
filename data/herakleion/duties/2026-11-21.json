@@ -7,9 +7,96 @@
       "name": "Ηράκλειο",
       "source": {
         "url": "https://herakleion.efhmeries.gr/",
-        "uploadedAt": "2026-11-19T13:21:16.239Z"
+        "uploadedAt": "2026-11-19T23:06:55.612Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 22:00 ΕΩΣ 08:30 ΠΡΩΙ",
+          "hours": {
+            "from": "22:00",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2897031900",
+              "name": "ΚΡΑΣΑΚΗ ΕΥΑΓΓΕΛΙΑ",
+              "address": "Λ. ΔΗΜΟΚΡΑΤΙΑΣ 113 (ΠΑΡΑΛΙΑΚΗ ΜΑΛΙΩΝ)",
+              "locality": "Μάλια",
+              "phone": "2897031900"
+            },
+            {
+              "pharmacyId": "2810226796",
+              "name": "ΛΟΥΛΑΚΗ - METZAKH ΕΥΓΕΝΙΑ ΚΑΙ ΣΙΑ ΟΕ",
+              "address": "ΗΡΟΔΟΤΟΥ 137 ΝΕΑ ΑΛΙΚΑΡΝΑΣΣΟΣ",
+              "locality": "Νέα Αλικαρνασσός",
+              "phone": "2810226796"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "8:00 ΕΩΣ 8:00 (23:00-08:00 ΚΑΤΟΠΙΝ ΤΗΛΕΦΩΝΗΜΑΤΟΣ)",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2891023310",
+              "name": "ΠΑΠΑΔΟΓΙΩΡΓΑΚΗ ΜΑΡΙΑ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 220",
+              "locality": "Αρκαλοχώρι",
+              "phone": "2891023310"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "8:30 ΕΩΣ 8:30 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2810258125",
+              "name": "Σ.Φ. ΤΣΑΓΚΑΡΑΚΗΣ ΕΥΑΓΓΕΛΟΣ - ΣΥΛΛΙΓΑΡΔΑΚΗ ΜΑΡΙΑ ΕΙΡΗΝΗ Ο.Ε.",
+              "address": "ΛΕΩΦ. ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 127",
+              "locality": "Αμμουδάρα",
+              "phone": "2810258125"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 21:00 ΕΩΣ 08:00",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2892041118",
+              "name": "ΣΕΡΑΦΕΙΔΗ ΜΑΡΙΑ",
+              "address": "ΠΟΜΠΙΑ",
+              "locality": "Πόμπια",
+              "phone": "2892041118"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "ΑΠΟ 08:30 ΕΩΣ 23:00",
@@ -128,46 +215,6 @@
           ]
         },
         {
-          "kind": "on-duty",
-          "heading": "8:00 ΕΩΣ 8:00 (23:00-08:00 ΚΑΤΟΠΙΝ ΤΗΛΕΦΩΝΗΜΑΤΟΣ)",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2891023310",
-              "name": "ΠΑΠΑΔΟΓΙΩΡΓΑΚΗ ΜΑΡΙΑ",
-              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 220",
-              "locality": "Αρκαλοχώρι",
-              "phone": "2891023310"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "8:30 ΕΩΣ 8:30 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "08:30",
-            "to": "08:30",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2810258125",
-              "name": "Σ.Φ. ΤΣΑΓΚΑΡΑΚΗΣ ΕΥΑΓΓΕΛΟΣ - ΣΥΛΛΙΓΑΡΔΑΚΗ ΜΑΡΙΑ ΕΙΡΗΝΗ Ο.Ε.",
-              "address": "ΛΕΩΦ. ΑΝΔΡΕΑ ΠΑΠΑΝΔΡΕΟΥ 127",
-              "locality": "Αμμουδάρα",
-              "phone": "2810258125"
-            }
-          ]
-        },
-        {
           "kind": "day",
           "heading": "ΑΠΟ 09:00 ΕΩΣ 19:00",
           "hours": {
@@ -184,53 +231,6 @@
               "address": "ΑΓ. ΙΩΑΝΝΟΥ 103 ΣΤΑΛΙΔΑ",
               "locality": "Σταλίδα, Μόχος, Γωνιές, Ποταμιές",
               "phone": "2897032222"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 22:00 ΕΩΣ 08:30 ΠΡΩΙ",
-          "hours": {
-            "from": "22:00",
-            "to": "08:30",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2897031900",
-              "name": "ΚΡΑΣΑΚΗ ΕΥΑΓΓΕΛΙΑ",
-              "address": "Λ. ΔΗΜΟΚΡΑΤΙΑΣ 113 (ΠΑΡΑΛΙΑΚΗ ΜΑΛΙΩΝ)",
-              "locality": "Μάλια",
-              "phone": "2897031900"
-            },
-            {
-              "pharmacyId": "2810226796",
-              "name": "ΛΟΥΛΑΚΗ - METZAKH ΕΥΓΕΝΙΑ ΚΑΙ ΣΙΑ ΟΕ",
-              "address": "ΗΡΟΔΟΤΟΥ 137 ΝΕΑ ΑΛΙΚΑΡΝΑΣΣΟΣ",
-              "locality": "Νέα Αλικαρνασσός",
-              "phone": "2810226796"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 21:00 ΕΩΣ 08:00",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2892041118",
-              "name": "ΣΕΡΑΦΕΙΔΗ ΜΑΡΙΑ",
-              "address": "ΠΟΜΠΙΑ",
-              "locality": "Πόμπια",
-              "phone": "2892041118"
             }
           ]
         }

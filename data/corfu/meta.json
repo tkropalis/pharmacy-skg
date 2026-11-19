@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "corfu",
-  "updatedAt": "2026-11-19T13:20:13.102Z",
-  "checkedAt": "2026-11-19T13:20:13.102Z",
+  "updatedAt": "2026-11-19T23:05:53.862Z",
+  "checkedAt": "2026-11-19T23:05:53.862Z",
   "duties": {
     "from": "2026-11-02",
-    "to": "2026-11-19"
+    "to": "2026-11-20"
   },
   "extendedHours": [
     {

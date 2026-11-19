@@ -7,29 +7,9 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-11-19T13:23:05.005Z"
+        "uploadedAt": "2026-11-19T23:08:41.979Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 23:00",
-          "hours": {
-            "from": "08:00",
-            "to": "23:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431027630",
-              "name": "ΤΣΑΧΑΛΑΣ ΔΗΜΗΤΡΙΟΣ",
-              "address": "ΤΣΙΤΣΑΝΗ ΒΑΣΙΛΗ 23",
-              "locality": "Τρίκαλα",
-              "phone": "2431027630"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
@@ -94,6 +74,26 @@
               "address": "ΑΣΚΛΗΠΙΟΥ 26",
               "locality": "Τρίκαλα",
               "phone": "2431028739"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 23:00",
+          "hours": {
+            "from": "08:00",
+            "to": "23:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431027630",
+              "name": "ΤΣΑΧΑΛΑΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΤΣΙΤΣΑΝΗ ΒΑΣΙΛΗ 23",
+              "locality": "Τρίκαλα",
+              "phone": "2431027630"
             }
           ]
         }
