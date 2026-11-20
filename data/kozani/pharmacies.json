@@ -13,7 +13,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-26",
       "location": {
         "lat": 40.3018139,
         "lon": 21.7945459,
@@ -459,6 +459,27 @@
         "lat": 40.3011197,
         "lon": 21.7884062,
         "ref": "https://kozani.efhmeries.gr/Home/Details/5734",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461031996",
+      "name": "ΠΑΠΑΔΟΠΟΥΛΟΥ ΕΥΣΑΪΑ",
+      "address": "ΜΕΛΑ ΠΑΥΛΟΥ 44",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461031996",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-11-26",
+      "lastSeen": "2026-11-26",
+      "location": {
+        "lat": 40.3044624,
+        "lon": 21.7891432,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/6298",
         "source": "list",
         "precision": "exact"
       }
@@ -1210,7 +1231,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-26",
       "location": {
         "lat": 40.514963,
         "lon": 21.6802478,
@@ -1462,7 +1483,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-22",
-      "lastSeen": "2026-11-16",
+      "lastSeen": "2026-11-26",
       "location": {
         "lat": 40.5131304,
         "lon": 21.677883,

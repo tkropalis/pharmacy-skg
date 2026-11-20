@@ -832,7 +832,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-07",
+      "lastSeen": "2026-11-26",
       "location": {
         "lat": 39.6639347,
         "lon": 20.8503045,
@@ -1005,6 +1005,27 @@
         "lat": 39.650216,
         "lon": 20.847409,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5138",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651036925",
+      "name": "ΠΑΠΠΑ ΜΑΡΙΝΑ-ΑΓΓΕΛΙΚΗ",
+      "address": "Γ. ΚΥΡΓΙΟΥ 9",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651036925",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-26",
+      "lastSeen": "2026-11-26",
+      "location": {
+        "lat": 39.6614424,
+        "lon": 20.8558042,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5144",
         "source": "list",
         "precision": "exact"
       }

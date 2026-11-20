@@ -25009,7 +25009,7 @@
         "fsa"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-22",
+      "lastSeen": "2026-10-12",
       "location": {
         "lat": 38.0610609,
         "lon": 23.8404329,
@@ -31099,8 +31099,8 @@
       "sources": [
         "fsa"
       ],
-      "firstSeen": "2026-12-07",
-      "lastSeen": "2026-12-07",
+      "firstSeen": "2026-11-24",
+      "lastSeen": "2026-11-24",
       "location": {
         "lat": 38.0197921,
         "lon": 23.8032685,
@@ -32135,7 +32135,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-27",
-      "lastSeen": "2026-11-01",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 38.0301467,
         "lon": 23.7785921,
@@ -33491,7 +33491,7 @@
         "fsa-hours"
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-25",
+      "lastSeen": "2026-11-23",
       "location": {
         "lat": 37.9893642,
         "lon": 23.7688976,
@@ -40721,8 +40721,8 @@
         "fsa",
         "fsa-hours"
       ],
-      "firstSeen": "2026-11-30",
-      "lastSeen": "2026-11-30",
+      "firstSeen": "2026-11-22",
+      "lastSeen": "2026-11-22",
       "location": {
         "lat": 38.0622678,
         "lon": 23.8374431,
@@ -62248,6 +62248,27 @@
       "location": {
         "lat": 37.9707898,
         "lon": 23.7089991,
+        "ref": "https://fsa-efimeries.gr/",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2130321350",
+      "name": "ΖΑΦΕΙΡΟΥΔΗ ΔΗΜΗΤΡΑ",
+      "address": "ΛΕΩΦ.ΒΟΥΛΙΑΓΜΕΝΗΣ 216, ΑΓ.ΔΗΜΗΤΡΙΟΣ 17341",
+      "locality": "Άγιος Δημήτριος",
+      "postcode": null,
+      "phone": "2130321350",
+      "groupId": "attiki",
+      "sources": [
+        "fsa"
+      ],
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "location": {
+        "lat": 37.9496561,
+        "lon": 23.7382259,
         "ref": "https://fsa-efimeries.gr/",
         "source": "list",
         "precision": "exact"
