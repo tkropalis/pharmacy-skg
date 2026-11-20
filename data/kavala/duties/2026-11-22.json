@@ -7,9 +7,29 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-11-20T13:01:47.684Z"
+        "uploadedAt": "2026-11-20T22:43:49.373Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510836902",
+              "name": "ΣΑΚΑΛΑΚΗ ΑΝΑΣΤΑΣΙΑ",
+              "address": "ΕΡ. ΣΤΑΥΡΟΥ 1",
+              "locality": "Καβάλα",
+              "phone": "2510836902"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
@@ -34,26 +54,6 @@
               "address": "ΕΛ.ΒΕΝΙΖΕΛΟΥ 3ΟΓ",
               "locality": "Καβάλα",
               "phone": "2510223733"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510836902",
-              "name": "ΣΑΚΑΛΑΚΗ ΑΝΑΣΤΑΣΙΑ",
-              "address": "ΕΡ. ΣΤΑΥΡΟΥ 1",
-              "locality": "Καβάλα",
-              "phone": "2510836902"
             }
           ]
         }
