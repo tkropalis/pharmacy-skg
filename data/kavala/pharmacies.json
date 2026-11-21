@@ -23,6 +23,27 @@
       }
     },
     {
+      "id": "2510220166",
+      "name": "ΒΑΪΔΟΥΛΗ ΝΙΚΟΛΕΤΑ",
+      "address": "ΦΙΛΙΚΗΣ ΕΤΑΙΡΕΙΑΣ 5",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510220166",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-27",
+      "lastSeen": "2026-11-27",
+      "location": {
+        "lat": 40.9358619,
+        "lon": 24.4078016,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4068",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510221700",
       "name": "ΕΜΜΑΝΟΥΗΛΙΔΗΣ ΓΕΩΡΓΙΟΣ",
       "address": "ΕΡΥΘΡΟΥ ΣΤΑΥΡΟΥ 11",
@@ -559,7 +580,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-11-24",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 40.9266021,
         "lon": 24.3876221,

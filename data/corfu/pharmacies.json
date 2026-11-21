@@ -34,8 +34,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
       "location": {
         "lat": 39.621735,
         "lon": 19.918091,
@@ -336,7 +336,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-14",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-21",
       "location": {
         "lat": 39.623091,
         "lon": 19.921094,
@@ -959,8 +959,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-21",
-      "lastSeen": "2026-11-21",
+      "firstSeen": "2026-11-02",
+      "lastSeen": "2026-11-02",
       "location": {
         "lat": 39.61994,
         "lon": 19.91824,
@@ -1488,7 +1488,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-21",
       "location": {
         "lat": 39.710135,
         "lon": 19.824257,
@@ -1616,7 +1616,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-12",
-      "lastSeen": "2026-11-21",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 39.423719,
         "lon": 20.072083,
@@ -1637,7 +1637,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-19",
+      "lastSeen": "2026-11-21",
       "location": {
         "lat": 39.422623,
         "lon": 20.062111,
@@ -1786,7 +1786,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-21",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 39.453991,
         "lon": 19.999237,
@@ -1807,7 +1807,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-21",
       "location": {
         "lat": 39.443549,
         "lon": 19.941824,
@@ -1871,7 +1871,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-20",
-      "lastSeen": "2026-11-21",
+      "lastSeen": "2026-11-20",
       "location": {
         "lat": 39.766641,
         "lon": 19.743047,
@@ -2021,7 +2021,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-16",
-      "lastSeen": "2026-11-16",
+      "lastSeen": "2026-11-21",
       "location": {
         "lat": 39.78627,
         "lon": 19.76696,
@@ -2213,7 +2213,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-19",
-      "lastSeen": "2026-11-19",
+      "lastSeen": "2026-11-21",
       "location": {
         "lat": 39.787909,
         "lon": 19.672667,

@@ -580,7 +580,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 37.0971332,
         "lon": 22.0437407,
@@ -611,6 +611,27 @@
       }
     },
     {
+      "id": "2721042100",
+      "name": "ΟΙΚΟΝΟΜΑΚΗΣ ΜΙΧΑΗΛ",
+      "address": "ΦΑΡΩΝ 175",
+      "locality": "Καλαμάτα",
+      "postcode": null,
+      "phone": "2721042100",
+      "groupId": "messinia",
+      "sources": [
+        "iteq-messinia"
+      ],
+      "firstSeen": "2026-11-27",
+      "lastSeen": "2026-11-27",
+      "location": {
+        "lat": 37.0306897,
+        "lon": 22.1134303,
+        "ref": "https://messinia.efhmeries.gr/Home/Details/3468",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2721050200",
       "name": "ΠΕΡΡΩΤΗΣ ΙΑΚΩΒΟΣ",
       "address": "ΑΡΙΣ ΜΕΣΣΗΝΙΑΣ",
@@ -622,7 +643,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 37.0999089,
         "lon": 22.0054464,
@@ -727,7 +748,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-22",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 36.93881,
         "lon": 22.2025801,
@@ -1378,7 +1399,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 37.050807,
         "lon": 22.008398,
@@ -1546,7 +1567,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 36.9134964,
         "lon": 21.6967334,
@@ -1567,7 +1588,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-05",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 37.2259969,
         "lon": 21.9698792,
@@ -1693,7 +1714,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 36.8483201,
         "lon": 21.9227955,
@@ -1756,7 +1777,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 36.8084878,
         "lon": 21.9149286,
@@ -1966,7 +1987,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-23",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 37.1577885,
         "lon": 21.5861777,
@@ -2008,7 +2029,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 37.2509855,
         "lon": 21.668076,
@@ -2050,7 +2071,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-24",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 37.065972,
         "lon": 21.6369701,
@@ -2176,7 +2197,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-24",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 37.0518288,
         "lon": 21.7159923,
@@ -2239,7 +2260,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 37.2887111,
         "lon": 21.8181746,
@@ -2260,7 +2281,7 @@
         "iteq-messinia"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 37.2882175,
         "lon": 21.8557238,

@@ -443,6 +443,27 @@
       }
     },
     {
+      "id": "2551028913",
+      "name": "ΧΑΤΖΗ ΜΑΡΙΑ",
+      "address": "Ι. Καβύρη 37",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551028913",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-27",
+      "lastSeen": "2026-11-27",
+      "location": {
+        "lat": 40.8479387,
+        "lon": 25.8727562,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4000",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2551029022",
       "name": "Σ.Φ. ΠΟΥΡΝΑΡΑΣ ΤΡ.-ΣΑΛΟΝΙΚΙΔΟΥ Ε.",
       "address": "Αίνου 27 (έναντι Δημ. Βιβλιοθήκης)",
@@ -1168,7 +1189,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-21",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 41.501659,
         "lon": 26.532421,
@@ -1336,7 +1357,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 41.3502204,
         "lon": 26.4935275,
@@ -1525,7 +1546,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-22",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 41.1924991,
         "lon": 26.304174,
@@ -1651,7 +1672,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 41.025262,
         "lon": 26.2577482,
@@ -1735,7 +1756,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-17",
+      "lastSeen": "2026-11-27",
       "location": {
         "lat": 40.8935681,
         "lon": 26.169281,

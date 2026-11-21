@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "evia",
-  "updatedAt": "2026-11-20T22:43:11.760Z",
-  "checkedAt": "2026-11-20T22:43:11.760Z",
+  "updatedAt": "2026-11-21T12:45:04.453Z",
+  "checkedAt": "2026-11-21T12:45:04.453Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-11-26"
+    "to": "2026-11-27"
   },
   "extendedHours": [],
   "sources": [
