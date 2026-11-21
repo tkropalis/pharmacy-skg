@@ -7,29 +7,9 @@
       "name": "Πιερία",
       "source": {
         "url": "https://pieria.efhmeries.gr/",
-        "uploadedAt": "2026-11-21T12:46:53.866Z"
+        "uploadedAt": "2026-11-21T21:44:24.698Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 20:30",
-          "hours": {
-            "from": "08:00",
-            "to": "20:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2351036815",
-              "name": "Σ.Φ. ΜΥΣΤΡΙΔΗΣ ΑΝΕΣΤΗΣ -ΜΥΣΤΡΙΔΗΣ ΓΕΩΡΓΙΟΣ",
-              "address": "ΘΕΣΣΑΛΟΝΙΚΗΣ 39",
-              "locality": "Κατερίνη",
-              "phone": "2351036815"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
@@ -143,6 +123,26 @@
               "address": "ΤΕΡΖΟΠΟΥΛΟΥ 112",
               "locality": "Κατερίνη",
               "phone": "2351036857"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 20:30",
+          "hours": {
+            "from": "08:00",
+            "to": "20:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351036815",
+              "name": "Σ.Φ. ΜΥΣΤΡΙΔΗΣ ΑΝΕΣΤΗΣ -ΜΥΣΤΡΙΔΗΣ ΓΕΩΡΓΙΟΣ",
+              "address": "ΘΕΣΣΑΛΟΝΙΚΗΣ 39",
+              "locality": "Κατερίνη",
+              "phone": "2351036815"
             }
           ]
         }
