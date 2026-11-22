@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-28",
+  "groups": [
+    {
+      "id": "ioannina",
+      "name": "Ιωάννινα",
+      "source": {
+        "url": "https://ioannina.efhmeries.gr/",
+        "uploadedAt": "2026-11-22T12:41:03.369Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651020567",
+              "name": "ΚΑΛΙΑΜΟΥΡΗΣ ΚΩΝ/ΝΟΣ",
+              "address": "ΛΕΩΦ.ΓΡΑΜΜΟΥ 34",
+              "locality": "Ιωάννινα",
+              "phone": "2651020567"
+            },
+            {
+              "pharmacyId": "2651065410",
+              "name": "ΛΑΜΠΡΟΥ ΜΑΡΙΑ",
+              "address": "3ΗΣ ΣΕΠΤΕΜΒΡΙΟΥ 1, ΑΝΑΤΟΛΗ",
+              "locality": "Ιωάννινα",
+              "phone": "2651065410"
+            },
+            {
+              "pharmacyId": "2651035035",
+              "name": "ΜΠΑΚΟΥΛΑ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "ΚΑΣΤΡΙΣΟΪΑΣ 23 & ΠΑΥΛΟΥ ΜΕΛΛΑ",
+              "locality": "Ιωάννινα",
+              "phone": "2651035035"
+            },
+            {
+              "pharmacyId": "2651022848",
+              "name": "Σ.Φ. ΓΚΑΤΖΙΑΝΗΣ ΕΜΜΑΝΟΥΗΛ - ΝΤΑΣΗΣ ΧΡΙΣΤΟΔΟΥΛΟΣ",
+              "address": "Μ. ΑΓΓΕΛΟΥ 2",
+              "locality": "Ιωάννινα",
+              "phone": "2651022848"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651031726",
+              "name": "ΝΤΟΥΣΚΑΣ ΘΕΟΔΩΡΟΣ",
+              "address": "ΣΑΜΟΥΗΛ 43",
+              "locality": "Ιωάννινα",
+              "phone": "2651031726"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

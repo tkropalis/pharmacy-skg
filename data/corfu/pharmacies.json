@@ -77,8 +77,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-22",
+      "lastSeen": "2026-11-22",
       "location": {
         "lat": 39.591337,
         "lon": 19.859619,
@@ -313,8 +313,8 @@
         "farmakeu",
         "ionian"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-22",
+      "lastSeen": "2026-11-22",
       "location": {
         "lat": 39.608965,
         "lon": 19.893417,
@@ -454,8 +454,8 @@
     },
     {
       "id": "2661033221",
-      "name": "ΓΡΙΜΜΑ ΜΑΡΙΑ",
-      "address": "ΠΛ. ΓΕΩΡΓΙΟΥ ΘΕΟΤΟΚΗ 29 (ΣΑΡΟΚΟ)",
+      "name": "ΜΥΡΙΛΛΑΣ ΠΕΤΡΟΣ",
+      "address": "ΠΛ. ΓΕΩΡΓ. ΘΕΟΤΟΚΗ 29 (ΣΑΡΟΚΟ)",
       "locality": "Κέρκυρα",
       "postcode": null,
       "phone": "2661033221",
@@ -465,13 +465,13 @@
         "ionian"
       ],
       "firstSeen": "2026-11-12",
-      "lastSeen": "2026-11-12",
+      "lastSeen": "2026-11-22",
       "location": {
-        "lat": 39.621191,
-        "lon": 19.919064,
-        "source": "overture",
-        "precision": "exact",
-        "ref": "adc46174-4769-4500-beaa-9761ab462465"
+        "lat": 39.591337,
+        "lon": 19.859619,
+        "source": "nominatim",
+        "precision": "locality",
+        "ref": "Κέρκυρα"
       }
     },
     {
@@ -820,7 +820,7 @@
     },
     {
       "id": "2661040127",
-      "name": "ΡΑΡΑΚΟΣ ΠΕΡΙΚΛΗΣ - ΡΑΡΑΚΟΣ ΠΕΤΡΟΣ",
+      "name": "ΡΑΡΑΚΟΣ ΠΕΡΙΚΛΗΣ",
       "address": "ΕΥΑΓ. ΝΑΠΟΛΕΟΝΤΟΣ 52 (ΠΛΑΤΥΤΕΡΑ)",
       "locality": "Κέρκυρα",
       "postcode": null,
@@ -829,8 +829,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-22",
+      "lastSeen": "2026-11-22",
       "location": {
         "lat": 39.591337,
         "lon": 19.859619,
@@ -1637,7 +1637,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-21",
+      "lastSeen": "2026-11-22",
       "location": {
         "lat": 39.422623,
         "lon": 20.062111,
@@ -1807,7 +1807,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-21",
+      "lastSeen": "2026-11-22",
       "location": {
         "lat": 39.443549,
         "lon": 19.941824,
@@ -2021,7 +2021,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-16",
-      "lastSeen": "2026-11-21",
+      "lastSeen": "2026-11-22",
       "location": {
         "lat": 39.78627,
         "lon": 19.76696,

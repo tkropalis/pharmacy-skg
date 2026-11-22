@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-28",
+  "groups": [
+    {
+      "id": "evros",
+      "name": "Έβρος",
+      "source": {
+        "url": "https://evros.efhmeries.gr/",
+        "uploadedAt": "2026-11-22T12:40:27.603Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00-21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551024584",
+              "name": "ΚΟΡΑΚΙΑΝΙΤΗ ΣΤΥΛΙΑΝΗ-ΚΩΝΣΤΑΝΤΙΝΑ",
+              "address": "Εθν. Αντιστάσεως 124 (γωνία Βιζβίζη)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551024584"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552022769",
+              "name": "ΜΕΛΑΣ ΕΜΜΑΝΟΥΗΛ",
+              "address": "ΕΥΡΥΠΙΔΟΥ 12",
+              "locality": "Ορεστιάδα",
+              "phone": "2552022769"
+            },
+            {
+              "pharmacyId": "2553025115",
+              "name": "Σ.Φ. ΒΑΦΕΙΑΔΗΣ Π. - ΒΑΦΕΙΑΔΟΥ Κ.",
+              "address": "25ΗΣ ΜΑΪΟΥ 131",
+              "locality": "Διδυμότειχο",
+              "phone": "2553025115"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2555024333",
+              "name": "ΜΑΛΑΚΗΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "ΟΡΦΕΩΣ 2",
+              "locality": "Φέρες",
+              "phone": "2555024333"
+            },
+            {
+              "pharmacyId": "2554022013",
+              "name": "ΜΠΑΜΙΔΟΥ ΚΟΡΤΕΣΣΑ ΤΟΥ ΠΑΝΑΓΙΩΤΗ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 211",
+              "locality": "Σουφλί",
+              "phone": "2554022013"
+            },
+            {
+              "pharmacyId": "2554042100",
+              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛΕΜΑΧΟΣ",
+              "address": "ΠΡΟΒΑΤΩΝΑΣ",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042100"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551020667",
+              "name": "Σ.Φ. ΚΑΪΣΑΣ Γ.-ΚΑΪΣΑ Χ.",
+              "address": "14ης Μαΐου 88 (έναντι ΚΕΠ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551020667"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:30-14:00",
+          "hours": {
+            "from": "08:30",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552023926",
+              "name": "Σ.Φ. Σ. ΚΥΡΟΥΔΗ-Β. ΜΠΙΜΠΟΥΔΗ",
+              "address": "ΚΩΝ/ΠΟΛΕΩΣ 222",
+              "locality": "Ορεστιάδα",
+              "phone": "2552023926"
+            },
+            {
+              "pharmacyId": "2552021141",
+              "name": "ΣΙΑΝΚΟΥΡΗ ΑΝΑΣΤΑΣΙΑ",
+              "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 257",
+              "locality": "Ορεστιάδα",
+              "phone": "2552021141"
+            },
+            {
+              "pharmacyId": "2552024315",
+              "name": "ΧΑΤΖΗΓΙΑΝΝΗ ΙΣΙΔΩΡΑ-ΔΗΜΗΤΡΑ",
+              "address": "ΕΥΡΙΠΙΔΟΥ 19",
+              "locality": "Ορεστιάδα",
+              "phone": "2552024315"
+            }
+          ]
+        },
+        {
+          "kind": "saturday-extra",
+          "heading": "08:00-14:30",
+          "hours": {
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2553022922",
+              "name": "ΓΙΟΥΡΤΣΟΓΛΟΥ ΧΡΗΣΤΟΣ",
+              "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 9",
+              "locality": "Διδυμότειχο",
+              "phone": "2553022922"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

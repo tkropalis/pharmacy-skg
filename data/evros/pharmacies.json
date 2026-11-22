@@ -13,7 +13,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-09",
+      "lastSeen": "2026-11-28",
       "location": {
         "lat": 40.8502059,
         "lon": 25.873319,
@@ -144,6 +144,27 @@
         "lat": 40.8466292,
         "lon": 25.8751441,
         "ref": "https://evros.efhmeries.gr/Home/Details/4043",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2551024584",
+      "name": "ΚΟΡΑΚΙΑΝΙΤΗ ΣΤΥΛΙΑΝΗ-ΚΩΝΣΤΑΝΤΙΝΑ",
+      "address": "Εθν. Αντιστάσεως 124 (γωνία Βιζβίζη)",
+      "locality": "Αλεξανδρούπολη",
+      "postcode": null,
+      "phone": "2551024584",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "location": {
+        "lat": 40.84685,
+        "lon": 25.871513,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4351",
         "source": "list",
         "precision": "exact"
       }
@@ -979,7 +1000,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-10",
-      "lastSeen": "2026-10-10",
+      "lastSeen": "2026-11-28",
       "location": {
         "lat": 41.5070312,
         "lon": 26.5326661,
@@ -1084,7 +1105,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-28",
       "location": {
         "lat": 41.4955525,
         "lon": 26.5339423,
@@ -1168,11 +1189,32 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-20",
+      "lastSeen": "2026-11-28",
       "location": {
         "lat": 41.5025546,
         "lon": 26.5322197,
         "ref": "https://evros.efhmeries.gr/Home/Details/4509",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2552024315",
+      "name": "ΧΑΤΖΗΓΙΑΝΝΗ ΙΣΙΔΩΡΑ-ΔΗΜΗΤΡΑ",
+      "address": "ΕΥΡΙΠΙΔΟΥ 19",
+      "locality": "Ορεστιάδα",
+      "postcode": null,
+      "phone": "2552024315",
+      "groupId": "evros",
+      "sources": [
+        "iteq-evros"
+      ],
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "location": {
+        "lat": 41.4962358,
+        "lon": 26.5342099,
+        "ref": "https://evros.efhmeries.gr/Home/Details/4890",
         "source": "list",
         "precision": "exact"
       }
@@ -1378,7 +1420,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-15",
-      "lastSeen": "2026-11-14",
+      "lastSeen": "2026-11-28",
       "location": {
         "lat": 41.3497643,
         "lon": 26.4941195,
@@ -1504,7 +1546,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-24",
+      "lastSeen": "2026-11-28",
       "location": {
         "lat": 41.3526561,
         "lon": 26.503006,
@@ -1525,7 +1567,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-16",
+      "lastSeen": "2026-11-28",
       "location": {
         "lat": 41.1947643,
         "lon": 26.3052864,
@@ -1672,7 +1714,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-12",
-      "lastSeen": "2026-11-27",
+      "lastSeen": "2026-11-28",
       "location": {
         "lat": 41.025262,
         "lon": 26.2577482,
@@ -1777,7 +1819,7 @@
         "iteq-evros"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-23",
+      "lastSeen": "2026-11-28",
       "location": {
         "lat": 40.8951274,
         "lon": 26.1698018,

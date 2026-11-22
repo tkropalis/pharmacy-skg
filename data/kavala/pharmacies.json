@@ -34,7 +34,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-11-27",
-      "lastSeen": "2026-11-27",
+      "lastSeen": "2026-11-28",
       "location": {
         "lat": 40.9358619,
         "lon": 24.4078016,
@@ -711,6 +711,27 @@
         "lat": 40.935895,
         "lon": 24.408052,
         "ref": "https://kavala.efhmeries.gr/Home/Details/3993",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2510833005",
+      "name": "ΜΠΟΥΛΗ ΑΝΝΑ",
+      "address": "ΦΙΛΙΚΗΣ ΕΤΑΙΡΕΙΑΣ 5",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510833005",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "location": {
+        "lat": 40.9358619,
+        "lon": 24.4078016,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4070",
         "source": "list",
         "precision": "exact"
       }

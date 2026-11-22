@@ -7,7 +7,7 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-11-21T21:43:59.796Z"
+        "uploadedAt": "2026-11-22T12:41:54.698Z"
       },
       "sections": [
         {
@@ -137,26 +137,6 @@
         },
         {
           "kind": "day",
-          "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721027683",
-              "name": "ΚΟΝΤΟΥ ΜΑΓΔΑΛΗΝΗ",
-              "address": "ΚΙΛΚΙΣ 11 & ΑΘΗΝΩΝ",
-              "locality": "Καλαμάτα",
-              "phone": "2721027683"
-            }
-          ]
-        },
-        {
-          "kind": "day",
           "heading": "08:00 ΕΩΣ 20:30",
           "hours": {
             "from": "08:00",
@@ -172,6 +152,26 @@
               "address": "ΑΝΑΓΝΩΣΤΑΡΑ 10",
               "locality": "Καλαμάτα",
               "phone": "2721095500"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:00 ΚΑΙ 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721027683",
+              "name": "ΚΟΝΤΟΥ ΜΑΓΔΑΛΗΝΗ",
+              "address": "ΚΙΛΚΙΣ 11 & ΑΘΗΝΩΝ",
+              "locality": "Καλαμάτα",
+              "phone": "2721027683"
             }
           ]
         }

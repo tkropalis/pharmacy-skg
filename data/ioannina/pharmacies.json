@@ -97,7 +97,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-04",
+      "lastSeen": "2026-11-28",
       "location": {
         "lat": 39.6848051,
         "lon": 20.8333995,
@@ -223,7 +223,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-11-19",
+      "lastSeen": "2026-11-28",
       "location": {
         "lat": 39.6647611,
         "lon": 20.8521335,
@@ -769,7 +769,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-19",
-      "lastSeen": "2026-10-19",
+      "lastSeen": "2026-11-28",
       "location": {
         "lat": 39.6681732,
         "lon": 20.8472428,
@@ -900,6 +900,27 @@
         "lat": 39.6702123,
         "lon": 20.8525678,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5076",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651035035",
+      "name": "ΜΠΑΚΟΥΛΑ ΑΙΚΑΤΕΡΙΝΗ",
+      "address": "ΚΑΣΤΡΙΣΟΪΑΣ 23 & ΠΑΥΛΟΥ ΜΕΛΛΑ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651035035",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-28",
+      "lastSeen": "2026-11-28",
+      "location": {
+        "lat": 39.672201,
+        "lon": 20.8463457,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5150",
         "source": "list",
         "precision": "exact"
       }
@@ -1378,7 +1399,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-11-11",
-      "lastSeen": "2026-11-11",
+      "lastSeen": "2026-11-28",
       "location": {
         "lat": 39.6425384,
         "lon": 20.8660331,
