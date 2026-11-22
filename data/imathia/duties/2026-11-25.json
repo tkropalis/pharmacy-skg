@@ -7,33 +7,26 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-11-22T12:40:41.904Z"
+        "uploadedAt": "2026-11-22T21:52:46.640Z"
       },
       "sections": [
         {
-          "kind": "day",
-          "heading": "14:30 ΕΩΣ 21:00",
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
-            "from": "14:30",
-            "to": "21:00",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331026914",
-              "name": "ΠΟΤΑΜΟΠΟΥΛΟΣ ΑΝΤΩΝΙΟΣ & ΣΙΑ ΕΕ",
-              "address": "ΠΙΕΡΙΩΝ 44",
+              "pharmacyId": "2331066812",
+              "name": "ΠΑΝΤΑΖΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΟΥ ΜΙΧΑΗΛ",
+              "address": "ΑΪΒΑΛΙΟΥ 2 & ΑΚΡΟΠΟΛΕΩΣ ΚΕΝΤΡΟ ΠΡΟΜΗΘΕΑ",
               "locality": "Βέροια",
-              "phone": "2331026914"
-            },
-            {
-              "pharmacyId": "2331027355",
-              "name": "Σ.Φ. ΜΟΥΡΤΖΙΛΑ Β. - ΜΟΥΡΤΖΙΛΑΣ Γ. ΟΕ",
-              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 20 - ΚΤΕΛ",
-              "locality": "Βέροια",
-              "phone": "2331027355"
+              "phone": "2331066812"
             }
           ]
         },
@@ -87,9 +80,9 @@
         },
         {
           "kind": "day",
-          "heading": "19:00 ΕΩΣ 21:00",
+          "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
-            "from": "19:00",
+            "from": "14:30",
             "to": "21:00",
             "toNextDay": false
           },
@@ -97,21 +90,28 @@
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331066812",
-              "name": "ΠΑΝΤΑΖΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ ΤΟΥ ΜΙΧΑΗΛ",
-              "address": "ΑΪΒΑΛΙΟΥ 2 & ΑΚΡΟΠΟΛΕΩΣ ΚΕΝΤΡΟ ΠΡΟΜΗΘΕΑ",
+              "pharmacyId": "2331026914",
+              "name": "ΠΟΤΑΜΟΠΟΥΛΟΣ ΑΝΤΩΝΙΟΣ & ΣΙΑ ΕΕ",
+              "address": "ΠΙΕΡΙΩΝ 44",
               "locality": "Βέροια",
-              "phone": "2331066812"
+              "phone": "2331026914"
+            },
+            {
+              "pharmacyId": "2331027355",
+              "name": "Σ.Φ. ΜΟΥΡΤΖΙΛΑ Β. - ΜΟΥΡΤΖΙΛΑΣ Γ. ΟΕ",
+              "address": "ΤΡΕΜΠΕΣΙΝΑΣ 20 - ΚΤΕΛ",
+              "locality": "Βέροια",
+              "phone": "2331027355"
             }
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "19:00 ΕΩΣ 21:00",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "19:00",
+            "to": "21:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],

@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-22T12:40:21.389Z"
+        "uploadedAt": "2026-11-22T21:52:28.197Z"
       },
       "sections": [
         {
@@ -34,6 +34,26 @@
               "address": "8ης ΜΑΪΟΥ 1",
               "locality": "Ιστιαία",
               "phone": "2226052255"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221025704",
+              "name": "ΚΟΖΙΩΝΑ ΟΥΡΑΝΙΑ",
+              "address": "ΑΝ. ΜΑΡΓΑΡΙΤΗ 154",
+              "locality": "Χαλκίδα",
+              "phone": "2221025704"
             }
           ]
         },
@@ -82,26 +102,6 @@
               "address": "ΦΑΒΙΕΡΟΥ 9",
               "locality": "Χαλκίδα",
               "phone": "2221087100"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221025704",
-              "name": "ΚΟΖΙΩΝΑ ΟΥΡΑΝΙΑ",
-              "address": "ΑΝ. ΜΑΡΓΑΡΙΤΗ 154",
-              "locality": "Χαλκίδα",
-              "phone": "2221025704"
             }
           ]
         }

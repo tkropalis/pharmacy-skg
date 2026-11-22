@@ -7,29 +7,9 @@
       "name": "Καρδίτσα",
       "source": {
         "url": "https://karditsa.efhmeries.gr/",
-        "uploadedAt": "2026-11-22T12:41:17.411Z"
+        "uploadedAt": "2026-11-22T21:53:17.435Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2441076979",
-              "name": "ΤΣΙΑΚΑΡΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
-              "address": "ΗΡ.ΠΟΛΥΤΕΧΝΕΙΟΥ 3",
-              "locality": "Καρδίτσα",
-              "phone": "2441076979"
-            }
-          ]
-        },
         {
           "kind": "on-duty",
           "heading": "8 ΠΡΩΙ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΠΛΑΣΤΗΡΑ 12",
               "locality": "Καρδίτσα",
               "phone": "2441076190"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2441076979",
+              "name": "ΤΣΙΑΚΑΡΑΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΗΡ.ΠΟΛΥΤΕΧΝΕΙΟΥ 3",
+              "locality": "Καρδίτσα",
+              "phone": "2441076979"
             }
           ]
         }

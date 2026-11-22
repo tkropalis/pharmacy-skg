@@ -7,7 +7,7 @@
       "name": "Έβρος",
       "source": {
         "url": "https://evros.efhmeries.gr/",
-        "uploadedAt": "2026-11-22T12:40:27.603Z"
+        "uploadedAt": "2026-11-22T21:52:34.344Z"
       },
       "sections": [
         {
@@ -38,22 +38,22 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "14:30-22:00",
+          "kind": "overnight",
+          "heading": "18:00-08:00",
           "hours": {
-            "from": "14:30",
-            "to": "22:00",
-            "toNextDay": false
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2551111900",
-              "name": "ΓΡΑΜΜΕΝΙΔΗΣ ΑΝΔΡΕΑΣ",
-              "address": "Αγ. Γεωργίου, Παλαγία",
+              "pharmacyId": "2551083833",
+              "name": "ΠΑΡΗ ΔΟΜΝΑ",
+              "address": "Ποιμενίδη & Παλαμά γωνία",
               "locality": "Αλεξανδρούπολη",
-              "phone": "2551111900"
+              "phone": "2551083833"
             }
           ]
         },
@@ -93,22 +93,22 @@
           ]
         },
         {
-          "kind": "overnight",
-          "heading": "18:00-08:00",
+          "kind": "day",
+          "heading": "14:30-22:00",
           "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "14:30",
+            "to": "22:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2551083833",
-              "name": "ΠΑΡΗ ΔΟΜΝΑ",
-              "address": "Ποιμενίδη & Παλαμά γωνία",
+              "pharmacyId": "2551111900",
+              "name": "ΓΡΑΜΜΕΝΙΔΗΣ ΑΝΔΡΕΑΣ",
+              "address": "Αγ. Γεωργίου, Παλαγία",
               "locality": "Αλεξανδρούπολη",
-              "phone": "2551083833"
+              "phone": "2551111900"
             }
           ]
         }
