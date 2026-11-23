@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-29",
+  "groups": [
+    {
+      "id": "evros",
+      "name": "Έβρος",
+      "source": {
+        "url": "https://evros.efhmeries.gr/",
+        "uploadedAt": "2026-11-23T14:47:57.018Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00-21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551028396",
+              "name": "ΜΗΤΚΑΣ ΑΔΑΜΑΝΤΙΟΣ",
+              "address": "Ιωακ. Καβύρη 1 (πα/ρως ΟΤΕ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551028396"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552027049",
+              "name": "ΚΟΥΚΛΑΤΖΗ ΣΜΑΡΩ",
+              "address": "Β. ΚΩΝΣΤΑΝΤΙΝΟΥ 52",
+              "locality": "Ορεστιάδα",
+              "phone": "2552027049"
+            },
+            {
+              "pharmacyId": "2553025115",
+              "name": "Σ.Φ. ΒΑΦΕΙΑΔΗΣ Π. - ΒΑΦΕΙΑΔΟΥ Κ.",
+              "address": "25ΗΣ ΜΑΪΟΥ 131",
+              "locality": "Διδυμότειχο",
+              "phone": "2553025115"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2555024333",
+              "name": "ΜΑΛΑΚΗΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "ΟΡΦΕΩΣ 2",
+              "locality": "Φέρες",
+              "phone": "2555024333"
+            },
+            {
+              "pharmacyId": "2554022013",
+              "name": "ΜΠΑΜΙΔΟΥ ΚΟΡΤΕΣΣΑ ΤΟΥ ΠΑΝΑΓΙΩΤΗ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 211",
+              "locality": "Σουφλί",
+              "phone": "2554022013"
+            },
+            {
+              "pharmacyId": "2554042100",
+              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛΕΜΑΧΟΣ",
+              "address": "ΠΡΟΒΑΤΩΝΑΣ",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042100"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "10:00-14:00 & 18:00-08:00",
+          "hours": {
+            "from": "10:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551038473",
+              "name": "ΤΣΩΝΗΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "Μαζαράκη 11 (μεταξύ Αγ.Νικολάου & ΤΑΞΙ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551038473"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "10:00-14:00 & 18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551038473",
+              "name": "ΤΣΩΝΗΣ ΑΘΑΝΑΣΙΟΣ",
+              "address": "Μαζαράκη 11 (μεταξύ Αγ.Νικολάου & ΤΑΞΙ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551038473"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

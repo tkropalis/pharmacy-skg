@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-29",
+  "groups": [
+    {
+      "id": "ioannina",
+      "name": "Ιωάννινα",
+      "source": {
+        "url": "https://ioannina.efhmeries.gr/",
+        "uploadedAt": "2026-11-23T14:48:27.662Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651073206",
+              "name": "ΖΙΑΚΑ ΓΙΑΝΝΟΥΛΑ",
+              "address": "ΦΙΛΙΠΠΟΥ Β' 46 - ΝΕΑ ΖΩΗ",
+              "locality": "Ιωάννινα",
+              "phone": "2651073206"
+            },
+            {
+              "pharmacyId": "2651031994",
+              "name": "ΛΙΑΣΚΑΣ ΒΑΣΙΛΕΙΟΣ",
+              "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 124",
+              "locality": "Ιωάννινα",
+              "phone": "2651031994"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 14:30& 18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651070146",
+              "name": "ΝΙΚΑΣ ΠΕΡΙΚΛΗΣ",
+              "address": "ΚΟΡΑΗ 13",
+              "locality": "Ιωάννινα",
+              "phone": "2651070146"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00 ΕΩΣ 14:30& 18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651070146",
+              "name": "ΝΙΚΑΣ ΠΕΡΙΚΛΗΣ",
+              "address": "ΚΟΡΑΗ 13",
+              "locality": "Ιωάννινα",
+              "phone": "2651070146"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -7,7 +7,7 @@
       "name": "Δωδεκάνησα",
       "source": {
         "url": "https://dodecanese.efhmeries.gr/",
-        "uploadedAt": "2026-11-22T21:52:15.868Z"
+        "uploadedAt": "2026-11-23T14:47:38.565Z"
       },
       "sections": [
         {
@@ -55,6 +55,13 @@
               "address": "ΠΛΑΤΕΙΑ ΑΓΙΩΝ ΑΠΟΣΤΟΛΩΝ / AGION APOSTOLON SQ.",
               "locality": "Ρόδος",
               "phone": "2241064037"
+            },
+            {
+              "pharmacyId": "2241069772",
+              "name": "ΚΑΖΟΥΛΛΑΚΗΣ ΙΠΠΟΚΡΑΤΗΣ & ΣΙΑ Ο.Ε. / KAZOULAKIS IPOKRATIS",
+              "address": "5 ΧΛΜ ΛΕΩΦ. ΡΟΔΟΥ-ΚΑΛΛΙΘΕΑΣ / 5 KM L. RODOU-KALITHEAS",
+              "locality": "Καλλιθέα",
+              "phone": "2241069772"
             },
             {
               "pharmacyId": "2241069772",
@@ -196,6 +203,13 @@
               "phone": "2241069772"
             },
             {
+              "pharmacyId": "2241069772",
+              "name": "ΚΑΖΟΥΛΛΑΚΗΣ ΙΠΠΟΚΡΑΤΗΣ & ΣΙΑ Ο.Ε. / KAZOULAKIS IPOKRATIS",
+              "address": "5 ΧΛΜ ΛΕΩΦ. ΡΟΔΟΥ-ΚΑΛΛΙΘΕΑΣ / 5 KM L. RODOU-KALITHEAS",
+              "locality": "Καλλιθέα",
+              "phone": "2241069772"
+            },
+            {
               "pharmacyId": "2241041830",
               "name": "ΚΑΪΚΗΣ ΜΙΧΑΗΛ ΚΑΙ ΣΙΑ Ε.Ε. / KAIKIS MIHAIL",
               "address": "ΜΑΣΤΙΧΑΡΙ ΚΑΜΕΙΡΟΥ / MASTIHARI KAMIROY",
@@ -312,6 +326,13 @@
               "address": "ΛΙΝΔΟΣ / LINDOS",
               "locality": "Λίνδος",
               "phone": "2244031294"
+            },
+            {
+              "pharmacyId": "2241069772",
+              "name": "ΚΑΖΟΥΛΛΑΚΗΣ ΙΠΠΟΚΡΑΤΗΣ & ΣΙΑ Ο.Ε. / KAZOULAKIS IPOKRATIS",
+              "address": "5 ΧΛΜ ΛΕΩΦ. ΡΟΔΟΥ-ΚΑΛΛΙΘΕΑΣ / 5 KM L. RODOU-KALITHEAS",
+              "locality": "Καλλιθέα",
+              "phone": "2241069772"
             },
             {
               "pharmacyId": "2241069772",

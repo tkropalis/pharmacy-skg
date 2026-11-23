@@ -7,9 +7,29 @@
       "name": "Πιερία",
       "source": {
         "url": "https://pieria.efhmeries.gr/",
-        "uploadedAt": "2026-11-22T21:54:19.398Z"
+        "uploadedAt": "2026-11-23T14:49:43.880Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 20:30",
+          "hours": {
+            "from": "08:00",
+            "to": "20:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2351030867",
+              "name": "ΤΖΑΓΚΑ ΕΛΕΝΗ",
+              "address": "ΖΑΛΟΓΓΟΥ 33",
+              "locality": "Κατερίνη",
+              "phone": "2351030867"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
@@ -123,26 +143,6 @@
               "address": "Μ.ΑΛΕΞΑΝΔΡΟΥ 66",
               "locality": "Κατερίνη",
               "phone": "2351035492"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 20:30",
-          "hours": {
-            "from": "08:00",
-            "to": "20:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2351030867",
-              "name": "ΤΖΑΓΚΑ ΕΛΕΝΗ",
-              "address": "ΖΑΛΟΓΓΟΥ 33",
-              "locality": "Κατερίνη",
-              "phone": "2351030867"
             }
           ]
         }

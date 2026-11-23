@@ -527,6 +527,27 @@
       }
     },
     {
+      "id": "2510242540",
+      "name": "ΘΕΟΛΟΓΙΤΗΣ ΧΑΡΑΛΑΜΠΟΣ-ΧΡΗΣΤΟΣ",
+      "address": "ΕΥΞ.ΠΟΝΤΟΥ 29",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510242540",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-29",
+      "lastSeen": "2026-11-29",
+      "location": {
+        "lat": 40.9263337,
+        "lon": 24.3793534,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4072",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510243751",
       "name": "ΚΡΥΟΝΕΡΙΤΟΥ ΖΩΗ",
       "address": "7ΗΣ ΜΕΡΑΡΧΙΑΣ 58",
@@ -727,7 +748,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-11-28",
-      "lastSeen": "2026-11-28",
+      "lastSeen": "2026-11-29",
       "location": {
         "lat": 40.9358619,
         "lon": 24.4078016,
@@ -979,7 +1000,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-29",
       "location": {
         "lat": 40.9433401,
         "lon": 24.4231221,
