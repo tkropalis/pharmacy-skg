@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-23T14:47:50.921Z"
+        "uploadedAt": "2026-11-24T02:56:53.152Z"
       },
       "sections": [
         {
@@ -34,54 +34,6 @@
               "address": "ΛΕΩΦ ΤΣΙΜΕΝΙΔΟΥ 12",
               "locality": "Αρτάκη",
               "phone": "2221044062"
-            }
-          ]
-        },
-        {
-          "kind": "on-duty",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
-          "hours": {
-            "from": "08:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "onCall": true,
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221064600",
-              "name": "ΝΙΦΟΡΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
-              "address": "ΑΜΑΡΥΣΙΑΣ ΑΡΤΕΜΙΔΟΣ ΚΑΙ ΑΠΟΣΤΟΛΗ",
-              "locality": "Ερέτρια",
-              "phone": "2221064600"
-            },
-            {
-              "pharmacyId": "2224023543",
-              "name": "ΠΟΛΙΤΗΣ ΠΑΝΑΓΙΩΤΗΣ",
-              "address": "ΣΑΧΤΟΥΡΗ 80",
-              "locality": "Κάρυστος",
-              "phone": "2224023543"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221081880",
-              "name": "Σ.Φ. ΛΙΟΣΗ Β. & ΘΕΟΔΩΡΟΠΟΥΛΟΥ Δ. Ο.Ε.",
-              "address": "ΑΡΕΘΟΥΣΗΣ & ΠΗΛΙΚΑ",
-              "locality": "Χαλκίδα",
-              "phone": "2221081880"
             }
           ]
         },
@@ -126,6 +78,34 @@
           ]
         },
         {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221064600",
+              "name": "ΝΙΦΟΡΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ",
+              "address": "ΑΜΑΡΥΣΙΑΣ ΑΡΤΕΜΙΔΟΣ ΚΑΙ ΑΠΟΣΤΟΛΗ",
+              "locality": "Ερέτρια",
+              "phone": "2221064600"
+            },
+            {
+              "pharmacyId": "2224023543",
+              "name": "ΠΟΛΙΤΗΣ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΣΑΧΤΟΥΡΗ 80",
+              "locality": "Κάρυστος",
+              "phone": "2224023543"
+            }
+          ]
+        },
+        {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 21:00",
           "hours": {
@@ -162,6 +142,26 @@
               "address": "ΧΑΪΝΑ 37",
               "locality": "Χαλκίδα",
               "phone": "2221020042"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221081880",
+              "name": "Σ.Φ. ΛΙΟΣΗ Β. & ΘΕΟΔΩΡΟΠΟΥΛΟΥ Δ. Ο.Ε.",
+              "address": "ΑΡΕΘΟΥΣΗΣ & ΠΗΛΙΚΑ",
+              "locality": "Χαλκίδα",
+              "phone": "2221081880"
             }
           ]
         }

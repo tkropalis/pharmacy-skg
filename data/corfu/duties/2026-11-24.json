@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-24",
+  "groups": [
+    {
+      "id": "corfu",
+      "name": "Κέρκυρα",
+      "source": {
+        "url": "https://farmakeu.static.otenet.gr/phduties.php",
+        "uploadedAt": "2026-11-24T02:56:14.811Z"
+      },
+      "sections": [
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 21:00 (ΤΗΣ ΠΡΟΗΓΟΥΜΕΝΗΣ) ΕΩΣ ΤΙΣ 8:00",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2661020970",
+              "name": "ΚΟΣΚΙΝΑΣ ΣΠΥΡΟΣ",
+              "address": "ΙΟΥΛΙΑΣ ΑΝΔΡΕΑΔΗ 11 (ΠΛΑΤΥΤΕΡΑ)",
+              "locality": "Κέρκυρα",
+              "phone": "2661020970"
+            },
+            {
+              "pharmacyId": "2662051109",
+              "name": "ΠΑΝΑΓΟΥ ΗΛΙΑΝΑ",
+              "address": "ΑΡΓΥΡΑΔΕΣ",
+              "locality": "Αργυράδες",
+              "phone": "2662051109"
+            },
+            {
+              "pharmacyId": "2663031355",
+              "name": "ΡΟΥΤΣΑΚΟΣ ΝΙΚΗΤΑΣ",
+              "address": "ΚΑΡΟΥΣΑΔΕΣ",
+              "locality": "Καρουσάδες",
+              "phone": "2663031355"
+            },
+            {
+              "pharmacyId": "2662022649",
+              "name": "ΣΤΑΜΑΤΑΚΟΣ ΑΛΕΞΑΝΔΡΟΣ",
+              "address": "ΛΕΥΚΙΜΜΗ",
+              "locality": "Λευκίμμη",
+              "phone": "2662022649"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
