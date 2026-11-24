@@ -202,7 +202,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-24",
+      "lastSeen": "2026-11-30",
       "location": {
         "lat": 37.5141388,
         "lon": 22.3805177,
@@ -307,7 +307,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-28",
+      "lastSeen": "2026-11-09",
       "location": {
         "lat": 37.5125486,
         "lon": 22.3716968,
@@ -354,6 +354,27 @@
         "lat": 37.5079161,
         "lon": 22.37146,
         "ref": "https://arkadia.efhmeries.gr/Home/Details/5050",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2710234732",
+      "name": "ΚΑΡΚΟΥΛΗ ΜΑΡΙΑ",
+      "address": "ΕΡ. ΣΤΑΥΡΟΥ ΚΑΙ ΑΝΑΓΝΩΣΤΑΡΑ",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710234732",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-11-30",
+      "lastSeen": "2026-11-30",
+      "location": {
+        "lat": 37.5127045,
+        "lon": 22.3679173,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5087",
         "source": "list",
         "precision": "exact"
       }
@@ -475,7 +496,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-11-28",
+      "lastSeen": "2026-11-30",
       "location": {
         "lat": 37.5097434,
         "lon": 22.373709,
@@ -496,7 +517,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-25",
+      "lastSeen": "2026-11-30",
       "location": {
         "lat": 37.5114741,
         "lon": 22.3722054,
@@ -569,6 +590,27 @@
       }
     },
     {
+      "id": "2710242349",
+      "name": "ΑΘΑΝΑΣΙΑΔΟΥ Ε. ΑΝΑΣΤΑΣΙΑ",
+      "address": "28ΗΣ ΟΚΤΩΒΡΙΟΥ 97",
+      "locality": "Τρίπολη",
+      "postcode": null,
+      "phone": "2710242349",
+      "groupId": "arkadia",
+      "sources": [
+        "iteq-arkadia"
+      ],
+      "firstSeen": "2026-11-30",
+      "lastSeen": "2026-11-30",
+      "location": {
+        "lat": 37.5162565,
+        "lon": 22.3722188,
+        "ref": "https://arkadia.efhmeries.gr/Home/Details/5062",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2755022112",
       "name": "ΓΑΪΤΑΝΗΣ ΑΝΔΡΕΑΣ",
       "address": "ΑΣΤΡΟΣ",
@@ -622,7 +664,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-25",
+      "lastSeen": "2026-11-30",
       "location": {
         "lat": 37.4062373,
         "lon": 22.71853,
@@ -664,7 +706,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-25",
+      "lastSeen": "2026-11-30",
       "location": {
         "lat": 37.1662669,
         "lon": 22.86118,
@@ -727,7 +769,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-26",
+      "lastSeen": "2026-11-30",
       "location": {
         "lat": 37.4014368,
         "lon": 22.136571,
@@ -790,7 +832,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-11-28",
+      "lastSeen": "2026-11-30",
       "location": {
         "lat": 37.6845416,
         "lon": 22.2955302,
@@ -853,7 +895,7 @@
         "iteq-arkadia"
       ],
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-11-29",
+      "lastSeen": "2026-11-30",
       "location": {
         "lat": 37.7322838,
         "lon": 21.9594427,

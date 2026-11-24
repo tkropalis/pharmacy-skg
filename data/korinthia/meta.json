@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "korinthia",
-  "updatedAt": "2026-11-24T02:58:00.281Z",
-  "checkedAt": "2026-11-24T02:58:00.281Z",
+  "updatedAt": "2026-11-24T14:58:00.926Z",
+  "checkedAt": "2026-11-24T14:58:00.926Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-11-29"
+    "to": "2026-11-30"
   },
   "extendedHours": [],
   "sources": [

@@ -160,7 +160,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-13",
+      "lastSeen": "2026-11-30",
       "location": {
         "lat": 40.298405,
         "lon": 21.7941875,
@@ -580,7 +580,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-21",
+      "lastSeen": "2026-11-30",
       "location": {
         "lat": 40.301655,
         "lon": 21.7857476,
@@ -648,6 +648,27 @@
         "lat": 40.3022471,
         "lon": 21.7861325,
         "ref": "https://kozani.efhmeries.gr/Home/Details/6467",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2461035147",
+      "name": "ΜΗΛΙΟΥ ΒΙΚΤΩΡΙΑ",
+      "address": "ΜΕΓΑΛΟΥ ΑΛΕΞΑΝΔΡΟΥ 43",
+      "locality": "Κοζάνη",
+      "postcode": null,
+      "phone": "2461035147",
+      "groupId": "kozani",
+      "sources": [
+        "iteq-kozani"
+      ],
+      "firstSeen": "2026-11-30",
+      "lastSeen": "2026-11-30",
+      "location": {
+        "lat": 40.3010187,
+        "lon": 21.7913871,
+        "ref": "https://kozani.efhmeries.gr/Home/Details/5711",
         "source": "list",
         "precision": "exact"
       }
@@ -1063,7 +1084,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-09",
-      "lastSeen": "2026-11-27",
+      "lastSeen": "2026-11-30",
       "location": {
         "lat": 40.5132163,
         "lon": 21.6789042,
@@ -1357,7 +1378,7 @@
         "iteq-kozani"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-23",
+      "lastSeen": "2026-11-30",
       "location": {
         "lat": 40.5142718,
         "lon": 21.6808582,

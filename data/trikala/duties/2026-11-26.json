@@ -7,49 +7,9 @@
       "name": "Τρίκαλα",
       "source": {
         "url": "https://trikala.efhmeries.gr/",
-        "uploadedAt": "2026-11-24T02:59:02.764Z"
+        "uploadedAt": "2026-11-24T14:59:04.018Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "08:00",
-            "to": "14:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431037855",
-              "name": "ΜΕΡΜΗΓΚΑΣ ΧΡΗΣΤΟΣ",
-              "address": "ΚΟΝΔΥΛΗ ΓΕΩΡΓΙΟΥ 28",
-              "locality": "Τρίκαλα",
-              "phone": "2431037855"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "17:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2431037855",
-              "name": "ΜΕΡΜΗΓΚΑΣ ΧΡΗΣΤΟΣ",
-              "address": "ΚΟΝΔΥΛΗ ΓΕΩΡΓΙΟΥ 28",
-              "locality": "Τρίκαλα",
-              "phone": "2431037855"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 23:00",
@@ -94,6 +54,46 @@
               "address": "ΣΤΡΑΤΗΓΟΥ ΣΑΡΑΦΗ 4",
               "locality": "Τρίκαλα",
               "phone": "2431026350"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "14:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431037855",
+              "name": "ΜΕΡΜΗΓΚΑΣ ΧΡΗΣΤΟΣ",
+              "address": "ΚΟΝΔΥΛΗ ΓΕΩΡΓΙΟΥ 28",
+              "locality": "Τρίκαλα",
+              "phone": "2431037855"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 14:00 & 17:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "17:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2431037855",
+              "name": "ΜΕΡΜΗΓΚΑΣ ΧΡΗΣΤΟΣ",
+              "address": "ΚΟΝΔΥΛΗ ΓΕΩΡΓΙΟΥ 28",
+              "locality": "Τρίκαλα",
+              "phone": "2431037855"
             }
           ]
         }

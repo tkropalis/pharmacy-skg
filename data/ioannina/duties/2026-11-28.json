@@ -7,29 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-11-24T02:57:30.030Z"
+        "uploadedAt": "2026-11-24T14:57:27.628Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "18:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651031726",
-              "name": "ΝΤΟΥΣΚΑΣ ΘΕΟΔΩΡΟΣ",
-              "address": "ΣΑΜΟΥΗΛ 43",
-              "locality": "Ιωάννινα",
-              "phone": "2651031726"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 21:00",
@@ -68,6 +48,26 @@
               "address": "Μ. ΑΓΓΕΛΟΥ 2",
               "locality": "Ιωάννινα",
               "phone": "2651022848"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651031726",
+              "name": "ΝΤΟΥΣΚΑΣ ΘΕΟΔΩΡΟΣ",
+              "address": "ΣΑΜΟΥΗΛ 43",
+              "locality": "Ιωάννινα",
+              "phone": "2651031726"
             }
           ]
         }

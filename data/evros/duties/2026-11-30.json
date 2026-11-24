@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-30",
+  "groups": [
+    {
+      "id": "evros",
+      "name": "Έβρος",
+      "source": {
+        "url": "https://evros.efhmeries.gr/",
+        "uploadedAt": "2026-11-24T14:56:57.190Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2552029174",
+              "name": "ΑΝΤΩΝΙΑΔΗΣ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ 225",
+              "locality": "Ορεστιάδα",
+              "phone": "2552029174"
+            },
+            {
+              "pharmacyId": "2553023466",
+              "name": "ΤΣΕΚΟΥΡΑ ΗΡΩ",
+              "address": "ΠΛΑΤ. ΕΛΕΥΘΕΡΙΑΣ 1",
+              "locality": "Διδυμότειχο",
+              "phone": "2553023466"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "14:30-22:00",
+          "hours": {
+            "from": "14:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551039222",
+              "name": "ΣΕΡΜΠΕΖΗ ΔΗΜΗΤΡΑ",
+              "address": "Λ. Μάκρης 15, Νέα Χιλή",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551039222"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:00-08:00*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2554022232",
+              "name": "ΠΙΤΙΑΚΟΥΔΗΣ ΣΩΤΗΡΙΟΣ - ΜΠΑΜΙΔΟΥ ΚΟΡΤΕΣΣΑ",
+              "address": "ΒΑΣ. ΓΕΩΡΓΙΟΥ 158",
+              "locality": "Σουφλί",
+              "phone": "2554022232"
+            },
+            {
+              "pharmacyId": "2554042042",
+              "name": "ΣΤΑΜΑΤΙΟΥ ΤΗΛ. & ΟΛΓΑ",
+              "address": "ΝΙΚΗΣ 19",
+              "locality": "Τυχερό, Προβατώνας",
+              "phone": "2554042042"
+            },
+            {
+              "pharmacyId": "2555022744",
+              "name": "ΧΑΤΖΗ ΔΗΜΗΤΡΑ",
+              "address": "ΤΡΑΙΑΝΟΥΠΟΛΕΩΣ 3",
+              "locality": "Φέρες",
+              "phone": "2555022744"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "18:00-08:00",
+          "hours": {
+            "from": "18:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2551036511",
+              "name": "ΤΣΟΛΑΚΗ ΑΡΧΟΝΤΙΑ",
+              "address": "Διον. Σολωμού 15 (δρόμος ΔΕΥΑΑ)",
+              "locality": "Αλεξανδρούπολη",
+              "phone": "2551036511"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

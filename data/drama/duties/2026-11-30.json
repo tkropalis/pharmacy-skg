@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-30",
+  "groups": [
+    {
+      "id": "drama",
+      "name": "Δράμα",
+      "source": {
+        "url": "https://drama.efhmeries.gr/",
+        "uploadedAt": "2026-11-24T14:56:44.923Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521020101",
+              "name": "ΛΕΜΟΝΙΔΗΣ Γ. ΛΑΖΑΡΟΣ",
+              "address": "ΠΤΟΛΕΜΑΙΩΝ 4",
+              "locality": "Δράμα",
+              "phone": "2521020101"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521024127",
+              "name": "ΔΟΥΡΛΙΟΥ ΧΡΥΣΑΝΘΗ ΑΡΤΕΜΙΣ",
+              "address": "ΛΑΜΠΡΙΑΝΙΔΟΥ ΛΑΜΠΡΟΥ 41",
+              "locality": "Δράμα",
+              "phone": "2521024127"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "17:30 ΕΩΣ 21:00",
+          "hours": {
+            "from": "17:30",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521032535",
+              "name": "ΓΑΛΑΝΟΠΟΥΛΟΥ Λ. ΕΛΠΙΔΑ",
+              "address": "Θ. ΑΘΑΝΑΣΙΑΔΗ 45",
+              "locality": "Δράμα",
+              "phone": "2521032535"
+            },
+            {
+              "pharmacyId": "2521031078",
+              "name": "ΚΑΡΑΜΠΟΥΓΙΟΥΚΙΔΟΥ ΕΛΠΙΔΑ & ΣΙΑ ΟΕ",
+              "address": "ΕΛ. ΒΕΝΙΖΈΛΟΥ 32",
+              "locality": "Δράμα",
+              "phone": "2521031078"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

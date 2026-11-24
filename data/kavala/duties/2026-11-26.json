@@ -7,29 +7,9 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-11-24T02:57:36.351Z"
+        "uploadedAt": "2026-11-24T14:57:34.969Z"
       },
       "sections": [
-        {
-          "kind": "overnight",
-          "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510224517",
-              "name": "ΜΑΝΤΖΟΥΡΑΝΗ ΙΑΣΜΗ",
-              "address": "ΟΜΟΝΟΙΑΣ 94",
-              "locality": "Καβάλα",
-              "phone": "2510224517"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
@@ -47,6 +27,26 @@
               "address": "ΣΟΦ. ΒΕΝΙΖΕΛΟΥ 19",
               "locality": "Καβάλα",
               "phone": "2510247644"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510224517",
+              "name": "ΜΑΝΤΖΟΥΡΑΝΗ ΙΑΣΜΗ",
+              "address": "ΟΜΟΝΟΙΑΣ 94",
+              "locality": "Καβάλα",
+              "phone": "2510224517"
             }
           ]
         }

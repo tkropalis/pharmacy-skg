@@ -433,7 +433,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-11-08",
-      "lastSeen": "2026-11-24",
+      "lastSeen": "2026-11-30",
       "location": {
         "lat": 39.6659242,
         "lon": 20.8532251,
@@ -884,6 +884,27 @@
       }
     },
     {
+      "id": "2651033718",
+      "name": "ΔΑΛΛΑ ΣΟΦΙΑ",
+      "address": "ΜΙΧΑΗΛ ΑΓΓΕΛΟΥ 47",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651033718",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-11-30",
+      "lastSeen": "2026-11-30",
+      "location": {
+        "lat": 39.6659563,
+        "lon": 20.8492239,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5155",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2651034966",
       "name": "Σ.Φ. ΦΙΛΙΟΣ ΙΩΑΝΝΗΣ - ΦΙΛΙΟΥ ΔΗΜΗΤΡΑ",
       "address": "ΡΗΓΑ ΦΕΡΑΙΟΥ 5, ΑΝΕΞΑΡΤΗΣΙΑΣ",
@@ -979,7 +1000,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-13",
+      "lastSeen": "2026-11-30",
       "location": {
         "lat": 39.6535308,
         "lon": 20.8611685,
@@ -1441,7 +1462,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-07",
-      "lastSeen": "2026-10-24",
+      "lastSeen": "2026-11-30",
       "location": {
         "lat": 39.6593741,
         "lon": 20.8448018,

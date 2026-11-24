@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-30",
+  "groups": [
+    {
+      "id": "chania",
+      "name": "Χανιά",
+      "source": {
+        "url": "https://chania.efhmeries.gr/",
+        "uploadedAt": "2026-11-24T14:59:16.356Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ ΑΠΟ 8:30 ΕΩΣ 8:30 ΠΡΩΙ",
+          "hours": {
+            "from": "08:30",
+            "to": "08:30",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821096625",
+              "name": "ΑΛΕΞΑΚΗ ΣΜΑΡΑΓΔΗ/ΑLΕΧΑΚΙ SMARAGDI",
+              "address": "ΠΛΑΤΕΙΑ 1866 5/ 1866 SQUARE 5",
+              "locality": "Χανιά",
+              "phone": "2821096625"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:00",
+          "hours": {
+            "from": "08:30",
+            "to": "22:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2821063282",
+              "name": "ΑΡΧΟΝΤΑΚΗΣ ΕΥΤΥΧΗΣ/ΑRCΗΟΝΤΑΚΙS EFTYCHIOS",
+              "address": "ΑΡΩΝΙ ΑΚΡΩΤΗΡΙΟΥ/ΑRΟΝΙ AKROTIRIOU",
+              "locality": "Ακρωτήρι",
+              "phone": "2821063282"
+            },
+            {
+              "pharmacyId": "2821052926",
+              "name": "ΚΑΝΙΤΣΑΚΗΣ ΑΝΤΩΝΗΣ/ΚΑΝΙΤSΑΚΙS ANTONIOS",
+              "address": "ΧΙΩΤΑΚΗ 7/CHIOTAKI 7",
+              "locality": "Χανιά",
+              "phone": "2821052926"
+            },
+            {
+              "pharmacyId": "2821070691",
+              "name": "ΚΥΠΡΑΙΟΥ ΜΑΡΙΑ/ΚΥΡRΑΙΟU MARY",
+              "address": "ΧΡΥΣΟΠΗΓΗΣ 16/CHRYSOPIGIS 16",
+              "locality": "Σούδα",
+              "phone": "2821070691"
+            },
+            {
+              "pharmacyId": "2821045481",
+              "name": "ΜΠΑΚΙΡΤΖΟΓΛΟΥ ΒΑΣΙΛΗΣ/ΒΑΚΙRΤΖΟGLΟU VASILIS",
+              "address": "ΜΑΚΡΥΣ ΤΟΙΧΟΣ 363/MAKRYS TOICHOS 363",
+              "locality": "Νέα Κυδωνία",
+              "phone": "2821045481"
+            },
+            {
+              "pharmacyId": "2821098982",
+              "name": "ΣΟΓΙΑΣ ΙΩΑΝΝΗΣ/SΟGΙΑS IOANNIS",
+              "address": "Σ. ΒΕΝΙΖΕΛΟΥ 46-ΜΟΥΡΝΙΕΣ-S. VENIZELOU 46-MOURNIES",
+              "locality": "Μουρνιές",
+              "phone": "2821098982"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "08:15 ΕΩΣ 08:15 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ*",
+          "hours": {
+            "from": "08:15",
+            "to": "08:15",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "6948462411",
+              "name": "ΔΑΜΟΡΑΚΗΣ ΕΥΤΥΧΗΣ/DΑΜΟRΑΚΙS EYTIXIS",
+              "address": "ΠΑΛΑΙΟΧΩΡΑ (ΣΤΟ ΚΕΝΤΡΟ ΤΗΣ ΠΑΛΑΙΟΧΩΡΑΣ)/ΡΑLΑΙΟΧΟRΑ",
+              "locality": "Δήμος Καντάνου-Σελίνου",
+              "phone": "6948462411"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "ΑΠΟ 8:30 ΕΩΣ 22:30 ΕΦΗΜΕΡΕΥΟΝ",
+          "hours": {
+            "from": "08:30",
+            "to": "22:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2822022742",
+              "name": "Σ.Φ. ΦΑΡΑΓΓΙΤΑΚΗΣ Ι.ΦΑΡΑΓΓΙΤΑΚΗΣ ΕΜ./S.F. FARAGGITAKIS I. & FARAGGITAKIS E.",
+              "address": "ΟΜΟΓΕΝΩΝ ΑΜΕΡΙΚΗΣ 23,ΚΑΣΤΕΛΛΙ ΚΙΣΑΜΟΥ/ΟΜΟGΕΝΟΝ AMERIKIS 23",
+              "locality": "Δήμος Κισσάμου",
+              "phone": "2822022742"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

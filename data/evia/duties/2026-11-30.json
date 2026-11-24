@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-30",
+  "groups": [
+    {
+      "id": "evia",
+      "name": "Εύβοια",
+      "source": {
+        "url": "https://evia.efhmeries.gr/",
+        "uploadedAt": "2026-11-24T14:56:50.661Z"
+      },
+      "sections": [
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2229062775",
+              "name": "ΠΑΝΑΓΙΑΡΗΣ ΑΝΑΣΤΑΣΙΟΣ",
+              "address": "ΦΙΛ.ΜΕΝΕΔΗΜΟΥ 42",
+              "locality": "Ερέτρια",
+              "phone": "2229062775"
+            },
+            {
+              "pharmacyId": "2221042444",
+              "name": "ΣΠΑΝΟΥ ΔΕΣΠΟΙΝΑ",
+              "address": "ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 66",
+              "locality": "Αρτάκη",
+              "phone": "2221042444"
+            },
+            {
+              "pharmacyId": "2226055355",
+              "name": "ΤΖΗΜΟΥ ΑΙΚΑΤΕΡΙΝΗ",
+              "address": "25ης ΜΑΡΤΙΟΥ 46",
+              "locality": "Ιστιαία",
+              "phone": "2226055355"
+            }
+          ]
+        },
+        {
+          "kind": "on-duty",
+          "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ*",
+          "hours": {
+            "from": "08:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "onCall": true,
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2224023855",
+              "name": "ΣΙΑΣΑΚΟΣ ΕΛΕΥΘΕΡΙΟΣ",
+              "address": "ΣΑΧΤΟΥΡΗ 124",
+              "locality": "Κάρυστος",
+              "phone": "2224023855"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
