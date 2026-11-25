@@ -7,36 +7,9 @@
       "name": "Ιωάννινα",
       "source": {
         "url": "https://ioannina.efhmeries.gr/",
-        "uploadedAt": "2026-11-24T14:57:27.628Z"
+        "uploadedAt": "2026-11-25T00:51:18.858Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2651073206",
-              "name": "ΖΙΑΚΑ ΓΙΑΝΝΟΥΛΑ",
-              "address": "ΦΙΛΙΠΠΟΥ Β' 46 - ΝΕΑ ΖΩΗ",
-              "locality": "Ιωάννινα",
-              "phone": "2651073206"
-            },
-            {
-              "pharmacyId": "2651031994",
-              "name": "ΛΙΑΣΚΑΣ ΒΑΣΙΛΕΙΟΣ",
-              "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 124",
-              "locality": "Ιωάννινα",
-              "phone": "2651031994"
-            }
-          ]
-        },
         {
           "kind": "day",
           "heading": "08:00 ΕΩΣ 14:30& 18:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -74,6 +47,33 @@
               "address": "ΚΟΡΑΗ 13",
               "locality": "Ιωάννινα",
               "phone": "2651070146"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2651073206",
+              "name": "ΖΙΑΚΑ ΓΙΑΝΝΟΥΛΑ",
+              "address": "ΦΙΛΙΠΠΟΥ Β' 46 - ΝΕΑ ΖΩΗ",
+              "locality": "Ιωάννινα",
+              "phone": "2651073206"
+            },
+            {
+              "pharmacyId": "2651031994",
+              "name": "ΛΙΑΣΚΑΣ ΒΑΣΙΛΕΙΟΣ",
+              "address": "Μ. ΑΛΕΞΑΝΔΡΟΥ 124",
+              "locality": "Ιωάννινα",
+              "phone": "2651031994"
             }
           ]
         }

@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "attiki",
-  "updatedAt": "2026-11-24T14:56:01.819Z",
-  "checkedAt": "2026-11-24T14:56:01.819Z",
+  "updatedAt": "2026-11-25T00:49:46.306Z",
+  "checkedAt": "2026-11-25T00:49:46.306Z",
   "duties": {
     "from": "2026-10-08",
-    "to": "2026-11-30"
+    "to": "2026-12-01"
   },
   "extendedHours": [
     {
