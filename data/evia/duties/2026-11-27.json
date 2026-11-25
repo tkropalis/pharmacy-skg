@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-25T00:50:40.435Z"
+        "uploadedAt": "2026-11-25T14:31:03.163Z"
       },
       "sections": [
         {
@@ -35,26 +35,6 @@
               "address": "ΑΜΑΡΥΣΙΑΣ ΑΡΤΕΜΙΔΟΣ ΚΑΙ ΑΠΟΣΤΟΛΗ",
               "locality": "Ερέτρια",
               "phone": "2221064600"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221028599",
-              "name": "ΚΑΝΔΥΛΗΣ ΣΤΕΛΙΟΣ",
-              "address": "ΒΕΝΙΖΕΛΟΥ 10 - ΕΝΑΝΤΙ ΔΙΚΑΣΤΗΡΙΩΝ",
-              "locality": "Χαλκίδα",
-              "phone": "2221028599"
             }
           ]
         },
@@ -102,6 +82,26 @@
               "address": "ΚΩΤΣΟΥ 41 ΕΝΤΟΣ ΕΡΓΑΤΙΚΟΥ ΚΕΝΤΡΟΥ",
               "locality": "Χαλκίδα",
               "phone": "2221021740"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221028599",
+              "name": "ΚΑΝΔΥΛΗΣ ΣΤΕΛΙΟΣ",
+              "address": "ΒΕΝΙΖΕΛΟΥ 10 - ΕΝΑΝΤΙ ΔΙΚΑΣΤΗΡΙΩΝ",
+              "locality": "Χαλκίδα",
+              "phone": "2221028599"
             }
           ]
         }

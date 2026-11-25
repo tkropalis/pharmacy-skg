@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "xanthi",
-  "updatedAt": "2026-11-25T00:52:20.903Z",
-  "checkedAt": "2026-11-25T00:52:20.903Z",
+  "updatedAt": "2026-11-25T14:32:43.692Z",
+  "checkedAt": "2026-11-25T14:32:43.692Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-11-30"
+    "to": "2026-12-01"
   },
   "extendedHours": [],
   "sources": [

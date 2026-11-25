@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "lasithi",
-  "updatedAt": "2026-11-24T14:58:13.280Z",
-  "checkedAt": "2026-11-25T00:52:02.257Z",
+  "updatedAt": "2026-11-25T14:32:24.770Z",
+  "checkedAt": "2026-11-25T14:32:24.770Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-11-30"
+    "to": "2026-12-01"
   },
   "extendedHours": [],
   "sources": [

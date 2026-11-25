@@ -108,7 +108,7 @@
     },
     {
       "id": "2681027328",
-      "name": "ΓΑΛΑΝΗ",
+      "name": "ΜΑΤΣΟΥΚΑΣ",
       "address": "ΣΚΟΥΦΑ 110",
       "locality": "Άρτα",
       "postcode": null,
@@ -118,7 +118,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-12-01",
       "location": {
         "lat": 39.1607304,
         "lon": 20.9842193,
@@ -1000,7 +1000,7 @@
         "iteq-arta"
       ],
       "firstSeen": "2026-10-14",
-      "lastSeen": "2026-11-15",
+      "lastSeen": "2026-12-01",
       "location": {
         "lat": 39.070637,
         "lon": 21.018409,

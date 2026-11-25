@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "argolida",
-  "updatedAt": "2026-11-24T14:56:25.451Z",
-  "checkedAt": "2026-11-25T00:50:14.056Z",
+  "updatedAt": "2026-11-25T14:30:36.925Z",
+  "checkedAt": "2026-11-25T14:30:36.925Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-11-30"
+    "to": "2026-12-01"
   },
   "extendedHours": [],
   "sources": [

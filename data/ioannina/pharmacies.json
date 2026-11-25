@@ -1672,7 +1672,7 @@
         "iteq-ioannina"
       ],
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-15",
+      "lastSeen": "2026-12-01",
       "location": {
         "lat": 39.6656295,
         "lon": 20.853602,
@@ -1992,6 +1992,27 @@
         "lat": 39.6671906,
         "lon": 20.8520086,
         "ref": "https://ioannina.efhmeries.gr/Home/Details/5045",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2651710523",
+      "name": "ΤΟ ΓΙΑΝΝΙΩΤΙΚΟ ΦΑΡΜΑΚΕΙΟ Ο.Ε.",
+      "address": "ΓΟΡΓΟΠΟΤΑΜΟΥ 43 - ΑΝΑΤΟΛΗ",
+      "locality": "Ιωάννινα",
+      "postcode": null,
+      "phone": "2651710523",
+      "groupId": "ioannina",
+      "sources": [
+        "iteq-ioannina"
+      ],
+      "firstSeen": "2026-12-01",
+      "lastSeen": "2026-12-01",
+      "location": {
+        "lat": 39.6338115,
+        "lon": 20.8575914,
+        "ref": "https://ioannina.efhmeries.gr/Home/Details/5160",
         "source": "list",
         "precision": "exact"
       }

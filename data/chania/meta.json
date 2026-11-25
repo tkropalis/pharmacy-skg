@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "chania",
-  "updatedAt": "2026-11-25T00:53:10.617Z",
-  "checkedAt": "2026-11-25T00:53:10.617Z",
+  "updatedAt": "2026-11-25T14:33:33.856Z",
+  "checkedAt": "2026-11-25T14:33:33.856Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-11-30"
+    "to": "2026-12-01"
   },
   "extendedHours": [],
   "sources": [

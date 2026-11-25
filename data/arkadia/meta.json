@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "city": "arkadia",
-  "updatedAt": "2026-11-24T14:56:31.612Z",
-  "checkedAt": "2026-11-25T00:50:20.413Z",
+  "updatedAt": "2026-11-25T14:30:43.175Z",
+  "checkedAt": "2026-11-25T14:30:43.175Z",
   "duties": {
     "from": "2026-10-07",
-    "to": "2026-11-30"
+    "to": "2026-12-01"
   },
   "extendedHours": [],
   "sources": [

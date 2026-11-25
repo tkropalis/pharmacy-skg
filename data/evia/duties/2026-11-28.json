@@ -7,7 +7,7 @@
       "name": "Εύβοια",
       "source": {
         "url": "https://evia.efhmeries.gr/",
-        "uploadedAt": "2026-11-25T00:50:40.435Z"
+        "uploadedAt": "2026-11-25T14:31:03.163Z"
       },
       "sections": [
         {
@@ -66,42 +66,22 @@
           ]
         },
         {
-          "kind": "saturday-extra",
-          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
           "hours": {
             "from": "08:00",
-            "to": "14:00",
+            "to": "21:00",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2221088935",
-              "name": "ΚΩΣΤΗ ΙΩΑΝΝΑ",
-              "address": "ΙΣΑΪΟΥ 14",
+              "pharmacyId": "2221085106",
+              "name": "ΦΑΡΑΚΛΙΩΤΗΣ ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΣΤΎΡΩΝ 5",
               "locality": "Χαλκίδα",
-              "phone": "2221088935"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
-          "hours": {
-            "from": "17:30",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2221088935",
-              "name": "ΚΩΣΤΗ ΙΩΑΝΝΑ",
-              "address": "ΙΣΑΪΟΥ 14",
-              "locality": "Χαλκίδα",
-              "phone": "2221088935"
+              "phone": "2221085106"
             }
           ]
         },
@@ -187,22 +167,42 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
+          "kind": "saturday-extra",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
             "from": "08:00",
-            "to": "21:00",
+            "to": "14:00",
             "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2221085106",
-              "name": "ΦΑΡΑΚΛΙΩΤΗΣ ΔΗΜΗΤΡΙΟΣ",
-              "address": "ΣΤΎΡΩΝ 5",
+              "pharmacyId": "2221088935",
+              "name": "ΚΩΣΤΗ ΙΩΑΝΝΑ",
+              "address": "ΙΣΑΪΟΥ 14",
               "locality": "Χαλκίδα",
-              "phone": "2221085106"
+              "phone": "2221088935"
+            }
+          ]
+        },
+        {
+          "kind": "overnight",
+          "heading": "08:00 ΕΩΣ 14:00 & 17:30 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "hours": {
+            "from": "17:30",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2221088935",
+              "name": "ΚΩΣΤΗ ΙΩΑΝΝΑ",
+              "address": "ΙΣΑΪΟΥ 14",
+              "locality": "Χαλκίδα",
+              "phone": "2221088935"
             }
           ]
         }
