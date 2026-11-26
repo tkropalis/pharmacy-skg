@@ -59,7 +59,7 @@
       "name": "Κιλκίς",
       "source": {
         "url": "https://www.fskilkis.gr/efimeries/63-kilkis/111-efimereuonta-famakeia-kilkis-noemvriou",
-        "uploadedAt": "2026-11-23T14:47:13.109Z"
+        "uploadedAt": "2026-11-26T13:58:20.641Z"
       },
       "sections": [
         {
@@ -74,11 +74,11 @@
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2341028828",
-              "name": "Σ.Φ. ΣΑΒΒΙΔΟΥ ΑΛ. ΚΥΡ. & ΣΑΒΒΙΔΟΥ ΑΙΚ. Ο.Ε.",
-              "address": "ΝΟΣΟΚΟΜΕΙΟΥ 4",
+              "pharmacyId": "2341302343",
+              "name": "ΗΛΙΑΔΗΣ ΕΛΕΥΘΕΡΙΟΣ & ΣΙΑ Ο.Ε.",
+              "address": "ΠΕΡΙΚΛΕΟΥΣ 6 (ΠΛΑΤΕΙΑ ΕΙΡΗΝΗΣ)",
               "locality": "Κιλκίς",
-              "phone": "2341028828"
+              "phone": "2341302343"
             }
           ]
         },
@@ -94,11 +94,11 @@
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2341023242",
-              "name": "Σ.Φ. ΠΑΤΣΑΚΙΔΗΣ ΝΙΚΟΛΑΟΣ - ΠΑΤΣΑΚΙΔΗΣ ΚΩΝΣΤ. Ο.Ε.",
-              "address": "21 ΙΟΥΝΙΟΥ 180",
+              "pharmacyId": "2341023115",
+              "name": "ΓΕΩΡΓΙΑΔΗΣ ΑΛΚΙΒΙΑΔΗΣ",
+              "address": "ΓΙΑΛ-ΣΑΛ (ΕΝΑΝΤΙ ΙΚΑ)",
               "locality": "Κιλκίς",
-              "phone": "2341023242"
+              "phone": "2341023115"
             }
           ]
         }

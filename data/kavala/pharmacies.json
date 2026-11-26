@@ -422,6 +422,27 @@
       }
     },
     {
+      "id": "2510227683",
+      "name": "ΖΑΝΝΑΣ ΖΗΣΗΣ",
+      "address": "ΔΑΓΚΛΗ 30",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2510227683",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-11-30",
+      "lastSeen": "2026-12-01",
+      "location": {
+        "lat": 40.939762,
+        "lon": 24.407511,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4078",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
       "id": "2510228281",
       "name": "ΝΙΚΟΛΑΙΔΟΥ ΑΝΑΣΤΑΣΙΑ",
       "address": "ΕΡΥΘΡΟΥ ΣΤΑΥΡΟΥ 1",
@@ -538,7 +559,7 @@
         "iteq-kavala"
       ],
       "firstSeen": "2026-11-29",
-      "lastSeen": "2026-12-01",
+      "lastSeen": "2026-12-02",
       "location": {
         "lat": 40.9263337,
         "lon": 24.3793534,
@@ -842,27 +863,6 @@
       }
     },
     {
-      "id": "2510836542",
-      "name": "Σ.Φ. ΚΟΝΔΑΚΟΥ ΣΟΦΙΑ - ΠΛΑΣΑΤΗ ΑΝΑΣΤΑΣΙΑ Ο.Ε.",
-      "address": "ΠΕΡΔΙΚΑ 4",
-      "locality": "Καβάλα",
-      "postcode": null,
-      "phone": "2510836542",
-      "groupId": "kavala",
-      "sources": [
-        "iteq-kavala"
-      ],
-      "firstSeen": "2026-11-30",
-      "lastSeen": "2026-12-01",
-      "location": {
-        "lat": 40.9395356,
-        "lon": 24.413509,
-        "ref": "https://kavala.efhmeries.gr/Home/Details/4075",
-        "source": "list",
-        "precision": "exact"
-      }
-    },
-    {
       "id": "2510836640",
       "name": "ΓΕΩΡΓΙΑΔΟΥ ΜΙΚΑΕΛΑ-ΒΑΣΙΛΙΚΗ",
       "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 38",
@@ -1005,6 +1005,27 @@
         "lat": 40.930899,
         "lon": 24.383471,
         "ref": "https://kavala.efhmeries.gr/Home/Details/4005",
+        "source": "list",
+        "precision": "exact"
+      }
+    },
+    {
+      "id": "2511211816",
+      "name": "ΓΙΑΜΑΛΙΔΗΣ ΑΝΤΩΝΙΟΣ",
+      "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 6",
+      "locality": "Καβάλα",
+      "postcode": null,
+      "phone": "2511211816",
+      "groupId": "kavala",
+      "sources": [
+        "iteq-kavala"
+      ],
+      "firstSeen": "2026-12-02",
+      "lastSeen": "2026-12-02",
+      "location": {
+        "lat": 40.9373738,
+        "lon": 24.4115809,
+        "ref": "https://kavala.efhmeries.gr/Home/Details/4079",
         "source": "list",
         "precision": "exact"
       }

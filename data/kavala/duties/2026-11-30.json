@@ -7,9 +7,29 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-11-26T00:32:38.345Z"
+        "uploadedAt": "2026-11-26T13:59:44.594Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510227683",
+              "name": "ΖΑΝΝΑΣ ΖΗΣΗΣ",
+              "address": "ΔΑΓΚΛΗ 30",
+              "locality": "Καβάλα",
+              "phone": "2510227683"
+            }
+          ]
+        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -27,26 +47,6 @@
               "address": "ΕΥΞ.ΠΟΝΤΟΥ 29",
               "locality": "Καβάλα",
               "phone": "2510242540"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510836542",
-              "name": "Σ.Φ. ΚΟΝΔΑΚΟΥ ΣΟΦΙΑ - ΠΛΑΣΑΤΗ ΑΝΑΣΤΑΣΙΑ Ο.Ε.",
-              "address": "ΠΕΡΔΙΚΑ 4",
-              "locality": "Καβάλα",
-              "phone": "2510836542"
             }
           ]
         }

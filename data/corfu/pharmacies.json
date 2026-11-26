@@ -422,7 +422,7 @@
         "ionian"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-25",
+      "lastSeen": "2026-11-26",
       "location": {
         "lat": 39.591337,
         "lon": 19.859619,
@@ -1223,7 +1223,7 @@
     },
     {
       "id": "2661058700",
-      "name": "ΓΙΑΝΝΑΡΟΣ ΑΘΑΝΑΣΙΟΣ",
+      "name": "ΠΚ (ΓΙΑΝΝΑΡΟΣ ΑΘΑΝΑΣΙΟΣ)",
       "address": "ΤΡΙΚΛΙΝΟ - ΚΟΜΠΙΤΣΙ",
       "locality": "Τρίκλινο",
       "postcode": null,
@@ -1232,8 +1232,8 @@
       "sources": [
         "farmakeu"
       ],
-      "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "firstSeen": "2026-11-26",
+      "lastSeen": "2026-11-26",
       "location": {
         "lat": 39.608159,
         "lon": 19.863318,
@@ -1297,7 +1297,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-25",
+      "lastSeen": "2026-11-26",
       "location": {
         "lat": 39.485759,
         "lon": 19.925582,
@@ -1679,7 +1679,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-11",
+      "lastSeen": "2026-11-26",
       "location": {
         "lat": 39.424107,
         "lon": 20.062832,
@@ -2086,7 +2086,7 @@
         "farmakeu"
       ],
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-02",
+      "lastSeen": "2026-11-26",
       "location": {
         "lat": 39.721106,
         "lon": 19.724685,

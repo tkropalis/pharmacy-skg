@@ -7,7 +7,7 @@
       "name": "Αργολίδα",
       "source": {
         "url": "https://argolida.efhmeries.gr/",
-        "uploadedAt": "2026-11-21T12:44:27.913Z"
+        "uploadedAt": "2026-11-26T13:58:30.550Z"
       },
       "sections": [
         {
@@ -43,13 +43,6 @@
               "phone": "2754031330"
             },
             {
-              "pharmacyId": "2751068822",
-              "name": "ΔΙΑΜΑΝΤΗΣ ΕΥΣΤΡΑΤΙΟΣ",
-              "address": "ΤΣΩΚΡΗ 22",
-              "locality": "Άργος",
-              "phone": "2751068822"
-            },
-            {
               "pharmacyId": "2752110217",
               "name": "ΜΠΑΡΛΑ ΕΛΕΝΗ",
               "address": "Λ. ΑΣΠΛΗΠΙΟΥ 160",
@@ -76,6 +69,13 @@
               "address": "ΚΡΑΝΙΔΙ",
               "locality": "Κρανίδι",
               "phone": "2754022555"
+            },
+            {
+              "pharmacyId": "2751029850",
+              "name": "ΣΜΥΡΝΑΙΟΣ ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΤΣΩΚΡΗ 41",
+              "locality": "Άργος",
+              "phone": "2751029850"
             },
             {
               "pharmacyId": "2752022165",

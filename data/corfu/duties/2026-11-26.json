@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-26",
+  "groups": [
+    {
+      "id": "corfu",
+      "name": "Κέρκυρα",
+      "source": {
+        "url": "https://farmakeu.static.otenet.gr/phduties.php",
+        "uploadedAt": "2026-11-26T13:58:20.029Z"
+      },
+      "sections": [
+        {
+          "kind": "day",
+          "heading": "ΔΙΗΜΕΡΕΥΟΥΝ ΑΠΟ ΤΙΣ 8:00 ΕΩΣ ΤΙΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2661031992",
+              "name": "ΕΡΤΣΟΣ ΣΠΥΡΙΔΩΝΑΣ-ΠΑΝΑΓΙΩΤΗΣ",
+              "address": "ΜΙΛΤΙΑΔΟΥ ΜΑΡΓΑΡΙΤΗ 8",
+              "locality": "Κέρκυρα",
+              "phone": "2661031992"
+            },
+            {
+              "pharmacyId": "2661058700",
+              "name": "ΠΚ (ΓΙΑΝΝΑΡΟΣ ΑΘΑΝΑΣΙΟΣ)",
+              "address": "ΤΡΙΚΛΙΝΟ - ΚΟΜΠΙΤΣΙ",
+              "locality": "Τρίκλινο",
+              "phone": "2661058700"
+            },
+            {
+              "pharmacyId": "2661075673",
+              "name": "ΤΡΙΒΥΖΑΣ ΝΙΚΟΛΑΟΣ (ΜΑΝΤΟΣ ΜΙΧΑΗΛ)",
+              "address": "ΜΩΡΑΪΤΙΚΑ",
+              "locality": "Μωραΐτικα",
+              "phone": "2661075673"
+            },
+            {
+              "pharmacyId": "2663071241",
+              "name": "ΒΑΛΣΑΜΗ ΕΛΕΥΘΕΡΙΑ",
+              "address": "ΑΓΡΟΣ",
+              "locality": "Άγρος",
+              "phone": "2663071241"
+            },
+            {
+              "pharmacyId": "2662024143",
+              "name": "ΒΑΡΕΛΗΣ ΒΑΣΙΛΕΙΟΣ-ΔΗΜΗΤΡΙΟΣ",
+              "address": "ΡΙΓΓΛΑΔΕΣ",
+              "locality": "Ρίγγλαδες",
+              "phone": "2662024143"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
