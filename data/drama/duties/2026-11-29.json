@@ -7,29 +7,9 @@
       "name": "Δράμα",
       "source": {
         "url": "https://drama.efhmeries.gr/",
-        "uploadedAt": "2026-11-25T14:30:57.110Z"
+        "uploadedAt": "2026-11-26T00:31:48.163Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2521036520",
-              "name": "ΦΕΤΦΑΤΖΙΔΗΣ ΘΕΟΔΩΡΟΣ",
-              "address": "ΕΘ. ΑΜΥΝΗΣ 25",
-              "locality": "Δράμα",
-              "phone": "2521036520"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "ΙΟΥΣΤΙΝΙΑΝΟΎ 2",
               "locality": "Δράμα",
               "phone": "2521026699"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521036520",
+              "name": "ΦΕΤΦΑΤΖΙΔΗΣ ΘΕΟΔΩΡΟΣ",
+              "address": "ΕΘ. ΑΜΥΝΗΣ 25",
+              "locality": "Δράμα",
+              "phone": "2521036520"
             }
           ]
         }

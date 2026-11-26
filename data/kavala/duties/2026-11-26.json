@@ -7,29 +7,9 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-11-25T14:31:47.824Z"
+        "uploadedAt": "2026-11-26T00:32:38.345Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510247644",
-              "name": "ΠΑΡΧΑΡΙΔΗΣ ΕΛΕΥΘΕΡΙΟΣ",
-              "address": "ΣΟΦ. ΒΕΝΙΖΕΛΟΥ 19",
-              "locality": "Καβάλα",
-              "phone": "2510247644"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΟΜΟΝΟΙΑΣ 94",
               "locality": "Καβάλα",
               "phone": "2510224517"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510247644",
+              "name": "ΠΑΡΧΑΡΙΔΗΣ ΕΛΕΥΘΕΡΙΟΣ",
+              "address": "ΣΟΦ. ΒΕΝΙΖΕΛΟΥ 19",
+              "locality": "Καβάλα",
+              "phone": "2510247644"
             }
           ]
         }
