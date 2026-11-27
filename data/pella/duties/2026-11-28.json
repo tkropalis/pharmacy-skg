@@ -7,9 +7,29 @@
       "name": "Πέλλα",
       "source": {
         "url": "https://pella.efhmeries.gr/",
-        "uploadedAt": "2026-11-27T00:41:18.647Z"
+        "uploadedAt": "2026-11-27T13:59:15.779Z"
       },
       "sections": [
+        {
+          "kind": "day",
+          "heading": "8:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2382024813",
+              "name": "ΓΚΙΚΑ ΑΝΑΣΤΑΣΙΑ",
+              "address": "Δ.ΣΕΜΕΡΤΖΙΔΗ (ΕΝΑΝΤΙ ΝΟΣΟΚΟΜΕΙΟΥ)",
+              "locality": "Γιαννιτσά",
+              "phone": "2382024813"
+            }
+          ]
+        },
         {
           "kind": "on-duty",
           "heading": "ΔΙΑΝΥΚΤΕΡΕΥΕΙ 8:00 ΕΩΣ 8:00 ΕΠΟΜΕΝΗΣ*",
@@ -69,26 +89,6 @@
               "address": "ΕΛ. ΒΕΝΙΖΕΛΟΥ 178",
               "locality": "Γιαννιτσά",
               "phone": "2382025735"
-            }
-          ]
-        },
-        {
-          "kind": "day",
-          "heading": "8:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2382024813",
-              "name": "ΓΚΙΚΑ ΑΝΑΣΤΑΣΙΑ",
-              "address": "Δ.ΣΕΜΕΡΤΖΙΔΗ (ΕΝΑΝΤΙ ΝΟΣΟΚΟΜΕΙΟΥ)",
-              "locality": "Γιαννιτσά",
-              "phone": "2382024813"
             }
           ]
         }
