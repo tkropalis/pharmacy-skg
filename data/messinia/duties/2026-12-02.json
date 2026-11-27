@@ -7,7 +7,7 @@
       "name": "Μεσσηνία",
       "source": {
         "url": "https://messinia.efhmeries.gr/",
-        "uploadedAt": "2026-11-26T14:00:30.437Z"
+        "uploadedAt": "2026-11-27T00:41:00.085Z"
       },
       "sections": [
         {
@@ -102,26 +102,6 @@
           ]
         },
         {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 20:30",
-          "hours": {
-            "from": "08:00",
-            "to": "20:30",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2721084925",
-              "name": "ΒΑΡΕΛΑ ΜΑΡΙΑ Ο.Ε.",
-              "address": "ΑΡΙΣΤΟΜΕΝΟΥΣ 79-81",
-              "locality": "Καλαμάτα",
-              "phone": "2721084925"
-            }
-          ]
-        },
-        {
           "kind": "on-duty",
           "heading": "08:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
@@ -172,6 +152,26 @@
               "address": "ΓΕΩΡΓΟΥΛΗ 14 & ΚΑΝΑΡΗ",
               "locality": "Καλαμάτα",
               "phone": "2721027046"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 20:30",
+          "hours": {
+            "from": "08:00",
+            "to": "20:30",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2721084925",
+              "name": "ΒΑΡΕΛΑ ΜΑΡΙΑ Ο.Ε.",
+              "address": "ΑΡΙΣΤΟΜΕΝΟΥΣ 79-81",
+              "locality": "Καλαμάτα",
+              "phone": "2721084925"
             }
           ]
         }

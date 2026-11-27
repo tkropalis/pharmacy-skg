@@ -7,9 +7,29 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-11-26T13:59:44.594Z"
+        "uploadedAt": "2026-11-27T00:40:15.816Z"
       },
       "sections": [
+        {
+          "kind": "overnight",
+          "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
+          "hours": {
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2510833005",
+              "name": "ΜΠΟΥΛΗ ΑΝΝΑ",
+              "address": "ΦΙΛΙΚΗΣ ΕΤΑΙΡΕΙΑΣ 5",
+              "locality": "Καβάλα",
+              "phone": "2510833005"
+            }
+          ]
+        },
         {
           "kind": "day",
           "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
@@ -34,26 +54,6 @@
               "address": "ΝΥΡΕΜΒΕΡΓΗΣ/ΑΜ. ΕΡ. ΣΤΑΥΡΟΥ 205",
               "locality": "Καβάλα",
               "phone": "2516007071"
-            }
-          ]
-        },
-        {
-          "kind": "overnight",
-          "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
-          "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2510833005",
-              "name": "ΜΠΟΥΛΗ ΑΝΝΑ",
-              "address": "ΦΙΛΙΚΗΣ ΕΤΑΙΡΕΙΑΣ 5",
-              "locality": "Καβάλα",
-              "phone": "2510833005"
             }
           ]
         }
