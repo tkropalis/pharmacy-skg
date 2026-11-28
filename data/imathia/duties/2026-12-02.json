@@ -7,26 +7,33 @@
       "name": "Ημαθία",
       "source": {
         "url": "https://imathia.efhmeries.gr/",
-        "uploadedAt": "2026-11-28T00:06:12.342Z"
+        "uploadedAt": "2026-11-28T13:09:07.519Z"
       },
       "sections": [
         {
-          "kind": "overnight",
-          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
+          "kind": "day",
+          "heading": "14:30 ΕΩΣ 21:00",
           "hours": {
-            "from": "21:00",
-            "to": "08:00",
-            "toNextDay": true
+            "from": "14:30",
+            "to": "21:00",
+            "toNextDay": false
           },
           "extraHours": [],
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331060279",
-              "name": "ΤΕΡΜΕΝΤΖΗ & ΣΙΑ Ο.Ε.",
-              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ ΚΑΙ ΕΔΕΣΣΗΣ",
+              "pharmacyId": "2331075180",
+              "name": "ΦΥΤΟΠΟΥΛΟΣ ΚΩΝ. ΓΕΩΡΓΙΟΣ",
+              "address": "ΠΑΥΣΑΝΙΟΥ 3 - απέναντι από μαρκετ Γαλαξίας",
               "locality": "Βέροια",
-              "phone": "2331060279"
+              "phone": "2331075180"
+            },
+            {
+              "pharmacyId": "2331065770",
+              "name": "ΧΕΙΜΩΝΙΔΗΣ ΜΙΧΑΗΛ & ΣΙΑ Ε.Ε.",
+              "address": "Μ. ΜΠΟΤΣΑΡΗ 29 - πλατεία Τσερμένι",
+              "locality": "Βέροια",
+              "phone": "2331065770"
             }
           ]
         },
@@ -80,9 +87,9 @@
         },
         {
           "kind": "day",
-          "heading": "14:30 ΕΩΣ 21:00",
+          "heading": "19:00 ΕΩΣ 21:00",
           "hours": {
-            "from": "14:30",
+            "from": "19:00",
             "to": "21:00",
             "toNextDay": false
           },
@@ -90,28 +97,21 @@
           "notes": [],
           "entries": [
             {
-              "pharmacyId": "2331075180",
-              "name": "ΦΥΤΟΠΟΥΛΟΣ ΚΩΝ. ΓΕΩΡΓΙΟΣ",
-              "address": "ΠΑΥΣΑΝΙΟΥ 3 - απέναντι από μαρκετ Γαλαξίας",
+              "pharmacyId": "2331060279",
+              "name": "ΤΕΡΜΕΝΤΖΗ & ΣΙΑ Ο.Ε.",
+              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ ΚΑΙ ΕΔΕΣΣΗΣ",
               "locality": "Βέροια",
-              "phone": "2331075180"
-            },
-            {
-              "pharmacyId": "2331065770",
-              "name": "ΧΕΙΜΩΝΙΔΗΣ ΜΙΧΑΗΛ & ΣΙΑ Ε.Ε.",
-              "address": "Μ. ΜΠΟΤΣΑΡΗ 29 - πλατεία Τσερμένι",
-              "locality": "Βέροια",
-              "phone": "2331065770"
+              "phone": "2331060279"
             }
           ]
         },
         {
-          "kind": "day",
-          "heading": "19:00 ΕΩΣ 21:00",
+          "kind": "overnight",
+          "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
           "hours": {
-            "from": "19:00",
-            "to": "21:00",
-            "toNextDay": false
+            "from": "21:00",
+            "to": "08:00",
+            "toNextDay": true
           },
           "extraHours": [],
           "notes": [],
