@@ -7,29 +7,9 @@
       "name": "Καβάλα",
       "source": {
         "url": "https://kavala.efhmeries.gr/",
-        "uploadedAt": "2026-11-27T13:58:13.449Z"
+        "uploadedAt": "2026-11-28T00:06:37.173Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2511211816",
-              "name": "ΓΙΑΜΑΛΙΔΗΣ ΑΝΤΩΝΙΟΣ",
-              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 6",
-              "locality": "Καβάλα",
-              "phone": "2511211816"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "9 ΒΡΑΔΥ - 8 ΠΡΩΙ ΕΠΟΜΕΝΗΣ",
@@ -47,6 +27,26 @@
               "address": "ΕΥΞ.ΠΟΝΤΟΥ 29",
               "locality": "Καβάλα",
               "phone": "2510242540"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "8 ΠΡΩΙ - 9 ΒΡΑΔΥ",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2511211816",
+              "name": "ΓΙΑΜΑΛΙΔΗΣ ΑΝΤΩΝΙΟΣ",
+              "address": "ΜΕΓ. ΑΛΕΞΑΝΔΡΟΥ 6",
+              "locality": "Καβάλα",
+              "phone": "2511211816"
             }
           ]
         }

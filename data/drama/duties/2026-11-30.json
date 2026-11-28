@@ -7,29 +7,9 @@
       "name": "Δράμα",
       "source": {
         "url": "https://drama.efhmeries.gr/",
-        "uploadedAt": "2026-11-27T13:57:24.203Z"
+        "uploadedAt": "2026-11-28T00:05:46.659Z"
       },
       "sections": [
-        {
-          "kind": "day",
-          "heading": "08:00 ΕΩΣ 21:00",
-          "hours": {
-            "from": "08:00",
-            "to": "21:00",
-            "toNextDay": false
-          },
-          "extraHours": [],
-          "notes": [],
-          "entries": [
-            {
-              "pharmacyId": "2521020101",
-              "name": "ΛΕΜΟΝΙΔΗΣ Γ. ΛΑΖΑΡΟΣ",
-              "address": "ΠΤΟΛΕΜΑΙΩΝ 4",
-              "locality": "Δράμα",
-              "phone": "2521020101"
-            }
-          ]
-        },
         {
           "kind": "overnight",
           "heading": "21:00 ΕΩΣ 08:00 ΕΠΟΜΕΝΗΣ ΗΜΕΡΑΣ",
@@ -47,6 +27,26 @@
               "address": "ΛΑΜΠΡΙΑΝΙΔΟΥ ΛΑΜΠΡΟΥ 41",
               "locality": "Δράμα",
               "phone": "2521024127"
+            }
+          ]
+        },
+        {
+          "kind": "day",
+          "heading": "08:00 ΕΩΣ 21:00",
+          "hours": {
+            "from": "08:00",
+            "to": "21:00",
+            "toNextDay": false
+          },
+          "extraHours": [],
+          "notes": [],
+          "entries": [
+            {
+              "pharmacyId": "2521020101",
+              "name": "ΛΕΜΟΝΙΔΗΣ Γ. ΛΑΖΑΡΟΣ",
+              "address": "ΠΤΟΛΕΜΑΙΩΝ 4",
+              "locality": "Δράμα",
+              "phone": "2521020101"
             }
           ]
         },
